@@ -875,7 +875,29 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     add('⏱️','PRESSÃO APÓS 70',+g.minute>=70&&score>=75,!!points.length&&+g.minute>0,'Pressão no fim da partida','Minuto ≥70 sob pressão forte');
     add('🥶','JOGO FRIO',score<30,!!points.length,'Termômetro 10 min','Pressão <30');
     add('🚨','ALERTA CRUZADO',score>=70&&Math.abs(avg5)>=65&&statMax('shots_on')>=3&&statMax('big_chances')>=1,!!points.length&&statHas('shots_on')&&statHas('big_chances'),'Pressão + finalizações + chances claras confirmadas','Pressão ≥70, 5 min ≥65, SOT ≥3, chances ≥1');
-    const tl=events.map(e=>({minute:e.minute,emoji:e.emoji,team:e.team,name:e.type,basis:'event',label:e.text,reason:e.text}));
+    const timeSignals=[];
+    const observed=new Map(points.map(p=>[p.minute,p.value]));
+    // Sinais no minuto observado, calculados SÓ com pontos reais do gráfico.
+    // Sem extrapolar leitura, nem posicionar scout acumulado em minuto fictício.
+    for(let minute=6;minute<=m;minute+=3){
+      const slice=n=>Array.from({length:n},(_,i)=>observed.get(minute-i)).filter(Number.isFinite);
+      const ten=slice(10),five=slice(5);
+      if(ten.length<6||five.length<3)continue;
+      const a10=ten.reduce((a,b)=>a+b,0)/ten.length;
+      const a5=five.reduce((a,b)=>a+b,0)/five.length;
+      const side=a10>8?'HOME':a10< -8?'AWAY':null;
+      if(!side)continue;
+      const s10=Math.min(100,Math.abs(a10)*1.3),s5=Math.min(100,Math.abs(a5)*1.3);
+      const signal=(emoji,name,reason)=>timeSignals.push({
+        minute,emoji,name,reason,label:reason,basis:'graph',team:side});
+      const evidence='10 min '+s10.toFixed(0)+'/100 · 5 min '+s5.toFixed(0)+'/100';
+      if(s10>=75&&s5>=65)signal('🧨','Pressão total',evidence);
+      else if(s10>=75)signal('🔥','Pressão forte',evidence);
+      if(s10>=50&&Math.abs(a10)>=18)signal('⚡','Domínio ofensivo',evidence);
+      if(minute>=70&&s10>=75)signal('⏱️','Pressão após 70',evidence);
+      if(s10<30&&minute%9===0)signal('🥶','Jogo frio',evidence);
+    }
+    const tl=[...timeSignals,...events.map(e=>({minute:e.minute,emoji:e.emoji,team:e.team,name:e.type,basis:'event',label:e.text,reason:e.text}))];
     const pre=makeForecast(g);
     const forecasts=pre?.forecast;
     const probs=forecasts?.one_x_two;
