@@ -55,10 +55,42 @@ class SourcesTests(unittest.TestCase):
         self.assertEqual([(v['day'],v['start_timestamp']) for v in result],
              [('2026-10-09',100),('2026-10-09',300),('2026-10-09',500),('2026-10-08',200)])
 
+    def test_safe_merge_espn_fotmob_preserves_scouts_and_logos(self):
+        base={'day':'2026-10-09','start_timestamp':100000,'source':'ESPN',
+             'sources':['ESPN'],'home':'Instituto (Córdoba)','away':'Boca Juniors',
+             'phase':'scheduled','score':'0-0','home_logo':'https://a.espncdn.com/i/teamlogos/soccer/500/2975.png',
+             'away_logo':'','pressure':[],'stats':{'home':{'shots_on':3},'away':{}},
+             'form':{'home':{'available':10},'away':{'available':10}},
+             'odds':[],'events':[],'signals':[]}
+        extra={'day':'2026-10-09','start_timestamp':100000,'source':'FotMob',
+             'sources':['FotMob'],'home':'Instituto','away':'Boca Juniors',
+             'phase':'scheduled','score':'0-0','home_logo':'',
+             'away_logo':'https://images.fotmob.com/image_resources/logo/teamlogo/8467.png',
+             'pressure':[{'m':5,'v':3}],'stats':{'home':{},'away':{'shots_on':4}},
+             'form':{'home':{'available':0},'away':{'available':0}},
+             'odds':[],'events':[],'signals':[]}
+        result=w.merge_verified_duplicates([extra,base])
+        self.assertEqual(len(result),1)
+        merged=result[0]
+        self.assertEqual(set(merged['sources']),{'FotMob','ESPN'})
+        self.assertEqual(merged['stats']['home']['shots_on'],3)
+        self.assertEqual(merged['stats']['away']['shots_on'],4)
+        self.assertEqual(len(merged['pressure']),1)
+        self.assertEqual(merged['form']['home']['available'],10)
+
+    def test_do_not_merge_same_teams_at_different_kickoffs(self):
+        games=[{'day':'2026-10-09','start_timestamp':100000,'source':'ESPN',
+                 'home':'A','away':'B','phase':'scheduled','score':'0-0'},
+               {'day':'2026-10-09','start_timestamp':105000,'source':'FotMob',
+                 'home':'A','away':'B','phase':'scheduled','score':'0-0'}]
+        self.assertEqual(len(w.merge_verified_duplicates(games)),2)
+
     def test_logos_require_trusted_espn_domain(self):
         good='https://a.espncdn.com/i/teamlogos/soccer/500/12.png'
         self.assertEqual(w.verified_logo(good),good)
         self.assertEqual(w.verified_logo('https://example.net/i/teamlogos/foo.png'),'')
         self.assertEqual(w.verified_logo('https://a.espncdn.com.evil.test/i/teamlogos/a.png'),'')
+        self.assertEqual(w.verified_logo('https://images.fotmob.com/image_resources/logo/teamlogo/8455.png'),
+                         'https://images.fotmob.com/image_resources/logo/teamlogo/8455.png')
 
 if __name__=='__main__':unittest.main()
