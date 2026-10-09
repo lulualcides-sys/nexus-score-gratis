@@ -14,6 +14,7 @@ on:
       - "team_form.py"
       - "fotmob_form.py"
       - "fotmob_detail_backfill.py"
+      - "fotmob_three_days.py"
       - "web/nexus-original-enrich.js"
       - "multi_source.py"
       - "web/index.html"
@@ -44,7 +45,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py multi_source.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py multi_source.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -55,6 +56,10 @@ jobs:
         id: collect
         continue-on-error: true
         run: python3 coletar.py
+      - name: Capturar jogos FotMob dos 3 dias em Brasília
+        id: fotmob_days
+        continue-on-error: true
+        run: python3 fotmob_three_days.py
       - name: Retrocoletar jogos de hoje e dois dias anteriores e scouts ESPN
         id: backfill
         continue-on-error: true
