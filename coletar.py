@@ -250,7 +250,14 @@ def run():
     live=sorted((g for g in games if g['live']),key=lambda g:
         (0 if re.search(r'brasil|brazil|serie a|premier',str(g['league']),re.I) else 1,-g['minute']))
     status['live_found']=len(live)
-    for match in live[:3]:
+    # Completa eventos de jogos recentes que ja tiveram termometro registrado,
+    # mesmo se a partida terminou entre duas coletas horarias.
+    recent_with_pressure=[g for g in games if g.get('phase')=='finished' and
+        (fixtures.get(g['id']) or {}).get('thermometer',{}).get('points') and
+        not (fixtures.get(g['id']) or {}).get('events')]
+    extra=sorted(recent_with_pressure,key=lambda g:g.get('start_timestamp') or 0,reverse=True)[:2]
+    details_to_check=live[:3]+[g for g in extra if g['id'] not in {x['id'] for x in live[:3]}]
+    for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
         try:
