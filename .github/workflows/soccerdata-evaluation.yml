@@ -1,0 +1,33 @@
+name: "NEXUS — teste isolado SoccerData"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "experiments/soccerdata/**"
+      - ".github/workflows/soccerdata-evaluation.yml"
+permissions:
+  contents: read
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Testar compatibilidade local antes de instalar a biblioteca
+        run: |
+          python -m py_compile experiments/soccerdata/probe.py
+          PYTHONPATH=experiments/soccerdata python -m unittest discover -s experiments/soccerdata -p 'test_*.py' -v
+      - name: Instalar SoccerData APENAS neste runner de teste
+        run: python -m pip install --disable-pip-version-check "soccerdata==1.9.1"
+      - name: Consultar ClubElo uma vez e registrar evidências
+        run: python experiments/soccerdata/probe.py --live --output artifacts/soccerdata-probe.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: soccerdata-probe
+          path: artifacts/soccerdata-probe.json
+          retention-days: 7
