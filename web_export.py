@@ -97,6 +97,10 @@ def verified_logo(value):
         parsed=urllib.parse.urlparse(raw)
         if parsed.scheme=='https' and parsed.netloc in ('a.espncdn.com','a1.espncdn.com') and parsed.path.startswith('/i/teamlogos/'):
             return raw
+        if parsed.scheme=='https' and parsed.netloc=='images.fotmob.com':
+            import re
+            if re.fullmatch(r'/image_resources/logo/teamlogo/\d{1,12}\.png',parsed.path):
+                return raw
     except ValueError:
         pass
     return ''
