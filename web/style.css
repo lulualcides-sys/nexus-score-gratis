@@ -99,3 +99,6 @@ display:flex;align-items:center;justify-content:center;background:#0b1a2b;overfl
   .score-block{min-width:58px}
   .score{font-size:23px}
 }
+
+/* provenance */
+.detail-league{line-height:1.6}
