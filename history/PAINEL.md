@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:15:53.466186+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:16:27.817004+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 
@@ -118,7 +118,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 | 2026-10-09 | Stade Nyonnais × Aarau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Xamax × Winterthur | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | SK Beveren × Lommel | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | FC Zlín × Slavia Prague | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | FC Zlín × Slavia Prague | 0-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Hapoel Ironi Akko × Maccabi Bnei Raina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ironi Modiin × Hapoel Afula | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Maccabi Kiryat Gat × Kiryat Yam | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
