@@ -122,11 +122,17 @@ def momentum(detail):
 def stats(detail):
     packet=(((detail.get('content') or {}).get('stats') or {}).get('Periods') or {}).get('All') or {}
     alias={'big chances':'big_chances','shots on target':'shots_on','shots off target':'shots_off',
-           'corner kicks':'corners','dangerous attacks':'dangerous_attacks'}
+           'total shots':'shots_total','shots':'shots_total','total shot':'shots_total',
+           'corner kicks':'corners','corners':'corners','dangerous attacks':'dangerous_attacks',
+           'ball possession':'possession','possession':'possession','expected goals (xg)':'xg',
+           'expected goals':'xg','xg':'xg','fouls':'fouls','fouls committed':'fouls',
+           'yellow cards':'yellow_cards','red cards':'red_cards','offsides':'offsides',
+           'saves':'saves','total passes':'passes','passes':'passes','accurate passes':'accurate_passes'}
     out={'home':{},'away':{}}
     for group in packet.get('stats') or []:
         for item in group.get('stats') or []:
-            key=alias.get(str(item.get('title') or '').lower())
+            title=str(item.get('title') or '').strip().lower()
+            key=alias.get(title)
             values=item.get('stats')
             if key and isinstance(values,list) and len(values)==2:
                 for i,side in enumerate(('home','away')):
