@@ -137,18 +137,28 @@
     }).join('')+'</div>';
   }
   function squads(g){
+    const lineups=g.lineups||{};
     const details=['home','away'].map(side=>{
-      const groups=(g.roster||{})[side]||[];
-      if(!groups.length)return '<article class="md-form-team"><div class="md-team-row">'+
-        logo(g[side+'_logo'],g[side])+'<b>'+esc(g[side])+'</b></div>'+
+      const team=g[side],lineup=lineups[side]||null,groups=(g.roster||{})[side]||[];
+      const heading='<div class="md-team-row">'+logo(g[side+'_logo'],team)+'<b>'+esc(team)+'</b></div>';
+      if(lineup&&(lineup.starters||[]).length){
+        const formation=lineup.formation?' · Formação '+esc(lineup.formation):'';
+        const section=(name,players)=>'<div class="md-roster-section"><h4>'+esc(name)+'</h4>'+
+          players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
+          '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>';
+        return '<article class="md-form-team">'+heading+
+          '<p class="md-muted">Escalação disponível na fonte FotMob'+formation+'.</p>'+
+          section('Titulares',lineup.starters||[])+
+          ((lineup.subs||[]).length?section('Reservas',lineup.subs):'')+'</article>';
+      }
+      if(!groups.length)return '<article class="md-form-team">'+heading+
         noData('Elenco ou escalação não disponível na coleta desta equipe.')+'</article>';
-      return '<article class="md-form-team"><div class="md-team-row">'+
-        logo(g[side+'_logo'],g[side])+'<b>'+esc(g[side])+'</b></div>'+
+      return '<article class="md-form-team">'+heading+
         groups.map(group=>'<div class="md-roster-section"><h4>'+esc(group.section)+'</h4>'+
           (group.players||[]).map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>').join('')+'</article>';
     });
-    return '<div class="md-note">Elenco geral fornecido pelo FotMob. Não significa escalação titular confirmada para esta partida.</div>'+
+    return '<div class="md-note">Escalação quando fornecida pelo FotMob; caso contrário, elenco geral do clube. Plantel não significa escalação titular confirmada.</div>'+
       '<div class="md-form-grid">'+details.join('')+'</div>';
   }
   function projections(g){
