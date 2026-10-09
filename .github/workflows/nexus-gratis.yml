@@ -17,6 +17,8 @@ on:
       - "fotmob_detail_backfill.py"
       - "fotmob_three_days.py"
       - "web/nexus-original-enrich.js"
+      - "web/nexus-web-polish.js"
+      - "web/nexus-web-polish.css"
       - "multi_source.py"
       - "web/index.html"
       - "web/app.js"
@@ -51,6 +53,8 @@ jobs:
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-original-enrich.js
+          node --check web/nexus-web-polish.js
+          node tests/test_nexus_web_polish.mjs
           node tests/test_web_detail.mjs
           node tests/test_original_enrich.mjs
       - name: Coletar partidas públicas e pressão
