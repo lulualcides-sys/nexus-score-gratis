@@ -211,11 +211,22 @@
     $('#paper-settled').textContent=String(total);
     $('#paper-pending').textContent=String(summary.pending||0);
     const markets=Array.isArray(summary.markets)?summary.markets:[];
-    $('#paper-market-lines').innerHTML=markets.length?markets.map(m=>
+    const unit=n=>n!=null&&Number.isFinite(Number(n))?
+      (Number(n)>0?'+':'')+Number(n).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'u':'—';
+    const have=total>0 && summary.profit_u!=null && summary.loss_u!=null;
+    const earned=have?unit(summary.profit_u):'—';
+    const lost=have?'-'+Math.abs(Number(summary.loss_u)).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})+'u':'—';
+    const summaryHTML='<div class="paper-market"><strong>LUCRO BRUTO · PAPER</strong><b class="pl-positive">'+earned+
+      '</b></div><div class="paper-market"><strong>PERDAS · PAPER</strong><b class="pl-negative">'+lost+
+      '</b></div><div class="paper-market"><strong>SALDO LÍQUIDO · PAPER</strong><b>'+unit(summary.paper_pl_u)+'</b></div>';
+    $('#paper-market-lines').innerHTML=summaryHTML+
+      (markets.length?markets.map(m=>
        '<div class="paper-market"><strong>'+esc(m.market==='1x2'?'Match Odds 1X2':m.market)+'</strong>'+
-       '<span>'+esc(m.entries)+' operações · '+esc(m.wins)+' acertos</span><b>'+
-       (Number(m.paper_pl_u)>=0?'+':'')+esc(Number(m.paper_pl_u).toFixed(2))+'u</b></div>').join(''):
-       '<p class="small-note">Ainda não existem entradas experimentais liquidadas com odds pré-jogo verificadas. Sem lucro ou prejuízo mensurável.</p>';
+       '<span>'+esc(m.entries)+' entradas · '+esc(m.wins)+' ganhos · '+esc(m.losses||0)+' perdas'+
+       ' · bruto '+unit(m.profit_u)+' / perdas -'+Math.abs(Number(m.loss_u||0)).toFixed(2)+'u</span><b>'+
+       unit(m.paper_pl_u)+'</b></div>').join(''):
+       '<p class="small-note">Lucro e perdas indisponíveis: nenhuma entrada prévia com odd e resultado liquidado. Não substituir ausência por zero.</p>');
+
   }
   function formHTML(g){
     const forms=g.form||{}, colors={V:'win',E:'draw',D:'loss'};
