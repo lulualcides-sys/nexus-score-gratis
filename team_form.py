@@ -141,7 +141,7 @@ def main():
     status={'checked_at':NOW.isoformat(),'days':days,'teams':len(tasks),
        'fetched':0,'games_with_form':0,'complete_team_samples':0,'errors':[]}
     with ThreadPoolExecutor(max_workers=12) as pool:
-        future={pool.submit(cached_schedule,league,tid,cache):(league,tid)
+        future={pool.submit(cached_schedule,league+'/'+tid,league,tid,cache):(league,tid)
                 for league,tid in tasks}
         for done in as_completed(future):
             league,tid=future[done]
