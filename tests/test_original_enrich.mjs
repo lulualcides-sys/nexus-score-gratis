@@ -13,7 +13,8 @@ const fixture={id:'fotmob-5',home:'Casa',away:'Fora',phase:'finished',
     away:{available:10,avg_goals_for:1.3,avg_goals_against:1.2,games:[]}},
   stats:{home:{shots_on:7,big_chances:2,corners:9},away:{shots_on:2,big_chances:1,corners:3}},
   odds:[]};
-const mockBridge={data:async()=>({games:[fixture]})};
+let games=[fixture];
+const mockBridge={data:async()=>({games})};
 const base={...fixture,stats:fixture.stats,scout_pressure:{available:true}};
 const callbacks=[];
 const mockWindow={
@@ -73,4 +74,27 @@ assert.ok(Array.isArray(cloud.signal_journal.items));
 assert.equal(cloud.platform_snapshot,null);
 assert.equal(cloud.audit.trades_verified,0);
 assert.ok(!JSON.stringify(cloud).includes('netPl'));
+// Regressão do print ao vivo: preços capturados no pré-jogo não podiam
+// chegar aos 3 quadrinhos porque addProjection descartava prelive.odds.
+const gimnasia={...fixture,id:'fotmob-1000019569',
+  home:'Gimnasia LP',away:'Atlético Tucumán',phase:'live',
+  start_timestamp:1791579600,
+  odds:[{sel:'home',odd:1.909,source:'ESPN',bookmaker:'DraftKings',at:'2026-10-09T20:34:51+00:00'},
+        {sel:'draw',odd:3.4,source:'ESPN',bookmaker:'DraftKings',at:'2026-10-09T20:34:51+00:00'},
+        {sel:'away',odd:4.1,source:'ESPN',bookmaker:'DraftKings',at:'2026-10-09T20:34:51+00:00'}]};
+games=[gimnasia];
+const liveResponse=await (await mockWindow.fetch('/api/match/fotmob-1000019569')).json();
+assert.equal(liveResponse.odds.markets['1x2'].home,1.909);
+assert.equal(liveResponse.odds.markets['1x2'].draw,3.4);
+assert.equal(liveResponse.odds.markets['1x2'].away,4.1);
+assert.equal(liveResponse.odds.phase,'pregame');
+assert.equal(liveResponse.odds.bookmaker,'DraftKings');
+const noOdds={...gimnasia,odds:[]};games=[noOdds];
+const missing=await (await mockWindow.fetch('/api/match/fotmob-1000019569')).json();
+assert.equal(missing.odds.available,false);
+// Cotação que entrou DEPOIS do kickoff jamais vira pré-jogo.
+games=[{...gimnasia,odds:gimnasia.odds.map(x=>({...x,at:'2026-10-09T22:34:51+00:00'}))}];
+const late=await (await mockWindow.fetch('/api/match/fotmob-1000019569')).json();
+assert.equal(late.odds.available,false);
+games=[fixture];
 console.log('NEXUS 5.29 bridge: projeções originais, pressão, EV seguro e timeline OK');
