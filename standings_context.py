@@ -251,13 +251,17 @@ def run():
             f=row.get('fixture') or {}
             lid=str(f.get('league_id') or '')
             table=cache.get(lid)
-            if not table:continue
-            try:
-                measured=datetime.fromisoformat(str(table['updated_at']).replace('Z','+00:00'))
-                if (NOW-measured).total_seconds()>6*3600:continue
-            except (KeyError,TypeError,ValueError):continue
-            context=make_context(f,table)
-            if not context:continue
+            context=None
+            if table:
+                try:
+                    measured=datetime.fromisoformat(str(table['updated_at']).replace('Z','+00:00'))
+                    if 0<=(NOW-measured).total_seconds()<=6*3600:
+                        context=make_context(f,table)
+                except (KeyError,TypeError,ValueError):pass
+            if not context:
+                # Não continuar publicando uma classificação antiga como atual.
+                row.pop('standings_context',None)
+                continue
             if row.get('standings_context')!=context:
                 row['standings_context']=context
             report['fixtures_enriched']+=1
