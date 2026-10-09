@@ -119,7 +119,7 @@
     box.innerHTML=items.length?items.map((a,i)=>
       '<button type="button" class="alert-item" data-alert="'+i+'">'+
       '<b>'+esc(a.title)+'</b><small>'+esc(a.detail)+'</small>'+
-      '<span>'+date(a.observed_at)+' · '+(a.kind==='ev_experimental'?'EV EXPERIMENTAL':'MONITORAMENTO ESTATÍSTICO')+
+      '<span>'+date(a.observed_at)+' · '+(a.kind==='ev_experimental'?'EV EXPERIMENTAL':a.kind==='odds_watch'?'ODDS MONITORADAS (SEM EV)':'MONITORAMENTO ESTATÍSTICO')+
       '</span></button>').join(''):
       '<p class="small-note">Nenhum alerta validado por enquanto. Sem probabilidade calibrada não existe EV+ demonstrado. Alertas de scouts não são recomendações de entrada.</p>';
     box.querySelectorAll('[data-alert]').forEach(el=>el.addEventListener('click',()=>{
@@ -127,6 +127,16 @@
       const match=state.games.find(g=>g.id===alert.match_id&&g.day===alert.day);
       if(match)openMatch(match);
     }));
+  }
+  function drawHistory(payload){
+    const box=$('#history-market-summary');if(!box)return;
+    const doc=payload.market_history||{},rows=Array.isArray(doc.markets)?doc.markets:[];
+    const count=Number(doc.matches)||0;
+    $('#history-market-count').textContent=count+' jogos encerrados';
+    box.innerHTML=rows.length?rows.map(r=>
+      '<div class="history-market"><b>'+esc(r.market)+'</b><span>'+esc(r.occurred)+'/'+
+      esc(r.matches)+'</span><strong>'+esc(r.rate_pct)+'%</strong></div>').join(''):
+      '<p class="small-note">Aguardando jogos encerrados nos três dias anteriores.</p>';
   }
   function drawPaper(payload){
     const summary=payload.paper||{};
@@ -196,7 +206,7 @@
       const picker=$('#day');const before=picker.value;
       picker.replaceChildren(new Option('Todos os dias','all'),...days.map(d=>new Option(d.split('-').reverse().join('/'),d)));
       picker.value=days.includes(before)?before:'all';state.day=picker.value;
-      drawAlerts(obj);drawPaper(obj);
+      drawAlerts(obj);drawPaper(obj);drawHistory(obj);
       $('#last-updated').textContent=date(obj.exported_at);
       $('#last-source').textContent='Fonte: '+((obj.collector?.sources||[]).join(', ') || 'não confirmada');
       $('#metric-games').textContent=state.games.length;
