@@ -57,3 +57,17 @@ border:1px solid #294658;background:#091e30;border-radius:9px;padding:13px}
 .implied-grid>div{border:1px solid #325266;border-radius:7px;background:#0e2134;padding:11px}
 .implied-grid small{font-size:10px;color:#90b0be;display:block}
 .implied-grid b{font-size:18px;color:#6dd6e6}
+
+/* Historico real por equipe, 10 partidas anteriores ao confronto */
+.team-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.team-form{background:#0d2436;border:1px solid #27445c;border-radius:10px;padding:13px;min-width:0}
+.team-form h4{margin:0;font-size:13px;color:#d7ecf4}
+.form-match{display:flex;align-items:center;gap:8px;border-bottom:1px solid #284055;padding:8px 0;font-size:11px}
+.form-result{display:grid;place-items:center;border-radius:5px;width:25px;min-width:25px;height:25px;background:#33445d;color:#e2e8f1;font-weight:800}
+.form-result.win{background:#125b46;color:#a6f9d8}
+.form-result.draw{background:#5c5324;color:#f3e8b0}
+.form-result.loss{background:#583144;color:#ffc1d0}
+.form-opponent{flex:1;overflow-wrap:anywhere}
+.form-opponent small{display:block;color:#82a1b5;margin-top:3px}
+.form-match strong{font-size:12px;color:#dceefa;white-space:nowrap}
+@media(max-width:720px){.team-form-grid{grid-template-columns:1fr}}
