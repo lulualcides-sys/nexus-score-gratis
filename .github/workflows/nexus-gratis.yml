@@ -11,6 +11,7 @@ on:
       - "report_github.py"
       - "odds_capture.py"
       - "pregame_refresh.py"
+      - "sofascore_odds.py"
       - "web_export.py"
       - "backfill.py"
       - "team_form.py"
@@ -49,7 +50,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py pregame_refresh.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py multi_source.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py multi_source.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
