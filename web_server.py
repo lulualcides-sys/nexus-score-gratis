@@ -139,11 +139,6 @@ class App(BaseHTTPRequestHandler):
             try:return self.send(200,(ROOT/'web'/filename).read_bytes(),allowed[filename])
             except OSError:return self.send(404,b'Dados indisponiveis')
         return self.send(404,b'Nao encontrado')
-            asset=ROOT/'web'/filename
-            kinds={'style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','pc.js':'application/javascript; charset=utf-8','data.json':'application/json; charset=utf-8'}
-            try:return self.send(200,asset.read_bytes(),kinds[filename])
-            except OSError:return self.send(404,b'Dados indisponiveis')
-        return self.send(404,b'Nao encontrado')
     def do_POST(self):
         if urlsplit(self.path).path!='/login':return self.send(405,b'Nao permitido')
         try:
