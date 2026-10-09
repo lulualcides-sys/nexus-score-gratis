@@ -201,6 +201,8 @@ def merge_verified_duplicates(rows):
             matched['pressure']=item['pressure']
         if len(item.get('head_to_head') or [])>len(matched.get('head_to_head') or []):
             matched['head_to_head']=item['head_to_head']
+        if not matched.get('standings') and item.get('standings'):
+            matched['standings']=item['standings']
         for side in ('home','away'):
             if (item.get('lineups') or {}).get(side) and not (matched.get('lineups') or {}).get(side):
                 matched.setdefault('lineups',{})[side]=item['lineups'][side]
@@ -317,6 +319,22 @@ def public_row(row,day,team_cache=None):
     rosters=row.get('team_roster') or {}
     lineups=public_lineups(row.get('lineups') or {})
     h2h=historical_h2h(row,team_cache)
+    context=row.get('standings_context') or {}
+    ranking=None
+    if isinstance(context,dict) and isinstance(context.get('home'),dict) and isinstance(context.get('away'),dict):
+        def compact_rank(x):
+            data=context.get(x) or {}
+            reasons=[{'kind':safe(t.get('kind'),35),'label':safe(t.get('label'),60),
+                      'detail':safe(t.get('detail'),190)}
+                     for t in (data.get('reasons') or [])[:3] if isinstance(t,dict)]
+            return {'position':data.get('position'),'points':data.get('points'),
+                    'played':data.get('played'),'total_teams':data.get('total_teams'),
+                    'level':safe(data.get('level'),24),'reasons':reasons}
+        ranking={'home':compact_rank('home'),'away':compact_rank('away'),
+                 'source':'FotMob','league':safe(context.get('league'),80),
+                 'season':safe(context.get('season'),25),
+                 'updated_at':safe(context.get('updated_at'),42),
+                 'note':'Urgência situacional, não obrigação matemática de vencer.'}
     sources=list(dict.fromkeys([safe(f.get('source'),45)]+
         [safe(x,45) for x in (row.get('sources') or [])]))[:6]
     closing=[]
@@ -336,7 +354,7 @@ def public_row(row,day,team_cache=None):
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
             'observed_at':safe(f.get('collected_at'),36),
-            'pressure':points,'stats':stats,'head_to_head':h2h,
+            'pressure':points,'stats':stats,'head_to_head':h2h,'standings':ranking,
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'odds':odds[:5],
