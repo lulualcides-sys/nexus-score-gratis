@@ -48,7 +48,8 @@ def score_outcomes(score,phase):
 
 def pregame_signal(item,fixture):
     if not isinstance(item,dict) or item.get('market')!='1x2':return None
-    start=number(fixture.get('start_timestamp'))
+    try:start=int(fixture.get('start_timestamp'))
+    except (TypeError,ValueError,OverflowError):return None
     odds=number(item.get('odds'))
     prob=number(item.get('probability'))
     ev=number(item.get('ev_pct'))
