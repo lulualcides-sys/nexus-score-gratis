@@ -81,13 +81,24 @@ def public_form(doc):
                       'result':g['result'],'gf':int(gf),'ga':int(ga)})
     n=len(games)
     base={'requested':10,'available':n,'complete':n==10,
-          'source':'ESPN · mesma competicao','games':games}
+          'source':safe(doc.get('source') or 'ESPN · mesma competição',70),'games':games}
     if not n:return base
     for name in ('wins','draws','losses','goals_for','goals_against',
                  'avg_goals_for','avg_goals_against','over15_pct','over25_pct','btts_pct'):
         val=number(doc.get(name))
         if val is not None:base[name]=val
     return base
+
+def public_roster(groups):
+    if not isinstance(groups,list):return []
+    rows=[]
+    for group in groups[:8]:
+        if not isinstance(group,dict):continue
+        players=[{'name':safe(p.get('name'),80),'number':safe(p.get('number'),4)}
+                 for p in (group.get('players') or [])[:24]
+                 if isinstance(p,dict) and p.get('name')]
+        if players:rows.append({'section':safe(group.get('section'),45),'players':players})
+    return rows
 
 def verified_logo(value):
     """Imagens de clubes somente no CDN da ESPN, sem URL arbitraria."""
@@ -170,6 +181,9 @@ def merge_verified_duplicates(rows):
             rform=(item.get('form') or {}).get(side) or {}
             if rform.get('available',0)>mform.get('available',0):
                 matched['form'][side]=rform
+            mroster=(matched.get('roster') or {}).get(side) or []
+            eroster=(item.get('roster') or {}).get(side) or []
+            if len(eroster)>len(mroster):matched.setdefault('roster',{})[side]=eroster
         for key in ('odds','closing_odds','events','signals'):
             original=matched.get(key) or []
             extra=item.get(key) or []
@@ -225,6 +239,7 @@ def public_row(row,day):
         q=pregame_signal(item,f)
         if q:signals.append(q)
     forms=row.get('team_form') or {}
+    rosters=row.get('team_roster') or {}
     sources=list(dict.fromkeys([safe(f.get('source'),45)]+
         [safe(x,45) for x in (row.get('sources') or [])]))[:6]
     closing=[]
@@ -244,7 +259,8 @@ def public_row(row,day):
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
             'observed_at':safe(f.get('collected_at'),36),
-            'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},'odds':odds[:5],
+            'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},
+            'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},'odds':odds[:5],
             'events':events[:130],'signals':signals[:20],
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
@@ -343,11 +359,13 @@ def main():
     backfill=load(H/'backfill_status.json')
     team_form=load(H/'team_form_status.json')
     external=load(H/'multi_source_status.json')
+    fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
              'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
+             'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'alerts':alerts_from(rows),'games':rows}
