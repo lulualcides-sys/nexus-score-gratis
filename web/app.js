@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const $ = sel => document.querySelector(sel);
-  const state = { payload:null, games:[], search:"", phase:"all", market:"all" };
+  const state = { payload:null, games:[], search:"", phase:"all", market:"all", isPrivate:false };
   const ESC = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c=>ESC[c]);
   const date = value => {
@@ -13,19 +13,39 @@
   const some = (game,stat) => ['home','away'].some(side => game.stats?.[side]?.[stat] != null);
   const hasOdds = game => Array.isArray(game.odds) && game.odds.length;
   const pressure = game => Array.isArray(game.pressure) ? game.pressure : [];
+  // O servidor privado usa nomes de campos distintos do snapshot publico.
+  // Normalizar evita exibir valores vazios apesar de haver dados reais.
+  const normalizePrivate = raw => ({
+    exported_at: raw.collection?.updated_at || null,
+    collector: raw.collection || {},
+    games: (raw.games || []).map(g => ({
+      ...g,
+      observed_at: g.last_seen || null,
+      pressure: (Array.isArray(g.pressure) ? g.pressure : []).map(p => ({
+        m: Number(p.m ?? p.minute), v: Number(p.v ?? p.value)
+      })).filter(p => Number.isFinite(p.m) && Number.isFinite(p.v)),
+      odds: (Array.isArray(g.odds) ? g.odds : []).filter(q => q.market === '1x2' || q.sel).map(q => ({
+        sel: q.sel || q.selection, odd: q.odd ?? q.odds,
+        source: q.source || q.bookmaker, at: q.at || q.captured_at
+      })),
+      signals: Array.isArray(g.signals) ? g.signals : []
+    }))
+  });
   const phaseLabel = g => g.phase==='live' ? ('● AO VIVO'+(g.minute ? ' · '+esc(g.minute)+"′":'')) : g.phase==='finished'?'ENCERRADO':'PRÉ-JOGO';
   const escTitle = game => esc(game.home) + ' × ' + esc(game.away);
   const filterMarket = game => state.market==='all' ||
        (state.market==='shots' && some(game,'shots_on')) ||
        (state.market==='corners' && some(game,'corners')) ||
        (state.market==='pressure' && pressure(game).length>0) ||
-       (state.market==='odds' && hasOdds(game));
+       (state.market==='odds' && hasOdds(game)) ||
+       (state.market==='ev' && state.isPrivate && Array.isArray(game.signals) && game.signals.length>0);
   function card(g,index) {
     const tags=[
       pressure(g).length ? '<span class="tag good">▥ Pressão '+pressure(g).length+' min</span>' : '<span class="tag">Sem termômetro</span>',
       some(g,'shots_on')?'<span class="tag good">● Chutes</span>':'',
       some(g,'corners')?'<span class="tag good">⌁ Escanteios</span>':'',
-      hasOdds(g)?'<span class="tag good">1X2 Odds</span>':''
+      hasOdds(g)?'<span class="tag good">1X2 Odds</span>':'',
+      state.isPrivate && g.signals?.length?'<span class="tag good">EV experimental '+g.signals.length+'</span>':''
     ].filter(Boolean).join('');
     return '<article class="match-card"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+'</span>'+
       '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+'</span></div>'+
@@ -62,6 +82,11 @@
     if(!g)return;
     const oddLabels={home:'CASA',draw:'EMPATE',away:'FORA'};
     const odds=(g.odds||[]).map(v=>'<div class="odd-pill">'+esc(oddLabels[v.sel]||v.sel)+'<b>'+esc(v.odd)+'</b><small>'+esc(v.source||'Fonte')+' · '+date(v.at)+'</small></div>').join('');
+    const signals = state.isPrivate ? (g.signals||[]).filter(s=>Number.isFinite(Number(s.ev_pct)) && Number.isFinite(Number(s.odds))) : [];
+    const signalRows = signals.map(s => '<div class="scout"><strong>'+esc(oddLabels[s.selection]||s.selection||'—')+'</strong><span>'+
+      'EV estimado '+esc(s.ev_pct)+'% · p='+esc(s.probability)+'% · odd '+esc(s.odds)+'<br>'+
+      esc(s.model||'Modelo experimental')+' · n='+esc(s.sample_size??'?')+' · '+esc(s.status||'pendente')+
+      '</span><strong>'+((s.status==='settled')?(s.won?'ACERTOU':'ERROU'):'PENDENTE')+'</strong></div>').join('');
     $('#detail-content').innerHTML='<div class="detail-league">'+esc(g.league||'')+' · '+esc(g.source||'')+'</div>'+
      '<div class="detail-score">'+escTitle(g)+' &nbsp; '+esc(g.score||'—')+'</div>'+
      '<p class="small-note">'+phaseLabel(g)+' · Última observação: '+date(g.observed_at)+' · '+esc(g.day||'')+'</p>'+
@@ -69,16 +94,30 @@
      '<h3 class="detail-title">◉ Estatísticas confirmadas</h3>'+scouts(g)+
      '<h3 class="detail-title">◇ Odds 1X2 verificadas</h3>'+
      (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 disponível para esta partida.</p>')+
-     '<h3 class="detail-title">Mercados possíveis de acompanhar</h3><p class="small-note">Over/Under, BTTS, Match Odds e Lay Correct Score dependem de odds reais e critérios de entrada. Este painel não gera apostas, lucros, probabilidades nem sinais EV+ automaticamente.</p>';
+     '<h3 class="detail-title">EV+ · modelo experimental (área privada)</h3>'+
+     (state.isPrivate ? (signalRows?'<div class="scout-table">'+signalRows+'</div>':'<p class="small-note">Nenhum sinal EV+ calculado com probabilidade historica e odd verificadas neste jogo.</p>'):'<p class="small-note">Resultados EV+ privados não são divulgados no site público.</p>')+
+     '<h3 class="detail-title">Mercados possíveis de acompanhar</h3><p class="small-note">Over/Under, BTTS, Match Odds e Lay Correct Score requerem odds reais e critérios específicos. EV calculado não é lucro realizado, e um sinal experimental não valida lucratividade.</p>';
     $('#detail').showModal();
   }
   async function load() {
     $('#message').textContent='Consultando último arquivo da nuvem...';
     $('#message').className='notice';
     try {
-      const resp=await fetch('./data.json?ts='+Date.now(),{cache:'no-store'});
-      if(!resp.ok)throw Error('Dados ainda não publicados ('+resp.status+').');
-      const obj=await resp.json();
+      // Tenta o servidor privado primeiro; Cloudflare Pages serve apenas o JSON publico.
+      let resp=null, obj=null;
+      try {
+        resp=await fetch('/api/dashboard',{cache:'no-store',credentials:'same-origin'});
+        if(resp.ok) {
+          obj=normalizePrivate(await resp.json());
+          state.isPrivate=true;
+        }
+      } catch(_) { /* modo estatico, sem servidor privado */ }
+      if(!obj) {
+        state.isPrivate=false;
+        resp=await fetch('./data.json?ts='+Date.now(),{cache:'no-store'});
+        if(!resp.ok)throw Error('Dados ainda não publicados ('+resp.status+').');
+        obj=await resp.json();
+      }
       if(!obj || !Array.isArray(obj.games))throw Error('Formato inválido do arquivo.');
       state.payload=obj;
       state.games=obj.games.filter(x=>x&&typeof x.home==='string'&&typeof x.away==='string');
@@ -88,12 +127,12 @@
       $('#metric-live').textContent=state.games.filter(x=>x.phase==='live').length;
       $('#metric-pressure').textContent=state.games.filter(x=>pressure(x).length>0).length;
       $('#metric-odds').textContent=state.games.filter(hasOdds).length;
-      const age=Date.now()-new Date(obj.exported_at).getTime();
-      if(age>4*3600000){
+      const age=obj.exported_at ? Date.now()-new Date(obj.exported_at).getTime() : Infinity;
+      if(!Number.isFinite(age) || age>4*3600000){
         $('#message').textContent='Atenção: dados com mais de 4 horas. Última exportação: '+date(obj.exported_at)+'. Não utilize para operações ao vivo.';
         $('#message').className='notice warn';
       } else {
-        $('#message').textContent='Dados esportivos públicos. Coleta periódica (não são cotações ao vivo). '+(state.games.length===0?'Ainda não há jogos no arquivo.':'Última exportação: '+date(obj.exported_at)+'.');
+        $('#message').textContent=(state.isPrivate?'Servidor privado autenticado. ':'Dados esportivos públicos. ')+'Coleta periódica (não são cotações ao vivo). '+(state.games.length===0?'Ainda não há jogos no arquivo.':'Última coleta: '+date(obj.exported_at)+'.');
         $('#message').className='notice ok';
       }
       render();
@@ -133,6 +172,7 @@
     const bolsa=all.bolsa||{};
     const rows=Array.isArray(bolsa.markets)?bolsa.markets:[];
     if(!rows.length)throw new Error('histórico ainda não disponível');
+    document.getElementById('bolsa-private').hidden=false;
     box.textContent=String(bolsa.operations||0).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+
       ' operações reais | P/L total: '+money(bolsa.net_pl);
     const d=new Date(bolsa.observed_at);
@@ -140,7 +180,7 @@
     const t=document.createElement('table');
     t.style.cssText='width:100%;border-collapse:collapse;min-width:400px;font-size:13px';
     const head=document.createElement('tr');
-    for(const name of ['Mercado','Operações','P/L líquido']){
+    for(const name of ['Mercado','Operações','P/L líquido','Média/op.']){
       const th=document.createElement('th');
       th.textContent=name;th.style.cssText='text-align:left;color:#8ea5c3;padding:11px;border-bottom:1px solid #34465c';
       head.append(th);
@@ -148,7 +188,8 @@
     t.append(head);
     for(const row of rows){
       const tr=document.createElement('tr');
-      for(const val of [names[row.market]||row.market||'—',String(row.operations||0),money(row.net_pl)]){
+      for(const val of [names[row.market]||row.market||'—',String(row.operations||0),money(row.net_pl),
+        Number(row.operations)>0?money(Number(row.net_pl)/Number(row.operations)):'—']){
         const td=document.createElement('td');
         td.textContent=val;td.style.cssText='padding:10px;border-bottom:1px solid #34465c';
         if(val===money(row.net_pl))td.style.color=Number(row.net_pl)>=0?'#26d2a5':'#ff7f9a';
@@ -157,5 +198,5 @@
       t.append(tr);
     }
     table.replaceChildren(t);
-  } catch(e){box.textContent='P/L privado indisponível: '+String(e.message||e);table.replaceChildren()}
+  } catch(e){document.getElementById('bolsa-private').hidden=true;table.replaceChildren()}
 })();
