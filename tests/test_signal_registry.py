@@ -37,6 +37,17 @@ class SignalRegistryTests(unittest.TestCase):
         self.assertEqual(active_signals(self.game(35,phase='finished'),self.data(),'t'),[])
         self.assertFalse(any(e['icon']=='🚨' for e in active_signals(
             self.game(),self.data(stat={'away':{'shots_on':3}}),'t')))
+    def test_old_live_duplicate_does_not_trigger_after_newer_finished_snapshot(self):
+        finished={'fixture':self.game(0,'2-1','finished'),'stats':{}}
+        outdated={'fixture':self.game(45,'0-0','live'),
+          'stats':{'home':{'shots_on':9,'corners':8,'big_chances':5}}}
+        result=update({
+            '2026-10-09':{'matches':{'today':finished}},
+            '2026-10-08':{'matches':{'yesterday':outdated}}
+        },{},'2026-10-09T19:00:00Z')
+        self.assertEqual(result['items'],[])
+        self.assertEqual(result['diagnostics']['matches_live'],0)
+
     def test_diagnostic_distinguishes_missing_pressure_from_zero_signals(self):
         live={'fixture':self.game(),**self.data()}
         frozen={'fixture':{**self.game(80),'id':'fotmob-56'},**self.data()}

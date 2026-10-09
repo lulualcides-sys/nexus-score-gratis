@@ -229,18 +229,20 @@ def update(docs,previous=None,observed_at=None):
             fixture=row.get('fixture') or {}
             if not isinstance(fixture,dict):continue
             fid=str(fixture.get('id') or key)
-            if not fid:continue
-            current.setdefault(fid,(fixture,row))
-            for new in active_signals(fixture,row,when):
-                if any(e.get('match_id')==fid and e.get('rule')==new['rule']
-                       and e.get('team')==new['team']
-                       and (new.get('basis')=='cumulative_stat_snapshot' or
-                            abs(int(e.get('minute') or 0)-new['minute'])<COOLDOWN)
-                       for e in entries):continue
-                keytext='|'.join((fid,new['team'],new['rule'],str(new['minute'])))
-                new['id']=hashlib.sha256(keytext.encode()).hexdigest()[:20]
-                if new['id'] in ids:continue
-                ids.add(new['id']);entries.append(new)
+            if fid:current.setdefault(fid,(fixture,row))
+    # Um jogo duplicado em um arquivo antigo nunca pode disparar um
+    # "novo" alerta quando o registro mais recente ja esta encerrado.
+    for fid,(fixture,row) in current.items():
+        for new in active_signals(fixture,row,when):
+            if any(e.get('match_id')==fid and e.get('rule')==new['rule']
+                   and e.get('team')==new['team']
+                   and (new.get('basis')=='cumulative_stat_snapshot' or
+                        abs(int(e.get('minute') or 0)-new['minute'])<COOLDOWN)
+                   for e in entries):continue
+            keytext='|'.join((fid,new['team'],new['rule'],str(new['minute'])))
+            new['id']=hashlib.sha256(keytext.encode()).hexdigest()[:20]
+            if new['id'] in ids:continue
+            ids.add(new['id']);entries.append(new)
     for entry in entries:
         if entry.get('match_id') in current:
             fixture,row=current[entry['match_id']]
