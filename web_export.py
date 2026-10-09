@@ -104,7 +104,11 @@ def public_lineups(lineups):
         if starters or subs:
             output[side]={'formation':safe(group.get('formation'),25),
                           'starters':starters,'subs':subs,'source':'FotMob',
-                          'lineup_type':safe(group.get('lineup_type'),25)}
+                          'lineup_type':safe(group.get('lineup_type'),25),
+                          'status':'confirmed' if group.get('status')=='confirmed' or
+                              str(group.get('lineup_type') or '').lower() in ('standard','confirmed','official','actual','starting')
+                              else 'predicted',
+                          'updated_at':safe(group.get('updated_at'),40)}
     return output
 
 def public_roster(groups):
