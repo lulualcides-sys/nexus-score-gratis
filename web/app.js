@@ -233,6 +233,7 @@
   }
   function openMatch(g) {
     if(!g)return;
+    if(window.NexusMatchDetail?.show(g))return;
     const oddLabels={home:'CASA',draw:'EMPATE',away:'FORA'};
     const odds=(g.odds||[]).map(v=>'<div class="odd-pill">'+esc(oddLabels[v.sel]||v.sel)+'<b>'+esc(v.odd)+'</b><small>'+esc(v.source||'Fonte')+' · '+date(v.at)+'</small></div>').join('');
     const trio=['home','draw','away'].map(sel=>(g.odds||[]).find(o=>o.sel===sel));
