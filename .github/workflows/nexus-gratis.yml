@@ -8,6 +8,7 @@ on:
     paths:
       - "coletar.py"
       - "report_github.py"
+      - "odds_capture.py"
       - ".github/workflows/nexus-gratis.yml"
 permissions:
   contents: write
@@ -17,7 +18,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 4
     steps:
       - name: Obter código e histórico
         uses: actions/checkout@v4
@@ -29,6 +30,11 @@ jobs:
         id: collect
         continue-on-error: true
         run: python3 coletar.py
+      - name: Capturar odds pré-jogo e liquidar previsões congeladas
+        id: odds
+        if: always()
+        continue-on-error: true
+        run: python3 odds_capture.py
       - name: Atualizar painel dos mercados monitorados
         if: always()
         run: python3 report_github.py
