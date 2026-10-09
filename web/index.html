@@ -40,6 +40,11 @@
         <p class="small-note">Alertas dependem de scouts ou de modelos com dados suficientes; coleta horária, não minuto a minuto.</p>
       </article>
     </section>
+    <section class="work-panel" id="historical-markets">
+      <div class="toolbar-top"><h2>◎ Resultados históricos por mercado <small id="history-market-count">Carregando...</small></h2></div>
+      <div id="history-market-summary" class="history-grid"></div>
+      <p class="small-note">Percentuais de ocorrência nas partidas encerradas dos últimos 3 dias. Não representam taxa de acerto de bot, lucro, rentabilidade nem EV+.</p>
+    </section>
     <section class="toolbar">
       <div class="toolbar-top"><h2>Jogos monitorados <small id="shown-count"></small></h2><div class="toolbar-actions"><button type="button" id="refresh">↻ Atualizar</button><a target="_blank" rel="noopener noreferrer" href="https://github.com/lulualcides-sys/nexus-score-gratis/blob/main/history/bolsa_netpl.json">↗ P/L privado da Bolsa</a></div></div>
       <div class="filters"><select id="day" aria-label="Selecionar dia"><option value="all">Todos os dias</option></select><input id="search" aria-label="Buscar time ou campeonato" placeholder="⌕ Buscar time ou campeonato..." autocomplete="off"><select id="phase" aria-label="Filtro de partidas"><option value="all">Todas as partidas</option><option value="live">Ao vivo</option><option value="scheduled">Próximas</option><option value="finished">Encerradas</option></select><select id="market" aria-label="Filtro de mercado"><option value="all">Todos os mercados</option><option value="shots">Com finalizações</option><option value="corners">Com escanteios</option><option value="pressure">Com termômetro</option><option value="odds">Com odds verificadas</option><option value="ev">Com EV experimental</option><option value="events">Com eventos reais</option></select></div>
