@@ -734,6 +734,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-web-polish.css">
 <link rel="stylesheet" href="./nexus-iara.css">
 <link rel="stylesheet" href="./nexus-unit-pl.css">
+<link rel="stylesheet" href="./nexus-signal-evaluation.css">
 </head>
 <body>
 <div class="shell">
@@ -803,6 +804,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
+        <section class="nexus-evaluation" id="cloud-signal-evaluation" aria-label="Avaliação histórica dos sinais por equipe, liga, minuto e evolução da amostra"></section>
         <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
         <div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
@@ -2853,6 +2855,7 @@ function renderCloud(){
  renderCloudAudit(cloudData.audit);
  renderPlatformSnapshot(cloudData.platform_snapshot);
  renderCloudSignalJournal(cloudData.signal_journal);
+ window.NexusSignalEvaluation?.render(cloudData.signal_evaluation,cloudData.signal_journal);
  const withPressure=rows.filter(g=>g.thermometer?.samples>0).length;
  const withOdds=rows.filter(g=>g.odds_available===true).length;
  const hist=cloudData.historical_xg||{};
@@ -2900,5 +2903,6 @@ init();
 <script src="./nexus-web-polish.js"></script>
 <script src="./nexus-iara.js"></script>
 <script src="./nexus-unit-pl.js"></script>
+<script src="./nexus-signal-evaluation.js"></script>
 </body>
 </html>
