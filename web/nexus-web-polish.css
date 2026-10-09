@@ -95,3 +95,36 @@ html,body{max-width:100%;overflow-x:hidden}
  .nexus-h2h-row{grid-template-columns:51px 1fr auto;padding:9px 7px;gap:5px;font-size:10px}
  .nexus-h2h-row b{font-size:11px}
 }
+
+/* Escalações pré-jogo: confirmação visível, titulares e banco separados */
+.nexus-lineups .lineup-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.nexus-lineups .lineup-side{border:1px solid #d9d3c9;border-radius:12px;
+  background:#fffefa;min-width:0;padding:14px}
+.nexus-lineups .lineup-side h3{font-size:15px;display:flex;align-items:center;
+  justify-content:space-between;gap:7px;flex-wrap:wrap;color:#20394e;line-height:1.4}
+.nexus-lineup-status{font-size:9px;line-height:1.4;letter-spacing:.6px;
+  text-transform:uppercase;border-radius:99px;padding:5px 8px;white-space:nowrap}
+.nexus-lineup-status.official{background:#d7f6e6;border:1px solid #83c49e;color:#15603f}
+.nexus-lineup-status.pending{background:#fff1db;border:1px solid #ddb989;color:#795526}
+.nexus-lineup-section{font-size:11px;font-weight:800;color:#486b7c;letter-spacing:1px;
+  margin:17px 0 6px;border-bottom:1px solid #e2dbd2;padding-bottom:7px}
+.nexus-lineups .lineup-player{display:flex;gap:9px;align-items:center;
+  padding:8px 4px;border-bottom:1px solid #ece4db;font-size:12px;color:#244258}
+.nexus-lineups .lineup-player b{min-width:29px;border:1px solid #cbd5d5;border-radius:6px;
+  text-align:center;padding:5px;background:#edf4f4;color:#295063}
+.nexus-lineups .lineup-player span{overflow-wrap:anywhere}
+.prelive-versus .team-odds-strip,.pressure-scoreboard-odds{
+  border:1px solid #d2c8ba;border-radius:11px;background:#fff8e8;
+  color:#384958;padding:8px 10px;text-align:center;min-width:61px}
+.prelive-versus .team-odds-strip strong,.pressure-scoreboard-odds b{
+  color:#243d53!important;font-weight:900!important;font-size:19px!important;
+  font-variant-numeric:tabular-nums}
+.prelive-versus .team-odds-strip span,.pressure-scoreboard-odds span{
+  color:#a2603d;font-size:11px;font-weight:850}
+@media(max-width:700px){
+ .nexus-lineups .lineup-grid{grid-template-columns:1fr}
+ .nexus-lineups .lineup-side{padding:11px}
+ .prelive-versus .team-odds-strip{padding:6px 7px;min-width:45px}
+ .prelive-versus .team-odds-strip strong,.pressure-scoreboard-odds b{
+  font-size:17px!important}
+}
