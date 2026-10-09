@@ -228,42 +228,82 @@ def merge_verified_duplicates(rows):
             matched[key]=original
     return output
 
-def historical_h2h(row, cache):
-    """Confrontos diretos verificaveis anteriores ao jogo a partir do cache FotMob.
-    Identidades precisam coincidir e o horario da partida deve ser anterior ao duelo.
+def historical_h2h(row, cache, espn_cache=None):
+    """Confrontos entre as duas equipes a partir de FotMob e ESPN já coletados.
+
+    Não trata forma individual como H2H, não mistura IDs de provedores e
+    não aceita confrontos futuros ou duplicados.
     """
     fixture=row.get('fixture') or {}
     cutoff=kickoff_number(fixture.get('start_timestamp'))
     if not cutoff:return []
-    if not isinstance(cache,dict):return []
+    cache=cache if isinstance(cache,dict) else {}
+    espn_cache=espn_cache if isinstance(espn_cache,dict) else {}
     found={}
+    canonical={compact_name(fixture.get('home')),compact_name(fixture.get('away'))}
+    if len(canonical)!=2 or '' in canonical:return []
+
+    def insert(ts,home,away,hg,ag,competition,source):
+        ts=kickoff_number(ts)
+        if ts is None or ts>=cutoff or ts>datetime.now(timezone.utc).timestamp():return
+        if not all(isinstance(n,int) and 0<=n<=50 for n in (hg,ag)):return
+        home_name,away_name=compact_name(home),compact_name(away)
+        if {home_name,away_name}!=canonical:return
+        # O placar é orientado por nome para não duplicar partidas com mandos inversos.
+        lo=min(canonical)
+        key=(datetime.fromtimestamp(ts,timezone.utc).date().isoformat(),
+             tuple(sorted(canonical)),hg if home_name==lo else ag,
+             ag if home_name==lo else hg)
+        item={'date':datetime.fromtimestamp(ts,timezone.utc).date().isoformat(),
+              'at':ts,'home':safe(home,105),'away':safe(away,105),
+              'score':str(hg)+'-'+str(ag),'competition':safe(competition,70),
+              'source':safe(source,40)}
+        if key not in found or (source=='FotMob' and found[key]['source']!='FotMob'):
+            found[key]=item
+
     for side in ('home','away'):
         team_id=str(fixture.get(side+'_id') or '')
         opponent=fixture.get('away' if side=='home' else 'home') or ''
         entry=cache.get(team_id) or {}
         for prev in (entry.get('games') or []):
-            if not isinstance(prev,dict):continue
-            ts=kickoff_number(prev.get('ts'))
-            if ts is None or ts>=cutoff:continue
-            if compact_name(prev.get('opponent'))!=compact_name(opponent):continue
+            if not isinstance(prev,dict) or compact_name(prev.get('opponent'))!=compact_name(opponent):continue
             venue=prev.get('venue')
             if venue not in ('Casa','Fora'):continue
-            try:
-                gf=int(prev.get('gf'));ga=int(prev.get('ga'))
-                if not (0<=gf<=50 and 0<=ga<=50):continue
+            try:gf=int(prev.get('gf'));ga=int(prev.get('ga'))
             except (ValueError,TypeError):continue
             home=fixture.get(side) if venue=='Casa' else opponent
             away=opponent if venue=='Casa' else fixture.get(side)
             hg,ag=(gf,ga) if venue=='Casa' else (ga,gf)
-            item={'date':str(prev.get('day') or '')[:10],
-                  'at':ts,'home':safe(home,105),'away':safe(away,105),
-                  'score':str(hg)+'-'+str(ag),
-                  'competition':safe(prev.get('league') or fixture.get('league'),70),
-                  'source':'FotMob'}
-            found[(ts,compact_name(home),compact_name(away),hg,ag)]=item
-    return sorted(found.values(),key=lambda x:x['at'],reverse=True)[:15]
+            insert(prev.get('ts'),home,away,hg,ag,
+                   prev.get('league') or fixture.get('league'),'FotMob')
 
-def public_row(row,day,team_cache=None):
+    league=str(fixture.get('league_code') or '')
+    home_id=str(fixture.get('home_id') or '')
+    away_id=str(fixture.get('away_id') or '')
+    # ESPN e FotMob possuem IDs de time diferentes. Só usar o calendário
+    # ESPN quando o jogo ATUAL também for uma fixture ESPN.
+    if (str(fixture.get('id') or '').startswith('espn-') and
+            league and home_id.isdigit() and away_id.isdigit()):
+        all_schedules=espn_cache.get('schedules') or {}
+        for tid in (home_id,away_id):
+            entry=all_schedules.get(league+'/'+tid) or {}
+            for old in (entry.get('games') or []):
+                if not isinstance(old,dict) or old.get('phase')!='finished':continue
+                if {str(old.get('home_id') or ''),str(old.get('away_id') or '')}!={home_id,away_id}:continue
+                m=re.fullmatch(r'(\d{1,2})-(\d{1,2})',str(old.get('score') or ''))
+                if m:
+                    insert(old.get('start_timestamp'),old.get('home'),old.get('away'),
+                           int(m.group(1)),int(m.group(2)),old.get('league') or league,'ESPN')
+
+    for prev in (row.get('h2h_verified') or []):
+        if not isinstance(prev,dict):continue
+        m=re.fullmatch(r'(\d{1,2})-(\d{1,2})',str(prev.get('score') or ''))
+        if m:
+            insert(prev.get('at'),prev.get('home'),prev.get('away'),
+                   int(m.group(1)),int(m.group(2)),prev.get('competition'),prev.get('source') or 'FotMob')
+    return sorted(found.values(),key=lambda x:x['at'],reverse=True)[:20]
+
+def public_row(row,day,team_cache=None,espn_cache=None):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
     if not isinstance(f,dict) or not f.get('home') or not f.get('away'):return None
@@ -318,7 +358,7 @@ def public_row(row,day,team_cache=None):
     forms=row.get('team_form') or {}
     rosters=row.get('team_roster') or {}
     lineups=public_lineups(row.get('lineups') or {})
-    h2h=historical_h2h(row,team_cache)
+    h2h=historical_h2h(row,team_cache,espn_cache)
     context=row.get('standings_context') or {}
     ranking=None
     if isinstance(context,dict) and isinstance(context.get('home'),dict) and isinstance(context.get('away'),dict):
@@ -451,6 +491,7 @@ def main():
     today=datetime.now(BR).date()
     days={(today-timedelta(days=i)).isoformat() for i in range(3)}
     rows=[]
+    espn_cache=load(H/'team_schedule_cache.json')
     fotmob_cache=(load(H/'fotmob_team_cache.json').get('teams') or {})
     if not isinstance(fotmob_cache,dict):fotmob_cache={}
     for path in sorted(H.glob('20??-??-??.json'),reverse=True):
@@ -465,7 +506,7 @@ def main():
             # a data do apito inicial no horario de Brasilia.
             local_day=datetime.fromtimestamp(stamp,BR).date().isoformat() if stamp else path.stem
             if local_day not in days:continue
-            item=public_row(row,local_day,fotmob_cache)
+            item=public_row(row,local_day,fotmob_cache,espn_cache)
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.

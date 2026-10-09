@@ -17,6 +17,50 @@ class EnrichedHistoryTests(unittest.TestCase):
         self.assertEqual(matches[1]['home'],'Coritiba')
         self.assertEqual(matches[1]['score'],'1-1')
 
+
+    def test_espn_schedule_cache_produces_real_h2h_without_duplicates(self):
+        target=1800000000
+        row={'fixture':{'id':'espn-arg.1-55','home':'Gimnasia LP',
+                'away':'Atlético Tucumán','home_id':'113','away_id':'422',
+                'league_code':'arg.1','start_timestamp':target}}
+        old={'id':'espn-arg.1-18','home':'Gimnasia LP','away':'Atlético Tucumán',
+             'home_id':'113','away_id':'422','league':'arg.1',
+             'phase':'finished','score':'2-1','start_timestamp':target-900000}
+        cache={'schedules':{'arg.1/113':{'games':[old]},
+                            'arg.1/422':{'games':[old]}}}
+        records=historical_h2h(row,{},cache)
+        self.assertEqual(len(records),1)
+        self.assertEqual(records[0]['score'],'2-1')
+        self.assertEqual(records[0]['source'],'ESPN')
+
+    def test_no_h2h_from_wrong_team_id_or_future_fixture(self):
+        target=1800000000
+        row={'fixture':{'id':'espn-arg.1-55','home':'Gimnasia LP',
+                'away':'Atlético Tucumán','home_id':'113','away_id':'422',
+                'league_code':'arg.1','start_timestamp':target}}
+        wrong={'id':'espn-arg.1-20','home':'Gimnasia LP','away':'Atlético Tucumán',
+               'home_id':'113','away_id':'999','phase':'finished',
+               'score':'1-0','start_timestamp':target-500000}
+        future={'id':'espn-arg.1-21','home':'Gimnasia LP','away':'Atlético Tucumán',
+               'home_id':'113','away_id':'422','phase':'finished',
+               'score':'1-0','start_timestamp':target+900000}
+        self.assertEqual(historical_h2h(row,{}, {'schedules':{'arg.1/113':{
+            'games':[wrong,future]}}}),[])
+
+    def test_espn_and_fotmob_h2h_same_result_only_once(self):
+        target=1800000000
+        row={'fixture':{'id':'espn-arg.1-55','home':'Gimnasia LP',
+                'away':'Atlético Tucumán','home_id':'113','away_id':'422',
+                'league_code':'arg.1','start_timestamp':target},
+             'h2h_verified':[{'home':'Atlético Tucumán','away':'Gimnasia LP',
+                 'score':'0-1','at':target-900000,'source':'FotMob'}]}
+        old={'id':'espn-arg.1-18','home':'Atlético Tucumán','away':'Gimnasia LP',
+             'home_id':'422','away_id':'113','league':'arg.1',
+             'phase':'finished','score':'0-1','start_timestamp':target-900000}
+        records=historical_h2h(row,{}, {'schedules':{'arg.1/113':{'games':[old]}}})
+        self.assertEqual(len(records),1)
+        self.assertEqual(records[0]['source'],'FotMob')
+
     def test_fotmob_badge_preferred_when_merging_equivalent_matches(self):
         base={'day':'2026-10-08','source':'ESPN','sources':['ESPN'],
               'home':'Fluminense','away':'Coritiba','start_timestamp':1791505800,
