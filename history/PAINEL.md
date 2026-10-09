@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:13:45.496416+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:14:40.139580+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 56 | Chutes no alvo: 5.0×0.0, Chutes para fora: 6.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 57 | Chutes no alvo: 5.0×0.0, Chutes para fora: 6.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
@@ -174,7 +174,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T22:14:00.103756+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (57') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:13:32.994039+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (57') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-09T22:12:23.132440+00:00 | Delfín × Mushuc Runa | Delfín (77') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (54') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Delfín × Mushuc Runa | Mushuc Runa (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
