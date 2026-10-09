@@ -113,6 +113,14 @@ class App(BaseHTTPRequestHandler):
         if path=='/' or path=='/index.html':
             try:return self.send(200,(ROOT/'web'/'index.html').read_bytes(),'text/html; charset=utf-8')
             except OSError:return self.send(500,b'Interface indisponivel')
+        if path in ('/style.css','/app.js','/data.json','/web/app.js','/web/style.css'):
+            filename=path.rsplit('/',1)[-1]
+            if filename not in ('style.css','app.js','data.json'):
+                return self.send(404,b'Nao encontrado')
+            asset=ROOT/'web'/filename
+            kinds={'style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','data.json':'application/json; charset=utf-8'}
+            try:return self.send(200,asset.read_bytes(),kinds[filename])
+            except OSError:return self.send(404,b'Dados indisponiveis')
         return self.send(404,b'Nao encontrado')
     def do_POST(self):
         if urlsplit(self.path).path!='/login':return self.send(405,b'Nao permitido')
