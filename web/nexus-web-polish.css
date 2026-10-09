@@ -228,3 +228,34 @@ html,body{max-width:100%;overflow-x:hidden}
   .cloud-audit-stats b{font-size:16px!important}
   .cloud-audit-head h3{font-size:16px}
 }
+
+
+/* NEXUS 5.32 - 90 minutos completos em tres segmentos legiveis no celular.
+ * Nada de rolagem horizontal, barras inventadas ou SVG distorcido. */
+#section-thermometer .mobile-timeline{background:#faf7f0!important}
+#section-thermometer .mobile-legend{display:flex;justify-content:space-between;flex-wrap:wrap;
+  gap:7px;color:#273f4f;font-size:11px;font-weight:700;margin:8px 2px}
+#section-thermometer .mobile-periods{display:grid;gap:10px}
+#section-thermometer .mobile-period{padding:7px 6px 3px;border:1px solid #ddd5c9;
+  border-radius:10px;background:#fffdfa;overflow:hidden;min-width:0}
+#section-thermometer .mobile-period>header{display:flex;align-items:center;
+  justify-content:space-between;gap:8px;margin:0 5px 5px;color:#344d5d}
+#section-thermometer .mobile-period>header strong{font-size:13px}
+#section-thermometer .mobile-period>header small{color:#71808a;font-size:10px}
+#section-thermometer .mobile-pressure-svg{width:100%;height:auto;
+  display:block;min-height:0;aspect-ratio:334/148}
+#section-thermometer .mobile-bar.home{fill:#777f82;opacity:.95}
+#section-thermometer .mobile-bar.away{fill:#bb2f3b;opacity:.94}
+#section-thermometer .mobile-missing{fill:#a9b1b5;opacity:.6}
+#section-thermometer .mobile-event{cursor:help}
+#section-thermometer .mobile-markers{display:flex;flex-wrap:wrap;gap:5px;
+  padding:1px 2px 7px}
+#section-thermometer .mobile-marker{border:1px solid #a2bdc1;background:#e6f3ef;
+  color:#21535b;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;
+  cursor:pointer}
+#section-thermometer .mobile-marker.away{background:#fae9ed;color:#922a38;
+  border-color:#d9aab4}
+@media(max-width:800px){
+ #section-thermometer .mobile-timeline .scout-compact-caption{
+   text-align:left!important;font-size:11px!important}
+}
