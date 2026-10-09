@@ -270,7 +270,7 @@ def main():
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
-             'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds')},
+             'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'alerts':alerts_from(rows),'games':rows}
