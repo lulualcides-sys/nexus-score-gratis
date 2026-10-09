@@ -14,7 +14,7 @@ class SignalRegistryTests(unittest.TestCase):
     def test_three_existing_pressure_rules_run_with_away_team(self):
         signals=active_signals(self.game(),self.data(),'2026-10-09T10:30:00Z')
         self.assertEqual([s['rule'] for s in signals],
-            ['pressao_forte_10min','pressao_total_5_10min','alerta_cruzado_gol'])
+            ['pressao_forte_10min','pressao_total_5_10min','pressao_ofensiva_18','alerta_cruzado_gol'])
         self.assertTrue(all(s['team']=='away' and s['ev_pct'] is None for s in signals))
     def test_cumulative_indicators_work_without_pressure_but_without_fake_minute(self):
         row={'stats':{'home':{'shots_on':6,'corners':7,'big_chances':3,
@@ -63,8 +63,8 @@ class SignalRegistryTests(unittest.TestCase):
         docs={'2026-10-09':{'matches':{'fotmob-55':match}}}
         first=update(docs,{},'2026-10-09T11:00:00Z')
         second=update(docs,first,'2026-10-09T11:10:00Z')
-        self.assertEqual(len(first['items']),3)
-        self.assertEqual(len(second['items']),3)
+        self.assertEqual(len(first['items']),4)
+        self.assertEqual(len(second['items']),4)
     def test_goal_is_confirmed_only_with_correct_time(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         row=self.data(events=[{'type':'goal','minute':39,'side':'away'}])
