@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:33:09.886748+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:53:50.276789+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
@@ -10,8 +10,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 0-0 | 0 | Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
-| 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
+| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
+| 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 1-1 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
 | 2026-10-09 | Aldosivi × Sarmiento (Junín) | 1-3 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
 | 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
 | 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,10, Fora 2,85 |
@@ -35,8 +35,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-09 | Phrae United × Kanchanaburi Power | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 76 | Chutes no alvo: 5.0×1.0, Chutes para fora: 9.0×0.0, Escanteios: 9.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Instituto × Boca Juniors | 1-0 | 18 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 1-1 | 90 | Chutes no alvo: 5.0×2.0, Chutes para fora: 12.0×1.0, Escanteios: 10.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
@@ -168,17 +168,17 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 178 | **Jogos distintos:** 60 | **Resultados verificáveis:** 80 | **Com gol:** 20 | **Sem gol:** 60 | **Taxa observada:** 25.0%.
-**Evolução da amostra:** 1 datas com coletas | 2 pendentes | 23 indeterminados | 73 incompletos.
+**Observações:** 180 | **Jogos distintos:** 61 | **Resultados verificáveis:** 81 | **Com gol:** 21 | **Sem gol:** 60 | **Taxa observada:** 25.9%.
+**Evolução da amostra:** 1 datas com coletas | 2 pendentes | 24 indeterminados | 73 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 27 | 19 | 7 | 12 | 36.8% |
+| 🥶 jogo_frio | 29 | 19 | 7 | 12 | 36.8% |
 | 🎯 chutes_no_alvo_5 | 31 | 13 | 4 | 9 | 30.8% |
-| ⚡ pressao_ofensiva_18 | 23 | 11 | 1 | 10 | 9.1% |
+| ⚡ pressao_ofensiva_18 | 23 | 12 | 2 | 10 | 16.7% |
 | 🟥 expulsao_confirmada | 22 | 10 | 1 | 9 | 10.0% |
 | 💣 grandes_chances_3 | 19 | 8 | 3 | 5 | 37.5% |
 | 🚩 escanteios_6 | 34 | 7 | 2 | 5 | 28.6% |
@@ -197,12 +197,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Real Tomayapo | 5 | 4 | 0 | 4 | 0.0% |
 | Málaga | 7 | 3 | 0 | 3 | 0.0% |
 | Al Nassr FC | 6 | 3 | 3 | 0 | 100.0% |
-| Equipe não definida | 5 | 3 | 2 | 1 | 66.7% |
+| Equipe não definida | 6 | 3 | 2 | 1 | 66.7% |
 | Montpellier | 5 | 3 | 0 | 3 | 0.0% |
 | GKS Katowice | 4 | 3 | 3 | 0 | 100.0% |
+| Gimnasia LP | 4 | 3 | 1 | 2 | 33.3% |
 | Lommel | 3 | 3 | 3 | 0 | 100.0% |
 | SK Beveren | 3 | 3 | 2 | 1 | 66.7% |
-| Gimnasia LP | 4 | 2 | 0 | 2 | 0.0% |
 | Al-Gharraf | 3 | 2 | 0 | 2 | 0.0% |
 | Boulogne | 3 | 2 | 1 | 1 | 50.0% |
 | Lens | 3 | 2 | 1 | 1 | 50.0% |
@@ -225,9 +225,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
 | First Division B | 9 | 6 | 0 | 6 | 0.0% |
 | Belgian Pro League | 6 | 6 | 5 | 1 | 83.3% |
+| Liga Profesional | 8 | 5 | 1 | 4 | 20.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
-| Liga Profesional | 6 | 4 | 0 | 4 | 0.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
 | Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
@@ -252,24 +252,26 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 14 | 10 | 3 | 7 | 30.0% |
+| 16–30′ | 16 | 10 | 3 | 7 | 30.0% |
 | 31–45′ | 9 | 9 | 5 | 4 | 55.6% |
 | 46–60′ | 29 | 27 | 7 | 20 | 25.9% |
 | 61–75′ | 37 | 24 | 3 | 21 | 12.5% |
-| 76–90′ | 63 | 8 | 1 | 7 | 12.5% |
+| 76–90′ | 63 | 9 | 2 | 7 | 22.2% |
 | 91+′ | 24 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 178 | **Jogos monitorados:** 362 | **Ao vivo:** 3 | **Termômetros recentes:** 1.
+**Registros:** 180 | **Jogos monitorados:** 362 | **Ao vivo:** 3 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T22:33:19.619107+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (77') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-09T22:29:22.961246+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-09T22:54:03.722977+00:00 | Instituto × Boca Juniors | Boca Juniors (19') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:52:08.235818+00:00 | Instituto × Boca Juniors | Equipe não definida (17') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:33:19.619107+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (77') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-09T22:29:22.961246+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-09T22:13:32.994039+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (57') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T22:12:23.132440+00:00 | Delfín × Mushuc Runa | Delfín (77') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (54') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T19:42:52.759997+00:00 | Union Brescia × Pro Vercelli | Union Brescia (55') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T19:28:51.520149+00:00 | San Antonio Bulo Bulo × Real Tomayapo | Real Tomayapo (29') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T19:28:51.520149+00:00 | Málaga × Espanyol | Málaga (28') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T19:23:44.372988+00:00 | PSV Eindhoven × SC Heerenveen | SC Heerenveen (63') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T19:23:44.372988+00:00 | Montpellier × Grenoble | Montpellier (64') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
