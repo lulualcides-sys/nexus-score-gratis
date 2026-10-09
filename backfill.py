@@ -42,6 +42,14 @@ def teams_from_comp(comp):
     home=next((t for t in pairs if t.get('homeAway')=='home'),{})
     away=next((t for t in pairs if t.get('homeAway')=='away'),{})
     return home,away
+def official_logo(team):
+    """Aceita apenas logotipo explicitamente fornecido pela ESPN."""
+    for item in (team.get('logos') or []):
+        url=item.get('href') if isinstance(item,dict) else ''
+        if isinstance(url,str) and url.startswith(('https://a.espncdn.com/','https://a1.espncdn.com/')):
+            return url[:300]
+    return ''
+
 def parse_fixture(event,league):
     comp=(event.get('competitions') or [{}])[0]
     h,a=teams_from_comp(comp)
@@ -66,7 +74,9 @@ def parse_fixture(event,league):
         'collected_at':NOW.isoformat(),'venue':str(stadium)[:120],
         'round':str(rank or '')[:80],
         'home_id':str((h.get('team') or {}).get('id') or ''),
-        'away_id':str((a.get('team') or {}).get('id') or '')
+        'away_id':str((a.get('team') or {}).get('id') or ''),
+        'home_logo':official_logo(h.get('team') or {}),
+        'away_logo':official_logo(a.get('team') or {})
     }
 def scoreboard(league,day):
     url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+league+'/scoreboard?'+urlencode({'dates':day.replace('-',''),'limit':100})
