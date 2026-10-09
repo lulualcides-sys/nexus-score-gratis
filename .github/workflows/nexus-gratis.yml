@@ -11,6 +11,7 @@ on:
       - "odds_capture.py"
       - "web_export.py"
       - "backfill.py"
+      - "team_form.py"
       - "web/index.html"
       - "web/app.js"
       - "web/style.css"
@@ -37,16 +38,20 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py
           python3 -m unittest discover -s tests -v
       - name: Coletar partidas públicas e pressão
         id: collect
         continue-on-error: true
         run: python3 coletar.py
-      - name: Retrocoletar tres dias de jogos e scouts da ESPN
+      - name: Retrocoletar jogos de hoje e dois dias anteriores e scouts ESPN
         id: backfill
         continue-on-error: true
         run: python3 backfill.py
+      - name: Coletar historico dos dez jogos anteriores por equipe
+        id: team_form
+        continue-on-error: true
+        run: python3 team_form.py
       - name: Capturar odds pré-jogo e liquidar previsões congeladas
         id: odds
         if: always()
