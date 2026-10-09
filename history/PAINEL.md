@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:40:12.287955+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:40:37.081733+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **64**.
 
@@ -37,7 +37,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **64**.
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Aldosivi × Sarmiento | 0-0 | 8 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Aldosivi × Sarmiento | 0-0 | 9 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 7.0×2.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×0.0 |
