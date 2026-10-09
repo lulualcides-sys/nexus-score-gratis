@@ -63,6 +63,48 @@ function favourite(d){
  if(ratio<1.20)return null;
  return {side:home<away?'home':'away', source:pre?.source||d?.odds?.source||'odds pré-jogo'};
 }
+function standingsMotivation(d){
+ const ctx=d?.standings||d?.prelive?.standings;
+ if(!ctx||ctx.source!=='FotMob'||!ctx.home||!ctx.away)return {available:false,list:[],evidence:[]};
+ const list=[],evidence=[];
+ for(const side of ['home','away']){
+   const item=ctx[side],club=name(d,side);
+   const rank=num(item?.position),points=num(item?.points),played=num(item?.played);
+   if(rank===null||points===null||played===null||played<3)continue;
+   evidence.push(club+': '+rank+'º, '+points+' pts');
+   for(const r of (Array.isArray(item?.reasons)?item.reasons:[]).slice(0,2)){
+     if(!r?.kind||!r?.detail)continue;
+     list.push({team:club,side,kind:String(r.kind),label:String(r.label||'Disputa por posições'),
+      detail:String(r.detail),level:item.level==='alta'?'ALTA':'MODERADA'});
+   }
+ }
+ return {available:evidence.length===2,list:list.slice(0,4),evidence,
+  source:ctx.source,updated_at:ctx.updated_at,
+  note:'Must Win situacional; a posição atual não torna a vitória matematicamente obrigatória.'};
+}
+function experimentalValue(d){
+ const p=d?.prelive||{};
+ const f=p?.forecast?.one_x_two||{};
+ const prices=p?.odds?.markets?.['1x2']||{};
+ const when=Date.parse(String(p?.odds?.fetched_at||''));
+ const cutoff=num(d?.start_timestamp);
+ const samples=p?.sample||{};
+ if(!cutoff||!Number.isFinite(when)||when>cutoff*1000||
+    !['home','draw','away'].every(k=>num(prices[k])!==null&&num(prices[k])>1.01)||
+    num(samples.home?.n)<5||num(samples.away?.n)<5)return null;
+ const records=[];
+ for(const side of ['home','draw','away']){
+   const prob=num(f[side]),odd=num(prices[side]);
+   if(prob===null||prob<=0||prob>=100||!odd||odd>1000)continue;
+   const ev=((prob/100)*odd-1)*100;
+   if(Number.isFinite(ev))records.push({side,odds:odd,prob,ev});
+ }
+ const best=records.sort((a,b)=>b.ev-a.ev)[0];
+ if(!best)return null;
+ return {...best,positive:best.ev>0,
+   label:best.side==='draw'?'Empate':name(d,best.side),
+   source:p?.odds?.source||'fonte pública',experimental:true};
+}
 function verifiedEvents(d,min,max){
  const ev=d?.incidents||[];
  if(!Array.isArray(ev))return [];
@@ -90,9 +132,12 @@ function evaluate(d){
  const previous5=windowPressure(obs,Math.max(0,minute-5),5);
  const current=!stale?(w10.valid?w10:w5.valid?w5:null):null;
  const stats=readingOfStats(d),score=details(d),fav=favourite(d);
+ const motivation=standingsMotivation(d),value=experimentalValue(d);
  const indicators=Array.isArray(d?.indicator_board)?d.indicator_board.filter(x=>x&&x.state==='active'):[];
  const names={home:teamHome,away:teamAway};
  const tags=[];
+ if(motivation.list.length)tags.push('MUST WIN · CONTEXTO DE TABELA');
+ if(value?.positive)tags.push('EV+ TEÓRICO · NÃO VALIDADO');
  const evidence=stats.evidence.slice(0,3);
  const confidence=current?.valid&&w10.valid&&stats.evidence.length>=2?'MÚLTIPLOS DADOS':
    current?.valid?'PRESSÃO MEDIDA':stats.evidence.length?'SCOUTS ACUMULADOS':'SEM DADOS RECENTES';
@@ -144,6 +189,11 @@ function evaluate(d){
      }
    }
  }
+ if(motivation.list.length){
+   const first=motivation.list[0];
+   context+=' Na classificação, '+first.team+' está na disputa para '+first.label.toLowerCase()+
+      '. Isso aumenta o peso esportivo do resultado, mas não prova que precisa vencer matematicamente.';
+ }
  if(stats.reds&&(stats.reds[0]||stats.reds[1])){
    if(stats.reds[0]>stats.reds[1])context+=' O mandante tem mais expulsões, o que pode alterar a dinâmica.';
    else if(stats.reds[1]>stats.reds[0])context+=' O visitante tem mais expulsões, o que pode alterar a dinâmica.';
@@ -183,12 +233,15 @@ function evaluate(d){
  }
  if(fav&&score)evidence.push('Favorito pré-jogo: '+names[fav.side]+' (odds verificadas)');
  if(indicators.length)evidence.push('Indicadores ativos: '+indicators.slice(0,2).map(x=>String(x.emoji||x.name||'')).join(' '));
+ if(motivation.available)evidence.push('Tabela FotMob: '+motivation.evidence.join(' · '));
  const method='Leitura por regras sobre dados públicos; coleta periódica, não transmissão segundo a segundo. Pressão não é probabilidade de gol nem EV+.';
  const commentary=(intro+context).trim();
  return {active:true,heading:'IARA · Visão ao vivo',minute,intro:commentary,next,
    tags:[...new Set(tags)].slice(0,3),confidence,
    evidence:evidence.slice(0,5),method,observedThrough:last,stale,
-   fingerprint:[minute,last,score?.home,score?.away,current?.dominant,current?.strength,stats.evidence.join('/'),indicators.length].join('|')};
+   motivation,value,
+   fingerprint:[minute,last,score?.home,score?.away,current?.dominant,current?.strength,
+      stats.evidence.join('/'),indicators.length,motivation.evidence.join('/'),value?.ev].join('|')};
 }
 function render(d){
  const v=evaluate(d);
@@ -198,6 +251,16 @@ function render(d){
  const tagHTML=v.tags.map(x=>'<span class="iara-pill">'+safe(x)+'</span>').join('');
  const facts=v.evidence.length?
    '<div class="iara-evidence">'+v.evidence.map(x=>'<span>'+safe(x)+'</span>').join('')+'</div>':'';
+ const mustWin=v.motivation?.list?.length?'<div class="iara-context"><b>🏆 MUST WIN · situação na tabela</b>'+
+  v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
+  safe(r.detail)+'</p>').join('')+
+  '<small>Urgência esportiva situacional, não obrigação matemática.</small></div>':
+  '<div class="iara-context muted"><b>🏆 Must Win</b><p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento.</p></div>';
+ const odds=v.value;
+ const evCard=odds?'<div class="iara-ev"><b>📈 EV teórico · Match Odds</b><p>'+
+   safe(odds.label)+' · odd '+odds.odds.toFixed(2)+' · modelo '+odds.prob.toFixed(1)+'% · EV '+
+   (odds.ev>0?'+':'')+odds.ev.toFixed(1)+'%</p><small>Modelo Poisson experimental não calibrado. Não é EV+ comprovado nem lucro real.</small></div>':
+   '<div class="iara-ev muted"><b>📈 EV+</b><p>Indisponível sem odds pré-jogo verificadas e probabilidade de modelo com amostra mínima.</p></div>';
  return '<section class="iara-card" aria-label="IARA análise do jogo ao vivo" data-iara-fingerprint="'+safe(v.fingerprint)+'">'+
    '<header class="iara-header"><div><span class="iara-bot">◈ IARA</span>'+
    '<h3>Análise do jogo ao vivo</h3><small>'+safe(v.minute)+'′ · '+safe(v.confidence)+safe(age)+'</small></div>'+
@@ -205,7 +268,7 @@ function render(d){
    '<div class="iara-body"><div class="iara-tags">'+tagHTML+'</div>'+
    '<p class="iara-comment">'+safe(v.intro)+'</p>'+
    '<div class="iara-goal"><strong>⚽ Pode sair mais um gol?</strong><p>'+safe(v.next)+'</p></div>'+
-   facts+'<p class="iara-footnote">'+safe(v.method)+'</p></div></section>';
+   mustWin+evCard+facts+'<p class="iara-footnote">'+safe(v.method)+'</p></div></section>';
 }
-window.NexusIara={render,evaluate,windowPressure,points};
+window.NexusIara={render,evaluate,windowPressure,points,standingsMotivation,experimentalValue};
 })();
