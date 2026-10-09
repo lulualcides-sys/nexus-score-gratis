@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T11:47:14.838432+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T11:48:57.989495+00:00**.
 
 Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 
@@ -19,6 +19,29 @@ Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 | 2026-10-09 | Málaga × Espanyol | 0-0 | 0 | Match Odds 1X2: Casa 2,90, Empate 3,15, Fora 2,60 |
 | 2026-10-09 | Lens × Lyon | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 3,70, Fora 2,60 |
 | 2026-10-09 | Borussia Dortmund × Werder Bremen | 0-0 | 0 | Match Odds 1X2: Casa 1,34, Empate 5,25, Fora 7,00 |
+| 2026-10-08 | Fluminense × Coritiba | 4-0 | 0 | Chutes no alvo: 10.0×0.0 |
+| 2026-10-08 | Santos × Flamengo | 2-2 | 0 | Chutes no alvo: 4.0×6.0 |
+| 2026-10-08 | Palmeiras × Bahia | 1-0 | 0 | Chutes no alvo: 11.0×1.0 |
+| 2026-10-08 | Athletico-PR × Atlético-MG | 2-2 | 0 | Chutes no alvo: 10.0×9.0 |
+| 2026-10-08 | Ceará × Criciúma | 1-0 | 0 | Chutes no alvo: 3.0×1.0 |
+| 2026-10-08 | Náutico × Novorizontino | 0-2 | 0 | Chutes no alvo: 1.0×5.0 |
+| 2026-10-08 | Atlético Nacional × Deportes Tolima | 0-0 | 0 | Chutes no alvo: 6.0×8.0 |
+| 2026-10-08 | Fortaleza CEIF × Millonarios | 1-1 | 0 | Chutes no alvo: 3.0×5.0 |
+| 2026-10-07 | Cruzeiro × São Paulo | 2-0 | 0 | Chutes no alvo: 9.0×3.0 |
+| 2026-10-07 | Vitória × Chapecoense | 4-0 | 0 | Chutes no alvo: 8.0×4.0 |
+| 2026-10-07 | Remo × Grêmio | 1-1 | 0 | Chutes no alvo: 9.0×5.0 |
+| 2026-10-07 | Red Bull Bragantino × Mirassol | 1-1 | 0 | Chutes no alvo: 9.0×2.0 |
+| 2026-10-07 | Internacional × Corinthians | 2-1 | 0 | Chutes no alvo: 7.0×7.0 |
+| 2026-10-07 | Botafogo × Vasco da Gama | 1-2 | 0 | Chutes no alvo: 2.0×8.0 |
+| 2026-10-07 | Operário PR × Botafogo-SP | 1-2 | 0 | Chutes no alvo: 3.0×6.0 |
+| 2026-10-07 | Avaí × Londrina | 2-1 | 0 | Chutes no alvo: 4.0×4.0 |
+| 2026-10-07 | CRB × Atlético Goianiense | 3-1 | 0 | Chutes no alvo: 9.0×2.0 |
+| 2026-10-07 | Vila Nova × Cuiabá | 0-0 | 0 | Chutes no alvo: 3.0×1.0 |
+| 2026-10-07 | América Mineiro × Fortaleza | 0-1 | 0 | Chutes no alvo: 1.0×2.0 |
+| 2026-10-06 | Ponte Preta × Juventude | 0-2 | 0 | Chutes no alvo: 2.0×6.0 |
+| 2026-10-06 | Goiás × Athletic | 2-1 | 0 | Chutes no alvo: 7.0×5.0 |
+| 2026-10-06 | Sport × São Bernardo | 2-1 | 0 | Chutes no alvo: 5.0×4.0 |
+| 2026-10-06 | Chicago Fire FC × Vancouver Whitecaps | 3-1 | 0 | Chutes no alvo: 7.0×2.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
