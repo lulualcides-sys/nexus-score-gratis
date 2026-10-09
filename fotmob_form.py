@@ -44,7 +44,7 @@ def score(row):
 def match_from_fotmob(row,tid):
     if not isinstance(row,dict):return None
     status=row.get('status') or {}
-    if status.get('finished') is not True:return None
+    if status.get('finished') is not True and row.get('resultString') not in ('W','D','L'):return None
     h=row.get('home') or {}
     a=row.get('away') or {}
     if not isinstance(h,dict) or not isinstance(a,dict):return None
