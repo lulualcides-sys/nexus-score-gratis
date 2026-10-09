@@ -250,6 +250,44 @@ function addProjection(detail,fb){
    top_scores:f.top_scores,source:'NEXUS 5.29 · Poisson experimental não calibrado'},
    prelive:fb};
 }
+function verifiedPrelive(g,model){
+ const side=(name)=>{
+   const data=(g.lineups||{})[name]||{},roster=(g.roster||{})[name]||[];
+   const starters=Array.isArray(data.starters)?data.starters:[];
+   const subs=Array.isArray(data.subs)?data.subs:[];
+   const official=data.status==='confirmed';
+   const people=arr=>arr.map(v=>({name:String(v.name||'').slice(0,90),
+     number:String(v.number||'').slice(0,4)})).filter(x=>x.name);
+   const fallback=roster.flatMap(section=>section.players||[]).slice(0,26);
+   return {xi:people(starters),bench:people(subs),roster:people(fallback),
+           formation:String(data.formation||''),official,
+           status:starters.length?(official?'confirmada':'provável'):'elenco geral',
+           lineup_type:String(data.lineup_type||''),
+           updated_at:data.updated_at||null};
+ };
+ const home=side('home'),away=side('away');
+ const select=side=>side.xi.length?[...side.xi,...side.bench]:side.roster;
+ const confirmation=home.official&&away.official?'confirmada':
+   home.xi.length||away.xi.length?'provável':'aguardando confirmação';
+ const lineups={home:select(home),away:select(away),
+  home_detail:home,away_detail:away,
+  status:confirmation,source:'FotMob',checked_at:g.observed_at||null};
+ const quotes=(g.odds||[]).filter(q=>['home','draw','away'].includes(q.sel)&&
+   safeNumber(q.odd)!==null&&Number(q.odd)>1.01).slice().sort((a,b)=>
+   String(b.at||'').localeCompare(String(a.at||'')));
+ const market={};let source='',bookmaker='',at='';
+ for(const q of quotes){
+   if(market[q.sel]!=null)continue;
+   market[q.sel]=Number(q.odd);
+   if(!at){at=q.at||'';source=q.source||'';bookmaker=q.bookmaker||'';}
+ }
+ const available=Object.keys(market).length>0;
+ return {...model,lineups,head_to_head:headToHead(g),
+  odds:{available,markets:{'1x2':market},source:source||'ESPN',
+   bookmaker:bookmaker||'Não informada',fetched_at:at||null,
+   reason:available?'':'A fonte ainda não publicou cotações 1X2 verificáveis para esta partida.'},
+  checked_sources:['fotmob','espn']};
+}
 function availability(g){
  const s=g.stats||{},h=s.home||{},a=s.away||{};
  const got=k=>h[k]!=null||a[k]!=null;
@@ -361,7 +399,7 @@ window.fetch=async function(request,options){
    const snap=await bridge.data();
    const g=snap.games.find(v=>String(v.id)===id);
    if(!g)return res;
-   const fb=forecast(g);
+   const fb=verifiedPrelive(g,forecast(g));
    const out=path.startsWith('/api/prelive/')?fb:addProjection(instrument(g,payload),fb);
    return new Response(JSON.stringify(out),{status:200,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}});
  }catch(ex){
