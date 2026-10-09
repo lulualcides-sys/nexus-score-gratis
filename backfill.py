@@ -48,6 +48,11 @@ def official_logo(team):
         url=item.get('href') if isinstance(item,dict) else ''
         if isinstance(url,str) and url.startswith(('https://a.espncdn.com/','https://a1.espncdn.com/')):
             return url[:300]
+    # URL oficial da ESPN baseada no ID autenticado do time; se ausente ou quebrada
+    # o frontend mostra iniciais e nao inventa outro escudo.
+    team_id=str(team.get('id') or '')
+    if team_id.isdigit() and 1<=len(team_id)<=12:
+        return 'https://a.espncdn.com/i/teamlogos/soccer/500/'+team_id+'.png'
     return ''
 
 def parse_fixture(event,league):
