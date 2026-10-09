@@ -195,6 +195,8 @@ def merge_verified_duplicates(rows):
             matched['minute']=item.get('minute') or matched.get('minute')
         if len(item.get('pressure') or [])>len(matched.get('pressure') or []):
             matched['pressure']=item['pressure']
+        if len(item.get('head_to_head') or [])>len(matched.get('head_to_head') or []):
+            matched['head_to_head']=item['head_to_head']
         for side in ('home','away'):
             if (item.get('lineups') or {}).get(side) and not (matched.get('lineups') or {}).get(side):
                 matched.setdefault('lineups',{})[side]=item['lineups'][side]
@@ -220,7 +222,42 @@ def merge_verified_duplicates(rows):
             matched[key]=original
     return output
 
-def public_row(row,day):
+def historical_h2h(row, cache):
+    """Confrontos diretos verificaveis anteriores ao jogo a partir do cache FotMob.
+    Identidades precisam coincidir e o horario da partida deve ser anterior ao duelo.
+    """
+    fixture=row.get('fixture') or {}
+    cutoff=kickoff_number(fixture.get('start_timestamp'))
+    if not cutoff:return []
+    if not isinstance(cache,dict):return []
+    found={}
+    for side in ('home','away'):
+        team_id=str(fixture.get(side+'_id') or '')
+        opponent=fixture.get('away' if side=='home' else 'home') or ''
+        entry=cache.get(team_id) or {}
+        for prev in (entry.get('games') or []):
+            if not isinstance(prev,dict):continue
+            ts=kickoff_number(prev.get('ts'))
+            if ts is None or ts>=cutoff:continue
+            if compact_name(prev.get('opponent'))!=compact_name(opponent):continue
+            venue=prev.get('venue')
+            if venue not in ('Casa','Fora'):continue
+            try:
+                gf=int(prev.get('gf'));ga=int(prev.get('ga'))
+                if not (0<=gf<=50 and 0<=ga<=50):continue
+            except (ValueError,TypeError):continue
+            home=fixture.get(side) if venue=='Casa' else opponent
+            away=opponent if venue=='Casa' else fixture.get(side)
+            hg,ag=(gf,ga) if venue=='Casa' else (ga,gf)
+            item={'date':str(prev.get('day') or '')[:10],
+                  'at':ts,'home':safe(home,105),'away':safe(away,105),
+                  'score':str(hg)+'-'+str(ag),
+                  'competition':safe(prev.get('league') or fixture.get('league'),70),
+                  'source':'FotMob'}
+            found[(ts,compact_name(home),compact_name(away),hg,ag)]=item
+    return sorted(found.values(),key=lambda x:x['at'],reverse=True)[:15]
+
+def public_row(row,day,team_cache=None):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
     if not isinstance(f,dict) or not f.get('home') or not f.get('away'):return None
@@ -266,6 +303,7 @@ def public_row(row,day):
     forms=row.get('team_form') or {}
     rosters=row.get('team_roster') or {}
     lineups=public_lineups(row.get('lineups') or {})
+    h2h=historical_h2h(row,team_cache)
     sources=list(dict.fromkeys([safe(f.get('source'),45)]+
         [safe(x,45) for x in (row.get('sources') or [])]))[:6]
     closing=[]
@@ -285,7 +323,8 @@ def public_row(row,day):
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
             'observed_at':safe(f.get('collected_at'),36),
-            'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},
+            'pressure':points,'stats':stats,'head_to_head':h2h,
+            'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'odds':odds[:5],
             'events':events[:130],'signals':signals[:20],
@@ -365,6 +404,8 @@ def main():
     today=datetime.now(BR).date()
     days={(today-timedelta(days=i)).isoformat() for i in range(3)}
     rows=[]
+    fotmob_cache=(load(H/'fotmob_team_cache.json').get('teams') or {})
+    if not isinstance(fotmob_cache,dict):fotmob_cache={}
     for path in sorted(H.glob('20??-??-??.json'),reverse=True):
         if path.stem not in days:continue
         doc=load(path)
@@ -377,7 +418,7 @@ def main():
             # a data do apito inicial no horario de Brasilia.
             local_day=datetime.fromtimestamp(stamp,BR).date().isoformat() if stamp else path.stem
             if local_day not in days:continue
-            item=public_row(row,local_day)
+            item=public_row(row,local_day,fotmob_cache)
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
