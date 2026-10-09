@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:29:10.741995+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:33:09.886748+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 72 | Chutes no alvo: 5.0×1.0, Chutes para fora: 8.0×0.0, Escanteios: 8.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 76 | Chutes no alvo: 5.0×1.0, Chutes para fora: 9.0×0.0, Escanteios: 9.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
@@ -166,15 +166,110 @@ Fonte: **Conector autenticado de operações** · Atualizacao: **2026-10-09T09:3
 
 Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
+## Análise descritiva de alertas — janela de 10 minutos
+
+**Observações:** 178 | **Jogos distintos:** 60 | **Resultados verificáveis:** 80 | **Com gol:** 20 | **Sem gol:** 60 | **Taxa observada:** 25.0%.
+**Evolução da amostra:** 1 datas com coletas | 2 pendentes | 23 indeterminados | 73 incompletos.
+Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
+
+### Tipo de sinal
+
+| Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
+|---|---:|---:|---:|---:|---:|
+| 🥶 jogo_frio | 27 | 19 | 7 | 12 | 36.8% |
+| 🎯 chutes_no_alvo_5 | 31 | 13 | 4 | 9 | 30.8% |
+| ⚡ pressao_ofensiva_18 | 23 | 11 | 1 | 10 | 9.1% |
+| 🟥 expulsao_confirmada | 22 | 10 | 1 | 9 | 10.0% |
+| 💣 grandes_chances_3 | 19 | 8 | 3 | 5 | 37.5% |
+| 🚩 escanteios_6 | 34 | 7 | 2 | 5 | 28.6% |
+| 🔥 pressao_forte_10min | 9 | 5 | 1 | 4 | 20.0% |
+| 🧨 pressao_total_5_10min | 7 | 4 | 1 | 3 | 25.0% |
+| 🚨 alerta_cruzado_gol | 2 | 2 | 0 | 2 | 0.0% |
+| ⏱️ tensao_tardia_70 | 4 | 1 | 0 | 1 | 0.0% |
+
+### Equipe
+
+| Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
+|---|---:|---:|---:|---:|---:|
+| Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
+| Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
+| Borussia Dortmund | 8 | 4 | 0 | 4 | 0.0% |
+| Real Tomayapo | 5 | 4 | 0 | 4 | 0.0% |
+| Málaga | 7 | 3 | 0 | 3 | 0.0% |
+| Al Nassr FC | 6 | 3 | 3 | 0 | 100.0% |
+| Equipe não definida | 5 | 3 | 2 | 1 | 66.7% |
+| Montpellier | 5 | 3 | 0 | 3 | 0.0% |
+| GKS Katowice | 4 | 3 | 3 | 0 | 100.0% |
+| Lommel | 3 | 3 | 3 | 0 | 100.0% |
+| SK Beveren | 3 | 3 | 2 | 1 | 66.7% |
+| Gimnasia LP | 4 | 2 | 0 | 2 | 0.0% |
+| Al-Gharraf | 3 | 2 | 0 | 2 | 0.0% |
+| Boulogne | 3 | 2 | 1 | 1 | 50.0% |
+| Lens | 3 | 2 | 1 | 1 | 50.0% |
+| Montevideo City Torque | 3 | 2 | 1 | 1 | 50.0% |
+| Almere City FC | 2 | 2 | 0 | 2 | 0.0% |
+| Dinamo București | 2 | 2 | 0 | 2 | 0.0% |
+| Galatasaray | 2 | 2 | 0 | 2 | 0.0% |
+| West Ham United | 2 | 2 | 0 | 2 | 0.0% |
+| Lyon | 5 | 1 | 1 | 0 | 100.0% |
+| Avellino | 4 | 1 | 0 | 1 | 0.0% |
+| Nancy | 3 | 1 | 0 | 1 | 0.0% |
+| SC Heerenveen | 3 | 1 | 1 | 0 | 100.0% |
+| Aarau | 2 | 1 | 1 | 0 | 100.0% |
+
+### Campeonato
+
+| Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
+|---|---:|---:|---:|---:|---:|
+| Premier Division | 9 | 8 | 0 | 8 | 0.0% |
+| Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
+| First Division B | 9 | 6 | 0 | 6 | 0.0% |
+| Belgian Pro League | 6 | 6 | 5 | 1 | 83.3% |
+| Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
+| Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
+| Liga Profesional | 6 | 4 | 0 | 4 | 0.0% |
+| Primera División | 5 | 4 | 0 | 4 | 0.0% |
+| Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
+| Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
+| LaLiga | 7 | 3 | 0 | 3 | 0.0% |
+| Premier League | 7 | 3 | 0 | 3 | 0.0% |
+| Saudi Pro League | 6 | 3 | 3 | 0 | 100.0% |
+| 2. Liga | 5 | 2 | 0 | 2 | 0.0% |
+| Liga AUF Uruguaya Clausura | 3 | 2 | 1 | 1 | 50.0% |
+| Stars League | 3 | 2 | 0 | 2 | 0.0% |
+| Championship | 2 | 2 | 0 | 2 | 0.0% |
+| Super Lig | 2 | 2 | 0 | 2 | 0.0% |
+| Superliga | 2 | 2 | 0 | 2 | 0.0% |
+| Eliteserien | 7 | 1 | 0 | 1 | 0.0% |
+| Serie B | 6 | 1 | 0 | 1 | 0.0% |
+| 2. Bundesliga | 4 | 1 | 0 | 1 | 0.0% |
+| Eredivisie | 4 | 1 | 1 | 0 | 100.0% |
+| Challenge League | 3 | 1 | 1 | 0 | 100.0% |
+| First League | 3 | 1 | 0 | 1 | 0.0% |
+
+### Faixa de minuto
+
+| Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
+|---|---:|---:|---:|---:|---:|
+| 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
+| 16–30′ | 14 | 10 | 3 | 7 | 30.0% |
+| 31–45′ | 9 | 9 | 5 | 4 | 55.6% |
+| 46–60′ | 29 | 27 | 7 | 20 | 25.9% |
+| 61–75′ | 37 | 24 | 3 | 21 | 12.5% |
+| 76–90′ | 63 | 8 | 1 | 7 | 12.5% |
+| 91+′ | 24 | 0 | 0 | 0 | — |
+
+
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 177 | **Jogos monitorados:** 362 | **Ao vivo:** 4 | **Termômetros recentes:** 1.
+**Registros:** 178 | **Jogos monitorados:** 362 | **Ao vivo:** 3 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T22:29:22.961246+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (72') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:33:19.619107+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (77') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:29:22.961246+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-09T22:13:32.994039+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (57') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T22:12:23.132440+00:00 | Delfín × Mushuc Runa | Delfín (77') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (54') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -273,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T19:28:51.520149+00:00 | Málaga × Espanyol | Málaga (28') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T19:23:44.372988+00:00 | PSV Eindhoven × SC Heerenveen | SC Heerenveen (63') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T19:23:44.372988+00:00 | Montpellier × Grenoble | Montpellier (64') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T19:23:44.372988+00:00 | Stade Nyonnais × Aarau | Aarau (50') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
