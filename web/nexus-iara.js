@@ -65,7 +65,7 @@ function favourite(d){
 }
 function standingsMotivation(d){
  const ctx=d?.standings||d?.prelive?.standings;
- if(!ctx||ctx.source!=='FotMob'||!ctx.home||!ctx.away)return {available:false,list:[],evidence:[]};
+ if(!ctx||!['FotMob','ESPN'].includes(ctx.source)||!ctx.home||!ctx.away)return {available:false,list:[],evidence:[]};
  const list=[],evidence=[];
  for(const side of ['home','away']){
    const item=ctx[side],club=name(d,side);
@@ -233,7 +233,7 @@ function evaluate(d){
  }
  if(fav&&score)evidence.push('Favorito pré-jogo: '+names[fav.side]+' (odds verificadas)');
  if(indicators.length)evidence.push('Indicadores ativos: '+indicators.slice(0,2).map(x=>String(x.emoji||x.name||'')).join(' '));
- if(motivation.available)evidence.push('Tabela FotMob: '+motivation.evidence.join(' · '));
+ if(motivation.available)evidence.push('Tabela '+motivation.source+': '+motivation.evidence.join(' · '));
  const method='Leitura por regras sobre dados públicos; coleta periódica, não transmissão segundo a segundo. Pressão não é probabilidade de gol nem EV+.';
  const commentary=(intro+context).trim();
  return {active:true,heading:'IARA · Visão ao vivo',minute,intro:commentary,next,
