@@ -56,8 +56,9 @@
   const logoHTML=(url,name)=>{
     const host='https://a.espncdn.com/';
     const alt=esc('Escudo '+name);
-    const ok=typeof url==='string' && (url.startsWith(host)||url.startsWith('https://a1.espncdn.com/')) &&
-      /^https:\/\/a1?\.espncdn\.com\/i\/teamlogos\//.test(url);
+    const ok=typeof url==='string' &&
+      (/^https:\/\/a1?\.espncdn\.com\/i\/teamlogos\//.test(url) ||
+       /^https:\/\/images\.fotmob\.com\/image_resources\/logo\/teamlogo\/\d{1,12}\.png$/.test(url));
     return '<span class="club-badge">'+
       (ok?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+esc(url)+
           '" alt="'+alt+'" onerror="this.hidden=true;this.nextElementSibling.hidden=false">'+
