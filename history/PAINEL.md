@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:34:48.444239+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:47:42.165235+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 
@@ -78,7 +78,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 | 2026-10-09 | Buxoro × Andijon | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kokand 1912 × Mashal Muborak | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Nasaf Qarshi × Dinamo Samarkand | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Pakhtakor Tashkent × Bunyodkor Tashkent | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Pakhtakor Tashkent × Bunyodkor Tashkent | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Yangpyeong × Ulsan Citizen | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Arsenal Dzerzhinsk × Dynamo Brest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Nordsjælland × OB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -97,7 +97,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 | 2026-10-09 | Albania (W) × Wales (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Turkiye (W) × Slovenia (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slovakia (W) × Ukraine (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Israel (W) × Switzerland (W) | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Israel (W) × Switzerland (W) | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belgium (W) × Poland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Czechia (W) × Scotland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Northern Ireland (W) × Portugal (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -121,7 +121,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 | 2026-10-09 | FC Zlín × Slavia Prague | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Hapoel Ironi Akko × Maccabi Bnei Raina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ironi Modiin × Hapoel Afula | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Maccabi Kiryat Gat × Kiryat Yam | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Maccabi Kiryat Gat × Kiryat Yam | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Maccabi Herzliya × Maccabi Ahi Nazareth | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | SC Kafr Qasim × Bnei Yehuda Tel Aviv | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Almere City FC × FC Eindhoven | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
