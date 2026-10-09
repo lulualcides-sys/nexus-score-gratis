@@ -233,10 +233,108 @@ function addProjection(detail,fb){
    top_scores:f.top_scores,source:'NEXUS 5.29 · Poisson experimental não calibrado'},
    prelive:fb};
 }
+function availability(g){
+ const s=g.stats||{},h=s.home||{},a=s.away||{};
+ const got=k=>h[k]!=null||a[k]!=null;
+ const price=(g.odds||[]).length>0;
+ const finished=!!g.outcomes?.correct_score;
+ return [
+  {name:'Over / Under gols',observed:price||finished,coverage:price?'Odd 1X2 registrada, mas O/U sem preço':finished?'Placar final disponível, sem odds O/U':'Sem resultado'},
+  {name:'Ambas marcam (BTTS)',observed:finished,coverage:finished?'Placar encerrado; sem preço BTTS':'Sem odds verificadas'},
+  {name:'Match Odds (1X2)',observed:price||finished,coverage:price?'Odds 1X2 verificadas':finished?'Resultado conhecido; odd ausente':'Sem preço'},
+  {name:'Escanteios',observed:got('corners'),coverage:got('corners')?'Scout confirmado':'Sem scouts'},
+  {name:'Finalizações',observed:got('shots_on')||got('shots_off'),coverage:got('shots_on')||got('shots_off')?'Scouts confirmados':'Sem scouts'},
+  {name:'Grandes chances',observed:got('big_chances'),coverage:got('big_chances')?'Scout confirmado':'Sem scouts'},
+  {name:'Ataques perigosos',observed:got('dangerous_attacks'),coverage:got('dangerous_attacks')?'Scout confirmado':'Sem scouts'},
+  {name:'Lay Correct Score',observed:false,coverage:'Sem preço pré-entrada auditado'}
+ ];
+}
+function labDashboard(doc){
+ const games=doc.games||[],paper=doc.paper||{},market=doc.market_history||{};
+ const settled=Number(paper.settled||0),pl=settled?safeNumber(paper.paper_pl_u):null;
+ const signals=games.flatMap(g=>(g.signals||[]).filter(s=>s.ev_pct!=null&&s.odds!=null).map(s=>({
+   match_id:g.id,home:g.home,away:g.away,league:g.league,
+   market:s.market,selection:s.selection,odds:s.odds,probability:s.probability,
+   ev_pct:s.ev_pct,odds_source:g.source,odds_at:s.captured_at
+ })));
+ const quality=games.map(g=>{
+   const stats=(g.stats?.home||{}),away=g.stats?.away||{};
+   const count=new Set([...Object.keys(stats),...Object.keys(away)]).size;
+   const momentum=g.pressure||[];
+   return {match_id:g.home+' × '+g.away,source:g.source,
+     state:g.phase==='live'?'AO VIVO':g.phase==='finished'?'ENCERRADO':'PRÉ-JOGO',
+     updated_at:g.observed_at,stats_available:count,stats_expected:15,
+     momentum_samples:momentum.length,momentum_coverage_pct:round(momentum.length/90*100),
+     momentum_source:momentum.length?g.source:'Indisponível'}
+ }).sort((a,b)=>(b.momentum_samples-a.momentum_samples)||(b.stats_available-a.stats_available)).slice(0,120);
+ const providers={ESPN:'Coleta pública',FotMob:'Coleta pública',
+   'Football-Data.co.uk':Number(doc.source_status?.files_checked||0)+' arquivos consultados',
+   OpenLigaDB:String(doc.source_status?.providers?.OpenLigaDB||'sem dados nesta janela')};
+ const markets=market.markets||[];
+ const alerts=(doc.alerts||[]).map(a=>({
+   match_id:a.match_id,created_at:a.observed_at,
+   category:a.kind==='ev_experimental'?'ev':'monitoramento',
+   message:a.title+' · '+a.detail
+ }));
+ const paperMarkets=(paper.markets||[]).map(m=>({
+   market:m.market,entries:m.entries,net_units:m.paper_pl_u
+ }));
+ return {version:'5.29 original · dados GitHub',updated_at:doc.exported_at,
+   observations:games.length,radar:signals,alerts,providers,quality,markets,
+   backtest:{evaluated_fixtures:settled,total_net_units:pl,
+     wins:paper.won||0,win_rate_pct:settled?round(paper.won/settled*100):null,
+     max_drawdown_units:null,by_market:paperMarkets,
+     settled_signals:settled,brier_samples:0,brier_score:null,
+     calibration:[],
+     method:'Somente entradas simuladas registradas antes do jogo, odds verificadas e placar liquidado; não é P/L da Bolsa.'},
+   pressure_validation:{records:[],windows:{}},
+   stake_100:{evaluated_fixtures:settled,wins:paper.won||0,
+     losses:settled-(paper.won||0),net_brl:pl===null?null:pl*100,
+     risked_brl:settled*100,roi_pct:pl===null?null:round(pl/settled*100),entries:[],
+     method:'Sem apostas executadas: 1 unidade paper = R$ 100 hipotéticos, sem taxas.'}};
+}
+function cloudCollector(doc){
+ const games=doc.games||[],paper=doc.paper||{},settled=Number(paper.settled||0);
+ const quotes=games.reduce((n,g)=>n+(g.odds||[]).length,0);
+ const rows=games.map(g=>{
+   const pts=g.pressure||[],observed=g.odds||[];
+   return {id:g.id,day:g.day,home:g.home,away:g.away,score:g.score,minute:g.minute,
+     phase:g.phase,league:g.league,source:(g.sources||[g.source]).join(' + '),
+     collected_at:g.observed_at,stats:g.stats,
+     thermometer:{points:pts.map(p=>({minute:p.m,value:p.v})),samples:pts.length},
+     observations:pts.length||1,
+     odds_available:observed.length>0,ev_available:(g.signals||[]).some(x=>x.ev_pct!=null),
+     markets:availability(g),
+     quotes:observed.map(o=>({market:'1x2',selection:o.sel,odds:o.odd,source:o.source,
+       captured_at:o.at}))};
+ });
+ const selected=(paper.markets||[]).map(m=>({market:m.market,settled_paper:m.entries,
+   paper_units:m.paper_pl_u,operations:0,actual_net_pl_brl:null,priced_games:0,
+   experimental_ev_plus:0}));
+ return {connected:true,source:'FotMob · ESPN · Football-Data · OpenLigaDB',
+   status:{updated_at:doc.exported_at,sources:['FotMob','ESPN','Football-Data','OpenLigaDB']},
+   sync:{connected:true,last_sync:doc.exported_at},
+   market_policy:'Somente dados esportivos e operações paper. Informações financeiras pessoais permanecem privadas.',
+   updated_at:doc.exported_at,games:rows,
+   audit:{stake_brl:100,quotes_registered:quotes,
+      trades_verified:0,actual_net_pl_brl:null,
+      settled_paper:settled,paper_profit_loss_brl:settled?Number(paper.paper_pl_u||0)*100:null,
+      markets:selected,
+      note:'Sem operações pessoais publicadas. EV+ só com preço pré-entrada e calibração; paper não é lucro recebido.'},
+   platform_snapshot:null};
+}
 window.fetch=async function(request,options){
  const str=typeof request==='string'?request:request?.url;
  if(typeof str!=='string')return previous(request,options);
  const path=new URL(str,window.location.href).pathname;
+ if(path==='/api/v5/dashboard'||path==='/api/github-collector'){
+   try{
+     const doc=await bridge.data();
+     const output=path==='/api/v5/dashboard'?labDashboard(doc):cloudCollector(doc);
+     return new Response(JSON.stringify(output),{status:200,headers:{
+       'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}});
+   }catch(error){console.warn('NEXUS laboratório sem snapshot',error);return previous(request,options)}
+ }
  if(!isMatchURL(path))return previous(request,options);
  const res=await previous(request,options);
  if(!res.ok)return res;
