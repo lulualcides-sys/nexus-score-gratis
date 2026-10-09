@@ -1,3 +1,5 @@
+import { createRequire } from 'node:module';
+const require=createRequire(import.meta.url);
 const assert=require('node:assert/strict');
 const model=require('../web/nexus-signal-evaluation.js');
 const items=[
