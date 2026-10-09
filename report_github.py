@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 import html
 import math
+from signal_evaluation import evaluate
 
 H=Path(__file__).resolve().parent/'history'
 
@@ -107,6 +108,29 @@ def main():
     # O painel privado já é acessível no NEXUS Original via link GitHub.
     # Não exige deixar a aplicação desktop aberta para gerar este relatório.
     journal=load_json(H/'signal_registry.json')
+    assessment=evaluate(journal)
+    s=assessment['summary']
+    lines.extend(['','## Análise descritiva de alertas — janela de 10 minutos','',
+        '**Observações:** '+str(s['observations'])+' | **Jogos distintos:** '+str(s['matches'])+
+        ' | **Resultados verificáveis:** '+str(s['settled'])+
+        ' | **Com gol:** '+str(s['hits'])+' | **Sem gol:** '+str(s['misses'])+
+        ' | **Taxa observada:** '+(str(s['rate_pct'])+'%' if s['rate_pct'] is not None else 'indisponível')+'.',
+        '**Evolução da amostra:** '+str(len(assessment['evolution']))+
+        ' datas com coletas | '+str(s['pending'])+' pendentes | '+str(s['unknown'])+
+        ' indeterminados | '+str(s['incomplete'])+' incompletos.',
+        'Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. '+
+        'Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.',
+        ''])
+    for title,key in [('Tipo de sinal','by_signal'),('Equipe','by_team'),
+                      ('Campeonato','by_league'),('Faixa de minuto','by_minute_band')]:
+        lines.extend(['### '+title,'','| Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |',
+                      '|---|---:|---:|---:|---:|---:|'])
+        for r in assessment[key][:25]:
+            rate=(str(r['rate_pct'])+'%') if r['rate_pct'] is not None else '—'
+            lines.append('| '+safe(r['label'])+' | '+str(r['observations'])+
+                         ' | '+str(r['settled'])+' | '+str(r['hits'])+' | '+
+                         str(r['misses'])+' | '+rate+' |')
+        lines.append('')
     cloud_signals=[r for r in (journal.get('items') or []) if isinstance(r,dict)]
     diag=journal.get('diagnostics') or {}
     lines.extend(['','## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem','',
