@@ -102,3 +102,10 @@ display:flex;align-items:center;justify-content:center;background:#0b1a2b;overfl
 
 /* provenance */
 .detail-league{line-height:1.6}
+
+/* Divider de data na lista cronologica */
+.match-day-separator{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;
+border-bottom:1px solid #36556b;padding:14px 5px 10px;margin-top:8px;gap:10px}
+.match-day-separator span{font-size:15px;font-weight:800;color:#a7e3ec}
+.match-day-separator small{font-size:10px;color:#84a7be;text-align:right}
+@media(max-width:760px){.match-day-separator span{font-size:14px}.match-day-separator small{font-size:9px}}
