@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "pregame_refresh.py"
+      - "sofascore_odds.py"
       - ".github/workflows/nexus-pregame.yml"
 permissions:
   contents: write
@@ -24,7 +25,7 @@ jobs:
           persist-credentials: true
       - name: Validar rotina
         run: |
-          python3 -m py_compile pregame_refresh.py
+          python3 -m py_compile pregame_refresh.py sofascore_odds.py
           python3 -m unittest discover -s tests -v
           node --check web/nexus-original-enrich.js
           node tests/test_original_enrich.mjs
