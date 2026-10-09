@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:56:32.608475+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:11:02.574956+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **39**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **60**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -53,8 +53,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **39**.
 | 2026-10-09 | UCD × Longford Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Fluminense × Coritiba | 4-0 | 90 | Chutes no alvo: 10.0×0.0, Chutes para fora: 11.0×6.0, Escanteios: 3.0×2.0, Grandes chances: 2.0×3.0 |
 | 2026-10-09 | Palmeiras × Bahia | 1-0 | 90 | Chutes no alvo: 11.0×1.0, Chutes para fora: 11.0×5.0, Escanteios: 7.0×3.0, Grandes chances: 5.0×0.0 |
-| 2026-10-09 | Brann × Viking | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | IFK Göteborg × Västerås SK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Brann × Viking | 0-0 | 7 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | IFK Göteborg × Västerås SK | 1-0 | 11 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Lexington SC × FC Tulsa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Excursionistas × Villa San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | CA Talleres Remedios de Escalada × CASD Camioneros | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -71,7 +71,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **39**.
 | 2026-10-09 | KäPa × MP | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Klubi 04 × EIF | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Haka × PK-35 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | JäPS × JIPPO | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | JäPS × JIPPO | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Shenzhen Peng City × Henan FC | 2-2 | 0 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×2.0 |
 | 2026-10-09 | Zhejiang Professional × Shanghai Port | 2-4 | 0 | Chutes no alvo: 4.0×8.0, Chutes para fora: 5.0×3.0, Escanteios: 5.0×8.0, Grandes chances: 5.0×3.0 |
 | 2026-10-09 | Qingdao Hainiu × Beijing Guoan | 0-3 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 7.0×2.0, Escanteios: 2.0×4.0, Grandes chances: 2.0×5.0 |
@@ -81,27 +81,27 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **39**.
 | 2026-10-09 | Pakhtakor Tashkent × Bunyodkor Tashkent | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Yangpyeong × Ulsan Citizen | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Arsenal Dzerzhinsk × Dynamo Brest | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Nordsjælland × OB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Vejle Boldklub × Hvidovre | 1-0 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-09 | AB × Aarhus Fremad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | HNK Gorica × Rudeš | 0-1 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-10-09 | Nordsjælland × OB | 0-0 | 8 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Vejle Boldklub × Hvidovre | 1-2 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | AB × Aarhus Fremad | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | HNK Gorica × Rudeš | 0-2 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-10-09 | PSV Eindhoven × SC Heerenveen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Lithuania (W) × Sweden (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Romania (W) × Norway (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Greece (W) × England (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Croatia (W) × Iceland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Greece (W) × England (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Croatia (W) × Iceland (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kazakhstan (W) × Ireland (W) | 0-8 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kosovo (W) × Austria (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Hungary (W) × Netherlands (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belarus (W) × Italy (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Albania (W) × Wales (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Turkiye (W) × Slovenia (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Slovakia (W) × Ukraine (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Slovakia (W) × Ukraine (W) | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Israel (W) × Switzerland (W) | 3-7 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belgium (W) × Poland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Czechia (W) × Scotland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Northern Ireland (W) × Portugal (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Finland (W) × Serbia (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Finland (W) × Serbia (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Lens × Lyon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Dunkerque × Annecy FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Montpellier × Grenoble | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -136,7 +136,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **39**.
 | 2026-10-09 | Roda JC Kerkrade × Jong PSV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Sporting FC × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | FC Rostov × Akron Togliatti | 0-0 | 25 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | FC Rostov × Akron Togliatti | 0-0 | 31 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 3-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
