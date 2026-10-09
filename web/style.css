@@ -71,3 +71,31 @@ border:1px solid #294658;background:#091e30;border-radius:9px;padding:13px}
 .form-opponent small{display:block;color:#82a1b5;margin-top:3px}
 .form-match strong{font-size:12px;color:#dceefa;white-space:nowrap}
 @media(max-width:720px){.team-form-grid{grid-template-columns:1fr}}
+
+/* Match cards v5.31 — logos, local kickoff and chronological rhythm */
+.match-card{padding:17px 18px;min-width:0}
+.match-time{display:flex;align-items:center;gap:5px;color:#a5d9e4;font-size:12px;font-weight:700;
+margin:13px 0 1px;font-variant-numeric:tabular-nums;letter-spacing:.2px}
+.match-time-symbol{font-size:16px;color:#53c0df}
+.match-tz{font-size:10px;font-weight:500;color:#759eb6;margin-left:3px}
+.teams{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:11px;margin:17px 0}
+.team{display:flex;flex-direction:column;gap:9px;align-items:flex-start;min-width:0}
+.team.away{align-items:flex-end;text-align:right}
+.team-name{line-height:1.3;overflow-wrap:anywhere}
+.club-badge{width:47px;height:47px;flex:0 0 47px;border:1px solid #345570;border-radius:12px;
+display:flex;align-items:center;justify-content:center;background:#0b1a2b;overflow:hidden}
+.club-badge img{width:40px;height:40px;object-fit:contain}
+.club-initials{font-weight:800;font-size:13px;color:#7acde1}
+.score-block{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;min-width:53px}
+.score-block small{font-size:9px;color:#829eaf;text-transform:uppercase;letter-spacing:.5px}
+.match-grid{align-items:stretch}
+@media(min-width:761px){.club-badge{width:50px;height:50px;flex-basis:50px}}
+@media(max-width:760px){
+  .match-card{padding:16px}
+  .teams{gap:6px;margin:18px 0 15px}
+  .club-badge{width:42px;height:42px;flex-basis:42px}
+  .club-badge img{width:37px;height:37px}
+  .team{font-size:13px}
+  .score-block{min-width:58px}
+  .score{font-size:23px}
+}
