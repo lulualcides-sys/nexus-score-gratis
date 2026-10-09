@@ -12,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlencode
 from coletar import NOW, BR, HISTORY, DAY, read, write, fetch, fotmob_list, fotmob_lineups
 from odds_capture import get as espn_get, threeway
+from sofascore_odds import calendar as sofa_calendar, event_quotes as sofa_quotes, link_fixtures
 
 LOOKAHEAD=75*60
 AFTER=20*60
@@ -155,6 +156,43 @@ def run():
                     result['odds_updated']+=espn_quotes(packet,row,now_ts)
             except Exception as e:
                 if len(result['errors'])<12:result['errors'].append(key+': '+str(e)[:110])
+    # Segunda fonte: apenas partidas identificadas simultaneamente pelos
+    # dois clubes e pelo minuto do apito inicial. Nunca aproximar por liga.
+    result['sofascore_matched']=0
+    result['sofascore_checked']=0
+    result['sofascore_quotes_added']=0
+    try:
+        schedules=[]
+        for day in days:
+            schedules.extend(sofa_calendar(day.isoformat()))
+        selected=[(day,key,delta,(docs[day].get('matches') or {}).get(key,{}).get('fixture') or {})
+                  for day,key,delta in candidates if delta>0]
+        linked=link_fixtures(selected,schedules)
+        result['sofascore_matched']=len(linked)
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            future={pool.submit(sofa_quotes,sofa_id):(day,key)
+                    for day,key,_,_,sofa_id in linked[:24]}
+            for task in as_completed(future):
+                day,key=future[task]
+                result['sofascore_checked']+=1
+                try:
+                    offer=task.result()
+                    if not offer:continue
+                    prices,bookmaker=offer
+                    row=docs[day]['matches'][key]
+                    # Mesmo se houver odds, recusar armazenar depois do kickoff.
+                    f=row.get('fixture') or {}
+                    if NOW.timestamp()>=int(f.get('start_timestamp') or 0):continue
+                    count=sum(new_quote(row,sel,price,bookmaker,'SofaScore',
+                                        NOW.isoformat()) for sel,price in prices.items())
+                    result['sofascore_quotes_added']+=count
+                    result['odds_updated']+=count
+                except Exception as err:
+                    if len(result['errors'])<12:
+                        result['errors'].append('SofaScore: '+str(err)[:110])
+    except Exception as err:
+        if len(result['errors'])<12:result['errors'].append(
+            'SofaScore calendário indisponível: '+str(err)[:110])
     if result['lineups_updated'] or result['odds_updated']:
         changes=True
     # As atualizações de calendário também interessam, mas não gerar commit
