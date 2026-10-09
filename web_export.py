@@ -114,6 +114,65 @@ def sort_games(rows):
                 str(row.get('league') or ''),str(row.get('home') or ''))
     return sorted(rows,key=key)
 
+def compact_name(value):
+    """Iguala aliases claros como Instituto / Instituto (Cordoba), sem aproximacoes cegas."""
+    import unicodedata
+    raw=str(value or '').split('(')[0].strip().lower()
+    raw=unicodedata.normalize('NFKD',raw)
+    return re.sub(r'[^a-z0-9]+','', ''.join(c for c in raw if not unicodedata.combining(c)))
+
+def merge_verified_duplicates(rows):
+    """Une apenas mesmo dia, horario, nomes e placar compatíveis.
+    Priorizamos ESPN como base (10 jogos / scouts); FotMob fornece pressão e logos
+    complementares. Sem critérios suficientes ambos ficam separados.
+    """
+    output=[]
+    for item in sorted(rows,key=lambda r:(r['day'],str(r.get('source')=='ESPN')),reverse=True):
+        matched=None
+        for base in output:
+            if base['day']!=item['day']:continue
+            a=number(base.get('start_timestamp'))
+            b=number(item.get('start_timestamp'))
+            if a is None or b is None or abs(a-b)>600:continue
+            if compact_name(base.get('home'))!=compact_name(item.get('home')):continue
+            if compact_name(base.get('away'))!=compact_name(item.get('away')):continue
+            if base.get('phase')=='finished' and item.get('phase')=='finished' and base.get('score')!=item.get('score'):
+                continue
+            matched=base
+            break
+        if matched is None:
+            output.append(item)
+            continue
+        joined=list(dict.fromkeys((matched.get('sources') or [matched.get('source')])+
+                                  (item.get('sources') or [item.get('source')])))
+        matched['sources']=[s for s in joined if s]
+        for key in ('home_logo','away_logo','venue','round'):
+            if not matched.get(key) and item.get(key):matched[key]=item[key]
+        if item.get('phase')=='live' and matched.get('phase')=='scheduled':
+            matched['phase']='live'
+            matched['score']=item.get('score') or matched.get('score')
+            matched['minute']=item.get('minute') or matched.get('minute')
+        if len(item.get('pressure') or [])>len(matched.get('pressure') or []):
+            matched['pressure']=item['pressure']
+        for side in ('home','away'):
+            mstats=matched.setdefault('stats',{}).setdefault(side,{})
+            for key,val in (item.get('stats',{}).get(side) or {}).items():
+                if key not in mstats:mstats[key]=val
+            mform=matched.setdefault('form',{}).get(side) or {}
+            rform=(item.get('form') or {}).get(side) or {}
+            if rform.get('available',0)>mform.get('available',0):
+                matched['form'][side]=rform
+        for key in ('odds','closing_odds','events','signals'):
+            original=matched.get(key) or []
+            extra=item.get(key) or []
+            seen={json.dumps(e,sort_keys=True,ensure_ascii=False) for e in original}
+            for e in extra:
+                signature=json.dumps(e,sort_keys=True,ensure_ascii=False)
+                if signature not in seen:
+                    original.append(e);seen.add(signature)
+            matched[key]=original
+    return output
+
 def public_row(row,day):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
@@ -263,7 +322,7 @@ def main():
         for row in matches.values():
             item=public_row(row,path.stem)
             if item:rows.append(item)
-    rows=sort_games(rows)
+    rows=sort_games(merge_verified_duplicates(rows))
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
     rows=rows[:500]
     last=load(H/'status.json')
