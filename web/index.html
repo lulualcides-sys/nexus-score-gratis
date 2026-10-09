@@ -1265,16 +1265,22 @@ window.PressureLab = (() => {
     const {first,last,observed,expected}=series;
     const WIDTH=1020, HEIGHT=302, LEFT=24, RIGHT=16, ZERO_Y=152;
     const plotW=WIDTH-LEFT-RIGHT;
-    // Fixed 0–90 scale from kickoff onward, even in the 1st minute. Reserve a
-    // small, constant strip on the right for 90+ stoppage time. Neither part
-    // grows or changes width as new observations arrive.
-    const extraW=64, regularW=plotW-extraW, x90=LEFT+regularW;
-    const tickX=minute=>LEFT+clamp(minute,0,90)*regularW/90;
-    const x=minute=>minute>90 ? x90+Math.min(extraW-4,(minute-90)*8) : tickX(Math.max(0,minute-.5));
-    const minuteData=allPoints;  // 15/30/60 min buttons highlight; never zoom the axis.
-    const max=Math.max(15,...minuteData.map(p=>Math.abs(p.value)))*1.08;
+    const rawMinute=Number(d.minute);
+    const parsedMinute=Number.parseInt(String(d.minute??''),10);
+    const gameMinute=Number.isFinite(rawMinute)?rawMinute:(Number.isFinite(parsedMinute)?parsedMinute:0);
+    const finished=['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase()) || /finaliz|encerr|full.?time/i.test(String(d.status||''));
+    const live=!finished&&(d.live===true||d.phase==='live');
+    // Durante o 1º tempo, ampliar a régua para 0–45 em vez de desperdiçar
+    // metade da largura com minutos que ainda não aconteceram.
+    const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
+    const extraW=axisEnd===90?64:0,regularW=plotW-extraW,x90=LEFT+regularW;
+    const tickX=minute=>LEFT+clamp(minute,0,axisEnd)*regularW/axisEnd;
+    const x=minute=>minute>90?x90+Math.min(extraW-4,(minute-90)*8):
+      tickX(Math.max(0,minute-.5));
+    const minuteData=allPoints.filter(p=>p.minute<=axisEnd || (axisEnd===90&&p.minute>90));
+        const max=Math.max(15,...minuteData.map(p=>Math.abs(p.value)))*1.08;
     const barScale=65/max;
-    const barWidth=Math.max(2.0,Math.min(12,regularW/90*.79));
+    const barWidth=Math.max(2.8,Math.min(18,regularW/axisEnd*.80));
     const bars=minuteData.map(p=>{
       const height=Math.max(1.4,Math.abs(p.value)*barScale), xx=x(p.minute)-barWidth/2;
       const y=p.value>=0?ZERO_Y-height:ZERO_Y;
@@ -1285,15 +1291,11 @@ window.PressureLab = (() => {
     // Real samples overwrite their positions; missing played minutes remain
     // neutral outlines; future minutes remain neutral shaded placeholders.
     // Neither type is a measured momentum bar.
-    const rawMinute=Number(d.minute);
-    const parsedMinute=Number.parseInt(String(d.minute??''),10);
-    const gameMinute=Number.isFinite(rawMinute)?rawMinute:(Number.isFinite(parsedMinute)?parsedMinute:0);
-    const finished=['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase()) || /finaliz|encerr|full.?time/i.test(String(d.status||''));
-    const playedThrough=clamp(Math.floor(Math.max(last,gameMinute,finished?90:0)),0,90);
-    const observedMinutes=new Set(allPoints.filter(p=>p.minute<=90).map(p=>p.minute));
+    const playedThrough=clamp(Math.floor(Math.max(last,gameMinute,finished?90:0)),0,axisEnd);
+    const observedMinutes=new Set(allPoints.filter(p=>p.minute<=axisEnd).map(p=>p.minute));
     const slots=[];
     let missingCount=0, futureCount=0;
-    for(let minute=1;minute<=90;minute++){
+    for(let minute=1;minute<=axisEnd;minute++){
       if(observedMinutes.has(minute))continue;
       const future=minute>playedThrough;
       if(future)futureCount++;else missingCount++;
@@ -1301,21 +1303,21 @@ window.PressureLab = (() => {
     }
     const futureSlots=slots.join('');
     const missingCoverage=missingCount>0?` · ${missingCount} minuto(s) jogado(s) sem pressão`:'';
-    const futureStart=playedThrough<90?tickX(playedThrough):x90;
-    const futureShade=playedThrough<90?`<rect class="scout-future-zone" x="${futureStart.toFixed(2)}" y="80" width="${(x90-futureStart).toFixed(2)}" height="142"/>`:'';
+    const futureStart=playedThrough<axisEnd?tickX(playedThrough):x90;
+    const futureShade=playedThrough<axisEnd?`<rect class="scout-future-zone" x="${futureStart.toFixed(2)}" y="80" width="${(x90-futureStart).toFixed(2)}" height="142"/>`:'';
     const gaps=series.buckets.filter(b=>b.value===null).length;
-    const ticks=[0,15,30,45,60,75,90];
+    const ticks=[0,15,30,45,60,75,90].filter(m=>m<=axisEnd);
     const tickHtml=ticks.map(m=>`<g><line x1="${tickX(m).toFixed(1)}" x2="${tickX(m).toFixed(1)}" y1="80" y2="221" class="scout-tick-line"/><text class="scout-tick-label" text-anchor="${m===0?'start':'middle'}" x="${tickX(m).toFixed(1)}" y="236">${m}'</text></g>`).join('');
-    const half=`<rect x="${(tickX(45)-2.5).toFixed(1)}" y="80" width="5" height="143" class="compact-half-band"/><text class="scout-half-label" text-anchor="middle" x="${tickX(45).toFixed(1)}" y="246">INTERVALO</text>`;
+    const half=axisEnd===90?`<rect x="${(tickX(45)-2.5).toFixed(1)}" y="80" width="5" height="143" class="compact-half-band"/><text class="scout-half-label" text-anchor="middle" x="${tickX(45).toFixed(1)}" y="246">INTERVALO</text>`:'';
     const hasExtra=allPoints.some(p=>p.minute>90)||(Array.isArray(d.incidents)&&d.incidents.some(e=>Number(e.minute)>90||(Number(e.minute)===90&&Number(e.added)>0)));
-    const extraLabel=hasExtra?`<text class="scout-extra-label" text-anchor="middle" x="${(x90+extraW/2).toFixed(1)}" y="236">90+</text>`:`<text class="scout-extra-label scout-extra-muted" text-anchor="middle" x="${(x90+extraW/2).toFixed(1)}" y="236">90+</text>`;
-    const currentMark=playedThrough>0&&playedThrough<90?`<line class="scout-now-guide" x1="${tickX(playedThrough).toFixed(1)}" x2="${tickX(playedThrough).toFixed(1)}" y1="81" y2="222"/><text class="scout-now-tag" text-anchor="middle" x="${tickX(playedThrough).toFixed(1)}" y="76">${Math.floor(playedThrough)}'</text>`:'';
+    const extraLabel=axisEnd===45?'':hasExtra?`<text class="scout-extra-label" text-anchor="middle" x="${(x90+extraW/2).toFixed(1)}" y="236">90+</text>`:`<text class="scout-extra-label scout-extra-muted" text-anchor="middle" x="${(x90+extraW/2).toFixed(1)}" y="236">90+</text>`;
+    const currentMark=playedThrough>0&&playedThrough<axisEnd?`<line class="scout-now-guide" x1="${tickX(playedThrough).toFixed(1)}" x2="${tickX(playedThrough).toFixed(1)}" y1="81" y2="222"/><text class="scout-now-tag" text-anchor="middle" x="${tickX(playedThrough).toFixed(1)}" y="76">${Math.floor(playedThrough)}'</text>`:'';
     const currentThrough=Math.max(last,gameMinute);
     const eventFrom=scope==='all'?1:Math.max(1,currentThrough-Math.max(1,Number(scope)||30)+1);
     const confirmed=(Array.isArray(d.incidents)?d.incidents:[]).filter(e=>eventGlyph[e.emoji] && ['HOME','AWAY'].includes(e.team) && Number.isInteger(Number(e.minute)) && Number(e.minute)>=eventFrom && Number(e.minute)<=150 && (scope==='all'||Number(e.minute)<=currentThrough) && !hiddenIcons.has(e.emoji));
     // Incidents: one compact marker, located strictly at confirmed minute/team.
     // Shots keep the agreed ● / ⊗ distinction and ● is larger.
-    const events=confirmed.map(e=>{
+    const events=confirmed.filter(e=>axisEnd===90||Number(e.minute)<=axisEnd).map(e=>{
       const m=Number(e.minute), top=e.team==='HOME';
       const shot=shotEmojis.has(String(e.emoji));
       const yy=shot?(top?14:258):(top?14:258);
@@ -1394,18 +1396,19 @@ window.PressureLab = (() => {
       return `<line class="signal-guide ${top?'home':'away'}" x1="${wanted.toFixed(1)}" x2="${wanted.toFixed(1)}" y1="${top?77:224}" y2="${top?85:236}"/><g class="scout-indicator-point ${g.team.toLowerCase()} historical compact" transform="translate(${cx.toFixed(1)},${yy})" data-indicator-point="${i}" tabindex="0" role="button" aria-label="${hint}"><rect class="signal-group-outline" x="${(-width/2).toFixed(1)}" y="${(-height/2).toFixed(1)}" width="${width}" height="${height}" rx="5"/>${glyphs}<title>${hint}</title></g>`;
     }).join('');
     const missing=gaps?` · ${gaps} trecho(s) incompleto(s)`:'';
-    const coverage=playedThrough?Math.round(allPoints.filter(p=>p.minute<=playedThrough).length/playedThrough*100):0;
+    const observedCount=allPoints.filter(p=>p.minute>=1&&p.minute<=playedThrough).length;
+    const coverage=playedThrough?Math.round(observedCount/playedThrough*100):0;
     return `<div class="scout-chart-card compact-timeline">
-       <div class="scout-compact-caption">HISTÓRIA DA PRESSÃO · ESCALA FIXA 0–90' · 90 POSIÇÕES SEMPRE VISÍVEIS · 1 minuto por barra</div>
+       <div class="scout-compact-caption">HISTÓRIA DA PRESSÃO · 0–${axisEnd}' · ${axisEnd} POSIÇÕES · barras somente onde a fonte mediu</div>
        ${scoutTotals(d)}
-       <div class="scout-graph-scroll" role="region" aria-label="Linha do tempo de pressão, eventos e indicadores por equipe">
+       <div class="scout-graph-scroll" role="region" aria-label="Linha do tempo de pressão 0 a ${axisEnd} minutos, eventos e indicadores por equipe" tabindex="0">
        <svg class="scout-graph" viewBox="0 0 ${WIDTH} ${HEIGHT}" role="img" aria-label="Barras de pressão observada: mandante acima, visitante abaixo; eventos confirmados por minuto; scouts acumulados sem minuto na própria figura.">
        <defs><clipPath id="scout-clip-top"><rect x="${LEFT}" y="80" width="${plotW}" height="72"/></clipPath><clipPath id="scout-clip-bottom"><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70"/></clipPath></defs>
        <rect x="${LEFT}" y="80" width="${plotW}" height="72" fill="#b6b4af" opacity=".11"/><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70" fill="#b3323a" opacity=".07"/>
-       ${futureShade}<line class="scout-extra-divider" x1="${x90}" x2="${x90}" y1="80" y2="221"/>${half}${tickHtml}${extraLabel}<line class="scout-zero" x1="${LEFT}" x2="${WIDTH-RIGHT}" y1="${ZERO_Y}" y2="${ZERO_Y}"/>
+       ${futureShade}${axisEnd===90?`<line class="scout-extra-divider" x1="${x90}" x2="${x90}" y1="80" y2="221"/>`:''}${half}${tickHtml}${extraLabel}<line class="scout-zero" x1="${LEFT}" x2="${WIDTH-RIGHT}" y1="${ZERO_Y}" y2="${ZERO_Y}"/>
        ${futureSlots}${bars}${currentMark}${signalMarks}${snapshotMarks}${events}${observedMarks}${summaryInside}
        </svg></div>
-       <div class="scout-foot"><span><i class="scout-key home"></i>${h(d.home||'Mandante')} acima</span><span><i class="scout-key away"></i>${h(d.away||'Visitante')} abaixo</span><span>▥ Contorno: jogado sem scout · ▪ Cinza: futuro</span><span>Chutes e escanteios: mandante em cima · visitante embaixo · ● mandante (escuro) · ● visitante (rosa) · ⊗ fora · 🚩 escanteio</span><b>${allPoints.filter(p=>p.minute<=90).length}/${playedThrough||0} minutos observados · ${coverage}% cobertura${missingCoverage}${missing}</b></div>
+       <div class="scout-foot"><span><i class="scout-key home"></i>${h(d.home||'Mandante')} acima</span><span><i class="scout-key away"></i>${h(d.away||'Visitante')} abaixo</span><span>▥ Contorno: jogado sem scout · ▪ Cinza: futuro</span><span>Chutes e escanteios: mandante em cima · visitante embaixo · ● mandante (escuro) · ● visitante (rosa) · ⊗ fora · 🚩 escanteio</span><b>${observedCount}/${playedThrough||0} minutos jogados com pressão · ${coverage}% cobertura${missingCoverage}${missing}</b></div>
        </div>`;
   }
   function windowSummary(d,n){
@@ -1459,8 +1462,15 @@ window.PressureLab = (() => {
     // Only an observed NEW goal should animate; existing goals at first page load are silent.
     const scorePulse=Boolean(d.goal_flash && d.live && Date.now()<d.goal_flash.until);
     const latestTeam=scorePulse?d.goal_flash.side:'';
-    const goalLines = (side) => scorers.filter(g=>g?.team===side).slice(0,8)
-      .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small></div>`).join('');
+    const scorePair=score.match(/^(\d+)\s*[-–:]\s*(\d+)$/);
+    const goalLines = (side) => {
+      const known=scorers.filter(g=>g?.team===side);
+      const expected=scorePair?Number(scorePair[side==='home'?1:2]):null;
+      const missing=expected===null?0:Math.max(0,expected-known.length);
+      return known.slice(0,8)
+        .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small></div>`).join('')+
+        (missing>0?`<div class="nexus-missing-goal"><b>+${missing} gol${missing>1?'s':''} sem detalhes</b><small>Autor e minuto não informados na fonte</small></div>`:'');
+    };
     const crest = (uri, initials, team) => {
       const valid = typeof uri === 'string' && /^(?:\/team-crest\/(?:(?:espn|fotmob)\/)?[1-9]\d{0,9}|https:\/\/(?:a1?\.espncdn\.com\/i\/teamlogos\/|images\.fotmob\.com\/image_resources\/logo\/teamlogo\/)\d{1,12}\.png)$/.test(uri);
       return `<div class="pressure-scoreboard-crest" aria-label="Escudo de ${h(team)}"><span>${h(initials)}</span>${valid ? `<img class="team-crest-image" src="${h(uri)}" alt="" loading="lazy" decoding="async">` : ''}</div>`;
@@ -1485,14 +1495,19 @@ window.PressureLab = (() => {
     const badge=d.source?.includes('DEMONSTRAÇÃO')?'DEMONSTRAÇÃO FICTÍCIA':d.stale?'CACHE ANTIGO':!hasMeasurements?'SEM PRESSÃO DA FONTE':outdated?'CURVA ATRASADA':'DADOS DA FONTE';
     const unmeasured=hasMeasurements?'':`<p class="scout-no-measurements">Esta partida ainda não tem medições reais de pressão. A régua completa de 90 minutos continua visível; barras neutras são apenas posições, não pressão zero nem previsão.</p>`;
     const narrative=d.scout_pressure?.narrative||'Pressão minuto a minuto não fornecida pela fonte.';
+    const gameMinute=Number(d.minute)||0, live=!['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase())&&(d.live===true||d.phase==='live');
+    const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
+    const pressureNote=outdated?`Última medição de pressão no minuto ${Math.floor(Number(last))}'; o jogo está no ${Math.floor(gameMinute)}'. Os minutos restantes estão sem dados, não com pressão zero.`:'';
+    const timelineDescription=live?`${Math.floor(gameMinute)}' jogados · régua ampliada 0–${axisEnd}' · mandante acima / visitante abaixo`:
+       `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
     return `<section class="match-block scout-main" id="section-thermometer">
       ${scoreboard(d)}
-      <header class="scout-section-head"><div><div class="mini-overline">NEXUS SCORE / CENTRAL DA PARTIDA</div><h2>Termômetro da partida</h2><p>90 minutos completos · mandante acima, visitante abaixo · eventos e alertas compactos.</p></div><span class="scout-source-badge">${badge}</span></header>
-      <div class="scout-control-row"><div class="scout-subtitle">PRESSÃO AO LONGO DO JOGO · 0–90'</div><div class="pressure-range">${buttons}</div></div>
-      ${chart(d,selected)}${unmeasured}<div id="signal-marker-info" class="signal-marker-info compact-note" aria-live="polite"><b>Indicadores no gráfico</b><span>Toque numa marca para saber o time, o minuto e o motivo. Todos os filtros detalhados estão na aba INDICADORES.</span></div>
+      <header class="scout-section-head"><div><div class="mini-overline">NEXUS SCORE / CENTRAL DA PARTIDA</div><h2>Termômetro da partida</h2><p>${h(timelineDescription)} · indicadores e eventos confirmados.</p></div><span class="scout-source-badge">${badge}</span></header>
+      <div class="scout-control-row"><div class="scout-subtitle">PRESSÃO AO LONGO DO JOGO · 0–${axisEnd}'</div><div class="pressure-range">${buttons}</div></div>
+      ${chart(d,selected)}${pressureNote?`<p class="nexus-pressure-delay" role="status">${h(pressureNote)}</p>`:''}${unmeasured}<div id="signal-marker-info" class="signal-marker-info compact-note" aria-live="polite"><b>Indicadores no gráfico</b><span>Toque numa marca para saber o time, o minuto e o motivo. Todos os filtros detalhados estão na aba INDICADORES.</span></div>
       ${hasPressure?`<div class="scout-recent-row">${[5,10,15].map(n=>windowSummary(d,n)).join('')}</div>`:''}
       <div class="scout-readout"><span>LEITURA ATUAL</span><p>${h(narrative)}</p></div>
-      <p class="pressure-method">${d.source?.includes('DEMONSTRAÇÃO')?'Amostras fictícias para testar a interface. ':'Fonte: '+h(d.pressure_source||d.source||'não disponível')+'. '}Eixo fixo de 0 a 90 minutos. Posições sem coleta são neutras, não representam pressão. Acréscimos ficam na faixa 90+. Botões de intervalo destacam amostras sem alterar a escala.</p>
+      <p class="pressure-method">${d.source?.includes('DEMONSTRAÇÃO')?'Amostras fictícias para testar a interface. ':'Fonte: '+h(d.pressure_source||d.source||'não disponível')+'. '}Eixo ampliado para 0–45 durante o primeiro tempo e 0–90 na segunda etapa e após o jogo. Posições sem coleta são neutras, não são pressão zero; os botões destacam intervalos com dados disponíveis.</p>
     </section>`;
   }
   function indicatorDetails(d){return `${snapshotStrip(d)}${signalLegend(d)}`;}
