@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:48:20.817560+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:49:06.396481+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 
