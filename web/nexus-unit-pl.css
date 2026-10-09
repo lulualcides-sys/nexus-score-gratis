@@ -1,0 +1,16 @@
+/* 5.32 · Bloco discreto para P/L paper em unidades */
+.nexus-units-paper{border:1px solid #d9d7d0;background:#fffdfa;border-radius:12px;margin:16px 0;padding:18px;color:#23374d;line-height:1.5}
+.nexus-units-paper h3{margin:0 0 12px;font-size:17px;color:#182b43}
+.nexus-units-paper p{margin:12px 0;font-size:12px}
+.nexus-units-paper>small{display:block;color:#718091;font-size:11px;line-height:1.5}
+.nexus-unit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.nexus-unit-metric{background:#f6f3ec;border:1px solid #e9e1d5;border-radius:9px;padding:12px;display:flex;flex-direction:column;gap:5px}
+.nexus-unit-metric small{font-size:10px;color:#6a788a;font-weight:800}
+.nexus-unit-metric b{font-size:21px;color:#23374d;font-variant-numeric:tabular-nums}
+.nexus-units-paper .pl-positive,.nexus-unit-metric.pl-positive b{color:#12745c}
+.nexus-units-paper .pl-negative,.nexus-unit-metric.pl-negative b{color:#b03a48}
+.nexus-unit-scroll{overflow-x:auto;width:100%}
+.nexus-unit-scroll table{width:100%;min-width:590px;border-collapse:collapse;font-size:12px}
+.nexus-unit-scroll th,.nexus-unit-scroll td{padding:9px;text-align:left;border-bottom:1px solid #e5e1da;white-space:nowrap}
+.nexus-unit-scroll th{color:#526477}
+@media(max-width:700px){.nexus-unit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nexus-unit-metric b{font-size:18px}}
