@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Coletor público e periódico para GitHub Actions; sem tokens ou odds inventadas."""
-import json, re, sys, time
+import json, re, sys, time, os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -13,6 +13,7 @@ BR=timezone(timedelta(hours=-3))
 NOW=datetime.now(timezone.utc)
 DAY=NOW.astimezone(BR).date().isoformat()
 DEADLINE=time.monotonic()+73
+LIVE_MODE=os.getenv('NEXUS_MODE','').lower()=='live'
 LEAGUES=('bra.1','bra.2','eng.1','esp.1','ita.1','ger.1','fra.1','arg.1','usa.1','col.1','uefa.champions','conmebol.libertadores')
 
 def fetch(url,timeout=7):
@@ -272,7 +273,18 @@ def run():
         (fixtures.get(g['id']) or {}).get('thermometer',{}).get('points') and
         not (fixtures.get(g['id']) or {}).get('events')]
     extra=sorted(recent_with_pressure,key=lambda g:g.get('start_timestamp') or 0,reverse=True)[:2]
-    details_to_check=live[:3]+[g for g in extra if g['id'] not in {x['id'] for x in live[:3]}]
+    # Coleta de scouts em ciclos de dez minutos: alterna jogos por hora
+    # da última verificação; não deixa os mesmos três fixos para sempre.
+    def last_capture(game):
+        old=fixtures.get(game['id']) or {}
+        obs=old.get('observations') or []
+        return str((obs[-1] or {}).get('at') or '') if obs else ''
+    rotating=sorted(live,key=lambda g:(last_capture(g),-int(g.get('minute') or 0)))
+    chosen=rotating[:(10 if LIVE_MODE else 6)]
+    details_to_check=chosen+([] if LIVE_MODE else [
+        g for g in extra if g['id'] not in {x['id'] for x in chosen}])
+    status['live_detail_candidates']=len(live)
+    status['live_detail_selected']=len(chosen)
     for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
@@ -292,8 +304,14 @@ def run():
             before=fixtures.get(match['id']) or {}
             points=momentum(packet)
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
+            if points:before['pressure_updated_at']=NOW.isoformat()
             current_stats=stats(packet)
-            if any(current_stats.values()):before['stats']=current_stats
+            if any(current_stats.values()):
+                old_stats=before.get('stats') or {}
+                before['stats']={side:{**(old_stats.get(side) or {}),
+                    **(current_stats.get(side) or {})} for side in ('home','away')}
+                before['stats_updated_at']=NOW.isoformat()
+                before['stats_source']='FotMob'
             new_events=fotmob_events(packet)
             if new_events:
                 prior=before.get('events') or []

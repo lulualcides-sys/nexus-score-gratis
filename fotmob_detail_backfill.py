@@ -74,6 +74,9 @@ def run():
                 row=docs[d]['matches'][key]
                 extracted=stats(packet)
                 row['stats'],num=updated_stats(row.get('stats') or {},extracted)
+                if num:
+                    row['stats_updated_at']=NOW.isoformat()
+                    row['stats_source']='FotMob'
                 info['scout_fields_added']+=num
                 if row['stats']['home'] or row['stats']['away']:info['matches_with_stats']+=1
                 new_events=fotmob_events(packet)

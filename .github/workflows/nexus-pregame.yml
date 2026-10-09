@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - "pregame_refresh.py"
+      - "coletar.py"
+      - "web_export.py"
       - "signal_registry.py"
       - "standings_context.py"
       - "sofascore_odds.py"
@@ -19,7 +21,7 @@ concurrency:
 jobs:
   pregame:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
       - name: Ler o NEXUS e seu histórico
         uses: actions/checkout@v4
@@ -27,10 +29,15 @@ jobs:
           persist-credentials: true
       - name: Validar rotina
         run: |
-          python3 -m py_compile signal_registry.py pregame_refresh.py sofascore_odds.py standings_context.py
+          python3 -m py_compile signal_registry.py pregame_refresh.py sofascore_odds.py standings_context.py coletar.py web_export.py
           python3 -m unittest discover -s tests -v
           node --check web/nexus-original-enrich.js
           node tests/test_original_enrich.mjs
+      - name: Atualizar scouts reais e placares ao vivo (melhor esforço)
+        continue-on-error: true
+        env:
+          NEXUS_MODE: live
+        run: python3 coletar.py
       - name: Buscar escalações e odds sem preços inventados
         run: python3 pregame_refresh.py
       - name: Atualizar a situação das equipes na tabela
