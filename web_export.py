@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Snapshot publico do NEXUS: jogos 4 dias, scouts, alertas e resultado paper auditavel.
+"""Snapshot publico do NEXUS: jogos de 3 dias e forma anterior (10 por time), scouts, alertas e resultado paper auditavel.
 
 NUNCA publica operacoes reais da Bolsa, importacao do PC, tokens ou dados privados.
 O P/L exibido e somente simulacao retrospectiva de sinais congelados antes do inicio.
@@ -68,6 +68,27 @@ def pregame_signal(item,fixture):
             'model':safe(item.get('model'),70),'captured_at':safe(item.get('captured_at'),40),
             'status':'settled' if settled else 'pending','paper_pl_u':result}
 
+def public_form(doc):
+    if not isinstance(doc,dict):return {'available':0,'requested':10,'games':[],'complete':False}
+    games=[]
+    for g in (doc.get('games') or [])[:10]:
+        if not isinstance(g,dict):continue
+        if g.get('result') not in ('V','E','D'):continue
+        gf=number(g.get('gf'));ga=number(g.get('ga'))
+        if gf is None or ga is None or gf<0 or ga<0:continue
+        games.append({'day':safe(g.get('day'),10),'opponent':safe(g.get('opponent'),90),
+                      'venue':safe(g.get('venue'),8),'score':safe(g.get('score'),10),
+                      'result':g['result'],'gf':int(gf),'ga':int(ga)})
+    n=len(games)
+    base={'requested':10,'available':n,'complete':n==10,
+          'source':'ESPN · mesma competicao','games':games}
+    if not n:return base
+    for name in ('wins','draws','losses','goals_for','goals_against',
+                 'avg_goals_for','avg_goals_against','over15_pct','over25_pct','btts_pct'):
+        val=number(doc.get(name))
+        if val is not None:base[name]=val
+    return base
+
 def public_row(row,day):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
@@ -111,6 +132,7 @@ def public_row(row,day):
     for item in row.get('paper_signals') or []:
         q=pregame_signal(item,f)
         if q:signals.append(q)
+    forms=row.get('team_form') or {}
     return {'day':day,'id':safe(f.get('id'),90),
             'home':safe(f.get('home')),'away':safe(f.get('away')),
             'league':safe(f.get('league'),85),'league_code':safe(f.get('league_code'),40),
@@ -118,7 +140,7 @@ def public_row(row,day):
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'observed_at':safe(f.get('collected_at'),36),
-            'pressure':points,'stats':stats,'odds':odds[:5],
+            'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},'odds':odds[:5],
             'events':events[:130],'signals':signals[:20],
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
@@ -194,7 +216,7 @@ def alerts_from(rows):
 
 def main():
     today=datetime.now(BR).date()
-    days={(today-timedelta(days=i)).isoformat() for i in range(4)}
+    days={(today-timedelta(days=i)).isoformat() for i in range(3)}
     rows=[]
     for path in sorted(H.glob('20??-??-??.json'),reverse=True):
         if path.stem not in days:continue
@@ -210,9 +232,11 @@ def main():
     rows=rows[:500]
     last=load(H/'status.json')
     backfill=load(H/'backfill_status.json')
+    team_form=load(H/'team_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
+             'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'alerts':alerts_from(rows),'games':rows}
