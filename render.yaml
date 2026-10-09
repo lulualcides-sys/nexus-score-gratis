@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nexus-score-web
+    runtime: python
+    plan: free
+    branch: main
+    autoDeployTrigger: commit
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 web_server.py
+    healthCheckPath: /healthz
+    envVars:
+      - key: NEXUS_WEB_PASSWORD
+        sync: false
