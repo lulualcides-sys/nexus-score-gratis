@@ -245,7 +245,7 @@ def historical_h2h(row, cache, espn_cache=None):
 
     def insert(ts,home,away,hg,ag,competition,source):
         ts=kickoff_number(ts)
-        if ts is None or ts>=cutoff or ts>datetime.now(timezone.utc).timestamp():return
+        if ts is None or ts>=cutoff:return
         if not all(isinstance(n,int) and 0<=n<=50 for n in (hg,ag)):return
         home_name,away_name=compact_name(home),compact_name(away)
         if {home_name,away_name}!=canonical:return
