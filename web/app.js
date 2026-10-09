@@ -231,12 +231,15 @@
       (100/Number(o.odd)).toFixed(1)+'%</b></div>').join('')+'</div>'+
       '<p class="small-note">Soma das probabilidades: '+(100+marketMargin).toFixed(1)+'% · margem bruta: '+
       marketMargin.toFixed(1)+'%. Isso não é previsão de acerto nem EV+.</p></div>':'';
+    const close=(g.closing_odds||[]).map(v=>'<div class="odd-pill">'+
+      esc(oddLabels[v.sel]||v.sel)+'<b>'+esc(v.odd)+'</b><small>'+esc(v.bookmaker||'')+
+      ' · Football-Data.co.uk · FECHAMENTO HISTÓRICO</small></div>').join('');
     const signals = (g.signals||[]).filter(s=>Number.isFinite(Number(s.ev_pct)) && Number.isFinite(Number(s.odds)));
     const signalRows = signals.map(s => '<div class="scout"><strong>'+esc(oddLabels[s.selection]||s.selection||'—')+'</strong><span>'+
       'EV estimado '+esc(s.ev_pct)+'% · p='+esc(s.probability)+'% · odd '+esc(s.odds)+'<br>'+
       esc(s.model||'Modelo experimental')+' · n='+esc(s.sample_size??'?')+' · '+esc(s.status||'pendente')+
       '</span><strong>'+((s.status==='settled')?((Number(s.paper_pl_u)>=0?'+':'')+esc(s.paper_pl_u)+'u'):'PENDENTE')+'</strong></div>').join('');
-    $('#detail-content').innerHTML='<div class="detail-league">'+esc(g.league||'')+' · '+esc(g.source||'')+'</div>'+
+    $('#detail-content').innerHTML='<div class="detail-league">'+esc(g.league||'')+' · '+esc((g.sources||[g.source]).filter(Boolean).join(' / '))+'</div>'+
      '<div class="detail-score">'+escTitle(g)+' &nbsp; '+esc(g.score||'—')+'</div>'+
      '<p class="small-note">'+phaseLabel(g)+' · Início '+matchDate(g)+' às '+kickoff(g)+' (Brasília) · Última observação: '+date(g.observed_at)+
      (g.round?' · Rodada '+esc(g.round):'')+(g.venue?' · '+esc(g.venue):'')+'</p>'+
@@ -246,7 +249,9 @@
      '<h3 class="detail-title">⚽ Eventos reais da partida</h3>'+eventHTML(g)+
      '<h3 class="detail-title">Mercados · resultado esportivo</h3>'+resultHTML(g)+
      '<h3 class="detail-title">◇ Odds 1X2 verificadas</h3>'+
-     (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 disponível para esta partida.</p>')+implied+
+     (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 pré-jogo capturada para esta partida.</p>')+implied+
+     (close?'<h3 class="detail-title">Histórico · odds de fechamento (não utilizadas para EV+)</h3><div class="odds-list">'+close+
+     '</div><p class="small-note">Cotações históricas coletadas depois do jogo; não são odds de entrada previamente registradas nem autorizam P/L simulado.</p>':'')+
      '<h3 class="detail-title">EV+ · modelo experimental público</h3>'+
      (signalRows?'<div class="scout-table">'+signalRows+'</div>':'<p class="small-note">EV+ indisponível: sem probabilidade validada e odds pré-jogo verificadas. Nenhuma aposta fictícia foi registrada.</p>')+
      '<h3 class="detail-title">Mercados possíveis de acompanhar</h3><p class="small-note">Over/Under, BTTS, Match Odds e Lay Correct Score requerem odds reais e critérios específicos. EV calculado não é lucro realizado, e um sinal experimental não valida lucratividade.</p>';
@@ -280,7 +285,10 @@
       picker.value=days.includes(before)?before:'all';state.day=picker.value;
       drawAlerts(obj);drawPaper(obj);drawHistory(obj);
       $('#last-updated').textContent=date(obj.exported_at);
-      $('#last-source').textContent='Fonte: '+((obj.collector?.sources||[]).join(', ') || 'não confirmada');
+      const extras=obj.source_status||{};
+      $('#last-source').textContent='Fontes: '+((obj.collector?.sources||[]).join(', ') || 'ESPN')+
+        ' · Football-Data '+Number(extras.files_checked||0)+' CSVs consultados'+
+        (extras.cross_verified?' · '+extras.cross_verified+' cruzamentos':'');
       $('#metric-games').textContent=state.games.length;
       $('#metric-live').textContent=state.games.filter(x=>x.phase==='live').length;
       $('#metric-pressure').textContent=state.games.filter(x=>pressure(x).length>0).length;
