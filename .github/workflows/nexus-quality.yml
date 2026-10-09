@@ -1,0 +1,40 @@
+name: "NEXUS — revisão Superpowers / QA"
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "**.py"
+      - "web/**"
+      - "tests/**"
+      - ".github/workflows/**"
+  push:
+    branches: [main]
+    paths:
+      - "AGENTS.md"
+      - ".github/workflows/nexus-quality.yml"
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compilação Python e testes de regressão offline
+        run: |
+          python3 -m compileall -q -x 'history|artifacts' .
+          python3 -m unittest discover -s tests -v
+      - name: Revisão do painel JavaScript
+        run: |
+          node --check web/app.js
+          node --check web/match-detail.js
+          node --check web/nexus-original-enrich.js
+          node --check web/nexus-web-polish.js
+          node --check web/nexus-iara.js
+          node tests/test_nexus_web_polish.mjs
+          node tests/test_web_detail.mjs
+          node tests/test_original_enrich.mjs
+          node tests/test_pregame_web.mjs
+          node tests/test_live_timeline.mjs
+          node tests/test_nexus_iara.mjs
+          node tests/test_iara_bridge.mjs
