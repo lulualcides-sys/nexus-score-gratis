@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:16:49.465059+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:17:45.276027+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 
@@ -40,7 +40,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 | 2026-10-09 | Aldosivi × Sarmiento | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Persepolis × Sanat Naft Abadan | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
