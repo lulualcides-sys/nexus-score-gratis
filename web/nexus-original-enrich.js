@@ -252,9 +252,17 @@ function forecast(g){
        if(v.sel&&Number(v.odd)>1)o[v.sel]=+v.odd;return o;},{})}}};
 }
 function addProjection(detail,fb){
- if(!fb?.available||!fb.forecast?.one_x_two)return {...detail,projections:null,prelive:fb};
+ // O detalhe do termômetro não herda automaticamente prelive.odds.
+ // Manter preços live da própria fonte quando explicitamente identificados;
+ // caso contrário, mostrar cotações verificadas como PRÉ-JOGO.
+ const observed=detail?.odds?.markets?.['1x2']||{};
+ const hasLive=detail?.odds?.phase==='live' &&
+   ['home','draw','away'].every(side=>Number(observed[side])>1.01);
+ const odds=hasLive?detail.odds:(fb?.odds||{available:false,markets:{'1x2':{}},phase:'pregame'});
+ if(!fb?.available||!fb.forecast?.one_x_two)
+   return {...detail,odds,projections:null,prelive:fb};
  const f=fb.forecast,p=f.one_x_two;
- return {...detail,projections:{...p,model_estimate:true,verified:false,
+ return {...detail,odds,projections:{...p,model_estimate:true,verified:false,
    sample_size:Math.min(fb.sample.home.n,fb.sample.away.n),
    periods:f.periods,expected_goals:f.expected_goals,
    top_scores:f.top_scores,source:'NEXUS 5.29 · Poisson experimental não calibrado'},
@@ -282,21 +290,29 @@ function verifiedPrelive(g,model){
  const lineups={home:select(home),away:select(away),
   home_detail:home,away_detail:away,
   status:confirmation,source:'FotMob',checked_at:g.observed_at||null};
- const quotes=(g.odds||[]).filter(q=>['home','draw','away'].includes(q.sel)&&
-   safeNumber(q.odd)!==null&&Number(q.odd)>1.01).slice().sort((a,b)=>
-   String(b.at||'').localeCompare(String(a.at||'')));
+ const cutoff=Number(g.start_timestamp||0);
+ const quotes=(Array.isArray(g.odds)?g.odds:[]).filter(q=>{
+   if(!q||!['home','draw','away'].includes(q.sel))return false;
+   if(safeNumber(q.odd)===null||Number(q.odd)<=1.01||Number(q.odd)>1000)return false;
+   const ts=Date.parse(String(q.at||''));
+   return Number.isFinite(ts)&&cutoff>0&&ts<cutoff*1000;
+ });
+ // Recusar pacotes parciais e preços publicados após o início.
  const market={};let source='',bookmaker='',at='';
- for(const q of quotes){
-   if(market[q.sel]!=null)continue;
-   market[q.sel]=Number(q.odd);
-   if(!at){at=q.at||'';source=q.source||'';bookmaker=q.bookmaker||'';}
+ const sameCapture=quotes.length===3 &&
+   new Set(quotes.map(q=>[q.source||'',q.bookmaker||'',q.at||''].join('|'))).size===1;
+ if(sameCapture){
+   for(const q of quotes)market[q.sel]=Number(q.odd);
+   if(Object.keys(market).length!==3){for(const k of Object.keys(market))delete market[k];}
+   else {source=quotes[0].source||'';bookmaker=quotes[0].bookmaker||'';at=quotes[0].at||'';}
  }
- const available=Object.keys(market).length>0;
+ const available=Object.keys(market).length===3;
  return {...model,lineups,head_to_head:headToHead(g),standings:g.standings||null,
-  odds:{available,markets:{'1x2':market},source:source||'ESPN',
-   bookmaker:bookmaker||'Não informada',fetched_at:at||null,
-   reason:available?'':'A fonte ainda não publicou cotações 1X2 verificáveis para esta partida.'},
-  checked_sources:['fotmob','espn']};
+  odds:{available,phase:'pregame',markets:{'1x2':market},source:source||null,
+   bookmaker:bookmaker||null,fetched_at:at||null,
+   reason:available?'':'Nenhum trio 1X2 pré-jogo confirmado (mesma casa, fonte e coleta).'},
+  checked_sources:[...new Set(['fotmob',...quotes.map(q=>q.source).filter(Boolean)])]
+};
 }
 function availability(g){
  const s=g.stats||{},h=s.home||{},a=s.away||{};
