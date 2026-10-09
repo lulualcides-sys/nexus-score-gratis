@@ -89,6 +89,24 @@ def public_form(doc):
         if val is not None:base[name]=val
     return base
 
+def public_lineups(lineups):
+    if not isinstance(lineups,dict):return {}
+    output={}
+    for side in ('home','away'):
+        group=lineups.get(side) or {}
+        if not isinstance(group,dict):continue
+        def people(values):
+            if not isinstance(values,list):return []
+            return [{'name':safe(x.get('name'),80),'number':safe(x.get('number'),4)}
+                     for x in values[:25] if isinstance(x,dict) and x.get('name')]
+        starters=people(group.get('starters'))
+        subs=people(group.get('subs'))
+        if starters or subs:
+            output[side]={'formation':safe(group.get('formation'),25),
+                          'starters':starters,'subs':subs,'source':'FotMob',
+                          'lineup_type':safe(group.get('lineup_type'),25)}
+    return output
+
 def public_roster(groups):
     if not isinstance(groups,list):return []
     rows=[]
@@ -174,6 +192,9 @@ def merge_verified_duplicates(rows):
         if len(item.get('pressure') or [])>len(matched.get('pressure') or []):
             matched['pressure']=item['pressure']
         for side in ('home','away'):
+            if (item.get('lineups') or {}).get(side) and not (matched.get('lineups') or {}).get(side):
+                matched.setdefault('lineups',{})[side]=item['lineups'][side]
+        for side in ('home','away'):
             mstats=matched.setdefault('stats',{}).setdefault(side,{})
             for key,val in (item.get('stats',{}).get(side) or {}).items():
                 if key not in mstats:mstats[key]=val
@@ -240,6 +261,7 @@ def public_row(row,day):
         if q:signals.append(q)
     forms=row.get('team_form') or {}
     rosters=row.get('team_roster') or {}
+    lineups=public_lineups(row.get('lineups') or {})
     sources=list(dict.fromkeys([safe(f.get('source'),45)]+
         [safe(x,45) for x in (row.get('sources') or [])]))[:6]
     closing=[]
@@ -260,7 +282,8 @@ def public_row(row,day):
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
             'observed_at':safe(f.get('collected_at'),36),
             'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},
-            'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},'odds':odds[:5],
+            'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
+            'lineups':lineups,'odds':odds[:5],
             'events':events[:130],'signals':signals[:20],
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
