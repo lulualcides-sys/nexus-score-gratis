@@ -38,7 +38,9 @@ assert.equal(fb.lineups.home_detail.xi[0].name,'Titular Mandante');
 assert.equal(fb.lineups.home_detail.bench[0].name,'Reserva Mandante');
 assert.equal(fb.lineups.away_detail.status,'provável');
 const empty={...fixture,odds:[],lineups:{},form:{home:{available:0},away:{available:0}}};
-const w2={...mockWindow,NexusWebBridge:{data:async()=>({games:[empty]})}};
+const w2={...mockWindow,
+ fetch:async()=>({ok:true,clone(){return this},async json(){return base}}),
+ NexusWebBridge:{data:async()=>({games:[empty]})}};
 vm.runInNewContext(src,{window:w2,Response,console,URL});
 const p2=await (await w2.fetch('/api/prelive/fotmob-111')).json();
 assert.equal(p2.odds.available,false);
