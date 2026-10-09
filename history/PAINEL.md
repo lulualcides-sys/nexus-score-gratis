@@ -111,7 +111,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **42**.
 | 2026-10-09 | Kashima Antlers × Gamba Osaka | 2-0 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×5.0, Escanteios: 1.0×4.0, Grandes chances: 2.0×4.0 |
 | 2026-10-09 | Kashiwa Reysol × Vissel Kobe | 4-2 | 90 | Chutes no alvo: 6.0×6.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-09 | Raków Częstochowa × GKS Katowice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Wieczysta Kraków × Wisła Płock | 0-0 | 28 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-10-09 | Wieczysta Kraków × Wisła Płock | 1-0 | 28 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-09 | Etoile Carouge × Yverdon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kriens × Wil | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Rapperswil-Jona × FC Stade Lausanne-Ouchy | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -138,7 +138,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **42**.
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Rostov × Akron Togliatti | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 2-2 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 4.0×1.0 |
+| 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 2-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
