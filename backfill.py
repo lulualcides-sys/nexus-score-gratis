@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Complementa o NEXUS com as partidas ESPN de hoje e dos 3 dias anteriores.
+"""Complementa o NEXUS com as partidas ESPN de hoje e dos 2 dias anteriores.
 
 Sem odds retroativas, sem pressão fabricada e sem repetições de jogos.
 Os detalhes ESPN podem não conter todos os scouts/eventos; campos ausentes ficam ausentes.
@@ -64,7 +64,9 @@ def parse_fixture(event,league):
         'score':str(h.get('score','?'))+'-'+str(a.get('score','?')),
         'source':'ESPN','start_timestamp':utc_ts(event.get('date')),
         'collected_at':NOW.isoformat(),'venue':str(stadium)[:120],
-        'round':str(rank or '')[:80]
+        'round':str(rank or '')[:80],
+        'home_id':str((h.get('team') or {}).get('id') or ''),
+        'away_id':str((a.get('team') or {}).get('id') or '')
     }
 def scoreboard(league,day):
     url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+league+'/scoreboard?'+urlencode({'dates':day.replace('-',''),'limit':100})
@@ -131,7 +133,7 @@ def details(league,event_id):
 def main():
     from datetime import date
     today=date.fromisoformat(DAY)
-    days=[(today-timedelta(days=n)).isoformat() for n in range(4)]
+    days=[(today-timedelta(days=n)).isoformat() for n in range(3)]
     HISTORY.mkdir(exist_ok=True)
     documents={d:read(HISTORY/(d+'.json')) for d in days}
     sources={d:[] for d in days}
