@@ -12,6 +12,7 @@ on:
       - "web_export.py"
       - "backfill.py"
       - "team_form.py"
+      - "fotmob_form.py"
       - "multi_source.py"
       - "web/index.html"
       - "web/app.js"
@@ -41,7 +42,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py multi_source.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py multi_source.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -62,6 +63,10 @@ jobs:
         id: team_form
         continue-on-error: true
         run: python3 team_form.py
+      - name: Coletar os dez jogos anteriores de times FotMob e seus elencos
+        id: fotmob_form
+        continue-on-error: true
+        run: python3 fotmob_form.py
       - name: Capturar odds pré-jogo e liquidar previsões congeladas
         id: odds
         if: always()
