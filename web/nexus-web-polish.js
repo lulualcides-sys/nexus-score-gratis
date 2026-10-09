@@ -143,6 +143,22 @@ function confrontation(d){
        '<div class="nexus-h2h-row"><span>'+E(g.date||'')+'</span><span>'+E(g.home)+
        ' × '+E(g.away)+'</span><b>'+E(g.score)+'</b></div>').join('')+'</div>';
  }else result+='<div class="nexus-empty">Nenhum confronto direto confiável foi localizado entre esses dois clubes nos históricos conectados. Abaixo estão os resultados recentes de cada equipe, que não equivalem a confrontos diretos.</div>';
+ if(total){
+  const scores=rows.map(g=>String(g.score).split(/[-–]/).map(Number));
+  const goals=scores.reduce((n,p)=>n+p[0]+p[1],0);
+  const over=scores.filter(p=>p[0]+p[1]>=3).length;
+  const btts=scores.filter(p=>p[0]>0&&p[1]>0).length;
+  const pct=n=>(100*n/total).toFixed(1).replace('.',',')+'%';
+  const providers=[...new Set(rows.map(g=>String(g.source||'Histórico').trim()).filter(Boolean))];
+  result+='<div class="nexus-section-title">Estatísticas dos confrontos reais</div>'+
+     '<div class="nexus-h2h-metrics">'+
+     card('Gols por jogo',(goals/total).toFixed(2),'média · '+total+' jogos')+
+     card('Over 2,5',pct(over),over+' de '+total+' jogos')+
+     card('Ambas marcam',pct(btts),btts+' de '+total+' jogos')+
+     card('Vitórias · '+d.home,pct(h),h+' de '+total+' jogos')+
+     '</div><p class="nexus-h2h-source">Fontes: '+E(providers.join(' + '))+
+     ' · somente confrontos passados verificados · não é EV+.</p>';
+ }
  result+='<div class="nexus-section-title">Comparativo dos últimos dez jogos disponíveis</div>'+
  '<div class="nexus-team-compare">'+formBlock(d.home,p.sample?.home)+
  formBlock(d.away,p.sample?.away)+'</div>';
