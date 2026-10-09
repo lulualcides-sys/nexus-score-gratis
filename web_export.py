@@ -89,6 +89,27 @@ def public_form(doc):
         if val is not None:base[name]=val
     return base
 
+def verified_logo(value):
+    """Imagens de clubes somente no CDN da ESPN, sem URL arbitraria."""
+    import urllib.parse
+    raw=safe(value,300)
+    try:
+        parsed=urllib.parse.urlparse(raw)
+        if parsed.scheme=='https' and parsed.netloc in ('a.espncdn.com','a1.espncdn.com') and parsed.path.startswith('/i/teamlogos/'):
+            return raw
+    except ValueError:
+        pass
+    return ''
+
+def sort_games(rows):
+    """Dia mais recente primeiro; em cada dia, pontape inicial mais cedo primeiro."""
+    def key(row):
+        stamp=number(row.get('start_timestamp'))
+        return (-int(row['day'].replace('-','')), 0 if stamp is not None and stamp>0 else 1,
+                stamp if stamp is not None and stamp>0 else float('inf'),
+                str(row.get('league') or ''),str(row.get('home') or ''))
+    return sorted(rows,key=key)
+
 def public_row(row,day):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
@@ -137,6 +158,7 @@ def public_row(row,day):
             'home':safe(f.get('home')),'away':safe(f.get('away')),
             'league':safe(f.get('league'),85),'league_code':safe(f.get('league_code'),40),
             'round':safe(f.get('round'),70),'venue':safe(f.get('venue'),100),
+            'home_logo':verified_logo(f.get('home_logo')),'away_logo':verified_logo(f.get('away_logo')),
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'observed_at':safe(f.get('collected_at'),36),
@@ -226,8 +248,7 @@ def main():
         for row in matches.values():
             item=public_row(row,path.stem)
             if item:rows.append(item)
-    rows.sort(key=lambda r:(0 if r['phase']=='live' else 1 if r['phase']=='scheduled' else 2,
-                            -int(r['day'].replace('-','')),r['league'],r['home']))
+    rows=sort_games(rows)
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
     rows=rows[:500]
     last=load(H/'status.json')
