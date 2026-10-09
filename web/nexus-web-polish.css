@@ -1,0 +1,97 @@
+/* NEXUS 5.29 — Ajustes definitivos para celular, gráfico e análise.
+   Cuidado: preserva o layout original, aumentando a legibilidade.
+*/
+html,body{max-width:100%;overflow-x:hidden}
+#detail-panel,.detail-panel,.match-detail{max-width:100%;min-width:0}
+.scout-main{min-width:0}
+.scout-chart-card{max-width:100%;min-width:0}
+.scout-graph-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-inline:contain;touch-action:pan-x pan-y;scrollbar-width:thin}
+.scout-graph-scroll .scout-graph{width:100%;min-height:340px;height:auto;max-width:none;display:block}
+.scout-chart-card .scout-compact-caption{line-height:1.5}
+.scout-graph .scout-shot-event.shot-on circle{r:4}
+.scout-foot{display:flex;flex-wrap:wrap;gap:8px 15px}
+.scout-recent{min-width:0}
+.pressure-scoreboard-crest{position:relative;overflow:hidden;border-radius:16px;width:70px;height:70px;font-size:21px}
+.pressure-scoreboard-crest img.team-crest-image{display:block;position:absolute;inset:4px;height:calc(100% - 8px);width:calc(100% - 8px);object-fit:contain;background:transparent}
+.team-circle{position:relative;overflow:hidden}
+.team-circle img.team-crest-image{position:absolute;inset:1px;width:calc(100% - 2px);height:calc(100% - 2px);object-fit:contain}
+.pressure-scoreboard-team strong{overflow-wrap:anywhere}
+.n56-goal-list{max-height:88px;overflow-y:auto;scrollbar-width:thin;padding:3px}
+.n56-goal-line{margin:0;min-height:26px;align-items:center}
+.n56-goal-line b{font-size:10px}
+.n56-goal-line small{font-size:10px}
+.nexus-comparison,.nexus-projection{display:block;max-width:100%;min-width:0;line-height:1.5}
+.nexus-analysis-top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:13px}
+.nexus-analysis-top h3{font-size:16px;line-height:1.35;margin:0;color:#19354c}
+.nexus-analysis-top small{font-size:11px;color:#677787}
+.nexus-note{padding:12px 14px;border:1px solid #b6d7d3;background:#edf8f5;color:#355c61;border-radius:10px;font-size:12px;line-height:1.6;margin:10px 0}
+.nexus-insight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:14px 0}
+.nexus-insight{border:1px solid #d8d3cb;background:#fffefa;border-radius:11px;padding:13px 11px;min-width:0}
+.nexus-insight span{color:#6c7783;font-size:10px;font-weight:750;letter-spacing:.45px;display:block;line-height:1.3}
+.nexus-insight b{color:#25445c;display:block;font-size:23px;margin:6px 0 2px;font-variant-numeric:tabular-nums}
+.nexus-insight em{font-size:10px;color:#6b8e92;font-style:normal;display:block}
+.nexus-prob-row{margin:15px 0}
+.nexus-prob-label{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}
+.nexus-prob-label span{color:#3d5263;font-size:12px;font-weight:700}
+.nexus-prob-label strong{font-size:14px;color:#274759;font-variant-numeric:tabular-nums}
+.nexus-prob-track{height:13px;background:#e4e5e3;border:1px solid #d4d8d5;border-radius:99px;overflow:hidden}
+.nexus-prob-fill{height:100%;display:block;border-radius:99px;background:linear-gradient(90deg,#65b8b9,#267a9a)}
+.nexus-prob-fill.away{background:linear-gradient(90deg,#cfa8cc,#ab6489)}
+.nexus-prob-fill.draw{background:linear-gradient(90deg,#eac684,#d49838)}
+.nexus-section-title{color:#36546a;letter-spacing:.8px;font-size:12px;font-weight:850;margin:20px 0 10px;border-bottom:1px solid #ded8cf;padding-bottom:8px}
+.nexus-scores{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}
+.nexus-score{border:1px solid #d2d7d8;background:#fff;border-radius:9px;padding:12px 9px;text-align:center}
+.nexus-score b{font-size:24px;display:block;color:#25465b}
+.nexus-score span{font-size:11px;color:#637785}
+.nexus-team-compare{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:11px 0}
+.nexus-team-form{border:1px solid #ddd6cc;border-radius:12px;background:#fffdf8;padding:12px;min-width:0}
+.nexus-team-form h4{font-size:14px;color:#20374b;margin:0 0 6px;overflow-wrap:anywhere}
+.nexus-team-form small{font-size:10px;color:#748491;display:block}
+.nexus-form-badges{display:flex;gap:5px;flex-wrap:wrap;margin:12px 0 8px}
+.nexus-form-badges b{border-radius:6px;padding:6px 9px;background:#e7edf0;color:#3a5564;font-size:12px}
+.nexus-form-badges b.w{background:#d9f3e6;color:#12744e}
+.nexus-form-badges b.d{background:#f5edcf;color:#7e662c}
+.nexus-form-badges b.l{background:#f8dfe3;color:#a83b4c}
+.nexus-compare-item{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #ebe2d8;padding:9px 0;font-size:11px;color:#5d6975;gap:8px}
+.nexus-compare-item b{font-size:13px;color:#244255;white-space:nowrap}
+.nexus-h2h-list{display:grid;gap:7px}
+.nexus-h2h-row{display:grid;grid-template-columns:64px 1fr auto;gap:9px;align-items:center;border:1px solid #e0d9d1;padding:10px;border-radius:8px;background:#fffdf7;font-size:11px}
+.nexus-h2h-row b{font-size:12px;color:#233d54;text-align:right}
+.nexus-h2h-row span{color:#718493}
+.nexus-h2h-result{height:10px;border-radius:9px;background:#e8d6d4;display:flex;overflow:hidden;margin:10px 0}
+.nexus-h2h-result i{height:100%;display:block}
+.nexus-h2h-result .h{background:#4aa98a}.nexus-h2h-result .d{background:#d5aa55}.nexus-h2h-result .a{background:#b96684}
+.nexus-empty{padding:18px 14px;border:1px dashed #c4cac8;border-radius:9px;background:#f9f7f3;color:#697987;font-size:12px;line-height:1.55}
+@media(max-width:760px){
+ .scout-main{padding:11px!important}
+ .scout-section-head{margin-bottom:10px!important;flex-wrap:wrap;gap:8px}
+ .scout-section-head h2{font-size:23px}
+ .scout-chart-card{padding:12px 8px 10px!important;border-radius:10px}
+ .scout-graph-scroll{margin:0 -2px;padding:0 2px 8px}
+ /* barras 1/minuto devem permanecer legíveis: painel com rolagem horizontal */
+ .scout-graph-scroll .scout-graph{width:945px!important;min-width:945px!important;max-width:none!important;height:auto!important;min-height:345px!important}
+ .scout-chart-card .scout-compact-caption{font-size:10px}
+ .scout-chart-card .scout-compact-caption::after{content:"  ·  DESLIZE O GRÁFICO PARA VER TODOS OS MINUTOS";display:block;color:#547f8c;margin-top:4px}
+ .scout-chart-card .scout-totals{gap:6px;flex-wrap:wrap}
+ .scout-chart-card .scout-totals-side{flex-wrap:wrap;gap:5px}
+ .scout-chart-card .scout-totals-side strong{width:100%;font-size:12px}
+ .scout-foot{font-size:10px;line-height:1.6}
+ .pressure-scoreboard{padding:11px 7px!important}
+ .pressure-scoreboard-main{display:grid!important;grid-template-columns:minmax(0,1fr) 78px minmax(0,1fr)!important;gap:7px!important;align-items:start!important;padding:8px 2px!important}
+ .pressure-scoreboard-team{width:100%;padding:0!important;gap:5px!important}
+ .pressure-scoreboard-crest{width:65px!important;height:65px!important;min-width:65px;min-height:65px;border-radius:14px!important}
+ .pressure-scoreboard-team strong{font-size:13px!important;line-height:1.2}
+ .pressure-scoreboard-score{font-size:35px!important;margin:15px 0 5px!important}
+ .pressure-scoreboard-center{min-width:0}
+ .pressure-scoreboard-odds{min-width:0}
+ .n56-goal-list{width:100%;max-height:83px;overflow-y:auto}
+ .n56-goal-line{font-size:9px!important;padding:5px 4px!important}
+ .n56-goal-line b{font-size:9px!important}
+ .pressure-competition-meta{display:flex;flex-wrap:wrap;gap:5px}
+ .pressure-competition-meta span{font-size:9px}
+ .nexus-insight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .nexus-team-compare{grid-template-columns:1fr}
+ .nexus-scores{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .nexus-h2h-row{grid-template-columns:51px 1fr auto;padding:9px 7px;gap:5px;font-size:10px}
+ .nexus-h2h-row b{font-size:11px}
+}
