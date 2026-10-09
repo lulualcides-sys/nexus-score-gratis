@@ -127,6 +127,13 @@ function instrument(g,detail){
     reason:String(e.text||'Evento confirmado na fonte').slice(0,140)
  }));
  const ten=pressureWindow(points,minutes||1,10),five=pressureWindow(points,minutes||1,5);
+ const fifteen=pressureWindow(points,minutes||1,15);
+ // NEXUS original espera as janelas 5/10/15 com força e cobertura reais.
+ const asWindow=(w)=>({
+   valid:w.valid,home_force:w.home_recent,away_force:w.away_recent,
+   samples:w.samples,expected:w.expected,dominant:w.dominant,
+   level:w.level,total_force:w.home_recent!==null&&w.away_recent!==null?w.home_recent+w.away_recent:null
+ });
  const stats=detail.stats||{home:{},away:{}};
  const board=buildBoard(ten,five,stats,ev,end);
  const markers=[],previous={},trigger={};
@@ -169,8 +176,7 @@ function instrument(g,detail){
              home_recent:ten.home_recent,away_recent:ten.away_recent,minute:end},
    pressure5:{score:five.score,level:five.level,dominant:five.dominant,difference:five.difference},
    scout_pressure:{...sourcedetail,available:total>0,last_graph_minute:minutes,
-     windows:{'10':{valid:ten.valid,dominant:ten.dominant,total_force:
-                 ten.home_recent!==null&&ten.away_recent!==null?ten.home_recent+ten.away_recent:null}},
+     windows:{'5':asWindow(five),'10':asWindow(ten),'15':asWindow(fifteen)},
      narrative:total?'Pressão verificada por amostras; critérios idênticos ao engine.py do NEXUS 5.29.':
        'Sem amostras minuto a minuto confirmadas.'}
  };
