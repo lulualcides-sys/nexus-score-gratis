@@ -37,6 +37,12 @@
       <div id="bolsa-markets" style="overflow-x:auto;margin-top:12px"></div>
       <p style="color:#8ea5c3;font-size:12px">P/L líquido efetivamente registrado com stakes originais. Não representa o resultado dos sinais do NEXUS, nem projeção ou EV estimado.</p>
     </section>
+    <section class="toolbar" id="pc-private" hidden>
+      <div class="toolbar-top"><h2>◈ Leitura do PC · P/L importado <small> · somente servidor privado</small></h2></div>
+      <div class="notice" id="pc-summary">Nenhum arquivo importado.</div>
+      <div id="pc-markets" style="overflow-x:auto"></div>
+      <p class="small-note" id="pc-explainer"></p>
+    </section>
     <section class="bottom-grid">
       <article class="info-panel"><h3>◈ Mercados acompanhados</h3><p><b>Over / Under, BTTS, Match Odds e Lay CS:</b> o placar permite acompanhar condições básicas, não calcular EV+.</p><p><b>Escanteios, chutes e grandes chances:</b> aparecem somente quando os scouts foram efetivamente coletados.</p><p><b>Termômetro:</b> histórico minuto a minuto apenas dos minutos disponíveis na fonte.</p></article>
       <article class="info-panel privacy"><h3>⛨ Transparência e privacidade</h3><p>A publicação estática exibe apenas dados esportivos públicos. O servidor web com senha mostra também o histórico financeiro privado.</p><p>O P/L da Bolsa não é divulgado no site estático. Os sinais EV+ experimentais são separados do resultado financeiro realizado.</p></article>
@@ -46,5 +52,6 @@
 </div>
 <dialog id="detail"><div id="detail-content"></div><button type="button" class="close-dialog" id="close-dialog" aria-label="Fechar">×</button></dialog>
 <script src="./app.js" defer></script>
+<script src="./pc.js" defer></script>
 </body>
 </html>
