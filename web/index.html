@@ -825,7 +825,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     snapshot=value;last=Date.now();return value;
   }
   function incident(e){
-    const glyph={goal:'⚽',shot_on:'🥅',shot_off:'↗️',penalty_missed:'❌🥅',yellow_card:'🟨',red_card:'🟥'};
+    const glyph={goal:'⚽',shot_on:'🥅',shot_off:'↗️',big_chance_missed:'💣❌',penalty_missed:'❌🥅',yellow_card:'🟨',red_card:'🟥'};
     if(!e||!glyph[e.type]||!Number.isFinite(+e.m))return null;
     const side=e.side==='home'?'HOME':e.side==='away'?'AWAY':null;
     if(!side)return null;
@@ -1097,7 +1097,7 @@ window.PressureLab = (() => {
   const W=1020,H=565,L=48,R=20,TOP=141,BOTTOM=170,ZERO=267;
   const knownIcons=["🧨","🔥","🎯","🚩","⚡","💣","⚔️","🧠","🟥","⏱️","🥶","🚨","🥅","↗️"];
   const hiddenIcons=new Set();
-  const shotEmojis=new Set(['🥅','↗️','🚩']); // One timeline only: outside the grouped indicators.
+  const shotEmojis=new Set(['🥅','↗️','🚩','💣❌']); // One timeline only: outside the grouped indicators.
   // Mais importantes na frente, mas TODOS continuam visíveis nos agrupamentos.
   // Gol e cartões confirmados são exibidos em outra faixa de eventos.
   const signalPriority=['🟥','🚨','🧨','🔥','💣','⚔️','🥅','🎯','⚡','🚩','⏱️','↗️','🥶','🧠'];
@@ -1200,7 +1200,7 @@ window.PressureLab = (() => {
     return `<strong>${group.team==='HOME'?'▲ MANDANTE':'▼ VISITANTE'} · ${h(team)}</strong><div class="signal-inspector-rows">${group.events.map(e=>`<div class="signal-inspector-item"><span class="signal-inspector-icon">${h(e.emoji)}</span><div><b>${h(e.name)} · ${e.minute}'</b><small>${h(e.label)} · ${h(e.reason)}</small></div></div>`).join('')}</div>`;
   }
   function toggleIcon(emoji) {if(!knownIcons.includes(emoji))return false;hiddenIcons.has(emoji)?hiddenIcons.delete(emoji):hiddenIcons.add(emoji);return true;}
-  const eventGlyph={'⚽':'⚽','⚽🅿️':'⚽🅿️','❌🥅':'❌🥅','🟨':'🟨','🟥':'🟥','🥅':'●','↗️':'⊗','🚩':'🚩','💣':'💣','⚔️':'⚔️'};
+  const eventGlyph={'⚽':'⚽','⚽🅿️':'⚽🅿️','❌🥅':'❌🥅','🟨':'🟨','🟥':'🟥','🥅':'●','↗️':'⊗','💣❌':'💣❌','🚩':'🚩','💣':'💣','⚔️':'⚔️'};
   const shotStyle = emoji => emoji==='🥅' ? 'shot-on' : emoji==='↗️' ? 'shot-off' : '';
   const displayGlyph = emoji => emoji==='🥅' ? '●' : emoji==='↗️' ? '⊗' : emoji;
   function buildSnapshotSignals(d){
@@ -1356,8 +1356,9 @@ window.PressureLab = (() => {
       group.rows.push(e);
     }
     const observedMarks='';
-    // Nunca mostrar totais antigos de scouts como se fossem ações ofensivas atuais.
-    const snapshotSignals=live&&gameMinute>last+3?[]:buildSnapshotSignals(d);
+    // Totais acumulados sem minuto real pertencem ao quadro POR EQUIPE,
+    // não ao gráfico, pois confundem e aparentam duplicar lances.
+    const snapshotSignals=[];
     const snapshotLayouts=[];
     const snapshotX=Math.min(WIDTH-RIGHT-26, Math.max(LEFT+26, tickX(Math.max(1,Math.min(90,playedThrough||last||1)))));
     for(const team of ['HOME','AWAY']){
@@ -1416,9 +1417,9 @@ window.PressureLab = (() => {
        <defs><clipPath id="scout-clip-top"><rect x="${LEFT}" y="80" width="${plotW}" height="72"/></clipPath><clipPath id="scout-clip-bottom"><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70"/></clipPath></defs>
        <rect x="${LEFT}" y="80" width="${plotW}" height="72" fill="#b6b4af" opacity=".11"/><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70" fill="#b3323a" opacity=".07"/>
        ${futureShade}${delayedZone}${axisEnd===90?`<line class="scout-extra-divider" x1="${x90}" x2="${x90}" y1="80" y2="221"/>`:''}${half}${tickHtml}${extraLabel}<line class="scout-zero" x1="${LEFT}" x2="${WIDTH-RIGHT}" y1="${ZERO_Y}" y2="${ZERO_Y}"/>
-       ${futureSlots}${bars}${currentMark}${signalMarks}${snapshotMarks}${events}${observedMarks}${summaryInside}
+       ${futureSlots}${bars}${currentMark}${signalMarks}${events}${observedMarks}${summaryInside}
        </svg></div>
-       <div class="scout-foot"><span><i class="scout-key home"></i>${h(d.home||'Mandante')} acima</span><span><i class="scout-key away"></i>${h(d.away||'Visitante')} abaixo</span><span>▥ Contorno: jogado sem scout · ▪ Cinza: futuro</span><span>Chutes e escanteios: mandante em cima · visitante embaixo · ● mandante (escuro) · ● visitante (rosa) · ⊗ fora · 🚩 escanteio</span><b>${observedCount}/${playedThrough||0} minutos jogados com pressão · ${coverage}% cobertura${missingCoverage}${missing}</b></div>
+       <div class="scout-foot"><span><i class="scout-key home"></i>${h(d.home||'Mandante')} acima</span><span><i class="scout-key away"></i>${h(d.away||'Visitante')} abaixo</span><span>▥ Contorno: jogado sem scout · ▪ Cinza: futuro</span><span>Chutes e escanteios: mandante em cima · visitante embaixo · ● mandante (escuro) · ● visitante (rosa) · ⊗ fora · 💣❌ grande chance perdida · 🚩 escanteio</span><b>${observedCount}/${playedThrough||0} minutos jogados com pressão · ${coverage}% cobertura${missingCoverage}${missing}</b></div>
        </div>`;
   }
   function windowSummary(d,n){

@@ -188,6 +188,11 @@ def fotmob_events(detail):
         else:continue
         tid=str(shot.get('teamId') or '')
         side='home' if tid and tid==home_id else 'away' if tid and tid==away_id else ''
+        # Nunca atribuir lance ao mandante quando a equipe não foi confirmada.
+        if not side:continue
+        # A grande chance desperdiçada é um único chute, não dois ícones.
+        big=shot.get('isBigChance') is True or shot.get('bigChance') is True
+        if big and kind=='shot_off':kind='big_chance_missed'
         insert(shot.get('min'),kind,side,shot.get('playerName') or '')
     return sorted(found.values(),key=lambda e:(e['minute'],e['type']))[:150]
 

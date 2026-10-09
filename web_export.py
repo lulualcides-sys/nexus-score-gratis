@@ -17,7 +17,7 @@ BR=timezone(timedelta(hours=-3))
 SCOUTS=('shots_on','shots_off','shots_total','corners','big_chances','dangerous_attacks',
         'possession','fouls','yellow_cards','red_cards','offsides','saves','passes',
         'pass_accuracy','xg')
-TYPES={'goal','yellow_card','red_card','penalty_missed','shot_on','shot_off'}
+TYPES={'goal','yellow_card','red_card','penalty_missed','shot_on','shot_off','big_chance_missed'}
 
 def load(path):
     try:

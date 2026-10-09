@@ -22,6 +22,19 @@ assert.match(live,/SEM LEITURA RECENTE/);
 assert.doesNotMatch(live,/JOGO TRAVADO/);
 assert.match(live,/Pressão indisponível após 10/);
 assert.doesNotMatch(live,/90 minutos completos/);
+const awayChance={...sample,minute:32,
+  stats:{home:{big_chances:0},away:{big_chances:1}},
+  incidents:[{minute:32,emoji:'💣❌',type:'big_chance_missed',team:'AWAY',
+    stamp:"32'",text:'Grande chance perdida · para fora'}],
+  signal_timeline:[{minute:32,emoji:'💣❌',team:'AWAY',basis:'event'}]};
+const chance=PressureLab.chart(awayChance,'all');
+assert.match(chance,/scout-event compact away/);
+assert.doesNotMatch(chance,/scout-event compact home/);
+assert.doesNotMatch(chance,/snapshot-now/);
+assert.ok(chance.includes('Grande chance perdida'));
+const homeChance=PressureLab.chart({...awayChance,incidents:[{...awayChance.incidents[0],team:'HOME'}]},'all');
+assert.match(homeChance,/scout-event compact home/);
+assert.doesNotMatch(homeChance,/scout-event compact away/);
 const half=PressureLab.chart(sample,'all');
 assert.match(half,/90 POSIÇÕES/);
 assert.doesNotMatch(half,/45 POSIÇÕES/);

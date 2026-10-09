@@ -41,6 +41,9 @@ const detail=x.instrument(fixture,base);
 assert.ok(detail.indicator_board.length>=11);
 assert.ok(detail.signal_timeline.some(a=>a.emoji==='🔥'&&a.basis==='graph'));
 assert.ok(detail.signal_timeline.some(a=>a.emoji==='🥅'&&a.minute===14&&a.basis==='event'));
+const chance=x.instrument({...fixture,events:[{m:32,type:'big_chance_missed',side:'away',text:'Chance perdida'}]},base);
+assert.ok(chance.signal_timeline.some(a=>a.emoji==='💣❌'&&a.team==='AWAY'&&a.basis==='event'));
+assert.ok(!chance.signal_timeline.some(a=>a.emoji==='💣❌'&&a.team==='HOME'));
 assert.ok(detail.signal_timeline.filter(a=>a.basis==='snapshot').every(e=>e.minute===30));
 assert.equal(detail.pressure.level,'CRITICO');
 for(const n of [5,10,15]){

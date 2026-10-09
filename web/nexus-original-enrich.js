@@ -15,7 +15,7 @@ const titleFrom={'🧨':'Pressão total','🔥':'Pressão forte','🎯':'Precis�
 '⚔️':'Ataques perigosos','🧠':'Value / preço justo','🟥':'Expulsão',
 '⏱️':'Tensão tardia','🥶':'Jogo frio','🚨':'Gol próximo (alerta)'};
 const iconLabels={'goal':'⚽','penalty_missed':'❌🥅','yellow_card':'🟨',
-'red_card':'🟥','shot_on':'🥅','shot_off':'↗️'};
+'red_card':'🟥','shot_on':'🥅','shot_off':'↗️','big_chance_missed':'💣❌'};
 const isMatchURL=p=> /^\/api\/(?:match|prelive)\//.test(p);
 function samplesFrom(g){
   return [...(g.pressure||[])].map(v=>({minute:safeNumber(v.m),value:safeNumber(v.v)}))

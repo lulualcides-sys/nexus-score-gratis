@@ -23,6 +23,19 @@ class FotmobEventTests(unittest.TestCase):
         self.assertEqual(next(e for e in events if e['type']=='shot_off')['side'],'away')
         self.assertEqual(len(events),5)
 
+    def test_big_chance_missed_has_only_verified_away_side(self):
+        detail={'general':{'homeTeam':{'id':11},'awayTeam':{'id':22}},
+          'content':{'shotmap':{'shots':[
+            {'eventType':'Miss','isOnTarget':False,'teamId':22,'min':32,
+             'isBigChance':True,'playerName':'Chance visitante'},
+            {'eventType':'Miss','isOnTarget':False,'teamId':22,'min':33,
+             'playerName':'Chute comum'},
+            {'eventType':'Miss','isOnTarget':False,'teamId':99,'min':34,
+             'isBigChance':True,'playerName':'Equipe desconhecida'}]}}}
+        result=fotmob_events(detail)
+        self.assertEqual([(e['minute'],e['type'],e['side']) for e in result],
+                         [(32,'big_chance_missed','away'),(33,'shot_off','away')])
+
     def test_no_data_never_generates_fake_events(self):
         self.assertEqual(fotmob_events({'content':{}}),[])
         self.assertEqual(fotmob_events({'content':{'shotmap':{'shots':[
