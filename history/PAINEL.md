@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T12:48:11.027649+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T12:50:16.335035+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 
@@ -68,7 +68,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-10-09 | Klubi 04 × EIF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Haka × PK-35 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | JäPS × JIPPO | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Shenzhen Peng City × Henan FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Shenzhen Peng City × Henan FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Zhejiang Professional × Shanghai Port | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Qingdao Hainiu × Beijing Guoan | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Buxoro × Andijon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
