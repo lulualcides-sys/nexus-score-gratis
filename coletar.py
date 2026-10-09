@@ -67,7 +67,12 @@ def fotmob_list(day):
                 'league':str(league.get('name') or ''),'minute':minute,'live':live,
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
-                'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),'collected_at':NOW.isoformat()})
+                'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),
+                'collected_at':NOW.isoformat(),
+                'home_logo':('https://images.fotmob.com/image_resources/logo/teamlogo/'+str(home['id'])+'.png')
+                    if str(home.get('id') or '').isdigit() else '',
+                'away_logo':('https://images.fotmob.com/image_resources/logo/teamlogo/'+str(away['id'])+'.png')
+                    if str(away.get('id') or '').isdigit() else ''})
     return out
 
 def espn_league(code):
@@ -175,7 +180,17 @@ def run():
         if not match['id'].startswith('fotmob-'):continue
         try:
             mid=match['id'].split('-',1)[1]
-            packet=fetch('https://www.fotmob.com/api/matchDetails?'+urlencode({'matchId':mid}),timeout=7)
+            # FotoMob mudou a rota de detalhes para /api/data/matchDetails.
+            # Preserva fallback para o endpoint anterior, sem dados inventados.
+            packet=None
+            for url in ('https://www.fotmob.com/api/data/matchDetails?',
+                        'https://www.fotmob.com/api/matchDetails?'):
+                try:
+                    packet=fetch(url+urlencode({'matchId':mid}),timeout=7)
+                    break
+                except Exception:
+                    continue
+            if packet is None:raise ValueError('FotMob detalhes indisponiveis')
             before=fixtures.get(match['id']) or {}
             points=momentum(packet)
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
