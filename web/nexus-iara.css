@@ -36,3 +36,19 @@
  .iara-evidence span{font-size:9px;padding:6px 7px}
  .iara-pill{font-size:9px;padding:6px 8px}
 }
+
+.iara-context,.iara-ev{border:1px solid #b9d2ce;border-radius:10px;background:#f2faf7;
+ padding:12px 13px;margin:11px 0;color:#294658}
+.iara-context>b,.iara-ev>b{display:block;color:#1a625d;font-size:12px;letter-spacing:.3px;margin-bottom:7px}
+.iara-context p,.iara-ev p{margin:5px 0 8px;line-height:1.5;font-size:12px}
+.iara-context p strong{font-weight:800;color:#2a4a60}
+.iara-context small,.iara-ev small{font-size:10px;line-height:1.5;color:#68848b}
+.iara-ev{background:#fff8eb;border-color:#e4d2a6}
+.iara-ev>b{color:#927027}
+.iara-ev.muted,.iara-context.muted{background:#f5f5f1;border-color:#d3d4ce}
+.iara-ev.muted>b,.iara-context.muted>b{color:#70808b}
+@media(max-width:760px){
+ .iara-context,.iara-ev{padding:10px 11px;margin:8px 0}
+ .iara-context p,.iara-ev p{font-size:11px}
+ .iara-context small,.iara-ev small{font-size:9px}
+}
