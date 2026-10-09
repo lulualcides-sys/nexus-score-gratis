@@ -203,8 +203,11 @@ def main():
     now=datetime.strptime(DAY,'%Y-%m-%d').date()
     days=[(now-timedelta(days=i)).isoformat() for i in range(3)]
     docs={d:read(HISTORY/(d+'.json')) for d in days}
+    live_status=read(HISTORY/'status.json')
+    fotmob_ok='FotMob' in (live_status.get('sources') or [])
     report={'updated_at':NOW.isoformat(),'days':days,
-       'providers':{'ESPN':'principal','FotMob':'tentativa (pode estar indisponivel)',
+       'providers':{'ESPN':'retrospectivo (3 dias)',
+                    'FotMob':'ativo' if fotmob_ok else 'indisponivel nesta coleta',
                     'Football-Data.co.uk':'consultando CSV',
                     'OpenLigaDB':'consultando Bundesliga'},
        'files_checked':0,'added':0,'cross_verified':0,'stats_filled':0,
