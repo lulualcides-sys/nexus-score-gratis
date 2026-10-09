@@ -12,7 +12,10 @@ on:
       - "odds_fixture_bridge.py"
       - "signal_registry.py"
       - "standings_context.py"
-      - "sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py"
+      - "sofascore_odds.py"
+      - "espn_scoreboard_odds.py"
+      - "the_odds_api_source.py"
+      - "pregame_refresh_quotes.py"
       - ".github/workflows/nexus-pregame.yml"
 permissions:
   contents: write
