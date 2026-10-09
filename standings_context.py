@@ -96,6 +96,22 @@ def team_stakes(table,tid):
         if ahead<=4:
             reasons.append({'kind':'primeiras_posicoes','label':'Disputa das primeiras posições',
                             'detail':f'{rank}º lugar, {pts} pontos, {ahead} ponto(s) atrás da liderança.'})
+    if not reasons and me['played']>=4:
+        # Vizinhos diretos na classificação: não presume vagas de G4/Z4.
+        if rank<n:
+            below=rows[rank]
+            diff=pts-below['points']
+            if 0<=diff<=3:
+                reasons.append({'kind':'defender_posicao','label':'Defender a posição',
+                                'detail':f'{rank}º lugar, {pts} pontos. O {rank+1}º soma '
+                                         f'{below["points"]}; margem de {diff} ponto(s).'})
+        if not reasons and rank>1:
+            above=rows[rank-2]
+            diff=above['points']-pts
+            if 0<=diff<=3:
+                reasons.append({'kind':'buscar_posicao','label':'Subir na tabela',
+                                'detail':f'{rank}º lugar, {pts} pontos. O {rank-1}º soma '
+                                         f'{above["points"]}; diferença de {diff} ponto(s).'})
     level='alta' if any(x['kind'] in ('sair_z4','buscar_g4') for x in reasons) else (
           'moderada' if reasons else 'sem_alerta')
     return {'position':rank,'points':pts,'played':me['played'],'goal_diff':me.get('goal_diff'),
