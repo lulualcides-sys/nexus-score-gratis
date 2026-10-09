@@ -5,6 +5,7 @@ Não usar classificações de copa com grupos como liga única.
 """
 import json
 import re
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from datetime import datetime,timedelta,timezone
 from urllib.parse import urlencode
@@ -54,11 +55,12 @@ def zones(table):
     title=str(table.get('league') or '').casefold()
     count=len(table.get('teams') or [])
     # Somente torneios de pontos corridos cujas zonas são conhecidas.
-    if count==20 and (league_id=='47' or 'premier league' in title and 'women' not in title):
+    if count==20 and league_id=='47':
         return {'drop':3,'top':4}
-    if count==20 and (league_id=='268' or ('brasileir' in title and ('serie a' in title or 'série a' in title))):
+    if count==20 and league_id=='268':
         return {'drop':4,'top':4}
-    return {'drop':0,'top':4 if count>=12 else 0}
+    # Não aplicar G4/Z4 automaticamente a campeonatos sem regra verificada.
+    return {'drop':0,'top':0}
 
 def team_stakes(table,tid):
     rows=table.get('teams') or []
@@ -100,13 +102,77 @@ def team_stakes(table,tid):
             'total_teams':n,'level':level,'reasons':reasons[:3],
             'source':'FotMob','updated_at':table.get('updated_at')}
 
+def normalized_name(value):
+    norm=unicodedata.normalize('NFKD',str(value or ''))
+    norm=''.join(x for x in norm if not unicodedata.combining(x))
+    norm=re.sub(r'[^a-z0-9]+',' ',norm.lower()).strip()
+    return ' '.join(x for x in norm.split()
+                    if x not in {'fc','cf','ec','sc','ac','the','de','da','do','dos'})
+
+def team_stakes_from_name(table,fixture_name):
+    search=normalized_name(fixture_name)
+    if not search:return None
+    matches=[row for row in table.get('teams') or []
+             if normalized_name(row.get('name'))==search]
+    if len(matches)!=1:return None
+    return team_stakes(table,matches[0]['id'])
+
+def espn_table(doc,league_id,code):
+    """ESPN retorna season e children[].standings.entries[] para ligas oficiais."""
+    if not isinstance(doc,dict):return None
+    season=doc.get('season') or {}
+    if not isinstance(season,dict):return None
+    current_year=NOW.year
+    year=integer(season.get('year'))
+    if year is not None and year not in (current_year,current_year-1):return None
+    children=doc.get('children') or []
+    if not isinstance(children,list) or len(children)!=1:return None
+    entries=(children[0].get('standings') or {}).get('entries') or []
+    if not isinstance(entries,list) or len(entries)!=20:return None
+    rows=[]
+    for idx,entry in enumerate(entries):
+        if not isinstance(entry,dict):return None
+        team=entry.get('team') or {}
+        stats={str(v.get('name') or '').lower():v
+               for v in entry.get('stats') or [] if isinstance(v,dict)}
+        def value(*names):
+            for name in names:
+                obj=stats.get(name.lower())
+                if obj and obj.get('value') is not None:
+                    try:return float(obj['value'])
+                    except (ValueError,TypeError):continue
+            return None
+        rank=value('rank','position')
+        pts=value('points','point')
+        played=value('gamesPlayed','matchesPlayed','played','games')
+        if rank is None:rank=idx+1
+        tid=str(team.get('id') or '')
+        tname=str(team.get('displayName') or team.get('name') or '')[:80]
+        if not tid.isdigit() or not tname or any(v is None for v in (pts,played)):return None
+        rows.append({'id':tid,'name':tname,'position':int(rank),'points':int(pts),
+                     'played':int(played),'goal_diff':integer(value('pointDifferential','goalDifference'))})
+    if set(r['position'] for r in rows)!=set(range(1,21)):return None
+    if len({r['id'] for r in rows})!=20:return None
+    rows.sort(key=lambda item:item['position'])
+    return {'league_id':str(league_id),
+            'league':'Brasileirão Série A' if code=='bra.1' else 'Premier League',
+            'season':str(season.get('displayName') or season.get('year') or '')[:26],
+            'teams':rows,'updated_at':NOW.isoformat(),
+            'source':'ESPN','join_rule':'Nome completo normalizado e único'}
+
 def make_context(fixture,table):
     if not isinstance(table,dict):return None
     if str(fixture.get('league_id') or '')!=str(table.get('league_id') or ''):return None
-    home=team_stakes(table,fixture.get('home_id'))
-    away=team_stakes(table,fixture.get('away_id'))
-    if not home or not away:return None
-    return {'source':'FotMob','updated_at':table['updated_at'],
+    if table.get('source')=='FotMob':
+        home=team_stakes(table,fixture.get('home_id'))
+        away=team_stakes(table,fixture.get('away_id'))
+    elif table.get('source')=='ESPN':
+        # IDs ESPN não são equivalentes aos IDs FotMob.
+        home=team_stakes_from_name(table,fixture.get('home'))
+        away=team_stakes_from_name(table,fixture.get('away'))
+    else:return None
+    if not home or not away or home['position']==away['position']:return None
+    return {'source':table.get('source'),'updated_at':table['updated_at'],
             'league':table['league'],'season':table['season'],
             'home':home,'away':away,
             'note':'Urgência situacional pela tabela atual; não prova obrigação matemática de vencer. '
@@ -118,6 +184,15 @@ def fetch_table(league_id):
         try:
             d=fetch(base+param,timeout=7)
             table=league_table(d,league_id)
+            if table:return table
+        except Exception:continue
+    code={'268':'bra.1','47':'eng.1'}.get(str(league_id))
+    if not code:return None
+    for root in ('https://site.api.espn.com/apis/v2/sports/soccer/',
+                 'https://site.web.api.espn.com/apis/v2/sports/soccer/'):
+        try:
+            packet=fetch(root+code+'/standings',timeout=7)
+            table=espn_table(packet,league_id,code)
             if table:return table
         except Exception:continue
     return None
@@ -149,7 +224,7 @@ def run():
     chosen=stale[:MAX_LEAGUES]
     report={'updated_at':NOW.isoformat(),'leagues_found':len(candidates),
             'leagues_queried':len(chosen),'tables_received':0,
-            'fixtures_enriched':0,'with_urgency':0}
+            'fixtures_enriched':0,'with_urgency':0,'by_source':{}}
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid):lid for lid in chosen}
         for done in as_completed(futures):
@@ -157,6 +232,8 @@ def run():
             if result:
                 cache[futures[done]]=result
                 report['tables_received']+=1
+                src=result.get('source') or 'desconhecida'
+                report['by_source'][src]=report['by_source'].get(src,0)+1
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
             f=row.get('fixture') or {}
