@@ -134,12 +134,12 @@ def write_json(path, value):
 def push_private():
     # Nunca envia o arquivo CSV/JSON original. Requer Git ja autenticado localmente.
     subprocess.run(["git", "-C", str(ROOT), "add", "--", "history/pc_netpl.json", "history/pc_status.json"], check=True)
-    changes = subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"], check=False)
+    changes = subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet", "--", "history/pc_netpl.json", "history/pc_status.json"], check=False)
     if changes.returncode == 0:
         return
     if changes.returncode != 1:
         raise RuntimeError("Nao foi possivel verificar a alteracao do Git")
-    subprocess.run(["git", "-C", str(ROOT), "commit", "-m", "NEXUS PC: atualiza resumo privado das operacoes"], check=True)
+    subprocess.run(["git", "-C", str(ROOT), "commit", "--only", "-m", "NEXUS PC: atualiza resumo privado das operacoes", "--", "history/pc_netpl.json", "history/pc_status.json"], check=True)
     subprocess.run(["git", "-C", str(ROOT), "push"], check=True)
 
 def cycle(folder, currency, push=False):
