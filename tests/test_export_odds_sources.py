@@ -26,4 +26,21 @@ class ExportOddsTests(unittest.TestCase):
         self.assertEqual(len(result['odds']),3)
         self.assertEqual({x['bookmaker'] for x in result['odds']},{'Casa A'})
 
+    def test_quote_trio_is_same_capture_not_mixed_snapshots(self):
+        same=[
+          {'market':'1x2','selection':sel,'odds':price,'source':'ESPN',
+           'bookmaker':'DraftKings','captured_at':'2026-10-09T20:34:51+00:00'}
+          for sel,price in [('home',1.9091),('draw',3.4),('away',4.1)]]
+        same.extend([
+          {'market':'1x2','selection':sel,'odds':price,'source':'ESPN',
+           'bookmaker':'DraftKings','captured_at':'2026-10-09T20:52:55+00:00'}
+          for sel,price in [('home',1.9524),('away',4.0)]])
+        row={'fixture':{'id':'espn-arg.1-401841609','home':'Gimnasia La Plata',
+              'away':'Atlético Tucumán','start_timestamp':1791579600,'phase':'live'},
+             'odds_quotes':same}
+        exported=public_row(row,'2026-10-09')
+        self.assertEqual(len(exported['odds']),3)
+        self.assertEqual([q['odd'] for q in exported['odds']],[1.909,3.4,4.1])
+        self.assertEqual(len({q['at'] for q in exported['odds']}),1)
+
 if __name__=="__main__":unittest.main()

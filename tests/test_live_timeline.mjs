@@ -112,4 +112,18 @@ const complete=PressureLab.render({...sample,goal_scorers:[
    {team:'away',player:'A',minute:4},{team:'away',player:'B',minute:15},
    {team:'away',player:'C',minute:31}]},'all');
 assert.doesNotMatch(complete,/gols sem detalhes/);
+// Regressão placar ao vivo: odds cruzadas devem aparecer COM fase correta.
+const withPregameOdds=PressureLab.render({...sample,
+  odds:{available:true,phase:'pregame',source:'ESPN',bookmaker:'DraftKings',
+    fetched_at:'2026-10-09T20:34:51+00:00',
+    markets:{'1x2':{home:1.909,draw:3.4,away:4.1}}}},'all');
+assert.match(withPregameOdds,/ODDS PRÉ-JOGO/);
+assert.match(withPregameOdds,/DraftKings/);
+assert.match(withPregameOdds,/1,909/);
+assert.match(withPregameOdds,/3,40/);
+assert.match(withPregameOdds,/4,10/);
+assert.doesNotMatch(withPregameOdds,/ODDS AO VIVO/);
+const missingOdds=PressureLab.render({...sample,odds:{markets:{'1x2':{}}}},'all');
+assert.match(missingOdds,/Odds 1\/X\/2 não disponíveis nesta coleta/);
+
 console.log('NEXUS: gráfico completo 0-90 no celular, sem rolagem, cobertura real e placar auditável OK');

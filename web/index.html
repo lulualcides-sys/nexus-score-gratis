@@ -599,6 +599,10 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 .pressure-scoreboard-odds{display:inline-flex;gap:6px;align-items:center;justify-content:center;border:1px solid rgba(140,166,190,.24);border-radius:999px;padding:4px 10px;margin-top:9px;font-size:11px;color:#8fbad3;background:rgba(18,32,49,.33)}
 .pressure-scoreboard-odds span{font-weight:800;color:#78b8d2}.pressure-scoreboard-odds b{font-size:12px;color:#fff}
 .pressure-scoreboard-odds.center{margin-top:10px}
+.pressure-scoreboard-odds-note{display:block;margin:12px auto 0;padding:5px 8px;max-width:100%;width:max-content;text-align:center;font-size:11px;line-height:1.5;border:1px solid rgba(59,113,125,.2);border-radius:7px;background:rgba(247,243,234,.7);color:#44606b}
+.pressure-scoreboard-odds-note b{color:#a83b45}
+@media(max-width:520px){.pressure-scoreboard-odds-note{font-size:10px;margin-top:8px;padding:4px 6px}}
+
 
 /* NEXUS 5.5: calendário revisável de hoje até depois de amanhã */
 .agenda-days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:12px 14px 6px;background:#101d2a}
@@ -1669,9 +1673,20 @@ window.PressureLab = (() => {
     const atHalfTime=isHalfTime(d);
     const status=atHalfTime?'HT':d.live?'● AO VIVO':String(d.status||'PARTIDA');
     const kind=d.source?.includes('DEMONSTRAÇÃO')?' · DEMONSTRAÇÃO FICTÍCIA':d.verified_reference?' · HISTÓRICO REAL':'';
-    const mk=((d.odds||{}).markets||{})['1x2']||{};
-    const odd=v=>Number.isFinite(Number(v))&&Number(v)>1?Number(v).toLocaleString('pt-BR',{maximumFractionDigits:2}):'—';
+    const embedded=d.odds?.markets?.['1x2']?d.odds:null;
+    const quote=embedded||d.prelive?.odds||{};
+    const mk=quote.markets?.['1x2']||{};
+    const odd=v=>v!=null&&Number.isFinite(Number(v))&&Number(v)>1.01?Number(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:3}):'—';
     const homeOdd=odd(mk.home), drawOdd=odd(mk.draw), awayOdd=odd(mk.away);
+    const hasQuotes=[homeOdd,drawOdd,awayOdd].every(v=>v!=='—');
+    const quoteAt=quote.fetched_at?new Date(quote.fetched_at):null;
+    const timeLabel=quoteAt&&Number.isFinite(quoteAt.getTime())?
+      ' · capturadas '+quoteAt.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit'}):'';
+    const stage=quote.phase==='live'?'ODDS AO VIVO':'ODDS PRÉ-JOGO';
+    const priceNote=hasQuotes?
+      '<b>'+h(stage)+'</b> · '+h(quote.source||'Fonte verificada')+
+      (quote.bookmaker?' / '+h(quote.bookmaker):'')+h(timeLabel):
+      'Odds 1/X/2 não disponíveis nesta coleta; valores ausentes não são zero.';
     const scorers=(Array.isArray(d.goal_scorers)?d.goal_scorers:[]).filter(Boolean);
     const latest=scorers.slice().sort((a,b)=>Number(a.minute||0)-Number(b.minute||0)).pop()||null;
     // Only an observed NEW goal should animate; existing goals at first page load are silent.
@@ -1698,6 +1713,7 @@ window.PressureLab = (() => {
          <div class="pressure-scoreboard-center"><div class="pressure-scoreboard-score ${scorePulse?'goal-score-flash':''}">${h(score)}</div><div class="pressure-scoreboard-state ${d.live?'is-live':''}">${h(atHalfTime?'HT':time?`${time} · ${status}`:status)}</div><div class="pressure-scoreboard-odds center"><span>X</span><b>${h(drawOdd)}</b></div></div>
          <div class="pressure-scoreboard-team away ${(latestTeam==='away'||latestTeam==='both')?'latest-goal-team':''}">${crest(d.away_crest,awayCode,away)}<strong title="${h(away)}">${h(away)}</strong><small>VISITANTE</small><div class="n56-goal-list">${goalLines('away')}</div><div class="pressure-scoreboard-odds"><span>2</span><b>${h(awayOdd)}</b></div></div>
        </div>
+       <div class="pressure-scoreboard-odds-note">${priceNote}</div>
      </div>`;
   }
   function render(d,scope='all') {
