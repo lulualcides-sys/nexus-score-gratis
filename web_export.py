@@ -138,6 +138,26 @@ def paper_summary(rows):
             'won':wins,'paper_pl_u':round(sum(s['paper_pl_u'] for s in settled),3) if settled else None,
             'markets':list(groups.values())}
 
+def market_history(rows):
+    finished=[g['outcomes'] for g in rows if g.get('outcomes',{}).get('correct_score')]
+    n=len(finished)
+    if not n:return {'matches':0,'markets':[]}
+    selectors=[
+        ('Over 1.5 FT',lambda o:o['over_15']),
+        ('Over 2.5 FT',lambda o:o['over_25']),
+        ('Under 2.5 FT',lambda o:not o['over_25']),
+        ('Over 3.5 FT',lambda o:o['over_35']),
+        ('BTTS Sim',lambda o:o['btts']),
+        ('BTTS Nao',lambda o:not o['btts']),
+        ('Match Odds Casa',lambda o:o['result']=='home'),
+        ('Match Odds Empate',lambda o:o['result']=='draw'),
+        ('Match Odds Fora',lambda o:o['result']=='away'),
+    ]
+    return {'matches':n,'markets':[{'market':name,'occurred':sum(bool(fn(o)) for o in finished),
+             'matches':n,'rate_pct':round(100*sum(bool(fn(o)) for o in finished)/n,1)}
+             for name,fn in selectors],
+             'note':'Frequencias de placares encerrados, sem odds de entrada e sem indicador de lucro ou EV+'}
+
 def alerts_from(rows):
     alerts=[]
     for g in rows:
@@ -150,6 +170,12 @@ def alerts_from(rows):
                                'detail':'EV '+str(s['ev_pct'])+'% · odd '+str(s['odds'])+
                                         ' · modelo '+safe(s['model'])+' (nao validado)',
                                'observed_at':s['captured_at']})
+        if g['phase']=='scheduled' and g['odds'] and not g['signals']:
+            quotes=', '.join(x['sel']+' '+str(x['odd']) for x in g['odds'][:3])
+            alerts.append({'kind':'odds_watch','match_id':g['id'],'day':g['day'],
+                           'title':'Cotações 1X2 · '+g['home']+' × '+g['away'],
+                           'detail':quotes+'. Sem probabilidade validada: EV+ indisponível.',
+                           'observed_at':g['odds'][0].get('at')})
         if g['phase']=='live':
             on=[number((g['stats'].get(side) or {}).get('shots_on')) for side in ('home','away')]
             corners=[number((g['stats'].get(side) or {}).get('corners')) for side in ('home','away')]
@@ -187,7 +213,8 @@ def main():
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
-             'paper':paper_summary(rows),'alerts':alerts_from(rows),'games':rows}
+             'paper':paper_summary(rows),'market_history':market_history(rows),
+             'alerts':alerts_from(rows),'games':rows}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
