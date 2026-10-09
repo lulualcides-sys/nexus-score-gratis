@@ -128,13 +128,28 @@
     return '<div class="md-form-grid">'+['home','away'].map(side=>{
       const f=(g.form||{})[side]||{},name=g[side],games=Array.isArray(f.games)?f.games.slice(0,10):[];
       return '<article class="md-form-team"><div class="md-team-row">'+logo(g[side+'_logo'],name)+
-        '<div><b>'+esc(name)+'</b><small>'+esc(f.available||0)+' de 10 jogos anteriores</small></div></div>'+
+        '<div><b>'+esc(name)+'</b><small>'+esc(f.available||0)+' de 10 jogos anteriores · '+esc(f.source||'fonte não informada')+'</small></div></div>'+
         formSummary(f)+(games.length?'<div class="md-form-list">'+games.map(item=>
         '<div class="md-form-game"><span class="md-form-result md-result-'+esc(item.result)+'">'+
         esc(item.result)+'</span><span>'+esc(item.opponent)+'<small>'+esc(item.day)+
         ' · '+esc(item.venue)+'</small></span><b>'+esc(item.gf)+'–'+esc(item.ga)+'</b></div>').join('')+'</div>':
         noData('Nenhum resultado anterior verificado para esta equipe na fonte conectada.'))+'</article>';
     }).join('')+'</div>';
+  }
+  function squads(g){
+    const details=['home','away'].map(side=>{
+      const groups=(g.roster||{})[side]||[];
+      if(!groups.length)return '<article class="md-form-team"><div class="md-team-row">'+
+        logo(g[side+'_logo'],g[side])+'<b>'+esc(g[side])+'</b></div>'+
+        noData('Elenco ou escalação não disponível na coleta desta equipe.')+'</article>';
+      return '<article class="md-form-team"><div class="md-team-row">'+
+        logo(g[side+'_logo'],g[side])+'<b>'+esc(g[side])+'</b></div>'+
+        groups.map(group=>'<div class="md-roster-section"><h4>'+esc(group.section)+'</h4>'+
+          (group.players||[]).map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
+          '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>').join('')+'</article>';
+    });
+    return '<div class="md-note">Elenco geral fornecido pelo FotMob. Não significa escalação titular confirmada para esta partida.</div>'+
+      '<div class="md-form-grid">'+details.join('')+'</div>';
   }
   function projections(g){
     const f=(g.form||{}),h=f.home||{},a=f.away||{};
@@ -185,7 +200,7 @@
     if(t==='stats')return statistics(g);
     if(t==='projections')return projections(g);
     if(t==='form')return form(g);
-    if(t==='squads')return noData('Elencos e escalações ainda não foram fornecidos pelas fontes conectadas para este jogo.');
+    if(t==='squads')return squads(g);
     if(t==='indicators')return indicators(g);
     if(t==='markets')return outcomes(g)+'<h3 class="md-subtitle">Odds verificadas</h3>'+odds(g);
     return '';
