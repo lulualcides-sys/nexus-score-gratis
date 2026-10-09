@@ -5,12 +5,12 @@ Não se utiliza uma chave no front-end: apenas NEXUS_THE_ODDS_API_KEY no runner.
 Rejeita timestamps antigos, mercados de dois resultados e partidas ambíguas.
 """
 import os
-import re
+import json
+from urllib.request import Request,urlopen
 from datetime import datetime,timezone
 from urllib.parse import urlencode
 
 from espn_scoreboard_odds import normalized_team, parse_ts, plain
-from odds_capture import get
 from pregame_refresh_quotes import append_quote
 
 BASE='https://api.the-odds-api.com/v4'
@@ -84,7 +84,14 @@ def threeway_from_event(event,now_ts):
                 return selections,book[:55]
     return None
 
-def collect_odds(docs,candidates,now_ts,key=None,fetcher=get):
+def fetch_json(url):
+    request=Request(url,headers={'Accept':'application/json','User-Agent':'NEXUS/odds-audit'})
+    with urlopen(request,timeout=6) as response:
+        raw=response.read(1500001)
+    if len(raw)>1500000:raise ValueError('resposta excede limite')
+    return json.loads(raw)
+
+def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
     key=os.getenv('NEXUS_THE_ODDS_API_KEY','') if key is None else key
     status={'status':'not_configured' if not key else 'running','sports_queried':0,
             'matched':0,'quotes_added':0,'errors':[]}
