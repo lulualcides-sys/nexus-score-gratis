@@ -25,3 +25,15 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 **NEXUS 5.28:** adiciona a aba `☁ Coletas GitHub` ao aplicativo local, lendo uma pasta `history/` sincronizada ou dados privados via `gh` autenticado. O NEXUS completo ainda não está hospedado no GitHub Actions — apenas o coletor e o relatório.
 
 **Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
+
+## Multiplas fontes esportivas (NEXUS WEB)
+
+- **FotMob:** descoberta diaria ampliada, escudos do CDN FotMob e detalhes/pressao, quando disponiveis. Rotas 2026 `/api/data/matches` e `/api/data/matchDetails`.
+- **ESPN:** verificacao de campeonatos, scouts, escudos ESPN e ultimos 10 resultados disponiveis por time na propria competicao.
+- **Football-Data.co.uk:** consulta CSV historica de 10 divisoes europeias; cruza placares e complementa scouts somente quando times e resultados coincidem. Odds de fechamento sao rotuladas como *historicas*, nunca aproveitadas como se fossem odds de entrada.
+- **OpenLigaDB:** conferencia independente de Bundesliga e horarios/resultados, sem misturar jogos de nome ou horario incerto.
+- **Understat/Betfair Historical:** bases de referencia para trabalhos futuros de xG e odds historicas; nao estao ligadas ao painel ao vivo.
+
+O painel publico usa **hoje mais dois dias anteriores, no fuso America/Sao_Paulo**, e mostra os escudos oficiais encontrados; se algum logo falhar, exibe as iniciais. Em cada dia, organiza os jogos do horario mais cedo para o mais tarde. Cada confronto oferece ate 10 jogos anteriores por time, separadamente.
+
+Em `history/multi_source_status.json`, acompanhe quantos CSVs foram consultados, scouts completados e resultados cruzados. A simples consulta de uma fonte **nao** significa que ela forneceu partidas na janela atual. Resultados paper e P/L pessoal da Bolsa continuam distintos.
