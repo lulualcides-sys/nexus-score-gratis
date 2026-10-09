@@ -332,6 +332,14 @@ function labDashboard(doc){
    'Football-Data.co.uk':Number(doc.source_status?.files_checked||0)+' arquivos consultados',
    OpenLigaDB:String(doc.source_status?.providers?.OpenLigaDB||'sem dados nesta janela')};
  const markets=market.markets||[];
+ const journal=(doc.signal_journal?.items||[]).slice(0,80).map(a=>({
+   match_id:a.match_id,created_at:a.captured_at,category:'monitoramento',
+   message:[a.icon,a.home+' × '+a.away,a.minute+"'",
+     a.rule,'Gol 5m: '+(a.outcomes?.['5']||'pendente'),
+     '10m: '+(a.outcomes?.['10']||'pendente'),
+     '15m: '+(a.outcomes?.['15']||'pendente'),
+     'EV+ indisponível sem odd/modelo calibrado'].join(' · ')
+ }));
  const alerts=(doc.alerts||[]).map(a=>({
    match_id:a.match_id,created_at:a.observed_at,
    category:a.kind==='ev_experimental'?'ev':'monitoramento',
@@ -341,7 +349,7 @@ function labDashboard(doc){
    market:m.market,entries:m.entries,net_units:m.paper_pl_u
  }));
  return {version:'5.29 original · dados GitHub',updated_at:doc.exported_at,
-   observations:games.length,radar:signals,alerts,providers,quality,markets,
+   observations:games.length,radar:signals,alerts:[...journal,...alerts],providers,quality,markets,
    backtest:{evaluated_fixtures:settled,total_net_units:pl,
      wins:paper.won||0,win_rate_pct:settled?round(paper.won/settled*100):null,
      max_drawdown_units:null,by_market:paperMarkets,
@@ -382,7 +390,7 @@ function cloudCollector(doc){
       settled_paper:settled,paper_profit_loss_brl:settled?Number(paper.paper_pl_u||0)*100:null,
       markets:selected,
       note:'Sem operações pessoais publicadas. EV+ só com preço pré-entrada e calibração; paper não é lucro recebido.'},
-   platform_snapshot:null};
+   platform_snapshot:null,signal_journal:doc.signal_journal||{items:[]}};
 }
 window.fetch=async function(request,options){
  const str=typeof request==='string'?request:request?.url;
