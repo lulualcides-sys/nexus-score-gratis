@@ -1,6 +1,6 @@
 # NEXUS SCORE WEB — publicação gratuita Cloudflare Pages
 
-O site está pronto em `web/index.html`, `web/style.css`, `web/app.js` e `web/data.json`. Não precisa instalar NEXUS no PC para abrir a versão web.
+**URL publicada informada pelo proprietário: https://nexus-score-gratis.pages.dev/**\n\nO site está pronto em `web/index.html`, `web/style.css`, `web/app.js` e `web/data.json`. Não precisa instalar NEXUS no PC para abrir a versão web.
 
 ## Publicar pelo celular (uma vez)
 
@@ -13,12 +13,12 @@ O site está pronto em `web/index.html`, `web/style.css`, `web/app.js` e `web/da
     - Build output directory: `web`
     - Variáveis de ambiente: **nenhuma**.
 5. Clique em **Save and Deploy / Deploy site**. Espere o Cloudflare exibir a URL `https://<nome>.pages.dev`. Use **a URL REAL mostrada**; ainda não há endereço publicado confirmado.
-6. MUITO IMPORTANTE: em **Settings → Build → Build watch paths**, remova o Include padrão `*` e coloque **`web/*`**. Assim apenas mudanças na pasta web disparam novos builds e a atualização de duas em duas horas não consome mais de 500 builds/mês.
+6. MUITO IMPORTANTE: em **Settings → Build → Build watch paths**, remova o Include padrão `*` e coloque **`web/*`**. Assim apenas mudanças na pasta web disparam novos builds e a atualização de duas em duas horas reduz o número de builds; os limites e atrasos dependem do plano.
 
 ## Segurança e limites
 
 - O repositório **é privado** e deve continuar privado. A Cloudflare poderá ler o código para construir o site.
-- **O SITE PUBLICADO É PÚBLICO.** O exportador publica somente partidas, placares, estatísticas, pressão e odds públicas. **Não** publica operações da Bolsa, valores de lucro, bots ou previsões de EV+.
+- **O SITE PUBLICADO É PÚBLICO.** O exportador publica somente partidas, placares, estatísticas, pressão e odds públicas. **Não** publica operações da Bolsa, P/L pessoal, arquivos do PC nem segredos. Pode publicar exclusivamente EV+ experimental auditável e P/L *paper* de sinais criados antes da partida; ambos são rotulados como testes, não lucros reais.
 - A coleta interna do GitHub segue horária, mas o snapshot **público do painel é atualizado a cada 2 horas**, sujeito ao agendamento e à fonte. É histórico, **não um terminal de trades ao vivo**.
 - A aba completa do NEXUS 5.29, a auditoria avançada e o P/L real continuam acessíveis na instalação local ou no repositório privado do GitHub — **não fazem parte desta interface pública**.
 - Se a fonte não trouxer pressão ou odd, o painel informa ausência de dados.
