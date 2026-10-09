@@ -9,6 +9,10 @@ on:
       - "coletar.py"
       - "report_github.py"
       - "odds_capture.py"
+      - "web_export.py"
+      - "web/index.html"
+      - "web/app.js"
+      - "web/style.css"
       - ".github/workflows/nexus-gratis.yml"
 permissions:
   contents: write
@@ -38,6 +42,16 @@ jobs:
       - name: Atualizar painel dos mercados monitorados
         if: always()
         run: python3 report_github.py
+      - name: Exportar dados seguros para o site a cada duas horas
+        if: always()
+        shell: bash
+        run: |
+          hour=$(date -u +%H)
+          if [[ ! -f web/data.json ]] || (( 10#$hour % 2 == 0 )); then
+            python3 web_export.py
+          else
+            echo "Snapshot web mantido: atualização a cada duas horas UTC."
+          fi
       - name: Guardar resultados e status
         if: always()
         shell: bash
@@ -45,9 +59,13 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add history/
+          git add history/ web/data.json
           if ! git diff --cached --quiet; then
-            git commit -m "NEXUS: histórico da coleta #${{ github.run_number }}"
+            if git diff --cached --name-only | grep -q '^web/'; then
+              git commit -m "NEXUS Web: atualiza partidas públicas"
+            else
+              git commit -m "[CF-Pages-Skip] NEXUS: atualiza histórico privado"
+            fi
             git push
           fi
       - name: Exibir falha de fonte quando ocorrer
