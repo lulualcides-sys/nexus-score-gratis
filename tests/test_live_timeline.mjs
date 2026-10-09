@@ -12,7 +12,7 @@ const sample={home:'Al Kholood',away:'Al Qadsiah',phase:'live',live:true,
   incidents:[],goal_scorers:[{team:'away',player:'Reijnders',minute:4}],
   odds:{markets:{'1x2':{}}},scout_pressure:{available:true,last_graph_minute:10,windows:{}},
   indicator_board:[]};
-const live=PressureLab.render(sample,'all');
+const live=PressureLab.render(sample,'all').replaceAll('&#39;',"'");
 assert.match(live,/HISTÓRIA DA PRESSÃO · 0–45'/);
 assert.match(live,/4\/44 minutos jogados com pressão/);
 assert.match(live,/44' jogados/);
@@ -24,7 +24,7 @@ assert.match(half,/45 POSIÇÕES/);
 assert.doesNotMatch(half,/90 POSIÇÕES/);
 const second=PressureLab.chart({...sample,minute:66,phase:'live'},'all');
 assert.match(second,/90 POSIÇÕES/);
-const ended=PressureLab.render({...sample,phase:'finished',live:false,minute:0},'all');
+const ended=PressureLab.render({...sample,phase:'finished',live:false,minute:0},'all').replaceAll('&#39;',"'");
 assert.match(ended,/Partida encerrada · eixo completo 0–90'/);
 const complete=PressureLab.render({...sample,goal_scorers:[
    {team:'away',player:'A',minute:4},{team:'away',player:'B',minute:15},
