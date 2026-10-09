@@ -1499,7 +1499,8 @@ window.PressureLab = (() => {
     const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
     const pressureNote=outdated?`Última medição de pressão no minuto ${Math.floor(Number(last))}'; o jogo está no ${Math.floor(gameMinute)}'. Os minutos restantes estão sem dados, não com pressão zero.`:'';
     const timelineDescription=live?`${Math.floor(gameMinute)}' jogados · régua ampliada 0–${axisEnd}' · mandante acima / visitante abaixo`:
-       `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
+      d.phase==='scheduled'?`Pré-jogo · ainda sem minutos disputados · mandante acima / visitante abaixo`:
+      `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
     return `<section class="match-block scout-main" id="section-thermometer">
       ${scoreboard(d)}
       <header class="scout-section-head"><div><div class="mini-overline">NEXUS SCORE / CENTRAL DA PARTIDA</div><h2>Termômetro da partida</h2><p>${h(timelineDescription)} · indicadores e eventos confirmados.</p></div><span class="scout-source-badge">${badge}</span></header>
