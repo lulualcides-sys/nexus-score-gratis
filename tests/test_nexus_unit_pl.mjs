@@ -1,3 +1,5 @@
+import { createRequire } from 'node:module';
+const require=createRequire(import.meta.url);
 const assert=require('node:assert/strict');
 const a=require('../web/nexus-unit-pl.js');
 assert.deepEqual(a.normalize({status:'insufficient_data',settled:0,paper_pl_u:null}),{
