@@ -160,6 +160,14 @@
     if(!g)return;
     const oddLabels={home:'CASA',draw:'EMPATE',away:'FORA'};
     const odds=(g.odds||[]).map(v=>'<div class="odd-pill">'+esc(oddLabels[v.sel]||v.sel)+'<b>'+esc(v.odd)+'</b><small>'+esc(v.source||'Fonte')+' · '+date(v.at)+'</small></div>').join('');
+    const trio=['home','draw','away'].map(sel=>(g.odds||[]).find(o=>o.sel===sel));
+    const hasTrio=trio.every(o=>o&&Number(o.odd)>1);
+    const marketMargin=hasTrio?(trio.reduce((n,o)=>n+1/Number(o.odd),0)-1)*100:null;
+    const implied=hasTrio?'<div class="implied"><strong>Probabilidades implícitas nas odds</strong><div class="implied-grid">'+
+      trio.map((o,i)=>'<div><small>'+esc(['CASA','EMPATE','FORA'][i])+'</small><b>'+
+      (100/Number(o.odd)).toFixed(1)+'%</b></div>').join('')+'</div>'+
+      '<p class="small-note">Soma das probabilidades: '+(100+marketMargin).toFixed(1)+'% · margem bruta: '+
+      marketMargin.toFixed(1)+'%. Isso não é previsão de acerto nem EV+.</p></div>':'';
     const signals = (g.signals||[]).filter(s=>Number.isFinite(Number(s.ev_pct)) && Number.isFinite(Number(s.odds)));
     const signalRows = signals.map(s => '<div class="scout"><strong>'+esc(oddLabels[s.selection]||s.selection||'—')+'</strong><span>'+
       'EV estimado '+esc(s.ev_pct)+'% · p='+esc(s.probability)+'% · odd '+esc(s.odds)+'<br>'+
@@ -174,7 +182,7 @@
      '<h3 class="detail-title">⚽ Eventos reais da partida</h3>'+eventHTML(g)+
      '<h3 class="detail-title">Mercados · resultado esportivo</h3>'+resultHTML(g)+
      '<h3 class="detail-title">◇ Odds 1X2 verificadas</h3>'+
-     (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 disponível para esta partida.</p>')+
+     (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 disponível para esta partida.</p>')+implied+
      '<h3 class="detail-title">EV+ · modelo experimental público</h3>'+
      (signalRows?'<div class="scout-table">'+signalRows+'</div>':'<p class="small-note">EV+ indisponível: sem probabilidade validada e odds pré-jogo verificadas. Nenhuma aposta fictícia foi registrada.</p>')+
      '<h3 class="detail-title">Mercados possíveis de acompanhar</h3><p class="small-note">Over/Under, BTTS, Match Odds e Lay Correct Score requerem odds reais e critérios específicos. EV calculado não é lucro realizado, e um sinal experimental não valida lucratividade.</p>';
