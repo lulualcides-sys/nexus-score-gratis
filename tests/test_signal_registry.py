@@ -16,6 +16,21 @@ class SignalRegistryTests(unittest.TestCase):
         self.assertEqual([s['rule'] for s in signals],
             ['pressao_forte_10min','pressao_total_5_10min','alerta_cruzado_gol'])
         self.assertTrue(all(s['team']=='away' and s['ev_pct'] is None for s in signals))
+    def test_cumulative_indicators_work_without_pressure_but_without_fake_minute(self):
+        row={'stats':{'home':{'shots_on':6,'corners':7,'big_chances':3,
+                     'dangerous_attacks':26},'away':{'shots_on':1}}}
+        found=active_signals(self.game(50),row,'2026-10-09T18:00:00Z')
+        self.assertEqual([e['icon'] for e in found],['🎯','🚩','💣','⚔️'])
+        self.assertTrue(all(e['basis']=='cumulative_stat_snapshot' for e in found))
+        self.assertTrue(all(e['team']=='home' and e['minute']==50 for e in found))
+        self.assertTrue(all(e['odds'] is None and e['ev_pct'] is None for e in found))
+        initial=update({'2026-10-09':{'matches':{'fixture-50':{
+          'fixture':self.game(50),**row}}}}, {}, '2026-10-09T18:00:00Z')
+        later=update({'2026-10-09':{'matches':{'fixture-50':{
+          'fixture':self.game(70),**row}}}}, initial, '2026-10-09T18:20:00Z')
+        self.assertEqual(len(initial['items']),4)
+        self.assertEqual(len(later['items']),4)
+
     def test_missing_stale_and_insufficient_data_do_not_trigger(self):
         self.assertEqual(active_signals(self.game(48),self.data(),'t'),[])
         self.assertEqual(active_signals(self.game(),self.data(readings=[-70]*3),'t'),[])

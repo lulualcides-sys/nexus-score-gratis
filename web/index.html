@@ -2592,7 +2592,7 @@ function renderCloudSignalJournal(journal){
  const rows=entries.slice(0,50).map(e=>`<tr>
  <td><b>${esc(e.home||'')} × ${esc(e.away||'')}</b><small style="display:block">${esc(e.league||'')} · ${esc(e.captured_at||'')}</small></td>
  <td>${esc(e.minute)}' · ${esc(e.team==='home'?e.home:e.away)}</td>
- <td>${esc(e.icon)} ${esc(e.rule)}</td><td>${outcome(e,5)}</td><td>${outcome(e,10)}</td><td>${outcome(e,15)}</td>
+ <td>${esc(e.icon)} ${esc(e.rule)}<small style="display:block">${e.basis==='cumulative_stat_snapshot'?'Scout acumulado na captura, minuto do lance não confirmado':'Pressão medida no relógio do jogo'}</small></td><td>${outcome(e,5)}</td><td>${outcome(e,10)}</td><td>${outcome(e,15)}</td>
  <td>${e.ev_pct==null?'INDISPONÍVEL':esc(e.ev_pct)+'%'}</td></tr>`).join('');
  box.innerHTML=`<div class="cloud-audit-head"><h3>◉ ALERTAS NA NUVEM · ${entries.length} REGISTROS</h3>
  <small>Coleta independente do PC: cada sinal de pressão é salvo e depois conferido nas janelas de 5, 10 e 15 minutos. ${status}</small></div>`+
