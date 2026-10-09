@@ -204,3 +204,27 @@ html,body{max-width:100%;overflow-x:hidden}
   #section-thermometer .scout-total{padding:3px 4px!important}
   #section-thermometer .pressure-range-btn{font-size:9px!important}
 }
+
+/* Auditável e compacto: registros não são ganhos; detalhes disponíveis ao tocar. */
+.cloud-audit-empty{border:1px dashed #52748a;border-radius:10px;padding:15px;
+  background:#1a3344;color:#d1e3eb;font-size:13px;line-height:1.55}
+.cloud-market-details{border:1px solid #3b5c73;border-radius:9px;
+  background:#20354a;color:#a8cee1;margin:9px 0}
+.cloud-market-details>summary{cursor:pointer;padding:12px 13px;line-height:1.4;font-size:12px;
+  list-style-position:inside;font-weight:750;user-select:none}
+.cloud-market-details[open]>summary{border-bottom:1px solid #365367}
+.cloud-market-details>.cloud-markets{padding:10px;display:flex;flex-wrap:wrap;gap:7px}
+.lab-empty-compact{padding:14px 16px;margin:12px 0;font-size:13px}
+.lab-empty-compact strong{font-size:15px;line-height:1.35}
+.lab-empty-compact p{font-size:12px;line-height:1.5;margin:6px 0 0}
+@media(max-width:760px){
+  .cloud-game{padding:15px 12px!important}
+  .cloud-game-title strong{font-size:17px!important;line-height:1.35!important}
+  .cloud-game-title small{font-size:11px!important;line-height:1.45}
+  .cloud-chart-row{gap:8px!important}
+  .cloud-audit-stats{gap:7px!important}
+  .cloud-audit-stats>div{padding:10px!important;overflow-wrap:anywhere}
+  .cloud-audit-stats small{font-size:9px!important}
+  .cloud-audit-stats b{font-size:16px!important}
+  .cloud-audit-head h3{font-size:16px}
+}
