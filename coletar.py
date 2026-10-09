@@ -68,6 +68,7 @@ def fotmob_list(day):
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
                 'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),
+                'home_id':str(home.get('id') or ''),'away_id':str(away.get('id') or ''),
                 'collected_at':NOW.isoformat(),
                 'home_logo':('https://images.fotmob.com/image_resources/logo/teamlogo/'+str(home['id'])+'.png')
                     if str(home.get('id') or '').isdigit() else '',
