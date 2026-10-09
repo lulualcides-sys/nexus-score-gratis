@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:56:09.952328+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T18:01:35.900814+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **47**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **53**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -105,9 +105,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **47**.
 | 2026-10-09 | Lens × Lyon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Dunkerque × Annecy FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Montpellier × Grenoble | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Nancy × Guingamp | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Nancy × Guingamp | 0-0 | 1 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Pau × Laval | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Sochaux × Boulogne | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Sochaux × Boulogne | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Kashima Antlers × Gamba Osaka | 2-0 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×5.0, Escanteios: 1.0×4.0, Grandes chances: 2.0×4.0 |
 | 2026-10-09 | Kashiwa Reysol × Vissel Kobe | 4-2 | 90 | Chutes no alvo: 6.0×6.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-09 | Raków Częstochowa × GKS Katowice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -136,7 +136,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **47**.
 | 2026-10-09 | Roda JC Kerkrade × Jong PSV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Sporting FC × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | FC Rostov × Akron Togliatti | 1-0 | 64 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | FC Rostov × Akron Togliatti | 1-0 | 69 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 3-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
