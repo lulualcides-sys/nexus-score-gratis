@@ -64,6 +64,37 @@ assert.equal(iara.render(finished),'');
 const malicious={...base,home:'<img src=x onerror=alert(1)>',away:'Visitante'};
 assert.doesNotMatch(iara.render(malicious),/<img src=x onerror/);
 assert.match(iara.render(malicious),/&lt;img/);
+const mustWin={
+ ...base,standings:{
+  source:'FotMob',league:'Brasileirão Série A',updated_at:'2026-10-09T13:00:00Z',
+  home:{position:17,points:27,played:28,level:'alta',
+    reasons:[{kind:'sair_z4',label:'Sair da zona de rebaixamento',
+      detail:'17º lugar com 27 pontos; primeiro fora da zona: 16º com 28.'}]},
+  away:{position:4,points:48,played:28,level:'moderada',
+    reasons:[{kind:'defender_g4',label:'Defender o G4',
+      detail:'4º lugar, 48 pontos; o 5º soma 47.'}]}}};
+let motivation=iara.standingsMotivation(mustWin);
+assert.equal(motivation.list.length,2);
+assert.match(iara.render(mustWin),/Sair da zona de rebaixamento/);
+assert.match(iara.render(mustWin),/Defender o G4/);
+assert.match(iara.evaluate(mustWin).intro,/aumenta o peso esportivo/);
+assert.match(iara.render(base),/Aguardando classificação verificada/);
+const evTest={...mustWin,prelive:{
+ forecast:{one_x_two:{home:52,draw:26,away:22}},
+ sample:{home:{n:10},away:{n:10}},
+ odds:{source:'ESPN',fetched_at:'2026-09-22T20:00:00Z',
+ markets:{'1x2':{home:2.2,draw:3.1,away:4.1}}}}};
+const ev=iara.experimentalValue(evTest);
+assert.ok(ev);
+assert.equal(ev.experimental,true);
+assert.ok(ev.positive);
+assert.match(iara.render(evTest),/EV teórico/);
+assert.match(iara.render(evTest),/não calibrado/);
+assert.match(iara.render(evTest),/não é EV\+ comprovado/);
+const late={...evTest,prelive:{...evTest.prelive,
+ odds:{...evTest.prelive.odds,fetched_at:'2027-01-01T20:00:00Z'}}};
+assert.equal(iara.experimentalValue(late),null);
+assert.match(iara.render(late),/Indisponível sem odds pré-jogo/);
 const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 const css=fs.readFileSync(new URL('../web/nexus-iara.css',import.meta.url),'utf8');
 assert.match(html,/window\.NexusIara\.render\(d\)/);
