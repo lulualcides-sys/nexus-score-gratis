@@ -75,6 +75,10 @@ const mustWin={
       detail:'4º lugar, 48 pontos; o 5º soma 47.'}]}}};
 let motivation=iara.standingsMotivation(mustWin);
 assert.equal(motivation.list.length,2);
+assert.equal(iara.standingsMotivation({...mustWin,standings:{
+  ...mustWin.standings,source:'ESPN'}}).list.length,2);
+assert.equal(iara.standingsMotivation({...mustWin,standings:{
+  ...mustWin.standings,source:'Fonte não verificada'}}).available,false);
 assert.match(iara.render(mustWin),/Sair da zona de rebaixamento/);
 assert.match(iara.render(mustWin),/Defender o G4/);
 assert.match(iara.evaluate(mustWin).intro,/aumenta o peso esportivo/);
