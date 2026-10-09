@@ -1,1 +1,1 @@
-{"schema":1,"updated_at":"2026-10-09T17:42:24.677016+00:00","items":[],"notice":"Alertas de pressão verificados quando possível. Não representam apostas nem EV+."}
+{"schema":1,"updated_at":"2026-10-09T17:47:28.335219+00:00","items":[],"diagnostics":{"matches_checked":362,"matches_live":65,"with_pressure":9,"fresh_pressure":0,"valid_10min":0,"valid_5min":0,"strong_10min":0,"matches_with_signals":0},"notice":"Alertas de pressão verificados quando possível. Não representam apostas nem EV+."}
