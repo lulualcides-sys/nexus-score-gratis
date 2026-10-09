@@ -94,6 +94,29 @@ const ruleText={
 '🥶':'Pressão 10min FRIA verificada',
 '🚨':'Pressão FORTE, P10 ≥70, P5 ≥65, chutes no alvo ≥3 e chances ≥1 do lado dominante'
 };
+function headToHead(g){
+ const norm=v=>String(v||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'')
+   .toLowerCase().replace(/\b(?:f\.?c\.?|s\.?c\.?|club|clube)\b/g,'')
+   .replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
+ const found=new Map();
+ for(const side of ['home','away']){
+   const other=side==='home'?'away':'home';
+   for(const m of g.form?.[side]?.games||[]){
+     if(norm(m.opponent)!==norm(g[other]))continue;
+     if(!['Casa','Fora'].includes(m.venue))continue;
+     const gf=safeNumber(m.gf),ga=safeNumber(m.ga);
+     if(gf===null||ga===null||gf<0||ga<0)continue;
+     const home=m.venue==='Casa'?g[side]:g[other];
+     const away=m.venue==='Casa'?g[other]:g[side];
+     const hg=m.venue==='Casa'?gf:ga,ag=m.venue==='Casa'?ga:gf;
+     const item={date:String(m.day||''),home,away,score:hg+'-'+ag,
+         competition:m.league||g.league||'',source:g.form?.[side]?.source||'FotMob/ESPN'};
+     const key=[item.date,norm(item.home),norm(item.away),item.score].join('|');
+     found.set(key,item);
+   }
+ }
+ return [...found.values()].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,10);
+}
 function instrument(g,detail){
  const points=samplesFrom(g),minutes=points.length?points.at(-1).minute:0;
  const end=Number(g.minute)>0?Math.max(minutes,Number(g.minute)):minutes;
@@ -141,6 +164,7 @@ function instrument(g,detail){
  const sourcedetail=detail.scout_pressure||{};
  return {...detail,signal_timeline:[...markers,...eventTimeline,...snapshots].sort((a,b)=>a.minute-b.minute),
    indicator_board:board,signals:board.filter(x=>x.state==='active'),
+   head_to_head:headToHead(g),
    pressure:{score:ten.score,level:ten.level,dominant:ten.dominant,difference:ten.difference,
              home_recent:ten.home_recent,away_recent:ten.away_recent,minute:end},
    pressure5:{score:five.score,level:five.level,dominant:five.dominant,difference:five.difference},
