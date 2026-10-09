@@ -85,7 +85,7 @@
       g.events?.length?'<span class="tag">◉ Eventos '+g.events.length+'</span>':'',
       g.outcomes?.correct_score?'<span class="tag">FT '+esc(g.outcomes.correct_score)+'</span>':''
     ].filter(Boolean).join('');
-    return '<article class="match-card"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+
+    return '<article class="match-card" data-match-index="'+index+'" tabindex="0" aria-label="'+esc('Abrir análise de '+g.home+' contra '+g.away)+'"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+
       (g.round?' · '+esc(g.round):'')+'</span>'+
       '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+'</span></div>'+
       '<div class="match-time"><span class="match-time-symbol">◷</span> '+matchDate(g)+' · '+kickoff(g)+
@@ -116,7 +116,16 @@
       return group+card(game,index);
     });
     $('#games').innerHTML=matches.length?items.join(''):'<div class="empty">Nenhum jogo encontrado com esses filtros. Tente outra combinação.</div>';
-    $('#games').querySelectorAll('[data-id]').forEach(btn=>btn.addEventListener('click',()=>openMatch(state.games[Number(btn.dataset.id)])));
+    $('#games').querySelectorAll('[data-id]').forEach(btn=>btn.addEventListener('click',ev=>{
+      ev.stopPropagation();openMatch(state.games[Number(btn.dataset.id)]);
+    }));
+    $('#games').querySelectorAll('[data-match-index]').forEach(card=>{
+      const open=()=>openMatch(state.games[Number(card.dataset.matchIndex)]);
+      card.addEventListener('click',open);
+      card.addEventListener('keydown',ev=>{
+        if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();open();}
+      });
+    });
   }
   const pressureHTML = pts => {
     if(!pts.length)return '<p class="small-note">O coletor ainda não registrou minutos de pressão para esta partida. Sem gráfico fictício.</p>';
