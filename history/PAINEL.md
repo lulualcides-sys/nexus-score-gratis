@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T13:37:03.709780+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T13:39:44.500853+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 
@@ -22,15 +22,19 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-09 | Real Cundinamarca × Real Santander | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Fortaleza FC × Millonarios | 1-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 8.0×6.0, Grandes chances: 2.0×1.0 |
 | 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Puebla × León | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FCV Dender EH × Club Brugge NXT | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Anderlecht Futures × Eupen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Silon Táborsko × Karviná | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Vysočina Jihlava × SK Prostějov | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ústí nad Labem × Opava | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slavia Prague B × FC Vlašim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Deportivo Garcilaso × Sport Huancayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ratchaburi FC × Sukhothai FC | 6-0 | 90 | Chutes no alvo: 10.0×4.0, Chutes para fora: 4.0×8.0, Grandes chances: 5.0×0.0 |
 | 2026-10-09 | Phrae United × Kanchanaburi Power | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Aldosivi × Sarmiento | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -38,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 1-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Persepolis × Sanat Naft Abadan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Persepolis × Sanat Naft Abadan | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Delfín × Mushuc Runa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Shelbourne × Sligo Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -130,16 +134,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-09 | NAC Breda × MVV Maastricht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | TOP Oss × Helmond Sport | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Roda JC Kerkrade × Jong PSV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Sporting FC × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Rostov × Akron Togliatti | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Antigua Guatemala × CSD Municipal | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | TS Podbeskidzie Bielsko-Biała × Pogoń Siedlce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Rekord Bielsko-Biała × Sandecja Nowy Sącz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Chojniczanka Chojnice × Podhale Nowy Targ | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Sundby BK × Ishøj IF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
