@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:49:57.151945+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:51:29.847438+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **63**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **61**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -12,7 +12,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **63**.
 |---|---|---|---:|---|
 | 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 0-0 | 0 | Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
 | 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 0-0 | 0 | Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
-| 2026-10-09 | Aldosivi × Sarmiento (Junín) | 0-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
+| 2026-10-09 | Aldosivi × Sarmiento (Junín) | 1-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
 | 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
 | 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,10, Fora 2,85 |
 | 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Match Odds 1X2: Casa 1,51, Empate 3,90, Fora 5,50 |
@@ -37,7 +37,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **63**.
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Aldosivi × Sarmiento | 0-1 | 10 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Aldosivi × Sarmiento | 1-1 | 10 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 7.0×2.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×0.0 |
@@ -88,7 +88,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **63**.
 | 2026-10-09 | PSV Eindhoven × SC Heerenveen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Lithuania (W) × Sweden (W) | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Romania (W) × Norway (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Greece (W) × England (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Greece (W) × England (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Croatia (W) × Iceland (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kazakhstan (W) × Ireland (W) | 0-8 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kosovo (W) × Austria (W) | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
