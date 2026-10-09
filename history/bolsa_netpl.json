@@ -1,0 +1,69 @@
+{
+  "provider": "Bolsa de Aposta",
+  "source": "Conector autenticado de operações",
+  "observed_at": "2026-10-09T09:35:45Z",
+  "period_from": "2026-09-10T03:00:00Z",
+  "period_to": "2026-10-09T09:35:45Z",
+  "operations": 6177,
+  "net_pl": -946.84632,
+  "currency": "BRL",
+  "snapshot_only": true,
+  "note": "P/L real informado pelo Bolsa; não é resultado do NEXUS nem simulação de R$100.",
+  "markets": [
+    {
+      "market": "FIRST_HALF_GOALS_05",
+      "operations": 2023,
+      "net_pl": -919.76
+    },
+    {
+      "market": "OVER_UNDER_25",
+      "operations": 924,
+      "net_pl": -1.66
+    },
+    {
+      "market": "OVER_UNDER_15",
+      "operations": 907,
+      "net_pl": 223.7
+    },
+    {
+      "market": "OVER_UNDER_35",
+      "operations": 613,
+      "net_pl": 214.42
+    },
+    {
+      "market": "FIRST_HALF_GOALS_15",
+      "operations": 466,
+      "net_pl": -188.49
+    },
+    {
+      "market": "OVER_UNDER_05",
+      "operations": 455,
+      "net_pl": -185.47
+    },
+    {
+      "market": "FIRST_HALF_GOALS_25",
+      "operations": 437,
+      "net_pl": 6.18
+    },
+    {
+      "market": "MATCH_ODDS",
+      "operations": 242,
+      "net_pl": -82.7
+    },
+    {
+      "market": "HALF_TIME",
+      "operations": 84,
+      "net_pl": -1.43
+    },
+    {
+      "market": "CORRECT_SCORE",
+      "operations": 14,
+      "net_pl": -7.72
+    },
+    {
+      "market": "BOTH_TEAMS_TO_SCORE",
+      "operations": 12,
+      "net_pl": -3.92
+    }
+  ]
+}
