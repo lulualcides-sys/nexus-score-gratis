@@ -13,6 +13,10 @@ on:
       - "web/index.html"
       - "web/app.js"
       - "web/style.css"
+      - "web/pc.js"
+      - "pc_reader.py"
+      - "web_server.py"
+      - "tests/**"
       - ".github/workflows/nexus-gratis.yml"
 permissions:
   contents: write
@@ -30,6 +34,10 @@ jobs:
           persist-credentials: true
       - name: Verificar versão Python
         run: python3 --version
+      - name: Validar integracao e privacidade (sem dependencias pagas)
+        run: |
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py
+          python3 -m unittest discover -s tests -v
       - name: Coletar partidas públicas e pressão
         id: collect
         continue-on-error: true
