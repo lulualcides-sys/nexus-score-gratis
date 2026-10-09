@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T10:44:00.512436+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T10:44:44.628575+00:00**.
 
 Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 
@@ -10,15 +10,15 @@ Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Aldosivi × Sarmiento (Junín) | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Málaga × Espanyol | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Lens × Lyon | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
-| 2026-10-09 | Borussia Dortmund × Werder Bremen | 0-0 | 0 | Somente placar (Over/Under, BTTS, Match Odds sem odds) |
+| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 0-0 | 0 | Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
+| 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 0-0 | 0 | Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
+| 2026-10-09 | Aldosivi × Sarmiento (Junín) | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
+| 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
+| 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,10, Fora 2,85 |
+| 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Match Odds 1X2: Casa 1,51, Empate 3,90, Fora 5,50 |
+| 2026-10-09 | Málaga × Espanyol | 0-0 | 0 | Match Odds 1X2: Casa 2,90, Empate 3,15, Fora 2,60 |
+| 2026-10-09 | Lens × Lyon | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 3,70, Fora 2,60 |
+| 2026-10-09 | Borussia Dortmund × Werder Bremen | 0-0 | 0 | Match Odds 1X2: Casa 1,34, Empate 5,25, Fora 7,00 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -48,7 +48,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **9**.
-Cotações capturadas na ultima execucao: **0**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
