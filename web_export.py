@@ -184,7 +184,11 @@ def merge_verified_duplicates(rows):
                                   (item.get('sources') or [item.get('source')])))
         matched['sources']=[s for s in joined if s]
         for key in ('home_logo','away_logo','venue','round'):
-            if not matched.get(key) and item.get(key):matched[key]=item[key]
+            if key.endswith('_logo') and item.get('source')=='FotMob' and item.get(key):
+                # FotMob fornece escudo nativo para esta partida; CDN ESPN pode retornar 404.
+                matched[key]=item[key]
+            elif not matched.get(key) and item.get(key):
+                matched[key]=item[key]
         if item.get('phase')=='live' and matched.get('phase')=='scheduled':
             matched['phase']='live'
             matched['score']=item.get('score') or matched.get('score')
