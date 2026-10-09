@@ -112,3 +112,50 @@
   load();
   setInterval(load,5*60*1000);
 })();
+
+
+/* Audit independent of sports feed: PRIVATE route; never copied into web/data.json */
+(async function nexusBolsaPrivate(){
+  const box=document.getElementById('bolsa-summary');
+  const table=document.getElementById('bolsa-markets');
+  const date=document.getElementById('bolsa-date');
+  if(!box||!table)return;
+  const money=v=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(Number(v)||0);
+  const names={'OVER_UNDER_15':'Over/Under 1.5 FT','OVER_UNDER_25':'Over/Under 2.5 FT',
+    'OVER_UNDER_35':'Over/Under 3.5 FT','OVER_UNDER_05':'Over/Under 0.5 FT',
+    'FIRST_HALF_GOALS_05':'Over/Under 0.5 HT','FIRST_HALF_GOALS_15':'Over/Under 1.5 HT',
+    'FIRST_HALF_GOALS_25':'Over/Under 2.5 HT','MATCH_ODDS':'Match Odds',
+    'CORRECT_SCORE':'Correct Score','BOTH_TEAMS_TO_SCORE':'BTTS','HALF_TIME':'Resultado HT'};
+  try {
+    const result=await fetch('/api/dashboard',{credentials:'same-origin',cache:'no-store'});
+    if(!result.ok)throw new Error('sem dados autorizados');
+    const all=await result.json();
+    const bolsa=all.bolsa||{};
+    const rows=Array.isArray(bolsa.markets)?bolsa.markets:[];
+    if(!rows.length)throw new Error('histórico ainda não disponível');
+    box.textContent=String(bolsa.operations||0).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+
+      ' operações reais | P/L total: '+money(bolsa.net_pl);
+    const d=new Date(bolsa.observed_at);
+    date.textContent=Number.isNaN(d.getTime())?'sem horário':d.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+    const t=document.createElement('table');
+    t.style.cssText='width:100%;border-collapse:collapse;min-width:400px;font-size:13px';
+    const head=document.createElement('tr');
+    for(const name of ['Mercado','Operações','P/L líquido']){
+      const th=document.createElement('th');
+      th.textContent=name;th.style.cssText='text-align:left;color:#8ea5c3;padding:11px;border-bottom:1px solid #34465c';
+      head.append(th);
+    }
+    t.append(head);
+    for(const row of rows){
+      const tr=document.createElement('tr');
+      for(const val of [names[row.market]||row.market||'—',String(row.operations||0),money(row.net_pl)]){
+        const td=document.createElement('td');
+        td.textContent=val;td.style.cssText='padding:10px;border-bottom:1px solid #34465c';
+        if(val===money(row.net_pl))td.style.color=Number(row.net_pl)>=0?'#26d2a5':'#ff7f9a';
+        tr.append(td);
+      }
+      t.append(tr);
+    }
+    table.replaceChildren(t);
+  } catch(e){box.textContent='P/L privado indisponível: '+String(e.message||e);table.replaceChildren()}
+})();
