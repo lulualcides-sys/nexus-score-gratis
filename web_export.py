@@ -9,6 +9,7 @@ from pathlib import Path
 import json
 import math
 import re
+from signal_evaluation import evaluate
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -407,21 +408,55 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
 def paper_summary(rows):
-    signals=[s for r in rows for s in r['signals']]
-    settled=[s for s in signals if s['status']=='settled' and s['paper_pl_u'] is not None]
-    wins=sum(1 for s in settled if s['paper_pl_u']>0)
+    """P/L *paper* em unidades: 1u de risco por sinal BACK 1X2 validado.
+
+    Nunca mistura PL da Bolsa ou odds historicas de fechamento. Ganho e
+    perda brutos so existem para sinais efetivamente liquidados.
+    """
+    signals=[s for r in rows for s in r.get('signals',[]) if isinstance(s,dict)]
+    settled=[]
+    for signal in signals:
+        if signal.get('status')!='settled':continue
+        amount=number(signal.get('paper_pl_u'))
+        if isinstance(signal.get('paper_pl_u'),bool) or amount is None:continue
+        if not isinstance(signal.get('market'),str):continue
+        settled.append((signal,amount))
+    if not settled:
+        return {'unit':'1u nominal por entrada BACK 1X2 (paper, sem taxas)',
+                'status':'insufficient_data','settled':0,'pending':len(signals),
+                'won':0,'lost':0,'profit_u':None,'loss_u':None,'roi_pct':None,
+                'paper_pl_u':None,'markets':[]}
     groups={}
-    for s in settled:
-        group=groups.setdefault(s['market'],{'market':s['market'],'entries':0,'wins':0,'paper_pl_u':0.0})
+    profit=loss=0.0
+    wins=losses=0
+    for signal,amount in settled:
+        group=groups.setdefault(signal['market'],{'market':signal['market'],
+              'entries':0,'wins':0,'losses':0,'profit_u':0.0,'loss_u':0.0,
+              'paper_pl_u':0.0})
         group['entries']+=1
-        group['wins']+=s['paper_pl_u']>0
-        group['paper_pl_u']+=s['paper_pl_u']
-    for v in groups.values():v['paper_pl_u']=round(v['paper_pl_u'],3)
-    return {'unit':'1u nominal por entrada BACK 1X2 (teste sem taxas)',
-            'status':'with_settlements' if settled else 'insufficient_data',
+        if amount>0:
+            wins+=1
+            profit+=amount
+            group['wins']+=1
+            group['profit_u']+=amount
+        elif amount<0:
+            losses+=1
+            loss+=-amount
+            group['losses']+=1
+            group['loss_u']+=-amount
+        group['paper_pl_u']+=amount
+    for group in groups.values():
+        for key in ('profit_u','loss_u','paper_pl_u'):
+            group[key]=round(group[key],3)
+        group['roi_pct']=round(group['paper_pl_u']/group['entries']*100,2)
+    net=round(profit-loss,3)
+    return {'unit':'1u nominal por entrada BACK 1X2 (paper, sem taxas)',
+            'status':'with_settlements',
             'settled':len(settled),'pending':len(signals)-len(settled),
-            'won':wins,'paper_pl_u':round(sum(s['paper_pl_u'] for s in settled),3) if settled else None,
-            'markets':list(groups.values())}
+            'won':wins,'lost':losses,'profit_u':round(profit,3),
+            'loss_u':round(loss,3),'roi_pct':round(net/len(settled)*100,2),
+            'paper_pl_u':net,
+            'markets':sorted(groups.values(),key=lambda g:g['paper_pl_u'],reverse=True)}
 
 def market_history(rows):
     finished=[g['outcomes'] for g in rows if g.get('outcomes',{}).get('correct_score')]
@@ -535,7 +570,8 @@ def main():
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
-             'signal_journal':signal_journal,'alerts':alerts_from(rows),'games':rows}
+             'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
+             'alerts':alerts_from(rows),'games':rows}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')

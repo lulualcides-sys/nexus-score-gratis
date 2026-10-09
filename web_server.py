@@ -14,6 +14,7 @@ from pathlib import Path
 import re
 import threading
 import time
+from signal_evaluation import evaluate
 from urllib.parse import parse_qs, urlsplit
 
 ROOT=Path(__file__).resolve().parent
@@ -75,6 +76,7 @@ def snapshot():
     games.sort(key=lambda g:(0 if g['phase']=='live' else 1,-int(g['day'].replace('-','')),g['league'],g['home']))
     return {'server_time':datetime.now(timezone.utc).isoformat(),'collection':states,
             'odds_status':odds,'bolsa':bolsa,'pc_import':pc,'games':games[:250],
+            'signal_evaluation':evaluate(signal_journal),
             'signal_journal':{'items':(signal_journal.get('items') or [])[:500],
                 'updated_at':signal_journal.get('updated_at')},
             'warning':'P/L da Bolsa é histórico real. EV estimado não equivale a lucro realizado. Coleta do GitHub é horária e pode atrasar.',
@@ -117,13 +119,24 @@ class App(BaseHTTPRequestHandler):
         if path=='/' or path=='/index.html':
             try:return self.send(200,(ROOT/'web'/'index.html').read_bytes(),'text/html; charset=utf-8')
             except OSError:return self.send(500,b'Interface indisponivel')
-        if path in ('/style.css','/app.js','/pc.js','/data.json','/web/app.js','/web/style.css','/web/pc.js'):
-            filename=path.rsplit('/',1)[-1]
-            if filename not in ('style.css','app.js','pc.js','data.json'):
-                return self.send(404,b'Nao encontrado')
-            asset=ROOT/'web'/filename
-            kinds={'style.css':'text/css; charset=utf-8','app.js':'application/javascript; charset=utf-8','pc.js':'application/javascript; charset=utf-8','data.json':'application/json; charset=utf-8'}
-            try:return self.send(200,asset.read_bytes(),kinds[filename])
+        allowed={
+            'style.css':'text/css; charset=utf-8',
+            'app.js':'application/javascript; charset=utf-8',
+            'pc.js':'application/javascript; charset=utf-8',
+            'data.json':'application/json; charset=utf-8',
+            'nexus-original-enrich.js':'application/javascript; charset=utf-8',
+            'nexus-web-polish.js':'application/javascript; charset=utf-8',
+            'nexus-web-polish.css':'text/css; charset=utf-8',
+            'nexus-iara.js':'application/javascript; charset=utf-8',
+            'nexus-iara.css':'text/css; charset=utf-8',
+            'nexus-unit-pl.js':'application/javascript; charset=utf-8',
+            'nexus-unit-pl.css':'text/css; charset=utf-8',
+            'nexus-signal-evaluation.js':'application/javascript; charset=utf-8',
+            'nexus-signal-evaluation.css':'text/css; charset=utf-8',
+        }
+        filename=path.rsplit('/',1)[-1]
+        if filename in allowed and path in ('/'+filename,'/web/'+filename):
+            try:return self.send(200,(ROOT/'web'/filename).read_bytes(),allowed[filename])
             except OSError:return self.send(404,b'Dados indisponiveis')
         return self.send(404,b'Nao encontrado')
     def do_POST(self):

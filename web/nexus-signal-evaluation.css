@@ -1,0 +1,17 @@
+.nexus-evaluation{background:#fffdf9;color:#23374c;border:1px solid #dfd9d0;border-radius:12px;padding:18px;margin:16px 0}
+.nexus-evaluation-heading{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.nexus-evaluation-heading h3{margin:0;font-size:18px}.nexus-evaluation-heading p,.nexus-evaluation-meta,.nexus-evaluation-disclaimer{font-size:12px;color:#697a8c;line-height:1.55}
+.nexus-evaluation-controls{display:flex;gap:12px;flex-wrap:wrap;margin:15px 0}.nexus-evaluation-controls label{display:flex;flex-direction:column;gap:5px;font-size:12px}.nexus-evaluation-controls select{padding:8px;background:#fff;color:#182c3f;border:1px solid #d9d5cd;border-radius:8px}
+.nexus-evaluation-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.nexus-evaluation-kpis>div{background:#f6f3ed;border-radius:8px;padding:11px;display:grid;gap:5px}
+.nexus-evaluation-kpis small{font-size:10px;color:#667990}.nexus-evaluation-kpis b{font-size:21px;color:#23374c}
+.nexus-evaluation-scroll{max-height:380px;overflow:auto;border:1px solid #e5e0d7;border-radius:8px}
+.nexus-evaluation table{min-width:640px;width:100%;border-collapse:collapse;font-size:12px}
+.nexus-evaluation td,.nexus-evaluation th{padding:9px;white-space:nowrap;text-align:left;border-bottom:1px solid #e7e1d7;color:#243a50}
+.nexus-evaluation thead th{position:sticky;top:0;background:#f5f1ea}
+.nexus-small-sample{font-size:10px;color:#916b39}
+.nexus-evolution{max-height:270px;overflow:auto;display:grid;gap:5px;padding:8px}
+.nexus-evolution-row{display:grid;grid-template-columns:90px minmax(40px,1fr) 100px 45px;gap:8px;align-items:center;font-size:11px}
+.nexus-evolution-row em{font-style:normal;text-align:right}.nexus-evolution-track{height:9px;background:#ebe7df;border-radius:5px;overflow:hidden}
+.nexus-evolution-track i{display:block;height:100%;background:#57849a;border-radius:5px}
+@media(max-width:700px){.nexus-evaluation-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.nexus-evolution-row{grid-template-columns:75px minmax(30px,1fr) 82px 38px;gap:6px;font-size:10px}}

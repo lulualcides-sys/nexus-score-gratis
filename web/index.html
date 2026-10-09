@@ -733,6 +733,8 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 </style>
 <link rel="stylesheet" href="./nexus-web-polish.css">
 <link rel="stylesheet" href="./nexus-iara.css">
+<link rel="stylesheet" href="./nexus-unit-pl.css">
+<link rel="stylesheet" href="./nexus-signal-evaluation.css">
 </head>
 <body>
 <div class="shell">
@@ -802,6 +804,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
+        <section class="nexus-evaluation" id="cloud-signal-evaluation" aria-label="Avaliação histórica dos sinais por equipe, liga, minuto e evolução da amostra"></section>
         <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
         <div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
@@ -2777,12 +2780,19 @@ function renderCloudAudit(report){
 }
 function renderPlatformSnapshot(platform){
  const target=$('#cloud-platform');if(!target)return;
- if(!platform){target.innerHTML='<p class="cloud-audit-note">Nenhum extrato de operações reais importado. Valores simulados não são lucro realizado.</p>';return}
+ if(!platform){target.innerHTML='<p class="cloud-audit-note">Nenhum extrato privado importado; lucro e perdas reais indisponíveis.</p>';return}
  const money=n=>Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+ const valid=(platform.markets||[]).filter(m=>m&&Number.isFinite(Number(m.net_pl)));
+ const pos=valid.filter(m=>Number(m.net_pl)>0).reduce((v,m)=>v+Number(m.net_pl),0);
+ const neg=valid.filter(m=>Number(m.net_pl)<0).reduce((v,m)=>v-Number(m.net_pl),0);
  const names={'FIRST_HALF_GOALS_05':'Over 0.5 HT','FIRST_HALF_GOALS_15':'Over 1.5 HT','FIRST_HALF_GOALS_25':'Over 2.5 HT','OVER_UNDER_05':'Over/Under 0.5 FT','OVER_UNDER_15':'Over/Under 1.5 FT','OVER_UNDER_25':'Over/Under 2.5 FT','OVER_UNDER_35':'Over/Under 3.5 FT','MATCH_ODDS':'Match Odds','HALF_TIME':'Resultado HT','CORRECT_SCORE':'Correct Score','BOTH_TEAMS_TO_SCORE':'BTTS'};
- const rows=(platform.markets||[]).map(m=>`<tr><td>${esc(names[m.market]||m.market)}</td><td>${Number(m.operations||0)}</td><td class="${Number(m.net_pl)<0?'loss':'win'}">${money(m.net_pl)}</td></tr>`).join('');
- target.innerHTML=`<div class="cloud-audit-head"><h3>Resultados reais da Bolsa de Aposta</h3><small>Extrato consultado em ${esc(safeCloudDate(platform.as_of))}. Fotografia pontual, NÃO atualização em tempo real.</small></div><div class="cloud-audit-stats"><div><small>OPERAÇÕES EXECUTADAS</small><b>${Number(platform.operations||0)}</b></div><div><small>PL LÍQUIDO REAL</small><b>${money(platform.net_pl)}</b></div></div><div class="cloud-audit-scroll"><table class="platform-table"><thead><tr><th>Mercado</th><th>Operações</th><th>PL líquido informado</th></tr></thead><tbody>${rows}</tbody></table></div><p class="cloud-audit-note">Valores das apostas efetivamente registradas na plataforma, com suas stakes originais. Eles não representam estratégias criadas pelo NEXUS e não são simulação de stake R$ 100.</p>`;
+ const rows=valid.map(m=>`<tr><td>${esc(names[m.market]||m.market)}</td><td>${Number(m.operations||0)}</td><td class="${Number(m.net_pl)<0?'loss':'win'}">${money(m.net_pl)}</td></tr>`).join('');
+ const asOf=platform.as_of||platform.observed_at;
+ const units=Number.isFinite(Number(platform.net_units))&&platform.units_verified===true?
+   Number(platform.net_units).toFixed(2)+'u':'— · stake/risco por entrada não auditados';
+ target.innerHTML=`<div class="cloud-audit-head"><h3>Resultados reais da Bolsa de Aposta</h3><small>Extrato consultado em ${esc(safeCloudDate(asOf))}. Fotografia pontual, NÃO atualização em tempo real.</small></div><div class="cloud-audit-stats"><div><small>OPERAÇÕES EXECUTADAS</small><b>${Number(platform.operations||0)}</b></div><div><small>P/L LÍQUIDO REAL</small><b>${platform.net_pl!=null?money(platform.net_pl):'—'}</b></div><div><small>MERCADOS POSITIVOS (P/L)</small><b class="win">${money(pos)}</b></div><div><small>MERCADOS NEGATIVOS (P/L)</small><b class="loss">-${money(neg)}</b></div></div><p class="cloud-audit-note"><b>Líquido em unidades reais:</b> ${units}</p><div class="cloud-audit-scroll"><table class="platform-table"><thead><tr><th>Mercado</th><th>Operações</th><th>PL líquido informado</th></tr></thead><tbody>${rows}</tbody></table></div><p class="cloud-audit-note">Valores líquidos por mercado, não o lucro bruto/perda bruta das apostas individuais. Unidades reais exigem stakes/liability por operação. Não confundir com o painel de 1u paper abaixo.</p>`;
 }
+
 function cloudJournalStats(journal){
  const records=Array.isArray(journal?.items)?journal.items:[];
  const unique=new Set(records.map(x=>String(x.match_id||'')).filter(Boolean)).size;
@@ -2845,6 +2855,7 @@ function renderCloud(){
  renderCloudAudit(cloudData.audit);
  renderPlatformSnapshot(cloudData.platform_snapshot);
  renderCloudSignalJournal(cloudData.signal_journal);
+ window.NexusSignalEvaluation?.render(cloudData.signal_evaluation,cloudData.signal_journal);
  const withPressure=rows.filter(g=>g.thermometer?.samples>0).length;
  const withOdds=rows.filter(g=>g.odds_available===true).length;
  const hist=cloudData.historical_xg||{};
@@ -2891,5 +2902,7 @@ init();
 </script>
 <script src="./nexus-web-polish.js"></script>
 <script src="./nexus-iara.js"></script>
+<script src="./nexus-unit-pl.js"></script>
+<script src="./nexus-signal-evaluation.js"></script>
 </body>
 </html>

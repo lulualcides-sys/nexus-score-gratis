@@ -1,0 +1,31 @@
+name: "NEXUS — avaliação isolada das fontes (10 partidas)"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "experiments/multisource_trial.py"
+      - ".github/workflows/nexus-multisource-trial.yml"
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Testar cruzamento (sem alterar a base)
+        run: python3 -m unittest discover -s tests -p 'test_multisource_trial.py' -v
+      - name: Auditar amostra aleatória de 10 jogos com fontes externas
+        run: |
+          python3 experiments/multisource_trial.py \
+            --online --limit 10 --seed 20261009 \
+            --output artifacts/nexus-multisource-trial.json
+      - name: Salvar relatório do experimento, não publicar dados privados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexus-multisource-10-matches
+          path: artifacts/nexus-multisource-trial.json
+          retention-days: 14
+          if-no-files-found: warn
