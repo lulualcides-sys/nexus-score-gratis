@@ -2033,8 +2033,17 @@ function preliveExtrasHTML(p,d){
 function preliveHTML(d){
  const p=state.prelive;
  const when=d.start_timestamp?new Date(Number(d.start_timestamp)*1000).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'Horário não informado';
- const heroOdds=teamOddsChips(p);
- const heading=`<section class="projection-card prelive-hero n6-hero"><div class="projection-heading"><h3>◷ PRÉ-JOGO · CENTRAL DE ANÁLISE</h3><small>${esc(when)} · Brasília</small></div><div class="prelive-versus"><div>${crestMini(d.home_crest,(d.home||'?').slice(0,1))}<b>${esc(d.home)}</b><div class="team-odds-strip"><span>1</span><strong>${heroOdds.home}</strong></div></div><strong>VS<div class="team-odds-strip center"><span>X</span><strong>${heroOdds.draw}</strong></div></strong><div>${crestMini(d.away_crest,(d.away||'?').slice(0,1),true)}<b>${esc(d.away)}</b><div class="team-odds-strip"><span>2</span><strong>${heroOdds.away}</strong></div></div></div><small>Campeonato: ${esc(d.league||'Não identificado')} · Agenda: ${esc(d.source||'fontes públicas')} · ${heroOdds.available?'Odds 1X2 abaixo dos times':'Odds 1X2 ainda não disponíveis'}</small></section>`;
+ const heroOdds=teamOddsChips(p||d);
+ const quote=(p||d).odds||{};
+ const oddInfo=heroOdds.available?('Fonte '+(quote.source||'ESPN')+
+  ' · '+(quote.bookmaker||'cotação pública')+
+  (quote.fetched_at?' · capturada '+new Date(quote.fetched_at).toLocaleString('pt-BR',{
+    timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'')):
+  'Sem odd real verificada nesta coleta';
+ const minutesToGo=d.start_timestamp?Math.ceil((Number(d.start_timestamp)*1000-Date.now())/60000):null;
+ const lineupMessage=minutesToGo!==null&&minutesToGo<=30&&minutesToGo>=-15?
+  ' · Janela de conferência de escalações iniciada':'';
+ const heading=`<section class="projection-card prelive-hero n6-hero"><div class="projection-heading"><h3>◷ PRÉ-JOGO · CENTRAL DE ANÁLISE</h3><small>${esc(when)} · Brasília</small></div><div class="prelive-versus"><div>${crestMini(d.home_crest,(d.home||'?').slice(0,1))}<b>${esc(d.home)}</b><div class="team-odds-strip"><span>1</span><strong>${heroOdds.home}</strong></div></div><strong>VS<div class="team-odds-strip center"><span>X</span><strong>${heroOdds.draw}</strong></div></strong><div>${crestMini(d.away_crest,(d.away||'?').slice(0,1),true)}<b>${esc(d.away)}</b><div class="team-odds-strip"><span>2</span><strong>${heroOdds.away}</strong></div></div></div><small>Campeonato: ${esc(d.league||'Não identificado')} · Agenda: ${esc(d.source||'fontes públicas')} · ${esc(oddInfo)}${esc(lineupMessage)}</small></section>`;
  if(!p)return heading+'<section class="n6-panel n6-loading"><span class="n6-pulse"></span><strong>Buscando os últimos resultados, escalações e cotações disponíveis…</strong><p>Os dados são atualizados automaticamente. Não é necessário preencher nada.</p></section>';
  const f=p.forecast||null, samples=p.sample||{}, home=samples.home||{}, away=samples.away||{};
  const h2h=Array.isArray(p.head_to_head)?p.head_to_head:[];
@@ -2139,9 +2148,34 @@ function headToHeadHTML(d){
  return `<section class="analysis-tab-card"><h3>CONFRONTO DIRETO · VITÓRIAS E EMPATES</h3>${report}${content}${summary.skipped?`<small class="h2h-footnote">${summary.skipped} registro(s) descartado(s) por identificação ou placar insuficiente.</small>`:''}</section>`;
 }
 function lineupsHTML(d){
- const lineup=d.lineups;
- const side=(key,name)=>{const entries=Array.isArray(lineup?.[key])?lineup[key]:[];return `<div class="lineup-side"><h3>${esc(name)}</h3>${entries.length?entries.map(p=>`<div class="lineup-player"><b>${esc(p.number??'–')}</b><span>${esc(p.name||p.player||'Atleta')}</span></div>`).join(''):'<p>Escalação não fornecida pela fonte.</p>'}</div>`};
- return `<section class="analysis-tab-card"><h3>ELENCOS E ESCALAÇÕES</h3><p class="prelive-muted">${esc(lineup?.status||'Aguardando anúncio oficial')} · ${esc(lineup?.source||'Fonte pública não identificada')}. Prováveis não são confirmações.</p><div class="lineup-grid">${side('home',d.home)}${side('away',d.away)}</div></section>`;
+ const lineup=d.lineups||{};
+ const side=(key,name)=>{
+   const detail=lineup[key+'_detail']||{};
+   const verified=detail.official===true,xi=Array.isArray(detail.xi)?detail.xi:[],
+      bench=Array.isArray(detail.bench)?detail.bench:[],
+      roster=Array.isArray(detail.roster)?detail.roster:[],
+      legacy=Array.isArray(lineup[key])?lineup[key]:[];
+   const players=(label,list)=>
+     '<h4 class="nexus-lineup-section">'+esc(label)+'</h4>'+
+     list.map(p=>'<div class="lineup-player"><b>'+esc(p.number||'–')+
+       '</b><span>'+esc(p.name||p.player||'Atleta')+'</span></div>').join('');
+   const state=xi.length?(verified?'CONFIRMADA':'PROVÁVEL'):'AGUARDANDO';
+   const status=xi.length?' <span class="nexus-lineup-status '+(verified?'official':'pending')+'">'+
+      state+'</span>':' <span class="nexus-lineup-status pending">SEM TITULARES CONFIRMADOS</span>';
+   const content=xi.length?
+      players('Titulares · '+xi.length,xi)+(bench.length?players('Reservas · '+bench.length,bench):''):
+      (roster.length||legacy.length?
+       '<p class="prelive-muted">Somente plantel geral; não representa a escalação da partida.</p>'+
+        players('Elenco informado',roster.length?roster:legacy):
+       '<p class="prelive-muted">Aguardando divulgação dos titulares pela fonte.</p>');
+   return '<article class="lineup-side"><h3>'+esc(name)+status+'</h3>'+
+    (detail.formation?'<p class="prelive-muted">Formação '+esc(detail.formation)+'</p>':'')+
+    content+'</article>';
+ };
+ return '<section class="analysis-tab-card nexus-lineups"><h3>ESCALAÇÕES · TITULARES E RESERVAS</h3>'+
+   '<p class="prelive-muted">Consulta automática nos 75 min antes do jogo, incluindo a janela dos 30 min. '+
+   'O NEXUS distingue prováveis das escalações identificadas como oficiais; a publicação depende da fonte.</p>'+
+   '<div class="lineup-grid">'+side('home',d.home)+side('away',d.away)+'</div></section>';
 }
 function indicatorTiles(d){
  const board=d.indicator_board||[];
