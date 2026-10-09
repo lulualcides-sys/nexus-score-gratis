@@ -78,23 +78,35 @@ def main():
             for key,label in [('shots_on','Chutes no alvo'),('shots_off','Chutes para fora'),('corners','Escanteios'),('big_chances','Grandes chances'),('dangerous_attacks','Ataques perigosos')]:
                 if any(key in side for side in sides):
                     scouts.append(label+': '+fmt(sides[0].get(key))+'×'+fmt(sides[1].get(key)))
-            games.append((path.stem,fixture,len(pts),', '.join(scouts),len(row.get('observations') or [])))
+            odds_names={'home':'Casa','draw':'Empate','away':'Fora'}
+            quotes=[]
+            for q in (row.get('odds_quotes') or []):
+                if not isinstance(q,dict) or q.get('market')!='1x2':continue
+                try:
+                    value=float(q.get('odds'))
+                    if math.isfinite(value) and value>1.0:
+                        quotes.append(odds_names.get(q.get('selection'),safe(q.get('selection')))+
+                                      ' '+f'{value:.2f}'.replace('.',','))
+                except (TypeError,ValueError):pass
+            odd_summary=('Match Odds 1X2: '+', '.join(quotes[:3])) if quotes else ''
+            games.append((path.stem,fixture,len(pts),', '.join(scouts),
+                          len(row.get('observations') or []),odd_summary))
     lines=['# ☁ NEXUS — Painel privado de dados, mercados e P/L','',
            '**CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.',
            '',f'Atualizado pelo GitHub Actions. Último status da coleta: **{safe(status.get("updated_at")) or "ainda não executado"}**.',
            '',f'Fontes da última execução: **{safe(", ".join(status.get("sources") or [])) or "nenhuma confirmada"}**. Jogos ao vivo encontrados: **{int(status.get("live_found") or 0)}**.',
            '','**Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.',
            '','| Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |','|---|---|---|---:|---|']
-    for day,game,num,scouts,obs in games[:130]:
+    for day,game,num,scouts,obs,odd_summary in games[:130]:
         name=safe(game.get('home'))+' × '+safe(game.get('away'))
-        details=scouts if scouts else 'Somente placar (Over/Under, BTTS, Match Odds sem odds)'
+        details='; '.join(x for x in (scouts,odd_summary) if x) or 'Somente placar (Over/Under, BTTS e Lay CS sem odds)'
         lines.append(f'| {safe(day)} | {name} | {safe(game.get("score"))} | {num} | {safe(details)} |')
     if not games:lines.append('| — | **Aguardando primeira coleta** | — | — | Sem histórico salvo |')
     pl_section(lines,'## P/L real por mercado — Bolsa de Aposta',bolsa)
     pl_section(lines,'## P/L real por mercado — importacao do PC',pc)
     lines.extend(['','## Odds verificadas e EV+ experimental','',
         f'Jogos com odds registradas nos ultimos dias: **{odds_games}**.',
-        f'Cotações capturadas na ultima execucao: **{fmt(odds_status.get("quotes_recorded"))}**.',
+        f'Novas cotacoes capturadas na ultima execucao: **{fmt(odds_status.get("quotes_recorded"))}**.',
         f'Sinais pendentes: **{signals["pending"]}**. Sinais liquidados: **{signals["settled"]}**. '
         f'Acertos entre liquidados: **{signals["won"]}**.',
         'Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.',
