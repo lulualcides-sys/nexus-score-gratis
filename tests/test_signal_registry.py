@@ -90,6 +90,15 @@ class SignalRegistryTests(unittest.TestCase):
         updated=merge_journals(remote,{'items':[more]})
         self.assertEqual(updated['items'][0]['outcomes']['10'],'gol_confirmado')
 
+    def test_merge_deduplicates_cumulative_snapshots_from_overlapping_jobs(self):
+        raw=active_signals(self.game(50),{'stats':{'home':{'corners':8}}},'2026-10-09T17:00:00Z')[0]
+        early={**raw,'id':'snapshot-first'}
+        later={**raw,'id':'snapshot-repeated','minute':60,
+               'captured_at':'2026-10-09T17:10:00Z'}
+        result=merge_journals({'items':[later]},{'items':[early]})
+        self.assertEqual(len(result['items']),1)
+        self.assertEqual(result['items'][0]['id'],'snapshot-first')
+
     def test_same_score_after_horizon_is_no_goal(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-0'),self.data())

@@ -285,7 +285,17 @@ def merge_journals(*journals):
             if goals:item['goals_after_alert']=sorted(goals.values(),key=lambda g:g.get('minute') or 0)
     newest=max((d for d in journals if isinstance(d,dict)),
                key=lambda d:str(d.get('updated_at') or ''),default={})
-    entries=sorted(collected.values(),key=lambda e:str(e.get('captured_at') or ''),reverse=True)
+    # Dois jobs podem observar o mesmo total de scouts em minutos distintos.
+    # Cumulativos sao unicos por equipe/regra/partida, conservar a 1ª captura.
+    deduped=[]
+    observed=set()
+    for item in sorted(collected.values(),key=lambda x:str(x.get('captured_at') or '')):
+        if item.get('basis')=='cumulative_stat_snapshot':
+            marker=(item.get('match_id'),item.get('team'),item.get('rule'))
+            if marker in observed:continue
+            observed.add(marker)
+        deduped.append(item)
+    entries=sorted(deduped,key=lambda e:str(e.get('captured_at') or ''),reverse=True)
     return {'schema':1,'updated_at':newest.get('updated_at'),
             'items':entries[:MAX_ALERTS],'diagnostics':newest.get('diagnostics') or {},
             'notice':'Registros unidos entre jobs. Não equivale a EV+ ou apostas.'}
