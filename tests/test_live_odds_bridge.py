@@ -61,5 +61,14 @@ class BridgeLivePricesTest(unittest.TestCase):
         self.assertEqual(bridge_pregame_prices([live,other])['linked'],0)
 
 
+    def test_rejects_three_odds_observed_at_different_moments(self):
+        game=match('fotmob-1','Gimnasia LP','Atlético Tucumán')
+        mixed=prices()
+        mixed[1]['at']='2026-10-09T20:14:51+00:00'
+        donor=match('espn-1','Gimnasia La Plata','Atlético Tucumán',odds=mixed)
+        self.assertEqual(bridge_pregame_prices([game,donor])['linked'],0)
+        self.assertEqual(game['odds'],[])
+
+
 if __name__=='__main__':
     unittest.main()

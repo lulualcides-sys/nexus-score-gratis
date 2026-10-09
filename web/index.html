@@ -937,7 +937,9 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       pressure:{score,level:lvl,dominant,difference:range.length?fixed(avg):null,minute:+g.minute||0},
       pressure5:{score:range.length?Math.round(Math.abs(avg5)):null},
       goal_scorers:events.filter(e=>e.emoji==='⚽').map(e=>({minute:e.minute,team:e.team==='HOME'?'home':'away',player:e.text,stamp:e.stamp})),
-      odds:{available:(g.odds||[]).length>0,markets:quoteMap(g.odds),source:g.source},
+      odds:{available:(g.odds||[]).length===3,markets:quoteMap(g.odds),
+        source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
+        fetched_at:g.odds?.[0]?.at||null,phase:g.odds_scope||'pregame'},
       projections:probs?{home:probs.home,draw:probs.draw,away:probs.away,
         model_estimate:true,sample_size:Math.min(g.form.home.available,g.form.away.available),
         source:'Poisson experimental, últimos resultados observados; não calibrado',
@@ -956,7 +958,10 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       live:g.phase==='live',minute:g.minute||0,source:(g.sources||[g.source]).join(' · '),
       round:g.round||'',archive_day:g.day,
       has_saved_thermometer:!!g.pressure?.length,
-      scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),available:!!g.odds?.length}};
+      scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),
+        available:(g.odds||[]).length===3,phase:g.odds_scope||'pregame',
+        source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
+        fetched_at:g.odds?.[0]?.at||null}};
   }
   function makeForecast(g){
     const h=g.form?.home||{},a=g.form?.away||{};
