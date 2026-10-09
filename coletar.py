@@ -35,7 +35,20 @@ def utc_ts(value):
     return None
 
 def fotmob_list(day):
-    obj=fetch('https://www.fotmob.com/api/matches?'+urlencode({'date':day.replace('-','')}))
+    params=urlencode({'date':day.replace('-','')})
+    obj=None
+    errors=[]
+    # Desde 2026 o FotMob tambem usa o caminho /api/data; tentar primeiro.
+    for endpoint in ('https://www.fotmob.com/api/data/matches?',
+                     'https://www.fotmob.com/api/matches?'):
+        try:
+            obj=fetch(endpoint+params,timeout=7)
+            if isinstance(obj.get('leagues'),list):break
+            obj=None
+        except Exception as exc:
+            errors.append(type(exc).__name__+': '+str(exc)[:80])
+    if obj is None:
+        raise ValueError('Fontes FotMob sem JSON de partidas: '+', '.join(errors)[:160])
     out=[]
     for league in obj.get('leagues') or []:
         for event in league.get('matches') or []:
