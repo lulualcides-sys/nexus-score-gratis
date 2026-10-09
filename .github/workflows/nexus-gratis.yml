@@ -28,6 +28,11 @@ on:
       - "web/nexus-iara.css"
       - "multi_source.py"
       - "web/index.html"
+      - "signal_evaluation.py"
+      - "web/nexus-unit-pl.js"
+      - "web/nexus-unit-pl.css"
+      - "web/nexus-signal-evaluation.js"
+      - "web/nexus-signal-evaluation.css"
       - "web/app.js"
       - "web/match-detail.js"
       - "web/match-detail.css"
@@ -55,7 +60,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py
+          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -69,6 +74,10 @@ jobs:
           node --check web/nexus-iara.js
           node tests/test_nexus_iara.mjs
           node tests/test_iara_bridge.mjs
+          node --check web/nexus-unit-pl.js
+          node --check web/nexus-signal-evaluation.js
+          node tests/test_nexus_unit_pl.mjs
+          node tests/test_nexus_signal_evaluation.mjs
       - name: Coletar partidas públicas e pressão
         id: collect
         continue-on-error: true
