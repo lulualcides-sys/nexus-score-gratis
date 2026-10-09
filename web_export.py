@@ -331,7 +331,8 @@ def public_row(row,day,team_cache=None):
                     'played':data.get('played'),'total_teams':data.get('total_teams'),
                     'level':safe(data.get('level'),24),'reasons':reasons}
         ranking={'home':compact_rank('home'),'away':compact_rank('away'),
-                 'source':'FotMob','league':safe(context.get('league'),80),
+                 'source':safe(context.get('source'),20),
+                 'league':safe(context.get('league'),80),
                  'season':safe(context.get('season'),25),
                  'updated_at':safe(context.get('updated_at'),42),
                  'note':'Urgência situacional, não obrigação matemática de vencer.'}
