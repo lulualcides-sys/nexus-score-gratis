@@ -12,6 +12,8 @@ A versão web mobile-first já está preparada no repositório, mas **a URL púb
 
 ### [📊 ABRIR PAINEL DE COLETAS E MERCADOS](history/PAINEL.md)
 
+**[🖥️ Leitor de P/L do PC — instrucoes](PC_IMPORT.md)** · No servidor privado: snapshot real por mercado, odds capturadas e sinais EV experimentais. A importacao do PC precisa do agente local rodando.
+
 **[Ver execuções automáticas](../../actions)** · [Histórico bruto](history/) · [Status da última coleta](history/status.json)
 
 O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados realmente retornados e gera o relatório privado `history/PAINEL.md`. Agendamento: **uma vez por hora**, sujeito a atrasos e limites do GitHub Free; não é transmissão minuto a minuto.
