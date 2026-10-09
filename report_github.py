@@ -104,6 +104,38 @@ def main():
     if not games:lines.append('| — | **Aguardando primeira coleta** | — | — | Sem histórico salvo |')
     pl_section(lines,'## P/L real por mercado — Bolsa de Aposta',bolsa)
     pl_section(lines,'## P/L real por mercado — importacao do PC',pc)
+    # O painel privado já é acessível no NEXUS Original via link GitHub.
+    # Não exige deixar a aplicação desktop aberta para gerar este relatório.
+    journal=load_json(H/'signal_registry.json')
+    cloud_signals=[r for r in (journal.get('items') or []) if isinstance(r,dict)]
+    diag=journal.get('diagnostics') or {}
+    lines.extend(['','## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem','',
+      '**Registros:** '+str(len(cloud_signals))+
+      ' | **Jogos monitorados:** '+str(diag.get('matches_checked','—'))+
+      ' | **Ao vivo:** '+str(diag.get('matches_live','—'))+
+      ' | **Termômetros recentes:** '+str(diag.get('fresh_pressure','—'))+'.',
+      '',
+      'Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. '
+      'Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.',
+      '',
+      '| Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |',
+      '|---|---|---|---|---|---|---|---|'])
+    for row in cloud_signals[:100]:
+        outcomes=row.get('outcomes') or {}
+        kind=('scout acumulado' if row.get('basis')=='cumulative_stat_snapshot'
+              else 'pressão observada' if row.get('basis')=='pressure_window'
+              else 'evento confirmado')
+        name=safe(row.get('home'))+' × '+safe(row.get('away'))
+        side=row.get('team')
+        team=safe(row.get('home') if side=='home' else row.get('away') if side=='away' else 'Equipe não definida')
+        lines.append('| '+safe(row.get('captured_at'))+' | '+name+
+                     ' | '+team+' ('+safe(row.get('minute'))+"') | "+
+                     safe(row.get('icon'))+' '+safe(row.get('rule'))+' · '+kind+
+                     ' | '+safe(outcomes.get('5') or 'pendente')+
+                     ' | '+safe(outcomes.get('10') or 'pendente')+
+                     ' | '+safe(outcomes.get('15') or 'pendente')+
+                     ' | indisponível |')
+    if not cloud_signals:lines.append('| — | Sem alertas elegíveis | — | Aguardando fonte | — | — | — | — |')
     lines.extend(['','## Odds verificadas e EV+ experimental','',
         f'Jogos com odds registradas nos ultimos dias: **{odds_games}**.',
         f'Novas cotacoes capturadas na ultima execucao: **{fmt(odds_status.get("quotes_recorded"))}**.',
