@@ -1263,24 +1263,28 @@ window.PressureLab = (() => {
     // Keep the full 90-minute axis even when the upstream provider sends no momentum.
     // A missing measurement is NEVER treated as pressure=0.
     const {first,last,observed,expected}=series;
-    const WIDTH=1020, HEIGHT=302, LEFT=24, RIGHT=16, ZERO_Y=152;
+    const compact=typeof window!=='undefined'&&Number(window.innerWidth)>0&&window.innerWidth<=800;
+    // Mesmo nos celulares a partida inteira cabe na tela. Menos unidades no
+    // viewBox melhoram a legibilidade sem rolagem ou deformação do SVG.
+    const WIDTH=compact?520:1020, HEIGHT=302, LEFT=24, RIGHT=16, ZERO_Y=152;
     const plotW=WIDTH-LEFT-RIGHT;
     const rawMinute=Number(d.minute);
     const parsedMinute=Number.parseInt(String(d.minute??''),10);
     const gameMinute=Number.isFinite(rawMinute)?rawMinute:(Number.isFinite(parsedMinute)?parsedMinute:0);
     const finished=['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase()) || /finaliz|encerr|full.?time/i.test(String(d.status||''));
     const live=!finished&&(d.live===true||d.phase==='live');
-    // Durante o 1º tempo, ampliar a régua para 0–45 em vez de desperdiçar
-    // metade da largura com minutos que ainda não aconteceram.
-    const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
-    const extraW=axisEnd===90?64:0,regularW=plotW-extraW,x90=LEFT+regularW;
+    // A visualização nunca exige arrastar: a régua da partida inteira permanece
+    // disponível; as partes futuras aparecem vazias, não como valores medidos.
+    const axisEnd=90; // preferência do usuário: 0–90' sempre inteiro, sem deslocamento lateral
+    const extraW=compact?24:64,regularW=plotW-extraW,x90=LEFT+regularW;
     const tickX=minute=>LEFT+clamp(minute,0,axisEnd)*regularW/axisEnd;
     const x=minute=>minute>90?x90+Math.min(extraW-4,(minute-90)*8):
       tickX(Math.max(0,minute-.5));
     const minuteData=allPoints.filter(p=>p.minute<=axisEnd || (axisEnd===90&&p.minute>90));
         const max=Math.max(15,...minuteData.map(p=>Math.abs(p.value)))*1.08;
     const barScale=65/max;
-    const barWidth=Math.max(2.8,Math.min(18,regularW/axisEnd*.80));
+    const barWidth=compact?Math.max(2.1,Math.min(5.0,regularW/axisEnd*.72)):
+        Math.max(2.8,Math.min(18,regularW/axisEnd*.80));
     const bars=minuteData.map(p=>{
       const height=Math.max(1.4,Math.abs(p.value)*barScale), xx=x(p.minute)-barWidth/2;
       const y=p.value>=0?ZERO_Y-height:ZERO_Y;
@@ -1498,7 +1502,7 @@ window.PressureLab = (() => {
     const gameMinute=Number(d.minute)||0, live=!['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase())&&(d.live===true||d.phase==='live');
     const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
     const pressureNote=outdated?`Última medição de pressão no minuto ${Math.floor(Number(last))}'; o jogo está no ${Math.floor(gameMinute)}'. Os minutos restantes estão sem dados, não com pressão zero.`:'';
-    const timelineDescription=live?`${Math.floor(gameMinute)}' jogados · régua ampliada 0–${axisEnd}' · mandante acima / visitante abaixo`:
+    const timelineDescription=live?`${Math.floor(gameMinute)}' de jogo · termômetro completo 0–90' · mandante acima / visitante abaixo`:
       d.phase==='scheduled'?`Pré-jogo · ainda sem minutos disputados · mandante acima / visitante abaixo`:
       `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
     return `<section class="match-block scout-main" id="section-thermometer">
@@ -1508,7 +1512,7 @@ window.PressureLab = (() => {
       ${chart(d,selected)}${pressureNote?`<p class="nexus-pressure-delay" role="status">${h(pressureNote)}</p>`:''}${unmeasured}<div id="signal-marker-info" class="signal-marker-info compact-note" aria-live="polite"><b>Indicadores no gráfico</b><span>Toque numa marca para saber o time, o minuto e o motivo. Todos os filtros detalhados estão na aba INDICADORES.</span></div>
       ${hasPressure?`<div class="scout-recent-row">${[5,10,15].map(n=>windowSummary(d,n)).join('')}</div>`:''}
       <div class="scout-readout"><span>LEITURA ATUAL</span><p>${h(narrative)}</p></div>
-      <p class="pressure-method">${d.source?.includes('DEMONSTRAÇÃO')?'Amostras fictícias para testar a interface. ':'Fonte: '+h(d.pressure_source||d.source||'não disponível')+'. '}Eixo ampliado para 0–45 durante o primeiro tempo e 0–90 na segunda etapa e após o jogo. Posições sem coleta são neutras, não são pressão zero; os botões destacam intervalos com dados disponíveis.</p>
+      <p class="pressure-method">${d.source?.includes('DEMONSTRAÇÃO')?'Amostras fictícias para testar a interface. ':'Fonte: '+h(d.pressure_source||d.source||'não disponível')+'. '}Eixo completo de 0–90 sempre visível, sem rolagem. Posições sem coleta não representam pressão zero; os botões destacam intervalos observados.</p>
     </section>`;
   }
   function indicatorDetails(d){return `${snapshotStrip(d)}${signalLegend(d)}`;}
