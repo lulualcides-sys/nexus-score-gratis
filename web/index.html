@@ -1310,6 +1310,10 @@ window.PressureLab = (() => {
     const missingCoverage=missingCount>0?` · ${missingCount} minuto(s) jogado(s) sem pressão`:'';
     const futureStart=playedThrough<axisEnd?tickX(playedThrough):x90;
     const futureShade=playedThrough<axisEnd?`<rect class="scout-future-zone" x="${futureStart.toFixed(2)}" y="80" width="${(x90-futureStart).toFixed(2)}" height="142"/>`:'';
+    const lastObserved=allPoints.length?allPoints[allPoints.length-1].minute:0;
+    const delayedZone=live&&lastObserved>0&&gameMinute-lastObserved>3
+      ?`<rect class="scout-unavailable-zone" x="${tickX(Math.min(90,lastObserved)).toFixed(2)}" y="80" width="${Math.max(0,x90-tickX(Math.min(90,lastObserved))).toFixed(2)}" height="142" fill="#a0abb4" opacity=".12"><title>Pressão indisponível após ${lastObserved}′; não é jogo parado</title></rect>`
+      :'';
     const gaps=series.buckets.filter(b=>b.value===null).length;
     const ticks=[0,15,30,45,60,75,90].filter(m=>m<=axisEnd);
     const tickHtml=ticks.map(m=>`<g><line x1="${tickX(m).toFixed(1)}" x2="${tickX(m).toFixed(1)}" y1="80" y2="221" class="scout-tick-line"/><text class="scout-tick-label" text-anchor="${m===0?'start':'middle'}" x="${tickX(m).toFixed(1)}" y="236">${m}'</text></g>`).join('');
@@ -1352,7 +1356,8 @@ window.PressureLab = (() => {
       group.rows.push(e);
     }
     const observedMarks='';
-    const snapshotSignals=buildSnapshotSignals(d);
+    // Nunca mostrar totais antigos de scouts como se fossem ações ofensivas atuais.
+    const snapshotSignals=live&&gameMinute>last+3?[]:buildSnapshotSignals(d);
     const snapshotLayouts=[];
     const snapshotX=Math.min(WIDTH-RIGHT-26, Math.max(LEFT+26, tickX(Math.max(1,Math.min(90,playedThrough||last||1)))));
     for(const team of ['HOME','AWAY']){
@@ -1410,7 +1415,7 @@ window.PressureLab = (() => {
        <svg class="scout-graph" viewBox="0 0 ${WIDTH} ${HEIGHT}" role="img" aria-label="Barras de pressão observada: mandante acima, visitante abaixo; eventos confirmados por minuto; scouts acumulados sem minuto na própria figura.">
        <defs><clipPath id="scout-clip-top"><rect x="${LEFT}" y="80" width="${plotW}" height="72"/></clipPath><clipPath id="scout-clip-bottom"><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70"/></clipPath></defs>
        <rect x="${LEFT}" y="80" width="${plotW}" height="72" fill="#b6b4af" opacity=".11"/><rect x="${LEFT}" y="${ZERO_Y}" width="${plotW}" height="70" fill="#b3323a" opacity=".07"/>
-       ${futureShade}${axisEnd===90?`<line class="scout-extra-divider" x1="${x90}" x2="${x90}" y1="80" y2="221"/>`:''}${half}${tickHtml}${extraLabel}<line class="scout-zero" x1="${LEFT}" x2="${WIDTH-RIGHT}" y1="${ZERO_Y}" y2="${ZERO_Y}"/>
+       ${futureShade}${delayedZone}${axisEnd===90?`<line class="scout-extra-divider" x1="${x90}" x2="${x90}" y1="80" y2="221"/>`:''}${half}${tickHtml}${extraLabel}<line class="scout-zero" x1="${LEFT}" x2="${WIDTH-RIGHT}" y1="${ZERO_Y}" y2="${ZERO_Y}"/>
        ${futureSlots}${bars}${currentMark}${signalMarks}${snapshotMarks}${events}${observedMarks}${summaryInside}
        </svg></div>
        <div class="scout-foot"><span><i class="scout-key home"></i>${h(d.home||'Mandante')} acima</span><span><i class="scout-key away"></i>${h(d.away||'Visitante')} abaixo</span><span>▥ Contorno: jogado sem scout · ▪ Cinza: futuro</span><span>Chutes e escanteios: mandante em cima · visitante embaixo · ● mandante (escuro) · ● visitante (rosa) · ⊗ fora · 🚩 escanteio</span><b>${observedCount}/${playedThrough||0} minutos jogados com pressão · ${coverage}% cobertura${missingCoverage}${missing}</b></div>
@@ -1418,6 +1423,14 @@ window.PressureLab = (() => {
   }
   function windowSummary(d,n){
     const w=d.scout_pressure?.windows?.[n]||{};
+    const live=d.live===true||d.phase==='live';
+    const actual=Number(d.minute)||0,measured=Number(d.scout_pressure?.last_graph_minute)||0;
+    // Mesmo snapshots antigos publicados antes da correção não podem
+    // ser descritos como observações dos últimos 5/10/15 minutos.
+    if(live&&actual>0&&(measured===0||actual-measured>3)){
+      const gap=measured?actual-measured:actual;
+      return `<div class="scout-recent scout-recent-stale"><span>ÚLTIMOS ${n} MIN</span><strong>SEM LEITURA RECENTE</strong><small>${measured?'Pressão até '+measured+'′':'Fonte sem pressão'} · ${gap} min sem medição; não é jogo travado.</small></div>`;
+    }
     if(!w.valid||w.home_force==null||w.away_force==null)return `<div class="scout-recent"><span>ÚLTIMOS ${n} MIN</span><strong>—</strong><small>Amostras insuficientes (${w.samples??0}/${w.expected??n})</small></div>`;
     const tot=Number(w.home_force)+Number(w.away_force),hforce=Number(w.home_force),aforce=Number(w.away_force);
     const winner=tot<12?'JOGO TRAVADO':hforce>aforce*1.2?d.home:aforce>hforce*1.2?d.away:'EQUILIBRADO';

@@ -47,6 +47,8 @@ v=iara.evaluate(stale);
 assert.match(v.intro,/A curva de pressão parou/);
 assert.match(v.next,/sem pressão recente confiável/);
 assert.ok(v.tags.includes('CURVA ATRASADA'));
+assert.match(iara.render(stale),/PRESSÃO DESATUALIZADA/);
+assert.doesNotMatch(iara.render(stale),/● LEITURA ATUALIZÁVEL/);
 assert.doesNotMatch(v.next,/cenário merece atenção/);
 const noMomentum={...base,thermometer:{points:[]},stats:{home:{},away:{}},indicator_board:[]};
 v=iara.evaluate(noMomentum);

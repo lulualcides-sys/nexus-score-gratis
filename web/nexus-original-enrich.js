@@ -137,12 +137,14 @@ function instrument(g,detail){
     basis:'event',label:'Evento confirmado · '+String(e.text||'').slice(0,100),
     reason:String(e.text||'Evento confirmado na fonte').slice(0,140)
  }));
- const ten=pressureWindow(points,minutes||1,10),five=pressureWindow(points,minutes||1,5);
- const fifteen=pressureWindow(points,minutes||1,15);
+ // A leitura AO VIVO precisa terminar no minuto atual, não na última
+ // barra recebida. Sem amostras atuais, as janelas ficam inválidas.
+ const ten=pressureWindow(points,end||1,10),five=pressureWindow(points,end||1,5);
+ const fifteen=pressureWindow(points,end||1,15);
  // NEXUS original espera as janelas 5/10/15 com força e cobertura reais.
  const asWindow=(w)=>({
    valid:w.valid,home_force:w.home_recent,away_force:w.away_recent,
-   samples:w.samples,expected:w.expected,dominant:w.dominant,
+   samples:w.samples,expected:w.expected,as_of_minute:end,dominant:w.dominant,
    level:w.level,total_force:w.home_recent!==null&&w.away_recent!==null?w.home_recent+w.away_recent:null
  });
  const stats=detail.stats||{home:{},away:{}};

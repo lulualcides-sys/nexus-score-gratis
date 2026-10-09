@@ -255,16 +255,17 @@ function render(d){
   v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
   safe(r.detail)+'</p>').join('')+
   '<small>Urgência esportiva situacional, não obrigação matemática.</small></div>':
-  '<div class="iara-context muted"><b>🏆 Must Win</b><p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento.</p></div>';
+  '<div class="iara-context muted iara-compact"><b>🏆 Must Win</b><p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento.</p></div>';
  const odds=v.value;
  const evCard=odds?'<div class="iara-ev"><b>📈 EV teórico · Match Odds</b><p>'+
    safe(odds.label)+' · odd '+odds.odds.toFixed(2)+' · modelo '+odds.prob.toFixed(1)+'% · EV '+
    (odds.ev>0?'+':'')+odds.ev.toFixed(1)+'%</p><small>Modelo Poisson experimental não calibrado. Não é EV+ comprovado nem lucro real.</small></div>':
-   '<div class="iara-ev muted"><b>📈 EV+</b><p>Indisponível sem odds pré-jogo verificadas e probabilidade de modelo com amostra mínima.</p></div>';
+   '<div class="iara-ev muted iara-compact"><b>📈 EV+</b><p>Indisponível sem odds pré-jogo verificadas e probabilidade de modelo com amostra mínima.</p></div>';
  return '<section class="iara-card" aria-label="IARA análise do jogo ao vivo" data-iara-fingerprint="'+safe(v.fingerprint)+'">'+
    '<header class="iara-header"><div><span class="iara-bot">◈ IARA</span>'+
    '<h3>Análise do jogo ao vivo</h3><small>'+safe(v.minute)+'′ · '+safe(v.confidence)+safe(age)+'</small></div>'+
-   '<span class="iara-live-tag">● LEITURA ATUALIZÁVEL</span></header>'+
+   '<span class="iara-live-tag'+(v.stale?' iara-tag-stale':'')+'">'+
+    (v.stale?'● PRESSÃO DESATUALIZADA':'● LEITURA ATUALIZÁVEL')+'</span></header>'+
    '<div class="iara-body"><div class="iara-tags">'+tagHTML+'</div>'+
    '<p class="iara-comment">'+safe(v.intro)+'</p>'+
    '<div class="iara-goal"><strong>⚽ Pode sair mais um gol?</strong><p>'+safe(v.next)+'</p></div>'+

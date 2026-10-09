@@ -52,3 +52,14 @@
  .iara-context p,.iara-ev p{font-size:11px}
  .iara-context small,.iara-ev small{font-size:9px}
 }
+
+/* Compactar apenas os estados indisponíveis, mantendo as leituras reais. */
+.iara-live-tag.iara-tag-stale{border-color:#d6ae65;background:#664c29;color:#fff4de}
+.iara-context.iara-compact,.iara-ev.iara-compact{display:flex;align-items:baseline;gap:10px;padding:9px 12px;margin:7px 0}
+.iara-context.iara-compact>b,.iara-ev.iara-compact>b{flex:0 0 auto;margin:0}
+.iara-context.iara-compact p,.iara-ev.iara-compact p{margin:0;font-size:11px;line-height:1.35}
+@media(max-width:500px){
+ .iara-context.iara-compact,.iara-ev.iara-compact{padding:9px 10px;gap:8px}
+ .iara-context.iara-compact>b,.iara-ev.iara-compact>b{font-size:11px}
+ .iara-context.iara-compact p,.iara-ev.iara-compact p{font-size:10px}
+}
