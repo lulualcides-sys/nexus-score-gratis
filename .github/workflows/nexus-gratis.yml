@@ -75,12 +75,12 @@ jobs:
       - name: Atualizar painel dos mercados monitorados
         if: always()
         run: python3 report_github.py
-      - name: Exportar dados seguros para o site a cada duas horas
+      - name: Exportar no push e a cada duas horas no agendamento
         if: always()
         shell: bash
         run: |
           hour=$(date -u +%H)
-          if [[ ! -f web/data.json ]] || (( 10#$hour % 2 == 0 )) || ! grep -q '"schema":2' web/data.json; then
+          if [[ "$GITHUB_EVENT_NAME" == "push" ]] || [[ ! -f web/data.json ]] || (( 10#$hour % 2 == 0 )) || ! grep -q '"schema":2' web/data.json; then
             python3 web_export.py
           else
             echo "Snapshot web mantido: atualização a cada duas horas UTC."
