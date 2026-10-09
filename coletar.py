@@ -195,6 +195,8 @@ def fotmob_lineups(detail):
     raw=content.get('lineup') or {}
     if not isinstance(raw,dict):return {}
     output={}
+    lineup_type=str(raw.get('lineupType') or '').strip().lower()
+    confirmed=lineup_type in ('standard','confirmed','official','actual','starting')
     for side,key in (('home','homeTeam'),('away','awayTeam')):
         team=raw.get(key) or {}
         if not isinstance(team,dict):continue
@@ -211,7 +213,9 @@ def fotmob_lineups(detail):
         if starters or subs:
             output[side]={'formation':str(team.get('formation') or '')[:25],
                           'starters':starters,'subs':subs,'source':'FotMob',
-                          'lineup_type':str(raw.get('lineupType') or '')[:25]}
+                          'lineup_type':str(raw.get('lineupType') or '')[:25],
+                          'status':'confirmed' if confirmed else 'predicted',
+                          'updated_at':NOW.isoformat()}
     return output
 
 def read(path):
