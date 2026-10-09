@@ -30,4 +30,23 @@ class MustWinTests(unittest.TestCase):
   self.assertEqual(c['away']['position'],5)
   self.assertIsNone(make_context({**f,'league_id':'47'},t))
   self.assertIsNone(make_context({**f,'home_id':'9999'},t))
+
+ def test_espn_backup_requires_exact_team_names_and_20_positions(self):
+  from standings_context import espn_table
+  rows=[]
+  for i in range(1,21):
+   rows.append({'team':{'id':str(1000+i),'displayName':'Time '+str(i)},
+     'stats':[{'name':'rank','value':i},{'name':'points','value':60-i},
+              {'name':'gamesPlayed','value':24}]})
+  doc={'season':{'year':2026,'displayName':'2026'},
+       'children':[{'standings':{'entries':rows}}]}
+  table=espn_table(doc,'268','bra.1')
+  self.assertIsNotNone(table)
+  self.assertEqual(table['source'],'ESPN')
+  fx={'league_id':'268','home_id':'9999','away_id':'9998',
+      'home':'Time 1','away':'Time 2'}
+  self.assertEqual(make_context(fx,table)['home']['position'],1)
+  self.assertIsNone(make_context({**fx,'away':'Time desconhecido'},table))
+  self.assertIsNone(espn_table({**doc,'children':doc['children']*2},'268','bra.1'))
+
 if __name__=='__main__':unittest.main()
