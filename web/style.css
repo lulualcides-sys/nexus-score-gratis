@@ -50,3 +50,10 @@ border:1px solid #294658;background:#091e30;border-radius:9px;padding:13px}
 .history-market strong{color:#62d5ed;font-size:16px}
 #historical-markets{margin-bottom:28px}
 @media(max-width:760px){.history-grid{grid-template-columns:repeat(2,1fr);gap:7px}.history-market{padding:11px}}
+
+.implied{border:1px solid #2d5569;background:#10263a;border-radius:9px;padding:13px;margin-top:12px}
+.implied>strong{font-size:12px;color:#d6edf7}
+.implied-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:13px 0}
+.implied-grid>div{border:1px solid #325266;border-radius:7px;background:#0e2134;padding:11px}
+.implied-grid small{font-size:10px;color:#90b0be;display:block}
+.implied-grid b{font-size:18px;color:#6dd6e6}
