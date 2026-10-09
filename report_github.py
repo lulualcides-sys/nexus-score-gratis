@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from datetime import datetime,timezone
 import html
+import math
 
 H=Path(__file__).resolve().parent/'history'
 
@@ -12,17 +13,63 @@ def safe(text):
 def fmt(v):
     return str(v) if v is not None else '—'
 
+def load_json(path):
+    try:
+        value=json.loads(path.read_text(encoding='utf-8'))
+        return value if isinstance(value,dict) else {}
+    except (OSError,ValueError):
+        return {}
+
+def currency(value,unit='BRL'):
+    try:
+        n=float(value)
+        if not math.isfinite(n):return '—'
+        return f'{n:+,.2f}'.replace(',','_').replace('.',',').replace('_','.')+' '+str(unit)[:6]
+    except (ValueError,TypeError):
+        return '—'
+
+def pl_section(lines, heading, doc):
+    lines.extend(['',heading,''])
+    if not doc.get('snapshot_only') or not isinstance(doc.get('markets'),list):
+        lines.append('Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.')
+        return
+    lines.append('Fonte: **'+safe(doc.get('source') or doc.get('provider') or 'sem fonte')+
+                 '** · Atualizacao: **'+safe(doc.get('observed_at'))+'**.')
+    lines.append('**'+safe(doc.get('operations'))+' operacoes | P/L liquido: '+
+                 currency(doc.get('net_pl'),doc.get('currency') or 'BRL')+'**.')
+    lines.extend(['','| Mercado informado | Operacoes | P/L real |','|---|---:|---:|'])
+    rows=sorted((v for v in doc.get('markets',[]) if isinstance(v,dict)),
+                key=lambda x: float(x.get('net_pl') or 0),reverse=True)
+    for row in rows[:80]:
+        lines.append('| '+safe(row.get('market'))+' | '+safe(row.get('operations'))+' | '+
+                     currency(row.get('net_pl'),doc.get('currency') or 'BRL')+' |')
+    lines.append('')
+    lines.append('*Dados importados da origem; nao sao lucros de apostas recomendadas pelo NEXUS. Sem stake/risco auditado, nao converter para unidades.*')
+
 def main():
     paths=sorted(H.glob('20??-??-??.json'),reverse=True)[:4]
     status={}
     try:status=json.loads((H/'status.json').read_text(encoding='utf-8'))
     except (OSError,ValueError):pass
+    odds_status=load_json(H/'odds_status.json')
+    bolsa=load_json(H/'bolsa_netpl.json')
+    pc=load_json(H/'pc_netpl.json')
     games=[]
+    signals={'pending':0,'settled':0,'won':0}
+    odds_games=0
     for path in paths:
         try:data=json.loads(path.read_text(encoding='utf-8'))
         except (OSError,ValueError):continue
         for row in (data.get('matches') or {}).values():
             fixture=(row or {}).get('fixture') or {}
+            if (row or {}).get('odds_quotes'):odds_games+=1
+            for signal in (row or {}).get('paper_signals') or []:
+                if not isinstance(signal,dict):continue
+                flag=signal.get('status')
+                if flag=='pending':signals['pending']+=1
+                elif flag=='settled':
+                    signals['settled']+=1
+                    if signal.get('won') is True:signals['won']+=1
             if not fixture.get('home') or not fixture.get('away'):continue
             pts=((row.get('thermometer') or {}).get('points') or [])
             st=row.get('stats') or {}
@@ -32,16 +79,26 @@ def main():
                 if any(key in side for side in sides):
                     scouts.append(label+': '+fmt(sides[0].get(key))+'×'+fmt(sides[1].get(key)))
             games.append((path.stem,fixture,len(pts),', '.join(scouts),len(row.get('observations') or [])))
-    lines=['# ☁ NEXUS — Relatório de coletas','',f'Atualizado pelo GitHub Actions. Último status: **{safe(status.get("updated_at")) or "ainda não executado"}**.',
+    lines=['# ☁ NEXUS — Painel privado de dados, mercados e P/L','',
+           '**CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.',
+           '',f'Atualizado pelo GitHub Actions. Último status da coleta: **{safe(status.get("updated_at")) or "ainda não executado"}**.',
            '',f'Fontes da última execução: **{safe(", ".join(status.get("sources") or [])) or "nenhuma confirmada"}**. Jogos ao vivo encontrados: **{int(status.get("live_found") or 0)}**.',
-           '','**Importante:** cada mercado abaixo indica somente quais informações foram capturadas. O coletor não registra odds nem probabilidades; portanto, EV+, stake e lucro real **não foram calculados**.',
+           '','**Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.',
            '','| Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |','|---|---|---|---:|---|']
     for day,game,num,scouts,obs in games[:130]:
         name=safe(game.get('home'))+' × '+safe(game.get('away'))
         details=scouts if scouts else 'Somente placar (Over/Under, BTTS, Match Odds sem odds)'
         lines.append(f'| {safe(day)} | {name} | {safe(game.get("score"))} | {num} | {safe(details)} |')
     if not games:lines.append('| — | **Aguardando primeira coleta** | — | — | Sem histórico salvo |')
-    lines.extend(['','## Mercados acompanhados','',
+    pl_section(lines,'## P/L real por mercado — Bolsa de Aposta',bolsa)
+    pl_section(lines,'## P/L real por mercado — importacao do PC',pc)
+    lines.extend(['','## Odds verificadas e EV+ experimental','',
+        f'Jogos com odds registradas nos ultimos dias: **{odds_games}**.',
+        f'Cotações capturadas na ultima execucao: **{fmt(odds_status.get("quotes_recorded"))}**.',
+        f'Sinais pendentes: **{signals["pending"]}**. Sinais liquidados: **{signals["settled"]}**. '
+        f'Acertos entre liquidados: **{signals["won"]}**.',
+        'Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.',
+        '','## Mercados acompanhados','',
                   '- **Over/Under, Ambas marcam (BTTS), Match Odds e Lay Correct Score:** acompanhamento do placar; não existe EV sem odds verificadas.',
                   '- **Escanteios:** somente quando o total de escanteios for informado.',
                   '- **Finalizações e grandes chances:** somente quando os respectivos scouts forem informados.',
