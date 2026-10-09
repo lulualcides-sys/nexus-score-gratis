@@ -40,7 +40,7 @@ assert.equal(scroll.scrollTop,0);
 window.NexusMatchDetail.select('stats');
 assert.match(content.innerHTML,/Finalizações no gol/);
 window.NexusMatchDetail.select('squads');
-assert.match(content.innerHTML,/ainda não foram fornecidos/);
+assert.match(content.innerHTML,/Elenco ou escalação não disponível/);
 window.NexusMatchDetail.select('markets');
 assert.match(content.innerHTML,/Nenhuma odd pré-jogo verificada/);
 window.NexusMatchDetail.select('projections');
