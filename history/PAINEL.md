@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T18:01:35.900814+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T18:02:20.944831+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **53**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **61**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -126,17 +126,17 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **53**.
 | 2026-10-09 | SC Kafr Qasim × Bnei Yehuda Tel Aviv | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Almere City FC × FC Eindhoven | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | De Graafschap × Jong FC Utrecht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | FC Dordrecht × FC Emmen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | FC Dordrecht × FC Emmen | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | FC Volendam × Vitesse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Heracles × RKC Waalwijk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Jong Ajax × VVV-Venlo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Jong AZ Alkmaar × FC Den Bosch | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | NAC Breda × MVV Maastricht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | TOP Oss × Helmond Sport | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Roda JC Kerkrade × Jong PSV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Jong AZ Alkmaar × FC Den Bosch | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | NAC Breda × MVV Maastricht | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | TOP Oss × Helmond Sport | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Roda JC Kerkrade × Jong PSV | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sporting FC × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | FC Rostov × Akron Togliatti | 1-0 | 69 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | FC Rostov × Akron Togliatti | 1-0 | 72 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 3-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -165,6 +165,34 @@ Fonte: **Conector autenticado de operações** · Atualizacao: **2026-10-09T09:3
 ## P/L real por mercado — importacao do PC
 
 Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
+
+## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
+
+**Registros:** 19 | **Jogos monitorados:** 362 | **Ao vivo:** 62 | **Termômetros recentes:** 6.
+
+Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
+
+| Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
+|---|---|---|---|---|---|---|---|
+| 2026-10-09T18:02:29.734899+00:00 | FC Rostov × Akron Togliatti | Equipe não definida (72') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T18:01:48.914954+00:00 | IFK Göteborg × Västerås SK | Västerås SK (46') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T18:01:48.914954+00:00 | Sochaux × Boulogne | Boulogne (1') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T17:51:18.684763+00:00 | HNK Gorica × Rudeš | HNK Gorica (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:51:18.684763+00:00 | Wieczysta Kraków × Wisła Płock | Wieczysta Kraków (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:51:18.684763+00:00 | Wieczysta Kraków × Wisła Płock | Wieczysta Kraków (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:51:18.684763+00:00 | FC Zlín × Slavia Prague | Slavia Prague (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:51:18.684763+00:00 | Karmiotissa × Omonia Nicosia | Omonia Nicosia (85') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Vejle Boldklub × Hvidovre | Vejle Boldklub (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Vejle Boldklub × Hvidovre | Vejle Boldklub (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | HNK Gorica × Rudeš | HNK Gorica (91') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Wieczysta Kraków × Wisła Płock | Wisła Płock (91') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | SKU Amstetten × BW Linz | SKU Amstetten (58') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Kapfenberger SV × Austria Wien II | Austria Wien II (61') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | FC Heidenheim × Kaiserslautern | FC Heidenheim (60') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Arsenal Tula × Spartak Kostroma | Spartak Kostroma (57') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Galatasaray × Kasımpaşa | Galatasaray (49') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Galatasaray × Kasımpaşa | Galatasaray (49') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-09T17:49:45.396840+00:00 | Karmiotissa × Omonia Nicosia | Omonia Nicosia (84') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
