@@ -785,6 +785,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-help" id="cloud-status"></div>
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
+        <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
         <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
         <div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
@@ -2574,12 +2575,30 @@ function renderPlatformSnapshot(platform){
  const rows=(platform.markets||[]).map(m=>`<tr><td>${esc(names[m.market]||m.market)}</td><td>${Number(m.operations||0)}</td><td class="${Number(m.net_pl)<0?'loss':'win'}">${money(m.net_pl)}</td></tr>`).join('');
  target.innerHTML=`<div class="cloud-audit-head"><h3>Resultados reais da Bolsa de Aposta</h3><small>Extrato consultado em ${esc(safeCloudDate(platform.as_of))}. Fotografia pontual, NÃO atualização em tempo real.</small></div><div class="cloud-audit-stats"><div><small>OPERAÇÕES EXECUTADAS</small><b>${Number(platform.operations||0)}</b></div><div><small>PL LÍQUIDO REAL</small><b>${money(platform.net_pl)}</b></div></div><div class="cloud-audit-scroll"><table class="platform-table"><thead><tr><th>Mercado</th><th>Operações</th><th>PL líquido informado</th></tr></thead><tbody>${rows}</tbody></table></div><p class="cloud-audit-note">Valores das apostas efetivamente registradas na plataforma, com suas stakes originais. Eles não representam estratégias criadas pelo NEXUS e não são simulação de stake R$ 100.</p>`;
 }
+function renderCloudSignalJournal(journal){
+ const box=$('#cloud-signal-journal');if(!box)return;
+ const entries=Array.isArray(journal?.items)?journal.items:[];
+ const labels={gol_confirmado:'⚽ GOL',sem_gol_confirmado:'SEM GOL',pendente:'PENDENTE',
+   indeterminado:'SEM MINUTO VERIFICADO',janela_incompleta:'INCOMPLETA'};
+ const outcome=(e,n)=>esc(labels[e.outcomes?.[String(n)]]||'PENDENTE');
+ const rows=entries.slice(0,50).map(e=>`<tr>
+ <td><b>${esc(e.home||'')} × ${esc(e.away||'')}</b><small style="display:block">${esc(e.league||'')} · ${esc(e.captured_at||'')}</small></td>
+ <td>${esc(e.minute)}' · ${esc(e.team==='home'?e.home:e.away)}</td>
+ <td>${esc(e.icon)} ${esc(e.rule)}</td><td>${outcome(e,5)}</td><td>${outcome(e,10)}</td><td>${outcome(e,15)}</td>
+ <td>${e.ev_pct==null?'INDISPONÍVEL':esc(e.ev_pct)+'%'}</td></tr>`).join('');
+ box.innerHTML=`<div class="cloud-audit-head"><h3>◉ ALERTAS NA NUVEM · ${entries.length} REGISTROS</h3>
+ <small>Coleta independente do PC: cada sinal de pressão é salvo e depois conferido nas janelas de 5, 10 e 15 minutos.</small></div>`+
+ (rows?`<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Minuto / equipe</th><th>Sinal</th><th>Gol 5'</th><th>Gol 10'</th><th>Gol 15'</th><th>EV+</th></tr></thead><tbody>${rows}</tbody></table></div>`:
+ '<p class="cloud-audit-note">Aguardando sinais novos com pressão recente e medições suficientes.</p>')+
+ '<p class="cloud-audit-note">Executa as regras de pressão 5.29 disponíveis no GitHub. O motor completo instalado no NEXUS Original ainda precisa ser migrado. EV+ não é atribuído sem odds e modelo calibrado.</p>';
+}
 function renderCloud(){
  const meta=$('#cloud-metrics'),status=$('#cloud-status'),target=$('#cloud-results');
  if(!cloudData){meta.innerHTML='';status.textContent='Aguardando dados';target.textContent='';return;}
  const rows=cloudData.games||[];
  renderCloudAudit(cloudData.audit);
  renderPlatformSnapshot(cloudData.platform_snapshot);
+ renderCloudSignalJournal(cloudData.signal_journal);
  const withPressure=rows.filter(g=>g.thermometer?.samples>0).length;
  const withOdds=rows.filter(g=>g.odds_available===true).length;
  meta.innerHTML=`<div><small>JOGOS CAPTURADOS</small><b>${rows.length}</b></div><div><small>COM TERMÔMETRO</small><b>${withPressure}</b></div><div><small>COM ODDS CONFIRMADAS</small><b>${withOdds}</b></div>`;
