@@ -2034,10 +2034,10 @@ function preliveHTML(d){
  const p=state.prelive;
  const when=d.start_timestamp?new Date(Number(d.start_timestamp)*1000).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'Horário não informado';
  const heroOdds=teamOddsChips(p||d);
- const quote=(p||d).odds||{};
- const oddInfo=heroOdds.available?('Fonte '+(quote.source||'ESPN')+
-  ' · '+(quote.bookmaker||'cotação pública')+
-  (quote.fetched_at?' · capturada '+new Date(quote.fetched_at).toLocaleString('pt-BR',{
+ const heroQuote=(p||d).odds||{};
+ const oddInfo=heroOdds.available?('Fonte '+(heroQuote.source||'ESPN')+
+  ' · '+(heroQuote.bookmaker||'cotação pública')+
+  (heroQuote.fetched_at?' · capturada '+new Date(heroQuote.fetched_at).toLocaleString('pt-BR',{
     timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'')):
   'Sem odd real verificada nesta coleta';
  const minutesToGo=d.start_timestamp?Math.ceil((Number(d.start_timestamp)*1000-Date.now())/60000):null;
