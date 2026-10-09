@@ -61,7 +61,8 @@ def three_way_market(doc):
             if outcome and val:selections[outcome]=val
         if set(selections)=={'home','draw','away'}:
             src=m.get('bookmaker') or m.get('provider') or {}
-            bookmaker=str(src.get('name') if isinstance(src,dict) else src).strip()
+            value=src.get('name') if isinstance(src,dict) else src
+            bookmaker=str(value or '').strip()
             if not bookmaker:bookmaker='Bookmaker não identificado'
             return selections,bookmaker[:55]
     return None
