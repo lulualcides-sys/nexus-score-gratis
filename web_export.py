@@ -291,6 +291,15 @@ def public_row(row,day,team_cache=None):
                          'source':safe(item.get('source'),24),
                          'bookmaker':safe(item.get('bookmaker'),35),
                          'at':safe(item.get('captured_at'),36)})
+    # Mostrar a cotação mais recente por seleção; o histórico integral fica
+    # no arquivo privado de coleta. Nunca misturar odds históricas simuladas.
+    latest={}
+    for offer in odds:
+        side=offer['sel']
+        previous=latest.get(side)
+        if not previous or str(offer.get('at') or '')>=str(previous.get('at') or ''):
+            latest[side]=offer
+    odds=[latest[side] for side in ('home','draw','away') if side in latest]
     events=[]
     for event in row.get('events') or []:
         if not isinstance(event,dict) or event.get('type') not in TYPES:continue
