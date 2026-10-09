@@ -180,7 +180,8 @@ function instrument(g,detail){
  }
  const total=points.length;
  const sourcedetail=detail.scout_pressure||{};
- return {...detail,signal_timeline:[...markers,...eventTimeline,...snapshots].sort((a,b)=>a.minute-b.minute),
+ return {...detail,standings:g.standings||null,
+   signal_timeline:[...markers,...eventTimeline,...snapshots].sort((a,b)=>a.minute-b.minute),
    indicator_board:board,signals:board.filter(x=>x.state==='active'),
    head_to_head:headToHead(g),
    pressure:{score:ten.score,level:ten.level,dominant:ten.dominant,difference:ten.difference,
@@ -282,7 +283,7 @@ function verifiedPrelive(g,model){
    if(!at){at=q.at||'';source=q.source||'';bookmaker=q.bookmaker||'';}
  }
  const available=Object.keys(market).length>0;
- return {...model,lineups,head_to_head:headToHead(g),
+ return {...model,lineups,head_to_head:headToHead(g),standings:g.standings||null,
   odds:{available,markets:{'1x2':market},source:source||'ESPN',
    bookmaker:bookmaker||'Não informada',fetched_at:at||null,
    reason:available?'':'A fonte ainda não publicou cotações 1X2 verificáveis para esta partida.'},
