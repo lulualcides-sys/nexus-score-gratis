@@ -133,6 +133,38 @@ def resolve(item,fixture,row):
             windows[key]='indeterminado'
     return item
 
+def diagnostics(docs):
+    """Auditoria da coleta: zero alerta nao significa motor desligado."""
+    current={}
+    for day,doc in sorted(docs.items(),reverse=True):
+        for key,row in (doc.get('matches') or {}).items():
+            if not isinstance(row,dict):continue
+            fixture=row.get('fixture') or {}
+            if not isinstance(fixture,dict):continue
+            match_id=str(fixture.get('id') or key)
+            if match_id:current.setdefault(match_id,(fixture,row))
+    counters={'matches_checked':len(current),'matches_live':0,
+              'with_pressure':0,'fresh_pressure':0,
+              'valid_10min':0,'valid_5min':0,
+              'strong_10min':0,'matches_with_signals':0}
+    for f,row in current.values():
+        if f.get('phase')!='live':continue
+        counters['matches_live']+=1
+        try:m=int(f.get('minute'))
+        except (ValueError,TypeError):continue
+        pts=samples(row)
+        if not pts:continue
+        counters['with_pressure']+=1
+        if max(pts)<m-1:continue
+        counters['fresh_pressure']+=1
+        ten=pressure_window(pts,m,10);five=pressure_window(pts,m,5)
+        if ten['valid']:counters['valid_10min']+=1
+        if five['valid']:counters['valid_5min']+=1
+        if ten['valid'] and ten.get('level') in ('FORTE','CRITICO'):
+            counters['strong_10min']+=1
+        if active_signals(f,row,'audit'):counters['matches_with_signals']+=1
+    return counters
+
 def update(docs,previous=None,observed_at=None):
     when=observed_at or datetime.now(timezone.utc).isoformat()
     previous=previous or {}
@@ -162,6 +194,7 @@ def update(docs,previous=None,observed_at=None):
             resolve(entry,fixture,row)
     entries.sort(key=lambda x:str(x.get('captured_at') or ''),reverse=True)
     return {'schema':1,'updated_at':when,'items':entries[:MAX_ALERTS],
+        'diagnostics':diagnostics(docs),
         'notice':'Alertas de pressão verificados quando possível. Não representam apostas nem EV+.'}
 
 def main():
@@ -170,11 +203,20 @@ def main():
          ((today-timedelta(days=n)).isoformat() for n in range(4))}
     old=read(JOURNAL)
     new=update(docs,old)
-    if not JOURNAL.exists() or new['items']!=old.get('items',[]):
+    # Status persistido mesmo com 0 alertas. Heartbeat no maximo a cada 30 min.
+    try:
+        last_checked=datetime.fromisoformat(str(old.get('updated_at') or '').replace('Z','+00:00'))
+        heartbeat_age=(datetime.now(timezone.utc)-last_checked).total_seconds()
+    except (ValueError,TypeError):
+        heartbeat_age=3600
+    changed=(new['items']!=old.get('items',[]) or
+             new['diagnostics']!=old.get('diagnostics') or heartbeat_age>=1800)
+    if not JOURNAL.exists() or changed:
         H.mkdir(exist_ok=True)
         JOURNAL.write_text(json.dumps(new,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     print('NEXUS CLOUD: registros de alertas',len(new['items']),
-          '(sem EV inventado; 5/10/15 min auditáveis)')
+          '| diagnostico:',json.dumps(new['diagnostics'],ensure_ascii=False),
+          '| sem EV inventado')
 
 if __name__=='__main__':
     main()

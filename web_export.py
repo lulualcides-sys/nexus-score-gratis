@@ -463,6 +463,7 @@ def main():
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
+        'diagnostics':registry.get('diagnostics') or {},
         'items':(registry.get('items') or [])[:400],
         'note':'Sinais 5.29 na nuvem; gols em 5/10/15 min conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),

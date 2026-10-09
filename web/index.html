@@ -2580,6 +2580,14 @@ function renderCloudSignalJournal(journal){
  const entries=Array.isArray(journal?.items)?journal.items:[];
  const labels={gol_confirmado:'⚽ GOL',sem_gol_confirmado:'SEM GOL',pendente:'PENDENTE',
    indeterminado:'SEM MINUTO VERIFICADO',janela_incompleta:'INCOMPLETA'};
+ const diag=journal?.diagnostics||{};
+ const status=journal?.updated_at?
+  'Última auditoria: '+esc(journal.updated_at)+' · jogos ao vivo: '+Number(diag.matches_live||0)+
+  ' · com pressão: '+Number(diag.with_pressure||0)+
+  ' · pressão atual: '+Number(diag.fresh_pressure||0)+
+  ' · janela 10 min válida: '+Number(diag.valid_10min||0)+
+  ' · jogos com sinal: '+Number(diag.matches_with_signals||0):
+  'Coleta de alertas ainda não executada';
  const outcome=(e,n)=>esc(labels[e.outcomes?.[String(n)]]||'PENDENTE');
  const rows=entries.slice(0,50).map(e=>`<tr>
  <td><b>${esc(e.home||'')} × ${esc(e.away||'')}</b><small style="display:block">${esc(e.league||'')} · ${esc(e.captured_at||'')}</small></td>
@@ -2587,7 +2595,7 @@ function renderCloudSignalJournal(journal){
  <td>${esc(e.icon)} ${esc(e.rule)}</td><td>${outcome(e,5)}</td><td>${outcome(e,10)}</td><td>${outcome(e,15)}</td>
  <td>${e.ev_pct==null?'INDISPONÍVEL':esc(e.ev_pct)+'%'}</td></tr>`).join('');
  box.innerHTML=`<div class="cloud-audit-head"><h3>◉ ALERTAS NA NUVEM · ${entries.length} REGISTROS</h3>
- <small>Coleta independente do PC: cada sinal de pressão é salvo e depois conferido nas janelas de 5, 10 e 15 minutos.</small></div>`+
+ <small>Coleta independente do PC: cada sinal de pressão é salvo e depois conferido nas janelas de 5, 10 e 15 minutos. ${status}</small></div>`+
  (rows?`<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Minuto / equipe</th><th>Sinal</th><th>Gol 5'</th><th>Gol 10'</th><th>Gol 15'</th><th>EV+</th></tr></thead><tbody>${rows}</tbody></table></div>`:
  '<p class="cloud-audit-note">Aguardando sinais novos com pressão recente e medições suficientes.</p>')+
  '<p class="cloud-audit-note">Executa as regras de pressão 5.29 disponíveis no GitHub. O motor completo instalado no NEXUS Original ainda precisa ser migrado. EV+ não é atribuído sem odds e modelo calibrado.</p>';

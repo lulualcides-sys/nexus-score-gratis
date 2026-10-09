@@ -1,5 +1,5 @@
 import unittest
-from signal_registry import active_signals,resolve,update
+from signal_registry import active_signals,resolve,update,diagnostics
 
 class SignalRegistryTests(unittest.TestCase):
     def game(self,minute=35,score='0-0',phase='live'):
@@ -22,6 +22,15 @@ class SignalRegistryTests(unittest.TestCase):
         self.assertEqual(active_signals(self.game(35,phase='finished'),self.data(),'t'),[])
         self.assertFalse(any(e['icon']=='🚨' for e in active_signals(
             self.game(),self.data(stat={'away':{'shots_on':3}}),'t')))
+    def test_diagnostic_distinguishes_missing_pressure_from_zero_signals(self):
+        live={'fixture':self.game(),**self.data()}
+        frozen={'fixture':self.game(80),**self.data()}
+        d=diagnostics({'2026-10-09':{'matches':{'with':live,'stale':frozen}}})
+        self.assertEqual(d['matches_live'],2)
+        self.assertEqual(d['with_pressure'],2)
+        self.assertEqual(d['fresh_pressure'],1)
+        self.assertEqual(d['valid_10min'],1)
+        self.assertEqual(d['matches_with_signals'],1)
     def test_duplicate_snapshot_is_not_new_alert(self):
         row=self.data()
         match={'fixture':self.game(),**row}
