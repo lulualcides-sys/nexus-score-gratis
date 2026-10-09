@@ -134,6 +134,80 @@ def stats(detail):
                     except (TypeError,ValueError):pass
     return out
 
+def fotmob_events(detail):
+    """Eventos realmente reportados por matchFacts e shotmap, sem inferir stats."""
+    content=detail.get('content') or {}
+    general=detail.get('general') or {}
+    home_id=str((general.get('homeTeam') or {}).get('id') or '')
+    away_id=str((general.get('awayTeam') or {}).get('id') or '')
+    found={}
+    def insert(minute,kind,side,text):
+        try:m=int(minute)
+        except (ValueError,TypeError):return
+        if not 0<=m<=130:return
+        if side not in ('home','away'):side=''
+        label=str(text or '')[:125]
+        key=(m,kind,side,label)
+        found[key]={'minute':m,'type':kind,'side':side,'text':label}
+    raw=(content.get('matchFacts') or {}).get('events') or {}
+    listed=raw.get('events') if isinstance(raw,dict) else raw
+    if not isinstance(listed,list):listed=[]
+    for event in listed:
+        if not isinstance(event,dict):continue
+        typ=str(event.get('type') or '').lower().replace(' ','')
+        card=str(event.get('card') or event.get('cardType') or '').lower()
+        if 'penalty' in typ and ('miss' in typ or 'saved' in typ):kind='penalty_missed'
+        elif 'goal' in typ and 'disallow' not in typ:kind='goal'
+        elif 'red' in typ or 'red' in card:kind='red_card'
+        elif 'yellow' in typ or 'yellow' in card:kind='yellow_card'
+        else:continue
+        side='home' if event.get('isHome') is True else 'away' if event.get('isHome') is False else ''
+        raw_min=event.get('time') or event.get('timeStr') or ''
+        if isinstance(raw_min,str):
+            match=re.search(r'\d{1,3}',raw_min)
+            raw_min=match.group(0) if match else None
+        player=(event.get('player') or {}).get('name') if isinstance(event.get('player'),dict) else ''
+        insert(raw_min,kind,side,event.get('nameStr') or player or event.get('text') or '')
+    shots=(content.get('shotmap') or {}).get('shots') or []
+    for shot in shots[:140]:
+        if not isinstance(shot,dict):continue
+        event_type=str(shot.get('eventType') or '').lower()
+        if 'goal' in event_type or shot.get('isOwnGoal'):continue
+        if shot.get('isBlocked') is True:continue
+        if shot.get('isOnTarget') is True:kind='shot_on'
+        elif shot.get('isOnTarget') is False and any(
+                name in event_type for name in ('miss','offtarget','offtarget','wide')):
+            kind='shot_off'
+        else:continue
+        tid=str(shot.get('teamId') or '')
+        side='home' if tid and tid==home_id else 'away' if tid and tid==away_id else ''
+        insert(shot.get('min'),kind,side,shot.get('playerName') or '')
+    return sorted(found.values(),key=lambda e:(e['minute'],e['type']))[:150]
+
+def fotmob_lineups(detail):
+    content=detail.get('content') or {}
+    raw=content.get('lineup') or {}
+    if not isinstance(raw,dict):return {}
+    output={}
+    for side,key in (('home','homeTeam'),('away','awayTeam')):
+        team=raw.get(key) or {}
+        if not isinstance(team,dict):continue
+        def players(items):
+            if not isinstance(items,list):return []
+            out=[]
+            for v in items[:25]:
+                if not isinstance(v,dict) or not v.get('name'):continue
+                out.append({'name':str(v['name'])[:80],
+                            'number':str(v.get('shirtNumber') or '')[:4]})
+            return out
+        starters=players(team.get('starters'))
+        subs=players(team.get('subs'))
+        if starters or subs:
+            output[side]={'formation':str(team.get('formation') or '')[:25],
+                          'starters':starters,'subs':subs,'source':'FotMob',
+                          'lineup_type':str(raw.get('lineupType') or '')[:25]}
+    return output
+
 def read(path):
     try:return json.loads(path.read_text(encoding='utf-8'))
     except (OSError,ValueError):return {}
@@ -197,6 +271,14 @@ def run():
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
             current_stats=stats(packet)
             if any(current_stats.values()):before['stats']=current_stats
+            new_events=fotmob_events(packet)
+            if new_events:
+                prior=before.get('events') or []
+                unique={(e['minute'],e['type'],e.get('side',''),e.get('text','')):e
+                        for e in prior+new_events if isinstance(e,dict) and e.get('minute') is not None}
+                before['events']=sorted(unique.values(),key=lambda e:e['minute'])[-150:]
+            lineups=fotmob_lineups(packet)
+            if lineups:before['lineups']={**(before.get('lineups') or {}),**lineups}
             observations=before.get('observations') or []
             observations.append({'at':NOW.isoformat(),'minute':match['minute'],'score':match['score'],'samples':len(points)})
             before['observations']=observations[-72:]
