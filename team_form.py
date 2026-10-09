@@ -40,10 +40,15 @@ def schedule(league,team_id,season=None):
     packet=fetch(url,timeout=7)
     if league=='bra.1' and team_id=='1936' and season is None:
         samples=packet.get('events') or []
-        print('FORMATO_ESPN',json.dumps({'keys':list(packet.keys()),
-          'events_count':len(samples),
-          'first_event':samples[0] if samples else None},
-          ensure_ascii=False)[:2000],flush=True)
+        sample=samples[0] if samples else {}
+        comp=(sample.get('competitions') or [{}])[0]
+        parsed=parse_fixture(sample,league) if sample else None
+        print('FORMATO_ESPN',json.dumps({
+          'status':sample.get('status'),
+          'scores':[{'homeAway':v.get('homeAway'),'score':v.get('score')} for v in comp.get('competitors') or []],
+          'parsed':parsed,
+          'is_finished_valid':bool(valid_score(parsed)) if parsed else False},
+          ensure_ascii=False)[:1800],flush=True)
     result=[]
     for event in packet.get('events') or []:
         if not isinstance(event,dict):continue
