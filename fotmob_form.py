@@ -129,7 +129,8 @@ def main():
             for side in ('home','away'):
                 tid=team_id(fixture,side)
                 if not tid:continue
-                prio=0 if fixture.get('phase')=='live' else 1 if fixture.get('phase')=='scheduled' else 2
+                has_pressure=bool(((row.get('thermometer') or {}).get('points') or []))
+                prio=-2 if has_pressure else 0 if fixture.get('phase')=='live' else 1 if fixture.get('phase')=='scheduled' else 2
                 tasks.setdefault(tid,[]).append((prio,day,key,side))
     cache=read(CACHE_FILE).get('teams') or {}
     if not isinstance(cache,dict):cache={}
