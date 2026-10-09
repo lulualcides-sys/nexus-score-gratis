@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "coletar.py"
+      - "finished_scouts.py"
       - "report_github.py"
       - "odds_capture.py"
       - "web_export.py"
@@ -45,7 +46,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py multi_source.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py multi_source.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -80,6 +81,9 @@ jobs:
         id: fotmob_form
         continue-on-error: true
         run: python3 fotmob_form.py
+      - name: Complemento de scouts FotMob em jogos encerrados
+        continue-on-error: true
+        run: python3 finished_scouts.py
       - name: Capturar odds pré-jogo e liquidar previsões congeladas
         id: odds
         if: always()
