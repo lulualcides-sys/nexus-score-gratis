@@ -7,6 +7,7 @@
 <meta name="description" content="NEXUS SCORE Web — partidas, termômetros, estatísticas e mercados observados pelo coletor gratuito.">
 <title>NEXUS SCORE · WEB</title>
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./match-detail.css">
 </head>
 <body>
 <div class="shell">
@@ -70,7 +71,8 @@
   </main>
   <footer>NEXUS SCORE WEB · Fonte: coleta gratuita GitHub Actions · <a href="https://github.com/lulualcides-sys/nexus-score-gratis" target="_blank" rel="noopener noreferrer">Repositório privado</a> · Site estático público · servidor privado exige senha</footer>
 </div>
-<dialog id="detail"><div id="detail-content"></div><button type="button" class="close-dialog" id="close-dialog" aria-label="Fechar">×</button></dialog>
+<dialog id="detail" aria-label="Painel de dados da partida"><div id="detail-content"></div><button type="button" class="close-dialog" id="close-dialog" aria-label="Fechar detalhes">×</button></dialog>
+<script src="./match-detail.js" defer></script>
 <script src="./app.js" defer></script>
 <script src="./pc.js" defer></script>
 </body>
