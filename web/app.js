@@ -40,6 +40,40 @@
        (state.market==='odds' && hasOdds(game)) ||
        (state.market==='ev' && Array.isArray(game.signals) && game.signals.length>0) ||
        (state.market==='events' && Array.isArray(game.events) && game.events.length>0);
+  const kickoff = g => {
+    const v=Number(g.start_timestamp);
+    if(!Number.isFinite(v)||v<=0)return 'Horário não informado';
+    const dt=new Date(v*1000);
+    if(!Number.isFinite(dt.getTime()))return 'Horário não informado';
+    return dt.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit',hour12:false});
+  };
+  const matchDate = g => {
+    const v=Number(g.start_timestamp);
+    return Number.isFinite(v)&&v>0?
+      new Date(v*1000).toLocaleDateString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit'}):
+      (g.day?.split('-').reverse().slice(0,2).join('/')||'');
+  };
+  const logoHTML=(url,name)=>{
+    const host='https://a.espncdn.com/';
+    const alt=esc('Escudo '+name);
+    const ok=typeof url==='string' && (url.startsWith(host)||url.startsWith('https://a1.espncdn.com/')) &&
+      /^https:\/\/a1?\.espncdn\.com\/i\/teamlogos\//.test(url);
+    return '<span class="club-badge">'+
+      (ok?'<img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="'+esc(url)+
+          '" alt="'+alt+'" onerror="this.hidden=true;this.nextElementSibling.hidden=false">'+
+          '<span class="club-initials" hidden>'+esc(String(name||'?').slice(0,2).toUpperCase())+'</span>':
+          '<span class="club-initials">'+esc(String(name||'?').slice(0,2).toUpperCase())+'</span>')+
+      '</span>';
+  };
+  const chronOrder=(a,b)=>{
+    // Hoje e exibido antes dos dias passados; dentro de cada dia o primeiro horario vem primeiro.
+    if(a.day!==b.day)return String(b.day||'').localeCompare(String(a.day||''));
+    const x=Number(a.start_timestamp),y=Number(b.start_timestamp);
+    const ax=Number.isFinite(x)&&x>0?x:Infinity;
+    const by=Number.isFinite(y)&&y>0?y:Infinity;
+    return ax-by || String(a.league||'').localeCompare(String(b.league||'')) ||
+      String(a.home||'').localeCompare(String(b.home||''));
+  };
   function card(g,index) {
     const tags=[
       pressure(g).length ? '<span class="tag good">▥ Pressão '+pressure(g).length+' min</span>' : '<span class="tag">Sem termômetro</span>',
@@ -50,9 +84,15 @@
       g.events?.length?'<span class="tag">◉ Eventos '+g.events.length+'</span>':'',
       g.outcomes?.correct_score?'<span class="tag">FT '+esc(g.outcomes.correct_score)+'</span>':''
     ].filter(Boolean).join('');
-    return '<article class="match-card"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+'</span>'+
-      '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+' · '+esc(g.day?.split('-').reverse().slice(0,2).join('/')||'')+'</span></div>'+
-      '<div class="teams"><div class="team">'+esc(g.home)+'</div><div class="score">'+esc(g.score||'—')+'</div><div class="team away">'+esc(g.away)+'</div></div>'+
+    return '<article class="match-card"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+
+      (g.round?' · '+esc(g.round):'')+'</span>'+
+      '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+'</span></div>'+
+      '<div class="match-time"><span class="match-time-symbol">◷</span> '+matchDate(g)+' · '+kickoff(g)+
+      ' <span class="match-tz">Brasília</span></div>'+
+      '<div class="teams"><div class="team">'+logoHTML(g.home_logo,g.home)+'<span class="team-name">'+esc(g.home)+'</span></div>'+
+      '<div class="score-block"><div class="score">'+(g.phase==='scheduled'?'×':esc(g.score||'—'))+
+      '</div><small>'+ (g.phase==='scheduled'?'A iniciar':g.phase==='live'?'AO VIVO':'Final')+'</small></div>'+
+      '<div class="team away">'+logoHTML(g.away_logo,g.away)+'<span class="team-name">'+esc(g.away)+'</span></div></div>'+
       '<div class="match-bottom"><div class="market-tags">'+tags+'</div><button class="details" data-id="'+index+'">Ver dados →</button></div></article>';
   }
   function render() {
@@ -198,7 +238,7 @@
       '</span><strong>'+((s.status==='settled')?((Number(s.paper_pl_u)>=0?'+':'')+esc(s.paper_pl_u)+'u'):'PENDENTE')+'</strong></div>').join('');
     $('#detail-content').innerHTML='<div class="detail-league">'+esc(g.league||'')+' · '+esc(g.source||'')+'</div>'+
      '<div class="detail-score">'+escTitle(g)+' &nbsp; '+esc(g.score||'—')+'</div>'+
-     '<p class="small-note">'+phaseLabel(g)+' · Data: '+esc(g.day||'')+' · Última observação: '+date(g.observed_at)+
+     '<p class="small-note">'+phaseLabel(g)+' · Início '+matchDate(g)+' às '+kickoff(g)+' (Brasília) · Última observação: '+date(g.observed_at)+
      (g.round?' · Rodada '+esc(g.round):'')+(g.venue?' · '+esc(g.venue):'')+'</p>'+
      '<h3 class="detail-title">▥ Termômetro · pressão registrada</h3>'+pressureHTML(pressure(g))+
      '<h3 class="detail-title">◉ Estatísticas confirmadas</h3>'+scouts(g)+
@@ -233,7 +273,7 @@
       }
       if(!obj || !Array.isArray(obj.games))throw Error('Formato inválido do arquivo.');
       state.payload=obj;
-      state.games=obj.games.filter(x=>x&&typeof x.home==='string'&&typeof x.away==='string');
+      state.games=obj.games.filter(x=>x&&typeof x.home==='string'&&typeof x.away==='string').sort(chronOrder);
       const days=[...new Set(state.games.map(g=>g.day).filter(Boolean))].sort().reverse();
       const picker=$('#day');const before=picker.value;
       picker.replaceChildren(new Option('Todos os dias','all'),...days.map(d=>new Option(d.split('-').reverse().join('/'),d)));
