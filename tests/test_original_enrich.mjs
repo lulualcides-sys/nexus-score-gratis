@@ -43,6 +43,14 @@ assert.ok(detail.signal_timeline.some(a=>a.emoji==='🔥'&&a.basis==='graph'));
 assert.ok(detail.signal_timeline.some(a=>a.emoji==='🥅'&&a.minute===14&&a.basis==='event'));
 assert.ok(detail.signal_timeline.filter(a=>a.basis==='snapshot').every(e=>e.minute===30));
 assert.equal(detail.pressure.level,'CRITICO');
+for(const n of [5,10,15]){
+  const w=detail.scout_pressure.windows[String(n)];
+  assert.equal(w.valid,true);
+  assert.equal(w.samples,n);
+  assert.equal(w.expected,n);
+  assert.equal(typeof w.home_force,'number');
+  assert.equal(typeof w.away_force,'number');
+}
 const resp=await mockWindow.fetch('/api/match/fotmob-5');
 const payload=await resp.json();
 assert.ok(payload.projections?.model_estimate);
