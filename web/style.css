@@ -109,3 +109,43 @@ border-bottom:1px solid #36556b;padding:14px 5px 10px;margin-top:8px;gap:10px}
 .match-day-separator span{font-size:15px;font-weight:800;color:#a7e3ec}
 .match-day-separator small{font-size:10px;color:#84a7be;text-align:right}
 @media(max-width:760px){.match-day-separator span{font-size:14px}.match-day-separator small{font-size:9px}}
+
+/* Layout do NEXUS Web 6.0: prioriza jogos como uma central de scout */
+.quicknav{display:flex;align-items:center;gap:6px;margin:0 auto;padding:0 12px}
+.quicknav a{font-size:11px;color:#9cc6d4;border:1px solid #2b4d62;border-radius:9px;
+  padding:9px 12px;text-decoration:none;white-space:nowrap;transition:background .2s}
+.quicknav a:hover,.quicknav a:focus-visible{color:#e9faff;background:#153c4b;border-color:#55b6c3}
+#games{scroll-margin-top:20px}
+#alerts-panel,#historical-markets{scroll-margin-top:22px}
+.match-card{cursor:pointer;position:relative;background:linear-gradient(155deg,#102b3c 0%,#0e2235 70%);
+  border-color:#2a4658;box-shadow:0 4px 20px #0002}
+.match-card:focus-visible{outline:2px solid #5ddcd7;outline-offset:2px}
+.match-card:hover{transform:translateY(-1px)}
+.match-card .details{color:#81e8ef;background:#163b46;border:1px solid #2a6670;
+  border-radius:8px;padding:8px 12px;font-weight:800}
+.match-card .score{color:#eefaff}
+#games+.paper-and-alerts{margin-top:28px}
+@media(max-width:760px){
+ .topbar{flex-wrap:wrap;height:auto;min-height:67px;padding:10px 0;gap:8px}
+ .topbar .status{display:none}
+ .quicknav{order:2;width:100%;margin:0;padding:3px 0 0;gap:5px;overflow-x:auto;scrollbar-width:none}
+ .quicknav a{padding:8px 12px;font-size:10px}
+ .intro{padding:16px 0}
+ .intro h1{font-size:clamp(24px,8vw,34px)}
+ .intro p{font-size:12px}
+ .update{margin-top:11px;padding:10px 12px}
+ .metric{padding:12px 10px}
+ .metric strong{font-size:23px}
+ .toolbar{padding:14px}
+ .match-grid{gap:9px}
+ .match-card{padding:13px 12px}
+ .match-card .teams{margin:11px 0}
+ .match-card .club-badge{height:36px;width:36px;flex-basis:36px}
+ .match-card .club-badge img{height:32px;width:32px}
+ .match-card .match-time{font-size:11px;margin:9px 0 0}
+ .match-card .match-bottom{padding-top:10px;gap:8px}
+ .match-card .details{font-size:11px;padding:7px 9px}
+ .match-card .market-tags{max-height:47px;overflow:hidden;align-content:flex-start}
+ .match-card .tag{padding:4px 6px;font-size:9px}
+ .match-day-separator{margin-top:12px}
+}
