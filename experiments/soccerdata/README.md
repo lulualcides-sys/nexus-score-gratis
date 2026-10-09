@@ -3,7 +3,7 @@
 Este experimento NÃO altera histórico, odds, alertas ou lucros do NEXUS em produção.
 Roda no GitHub Actions com dependências instaladas apenas no runner temporário.
 
-Fonte de primeiro teste: **ClubElo** via `soccerdata==1.9.1`. A biblioteca também oferece ESPN, FBref, Football-Data, Understat e outras, porém várias dependem de scraping, podem bloquear acesso e devem ser avaliadas individualmente.
+Fontes de teste: **ClubElo** (ratings) e **Understat** (xG histórico da Premier League 2025/26, se disponível) via `soccerdata==1.9.1`. A biblioteca também oferece ESPN, FBref, Football-Data, Understat e outras, porém várias dependem de scraping, podem bloquear acesso e devem ser avaliadas individualmente.
 
 Critérios de aceite antes de ligar ao NEXUS:
 1. Endpoint retorna dados reais e identificáveis.

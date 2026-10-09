@@ -2,7 +2,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
-from probe import normalise,evaluate,current_teams
+from probe import normalise,evaluate,current_teams,evaluate_understat
 
 class SafeProbeTests(unittest.TestCase):
     def test_accents_are_normalised_but_clubs_not_guessed(self):
@@ -28,6 +28,14 @@ class SafeProbeTests(unittest.TestCase):
             found=current_teams(d)
             self.assertEqual(found,{"arsenal","chelsea"})
             self.assertEqual(p.read_bytes(),before)
+    def test_understat_xg_needs_two_verified_fields(self):
+        data=[{"home_xg":1.25,"away_xg":0.83},
+              {"home_xg":None,"away_xg":1.15},
+              {"home_xg":float("nan"),"away_xg":0.4},
+              {"home_xg":-2,"away_xg":0.4}]
+        s=evaluate_understat(data)
+        self.assertEqual(s["rows"],4)
+        self.assertEqual(s["with_both_verified_xg"],1)
     def test_invalid_ratings_rejected(self):
         result=evaluate([{"team":"A","elo":float("nan")},
                          {"team":"B","elo":1000},

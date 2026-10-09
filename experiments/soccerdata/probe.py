@@ -50,31 +50,49 @@ def evaluate(elo_records,team_names):
             "examples":dict(list(matched.items())[:8]),
             "matched_only_exact":True}
 
-def run_live(today):
+def evaluate_understat(rows):
+    """Cobertura historica de xG, sem somar linhas sem valores reais."""
+    checked=0
+    for row in rows:
+        if not isinstance(row,dict):continue
+        try:
+            h=float(row.get("home_xg"));a=float(row.get("away_xg"))
+        except (ValueError,TypeError):continue
+        if math.isfinite(h) and math.isfinite(a) and 0<=h<=20 and 0<=a<=20:
+            checked+=1
+    return {"rows":len(rows),"with_both_verified_xg":checked,
+            "note":"Dados HISTÓRICOS de 2025/26, não xG ao vivo nem odds da entrada."}
+
+def run_live(today,source_name):
     import soccerdata as sd
-    import pandas as pd
-    # Um unico endpoint publico. Nao executa navegador/Selenium nem crawlers em lote.
-    source=sd.ClubElo(no_store=True)
-    df=source.read_by_date(today)
-    frame=df.reset_index()
-    if "team" not in frame.columns and frame.columns.size:
-        frame=frame.rename(columns={frame.columns[0]:"team"})
-    records=frame[["team","elo"]].to_dict(orient="records")
-    return evaluate(records,current_teams())
+    if source_name=="clubelo":
+        source=sd.ClubElo(no_store=True)
+        df=source.read_by_date(today)
+        frame=df.reset_index()
+        if "team" not in frame.columns and frame.columns.size:
+            frame=frame.rename(columns={frame.columns[0]:"team"})
+        return evaluate(frame[["team","elo"]].to_dict(orient="records"),current_teams())
+    if source_name=="understat":
+        source=sd.Understat(leagues="ENG-Premier League",seasons="2025/2026",no_store=True)
+        frame=source.read_schedule().reset_index()
+        return evaluate_understat(frame.to_dict(orient="records"))
+    raise ValueError("Fonte nao reconhecida")
 
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--output",default="soccerdata-probe.json")
+    ap.add_argument("--source",choices=["clubelo","understat"],default="clubelo")
     ap.add_argument("--live",action="store_true")
     args=ap.parse_args()
     status={"schema":1,"checked_at":datetime.now(timezone.utc).isoformat(),
-            "package":"soccerdata==1.9.1","source":"ClubElo",
+            "package":"soccerdata==1.9.1","source":args.source,
             "status":"not_run","nexus_history_modified":False,
             "note":"Elo nao representa odd/EV+; sem associacao aproximada de clubes."}
     if args.live:
         try:
-            status.update(run_live(datetime.now(timezone.utc).date().isoformat()))
-            status["status"]="ok" if status["source_rows_valid"]>0 else "empty"
+            status.update(run_live(datetime.now(timezone.utc).date().isoformat(),args.source))
+            rows=status.get("source_rows_valid",status.get("with_both_verified_xg",0))
+            status["status"]="ok" if rows>0 else "empty"
         except Exception as err:
             status["status"]="unavailable"
             status["error_type"]=type(err).__name__
