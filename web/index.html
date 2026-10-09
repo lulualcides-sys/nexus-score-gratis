@@ -714,6 +714,22 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 
 .cloud-audit .loss{color:#ff929a}.cloud-audit .win{color:#8ce3b9}.cloud-audit table.platform-table{min-width:420px}
 
+
+.journal-stats{background:#192f42;color:#e8f3f8;border:1px solid #4b6d82;border-radius:14px;padding:14px;margin:14px 0 24px}
+.journal-stats h3{color:#fff!important;margin:0 0 8px!important}
+.journal-stats p{color:#cbdce6;font-size:12px;line-height:1.5}
+.journal-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0}
+.journal-kpis>div{padding:11px 9px;border-radius:9px;background:#fbf8f2;color:#203746;min-width:0}
+.journal-kpis small{font-size:9px;line-height:1.4;letter-spacing:.04em;font-weight:800;display:block;color:#657684}
+.journal-kpis b{display:block;font-size:26px;padding-top:3px}
+.journal-ranges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.journal-ranges>section{border:1px solid #567587;border-radius:10px;padding:12px;background:#254158}
+.journal-ranges small{display:block;color:#c4e8ed;font-size:10px;font-weight:850}
+.journal-ranges strong{display:block;color:#fff;font-size:27px;margin:5px 0}
+.journal-ranges p{margin:4px 0!important}
+.journal-old{padding:12px;margin-top:15px;border:1px solid #507184;border-radius:9px}
+.journal-old summary{cursor:pointer;font-weight:800}
+@media(max-width:740px){.journal-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.journal-ranges{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="./nexus-web-polish.css">
 <link rel="stylesheet" href="./nexus-iara.css">
@@ -2604,6 +2620,7 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
   html='<h3>Diagnóstico de fontes · qualidade e atualização</h3><div class="lab-tags">'+Object.entries(data.providers||{}).map(([name,value])=>v5Chip(name+' · '+String(value).slice(0,80))).join('')+'</div>'+
   (q.length?q.map(x=>`<article class="lab-row"><div><strong>${esc(x.match_id)}</strong><small>Scouts: ${fmtV5(x.stats_available)}/${fmtV5(x.stats_expected)} · pressão: ${esc(x.momentum_source||'não disponível')} · ${esc(x.updated_at||'')}</small></div><div class="lab-row-numbers">${v5Chip(x.state)}${v5Chip(x.momentum_coverage_pct+'% minutos')}</div></article>`).join(''):labEmpty('Ainda sem coleta local de scouts ou pressão. As fontes públicas podem falhar ou limitar consultas.'));
  } else if(state.labTab==='alerts'){
+  const journal=cloudData?.signal_journal||{};
   const a=data.alerts||[],pv=data.pressure_validation||{},windows=pv.windows||{},records=pv.records||[];
   const vStake=data.stake_100||{};
   const hasPressureSample=[5,10,15].some(n=>{const v=windows[String(n)]||{};return Number(v.hit||0)+Number(v.miss||0)+Number(v.pending||0)+Number(v.unverified||0)>0});
@@ -2618,7 +2635,7 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
     return '<small>—</small>';
   };
   const validatedTrades=(vStake.entries||[]);
-  html='<h3>Resultados auditados · stake de R$ 100 por entrada</h3><p class="n53-export-row"><a class="secondary-btn" href="/api/v53/pressure-alerts.csv" download>↓ Exportar todos os alertas (.CSV)</a> <a class="secondary-btn" href="/api/v5/export" download>↓ Exportar entradas EV+ (.CSV)</a></p>'+
+  html=cloudJournalSummary(journal)+'<h3>Laboratório local · simulações separadas</h3><p class="n53-export-row"><a class="secondary-btn" href="/api/v53/pressure-alerts.csv" download>↓ Exportar todos os alertas (.CSV)</a> <a class="secondary-btn" href="/api/v5/export" download>↓ Exportar entradas EV+ (.CSV)</a></p>'+
     '<p class="lab-muted"><b>Pressão:</b> cada janela de 5, 10 e 15 minutos é avaliada SEPARADAMENTE. Sem cotação real de gol, mostramos apenas exercício hipotético de R$ 100 por sinal à odd fixa de 2,00, sem comissão. <b>Não é lucro obtido nem EV+ comprovado.</b></p>'+
     `<div class="n53-result-summary">${summary}</div>`+
     (records.length?records.map(x=>`<article class="lab-row"><div><strong>${esc(x.home)} × ${esc(x.away)} · ${esc(x.minute)}' · pressão: ${x.direction==='home'?esc(x.home):esc(x.away)}</strong><small>Placar no alerta ${esc(x.score_home)}–${esc(x.score_away)} · pressão ${fmtV5(x.pressure)} · ${esc(x.created_at)} · ${esc(x.source||'')}</small></div><div class="lab-row-numbers">${[5,10,15].map(n=>`<span class="stake-row-item">${n} min: ${word(x['result_'+n])} ${simulated(x['result_'+n])}</span>`).join('')}</div></article>`).join(''):labEmpty('Nenhum alerta com minuto e placar salvo. A partir de agora eles ficam registrados e classificados prospectivamente.'))+
@@ -2626,8 +2643,8 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
     `<div class="n53-result-summary"><div><small>JOGOS LIQUIDADOS</small><strong>${fmtV5(vStake.evaluated_fixtures||0)}</strong><span>${vStake.wins||0} acertos · ${vStake.losses||0} erros</span></div><div><small>RETORNO HIPOTÉTICO LÍQUIDO</small><strong class="${Number(vStake.net_brl)>=0?'stake-win':'stake-loss'}">${vStake.evaluated_fixtures?brl(vStake.net_brl):'—'}</strong><span>Total arriscado: ${brl(vStake.risked_brl||0)}</span></div><div><small>ROI HIPOTÉTICO</small><strong>${vStake.roi_pct==null?'—':fmtV5(vStake.roi_pct)+'%'}</strong><span>Somente primeira entrada por partida com odd registrada</span></div></div>`+
     `<p class="lab-muted">${esc(vStake.method||'Sem odds registradas não há apuração financeira para EV+.')}</p>`+
     (validatedTrades.length?validatedTrades.slice(0,50).map(x=>`<article class="lab-row"><div><strong>${esc(x.home)} × ${esc(x.away)}</strong><small>${esc(marketLabel(x))} · odd ${fmtV5(x.odds)} · ${esc(x.status||'')}</small></div><div class="lab-row-numbers"><b class="${Number(x.net_brl)>=0?'stake-win':'stake-loss'}">${brl(x.net_brl)}</b></div></article>`).join(''):labEmpty('Nenhuma operação com odd real salva antes da partida e placar final verificado. Não atribuímos dinheiro aos EV+ teóricos sem cotação.'))+
-    '<h3>Alertas antigos sem minuto verificável</h3>'+
-    (a.length?a.slice(0,30).map(x=>`<article class="lab-row"><div><strong>${esc(x.message)}</strong><small>${esc(x.created_at)} · ${esc(x.category)} · impossível calcular resultado sem registro anterior</small></div></article>`).join(''):labEmpty('Sem registros antigos.'));
+    '<details class="journal-old"><summary>Exibir observações antigas sem resultado auditável ('+a.length+')</summary>'+
+    (a.length?a.slice(0,30).map(x=>`<article class="lab-row"><div><strong>${esc(x.message)}</strong><small>${esc(x.created_at)} · ${esc(x.category)} · impossível calcular resultado sem registro anterior</small></div></article>`).join(''):labEmpty('Sem registros antigos.'))+'</details>';
  } else if(state.labTab==='archive'){
   html='<h3>Arquivo de 90 dias · partidas já observadas</h3><p class="lab-muted">O histórico cresce enquanto o NEXUS está executando. A fonte nem sempre fornece momentum retroativo de partidas não coletadas.</p><div id="lab-archive"><span>Consultando arquivo local…</span></div>';
  }
@@ -2766,30 +2783,60 @@ function renderPlatformSnapshot(platform){
  const rows=(platform.markets||[]).map(m=>`<tr><td>${esc(names[m.market]||m.market)}</td><td>${Number(m.operations||0)}</td><td class="${Number(m.net_pl)<0?'loss':'win'}">${money(m.net_pl)}</td></tr>`).join('');
  target.innerHTML=`<div class="cloud-audit-head"><h3>Resultados reais da Bolsa de Aposta</h3><small>Extrato consultado em ${esc(safeCloudDate(platform.as_of))}. Fotografia pontual, NÃO atualização em tempo real.</small></div><div class="cloud-audit-stats"><div><small>OPERAÇÕES EXECUTADAS</small><b>${Number(platform.operations||0)}</b></div><div><small>PL LÍQUIDO REAL</small><b>${money(platform.net_pl)}</b></div></div><div class="cloud-audit-scroll"><table class="platform-table"><thead><tr><th>Mercado</th><th>Operações</th><th>PL líquido informado</th></tr></thead><tbody>${rows}</tbody></table></div><p class="cloud-audit-note">Valores das apostas efetivamente registradas na plataforma, com suas stakes originais. Eles não representam estratégias criadas pelo NEXUS e não são simulação de stake R$ 100.</p>`;
 }
+function cloudJournalStats(journal){
+ const records=Array.isArray(journal?.items)?journal.items:[];
+ const unique=new Set(records.map(x=>String(x.match_id||'')).filter(Boolean)).size;
+ const type=k=>records.filter(x=>x.basis===k).length;
+ const windows={};
+ for(const n of [5,10,15]){
+  const w={hit:0,miss:0,pending:0,incomplete:0,unknown:0};
+  for(const e of records){
+   const value=e.outcomes?.[String(n)];
+   if(value==='gol_confirmado')w.hit++;
+   else if(value==='sem_gol_confirmado')w.miss++;
+   else if(value==='janela_incompleta')w.incomplete++;
+   else if(value==='indeterminado')w.unknown++;
+   else w.pending++;
+  }
+  w.valid=w.hit+w.miss;w.rate=w.valid?100*w.hit/w.valid:null;windows[n]=w;
+ }
+ return {total:records.length,unique,pressure:type('pressure_window'),
+  cumulative:type('cumulative_stat_snapshot'),events:type('confirmed_event'),windows};
+}
+function cloudJournalSummary(journal){
+ const x=cloudJournalStats(journal);
+ const pct=n=>n===null?'—':n.toLocaleString('pt-BR',{maximumFractionDigits:1})+'%';
+ const stat=(label,value)=>'<div><small>'+label+'</small><b>'+value+'</b></div>';
+ return '<section class="journal-stats"><h3>Resultados verificados na nuvem</h3>'+
+  '<p>Atualização: '+esc(journal?.updated_at||'Aguardando coleta')+
+  '. Observações não são apostas: sem odds e sem modelo calibrado não há EV+ ou lucro comprovado.</p>'+
+  '<div class="journal-kpis">'+stat('OBSERVAÇÕES',x.total)+stat('PARTIDAS DISTINTAS',x.unique)+
+  stat('PRESSÃO OBSERVADA',x.pressure)+stat('SCOUTS ACUMULADOS',x.cumulative)+
+  stat('EVENTOS CONFIRMADOS',x.events)+stat('JOGOS AO VIVO NA COLETA',Number(journal?.diagnostics?.matches_live||0))+'</div>'+
+  '<div class="journal-ranges">'+[5,10,15].map(n=>{
+   const w=x.windows[n];
+   return '<section><small>GOL EM ATÉ '+n+' MIN</small><strong>'+pct(w.rate)+'</strong>'+
+    '<p>'+w.valid+' resultados verificáveis · '+w.hit+' com gol · '+w.miss+' sem gol</p>'+
+    '<p>'+w.pending+' pendentes · '+w.incomplete+' incompletos · '+w.unknown+
+    ' indeterminados</p></section>';
+  }).join('')+'</div>'+
+  '<p>Percentual = gols confirmados ÷ (gols confirmados + sem gol confirmado). Exclui pendentes, incompletos e indeterminados. Um jogo pode gerar vários sinais; isto não mede desempenho independente nem probabilidade calibrada.</p></section>';
+}
 function renderCloudSignalJournal(journal){
  const box=$('#cloud-signal-journal');if(!box)return;
  const entries=Array.isArray(journal?.items)?journal.items:[];
- const labels={gol_confirmado:'⚽ GOL',sem_gol_confirmado:'SEM GOL',pendente:'PENDENTE',
-   indeterminado:'SEM MINUTO VERIFICADO',janela_incompleta:'INCOMPLETA'};
- const diag=journal?.diagnostics||{};
- const status=journal?.updated_at?
-  'Última auditoria: '+esc(journal.updated_at)+' · jogos ao vivo: '+Number(diag.matches_live||0)+
-  ' · com pressão: '+Number(diag.with_pressure||0)+
-  ' · pressão atual: '+Number(diag.fresh_pressure||0)+
-  ' · janela 10 min válida: '+Number(diag.valid_10min||0)+
-  ' · jogos com sinal: '+Number(diag.matches_with_signals||0):
-  'Coleta de alertas ainda não executada';
- const outcome=(e,n)=>esc(labels[e.outcomes?.[String(n)]]||'PENDENTE');
- const rows=entries.slice(0,50).map(e=>`<tr>
- <td><b>${esc(e.home||'')} × ${esc(e.away||'')}</b><small style="display:block">${esc(e.league||'')} · ${esc(e.captured_at||'')}</small></td>
- <td>${esc(e.minute)}' · ${esc(e.team==='home'?e.home:e.away)}</td>
- <td>${esc(e.icon)} ${esc(e.rule)}<small style="display:block">${e.basis==='cumulative_stat_snapshot'?'Scout acumulado na captura, minuto do lance não confirmado':'Pressão medida no relógio do jogo'}</small></td><td>${outcome(e,5)}</td><td>${outcome(e,10)}</td><td>${outcome(e,15)}</td>
- <td>${e.ev_pct==null?'INDISPONÍVEL':esc(e.ev_pct)+'%'}</td></tr>`).join('');
- box.innerHTML=`<div class="cloud-audit-head"><h3>◉ ALERTAS NA NUVEM · ${entries.length} REGISTROS</h3>
- <small>Coleta independente do PC: cada sinal de pressão é salvo e depois conferido nas janelas de 5, 10 e 15 minutos. ${status}</small></div>`+
- (rows?`<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Minuto / equipe</th><th>Sinal</th><th>Gol 5'</th><th>Gol 10'</th><th>Gol 15'</th><th>EV+</th></tr></thead><tbody>${rows}</tbody></table></div>`:
- '<p class="cloud-audit-note">Aguardando sinais novos com pressão recente e medições suficientes.</p>')+
- '<p class="cloud-audit-note">Executa as regras de pressão 5.29 disponíveis no GitHub. O motor completo instalado no NEXUS Original ainda precisa ser migrado. EV+ não é atribuído sem odds e modelo calibrado.</p>';
+ const labels={gol_confirmado:'⚽ Gol',sem_gol_confirmado:'Sem gol',
+  pendente:'Pendente',indeterminado:'Indeterminado',janela_incompleta:'Incompleta'};
+ const fmt=(e,n)=>esc(labels[e.outcomes?.[String(n)]]||'Pendente');
+ const rows=entries.slice(0,60).map(e=>'<tr><td><b>'+esc(e.home||'')+' × '+esc(e.away||'')+
+  '</b><small style="display:block">'+esc(e.captured_at||'')+'</small></td>'+
+  '<td>'+esc(e.minute)+'′</td><td>'+esc(e.icon)+' '+esc(e.rule)+
+  '<small style="display:block">'+(e.basis==='pressure_window'?'Pressão observada':
+  e.basis==='confirmed_event'?'Evento confirmado':'Scout acumulado, não minuto do lance')+'</small></td>'+
+  '<td>'+fmt(e,5)+'</td><td>'+fmt(e,10)+'</td><td>'+fmt(e,15)+'</td></tr>').join('');
+ box.innerHTML=cloudJournalSummary(journal)+
+  (rows?'<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div>':
+   '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
 function renderCloud(){
  const meta=$('#cloud-metrics'),status=$('#cloud-status'),target=$('#cloud-results');
