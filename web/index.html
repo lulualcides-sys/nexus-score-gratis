@@ -716,6 +716,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 
 </style>
 <link rel="stylesheet" href="./nexus-web-polish.css">
+<link rel="stylesheet" href="./nexus-iara.css">
 </head>
 <body>
 <div class="shell">
@@ -2229,7 +2230,10 @@ function renderDetailBody(){
  if(state.demo)html+='<div class="error-block demo-warning">DEMONSTRAÇÃO · dados fictícios para testar a interface e os indicadores. Não são jogos reais.</div>';
  if(d.errors?.length)html+=`<div class="error-block">Cobertura parcial: ${esc(d.errors.join(' · '))}</div>`;
  if(d.stale||d.cache_note)html+=`<div class="error-block">${esc(d.cache_note||'Dado em cache; pode estar desatualizado.')}</div>`;
- if(!state.demo&&!state.reference)html+=aiLiveHTML(d)+liveV5Card(d);
+ if(!state.demo&&!state.reference){
+   html+=(d.phase==='live'&&window.NexusIara?.render)?window.NexusIara.render(d):aiLiveHTML(d);
+   html+=liveV5Card(d);
+ }
  if(d.scout_pressure?.available && Array.isArray(d.thermometer?.points) && d.thermometer.points.length){
    html+=`<div class="pressure-data-source">● Pressão observada: ${esc(d.pressure_source||'Fonte identificada no detalhe')} · ${esc(d.pressure_samples??d.thermometer.points.length)} minutos coletados</div>`;
  }
@@ -2605,5 +2609,6 @@ init();
 
 </script>
 <script src="./nexus-web-polish.js"></script>
+<script src="./nexus-iara.js"></script>
 </body>
 </html>
