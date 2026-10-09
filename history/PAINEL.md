@@ -1,6 +1,6 @@
 # ☁ NEXUS — Relatório de coletas
 
-Atualizado pelo GitHub Actions. Último status: **2026-10-09T09:33:40.607328+00:00**.
+Atualizado pelo GitHub Actions. Último status: **2026-10-09T09:50:40.965621+00:00**.
 
 Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 
