@@ -17,6 +17,7 @@ on:
       - "backfill.py"
       - "team_form.py"
       - "fotmob_form.py"
+      - "fotmob_h2h.py"
       - "standings_context.py"
       - "fotmob_detail_backfill.py"
       - "fotmob_three_days.py"
@@ -54,7 +55,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py
+          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py web_export.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -96,6 +97,9 @@ jobs:
         id: fotmob_form
         continue-on-error: true
         run: python3 fotmob_form.py
+      - name: Conferir confronto direto completo no FotMob (cache seguro)
+        continue-on-error: true
+        run: python3 fotmob_h2h.py
       - name: Enriquecer classificação real e Must Win
         continue-on-error: true
         run: python3 standings_context.py
