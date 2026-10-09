@@ -17,6 +17,15 @@ class MustWinTests(unittest.TestCase):
   self.assertIn('evitar_z4',[x['kind'] for x in team_stakes(t,'116')['reasons']])
   other={**t,'league_id':'112233','league':'Copa Grupos'}
   self.assertFalse(any(x['kind'].endswith('z4') for x in team_stakes(other,'117')['reasons']))
+ def test_generic_table_position_without_fake_g4(self):
+  t=self.table()
+  generic={**t,'league_id':'9999','league':'Competição sem zona de G4 definida'}
+  defense=team_stakes(generic,'106')
+  climbing=team_stakes(generic,'120')
+  self.assertIn('defender_posicao',[x['kind'] for x in defense['reasons']])
+  self.assertIn('buscar_posicao',[x['kind'] for x in climbing['reasons']])
+  self.assertFalse(any(x['kind'] in ('buscar_g4','defender_g4','sair_z4','evitar_z4')
+                       for x in defense['reasons']+climbing['reasons']))
  def test_ignore_cup_groups(self):
   doc={'details':{'id':42},'table':[
     {'data':{'table':{'all':[{'id':i,'name':str(i),'idx':i,'pts':1,'played':3} for i in range(1,11)]}}},
