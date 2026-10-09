@@ -1,0 +1,1 @@
+# NEXUS WEB usa apenas biblioteca padrão Python
