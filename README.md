@@ -18,6 +18,8 @@ A versão pública do NEXUS SCORE está publicada em **https://nexus-score-grati
 
 **[Ver execuções automáticas](../../actions)** · [Histórico bruto](history/) · [Status da última coleta](history/status.json)
 
+**Alertas com o computador desligado (primeira etapa, NEXUS Cloud):** o GitHub executa `signal_registry.py` nas rotinas periódicas, registra os sinais das regras de pressão 🔥/🧨/🚨 disponíveis no código web 5.29 e acompanha gols confirmados em 5, 10 e 15 minutos em `history/signal_registry.json`. O histórico aparece na aba **Coletas GitHub** e no **NEXUS LAB → Alertas**. O job pode atrasar e não substitui dados ausentes. **Não é o motor completo instalado no PC**: para migração idêntica, ainda é necessário disponibilizar seus módulos locais originais. EV+ requer odds ao vivo e modelo calibrado e não é inferido da pressão.
+
 O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados realmente retornados e gera o relatório privado `history/PAINEL.md`. Agendamento: **uma vez por hora**, sujeito a atrasos e limites do GitHub Free; não é transmissão minuto a minuto.
 
 **Mercados:** Over/Under, Ambas Marcam, Match Odds e Lay Correct Score podem ter acompanhamento de placar; escanteios, finalizações e grandes chances exigem estatísticas adicionais. A presença de um mercado na lista **não significa EV+**. Não coletamos odds de entrada nem calculamos lucro real.

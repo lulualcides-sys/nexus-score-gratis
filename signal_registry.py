@@ -170,7 +170,7 @@ def main():
          ((today-timedelta(days=n)).isoformat() for n in range(4))}
     old=read(JOURNAL)
     new=update(docs,old)
-    if new['items']!=old.get('items',[]):
+    if not JOURNAL.exists() or new['items']!=old.get('items',[]):
         H.mkdir(exist_ok=True)
         JOURNAL.write_text(json.dumps(new,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     print('NEXUS CLOUD: registros de alertas',len(new['items']),

@@ -50,6 +50,7 @@ def snapshot():
     odds=read(history/'odds_status.json')
     bolsa=read(history/'bolsa_netpl.json')
     pc=read(history/'pc_netpl.json')
+    signal_journal=read(history/'signal_registry.json')
     games=[]
     for f in sorted(history.glob('20??-??-??.json'),reverse=True)[:7]:
         doc=read(f)
@@ -74,6 +75,8 @@ def snapshot():
     games.sort(key=lambda g:(0 if g['phase']=='live' else 1,-int(g['day'].replace('-','')),g['league'],g['home']))
     return {'server_time':datetime.now(timezone.utc).isoformat(),'collection':states,
             'odds_status':odds,'bolsa':bolsa,'pc_import':pc,'games':games[:250],
+            'signal_journal':{'items':(signal_journal.get('items') or [])[:500],
+                'updated_at':signal_journal.get('updated_at')},
             'warning':'P/L da Bolsa é histórico real. EV estimado não equivale a lucro realizado. Coleta do GitHub é horária e pode atrasar.',
             'kind':'nexus-web-readonly'}
 LOGIN='''<!doctype html><html lang="pt-BR"><meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><title>NEXUS SCORE · Login</title>

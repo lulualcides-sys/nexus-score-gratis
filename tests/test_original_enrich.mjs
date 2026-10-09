@@ -69,6 +69,7 @@ assert.ok(Array.isArray(lab.radar));
 const cloud=await (await mockWindow.fetch('/api/github-collector')).json();
 assert.equal(cloud.connected,true);
 assert.ok(Array.isArray(cloud.games));
+assert.ok(Array.isArray(cloud.signal_journal.items));
 assert.equal(cloud.platform_snapshot,null);
 assert.equal(cloud.audit.trades_verified,0);
 assert.ok(!JSON.stringify(cloud).includes('netPl'));
