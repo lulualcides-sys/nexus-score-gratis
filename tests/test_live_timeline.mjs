@@ -49,7 +49,7 @@ assert.equal((phone.match(/class="mobile-period"/g)||[]).length,3);
 assert.doesNotMatch(phone,/scout-graph-scroll/);
 assert.match(phone,/Sem barra = pressão não medida/);
 assert.match(phone,/90 POSIÇÕES/);
-assert.match(phone,/0–90'/);
+assert.match(phone,/0–90′/);
 const css=fs.readFileSync(new URL('../web/nexus-web-polish.css',import.meta.url),'utf8');
 assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph-scroll\{\s*overflow:hidden!important/);
 assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph\{\s*width:100%!important/);
