@@ -12,6 +12,7 @@ on:
       - "web_export.py"
       - "backfill.py"
       - "team_form.py"
+      - "multi_source.py"
       - "web/index.html"
       - "web/app.js"
       - "web/style.css"
@@ -38,7 +39,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py
+          python3 -m py_compile pc_reader.py web_server.py odds_capture.py web_export.py coletar.py backfill.py team_form.py multi_source.py
           python3 -m unittest discover -s tests -v
       - name: Coletar partidas públicas e pressão
         id: collect
@@ -48,6 +49,10 @@ jobs:
         id: backfill
         continue-on-error: true
         run: python3 backfill.py
+      - name: Cruzar Football-Data e OpenLigaDB com fontes principais
+        id: multi_source
+        continue-on-error: true
+        run: python3 multi_source.py
       - name: Coletar historico dos dez jogos anteriores por equipe
         id: team_form
         continue-on-error: true
