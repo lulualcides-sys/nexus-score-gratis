@@ -377,7 +377,7 @@ def main():
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
-    rows=rows[:500]
+    rows=rows[:1800]  # cobertura de todos os campeonatos na janela de 3 dias
     last=load(H/'status.json')
     backfill=load(H/'backfill_status.json')
     team_form=load(H/'team_form_status.json')
