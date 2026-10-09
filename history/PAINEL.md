@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:42:14.206398+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T17:47:49.960569+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **64**.
 
@@ -69,8 +69,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **64**.
 | 2026-10-09 | Cheongju FC × Seongnam FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimpo FC × Seoul E-Land FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | KäPa × MP | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Klubi 04 × EIF | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Haka × PK-35 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Klubi 04 × EIF | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Haka × PK-35 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | JäPS × JIPPO | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Shenzhen Peng City × Henan FC | 2-2 | 0 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×2.0 |
 | 2026-10-09 | Zhejiang Professional × Shanghai Port | 2-4 | 0 | Chutes no alvo: 4.0×8.0, Chutes para fora: 5.0×3.0, Escanteios: 5.0×8.0, Grandes chances: 5.0×3.0 |
@@ -86,7 +86,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **64**.
 | 2026-10-09 | AB × Aarhus Fremad | 1-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-09 | HNK Gorica × Rudeš | 1-2 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×3.0, Escanteios: 6.0×2.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | PSV Eindhoven × SC Heerenveen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Lithuania (W) × Sweden (W) | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Lithuania (W) × Sweden (W) | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Romania (W) × Norway (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Greece (W) × England (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Croatia (W) × Iceland (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
