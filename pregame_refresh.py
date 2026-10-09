@@ -16,6 +16,7 @@ from odds_capture import get as espn_get, threeway
 from sofascore_odds import calendar as sofa_calendar, event_quotes as sofa_quotes, link_fixtures
 from pregame_refresh_quotes import new_quote
 from espn_scoreboard_odds import collect_odds as espn_scoreboard_odds
+from the_odds_api_source import collect_odds as independent_odds
 
 LOOKAHEAD=75*60
 AFTER=150*60
@@ -232,6 +233,12 @@ def run():
     result['odds_updated']+=result['espn_fallback']['quotes_added']
     if result['espn_fallback']['errors']:
         result['errors'].extend(result['espn_fallback']['errors'][:4])
+    # Provedor adicional 1X2 independente (chave opcional, nunca enviada ao navegador).
+    # O dashboard continua funcionando quando um provedor falha ou bloqueia.
+    result['the_odds_api']=independent_odds(docs,candidates,now_ts)
+    result['odds_updated']+=result['the_odds_api']['quotes_added']
+    if result['the_odds_api']['errors']:
+        result['errors'].extend(result['the_odds_api']['errors'][:4])
     if any(result[k] for k in ('lineups_updated','odds_updated',
                               'pressure_added','events_added','stats_added')):
         changes=True
