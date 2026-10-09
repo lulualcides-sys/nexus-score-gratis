@@ -99,6 +99,17 @@ function headToHead(g){
    .toLowerCase().replace(/\b(?:f\.?c\.?|s\.?c\.?|club|clube)\b/g,'')
    .replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ');
  const found=new Map();
+ // Confrontos diretos recuperados no exportador de históricos da fonte.
+ for(const match of (g.head_to_head||[])){
+   if(!match||!/^\d{1,2}-\d{1,2}$/.test(String(match.score||'')))continue;
+   const home=norm(match.home),away=norm(match.away);
+   const direct=home===norm(g.home)&&away===norm(g.away);
+   const reverse=home===norm(g.away)&&away===norm(g.home);
+   if(!direct&&!reverse)continue;
+   const key=[match.date||'',home,away,match.score].join('|');
+   found.set(key,{date:match.date,home:match.home,away:match.away,
+     score:match.score,competition:match.competition||g.league||'',source:match.source||'FotMob'});
+ }
  for(const side of ['home','away']){
    const other=side==='home'?'away':'home';
    for(const m of g.form?.[side]?.games||[]){
