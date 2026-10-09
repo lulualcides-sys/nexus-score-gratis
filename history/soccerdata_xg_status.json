@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-10-09T21:24:13.248204+00:00",
+  "source": "soccerdata Understat",
+  "season": "2025/2026",
+  "league": "ENG-Premier League",
+  "matches_verified": 380,
+  "games_with_home_away_xg": 380,
+  "ready_for_research": true,
+  "integrated_into_live_ev": false,
+  "note": "Uso de pesquisa interna; não combina automaticamente com odds ou alertas."
+}
