@@ -128,3 +128,42 @@ html,body{max-width:100%;overflow-x:hidden}
  .prelive-versus .team-odds-strip strong,.pressure-scoreboard-odds b{
   font-size:17px!important}
 }
+
+/* 5.29 Live fix: não encolher o SVG de 1020 unidades em 390px no celular. */
+.nexus-pressure-delay{background:#fff2db;color:#75532c;border:1px solid #ddc29a;
+ border-radius:10px;padding:11px 13px;font-size:12px;line-height:1.5;margin:10px 0}
+.nexus-missing-goal{background:#f0ede6;border:1px dashed #c3b7a8;border-radius:7px;
+ padding:7px 8px;display:flex;flex-direction:column;gap:2px;max-width:100%;text-align:center}
+.nexus-missing-goal b{color:#42515f;font-size:10px;overflow-wrap:anywhere}
+.nexus-missing-goal small{font-size:9px;color:#687681;line-height:1.4}
+.n56-goal-list .n56-goal-line{display:grid;grid-template-columns:16px minmax(0,1fr);
+ column-gap:5px;text-align:left;justify-items:start;max-width:100%;width:100%;
+ box-sizing:border-box;min-height:40px;padding:6px 5px}
+.n56-goal-list .n56-goal-line b{font-size:11px!important;line-height:1.1}
+.n56-goal-list .n56-goal-line small{grid-column:2;font-size:9px!important}
+#section-thermometer .scout-chart-card .scout-compact-caption{font-size:11px;
+ letter-spacing:.25px;white-space:normal;line-height:1.5}
+@media(max-width:800px){
+ #section-thermometer.scout-main .compact-timeline .scout-graph-scroll{
+   overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;
+   -webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;
+   border:1px solid #d4cbc0!important;background:#f9f6ef!important}
+ #section-thermometer.scout-main .compact-timeline .scout-graph{
+   display:block!important;width:1020px!important;min-width:1020px!important;
+   max-width:none!important;height:302px!important;min-height:302px!important;
+   max-height:none!important;aspect-ratio:1020/302!important;margin:0!important}
+ #section-thermometer .scout-section-head{align-items:start}
+ #section-thermometer .scout-control-row{display:grid;gap:8px}
+ #section-thermometer .scout-subtitle{font-size:12px}
+ #section-thermometer .pressure-range{display:flex;max-width:100%;overflow-x:auto}
+ #section-thermometer .scout-chart-card{overflow:hidden}
+ #section-thermometer .scout-compact-caption::after{
+  content:"DESLIZE PARA VER TODOS OS MINUTOS →";display:block;font-size:10px;
+  letter-spacing:.2px;margin-top:4px;color:#426983}
+ #section-thermometer .pressure-scoreboard-main{align-items:start!important}
+ #section-thermometer .pressure-scoreboard-team .n56-goal-list{
+  max-height:96px!important;overflow-y:auto!important;align-items:stretch!important}
+ #section-thermometer .pressure-scoreboard-team{min-width:0}
+ #section-thermometer .pressure-scoreboard-team strong{font-size:12px!important}
+ #section-thermometer .pressure-scoreboard-odds{margin-top:7px}
+}
