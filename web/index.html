@@ -16,7 +16,7 @@
   </header>
   <main>
     <section class="intro">
-      <div><div class="eyebrow">CENTRAL DE ANÁLISE ESPORTIVA</div><h1>Monitoramento <span>na nuvem.</span></h1><p>Partidas, histórico de pressão, scouts e mercados acompanhados. Dados efetivamente coletados, sem inventar odds ou sinais.</p></div>
+      <div><div class="eyebrow">CENTRAL DE ANÁLISE ESPORTIVA</div><h1>Dados, mercados <span>e alertas.</span></h1><p>Jogos de hoje e dos 3 dias anteriores, eventos, odds verificadas e desempenho experimental separado de apostas reais.</p></div>
       <div class="update"><span>ÚLTIMA EXPORTAÇÃO</span><strong id="last-updated">Carregando...</strong><small id="last-source">Conferindo fontes...</small></div>
     </section>
     <section class="metrics" aria-label="Resumo">
@@ -25,9 +25,24 @@
       <div class="metric"><small>COM TERMÔMETRO</small><strong id="metric-pressure">—</strong><span>Pressão real registrada</span></div>
       <div class="metric"><small>COM ODDS 1X2</small><strong id="metric-odds">—</strong><span>Quando disponíveis</span></div>
     </section>
+    <section class="paper-and-alerts">
+      <article class="work-panel">
+        <h2>◈ P/L experimental por mercado <small>sem apostas reais</small></h2>
+        <div class="paper-main"><div><small>RESULTADO PAPER (1U POR SINAL)</small><strong id="paper-pnl">—</strong></div>
+        <div><small>LIQUIDADOS</small><strong id="paper-settled">0</strong></div>
+        <div><small>PENDENTES</small><strong id="paper-pending">0</strong></div></div>
+        <div id="paper-market-lines" aria-live="polite"></div>
+        <p class="small-note">Só conta sinais criados antes do início da partida, com odd registrada e resultado confirmado. EV estimado não é lucro; seu P/L real da Bolsa permanece privado.</p>
+      </article>
+      <article class="work-panel">
+        <h2>◉ Central de alertas <small id="alert-count">0 alertas</small></h2>
+        <div id="alert-feed" aria-live="polite"><p class="small-note">Consultando alertas...</p></div>
+        <p class="small-note">Alertas dependem de scouts ou de modelos com dados suficientes; coleta horária, não minuto a minuto.</p>
+      </article>
+    </section>
     <section class="toolbar">
       <div class="toolbar-top"><h2>Jogos monitorados <small id="shown-count"></small></h2><div class="toolbar-actions"><button type="button" id="refresh">↻ Atualizar</button><a target="_blank" rel="noopener noreferrer" href="https://github.com/lulualcides-sys/nexus-score-gratis/blob/main/history/bolsa_netpl.json">↗ P/L privado da Bolsa</a></div></div>
-      <div class="filters"><input id="search" aria-label="Buscar time ou campeonato" placeholder="⌕ Buscar time ou campeonato..." autocomplete="off"><select id="phase" aria-label="Filtro de partidas"><option value="all">Todas as partidas</option><option value="live">Ao vivo</option><option value="scheduled">Próximas</option><option value="finished">Encerradas</option></select><select id="market" aria-label="Filtro de mercado"><option value="all">Todos os mercados</option><option value="shots">Com finalizações</option><option value="corners">Com escanteios</option><option value="pressure">Com termômetro</option><option value="odds">Com odds verificadas</option><option value="ev">Com EV calculado (privado)</option></select></div>
+      <div class="filters"><select id="day" aria-label="Selecionar dia"><option value="all">Todos os dias</option></select><input id="search" aria-label="Buscar time ou campeonato" placeholder="⌕ Buscar time ou campeonato..." autocomplete="off"><select id="phase" aria-label="Filtro de partidas"><option value="all">Todas as partidas</option><option value="live">Ao vivo</option><option value="scheduled">Próximas</option><option value="finished">Encerradas</option></select><select id="market" aria-label="Filtro de mercado"><option value="all">Todos os mercados</option><option value="shots">Com finalizações</option><option value="corners">Com escanteios</option><option value="pressure">Com termômetro</option><option value="odds">Com odds verificadas</option><option value="ev">Com EV experimental</option><option value="events">Com eventos reais</option></select></div>
     </section>
     <div id="message" class="notice" role="status">Carregando dados...</div>
     <section id="games" class="match-grid" aria-label="Partidas"></section>
@@ -44,8 +59,8 @@
       <p class="small-note" id="pc-explainer"></p>
     </section>
     <section class="bottom-grid">
-      <article class="info-panel"><h3>◈ Mercados acompanhados</h3><p><b>Over / Under, BTTS, Match Odds e Lay CS:</b> o placar permite acompanhar condições básicas, não calcular EV+.</p><p><b>Escanteios, chutes e grandes chances:</b> aparecem somente quando os scouts foram efetivamente coletados.</p><p><b>Termômetro:</b> histórico minuto a minuto apenas dos minutos disponíveis na fonte.</p></article>
-      <article class="info-panel privacy"><h3>⛨ Transparência e privacidade</h3><p>A publicação estática exibe apenas dados esportivos públicos. O servidor web com senha mostra também o histórico financeiro privado.</p><p>O P/L da Bolsa não é divulgado no site estático. Os sinais EV+ experimentais são separados do resultado financeiro realizado.</p></article>
+      <article class="info-panel"><h3>◈ Mercados acompanhados</h3><p><b>Over / Under, BTTS, Match Odds e Lay CS:</b> o placar permite acompanhar condições básicas, não calcular EV+.</p><p><b>Escanteios, chutes e grandes chances:</b> aparecem somente quando os scouts foram efetivamente coletados.</p><p><b>Termômetro:</b> histórico minuto a minuto apenas dos minutos disponíveis na fonte. Eventos de gol, cartão e finalização não são pressão calculada.</p></article>
+      <article class="info-panel privacy"><h3>⛨ Transparência e privacidade</h3><p>O site é público e apresenta apenas dados esportivos e resultados de simulações experimentais, quando comprovadamente liquidadas.</p><p>O P/L real da Bolsa e arquivos do PC permanecem fora do site. Resultado de mercado, EV estimado e lucro de uma aposta são medidas diferentes.</p></article>
     </section>
   </main>
   <footer>NEXUS SCORE WEB · Fonte: coleta gratuita GitHub Actions · <a href="https://github.com/lulualcides-sys/nexus-score-gratis" target="_blank" rel="noopener noreferrer">Repositório privado</a> · Site estático público · servidor privado exige senha</footer>
