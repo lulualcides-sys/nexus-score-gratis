@@ -14,7 +14,7 @@ from coletar import HISTORY,DAY,NOW,fetch,read,write
 CACHE=HISTORY/'standings_cache.json'
 STATUS=HISTORY/'standings_status.json'
 TTL_MIN=55
-MAX_LEAGUES=24
+MAX_LEAGUES=16
 MAX_TEAMS=30
 
 def integer(v):
@@ -201,8 +201,11 @@ def run():
     today=datetime.strptime(DAY,'%Y-%m-%d').date()
     days=[(today-timedelta(days=i)).isoformat() for i in range(3)]
     docs={day:read(HISTORY/(day+'.json')) for day in days}
-    cache=read(CACHE).get('leagues') or {}
+    stored=read(CACHE)
+    cache=stored.get('leagues') or {}
+    attempts=stored.get('attempts') or {}
     if not isinstance(cache,dict):cache={}
+    if not isinstance(attempts,dict):attempts={}
     targets={}
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
@@ -211,7 +214,8 @@ def run():
             if not lid.isdigit() or not str(key).startswith('fotmob-'):continue
             rank=0 if f.get('phase')=='live' else 1 if f.get('phase')=='scheduled' else 4
             targets.setdefault(lid,[]).append((rank,day,key))
-    candidates=sorted(targets,key=lambda lid:min(a for a,_,_ in targets[lid]))
+    candidates=sorted(targets,key=lambda lid:(
+        min(a for a,_,_ in targets[lid]),0 if lid in ('268','47') else 1,lid))
     stale=[]
     for lid in candidates:
         table=cache.get(lid)
@@ -221,10 +225,18 @@ def run():
             age=(NOW-datetime.fromisoformat(table['updated_at'].replace('Z','+00:00'))).total_seconds()
             if age>TTL_MIN*60:stale.append(lid)
         except (ValueError,KeyError,TypeError):stale.append(lid)
-    chosen=stale[:MAX_LEAGUES]
+    # Rodízio: sem isso as mesmas 24 ligas monopolizavam todas as consultas e
+    # a maioria dos campeonatos nunca era verificada.
+    def priority(lid):
+        active=min(v[0] for v in targets[lid])
+        attempted=attempts.get(lid) or ''
+        return (0 if active==0 else 1, attempted,0 if lid in ('268','47') else 1,lid)
+    chosen=sorted(stale,key=priority)[:MAX_LEAGUES]
+    for lid in chosen:attempts[lid]=NOW.isoformat()
     report={'updated_at':NOW.isoformat(),'leagues_found':len(candidates),
             'leagues_queried':len(chosen),'tables_received':0,
-            'fixtures_enriched':0,'with_urgency':0,'by_source':{}}
+            'fixtures_enriched':0,'with_urgency':0,'by_source':{},
+            'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid):lid for lid in chosen}
         for done in as_completed(futures):
@@ -238,7 +250,13 @@ def run():
         for key,row in (doc.get('matches') or {}).items():
             f=row.get('fixture') or {}
             lid=str(f.get('league_id') or '')
-            context=make_context(f,cache.get(lid))
+            table=cache.get(lid)
+            if not table:continue
+            try:
+                measured=datetime.fromisoformat(str(table['updated_at']).replace('Z','+00:00'))
+                if (NOW-measured).total_seconds()>6*3600:continue
+            except (KeyError,TypeError,ValueError):continue
+            context=make_context(f,table)
             if not context:continue
             if row.get('standings_context')!=context:
                 row['standings_context']=context
@@ -248,7 +266,8 @@ def run():
         if doc:write(HISTORY/(day+'.json'),doc)
     # Cache leve: classificação resumida em vez da resposta completa da API.
     write(CACHE,{'updated_at':NOW.isoformat(),'leagues':{
-        lid:cache[lid] for lid in candidates if lid in cache}})
+        lid:cache[lid] for lid in candidates if lid in cache},
+        'attempts':{lid:attempts[lid] for lid in candidates if lid in attempts}})
     write(STATUS,report)
     print(json.dumps(report,ensure_ascii=False))
     return report
