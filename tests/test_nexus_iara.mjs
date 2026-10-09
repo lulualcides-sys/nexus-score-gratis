@@ -90,7 +90,7 @@ assert.equal(ev.experimental,true);
 assert.ok(ev.positive);
 assert.match(iara.render(evTest),/EV teórico/);
 assert.match(iara.render(evTest),/não calibrado/);
-assert.match(iara.render(evTest),/não é EV\+ comprovado/);
+assert.match(iara.render(evTest),/[Nn]ão é EV\+ comprovado/);
 const late={...evTest,prelive:{...evTest.prelive,
  odds:{...evTest.prelive.odds,fetched_at:'2027-01-01T20:00:00Z'}}};
 assert.equal(iara.experimentalValue(late),null);
