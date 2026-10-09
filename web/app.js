@@ -103,7 +103,18 @@
       (state.day==='all' || game.day===state.day) &&
       filterMarket(game) && (!query || (game.home+' '+game.away+' '+game.league).toLocaleLowerCase('pt-BR').includes(query)));
     $('#shown-count').textContent=matches.length+' partidas';
-    $('#games').innerHTML=matches.length?matches.map(({game,index})=>card(game,index)).join(''):'<div class="empty">Nenhum jogo encontrado com esses filtros. Tente outra combinação.</div>';
+    let lastDay='';
+    const items=matches.map(({game,index})=>{
+      let group='';
+      if(game.day!==lastDay){
+        lastDay=game.day;
+        const [yr,mo,dd]=String(game.day||'').split('-');
+        group='<div class="match-day-separator"><span>'+esc(dd&&mo?dd+'/'+mo+'/'+yr:'Data não informada')+
+          '</span><small>Horários do primeiro ao último • Brasília</small></div>';
+      }
+      return group+card(game,index);
+    });
+    $('#games').innerHTML=matches.length?items.join(''):'<div class="empty">Nenhum jogo encontrado com esses filtros. Tente outra combinação.</div>';
     $('#games').querySelectorAll('[data-id]').forEach(btn=>btn.addEventListener('click',()=>openMatch(state.games[Number(btn.dataset.id)])));
   }
   const pressureHTML = pts => {
@@ -286,8 +297,12 @@
       drawAlerts(obj);drawPaper(obj);drawHistory(obj);
       $('#last-updated').textContent=date(obj.exported_at);
       const extras=obj.source_status||{};
-      $('#last-source').textContent='Fontes: '+((obj.collector?.sources||[]).join(', ') || 'ESPN')+
-        ' · Football-Data '+Number(extras.files_checked||0)+' CSVs consultados'+
+      const prov=extras.providers||{};
+      const labels=[(obj.collector?.sources||[]).join(', ') || 'ESPN',
+        extras.files_checked!=null?'Football-Data ('+Number(extras.files_checked||0)+' arquivos)':'',
+        prov.OpenLigaDB?'OpenLigaDB ('+String(prov.OpenLigaDB)+')':'',
+        prov.FotMob?'FotMob: '+(String(prov.FotMob).includes('tentativa')?'verificação':'disponível'):''];
+      $('#last-source').textContent='Fontes: '+labels.filter(Boolean).join(' · ')+
         (extras.cross_verified?' · '+extras.cross_verified+' cruzamentos':'');
       $('#metric-games').textContent=state.games.length;
       $('#metric-live').textContent=state.games.filter(x=>x.phase==='live').length;
