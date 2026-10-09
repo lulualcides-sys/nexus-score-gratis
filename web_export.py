@@ -105,10 +105,18 @@ def verified_logo(value):
         pass
     return ''
 
+def kickoff_number(value):
+    """Timestamp Unix em segundos, sem o limite de valores de scouts."""
+    try:
+        n=int(value)
+        return n if n>0 and n<4102444800 else None
+    except (ValueError,TypeError,OverflowError):
+        return None
+
 def sort_games(rows):
     """Dia mais recente primeiro; em cada dia, pontape inicial mais cedo primeiro."""
     def key(row):
-        stamp=number(row.get('start_timestamp'))
+        stamp=kickoff_number(row.get('start_timestamp'))
         return (-int(row['day'].replace('-','')), 0 if stamp is not None and stamp>0 else 1,
                 stamp if stamp is not None and stamp>0 else float('inf'),
                 str(row.get('league') or ''),str(row.get('home') or ''))
@@ -131,8 +139,8 @@ def merge_verified_duplicates(rows):
         matched=None
         for base in output:
             if base['day']!=item['day']:continue
-            a=number(base.get('start_timestamp'))
-            b=number(item.get('start_timestamp'))
+            a=kickoff_number(base.get('start_timestamp'))
+            b=kickoff_number(item.get('start_timestamp'))
             if a is None or b is None or abs(a-b)>600:continue
             if compact_name(base.get('home'))!=compact_name(item.get('home')):continue
             if compact_name(base.get('away'))!=compact_name(item.get('away')):continue
