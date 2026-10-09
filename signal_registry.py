@@ -101,7 +101,8 @@ def active_signals(fixture,row,observed_at):
     for x in original['active']:
         icon=x['emoji']
         if icon not in ICON_RULES:continue
-        if icon in GRAPH_ICONS and not pressure_fresh:continue
+        # O signal_timeline.py Original exige pelo menos 10 minutos para sinais no grafico.
+        if icon in GRAPH_ICONS and (minute<10 or not pressure_fresh):continue
         valid.append(x)
     valid.sort(key=lambda x:PRIORITY.index(x['emoji']) if x['emoji'] in PRIORITY else 99)
     result=[]
