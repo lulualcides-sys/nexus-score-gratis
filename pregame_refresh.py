@@ -106,7 +106,13 @@ def run():
                 current=docs[day.isoformat()].setdefault('matches',{}).setdefault(mid,{})
                 old=current.get('fixture') or {}
                 if old.get('phase')=='finished':continue
-                current['fixture']={**old,**fixture}
+                # Não tratar a data da consulta como uma nova atualização
+                # esportiva: evita publicar commits idênticos a cada 10 min.
+                clean={k:v for k,v in fixture.items() if k!='collected_at'}
+                combined={**old,**clean}
+                if {k:v for k,v in old.items() if k!='collected_at'} != {
+                        k:v for k,v in combined.items() if k!='collected_at'}:
+                    current['fixture']=combined
         except Exception as err:
             failures.append('Agenda '+day.isoformat()+': '+str(err)[:100])
     candidates=fixture_candidates(docs,now_ts)
