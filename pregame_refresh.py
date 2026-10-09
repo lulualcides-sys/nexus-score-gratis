@@ -14,6 +14,9 @@ from coletar import (NOW, BR, HISTORY, DAY, read, write, fetch, fotmob_list,
                    fotmob_lineups, momentum, stats as fotmob_stats, fotmob_events, merge as merge_pressure)
 from odds_capture import get as espn_get, threeway
 from sofascore_odds import calendar as sofa_calendar, event_quotes as sofa_quotes, link_fixtures
+from pregame_refresh_quotes import new_quote
+from espn_scoreboard_odds import collect_odds as espn_scoreboard_odds
+from the_odds_api_source import collect_odds as independent_odds
 
 LOOKAHEAD=75*60
 AFTER=150*60
@@ -35,20 +38,6 @@ def fixture_candidates(docs,now_ts):
                 choices.append((day,key,delta))
     return choices
 
-def new_quote(row,selection,value,bookmaker,source,when):
-    if not (isinstance(value,(float,int)) and 1.01<=value<=1000):return False
-    items=row.setdefault('odds_quotes',[])
-    previous=[q for q in items if q.get('market')=='1x2' and
-              q.get('selection')==selection and q.get('bookmaker')==bookmaker]
-    if previous and float(previous[-1].get('odds') or 0)==value:return False
-    items.append({'market':'1x2','selection':selection,'odds':value,
-                  'bookmaker':bookmaker,'source':source,'captured_at':when})
-    # Conserve as primeiras capturas para auditoria, e as 4 últimas atualizações.
-    selection_matches=[i for i,q in enumerate(items) if q.get('selection')==selection
-        and q.get('market')=='1x2' and q.get('bookmaker')==bookmaker]
-    if len(selection_matches)>6:
-        for i in reversed(selection_matches[1:-5]):items.pop(i)
-    return True
 
 def espn_quotes(packet,row,now_ts):
     f=row.get('fixture') or {}
@@ -238,6 +227,18 @@ def run():
     except Exception as err:
         if len(result['errors'])<12:result['errors'].append(
             'SofaScore calendário indisponível: '+str(err)[:110])
+    # Fonte alternativa para partidas FotMob: agenda ESPN + resumo por ID ESPN,
+    # com verificação estrita de clubes e horário antes de aceitar preços.
+    result['espn_fallback']=espn_scoreboard_odds(docs,candidates,now_ts)
+    result['odds_updated']+=result['espn_fallback']['quotes_added']
+    if result['espn_fallback']['errors']:
+        result['errors'].extend(result['espn_fallback']['errors'][:4])
+    # Provedor adicional 1X2 independente (chave opcional, nunca enviada ao navegador).
+    # O dashboard continua funcionando quando um provedor falha ou bloqueia.
+    result['the_odds_api']=independent_odds(docs,candidates,now_ts)
+    result['odds_updated']+=result['the_odds_api']['quotes_added']
+    if result['the_odds_api']['errors']:
+        result['errors'].extend(result['the_odds_api']['errors'][:4])
     if any(result[k] for k in ('lineups_updated','odds_updated',
                               'pressure_added','events_added','stats_added')):
         changes=True

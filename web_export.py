@@ -334,15 +334,20 @@ def public_row(row,day,team_cache=None,espn_cache=None):
                          'source':safe(item.get('source'),24),
                          'bookmaker':safe(item.get('bookmaker'),35),
                          'at':safe(item.get('captured_at'),36)})
-    # Mostrar a cotação mais recente por seleção; o histórico integral fica
-    # no arquivo privado de coleta. Nunca misturar odds históricas simuladas.
-    latest={}
+    # Cada trio 1/X/2 deve ser da MESMA casa e fonte, nunca misturado.
+    quote_groups={}
     for offer in odds:
+        tag=(offer.get('source') or '',offer.get('bookmaker') or '')
+        group=quote_groups.setdefault(tag,{})
         side=offer['sel']
-        previous=latest.get(side)
-        if not previous or str(offer.get('at') or '')>=str(previous.get('at') or ''):
-            latest[side]=offer
-    odds=[latest[side] for side in ('home','draw','away') if side in latest]
+        previous=group.get(side)
+        if previous is None or (offer.get('at') or '') >= (previous.get('at') or ''):
+            group[side]=offer
+    ranked=sorted(quote_groups.values(),
+      key=lambda group:(len(group)==3,max((q.get('at') or '') for q in group.values())),
+      reverse=True)
+    selected=ranked[0] if ranked else {}
+    odds=[selected[side] for side in ('home','draw','away') if side in selected]
     events=[]
     for event in row.get('events') or []:
         if not isinstance(event,dict) or event.get('type') not in TYPES:continue

@@ -1779,7 +1779,7 @@ const TOP_LEAGUE_PATTERNS=[/premier league/i,/la liga/i,/serie a(?! women)/i,/bu
 const isPriorityLeague=name=>TOP_LEAGUE_PATTERNS.some(rx=>rx.test(String(name||'')));
 const fmtOdd=n=>Number.isFinite(Number(n))&&Number(n)>1?Number(n).toLocaleString('pt-BR',{maximumFractionDigits:2}):'—';
 function extractOddsPacket(source){const packet=source?.odds||source?.prelive?.odds||null;return packet&&packet.markets?packet:null;}
-function teamOddsChips(source){const odds=extractOddsPacket(source);const mk=odds?.markets?.['1x2']||{};const home=fmtOdd(mk.home),draw=fmtOdd(mk.draw),away=fmtOdd(mk.away);return {home,draw,away,available:[home,draw,away].some(v=>v!=='—')}}
+function teamOddsChips(source,fallback=null){const first=extractOddsPacket(source),backup=extractOddsPacket(fallback);const valid=q=>q&&Object.values(q.markets?.['1x2']||{}).some(v=>Number(v)>1.01);const odds=valid(first)?first:valid(backup)?backup:first||backup;const mk=odds?.markets?.['1x2']||{};const home=fmtOdd(mk.home),draw=fmtOdd(mk.draw),away=fmtOdd(mk.away);return {home,draw,away,packet:odds,available:[home,draw,away].some(v=>v!=='—')}}
 const state={detailsCache:new Map(),rules:[],presets:{},scanning:false,view:'today',importantOnly:false,list:[],selection:null,detail:null,favorites:new Set(),settings:{threshold:50,auto_refresh:true,alerts_enabled:true},demo:false,reference:false,loading:false,lastAlert:new Map(),pressureRange:'all',matchTab:'stats',scenarioPeriod:'game',error:null,prelive:null,preliveCache:new Map(),labTab:'radar',labData:null,labMinimum:0,labFavorites:false,popupSeen:new Set(),dayOffset:0,dayResults:new Map(),showAllLeagues:false};
 // 5.11: goal animations are event driven, never inferred from an old score on first load.
 const goalTracker=NexusGoalAlerts.createTracker();
@@ -1994,7 +1994,7 @@ function renderMatches(){
    const rulebadge=state.rules.length||$('#dominance-filter').value!=='any'?`<span class="indicator ${status==='pass'?'matched-badge':'scan-badge'}">${status==='pass'?'✓ FILTROS OK':'? SEM SCAN / DADO'}</span>`:d?'<span class="indicator scan-badge">✓ ANALISADO</span>':'';
    const when=m.start_timestamp?new Date(Number(m.start_timestamp)*1000).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}):'';
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
-   const oddsView=teamOddsChips(d||cachedPre||m);
+   const oddsView=teamOddsChips(d||m,cachedPre||m);
    const listOdds=oddsView.available?`<div class="match-list-odds"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
    return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
  }).join('');
@@ -2279,8 +2279,8 @@ function preliveExtrasHTML(p,d){
 function preliveHTML(d){
  const p=state.prelive;
  const when=d.start_timestamp?new Date(Number(d.start_timestamp)*1000).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'Horário não informado';
- const heroOdds=teamOddsChips(p||d);
- const heroQuote=(p||d).odds||{};
+ const heroOdds=teamOddsChips(p,d);
+ const heroQuote=heroOdds.packet||{};
  const oddInfo=heroOdds.available?('Fonte '+(heroQuote.source||'ESPN')+
   ' · '+(heroQuote.bookmaker||'cotação pública')+
   (heroQuote.fetched_at?' · capturada '+new Date(heroQuote.fetched_at).toLocaleString('pt-BR',{
@@ -2299,7 +2299,7 @@ function preliveHTML(d){
  const minGames=Math.min(Number(home.n||0),Number(away.n||0));
  const sources=(p.checked_sources||[]).map(x=>({espn:'ESPN',fotmob:'FotMob',sofa:'SofaScore'}[x]||x));
  const chip=(label,val,ok)=>`<div class="n6-status ${ok?'ok':'muted'}"><span>${esc(label)}</span><b>${esc(val)}</b></div>`;
- const strips=`<div class="n6-coverage">${chip('FORMA',`${home.n||0} / ${away.n||0} jogos`,minGames>=3)}${chip('COTAÇÕES',oddsCount?`${oddsCount} preços`:'Sem preços',oddsCount>0)}${chip('CONFRONTOS',`${h2h.length} encontrados`,h2h.length>0)}${chip('ESCALAÇÕES',lineupCount?`${lineupCount} jogadores`:'Aguardando',lineupCount>0)}</div>`;
+ const strips=`<div class="n6-coverage">${chip('FORMA',`${home.n||0} / ${away.n||0} jogos`,minGames>=3)}${chip('COTAÇÕES',oddsCount?`${oddsCount} preços`:'Aguardando fonte',oddsCount>0)}${chip('CONFRONTOS',`${h2h.length} encontrados`,h2h.length>0)}${chip('ESCALAÇÕES',lineupCount?`${lineupCount} jogadores`:'Aguardando',lineupCount>0)}</div>`;
  const formCard=(name,team)=>{
    const recent=Array.isArray(team.recent)?team.recent:[];
    const trend=recent.map(x=>`<span title="${esc(x.goals_for)}-${esc(x.goals_against)} · ${esc(x.venue)}" class="n6-form-${x.result==='V'?'win':x.result==='E'?'draw':'loss'}">${esc(x.result)}</span>`).join('');
