@@ -156,6 +156,29 @@
        (Number(m.paper_pl_u)>=0?'+':'')+esc(Number(m.paper_pl_u).toFixed(2))+'u</b></div>').join(''):
        '<p class="small-note">Ainda não existem entradas experimentais liquidadas com odds pré-jogo verificadas. Sem lucro ou prejuízo mensurável.</p>';
   }
+  function formHTML(g){
+    const forms=g.form||{}, colors={V:'win',E:'draw',D:'loss'};
+    return '<div class="team-form-grid">'+['home','away'].map(side=>{
+      const d=forms[side]||{}, name=side==='home'?g.home:g.away;
+      const games=Array.isArray(d.games)?d.games:[];
+      const n=Number(d.available)||0;
+      const sample=n?'<p class="small-note">'+
+        esc(d.wins??'?')+'V · '+esc(d.draws??'?')+'E · '+esc(d.losses??'?')+
+        'D · Gols '+esc(d.goals_for??'—')+'-'+esc(d.goals_against??'—')+
+        ' · Over 2.5 '+esc(d.over25_pct??'—')+'% · BTTS '+esc(d.btts_pct??'—')+'%</p>':'';
+      const items=games.map(m=>
+        '<div class="form-match"><span class="form-result '+(colors[m.result]||'')+'">'+
+        esc(m.result)+'</span><span class="form-opponent">'+esc(m.opponent)+
+        '<small>'+esc(m.day)+' · '+esc(m.venue)+'</small></span><strong>'+
+        esc(m.gf)+'-'+esc(m.ga)+'</strong></div>').join('');
+      return '<div class="team-form"><h4>'+esc(name)+'</h4><p class="small-note">'+
+        n+'/10 partidas anteriores encontradas · ESPN mesma competição'+
+        (n<10?' · histórico incompleto':'')+'</p>'+sample+
+        (items||'<p class="small-note">Sem histórico suficiente nesta fonte. Não completamos com placares fictícios.</p>')+
+        '</div>';
+    }).join('')+'</div>'+
+    '<p class="small-note">Amostras anteriores ao início desta partida, não os 10 jogos da janela de três dias. Pode haver menos de 10 se a ESPN não fornecer o histórico da competição; forma histórica não comprova EV+.</p>';
+  }
   function openMatch(g) {
     if(!g)return;
     const oddLabels={home:'CASA',draw:'EMPATE',away:'FORA'};
@@ -179,6 +202,7 @@
      (g.round?' · Rodada '+esc(g.round):'')+(g.venue?' · '+esc(g.venue):'')+'</p>'+
      '<h3 class="detail-title">▥ Termômetro · pressão registrada</h3>'+pressureHTML(pressure(g))+
      '<h3 class="detail-title">◉ Estatísticas confirmadas</h3>'+scouts(g)+
+     '<h3 class="detail-title">▣ Últimos 10 jogos anteriores de cada equipe</h3>'+formHTML(g)+
      '<h3 class="detail-title">⚽ Eventos reais da partida</h3>'+eventHTML(g)+
      '<h3 class="detail-title">Mercados · resultado esportivo</h3>'+resultHTML(g)+
      '<h3 class="detail-title">◇ Odds 1X2 verificadas</h3>'+
