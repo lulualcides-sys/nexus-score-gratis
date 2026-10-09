@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """NEXUS: checagem leve antes do apito inicial (GitHub Actions a cada 10 min).
 
-Janela de 75 min antes até 20 min após o início; equipe oficial só quando
+Janela de 75 min antes até 150 min após o início; equipe oficial só quando
 a fonte a identificar como confirmada. Odds 1X2 sempre registradas pela fonte,
 casa, data/hora e antes do começo do jogo, nunca estimadas.
 """
@@ -10,12 +10,13 @@ import re
 from datetime import date, timedelta, datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlencode
-from coletar import NOW, BR, HISTORY, DAY, read, write, fetch, fotmob_list, fotmob_lineups
+from coletar import (NOW, BR, HISTORY, DAY, read, write, fetch, fotmob_list,
+                   fotmob_lineups, momentum, stats as fotmob_stats, fotmob_events, merge as merge_pressure)
 from odds_capture import get as espn_get, threeway
 from sofascore_odds import calendar as sofa_calendar, event_quotes as sofa_quotes, link_fixtures
 
 LOOKAHEAD=75*60
-AFTER=20*60
+AFTER=150*60
 MAX_DETAILS=36
 MIN_WAIT=8*60
 ATTEMPTS=HISTORY/'pregame_attempts.json'
@@ -87,11 +88,52 @@ def compare_lineups(row,incoming):
     if changed:row['lineups']=previous
     return changed
 
+def update_live_details(row,packet):
+    """Atualiza apenas fatos observados, nunca cria pressão/gols ausentes."""
+    if (row.get('fixture') or {}).get('phase') not in ('live','finished'):
+        return {'pressure_added':0,'events_added':0,'stats_added':0}
+    counts={'pressure_added':0,'events_added':0,'stats_added':0}
+    old=(row.get('thermometer') or {}).get('points') or []
+    fresh=momentum(packet)
+    if fresh:
+        merged=merge_pressure(old,fresh)
+        if merged!=old:
+            counts['pressure_added']=len({p.get('minute') for p in merged})-len(
+                {p.get('minute') for p in old})
+            row['thermometer']={'points':merged}
+    new_stats=fotmob_stats(packet)
+    if any(new_stats.values()):
+        prior=row.setdefault('stats',{})
+        for side in ('home','away'):
+            new=new_stats.get(side) or {}
+            if not new:continue
+            cur=prior.setdefault(side,{})
+            for key,value in new.items():
+                if value is None:continue
+                if cur.get(key)!=value:
+                    cur[key]=value
+                    counts['stats_added']+=1
+    new_events=fotmob_events(packet)
+    if new_events:
+        old_events=row.get('events') or []
+        combined={
+            (e.get('minute'),e.get('type'),e.get('side'),e.get('text')):e
+            for e in old_events+new_events if isinstance(e,dict) and
+               e.get('minute') is not None and e.get('type')
+        }
+        unique=sorted(combined.values(),key=lambda p:int(p.get('minute') or 0))[-150:]
+        if unique!=old_events:
+            counts['events_added']=len(unique)-len(old_events)
+            row['events']=unique
+    return counts
+
 def run():
     now_ts=int(NOW.timestamp())
     today=date.fromisoformat(DAY)
     days=[today]
-    if (NOW.astimezone(BR).hour>=22):days.append(today+timedelta(days=1))
+    local_hour=NOW.astimezone(BR).hour
+    if local_hour<=3:days.append(today-timedelta(days=1))
+    if local_hour>=22:days.append(today+timedelta(days=1))
     docs={d.isoformat():read(HISTORY/(d.isoformat()+'.json')) for d in days}
     # Refrescar programação de hoje e das próximas horas; evita não detectar
     # partidas adicionadas após a execução completa horária.
@@ -123,7 +165,8 @@ def run():
     due.sort(key=lambda v:(float(attempts.get(v[1]) or 0),abs(v[2]-30*60)))
     due=due[:MAX_DETAILS]
     result={'updated_at':NOW.isoformat(),'matches_in_window':len(candidates),
-            'requested':len(due),'lineups_updated':0,'odds_updated':0,'errors':failures}
+            'requested':len(due),'lineups_updated':0,'odds_updated':0,
+            'pressure_added':0,'events_added':0,'stats_added':0,'errors':failures}
     def fetch_match(day,key):
         if key.startswith('fotmob-'):
             ident=key.split('-',1)[1]
@@ -150,6 +193,8 @@ def run():
                 if key.startswith('fotmob-'):
                     lineups=fotmob_lineups(packet)
                     result['lineups_updated']+=compare_lineups(row,lineups)
+                    new_info=update_live_details(row,packet)
+                    for name,value in new_info.items():result[name]+=value
                     # Apenas esquemas 1X2 explícitos são aceitos; matchDetails do
                     # FotMob não documenta odds, portanto não deduzir mercados.
                 else:
@@ -193,7 +238,8 @@ def run():
     except Exception as err:
         if len(result['errors'])<12:result['errors'].append(
             'SofaScore calendário indisponível: '+str(err)[:110])
-    if result['lineups_updated'] or result['odds_updated']:
+    if any(result[k] for k in ('lineups_updated','odds_updated',
+                              'pressure_added','events_added','stats_added')):
         changes=True
     # As atualizações de calendário também interessam, mas não gerar commit
     # apenas com resultados idênticos de uma consulta a cada 10 min.
