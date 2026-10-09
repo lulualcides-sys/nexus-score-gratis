@@ -1,5 +1,5 @@
 import unittest
-from signal_registry import active_signals,resolve,update,diagnostics
+from signal_registry import active_signals,resolve,update,diagnostics,merge_journals
 
 class SignalRegistryTests(unittest.TestCase):
     def game(self,minute=35,score='0-0',phase='live'):
@@ -77,6 +77,19 @@ class SignalRegistryTests(unittest.TestCase):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-1'),self.data())
         self.assertTrue(all(s=='indeterminado' for s in item['outcomes'].values()))
+    def test_merge_concurrent_jobs_preserves_all_events_and_outcomes(self):
+        raw=active_signals(self.game(),self.data(),'2026-10-09T17:00:00Z')[0]
+        first={**raw,'id':'first','outcomes':{'5':'gol_confirmado','10':'pendente'}}
+        second={**raw,'id':'second','outcomes':{'5':'sem_gol_confirmado','10':'pendente'}}
+        remote={'updated_at':'2026-10-09T17:00:00Z','items':[first]}
+        local={'updated_at':'2026-10-09T17:01:00Z','items':[second]}
+        union=merge_journals(remote,local)
+        self.assertEqual({a['id'] for a in union['items']},{'first','second'})
+        self.assertEqual(union['updated_at'],local['updated_at'])
+        more={**first,'outcomes':{'5':'gol_confirmado','10':'gol_confirmado'}}
+        updated=merge_journals(remote,{'items':[more]})
+        self.assertEqual(updated['items'][0]['outcomes']['10'],'gol_confirmado')
+
     def test_same_score_after_horizon_is_no_goal(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-0'),self.data())

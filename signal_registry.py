@@ -7,7 +7,7 @@ Sem preço e probabilidade calibrada, EV+ é indisponível.
 """
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
-import json,math,re,hashlib
+import json,math,re,hashlib,sys,subprocess
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -252,6 +252,61 @@ def update(docs,previous=None,observed_at=None):
         'diagnostics':diagnostics(docs),
         'notice':'Alertas de pressão verificados quando possível. Não representam apostas nem EV+.'}
 
+def merge_journals(*journals):
+    """Mescla registros de coletas diferentes pelo ID, sem perder alertas."""
+    collected={}
+    rank={'pendente':0,'indeterminado':1,'janela_incompleta':2,
+          'sem_gol_confirmado':3,'gol_confirmado':4}
+    for doc in journals:
+        if not isinstance(doc,dict):continue
+        for raw in doc.get('items') or []:
+            if not isinstance(raw,dict) or not raw.get('id'):continue
+            key=raw['id']
+            if key not in collected:
+                item=dict(raw)
+                item['outcomes']=dict(raw.get('outcomes') or {})
+                collected[key]=item
+                continue
+            item=collected[key]
+            for field,value in raw.items():
+                if field not in ('outcomes','goals_after_alert') and item.get(field) is None:
+                    item[field]=value
+            merged=item.setdefault('outcomes',{})
+            for horizon,value in (raw.get('outcomes') or {}).items():
+                prev=merged.get(horizon,'pendente')
+                if set((prev,value))==set(('gol_confirmado','sem_gol_confirmado')):
+                    merged[horizon]='indeterminado'
+                    item['outcome_conflict']=True
+                elif rank.get(value,-1)>rank.get(prev,-1):
+                    merged[horizon]=value
+            goals={(g.get('minute'),g.get('team')):g for g in
+                    (item.get('goals_after_alert') or [])+(raw.get('goals_after_alert') or [])
+                    if isinstance(g,dict)}
+            if goals:item['goals_after_alert']=sorted(goals.values(),key=lambda g:g.get('minute') or 0)
+    newest=max((d for d in journals if isinstance(d,dict)),
+               key=lambda d:str(d.get('updated_at') or ''),default={})
+    entries=sorted(collected.values(),key=lambda e:str(e.get('captured_at') or ''),reverse=True)
+    return {'schema':1,'updated_at':newest.get('updated_at'),
+            'items':entries[:MAX_ALERTS],'diagnostics':newest.get('diagnostics') or {},
+            'notice':'Registros unidos entre jobs. Não equivale a EV+ ou apostas.'}
+
+def merge_remote(backup_path=None):
+    """União do Git remoto e da cópia feita antes do rebase da coleta."""
+    try:
+        result=subprocess.run(['git','show','origin/main:history/signal_registry.json'],
+                              cwd=ROOT,capture_output=True,text=True,timeout=15,check=False)
+        remote=json.loads(result.stdout) if result.returncode==0 else {}
+        if not isinstance(remote,dict):remote={}
+    except (OSError,ValueError,subprocess.TimeoutExpired):
+        remote={}
+    backup=read(backup_path) if backup_path else {}
+    local=read(JOURNAL)
+    combined=merge_journals(remote,backup,local)
+    if combined!=local:
+        H.mkdir(exist_ok=True)
+        JOURNAL.write_text(json.dumps(combined,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    print('NEXUS Cloud: união de alertas',len(combined['items']))
+
 def main():
     today=(datetime.now(timezone.utc)-timedelta(hours=3)).date()
     docs={d:read(H/(d+'.json')) for d in
@@ -274,4 +329,7 @@ def main():
           '| sem EV inventado')
 
 if __name__=='__main__':
-    main()
+    if len(sys.argv)>1 and sys.argv[1]=='--merge-remote':
+        merge_remote(sys.argv[2] if len(sys.argv)>2 else None)
+    else:
+        main()

@@ -123,6 +123,10 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp history/signal_registry.json /tmp/nexus-local-signals.json || true
+          git fetch origin main
+          python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
+          python3 web_export.py
           git add history/ web/data.json
           if ! git diff --cached --quiet; then
             if git diff --cached --name-only | grep -q '^web/'; then
@@ -145,6 +149,12 @@ jobs:
                 echo "Falha ao reconciliar commits remotos na tentativa $attempt"
                 exit 1
               }
+              python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
+              python3 web_export.py
+              git add history/signal_registry.json web/data.json
+              if ! git diff --cached --quiet; then
+                git commit -m "NEXUS: mescla alertas da nuvem sem perdas"
+              fi
               sleep 1
             done
             if [[ "$pushed" != true ]]; then
