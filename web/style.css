@@ -6,3 +6,39 @@
 .nexus-pc-table th,.nexus-pc-table td{padding:11px 8px;border-bottom:1px solid #2b4558;text-align:left}
 .nexus-pc-table th{color:#90b5c6}.nexus-pc-table .pl-positive{color:#62dfb1}
 .nexus-pc-table .pl-negative{color:#ff8da8}
+
+/* NEXUS 5.30: historico, alertas e auditoria paper */
+.paper-and-alerts{display:grid;grid-template-columns:1.1fr 1fr;gap:15px;margin:12px 0 30px}
+.work-panel{padding:20px;border-radius:14px;background:#102134;border:1px solid #29445b;min-width:0}
+.work-panel h2{font-size:17px;margin:0 0 18px}.work-panel h2 small{font-size:11px;color:#93aabc;font-weight:400;margin-left:7px}
+.paper-main{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-bottom:14px}
+.paper-main>div{background:#0b1a2b;border:1px solid #253a50;padding:12px;border-radius:10px;min-width:0}
+.paper-main small{color:#8fa9bd;font-size:9px;display:block;line-height:1.5;letter-spacing:.4px}
+.paper-main strong{display:block;font-size:23px;margin-top:6px}
+.paper-main .pl-positive,.pl-positive{color:#47d8a0!important}.paper-main .pl-negative,.pl-negative{color:#ff88a1!important}
+.paper-market{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;
+border-bottom:1px solid #253d51;padding:11px 0;font-size:12px}
+.paper-market span{color:#8ca6b7}.paper-market b{color:#def0fb}
+#alert-feed{max-height:320px;overflow:auto;display:grid;gap:8px}
+.alert-item{width:100%;text-align:left;border:1px solid #275b66;background:#0c2b35;
+padding:12px;border-radius:9px;display:grid;gap:5px;color:#dbf5fa}
+.alert-item:hover{background:#153d47}.alert-item b{font-size:13px}
+.alert-item small{font-size:12px;color:#bdd5df;line-height:1.45}
+.alert-item span{font-size:10px;color:#8facbd}
+.outcomes{display:flex;gap:7px;flex-wrap:wrap}
+.outcome{font-size:11px;border-radius:7px;padding:9px 11px;border:1px solid #365570;background:#13293e}
+.outcome.hit{border-color:#28765c;color:#79e8b8;background:#102b27}.outcome.miss{border-color:#65515c;color:#dbb2bd}
+.event-line{display:grid;gap:7px}
+.event-chip{display:grid;grid-template-columns:30px 36px minmax(80px,.7fr) minmax(80px,1.4fr);align-items:center;
+gap:8px;border:1px solid #284458;background:#0e2538;padding:9px;border-radius:8px;font-size:11px}
+.event-chip small{color:#92afc0;line-height:1.3}
+.event-icon{font-size:17px;text-align:center}
+.event-icon.shot-on{font-size:19px;color:#b8e6f1}
+.event-icon.shot-off{font-size:11px;color:#99b3c5}
+@media(max-width:760px){.paper-and-alerts{grid-template-columns:1fr}
+.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}
+.paper-main strong{font-size:20px}.work-panel{padding:16px}
+.paper-market{grid-template-columns:1fr auto;row-gap:5px}
+.paper-market span{grid-column:1}.paper-market b{grid-column:2;grid-row:1/3}
+.event-chip{grid-template-columns:24px 30px 1fr;gap:5px}.event-chip small{grid-column:3}
+}
