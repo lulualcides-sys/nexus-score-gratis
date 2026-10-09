@@ -154,6 +154,16 @@ def public_row(row,day):
         q=pregame_signal(item,f)
         if q:signals.append(q)
     forms=row.get('team_form') or {}
+    sources=list(dict.fromkeys([safe(f.get('source'),45)]+
+        [safe(x,45) for x in (row.get('sources') or [])]))[:6]
+    closing=[]
+    for q in row.get('closing_odds') or []:
+        if not isinstance(q,dict) or q.get('type')!='historical_closing':continue
+        odd=number(q.get('odd'))
+        if odd is None or not 1.01<=odd<=1000:continue
+        if q.get('sel') in ('home','draw','away'):
+            closing.append({'sel':q['sel'],'odd':round(odd,3),'bookmaker':safe(q.get('bookmaker'),35),
+                            'source':'Football-Data.co.uk','type':'historical_closing'})
     return {'day':day,'id':safe(f.get('id'),90),
             'home':safe(f.get('home')),'away':safe(f.get('away')),
             'league':safe(f.get('league'),85),'league_code':safe(f.get('league_code'),40),
@@ -161,7 +171,8 @@ def public_row(row,day):
             'home_logo':verified_logo(f.get('home_logo')),'away_logo':verified_logo(f.get('away_logo')),
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
-            'source':safe(f.get('source'),30),'observed_at':safe(f.get('collected_at'),36),
+            'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
+            'observed_at':safe(f.get('collected_at'),36),
             'pressure':points,'stats':stats,'form':{s:public_form(forms.get(s)) for s in ('home','away')},'odds':odds[:5],
             'events':events[:130],'signals':signals[:20],
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
@@ -254,10 +265,12 @@ def main():
     last=load(H/'status.json')
     backfill=load(H/'backfill_status.json')
     team_form=load(H/'team_form_status.json')
+    external=load(H/'multi_source_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
+             'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'alerts':alerts_from(rows),'games':rows}
