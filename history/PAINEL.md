@@ -2,15 +2,15 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:53:50.276789+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T23:01:26.980655+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
+| 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 1-1 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
 | 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 1-1 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
 | 2026-10-09 | Aldosivi × Sarmiento (Junín) | 1-3 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
 | 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
@@ -21,7 +21,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-09 | Borussia Dortmund × Werder Bremen | 2-2 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,34, Empate 5,25, Fora 7,00 |
 | 2026-10-09 | Real Cundinamarca × Real Santander | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Fortaleza FC × Millonarios | 1-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 8.0×6.0, Escanteios: 3.0×5.0, Grandes chances: 2.0×1.0 |
-| 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Alianza FC × Águilas Doradas | 0-0 | 1 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Puebla × León | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FCV Dender EH × Club Brugge NXT | 3-0 | 79 | Chutes no alvo: 4.0×5.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×5.0, Grandes chances: 2.0×1.0 |
@@ -35,7 +35,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-09 | Phrae United × Kanchanaburi Power | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Instituto × Boca Juniors | 1-0 | 18 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Instituto × Boca Juniors | 1-1 | 23 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 1-1 | 90 | Chutes no alvo: 5.0×2.0, Chutes para fora: 12.0×1.0, Escanteios: 10.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
@@ -55,7 +55,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-09 | Palmeiras × Bahia | 1-0 | 90 | Chutes no alvo: 11.0×1.0, Chutes para fora: 11.0×5.0, Escanteios: 7.0×3.0, Grandes chances: 5.0×0.0 |
 | 2026-10-09 | Brann × Viking | 0-2 | 83 | Chutes no alvo: 3.0×4.0, Chutes para fora: 9.0×4.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-10-09 | IFK Göteborg × Västerås SK | 1-0 | 90 | Chutes no alvo: 1.0×2.0, Chutes para fora: 0.0×6.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-10-09 | Lexington SC × FC Tulsa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Lexington SC × FC Tulsa | 0-0 | 0 | Match Odds 1X2: Casa 1,62, Empate 3,85, Fora 5,00 |
 | 2026-10-09 | Excursionistas × Villa San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | CA Talleres Remedios de Escalada × CASD Camioneros | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Sollentuna FK × IFK Stocksund | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,15 +168,15 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 180 | **Jogos distintos:** 61 | **Resultados verificáveis:** 81 | **Com gol:** 21 | **Sem gol:** 60 | **Taxa observada:** 25.9%.
-**Evolução da amostra:** 1 datas com coletas | 2 pendentes | 24 indeterminados | 73 incompletos.
+**Observações:** 180 | **Jogos distintos:** 61 | **Resultados verificáveis:** 83 | **Com gol:** 23 | **Sem gol:** 60 | **Taxa observada:** 27.7%.
+**Evolução da amostra:** 1 datas com coletas | 0 pendentes | 24 indeterminados | 73 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 29 | 19 | 7 | 12 | 36.8% |
+| 🥶 jogo_frio | 29 | 21 | 9 | 12 | 42.9% |
 | 🎯 chutes_no_alvo_5 | 31 | 13 | 4 | 9 | 30.8% |
 | ⚡ pressao_ofensiva_18 | 23 | 12 | 2 | 10 | 16.7% |
 | 🟥 expulsao_confirmada | 22 | 10 | 1 | 9 | 10.0% |
@@ -194,10 +194,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
 | Borussia Dortmund | 8 | 4 | 0 | 4 | 0.0% |
+| Equipe não definida | 6 | 4 | 3 | 1 | 75.0% |
 | Real Tomayapo | 5 | 4 | 0 | 4 | 0.0% |
 | Málaga | 7 | 3 | 0 | 3 | 0.0% |
 | Al Nassr FC | 6 | 3 | 3 | 0 | 100.0% |
-| Equipe não definida | 6 | 3 | 2 | 1 | 66.7% |
 | Montpellier | 5 | 3 | 0 | 3 | 0.0% |
 | GKS Katowice | 4 | 3 | 3 | 0 | 100.0% |
 | Gimnasia LP | 4 | 3 | 1 | 2 | 33.3% |
@@ -223,9 +223,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier Division | 9 | 8 | 0 | 8 | 0.0% |
 | Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
+| Liga Profesional | 8 | 7 | 3 | 4 | 42.9% |
 | First Division B | 9 | 6 | 0 | 6 | 0.0% |
 | Belgian Pro League | 6 | 6 | 5 | 1 | 83.3% |
-| Liga Profesional | 8 | 5 | 1 | 4 | 20.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
@@ -252,7 +252,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 16 | 10 | 3 | 7 | 30.0% |
+| 16–30′ | 16 | 12 | 5 | 7 | 41.7% |
 | 31–45′ | 9 | 9 | 5 | 4 | 55.6% |
 | 46–60′ | 29 | 27 | 7 | 20 | 25.9% |
 | 61–75′ | 37 | 24 | 3 | 21 | 12.5% |
@@ -262,14 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 180 | **Jogos monitorados:** 362 | **Ao vivo:** 3 | **Termômetros recentes:** 1.
+**Registros:** 180 | **Jogos monitorados:** 362 | **Ao vivo:** 6 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-09T22:54:03.722977+00:00 | Instituto × Boca Juniors | Boca Juniors (19') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-09T22:52:08.235818+00:00 | Instituto × Boca Juniors | Equipe não definida (17') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-09T22:54:03.722977+00:00 | Instituto × Boca Juniors | Boca Juniors (19') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-09T22:52:08.235818+00:00 | Instituto × Boca Juniors | Equipe não definida (17') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T22:33:19.619107+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (77') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T22:29:22.961246+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-09T22:13:32.994039+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (57') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **9**.
+Jogos com odds registradas nos ultimos dias: **10**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
