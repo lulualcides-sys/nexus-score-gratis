@@ -14,6 +14,7 @@ from pathlib import Path
 import re
 import threading
 import time
+from signal_evaluation import evaluate
 from urllib.parse import parse_qs, urlsplit
 
 ROOT=Path(__file__).resolve().parent
@@ -75,6 +76,7 @@ def snapshot():
     games.sort(key=lambda g:(0 if g['phase']=='live' else 1,-int(g['day'].replace('-','')),g['league'],g['home']))
     return {'server_time':datetime.now(timezone.utc).isoformat(),'collection':states,
             'odds_status':odds,'bolsa':bolsa,'pc_import':pc,'games':games[:250],
+            'signal_evaluation':evaluate(signal_journal),
             'signal_journal':{'items':(signal_journal.get('items') or [])[:500],
                 'updated_at':signal_journal.get('updated_at')},
             'warning':'P/L da Bolsa é histórico real. EV estimado não equivale a lucro realizado. Coleta do GitHub é horária e pode atrasar.',
