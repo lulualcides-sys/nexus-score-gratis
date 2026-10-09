@@ -60,6 +60,32 @@ class TeamFormTests(unittest.TestCase):
         self.assertEqual(public['form']['away']['available'],0)
         self.assertNotIn('ev_pct',str(public['form']))
 
+    def test_espn_team_schedule_missing_status_and_nested_scores(self):
+        from datetime import datetime,timezone
+        kickoff=int(f.NOW.timestamp())-86400
+        event={'id':'99999','date':datetime.fromtimestamp(kickoff,timezone.utc).isoformat(),
+            'competitions':[{'competitors':[
+              {'homeAway':'home','team':{'id':'101','displayName':'Casa'},
+               'score':{'value':3.0,'displayValue':'3'}},
+              {'homeAway':'away','team':{'id':'202','displayName':'Fora'},
+               'score':{'value':1.0,'displayValue':'1'}}]}]}
+        row=f.team_schedule_fixture(event,'bra.1')
+        self.assertEqual(row['score'],'3-1')
+        self.assertEqual(row['home_id'],'101')
+        self.assertEqual(row['away_id'],'202')
+        self.assertEqual(row['phase'],'finished')
+        self.assertEqual(f.history_before([row],self.fixture(100,kickoff+86400),'101')[0]['gf'],3)
+
+    def test_future_schedule_not_misclassified_as_finished(self):
+        from datetime import datetime,timezone
+        kickoff=int(f.NOW.timestamp())+7200
+        event={'id':'99998','date':datetime.fromtimestamp(kickoff,timezone.utc).isoformat(),
+            'competitions':[{'competitors':[
+              {'homeAway':'home','team':{'id':'101','displayName':'Casa'},'score':{'value':0}},
+              {'homeAway':'away','team':{'id':'202','displayName':'Fora'},'score':{'value':0}}
+            ]}]}
+        self.assertIsNone(f.team_schedule_fixture(event,'bra.1'))
+
     def test_exact_three_calendar_days_window_present(self):
         from pathlib import Path
         script=Path(x.__file__).read_text(encoding='utf-8')
