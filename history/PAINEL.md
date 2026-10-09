@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:52:05.208641+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:58:06.303835+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **23**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -38,10 +38,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **23**.
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Aldosivi × Sarmiento | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Ajman × Baniyas | 0-0 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-09 | Al-Wahda × Al-Dhafra | 1-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Persepolis × Sanat Naft Abadan | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Delfín × Mushuc Runa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -97,7 +97,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **23**.
 | 2026-10-09 | Albania (W) × Wales (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Turkiye (W) × Slovenia (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slovakia (W) × Ukraine (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Israel (W) × Switzerland (W) | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Israel (W) × Switzerland (W) | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belgium (W) × Poland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Czechia (W) × Scotland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Northern Ireland (W) × Portugal (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -120,7 +120,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **23**.
 | 2026-10-09 | SK Beveren × Lommel | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Zlín × Slavia Prague | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Hapoel Ironi Akko × Maccabi Bnei Raina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Ironi Modiin × Hapoel Afula | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Ironi Modiin × Hapoel Afula | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Maccabi Kiryat Gat × Kiryat Yam | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Maccabi Herzliya × Maccabi Ahi Nazareth | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | SC Kafr Qasim × Bnei Yehuda Tel Aviv | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
