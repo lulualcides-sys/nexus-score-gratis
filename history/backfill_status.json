@@ -1,1 +1,1 @@
-{"checked_at":"2026-10-09T16:36:35.130653+00:00","days":["2026-10-09","2026-10-08","2026-10-07"],"details":0,"errors":[],"events":0,"failed_leagues":0,"games":364,"with_stats":0}
+{"checked_at":"2026-10-09T16:56:34.607311+00:00","days":["2026-10-09","2026-10-08","2026-10-07"],"details":0,"errors":["uefa.champions/2026-10-08: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000)>"],"events":0,"failed_leagues":1,"games":364,"with_stats":0}
