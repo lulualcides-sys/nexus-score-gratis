@@ -50,6 +50,39 @@ assert.doesNotMatch(phone,/scout-graph-scroll/);
 assert.match(phone,/Sem barra = pressão não medida/);
 assert.match(phone,/90 POSIÇÕES/);
 assert.match(phone,/0–90′/);
+
+const data29={...sample,phase:'live',live:true,minute:29,
+  incidents:[
+    {minute:22,team:'HOME',emoji:'🥅',text:'Chute no alvo'},
+    {minute:22,team:'HOME',emoji:'↗️',text:'Chute para fora'},
+    {minute:22,team:'HOME',emoji:'🚩',text:'Escanteio'}],
+  signal_timeline:[
+    {minute:22,team:'HOME',emoji:'🔥',name:'Forte',basis:'graph'},
+    {minute:22,team:'HOME',emoji:'🧨',name:'Total',basis:'graph'},
+    {minute:22,team:'HOME',emoji:'⚡',name:'Ofensiva',basis:'graph'},
+    {minute:20,team:'AWAY',emoji:'🥶',name:'Frio',basis:'graph'},
+    {minute:29,team:'HOME',emoji:'💣',name:'Acumulado',basis:'snapshot'}]};
+const timeline29=phoneLab.chart(data29,'all');
+assert.match(timeline29,/data-live-minute="29"/);
+assert.match(timeline29,/mobile-live-line/);
+assert.equal((timeline29.match(/class="mobile-signal home"/g)||[]).length,3);
+assert.equal((timeline29.match(/class="mobile-event home"/g)||[]).length,3);
+assert.match(timeline29,/data-mobile-signal-index="0"/);
+assert.match(timeline29,/data-mobile-signal-index="1"/);
+assert.match(timeline29,/data-mobile-signal-index="2"/);
+assert.match(timeline29,/data-mobile-signal-index="3"/);
+assert.doesNotMatch(timeline29,/data-mobile-signal-index="4"/);
+assert.doesNotMatch(timeline29,/mobile-markers|class="mobile-marker |>\+1</);
+assert.match(phoneLab.describeMobileSignal(data29,1),/22′/);
+assert.match(phoneLab.describeMobileSignal(data29,1),/Total/);
+const at44=phoneLab.chart({...data29,minute:44},'all');
+assert.match(at44,/data-live-minute="44"/);
+assert.equal((at44.match(/class="mobile-live-line"/g)||[]).length,1);
+const at93=phoneLab.chart({...data29,minute:93},'all');
+assert.match(at93,/data-live-minute="93"/);
+const ended=phoneLab.chart({...data29,phase:'finished',live:false},'all');
+assert.doesNotMatch(ended,/class="mobile-live-line"/);
+
 const css=fs.readFileSync(new URL('../web/nexus-web-polish.css',import.meta.url),'utf8');
 assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph-scroll\{\s*overflow:hidden!important/);
 assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph\{\s*width:100%!important/);

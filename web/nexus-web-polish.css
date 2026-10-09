@@ -248,13 +248,21 @@ html,body{max-width:100%;overflow-x:hidden}
 #section-thermometer .mobile-bar.away{fill:#bb2f3b;opacity:.94}
 #section-thermometer .mobile-missing{fill:#a9b1b5;opacity:.6}
 #section-thermometer .mobile-event{cursor:help}
-#section-thermometer .mobile-markers{display:flex;flex-wrap:wrap;gap:5px;
-  padding:1px 2px 7px}
-#section-thermometer .mobile-marker{border:1px solid #a2bdc1;background:#e6f3ef;
-  color:#21535b;border-radius:6px;padding:5px 8px;font-size:11px;font-weight:700;
-  cursor:pointer}
-#section-thermometer .mobile-marker.away{background:#fae9ed;color:#922a38;
-  border-color:#d9aab4}
+/* Indicadores INDIVIDUAIS dentro do termômetro; nunca reduzir a +1 */
+#section-thermometer .mobile-signal{cursor:pointer;outline:none}
+#section-thermometer .mobile-signal rect{fill:#e5f4f0;stroke:#448e81;stroke-width:1}
+#section-thermometer .mobile-signal.away rect{fill:#fde8ec;stroke:#cc7889}
+#section-thermometer .mobile-signal:focus rect,
+#section-thermometer .mobile-signal:hover rect{stroke:#0f374a;stroke-width:2}
+#section-thermometer .mobile-signal text,
+#section-thermometer .mobile-event text{paint-order:stroke;stroke:#fffdfa;stroke-width:1.1px}
+#section-thermometer .mobile-signal-guide{stroke:#438d7c;stroke-width:1;stroke-dasharray:2 2}
+#section-thermometer .mobile-signal-guide.away{stroke:#ce6a81}
+#section-thermometer .mobile-live-line{stroke:#0b8a85;stroke-width:2.1;
+ filter:drop-shadow(0 0 1px white)}
+#section-thermometer .mobile-live-label-bg{fill:#087f7b;stroke:#fff;stroke-width:.6}
+#section-thermometer .mobile-live-label{fill:white;font-size:10px;font-weight:800}
+
 @media(max-width:800px){
  #section-thermometer .mobile-timeline .scout-compact-caption{
    text-align:left!important;font-size:11px!important}

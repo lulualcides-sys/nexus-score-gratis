@@ -1194,6 +1194,16 @@ window.PressureLab = (() => {
     // A ordem de exibição não descarta ícones menos prioritários.
     return merged.map(g=>({...g,events:prioritize(g.events)})).sort((a,b)=>a.minute-b.minute || (a.team==='HOME'?-1:1));
   }
+  function describeMobileSignal(d,index){
+    const item=(Array.isArray(d?.signal_timeline)?d.signal_timeline:[])[Number(index)];
+    if(!item || !['graph','event'].includes(item.basis) || !['HOME','AWAY'].includes(item.team))return '';
+    const team=item.team==='HOME'?d.home:d.away,role=item.team==='HOME'?'▲ MANDANTE':'▼ VISITANTE';
+    return '<strong>'+h(role)+' · '+h(team)+' · '+h(item.minute)+'′</strong>'+
+      '<div class="signal-inspector-rows"><div class="signal-inspector-item"><span class="signal-inspector-icon">'+
+      h(item.emoji)+'</span><div><b>'+h(item.name||'Indicador')+'</b><small>'+
+      h(item.label||'')+' · '+h(item.reason||'Ativação com minuto confirmado')+
+      '</small></div></div></div>';
+  }
   function describeMarker(d,scope,index) {
     const group=markerGroups(d,scope)[Number(index)];
     if(!group)return '';
@@ -1264,7 +1274,8 @@ window.PressureLab = (() => {
   // nem rolagem horizontal. SVG novo usa somente medições e eventos reais.
   function mobileTimeline(d,points){
     const gameMinute=Number(d.minute)||0;
-    const played=Math.min(90,Math.max(0,Math.floor(gameMinute),
+    const lastObserved=points.length?Math.max(...points.map(p=>Number(p.minute)||0)):0;
+    const played=Math.min(90,Math.max(0,Math.floor(gameMinute),lastObserved,
       String(d.phase||'')==='finished'?90:0));
     const measured=new Map(points.filter(p=>p.minute>=1&&p.minute<=90)
       .map(p=>[Number(p.minute),Number(p.value)]));
@@ -1293,23 +1304,25 @@ window.PressureLab = (() => {
         }
       }
       const segEvents=incidents.filter(e=>Number(e.minute)>a&&Number(e.minute)<=b);
-      const groups=new Map();
+      // TODOS os eventos confirmados aparecem no gráfico, no minuto exato.
+      // Quando simultâneos, ficam lado a lado. Não reduzir a '+1'.
+      const eventsAt=new Map();
       for(const e of segEvents){
-        const key=e.team+':'+Math.floor((Number(e.minute)-a-1)/3);
-        if(!groups.has(key))groups.set(key,[]);
-        groups.get(key).push(e);
+        const key=e.team+':'+Number(e.minute);
+        if(!eventsAt.has(key))eventsAt.set(key,[]);
+        eventsAt.get(key).push(e);
       }
-      for(const group of groups.values()){
-        const e=group[0],minute=Number(e.minute),on=e.team==='HOME',v=e.emoji;
-        const xx=x(minute-a),yy=on?11:128;
-        const glyph=v==='🥅'?'<circle r="4.6" fill="#22384a"/>':
-          v==='↗️'?'<circle r="3.2" fill="none" stroke="#22384a" stroke-width="1.3"/>'+
-            '<path d="M-2,-2L2,2M2,-2L-2,2" stroke="#22384a" stroke-width="1"/>':
-          '<text y="3" text-anchor="middle" font-size="10.5">'+h(v)+'</text>';
-        events+='<g class="mobile-event '+(on?'home':'away')+'" transform="translate('+
-          xx.toFixed(1)+','+yy+')">'+glyph+
-          (group.length>1?'<text x="6" y="-2" font-size="8" fill="#32495e">+'+(group.length-1)+'</text>':'')+
-          '<title>'+group.map(z=>h(z.stamp||z.minute+'′')+' '+h(z.text||'Lance')).join(' / ')+'</title></g>';
+      for(const sameMinute of eventsAt.values()){
+        const first=sameMinute[0],minute=Number(first.minute),home=first.team==='HOME';
+        const gap=12,position=x(minute-a),base=Math.max(7,Math.min(327-gap*(sameMinute.length-1),position-gap*(sameMinute.length-1)/2));
+        sameMinute.forEach((e,offset)=>{
+          const xx=base+gap*offset,yy=home?11:128,icon=String(e.emoji);
+          const glyph=icon==='🥅'?'<circle r="4.7" fill="#22384a"/>':
+            icon==='↗️'?'<circle r="3.4" fill="none" stroke="#22384a" stroke-width="1.4"/><path d="M-2,-2L2,2M2,-2L-2,2" stroke="#22384a" stroke-width="1.1"/>':
+              '<text text-anchor="middle" font-size="11" y="4">'+h(icon)+'</text>';
+          events+='<g class="mobile-event '+(home?'home':'away')+'" transform="translate('+xx.toFixed(1)+','+yy+')">'+glyph+
+            '<title>'+h(String(e.stamp||minute+'′'))+' · '+h(e.text||'Lance')+'</title></g>';
+        });
       }
       const shadeStart=Math.max(a,Math.min(b,played));
       const future=shadeStart<b?'<rect x="'+x(shadeStart-a)+'" y="20" width="'+
@@ -1318,11 +1331,60 @@ window.PressureLab = (() => {
       for(const k of [0,10,20,30])lines+='<line x1="'+x(k)+'" x2="'+x(k)+
         '" y1="20" y2="116" stroke="#9eacb3" stroke-width=".6" stroke-dasharray="2 5"/>'+
         '<text x="'+x(k)+'" y="144" fill="#546b7a" font-size="9" text-anchor="middle">'+(a+k)+'′</text>';
-      const groupsHtml=markers.map((item,i)=>({item,i})).filter(v=>Number(v.item.minute)>a&&
-        Number(v.item.minute)<=b).map(v=>'<button class="mobile-marker '+v.item.team.toLowerCase()+
-          '" type="button" data-indicator-point="'+v.i+'">'+Number(v.item.minute)+'′ '+
-          v.item.events.slice(0,4).map(e=>h(e.emoji)).join(' ')+
-          (v.item.events.length>4?' +'+(v.item.events.length-4):'')+'</button>').join('');
+      // Não usar markerGroups aqui: ele agrupa intervalos de três minutos.
+      // Marcamos CADA ativação na coordenada do minuto originalmente medido.
+      // Scouts acumulados sem minuto real permanecem só no quadro estatístico.
+      const signalItems=(Array.isArray(d.signal_timeline)?d.signal_timeline:[])
+        .map((item,index)=>({item,index}))
+        .filter(({item})=>item && ['HOME','AWAY'].includes(item.team) &&
+          ['graph','event'].includes(item.basis) &&
+          Number.isInteger(Number(item.minute)) &&
+          Number(item.minute)>a && Number(item.minute)<=b &&
+          knownIcons.includes(String(item.emoji||'')) &&
+          !shotEmojis.has(String(item.emoji||'')) &&
+          !hiddenIcons.has(String(item.emoji||'')));
+      const indicatorsAt=new Map();
+      for(const row of signalItems){
+        const key=row.item.team+':'+row.item.minute;
+        if(!indicatorsAt.has(key))indicatorsAt.set(key,[]);
+        indicatorsAt.get(key).push(row);
+      }
+      let signalMarks='';
+      for(const rows of indicatorsAt.values()){
+        const first=rows[0].item,minute=Number(first.minute),home=first.team==='HOME';
+        const origin=x(minute-a),gap=13.4;
+        const base=Math.max(8,Math.min(326-gap*(rows.length-1),origin-gap*(rows.length-1)/2));
+        signalMarks+='<line class="mobile-signal-guide '+(home?'home':'away')+
+          '" x1="'+origin.toFixed(1)+'" x2="'+origin.toFixed(1)+
+          '" y1="'+(home?49:88)+'" y2="'+(home?40:96)+'"/>';
+        rows.forEach(({item,index},n)=>{
+          signalMarks+='<g class="mobile-signal '+(home?'home':'away')+
+            '" data-mobile-signal-index="'+index+'" role="button" tabindex="0" aria-label="'+
+            h((home?d.home:d.away)+' · '+minute+'′ · '+String(item.name||item.emoji))+
+            '" transform="translate('+(base+n*gap).toFixed(1)+','+(home?34:103)+')">'+
+            '<rect x="-6.2" y="-8.7" width="12.4" height="17.4" rx="3.6"/>'+
+            '<text text-anchor="middle" y="4.4" font-size="11.5">'+h(item.emoji)+'</text>'+
+            '<title>'+minute+'′ · '+h(String(item.name||item.emoji))+
+            ' · '+h(String(item.reason||item.label||''))+'</title></g>';
+        });
+      }
+      // Linha de tempo ATUAL. Uma marca por partida, no segmento correto.
+      const phase=String(d.phase||'').toLowerCase();
+      const live=!['finished','ended','final','completed'].includes(phase) &&
+         (d.live===true || phase==='live');
+      const rawCurrent=Number(d.minute);
+      const clockKnown=live && Number.isFinite(rawCurrent) && rawCurrent>0;
+      const clamped=Math.min(90,Math.floor(rawCurrent));
+      const inPeriod=clockKnown && ((rawCurrent>a&&rawCurrent<=b) ||
+         (index===2&&rawCurrent>90));
+      const nowX=x(clamped-a);
+      const nowLine=inPeriod?'<line class="mobile-live-line" data-live-minute="'+
+        Math.floor(rawCurrent)+'" x1="'+nowX.toFixed(1)+'" x2="'+nowX.toFixed(1)+
+        '" y1="18" y2="116" stroke-dasharray="4 3"/>'+
+        '<rect class="mobile-live-label-bg" x="'+Math.max(2,Math.min(302,nowX-15)).toFixed(1)+
+        '" y="1" width="30" height="16" rx="5"/>'+
+        '<text class="mobile-live-label" text-anchor="middle" x="'+nowX.toFixed(1)+
+        '" y="13">'+Math.floor(rawCurrent)+'′</text>':'';
       const count=Array.from(measured.keys()).filter(m=>m>a&&m<=b).length;
       return '<div class="mobile-period"><header><strong>'+a+'′–'+b+'′</strong><small>'+
         ['INÍCIO','MEIO','FINAL'][index]+' · '+count+'/30 minutos medidos</small></header>'+
@@ -1330,7 +1392,7 @@ window.PressureLab = (() => {
         ' a '+b+' minutos"><rect x="24" y="20" width="286" height="48" fill="#909b9e" opacity=".12"/>'+
         '<rect x="24" y="68" width="286" height="48" fill="#ba3845" opacity=".08"/>'+
         future+'<line x1="24" y1="68" x2="310" y2="68" stroke="#7c878e" stroke-width="1.5"/>'+
-        lines+slots+bars+events+'</svg>'+(groupsHtml?'<div class="mobile-markers">'+groupsHtml+'</div>':'')+'</div>';
+        lines+slots+bars+nowLine+events+signalMarks+'</svg></div>';
     }).join('');
     const covered=Array.from(measured.keys()).filter(m=>m<=played).length;
     const coverage=played?Math.round(100*covered/played):0;
@@ -1616,7 +1678,7 @@ window.PressureLab = (() => {
     </section>`;
   }
   function indicatorDetails(d){return `${snapshotStrip(d)}${signalLegend(d)}`;}
-  return {isHalfTime,sanitize,segments,chart,render,scoreboard,scoutTotals,contiguousGroups,markerGroups,describeMarker,toggleIcon,snapshotStrip,indicatorDetails,prioritize};
+  return {isHalfTime,sanitize,segments,chart,render,scoreboard,scoutTotals,contiguousGroups,markerGroups,describeMarker,describeMobileSignal,toggleIcon,snapshotStrip,indicatorDetails,prioritize};
 })();
 
 </script>
@@ -1967,6 +2029,12 @@ $('#detail-panel').addEventListener('click',pressureRangeClick);
 $('#detail-panel').addEventListener('error',event=>{if(event.target.matches('.team-crest-image'))event.target.remove();},true);
 $('#match-list').addEventListener('error',event=>{if(event.target.matches('.team-crest-image'))event.target.remove();},true);
 function showSignalPoint(target){
+  const markerMobile=target.closest('[data-mobile-signal-index]');
+  if(markerMobile && state.detail){
+    const info=$('#signal-marker-info');
+    if(info){info.classList.add('expanded');info.innerHTML=PressureLab.describeMobileSignal(state.detail,markerMobile.dataset.mobileSignalIndex);info.scrollIntoView({block:'nearest',behavior:'smooth'});}
+    return true;
+  }
  const marker=target.closest('[data-indicator-point]');
  if(!marker||!state.detail)return false;
  const info=$('#signal-marker-info');
@@ -1979,7 +2047,7 @@ $('#detail-panel').addEventListener('click',event=>{
  if(pill && PressureLab.toggleIcon(pill.dataset.signalToggle))renderDetailBody();
 });
 $('#detail-panel').addEventListener('keydown',event=>{
- if((event.key==='Enter'||event.key===' ')&&event.target.closest('[data-indicator-point]')){event.preventDefault();showSignalPoint(event.target)}
+ if((event.key==='Enter'||event.key===' ')&&event.target.closest('[data-indicator-point],[data-mobile-signal-index]')){event.preventDefault();showSignalPoint(event.target)}
 });
 function graphSvg(points){
   if(!Array.isArray(points)||!points.length)return '<div class="no-chart">Gráfico não fornecido para esta partida. Não calculamos pressão fictícia.</div>';
