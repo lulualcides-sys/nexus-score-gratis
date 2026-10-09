@@ -4,7 +4,7 @@
 
 A versão pública do NEXUS SCORE está publicada em **https://nexus-score-gratis.pages.dev/** por Cloudflare Pages conectado à branch main do GitHub.
 
-**Painel web v5.30 (coletas públicas):** histórico de hoje e 3 dias anteriores (quando retornados pela ESPN), scouts reais disponíveis (finalizações, posse, passes, faltas, cartões etc.), odds capturadas, margem implícita 1X2, resultados esportivos por mercado, alertas na tela e resultados paper de sinais criados antes do início.
+**Painel web v5.30 (coletas públicas):** jogos de hoje e dos 2 dias anteriores (3 dias corridos, conforme dados ESPN); analise separada dos ate 10 jogos anteriores disponiveis de cada time na mesma competicao, scouts reais disponíveis (finalizações, posse, passes, faltas, cartões etc.), odds capturadas, margem implícita 1X2, resultados esportivos por mercado, alertas na tela e resultados paper de sinais criados antes do início.
 
 **Importante:** o percentual Over/Under/BTTS histórico não é EV+, nem lucro de bot. O P/L paper é desconhecido até existir ao menos um sinal pré-jogo com odd validada e liquidação. P/L pessoal da Bolsa e PC continua privado e **não** é publicado no Cloudflare. Os alertas não são notificações push com o navegador fechado; a coleta é horária, e o snapshot web é normalmente atualizado de duas em duas horas.
 
