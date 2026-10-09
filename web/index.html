@@ -13,6 +13,7 @@
 <div class="shell">
   <header class="topbar">
     <div class="brand"><div class="brand-icon">N<span>✦</span></div><div><strong>NEXUS <em>SCORE</em></strong><small>WEB · COLETAS GITHUB</small></div></div>
+    <nav class="quicknav" aria-label="Navegação principal"><a href="#games">Jogos</a><a href="#alerts-panel">Alertas e P/L paper</a><a href="#historical-markets">Mercados</a></nav>
     <span class="status"><i></i> COLETOR NO GITHUB</span>
   </header>
   <main>
@@ -26,7 +27,13 @@
       <div class="metric"><small>COM TERMÔMETRO</small><strong id="metric-pressure">—</strong><span>Pressão real registrada</span></div>
       <div class="metric"><small>COM ODDS 1X2</small><strong id="metric-odds">—</strong><span>Quando disponíveis</span></div>
     </section>
-    <section class="paper-and-alerts">
+    <section class="toolbar">
+      <div class="toolbar-top"><h2>Jogos monitorados <small id="shown-count"></small></h2><div class="toolbar-actions"><button type="button" id="refresh">↻ Atualizar</button><a target="_blank" rel="noopener noreferrer" href="https://github.com/lulualcides-sys/nexus-score-gratis/blob/main/history/bolsa_netpl.json">↗ P/L privado da Bolsa</a></div></div>
+      <div class="filters"><select id="day" aria-label="Selecionar dia"><option value="all">Todos os dias</option></select><input id="search" aria-label="Buscar time ou campeonato" placeholder="⌕ Buscar time ou campeonato..." autocomplete="off"><select id="phase" aria-label="Filtro de partidas"><option value="all">Todas as partidas</option><option value="live">Ao vivo</option><option value="scheduled">Próximas</option><option value="finished">Encerradas</option></select><select id="market" aria-label="Filtro de mercado"><option value="all">Todos os mercados</option><option value="shots">Com finalizações</option><option value="corners">Com escanteios</option><option value="pressure">Com termômetro</option><option value="odds">Com odds verificadas</option><option value="ev">Com EV experimental</option><option value="events">Com eventos reais</option></select></div>
+    </section>
+    <div id="message" class="notice" role="status">Carregando dados...</div>
+    <section id="games" class="match-grid" aria-label="Partidas"></section>
+    <section class="paper-and-alerts" id="alerts-panel">
       <article class="work-panel">
         <h2>◈ P/L experimental por mercado <small>sem apostas reais</small></h2>
         <div class="paper-main"><div><small>RESULTADO PAPER (1U POR SINAL)</small><strong id="paper-pnl">—</strong></div>
@@ -46,12 +53,6 @@
       <div id="history-market-summary" class="history-grid"></div>
       <p class="small-note">Percentuais de ocorrência nas partidas encerradas na janela de 3 dias (hoje e os 2 anteriores). Não representam taxa de acerto de bot, lucro, rentabilidade nem EV+.</p>
     </section>
-    <section class="toolbar">
-      <div class="toolbar-top"><h2>Jogos monitorados <small id="shown-count"></small></h2><div class="toolbar-actions"><button type="button" id="refresh">↻ Atualizar</button><a target="_blank" rel="noopener noreferrer" href="https://github.com/lulualcides-sys/nexus-score-gratis/blob/main/history/bolsa_netpl.json">↗ P/L privado da Bolsa</a></div></div>
-      <div class="filters"><select id="day" aria-label="Selecionar dia"><option value="all">Todos os dias</option></select><input id="search" aria-label="Buscar time ou campeonato" placeholder="⌕ Buscar time ou campeonato..." autocomplete="off"><select id="phase" aria-label="Filtro de partidas"><option value="all">Todas as partidas</option><option value="live">Ao vivo</option><option value="scheduled">Próximas</option><option value="finished">Encerradas</option></select><select id="market" aria-label="Filtro de mercado"><option value="all">Todos os mercados</option><option value="shots">Com finalizações</option><option value="corners">Com escanteios</option><option value="pressure">Com termômetro</option><option value="odds">Com odds verificadas</option><option value="ev">Com EV experimental</option><option value="events">Com eventos reais</option></select></div>
-    </section>
-    <div id="message" class="notice" role="status">Carregando dados...</div>
-    <section id="games" class="match-grid" aria-label="Partidas"></section>
     <section class="toolbar" id="bolsa-private" hidden>
       <div class="toolbar-top"><h2>◈ P/L real por mercado <small> · operações registradas na Bolsa</small></h2><span id="bolsa-date" class="status">Carregando histórico...</span></div>
       <div id="bolsa-summary" class="notice">Consultando snapshot privado e auditado.</div>
