@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:23:48.037266+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:25:00.669136+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **36**.
 
@@ -95,7 +95,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **36**.
 | 2026-10-09 | Hungary (W) × Netherlands (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belarus (W) × Italy (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Albania (W) × Wales (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Turkiye (W) × Slovenia (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Turkiye (W) × Slovenia (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slovakia (W) × Ukraine (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Israel (W) × Switzerland (W) | 3-7 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belgium (W) × Poland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -138,7 +138,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **36**.
 | 2026-10-09 | West Ham United × Queens Park Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | FC Rostov × Akron Togliatti | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Portadown × Glentoran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 2-1 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 4.0×1.0 |
+| 2026-10-09 | Corvinul Hunedoara × FC Voluntari | 2-2 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 4.0×1.0 |
 | 2026-10-09 | Sepsi OSK × Dinamo București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
