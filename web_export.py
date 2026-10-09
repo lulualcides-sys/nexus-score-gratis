@@ -461,6 +461,10 @@ def main():
     external=load(H/'multi_source_status.json')
     fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
+    registry=load(H/'signal_registry.json')
+    signal_journal={'updated_at':registry.get('updated_at'),
+        'items':(registry.get('items') or [])[:400],
+        'note':'Sinais 5.29 na nuvem; gols em 5/10/15 min conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
@@ -468,7 +472,7 @@ def main():
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
-             'alerts':alerts_from(rows),'games':rows}
+             'signal_journal':signal_journal,'alerts':alerts_from(rows),'games':rows}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')

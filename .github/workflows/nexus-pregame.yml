@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "pregame_refresh.py"
+      - "signal_registry.py"
       - "standings_context.py"
       - "sofascore_odds.py"
       - ".github/workflows/nexus-pregame.yml"
@@ -26,7 +27,7 @@ jobs:
           persist-credentials: true
       - name: Validar rotina
         run: |
-          python3 -m py_compile pregame_refresh.py sofascore_odds.py standings_context.py
+          python3 -m py_compile signal_registry.py pregame_refresh.py sofascore_odds.py standings_context.py
           python3 -m unittest discover -s tests -v
           node --check web/nexus-original-enrich.js
           node tests/test_original_enrich.mjs
@@ -35,11 +36,13 @@ jobs:
       - name: Atualizar a situação das equipes na tabela
         continue-on-error: true
         run: python3 standings_context.py
+      - name: Registrar alertas e conferir gols na nuvem
+        run: python3 signal_registry.py
       - name: Publicar dados quando houver mudança esportiva
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- history/20??-??-??.json; then
+          if [[ -z "$(git status --porcelain -- history/20??-??-??.json history/signal_registry.json)" ]]; then
             echo "Nenhuma alteração de escalacao/odds nesta janela."
             exit 0
           fi
