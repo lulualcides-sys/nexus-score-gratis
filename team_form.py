@@ -12,8 +12,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 
-from coletar import HISTORY, DAY, NOW, fetch, read, write
-from backfill import parse_fixture
+from coletar import HISTORY, DAY, NOW, fetch, read, write, utc_ts
 
 LAST_N = 10
 WINDOW_DAYS = 3
@@ -34,27 +33,49 @@ def fixture_timestamp(fixture):
         return t if t>0 else None
     except (TypeError,ValueError,OverflowError):return None
 
+def team_schedule_fixture(event,league):
+    """O calendario ESPN de times omite event.status e usa score como objeto."""
+    if not isinstance(event,dict):return None
+    comps=event.get('competitions') or []
+    comp=comps[0] if comps and isinstance(comps[0],dict) else {}
+    competitors=comp.get('competitors') or []
+    h=next((t for t in competitors if isinstance(t,dict) and t.get('homeAway')=='home'),None)
+    a=next((t for t in competitors if isinstance(t,dict) and t.get('homeAway')=='away'),None)
+    if not h or not a:return None
+    def score(competitor):
+        raw=competitor.get('score')
+        if isinstance(raw,dict):raw=raw.get('displayValue',raw.get('value'))
+        try:
+            n=float(raw)
+            return int(n) if n.is_integer() and 0<=n<=50 else None
+        except (ValueError,TypeError):return None
+    home_goals,away_goals=score(h),score(a)
+    ts=utc_ts(event.get('date') or comp.get('date'))
+    # Um calendario sem estado final nao prova que um jogo de agora acabou.
+    # So usar jogos com placares publicados e inicio ha ao menos 4 horas.
+    if home_goals is None or away_goals is None or not ts or ts>=NOW.timestamp()-4*3600:
+        return None
+    state=str((((comp.get('status') or event.get('status') or {}).get('type') or {}).get('state')) or '').lower()
+    if state and state!='post':return None
+    home_team=h.get('team') or {}
+    away_team=a.get('team') or {}
+    if not home_team.get('displayName') or not away_team.get('displayName'):return None
+    return {
+        'id':'espn-'+league+'-'+str(event.get('id') or comp.get('id') or ''),
+        'home':str(home_team['displayName']),'away':str(away_team['displayName']),
+        'home_id':str(home_team.get('id') or h.get('id') or ''),
+        'away_id':str(away_team.get('id') or a.get('id') or ''),
+        'league':league,'start_timestamp':ts,'phase':'finished',
+        'score':str(home_goals)+'-'+str(away_goals)}
+
 def schedule(league,team_id,season=None):
     query=urlencode({'limit':160,**({'season':season} if season is not None else {})})
     url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+league+'/teams/'+team_id+'/schedule?'+query
     packet=fetch(url,timeout=7)
-    if league=='bra.1' and team_id=='1936' and season is None:
-        samples=packet.get('events') or []
-        sample=samples[0] if samples else {}
-        comp=(sample.get('competitions') or [{}])[0]
-        parsed=parse_fixture(sample,league) if sample else None
-        print('FORMATO_ESPN',json.dumps({
-          'status':sample.get('status'),
-          'scores':[{'homeAway':v.get('homeAway'),'score':v.get('score')} for v in comp.get('competitors') or []],
-          'parsed':parsed,
-          'is_finished_valid':bool(valid_score(parsed)) if parsed else False},
-          ensure_ascii=False)[:1800],flush=True)
     result=[]
     for event in packet.get('events') or []:
-        if not isinstance(event,dict):continue
-        fixture=parse_fixture(event,league)
-        if fixture and valid_score(fixture) and fixture_timestamp(fixture):
-            result.append(fixture)
+        fixture=team_schedule_fixture(event,league)
+        if fixture:result.append(fixture)
     return result
 
 def history_before(schedule_games, fixture, team_id, limit=LAST_N):
