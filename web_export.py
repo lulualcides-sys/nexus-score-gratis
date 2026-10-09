@@ -9,6 +9,7 @@ from pathlib import Path
 import json
 import math
 import re
+from signal_evaluation import evaluate
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -569,7 +570,8 @@ def main():
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'paper':paper_summary(rows),'market_history':market_history(rows),
-             'signal_journal':signal_journal,'alerts':alerts_from(rows),'games':rows}
+             'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
+             'alerts':alerts_from(rows),'games':rows}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
