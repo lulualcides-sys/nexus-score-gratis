@@ -80,8 +80,8 @@ assert.match(at44,/data-live-minute="44"/);
 assert.equal((at44.match(/class="mobile-live-line"/g)||[]).length,1);
 const at93=phoneLab.chart({...data29,minute:93},'all');
 assert.match(at93,/data-live-minute="93"/);
-const ended=phoneLab.chart({...data29,phase:'finished',live:false},'all');
-assert.doesNotMatch(ended,/class="mobile-live-line"/);
+const finishedMobileChart=phoneLab.chart({...data29,phase:'finished',live:false},'all');
+assert.doesNotMatch(finishedMobileChart,/class="mobile-live-line"/);
 
 const css=fs.readFileSync(new URL('../web/nexus-web-polish.css',import.meta.url),'utf8');
 assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph-scroll\{\s*overflow:hidden!important/);
