@@ -126,7 +126,7 @@ function headToHead(g){
      found.set(key,item);
    }
  }
- return [...found.values()].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,10);
+ return [...found.values()].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,20);
 }
 function instrument(g,detail){
  const points=samplesFrom(g),minutes=points.length?points.at(-1).minute:0;

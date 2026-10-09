@@ -115,7 +115,7 @@ function projection(d,p){
 function confrontation(d){
  const p=d.prelive||{};
  const data=Array.isArray(d.head_to_head)?d.head_to_head:[];
- const valid=data.filter(g=>g&&/^\d{1,2}[-–]\d{1,2}$/.test(String(g.score||''))).slice(0,15);
+ const valid=data.filter(g=>g&&/^\d{1,2}[-–]\d{1,2}$/.test(String(g.score||''))).slice(0,20);
  const normalize=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\b(?:fc|sc|ec|de|da|do|clube)\b/g,'').replace(/[^a-z0-9]+/g,' ').trim();
  let h=0,a=0,draw=0;
  const rows=[],seen=new Set();
