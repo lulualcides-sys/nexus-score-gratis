@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T12:17:08.899168+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T12:19:56.849020+00:00**.
 
 Fontes da última execução: **ESPN**. Jogos ao vivo encontrados: **0**.
 
