@@ -24,7 +24,7 @@ class SignalRegistryTests(unittest.TestCase):
             self.game(),self.data(stat={'away':{'shots_on':3}}),'t')))
     def test_diagnostic_distinguishes_missing_pressure_from_zero_signals(self):
         live={'fixture':self.game(),**self.data()}
-        frozen={'fixture':self.game(80),**self.data()}
+        frozen={'fixture':{**self.game(80),'id':'fotmob-56'},**self.data()}
         d=diagnostics({'2026-10-09':{'matches':{'with':live,'stale':frozen}}})
         self.assertEqual(d['matches_live'],2)
         self.assertEqual(d['with_pressure'],2)
