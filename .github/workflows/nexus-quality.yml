@@ -38,3 +38,7 @@ jobs:
           node tests/test_live_timeline.mjs
           node tests/test_nexus_iara.mjs
           node tests/test_iara_bridge.mjs
+          node --check web/nexus-unit-pl.js
+          node --check web/nexus-signal-evaluation.js
+          node tests/test_nexus_unit_pl.mjs
+          node tests/test_nexus_signal_evaluation.mjs
