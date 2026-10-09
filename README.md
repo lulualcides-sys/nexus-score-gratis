@@ -1,3 +1,13 @@
+# NEXUS SCORE — WEB + Coleta gratuita ☁️
+
+**[📱 PREPARAR PUBLICAÇÃO WEB NO CLOUDFLARE](DEPLOY_WEB_CLOUDFLARE.md)** · **[Código web](web/index.html)** · **[Dados esportivos públicos que serão exibidos](web/data.json)**
+
+A versão web mobile-first já está preparada no repositório, mas **a URL pública ainda precisa da ativação do Cloudflare Pages**. Basta conectar o GitHub ao Cloudflare Free uma vez. Não exige instalação no Windows.
+
+**Privacidade:** o site público inclui apenas placares, jogos, pressão e estatísticas esportivas com fonte; o P/L da Bolsa continua no repositório privado. A versão completa com servidor Python permanece separada.
+
+---
+
 # NEXUS SCORE — Coleta gratuita no GitHub ☁️
 
 ### [📊 ABRIR PAINEL DE COLETAS E MERCADOS](history/PAINEL.md)
