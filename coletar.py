@@ -27,6 +27,13 @@ def safe_int(v):
     try:return int(v) if v is not None and v!='' else None
     except (ValueError,TypeError):return None
 
+def utc_ts(value):
+    try:
+        dt=datetime.fromisoformat(str(value).replace('Z','+00:00'))
+        if dt.tzinfo is not None:return int(dt.timestamp())
+    except (TypeError,ValueError):pass
+    return None
+
 def fotmob_list(day):
     obj=fetch('https://www.fotmob.com/api/matches?'+urlencode({'date':day.replace('-','')}))
     out=[]
@@ -47,7 +54,7 @@ def fotmob_list(day):
                 'league':str(league.get('name') or ''),'minute':minute,'live':live,
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
-                'source':'FotMob','collected_at':NOW.isoformat()})
+                'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),'collected_at':NOW.isoformat()})
     return out
 
 def espn_league(code):
@@ -71,7 +78,7 @@ def espn_league(code):
             'league':code,'minute':minute,'live':live,
             'phase':'live' if live else 'finished' if state=='post' else 'scheduled',
             'score':str(h.get('score','?'))+'-'+str(a.get('score','?')),
-            'source':'ESPN','collected_at':NOW.isoformat()})
+            'source':'ESPN','start_timestamp':utc_ts(event.get('date')),'collected_at':NOW.isoformat()})
     return out
 
 def momentum(detail):
