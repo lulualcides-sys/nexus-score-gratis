@@ -14,7 +14,7 @@ from urllib.request import Request, urlopen
 from coletar import HISTORY, DAY, NOW, read, write, utc_ts
 from team_form import summarise
 
-LIMIT_PER_RUN = 28
+LIMIT_PER_RUN = 80
 TTL_HOURS = 40
 CACHE_FILE = HISTORY / 'fotmob_team_cache.json'
 STATUS_FILE = HISTORY / 'fotmob_form_status.json'
