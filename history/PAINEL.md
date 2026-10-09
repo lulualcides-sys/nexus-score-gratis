@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T13:00:11.374746+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T13:01:34.725805+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -28,7 +28,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-09 | Vysočina Jihlava × SK Prostějov | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ústí nad Labem × Opava | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slavia Prague B × FC Vlašim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Ratchaburi FC × Sukhothai FC | 6-0 | 71 | Chutes no alvo: 8.0×1.0, Chutes para fora: 4.0×7.0, Grandes chances: 3.0×0.0 |
+| 2026-10-09 | Ratchaburi FC × Sukhothai FC | 6-0 | 90 | Chutes no alvo: 10.0×4.0, Chutes para fora: 4.0×8.0, Grandes chances: 5.0×0.0 |
 | 2026-10-09 | Phrae United × Kanchanaburi Power | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
