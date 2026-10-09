@@ -990,13 +990,17 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     if(path==='/api/settings')return json({auto_refresh:true,alerts_enabled:true,threshold:50,...savedSettings()});
     if(path==='/api/favorites')return json({favorites:savedFavorites()});
     if(path==='/api/providers')return json({providers:doc.collector||{},version:'5.29 WEB',updated_at:doc.exported_at});
-    if(path==='/api/live')return json({matches:sum(all.filter(g=>g.phase==='live')),source:'Coleta GitHub · arquivo atualizado '+doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>4*3600000});
-    if(path==='/api/today')return json({matches:sum(all.filter(g=>g.day===today))});
+    if(path==='/api/live')return json({matches:sum(all.filter(g=>g.phase==='live')),source:'Coleta GitHub · arquivo atualizado '+doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>20*60000,updated_at:doc.exported_at});
+    if(path==='/api/today')return json({matches:sum(all.filter(g=>g.day===today)),
+      updated_at:doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>20*60000});
     if(path==='/api/agenda'){
       const offset=Number(u.searchParams.get('offset')||0),day=dateMove(today,offset);
-      return json({matches:sum(all.filter(g=>g.day===day)),offset,day,source:'Coleta GitHub · '+doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>4*3600000});
+      return json({matches:sum(all.filter(g=>g.day===day)),offset,day,
+        source:'Coleta GitHub · '+doc.exported_at,updated_at:doc.exported_at,
+        stale:Date.now()-Date.parse(doc.exported_at)>20*60000});
     }
-    if(path==='/api/archive')return json({matches:sum(all.filter(g=>g.day<=today)),archive:true,source:'3 dias coletados GitHub'});
+    if(path==='/api/archive')return json({matches:sum(all.filter(g=>g.day<=today)),archive:true,source:'3 dias coletados GitHub',
+      updated_at:doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>20*60000});
     if(path.startsWith('/api/match/')){const id=decodeURIComponent(path.split('/').pop());const g=item(id);return g?json(details(g)):json({error:'Jogo não coletado'},404)}
     if(path.startsWith('/api/prelive/')){const id=decodeURIComponent(path.split('/').pop());const g=item(id);return g?json(makeForecast(g)):json({error:'Jogo não coletado'},404)}
     if(path==='/api/legend')return json({legend:[]});
@@ -2011,8 +2015,17 @@ async function loadList(view=state.view,{silent=false}={}){
   const endpoint=state.demo?'/api/demo/live':state.reference?'/api/reference/list':view==='history'?'/api/archive':(['today','favorites'].includes(view)?'/api/agenda?offset='+state.dayOffset:'/api/live');
   const d=await api(endpoint);
   state.list=d.matches||[];refreshVisibleListFromCache();observeGoalUpdates(state.list);state.dayResults.set(state.dayOffset,state.list.length);updateLeagues();state.error=null;updateAgendaButtons();
-  $('#last-refresh').textContent='Atualizado '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
-  setSource(state.demo?'Demonstração':state.reference?'Histórico verificado':d.archive?'Arquivo local · últimos 3 dias':d.stale?'Cache recente':'4 fontes · ESPN / Sofa / FotMob / SportsDB',!d.stale);
+  const collectedAt=Date.parse(String(d.updated_at||''));
+  const collectedOK=Number.isFinite(collectedAt)&&collectedAt>0;
+  const ageMin=collectedOK?Math.max(0,Math.floor((Date.now()-collectedAt)/60000)):null;
+  const clock=collectedOK?new Date(collectedAt).toLocaleTimeString('pt-BR',{
+    timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit'}):'—';
+  $('#last-refresh').textContent=collectedOK?
+    'Fonte verificada '+clock+' · '+ageMin+' min atrás':
+    'Horário da fonte não informado';
+  setSource(state.demo?'Demonstração':state.reference?'Histórico verificado':
+    d.stale?'⚠ Coleta GitHub atrasada':d.archive?'Arquivo GitHub · últimos 3 dias':
+    'Coleta GitHub · scouts conforme disponibilidade da fonte',!d.stale);
   if(!silent){
    if(d.archive)notice(state.dayOffset===-1&&state.view==='today'?'Ontem: partidas do arquivo local. O 🗺️ mostra curvas efetivamente preservadas; jogos sem pressão histórica ficam identificados.':'Histórico local: hoje e os três dias anteriores. Os jogos anteriores são preenchidos em segundo plano; os gráficos aparecem quando a fonte fornece dados.');
    else if(state.reference)notice('PARTIDA HISTÓRICA — exemplo acessível só pelo botão.');
