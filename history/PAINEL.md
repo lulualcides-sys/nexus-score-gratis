@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T21:50:38.016276+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T21:53:03.891233+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 33 | Chutes no alvo: 1.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 6.0×0.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
@@ -44,7 +44,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Persepolis × Sanat Naft Abadan | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 3-0 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 7.0×10.0, Escanteios: 3.0×6.0, Grandes chances: 1.0×0.0 |
-| 2026-10-09 | Delfín × Mushuc Runa | 3-2 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×2.0, Escanteios: 1.0×5.0, Grandes chances: 1.0×2.0 |
+| 2026-10-09 | Delfín × Mushuc Runa | 2-2 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×3.0, Escanteios: 1.0×5.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Shelbourne × Sligo Rovers | 5-1 | 88 | Chutes no alvo: 10.0×2.0, Chutes para fora: 9.0×6.0, Escanteios: 8.0×5.0, Grandes chances: 3.0×1.0 |
 | 2026-10-09 | Athlone Town × Treaty United | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Bray Wanderers × Wexford FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
