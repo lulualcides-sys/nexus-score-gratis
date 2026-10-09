@@ -112,7 +112,27 @@ jobs:
             else
               git commit -m "[CF-Pages-Skip] NEXUS: atualiza histórico privado"
             fi
-            git push
+            # Alterações de código podem ter sido enviadas durante a coleta.
+            # Rebase preserva commits remotos de código; em conflitos de
+            # snapshots history/data, prefere a coleta concluída neste job.
+            pushed=false
+            for attempt in 1 2 3 4; do
+              if git push origin HEAD:main; then
+                pushed=true
+                break
+              fi
+              git fetch origin main
+              git rebase -X theirs origin/main || {
+                git rebase --abort || true
+                echo "Falha ao reconciliar commits remotos na tentativa $attempt"
+                exit 1
+              }
+              sleep 1
+            done
+            if [[ "$pushed" != true ]]; then
+              echo "Quatro tentativas de push falharam"
+              exit 1
+            fi
           fi
       - name: Exibir falha de fonte quando ocorrer
         if: steps.collect.outcome == 'failure'
