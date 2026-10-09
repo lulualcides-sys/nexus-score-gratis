@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:15:32.275446+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:15:53.466186+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **36**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
