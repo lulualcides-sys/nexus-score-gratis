@@ -38,6 +38,12 @@ def schedule(league,team_id,season=None):
     query=urlencode({'limit':160,**({'season':season} if season is not None else {})})
     url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+league+'/teams/'+team_id+'/schedule?'+query
     packet=fetch(url,timeout=7)
+    if league=='bra.1' and team_id=='1936' and season is None:
+        samples=packet.get('events') or []
+        print('FORMATO_ESPN',json.dumps({'keys':list(packet.keys()),
+          'events_count':len(samples),
+          'first_event':samples[0] if samples else None},
+          ensure_ascii=False)[:2000],flush=True)
     result=[]
     for event in packet.get('events') or []:
         if not isinstance(event,dict):continue
@@ -93,7 +99,7 @@ def summarise(games,source):
 def cached_schedule(key,league,team_id,cache):
     entry=cache.get(key)
     stamp=(entry or {}).get('at')
-    if isinstance(entry,dict) and isinstance(entry.get('games'),list) and stamp:
+    if isinstance(entry,dict) and isinstance(entry.get('games'),list) and entry.get('games') and stamp:
         try:
             last=datetime.fromisoformat(str(stamp).replace('Z','+00:00'))
             if last.tzinfo and (NOW-last).total_seconds()<CACHE_TTL_HOURS*3600:
