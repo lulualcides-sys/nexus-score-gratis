@@ -1,0 +1,44 @@
+name: "NEXUS — arquivar xG Understat (pesquisa privada)"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "experiments/soccerdata/archive_understat.py"
+      - "experiments/soccerdata/test_archive_understat.py"
+      - ".github/workflows/nexus-understat-history.yml"
+permissions:
+  contents: write
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Garantir que validadores funcionem antes do scrape
+        run: |
+          PYTHONPATH=experiments/soccerdata python -m unittest discover -s experiments/soccerdata -p 'test_*.py' -v
+      - name: Instalar SoccerData somente no runner
+        run: python -m pip install --disable-pip-version-check "soccerdata==1.9.1"
+      - name: Capturar xG da temporada finalizada e salvar no historico privado
+        run: python experiments/soccerdata/archive_understat.py
+      - name: Publicar arquivo somente se validado
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add history/soccerdata_understat_2025_26.json history/soccerdata_xg_status.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "[CF-Pages-Skip] NEXUS: preservar xG historico Understat separado de dados live"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          exit 1
