@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T21:53:03.891233+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T22:12:10.431552+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Unión × Defensa y Justicia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 53 | Chutes no alvo: 4.0×0.0, Chutes para fora: 7.0×0.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Gimnasia LP × Atlético Tucumán | 0-0 | 54 | Chutes no alvo: 4.0×0.0, Chutes para fora: 7.0×0.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Ajman × Baniyas | 1-0 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
@@ -44,7 +44,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Persepolis × Sanat Naft Abadan | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 3-0 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 7.0×10.0, Escanteios: 3.0×6.0, Grandes chances: 1.0×0.0 |
-| 2026-10-09 | Delfín × Mushuc Runa | 2-2 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×3.0, Escanteios: 1.0×6.0, Grandes chances: 1.0×2.0 |
+| 2026-10-09 | Delfín × Mushuc Runa | 2-2 | 0 | Chutes no alvo: 5.0×5.0, Chutes para fora: 5.0×4.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×2.0 |
 | 2026-10-09 | Shelbourne × Sligo Rovers | 5-1 | 88 | Chutes no alvo: 10.0×2.0, Chutes para fora: 9.0×6.0, Escanteios: 8.0×5.0, Grandes chances: 3.0×1.0 |
 | 2026-10-09 | Athlone Town × Treaty United | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Bray Wanderers × Wexford FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,12 +168,13 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 174 | **Jogos monitorados:** 362 | **Ao vivo:** 4 | **Termômetros recentes:** 1.
+**Registros:** 175 | **Jogos monitorados:** 362 | **Ao vivo:** 4 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-09T22:12:23.132440+00:00 | Delfín × Mushuc Runa | Delfín (77') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Gimnasia LP × Atlético Tucumán | Gimnasia LP (54') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-09T22:10:22.598752+00:00 | Delfín × Mushuc Runa | Mushuc Runa (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-09T21:48:29.240624+00:00 | Montevideo City Torque × Danubio | Montevideo City Torque (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -273,7 +274,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T19:23:44.372988+00:00 | Stade Nyonnais × Aarau | Aarau (50') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T19:23:44.372988+00:00 | SK Beveren × Lommel | SK Beveren (37') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-09T19:23:44.372988+00:00 | SK Beveren × Lommel | Lommel (37') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T19:23:44.372988+00:00 | SK Beveren × Lommel | Lommel (37') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
