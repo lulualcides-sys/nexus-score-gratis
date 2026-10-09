@@ -13,15 +13,25 @@ const sample={home:'Al Kholood',away:'Al Qadsiah',phase:'live',live:true,
   odds:{markets:{'1x2':{}}},scout_pressure:{available:true,last_graph_minute:10,windows:{}},
   indicator_board:[]};
 const live=PressureLab.render(sample,'all').replaceAll('&#39;',"'");
-assert.match(live,/HISTÓRIA DA PRESSÃO · 0–45'/);
+assert.match(live,/HISTÓRIA DA PRESSÃO · 0–90'/);
 assert.match(live,/4\/44 minutos jogados com pressão/);
-assert.match(live,/44' jogados/);
+assert.match(live,/44' de jogo · termômetro completo 0–90'/);
 assert.match(live,/2 gols sem detalhes/);
 assert.match(live,/Última medição de pressão no minuto 10'/);
 assert.doesNotMatch(live,/90 minutos completos/);
 const half=PressureLab.chart(sample,'all');
-assert.match(half,/45 POSIÇÕES/);
-assert.doesNotMatch(half,/90 POSIÇÕES/);
+assert.match(half,/90 POSIÇÕES/);
+assert.doesNotMatch(half,/45 POSIÇÕES/);
+const mobileWindow={innerWidth:390};
+const phoneLab=new Function('window',html.slice(a,b+5)+'\nreturn window.PressureLab;')(mobileWindow);
+const phone=phoneLab.chart(sample,'all');
+assert.match(phone,/viewBox="0 0 520 302"/);
+assert.match(phone,/90 POSIÇÕES/);
+assert.match(phone,/0–90'/);
+const css=fs.readFileSync(new URL('../web/nexus-web-polish.css',import.meta.url),'utf8');
+assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph-scroll\{\s*overflow:hidden!important/);
+assert.match(css,/#section-thermometer\.scout-main \.compact-timeline \.scout-graph\{\s*width:100%!important/);
+assert.doesNotMatch(css,/DESLIZE PARA VER TODOS OS MINUTOS/);
 const second=PressureLab.chart({...sample,minute:66,phase:'live'},'all');
 assert.match(second,/90 POSIÇÕES/);
 const ended=PressureLab.render({...sample,phase:'finished',live:false,minute:0},'all').replaceAll('&#39;',"'");
@@ -30,4 +40,4 @@ const complete=PressureLab.render({...sample,goal_scorers:[
    {team:'away',player:'A',minute:4},{team:'away',player:'B',minute:15},
    {team:'away',player:'C',minute:31}]},'all');
 assert.doesNotMatch(complete,/gols sem detalhes/);
-console.log('NEXUS: ao vivo 44min, gráfico 0-45, cobertura real e placar auditável OK');
+console.log('NEXUS: gráfico completo 0-90 no celular, sem rolagem, cobertura real e placar auditável OK');
