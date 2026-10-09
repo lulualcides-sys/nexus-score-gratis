@@ -10,6 +10,7 @@ import json
 import math
 import re
 from signal_evaluation import evaluate
+from odds_fixture_bridge import bridge_pregame_prices
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -334,15 +335,14 @@ def public_row(row,day,team_cache=None,espn_cache=None):
                          'source':safe(item.get('source'),24),
                          'bookmaker':safe(item.get('bookmaker'),35),
                          'at':safe(item.get('captured_at'),36)})
-    # Cada trio 1/X/2 deve ser da MESMA casa e fonte, nunca misturado.
+    # O trio 1/X/2 deve vir da MESMA captura, casa e fonte: o favorito
+    # não pode ser atualizado isoladamente com empate antigo como se
+    # fossem odds simultâneas. Mostrar a última captura COMPLETA.
     quote_groups={}
     for offer in odds:
-        tag=(offer.get('source') or '',offer.get('bookmaker') or '')
+        tag=(offer.get('source') or '',offer.get('bookmaker') or '',offer.get('at') or '')
         group=quote_groups.setdefault(tag,{})
-        side=offer['sel']
-        previous=group.get(side)
-        if previous is None or (offer.get('at') or '') >= (previous.get('at') or ''):
-            group[side]=offer
+        group[offer['sel']]=offer
     ranked=sorted(quote_groups.values(),
       key=lambda group:(len(group)==3,max((q.get('at') or '') for q in group.values())),
       reverse=True)
@@ -553,6 +553,7 @@ def main():
             item=public_row(row,local_day,fotmob_cache,espn_cache)
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
+    odds_bridge=bridge_pregame_prices(rows)
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
     rows=rows[:1800]  # cobertura de todos os campeonatos na janela de 3 dias
     last=load(H/'status.json')
@@ -574,6 +575,7 @@ def main():
              'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
+             'odds_bridge':odds_bridge,
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
              'alerts':alerts_from(rows),'games':rows}
