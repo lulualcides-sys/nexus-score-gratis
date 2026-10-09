@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:12:29.500056+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T16:14:15.614612+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **34**.
 
@@ -68,8 +68,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **34**.
 | 2026-10-09 | Suwon FC × Hwaseong FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Cheongju FC × Seongnam FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Gimpo FC × Seoul E-Land FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | KäPa × MP | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Klubi 04 × EIF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | KäPa × MP | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Klubi 04 × EIF | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Haka × PK-35 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | JäPS × JIPPO | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Shenzhen Peng City × Henan FC | 2-2 | 0 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×2.0 |
@@ -77,7 +77,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **34**.
 | 2026-10-09 | Qingdao Hainiu × Beijing Guoan | 0-3 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 7.0×2.0, Escanteios: 2.0×4.0, Grandes chances: 2.0×5.0 |
 | 2026-10-09 | Buxoro × Andijon | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kokand 1912 × Mashal Muborak | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Nasaf Qarshi × Dinamo Samarkand | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Nasaf Qarshi × Dinamo Samarkand | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Pakhtakor Tashkent × Bunyodkor Tashkent | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Yangpyeong × Ulsan Citizen | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Arsenal Dzerzhinsk × Dynamo Brest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -91,7 +91,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **34**.
 | 2026-10-09 | Greece (W) × England (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Croatia (W) × Iceland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Kazakhstan (W) × Ireland (W) | 0-8 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Kosovo (W) × Austria (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Kosovo (W) × Austria (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Hungary (W) × Netherlands (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Belarus (W) × Italy (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Albania (W) × Wales (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
