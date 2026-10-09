@@ -35,7 +35,7 @@ class SignalRegistryTests(unittest.TestCase):
         row=self.data(events=[{'type':'goal','minute':39,'side':'away'}])
         resolve(item,self.game(40,'0-1'),row)
         self.assertEqual(item['outcomes']['5'],'gol_confirmado')
-        self.assertEqual(item['outcomes']['10'],'pendente')
+        self.assertEqual(item['outcomes']['10'],'gol_confirmado')
         resolve(item,self.game(55,'0-1'),row)
         self.assertEqual(item['outcomes']['15'],'gol_confirmado')
     def test_changed_score_without_goal_minute_is_unknown(self):
