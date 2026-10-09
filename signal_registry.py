@@ -55,99 +55,97 @@ def pressure_window(points,end,n):
             'level':level,'team':side,'difference':round(difference,1),
             'home_force':round(home,1),'away_force':round(away,1)}
 
-def stat_indicators(row):
-    """Indicadores de scouts cumulativos conforme buildBoard do NEXUS 5.29.
-
-    O minuto do alerta sera o da observacao, nunca o minuto alegado do lance.
-    Sem estatistica observada nao criamos zero ou marcador.
-    """
-    stats=row.get('stats') or {}
-    found=[]
-    for icon,rule,field,threshold in (
-        ('🎯','chutes_no_alvo_5','shots_on',5),
-        ('🚩','escanteios_6','corners',6),
-        ('💣','grandes_chances_3','big_chances',3),
-        ('⚔️','ataques_perigosos_25','dangerous_attacks',25)):
-        observed=[]
-        for side in ('home','away'):
-            value=(stats.get(side) or {}).get(field)
-            try:
-                if value is None or value=='':continue
-                n=float(value)
-            except (ValueError,TypeError):continue
-            if math.isfinite(n) and n>=0:observed.append((n,side))
-        if observed:
-            # O quadro original destaca a equipe que tem o maior total.
-            value,side=max(observed,key=lambda t:t[0])
-            if value>=threshold:
-                found.append((icon,rule,side,field,value,threshold))
-    return found
+ICON_RULES={
+    '🧨':'pressao_total_5_10min',
+    '🔥':'pressao_forte_10min',
+    '🎯':'chutes_no_alvo_5',
+    '🚩':'escanteios_6',
+    '⚡':'pressao_ofensiva_18',
+    '💣':'grandes_chances_3',
+    '⚔️':'ataques_perigosos_25',
+    '🟥':'expulsao_confirmada',
+    '⏱️':'tensao_tardia_70',
+    '🥶':'jogo_frio',
+    '🚨':'alerta_cruzado_gol',
+}
+GRAPH_ICONS={'🧨','🔥','⚡','⏱️','🥶','🚨'}
+PRIORITY=['🔥','🧨','⚡','⏱️','🥶','🚨','🎯','🚩','💣','⚔️','🟥']
+STAT_FIELDS={'🎯':('shots_on',5),'🚩':('corners',6),
+             '💣':('big_chances',3),'⚔️':('dangerous_attacks',25)}
 
 def active_signals(fixture,row,observed_at):
+    """O motor é o port das 12 regras do NEXUS Original 5.29, não filtros inventados.
+
+    Os scouts acumulados descrevem o ESTADO na captura, nunca o instante
+    real de um chute. Grafico atrasado não produz alerta temporal.
+    """
+    from nexus_original_529_rules import board as original_board
     if fixture.get('phase')!='live':return []
-    try: minute=int(fixture.get('minute'))
+    try:minute=int(fixture.get('minute'))
     except (TypeError,ValueError):return []
-    if not 10<=minute<=120:return []
+    if not 1<=minute<=120:return []
     fid=str(fixture.get('id') or '')
     if not fid or not fixture.get('home') or not fixture.get('away'):return []
     points=samples(row)
-    ten=pressure_window(points,minute,10) if points else {'valid':False}
-    five=pressure_window(points,minute,5) if points else {'valid':False}
+    snap=[{'minute':m,'value':v} for m,v in points.items()]
     stats=row.get('stats') or {}
+    incidents=[]
+    for e in row.get('events') or []:
+        if not isinstance(e,dict) or e.get('type')!='red_card':continue
+        side=e.get('side')
+        if side in ('home','away'):
+            incidents.append({'emoji':'🟥','team':side.upper(),'minute':e.get('minute')})
+    original=original_board(snap,minute,stats,incidents)
     pressure_fresh=bool(points) and max(points)>=minute-1
-    actions=[]
-    # Indicadores existentes no painel: apenas leitura do acumulado atual.
-    for icon,rule,side,field,value,threshold in stat_indicators(row):
-        actions.append({'icon':icon,'rule':rule,'team':side,
-            'basis':'cumulative_stat_snapshot','field':field,
-            'observed_value':value,'threshold':threshold})
-    # Sinais temporais exigem 80% de amostras observadas E minuto atual.
-    if pressure_fresh and ten['valid'] and five['valid'] and ten['team']:
-        side=ten['team']
+    valid=[]
+    for x in original['active']:
+        icon=x['emoji']
+        if icon not in ICON_RULES:continue
+        if icon in GRAPH_ICONS and not pressure_fresh:continue
+        valid.append(x)
+    valid.sort(key=lambda x:PRIORITY.index(x['emoji']) if x['emoji'] in PRIORITY else 99)
+    result=[]
+    for x in valid:
+        icon=x['emoji'];team=x.get('team')
+        # O NEXUS original nao aponta uma equipe ao red_card sem evidência.
+        if icon=='🟥' and team not in ('HOME','AWAY'):
+            matched={i.get('team') for i in incidents if i.get('team') in ('HOME','AWAY')}
+            team=next(iter(matched)) if len(matched)==1 else None
+        side=team.lower() if team in ('HOME','AWAY') else 'unknown'
         own=stats.get(side) or {}
-        def stat(k):
+        def stat(key):
             try:
-                n=own.get(k)
-                if n is None or n=='':return None
-                val=float(n)
-                return val if math.isfinite(val) and val>=0 else None
-            except (TypeError,ValueError):return None
-        shots=stat('shots_on')
-        chances=stat('big_chances')
-        strong=ten['level'] in ('FORTE','CRITICO')
-        if strong:
-            actions.append({'icon':'🔥','rule':'pressao_forte_10min','team':side,'basis':'pressure_window'})
-        if strong and five['score']>=65:
-            actions.append({'icon':'🧨','rule':'pressao_total_5_10min','team':side,'basis':'pressure_window'})
-        if strong and ten['score']>=70 and five['score']>=65 and shots is not None and shots>=3 and chances is not None and chances>=1:
-            actions.append({'icon':'🚨','rule':'alerta_cruzado_gol','team':side,'basis':'pressure_window'})
-    results=[]
-    for action in actions:
-        side=action['team']
-        own=stats.get(side) or {}
-        value=action.get('observed_value')
-        def safe_stat(key):
-            try:
-                v=own.get(key)
-                return round(float(v),2) if v is not None and math.isfinite(float(v)) else None
+                raw=own.get(key)
+                value=float(raw) if raw is not None else None
+                return round(value,2) if value is not None and math.isfinite(value) else None
             except (ValueError,TypeError):return None
+        basis=('pressure_window' if icon in GRAPH_ICONS else
+               'confirmed_event' if icon=='🟥' else 'cumulative_stat_snapshot')
         item={'match_id':fid,'home':str(fixture['home'])[:95],
-            'away':str(fixture['away'])[:95],'league':str(fixture.get('league') or '')[:95],
-            'minute':minute,'team':side,'icon':action['icon'],'rule':action['rule'],
-            'basis':action['basis'],'market':'observacao_de_gol','captured_at':observed_at,
-            'score_at_alert':str(fixture.get('score') or '')[:15],
-            'pressure10':ten,'pressure5':five,'shots_on':safe_stat('shots_on'),
-            'big_chances':safe_stat('big_chances'),
-            'source':str(fixture.get('source') or '')[:45],
-            'odds':None,'ev_pct':None,'ev_status':'indisponivel_sem_preco_e_modelo_calibrado',
-            'outcomes':{str(n):'pendente' for n in WINDOWS},
-            'note':'Sinal observado, não previsão calibrada ou EV+ confirmado.'}
-        if action['basis']=='cumulative_stat_snapshot':
-            item['cumulative_stat']={'field':action['field'],'value':round(value,2),
-                'threshold':action['threshold']}
-            item['note']='Estatística acumulada vista neste minuto, não minuto real do lance; sem EV+ calculado.'
-        results.append(item)
-    return results
+              'away':str(fixture['away'])[:95],
+              'league':str(fixture.get('league') or '')[:95],
+              'minute':minute,'team':side,'icon':icon,'rule':ICON_RULES[icon],
+              'basis':basis,'market':'observacao_de_gol',
+              'captured_at':observed_at,
+              'score_at_alert':str(fixture.get('score') or '')[:15],
+              'pressure10':original['pressure10'],'pressure5':original['pressure5'],
+              'shots_on':stat('shots_on'),'big_chances':stat('big_chances'),
+              'source':str(fixture.get('source') or '')[:45],
+              'original_engine':'NEXUS SCORE Original 5.29',
+              'odds':None,'ev_pct':None,
+              'ev_status':'indisponivel_sem_preco_e_modelo_calibrado',
+              'outcomes':{str(n):'pendente' for n in WINDOWS},
+              'note':str(x.get('reason') or '')[:200]}
+        if basis=='cumulative_stat_snapshot':
+            field,threshold=STAT_FIELDS[icon]
+            value=stat(field)
+            item['cumulative_stat']={'field':field,'value':value,
+                                     'threshold':threshold}
+            item['note']='Estatística acumulada na captura; não marca o minuto real do evento. '+item['note']
+        if basis=='confirmed_event':
+            item['note']='Expulsão confirmada pela fonte, não é previsão de gol.'
+        result.append(item)
+    return result
 
 def goal_events(row,start,end):
     unique=set()
