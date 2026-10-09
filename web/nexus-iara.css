@@ -1,0 +1,38 @@
+/* NEXUS SCORE 5.29: IARA, narradora analítica da partida (sem API paga) */
+.iara-card{border:1px solid #b9d8d5;border-radius:15px;background:#f5faf8;
+  overflow:hidden;margin:14px 0 18px;color:#213d49;box-shadow:0 6px 20px #1b4c5a10}
+.iara-header{display:flex;align-items:center;justify-content:space-between;gap:11px;
+  padding:14px 16px;background:linear-gradient(105deg,#103644,#1f5360);
+  color:#e7fafa}
+.iara-header h3{font-size:17px;font-weight:850;letter-spacing:.15px;line-height:1.24;margin:3px 0 5px;color:#fff}
+.iara-header small{color:#add6da;font-size:10px;line-height:1.6;display:block}
+.iara-bot{font-size:11px;font-weight:850;letter-spacing:1.2px;color:#65e4d1}
+.iara-live-tag{font-size:9px;letter-spacing:.2px;white-space:nowrap;color:#bdede0;
+  border:1px solid #588c8d;border-radius:30px;padding:6px 9px;background:#234a51}
+.iara-body{padding:16px 17px 15px}
+.iara-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.iara-pill{font-size:10px;font-weight:750;letter-spacing:.45px;color:#21566a;
+  border:1px solid #a5c8c6;background:#e5f5f0;border-radius:25px;padding:7px 9px}
+.iara-comment{font-size:15px;line-height:1.7;color:#243f4f;margin:0 0 14px;font-weight:530}
+.iara-goal{border-radius:10px;border-left:4px solid #ce9b44;
+  padding:12px 13px;background:#fffaf0;margin-bottom:14px}
+.iara-goal strong{font-size:12px;color:#7a5824;display:block;margin-bottom:4px;letter-spacing:.12px}
+.iara-goal p{font-size:13px;color:#534f45;line-height:1.6;margin:0}
+.iara-evidence{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 11px}
+.iara-evidence span{background:white;border:1px solid #c9d8d7;border-radius:7px;
+  color:#486672;font-size:10px;padding:7px 9px}
+.iara-footnote{font-size:10px;line-height:1.5;color:#6e8a8e;margin:12px 0 0;
+  border-top:1px solid #cbdedc;padding-top:10px}
+@media(max-width:760px){
+ .iara-card{margin:10px 0 14px;border-radius:12px}
+ .iara-header{padding:12px 13px}
+ .iara-header h3{font-size:15px}
+ .iara-header small{font-size:9px}
+ .iara-live-tag{font-size:8px;padding:6px;max-width:103px;white-space:normal;text-align:center}
+ .iara-body{padding:12px 13px}
+ .iara-comment{font-size:13px;line-height:1.65}
+ .iara-goal{padding:10px 11px}
+ .iara-goal p{font-size:12px}
+ .iara-evidence span{font-size:9px;padding:6px 7px}
+ .iara-pill{font-size:9px;padding:6px 8px}
+}
