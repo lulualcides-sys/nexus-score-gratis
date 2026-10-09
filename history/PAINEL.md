@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:47:42.165235+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-09T14:48:20.817560+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **22**.
 | 2026-10-09 | Al-Wahda × Al-Dhafra | 1-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Sharjah Cultural Club × Al-Jazira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Chadormalu Ardakan SC × Kheybar Khorramabad | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Persepolis × Sanat Naft Abadan | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-09 | Persepolis × Sanat Naft Abadan | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Libertad × Leones del Norte | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Delfín × Mushuc Runa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Shelbourne × Sligo Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
