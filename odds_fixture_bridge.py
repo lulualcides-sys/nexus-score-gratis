@@ -45,6 +45,7 @@ def verified_trio(game):
     selections={}
     source=None
     house=None
+    captured=None
     for q in quotes:
         if not isinstance(q,dict):return None
         side=q.get('sel')
@@ -57,6 +58,8 @@ def verified_trio(game):
         if source is None:source=q.get('source')
         if house is None:house=q.get('bookmaker')
         if source!=q.get('source') or house!=q.get('bookmaker'):return None
+        if captured is None:captured=qt
+        if captured!=qt:return None  # snapshots diferentes não são um trio
         selections[side]=q
     return [selections[side] for side in ('home','draw','away')] if len(selections)==3 else None
 
