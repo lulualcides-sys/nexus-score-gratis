@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   const $ = sel => document.querySelector(sel);
-  const state = { payload:null, games:[], search:"", phase:"all", market:"all", isPrivate:false };
+  const state = { payload:null, games:[], search:"", phase:"all", market:"all", day:"all", isPrivate:false };
   const ESC = {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'};
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c=>ESC[c]);
   const date = value => {
@@ -38,17 +38,20 @@
        (state.market==='corners' && some(game,'corners')) ||
        (state.market==='pressure' && pressure(game).length>0) ||
        (state.market==='odds' && hasOdds(game)) ||
-       (state.market==='ev' && state.isPrivate && Array.isArray(game.signals) && game.signals.length>0);
+       (state.market==='ev' && Array.isArray(game.signals) && game.signals.length>0) ||
+       (state.market==='events' && Array.isArray(game.events) && game.events.length>0);
   function card(g,index) {
     const tags=[
       pressure(g).length ? '<span class="tag good">▥ Pressão '+pressure(g).length+' min</span>' : '<span class="tag">Sem termômetro</span>',
       some(g,'shots_on')?'<span class="tag good">● Chutes</span>':'',
       some(g,'corners')?'<span class="tag good">⌁ Escanteios</span>':'',
       hasOdds(g)?'<span class="tag good">1X2 Odds</span>':'',
-      state.isPrivate && g.signals?.length?'<span class="tag good">EV experimental '+g.signals.length+'</span>':''
+      g.signals?.length?'<span class="tag good">EV experimental '+g.signals.length+'</span>':'',
+      g.events?.length?'<span class="tag">◉ Eventos '+g.events.length+'</span>':'',
+      g.outcomes?.correct_score?'<span class="tag">FT '+esc(g.outcomes.correct_score)+'</span>':''
     ].filter(Boolean).join('');
     return '<article class="match-card"><div class="match-top"><span class="league">'+esc(g.league||g.source||'Campeonato')+'</span>'+
-      '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+'</span></div>'+
+      '<span class="'+(g.phase==='live'?'live-tag':'phase-tag')+'">'+phaseLabel(g)+' · '+esc(g.day?.split('-').reverse().slice(0,2).join('/')||'')+'</span></div>'+
       '<div class="teams"><div class="team">'+esc(g.home)+'</div><div class="score">'+esc(g.score||'—')+'</div><div class="team away">'+esc(g.away)+'</div></div>'+
       '<div class="match-bottom"><div class="market-tags">'+tags+'</div><button class="details" data-id="'+index+'">Ver dados →</button></div></article>';
   }
@@ -57,6 +60,7 @@
     const query=state.search.trim().toLocaleLowerCase('pt-BR');
     const matches=all.map((game,index)=>({game,index})).filter(({game})=>
       (state.phase==='all' || state.phase===game.phase) &&
+      (state.day==='all' || game.day===state.day) &&
       filterMarket(game) && (!query || (game.home+' '+game.away+' '+game.league).toLocaleLowerCase('pt-BR').includes(query)));
     $('#shown-count').textContent=matches.length+' partidas';
     $('#games').innerHTML=matches.length?matches.map(({game,index})=>card(game,index)).join(''):'<div class="empty">Nenhum jogo encontrado com esses filtros. Tente outra combinação.</div>';
@@ -73,29 +77,96 @@
     return '<div class="pressure-graph" role="img" aria-label="Histórico registrado de pressão em '+pts.length+' minutos">'+ticks+'</div><div class="chart-foot"><span>Verde: casa ↑</span><span>'+esc(pts.length)+' pontos registrados</span><span>Roxo: fora ↓</span></div>';
   };
   const scouts=(g)=>{
-    const names=[['shots_on','Chutes no alvo'],['shots_off','Chutes para fora'],['big_chances','Grandes chances'],['corners','Escanteios'],['dangerous_attacks','Ataques perigosos']];
+    const names=[['shots_on','Chutes no alvo'],['shots_off','Chutes para fora'],['shots_total','Chutes totais'],
+      ['big_chances','Grandes chances'],['corners','Escanteios'],['dangerous_attacks','Ataques perigosos'],
+      ['possession','Posse de bola (%)'],['xg','xG'],['yellow_cards','Cartões amarelos'],
+      ['red_cards','Cartões vermelhos'],['fouls','Faltas'],['offsides','Impedimentos'],
+      ['saves','Defesas'],['passes','Passes'],['pass_accuracy','Precisão de passe (%)']];
     const result=names.filter(([k])=>some(g,k)).map(([k,n])=>
       '<div class="scout"><strong>'+esc(g.stats?.home?.[k]??'—')+'</strong><span>'+n+'</span><strong>'+esc(g.stats?.away?.[k]??'—')+'</strong></div>');
     return result.length?'<div class="scout-table">'+result.join('')+'</div>':'<p class="small-note">Scouts não fornecidos nesta coleta.</p>';
   };
+  const eventIcon={goal:'⚽',red_card:'🟥',yellow_card:'🟨',penalty_missed:'❌🥅',
+    shot_on:'●',shot_off:'⊗'};
+  const eventName={goal:'Gol',red_card:'Vermelho',yellow_card:'Amarelo',
+    penalty_missed:'Pênalti perdido',shot_on:'Chute no gol',shot_off:'Chute fora'};
+  const eventHTML=g=>{
+    const events=Array.isArray(g.events)?g.events:[];
+    if(!events.length)return '<p class="small-note">Sem eventos individuais confirmados para este jogo. Não preenchemos eventos imaginários.</p>';
+    return '<div class="event-line">'+events.map(e=>
+      '<div class="event-chip"><span class="event-icon '+(e.type==='shot_on'?'shot-on':e.type==='shot_off'?'shot-off':'')+'">'+
+      (eventIcon[e.type]||'◉')+'</span><b>'+esc(e.m)+'′</b><span>'+
+      esc(eventName[e.type]||e.type)+(e.side==='home'?' · Casa':e.side==='away'?' · Fora':'')+
+      '</span><small>'+esc(e.text||'')+'</small></div>').join('')+'</div>';
+  };
+  const resultHTML=g=>{
+    const o=g.outcomes||{};
+    if(!o.correct_score)return '<p class="small-note">Mercados ainda sem liquidação: jogo não encerrado ou placar final não confirmado.</p>';
+    const labels=[['over_15','Over 1.5 FT'],['over_25','Over 2.5 FT'],
+      ['over_35','Over 3.5 FT'],['btts','Ambas marcam (BTTS)']];
+    const indicators=labels.map(([k,name])=>'<span class="outcome '+(o[k]?'hit':'miss')+'">'+
+      esc(name)+' · '+(o[k]?'SIM':'NÃO')+'</span>').join('');
+    const result={home:'Casa',draw:'Empate',away:'Fora'};
+    return '<div class="outcomes">'+indicators+
+      '<span class="outcome">Match Odds: '+esc(result[o.result]||'—')+'</span>'+
+      '<span class="outcome">Placar final: '+esc(o.correct_score)+'</span></div>'+
+      '<p class="small-note">Resultado observado do mercado, não lucro de aposta. Para P/L, é necessária odd e entrada anterior ao jogo.</p>';
+  };
+  function drawAlerts(payload){
+    const items=Array.isArray(payload.alerts)?payload.alerts:[];
+    const box=$('#alert-feed');if(!box)return;
+    $('#alert-count').textContent=items.length+' alertas';
+    box.innerHTML=items.length?items.map((a,i)=>
+      '<button type="button" class="alert-item" data-alert="'+i+'">'+
+      '<b>'+esc(a.title)+'</b><small>'+esc(a.detail)+'</small>'+
+      '<span>'+date(a.observed_at)+' · '+(a.kind==='ev_experimental'?'EV EXPERIMENTAL':'MONITORAMENTO ESTATÍSTICO')+
+      '</span></button>').join(''):
+      '<p class="small-note">Nenhum alerta validado por enquanto. Sem probabilidade calibrada não existe EV+ demonstrado. Alertas de scouts não são recomendações de entrada.</p>';
+    box.querySelectorAll('[data-alert]').forEach(el=>el.addEventListener('click',()=>{
+      const alert=items[Number(el.dataset.alert)];
+      const match=state.games.find(g=>g.id===alert.match_id&&g.day===alert.day);
+      if(match)openMatch(match);
+    }));
+  }
+  function drawPaper(payload){
+    const summary=payload.paper||{};
+    const total=Number(summary.settled)||0;
+    const box=$('#paper-pnl');if(!box)return;
+    const pl=summary.paper_pl_u;
+    const val=total && pl!=null && Number.isFinite(Number(pl))?
+      (Number(pl)>=0?'+':'')+Number(pl).toFixed(2)+'u':'—';
+    box.textContent=val;
+    box.className='paper-value '+(total?(Number(pl)>=0?'pl-positive':'pl-negative'):'');
+    $('#paper-settled').textContent=String(total);
+    $('#paper-pending').textContent=String(summary.pending||0);
+    const markets=Array.isArray(summary.markets)?summary.markets:[];
+    $('#paper-market-lines').innerHTML=markets.length?markets.map(m=>
+       '<div class="paper-market"><strong>'+esc(m.market==='1x2'?'Match Odds 1X2':m.market)+'</strong>'+
+       '<span>'+esc(m.entries)+' operações · '+esc(m.wins)+' acertos</span><b>'+
+       (Number(m.paper_pl_u)>=0?'+':'')+esc(Number(m.paper_pl_u).toFixed(2))+'u</b></div>').join(''):
+       '<p class="small-note">Ainda não existem entradas experimentais liquidadas com odds pré-jogo verificadas. Sem lucro ou prejuízo mensurável.</p>';
+  }
   function openMatch(g) {
     if(!g)return;
     const oddLabels={home:'CASA',draw:'EMPATE',away:'FORA'};
     const odds=(g.odds||[]).map(v=>'<div class="odd-pill">'+esc(oddLabels[v.sel]||v.sel)+'<b>'+esc(v.odd)+'</b><small>'+esc(v.source||'Fonte')+' · '+date(v.at)+'</small></div>').join('');
-    const signals = state.isPrivate ? (g.signals||[]).filter(s=>Number.isFinite(Number(s.ev_pct)) && Number.isFinite(Number(s.odds))) : [];
+    const signals = (g.signals||[]).filter(s=>Number.isFinite(Number(s.ev_pct)) && Number.isFinite(Number(s.odds)));
     const signalRows = signals.map(s => '<div class="scout"><strong>'+esc(oddLabels[s.selection]||s.selection||'—')+'</strong><span>'+
       'EV estimado '+esc(s.ev_pct)+'% · p='+esc(s.probability)+'% · odd '+esc(s.odds)+'<br>'+
       esc(s.model||'Modelo experimental')+' · n='+esc(s.sample_size??'?')+' · '+esc(s.status||'pendente')+
-      '</span><strong>'+((s.status==='settled')?(s.won?'ACERTOU':'ERROU'):'PENDENTE')+'</strong></div>').join('');
+      '</span><strong>'+((s.status==='settled')?((Number(s.paper_pl_u)>=0?'+':'')+esc(s.paper_pl_u)+'u'):'PENDENTE')+'</strong></div>').join('');
     $('#detail-content').innerHTML='<div class="detail-league">'+esc(g.league||'')+' · '+esc(g.source||'')+'</div>'+
      '<div class="detail-score">'+escTitle(g)+' &nbsp; '+esc(g.score||'—')+'</div>'+
-     '<p class="small-note">'+phaseLabel(g)+' · Última observação: '+date(g.observed_at)+' · '+esc(g.day||'')+'</p>'+
+     '<p class="small-note">'+phaseLabel(g)+' · Data: '+esc(g.day||'')+' · Última observação: '+date(g.observed_at)+
+     (g.round?' · Rodada '+esc(g.round):'')+(g.venue?' · '+esc(g.venue):'')+'</p>'+
      '<h3 class="detail-title">▥ Termômetro · pressão registrada</h3>'+pressureHTML(pressure(g))+
      '<h3 class="detail-title">◉ Estatísticas confirmadas</h3>'+scouts(g)+
+     '<h3 class="detail-title">⚽ Eventos reais da partida</h3>'+eventHTML(g)+
+     '<h3 class="detail-title">Mercados · resultado esportivo</h3>'+resultHTML(g)+
      '<h3 class="detail-title">◇ Odds 1X2 verificadas</h3>'+
      (odds?'<div class="odds-list">'+odds+'</div>':'<p class="small-note">Nenhuma cotação 1X2 disponível para esta partida.</p>')+
-     '<h3 class="detail-title">EV+ · modelo experimental (área privada)</h3>'+
-     (state.isPrivate ? (signalRows?'<div class="scout-table">'+signalRows+'</div>':'<p class="small-note">Nenhum sinal EV+ calculado com probabilidade historica e odd verificadas neste jogo.</p>'):'<p class="small-note">Resultados EV+ privados não são divulgados no site público.</p>')+
+     '<h3 class="detail-title">EV+ · modelo experimental público</h3>'+
+     (signalRows?'<div class="scout-table">'+signalRows+'</div>':'<p class="small-note">EV+ indisponível: sem probabilidade validada e odds pré-jogo verificadas. Nenhuma aposta fictícia foi registrada.</p>')+
      '<h3 class="detail-title">Mercados possíveis de acompanhar</h3><p class="small-note">Over/Under, BTTS, Match Odds e Lay Correct Score requerem odds reais e critérios específicos. EV calculado não é lucro realizado, e um sinal experimental não valida lucratividade.</p>';
     $('#detail').showModal();
   }
@@ -121,6 +192,11 @@
       if(!obj || !Array.isArray(obj.games))throw Error('Formato inválido do arquivo.');
       state.payload=obj;
       state.games=obj.games.filter(x=>x&&typeof x.home==='string'&&typeof x.away==='string');
+      const days=[...new Set(state.games.map(g=>g.day).filter(Boolean))].sort().reverse();
+      const picker=$('#day');const before=picker.value;
+      picker.replaceChildren(new Option('Todos os dias','all'),...days.map(d=>new Option(d.split('-').reverse().join('/'),d)));
+      picker.value=days.includes(before)?before:'all';state.day=picker.value;
+      drawAlerts(obj);drawPaper(obj);
       $('#last-updated').textContent=date(obj.exported_at);
       $('#last-source').textContent='Fonte: '+((obj.collector?.sources||[]).join(', ') || 'não confirmada');
       $('#metric-games').textContent=state.games.length;
@@ -144,6 +220,7 @@
   }
   $('#search').addEventListener('input',ev=>{state.search=ev.target.value;render()});
   $('#phase').addEventListener('change',ev=>{state.phase=ev.target.value;render()});
+  $('#day').addEventListener('change',ev=>{state.day=ev.target.value;render()});
   $('#market').addEventListener('change',ev=>{state.market=ev.target.value;render()});
   $('#refresh').addEventListener('click',load);
   $('#close-dialog').addEventListener('click',()=>$('#detail').close());
