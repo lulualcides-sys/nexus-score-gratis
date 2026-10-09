@@ -432,6 +432,21 @@ def alerts_from(rows):
                                'observed_at':g['observed_at']})
     return alerts[:35]
 
+def historical_xg_summary(status):
+    """Metadados seguros, sem divulgar o historico jogo a jogo no site."""
+    if not isinstance(status,dict):status={}
+    n=status.get('games_with_home_away_xg')
+    valid=(status.get('ready_for_research') is True and
+           status.get('integrated_into_live_ev') is False and
+           status.get('source')=='soccerdata Understat' and
+           status.get('season')=='2025/2026' and
+           isinstance(n,int) and not isinstance(n,bool) and 0<n<=380)
+    return {'available':valid,'source':'soccerdata Understat' if valid else None,
+            'matches_verified':n if valid else 0,
+            'league':'Premier League' if valid else None,
+            'season':'2025/2026' if valid else None,
+            'scope':'historico_final','live_xg':False,'ev_plus':False}
+
 def main():
     today=datetime.now(BR).date()
     days={(today-timedelta(days=i)).isoformat() for i in range(3)}
@@ -459,6 +474,7 @@ def main():
     backfill=load(H/'backfill_status.json')
     team_form=load(H/'team_form_status.json')
     external=load(H/'multi_source_status.json')
+    historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
     registry=load(H/'signal_registry.json')
@@ -469,6 +485,7 @@ def main():
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
+             'historical_xg':historical_xg,
              'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',

@@ -390,7 +390,8 @@ function cloudCollector(doc){
       settled_paper:settled,paper_profit_loss_brl:settled?Number(paper.paper_pl_u||0)*100:null,
       markets:selected,
       note:'Sem operações pessoais publicadas. EV+ só com preço pré-entrada e calibração; paper não é lucro recebido.'},
-   platform_snapshot:null,signal_journal:doc.signal_journal||{items:[],diagnostics:{}}};
+   platform_snapshot:null,signal_journal:doc.signal_journal||{items:[],diagnostics:{}},
+   historical_xg:doc.historical_xg||{available:false,matches_verified:0,live_xg:false,ev_plus:false}};
 }
 window.fetch=async function(request,options){
  const str=typeof request==='string'?request:request?.url;
