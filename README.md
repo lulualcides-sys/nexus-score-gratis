@@ -1,7 +1,13 @@
-# NEXUS SCORE — coletor gratuito
+# NEXUS SCORE — Coleta gratuita no GitHub ☁️
 
-Coleta horária de partidas públicas e pressão (quando a fonte fornece), sem cartão e sem computador ligado. O GitHub Actions grava arquivos em `history/` no repositório privado.
+### [📊 ABRIR PAINEL DE COLETAS E MERCADOS](history/PAINEL.md)
 
-**Limitações:** não hospeda a interface NEXUS, não é monitoramento minuto a minuto nem garante execução no horário exato. Pode haver bloqueio dos provedores ou limites do GitHub Free. Não gera odds nem probabilidades artificiais.
+**[Ver execuções automáticas](../../actions)** · [Histórico bruto](history/) · [Status da última coleta](history/status.json)
 
-O workflow em `.github/workflows/nexus-gratis.yml` permite acionamento manual e agenda a cada hora. Acompanhe a execução pela aba Actions e o histórico em `history/status.json`.
+O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados realmente retornados e gera o relatório privado `history/PAINEL.md`. Agendamento: **uma vez por hora**, sujeito a atrasos e limites do GitHub Free; não é transmissão minuto a minuto.
+
+**Mercados:** Over/Under, Ambas Marcam, Match Odds e Lay Correct Score podem ter acompanhamento de placar; escanteios, finalizações e grandes chances exigem estatísticas adicionais. A presença de um mercado na lista **não significa EV+**. Não coletamos odds de entrada nem calculamos lucro real.
+
+**NEXUS 5.28:** adiciona a aba `☁ Coletas GitHub` ao aplicativo local, lendo uma pasta `history/` sincronizada ou dados privados via `gh` autenticado. O NEXUS completo ainda não está hospedado no GitHub Actions — apenas o coletor e o relatório.
+
+**Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
