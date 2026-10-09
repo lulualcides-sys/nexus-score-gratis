@@ -328,7 +328,13 @@ def main():
         matches=doc.get('matches') or {}
         if not isinstance(matches,dict):continue
         for row in matches.values():
-            item=public_row(row,path.stem)
+            fixture=(row or {}).get('fixture') or {}
+            stamp=kickoff_number(fixture.get('start_timestamp'))
+            # As APIs podem agrupar pela data UTC. O painel de tres dias usa
+            # a data do apito inicial no horario de Brasilia.
+            local_day=datetime.fromtimestamp(stamp,BR).date().isoformat() if stamp else path.stem
+            if local_day not in days:continue
+            item=public_row(row,local_day)
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
