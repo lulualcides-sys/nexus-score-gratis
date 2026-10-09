@@ -24,6 +24,8 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 
 **Mercados:** Over/Under, Ambas Marcam, Match Odds e Lay Correct Score podem ter acompanhamento de placar; escanteios, finalizações e grandes chances exigem estatísticas adicionais. A presença de um mercado na lista **não significa EV+**. Não coletamos odds de entrada nem calculamos lucro real.
 
+**SoccerData / Understat — xG histórico validado em 09/10/2026:** instalamos SoccerData 1.9.1 somente no runner de teste, confirmamos 380 jogos completos da Premier League 2025/26, e arquivamos as 380 partidas em `history/soccerdata_understat_2025_26.json` no repositório privado. O painel em **Coletas GitHub** mostra apenas a contagem; o site não publica o histórico bruto. Não é xG minuto a minuto nem EV+; não misturar com odds de entrada. O endpoint ClubElo falhou no teste e permanece desligado. Testes e evidências em `experiments/soccerdata/` e nas Actions `soccerdata-evaluation.yml` e `nexus-understat-history.yml`.
+
 **NEXUS 5.28:** adiciona a aba `☁ Coletas GitHub` ao aplicativo local, lendo uma pasta `history/` sincronizada ou dados privados via `gh` autenticado. O NEXUS completo ainda não está hospedado no GitHub Actions — apenas o coletor e o relatório.
 
 **Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
