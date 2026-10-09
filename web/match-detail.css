@@ -191,3 +191,12 @@
   .md-odd{padding:10px 8px}.md-odd b{font-size:18px}
   #detail .close-dialog{top:8px;right:8px;width:34px;height:34px}
 }
+
+/* Elencos gerais verificados por FotMob, não escalação confirmada */
+.md-roster-section{margin:14px 0;border-top:1px solid #2a4556;padding-top:9px}
+.md-roster-section h4{font-size:11px;letter-spacing:.5px;color:#83c9d1;text-transform:uppercase;margin:0 0 7px}
+.md-roster-player{display:flex;gap:11px;align-items:center;padding:7px 0;
+  border-bottom:1px solid #1d3a4a;font-size:12px}
+.md-roster-player b{min-width:25px;text-align:center;background:#1c3a4a;border-radius:5px;
+  padding:5px;color:#9ccfd7;font-size:10px}
+.md-roster-player span{flex:1;overflow-wrap:anywhere}
