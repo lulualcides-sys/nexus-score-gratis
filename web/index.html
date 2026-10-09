@@ -1258,16 +1258,42 @@ window.PressureLab = (() => {
   // indicar o minuto de cada chute/escanteio. Isto NUNCA vira marcador histórico.
   function scoutTotals(d){
     const stats=d.stats||{};
-    const fmt=v=>v===null||v===undefined||v===''?'—':(Number.isFinite(Number(v))?String(Number(v)).replace('.',','):'—');
+    const fmt=v=>v===null||v===undefined||v===''?'—':
+      Number.isFinite(Number(v))?Number(v).toLocaleString('pt-BR',{maximumFractionDigits:2}):'—';
     const item=(side,field,symbol,label,cls)=>{
-      const val=fmt(stats[side]?.[field]);
-      return `<span class="scout-total ${cls}" title="${h(label)} acumulados: ${h(side==='home'?d.home:d.away)}"><i>${h(symbol)}</i><b>${h(val)}</b><small>${h(label)}</small></span>`;
+      const value=fmt(stats[side]?.[field]);
+      return '<span class="scout-total '+cls+'" title="'+h(label)+' · '+h(side==='home'?d.home:d.away)+
+        ' · acumulado, não minuto do evento"><i>'+h(symbol)+'</i><b>'+h(value)+
+        '</b><small>'+h(label)+'</small></span>';
     };
-    return `<div class="scout-totals" aria-label="Totais acumulados sem minuto exato por equipe">
-      <div class="scout-totals-side home"><strong>${h(d.home||'Mandante')}</strong>${item('home','shots_on','●','No gol','on')}${item('home','shots_off','⊗','Fora','off')}${item('home','corners','🚩','Escanteios','corners')}</div>
-      <div class="scout-totals-side away"><strong>${h(d.away||'Visitante')}</strong>${item('away','shots_on','●','No gol','on')}${item('away','shots_off','⊗','Fora','off')}${item('away','corners','🚩','Escanteios','corners')}</div>
-      <small class="scout-totals-note">Totais do jogo. No gráfico: apenas eventos com minuto exato confirmado pela fonte.</small>
-    </div>`;
+    const team=side=>'<div class="scout-totals-side '+side+'"><strong>'+
+      h(d[side]||'Equipe')+'</strong>'+
+      item(side,'shots_on','●','No alvo','on')+
+      item(side,'shots_off','⊗','Para fora','off')+
+      item(side,'shots_total','⚽','Chutes','shots')+
+      item(side,'corners','🚩','Escanteios','corners')+
+      item(side,'big_chances','💣','Chance grande','chance')+
+      item(side,'xg','xG','xG','xg')+
+      item(side,'dangerous_attacks','⚔','Ataques perigosos','danger')+
+      item(side,'possession','%','Posse','possession')+'</div>';
+    const timestamp=d.stats_observed_at||'';
+    const parsed=Date.parse(String(timestamp));
+    const valid=Number.isFinite(parsed)&&parsed>0&&parsed<=Date.now()+120000;
+    const age=valid?Math.max(0,Math.floor((Date.now()-parsed)/60000)):null;
+    const live=d.phase==='live'||d.live===true;
+    const old=live&&age!==null&&age>=15;
+    const clock=valid?new Date(parsed).toLocaleTimeString('pt-BR',{
+      hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}):null;
+    const provenance=clock?'Scouts · '+h(d.stats_source||d.source||'Fonte')+
+      ' · verificados às '+clock+' (Brasília)'+(live?' · '+age+' min atrás':''):
+      'Scouts acumulados · horário da última medição não informado';
+    const freshness='<div class="scout-freshness '+(old?'stale':valid?'verified':'unknown')+
+      '" aria-label="Estado de atualização dos scouts">'+(old?'⚠️ SCOUTS ATRASADOS':'📊 '+provenance)+
+      (old?'<small>'+provenance+' · não representam necessariamente o minuto atual.</small>':'')+'</div>';
+    return '<div class="scout-totals" aria-label="Estatísticas verificadas da partida">'+
+      team('home')+team('away')+
+      '<small class="scout-totals-note">Valores acumulados da fonte. "—" significa indisponível; nunca converter ausência em zero.</small>'+
+      freshness+'</div>';
   }
 
   // Celular: 90 minutos completos em 3 faixas de 30, sem barra achatada

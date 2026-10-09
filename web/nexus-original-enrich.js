@@ -183,6 +183,10 @@ function instrument(g,detail){
  const total=points.length;
  const sourcedetail=detail.scout_pressure||{};
  return {...detail,standings:g.standings||null,
+    stats_observed_at:g.stats_observed_at||detail.stats_observed_at||null,
+    stats_source:g.stats_source||detail.stats_source||g.source||'Fonte pública',
+    pressure_observed_at:g.pressure_observed_at||null,
+    observed_at:g.observed_at||detail.observed_at||null,
    // Termômetro e IARA devem ler a MESMA série usada nas janelas e sinais.
    // Se a fonte não tiver amostras, preservar o detalhe existente sem criar zeros.
    thermometer:points.length?{...(detail.thermometer||{}),points}:detail.thermometer,

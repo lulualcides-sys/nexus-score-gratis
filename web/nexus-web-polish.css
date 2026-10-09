@@ -274,3 +274,19 @@ html,body{max-width:100%;overflow-x:hidden}
 .nexus-h2h-metrics>*{min-width:0}
 .nexus-h2h-source{font-size:11px;line-height:1.6;color:#677c8b;margin:9px 0 15px}
 @media(max-width:450px){.nexus-h2h-metrics{gap:7px}}
+
+/* Scouts reais: números completos e idade da medição, sem zero sintético. */
+#section-thermometer .scout-totals-side{gap:5px 7px}
+#section-thermometer .scout-total{white-space:nowrap}
+#section-thermometer .scout-freshness{grid-column:1/-1;font-size:11px;
+ color:#1d5c58;line-height:1.45;padding:5px 9px;border-radius:8px;
+ background:#e0f3ee;border:1px solid #b8e0d8;overflow-wrap:anywhere}
+#section-thermometer .scout-freshness small{display:block;color:#7b4a22;line-height:1.6}
+#section-thermometer .scout-freshness.stale{color:#912b3e;
+ background:#fff0e9;border-color:#e7b8a6;font-weight:800}
+#section-thermometer .scout-freshness.unknown{color:#657481;
+ background:#f5f1e8;border-color:#e5ddd2}
+@media(max-width:800px){
+ #section-thermometer .scout-total{padding:4px 5px!important}
+ #section-thermometer .scout-totals-side>strong{max-width:100%!important;flex-basis:100%}
+}

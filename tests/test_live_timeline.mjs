@@ -51,6 +51,23 @@ assert.match(phone,/Sem barra = pressão não medida/);
 assert.match(phone,/90 POSIÇÕES/);
 assert.match(phone,/0–90′/);
 
+
+const withScouts={...sample,stats:{
+ home:{shots_on:2,shots_off:6,shots_total:8,corners:3,big_chances:1,xg:1.42,
+       dangerous_attacks:34,possession:58},
+ away:{shots_on:0,shots_off:0,corners:0}},
+ stats_observed_at:new Date(Date.now()-20*60000).toISOString(),stats_source:'FotMob'};
+const scoutInfo=phoneLab.scoutTotals(withScouts);
+assert.match(scoutInfo,/SCOUTS ATRASADOS/);
+assert.match(scoutInfo,/1,42/);
+assert.match(scoutInfo,/34/);
+assert.match(scoutInfo,/Posse/);
+assert.match(scoutInfo,/—/);
+const currentScouts=phoneLab.scoutTotals({...withScouts,
+ stats_observed_at:new Date(Date.now()-120000).toISOString()});
+assert.doesNotMatch(currentScouts,/SCOUTS ATRASADOS/);
+assert.match(currentScouts,/verificados às/);
+
 const data29={...sample,phase:'live',live:true,minute:29,
   incidents:[
     {minute:22,team:'HOME',emoji:'🥅',text:'Chute no alvo'},
