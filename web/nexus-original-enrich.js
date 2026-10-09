@@ -181,6 +181,9 @@ function instrument(g,detail){
  const total=points.length;
  const sourcedetail=detail.scout_pressure||{};
  return {...detail,standings:g.standings||null,
+   // Termômetro e IARA devem ler a MESMA série usada nas janelas e sinais.
+   // Se a fonte não tiver amostras, preservar o detalhe existente sem criar zeros.
+   thermometer:points.length?{...(detail.thermometer||{}),points}:detail.thermometer,
    signal_timeline:[...markers,...eventTimeline,...snapshots].sort((a,b)=>a.minute-b.minute),
    indicator_board:board,signals:board.filter(x=>x.state==='active'),
    head_to_head:headToHead(g),
