@@ -20,10 +20,14 @@ def momentum_diagnostic(packet):
     )
     had_container = False
     had_list = False
+    not_provided = False
     for path, item in candidates:
         if item is None:
             continue
         had_container = True
+        if item is False:
+            not_provided = True
+            continue
         if isinstance(item, list):
             data = item
         elif isinstance(item, dict):
@@ -70,7 +74,8 @@ def momentum_diagnostic(packet):
             return {'points': [found[m] for m in sorted(found)],
                     'state': 'observed', 'source_path': path}
     return {'points': [], 'state': ('missing' if not had_container else
-            'no_valid_points' if had_list else 'unsupported_shape'),
+            'no_valid_points' if had_list else
+            'not_provided' if not_provided else 'unsupported_shape'),
             'source_path': None}
 
 def momentum_shape(packet):
