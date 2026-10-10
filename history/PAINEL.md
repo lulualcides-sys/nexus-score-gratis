@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T08:55:00.389386+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T08:56:21.817896+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 21 | **Termômetros recentes:** 1.
+**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 21 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
