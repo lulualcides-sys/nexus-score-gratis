@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T04:29:05.718150+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T05:27:42.235572+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -79,7 +79,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-10 | Deportivo Pereira × Deportivo Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Querétaro FC × Atlante | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Puebla × León | 1-1 | 88 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×5.0, Escanteios: 6.0×6.0, Grandes chances: 1.0×4.0 |
-| 2026-10-10 | Tigres × Toluca | 3-2 | 62 | Chutes no alvo: 12.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 2.0×1.0 |
+| 2026-10-10 | Tigres × Toluca | 3-2 | 89 | Chutes no alvo: 13.0×7.0, Chutes para fora: 5.0×4.0, Escanteios: 5.0×4.0, Grandes chances: 2.0×1.0 |
 | 2026-10-10 | FC Juárez × Tijuana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Atlas × Chivas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Čukarički × Mačva Šabac | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 226 | **Jogos distintos:** 73 | **Resultados verificáveis:** 100 | **Com gol:** 34 | **Sem gol:** 66 | **Taxa observada:** 34.0%.
-**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 36 indeterminados | 90 incompletos.
+**Observações:** 228 | **Jogos distintos:** 73 | **Resultados verificáveis:** 101 | **Com gol:** 34 | **Sem gol:** 67 | **Taxa observada:** 33.7%.
+**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 36 indeterminados | 91 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 37 | 26 | 12 | 14 | 46.2% |
-| 🟥 expulsao_confirmada | 39 | 18 | 6 | 12 | 33.3% |
+| 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
 | 🎯 chutes_no_alvo_5 | 39 | 16 | 6 | 10 | 37.5% |
 | ⚡ pressao_ofensiva_18 | 26 | 13 | 3 | 10 | 23.1% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
@@ -203,6 +203,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | GKS Katowice | 4 | 3 | 3 | 0 | 100.0% |
 | Gimnasia LP | 4 | 3 | 1 | 2 | 33.3% |
 | Llaneros FC | 4 | 3 | 3 | 0 | 100.0% |
+| Toluca | 4 | 3 | 2 | 1 | 66.7% |
 | Lommel | 3 | 3 | 3 | 0 | 100.0% |
 | SK Beveren | 3 | 3 | 2 | 1 | 66.7% |
 | Águilas Doradas | 4 | 2 | 0 | 2 | 0.0% |
@@ -213,7 +214,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Almere City FC | 2 | 2 | 0 | 2 | 0.0% |
 | Dinamo București | 2 | 2 | 0 | 2 | 0.0% |
 | Galatasaray | 2 | 2 | 0 | 2 | 0.0% |
-| Toluca | 2 | 2 | 2 | 0 | 100.0% |
 | West Ham United | 2 | 2 | 0 | 2 | 0.0% |
 | Lyon | 5 | 1 | 1 | 0 | 100.0% |
 
@@ -228,11 +228,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | First Division B | 9 | 6 | 0 | 6 | 0.0% |
 | Belgian Pro League | 6 | 6 | 5 | 1 | 83.3% |
 | Liga de Expansion MX Apertura | 8 | 5 | 2 | 3 | 40.0% |
+| Liga MX | 11 | 4 | 3 | 1 | 75.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
 | Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
-| Liga MX | 9 | 3 | 3 | 0 | 100.0% |
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
 | LaLiga | 7 | 3 | 0 | 3 | 0.0% |
 | Premier League | 7 | 3 | 0 | 3 | 0.0% |
@@ -255,19 +255,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 22 | 15 | 6 | 9 | 40.0% |
 | 31–45′ | 16 | 11 | 7 | 4 | 63.6% |
 | 46–60′ | 32 | 30 | 10 | 20 | 33.3% |
-| 61–75′ | 49 | 32 | 8 | 24 | 25.0% |
+| 61–75′ | 50 | 33 | 8 | 25 | 24.2% |
 | 76–90′ | 74 | 10 | 2 | 8 | 20.0% |
-| 91+′ | 31 | 0 | 0 | 0 | — |
+| 91+′ | 32 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 226 | **Jogos monitorados:** 1083 | **Ao vivo:** 4 | **Termômetros recentes:** 0.
+**Registros:** 228 | **Jogos monitorados:** 1083 | **Ao vivo:** 16 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-10T04:56:12.185814+00:00 | Tigres × Toluca | Toluca (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-10T04:39:29.610704+00:00 | Tigres × Toluca | Toluca (74') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T04:19:14.560861+00:00 | Tigres × Toluca | Toluca (54') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-10T04:19:14.560861+00:00 | Tigres × Toluca | Toluca (54') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-10T03:44:23.219211+00:00 | Tigres × Toluca | Tigres (40') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Cambrian United × Ammanford | Ammanford (74') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Avellino × Sampdoria | Sampdoria (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Avellino × Sampdoria | Sampdoria (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Union Brescia × Pro Vercelli | Pro Vercelli (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
