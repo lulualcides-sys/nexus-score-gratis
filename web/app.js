@@ -77,7 +77,8 @@
   };
   function card(g,index) {
     const tags=[
-      pressure(g).length ? '<span class="tag good">▥ Pressão '+pressure(g).length+' min</span>' : '<span class="tag">Sem termômetro</span>',
+      pressure(g).length ? '<span class="tag good">▥ Pressão '+pressure(g).length+' min</span>' : '<span class="tag">Pressão por minuto indisponível</span>',
+      (g.scout_snapshots||[]).length?'<span class="tag good">📊 Scouts observados '+g.scout_snapshots.length+'</span>':'',
       some(g,'shots_on')?'<span class="tag good">● Chutes</span>':'',
       some(g,'corners')?'<span class="tag good">⌁ Escanteios</span>':'',
       hasOdds(g)?'<span class="tag good">1X2 Odds</span>':'',
