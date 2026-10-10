@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from scout_snapshots import append_snapshot
+from live_momentum import momentum_diagnostic
 
 HOME=Path(__file__).resolve().parent
 HISTORY=HOME/'history'
@@ -104,23 +105,8 @@ def espn_league(code):
     return out
 
 def momentum(detail):
-    content=detail.get('content') or {}
-    candidates=[(content.get('matchFacts') or {}).get('momentum'),content.get('momentum')]
-    for item in candidates:
-        if not isinstance(item,dict):continue
-        main=item.get('main') or {}
-        values=main.get('data') if isinstance(main,dict) else None
-        if values is None:values=item.get('data')
-        if not isinstance(values,list):continue
-        found={}
-        for p in values:
-            try:
-                minute=int(p['minute']);value=float(p['value'])
-                if 1<=minute<=150 and -1000<=value<=1000:
-                    found[minute]={'minute':minute,'value':value}
-            except (TypeError,ValueError,KeyError,OverflowError):continue
-        if found:return [found[k] for k in sorted(found)]
-    return []
+    """Interface legada: retorna apenas observacoes reais do provedor."""
+    return momentum_diagnostic(detail)['points']
 
 def stats(detail):
     packet=(((detail.get('content') or {}).get('stats') or {}).get('Periods') or {}).get('All') or {}
@@ -249,7 +235,8 @@ def run():
     fixtures=old.get('matches') if isinstance(old.get('matches'),dict) else {}
     status={'updated_at':NOW.isoformat(),'day':DAY,'ok':False,'sources':[],
             'live_found':0,'details_collected':0,'thermometers_saved':0,
-            'scout_snapshots_saved':0,'momentum_unavailable':0,'errors':[]}
+            'scout_snapshots_saved':0,'momentum_unavailable':0,
+            'momentum_status_counts':{},'stats_detail_available':0,'errors':[]}
     games=[]
     try:
         games=fotmob_list(DAY)
@@ -304,11 +291,17 @@ def run():
                     continue
             if packet is None:raise ValueError('FotMob detalhes indisponiveis')
             before=fixtures.get(match['id']) or {}
-            points=momentum(packet)
+            diagnosis=momentum_diagnostic(packet)
+            points=diagnosis['points']
+            status['momentum_status_counts'][diagnosis['state']]=(
+                status['momentum_status_counts'].get(diagnosis['state'],0)+1)
             if not points:status['momentum_unavailable']+=1
+            before['momentum_diagnostic']={'state':diagnosis['state'],
+                'source_path':diagnosis['source_path'], 'checked_at':NOW.isoformat()}
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
             if points:before['pressure_updated_at']=NOW.isoformat()
             current_stats=stats(packet)
+            if any(current_stats.values()):status['stats_detail_available']+=1
             if match.get('phase')=='live':
                 before['scout_snapshots']=append_snapshot(
                     before.get('scout_snapshots'),current_stats,
