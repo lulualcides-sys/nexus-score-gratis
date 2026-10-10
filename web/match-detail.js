@@ -95,6 +95,50 @@
       '<div class="md-chart-foot"><span>'+points.length+' minutos observados</span>'+
       '<span>'+events.length+' eventos confirmados</span></div>';
   }
+  function scoutHistory(g){
+    const rows=(Array.isArray(g.scout_snapshots)?g.scout_snapshots:[])
+      .filter(s=>s&&Number.isInteger(Number(s.m))&&Number(s.m)>=1&&Number(s.m)<=130&&
+        Number.isFinite(Date.parse(s.at))&&s.stats&&typeof s.stats==='object')
+      .sort((a,b)=>Date.parse(a.at)-Date.parse(b.at)||Number(a.m)-Number(b.m));
+    if(!rows.length){
+      return noData('Ainda não há capturas cronológicas de scouts para esta partida. Números acumulados continuam na aba Estatísticas.');
+    }
+    const latest=rows[rows.length-1], labels=[
+      ['shots_on','No gol'],['shots_off','Para fora'],['corners','Escanteios'],
+      ['big_chances','Grandes chances'],['xg','xG']
+    ];
+    const num=(item,side,field)=>number(item?.stats?.[side]?.[field]);
+    const headline='<p class="md-muted">Valores acumulados registrados na coleta; o minuto informado é o da observação, não o momento exato de cada chute.</p>'+
+      '<div class="md-quick-grid">'+labels.filter(([key])=>num(latest,'home',key)!==null||
+      num(latest,'away',key)!==null).map(([key,label])=>
+        '<div class="md-quick"><small>'+esc(label)+'</small><strong>'+
+        esc(num(latest,'home',key)??'—')+' <i>×</i> '+
+        esc(num(latest,'away',key)??'—')+'</strong></div>').join('')+'</div>'+
+      '<p class="md-muted">Observado aos '+esc(latest.m)+'′ · '+esc(data(latest.at))+
+      ' BRT · '+esc(latest.source||'Fonte')+' · '+rows.length+' captura(s)</p>';
+    const intervals=[];
+    for(let i=Math.max(1,rows.length-7);i<rows.length;i++){
+      const prev=rows[i-1],now=rows[i];
+      if(Number(now.m)<=Number(prev.m))continue;
+      const changes=[];
+      for(const [field,label] of labels){
+        if(field==='xg')continue;
+        const home=num(now,'home',field),h0=num(prev,'home',field);
+        const away=num(now,'away',field),a0=num(prev,'away',field);
+        if(home!==null&&h0!==null&&home>=h0&&home>h0)
+          changes.push(esc(label)+' casa +'+(home-h0));
+        if(away!==null&&a0!==null&&away>=a0&&away>a0)
+          changes.push(esc(label)+' fora +'+(away-a0));
+      }
+      intervals.push('<div class="md-event-row"><span class="md-event-time">'+
+        esc(prev.m)+'′–'+esc(now.m)+'′</span><span>'+
+        (changes.length?changes.join(' · '):'Sem aumento confirmável dos campos comparáveis')+
+        '</span></div>');
+    }
+    return headline+(intervals.length?
+      '<p class="md-muted">Variação ENTRE capturas; não atribuímos o evento a um minuto individual.</p>'+
+      '<div class="md-events-list">'+intervals.join('')+'</div>':'');
+  }
   function eventsList(g){
     const events=(Array.isArray(g.events)?g.events:[]);
     if(!events.length)return noData('Sem registro individual de chutes, cartões ou gols nesta coleta.');
@@ -205,7 +249,7 @@
        (s.paper_pl_u!=null?' · Teste '+esc(s.paper_pl_u)+'u':'')+'</small></div>').join('');
   }
   function bodyFor(g,t){
-    if(t==='thermo')return chart(g)+'<h3 class="md-subtitle">Resumo do jogo</h3>'+topStats(g)+
+    if(t==='thermo')return chart(g)+'<h3 class="md-subtitle">Scouts observados e evolução</h3>'+scoutHistory(g)+'<h3 class="md-subtitle">Resumo do jogo</h3>'+topStats(g)+
       '<h3 class="md-subtitle">Eventos confirmados</h3>'+eventsList(g);
     if(t==='stats')return statistics(g);
     if(t==='projections')return projections(g);
@@ -252,5 +296,5 @@
     select('thermo');
     return true;
   }
-  window.NexusMatchDetail={show,select};
+  window.NexusMatchDetail={show,select,scoutHistory};
 })();

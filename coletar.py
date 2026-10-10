@@ -6,6 +6,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from scout_snapshots import append_snapshot
 
 HOME=Path(__file__).resolve().parent
 HISTORY=HOME/'history'
@@ -247,7 +248,8 @@ def run():
     old=read(file)
     fixtures=old.get('matches') if isinstance(old.get('matches'),dict) else {}
     status={'updated_at':NOW.isoformat(),'day':DAY,'ok':False,'sources':[],
-            'live_found':0,'details_collected':0,'thermometers_saved':0,'errors':[]}
+            'live_found':0,'details_collected':0,'thermometers_saved':0,
+            'scout_snapshots_saved':0,'momentum_unavailable':0,'errors':[]}
     games=[]
     try:
         games=fotmob_list(DAY)
@@ -303,9 +305,14 @@ def run():
             if packet is None:raise ValueError('FotMob detalhes indisponiveis')
             before=fixtures.get(match['id']) or {}
             points=momentum(packet)
+            if not points:status['momentum_unavailable']+=1
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
             if points:before['pressure_updated_at']=NOW.isoformat()
             current_stats=stats(packet)
+            if match.get('phase')=='live':
+                before['scout_snapshots']=append_snapshot(
+                    before.get('scout_snapshots'),current_stats,
+                    match.get('minute'),NOW.isoformat(),'FotMob')
             if any(current_stats.values()):
                 old_stats=before.get('stats') or {}
                 before['stats']={side:{**(old_stats.get(side) or {}),
@@ -326,6 +333,7 @@ def run():
             fixtures[match['id']]=before
             status['details_collected']+=1
             if before['thermometer']['points']:status['thermometers_saved']+=1
+            if before.get('scout_snapshots'):status['scout_snapshots_saved']+=1
         except Exception as exc:
             status['errors'].append('Detalhe '+match['id']+': '+str(exc)[:130])
     write(file,{'day':DAY,'updated_at':NOW.isoformat(),'matches':fixtures})
