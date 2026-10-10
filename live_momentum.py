@@ -54,7 +54,15 @@ def momentum_diagnostic(packet):
                 v = float(value)
             except (ValueError, TypeError, OverflowError):
                 continue
-            if not math.isfinite(v) or str(minute).strip() != str(m):
+            if not math.isfinite(v):
+                continue
+            if isinstance(minute, (int, float)):
+                if not math.isfinite(float(minute)) or float(minute) != m:
+                    continue
+            elif isinstance(minute, str):
+                if minute.strip() != str(m):
+                    continue
+            else:
                 continue
             if 1 <= m <= 150 and -1000 <= v <= 1000:
                 found[m] = {'minute': m, 'value': v}
