@@ -7,6 +7,7 @@ nao sobrescrevem as fontes anteriores. Sem dependencias pagas.
 import csv
 import io
 import json
+import os
 import re
 import unicodedata
 from datetime import datetime,timedelta,timezone
@@ -102,7 +103,18 @@ def merge_football_data(day,code,raw,doc,status):
     existing=None
     for row in matches.values():
         f=row.get('fixture') or {}
-        if f.get('league_code',f.get('league'))!=lg or different_games(f,candidate):continue
+        if f.get('league_code',f.get('league'))!=lg or different_games(f,candidate):
+            continue
+        # NUNCA enxertar stats de FT em partidas de outro dia ou ainda ao vivo.
+        if f.get('phase')!='finished' or f.get('score') in (None,'?-?'):
+            continue
+        try:
+            current=datetime.fromtimestamp(int(f['start_timestamp']),ZoneInfo(zone))
+            incoming=datetime.fromtimestamp(int(candidate['start_timestamp']),ZoneInfo(zone))
+        except (ValueError,TypeError,KeyError,OSError,OverflowError):
+            continue
+        if current.date()!=incoming.date() or abs((current-incoming).total_seconds())>6*3600:
+            continue
         existing=row;break
     if existing is None:
         existing=matches.setdefault(candidate['id'],{})
@@ -208,23 +220,26 @@ def main():
     report={'updated_at':NOW.isoformat(),'days':days,
        'providers':{'ESPN':'retrospectivo (3 dias)',
                     'FotMob':'ativo' if fotmob_ok else 'indisponivel nesta coleta',
-                    'Football-Data.co.uk':'consultando CSV',
+                    'Football-Data.co.uk':'desativado: permissao especifica nao configurada',
                     'OpenLigaDB':'consultando Bundesliga'},
        'files_checked':0,'added':0,'cross_verified':0,'stats_filled':0,
        'historical_odds':0,'conflicts':0,'unmatched':0,'errors':[]}
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        pending={pool.submit(football_data_csv,code):code for code in LEAGUES}
-        for future in as_completed(pending):
-            code=pending[future]
-            try:
-                matches=future.result();report['files_checked']+=1
-                for raw in matches:
-                    day=row_date(raw.get('Date'))
-                    if day and day.isoformat() in docs:
-                        merge_football_data(day.isoformat(),code,raw,docs[day.isoformat()],report)
-            except Exception as ex:
-                if len(report['errors'])<12:report['errors'].append('Football-Data '+code+': '+str(ex)[:130])
-    report['providers']['Football-Data.co.uk']='consultado: '+str(report['files_checked'])+' arquivos'
+    # Football-Data.co.uk restringe automacao comercial/treinamento.
+    # Padrao seguro: NAO consultar. Apenas habilitar com autorizacao apropriada.
+    if os.environ.get('NEXUS_FOOTBALL_DATA_LICENSED')=='1':
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            pending={pool.submit(football_data_csv,code):code for code in LEAGUES}
+            for future in as_completed(pending):
+                code=pending[future]
+                try:
+                    matches=future.result();report['files_checked']+=1
+                    for raw in matches:
+                        day=row_date(raw.get('Date'))
+                        if day and day.isoformat() in docs:
+                            merge_football_data(day.isoformat(),code,raw,docs[day.isoformat()],report)
+                except Exception as ex:
+                    if len(report['errors'])<12:report['errors'].append('Football-Data '+code+': '+str(ex)[:130])
+        report['providers']['Football-Data.co.uk']='consultado: '+str(report['files_checked'])+' arquivos'
     try:
         for event in openliga_events(now.year if now.month>=7 else now.year-1):
             f=openliga_fixture(event)
