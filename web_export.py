@@ -11,6 +11,7 @@ import math
 import re
 from signal_evaluation import evaluate
 from odds_fixture_bridge import bridge_pregame_prices
+from scout_snapshots import public_snapshots
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -201,6 +202,8 @@ def merge_verified_duplicates(rows):
             matched['minute']=item.get('minute') or matched.get('minute')
         if len(item.get('pressure') or [])>len(matched.get('pressure') or []):
             matched['pressure']=item['pressure']
+        if len(item.get('scout_snapshots') or [])>len(matched.get('scout_snapshots') or []):
+            matched['scout_snapshots']=item['scout_snapshots']
         if len(item.get('head_to_head') or [])>len(matched.get('head_to_head') or []):
             matched['head_to_head']=item['head_to_head']
         if not matched.get('standings') and item.get('standings'):
@@ -406,7 +409,8 @@ def public_row(row,day,team_cache=None,espn_cache=None):
              'stats_source':safe(row.get('stats_source') or f.get('source'),40),
              'pressure_observed_at':safe(row.get('pressure_updated_at'),40),
              'pressure_last_minute':points[-1]['m'] if points else None,
-            'pressure':points,'stats':stats,'head_to_head':h2h,'standings':ranking,
+            'pressure':points,'stats':stats,'scout_snapshots':public_snapshots(row.get('scout_snapshots')),
+            'head_to_head':h2h,'standings':ranking,
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'odds':odds[:5],
