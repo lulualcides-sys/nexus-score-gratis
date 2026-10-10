@@ -193,6 +193,7 @@ function instrument(g,detail){
     pressure_observed_at:g.pressure_observed_at||null,
     momentum_diagnostic:g.momentum_diagnostic||null,
     scout_snapshots:observations,
+    activity_timeline:g.activity_timeline||null,
     observed_at:g.observed_at||detail.observed_at||null,
    // Termômetro e IARA devem ler a MESMA série usada nas janelas e sinais.
    // Se a fonte não tiver amostras, preservar o detalhe existente sem criar zeros.
