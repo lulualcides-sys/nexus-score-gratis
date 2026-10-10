@@ -50,6 +50,31 @@ function readingOfStats(d){
  if(dangerous)evidence.push('Ataques perigosos '+dangerous[0]+'×'+dangerous[1]);
  return {on,big,corners,xg,reds:pair('red_cards'),dangerous,evidence};
 }
+function scoutEvolution(d,minute){
+ const raw=Array.isArray(d?.scout_snapshots)?d.scout_snapshots:[];
+ const ordered=raw.filter(x=>x&&Number.isFinite(Number(x.m))&&
+   Number.isFinite(Date.parse(x.at))&&x.stats&&typeof x.stats==='object')
+   .sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));
+ if(ordered.length<2)return null;
+ const newer=ordered.at(-1),older=ordered.at(-2),m=Number(newer.m),from=Number(older.m);
+ if(m<=from||m>minute||minute-m>12||m-from>25||
+    String(newer.source||'')!==String(older.source||''))return null;
+ const fields=[['shots_on','chutes no alvo'],['big_chances','grandes chances'],
+    ['corners','escanteios'],['shots_off','chutes para fora']];
+ const changes=[];
+ for(const side of ['home','away']){
+   for(const [field,label] of fields){
+     const oldValue=num(older.stats?.[side]?.[field]);
+     const value=num(newer.stats?.[side]?.[field]);
+     if(value===null||oldValue===null||value<=oldValue)continue;
+     changes.push(name(d,side)+': '+label+' +'+(value-oldValue));
+   }
+ }
+ if(!changes.length)return null;
+ return {from,to:m,changes,source:String(newer.source||'Fonte publica'),
+   summary:'Entre as capturas '+from+'′–'+m+'′ os totais cresceram: '+
+    changes.slice(0,4).join('; ')+'. O minuto exato dos lances é desconhecido.'};
+}
 function favourite(d){
  const pre=d?.prelive?.odds||{};
  const market=pre?.markets?.['1x2']||d?.odds?.markets?.['1x2']||{};
@@ -132,6 +157,7 @@ function evaluate(d){
  const previous5=windowPressure(obs,Math.max(0,minute-5),5);
  const current=!stale?(w10.valid?w10:w5.valid?w5:null):null;
  const stats=readingOfStats(d),score=details(d),fav=favourite(d);
+ const evolution=scoutEvolution(d,minute);
  const motivation=standingsMotivation(d),value=experimentalValue(d);
  const indicators=Array.isArray(d?.indicator_board)?d.indicator_board.filter(x=>x&&x.state==='active'):[];
  const names={home:teamHome,away:teamAway};
@@ -140,7 +166,8 @@ function evaluate(d){
  if(value?.positive)tags.push('EV+ TEÓRICO · NÃO VALIDADO');
  const evidence=stats.evidence.slice(0,3);
  const confidence=current?.valid&&w10.valid&&stats.evidence.length>=2?'MÚLTIPLOS DADOS':
-   current?.valid?'PRESSÃO MEDIDA':stats.evidence.length?'SCOUTS ACUMULADOS':'SEM DADOS RECENTES';
+   current?.valid?'PRESSÃO MEDIDA':evolution?'SCOUTS ENTRE CAPTURAS':
+   stats.evidence.length?'SCOUTS ACUMULADOS':'SEM DADOS RECENTES';
  if(!live)return {active:false,heading:'Aguardando partida ao vivo',intro:'A IARA começa a leitura quando a partida estiver ao vivo.',confidence:'AGUARDANDO',tags:[],evidence:[],next:'',method:''};
  let intro='',next='',context='';
  if(stale){
@@ -171,10 +198,12 @@ function evaluate(d){
      else if(delta<=-12)context+=' O visitante cresceu em relação aos cinco minutos anteriores.';
    }
  }else{
-   intro=obs.length?
+   intro=evolution?
+     'A fonte não forneceu pressão minuto a minuto. '+evolution.summary:
+     obs.length?
      'A pressão foi registrada, mas faltam amostras consecutivas suficientes para uma leitura confiável dos últimos minutos.':
      'O jogo está em andamento, mas a fonte ainda não entregou uma curva de pressão recente.';
-   tags.push('AGUARDANDO MOMENTUM');
+   tags.push(evolution?'SCOUTS OBSERVADOS':'AGUARDANDO MOMENTUM');
  }
  if(score){
    if(score.home===score.away){context+=' O placar permanece empatado.';}
@@ -212,7 +241,9 @@ function evaluate(d){
  const strong=current?.strength==='forte';
  const corroborated=shots!==null&&shots>=3||big!==null&&big>=1||freshThreat;
  if(stale||!current){
-   next='Sobre mais um gol: sem pressão recente confiável, a IARA não consegue apontar uma tendência atual.';
+   next=evolution?
+     'Houve crescimento ofensivo entre duas coletas, mas isso sozinho não permite estimar a chance de outro gol.':
+     'Sobre mais um gol: sem pressão recente confiável, a IARA não consegue apontar uma tendência atual.';
  }else if(contender&&strong&&corroborated){
    next=names[contender]+' apresenta pressão forte com apoio de ações ofensivas confirmadas. O cenário merece atenção para uma nova chance de gol, mas não garante que a bola entre.';
    tags.push('ATENÇÃO A NOVO GOL');
@@ -226,6 +257,7 @@ function evaluate(d){
    next='O equilíbrio atual não permite apontar qual equipe deve criar a próxima oportunidade.';
  }
  if(minute>=75)next+=' Reta final: menos tempo disponível para uma reação.';
+ if(evolution)evidence.unshift(evolution.summary);
  if(stats.evidence.length){
    evidence.push('Termômetro: '+(current?.samples||0)+'/'+(current?.expected||10)+' min recentes');
  }else if(current){
@@ -241,7 +273,7 @@ function evaluate(d){
    evidence:evidence.slice(0,5),method,observedThrough:last,stale,
    motivation,value,
    fingerprint:[minute,last,score?.home,score?.away,current?.dominant,current?.strength,
-      stats.evidence.join('/'),indicators.length,motivation.evidence.join('/'),value?.ev].join('|')};
+      stats.evidence.join('/'),evolution?.summary,indicators.length,motivation.evidence.join('/'),value?.ev].join('|')};
 }
 function render(d){
  const v=evaluate(d);
@@ -265,11 +297,11 @@ function render(d){
    '<header class="iara-header"><div><span class="iara-bot">◈ IARA</span>'+
    '<h3>Análise do jogo ao vivo</h3><small>'+safe(v.minute)+'′ · '+safe(v.confidence)+safe(age)+'</small></div>'+
    '<span class="iara-live-tag'+(v.stale?' iara-tag-stale':'')+'">'+
-    (v.stale?'● PRESSÃO DESATUALIZADA':'● LEITURA ATUALIZÁVEL')+'</span></header>'+
+    (v.stale?'● PRESSÃO DESATUALIZADA':!v.observedThrough?'● SEM CURVA DE PRESSÃO':'● LEITURA ATUALIZÁVEL')+'</span></header>'+
    '<div class="iara-body"><div class="iara-tags">'+tagHTML+'</div>'+
    '<p class="iara-comment">'+safe(v.intro)+'</p>'+
    '<div class="iara-goal"><strong>⚽ Pode sair mais um gol?</strong><p>'+safe(v.next)+'</p></div>'+
    mustWin+evCard+facts+'<p class="iara-footnote">'+safe(v.method)+'</p></div></section>';
 }
-window.NexusIara={render,evaluate,windowPressure,points,standingsMotivation,experimentalValue};
+window.NexusIara={render,evaluate,windowPressure,points,standingsMotivation,experimentalValue,scoutEvolution};
 })();
