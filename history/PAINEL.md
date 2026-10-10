@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T03:09:59.004949+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T03:28:57.412702+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -13,7 +13,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-10 | Tigre × Banfield | 0-0 | 0 | Match Odds 1X2: Casa 1,74, Empate 3,50, Fora 5,00 |
 | 2026-10-10 | River Plate × Estudiantes de Río Cuarto | 0-0 | 0 | Match Odds 1X2: Casa 1,17, Empate 7,00, Fora 17,00 |
 | 2026-10-10 | Central Córdoba (Santiago del Estero) × Estudiantes de La Plata | 0-0 | 0 | Match Odds 1X2: Casa 3,20, Empate 2,95, Fora 2,45 |
-| 2026-10-10 | Barracas Central × Huracán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Barracas Central × Huracán | 0-0 | 0 | Match Odds 1X2: Casa 3,00, Empate 2,75, Fora 2,80 |
 | 2026-10-10 | São Paulo × Vitória | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,85, Fora 5,25 |
 | 2026-10-10 | Vasco da Gama × Remo | 0-0 | 0 | Match Odds 1X2: Casa 1,31, Empate 5,25, Fora 9,00 |
 | 2026-10-10 | Atlético Junior × Internacional de Bogotá | 0-0 | 0 | Match Odds 1X2: Casa 1,62, Empate 3,70, Fora 4,80 |
@@ -79,7 +79,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-10 | Deportivo Pereira × Deportivo Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Querétaro FC × Atlante | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Puebla × León | 1-1 | 88 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×5.0, Escanteios: 6.0×6.0, Grandes chances: 1.0×4.0 |
-| 2026-10-10 | Tigres × Toluca | 0-0 | 5 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-10-10 | Tigres × Toluca | 1-0 | 22 | Chutes no alvo: 6.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-10-10 | FC Juárez × Tijuana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Atlas × Chivas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Čukarički × Mačva Šabac | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 220 | **Jogos distintos:** 71 | **Resultados verificáveis:** 96 | **Com gol:** 30 | **Sem gol:** 66 | **Taxa observada:** 31.2%.
-**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 35 indeterminados | 89 incompletos.
+**Observações:** 222 | **Jogos distintos:** 73 | **Resultados verificáveis:** 96 | **Com gol:** 30 | **Sem gol:** 66 | **Taxa observada:** 31.2%.
+**Evolução da amostra:** 2 datas com coletas | 2 pendentes | 35 indeterminados | 89 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,8 +177,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 35 | 24 | 10 | 14 | 41.7% |
-| 🎯 chutes_no_alvo_5 | 38 | 16 | 6 | 10 | 37.5% |
-| 🟥 expulsao_confirmada | 36 | 16 | 4 | 12 | 25.0% |
+| 🎯 chutes_no_alvo_5 | 39 | 16 | 6 | 10 | 37.5% |
+| 🟥 expulsao_confirmada | 37 | 16 | 4 | 12 | 25.0% |
 | ⚡ pressao_ofensiva_18 | 26 | 13 | 3 | 10 | 23.1% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
 | 🚩 escanteios_6 | 38 | 7 | 2 | 5 | 28.6% |
@@ -252,22 +252,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 21 | 15 | 6 | 9 | 40.0% |
+| 16–30′ | 22 | 15 | 6 | 9 | 40.0% |
 | 31–45′ | 15 | 10 | 6 | 4 | 60.0% |
 | 46–60′ | 30 | 28 | 8 | 20 | 28.6% |
-| 61–75′ | 48 | 31 | 7 | 24 | 22.6% |
+| 61–75′ | 49 | 31 | 7 | 24 | 22.6% |
 | 76–90′ | 73 | 10 | 2 | 8 | 20.0% |
 | 91+′ | 31 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 220 | **Jogos monitorados:** 1083 | **Ao vivo:** 7 | **Termômetros recentes:** 1.
+**Registros:** 222 | **Jogos monitorados:** 1083 | **Ao vivo:** 6 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-10T03:24:14.981060+00:00 | Tigres × Toluca | Tigres (20') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-10T03:24:14.981060+00:00 | Sporting FC × C.S. Cartaginés | Sporting FC (65') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-10T03:01:16.021870+00:00 | Deportivo Garcilaso × Sport Huancayo | Sport Huancayo (102') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T03:01:16.021870+00:00 | Tepatitlán FC × Atlético Morelia | Equipe não definida (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T02:57:03.904984+00:00 | Once Caldas × Llaneros FC | Llaneros FC (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -366,13 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T19:58:06.882310+00:00 | Lens × Lyon | Lens (54') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T19:58:06.882310+00:00 | Etoile Carouge × Yverdon | Etoile Carouge (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T19:58:06.882310+00:00 | Stade Nyonnais × Aarau | Aarau (85') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T19:58:06.882310+00:00 | SK Beveren × Lommel | Lommel (53') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T19:58:06.882310+00:00 | SK Beveren × Lommel | SK Beveren (53') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **21**.
-Novas cotacoes capturadas na ultima execucao: **33**.
+Jogos com odds registradas nos ultimos dias: **22**.
+Novas cotacoes capturadas na ultima execucao: **36**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
