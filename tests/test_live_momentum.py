@@ -19,6 +19,11 @@ class MomentumDiagnosticTests(unittest.TestCase):
         self.assertEqual(result['state'],'observed')
         self.assertEqual(result['points'][0]['minute'],7)
 
+    def test_integer_minute_encoded_as_float_is_valid(self):
+        doc={'content':{'momentum':{'data':[{'minute':3.0,'value':17.4}]}}}
+        self.assertEqual(momentum_diagnostic(doc)['points'],
+                         [{'minute':3,'value':17.4}])
+
     def test_alternative_data_container(self):
         doc={'content':{'momentum':{'data':[{'minute':9,'value':-10}]}}}
         self.assertEqual(momentum_diagnostic(doc)['points'][0]['value'],-10.)
