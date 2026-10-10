@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T09:08:07.818539+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T09:27:58.226243+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 241 | **Jogos distintos:** 77 | **Resultados verificáveis:** 110 | **Com gol:** 37 | **Sem gol:** 73 | **Taxa observada:** 33.6%.
-**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 39 indeterminados | 92 incompletos.
+**Observações:** 244 | **Jogos distintos:** 79 | **Resultados verificáveis:** 112 | **Com gol:** 37 | **Sem gol:** 75 | **Taxa observada:** 33.0%.
+**Evolução da amostra:** 2 datas com coletas | 1 pendentes | 39 indeterminados | 92 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 45 | 33 | 14 | 19 | 42.4% |
+| 🥶 jogo_frio | 47 | 34 | 14 | 20 | 41.2% |
 | 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
 | 🎯 chutes_no_alvo_5 | 42 | 18 | 7 | 11 | 38.9% |
 | ⚡ pressao_ofensiva_18 | 27 | 13 | 3 | 10 | 23.1% |
+| 🚩 escanteios_6 | 39 | 8 | 2 | 6 | 25.0% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
-| 🚩 escanteios_6 | 38 | 7 | 2 | 5 | 28.6% |
 | 🔥 pressao_forte_10min | 11 | 5 | 1 | 4 | 20.0% |
 | 🧨 pressao_total_5_10min | 8 | 4 | 1 | 3 | 25.0% |
 | 🚨 alerta_cruzado_gol | 2 | 2 | 0 | 2 | 0.0% |
@@ -252,22 +252,25 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 23 | 16 | 6 | 10 | 37.5% |
-| 31–45′ | 18 | 12 | 7 | 5 | 58.3% |
+| 16–30′ | 24 | 17 | 6 | 11 | 35.3% |
+| 31–45′ | 19 | 12 | 7 | 5 | 58.3% |
 | 46–60′ | 34 | 32 | 11 | 21 | 34.4% |
 | 61–75′ | 54 | 35 | 9 | 26 | 25.7% |
-| 76–90′ | 77 | 13 | 3 | 10 | 23.1% |
+| 76–90′ | 78 | 14 | 3 | 11 | 21.4% |
 | 91+′ | 33 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 20 | **Termômetros recentes:** 0.
+**Registros:** 244 | **Jogos monitorados:** 1084 | **Ao vivo:** 18 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-10T09:27:23.575465+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (35') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T09:07:53.655901+00:00 | Gimcheon Sangmu × FC Anyang | Gimcheon Sangmu (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-10T09:07:53.655901+00:00 | South Melbourne × Melbourne Victory | South Melbourne (16') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T08:16:53.024505+00:00 | SKA-Khabarovsk × KamAZ | SKA-Khabarovsk (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-10T07:58:28.786309+00:00 | FC Tokyo × Urawa Red Diamonds | FC Tokyo (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T07:42:31.771135+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Fagiano Okayama FC (80') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
@@ -318,7 +321,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-10T00:53:48.948281+00:00 | Alianza FC × Águilas Doradas | Alianza FC (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T00:53:48.948281+00:00 | Alianza FC × Águilas Doradas | Águilas Doradas (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T00:53:48.948281+00:00 | Tapatío × Atlético La Paz | Tapatío (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-10T00:53:48.948281+00:00 | Canada (W) × Denmark (W) | Canada (W) (84') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-10T00:53:48.948281+00:00 | Canada (W) × Denmark (W) | Canada (W) (84') | 🚩 escanteios_6 · scout acumulado | pendente | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T00:40:11.821039+00:00 | Tapatío × Atlético La Paz | Tapatío (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-10T00:26:20.480965+00:00 | Alianza FC × Águilas Doradas | Águilas Doradas (65') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-10T00:26:20.480965+00:00 | Alianza FC × Águilas Doradas | Águilas Doradas (65') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
