@@ -400,6 +400,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
+            'score_verification':(row.get('score_verifications') or {}).get('openfootball_cc0'),
             'observed_at':safe(f.get('collected_at'),36),
              'stats_observed_at':safe(row.get('stats_updated_at'),40),
              'stats_source':safe(row.get('stats_source') or f.get('source'),40),
@@ -560,6 +561,7 @@ def main():
     backfill=load(H/'backfill_status.json')
     team_form=load(H/'team_form_status.json')
     external=load(H/'multi_source_status.json')
+    cc0=load(H/'openfootball_cc0_status.json')
     historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
@@ -572,7 +574,9 @@ def main():
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
              'historical_xg':historical_xg,
-             'source_status':{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
+             'source_status':{**{k:external.get(k) for k in ('updated_at','files_checked','cross_verified','stats_filled','added','historical_odds','providers')},
+                'openfootball_cc0':{k:cc0.get(k) for k in ('updated_at','checked','cross_verified','conflicts','ambiguous','unmatched','unavailable','datasets_fetched','cache_hits','errors')}},
+
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
