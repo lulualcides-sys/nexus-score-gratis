@@ -568,7 +568,7 @@ def main():
     cc0=load(H/'openfootball_cc0_status.json')
     historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
-    status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved') if key in last}
+    status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable') if key in last}
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
