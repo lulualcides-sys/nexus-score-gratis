@@ -30,6 +30,10 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 
 **Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
 
+## Capturas de scouts no termometro
+
+O coletor guarda ate 72 observacoes reais por partida ao vivo, identificadas por horario UTC, minuto em campo e fonte, em `scout_snapshots`. O painel publica o historico e a diferenca ENTRE coletas quando os dois valores foram observados. Capturas com minutos ausentes nao entram na linha do tempo. Alteracoes de totais nao estabelecem minuto exato do chute, canto ou chance; o dado segue rotulado como acumulado. Caso FotMob nao forneca momentum, o grafico nao inventa pressao: exibe os scouts observados em bloco separado. A rotina de 10 minutos e melhor esforco, sujeita a atraso e jogos sem estatisticas.
+
 ## Multiplas fontes esportivas (NEXUS WEB)
 
 - **FotMob:** descoberta diaria ampliada, escudos do CDN FotMob e detalhes/pressao, quando disponiveis. Rotas 2026 `/api/data/matches` e `/api/data/matchDetails`.
