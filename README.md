@@ -30,6 +30,12 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 
 **Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
 
+## Gráfico gratuito de atividade ofensiva confirmada
+
+O NEXUS agora desenha uma segunda linha de eventos dentro do termômetro Web: chutes no alvo/fora, grandes chances perdidas, gols e pênaltis perdidos com equipe e minuto individual *confirmados pela fonte*. As barras são **contagens**, não valores de momentum ou porcentagens; minutos sem eventos reportados permanecem sem barra, sem interpolação. O painel Original Web utiliza a mesma saída pública (`activity_timeline`) e os marcadores existentes. Pressão por minuto verdadeira permanece exclusivamente aquela explicitamente disponibilizada pelo provedor.
+
+Uma fonte alternativa autorizada para pressão por minuto é o Sportmonks Pressure Index (`include=pressure`), mas requer licença/add-on e token; não está conectado e não gera cobranças. Comprovado em 10/10/2026: o FotMob pode enviar `content.momentum=false` para partidas ao vivo, impossibilitando extrair pressão desse campo. Nenhum feed externo novo foi consultado no coletor.
+
 ## Auditoria de pressão ao vivo — prioridade máxima
 
 O parser de `momentum` verifica estruturas publicamente documentadas em `content.matchFacts.momentum` e `content.momentum` sem inferir valores. Registra `observed`, `missing`, `unsupported_shape` e `no_valid_points` em `history/status.json` e junto de cada jogo. A IARA pode interpretar **aumentos de contagens entre capturas** como atividade observada no intervalo, mas não como pressão por minuto, previsão de gol ou EV+ calibrado. Essa alteração não aumenta a frequência nem a quantidade de acessos a provedores. Fontes externas exigem direitos de acesso e uso apropriados; não contornar restrições de serviço.

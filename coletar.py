@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from scout_snapshots import append_snapshot
+from activity_timeline import observed_activity
 from live_momentum import momentum_diagnostic, momentum_shape
 
 HOME=Path(__file__).resolve().parent
@@ -237,7 +238,7 @@ def run():
             'live_found':0,'details_collected':0,'thermometers_saved':0,
             'scout_snapshots_saved':0,'momentum_unavailable':0,
             'momentum_status_counts':{},'momentum_shape_counts':{},
-            'stats_detail_available':0,'errors':[]}
+            'stats_detail_available':0,'activity_games':0,'activity_events':0,'errors':[]}
     games=[]
     try:
         games=fotmob_list(DAY)
@@ -332,6 +333,10 @@ def run():
             status['details_collected']+=1
             if before['thermometer']['points']:status['thermometers_saved']+=1
             if before.get('scout_snapshots'):status['scout_snapshots_saved']+=1
+            activity=observed_activity(before.get('events'))
+            if activity['total_events']:
+                status['activity_games']+=1
+                status['activity_events']+=activity['total_events']
         except Exception as exc:
             status['errors'].append('Detalhe '+match['id']+': '+str(exc)[:130])
     write(file,{'day':DAY,'updated_at':NOW.isoformat(),'matches':fixtures})

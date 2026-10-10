@@ -1,0 +1,15 @@
+/* Contagens observadas: grafico complementar, nunca substituto de momentum real. */
+.nexus-activity{margin:15px 0 13px;padding:13px 15px;border:1px solid #32627c;background:#102337;border-radius:10px;min-width:0}
+.nexus-activity-head{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#bde9f1;font-size:11px;letter-spacing:.25px}
+.nexus-activity-head span{font-size:10px;color:#93b6c7;font-weight:500;letter-spacing:0;text-align:right}
+.nexus-activity p{color:#a8c2d4;font-size:11px;line-height:1.5;margin:8px 0}
+.nexus-activity strong{color:#ebefff}
+.nexus-activity-legend{display:flex;justify-content:space-between;color:#aacadd;font-size:10px}
+.nexus-activity-legend span:first-child{color:#50d9b8}
+.nexus-activity-legend span:last-child{color:#efa0b4}
+.nexus-activity svg{display:block;width:100%;height:auto;max-height:190px;overflow:visible}
+.nexus-activity-home{fill:#4ce2b5}
+.nexus-activity-away{fill:#f49ab4}
+.nexus-activity-ticks{fill:#94abc0;font-size:10px}
+.nexus-activity small{display:block;font-size:10px;line-height:1.45;color:#91afbf;margin-top:5px}
+@media(max-width:680px){.nexus-activity{padding:12px 9px}.nexus-activity-head{flex-wrap:wrap}.nexus-activity svg{max-height:150px}}
