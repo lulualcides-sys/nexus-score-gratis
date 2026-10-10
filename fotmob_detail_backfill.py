@@ -11,6 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
 from urllib.parse import urlencode
 from coletar import DAY, HISTORY, NOW, read, write, fetch, stats, momentum, fotmob_events, fotmob_lineups, merge
+from scout_snapshots import append_snapshot
 
 LIMIT = 42
 RETRY_HOURS = 12
@@ -73,6 +74,9 @@ def run():
                 if time.monotonic()-begun>MAX_SECONDS:break
                 row=docs[d]['matches'][key]
                 extracted=stats(packet)
+                if (row.get('fixture') or {}).get('phase')=='live':
+                    row['scout_snapshots']=append_snapshot(row.get('scout_snapshots'),
+                        extracted,(row.get('fixture') or {}).get('minute'),NOW.isoformat(),'FotMob')
                 row['stats'],num=updated_stats(row.get('stats') or {},extracted)
                 if num:
                     row['stats_updated_at']=NOW.isoformat()
