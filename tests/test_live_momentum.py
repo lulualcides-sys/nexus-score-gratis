@@ -28,6 +28,13 @@ class MomentumDiagnosticTests(unittest.TestCase):
         doc={'content':{'momentum':{'data':[{'minute':9,'value':-10}]}}}
         self.assertEqual(momentum_diagnostic(doc)['points'][0]['value'],-10.)
 
+    def test_false_explicitly_means_provider_has_no_curve(self):
+        self.assertEqual(momentum_diagnostic({'content':{'momentum':False}})['state'],
+                         'not_provided')
+        self.assertEqual(momentum_diagnostic({'content':{'momentum':False}})['points'],[])
+        self.assertEqual(momentum_diagnostic({'content':{'momentum':True}})['state'],
+                         'unsupported_shape')
+
     def test_missing_not_filled_using_shots_or_possession(self):
         doc={'content':{'stats': {'Periods': {'All': {'stats': [
             {'title':'Shots on target','stats':[8,2]}]}}}}}
