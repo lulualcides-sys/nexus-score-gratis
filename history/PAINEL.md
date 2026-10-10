@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T09:27:58.226243+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T10:27:02.119480+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -23,7 +23,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
 | 2026-10-10 | Chelsea × AFC Bournemouth | 0-0 | 0 | Match Odds 1X2: Casa 1,71, Empate 4,20, Fora 4,50 |
 | 2026-10-10 | Aston Villa × Brentford | 0-0 | 0 | Match Odds 1X2: Casa 2,70, Empate 3,55, Fora 2,50 |
 | 2026-10-10 | Ipswich Town × Fulham | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | Arsenal × Leeds United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Arsenal × Leeds United | 0-0 | 0 | Match Odds 1X2: Casa 1,42, Empate 4,60, Fora 8,00 |
 | 2026-10-10 | Real Madrid × Villarreal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Rayo Vallecano × Athletic Club | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Barcelona × Getafe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 244 | **Jogos distintos:** 79 | **Resultados verificáveis:** 112 | **Com gol:** 37 | **Sem gol:** 75 | **Taxa observada:** 33.0%.
-**Evolução da amostra:** 2 datas com coletas | 1 pendentes | 39 indeterminados | 92 incompletos.
+**Observações:** 252 | **Jogos distintos:** 82 | **Resultados verificáveis:** 117 | **Com gol:** 38 | **Sem gol:** 79 | **Taxa observada:** 32.5%.
+**Evolução da amostra:** 2 datas com coletas | 4 pendentes | 39 indeterminados | 92 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 47 | 34 | 14 | 20 | 41.2% |
-| 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
-| 🎯 chutes_no_alvo_5 | 42 | 18 | 7 | 11 | 38.9% |
-| ⚡ pressao_ofensiva_18 | 27 | 13 | 3 | 10 | 23.1% |
-| 🚩 escanteios_6 | 39 | 8 | 2 | 6 | 25.0% |
+| 🥶 jogo_frio | 51 | 38 | 15 | 23 | 39.5% |
+| 🟥 expulsao_confirmada | 42 | 19 | 6 | 13 | 31.6% |
+| 🎯 chutes_no_alvo_5 | 43 | 18 | 7 | 11 | 38.9% |
+| ⚡ pressao_ofensiva_18 | 28 | 14 | 3 | 11 | 21.4% |
+| 🚩 escanteios_6 | 40 | 8 | 2 | 6 | 25.0% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
 | 🔥 pressao_forte_10min | 11 | 5 | 1 | 4 | 20.0% |
 | 🧨 pressao_total_5_10min | 8 | 4 | 1 | 3 | 25.0% |
@@ -206,6 +206,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Toluca | 4 | 3 | 2 | 1 | 66.7% |
 | Lommel | 3 | 3 | 3 | 0 | 100.0% |
 | SK Beveren | 3 | 3 | 2 | 1 | 66.7% |
+| South Melbourne | 3 | 3 | 0 | 3 | 0.0% |
 | Avispa Fukuoka | 5 | 2 | 1 | 1 | 50.0% |
 | Águilas Doradas | 4 | 2 | 0 | 2 | 0.0% |
 | Al-Gharraf | 3 | 2 | 0 | 2 | 0.0% |
@@ -215,14 +216,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Montevideo City Torque | 3 | 2 | 1 | 1 | 50.0% |
 | Almere City FC | 2 | 2 | 0 | 2 | 0.0% |
 | Dinamo București | 2 | 2 | 0 | 2 | 0.0% |
-| Galatasaray | 2 | 2 | 0 | 2 | 0.0% |
 
 ### Campeonato
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
+| J. League | 13 | 9 | 2 | 7 | 22.2% |
 | Liga Profesional | 18 | 8 | 4 | 4 | 50.0% |
-| J. League | 12 | 8 | 2 | 6 | 25.0% |
 | Premier Division | 9 | 8 | 0 | 8 | 0.0% |
 | Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
 | Primera A | 10 | 6 | 3 | 3 | 50.0% |
@@ -230,13 +230,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Belgian Pro League | 6 | 6 | 5 | 1 | 83.3% |
 | Liga de Expansion MX Apertura | 8 | 5 | 2 | 3 | 40.0% |
 | Liga MX | 11 | 4 | 3 | 1 | 75.0% |
+| Premier League | 9 | 4 | 1 | 3 | 25.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
+| Australia Cup | 7 | 4 | 0 | 4 | 0.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
 | Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
 | LaLiga | 7 | 3 | 0 | 3 | 0.0% |
-| Premier League | 7 | 3 | 0 | 3 | 0.0% |
 | Saudi Pro League | 6 | 3 | 3 | 0 | 100.0% |
 | 2. Liga | 5 | 2 | 0 | 2 | 0.0% |
 | First League | 4 | 2 | 1 | 1 | 50.0% |
@@ -245,30 +246,37 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Championship | 2 | 2 | 0 | 2 | 0.0% |
 | Super Lig | 2 | 2 | 0 | 2 | 0.0% |
 | Superliga | 2 | 2 | 0 | 2 | 0.0% |
-| Eliteserien | 7 | 1 | 0 | 1 | 0.0% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 24 | 17 | 6 | 11 | 35.3% |
-| 31–45′ | 19 | 12 | 7 | 5 | 58.3% |
-| 46–60′ | 34 | 32 | 11 | 21 | 34.4% |
-| 61–75′ | 54 | 35 | 9 | 26 | 25.7% |
-| 76–90′ | 78 | 14 | 3 | 11 | 21.4% |
+| 1–15′ | 4 | 4 | 2 | 2 | 50.0% |
+| 16–30′ | 25 | 17 | 6 | 11 | 35.3% |
+| 31–45′ | 19 | 13 | 7 | 6 | 53.8% |
+| 46–60′ | 35 | 33 | 11 | 22 | 33.3% |
+| 61–75′ | 55 | 36 | 9 | 27 | 25.0% |
+| 76–90′ | 81 | 14 | 3 | 11 | 21.4% |
 | 91+′ | 33 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 244 | **Jogos monitorados:** 1084 | **Ao vivo:** 18 | **Termômetros recentes:** 1.
+**Registros:** 252 | **Jogos monitorados:** 1084 | **Ao vivo:** 19 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T09:27:23.575465+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (35') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T10:27:20.928488+00:00 | Chornomorets Odesa × FC Kharkiv | Chornomorets Odesa (21') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-10T10:27:20.928488+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (78') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T10:27:20.928488+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (78') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-10T10:27:20.928488+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (78') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-10T10:16:43.904199+00:00 | Kyoto Sanga FC × Machida Zelvia | Machida Zelvia (13') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-10T10:16:43.904199+00:00 | FC Orenburg × Dynamo Makhachkala | FC Orenburg (15') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-10T10:16:43.904199+00:00 | South Melbourne × Melbourne Victory | South Melbourne (68') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-10T09:58:47.925280+00:00 | South Melbourne × Melbourne Victory | South Melbourne (50') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-10T09:27:23.575465+00:00 | South Melbourne × Melbourne Victory | Melbourne Victory (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T09:07:53.655901+00:00 | Gimcheon Sangmu × FC Anyang | Gimcheon Sangmu (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-10T09:07:53.655901+00:00 | South Melbourne × Melbourne Victory | South Melbourne (16') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T08:16:53.024505+00:00 | SKA-Khabarovsk × KamAZ | SKA-Khabarovsk (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -360,18 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:34:54.176982+00:00 | Málaga × Espanyol | Málaga (77') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-09T20:34:54.176982+00:00 | Haverfordwest × Caernarfon | Haverfordwest (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T20:34:54.176982+00:00 | Llandudno FC × Airbus UK Broughton | Llandudno FC (86') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:28:05.743240+00:00 | San Antonio Bulo Bulo × Real Tomayapo | Real Tomayapo (68') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:28:05.743240+00:00 | Cambrian United × Ammanford | Ammanford (86') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:28:05.743240+00:00 | Braga × Sporting CP | Braga (46') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | San Antonio Bulo Bulo × Real Tomayapo | Real Tomayapo (56') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **22**.
+Jogos com odds registradas nos ultimos dias: **24**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
