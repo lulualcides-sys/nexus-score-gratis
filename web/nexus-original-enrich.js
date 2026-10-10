@@ -170,14 +170,19 @@ function instrument(g,detail){
    }
  }
  const snapshots=[];
+ // Marcadores so usam capturas reais, nunca o ultimo minuto da pressao como
+ // se representasse quando uma estatistica acumulada ocorreu.
+ const observations=Array.isArray(g.scout_snapshots)?g.scout_snapshots:[];
+ const latest=observations.at(-1);
  for(const side of ['home','away']){
    for(const [field,emoji,name] of [['shots_on','🥅','Chutes no gol'],['shots_off','↗️','Chutes para fora'],
      ['big_chances','💣','Grandes chances'],['dangerous_attacks','⚔️','Ataques perigosos']]){
-     const count=safeNumber(stats[side]?.[field]);
-     if(count===null||count<=0)continue;
-     snapshots.push({minute:minutes,team:side.toUpperCase(),emoji,name,basis:'snapshot',
-        count,reason:count+' no jogo · total sem minuto de ocorrência',
-        label:'Total acumulado; não é incidente histórico neste minuto'});
+     const count=safeNumber(latest?.stats?.[side]?.[field]);
+     const observedMinute=safeNumber(latest?.m);
+     if(count===null||count<=0||observedMinute===null||observedMinute<1||observedMinute>130)continue;
+     snapshots.push({minute:observedMinute,team:side.toUpperCase(),emoji,name,basis:'snapshot',
+        count,reason:count+' no jogo · observado em '+latest.at+'; momento dos eventos desconhecido',
+        label:'Total acumulado na coleta; não significa ocorrência neste minuto'});
    }
  }
  const total=points.length;
@@ -186,6 +191,7 @@ function instrument(g,detail){
     stats_observed_at:g.stats_observed_at||detail.stats_observed_at||null,
     stats_source:g.stats_source||detail.stats_source||g.source||'Fonte pública',
     pressure_observed_at:g.pressure_observed_at||null,
+    scout_snapshots:observations,
     observed_at:g.observed_at||detail.observed_at||null,
    // Termômetro e IARA devem ler a MESMA série usada nas janelas e sinais.
    // Se a fonte não tiver amostras, preservar o detalhe existente sem criar zeros.
@@ -392,6 +398,7 @@ function cloudCollector(doc){
      phase:g.phase,league:g.league,source:(g.sources||[g.source]).join(' + '),
      collected_at:g.observed_at,stats:g.stats,
      thermometer:{points:pts.map(p=>({minute:p.m,value:p.v})),samples:pts.length},
+     scout_snapshots:g.scout_snapshots||[],
      observations:pts.length||1,
      odds_available:observed.length>0,ev_available:(g.signals||[]).some(x=>x.ev_pct!=null),
      markets:availability(g),
