@@ -349,8 +349,9 @@ function labDashboard(doc){
      momentum_source:momentum.length?g.source:'Indisponível'}
  }).sort((a,b)=>(b.momentum_samples-a.momentum_samples)||(b.stats_available-a.stats_available)).slice(0,120);
  const providers={ESPN:'Coleta pública',FotMob:'Coleta pública',
-   'Football-Data.co.uk':Number(doc.source_status?.files_checked||0)+' arquivos consultados',
-   OpenLigaDB:String(doc.source_status?.providers?.OpenLigaDB||'sem dados nesta janela')};
+   'Football-Data.co.uk':String(doc.source_status?.providers?.['Football-Data.co.uk']||'desativado'),
+   OpenLigaDB:String(doc.source_status?.providers?.OpenLigaDB||'sem dados nesta janela'),
+   'OpenFootball CC0':(doc.source_status?.openfootball_cc0?.cross_verified||0)+' placares FT verificados / '+(doc.source_status?.openfootball_cc0?.checked||0)+' conferidos'};
  const markets=market.markets||[];
  const journal=(doc.signal_journal?.items||[]).slice(0,80).map(a=>({
    match_id:a.match_id,created_at:a.captured_at,category:'monitoramento',

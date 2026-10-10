@@ -34,10 +34,11 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 
 - **FotMob:** descoberta diaria ampliada, escudos do CDN FotMob e detalhes/pressao, quando disponiveis. Rotas 2026 `/api/data/matches` e `/api/data/matchDetails`.
 - **ESPN:** verificacao de campeonatos, scouts, escudos ESPN e ultimos 10 resultados disponiveis por time na propria competicao.
-- **Football-Data.co.uk:** consulta CSV historica de 10 divisoes europeias; cruza placares e complementa scouts somente quando times e resultados coincidem. Odds de fechamento sao rotuladas como *historicas*, nunca aproveitadas como se fossem odds de entrada.
+- **Football-Data.co.uk:** coleta automatica **desativada por padrao** devido as restricoes de uso do operador; somente habilitavel quando existir permissao especifica aplicavel, via `NEXUS_FOOTBALL_DATA_LICENSED=1`. Mesmo autorizada, exige liga, equipes, data, horario e placar FT concordantes. Odds de fechamento sao *historicas*, nunca odds de entrada.
 - **OpenLigaDB:** conferencia independente de Bundesliga e horarios/resultados, sem misturar jogos de nome ou horario incerto.
+- **OpenFootball CC0:** auditoria separada dos resultados finais de seis divisões europeias (incluindo Championship), conferindo liga, equipes, data local e placar contra fonte de dominio publico. Arquivos com cache de 20 h e relatório em `history/openfootball_cc0_status.json`. Conflitos nao alteram resultados existentes e dados CC0 nunca substituem scouts, odds ou EV+.
 - **Understat/Betfair Historical:** bases de referencia para trabalhos futuros de xG e odds historicas; nao estao ligadas ao painel ao vivo.
 
 O painel publico usa **hoje mais dois dias anteriores, no fuso America/Sao_Paulo**, e mostra os escudos oficiais encontrados; se algum logo falhar, exibe as iniciais. Em cada dia, organiza os jogos do horario mais cedo para o mais tarde. Cada confronto oferece ate 10 jogos anteriores por time, separadamente.
 
-Em `history/multi_source_status.json`, acompanhe quantos CSVs foram consultados, scouts completados e resultados cruzados. A simples consulta de uma fonte **nao** significa que ela forneceu partidas na janela atual. Resultados paper e P/L pessoal da Bolsa continuam distintos.
+Em `history/multi_source_status.json`, acompanhe as fontes ativadas, scouts completados e resultados cruzados. Em `history/openfootball_cc0_status.json`, acompanhe conferências de placares e conflitos, sem transformar esse histórico em dados ao vivo. A simples consulta de uma fonte **nao** significa que ela forneceu partidas na janela atual. Resultados paper e P/L pessoal da Bolsa continuam distintos.

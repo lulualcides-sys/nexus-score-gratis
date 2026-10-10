@@ -31,6 +31,7 @@ on:
       - "web/nexus-iara.js"
       - "web/nexus-iara.css"
       - "multi_source.py"
+      - "openfootball_cc0_source.py"
       - "web/index.html"
       - "signal_evaluation.py"
       - "web/nexus-unit-pl.js"
@@ -64,7 +65,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py
+          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
@@ -94,10 +95,14 @@ jobs:
         id: backfill
         continue-on-error: true
         run: python3 backfill.py
-      - name: Cruzar Football-Data e OpenLigaDB com fontes principais
+      - name: Cruzar OpenLigaDB e Football-Data somente com permissao
         id: multi_source
         continue-on-error: true
         run: python3 multi_source.py
+      - name: Auditar placares FT no OpenFootball CC0 (sem sobrepor resultados)
+        id: cc0_check
+        continue-on-error: true
+        run: python3 openfootball_cc0_source.py
       - name: Coletar historico dos dez jogos anteriores por equipe
         id: team_form
         continue-on-error: true
