@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T01:29:54.632132+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T02:28:45.663376+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -10,23 +10,25 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-10 | Once Caldas × Llaneros FC | 0-0 | 1 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | Puebla × León | 0-0 | 10 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-10 | Deportivo Garcilaso × Sport Huancayo | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-10 | Unión × Defensa y Justicia | 0-0 | 27 | Chutes no alvo: 1.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-10-10 | Lexington SC × FC Tulsa | 0-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 7.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-10 | Once Caldas × Llaneros FC | 0-0 | 45 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-10 | Puebla × León | 0-1 | 51 | Chutes no alvo: 5.0×3.0, Chutes para fora: 4.0×0.0, Escanteios: 2.0×3.0, Grandes chances: 1.0×1.0 |
+| 2026-10-10 | Tigres × Toluca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Deportivo Garcilaso × Sport Huancayo | 0-1 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 6.0×4.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-10-10 | Unión × Defensa y Justicia | 0-2 | 64 | Chutes no alvo: 4.0×7.0, Chutes para fora: 8.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×4.0 |
+| 2026-10-10 | Lexington SC × FC Tulsa | 0-0 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 7.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-10 | Sporting FC × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | Tepatitlán FC × Atlético Morelia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | Inca Aruba × CD Platense Municipal | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Tepatitlán FC × Atlético Morelia | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Inca Aruba × CD Platense Municipal | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Canada (W) × Denmark (W) | 1-1 | 0 | Chutes no alvo: 7.0×7.0, Chutes para fora: 4.0×0.0, Escanteios: 7.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-10 | Wellington Phoenix B × Birkenhead United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-10 | Auckland City FC × Wellington Olympic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | Juventud Antoniana × Huracán Las Heras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-10 | San Martín Mendoza × Argentino Monte Maíz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Ferrymead Bays × Miramar Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | Juventud Antoniana × Huracán Las Heras | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-10 | San Martín Mendoza × Argentino Monte Maíz | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Instituto (Córdoba) × Boca Juniors | 2-2 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,95, Empate 2,95, Fora 2,60 |
 | 2026-10-09 | Gimnasia La Plata × Atlético Tucumán | 1-1 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,91, Empate 3,35, Fora 4,20 |
 | 2026-10-09 | Aldosivi × Sarmiento (Junín) | 1-3 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,10, Fora 2,90 |
-| 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-1 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
+| 2026-10-09 | Unión (Santa Fe) × Defensa y Justicia | 0-2 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,25, Empate 3,20, Fora 3,35 |
 | 2026-10-09 | Alianza FC × Águilas Doradas | 2-2 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,35, Empate 3,10, Fora 2,85 |
 | 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,51, Empate 3,90, Fora 5,50 |
 | 2026-10-09 | Málaga × Espanyol | 1-1 | 0 | Chutes no alvo: 2.0×3.0; Match Odds 1X2: Casa 2,90, Empate 3,15, Fora 2,60 |
@@ -35,19 +37,19 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-09 | Real Cundinamarca × Real Santander | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Fortaleza FC × Millonarios | 1-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 8.0×6.0, Escanteios: 3.0×5.0, Grandes chances: 2.0×1.0 |
 | 2026-10-09 | Alianza FC × Águilas Doradas | 2-2 | 90 | Chutes no alvo: 5.0×5.0, Chutes para fora: 6.0×5.0, Escanteios: 5.0×6.0, Grandes chances: 0.0×1.0 |
-| 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 18 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-09 | Puebla × León | 0-0 | 28 | Chutes no alvo: 3.0×1.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Once Caldas × Llaneros FC | 0-0 | 45 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Puebla × León | 0-1 | 51 | Chutes no alvo: 5.0×3.0, Chutes para fora: 4.0×0.0, Escanteios: 2.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-10-09 | FCV Dender EH × Club Brugge NXT | 3-0 | 79 | Chutes no alvo: 4.0×5.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×5.0, Grandes chances: 2.0×1.0 |
 | 2026-10-09 | Anderlecht Futures × Eupen | 0-2 | 84 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×7.0, Grandes chances: 0.0×3.0 |
 | 2026-10-09 | FC Silon Táborsko × Karviná | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Vysočina Jihlava × SK Prostějov | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Ústí nad Labem × Opava | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Slavia Prague B × FC Vlašim | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-09 | Deportivo Garcilaso × Sport Huancayo | 0-0 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 2.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-09 | Deportivo Garcilaso × Sport Huancayo | 1-1 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 6.0×4.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-09 | Ratchaburi FC × Sukhothai FC | 6-0 | 90 | Chutes no alvo: 10.0×4.0, Chutes para fora: 4.0×8.0, Escanteios: 6.0×5.0, Grandes chances: 5.0×0.0 |
 | 2026-10-09 | Phrae United × Kanchanaburi Power | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | San Antonio Bulo Bulo × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 13.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-09 | Unión × Defensa y Justicia | 0-1 | 45 | Chutes no alvo: 2.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×1.0 |
+| 2026-10-09 | Unión × Defensa y Justicia | 0-2 | 64 | Chutes no alvo: 4.0×7.0, Chutes para fora: 8.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×4.0 |
 | 2026-10-09 | Instituto × Boca Juniors | 2-2 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 6.0×7.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-09 | Gimnasia LP × Atlético Tucumán | 1-1 | 90 | Chutes no alvo: 5.0×2.0, Chutes para fora: 12.0×1.0, Escanteios: 10.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-10-09 | Aldosivi × Sarmiento | 1-3 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×9.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×2.0 |
@@ -138,8 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-09 | Maccabi Herzliya × Maccabi Ahi Nazareth | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | SC Kafr Qasim × Bnei Yehuda Tel Aviv | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-09 | Almere City FC × FC Eindhoven | 3-0 | 0 | Chutes no alvo: 7.0×0.0, Chutes para fora: 6.0×5.0, Escanteios: 5.0×2.0, Grandes chances: 6.0×0.0 |
-| 2026-10-09 | De Graafschap × Jong FC Utrecht | 2-1 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 6.0×9.0, Escanteios: 6.0×5.0, Grandes chances: 2.0×2.0 |
-| 2026-10-09 | FC Dordrecht × FC Emmen | 0-3 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×2.0, Grandes chances: 2.0×1.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 198 | **Jogos distintos:** 68 | **Resultados verificáveis:** 90 | **Com gol:** 25 | **Sem gol:** 65 | **Taxa observada:** 27.8%.
-**Evolução da amostra:** 1 datas com coletas | 4 pendentes | 25 indeterminados | 79 incompletos.
+**Observações:** 202 | **Jogos distintos:** 70 | **Resultados verificáveis:** 92 | **Com gol:** 26 | **Sem gol:** 66 | **Taxa observada:** 28.3%.
+**Evolução da amostra:** 1 datas com coletas | 0 pendentes | 31 indeterminados | 79 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 32 | 22 | 9 | 13 | 40.9% |
-| 🎯 chutes_no_alvo_5 | 35 | 14 | 4 | 10 | 28.6% |
+| 🥶 jogo_frio | 33 | 23 | 9 | 14 | 39.1% |
+| 🎯 chutes_no_alvo_5 | 37 | 15 | 5 | 10 | 33.3% |
 | 🟥 expulsao_confirmada | 29 | 14 | 2 | 12 | 14.3% |
 | ⚡ pressao_ofensiva_18 | 25 | 13 | 3 | 10 | 23.1% |
-| 💣 grandes_chances_3 | 19 | 8 | 3 | 5 | 37.5% |
+| 💣 grandes_chances_3 | 20 | 8 | 3 | 5 | 37.5% |
 | 🚩 escanteios_6 | 36 | 7 | 2 | 5 | 28.6% |
 | 🔥 pressao_forte_10min | 9 | 5 | 1 | 4 | 20.0% |
 | 🧨 pressao_total_5_10min | 7 | 4 | 1 | 3 | 25.0% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Liga Profesional | 11 | 8 | 4 | 4 | 50.0% |
+| Liga Profesional | 12 | 8 | 4 | 4 | 50.0% |
 | Premier Division | 9 | 8 | 0 | 8 | 0.0% |
 | Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
 | First Division B | 9 | 6 | 0 | 6 | 0.0% |
@@ -234,9 +234,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
 | LaLiga | 7 | 3 | 0 | 3 | 0.0% |
 | Premier League | 7 | 3 | 0 | 3 | 0.0% |
+| Primera A | 6 | 3 | 0 | 3 | 0.0% |
 | Saudi Pro League | 6 | 3 | 3 | 0 | 100.0% |
 | 2. Liga | 5 | 2 | 0 | 2 | 0.0% |
-| Primera A | 5 | 2 | 0 | 2 | 0.0% |
 | Liga AUF Uruguaya Clausura | 3 | 2 | 1 | 1 | 50.0% |
 | Stars League | 3 | 2 | 0 | 2 | 0.0% |
 | Championship | 2 | 2 | 0 | 2 | 0.0% |
@@ -252,8 +252,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 18 | 13 | 5 | 8 | 38.5% |
-| 31–45′ | 14 | 10 | 6 | 4 | 60.0% |
+| 16–30′ | 21 | 15 | 6 | 9 | 40.0% |
+| 31–45′ | 15 | 10 | 6 | 4 | 60.0% |
 | 46–60′ | 30 | 28 | 8 | 20 | 28.6% |
 | 61–75′ | 40 | 27 | 3 | 24 | 11.1% |
 | 76–90′ | 65 | 10 | 2 | 8 | 20.0% |
@@ -262,16 +262,20 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 198 | **Jogos monitorados:** 362 | **Ao vivo:** 10 | **Termômetros recentes:** 2.
+**Registros:** 202 | **Jogos monitorados:** 362 | **Ao vivo:** 11 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T01:30:04.362320+00:00 | Unión (Santa Fe) × Defensa y Justicia | Defensa y Justicia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-10T01:30:04.362320+00:00 | Puebla × León | León (29') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-10T01:30:04.362320+00:00 | Unión × Defensa y Justicia | Defensa y Justicia (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-10T01:30:04.362320+00:00 | Unión × Defensa y Justicia | Defensa y Justicia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-10T02:10:04.052557+00:00 | Puebla × León | Puebla (29') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-10T02:10:04.052557+00:00 | Deportivo Garcilaso × Sport Huancayo | Sport Huancayo (29') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-10T01:52:33.140417+00:00 | Unión × Defensa y Justicia | Defensa y Justicia (45') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-10T01:35:37.435723+00:00 | Once Caldas × Llaneros FC | Once Caldas (20') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-10T01:30:04.362320+00:00 | Unión (Santa Fe) × Defensa y Justicia | Defensa y Justicia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-10T01:30:04.362320+00:00 | Puebla × León | León (29') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-10T01:30:04.362320+00:00 | Unión × Defensa y Justicia | Defensa y Justicia (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-10T01:30:04.362320+00:00 | Unión × Defensa y Justicia | Defensa y Justicia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-10T00:53:48.948281+00:00 | Alianza FC × Águilas Doradas | Alianza FC (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T00:53:48.948281+00:00 | Alianza FC × Águilas Doradas | Águilas Doradas (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T00:53:48.948281+00:00 | Tapatío × Atlético La Paz | Tapatío (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -364,10 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T19:42:52.759997+00:00 | PSV Eindhoven × SC Heerenveen | SC Heerenveen (82') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T19:42:52.759997+00:00 | PSV Eindhoven × SC Heerenveen | SC Heerenveen (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T19:42:52.759997+00:00 | Northern Ireland (W) × Portugal (W) | Portugal (W) (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T19:42:52.759997+00:00 | Dunkerque × Annecy FC | Dunkerque (81') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T19:42:52.759997+00:00 | Dunkerque × Annecy FC | Annecy FC (81') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T19:42:52.759997+00:00 | Montpellier × Grenoble | Montpellier (83') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T19:42:52.759997+00:00 | Montpellier × Grenoble | Montpellier (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
