@@ -55,6 +55,23 @@ v=iara.evaluate(noMomentum);
 assert.match(v.intro,/fonte ainda não entregou/);
 assert.match(v.next,/não consegue apontar/);
 assert.equal(v.confidence,'SEM DADOS RECENTES');
+const observedDelta={...noMomentum,minute:35,scout_snapshots:[
+  {m:25,at:'2026-10-10T08:00:00Z',source:'FotMob',
+   stats:{home:{shots_on:1,corners:2},away:{shots_on:0,corners:1}}},
+  {m:33,at:'2026-10-10T08:10:00Z',source:'FotMob',
+   stats:{home:{shots_on:3,corners:2},away:{shots_on:1,corners:2}}}
+]};
+v=iara.evaluate(observedDelta);
+assert.equal(v.confidence,'SCOUTS ENTRE CAPTURAS');
+assert.match(v.intro,/25′–33′/);
+assert.match(v.intro,/Mandante: chutes no alvo \+2/);
+assert.match(v.next,/não permite estimar a chance/);
+assert.match(iara.render(observedDelta),/SEM CURVA DE PRESSÃO/);
+assert.doesNotMatch(v.intro,/está pressionando com intensidade forte/);
+assert.equal(iara.scoutEvolution({...observedDelta,minute:60},60),null);
+assert.equal(iara.scoutEvolution({...observedDelta,scout_snapshots:[
+ observedDelta.scout_snapshots[0],
+ {...observedDelta.scout_snapshots[1],source:'Outra fonte'}]},35),null);
 const weakCoverage={...base,thermometer:{points:[
  {minute:27,value:88},{minute:28,value:90},{minute:35,value:81}
 ]}};
