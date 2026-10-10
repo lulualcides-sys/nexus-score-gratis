@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from scout_snapshots import append_snapshot
-from live_momentum import momentum_diagnostic
+from live_momentum import momentum_diagnostic, momentum_shape
 
 HOME=Path(__file__).resolve().parent
 HISTORY=HOME/'history'
@@ -236,7 +236,8 @@ def run():
     status={'updated_at':NOW.isoformat(),'day':DAY,'ok':False,'sources':[],
             'live_found':0,'details_collected':0,'thermometers_saved':0,
             'scout_snapshots_saved':0,'momentum_unavailable':0,
-            'momentum_status_counts':{},'stats_detail_available':0,'errors':[]}
+            'momentum_status_counts':{},'momentum_shape_counts':{},
+            'stats_detail_available':0,'errors':[]}
     games=[]
     try:
         games=fotmob_list(DAY)
@@ -296,6 +297,10 @@ def run():
             status['momentum_status_counts'][diagnosis['state']]=(
                 status['momentum_status_counts'].get(diagnosis['state'],0)+1)
             if not points:status['momentum_unavailable']+=1
+            if diagnosis['state']=='unsupported_shape':
+                signature=momentum_shape(packet)
+                status['momentum_shape_counts'][signature]=(
+                    status['momentum_shape_counts'].get(signature,0)+1)
             before['momentum_diagnostic']={'state':diagnosis['state'],
                 'source_path':diagnosis['source_path'], 'checked_at':NOW.isoformat()}
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
