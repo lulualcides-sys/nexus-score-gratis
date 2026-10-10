@@ -1,5 +1,5 @@
 import unittest
-from live_momentum import momentum_diagnostic
+from live_momentum import momentum_diagnostic, momentum_shape
 
 
 class MomentumDiagnosticTests(unittest.TestCase):
@@ -43,6 +43,14 @@ class MomentumDiagnosticTests(unittest.TestCase):
             {'minute':20,'value':float('inf')}, {'minute':0,'value':3}]}}}}}
         self.assertEqual(momentum_diagnostic(p)['state'],'no_valid_points')
         self.assertEqual(momentum_diagnostic(p)['points'],[])
+
+    def test_shape_logging_does_not_expose_values(self):
+        doc={'content':{'momentum':{'main':{'foo':{'secret':'example'}}}}}
+        signature=momentum_shape(doc)
+        self.assertIn('main:', signature)
+        self.assertIn('foo', signature)
+        self.assertNotIn('example', signature)
+        self.assertLess(len(signature),300)
 
     def test_does_not_accept_strings_or_arbitrary_team_stats(self):
         self.assertEqual(momentum_diagnostic({'content':{'momentum':'42'}})['state'],

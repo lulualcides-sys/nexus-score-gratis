@@ -72,3 +72,30 @@ def momentum_diagnostic(packet):
     return {'points': [], 'state': ('missing' if not had_container else
             'no_valid_points' if had_list else 'unsupported_shape'),
             'source_path': None}
+
+def momentum_shape(packet):
+    """Assinatura de estrutura sem copiar dados, times ou valores do jogo."""
+    content=(packet or {}).get('content') or {}
+    if not isinstance(content,dict):
+        return 'content:not-object'
+    facts=content.get('matchFacts') or {}
+    candidates=[('facts',(facts or {}).get('momentum') if isinstance(facts,dict) else None),
+                ('content',content.get('momentum'))]
+    signatures=[]
+    def describe(item,depth=0):
+        if isinstance(item,dict):
+            keys=sorted(str(k)[:24] for k in item)[:8]
+            keytext=','.join(keys)
+            if depth>=2:return 'dict['+keytext+']'
+            deeper=[]
+            for k in ('main','data','home','away','values','periods'):
+                if k in item:
+                    deeper.append(k+':'+describe(item[k],depth+1))
+            return 'dict['+keytext+']'+('('+','.join(deeper)+')' if deeper else '')
+        if isinstance(item,list):return 'list'
+        if item is None:return 'null'
+        if isinstance(item,bool):return 'bool'
+        return type(item).__name__
+    for name,item in candidates:
+        if item is not None:signatures.append(name+':'+describe(item))
+    return '|'.join(signatures)[:280] if signatures else 'absent'
