@@ -31,6 +31,7 @@ on:
       - "web/nexus-iara.js"
       - "web/nexus-iara.css"
       - "multi_source.py"
+      - "scout_snapshots.py"
       - "openfootball_cc0_source.py"
       - "web/index.html"
       - "signal_evaluation.py"
@@ -65,7 +66,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py
+          python3 -m py_compile signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py scout_snapshots.py
           python3 -m unittest discover -s tests -v
           node --check web/app.js
           node --check web/match-detail.js
