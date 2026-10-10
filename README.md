@@ -30,6 +30,10 @@ O GitHub Actions coleta periodicamente partidas públicas, salva apenas os dados
 
 **Não exige cartão nem servidor pago.** É um repositório privado; preserve-o assim para manter o histórico privado.
 
+## Auditoria de pressão ao vivo — prioridade máxima
+
+O parser de `momentum` verifica estruturas publicamente documentadas em `content.matchFacts.momentum` e `content.momentum` sem inferir valores. Registra `observed`, `missing`, `unsupported_shape` e `no_valid_points` em `history/status.json` e junto de cada jogo. A IARA pode interpretar **aumentos de contagens entre capturas** como atividade observada no intervalo, mas não como pressão por minuto, previsão de gol ou EV+ calibrado. Essa alteração não aumenta a frequência nem a quantidade de acessos a provedores. Fontes externas exigem direitos de acesso e uso apropriados; não contornar restrições de serviço.
+
 ## Capturas de scouts no termometro
 
 O coletor guarda ate 72 observacoes reais por partida ao vivo, identificadas por horario UTC, minuto em campo e fonte, em `scout_snapshots`. O painel publica o historico e a diferenca ENTRE coletas quando os dois valores foram observados. Capturas com minutos ausentes nao entram na linha do tempo. Alteracoes de totais nao estabelecem minuto exato do chute, canto ou chance; o dado segue rotulado como acumulado. Caso FotMob nao forneca momentum, o grafico nao inventa pressao: exibe os scouts observados em bloco separado. A rotina de 10 minutos e melhor esforco, sujeita a atraso e jogos sem estatisticas.

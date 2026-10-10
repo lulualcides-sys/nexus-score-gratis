@@ -57,7 +57,12 @@
     const points=(Array.isArray(g.pressure)?g.pressure:[]).filter(p=>Number.isFinite(Number(p.m))&&Number.isFinite(Number(p.v))&&Number(p.m)>=0&&Number(p.m)<=135);
     const events=(Array.isArray(g.events)?g.events:[]).filter(e=>Number.isFinite(Number(e.m))&&Number(e.m)>=0&&Number(e.m)<=135);
     if(!points.length&&!events.length){
-      return noData('Ainda não há pressão por minuto nem eventos individuais confirmados nesta partida.');
+      const state=g?.momentum_diagnostic?.state;
+      const reason=state==='missing'?'A fonte consultada não disponibilizou a curva de pressão nesta coleta.':
+        state==='unsupported_shape'?'O formato da curva mudou e os valores ainda não foram validados.':
+        state==='no_valid_points'?'A resposta trouxe dados de pressão sem valores válidos.':
+        'Ainda não há pressão por minuto nem eventos individuais confirmados nesta partida.';
+      return noData(reason);
     }
     const end=Math.max(90, ...points.map(p=>Number(p.m)), ...events.map(e=>Number(e.m)));
     const scale=end>90?135:90;
