@@ -58,7 +58,8 @@
     const events=(Array.isArray(g.events)?g.events:[]).filter(e=>Number.isFinite(Number(e.m))&&Number(e.m)>=0&&Number(e.m)<=135);
     if(!points.length&&!events.length){
       const state=g?.momentum_diagnostic?.state;
-      const reason=state==='missing'?'A fonte consultada não disponibilizou a curva de pressão nesta coleta.':
+      const reason=state==='not_provided'?'A fonte informou que não disponibiliza pressão minuto a minuto nesta partida.':
+        state==='missing'?'A fonte consultada não disponibilizou a curva de pressão nesta coleta.':
         state==='unsupported_shape'?'O formato da curva mudou e os valores ainda não foram validados.':
         state==='no_valid_points'?'A resposta trouxe dados de pressão sem valores válidos.':
         'Ainda não há pressão por minuto nem eventos individuais confirmados nesta partida.';
