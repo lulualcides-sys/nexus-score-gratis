@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T07:28:48.718680+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T08:28:18.531187+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,17 +168,17 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 236 | **Jogos distintos:** 76 | **Resultados verificáveis:** 105 | **Com gol:** 34 | **Sem gol:** 71 | **Taxa observada:** 32.4%.
-**Evolução da amostra:** 2 datas com coletas | 3 pendentes | 37 indeterminados | 91 incompletos.
+**Observações:** 241 | **Jogos distintos:** 77 | **Resultados verificáveis:** 110 | **Com gol:** 37 | **Sem gol:** 73 | **Taxa observada:** 33.6%.
+**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 39 indeterminados | 92 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 43 | 30 | 12 | 18 | 40.0% |
+| 🥶 jogo_frio | 45 | 33 | 14 | 19 | 42.4% |
 | 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
-| 🎯 chutes_no_alvo_5 | 39 | 16 | 6 | 10 | 37.5% |
+| 🎯 chutes_no_alvo_5 | 42 | 18 | 7 | 11 | 38.9% |
 | ⚡ pressao_ofensiva_18 | 27 | 13 | 3 | 10 | 23.1% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
 | 🚩 escanteios_6 | 38 | 7 | 2 | 5 | 28.6% |
@@ -206,22 +206,23 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Toluca | 4 | 3 | 2 | 1 | 66.7% |
 | Lommel | 3 | 3 | 3 | 0 | 100.0% |
 | SK Beveren | 3 | 3 | 2 | 1 | 66.7% |
+| Avispa Fukuoka | 5 | 2 | 1 | 1 | 50.0% |
 | Águilas Doradas | 4 | 2 | 0 | 2 | 0.0% |
 | Al-Gharraf | 3 | 2 | 0 | 2 | 0.0% |
 | Boulogne | 3 | 2 | 1 | 1 | 50.0% |
+| FC Tokyo | 3 | 2 | 1 | 1 | 50.0% |
 | Lens | 3 | 2 | 1 | 1 | 50.0% |
 | Montevideo City Torque | 3 | 2 | 1 | 1 | 50.0% |
 | Almere City FC | 2 | 2 | 0 | 2 | 0.0% |
 | Dinamo București | 2 | 2 | 0 | 2 | 0.0% |
 | Galatasaray | 2 | 2 | 0 | 2 | 0.0% |
-| West Ham United | 2 | 2 | 0 | 2 | 0.0% |
-| Yokohama F.Marinos | 2 | 2 | 0 | 2 | 0.0% |
 
 ### Campeonato
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Liga Profesional | 18 | 8 | 4 | 4 | 50.0% |
+| J. League | 12 | 8 | 2 | 6 | 25.0% |
 | Premier Division | 9 | 8 | 0 | 8 | 0.0% |
 | Ligue 2 | 17 | 7 | 1 | 6 | 14.3% |
 | Primera A | 10 | 6 | 3 | 3 | 50.0% |
@@ -231,7 +232,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 11 | 4 | 3 | 1 | 75.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
-| J. League | 8 | 4 | 0 | 4 | 0.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
 | Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
@@ -239,13 +239,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 7 | 3 | 0 | 3 | 0.0% |
 | Saudi Pro League | 6 | 3 | 3 | 0 | 100.0% |
 | 2. Liga | 5 | 2 | 0 | 2 | 0.0% |
+| First League | 4 | 2 | 1 | 1 | 50.0% |
 | Liga AUF Uruguaya Clausura | 3 | 2 | 1 | 1 | 50.0% |
 | Stars League | 3 | 2 | 0 | 2 | 0.0% |
 | Championship | 2 | 2 | 0 | 2 | 0.0% |
 | Super Lig | 2 | 2 | 0 | 2 | 0.0% |
 | Superliga | 2 | 2 | 0 | 2 | 0.0% |
 | Eliteserien | 7 | 1 | 0 | 1 | 0.0% |
-| Serie B | 6 | 1 | 0 | 1 | 0.0% |
 
 ### Faixa de minuto
 
@@ -254,23 +254,28 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
 | 16–30′ | 23 | 16 | 6 | 10 | 37.5% |
 | 31–45′ | 18 | 12 | 7 | 5 | 58.3% |
-| 46–60′ | 33 | 31 | 10 | 21 | 32.3% |
-| 61–75′ | 54 | 34 | 8 | 26 | 23.5% |
-| 76–90′ | 74 | 10 | 2 | 8 | 20.0% |
-| 91+′ | 32 | 0 | 0 | 0 | — |
+| 46–60′ | 34 | 32 | 11 | 21 | 34.4% |
+| 61–75′ | 54 | 35 | 9 | 26 | 25.7% |
+| 76–90′ | 77 | 13 | 3 | 10 | 23.1% |
+| 91+′ | 33 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 236 | **Jogos monitorados:** 1084 | **Ao vivo:** 7 | **Termômetros recentes:** 1.
+**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 15 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-10T07:29:08.500606+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (66') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T08:16:53.024505+00:00 | SKA-Khabarovsk × KamAZ | SKA-Khabarovsk (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-10T07:58:28.786309+00:00 | FC Tokyo × Urawa Red Diamonds | FC Tokyo (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-10T07:42:31.771135+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Fagiano Okayama FC (80') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-10T07:42:31.771135+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-10T07:42:31.771135+00:00 | FC Tokyo × Urawa Red Diamonds | FC Tokyo (80') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-10T07:29:08.500606+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-10T06:40:38.234019+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (37') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-10T06:40:38.234019+00:00 | Cerezo Osaka × Yokohama F.Marinos | Yokohama F.Marinos (75') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T06:40:38.234019+00:00 | FC Tokyo × Urawa Red Diamonds | FC Tokyo (37') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Shelbourne × Sligo Rovers | Shelbourne (69') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Lens × Lyon | Lyon (71') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Lens × Lyon | Lens (71') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Raków Częstochowa × GKS Katowice | GKS Katowice (87') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | SK Beveren × Lommel | SK Beveren (70') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | West Ham United × Queens Park Rangers | West Ham United (55') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
