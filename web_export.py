@@ -12,6 +12,7 @@ import re
 from signal_evaluation import evaluate
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots
+from activity_timeline import observed_activity
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -418,7 +419,8 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'odds':odds[:5],
-            'events':events[:130],'signals':signals[:20],
+            'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
+            'signals':signals[:20],
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
 def paper_summary(rows):
