@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T08:28:18.531187+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T08:35:08.096551+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 15 | **Termômetros recentes:** 0.
+**Registros:** 241 | **Jogos monitorados:** 1084 | **Ao vivo:** 18 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
