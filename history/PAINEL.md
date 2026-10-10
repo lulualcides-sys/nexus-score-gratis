@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T06:33:20.469269+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T07:28:48.718680+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 230 | **Jogos distintos:** 74 | **Resultados verificáveis:** 103 | **Com gol:** 34 | **Sem gol:** 69 | **Taxa observada:** 33.0%.
-**Evolução da amostra:** 2 datas com coletas | 0 pendentes | 36 indeterminados | 91 incompletos.
+**Observações:** 236 | **Jogos distintos:** 76 | **Resultados verificáveis:** 105 | **Com gol:** 34 | **Sem gol:** 71 | **Taxa observada:** 32.4%.
+**Evolução da amostra:** 2 datas com coletas | 3 pendentes | 37 indeterminados | 91 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 39 | 28 | 12 | 16 | 42.9% |
+| 🥶 jogo_frio | 43 | 30 | 12 | 18 | 40.0% |
 | 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
 | 🎯 chutes_no_alvo_5 | 39 | 16 | 6 | 10 | 37.5% |
-| ⚡ pressao_ofensiva_18 | 26 | 13 | 3 | 10 | 23.1% |
+| ⚡ pressao_ofensiva_18 | 27 | 13 | 3 | 10 | 23.1% |
 | 💣 grandes_chances_3 | 22 | 8 | 3 | 5 | 37.5% |
 | 🚩 escanteios_6 | 38 | 7 | 2 | 5 | 28.6% |
-| 🔥 pressao_forte_10min | 10 | 5 | 1 | 4 | 20.0% |
+| 🔥 pressao_forte_10min | 11 | 5 | 1 | 4 | 20.0% |
 | 🧨 pressao_total_5_10min | 8 | 4 | 1 | 3 | 25.0% |
 | 🚨 alerta_cruzado_gol | 2 | 2 | 0 | 2 | 0.0% |
 | ⏱️ tensao_tardia_70 | 5 | 1 | 0 | 1 | 0.0% |
@@ -215,7 +215,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Dinamo București | 2 | 2 | 0 | 2 | 0.0% |
 | Galatasaray | 2 | 2 | 0 | 2 | 0.0% |
 | West Ham United | 2 | 2 | 0 | 2 | 0.0% |
-| Lyon | 5 | 1 | 1 | 0 | 100.0% |
+| Yokohama F.Marinos | 2 | 2 | 0 | 2 | 0.0% |
 
 ### Campeonato
 
@@ -231,6 +231,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 11 | 4 | 3 | 1 | 75.0% |
 | Bundesliga | 8 | 4 | 0 | 4 | 0.0% |
 | Ekstraklasa | 8 | 4 | 4 | 0 | 100.0% |
+| J. League | 8 | 4 | 0 | 4 | 0.0% |
 | Primera División | 5 | 4 | 0 | 4 | 0.0% |
 | Eerste Divisie | 11 | 3 | 0 | 3 | 0.0% |
 | Ligue 1 | 8 | 3 | 2 | 1 | 66.7% |
@@ -241,7 +242,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga AUF Uruguaya Clausura | 3 | 2 | 1 | 1 | 50.0% |
 | Stars League | 3 | 2 | 0 | 2 | 0.0% |
 | Championship | 2 | 2 | 0 | 2 | 0.0% |
-| J. League | 2 | 2 | 0 | 2 | 0.0% |
 | Super Lig | 2 | 2 | 0 | 2 | 0.0% |
 | Superliga | 2 | 2 | 0 | 2 | 0.0% |
 | Eliteserien | 7 | 1 | 0 | 1 | 0.0% |
@@ -253,21 +253,27 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
 | 16–30′ | 23 | 16 | 6 | 10 | 37.5% |
-| 31–45′ | 16 | 11 | 7 | 4 | 63.6% |
+| 31–45′ | 18 | 12 | 7 | 5 | 58.3% |
 | 46–60′ | 33 | 31 | 10 | 21 | 32.3% |
-| 61–75′ | 50 | 33 | 8 | 25 | 24.2% |
+| 61–75′ | 54 | 34 | 8 | 26 | 23.5% |
 | 76–90′ | 74 | 10 | 2 | 8 | 20.0% |
 | 91+′ | 32 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 230 | **Jogos monitorados:** 1084 | **Ao vivo:** 18 | **Termômetros recentes:** 1.
+**Registros:** 236 | **Jogos monitorados:** 1084 | **Ao vivo:** 7 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-10T07:29:08.500606+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (66') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T07:24:28.127841+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-10T06:40:38.234019+00:00 | Avispa Fukuoka × Fagiano Okayama FC | Avispa Fukuoka (37') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-10T06:40:38.234019+00:00 | Cerezo Osaka × Yokohama F.Marinos | Yokohama F.Marinos (75') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-10T06:40:38.234019+00:00 | FC Tokyo × Urawa Red Diamonds | FC Tokyo (37') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T06:12:10.653944+00:00 | Cerezo Osaka × Yokohama F.Marinos | Yokohama F.Marinos (47') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T05:33:10.475643+00:00 | Cerezo Osaka × Yokohama F.Marinos | Cerezo Osaka (30') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T04:56:12.185814+00:00 | Tigres × Toluca | Toluca (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -362,12 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:15:36.656704+00:00 | Raków Częstochowa × GKS Katowice | GKS Katowice (87') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | SK Beveren × Lommel | SK Beveren (70') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | West Ham United × Queens Park Rangers | West Ham United (55') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Málaga × Espanyol | Málaga (58') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | First Vienna FC × SKN St. Pölten | First Vienna FC (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
