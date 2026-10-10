@@ -6,6 +6,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from scout_snapshots import append_snapshot
 
 HOME=Path(__file__).resolve().parent
 HISTORY=HOME/'history'
@@ -306,6 +307,10 @@ def run():
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
             if points:before['pressure_updated_at']=NOW.isoformat()
             current_stats=stats(packet)
+            if match.get('phase')=='live':
+                before['scout_snapshots']=append_snapshot(
+                    before.get('scout_snapshots'),current_stats,
+                    match.get('minute'),NOW.isoformat(),'FotMob')
             if any(current_stats.values()):
                 old_stats=before.get('stats') or {}
                 before['stats']={side:{**(old_stats.get(side) or {}),
