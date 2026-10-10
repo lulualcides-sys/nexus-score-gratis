@@ -77,6 +77,7 @@ jobs:
           node tests/test_original_enrich.mjs
           node tests/test_pregame_web.mjs
           node tests/test_live_timeline.mjs
+          node tests/test_live_scout_history.mjs
           node --check web/nexus-iara.js
           node tests/test_nexus_iara.mjs
           node tests/test_iara_bridge.mjs
