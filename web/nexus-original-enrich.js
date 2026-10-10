@@ -191,6 +191,7 @@ function instrument(g,detail){
     stats_observed_at:g.stats_observed_at||detail.stats_observed_at||null,
     stats_source:g.stats_source||detail.stats_source||g.source||'Fonte pública',
     pressure_observed_at:g.pressure_observed_at||null,
+    momentum_diagnostic:g.momentum_diagnostic||null,
     scout_snapshots:observations,
     observed_at:g.observed_at||detail.observed_at||null,
    // Termômetro e IARA devem ler a MESMA série usada nas janelas e sinais.
