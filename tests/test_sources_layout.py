@@ -29,12 +29,40 @@ class SourcesTests(unittest.TestCase):
         row={'Date':'08/10/2026','Time':'20:00','HomeTeam':'Arsenal',
              'AwayTeam':'Chelsea','FTHG':'2','FTAG':'1','HS':'16'}
         docs={'matches':{'x':{'fixture':{'home':'Arsenal','away':'Chelsea',
-            'league_code':'eng.1','phase':'finished','score':'1-0'}}}}
+            'league_code':'eng.1','phase':'finished','score':'1-0',
+            'start_timestamp':int(datetime(2026,10,8,19,tzinfo=timezone.utc).timestamp())}}}}
         status={'added':0,'cross_verified':0,'stats_filled':0,
                 'historical_odds':0,'conflicts':0}
         m.merge_football_data('2026-10-08','E0',row,docs,status)
         self.assertEqual(status['conflicts'],1)
         self.assertNotIn('stats',docs['matches']['x'])
+
+    def test_historical_stats_never_merge_into_live_game(self):
+        raw={'Date':'08/10/2026','Time':'20:00','HomeTeam':'Arsenal',
+             'AwayTeam':'Chelsea','FTHG':'2','FTAG':'1','HST':'7'}
+        live={'fixture':{'home':'Arsenal','away':'Chelsea',
+              'league_code':'eng.1','phase':'live','score':'0-0',
+              'start_timestamp':int(datetime(2026,10,8,19,tzinfo=timezone.utc).timestamp())}}
+        docs={'matches':{'live':live}}
+        status={'added':0,'cross_verified':0,'stats_filled':0,
+                'historical_odds':0,'conflicts':0}
+        m.merge_football_data('2026-10-08','E0',raw,docs,status)
+        self.assertNotIn('stats', live)
+        self.assertNotIn('closing_odds', live)
+        self.assertEqual(status['cross_verified'],0)
+
+    def test_historical_stats_never_merge_wrong_day(self):
+        raw={'Date':'08/10/2026','Time':'20:00','HomeTeam':'Arsenal',
+             'AwayTeam':'Chelsea','FTHG':'2','FTAG':'1','HST':'7'}
+        old={'fixture':{'home':'Arsenal','away':'Chelsea','league_code':'eng.1',
+             'phase':'finished','score':'2-1',
+             'start_timestamp':int(datetime(2026,9,20,19,tzinfo=timezone.utc).timestamp())}}
+        docs={'matches':{'old':old}}
+        status={'added':0,'cross_verified':0,'stats_filled':0,
+                'historical_odds':0,'conflicts':0}
+        m.merge_football_data('2026-10-08','E0',raw,docs,status)
+        self.assertEqual(status['cross_verified'],0)
+        self.assertNotIn('stats', old)
 
     def test_openliga_ft_and_kickoff(self):
         event={'matchID':123,'matchDateTimeUTC':'2026-10-08T17:00:00Z',
