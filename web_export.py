@@ -409,6 +409,10 @@ def public_row(row,day,team_cache=None,espn_cache=None):
              'stats_source':safe(row.get('stats_source') or f.get('source'),40),
              'pressure_observed_at':safe(row.get('pressure_updated_at'),40),
              'pressure_last_minute':points[-1]['m'] if points else None,
+             'momentum_diagnostic':{
+                 'state':safe((row.get('momentum_diagnostic') or {}).get('state'),30),
+                 'source_path':safe((row.get('momentum_diagnostic') or {}).get('source_path'),70),
+                 'checked_at':safe((row.get('momentum_diagnostic') or {}).get('checked_at'),42)},
             'pressure':points,'stats':stats,'scout_snapshots':public_snapshots(row.get('scout_snapshots')),
             'head_to_head':h2h,'standings':ranking,
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
@@ -568,7 +572,7 @@ def main():
     cc0=load(H/'openfootball_cc0_status.json')
     historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
-    status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable') if key in last}
+    status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable','momentum_status_counts','stats_detail_available') if key in last}
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
