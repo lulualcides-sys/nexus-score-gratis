@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T05:27:42.235572+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-10T06:33:20.469269+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,7 +168,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 228 | **Jogos distintos:** 73 | **Resultados verificáveis:** 101 | **Com gol:** 34 | **Sem gol:** 67 | **Taxa observada:** 33.7%.
+**Observações:** 230 | **Jogos distintos:** 74 | **Resultados verificáveis:** 103 | **Com gol:** 34 | **Sem gol:** 69 | **Taxa observada:** 33.0%.
 **Evolução da amostra:** 2 datas com coletas | 0 pendentes | 36 indeterminados | 91 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
@@ -176,7 +176,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 37 | 26 | 12 | 14 | 46.2% |
+| 🥶 jogo_frio | 39 | 28 | 12 | 16 | 42.9% |
 | 🟥 expulsao_confirmada | 41 | 19 | 6 | 13 | 31.6% |
 | 🎯 chutes_no_alvo_5 | 39 | 16 | 6 | 10 | 37.5% |
 | ⚡ pressao_ofensiva_18 | 26 | 13 | 3 | 10 | 23.1% |
@@ -241,20 +241,20 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga AUF Uruguaya Clausura | 3 | 2 | 1 | 1 | 50.0% |
 | Stars League | 3 | 2 | 0 | 2 | 0.0% |
 | Championship | 2 | 2 | 0 | 2 | 0.0% |
+| J. League | 2 | 2 | 0 | 2 | 0.0% |
 | Super Lig | 2 | 2 | 0 | 2 | 0.0% |
 | Superliga | 2 | 2 | 0 | 2 | 0.0% |
 | Eliteserien | 7 | 1 | 0 | 1 | 0.0% |
 | Serie B | 6 | 1 | 0 | 1 | 0.0% |
-| 2. Bundesliga | 4 | 1 | 0 | 1 | 0.0% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 2 | 2 | 1 | 1 | 50.0% |
-| 16–30′ | 22 | 15 | 6 | 9 | 40.0% |
+| 16–30′ | 23 | 16 | 6 | 10 | 37.5% |
 | 31–45′ | 16 | 11 | 7 | 4 | 63.6% |
-| 46–60′ | 32 | 30 | 10 | 20 | 33.3% |
+| 46–60′ | 33 | 31 | 10 | 21 | 32.3% |
 | 61–75′ | 50 | 33 | 8 | 25 | 24.2% |
 | 76–90′ | 74 | 10 | 2 | 8 | 20.0% |
 | 91+′ | 32 | 0 | 0 | 0 | — |
@@ -262,12 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 228 | **Jogos monitorados:** 1083 | **Ao vivo:** 16 | **Termômetros recentes:** 0.
+**Registros:** 230 | **Jogos monitorados:** 1084 | **Ao vivo:** 18 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-10T06:12:10.653944+00:00 | Cerezo Osaka × Yokohama F.Marinos | Yokohama F.Marinos (47') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-10T05:33:10.475643+00:00 | Cerezo Osaka × Yokohama F.Marinos | Cerezo Osaka (30') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T04:56:12.185814+00:00 | Tigres × Toluca | Toluca (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-10T04:39:29.610704+00:00 | Tigres × Toluca | Toluca (74') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-10T04:19:14.560861+00:00 | Tigres × Toluca | Toluca (54') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-09T20:15:36.656704+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Cambrian United × Ammanford | Ammanford (74') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-09T20:15:36.656704+00:00 | Avellino × Sampdoria | Sampdoria (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
