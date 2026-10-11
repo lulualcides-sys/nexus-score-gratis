@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T04:29:31.430273+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T05:28:09.920878+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -63,7 +63,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-11 | América de Cali × Independiente Medellín | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | CD Jaguares × Tolima | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Atlas × Chivas | 1-1 | 90 | Chutes no alvo: 1.0×5.0, Chutes para fora: 1.0×6.0, Escanteios: 5.0×7.0, Grandes chances: 2.0×3.0 |
-| 2026-10-11 | CF América × Monterrey | 1-1 | 55 | Chutes no alvo: 5.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-10-11 | CF América × Monterrey | 1-1 | 84 | Chutes no alvo: 8.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×4.0, Grandes chances: 1.0×0.0 |
 | 2026-10-11 | Pachuca × Necaxa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Atlético de San Luis × Santos Laguna | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Pumas × Cruz Azul | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 971 | **Jogos distintos:** 318 | **Resultados verificáveis:** 496 | **Com gol:** 141 | **Sem gol:** 355 | **Taxa observada:** 28.4%.
-**Evolução da amostra:** 3 datas com coletas | 7 pendentes | 150 indeterminados | 318 incompletos.
+**Observações:** 974 | **Jogos distintos:** 320 | **Resultados verificáveis:** 501 | **Com gol:** 142 | **Sem gol:** 359 | **Taxa observada:** 28.3%.
+**Evolução da amostra:** 3 datas com coletas | 2 pendentes | 150 indeterminados | 321 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 161 | 117 | 39 | 78 | 33.3% |
+| 🥶 jogo_frio | 162 | 118 | 39 | 79 | 33.1% |
 | 🟥 expulsao_confirmada | 202 | 89 | 24 | 65 | 27.0% |
-| 🎯 chutes_no_alvo_5 | 180 | 82 | 19 | 63 | 23.2% |
-| ⚡ pressao_ofensiva_18 | 123 | 79 | 21 | 58 | 26.6% |
-| 🚩 escanteios_6 | 141 | 50 | 13 | 37 | 26.0% |
+| 🎯 chutes_no_alvo_5 | 180 | 83 | 19 | 64 | 22.9% |
+| ⚡ pressao_ofensiva_18 | 123 | 80 | 21 | 59 | 26.2% |
+| 🚩 escanteios_6 | 143 | 52 | 14 | 38 | 26.9% |
 | 💣 grandes_chances_3 | 96 | 49 | 19 | 30 | 38.8% |
 | 🔥 pressao_forte_10min | 28 | 13 | 3 | 10 | 23.1% |
 | 🧨 pressao_total_5_10min | 21 | 11 | 3 | 8 | 27.3% |
@@ -231,19 +231,19 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eredivisie | 24 | 16 | 4 | 12 | 25.0% |
 | Super League | 30 | 13 | 3 | 10 | 23.1% |
 | Eliteserien | 26 | 12 | 2 | 10 | 16.7% |
+| Liga MX | 24 | 12 | 4 | 8 | 33.3% |
 | Ligue 2 | 24 | 12 | 2 | 10 | 16.7% |
 | Primera División | 20 | 12 | 1 | 11 | 8.3% |
 | LaLiga | 20 | 11 | 5 | 6 | 45.5% |
 | 2. Bundesliga | 18 | 11 | 4 | 7 | 36.4% |
 | USL Championship | 17 | 11 | 6 | 5 | 54.5% |
 | Ekstraklasa | 16 | 11 | 5 | 6 | 45.5% |
+| J. League | 15 | 11 | 2 | 9 | 18.2% |
 | Saudi Pro League | 14 | 11 | 4 | 7 | 36.4% |
 | First Division B | 20 | 10 | 1 | 9 | 10.0% |
 | Liga Portugal | 18 | 10 | 3 | 7 | 30.0% |
 | Primera A | 15 | 10 | 3 | 7 | 30.0% |
-| J. League | 14 | 10 | 2 | 8 | 20.0% |
 | Serie A | 13 | 10 | 2 | 8 | 20.0% |
-| Liga MX | 23 | 9 | 4 | 5 | 44.4% |
 | Super Lig | 10 | 9 | 0 | 9 | 0.0% |
 | LaLiga2 | 20 | 8 | 4 | 4 | 50.0% |
 
@@ -251,28 +251,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 29 | 21 | 10 | 11 | 47.6% |
-| 16–30′ | 88 | 75 | 26 | 49 | 34.7% |
+| 1–15′ | 30 | 22 | 10 | 12 | 45.5% |
+| 16–30′ | 89 | 76 | 27 | 49 | 35.5% |
 | 31–45′ | 96 | 70 | 25 | 45 | 35.7% |
-| 46–60′ | 119 | 100 | 34 | 66 | 34.0% |
-| 61–75′ | 188 | 139 | 24 | 115 | 17.3% |
+| 46–60′ | 119 | 102 | 34 | 68 | 33.3% |
+| 61–75′ | 189 | 140 | 24 | 116 | 17.1% |
 | 76–90′ | 329 | 91 | 22 | 69 | 24.2% |
 | 91+′ | 122 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 971 | **Jogos monitorados:** 1489 | **Ao vivo:** 28 | **Termômetros recentes:** 4.
+**Registros:** 974 | **Jogos monitorados:** 1489 | **Ao vivo:** 32 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T04:29:56.354800+00:00 | CF América × Monterrey | Monterrey (56') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T04:29:56.354800+00:00 | Los Angeles FC × Vancouver Whitecaps | Los Angeles FC (87') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T04:29:56.354800+00:00 | LAFC × Vancouver Whitecaps | Vancouver Whitecaps (86') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-11T04:25:03.180748+00:00 | CF América × Monterrey | CF América (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-11T04:25:03.180748+00:00 | Los Angeles FC × Vancouver Whitecaps | Vancouver Whitecaps (82') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-11T05:18:33.608607+00:00 | Gwangju FC × Ulsan HD FC | Ulsan HD FC (18') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T05:18:33.608607+00:00 | JEF United Chiba × V-Varen Nagasaki | V-Varen Nagasaki (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-11T04:44:26.964748+00:00 | CF América × Monterrey | CF América (71') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T04:29:56.354800+00:00 | CF América × Monterrey | Monterrey (56') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T04:29:56.354800+00:00 | Los Angeles FC × Vancouver Whitecaps | Los Angeles FC (87') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-11T04:29:56.354800+00:00 | LAFC × Vancouver Whitecaps | Vancouver Whitecaps (86') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-11T04:25:03.180748+00:00 | CF América × Monterrey | CF América (52') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T04:25:03.180748+00:00 | Los Angeles FC × Vancouver Whitecaps | Vancouver Whitecaps (82') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T04:00:21.219838+00:00 | Los Angeles FC × Vancouver Whitecaps | Los Angeles FC (57') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T04:00:21.219838+00:00 | Los Angeles FC × Vancouver Whitecaps | Vancouver Whitecaps (57') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T03:44:54.891342+00:00 | AV Alta × Greenville Triumph SC | Greenville Triumph SC (48') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T00:51:32.658266+00:00 | Detroit City FC × Rhode Island FC | Detroit City FC (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T00:51:32.658266+00:00 | Pittsburgh Riverhounds SC × Hartford Athletic | Pittsburgh Riverhounds SC (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T00:38:39.980597+00:00 | Inter Miami CF × D.C. United | Inter Miami CF (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T00:38:39.980597+00:00 | Orlando City SC × Columbus Crew | Columbus Crew (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T00:38:39.980597+00:00 | Red Bull New York × San Diego FC | Red Bull New York (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T00:38:39.980597+00:00 | Querétaro FC × Atlante | Atlante (76') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
