@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T09:28:43.474493+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T10:27:53.820700+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **26**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -43,7 +43,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-11 | Cagliari × Juventus | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Lecce × Bologna | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Sassuolo × AC Milan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-11 | Como × AS Roma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-11 | Como × AS Roma | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,40, Fora 2,80 |
 | 2026-10-11 | Lazio × Monza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | St. Louis CITY SC × LA Galaxy | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-11 | Antofagasta × San Marcos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,18 +168,18 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 996 | **Jogos distintos:** 325 | **Resultados verificáveis:** 516 | **Com gol:** 149 | **Sem gol:** 367 | **Taxa observada:** 28.9%.
-**Evolução da amostra:** 3 datas com coletas | 3 pendentes | 155 indeterminados | 322 incompletos.
+**Observações:** 1001 | **Jogos distintos:** 328 | **Resultados verificáveis:** 520 | **Com gol:** 150 | **Sem gol:** 370 | **Taxa observada:** 28.8%.
+**Evolução da amostra:** 3 datas com coletas | 4 pendentes | 155 indeterminados | 322 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 168 | 124 | 42 | 82 | 33.9% |
-| 🟥 expulsao_confirmada | 205 | 90 | 24 | 66 | 26.7% |
+| 🥶 jogo_frio | 169 | 124 | 42 | 82 | 33.9% |
+| 🟥 expulsao_confirmada | 208 | 93 | 25 | 68 | 26.9% |
+| 🎯 chutes_no_alvo_5 | 183 | 84 | 19 | 65 | 22.6% |
 | ⚡ pressao_ofensiva_18 | 128 | 84 | 23 | 61 | 27.4% |
-| 🎯 chutes_no_alvo_5 | 182 | 83 | 19 | 64 | 22.9% |
 | 🚩 escanteios_6 | 145 | 53 | 15 | 38 | 28.3% |
 | 💣 grandes_chances_3 | 98 | 50 | 20 | 30 | 40.0% |
 | 🔥 pressao_forte_10min | 29 | 14 | 3 | 11 | 21.4% |
@@ -229,7 +229,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 39 | 17 | 8 | 9 | 47.1% |
 | Ligue 1 | 29 | 17 | 9 | 8 | 52.9% |
 | Serie B | 25 | 17 | 3 | 14 | 17.6% |
-| Eredivisie | 24 | 16 | 4 | 12 | 25.0% |
+| Eredivisie | 25 | 16 | 4 | 12 | 25.0% |
 | Super League | 30 | 13 | 3 | 10 | 23.1% |
 | Eliteserien | 26 | 12 | 2 | 10 | 16.7% |
 | Liga MX | 24 | 12 | 4 | 8 | 33.3% |
@@ -251,24 +251,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 31 | 22 | 10 | 12 | 45.5% |
-| 16–30′ | 93 | 79 | 27 | 52 | 34.2% |
-| 31–45′ | 99 | 73 | 27 | 46 | 37.0% |
-| 46–60′ | 119 | 102 | 34 | 68 | 33.3% |
-| 61–75′ | 196 | 145 | 27 | 118 | 18.6% |
+| 1–15′ | 32 | 22 | 10 | 12 | 45.5% |
+| 16–30′ | 93 | 80 | 27 | 53 | 33.8% |
+| 31–45′ | 100 | 74 | 28 | 46 | 37.8% |
+| 46–60′ | 120 | 103 | 34 | 69 | 33.0% |
+| 61–75′ | 198 | 146 | 27 | 119 | 18.5% |
 | 76–90′ | 335 | 95 | 24 | 71 | 25.3% |
 | 91+′ | 123 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 996 | **Jogos monitorados:** 1489 | **Ao vivo:** 27 | **Termômetros recentes:** 2.
+**Registros:** 1001 | **Jogos monitorados:** 1489 | **Ao vivo:** 44 | **Termômetros recentes:** 3.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T09:29:10.987087+00:00 | Murcia B × Yeclano | Murcia B (23') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T10:28:18.928804+00:00 | FC Utrecht × Willem II | FC Utrecht (11') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T10:28:18.928804+00:00 | Murcia B × Yeclano | Murcia B (65') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T10:09:33.759320+00:00 | Peña Dep. Santa Eulalia × Orihuela | Peña Dep. Santa Eulalia (39') | 🟥 expulsao_confirmada · evento confirmado | pendente | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T09:51:51.798400+00:00 | Admira Wacker × Voitsberg | Admira Wacker (63') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T09:51:51.798400+00:00 | Murcia B × Yeclano | Murcia B (46') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T09:29:10.987087+00:00 | Murcia B × Yeclano | Murcia B (23') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T09:10:15.443085+00:00 | Murcia B × Yeclano | Murcia B (5') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-11T08:54:07.471377+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T08:37:42.430032+00:00 | Kawasaki Frontale × Nagoya Grampus | Equipe não definida (77') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -363,15 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T01:28:07.386080+00:00 | Red Bull New York × San Diego FC | Red Bull New York (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T01:28:07.386080+00:00 | Red Bull New York × San Diego FC | San Diego FC (85') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T01:28:07.386080+00:00 | Philadelphia Union × Real Salt Lake | Philadelphia Union (89') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T01:28:07.386080+00:00 | Philadelphia Union × Real Salt Lake | Philadelphia Union (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Metropolitanos FC × Rayo Zuliano | Rayo Zuliano (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Metropolitanos FC × Rayo Zuliano | Metropolitanos FC (82') | 🚩 escanteios_6 · scout acumulado | pendente | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Atlanta United × FC Cincinnati | Atlanta United (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Charlotte FC × FC Dallas | FC Dallas (73') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **101**.
+Jogos com odds registradas nos ultimos dias: **102**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
