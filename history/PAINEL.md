@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T06:34:03.744762+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T07:29:26.069999+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,22 +168,22 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 976 | **Jogos distintos:** 321 | **Resultados verificáveis:** 501 | **Com gol:** 142 | **Sem gol:** 359 | **Taxa observada:** 28.3%.
-**Evolução da amostra:** 3 datas com coletas | 4 pendentes | 150 indeterminados | 321 incompletos.
+**Observações:** 986 | **Jogos distintos:** 324 | **Resultados verificáveis:** 504 | **Com gol:** 144 | **Sem gol:** 360 | **Taxa observada:** 28.6%.
+**Evolução da amostra:** 3 datas com coletas | 8 pendentes | 153 indeterminados | 321 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 162 | 118 | 39 | 79 | 33.1% |
-| 🟥 expulsao_confirmada | 203 | 89 | 24 | 65 | 27.0% |
+| 🥶 jogo_frio | 164 | 119 | 40 | 79 | 33.6% |
+| 🟥 expulsao_confirmada | 203 | 90 | 24 | 66 | 26.7% |
 | 🎯 chutes_no_alvo_5 | 181 | 83 | 19 | 64 | 22.9% |
-| ⚡ pressao_ofensiva_18 | 123 | 80 | 21 | 59 | 26.2% |
-| 🚩 escanteios_6 | 143 | 52 | 14 | 38 | 26.9% |
-| 💣 grandes_chances_3 | 96 | 49 | 19 | 30 | 38.8% |
-| 🔥 pressao_forte_10min | 28 | 13 | 3 | 10 | 23.1% |
-| 🧨 pressao_total_5_10min | 21 | 11 | 3 | 8 | 27.3% |
+| ⚡ pressao_ofensiva_18 | 127 | 81 | 22 | 59 | 27.2% |
+| 🚩 escanteios_6 | 144 | 52 | 14 | 38 | 26.9% |
+| 💣 grandes_chances_3 | 97 | 49 | 19 | 30 | 38.8% |
+| 🔥 pressao_forte_10min | 29 | 13 | 3 | 10 | 23.1% |
+| 🧨 pressao_total_5_10min | 22 | 11 | 3 | 8 | 27.3% |
 | 🚨 alerta_cruzado_gol | 6 | 4 | 0 | 4 | 0.0% |
 | ⏱️ tensao_tardia_70 | 13 | 2 | 0 | 2 | 0.0% |
 
@@ -230,6 +230,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie B | 25 | 17 | 3 | 14 | 17.6% |
 | Eredivisie | 24 | 16 | 4 | 12 | 25.0% |
 | Super League | 30 | 13 | 3 | 10 | 23.1% |
+| J. League | 25 | 13 | 4 | 9 | 30.8% |
 | Eliteserien | 26 | 12 | 2 | 10 | 16.7% |
 | Liga MX | 24 | 12 | 4 | 8 | 33.3% |
 | Ligue 2 | 24 | 12 | 2 | 10 | 16.7% |
@@ -238,7 +239,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 2. Bundesliga | 18 | 11 | 4 | 7 | 36.4% |
 | USL Championship | 17 | 11 | 6 | 5 | 54.5% |
 | Ekstraklasa | 16 | 11 | 5 | 6 | 45.5% |
-| J. League | 15 | 11 | 2 | 9 | 18.2% |
 | Saudi Pro League | 14 | 11 | 4 | 7 | 36.4% |
 | First Division B | 20 | 10 | 1 | 9 | 10.0% |
 | Liga Portugal | 18 | 10 | 3 | 7 | 30.0% |
@@ -252,24 +252,34 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 30 | 22 | 10 | 12 | 45.5% |
-| 16–30′ | 89 | 76 | 27 | 49 | 35.5% |
-| 31–45′ | 96 | 70 | 25 | 45 | 35.7% |
+| 16–30′ | 92 | 76 | 27 | 49 | 35.5% |
+| 31–45′ | 98 | 72 | 27 | 45 | 37.5% |
 | 46–60′ | 119 | 102 | 34 | 68 | 33.3% |
-| 61–75′ | 191 | 140 | 24 | 116 | 17.1% |
-| 76–90′ | 329 | 91 | 22 | 69 | 24.2% |
+| 61–75′ | 194 | 141 | 24 | 117 | 17.0% |
+| 76–90′ | 331 | 91 | 22 | 69 | 24.2% |
 | 91+′ | 122 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 976 | **Jogos monitorados:** 1489 | **Ao vivo:** 31 | **Termômetros recentes:** 2.
+**Registros:** 986 | **Jogos monitorados:** 1489 | **Ao vivo:** 25 | **Termômetros recentes:** 4.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T06:34:23.032246+00:00 | Gwangju FC × Ulsan HD FC | Gwangju FC (75') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-11T06:34:23.032246+00:00 | Gainare Tottori × FC Gifu | Gainare Tottori (72') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:29:51.927008+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (66') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Tokyo Verdy × Sanfrecce Hiroshima | Sanfrecce Hiroshima (61') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-11T06:41:28.148949+00:00 | JEF United Chiba × V-Varen Nagasaki | JEF United Chiba (79') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-11T06:41:28.148949+00:00 | JEF United Chiba × V-Varen Nagasaki | JEF United Chiba (79') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-11T06:41:28.148949+00:00 | Mito Hollyhock × Shimizu S-Pulse | Mito Hollyhock (38') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T06:41:28.148949+00:00 | Tokyo Verdy × Sanfrecce Hiroshima | Sanfrecce Hiroshima (38') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T06:34:23.032246+00:00 | Gwangju FC × Ulsan HD FC | Gwangju FC (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-11T06:34:23.032246+00:00 | Gainare Tottori × FC Gifu | Gainare Tottori (72') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T05:18:33.608607+00:00 | Gwangju FC × Ulsan HD FC | Ulsan HD FC (18') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T05:18:33.608607+00:00 | JEF United Chiba × V-Varen Nagasaki | V-Varen Nagasaki (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T04:44:26.964748+00:00 | CF América × Monterrey | CF América (71') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -358,16 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T01:11:43.214105+00:00 | São Paulo × Vitória | Equipe não definida (37') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T00:51:32.658266+00:00 | Oriente Petrolero × ABB | Oriente Petrolero (65') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T00:51:32.658266+00:00 | Oriente Petrolero × ABB | Oriente Petrolero (65') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | River Plate × Estudiantes de Río Cuarto | River Plate (10') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Atlanta United × FC Cincinnati | FC Cincinnati (55') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Charlotte FC × FC Dallas | FC Dallas (53') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Charlotte FC × FC Dallas | Charlotte FC (53') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Inter Miami CF × DC United | Inter Miami CF (50') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Inter Miami CF × DC United | Inter Miami CF (50') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | New England Revolution × Seattle Sounders FC | New England Revolution (50') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Red Bull New York × San Diego FC | San Diego FC (48') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Philadelphia Union × Real Salt Lake | Real Salt Lake (53') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Detroit City FC × Rhode Island FC | Detroit City FC (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
