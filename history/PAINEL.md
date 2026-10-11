@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T08:29:36.039865+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T09:28:43.474493+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 992 | **Jogos distintos:** 324 | **Resultados verificáveis:** 513 | **Com gol:** 147 | **Sem gol:** 366 | **Taxa observada:** 28.7%.
-**Evolução da amostra:** 3 datas com coletas | 4 pendentes | 154 indeterminados | 321 incompletos.
+**Observações:** 996 | **Jogos distintos:** 325 | **Resultados verificáveis:** 516 | **Com gol:** 149 | **Sem gol:** 367 | **Taxa observada:** 28.9%.
+**Evolução da amostra:** 3 datas com coletas | 3 pendentes | 155 indeterminados | 322 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 167 | 122 | 41 | 81 | 33.6% |
-| 🟥 expulsao_confirmada | 203 | 90 | 24 | 66 | 26.7% |
+| 🥶 jogo_frio | 168 | 124 | 42 | 82 | 33.9% |
+| 🟥 expulsao_confirmada | 205 | 90 | 24 | 66 | 26.7% |
 | ⚡ pressao_ofensiva_18 | 128 | 84 | 23 | 61 | 27.4% |
-| 🎯 chutes_no_alvo_5 | 181 | 83 | 19 | 64 | 22.9% |
+| 🎯 chutes_no_alvo_5 | 182 | 83 | 19 | 64 | 22.9% |
 | 🚩 escanteios_6 | 145 | 53 | 15 | 38 | 28.3% |
-| 💣 grandes_chances_3 | 98 | 49 | 19 | 30 | 38.8% |
+| 💣 grandes_chances_3 | 98 | 50 | 20 | 30 | 40.0% |
 | 🔥 pressao_forte_10min | 29 | 14 | 3 | 11 | 21.4% |
 | 🧨 pressao_total_5_10min | 22 | 12 | 3 | 9 | 25.0% |
 | 🚨 alerta_cruzado_gol | 6 | 4 | 0 | 4 | 0.0% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 25 | 16 | 8 | 8 | 50.0% |
+| Equipe não definida | 26 | 17 | 8 | 9 | 47.1% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
@@ -210,12 +210,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Columbus Crew | 5 | 4 | 0 | 4 | 0.0% |
 | Inter | 5 | 4 | 1 | 3 | 25.0% |
 | Inter Miami CF | 5 | 4 | 3 | 1 | 75.0% |
+| Nagoya Grampus | 5 | 4 | 1 | 3 | 25.0% |
 | Paris Saint-Germain | 5 | 4 | 2 | 2 | 50.0% |
 | Real Madrid | 5 | 4 | 1 | 3 | 25.0% |
 | Real Tomayapo | 5 | 4 | 0 | 4 | 0.0% |
 | Tapatío | 5 | 4 | 1 | 3 | 25.0% |
 | Al Hilal | 4 | 4 | 0 | 4 | 0.0% |
-| Estoril | 4 | 4 | 1 | 3 | 25.0% |
 
 ### Campeonato
 
@@ -223,8 +223,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Major League Soccer | 76 | 37 | 16 | 21 | 43.2% |
 | Bundesliga | 46 | 26 | 6 | 20 | 23.1% |
+| J. League | 33 | 25 | 9 | 16 | 36.0% |
 | Liga Profesional | 37 | 22 | 5 | 17 | 22.7% |
-| J. League | 31 | 22 | 7 | 15 | 31.8% |
 | Belgian Pro League | 32 | 19 | 9 | 10 | 47.4% |
 | Premier League | 39 | 17 | 8 | 9 | 47.1% |
 | Ligue 1 | 29 | 17 | 9 | 8 | 52.9% |
@@ -251,25 +251,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 30 | 22 | 10 | 12 | 45.5% |
-| 16–30′ | 92 | 79 | 27 | 52 | 34.2% |
+| 1–15′ | 31 | 22 | 10 | 12 | 45.5% |
+| 16–30′ | 93 | 79 | 27 | 52 | 34.2% |
 | 31–45′ | 99 | 73 | 27 | 46 | 37.0% |
 | 46–60′ | 119 | 102 | 34 | 68 | 33.3% |
-| 61–75′ | 196 | 143 | 25 | 118 | 17.5% |
-| 76–90′ | 334 | 94 | 24 | 70 | 25.5% |
-| 91+′ | 122 | 0 | 0 | 0 | — |
+| 61–75′ | 196 | 145 | 27 | 118 | 18.6% |
+| 76–90′ | 335 | 95 | 24 | 71 | 25.3% |
+| 91+′ | 123 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 992 | **Jogos monitorados:** 1489 | **Ao vivo:** 24 | **Termômetros recentes:** 3.
+**Registros:** 996 | **Jogos monitorados:** 1489 | **Ao vivo:** 27 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Kawasaki Frontale (69') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (69') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T09:29:10.987087+00:00 | Murcia B × Yeclano | Murcia B (23') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T09:10:15.443085+00:00 | Murcia B × Yeclano | Murcia B (5') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-11T08:54:07.471377+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-11T08:37:42.430032+00:00 | Kawasaki Frontale × Nagoya Grampus | Equipe não definida (77') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Kawasaki Frontale (69') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (69') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T07:43:14.572149+00:00 | Kawasaki Frontale × Nagoya Grampus | Kawasaki Frontale (40') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T07:43:14.572149+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (80') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T07:43:14.572149+00:00 | Mito Hollyhock × Shimizu S-Pulse | Mito Hollyhock (80') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -364,10 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T01:11:43.214105+00:00 | Metropolitanos FC × Rayo Zuliano | Metropolitanos FC (82') | 🚩 escanteios_6 · scout acumulado | pendente | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-11T01:11:43.214105+00:00 | Atlanta United × FC Cincinnati | Atlanta United (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T01:11:43.214105+00:00 | Charlotte FC × FC Dallas | FC Dallas (73') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Inter Miami CF × DC United | Inter Miami CF (70') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | New England Revolution × Seattle Sounders FC | New England Revolution (70') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | New England Revolution × Seattle Sounders FC | New England Revolution (70') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Red Bull New York × San Diego FC | San Diego FC (68') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
