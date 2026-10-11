@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T07:29:26.069999+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-11T08:29:36.039865+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,22 +168,22 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 986 | **Jogos distintos:** 324 | **Resultados verificáveis:** 504 | **Com gol:** 144 | **Sem gol:** 360 | **Taxa observada:** 28.6%.
-**Evolução da amostra:** 3 datas com coletas | 8 pendentes | 153 indeterminados | 321 incompletos.
+**Observações:** 992 | **Jogos distintos:** 324 | **Resultados verificáveis:** 513 | **Com gol:** 147 | **Sem gol:** 366 | **Taxa observada:** 28.7%.
+**Evolução da amostra:** 3 datas com coletas | 4 pendentes | 154 indeterminados | 321 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 164 | 119 | 40 | 79 | 33.6% |
+| 🥶 jogo_frio | 167 | 122 | 41 | 81 | 33.6% |
 | 🟥 expulsao_confirmada | 203 | 90 | 24 | 66 | 26.7% |
+| ⚡ pressao_ofensiva_18 | 128 | 84 | 23 | 61 | 27.4% |
 | 🎯 chutes_no_alvo_5 | 181 | 83 | 19 | 64 | 22.9% |
-| ⚡ pressao_ofensiva_18 | 127 | 81 | 22 | 59 | 27.2% |
-| 🚩 escanteios_6 | 144 | 52 | 14 | 38 | 26.9% |
-| 💣 grandes_chances_3 | 97 | 49 | 19 | 30 | 38.8% |
-| 🔥 pressao_forte_10min | 29 | 13 | 3 | 10 | 23.1% |
-| 🧨 pressao_total_5_10min | 22 | 11 | 3 | 8 | 27.3% |
+| 🚩 escanteios_6 | 145 | 53 | 15 | 38 | 28.3% |
+| 💣 grandes_chances_3 | 98 | 49 | 19 | 30 | 38.8% |
+| 🔥 pressao_forte_10min | 29 | 14 | 3 | 11 | 21.4% |
+| 🧨 pressao_total_5_10min | 22 | 12 | 3 | 9 | 25.0% |
 | 🚨 alerta_cruzado_gol | 6 | 4 | 0 | 4 | 0.0% |
 | ⏱️ tensao_tardia_70 | 13 | 2 | 0 | 2 | 0.0% |
 
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 24 | 15 | 8 | 7 | 53.3% |
+| Equipe não definida | 25 | 16 | 8 | 8 | 50.0% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
@@ -224,13 +224,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Major League Soccer | 76 | 37 | 16 | 21 | 43.2% |
 | Bundesliga | 46 | 26 | 6 | 20 | 23.1% |
 | Liga Profesional | 37 | 22 | 5 | 17 | 22.7% |
+| J. League | 31 | 22 | 7 | 15 | 31.8% |
 | Belgian Pro League | 32 | 19 | 9 | 10 | 47.4% |
 | Premier League | 39 | 17 | 8 | 9 | 47.1% |
 | Ligue 1 | 29 | 17 | 9 | 8 | 52.9% |
 | Serie B | 25 | 17 | 3 | 14 | 17.6% |
 | Eredivisie | 24 | 16 | 4 | 12 | 25.0% |
 | Super League | 30 | 13 | 3 | 10 | 23.1% |
-| J. League | 25 | 13 | 4 | 9 | 30.8% |
 | Eliteserien | 26 | 12 | 2 | 10 | 16.7% |
 | Liga MX | 24 | 12 | 4 | 8 | 33.3% |
 | Ligue 2 | 24 | 12 | 2 | 10 | 16.7% |
@@ -252,28 +252,34 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 30 | 22 | 10 | 12 | 45.5% |
-| 16–30′ | 92 | 76 | 27 | 49 | 35.5% |
-| 31–45′ | 98 | 72 | 27 | 45 | 37.5% |
+| 16–30′ | 92 | 79 | 27 | 52 | 34.2% |
+| 31–45′ | 99 | 73 | 27 | 46 | 37.0% |
 | 46–60′ | 119 | 102 | 34 | 68 | 33.3% |
-| 61–75′ | 194 | 141 | 24 | 117 | 17.0% |
-| 76–90′ | 331 | 91 | 22 | 69 | 24.2% |
+| 61–75′ | 196 | 143 | 25 | 118 | 17.5% |
+| 76–90′ | 334 | 94 | 24 | 70 | 25.5% |
 | 91+′ | 122 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 986 | **Jogos monitorados:** 1489 | **Ao vivo:** 25 | **Termômetros recentes:** 4.
+**Registros:** 992 | **Jogos monitorados:** 1489 | **Ao vivo:** 24 | **Termômetros recentes:** 3.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-11T07:29:51.927008+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (66') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T07:25:19.905322+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-11T07:25:19.905322+00:00 | Tokyo Verdy × Sanfrecce Hiroshima | Sanfrecce Hiroshima (61') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Kawasaki Frontale (69') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-11T08:29:56.630108+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (69') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-11T07:43:14.572149+00:00 | Kawasaki Frontale × Nagoya Grampus | Kawasaki Frontale (40') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T07:43:14.572149+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (80') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T07:43:14.572149+00:00 | Mito Hollyhock × Shimizu S-Pulse | Mito Hollyhock (80') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T07:43:14.572149+00:00 | Tokyo Verdy × Sanfrecce Hiroshima | Equipe não definida (79') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-11T07:29:51.927008+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Kawasaki Frontale × Nagoya Grampus | Nagoya Grampus (22') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Mito Hollyhock × Shimizu S-Pulse | Shimizu S-Pulse (62') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-11T07:25:19.905322+00:00 | Tokyo Verdy × Sanfrecce Hiroshima | Sanfrecce Hiroshima (61') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T06:41:28.148949+00:00 | JEF United Chiba × V-Varen Nagasaki | JEF United Chiba (79') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-11T06:41:28.148949+00:00 | JEF United Chiba × V-Varen Nagasaki | JEF United Chiba (79') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-11T06:41:28.148949+00:00 | Mito Hollyhock × Shimizu S-Pulse | Mito Hollyhock (38') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -362,12 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T01:11:43.214105+00:00 | New England Revolution × Seattle Sounders FC | New England Revolution (70') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T01:11:43.214105+00:00 | New England Revolution × Seattle Sounders FC | New England Revolution (70') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-11T01:11:43.214105+00:00 | Red Bull New York × San Diego FC | San Diego FC (68') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Orlando City × Columbus Crew | Orlando City (72') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Orlando City × Columbus Crew | Columbus Crew (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | Philadelphia Union × Real Salt Lake | Real Salt Lake (73') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-11T01:11:43.214105+00:00 | São Paulo × Vitória | Equipe não definida (37') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Oriente Petrolero × ABB | Oriente Petrolero (65') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-11T00:51:32.658266+00:00 | Oriente Petrolero × ABB | Oriente Petrolero (65') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
