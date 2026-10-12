@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-12T06:40:47.453169+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-12T07:35:27.918204+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1520 | **Jogos distintos:** 495 | **Resultados verificáveis:** 811 | **Com gol:** 225 | **Sem gol:** 586 | **Taxa observada:** 27.7%.
-**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 269 indeterminados | 438 incompletos.
+**Observações:** 1520 | **Jogos distintos:** 495 | **Resultados verificáveis:** 812 | **Com gol:** 226 | **Sem gol:** 586 | **Taxa observada:** 27.8%.
+**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 268 indeterminados | 438 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 284 | 198 | 61 | 137 | 30.8% |
-| 🟥 expulsao_confirmada | 318 | 148 | 37 | 111 | 25.0% |
+| 🟥 expulsao_confirmada | 318 | 149 | 38 | 111 | 25.5% |
 | ⚡ pressao_ofensiva_18 | 199 | 131 | 38 | 93 | 29.0% |
 | 🎯 chutes_no_alvo_5 | 258 | 123 | 27 | 96 | 22.0% |
 | 🚩 escanteios_6 | 200 | 81 | 22 | 59 | 27.2% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 43 | 27 | 14 | 13 | 51.9% |
+| Equipe não definida | 43 | 28 | 15 | 13 | 53.6% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | Perugia | 7 | 6 | 2 | 4 | 33.3% |
@@ -256,7 +256,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 180 | 133 | 49 | 84 | 36.8% |
 | 46–60′ | 223 | 178 | 52 | 126 | 29.2% |
 | 61–75′ | 294 | 211 | 39 | 172 | 18.5% |
-| 76–90′ | 455 | 132 | 28 | 104 | 21.2% |
+| 76–90′ | 455 | 133 | 29 | 104 | 21.8% |
 | 91+′ | 168 | 0 | 0 | 0 | — |
 
 
