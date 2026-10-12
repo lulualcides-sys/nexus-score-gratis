@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-12T12:50:59.662384+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-12T13:42:12.217153+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 
@@ -80,7 +80,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-12 | Dijon × Metz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | GKS Katowice × Wieczysta Kraków | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Radomiak Radom × Motor Lublin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Bashkimi × FK Struga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-12 | Bashkimi × FK Struga | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Hapoel Kfar Saba × FC Ashdod | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Hapoel Kfar Shalem × Hapoel Raanana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Hapoel Rishon LeZion × Maccabi Kabilio Jaffa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -93,7 +93,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-12 | Burgos CF × Granada | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Real Oviedo × Eibar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Tenerife × Girona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Real Valladolid × Albacete | 4-0 | 45 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 4.0×0.0 |
+| 2026-10-12 | Real Valladolid × Albacete | 5-0 | 80 | Chutes no alvo: 6.0×2.0, Chutes para fora: 8.0×2.0, Escanteios: 7.0×4.0, Grandes chances: 6.0×0.0 |
 | 2026-10-12 | Cultural Leonesa × Arenas Getxo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Lugo × Logroñés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Hércules × Sant Andreu | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -108,7 +108,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-12 | Sporting San Miguelito × Tauro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Alianza FC × Inter Santa Tecla | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Pyunik × BKMA | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Syunik × Shirak | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-12 | Syunik × Shirak | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Hougang United FC × Balestier Khalsa FC | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | AEK Larnaca × Omonia Aradippou | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | USM Khenchela × CS Constantine | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -128,12 +128,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-12 | Al Nassr FC × Neftchi Fargona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Al Quwa Al Jawiya × Al-Ain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Canada (W) × Denmark (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Anagennisi Karditsas × Zakynthos APS | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Panionios × PAOK Thessaloniki B | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-12 | Anagennisi Karditsas × Zakynthos APS | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-12 | Panionios × PAOK Thessaloniki B | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | VPS × IF Gnistan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | AC Oulu × HJK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | FC Inter Turku II × FC Jazz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Mes Kerman × Mes Rafsanjan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-12 | Mes Kerman × Mes Rafsanjan | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Kara Gostar × Niroye Zamini | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Ario Islamshahr × Beasat Kermanshah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Saipa × Qeshm Island | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1524 | **Jogos distintos:** 498 | **Resultados verificáveis:** 813 | **Com gol:** 227 | **Sem gol:** 586 | **Taxa observada:** 27.9%.
-**Evolução da amostra:** 4 datas com coletas | 4 pendentes | 269 indeterminados | 438 incompletos.
+**Observações:** 1529 | **Jogos distintos:** 498 | **Resultados verificáveis:** 818 | **Com gol:** 228 | **Sem gol:** 590 | **Taxa observada:** 27.9%.
+**Evolução da amostra:** 4 datas com coletas | 3 pendentes | 269 indeterminados | 439 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 284 | 198 | 61 | 137 | 30.8% |
-| 🟥 expulsao_confirmada | 319 | 149 | 38 | 111 | 25.5% |
-| ⚡ pressao_ofensiva_18 | 199 | 131 | 38 | 93 | 29.0% |
-| 🎯 chutes_no_alvo_5 | 259 | 124 | 28 | 96 | 22.6% |
-| 🚩 escanteios_6 | 201 | 81 | 22 | 59 | 27.2% |
-| 💣 grandes_chances_3 | 152 | 79 | 27 | 52 | 34.2% |
+| 🥶 jogo_frio | 285 | 198 | 61 | 137 | 30.8% |
+| 🟥 expulsao_confirmada | 320 | 150 | 38 | 112 | 25.3% |
+| ⚡ pressao_ofensiva_18 | 200 | 132 | 38 | 94 | 28.8% |
+| 🎯 chutes_no_alvo_5 | 260 | 125 | 28 | 97 | 22.4% |
+| 🚩 escanteios_6 | 202 | 82 | 22 | 60 | 26.8% |
+| 💣 grandes_chances_3 | 152 | 80 | 28 | 52 | 35.0% |
 | 🔥 pressao_forte_10min | 48 | 25 | 7 | 18 | 28.0% |
 | 🧨 pressao_total_5_10min | 32 | 17 | 5 | 12 | 29.4% |
 | 🚨 alerta_cruzado_gol | 11 | 6 | 1 | 5 | 16.7% |
@@ -222,7 +222,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Major League Soccer | 85 | 44 | 18 | 26 | 40.9% |
-| Premier League | 75 | 34 | 12 | 22 | 35.3% |
+| Premier League | 76 | 35 | 12 | 23 | 34.3% |
 | Super League | 63 | 32 | 6 | 26 | 18.8% |
 | Bundesliga | 56 | 31 | 8 | 23 | 25.8% |
 | Liga Profesional | 54 | 31 | 8 | 23 | 25.8% |
@@ -238,10 +238,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eliteserien | 39 | 20 | 2 | 18 | 10.0% |
 | Ligue 1 | 37 | 20 | 10 | 10 | 50.0% |
 | Ekstraklasa | 27 | 20 | 6 | 14 | 30.0% |
+| LaLiga2 | 36 | 19 | 8 | 11 | 42.1% |
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
 | Super Lig | 20 | 17 | 2 | 15 | 11.8% |
 | Série A | 25 | 16 | 6 | 10 | 37.5% |
-| LaLiga2 | 32 | 15 | 7 | 8 | 46.7% |
 | 2. Bundesliga | 27 | 15 | 4 | 11 | 26.7% |
 | Primera A | 23 | 15 | 6 | 9 | 40.0% |
 | Saudi Pro League | 21 | 14 | 5 | 9 | 35.7% |
@@ -253,23 +253,28 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 50 | 39 | 17 | 22 | 43.6% |
 | 16–30′ | 150 | 118 | 40 | 78 | 33.9% |
-| 31–45′ | 182 | 134 | 50 | 84 | 37.3% |
-| 46–60′ | 225 | 178 | 52 | 126 | 29.2% |
+| 31–45′ | 182 | 135 | 51 | 84 | 37.8% |
+| 46–60′ | 228 | 182 | 52 | 130 | 28.6% |
 | 61–75′ | 294 | 211 | 39 | 172 | 18.5% |
-| 76–90′ | 455 | 133 | 29 | 104 | 21.8% |
+| 76–90′ | 457 | 133 | 29 | 104 | 21.8% |
 | 91+′ | 168 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1524 | **Jogos monitorados:** 1560 | **Ao vivo:** 29 | **Termômetros recentes:** 2.
+**Registros:** 1529 | **Jogos monitorados:** 1560 | **Ao vivo:** 29 | **Termômetros recentes:** 3.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-12T12:46:15.137004+00:00 | Real Valladolid × Albacete | Real Valladolid (45') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-12T12:46:15.137004+00:00 | Hougang United FC × Balestier Khalsa FC | Hougang United FC (50') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-12T13:42:47.411809+00:00 | Real Valladolid × Albacete | Albacete (80') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-12T13:21:51.416170+00:00 | Real Valladolid × Albacete | Real Valladolid (59') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-12T13:21:51.416170+00:00 | Real Valladolid × Albacete | Real Valladolid (59') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-12T13:21:51.416170+00:00 | Real Valladolid × Albacete | Real Valladolid (59') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-12T13:21:51.416170+00:00 | Hougang United FC × Balestier Khalsa FC | Hougang United FC (85') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-12T12:46:15.137004+00:00 | Real Valladolid × Albacete | Real Valladolid (45') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-12T12:46:15.137004+00:00 | Hougang United FC × Balestier Khalsa FC | Hougang United FC (50') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-12T12:06:35.650416+00:00 | Liviy Bereh × Zorya | Zorya (56') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-12T11:33:03.304930+00:00 | Liviy Bereh × Zorya | Zorya (40') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-12T03:02:58.356695+00:00 | América de Cali × Independiente Medellín | América de Cali (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-11T21:45:32.011519+00:00 | Operário-PR × Goiás | Operário-PR (16') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-11T21:27:30.173981+00:00 | Anzoátegui FC × Carabobo FC | Anzoátegui FC (66') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-11T21:27:30.173981+00:00 | Club Atlético Platense × Argentinos Juniors | Club Atlético Platense (70') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T21:27:30.173981+00:00 | Rosario Central × Independiente Rivadavia | Rosario Central (65') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T21:27:30.173981+00:00 | Rosario Central × Independiente Rivadavia | Independiente Rivadavia (65') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-11T21:27:30.173981+00:00 | Arouca × Estrela da Amadora | Estrela da Amadora (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T21:27:30.173981+00:00 | Arouca × Estrela da Amadora | Estrela da Amadora (91') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-11T21:27:30.173981+00:00 | Arouca × Estrela da Amadora | Arouca (91') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
