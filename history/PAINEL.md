@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T10:33:03.115780+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T11:32:20.475139+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -35,8 +35,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-13 | Zob Ahan × Sepahan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Malavan × Foolad Khuzestan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Fajr Sepasi × Aluminium Arak | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Lens U19 × Sporting CP U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Sabah FK U19 × Slavia Prague U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Lens U19 × Sporting CP U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Sabah FK U19 × Slavia Prague U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Arsenal U19 × Lille U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Atlético Madrid U19 × Manchester United U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Inter U19 × Club Brugge U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1759 | **Jogos distintos:** 560 | **Resultados verificáveis:** 945 | **Com gol:** 287 | **Sem gol:** 658 | **Taxa observada:** 30.4%.
-**Evolução da amostra:** 5 datas com coletas | 2 pendentes | 320 indeterminados | 492 incompletos.
+**Observações:** 1765 | **Jogos distintos:** 563 | **Resultados verificáveis:** 946 | **Com gol:** 288 | **Sem gol:** 658 | **Taxa observada:** 30.4%.
+**Evolução da amostra:** 5 datas com coletas | 7 pendentes | 320 indeterminados | 492 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 336 | 231 | 75 | 156 | 32.5% |
-| 🟥 expulsao_confirmada | 353 | 171 | 48 | 123 | 28.1% |
+| 🟥 expulsao_confirmada | 355 | 172 | 49 | 123 | 28.5% |
 | ⚡ pressao_ofensiva_18 | 232 | 151 | 48 | 103 | 31.8% |
-| 🎯 chutes_no_alvo_5 | 295 | 142 | 35 | 107 | 24.6% |
-| 🚩 escanteios_6 | 233 | 98 | 27 | 71 | 27.6% |
+| 🎯 chutes_no_alvo_5 | 297 | 142 | 35 | 107 | 24.6% |
+| 🚩 escanteios_6 | 235 | 98 | 27 | 71 | 27.6% |
 | 💣 grandes_chances_3 | 182 | 92 | 33 | 59 | 35.9% |
 | 🔥 pressao_forte_10min | 56 | 29 | 10 | 19 | 34.5% |
 | 🧨 pressao_total_5_10min | 38 | 20 | 8 | 12 | 40.0% |
@@ -254,20 +254,26 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 57 | 45 | 20 | 25 | 44.4% |
 | 16–30′ | 168 | 131 | 46 | 85 | 35.1% |
 | 31–45′ | 216 | 161 | 63 | 98 | 39.1% |
-| 46–60′ | 265 | 208 | 64 | 144 | 30.8% |
-| 61–75′ | 350 | 247 | 60 | 187 | 24.3% |
-| 76–90′ | 520 | 153 | 34 | 119 | 22.2% |
+| 46–60′ | 266 | 209 | 65 | 144 | 31.1% |
+| 61–75′ | 354 | 247 | 60 | 187 | 24.3% |
+| 76–90′ | 521 | 153 | 34 | 119 | 22.2% |
 | 91+′ | 183 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1759 | **Jogos monitorados:** 1552 | **Ao vivo:** 25 | **Termômetros recentes:** 2.
+**Registros:** 1765 | **Jogos monitorados:** 1552 | **Ao vivo:** 30 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-13T11:32:41.252262+00:00 | Shanghai Port × Daejeon Hana Citizen | Shanghai Port (76') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-13T11:27:51.771040+00:00 | Kyoto Sanga FC × Ratchaburi FC | Kyoto Sanga FC (65') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-13T11:27:51.771040+00:00 | Pohang Steelers × Johor Darul Ta'zim | Johor Darul Ta'zim (65') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-13T11:27:51.771040+00:00 | Pohang Steelers × Johor Darul Ta'zim | Pohang Steelers (65') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-13T11:27:51.771040+00:00 | Pohang Steelers × Johor Darul Ta'zim | Pohang Steelers (65') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-13T10:47:03.652068+00:00 | Pohang Steelers × Johor Darul Ta'zim | Pohang Steelers (46') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-13T09:33:47.573662+00:00 | Newcastle Jets × Gamba Osaka | Gamba Osaka (91') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T09:33:47.573662+00:00 | Newcastle Jets × Gamba Osaka | Gamba Osaka (91') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T02:16:19.572536+00:00 | RB Bragantino × Cruzeiro | RB Bragantino (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -362,12 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-12T20:26:56.539233+00:00 | Pescara × Guidonia Montecelio | Pescara (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-12T20:26:56.539233+00:00 | Pescara × Guidonia Montecelio | Guidonia Montecelio (96') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-12T20:26:56.539233+00:00 | AZ Picerno × Cosenza | Cosenza (93') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Torino × Udinese | Udinese (56') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Dijon × Metz | Metz (56') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Dijon × Metz | Dijon (56') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | GKS Katowice × Wieczysta Kraków | GKS Katowice (73') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | GKS Katowice × Wieczysta Kraków | Wieczysta Kraków (73') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Famalicão × Alverca | Famalicão (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
