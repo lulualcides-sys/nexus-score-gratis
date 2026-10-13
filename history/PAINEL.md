@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T01:31:25.646533+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T02:31:12.747574+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -10,17 +10,17 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-13 | RB Bragantino × Cruzeiro | 3-1 | 51 | Chutes no alvo: 6.0×9.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×4.0 |
-| 2026-10-13 | Botafogo SP × Ceará | 0-0 | 57 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
+| 2026-10-13 | RB Bragantino × Cruzeiro | 4-2 | 90 | Chutes no alvo: 10.0×13.0, Chutes para fora: 4.0×8.0, Escanteios: 5.0×6.0, Grandes chances: 3.0×5.0 |
+| 2026-10-13 | Botafogo SP × Ceará | 1-0 | 80 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-10-12 | Lanús × Vélez Sarsfield | 2-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,20, Empate 3,05, Fora 3,65 |
 | 2026-10-12 | Gimnasia (Mendoza) × Newell's Old Boys | 1-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,25, Empate 3,05, Fora 3,45 |
-| 2026-10-12 | Red Bull Bragantino × Cruzeiro | 3-1 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,60, Fora 3,05 |
+| 2026-10-12 | Red Bull Bragantino × Cruzeiro | 4-2 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,60, Fora 3,05 |
 | 2026-10-12 | Coritiba × Botafogo | 1-1 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,65, Empate 3,50, Fora 2,55 |
 | 2026-10-12 | Chapecoense × Athletico-PR | 1-4 | 0 | Chutes no alvo: 1.0×5.0; Match Odds 1X2: Casa 3,80, Empate 3,55, Fora 1,95 |
 | 2026-10-12 | Novorizontino × Ponte Preta | 5-1 | 0 | Chutes no alvo: 3.0×0.0 |
 | 2026-10-12 | Fortaleza × CRB | 2-2 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,87, Empate 3,55, Fora 4,10 |
 | 2026-10-12 | Criciúma × América Mineiro | 1-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,32, Empate 5,00, Fora 10,00 |
-| 2026-10-12 | Botafogo-SP × Ceará | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,05, Empate 3,35, Fora 3,70 |
+| 2026-10-12 | Botafogo-SP × Ceará | 1-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,05, Empate 3,35, Fora 3,70 |
 | 2026-10-12 | Coventry City × Newcastle United | 4-1 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 3,15, Empate 3,60, Fora 2,20 |
 | 2026-10-12 | Levante × Sevilla | 3-3 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 2,60, Empate 3,30, Fora 2,80 |
 | 2026-10-12 | Torino × Udinese | 2-1 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,30, Empate 3,05, Fora 3,10 |
@@ -51,7 +51,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-12 | Gimnasia Mendoza × Newell's Old Boys | 1-0 | 81 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×6.0, Escanteios: 1.0×7.0, Grandes chances: 0.0×4.0 |
 | 2026-10-12 | Talleres × Independiente | 0-0 | 90 | Chutes no alvo: 3.0×2.0, Chutes para fora: 6.0×10.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-12 | Shamrock Rovers × Bohemian FC | 2-1 | 89 | Chutes no alvo: 3.0×5.0, Chutes para fora: 2.0×0.0, Escanteios: 3.0×6.0, Grandes chances: 3.0×1.0 |
-| 2026-10-12 | RB Bragantino × Cruzeiro | 3-1 | 51 | Chutes no alvo: 6.0×9.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×4.0 |
+| 2026-10-12 | RB Bragantino × Cruzeiro | 4-2 | 90 | Chutes no alvo: 10.0×13.0, Chutes para fora: 4.0×9.0, Escanteios: 6.0×6.0, Grandes chances: 3.0×5.0 |
 | 2026-10-12 | Coritiba × Botafogo | 1-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 4.0×10.0, Escanteios: 8.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-12 | Chapecoense × Athletico Paranaense | 1-4 | 86 | Chutes no alvo: 6.0×8.0, Chutes para fora: 12.0×2.0, Escanteios: 5.0×7.0, Grandes chances: 2.0×4.0 |
 | 2026-10-12 | KFUM × Vålerenga | 2-1 | 52 | Chutes no alvo: 3.0×2.0, Chutes para fora: 2.0×7.0, Escanteios: 7.0×4.0, Grandes chances: 1.0×1.0 |
@@ -71,7 +71,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-12 | Sarpsborg 08 2 × Rælingen | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Sandefjord 2 × Råde | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | FK Liepāja × Auda | 2-3 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-12 | Botafogo SP × Ceará | 0-0 | 57 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
+| 2026-10-12 | Botafogo SP × Ceará | 1-0 | 90 | Chutes no alvo: 4.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 8.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-12 | Novorizontino × Ponte Preta | 5-1 | 88 | Chutes no alvo: 6.0×7.0, Chutes para fora: 4.0×5.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-10-12 | Fortaleza × CRB | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Criciúma × América-MG | 1-0 | 80 | Chutes no alvo: 1.0×1.0, Chutes para fora: 5.0×5.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×0.0 |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1751 | **Jogos distintos:** 559 | **Resultados verificáveis:** 941 | **Com gol:** 283 | **Sem gol:** 658 | **Taxa observada:** 30.1%.
-**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 318 indeterminados | 490 incompletos.
+**Observações:** 1757 | **Jogos distintos:** 559 | **Resultados verificáveis:** 941 | **Com gol:** 283 | **Sem gol:** 658 | **Taxa observada:** 30.1%.
+**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 324 indeterminados | 490 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 334 | 231 | 75 | 156 | 32.5% |
+| 🥶 jogo_frio | 336 | 231 | 75 | 156 | 32.5% |
 | 🟥 expulsao_confirmada | 353 | 170 | 47 | 123 | 27.6% |
-| ⚡ pressao_ofensiva_18 | 231 | 151 | 48 | 103 | 31.8% |
+| ⚡ pressao_ofensiva_18 | 232 | 151 | 48 | 103 | 31.8% |
 | 🎯 chutes_no_alvo_5 | 294 | 141 | 34 | 107 | 24.1% |
-| 🚩 escanteios_6 | 229 | 96 | 25 | 71 | 26.0% |
+| 🚩 escanteios_6 | 232 | 96 | 25 | 71 | 26.0% |
 | 💣 grandes_chances_3 | 182 | 92 | 33 | 59 | 35.9% |
 | 🔥 pressao_forte_10min | 56 | 29 | 10 | 19 | 34.5% |
 | 🧨 pressao_total_5_10min | 38 | 20 | 8 | 12 | 40.0% |
@@ -199,6 +199,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | St. Louis City | 7 | 6 | 1 | 5 | 16.7% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
 | Brest | 7 | 5 | 4 | 1 | 80.0% |
+| Cruzeiro | 7 | 5 | 5 | 0 | 100.0% |
 | Deportivo Cali | 7 | 5 | 0 | 5 | 0.0% |
 | Murcia B | 7 | 5 | 1 | 4 | 20.0% |
 | FC Twente | 6 | 5 | 1 | 4 | 20.0% |
@@ -206,7 +207,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Young Boys | 6 | 5 | 2 | 3 | 40.0% |
 | Benfica | 5 | 5 | 0 | 5 | 0.0% |
 | Central Córdoba de Santiago | 5 | 5 | 1 | 4 | 20.0% |
-| Cruzeiro | 5 | 5 | 5 | 0 | 100.0% |
 | Nacional | 5 | 5 | 3 | 2 | 60.0% |
 | Novorizontino | 9 | 4 | 2 | 2 | 50.0% |
 | Borussia Dortmund | 8 | 4 | 0 | 4 | 0.0% |
@@ -229,7 +229,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Primera División | 47 | 30 | 8 | 22 | 26.7% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
 | LaLiga2 | 53 | 27 | 10 | 17 | 37.0% |
-| Série A | 39 | 27 | 15 | 12 | 55.6% |
+| Série A | 42 | 27 | 15 | 12 | 55.6% |
 | Serie B | 35 | 26 | 5 | 21 | 19.2% |
 | Serie A | 40 | 25 | 3 | 22 | 12.0% |
 | J. League | 33 | 25 | 9 | 16 | 36.0% |
@@ -242,7 +242,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eliteserien | 43 | 21 | 2 | 19 | 9.5% |
 | Ligue 1 | 37 | 20 | 10 | 10 | 50.0% |
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
-| Série B | 33 | 15 | 7 | 8 | 46.7% |
+| Série B | 36 | 15 | 7 | 8 | 46.7% |
 | 2. Bundesliga | 27 | 15 | 4 | 11 | 26.7% |
 | Primera A | 23 | 15 | 6 | 9 | 40.0% |
 | Premier Division | 19 | 15 | 7 | 8 | 46.7% |
@@ -255,19 +255,25 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 168 | 131 | 46 | 85 | 35.1% |
 | 31–45′ | 216 | 161 | 63 | 98 | 39.1% |
 | 46–60′ | 265 | 205 | 61 | 144 | 29.8% |
-| 61–75′ | 344 | 247 | 60 | 187 | 24.3% |
+| 61–75′ | 350 | 247 | 60 | 187 | 24.3% |
 | 76–90′ | 520 | 152 | 33 | 119 | 21.7% |
 | 91+′ | 181 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1751 | **Jogos monitorados:** 1561 | **Ao vivo:** 26 | **Termômetros recentes:** 2.
+**Registros:** 1757 | **Jogos monitorados:** 1561 | **Ao vivo:** 22 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-13T02:16:19.572536+00:00 | RB Bragantino × Cruzeiro | RB Bragantino (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-13T02:16:19.572536+00:00 | Botafogo SP × Ceará | Botafogo SP (74') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-13T01:57:27.647929+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-13T01:39:36.638908+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-13T01:39:36.638908+00:00 | Botafogo SP × Ceará | Botafogo SP (74') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-13T01:39:36.638908+00:00 | Botafogo SP × Ceará | Botafogo SP (74') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T00:51:45.779997+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-13T00:51:45.779997+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -362,12 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-12T20:00:55.895255+00:00 | Famalicão × Alverca | Famalicão (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-12T20:00:55.895255+00:00 | Famalicão × Alverca | Famalicão (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-12T20:00:55.895255+00:00 | Pescara × Guidonia Montecelio | Pescara (70') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Al-Gharafa × Esteghlal | Al-Gharafa (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Al Nassr FC × Neftchi Fargona | Al Nassr FC (46') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Al Quwa Al Jawiya × Al-Ain | Al-Ain (85') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-12T20:00:55.895255+00:00 | Al Quwa Al Jawiya × Al-Ain | Al-Ain (85') | 💣 grandes_chances_3 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-12T19:44:21.430508+00:00 | GV San José × Guabirá | GV San José (44') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-12T19:44:21.430508+00:00 | GV San José × Guabirá | GV San José (44') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
