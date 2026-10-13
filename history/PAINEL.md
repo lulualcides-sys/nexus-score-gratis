@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T21:39:23.604916+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T22:39:51.490921+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -10,7 +10,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-13 | Athletic × Londrina | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,50 |
+| 2026-10-13 | Athletic × Londrina | 0-1 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,50 |
 | 2026-10-13 | Millonarios × Once Caldas | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,55, Fora 4,50 |
 | 2026-10-13 | Atlético Bucaramanga × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 3,70 |
 | 2026-10-13 | Villarreal × Napoli | 3-1 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 2,15, Empate 3,70, Fora 3,20 |
@@ -50,7 +50,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | IFK Norrköping × GIF Sundsvall | 4-0 | 0 | Chutes no alvo: 14.0×1.0, Escanteios: 8.0×1.0 |
 | 2026-10-13 | Heming × KFUM 2 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Botafogo SP × Ceará | 1-0 | 80 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×0.0 |
-| 2026-10-13 | Athletic Club MG × Londrina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Athletic Club MG × Londrina | 0-1 | 9 | Chutes no alvo: 0.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×1.0 |
 | 2026-10-13 | Sweden (W) × Lithuania (W) | 10-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Norway (W) × Romania (W) | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | England (W) × Greece (W) | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,15 +168,15 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1898 | **Jogos distintos:** 615 | **Resultados verificáveis:** 997 | **Com gol:** 306 | **Sem gol:** 691 | **Taxa observada:** 30.7%.
-**Evolução da amostra:** 5 datas com coletas | 3 pendentes | 363 indeterminados | 535 incompletos.
+**Observações:** 1899 | **Jogos distintos:** 616 | **Resultados verificáveis:** 997 | **Com gol:** 306 | **Sem gol:** 691 | **Taxa observada:** 30.7%.
+**Evolução da amostra:** 5 datas com coletas | 3 pendentes | 363 indeterminados | 536 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 351 | 239 | 76 | 163 | 31.8% |
+| 🥶 jogo_frio | 352 | 239 | 76 | 163 | 31.8% |
 | 🟥 expulsao_confirmada | 393 | 185 | 54 | 131 | 29.2% |
 | ⚡ pressao_ofensiva_18 | 245 | 158 | 51 | 107 | 32.3% |
 | 🎯 chutes_no_alvo_5 | 321 | 152 | 39 | 113 | 25.7% |
@@ -244,14 +244,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
 | Champions League | 38 | 16 | 6 | 10 | 37.5% |
 | Championship | 36 | 16 | 5 | 11 | 31.2% |
-| Série B | 36 | 15 | 7 | 8 | 46.7% |
+| Série B | 37 | 15 | 7 | 8 | 46.7% |
 | 2. Bundesliga | 27 | 15 | 4 | 11 | 26.7% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 59 | 46 | 20 | 26 | 43.5% |
+| 1–15′ | 60 | 46 | 20 | 26 | 43.5% |
 | 16–30′ | 173 | 135 | 47 | 88 | 34.8% |
 | 31–45′ | 237 | 178 | 69 | 109 | 38.8% |
 | 46–60′ | 290 | 223 | 75 | 148 | 33.6% |
@@ -262,13 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1898 | **Jogos monitorados:** 1552 | **Ao vivo:** 23 | **Termômetros recentes:** 2.
+**Registros:** 1899 | **Jogos monitorados:** 1552 | **Ao vivo:** 24 | **Termômetros recentes:** 3.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-13T21:39:42.884635+00:00 | FUS Rabat × Raja Casablanca | FUS Rabat (81') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-13T22:40:03.911299+00:00 | Athletic Club MG × Londrina | Athletic Club MG (10') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-13T21:39:42.884635+00:00 | FUS Rabat × Raja Casablanca | FUS Rabat (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Birmingham City (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Preston North End (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T20:52:49.576120+00:00 | Bamber Bridge × Warrington Town | Bamber Bridge (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-13T17:12:22.250649+00:00 | Petrojet-Suez × Wadi Degla FC | Petrojet-Suez (12') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T17:12:22.250649+00:00 | Al-Seeb × Al-Hussein SC | Al-Seeb (55') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T16:52:12.814806+00:00 | Al Bukayriyah × Al-Zulfi | Al Bukayriyah (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-13T16:52:12.814806+00:00 | Slovenia (W) × Turkiye (W) | Turkiye (W) (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
