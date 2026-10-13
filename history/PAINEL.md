@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T05:31:52.400450+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T06:39:27.526851+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1757 | **Jogos distintos:** 559 | **Resultados verificáveis:** 941 | **Com gol:** 283 | **Sem gol:** 658 | **Taxa observada:** 30.1%.
-**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 324 indeterminados | 490 incompletos.
+**Observações:** 1757 | **Jogos distintos:** 559 | **Resultados verificáveis:** 945 | **Com gol:** 287 | **Sem gol:** 658 | **Taxa observada:** 30.4%.
+**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 320 indeterminados | 490 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 336 | 231 | 75 | 156 | 32.5% |
-| 🟥 expulsao_confirmada | 353 | 170 | 47 | 123 | 27.6% |
+| 🟥 expulsao_confirmada | 353 | 171 | 48 | 123 | 28.1% |
 | ⚡ pressao_ofensiva_18 | 232 | 151 | 48 | 103 | 31.8% |
-| 🎯 chutes_no_alvo_5 | 294 | 141 | 34 | 107 | 24.1% |
-| 🚩 escanteios_6 | 232 | 96 | 25 | 71 | 26.0% |
+| 🎯 chutes_no_alvo_5 | 294 | 142 | 35 | 107 | 24.6% |
+| 🚩 escanteios_6 | 232 | 98 | 27 | 71 | 27.6% |
 | 💣 grandes_chances_3 | 182 | 92 | 33 | 59 | 35.9% |
 | 🔥 pressao_forte_10min | 56 | 29 | 10 | 19 | 34.5% |
 | 🧨 pressao_total_5_10min | 38 | 20 | 8 | 12 | 40.0% |
@@ -254,15 +254,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 57 | 45 | 20 | 25 | 44.4% |
 | 16–30′ | 168 | 131 | 46 | 85 | 35.1% |
 | 31–45′ | 216 | 161 | 63 | 98 | 39.1% |
-| 46–60′ | 265 | 205 | 61 | 144 | 29.8% |
+| 46–60′ | 265 | 208 | 64 | 144 | 30.8% |
 | 61–75′ | 350 | 247 | 60 | 187 | 24.3% |
-| 76–90′ | 520 | 152 | 33 | 119 | 21.7% |
+| 76–90′ | 520 | 153 | 34 | 119 | 22.2% |
 | 91+′ | 181 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1757 | **Jogos monitorados:** 1551 | **Ao vivo:** 22 | **Termômetros recentes:** 2.
+**Registros:** 1757 | **Jogos monitorados:** 1552 | **Ao vivo:** 22 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
