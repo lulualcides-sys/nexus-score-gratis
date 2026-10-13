@@ -2,17 +2,17 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T22:39:51.490921+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T23:37:30.013521+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-13 | Athletic × Londrina | 0-1 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,50 |
+| 2026-10-13 | Athletic × Londrina | 1-1 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,50 |
 | 2026-10-13 | Millonarios × Once Caldas | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,55, Fora 4,50 |
-| 2026-10-13 | Atlético Bucaramanga × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 3,70 |
+| 2026-10-13 | Atlético Bucaramanga × Águilas Doradas | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 3,70 |
 | 2026-10-13 | Villarreal × Napoli | 3-1 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 2,15, Empate 3,70, Fora 3,20 |
 | 2026-10-13 | Viking FK × Bayern Munich | 3-3 | 0 | Chutes no alvo: 3.0×4.0; Match Odds 1X2: Casa 18,00, Empate 13,00, Fora 1,09 |
 | 2026-10-13 | Atlético Madrid × Manchester United | 2-0 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 1,95, Empate 3,95, Fora 3,60 |
@@ -24,7 +24,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | Sabah FK × Slavia Prague | 2-0 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 3,40, Empate 3,75, Fora 2,05 |
 | 2026-10-13 | Pärnu JK Vaprus × Nõmme JK Kalju | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Harju Jalgpallikool × Nõmme United | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Bucaramanga × Águilas Doradas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Bucaramanga × Águilas Doradas | 0-0 | 7 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-13 | Millonarios × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Muang Thong United × Phrae United | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Kanchanaburi Power × Police Tero FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | Inter U19 × Club Brugge U19 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Galatasaray U19 × Barcelona U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | RB Leipzig U19 × PSV Eindhoven U19 | 1-6 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Viking U19 × Bayern München U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Viking U19 × Bayern München U19 | 2-0 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 1.0×6.0, Escanteios: 9.0×10.0, Grandes chances: 1.0×0.0 |
 | 2026-10-13 | Villarreal U19 × SSC Napoli U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Lincoln Red Imps FC U19 × Zrinjski Mostar U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Boca Juniors × Vasco da Gama | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -50,7 +50,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | IFK Norrköping × GIF Sundsvall | 4-0 | 0 | Chutes no alvo: 14.0×1.0, Escanteios: 8.0×1.0 |
 | 2026-10-13 | Heming × KFUM 2 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Botafogo SP × Ceará | 1-0 | 80 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×0.0 |
-| 2026-10-13 | Athletic Club MG × Londrina | 0-1 | 9 | Chutes no alvo: 0.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-10-13 | Athletic Club MG × Londrina | 1-1 | 45 | Chutes no alvo: 2.0×5.0, Chutes para fora: 5.0×2.0, Escanteios: 3.0×0.0, Grandes chances: 1.0×1.0 |
 | 2026-10-13 | Sweden (W) × Lithuania (W) | 10-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Norway (W) × Romania (W) | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | England (W) × Greece (W) | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -81,7 +81,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | FC Krasnodar × Fakel | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Lokomotiv Moscow × Akron Togliatti | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Montana × Ludogorets Razgrad II | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Tapatío × Tepatitlán FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Tapatío × Tepatitlán FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Hansa Rostock × Meppen | 0-2 | 0 | Chutes no alvo: 2.0×2.0, Escanteios: 4.0×1.0 |
 | 2026-10-13 | RW Essen × Fortuna Köln | 2-0 | 0 | Chutes no alvo: 4.0×0.0, Escanteios: 5.0×2.0 |
 | 2026-10-13 | Saarbrücken × MSV Duisburg | 2-4 | 0 | Chutes no alvo: 7.0×7.0, Escanteios: 4.0×4.0 |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-13 | FC Schweinfurt × Ansbach | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Unterhaching × TSV Landsberg | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Diosgyori VTK × Szentlőrinc | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | USA (W) × Spain (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | USA (W) × Spain (W) | 0-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 0.0×2.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×2.0 |
 | 2026-10-13 | Burgess Hill Town × Dulwich Hamlet | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Wingate & Finchley × Ramsgate | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Three Bridges × Lewes | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,7 +168,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1899 | **Jogos distintos:** 616 | **Resultados verificáveis:** 997 | **Com gol:** 306 | **Sem gol:** 691 | **Taxa observada:** 30.7%.
+**Observações:** 1901 | **Jogos distintos:** 616 | **Resultados verificáveis:** 999 | **Com gol:** 307 | **Sem gol:** 692 | **Taxa observada:** 30.7%.
 **Evolução da amostra:** 5 datas com coletas | 3 pendentes | 363 indeterminados | 536 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
@@ -176,10 +176,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 352 | 239 | 76 | 163 | 31.8% |
+| 🥶 jogo_frio | 352 | 240 | 77 | 163 | 32.1% |
 | 🟥 expulsao_confirmada | 393 | 185 | 54 | 131 | 29.2% |
-| ⚡ pressao_ofensiva_18 | 245 | 158 | 51 | 107 | 32.3% |
-| 🎯 chutes_no_alvo_5 | 321 | 152 | 39 | 113 | 25.7% |
+| ⚡ pressao_ofensiva_18 | 246 | 159 | 51 | 108 | 32.1% |
+| 🎯 chutes_no_alvo_5 | 322 | 152 | 39 | 113 | 25.7% |
 | 🚩 escanteios_6 | 253 | 104 | 29 | 75 | 27.9% |
 | 💣 grandes_chances_3 | 199 | 95 | 35 | 60 | 36.8% |
 | 🔥 pressao_forte_10min | 61 | 32 | 11 | 21 | 34.4% |
@@ -241,19 +241,19 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 45 | 21 | 11 | 10 | 52.4% |
 | Eliteserien | 43 | 21 | 2 | 19 | 9.5% |
 | Ligue 1 | 38 | 20 | 10 | 10 | 50.0% |
+| Série B | 39 | 17 | 8 | 9 | 47.1% |
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
 | Champions League | 38 | 16 | 6 | 10 | 37.5% |
 | Championship | 36 | 16 | 5 | 11 | 31.2% |
-| Série B | 37 | 15 | 7 | 8 | 46.7% |
 | 2. Bundesliga | 27 | 15 | 4 | 11 | 26.7% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 60 | 46 | 20 | 26 | 43.5% |
-| 16–30′ | 173 | 135 | 47 | 88 | 34.8% |
-| 31–45′ | 237 | 178 | 69 | 109 | 38.8% |
+| 1–15′ | 60 | 47 | 21 | 26 | 44.7% |
+| 16–30′ | 174 | 136 | 47 | 89 | 34.6% |
+| 31–45′ | 238 | 178 | 69 | 109 | 38.8% |
 | 46–60′ | 290 | 223 | 75 | 148 | 33.6% |
 | 61–75′ | 384 | 258 | 61 | 197 | 23.6% |
 | 76–90′ | 547 | 157 | 34 | 123 | 21.7% |
@@ -262,13 +262,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1899 | **Jogos monitorados:** 1552 | **Ao vivo:** 24 | **Termômetros recentes:** 3.
+**Registros:** 1901 | **Jogos monitorados:** 1552 | **Ao vivo:** 28 | **Termômetros recentes:** 3.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-13T22:40:03.911299+00:00 | Athletic Club MG × Londrina | Athletic Club MG (10') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-13T23:10:55.773842+00:00 | Athletic Club MG × Londrina | Londrina (41') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-13T22:50:05.141293+00:00 | Athletic Club MG × Londrina | Athletic Club MG (20') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-13T22:40:03.911299+00:00 | Athletic Club MG × Londrina | Athletic Club MG (10') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-13T21:39:42.884635+00:00 | FUS Rabat × Raja Casablanca | FUS Rabat (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Birmingham City (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Preston North End (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-13T17:12:22.250649+00:00 | Al-Saqer FC × Al Jabalain | Al Jabalain (97') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T17:12:22.250649+00:00 | Al Ittihad Alexandria × El Gouna FC | Al Ittihad Alexandria (12') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-13T17:12:22.250649+00:00 | Petrojet-Suez × Wadi Degla FC | Petrojet-Suez (12') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-13T17:12:22.250649+00:00 | Al-Seeb × Al-Hussein SC | Al-Seeb (55') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-13T16:52:12.814806+00:00 | Al Bukayriyah × Al-Zulfi | Al Bukayriyah (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
