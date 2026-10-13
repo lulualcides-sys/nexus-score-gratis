@@ -2,17 +2,19 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T00:43:09.345609+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-13T01:31:25.646533+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
+| 2026-10-13 | RB Bragantino × Cruzeiro | 3-1 | 51 | Chutes no alvo: 6.0×9.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×4.0 |
+| 2026-10-13 | Botafogo SP × Ceará | 0-0 | 57 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-10-12 | Lanús × Vélez Sarsfield | 2-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,20, Empate 3,05, Fora 3,65 |
 | 2026-10-12 | Gimnasia (Mendoza) × Newell's Old Boys | 1-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,25, Empate 3,05, Fora 3,45 |
-| 2026-10-12 | Red Bull Bragantino × Cruzeiro | 3-0 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,60, Fora 3,05 |
+| 2026-10-12 | Red Bull Bragantino × Cruzeiro | 3-1 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,60, Fora 3,05 |
 | 2026-10-12 | Coritiba × Botafogo | 1-1 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,65, Empate 3,50, Fora 2,55 |
 | 2026-10-12 | Chapecoense × Athletico-PR | 1-4 | 0 | Chutes no alvo: 1.0×5.0; Match Odds 1X2: Casa 3,80, Empate 3,55, Fora 1,95 |
 | 2026-10-12 | Novorizontino × Ponte Preta | 5-1 | 0 | Chutes no alvo: 3.0×0.0 |
@@ -49,7 +51,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-12 | Gimnasia Mendoza × Newell's Old Boys | 1-0 | 81 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×6.0, Escanteios: 1.0×7.0, Grandes chances: 0.0×4.0 |
 | 2026-10-12 | Talleres × Independiente | 0-0 | 90 | Chutes no alvo: 3.0×2.0, Chutes para fora: 6.0×10.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-12 | Shamrock Rovers × Bohemian FC | 2-1 | 89 | Chutes no alvo: 3.0×5.0, Chutes para fora: 2.0×0.0, Escanteios: 3.0×6.0, Grandes chances: 3.0×1.0 |
-| 2026-10-12 | RB Bragantino × Cruzeiro | 3-0 | 41 | Chutes no alvo: 4.0×4.0, Chutes para fora: 3.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 2.0×1.0 |
+| 2026-10-12 | RB Bragantino × Cruzeiro | 3-1 | 51 | Chutes no alvo: 6.0×9.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×4.0 |
 | 2026-10-12 | Coritiba × Botafogo | 1-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 4.0×10.0, Escanteios: 8.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-12 | Chapecoense × Athletico Paranaense | 1-4 | 86 | Chutes no alvo: 6.0×8.0, Chutes para fora: 12.0×2.0, Escanteios: 5.0×7.0, Grandes chances: 2.0×4.0 |
 | 2026-10-12 | KFUM × Vålerenga | 2-1 | 52 | Chutes no alvo: 3.0×2.0, Chutes para fora: 2.0×7.0, Escanteios: 7.0×4.0, Grandes chances: 1.0×1.0 |
@@ -69,7 +71,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-12 | Sarpsborg 08 2 × Rælingen | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Sandefjord 2 × Råde | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | FK Liepāja × Auda | 2-3 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-12 | Botafogo SP × Ceará | 0-0 | 42 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-12 | Botafogo SP × Ceará | 0-0 | 57 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-10-12 | Novorizontino × Ponte Preta | 5-1 | 88 | Chutes no alvo: 6.0×7.0, Chutes para fora: 4.0×5.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-10-12 | Fortaleza × CRB | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Criciúma × América-MG | 1-0 | 80 | Chutes no alvo: 1.0×1.0, Chutes para fora: 5.0×5.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×0.0 |
@@ -138,8 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-12 | Kara Gostar × Niroye Zamini | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Ario Islamshahr × Beasat Kermanshah | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-12 | Saipa × Qeshm Island | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Naft Bandar Abbas × Havadar SC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-12 | Pars Jonoubi Jam × Naft Gachsaran | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1749 | **Jogos distintos:** 559 | **Resultados verificáveis:** 934 | **Com gol:** 278 | **Sem gol:** 656 | **Taxa observada:** 29.8%.
-**Evolução da amostra:** 4 datas com coletas | 8 pendentes | 318 indeterminados | 489 incompletos.
+**Observações:** 1751 | **Jogos distintos:** 559 | **Resultados verificáveis:** 941 | **Com gol:** 283 | **Sem gol:** 658 | **Taxa observada:** 30.1%.
+**Evolução da amostra:** 4 datas com coletas | 2 pendentes | 318 indeterminados | 490 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,12 +178,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 334 | 231 | 75 | 156 | 32.5% |
 | 🟥 expulsao_confirmada | 353 | 170 | 47 | 123 | 27.6% |
-| ⚡ pressao_ofensiva_18 | 231 | 149 | 47 | 102 | 31.5% |
-| 🎯 chutes_no_alvo_5 | 293 | 140 | 33 | 107 | 23.6% |
+| ⚡ pressao_ofensiva_18 | 231 | 151 | 48 | 103 | 31.8% |
+| 🎯 chutes_no_alvo_5 | 294 | 141 | 34 | 107 | 24.1% |
 | 🚩 escanteios_6 | 229 | 96 | 25 | 71 | 26.0% |
-| 💣 grandes_chances_3 | 181 | 91 | 32 | 59 | 35.2% |
-| 🔥 pressao_forte_10min | 56 | 27 | 9 | 18 | 33.3% |
-| 🧨 pressao_total_5_10min | 38 | 19 | 7 | 12 | 36.8% |
+| 💣 grandes_chances_3 | 182 | 92 | 33 | 59 | 35.9% |
+| 🔥 pressao_forte_10min | 56 | 29 | 10 | 19 | 34.5% |
+| 🧨 pressao_total_5_10min | 38 | 20 | 8 | 12 | 40.0% |
 | 🚨 alerta_cruzado_gol | 12 | 7 | 2 | 5 | 28.6% |
 | ⏱️ tensao_tardia_70 | 22 | 4 | 1 | 3 | 25.0% |
 
@@ -206,6 +206,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Young Boys | 6 | 5 | 2 | 3 | 40.0% |
 | Benfica | 5 | 5 | 0 | 5 | 0.0% |
 | Central Córdoba de Santiago | 5 | 5 | 1 | 4 | 20.0% |
+| Cruzeiro | 5 | 5 | 5 | 0 | 100.0% |
 | Nacional | 5 | 5 | 3 | 2 | 60.0% |
 | Novorizontino | 9 | 4 | 2 | 2 | 50.0% |
 | Borussia Dortmund | 8 | 4 | 0 | 4 | 0.0% |
@@ -215,7 +216,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Al Nassr FC | 7 | 4 | 4 | 0 | 100.0% |
 | Ajax | 6 | 4 | 0 | 4 | 0.0% |
 | Cobresal | 6 | 4 | 0 | 4 | 0.0% |
-| GKS Katowice | 6 | 4 | 4 | 0 | 100.0% |
 
 ### Campeonato
 
@@ -229,6 +229,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Primera División | 47 | 30 | 8 | 22 | 26.7% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
 | LaLiga2 | 53 | 27 | 10 | 17 | 37.0% |
+| Série A | 39 | 27 | 15 | 12 | 55.6% |
 | Serie B | 35 | 26 | 5 | 21 | 19.2% |
 | Serie A | 40 | 25 | 3 | 22 | 12.0% |
 | J. League | 33 | 25 | 9 | 16 | 36.0% |
@@ -237,15 +238,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ekstraklasa | 37 | 24 | 9 | 15 | 37.5% |
 | LaLiga | 44 | 22 | 8 | 14 | 36.4% |
 | Belgian Pro League | 40 | 22 | 9 | 13 | 40.9% |
-| Série A | 37 | 22 | 10 | 12 | 45.5% |
 | Liga MX | 45 | 21 | 11 | 10 | 52.4% |
 | Eliteserien | 43 | 21 | 2 | 19 | 9.5% |
 | Ligue 1 | 37 | 20 | 10 | 10 | 50.0% |
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
+| Série B | 33 | 15 | 7 | 8 | 46.7% |
 | 2. Bundesliga | 27 | 15 | 4 | 11 | 26.7% |
 | Primera A | 23 | 15 | 6 | 9 | 40.0% |
 | Premier Division | 19 | 15 | 7 | 8 | 46.7% |
-| Ligue 2 | 29 | 14 | 4 | 10 | 28.6% |
 
 ### Faixa de minuto
 
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 57 | 45 | 20 | 25 | 44.4% |
 | 16–30′ | 168 | 131 | 46 | 85 | 35.1% |
-| 31–45′ | 214 | 154 | 58 | 96 | 37.7% |
+| 31–45′ | 216 | 161 | 63 | 98 | 39.1% |
 | 46–60′ | 265 | 205 | 61 | 144 | 29.8% |
 | 61–75′ | 344 | 247 | 60 | 187 | 24.3% |
 | 76–90′ | 520 | 152 | 33 | 119 | 21.7% |
@@ -262,18 +262,20 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1749 | **Jogos monitorados:** 1561 | **Ao vivo:** 27 | **Termômetros recentes:** 4.
+**Registros:** 1751 | **Jogos monitorados:** 1561 | **Ao vivo:** 26 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-13T00:43:33.182329+00:00 | All Boys × Godoy Cruz | All Boys (111') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-13T00:43:33.182329+00:00 | Botafogo SP × Ceará | Botafogo SP (43') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-13T00:43:33.182329+00:00 | Botafogo SP × Ceará | Botafogo SP (43') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-13T00:51:45.779997+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-13T00:51:45.779997+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | RB Bragantino × Cruzeiro | Cruzeiro (42') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | All Boys × Godoy Cruz | All Boys (111') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | Botafogo SP × Ceará | Botafogo SP (43') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-13T00:43:33.182329+00:00 | Botafogo SP × Ceará | Botafogo SP (43') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-13T00:17:26.074554+00:00 | Chapecoense × Athletico Paranaense | Athletico Paranaense (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T00:17:26.074554+00:00 | Criciúma × América-MG | Criciúma (81') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-12T23:52:28.494317+00:00 | Nacional × Recoleta | Nacional (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -366,12 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-12T20:00:55.895255+00:00 | Al Quwa Al Jawiya × Al-Ain | Al-Ain (85') | 💣 grandes_chances_3 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-12T19:44:21.430508+00:00 | GV San José × Guabirá | GV San José (44') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-12T19:44:21.430508+00:00 | GV San José × Guabirá | GV San José (44') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-12T19:44:21.430508+00:00 | Brown de Adrogué × Dock Sud | Dock Sud (79') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-12T19:44:21.430508+00:00 | GKS Katowice × Wieczysta Kraków | Wieczysta Kraków (56') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **155**.
+Jogos com odds registradas nos ultimos dias: **145**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
