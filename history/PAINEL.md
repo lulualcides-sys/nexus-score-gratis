@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T01:38:51.613190+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T02:41:24.138519+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -10,13 +10,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-14 | Bucaramanga × Águilas Doradas | 1-0 | 90 | Chutes no alvo: 4.0×1.0, Chutes para fora: 3.0×5.0, Escanteios: 3.0×6.0, Grandes chances: 1.0×0.0 |
+| 2026-10-14 | Bucaramanga × Águilas Doradas | 1-0 | 90 | Chutes no alvo: 4.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 3.0×6.0, Grandes chances: 1.0×1.0 |
 | 2026-10-14 | Millonarios × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Boca Juniors × Vasco da Gama | 0-1 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 5.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-14 | C.S. Cartaginés × Puntarenas FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Boca Juniors × Vasco da Gama | 0-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 11.0×3.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-10-14 | C.S. Cartaginés × Puntarenas FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Deportiva San Carlos × Inter San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Athletic × Londrina | 2-2 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,50 |
-| 2026-10-13 | Millonarios × Once Caldas | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,55, Fora 4,50 |
+| 2026-10-13 | Millonarios × Once Caldas | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,69, Empate 3,55, Fora 4,50 |
 | 2026-10-13 | Atlético Bucaramanga × Águilas Doradas | 1-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 3,70 |
 | 2026-10-13 | Villarreal × Napoli | 3-1 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 2,15, Empate 3,70, Fora 3,20 |
 | 2026-10-13 | Viking FK × Bayern Munich | 3-3 | 0 | Chutes no alvo: 3.0×4.0; Match Odds 1X2: Casa 18,00, Empate 13,00, Fora 1,09 |
@@ -50,7 +50,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-13 | Viking U19 × Bayern München U19 | 2-0 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 1.0×6.0, Escanteios: 9.0×10.0, Grandes chances: 1.0×0.0 |
 | 2026-10-13 | Villarreal U19 × SSC Napoli U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Lincoln Red Imps FC U19 × Zrinjski Mostar U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Boca Juniors × Vasco da Gama | 0-1 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 5.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-13 | Boca Juniors × Vasco da Gama | 0-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 11.0×3.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-13 | RB Bragantino × Cruzeiro | 4-2 | 90 | Chutes no alvo: 10.0×13.0, Chutes para fora: 4.0×8.0, Escanteios: 5.0×6.0, Grandes chances: 3.0×5.0 |
 | 2026-10-13 | IFK Norrköping × GIF Sundsvall | 4-0 | 0 | Chutes no alvo: 14.0×1.0, Escanteios: 8.0×1.0 |
 | 2026-10-13 | Heming × KFUM 2 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -73,8 +73,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-13 | Portugal (W) × Northern Ireland (W) | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Serbia (W) × Finland (W) | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Queen's Park × Inverness Caledonian Thistle | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | C.S. Cartaginés × Puntarenas FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-13 | Deportiva San Carlos × Inter San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | C.S. Cartaginés × Puntarenas FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-13 | Deportiva San Carlos × Inter San Carlos | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-13 | Birmingham City × Preston North End | 4-0 | 90 | Chutes no alvo: 7.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-10-13 | Bristol City × Blackburn Rovers | 0-1 | 72 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 9.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-13 | Burnley × Charlton Athletic | 2-2 | 68 | Chutes no alvo: 3.0×4.0, Chutes para fora: 7.0×1.0, Escanteios: 3.0×5.0, Grandes chances: 1.0×4.0 |
@@ -168,7 +168,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1908 | **Jogos distintos:** 619 | **Resultados verificáveis:** 1004 | **Com gol:** 309 | **Sem gol:** 695 | **Taxa observada:** 30.8%.
+**Observações:** 1910 | **Jogos distintos:** 620 | **Resultados verificáveis:** 1006 | **Com gol:** 309 | **Sem gol:** 697 | **Taxa observada:** 30.7%.
 **Evolução da amostra:** 5 datas com coletas | 2 pendentes | 364 indeterminados | 538 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 353 | 241 | 77 | 164 | 32.0% |
-| 🟥 expulsao_confirmada | 394 | 187 | 56 | 131 | 29.9% |
+| 🟥 expulsao_confirmada | 395 | 188 | 56 | 132 | 29.8% |
 | ⚡ pressao_ofensiva_18 | 247 | 160 | 51 | 109 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 322 | 153 | 39 | 114 | 25.5% |
-| 🚩 escanteios_6 | 255 | 104 | 29 | 75 | 27.9% |
+| 🚩 escanteios_6 | 256 | 105 | 29 | 76 | 27.6% |
 | 💣 grandes_chances_3 | 201 | 95 | 35 | 60 | 36.8% |
 | 🔥 pressao_forte_10min | 61 | 32 | 11 | 21 | 34.4% |
 | 🧨 pressao_total_5_10min | 40 | 21 | 8 | 13 | 38.1% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 60 | 47 | 21 | 26 | 44.7% |
 | 16–30′ | 174 | 136 | 47 | 89 | 34.6% |
 | 31–45′ | 240 | 180 | 69 | 111 | 38.3% |
-| 46–60′ | 290 | 223 | 75 | 148 | 33.6% |
+| 46–60′ | 292 | 225 | 75 | 150 | 33.3% |
 | 61–75′ | 385 | 260 | 62 | 198 | 23.8% |
 | 76–90′ | 550 | 158 | 35 | 123 | 22.2% |
 | 91+′ | 209 | 0 | 0 | 0 | — |
@@ -262,12 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1908 | **Jogos monitorados:** 1552 | **Ao vivo:** 24 | **Termômetros recentes:** 2.
+**Registros:** 1910 | **Jogos monitorados:** 1552 | **Ao vivo:** 23 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-14T02:22:38.602283+00:00 | Boca Juniors × Vasco da Gama | Boca Juniors (48') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-14T01:56:22.075310+00:00 | Boca Juniors × Vasco da Gama | Vasco da Gama (48') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T01:21:28.053226+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T00:52:47.503948+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (65') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T00:52:47.503948+00:00 | USA (W) × Spain (W) | USA (W) (85') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-13T18:16:02.156241+00:00 | Sabah FK × Slavia Prague | Slavia Prague (71') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T18:16:02.156241+00:00 | Sabah FK × Slavia Prague | Slavia Prague (71') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T17:55:21.234539+00:00 | Simba SC × Mashujaa | Mashujaa (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T17:55:21.234539+00:00 | Al-Sadd × Al Hilal | Al Hilal (95') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T17:55:21.234539+00:00 | Al-Sadd × Al Hilal | Al Hilal (95') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
