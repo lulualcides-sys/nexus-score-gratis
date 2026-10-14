@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T15:47:15.739846+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T16:43:49.116052+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -22,7 +22,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Aston Villa × Fenerbahce | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 5,00 |
 | 2026-10-14 | AS Roma × Real Madrid | 0-0 | 0 | Match Odds 1X2: Casa 3,55, Empate 3,95, Fora 1,95 |
 | 2026-10-14 | LASK Linz × Liverpool | 0-0 | 0 | Match Odds 1X2: Casa 9,00, Empate 6,00, Fora 1,29 |
-| 2026-10-14 | Feyenoord Rotterdam × Como | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Feyenoord Rotterdam × Como | 0-0 | 0 | Match Odds 1X2: Casa 2,95, Empate 3,70, Fora 2,30 |
 | 2026-10-14 | Toronto FC × Orlando City SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Inter Miami CF × New York City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | FC Cincinnati × New England Revolution | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -38,7 +38,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | San Diego FC × Houston Dynamo FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | LAFC × Austin FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | LA Galaxy × Portland Timbers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Paide Linnameeskond × Tammeka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Paide Linnameeskond × Tammeka | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Narva Trans × FC Kuressaare | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Real Cundinamarca × Bogotá FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Junior FC × Deportivo Pereira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -51,7 +51,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Pattaya Dolphins United × Songkhla United FC | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Al-Raed × Jeddah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Hajer × Al-Orobah FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Al-Jandal × Al Akhdoud | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-10-14 | Al-Jandal × Al Akhdoud | 1-1 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×1.0 |
 | 2026-10-14 | Al-Waab SC × Umm Salal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Al-Shamal II × Al Markhiya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Al Mesaimeer × Al-Gharafa II | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -72,7 +72,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Partizani U19 × Valletta U19 | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Havnar Boltfelag U19 × Flora Tallinn U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Ballkani U19 × HJK U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Žalgiris Vilnius U19 × Thor Akureyri U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Žalgiris Vilnius U19 × Thor Akureyri U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | SK Super Nova U19 × Cliftonville U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Kairat Almaty U19 × OFK Mladost Donja Gorica U19 | 8-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Dinamo Minsk U19 × Dinamo Tbilisi U19 | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -106,10 +106,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Rhode Island FC × Loudoun United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Hartford Athletic × Charleston Battery | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Asker × Frigg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Atyrau × FC Yelimay | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Atyrau × FC Yelimay | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Irtysh Pavlodar × FC Astana | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | BATE Borisov × Neman Grodno | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Bohemians 1905 × Mladá Boleslav | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | BATE Borisov × Neman Grodno | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Bohemians 1905 × Mladá Boleslav | 1-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-14 | LD Alajuelense × Club Sport Herediano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | C.S. Cartaginés × Puntarenas FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Deportiva San Carlos × Inter San Carlos | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -117,10 +117,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Norwich City × Southampton | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Portsmouth × Sheffield United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Queens Park Rangers × Derby County | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Dynamo Makhachkala × Zenit St. Petersburg | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Dynamo Makhachkala × Zenit St. Petersburg | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Krylya Sovetov Samara × Baltika | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | CSKA Moscow × FC Rostov | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | FK Akhmat × Dinamo Moscow | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | FK Akhmat × Dinamo Moscow | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Comunicaciones FC × Aurora FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Guastatoya × Antigua Guatemala | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Śląsk Wrocław ll × Legia Warszawa II | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -135,7 +135,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 | 2026-10-14 | Batman Petrolspor × İstanbulspor | 4-2 | 0 | Chutes no alvo: 8.0×4.0, Chutes para fora: 5.0×6.0, Escanteios: 9.0×6.0, Grandes chances: 3.0×2.0 |
 | 2026-10-14 | Kaiserslautern II × FSV Frankfurt | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Eintracht Frankfurt II × VfR Mannheim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Mezőkövesd SE × FC Ajka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Mezőkövesd SE × FC Ajka | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Whyteleafe × Whitehawk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Municipal Pérez Zeledón × Escorpiones | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | CR Temouchent × MB Rouissat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 1932 | **Jogos distintos:** 631 | **Resultados verificáveis:** 1012 | **Com gol:** 310 | **Sem gol:** 702 | **Taxa observada:** 30.6%.
-**Evolução da amostra:** 6 datas com coletas | 6 pendentes | 369 indeterminados | 545 incompletos.
+**Evolução da amostra:** 6 datas com coletas | 3 pendentes | 369 indeterminados | 548 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,15 +262,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1932 | **Jogos monitorados:** 1033 | **Ao vivo:** 29 | **Termômetros recentes:** 2.
+**Registros:** 1932 | **Jogos monitorados:** 1033 | **Ao vivo:** 35 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-14T15:47:38.923434+00:00 | Real Betis U19 × FC Porto U19 | FC Porto U19 (87') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-14T15:47:38.923434+00:00 | Punjab FC × Odisha FC | Punjab FC (88') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-14T15:47:38.923434+00:00 | Punjab FC × Odisha FC | Punjab FC (88') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T15:47:38.923434+00:00 | Real Betis U19 × FC Porto U19 | FC Porto U19 (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-14T15:47:38.923434+00:00 | Punjab FC × Odisha FC | Punjab FC (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-14T15:47:38.923434+00:00 | Punjab FC × Odisha FC | Punjab FC (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T15:09:43.026452+00:00 | Ümraniyespor × Boluspor | Boluspor (52') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-14T15:09:43.026452+00:00 | Latina × Atalanta U23 | Latina (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T15:09:43.026452+00:00 | Latina × Atalanta U23 | Atalanta U23 (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **97**.
+Jogos com odds registradas nos ultimos dias: **98**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
