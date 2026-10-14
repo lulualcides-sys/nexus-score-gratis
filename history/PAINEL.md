@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T19:42:17.739490+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T20:39:43.085148+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -14,13 +14,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-14 | Independiente Santa Fe × Jaguares de Córdoba | 0-0 | 0 | Match Odds 1X2: Casa 1,33, Empate 4,70, Fora 7,50 |
 | 2026-10-14 | Atlético Junior × Deportivo Pereira | 0-0 | 0 | Match Odds 1X2: Casa 1,24, Empate 5,50, Fora 9,50 |
 | 2026-10-14 | Fluminense × Palmeiras | 0-0 | 0 | Match Odds 1X2: Casa 2,90, Empate 2,90, Fora 2,70 |
-| 2026-10-14 | Bodo/Glimt × Borussia Dortmund | 0-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 3,15, Empate 4,10, Fora 2,05 |
-| 2026-10-14 | Slovan Bratislava × VfB Stuttgart | 0-1 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 9,00, Empate 6,00, Fora 1,29 |
-| 2026-10-14 | Shakhtar Donetsk × AEK Athens | 1-1 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,70, Empate 3,35, Fora 2,65 |
-| 2026-10-14 | Manchester City × Paris Saint-Germain | 0-3 | 0 | Chutes no alvo: 0.0×7.0; Match Odds 1X2: Casa 2,15, Empate 4,00, Fora 3,00 |
-| 2026-10-14 | Real Betis × FC Porto | 0-1 | 0 | Chutes no alvo: 4.0×0.0; Match Odds 1X2: Casa 2,05, Empate 3,75, Fora 3,40 |
-| 2026-10-14 | Aston Villa × Fenerbahce | 3-0 | 0 | Chutes no alvo: 5.0×3.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 5,00 |
-| 2026-10-14 | AS Roma × Real Madrid | 1-1 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 3,55, Empate 3,95, Fora 1,95 |
+| 2026-10-14 | Bodo/Glimt × Borussia Dortmund | 1-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 3,15, Empate 4,10, Fora 2,05 |
+| 2026-10-14 | Slovan Bratislava × VfB Stuttgart | 0-2 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 9,00, Empate 6,00, Fora 1,29 |
+| 2026-10-14 | Shakhtar Donetsk × AEK Athens | 2-1 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,70, Empate 3,35, Fora 2,65 |
+| 2026-10-14 | Manchester City × Paris Saint-Germain | 2-4 | 0 | Chutes no alvo: 0.0×7.0; Match Odds 1X2: Casa 2,15, Empate 4,00, Fora 3,00 |
+| 2026-10-14 | Real Betis × FC Porto | 2-2 | 0 | Chutes no alvo: 4.0×0.0; Match Odds 1X2: Casa 2,05, Empate 3,75, Fora 3,40 |
+| 2026-10-14 | Aston Villa × Fenerbahce | 5-0 | 0 | Chutes no alvo: 5.0×3.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 5,00 |
+| 2026-10-14 | AS Roma × Real Madrid | 3-1 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 3,55, Empate 3,95, Fora 1,95 |
 | 2026-10-14 | LASK Linz × Liverpool | 3-6 | 0 | Chutes no alvo: 0.0×5.0; Match Odds 1X2: Casa 9,00, Empate 6,00, Fora 1,29 |
 | 2026-10-14 | Feyenoord Rotterdam × Como | 3-2 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 2,95, Empate 3,70, Fora 2,30 |
 | 2026-10-14 | Toronto FC × Orlando City SC | 0-0 | 0 | Match Odds 1X2: Casa 2,30, Empate 3,70, Fora 2,65 |
@@ -70,7 +70,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-14 | Persib Bandung × Viettel | 1-0 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 6.0×6.0, Escanteios: 6.0×4.0, Grandes chances: 2.0×1.0 |
 | 2026-10-14 | Una Strassen U19 × Cardiff Met FC U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Partizani U19 × Valletta U19 | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Havnar Boltfelag U19 × Flora Tallinn U19 | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Havnar Boltfelag U19 × Flora Tallinn U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Ballkani U19 × HJK U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Žalgiris Vilnius U19 × Thor Akureyri U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | SK Super Nova U19 × Cliftonville U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -113,10 +113,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-14 | LD Alajuelense × Club Sport Herediano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | C.S. Cartaginés × Puntarenas FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Deportiva San Carlos × Inter San Carlos | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Lincoln City × West Ham United | 0-0 | 13 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-14 | Norwich City × Southampton | 0-0 | 26 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×3.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-10-14 | Portsmouth × Sheffield United | 1-0 | 27 | Chutes no alvo: 0.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×2.0 |
-| 2026-10-14 | Queens Park Rangers × Derby County | 3-0 | 29 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 2.0×0.0 |
+| 2026-10-14 | Lincoln City × West Ham United | 0-5 | 51 | Chutes no alvo: 0.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 2.0×6.0, Grandes chances: 0.0×3.0 |
+| 2026-10-14 | Norwich City × Southampton | 0-1 | 70 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×5.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×2.0 |
+| 2026-10-14 | Portsmouth × Sheffield United | 3-2 | 70 | Chutes no alvo: 4.0×4.0, Chutes para fora: 6.0×3.0, Escanteios: 5.0×6.0, Grandes chances: 2.0×3.0 |
+| 2026-10-14 | Queens Park Rangers × Derby County | 4-0 | 64 | Chutes no alvo: 6.0×2.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-14 | Dynamo Makhachkala × Zenit St. Petersburg | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Krylya Sovetov Samara × Baltika | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | CSKA Moscow × FC Rostov | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -136,7 +136,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-14 | Kaiserslautern II × FSV Frankfurt | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Eintracht Frankfurt II × VfR Mannheim | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Mezőkövesd SE × FC Ajka | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Whyteleafe × Whitehawk | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Whyteleafe × Whitehawk | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Municipal Pérez Zeledón × Escorpiones | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | CR Temouchent × MB Rouissat | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | ES Sétif × JS Kabylie | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,34 +168,36 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1982 | **Jogos distintos:** 656 | **Resultados verificáveis:** 1030 | **Com gol:** 318 | **Sem gol:** 712 | **Taxa observada:** 30.9%.
-**Evolução da amostra:** 6 datas com coletas | 7 pendentes | 387 indeterminados | 558 incompletos.
+**Observações:** 2026 | **Jogos distintos:** 658 | **Resultados verificáveis:** 1053 | **Com gol:** 336 | **Sem gol:** 717 | **Taxa observada:** 31.9%.
+**Evolução da amostra:** 6 datas com coletas | 16 pendentes | 399 indeterminados | 558 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 363 | 246 | 79 | 167 | 32.1% |
-| 🟥 expulsao_confirmada | 414 | 192 | 56 | 136 | 29.2% |
-| ⚡ pressao_ofensiva_18 | 253 | 161 | 52 | 109 | 32.3% |
-| 🎯 chutes_no_alvo_5 | 337 | 156 | 40 | 116 | 25.6% |
-| 🚩 escanteios_6 | 266 | 108 | 30 | 78 | 27.8% |
-| 💣 grandes_chances_3 | 207 | 100 | 36 | 64 | 36.0% |
-| 🔥 pressao_forte_10min | 64 | 33 | 12 | 21 | 36.4% |
-| 🧨 pressao_total_5_10min | 42 | 22 | 9 | 13 | 40.9% |
-| 🚨 alerta_cruzado_gol | 14 | 8 | 3 | 5 | 37.5% |
-| ⏱️ tensao_tardia_70 | 22 | 4 | 1 | 3 | 25.0% |
+| 🥶 jogo_frio | 367 | 247 | 79 | 168 | 32.0% |
+| 🟥 expulsao_confirmada | 418 | 193 | 57 | 136 | 29.5% |
+| ⚡ pressao_ofensiva_18 | 259 | 166 | 56 | 110 | 33.7% |
+| 🎯 chutes_no_alvo_5 | 344 | 159 | 43 | 116 | 27.0% |
+| 🚩 escanteios_6 | 271 | 111 | 33 | 78 | 29.7% |
+| 💣 grandes_chances_3 | 216 | 105 | 40 | 65 | 38.1% |
+| 🔥 pressao_forte_10min | 67 | 35 | 13 | 22 | 37.1% |
+| 🧨 pressao_total_5_10min | 44 | 24 | 10 | 14 | 41.7% |
+| 🚨 alerta_cruzado_gol | 16 | 9 | 4 | 5 | 44.4% |
+| ⏱️ tensao_tardia_70 | 24 | 4 | 1 | 3 | 25.0% |
 
 ### Equipe
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 56 | 37 | 19 | 18 | 51.4% |
+| Equipe não definida | 57 | 37 | 19 | 18 | 51.4% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | Liverpool | 12 | 7 | 5 | 2 | 71.4% |
+| Manchester City | 12 | 7 | 7 | 0 | 100.0% |
 | Bohemian FC | 8 | 6 | 6 | 0 | 100.0% |
+| Paris Saint-Germain | 8 | 6 | 4 | 2 | 66.7% |
 | Perugia | 7 | 6 | 2 | 4 | 33.3% |
 | St. Louis City | 7 | 6 | 1 | 5 | 16.7% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
@@ -212,16 +214,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Central Córdoba de Santiago | 5 | 5 | 1 | 4 | 20.0% |
 | Nacional | 5 | 5 | 3 | 2 | 60.0% |
 | Bayern München | 11 | 4 | 4 | 0 | 100.0% |
-| Novorizontino | 9 | 4 | 2 | 2 | 50.0% |
-| Borussia Dortmund | 8 | 4 | 0 | 4 | 0.0% |
-| Club Brugge | 8 | 4 | 4 | 0 | 100.0% |
-| Necaxa | 8 | 4 | 4 | 0 | 100.0% |
+| VfB Stuttgart | 10 | 4 | 4 | 0 | 100.0% |
+| Borussia Dortmund | 9 | 4 | 0 | 4 | 0.0% |
 
 ### Campeonato
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Premier League | 114 | 63 | 19 | 44 | 30.2% |
+| Champions League | 91 | 45 | 30 | 15 | 66.7% |
 | Major League Soccer | 85 | 44 | 18 | 26 | 40.9% |
 | Super League | 69 | 38 | 8 | 30 | 21.1% |
 | Liga Profesional | 60 | 35 | 9 | 26 | 25.7% |
@@ -234,7 +235,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie A | 40 | 25 | 3 | 22 | 12.0% |
 | J. League | 33 | 25 | 9 | 16 | 36.0% |
 | Super Lig | 28 | 25 | 5 | 20 | 20.0% |
-| Champions League | 59 | 24 | 13 | 11 | 54.2% |
 | Eredivisie | 45 | 24 | 4 | 20 | 16.7% |
 | Ekstraklasa | 37 | 24 | 9 | 15 | 37.5% |
 | LaLiga | 44 | 22 | 8 | 14 | 36.4% |
@@ -242,7 +242,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 45 | 21 | 11 | 10 | 52.4% |
 | Eliteserien | 43 | 21 | 2 | 19 | 9.5% |
 | Ligue 1 | 41 | 21 | 10 | 11 | 47.6% |
-| Championship | 40 | 18 | 5 | 13 | 27.8% |
+| Championship | 52 | 20 | 6 | 14 | 30.0% |
 | Série B | 40 | 18 | 8 | 10 | 44.4% |
 | First Division B | 27 | 17 | 3 | 14 | 17.6% |
 | Primera A | 26 | 17 | 6 | 11 | 35.3% |
@@ -251,40 +251,84 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 74 | 52 | 23 | 29 | 44.2% |
+| 1–15′ | 74 | 56 | 24 | 32 | 42.9% |
 | 16–30′ | 179 | 140 | 49 | 91 | 35.0% |
-| 31–45′ | 255 | 187 | 74 | 113 | 39.6% |
-| 46–60′ | 297 | 226 | 75 | 151 | 33.2% |
-| 61–75′ | 389 | 263 | 62 | 201 | 23.6% |
-| 76–90′ | 569 | 162 | 35 | 127 | 21.6% |
-| 91+′ | 219 | 0 | 0 | 0 | — |
+| 31–45′ | 255 | 188 | 75 | 113 | 39.9% |
+| 46–60′ | 322 | 243 | 91 | 152 | 37.4% |
+| 61–75′ | 395 | 264 | 62 | 202 | 23.5% |
+| 76–90′ | 581 | 162 | 35 | 127 | 21.6% |
+| 91+′ | 220 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1982 | **Jogos monitorados:** 1033 | **Ao vivo:** 41 | **Termômetros recentes:** 4.
+**Registros:** 2026 | **Jogos monitorados:** 1033 | **Ao vivo:** 38 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-14T19:42:43.550852+00:00 | Manchester City × Paris Saint-Germain | Paris Saint-Germain (38') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-14T19:42:43.550852+00:00 | Aston Villa × Fenerbahce | Aston Villa (41') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-14T19:42:43.550852+00:00 | Lincoln City × West Ham United | Lincoln City (43') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Lincoln City × West Ham United | Lincoln City (81') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Portsmouth × Sheffield United | Sheffield United (95') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Manchester City × Paris Saint-Germain | Manchester City (79') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Manchester City × Paris Saint-Germain | Manchester City (79') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Manchester City × Paris Saint-Germain | Manchester City (79') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Manchester City × Paris Saint-Germain | Manchester City (79') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Manchester City × Paris Saint-Germain | Manchester City (79') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Roma × Real Madrid | Equipe não definida (81') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Roma × Real Madrid | Roma (81') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Bodø/Glimt × Borussia Dortmund | Borussia Dortmund (84') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (83') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (83') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:40:06.700633+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (83') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Lincoln City × West Ham United | West Ham United (57') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Lincoln City × West Ham United | West Ham United (57') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Lincoln City × West Ham United | West Ham United (57') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Lincoln City × West Ham United | Lincoln City (57') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Norwich City × Southampton | Southampton (71') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Portsmouth × Sheffield United | Sheffield United (71') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Portsmouth × Sheffield United | Sheffield United (71') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Portsmouth × Sheffield United | Sheffield United (71') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Portsmouth × Sheffield United | Sheffield United (71') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Queens Park Rangers × Derby County | Queens Park Rangers (66') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Manchester City × Paris Saint-Germain | Manchester City (55') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Manchester City × Paris Saint-Germain | Manchester City (55') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Manchester City × Paris Saint-Germain | Manchester City (55') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Manchester City × Paris Saint-Germain | Manchester City (55') | 🚨 alerta_cruzado_gol · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Manchester City × Paris Saint-Germain | Manchester City (55') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Roma × Real Madrid | Roma (57') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Aston Villa × Fenerbahçe | Fenerbahçe (58') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Aston Villa × Fenerbahçe | Aston Villa (58') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Aston Villa × Fenerbahçe | Aston Villa (58') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Aston Villa × Fenerbahçe | Fenerbahçe (58') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Real Betis × FC Porto | Real Betis (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Bodø/Glimt × Borussia Dortmund | Bodø/Glimt (60') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Shakhtar Donetsk × AEK Athens | AEK Athens (57') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Shakhtar Donetsk × AEK Athens | AEK Athens (57') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (59') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (59') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (59') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T20:15:31.316817+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (59') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T19:49:14.624787+00:00 | Manchester City × Paris Saint-Germain | Paris Saint-Germain (46') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T19:49:14.624787+00:00 | Manchester City × Paris Saint-Germain | Manchester City (46') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T19:49:14.624787+00:00 | Manchester City × Paris Saint-Germain | Paris Saint-Germain (46') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-14T19:42:43.550852+00:00 | Manchester City × Paris Saint-Germain | Paris Saint-Germain (38') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T19:42:43.550852+00:00 | Aston Villa × Fenerbahce | Aston Villa (41') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T19:42:43.550852+00:00 | Lincoln City × West Ham United | Lincoln City (43') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Una Strassen U19 × Cardiff Met FC U19 | Una Strassen U19 (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Lincoln City × West Ham United | West Ham United (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Lincoln City × West Ham United | Lincoln City (14') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Queens Park Rangers × Derby County | Derby County (29') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Queens Park Rangers × Derby County | Derby County (29') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Manchester City × Paris Saint-Germain | Manchester City (11') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Roma × Real Madrid | Roma (13') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Roma × Real Madrid | Roma (13') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Aston Villa × Fenerbahçe | Aston Villa (13') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Aston Villa × Fenerbahçe | Aston Villa (13') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Real Betis × FC Porto | Real Betis (13') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Bodø/Glimt × Borussia Dortmund | Equipe não definida (13') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T19:13:53.176005+00:00 | Shakhtar Donetsk × AEK Athens | Shakhtar Donetsk (13') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-14T19:13:53.176005+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (14') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T19:13:53.176005+00:00 | Slovan Bratislava × VfB Stuttgart | VfB Stuttgart (14') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-14T18:50:06.893413+00:00 | Waldhof Mannheim × Ingolstadt | Waldhof Mannheim (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T18:50:06.893413+00:00 | CR Temouchent × MB Rouissat | CR Temouchent (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T18:37:49.725505+00:00 | Moss × Egersund | Egersund (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
@@ -324,55 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T15:09:43.026452+00:00 | Ümraniyespor × Boluspor | Boluspor (52') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-14T15:09:43.026452+00:00 | Latina × Atalanta U23 | Latina (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T15:09:43.026452+00:00 | Latina × Atalanta U23 | Atalanta U23 (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T14:37:30.156648+00:00 | Strømmen × Åsane | Strømmen (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-14T14:37:30.156648+00:00 | Strømmen × Åsane | Strømmen (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-14T14:37:30.156648+00:00 | Latina × Atalanta U23 | Atalanta U23 (60') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T14:37:30.156648+00:00 | Punjab FC × Odisha FC | Punjab FC (36') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T14:01:43.268849+00:00 | Persib Bandung × Viettel | Persib Bandung (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T14:01:43.268849+00:00 | Persib Bandung × Viettel | Persib Bandung (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T14:01:43.268849+00:00 | Latina × Atalanta U23 | Latina (44') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T13:46:34.075738+00:00 | Partizani U19 × Valletta U19 | Partizani U19 (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T13:21:46.154998+00:00 | Partizani U19 × Valletta U19 | Partizani U19 (66') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T13:21:46.154998+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (85') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T12:51:03.941243+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (54') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-14T12:45:59.107823+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (49') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T11:31:03.548815+00:00 | Kashiwa Reysol × Port FC | Kashiwa Reysol (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T11:31:03.548815+00:00 | Vissel Kobe × Jeonbuk Hyundai Motors FC | Jeonbuk Hyundai Motors FC (74') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T10:24:11.483850+00:00 | Kashiwa Reysol × Port FC | Kashiwa Reysol (23') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T04:00:08.356200+00:00 | Deportiva San Carlos × Inter San Carlos | Inter San Carlos (98') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T02:22:38.602283+00:00 | Boca Juniors × Vasco da Gama | Boca Juniors (48') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T01:56:22.075310+00:00 | Boca Juniors × Vasco da Gama | Vasco da Gama (48') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T01:21:28.053226+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T00:52:47.503948+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (65') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T00:52:47.503948+00:00 | USA (W) × Spain (W) | USA (W) (85') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T00:47:01.639080+00:00 | Tapatío × Tepatitlán FC | Equipe não definida (84') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T00:05:52.286455+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (36') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T00:05:52.286455+00:00 | Athletic Club MG × Londrina | Londrina (76') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-13T23:43:44.437298+00:00 | USA (W) × Spain (W) | Spain (W) (37') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-13T23:10:55.773842+00:00 | Athletic Club MG × Londrina | Londrina (41') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-13T22:50:05.141293+00:00 | Athletic Club MG × Londrina | Athletic Club MG (20') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-13T22:40:03.911299+00:00 | Athletic Club MG × Londrina | Athletic Club MG (10') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-13T21:39:42.884635+00:00 | FUS Rabat × Raja Casablanca | FUS Rabat (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Birmingham City (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Birmingham City × Preston North End | Preston North End (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Bamber Bridge × Warrington Town | Bamber Bridge (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Inter × Club Brugge | Inter (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Inter × Club Brugge | Inter (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Atlético Madrid × Manchester United | Atlético Madrid (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Atlético Madrid × Manchester United | Manchester United (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Galatasaray × Barcelona | Barcelona (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Viking × Bayern München | Bayern München (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:52:49.576120+00:00 | Viking × Bayern München | Bayern München (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:44:22.756724+00:00 | Bromsgrove Sporting × Kettering Town FC | Kettering Town FC (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:44:22.756724+00:00 | RB Leipzig × PSV Eindhoven | RB Leipzig (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:44:22.756724+00:00 | RB Leipzig × PSV Eindhoven | RB Leipzig (84') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:44:22.756724+00:00 | Villarreal × Napoli | Napoli (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T20:14:11.036598+00:00 | Bristol City × Blackburn Rovers | Blackburn Rovers (73') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **111**.
-Novas cotacoes capturadas na ultima execucao: **21**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
