@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T12:50:47.687401+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T13:46:20.501215+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -45,9 +45,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 | 2026-10-14 | Santa Fe × CD Jaguares | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Bucaramanga × Águilas Doradas | 1-0 | 90 | Chutes no alvo: 4.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 3.0×6.0, Grandes chances: 1.0×1.0 |
 | 2026-10-14 | Millonarios × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Nong Bua Pitchaya FC × Chiangmai United | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Chanthaburi FC × Nakhon Pathom | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Kasetsart × Mahasarakham Sam Bai Tao | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Nong Bua Pitchaya FC × Chiangmai United | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Chanthaburi FC × Nakhon Pathom | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Kasetsart × Mahasarakham Sam Bai Tao | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Pattaya Dolphins United × Songkhla United FC | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Al-Raed × Jeddah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Hajer × Al-Orobah FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -60,23 +60,23 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 | 2026-10-14 | Fluminense × Palmeiras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Feyenoord U19 × Como U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | LASK U19 × Liverpool U19 | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Roma U19 × Real Madrid U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Aston Villa U19 × Fenerbahçe U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Roma U19 × Real Madrid U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Aston Villa U19 × Fenerbahçe U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Shakhtar Donetsk U19 × AEK Athens U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Bodø/Glimt U19 × Borussia Dortmund U19 | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Manchester City U19 × Paris Saint Germain U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Real Betis U19 × FC Porto U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Slovan Bratislava U19 × VfB Stuttgart U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Persib Bandung × Viettel | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×1.0 |
+| 2026-10-14 | Slovan Bratislava U19 × VfB Stuttgart U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Persib Bandung × Viettel | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×4.0, Escanteios: 2.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-14 | Una Strassen U19 × Cardiff Met FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Partizani U19 × Valletta U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Partizani U19 × Valletta U19 | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Havnar Boltfelag U19 × Flora Tallinn U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Ballkani U19 × HJK U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Žalgiris Vilnius U19 × Thor Akureyri U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | SK Super Nova U19 × Cliftonville U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Kairat Almaty U19 × OFK Mladost Donja Gorica U19 | 8-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Dinamo Minsk U19 × Dinamo Tbilisi U19 | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | AP Brera Strumica U19 × FC Santa Coloma U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Dinamo Minsk U19 × Dinamo Tbilisi U19 | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | AP Brera Strumica U19 × FC Santa Coloma U19 | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Boca Juniors × Vasco da Gama | 0-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 11.0×3.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-14 | Atlético-MG × Montevideo City Torque | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | FC Cincinnati × New England Revolution | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 | 2026-10-14 | Moss × Egersund | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Sogndal × Odds Ballklubb | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Stabæk × Sandnes Ulf | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Strømmen × Åsane | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Strømmen × Åsane | 2-0 | 0 | Chutes no alvo: 1.0×0.0, Escanteios: 2.0×2.0 |
 | 2026-10-14 | Strømsgodset × Kongsvinger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Greenville Triumph SC × Spokane Velocity FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Rhode Island FC × Loudoun United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -118,7 +118,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 | 2026-10-14 | Portsmouth × Sheffield United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Queens Park Rangers × Derby County | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Dynamo Makhachkala × Zenit St. Petersburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Krylya Sovetov Samara × Baltika | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-14 | Krylya Sovetov Samara × Baltika | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | CSKA Moscow × FC Rostov | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | FK Akhmat × Dinamo Moscow | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Comunicaciones FC × Aurora FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -132,7 +132,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 | 2026-10-14 | Keçiörengücü × Iğdır FK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Antalyaspor × Kayserispor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Ümraniyespor × Boluspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-14 | Batman Petrolspor × İstanbulspor | 3-1 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 2.0×1.0 |
+| 2026-10-14 | Batman Petrolspor × İstanbulspor | 4-2 | 0 | Chutes no alvo: 8.0×4.0, Chutes para fora: 5.0×6.0, Escanteios: 9.0×6.0, Grandes chances: 3.0×2.0 |
 | 2026-10-14 | Kaiserslautern II × FSV Frankfurt | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Eintracht Frankfurt II × VfR Mannheim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Mezőkövesd SE × FC Ajka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1916 | **Jogos distintos:** 624 | **Resultados verificáveis:** 1009 | **Com gol:** 310 | **Sem gol:** 699 | **Taxa observada:** 30.7%.
-**Evolução da amostra:** 6 datas com coletas | 4 pendentes | 364 indeterminados | 539 incompletos.
+**Observações:** 1919 | **Jogos distintos:** 625 | **Resultados verificáveis:** 1009 | **Com gol:** 310 | **Sem gol:** 699 | **Taxa observada:** 30.7%.
+**Evolução da amostra:** 6 datas com coletas | 3 pendentes | 367 indeterminados | 540 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,11 +177,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 353 | 241 | 77 | 164 | 32.0% |
-| 🟥 expulsao_confirmada | 396 | 188 | 56 | 132 | 29.8% |
+| 🟥 expulsao_confirmada | 398 | 188 | 56 | 132 | 29.8% |
 | ⚡ pressao_ofensiva_18 | 247 | 160 | 51 | 109 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 324 | 154 | 39 | 115 | 25.3% |
 | 🚩 escanteios_6 | 257 | 105 | 29 | 76 | 27.6% |
-| 💣 grandes_chances_3 | 203 | 97 | 36 | 61 | 37.1% |
+| 💣 grandes_chances_3 | 204 | 97 | 36 | 61 | 37.1% |
 | 🔥 pressao_forte_10min | 61 | 32 | 11 | 21 | 34.4% |
 | 🧨 pressao_total_5_10min | 40 | 21 | 8 | 13 | 38.1% |
 | 🚨 alerta_cruzado_gol | 13 | 7 | 2 | 5 | 28.6% |
@@ -255,21 +255,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 175 | 137 | 48 | 89 | 35.0% |
 | 31–45′ | 240 | 180 | 69 | 111 | 38.3% |
 | 46–60′ | 294 | 225 | 75 | 150 | 33.3% |
-| 61–75′ | 387 | 262 | 62 | 200 | 23.7% |
-| 76–90′ | 550 | 158 | 35 | 123 | 22.2% |
-| 91+′ | 210 | 0 | 0 | 0 | — |
+| 61–75′ | 388 | 262 | 62 | 200 | 23.7% |
+| 76–90′ | 551 | 158 | 35 | 123 | 22.2% |
+| 91+′ | 211 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1916 | **Jogos monitorados:** 1033 | **Ao vivo:** 41 | **Termômetros recentes:** 1.
+**Registros:** 1919 | **Jogos monitorados:** 1033 | **Ao vivo:** 42 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-14T12:51:03.941243+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (54') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-14T12:45:59.107823+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (49') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-14T13:46:34.075738+00:00 | Partizani U19 × Valletta U19 | Partizani U19 (91') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-14T13:21:46.154998+00:00 | Partizani U19 × Valletta U19 | Partizani U19 (66') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-14T13:21:46.154998+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (85') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-14T12:51:03.941243+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (54') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-14T12:45:59.107823+00:00 | Batman Petrolspor × İstanbulspor | Batman Petrolspor (49') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-14T11:31:03.548815+00:00 | Kashiwa Reysol × Port FC | Kashiwa Reysol (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T11:31:03.548815+00:00 | Vissel Kobe × Jeonbuk Hyundai Motors FC | Jeonbuk Hyundai Motors FC (74') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T10:24:11.483850+00:00 | Kashiwa Reysol × Port FC | Kashiwa Reysol (23') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-13T18:47:25.781878+00:00 | Al Ittihad Alexandria × El Gouna FC | El Gouna FC (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-13T18:47:25.781878+00:00 | Petrojet-Suez × Wadi Degla FC | Wadi Degla FC (80') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-13T18:47:25.781878+00:00 | Petrojet-Suez × Wadi Degla FC | Petrojet-Suez (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-13T18:37:59.649023+00:00 | Petrojet-Suez × Wadi Degla FC | Wadi Degla FC (70') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-13T18:16:02.156241+00:00 | TSV Aubstadt × FV Illertissen | TSV Aubstadt (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-13T18:16:02.156241+00:00 | Petrojet-Suez × Wadi Degla FC | Wadi Degla FC (49') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
