@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T03:41:36.015574+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-14T04:43:29.585032+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 1910 | **Jogos distintos:** 620 | **Resultados verificáveis:** 1006 | **Com gol:** 309 | **Sem gol:** 697 | **Taxa observada:** 30.7%.
-**Evolução da amostra:** 5 datas com coletas | 2 pendentes | 364 indeterminados | 538 incompletos.
+**Observações:** 1911 | **Jogos distintos:** 621 | **Resultados verificáveis:** 1006 | **Com gol:** 309 | **Sem gol:** 697 | **Taxa observada:** 30.7%.
+**Evolução da amostra:** 6 datas com coletas | 2 pendentes | 364 indeterminados | 539 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 353 | 241 | 77 | 164 | 32.0% |
-| 🟥 expulsao_confirmada | 395 | 188 | 56 | 132 | 29.8% |
+| 🟥 expulsao_confirmada | 396 | 188 | 56 | 132 | 29.8% |
 | ⚡ pressao_ofensiva_18 | 247 | 160 | 51 | 109 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 322 | 153 | 39 | 114 | 25.5% |
 | 🚩 escanteios_6 | 256 | 105 | 29 | 76 | 27.6% |
@@ -257,17 +257,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 46–60′ | 292 | 225 | 75 | 150 | 33.3% |
 | 61–75′ | 385 | 260 | 62 | 198 | 23.8% |
 | 76–90′ | 550 | 158 | 35 | 123 | 22.2% |
-| 91+′ | 209 | 0 | 0 | 0 | — |
+| 91+′ | 210 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 1910 | **Jogos monitorados:** 1033 | **Ao vivo:** 18 | **Termômetros recentes:** 1.
+**Registros:** 1911 | **Jogos monitorados:** 1033 | **Ao vivo:** 17 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-14T04:00:08.356200+00:00 | Deportiva San Carlos × Inter San Carlos | Inter San Carlos (98') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T02:22:38.602283+00:00 | Boca Juniors × Vasco da Gama | Boca Juniors (48') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T01:56:22.075310+00:00 | Boca Juniors × Vasco da Gama | Vasco da Gama (48') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T01:21:28.053226+00:00 | Bucaramanga × Águilas Doradas | Águilas Doradas (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,12 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-13T18:16:02.156241+00:00 | Sabah FK × Slavia Prague | Slavia Prague (71') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T18:16:02.156241+00:00 | Sabah FK × Slavia Prague | Slavia Prague (71') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-13T18:16:02.156241+00:00 | Sabah FK × Slavia Prague | Slavia Prague (71') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-13T17:55:21.234539+00:00 | Simba SC × Mashujaa | Mashujaa (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **97**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
