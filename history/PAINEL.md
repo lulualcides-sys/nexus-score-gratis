@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T15:45:14.023443+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T16:43:36.877256+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -12,7 +12,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 |---|---|---|---:|---|
 | 2026-10-15 | Huracán × Gimnasia La Plata | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 2,85, Fora 3,15 |
 | 2026-10-15 | Estudiantes de La Plata × Flamengo | 0-0 | 0 | Match Odds 1X2: Casa 3,80, Empate 3,00, Fora 2,15 |
-| 2026-10-15 | Flora Tallinn × FCI Levadia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Flora Tallinn × FCI Levadia | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportes Quindío × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Barranquilla FC × Tigres FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Envigado × Real Santander | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -49,7 +49,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-15 | RFS × SK Super Nova | 4-0 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 9.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Andijon × Qizilqum Zarafshon | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Mashal Muborak × AGMK | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Dinamo Minsk × Slavia Mozyr | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Dinamo Minsk × Slavia Mozyr | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | ML Vitebsk × Torpedo Zhodino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | LD Alajuelense × Club Sport Herediano | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportivo Saprissa × Sporting FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -64,12 +64,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-15 | Pogoń Siedlce × Puszcza Niepołomice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Caen × La Roche VF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Manisa Futbol Kulübü × Esenler Erokspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 1-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×7.0, Escanteios: 3.0×3.0, Grandes chances: 1.0×1.0 |
+| 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 1-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×8.0, Escanteios: 4.0×4.0, Grandes chances: 1.0×2.0 |
 | 2026-10-15 | Muğlaspor × Bursaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Firpo × Inca Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Faisaly × Al Kholood | 3-2 | 78 | Chutes no alvo: 4.0×3.0, Chutes para fora: 4.0×8.0, Escanteios: 3.0×1.0, Grandes chances: 3.0×4.0 |
-| 2026-10-15 | Al Hazem × Al Fateh FC | 1-1 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | Al Khaleej × Al-Fayha | 0-0 | 25 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Al Hazem × Al Fateh FC | 2-1 | 65 | Chutes no alvo: 4.0×3.0, Chutes para fora: 3.0×7.0, Escanteios: 2.0×8.0, Grandes chances: 3.0×3.0 |
+| 2026-10-15 | Al Khaleej × Al-Fayha | 2-0 | 90 | Chutes no alvo: 5.0×0.0, Chutes para fora: 5.0×6.0, Escanteios: 6.0×4.0, Grandes chances: 4.0×0.0 |
 | 2026-10-15 | Tai Po × Lion City Sailors FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | BG Pathum United × Adelaide United | 1-2 | 0 | Chutes no alvo: 7.0×6.0, Chutes para fora: 9.0×5.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×1.0 |
 | 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 8.0×4.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×0.0 |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2144 | **Jogos distintos:** 692 | **Resultados verificáveis:** 1118 | **Com gol:** 360 | **Sem gol:** 758 | **Taxa observada:** 32.2%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 421 indeterminados | 599 incompletos.
+**Observações:** 2151 | **Jogos distintos:** 694 | **Resultados verificáveis:** 1121 | **Com gol:** 362 | **Sem gol:** 759 | **Taxa observada:** 32.3%.
+**Evolução da amostra:** 7 datas com coletas | 10 pendentes | 421 indeterminados | 599 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 383 | 254 | 82 | 172 | 32.3% |
+| 🥶 jogo_frio | 385 | 256 | 83 | 173 | 32.4% |
 | 🟥 expulsao_confirmada | 434 | 204 | 63 | 141 | 30.9% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
-| 🎯 chutes_no_alvo_5 | 367 | 169 | 47 | 122 | 27.8% |
-| 🚩 escanteios_6 | 289 | 119 | 34 | 85 | 28.6% |
-| 💣 grandes_chances_3 | 230 | 110 | 42 | 68 | 38.2% |
+| 🎯 chutes_no_alvo_5 | 368 | 169 | 47 | 122 | 27.8% |
+| 🚩 escanteios_6 | 291 | 120 | 35 | 85 | 29.2% |
+| 💣 grandes_chances_3 | 232 | 110 | 42 | 68 | 38.2% |
 | 🔥 pressao_forte_10min | 74 | 41 | 15 | 26 | 36.6% |
 | 🧨 pressao_total_5_10min | 48 | 28 | 11 | 17 | 39.3% |
 | 🚨 alerta_cruzado_gol | 19 | 12 | 5 | 7 | 41.7% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 58 | 39 | 20 | 19 | 51.3% |
+| Equipe não definida | 60 | 41 | 21 | 20 | 51.2% |
 | Manchester City | 13 | 12 | 7 | 5 | 58.3% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Vancouver Whitecaps | 13 | 8 | 3 | 5 | 37.5% |
@@ -245,7 +245,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ligue 1 | 41 | 21 | 10 | 11 | 47.6% |
 | Primera A | 30 | 19 | 7 | 12 | 36.8% |
 | Série B | 40 | 18 | 8 | 10 | 44.4% |
-| First Division B | 27 | 17 | 3 | 14 | 17.6% |
+| Saudi Pro League | 30 | 17 | 7 | 10 | 41.2% |
 
 ### Faixa de minuto
 
@@ -254,20 +254,27 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 184 | 142 | 50 | 92 | 35.2% |
 | 31–45′ | 262 | 193 | 77 | 116 | 39.9% |
-| 46–60′ | 334 | 249 | 93 | 156 | 37.3% |
-| 61–75′ | 408 | 271 | 65 | 206 | 24.0% |
+| 46–60′ | 335 | 250 | 93 | 157 | 37.2% |
+| 61–75′ | 412 | 273 | 67 | 206 | 24.5% |
 | 76–90′ | 635 | 201 | 49 | 152 | 24.4% |
-| 91+′ | 238 | 0 | 0 | 0 | — |
+| 91+′ | 240 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2144 | **Jogos monitorados:** 610 | **Ao vivo:** 21 | **Termômetros recentes:** 7.
+**Registros:** 2151 | **Jogos monitorados:** 610 | **Ao vivo:** 19 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-15T16:43:50.950642+00:00 | Al Hazem × Al Fateh FC | Al Fateh FC (69') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T16:43:50.950642+00:00 | Al Hazem × Al Fateh FC | Al Hazem (69') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T16:43:50.950642+00:00 | Al Khaleej × Al-Fayha | Al Khaleej (93') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T16:43:50.950642+00:00 | Al Khaleej × Al-Fayha | Al Khaleej (93') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T16:24:10.363541+00:00 | Al Hazem × Al Fateh FC | Equipe não definida (49') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-15T16:24:10.363541+00:00 | Al Khaleej × Al-Fayha | Equipe não definida (73') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-15T16:24:10.363541+00:00 | Al Khaleej × Al-Fayha | Al Khaleej (73') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-15T15:18:14.874349+00:00 | RFS × SK Super Nova | RFS (60') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-15T15:18:14.874349+00:00 | Al-Faisaly × Al Kholood | Al Kholood (78') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-15T15:18:14.874349+00:00 | Al-Faisaly × Al Kholood | Al Kholood (78') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
@@ -361,13 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T23:45:36.850127+00:00 | Sarmiento × River Plate | River Plate (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T23:45:36.850127+00:00 | Atlético-MG × Montevideo City Torque | Atlético-MG (87') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T23:45:36.850127+00:00 | Sporting JAX × Birmingham Legion FC | Birmingham Legion FC (38') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T23:36:15.645606+00:00 | Sarmiento × River Plate | River Plate (76') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-14T23:36:15.645606+00:00 | Municipal Pérez Zeledón × Escorpiones | Municipal Pérez Zeledón (36') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-14T23:20:02.246392+00:00 | Junior FC × Deportivo Pereira | Junior FC (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T23:20:02.246392+00:00 | Junior FC × Deportivo Pereira | Junior FC (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T23:20:02.246392+00:00 | Sarmiento × River Plate | River Plate (59') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T23:20:02.246392+00:00 | Sarmiento × River Plate | River Plate (59') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T23:20:02.246392+00:00 | Atlético-MG × Montevideo City Torque | Atlético-MG (62') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
