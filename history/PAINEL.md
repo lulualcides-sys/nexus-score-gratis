@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T12:53:24.161973+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T13:49:58.196206+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 
@@ -20,7 +20,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-15 | Internacional FC de Palmira × Orsomarso | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Leones × Patriotas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Uttaradit FC × PT Satun FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Khonkaen United FC × Chainat FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Khonkaen United FC × Chainat FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Kharaitiyat SC × Al-Bidda SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Rayyan II × Al-Khor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Huracán × Gimnasia LP | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -67,15 +67,15 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Muğlaspor × Bursaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Firpo × Inca Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Al-Faisaly × Al Kholood | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Al-Faisaly × Al Kholood | 1-0 | 8 | Chutes no alvo: 3.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 2.0×0.0 |
 | 2026-10-15 | Al Hazem × Al Fateh FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Khaleej × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Tai Po × Lion City Sailors FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | BG Pathum United × Adelaide United | 1-1 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×2.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | Tampines Rovers FC × Machida Zelvia | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | BG Pathum United × Adelaide United | 1-2 | 0 | Chutes no alvo: 7.0×6.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×1.0 |
+| 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×4.0, Grandes chances: 1.0×0.0 |
+| 2026-10-15 | Tampines Rovers FC × Machida Zelvia | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Gangwon FC × Phnom Penh | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×0.0 |
-| 2026-10-15 | Kuching City × Kitchee | 1-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Kuching City × Kitchee | 1-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-10-15 | Benfica × Celtic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Lyon × Crystal Palace | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | AZ Alkmaar × Hapoel Beer Sheva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2138 | **Jogos distintos:** 689 | **Resultados verificáveis:** 1116 | **Com gol:** 359 | **Sem gol:** 757 | **Taxa observada:** 32.2%.
-**Evolução da amostra:** 7 datas com coletas | 7 pendentes | 418 indeterminados | 597 incompletos.
+**Observações:** 2138 | **Jogos distintos:** 689 | **Resultados verificáveis:** 1117 | **Com gol:** 359 | **Sem gol:** 758 | **Taxa observada:** 32.1%.
+**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 418 indeterminados | 597 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 382 | 254 | 82 | 172 | 32.3% |
 | 🟥 expulsao_confirmada | 434 | 204 | 63 | 141 | 30.9% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
-| 🎯 chutes_no_alvo_5 | 365 | 168 | 47 | 121 | 28.0% |
+| 🎯 chutes_no_alvo_5 | 365 | 169 | 47 | 122 | 27.8% |
 | 🚩 escanteios_6 | 287 | 118 | 33 | 85 | 28.0% |
 | 💣 grandes_chances_3 | 229 | 110 | 42 | 68 | 38.2% |
 | 🔥 pressao_forte_10min | 74 | 41 | 15 | 26 | 36.6% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 184 | 142 | 50 | 92 | 35.2% |
-| 31–45′ | 261 | 191 | 76 | 115 | 39.8% |
+| 31–45′ | 261 | 192 | 76 | 116 | 39.6% |
 | 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
 | 61–75′ | 408 | 271 | 65 | 206 | 24.0% |
 | 76–90′ | 633 | 201 | 49 | 152 | 24.4% |
@@ -268,7 +268,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T12:53:39.779537+00:00 | BG Pathum United × Adelaide United | BG Pathum United (38') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T12:53:39.779537+00:00 | BG Pathum United × Adelaide United | BG Pathum United (38') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T11:42:34.473409+00:00 | Gangwon FC × Phnom Penh | Gangwon FC (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T11:30:03.703716+00:00 | Tai Po × Lion City Sailors FC | Lion City Sailors FC (73') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T05:04:57.814662+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
