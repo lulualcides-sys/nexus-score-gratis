@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T04:40:37.747918+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T05:40:28.451916+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -58,7 +58,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-15 | Rubin Kazan × FC Orenburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Coban Imperial × CSD Municipal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Guastatoya × Antigua Guatemala | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Deportivo Marquense × Deportivo Mixco | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Deportivo Marquense × Deportivo Mixco | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | CD Suchitepéquez × San Pedro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Club Xelajú × Deportivo Malacateco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Pogoń Siedlce × Puszcza Niepołomice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2134 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1114 | **Com gol:** 358 | **Sem gol:** 756 | **Taxa observada:** 32.1%.
-**Evolução da amostra:** 7 datas com coletas | 10 pendentes | 418 indeterminados | 592 incompletos.
+**Observações:** 2135 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1114 | **Com gol:** 358 | **Sem gol:** 756 | **Taxa observada:** 32.1%.
+**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 419 indeterminados | 596 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 382 | 254 | 82 | 172 | 32.3% |
-| 🟥 expulsao_confirmada | 433 | 203 | 62 | 141 | 30.5% |
+| 🟥 expulsao_confirmada | 434 | 203 | 62 | 141 | 30.5% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
 | 🎯 chutes_no_alvo_5 | 364 | 168 | 47 | 121 | 28.0% |
 | 🚩 escanteios_6 | 285 | 117 | 33 | 84 | 28.2% |
@@ -257,21 +257,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
 | 61–75′ | 407 | 270 | 65 | 205 | 24.1% |
 | 76–90′ | 632 | 200 | 48 | 152 | 24.0% |
-| 91+′ | 235 | 0 | 0 | 0 | — |
+| 91+′ | 236 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2134 | **Jogos monitorados:** 609 | **Ao vivo:** 16 | **Termômetros recentes:** 6.
+**Registros:** 2135 | **Jogos monitorados:** 609 | **Ao vivo:** 13 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-15T04:34:45.305684+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (64') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-15T05:04:57.814662+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (64') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Austin FC (66') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Austin FC (66') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Los Angeles FC (66') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T21:40:54.109488+00:00 | Atlético Tembetary × Sol de America | Sol de America (83') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T21:21:21.929101+00:00 | Atlético Tembetary × Sol de America | Sol de America (64') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🧨 pressao_total_5_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
