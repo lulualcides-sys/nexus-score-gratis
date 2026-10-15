@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T03:41:31.799358+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T04:40:37.747918+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -39,11 +39,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-15 | Chicago Fire FC × Philadelphia Union | 1-3 | 79 | Chutes no alvo: 1.0×8.0, Chutes para fora: 1.0×4.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×4.0 |
 | 2026-10-15 | Colorado Rapids × Minnesota United | 2-2 | 86 | Chutes no alvo: 3.0×2.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×3.0, Grandes chances: 3.0×1.0 |
 | 2026-10-15 | FC Dallas × Seattle Sounders FC | 1-0 | 81 | Chutes no alvo: 3.0×7.0, Chutes para fora: 6.0×3.0, Escanteios: 7.0×8.0, Grandes chances: 1.0×2.0 |
-| 2026-10-15 | LA Galaxy × Portland Timbers | 1-0 | 45 | Chutes no alvo: 3.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-10-15 | Los Angeles FC × Austin FC | 0-0 | 45 | Chutes no alvo: 3.0×1.0, Chutes para fora: 7.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
+| 2026-10-15 | LA Galaxy × Portland Timbers | 2-0 | 62 | Chutes no alvo: 4.0×3.0, Chutes para fora: 0.0×5.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×2.0 |
+| 2026-10-15 | Los Angeles FC × Austin FC | 3-1 | 65 | Chutes no alvo: 6.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 7.0×5.0, Grandes chances: 2.0×0.0 |
 | 2026-10-15 | Nashville SC × Sporting Kansas City | 4-0 | 82 | Chutes no alvo: 10.0×1.0, Chutes para fora: 2.0×5.0, Escanteios: 6.0×3.0, Grandes chances: 3.0×0.0 |
 | 2026-10-15 | Real Salt Lake × San Jose Earthquakes | 1-1 | 90 | Chutes no alvo: 6.0×1.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 2.0×2.0 |
-| 2026-10-15 | San Diego FC × Houston Dynamo FC | 2-3 | 45 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×0.0 |
+| 2026-10-15 | San Diego FC × Houston Dynamo FC | 3-3 | 90 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 10.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-10-15 | St. Louis City × Vancouver Whitecaps | 0-0 | 78 | Chutes no alvo: 4.0×0.0, Chutes para fora: 2.0×7.0, Escanteios: 5.0×9.0, Grandes chances: 1.0×3.0 |
 | 2026-10-15 | Rhode Island FC × Loudoun United FC | 1-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 10.0×2.0, Escanteios: 9.0×5.0, Grandes chances: 1.0×0.0 |
 | 2026-10-15 | RFS × SK Super Nova | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2124 | **Jogos distintos:** 683 | **Resultados verificáveis:** 1113 | **Com gol:** 358 | **Sem gol:** 755 | **Taxa observada:** 32.2%.
-**Evolução da amostra:** 7 datas com coletas | 7 pendentes | 413 indeterminados | 591 incompletos.
+**Observações:** 2134 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1114 | **Com gol:** 358 | **Sem gol:** 756 | **Taxa observada:** 32.1%.
+**Evolução da amostra:** 7 datas com coletas | 10 pendentes | 418 indeterminados | 592 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 381 | 254 | 82 | 172 | 32.3% |
-| 🟥 expulsao_confirmada | 431 | 202 | 62 | 140 | 30.7% |
-| ⚡ pressao_ofensiva_18 | 271 | 172 | 58 | 114 | 33.7% |
-| 🎯 chutes_no_alvo_5 | 362 | 168 | 47 | 121 | 28.0% |
-| 🚩 escanteios_6 | 283 | 117 | 33 | 84 | 28.2% |
-| 💣 grandes_chances_3 | 228 | 110 | 42 | 68 | 38.2% |
-| 🔥 pressao_forte_10min | 73 | 41 | 15 | 26 | 36.6% |
+| 🥶 jogo_frio | 382 | 254 | 82 | 172 | 32.3% |
+| 🟥 expulsao_confirmada | 433 | 203 | 62 | 141 | 30.5% |
+| ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
+| 🎯 chutes_no_alvo_5 | 364 | 168 | 47 | 121 | 28.0% |
+| 🚩 escanteios_6 | 285 | 117 | 33 | 84 | 28.2% |
+| 💣 grandes_chances_3 | 229 | 110 | 42 | 68 | 38.2% |
+| 🔥 pressao_forte_10min | 74 | 41 | 15 | 26 | 36.6% |
 | 🧨 pressao_total_5_10min | 48 | 28 | 11 | 17 | 39.3% |
 | 🚨 alerta_cruzado_gol | 19 | 12 | 5 | 7 | 41.7% |
 | ⏱️ tensao_tardia_70 | 28 | 9 | 3 | 6 | 33.3% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Major League Soccer | 140 | 74 | 28 | 46 | 37.8% |
+| Major League Soccer | 148 | 74 | 28 | 46 | 37.8% |
 | Premier League | 114 | 63 | 19 | 44 | 30.2% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga Profesional | 67 | 39 | 9 | 30 | 23.1% |
@@ -254,21 +254,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 184 | 142 | 50 | 92 | 35.2% |
 | 31–45′ | 260 | 191 | 76 | 115 | 39.8% |
-| 46–60′ | 332 | 249 | 93 | 156 | 37.3% |
-| 61–75′ | 402 | 269 | 65 | 204 | 24.2% |
-| 76–90′ | 629 | 200 | 48 | 152 | 24.0% |
-| 91+′ | 234 | 0 | 0 | 0 | — |
+| 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
+| 61–75′ | 407 | 270 | 65 | 205 | 24.1% |
+| 76–90′ | 632 | 200 | 48 | 152 | 24.0% |
+| 91+′ | 235 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2124 | **Jogos monitorados:** 609 | **Ao vivo:** 21 | **Termômetros recentes:** 9.
+**Registros:** 2134 | **Jogos monitorados:** 609 | **Ao vivo:** 16 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T03:41:55.491582+00:00 | LD Alajuelense × Club Sport Herediano | LD Alajuelense (73') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-15T04:34:45.305684+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (64') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Austin FC (66') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Austin FC (66') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Los Angeles FC (66') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | Los Angeles FC × Austin FC | Los Angeles FC (66') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | San Diego FC × Houston Dynamo FC | Houston Dynamo FC (56') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-15T04:02:02.714757+00:00 | LD Alajuelense × Club Sport Herediano | LD Alajuelense (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T03:41:55.491582+00:00 | LD Alajuelense × Club Sport Herediano | LD Alajuelense (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T03:27:23.267932+00:00 | DC United × Red Bull New York | Red Bull New York (77') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-15T03:27:23.267932+00:00 | CF Montréal × Atlanta United | Atlanta United (81') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-15T03:27:23.267932+00:00 | Toronto FC × Orlando City | Orlando City (79') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -283,7 +293,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T03:27:23.267932+00:00 | Real Salt Lake × San Jose Earthquakes | Real Salt Lake (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T03:27:23.267932+00:00 | Real Salt Lake × San Jose Earthquakes | Real Salt Lake (91') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T03:27:23.267932+00:00 | Rhode Island FC × Loudoun United FC | Rhode Island FC (85') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-15T03:27:23.267932+00:00 | LD Alajuelense × Club Sport Herediano | LD Alajuelense (59') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-15T03:27:23.267932+00:00 | LD Alajuelense × Club Sport Herediano | LD Alajuelense (59') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T02:58:16.029106+00:00 | St. Louis City × Vancouver Whitecaps | St. Louis City (97') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T02:41:54.654119+00:00 | Real Salt Lake × San Jose Earthquakes | San Jose Earthquakes (46') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-15T02:41:54.654119+00:00 | St. Louis City × Vancouver Whitecaps | Vancouver Whitecaps (97') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -358,21 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T21:21:21.929101+00:00 | Atlético Tembetary × Sol de America | Sol de America (64') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🧨 pressao_total_5_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | ⏱️ tensao_tardia_70 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🚨 alerta_cruzado_gol · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Queens Park Rangers × Derby County | Queens Park Rangers (101') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Manchester City × Paris Saint-Germain | Manchester City (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Roma × Real Madrid | Real Madrid (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Real Betis × FC Porto | Real Betis (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Real Betis × FC Porto | Real Betis (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T20:40:06.700633+00:00 | Lincoln City × West Ham United | Lincoln City (81') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T20:40:06.700633+00:00 | Portsmouth × Sheffield United | Sheffield United (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **87**.
-Novas cotacoes capturadas na ultima execucao: **6**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
