@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T06:52:19.288221+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T07:47:50.308027+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -66,6 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-15 | Manisa Futbol Kulübü × Esenler Erokspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Muğlaspor × Bursaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Firpo × Inca Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Faisaly × Al Kholood | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Hazem × Al Fateh FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Khaleej × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -139,7 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-14 | CF Montréal × Atlanta United FC | 0-3 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 2,25, Empate 3,60, Fora 2,75 |
 | 2026-10-14 | Columbus Crew × Charlotte FC | 3-1 | 0 | Chutes no alvo: 9.0×2.0; Match Odds 1X2: Casa 1,95, Empate 3,90, Fora 3,20 |
 | 2026-10-14 | Nashville SC × Sporting Kansas City | 4-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,21, Empate 6,50, Fora 9,50 |
-| 2026-10-14 | FC Dallas × Seattle Sounders FC | 1-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,95, Empate 3,85, Fora 3,25 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2135 | **Jogos monitorados:** 609 | **Ao vivo:** 13 | **Termômetros recentes:** 6.
+**Registros:** 2135 | **Jogos monitorados:** 610 | **Ao vivo:** 13 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
