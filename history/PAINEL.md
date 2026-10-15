@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T21:42:00.384213+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T22:40:12.522786+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
@@ -14,9 +14,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-15 | Estudiantes de La Plata × Flamengo | 0-0 | 0 | Match Odds 1X2: Casa 3,80, Empate 3,00, Fora 2,15 |
 | 2026-10-15 | Flora Tallinn × FCI Levadia | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportes Quindío × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Barranquilla FC × Tigres FC | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Barranquilla FC × Tigres FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Envigado × Real Santander | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Unión Magdalena × Independiente Valle del Cauca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Unión Magdalena × Independiente Valle del Cauca | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Internacional FC de Palmira × Orsomarso | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Leones × Patriotas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Uttaradit FC × PT Satun FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -26,9 +26,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-15 | Huracán × Gimnasia LP | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Estudiantes × Flamengo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Fluminense × Palmeiras | 1-2 | 87 | Chutes no alvo: 2.0×5.0, Chutes para fora: 6.0×2.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×2.0 |
-| 2026-10-15 | Corinthians × Colo Colo | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Corinthians × Colo Colo | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Caracas FC × Santa Fe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Independiente del Valle × Belgrano | 1-1 | 0 | Chutes no alvo: 5.0×3.0, Chutes para fora: 7.0×3.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Independiente del Valle × Belgrano | 1-1 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 8.0×3.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Universitario Deportes × Palmeiras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | FC Cincinnati × New England Revolution | 2-3 | 90 | Chutes no alvo: 9.0×5.0, Chutes para fora: 7.0×2.0, Escanteios: 12.0×5.0, Grandes chances: 4.0×2.0 |
 | 2026-10-15 | Columbus Crew × Charlotte FC | 3-1 | 90 | Chutes no alvo: 14.0×2.0, Chutes para fora: 14.0×7.0, Escanteios: 10.0×4.0, Grandes chances: 6.0×0.0 |
@@ -56,7 +56,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-15 | Mansfield Town × Oxford United | 1-1 | 90 | Chutes no alvo: 4.0×2.0, Chutes para fora: 10.0×2.0, Escanteios: 11.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-15 | Rodina × Spartak Moscow | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Rubin Kazan × FC Orenburg | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Coban Imperial × CSD Municipal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Coban Imperial × CSD Municipal | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Guastatoya × Antigua Guatemala | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportivo Marquense × Deportivo Mixco | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | CD Suchitepéquez × San Pedro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2306 | **Jogos distintos:** 732 | **Resultados verificáveis:** 1189 | **Com gol:** 379 | **Sem gol:** 810 | **Taxa observada:** 31.9%.
-**Evolução da amostra:** 7 datas com coletas | 7 pendentes | 488 indeterminados | 622 incompletos.
+**Observações:** 2307 | **Jogos distintos:** 732 | **Resultados verificáveis:** 1190 | **Com gol:** 379 | **Sem gol:** 811 | **Taxa observada:** 31.8%.
+**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 488 indeterminados | 623 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,9 +177,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 411 | 270 | 89 | 181 | 33.0% |
-| 🟥 expulsao_confirmada | 441 | 207 | 65 | 142 | 31.4% |
+| 🟥 expulsao_confirmada | 442 | 207 | 65 | 142 | 31.4% |
 | ⚡ pressao_ofensiva_18 | 307 | 191 | 61 | 130 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 390 | 178 | 49 | 129 | 27.5% |
+| 🎯 chutes_no_alvo_5 | 390 | 179 | 49 | 130 | 27.4% |
 | 🚩 escanteios_6 | 305 | 126 | 37 | 89 | 29.4% |
 | 💣 grandes_chances_3 | 251 | 117 | 43 | 74 | 36.8% |
 | 🔥 pressao_forte_10min | 90 | 46 | 16 | 30 | 34.8% |
@@ -255,20 +255,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 221 | 162 | 53 | 109 | 32.7% |
 | 31–45′ | 272 | 199 | 78 | 121 | 39.2% |
 | 46–60′ | 358 | 265 | 98 | 167 | 37.0% |
-| 61–75′ | 472 | 296 | 74 | 222 | 25.0% |
+| 61–75′ | 472 | 297 | 74 | 223 | 24.9% |
 | 76–90′ | 649 | 205 | 50 | 155 | 24.4% |
-| 91+′ | 251 | 0 | 0 | 0 | — |
+| 91+′ | 252 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2306 | **Jogos monitorados:** 610 | **Ao vivo:** 17 | **Termômetros recentes:** 6.
+**Registros:** 2307 | **Jogos monitorados:** 610 | **Ao vivo:** 17 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-15T21:23:45.317311+00:00 | Independiente del Valle × Belgrano | Independiente del Valle (64') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T21:56:28.970875+00:00 | Independiente del Valle × Belgrano | Belgrano (97') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T21:23:45.317311+00:00 | Independiente del Valle × Belgrano | Independiente del Valle (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T20:54:02.314450+00:00 | Mansfield Town × Oxford United | Mansfield Town (97') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T20:54:02.314450+00:00 | Mansfield Town × Oxford United | Oxford United (97') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T20:54:02.314450+00:00 | Ferencváros × Viktoria Plzeň | Viktoria Plzeň (98') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:19:34.215057+00:00 | Brann × Lincoln Red Imps FC | Brann (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Heart of Midlothian × Nordsjælland | Nordsjælland (19') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-15T18:42:11.851806+00:00 | Hajduk Split × Ajax | Hajduk Split (98') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-15T18:42:11.851806+00:00 | Hajduk Split × Ajax | Hajduk Split (98') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
