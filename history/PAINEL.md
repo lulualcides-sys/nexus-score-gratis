@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T05:40:28.451916+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T06:52:19.288221+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2135 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1114 | **Com gol:** 358 | **Sem gol:** 756 | **Taxa observada:** 32.1%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 419 indeterminados | 596 incompletos.
+**Observações:** 2135 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1115 | **Com gol:** 359 | **Sem gol:** 756 | **Taxa observada:** 32.2%.
+**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 418 indeterminados | 596 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 382 | 254 | 82 | 172 | 32.3% |
-| 🟥 expulsao_confirmada | 434 | 203 | 62 | 141 | 30.5% |
+| 🟥 expulsao_confirmada | 434 | 204 | 63 | 141 | 30.9% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
 | 🎯 chutes_no_alvo_5 | 364 | 168 | 47 | 121 | 28.0% |
 | 🚩 escanteios_6 | 285 | 117 | 33 | 84 | 28.2% |
@@ -256,7 +256,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 260 | 191 | 76 | 115 | 39.8% |
 | 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
 | 61–75′ | 407 | 270 | 65 | 205 | 24.1% |
-| 76–90′ | 632 | 200 | 48 | 152 | 24.0% |
+| 76–90′ | 632 | 201 | 49 | 152 | 24.4% |
 | 91+′ | 236 | 0 | 0 | 0 | — |
 
 
