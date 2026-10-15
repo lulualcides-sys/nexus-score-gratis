@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T10:42:56.260063+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T11:42:23.008242+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -70,11 +70,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-15 | Al-Faisaly × Al Kholood | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Hazem × Al Fateh FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Khaleej × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Tai Po × Lion City Sailors FC | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×3.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Tai Po × Lion City Sailors FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | BG Pathum United × Adelaide United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Tampines Rovers FC × Machida Zelvia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Gangwon FC × Phnom Penh | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Gangwon FC × Phnom Penh | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-15 | Kuching City × Kitchee | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Benfica × Celtic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Lyon × Crystal Palace | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2135 | **Jogos distintos:** 686 | **Resultados verificáveis:** 1115 | **Com gol:** 359 | **Sem gol:** 756 | **Taxa observada:** 32.2%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 418 indeterminados | 596 incompletos.
+**Observações:** 2137 | **Jogos distintos:** 688 | **Resultados verificáveis:** 1116 | **Com gol:** 359 | **Sem gol:** 757 | **Taxa observada:** 32.2%.
+**Evolução da amostra:** 7 datas com coletas | 7 pendentes | 418 indeterminados | 596 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -180,7 +180,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🟥 expulsao_confirmada | 434 | 204 | 63 | 141 | 30.9% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
 | 🎯 chutes_no_alvo_5 | 364 | 168 | 47 | 121 | 28.0% |
-| 🚩 escanteios_6 | 285 | 117 | 33 | 84 | 28.2% |
+| 🚩 escanteios_6 | 287 | 118 | 33 | 85 | 28.0% |
 | 💣 grandes_chances_3 | 229 | 110 | 42 | 68 | 38.2% |
 | 🔥 pressao_forte_10min | 74 | 41 | 15 | 26 | 36.6% |
 | 🧨 pressao_total_5_10min | 48 | 28 | 11 | 17 | 39.3% |
@@ -255,19 +255,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 184 | 142 | 50 | 92 | 35.2% |
 | 31–45′ | 260 | 191 | 76 | 115 | 39.8% |
 | 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
-| 61–75′ | 407 | 270 | 65 | 205 | 24.1% |
-| 76–90′ | 632 | 201 | 49 | 152 | 24.4% |
+| 61–75′ | 408 | 271 | 65 | 206 | 24.0% |
+| 76–90′ | 633 | 201 | 49 | 152 | 24.4% |
 | 91+′ | 236 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2135 | **Jogos monitorados:** 610 | **Ao vivo:** 15 | **Termômetros recentes:** 6.
+**Registros:** 2137 | **Jogos monitorados:** 610 | **Ao vivo:** 16 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-15T11:42:34.473409+00:00 | Gangwon FC × Phnom Penh | Gangwon FC (82') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T11:30:03.703716+00:00 | Tai Po × Lion City Sailors FC | Lion City Sailors FC (73') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-10-15T05:04:57.814662+00:00 | Deportivo Marquense × Deportivo Mixco | Deportivo Mixco (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T04:34:45.305684+00:00 | San Diego FC × Houston Dynamo FC | San Diego FC (89') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
@@ -343,7 +345,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T00:45:06.628706+00:00 | Greenville Triumph SC × Spokane Velocity FC | Greenville Triumph SC (77') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-15T00:45:06.628706+00:00 | Rhode Island FC × Loudoun United FC | Rhode Island FC (51') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T00:45:06.628706+00:00 | Comunicaciones FC × Aurora FC | Comunicaciones FC (80') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-15T00:45:06.628706+00:00 | Municipal Pérez Zeledón × Escorpiones | Municipal Pérez Zeledón (82') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T00:45:06.628706+00:00 | Municipal Pérez Zeledón × Escorpiones | Municipal Pérez Zeledón (82') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T00:45:06.628706+00:00 | Sporting JAX × Birmingham Legion FC | Sporting JAX (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-15T00:45:06.628706+00:00 | Sporting JAX × Birmingham Legion FC | Birmingham Legion FC (80') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-15T00:05:00.786673+00:00 | Inter Miami CF × New York City FC | Inter Miami CF (25') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T22:25:43.336450+00:00 | Sarmiento × River Plate | River Plate (25') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-14T21:58:12.439821+00:00 | Ittihad Tanger × MAS Fès | MAS Fès (96') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-14T21:40:54.109488+00:00 | Atlético Tembetary × Sol de America | Sol de America (83') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-14T21:21:21.929101+00:00 | Atlético Tembetary × Sol de America | Sol de America (64') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-14T20:50:36.390758+00:00 | Lincoln City × West Ham United | West Ham United (91') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
