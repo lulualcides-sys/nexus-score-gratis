@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T13:49:58.196206+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T14:43:59.421576+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -46,8 +46,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-15 | San Diego FC × Houston Dynamo FC | 3-3 | 90 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 10.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-10-15 | St. Louis City × Vancouver Whitecaps | 0-0 | 78 | Chutes no alvo: 4.0×0.0, Chutes para fora: 2.0×7.0, Escanteios: 5.0×9.0, Grandes chances: 1.0×3.0 |
 | 2026-10-15 | Rhode Island FC × Loudoun United FC | 1-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 10.0×2.0, Escanteios: 9.0×5.0, Grandes chances: 1.0×0.0 |
-| 2026-10-15 | RFS × SK Super Nova | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Andijon × Qizilqum Zarafshon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | RFS × SK Super Nova | 2-0 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 3.0×0.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Andijon × Qizilqum Zarafshon | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Mashal Muborak × AGMK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Dinamo Minsk × Slavia Mozyr | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | ML Vitebsk × Torpedo Zhodino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -64,18 +64,18 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-15 | Pogoń Siedlce × Puszcza Niepołomice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Caen × La Roche VF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Manisa Futbol Kulübü × Esenler Erokspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Mardin 1969 Spor × Fatih Karagümrük | 1-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Muğlaspor × Bursaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Firpo × Inca Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Al-Faisaly × Al Kholood | 1-0 | 8 | Chutes no alvo: 3.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 2.0×0.0 |
+| 2026-10-15 | Al-Faisaly × Al Kholood | 2-2 | 45 | Chutes no alvo: 4.0×2.0, Chutes para fora: 2.0×4.0, Escanteios: 0.0×0.0, Grandes chances: 3.0×1.0 |
 | 2026-10-15 | Al Hazem × Al Fateh FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al Khaleej × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Tai Po × Lion City Sailors FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | BG Pathum United × Adelaide United | 1-2 | 0 | Chutes no alvo: 7.0×6.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×1.0 |
-| 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-10-15 | Tampines Rovers FC × Machida Zelvia | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | BG Pathum United × Adelaide United | 1-2 | 0 | Chutes no alvo: 7.0×6.0, Chutes para fora: 9.0×5.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×1.0 |
+| 2026-10-15 | Svay Rieng × Shanghai Shenhua | 0-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 8.0×4.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×0.0 |
+| 2026-10-15 | Tampines Rovers FC × Machida Zelvia | 0-1 | 0 | Chutes no alvo: 0.0×6.0, Chutes para fora: 2.0×7.0, Escanteios: 1.0×6.0, Grandes chances: 0.0×1.0 |
 | 2026-10-15 | Gangwon FC × Phnom Penh | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×0.0 |
-| 2026-10-15 | Kuching City × Kitchee | 1-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×1.0 |
+| 2026-10-15 | Kuching City × Kitchee | 1-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 8.0×4.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×2.0 |
 | 2026-10-15 | Benfica × Celtic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Lyon × Crystal Palace | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | AZ Alkmaar × Hapoel Beer Sheva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2138 | **Jogos distintos:** 689 | **Resultados verificáveis:** 1117 | **Com gol:** 359 | **Sem gol:** 758 | **Taxa observada:** 32.1%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 418 indeterminados | 597 incompletos.
+**Observações:** 2141 | **Jogos distintos:** 691 | **Resultados verificáveis:** 1117 | **Com gol:** 359 | **Sem gol:** 758 | **Taxa observada:** 32.1%.
+**Evolução da amostra:** 7 datas com coletas | 7 pendentes | 418 indeterminados | 599 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,8 +179,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 382 | 254 | 82 | 172 | 32.3% |
 | 🟥 expulsao_confirmada | 434 | 204 | 63 | 141 | 30.9% |
 | ⚡ pressao_ofensiva_18 | 272 | 172 | 58 | 114 | 33.7% |
-| 🎯 chutes_no_alvo_5 | 365 | 169 | 47 | 122 | 27.8% |
-| 🚩 escanteios_6 | 287 | 118 | 33 | 85 | 28.0% |
+| 🎯 chutes_no_alvo_5 | 366 | 169 | 47 | 122 | 27.8% |
+| 🚩 escanteios_6 | 289 | 118 | 33 | 85 | 28.0% |
 | 💣 grandes_chances_3 | 229 | 110 | 42 | 68 | 38.2% |
 | 🔥 pressao_forte_10min | 74 | 41 | 15 | 26 | 36.6% |
 | 🧨 pressao_total_5_10min | 48 | 28 | 11 | 17 | 39.3% |
@@ -253,21 +253,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 184 | 142 | 50 | 92 | 35.2% |
-| 31–45′ | 261 | 192 | 76 | 116 | 39.6% |
+| 31–45′ | 262 | 192 | 76 | 116 | 39.6% |
 | 46–60′ | 333 | 249 | 93 | 156 | 37.3% |
 | 61–75′ | 408 | 271 | 65 | 206 | 24.0% |
 | 76–90′ | 633 | 201 | 49 | 152 | 24.4% |
-| 91+′ | 236 | 0 | 0 | 0 | — |
+| 91+′ | 238 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2138 | **Jogos monitorados:** 610 | **Ao vivo:** 19 | **Termômetros recentes:** 6.
+**Registros:** 2141 | **Jogos monitorados:** 610 | **Ao vivo:** 18 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-15T14:42:42.852498+00:00 | RFS × SK Super Nova | RFS (43') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-15T14:08:41.628356+00:00 | Tampines Rovers FC × Machida Zelvia | Machida Zelvia (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-15T14:08:41.628356+00:00 | Tampines Rovers FC × Machida Zelvia | Machida Zelvia (95') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T12:53:39.779537+00:00 | BG Pathum United × Adelaide United | BG Pathum United (38') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T11:42:34.473409+00:00 | Gangwon FC × Phnom Penh | Gangwon FC (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T11:30:03.703716+00:00 | Tai Po × Lion City Sailors FC | Lion City Sailors FC (73') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-14T22:54:31.236704+00:00 | Junior FC × Deportivo Pereira | Junior FC (65') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-14T22:40:07.397429+00:00 | Junior FC × Deportivo Pereira | Deportivo Pereira (50') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-14T22:40:07.397429+00:00 | Sarmiento × River Plate | River Plate (39') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T22:40:07.397429+00:00 | Sarmiento × River Plate | River Plate (39') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-14T22:25:43.336450+00:00 | Sarmiento × River Plate | River Plate (25') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-14T21:58:12.439821+00:00 | Ittihad Tanger × MAS Fès | MAS Fès (96') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
