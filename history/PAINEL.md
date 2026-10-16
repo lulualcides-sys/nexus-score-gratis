@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T11:41:32.904221+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T12:51:57.614982+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -37,7 +37,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-16 | Los Chankas × Asociación Deportiva Tarma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Recoleta × Rubio Ñú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Sydney FC × Western Sydney Wanderers FC | 0-0 | 88 | Chutes no alvo: 0.0×2.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×2.0 |
-| 2026-10-16 | Ayutthaya United FC × Lamphun Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Ayutthaya United FC × Lamphun Warrior | 0-0 | 44 | Chutes no alvo: 1.0×2.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-16 | ABB × Real Potosí | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Real Tomayapo × GV San José | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Everton U21 × Middlesbrough U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -80,7 +80,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-16 | Lunds BK × Trelleborgs FF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Boston Legacy FC (W) × Racing Louisville (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Supra du Québec × Inter Toronto FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Henan FC × Tianjin Jinmen Tiger | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-10-16 | Henan FC × Tianjin Jinmen Tiger | 0-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×1.0 |
 | 2026-10-16 | Ponte Preta × Atlético-GO | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Sport Recife × Fortaleza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Bunyodkor Tashkent × Sogdiana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2320 | **Jogos distintos:** 738 | **Resultados verificáveis:** 1197 | **Com gol:** 380 | **Sem gol:** 817 | **Taxa observada:** 31.7%.
-**Evolução da amostra:** 8 datas com coletas | 7 pendentes | 488 indeterminados | 628 incompletos.
+**Observações:** 2321 | **Jogos distintos:** 739 | **Resultados verificáveis:** 1197 | **Com gol:** 380 | **Sem gol:** 817 | **Taxa observada:** 31.7%.
+**Evolução da amostra:** 8 datas com coletas | 7 pendentes | 488 indeterminados | 629 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,7 +178,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 416 | 273 | 90 | 183 | 33.0% |
 | 🟥 expulsao_confirmada | 444 | 207 | 65 | 142 | 31.4% |
-| ⚡ pressao_ofensiva_18 | 307 | 191 | 61 | 130 | 31.9% |
+| ⚡ pressao_ofensiva_18 | 308 | 191 | 61 | 130 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 393 | 181 | 49 | 132 | 27.1% |
 | 🚩 escanteios_6 | 308 | 128 | 37 | 91 | 28.9% |
 | 💣 grandes_chances_3 | 251 | 117 | 43 | 74 | 36.8% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 223 | 164 | 54 | 110 | 32.9% |
-| 31–45′ | 272 | 199 | 78 | 121 | 39.2% |
+| 31–45′ | 273 | 199 | 78 | 121 | 39.2% |
 | 46–60′ | 363 | 270 | 98 | 172 | 36.3% |
 | 61–75′ | 472 | 297 | 74 | 223 | 24.9% |
 | 76–90′ | 654 | 205 | 50 | 155 | 24.4% |
@@ -262,13 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2320 | **Jogos monitorados:** 664 | **Ao vivo:** 13 | **Termômetros recentes:** 6.
+**Registros:** 2321 | **Jogos monitorados:** 664 | **Ao vivo:** 17 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-16T11:41:48.168833+00:00 | Obolon Kyiv × Veres Rivne | Veres Rivne (81') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-16T12:44:50.282293+00:00 | Ayutthaya United FC × Lamphun Warrior | Lamphun Warrior (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-16T11:41:48.168833+00:00 | Obolon Kyiv × Veres Rivne | Veres Rivne (81') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T10:59:01.369233+00:00 | Sydney FC × Western Sydney Wanderers FC | Equipe não definida (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T10:23:43.190082+00:00 | PSIM Yogyakarta × PSM Makassar | PSM Makassar (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T02:22:48.050845+00:00 | Estudiantes × Flamengo | Estudiantes (51') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:19:34.215057+00:00 | Marseille × Olympiacos | Olympiacos (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Ferencváros × Viktoria Plzeň | Ferencváros (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Rennes × OFI Crete | Rennes (19') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | Rennes × OFI Crete | Rennes (19') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
