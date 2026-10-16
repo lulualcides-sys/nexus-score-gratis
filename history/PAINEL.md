@@ -2,34 +2,34 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-15T23:35:50.102985+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T00:50:05.807620+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-15 | Huracán × Gimnasia La Plata | 0-1 | 0 | Chutes no alvo: 2.0×4.0; Match Odds 1X2: Casa 2,55, Empate 2,85, Fora 3,15 |
-| 2026-10-15 | Estudiantes de La Plata × Flamengo | 0-0 | 0 | Match Odds 1X2: Casa 3,80, Empate 3,00, Fora 2,15 |
+| 2026-10-15 | Huracán × Gimnasia La Plata | 1-1 | 0 | Chutes no alvo: 2.0×4.0; Match Odds 1X2: Casa 2,55, Empate 2,85, Fora 3,15 |
+| 2026-10-15 | Estudiantes de La Plata × Flamengo | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 3,80, Empate 3,00, Fora 2,15 |
 | 2026-10-15 | Flora Tallinn × FCI Levadia | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportes Quindío × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Barranquilla FC × Tigres FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Envigado × Real Santander | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Unión Magdalena × Independiente Valle del Cauca | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Internacional FC de Palmira × Orsomarso | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Leones × Patriotas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Internacional FC de Palmira × Orsomarso | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Leones × Patriotas | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Uttaradit FC × PT Satun FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Khonkaen United FC × Chainat FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Kharaitiyat SC × Al-Bidda SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Al-Rayyan II × Al-Khor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Huracán × Gimnasia LP | 0-1 | 33 | Chutes no alvo: 2.0×4.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 1.0×1.0 |
-| 2026-10-15 | Estudiantes × Flamengo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Huracán × Gimnasia LP | 1-1 | 87 | Chutes no alvo: 3.0×5.0, Chutes para fora: 11.0×4.0, Escanteios: 9.0×3.0, Grandes chances: 2.0×2.0 |
+| 2026-10-15 | Estudiantes × Flamengo | 0-0 | 20 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Fluminense × Palmeiras | 1-2 | 87 | Chutes no alvo: 2.0×5.0, Chutes para fora: 6.0×2.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×2.0 |
 | 2026-10-15 | Corinthians × Colo Colo | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Caracas FC × Santa Fe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Independiente del Valle × Belgrano | 1-1 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 8.0×3.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | Universitario Deportes × Palmeiras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Universitario Deportes × Palmeiras | 0-1 | 0 | Chutes no alvo: 0.0×4.0, Chutes para fora: 0.0×5.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | FC Cincinnati × New England Revolution | 2-3 | 90 | Chutes no alvo: 9.0×5.0, Chutes para fora: 7.0×2.0, Escanteios: 12.0×5.0, Grandes chances: 4.0×2.0 |
 | 2026-10-15 | Columbus Crew × Charlotte FC | 3-1 | 90 | Chutes no alvo: 14.0×2.0, Chutes para fora: 14.0×7.0, Escanteios: 10.0×4.0, Grandes chances: 6.0×0.0 |
 | 2026-10-15 | DC United × Red Bull New York | 2-1 | 90 | Chutes no alvo: 3.0×6.0, Chutes para fora: 1.0×13.0, Escanteios: 3.0×11.0, Grandes chances: 2.0×3.0 |
@@ -113,13 +113,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-15 | Mjällby × Inter Club d'Escaldes | 2-0 | 63 | Chutes no alvo: 5.0×0.0, Chutes para fora: 2.0×3.0, Escanteios: 5.0×0.0, Grandes chances: 2.0×0.0 |
 | 2026-10-15 | Egnatia × FC Midtjylland | 1-1 | 63 | Chutes no alvo: 5.0×4.0, Chutes para fora: 3.0×5.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-15 | Preston Lions × Wollongong Wolves | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | CD Marathón × Olancho FC | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | CD Marathón × Olancho FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | CD Olimpia × Real España | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Central Español × Danubio | 0-6 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportivo Maldonado × Albion | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Nacional × Rentistas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Nacional × Rentistas | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Atlético Nacional × Independiente Medellín | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Internacional de Bogotá × Llaneros FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Internacional de Bogotá × Llaneros FC | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-14 | Sarmiento (Junín) × River Plate | 1-1 | 0 | Chutes no alvo: 2.0×3.0; Match Odds 1X2: Casa 5,25, Empate 3,50, Fora 1,71 |
 | 2026-10-14 | Independiente Santa Fe × Jaguares de Córdoba | 0-0 | 0 | Match Odds 1X2: Casa 1,33, Empate 4,70, Fora 7,50 |
 | 2026-10-14 | Atlético Junior × Deportivo Pereira | 1-1 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 1,24, Empate 5,50, Fora 9,50 |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2308 | **Jogos distintos:** 733 | **Resultados verificáveis:** 1191 | **Com gol:** 380 | **Sem gol:** 811 | **Taxa observada:** 31.9%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 488 indeterminados | 623 incompletos.
+**Observações:** 2313 | **Jogos distintos:** 735 | **Resultados verificáveis:** 1191 | **Com gol:** 380 | **Sem gol:** 811 | **Taxa observada:** 31.9%.
+**Evolução da amostra:** 7 datas com coletas | 11 pendentes | 488 indeterminados | 623 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 412 | 271 | 90 | 181 | 33.2% |
+| 🥶 jogo_frio | 414 | 271 | 90 | 181 | 33.2% |
 | 🟥 expulsao_confirmada | 442 | 207 | 65 | 142 | 31.4% |
 | ⚡ pressao_ofensiva_18 | 307 | 191 | 61 | 130 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 390 | 179 | 49 | 130 | 27.4% |
-| 🚩 escanteios_6 | 305 | 126 | 37 | 89 | 29.4% |
+| 🎯 chutes_no_alvo_5 | 391 | 179 | 49 | 130 | 27.4% |
+| 🚩 escanteios_6 | 307 | 126 | 37 | 89 | 29.4% |
 | 💣 grandes_chances_3 | 251 | 117 | 43 | 74 | 36.8% |
 | 🔥 pressao_forte_10min | 90 | 46 | 16 | 30 | 34.8% |
 | 🧨 pressao_total_5_10min | 60 | 32 | 11 | 21 | 34.4% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 114 | 63 | 19 | 44 | 30.2% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
-| Liga Profesional | 68 | 40 | 10 | 30 | 25.0% |
+| Liga Profesional | 71 | 40 | 10 | 30 | 25.0% |
 | Super League | 69 | 38 | 8 | 30 | 21.1% |
 | Bundesliga | 56 | 31 | 8 | 23 | 25.8% |
 | Primera División | 47 | 30 | 8 | 22 | 26.7% |
@@ -252,22 +252,27 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
-| 16–30′ | 222 | 163 | 54 | 109 | 33.1% |
+| 16–30′ | 223 | 163 | 54 | 109 | 33.1% |
 | 31–45′ | 272 | 199 | 78 | 121 | 39.2% |
-| 46–60′ | 358 | 265 | 98 | 167 | 37.0% |
+| 46–60′ | 359 | 265 | 98 | 167 | 37.0% |
 | 61–75′ | 472 | 297 | 74 | 223 | 24.9% |
-| 76–90′ | 649 | 205 | 50 | 155 | 24.4% |
+| 76–90′ | 652 | 205 | 50 | 155 | 24.4% |
 | 91+′ | 252 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2308 | **Jogos monitorados:** 610 | **Ao vivo:** 21 | **Termômetros recentes:** 6.
+**Registros:** 2313 | **Jogos monitorados:** 610 | **Ao vivo:** 22 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-16T00:50:19.392196+00:00 | Huracán × Gimnasia LP | Huracán (88') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-16T00:50:19.392196+00:00 | Estudiantes × Flamengo | Flamengo (20') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-16T00:50:19.392196+00:00 | Universitario Deportes × Palmeiras | Palmeiras (49') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Gimnasia LP (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Huracán (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | pendente | pendente | indisponível |
 | 2026-10-15T23:15:25.229881+00:00 | Huracán × Gimnasia LP | Equipe não definida (16') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-15T21:56:28.970875+00:00 | Independiente del Valle × Belgrano | Belgrano (97') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T21:23:45.317311+00:00 | Independiente del Valle × Belgrano | Independiente del Valle (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:19:34.215057+00:00 | FC København × Braga | Braga (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Brighton & Hove Albion × FK Kauno Žalgiris | Brighton & Hove Albion (17') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | FC Twente × Thun | FC Twente (19') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | FC Twente × Thun | FC Twente (19') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | FC Twente × Thun | FC Twente (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | St.Truiden × Iberia 1999 | St.Truiden (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | Brann × Lincoln Red Imps FC | Brann (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | Heart of Midlothian × Nordsjælland | Nordsjælland (19') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
