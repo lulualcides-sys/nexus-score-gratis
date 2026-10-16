@@ -2,15 +2,22 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T00:50:05.807620+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T01:39:20.555116+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-15 | Huracán × Gimnasia La Plata | 1-1 | 0 | Chutes no alvo: 2.0×4.0; Match Odds 1X2: Casa 2,55, Empate 2,85, Fora 3,15 |
+| 2026-10-16 | Deportes Quindío × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Estudiantes × Flamengo | 0-0 | 45 | Chutes no alvo: 4.0×0.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-16 | Universitario Deportes × Palmeiras | 0-1 | 0 | Chutes no alvo: 0.0×5.0, Chutes para fora: 1.0×7.0, Escanteios: 1.0×8.0, Grandes chances: 0.0×0.0 |
+| 2026-10-16 | Deportivo Saprissa × Sporting FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | CD Suchitepéquez × San Pedro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Firpo × Inca Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | CD Olimpia × Real España | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Huracán × Gimnasia La Plata | 1-2 | 0 | Chutes no alvo: 2.0×4.0; Match Odds 1X2: Casa 2,55, Empate 2,85, Fora 3,15 |
 | 2026-10-15 | Estudiantes de La Plata × Flamengo | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 3,80, Empate 3,00, Fora 2,15 |
 | 2026-10-15 | Flora Tallinn × FCI Levadia | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportes Quindío × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -21,15 +28,15 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-15 | Leones × Patriotas | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Uttaradit FC × PT Satun FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Khonkaen United FC × Chainat FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Al-Kharaitiyat SC × Al-Bidda SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Al-Rayyan II × Al-Khor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | Huracán × Gimnasia LP | 1-1 | 87 | Chutes no alvo: 3.0×5.0, Chutes para fora: 11.0×4.0, Escanteios: 9.0×3.0, Grandes chances: 2.0×2.0 |
-| 2026-10-15 | Estudiantes × Flamengo | 0-0 | 20 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Al-Kharaitiyat SC × Al-Bidda SC | 5-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Al-Rayyan II × Al-Khor | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | Huracán × Gimnasia LP | 1-2 | 87 | Chutes no alvo: 3.0×5.0, Chutes para fora: 11.0×4.0, Escanteios: 9.0×3.0, Grandes chances: 2.0×2.0 |
+| 2026-10-15 | Estudiantes × Flamengo | 0-0 | 45 | Chutes no alvo: 4.0×0.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Fluminense × Palmeiras | 1-2 | 87 | Chutes no alvo: 2.0×5.0, Chutes para fora: 6.0×2.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×2.0 |
 | 2026-10-15 | Corinthians × Colo Colo | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | Caracas FC × Santa Fe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Independiente del Valle × Belgrano | 1-1 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 8.0×3.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-15 | Universitario Deportes × Palmeiras | 0-1 | 0 | Chutes no alvo: 0.0×4.0, Chutes para fora: 0.0×5.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×0.0 |
+| 2026-10-15 | Universitario Deportes × Palmeiras | 0-1 | 0 | Chutes no alvo: 0.0×5.0, Chutes para fora: 1.0×7.0, Escanteios: 1.0×8.0, Grandes chances: 0.0×0.0 |
 | 2026-10-15 | FC Cincinnati × New England Revolution | 2-3 | 90 | Chutes no alvo: 9.0×5.0, Chutes para fora: 7.0×2.0, Escanteios: 12.0×5.0, Grandes chances: 4.0×2.0 |
 | 2026-10-15 | Columbus Crew × Charlotte FC | 3-1 | 90 | Chutes no alvo: 14.0×2.0, Chutes para fora: 14.0×7.0, Escanteios: 10.0×4.0, Grandes chances: 6.0×0.0 |
 | 2026-10-15 | DC United × Red Bull New York | 2-1 | 90 | Chutes no alvo: 3.0×6.0, Chutes para fora: 1.0×13.0, Escanteios: 3.0×11.0, Grandes chances: 2.0×3.0 |
@@ -59,7 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-15 | Coban Imperial × CSD Municipal | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Guastatoya × Antigua Guatemala | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Deportivo Marquense × Deportivo Mixco | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-15 | CD Suchitepéquez × San Pedro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-15 | CD Suchitepéquez × San Pedro | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Club Xelajú × Deportivo Malacateco | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Pogoń Siedlce × Puszcza Niepołomice | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-15 | Caen × La Roche VF | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -133,13 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-14 | AS Roma × Real Madrid | 3-4 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 3,55, Empate 3,95, Fora 1,95 |
 | 2026-10-14 | LASK Linz × Liverpool | 3-6 | 0 | Chutes no alvo: 0.0×5.0; Match Odds 1X2: Casa 9,00, Empate 6,00, Fora 1,29 |
 | 2026-10-14 | Feyenoord Rotterdam × Como | 3-2 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 2,95, Empate 3,70, Fora 2,30 |
-| 2026-10-14 | Toronto FC × Orlando City SC | 3-3 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,30, Empate 3,70, Fora 2,65 |
-| 2026-10-14 | Inter Miami CF × New York City FC | 2-0 | 0 | Chutes no alvo: 3.0×2.0; Match Odds 1X2: Casa 1,53, Empate 4,60, Fora 4,90 |
-| 2026-10-14 | FC Cincinnati × New England Revolution | 2-3 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 1,87, Empate 4,10, Fora 3,35 |
-| 2026-10-14 | D.C. United × Red Bull New York | 2-1 | 0 | Chutes no alvo: 3.0×2.0; Match Odds 1X2: Casa 2,30, Empate 3,80, Fora 2,65 |
-| 2026-10-14 | CF Montréal × Atlanta United FC | 0-3 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 2,25, Empate 3,60, Fora 2,75 |
-| 2026-10-14 | Columbus Crew × Charlotte FC | 3-1 | 0 | Chutes no alvo: 9.0×2.0; Match Odds 1X2: Casa 1,95, Empate 3,90, Fora 3,20 |
-| 2026-10-14 | Nashville SC × Sporting Kansas City | 4-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,21, Empate 6,50, Fora 9,50 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2313 | **Jogos distintos:** 735 | **Resultados verificáveis:** 1191 | **Com gol:** 380 | **Sem gol:** 811 | **Taxa observada:** 31.9%.
-**Evolução da amostra:** 7 datas com coletas | 11 pendentes | 488 indeterminados | 623 incompletos.
+**Observações:** 2314 | **Jogos distintos:** 735 | **Resultados verificáveis:** 1194 | **Com gol:** 380 | **Sem gol:** 814 | **Taxa observada:** 31.8%.
+**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 488 indeterminados | 626 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 414 | 271 | 90 | 181 | 33.2% |
+| 🥶 jogo_frio | 414 | 272 | 90 | 182 | 33.1% |
 | 🟥 expulsao_confirmada | 442 | 207 | 65 | 142 | 31.4% |
 | ⚡ pressao_ofensiva_18 | 307 | 191 | 61 | 130 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 391 | 179 | 49 | 130 | 27.4% |
-| 🚩 escanteios_6 | 307 | 126 | 37 | 89 | 29.4% |
+| 🎯 chutes_no_alvo_5 | 392 | 180 | 49 | 131 | 27.2% |
+| 🚩 escanteios_6 | 307 | 127 | 37 | 90 | 29.1% |
 | 💣 grandes_chances_3 | 251 | 117 | 43 | 74 | 36.8% |
 | 🔥 pressao_forte_10min | 90 | 46 | 16 | 30 | 34.8% |
 | 🧨 pressao_total_5_10min | 60 | 32 | 11 | 21 | 34.4% |
@@ -252,9 +252,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
-| 16–30′ | 223 | 163 | 54 | 109 | 33.1% |
+| 16–30′ | 223 | 164 | 54 | 110 | 32.9% |
 | 31–45′ | 272 | 199 | 78 | 121 | 39.2% |
-| 46–60′ | 359 | 265 | 98 | 167 | 37.0% |
+| 46–60′ | 360 | 267 | 98 | 169 | 36.7% |
 | 61–75′ | 472 | 297 | 74 | 223 | 24.9% |
 | 76–90′ | 652 | 205 | 50 | 155 | 24.4% |
 | 91+′ | 252 | 0 | 0 | 0 | — |
@@ -262,17 +262,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2313 | **Jogos monitorados:** 610 | **Ao vivo:** 22 | **Termômetros recentes:** 8.
+**Registros:** 2314 | **Jogos monitorados:** 610 | **Ao vivo:** 20 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-16T00:50:19.392196+00:00 | Huracán × Gimnasia LP | Huracán (88') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-16T00:50:19.392196+00:00 | Estudiantes × Flamengo | Flamengo (20') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-16T00:50:19.392196+00:00 | Universitario Deportes × Palmeiras | Palmeiras (49') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Gimnasia LP (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | pendente | pendente | indisponível |
-| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Huracán (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-16T01:18:18.614716+00:00 | Universitario Deportes × Palmeiras | Palmeiras (49') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-16T00:50:19.392196+00:00 | Huracán × Gimnasia LP | Huracán (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-16T00:50:19.392196+00:00 | Estudiantes × Flamengo | Flamengo (20') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-16T00:50:19.392196+00:00 | Universitario Deportes × Palmeiras | Palmeiras (49') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Gimnasia LP (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-16T00:45:27.933368+00:00 | Huracán × Gimnasia LP | Huracán (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T23:15:25.229881+00:00 | Huracán × Gimnasia LP | Equipe não definida (16') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-15T21:56:28.970875+00:00 | Independiente del Valle × Belgrano | Belgrano (97') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-15T21:23:45.317311+00:00 | Independiente del Valle × Belgrano | Independiente del Valle (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -367,11 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:19:34.215057+00:00 | Hoffenheim × Beşiktaş | Hoffenheim (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | FC København × Braga | Braga (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Brighton & Hove Albion × FK Kauno Žalgiris | Brighton & Hove Albion (17') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | FC Twente × Thun | FC Twente (19') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **87**.
+Jogos com odds registradas nos ultimos dias: **71**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
