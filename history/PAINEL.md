@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T09:41:06.959826+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T10:42:26.821680+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-16 | Sport Huancayo × Cusco FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Los Chankas × Asociación Deportiva Tarma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Recoleta × Rubio Ñú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Sydney FC × Western Sydney Wanderers FC | 0-0 | 28 | Chutes no alvo: 0.0×0.0, Chutes para fora: 3.0×2.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-10-16 | Sydney FC × Western Sydney Wanderers FC | 0-0 | 71 | Chutes no alvo: 0.0×2.0, Chutes para fora: 4.0×5.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×2.0 |
 | 2026-10-16 | Ayutthaya United FC × Lamphun Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | ABB × Real Potosí | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Real Tomayapo × GV San José | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2317 | **Jogos distintos:** 735 | **Resultados verificáveis:** 1197 | **Com gol:** 380 | **Sem gol:** 817 | **Taxa observada:** 31.7%.
-**Evolução da amostra:** 7 datas com coletas | 6 pendentes | 488 indeterminados | 626 incompletos.
+**Observações:** 2318 | **Jogos distintos:** 736 | **Resultados verificáveis:** 1197 | **Com gol:** 380 | **Sem gol:** 817 | **Taxa observada:** 31.7%.
+**Evolução da amostra:** 8 datas com coletas | 6 pendentes | 488 indeterminados | 627 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 415 | 273 | 90 | 183 | 33.0% |
-| 🟥 expulsao_confirmada | 442 | 207 | 65 | 142 | 31.4% |
+| 🟥 expulsao_confirmada | 443 | 207 | 65 | 142 | 31.4% |
 | ⚡ pressao_ofensiva_18 | 307 | 191 | 61 | 130 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 393 | 181 | 49 | 132 | 27.1% |
 | 🚩 escanteios_6 | 308 | 128 | 37 | 91 | 28.9% |
@@ -226,7 +226,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Liga Profesional | 71 | 40 | 10 | 30 | 25.0% |
-| Super League | 69 | 38 | 8 | 30 | 21.1% |
+| Super League | 70 | 38 | 8 | 30 | 21.1% |
 | Bundesliga | 56 | 31 | 8 | 23 | 25.8% |
 | Primera División | 47 | 30 | 8 | 22 | 26.7% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
@@ -257,17 +257,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 46–60′ | 363 | 270 | 98 | 172 | 36.3% |
 | 61–75′ | 472 | 297 | 74 | 223 | 24.9% |
 | 76–90′ | 652 | 205 | 50 | 155 | 24.4% |
-| 91+′ | 252 | 0 | 0 | 0 | — |
+| 91+′ | 253 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2317 | **Jogos monitorados:** 664 | **Ao vivo:** 15 | **Termômetros recentes:** 6.
+**Registros:** 2318 | **Jogos monitorados:** 664 | **Ao vivo:** 12 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-16T10:23:43.190082+00:00 | PSIM Yogyakarta × PSM Makassar | PSM Makassar (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T02:22:48.050845+00:00 | Estudiantes × Flamengo | Estudiantes (51') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-16T02:22:48.050845+00:00 | Estudiantes × Flamengo | Estudiantes (51') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-16T01:50:31.704006+00:00 | Estudiantes × Flamengo | Flamengo (51') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:19:34.215057+00:00 | Rennes × OFI Crete | Rennes (19') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | Rennes × OFI Crete | Rennes (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-15T19:19:34.215057+00:00 | AFC Bournemouth × Sturm Graz | AFC Bournemouth (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:19:34.215057+00:00 | Celta Vigo × Juventus | Juventus (18') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
