@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T14:43:53.714277+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-16T15:41:00.494993+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -25,7 +25,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-16 | Deportes Quindío × Real Cartagena | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Boca Juniors de Cali × Atlético FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Necaxa × Atlas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | FK Radnik Surdulica × Radnički Niš | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | FK Radnik Surdulica × Radnički Niš | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-16 | Příbram × Třinec | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Karviná × Dukla Praha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | FC Vlašim × Hanácká Slavia Kromeriz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -51,7 +51,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-16 | Welwalo Adigrat University × Al Ahli Tripoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Breiðablik × Víkingur Reykjavík | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | ÍBV Vestmannaeyjar × FH Hafnarfjörður | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Al-Dhafra × United FC | 4-1 | 0 | Chutes no alvo: 7.0×4.0, Chutes para fora: 2.0×4.0, Escanteios: 3.0×7.0, Grandes chances: 4.0×2.0 |
+| 2026-10-16 | Al-Dhafra × United FC | 5-1 | 0 | Chutes no alvo: 7.0×4.0, Chutes para fora: 2.0×4.0, Escanteios: 3.0×7.0, Grandes chances: 4.0×2.0 |
 | 2026-10-16 | Baniyas × Al-Wasl | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Deportivo Cuenca × Técnico Universitario | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | AZ Alkmaar × FC Utrecht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -84,7 +84,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-16 | Ponte Preta × Atlético-GO | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Sport Recife × Fortaleza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Bunyodkor Tashkent × Sogdiana | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Kokand 1912 × Neftchi Fargona | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Kokand 1912 × Neftchi Fargona | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Surkhon-2011 × Xorazm | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | AC Horsens × Randers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Frosinone × Sassuolo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -105,7 +105,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-16 | Hapoel Afula × Maccabi Herzliya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Kiryat Yam × SC Kafr Qasim | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Maccabi Kabilio Jaffa × Ironi Modiin | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Maccabi Ahi Nazareth × Hapoel Kfar Saba | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Maccabi Ahi Nazareth × Hapoel Kfar Saba | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | FC Ashdod × Maccabi Kiryat Gat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | FC Den Bosch × TOP Oss | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | FC Eindhoven × Vitesse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -117,7 +117,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-16 | Rapid Wien × Hartberg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Larne × Coleraine | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Dinamo București × Botoșani | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Oțelul Galați × Csikszereda Miercurea Ciuc | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-16 | Oțelul Galați × Csikszereda Miercurea Ciuc | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-16 | CD Suchitepéquez × San Pedro | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Ruch Chorzów × Odra Opole | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-16 | Warta Poznań × Skierniewice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2328 | **Jogos distintos:** 742 | **Resultados verificáveis:** 1198 | **Com gol:** 381 | **Sem gol:** 817 | **Taxa observada:** 31.8%.
-**Evolução da amostra:** 8 datas com coletas | 10 pendentes | 489 indeterminados | 631 incompletos.
+**Observações:** 2331 | **Jogos distintos:** 745 | **Resultados verificáveis:** 1200 | **Com gol:** 381 | **Sem gol:** 819 | **Taxa observada:** 31.8%.
+**Evolução da amostra:** 8 datas com coletas | 7 pendentes | 492 indeterminados | 632 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 418 | 273 | 90 | 183 | 33.0% |
-| 🟥 expulsao_confirmada | 446 | 208 | 66 | 142 | 31.7% |
+| 🥶 jogo_frio | 418 | 274 | 90 | 184 | 32.8% |
+| 🟥 expulsao_confirmada | 447 | 208 | 66 | 142 | 31.7% |
 | ⚡ pressao_ofensiva_18 | 308 | 191 | 61 | 130 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 394 | 181 | 49 | 132 | 27.1% |
+| 🎯 chutes_no_alvo_5 | 395 | 182 | 49 | 133 | 26.9% |
 | 🚩 escanteios_6 | 309 | 128 | 37 | 91 | 28.9% |
-| 💣 grandes_chances_3 | 252 | 117 | 43 | 74 | 36.8% |
+| 💣 grandes_chances_3 | 253 | 117 | 43 | 74 | 36.8% |
 | 🔥 pressao_forte_10min | 90 | 46 | 16 | 30 | 34.8% |
 | 🧨 pressao_total_5_10min | 60 | 32 | 11 | 21 | 34.4% |
 | 🚨 alerta_cruzado_gol | 22 | 13 | 5 | 8 | 38.5% |
@@ -253,25 +253,28 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 83 | 62 | 26 | 36 | 41.9% |
 | 16–30′ | 223 | 164 | 54 | 110 | 32.9% |
-| 31–45′ | 274 | 199 | 78 | 121 | 39.2% |
+| 31–45′ | 276 | 201 | 78 | 123 | 38.8% |
 | 46–60′ | 363 | 270 | 98 | 172 | 36.3% |
 | 61–75′ | 473 | 298 | 75 | 223 | 25.2% |
 | 76–90′ | 659 | 205 | 50 | 155 | 24.4% |
-| 91+′ | 253 | 0 | 0 | 0 | — |
+| 91+′ | 254 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2328 | **Jogos monitorados:** 664 | **Ao vivo:** 27 | **Termômetros recentes:** 6.
+**Registros:** 2331 | **Jogos monitorados:** 664 | **Ao vivo:** 24 | **Termômetros recentes:** 6.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | Al-Dhafra (76') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | United FC (76') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | Al-Dhafra (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-16T14:39:04.869575+00:00 | SC Delhi × Mohun Bagan SG | Mohun Bagan SG (38') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-16T15:41:14.332988+00:00 | FK Radnik Surdulica × Radnički Niš | Radnički Niš (41') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-16T15:10:10.834041+00:00 | Al-Ahli × Al-Wakrah | Al-Wakrah (39') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-16T15:10:10.834041+00:00 | Al Qadsiah × Abha | Al Qadsiah (93') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | Al-Dhafra (76') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | United FC (76') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-16T14:39:04.869575+00:00 | Al-Dhafra × United FC | Al-Dhafra (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-16T14:39:04.869575+00:00 | SC Delhi × Mohun Bagan SG | Mohun Bagan SG (38') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-16T13:48:44.526358+00:00 | Ayutthaya United FC × Lamphun Warrior | Ayutthaya United FC (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T13:48:44.526358+00:00 | Madura United × Bhayangkara Presisi Indonesia FC | Bhayangkara Presisi Indonesia FC (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-16T13:24:45.240333+00:00 | Madura United × Bhayangkara Presisi Indonesia FC | Bhayangkara Presisi Indonesia FC (66') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-15T19:39:33.505629+00:00 | Freiburg × Jablonec | Freiburg (39') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-15T19:39:33.505629+00:00 | FC København × Braga | Braga (39') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-15T19:39:33.505629+00:00 | FC Twente × Thun | FC Twente (39') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:39:33.505629+00:00 | St.Truiden × Iberia 1999 | St.Truiden (39') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:39:33.505629+00:00 | St.Truiden × Iberia 1999 | St.Truiden (39') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-15T19:39:33.505629+00:00 | St.Truiden × Iberia 1999 | St.Truiden (39') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
