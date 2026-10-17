@@ -295,7 +295,18 @@ function render(d){
   v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
   safe(r.detail)+'</p>').join('')+
   '<small>Urgência esportiva situacional, não obrigação matemática.</small></div>':
-  '<div class="iara-context muted iara-compact"><b>🏆 Must Win</b><p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento.</p></div>';
+  '<div class="iara-context muted iara-compact"><b>🏆 Must Win · ainda NÃO confirmado</b>'+
+  '<p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento. Sem a tabela real, não é possível rotular necessidade de vitória.</p>'+
+  (function(){
+    const f=d.pregame_baseline?.sample||d.prelive?.sample||d.form||{};
+    const h=f.home||{},a=f.away||{};
+    const nH=num(h.n??h.available),nA=num(a.n??a.available);
+    const hF=num(h.gf??h.avg_goals_for),aF=num(a.gf??a.avg_goals_for);
+    if(nH===null||nA===null||nH<5||nA<5||hF===null||aF===null)return '';
+    return '<small>Contexto adicional (NÃO Must Win): últimos '+nH+' / '+nA+
+      ' jogos · média de gols feitos '+safe(d.home)+' '+hF.toFixed(2)+' × '+
+      safe(d.away)+' '+aF.toFixed(2)+'. Sem tabela não se conclui urgência.</small>';
+  })()+'</div>';
  const odds=v.value;
  const evCard=odds?'<div class="iara-ev"><b>📈 EV teórico · Match Odds</b><p>'+
    safe(odds.label)+' · odd '+odds.odds.toFixed(2)+' · modelo '+odds.prob.toFixed(1)+'% · EV '+
