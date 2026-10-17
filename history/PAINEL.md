@@ -2,15 +2,15 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T23:31:47.749730+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T23:38:40.136169+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **31**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-17 | Atlético Tucumán × Rosario Central | 0-2 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 3,10, Empate 3,00, Fora 2,50 |
+| 2026-10-17 | Atlético Tucumán × Rosario Central | 1-2 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 3,10, Empate 3,00, Fora 2,50 |
 | 2026-10-17 | Banfield × Argentinos Juniors | 0-1 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 4,10, Empate 3,45, Fora 1,91 |
 | 2026-10-17 | Vélez Sarsfield × Gimnasia (Mendoza) | 0-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 1,74, Empate 3,65, Fora 4,70 |
 | 2026-10-17 | Platense × Lanús | 0-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,75, Empate 2,95, Fora 2,80 |
@@ -23,7 +23,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-17 | América Mineiro × Operário PR | 1-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 3,10, Empate 3,65, Fora 2,15 |
 | 2026-10-17 | Boyacá Chicó FC × Atlético Nacional | 1-4 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 5,25, Empate 3,90, Fora 1,53 |
 | 2026-10-17 | Independiente Medellín × Once Caldas | 0-0 | 0 | Match Odds 1X2: Casa 1,95, Empate 3,35, Fora 3,65 |
-| 2026-10-17 | Millonarios × Jaguares de Córdoba | 0-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,21, Empate 6,00, Fora 11,00 |
+| 2026-10-17 | Millonarios × Jaguares de Córdoba | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,21, Empate 6,00, Fora 11,00 |
 | 2026-10-17 | Fulham × Hull City | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,65, Empate 4,00, Fora 5,25 |
 | 2026-10-17 | Everton × Chelsea | 0-2 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,95, Empate 3,50, Fora 2,40 |
 | 2026-10-17 | Newcastle United × Aston Villa | 0-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,25, Empate 3,70, Fora 3,00 |
@@ -76,12 +76,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-17 | Keith × Invergordon | 6-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Chicó FC × Atlético Nacional | 1-4 | 46 | Chutes no alvo: 3.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Independiente Medellín × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Millonarios × CD Jaguares | 0-0 | 26 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-17 | Millonarios × CD Jaguares | 1-0 | 36 | Chutes no alvo: 4.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 3.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-10-17 | Necaxa × Atlas | 0-2 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 8.0×5.0, Escanteios: 9.0×6.0, Grandes chances: 2.0×3.0 |
 | 2026-10-17 | Atlante × Pumas | 1-2 | 88 | Chutes no alvo: 5.0×3.0, Chutes para fora: 8.0×2.0, Escanteios: 9.0×0.0, Grandes chances: 1.0×3.0 |
 | 2026-10-17 | Tijuana × Puebla | 0-0 | 89 | Chutes no alvo: 5.0×3.0, Chutes para fora: 11.0×2.0, Escanteios: 12.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Chivas × Tigres | 0-0 | 16 | Chutes no alvo: 0.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Santos Laguna × Querétaro FC | 1-0 | 25 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-10-17 | Santos Laguna × Querétaro FC | 1-0 | 36 | Chutes no alvo: 1.0×0.0, Chutes para fora: 5.0×4.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-17 | León × CF América | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Toluca × Atlético de San Luis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Mačva Šabac × OFK Beograd | 1-1 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×6.0, Escanteios: 5.0×2.0, Grandes chances: 1.0×1.0 |
@@ -135,7 +135,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-17 | Boca Juniors × Talleres | 2-1 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-10-17 | Vélez Sarsfield × Gimnasia Mendoza | 0-0 | 31 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-10-17 | Club Atlético Platense × Lanús | 0-1 | 90 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×3.0, Escanteios: 12.0×5.0, Grandes chances: 2.0×1.0 |
-| 2026-10-17 | Atlético Tucumán × Rosario Central | 0-2 | 30 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×1.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-17 | Atlético Tucumán × Rosario Central | 1-2 | 30 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×1.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Independiente Rivadavia × Tigre | 2-2 | 90 | Chutes no alvo: 2.0×3.0, Chutes para fora: 6.0×4.0, Escanteios: 2.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Banfield × Argentinos Juniors | 0-1 | 45 | Chutes no alvo: 1.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 1.0×5.0, Grandes chances: 0.0×1.0 |
 | 2026-10-17 | Newcastle Jets × Perth Glory | 0-1 | 89 | Chutes no alvo: 3.0×4.0, Chutes para fora: 5.0×4.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×1.0 |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2987 | **Jogos distintos:** 998 | **Resultados verificáveis:** 1481 | **Com gol:** 452 | **Sem gol:** 1029 | **Taxa observada:** 30.5%.
-**Evolução da amostra:** 9 datas com coletas | 17 pendentes | 681 indeterminados | 808 incompletos.
+**Observações:** 2991 | **Jogos distintos:** 999 | **Resultados verificáveis:** 1487 | **Com gol:** 454 | **Sem gol:** 1033 | **Taxa observada:** 30.5%.
+**Evolução da amostra:** 9 datas com coletas | 14 pendentes | 682 indeterminados | 808 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 521 | 329 | 106 | 223 | 32.2% |
-| 🟥 expulsao_confirmada | 570 | 255 | 77 | 178 | 30.2% |
-| ⚡ pressao_ofensiva_18 | 399 | 237 | 73 | 164 | 30.8% |
-| 🎯 chutes_no_alvo_5 | 506 | 227 | 60 | 167 | 26.4% |
-| 🚩 escanteios_6 | 403 | 164 | 46 | 118 | 28.0% |
-| 💣 grandes_chances_3 | 323 | 144 | 50 | 94 | 34.7% |
+| 🥶 jogo_frio | 522 | 332 | 106 | 226 | 31.9% |
+| 🟥 expulsao_confirmada | 570 | 256 | 78 | 178 | 30.5% |
+| ⚡ pressao_ofensiva_18 | 399 | 238 | 73 | 165 | 30.7% |
+| 🎯 chutes_no_alvo_5 | 507 | 227 | 60 | 167 | 26.4% |
+| 🚩 escanteios_6 | 403 | 165 | 47 | 118 | 28.5% |
+| 💣 grandes_chances_3 | 325 | 144 | 50 | 94 | 34.7% |
 | 🔥 pressao_forte_10min | 123 | 60 | 20 | 40 | 33.3% |
 | 🧨 pressao_total_5_10min | 75 | 38 | 12 | 26 | 31.6% |
 | 🚨 alerta_cruzado_gol | 25 | 16 | 5 | 11 | 31.2% |
@@ -224,7 +224,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Major League Soccer | 156 | 78 | 32 | 46 | 41.0% |
 | Premier League | 142 | 74 | 19 | 55 | 25.7% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
-| Liga Profesional | 90 | 49 | 11 | 38 | 22.4% |
+| Liga Profesional | 90 | 50 | 11 | 39 | 22.0% |
 | J. League | 78 | 46 | 18 | 28 | 39.1% |
 | Bundesliga | 82 | 43 | 8 | 35 | 18.6% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
@@ -233,10 +233,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Série A | 58 | 34 | 17 | 17 | 50.0% |
 | LaLiga2 | 63 | 32 | 11 | 21 | 34.4% |
 | Ligue 1 | 55 | 32 | 13 | 19 | 40.6% |
+| Liga MX | 67 | 30 | 11 | 19 | 36.7% |
 | Serie A | 53 | 30 | 6 | 24 | 20.0% |
 | Serie B | 49 | 30 | 6 | 24 | 20.0% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
-| Liga MX | 65 | 29 | 11 | 18 | 37.9% |
 | Eredivisie | 55 | 29 | 9 | 20 | 31.0% |
 | Ekstraklasa | 48 | 28 | 10 | 18 | 35.7% |
 | Eliteserien | 49 | 27 | 3 | 24 | 11.1% |
@@ -252,32 +252,36 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 90 | 67 | 26 | 41 | 38.8% |
-| 16–30′ | 266 | 183 | 57 | 126 | 31.1% |
-| 31–45′ | 350 | 253 | 102 | 151 | 40.3% |
-| 46–60′ | 479 | 346 | 121 | 225 | 35.0% |
-| 61–75′ | 648 | 385 | 90 | 295 | 23.4% |
+| 16–30′ | 266 | 186 | 57 | 129 | 30.6% |
+| 31–45′ | 352 | 254 | 102 | 152 | 40.2% |
+| 46–60′ | 479 | 348 | 123 | 225 | 35.3% |
+| 61–75′ | 650 | 385 | 90 | 295 | 23.4% |
 | 76–90′ | 835 | 247 | 56 | 191 | 22.7% |
 | 91+′ | 319 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2987 | **Jogos monitorados:** 1310 | **Ao vivo:** 45 | **Termômetros recentes:** 10.
+**Registros:** 2991 | **Jogos monitorados:** 1310 | **Ao vivo:** 47 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T23:32:10.906881+00:00 | Olimpia × 2 de Mayo | Olimpia (52') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:32:10.906881+00:00 | Vélez Sarsfield × Gimnasia Mendoza | Vélez Sarsfield (32') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | Chivas × Tigres | Chivas (17') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | Vélez Sarsfield × Gimnasia Mendoza | Vélez Sarsfield (29') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | Atlético Tucumán × Rosario Central | Atlético Tucumán (29') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | Atlético Tucumán × Rosario Central | Atlético Tucumán (29') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | Richmond Kickers × Corpus Christi | Richmond Kickers (57') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:28:22.589390+00:00 | North Carolina Courage (W) × San Diego Wave FC (W) | San Diego Wave FC (W) (19') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:39:08.292574+00:00 | Santos Laguna × Querétaro FC | Santos Laguna (37') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:39:08.292574+00:00 | Santos Laguna × Querétaro FC | Santos Laguna (37') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:39:08.292574+00:00 | Richmond Kickers × Corpus Christi | Richmond Kickers (67') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:39:08.292574+00:00 | Richmond Kickers × Corpus Christi | Richmond Kickers (67') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:32:10.906881+00:00 | Olimpia × 2 de Mayo | Olimpia (52') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-17T23:32:10.906881+00:00 | Vélez Sarsfield × Gimnasia Mendoza | Vélez Sarsfield (32') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | Chivas × Tigres | Chivas (17') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | Vélez Sarsfield × Gimnasia Mendoza | Vélez Sarsfield (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | Atlético Tucumán × Rosario Central | Atlético Tucumán (29') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | pendente | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | Atlético Tucumán × Rosario Central | Atlético Tucumán (29') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | pendente | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | Richmond Kickers × Corpus Christi | Richmond Kickers (57') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-17T23:28:22.589390+00:00 | North Carolina Courage (W) × San Diego Wave FC (W) | San Diego Wave FC (W) (19') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-10-17T23:08:52.606743+00:00 | Athletico Paranaense × Palmeiras | Athletico Paranaense (37') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T23:08:52.606743+00:00 | Utah Royals (W) × Kansas City Current (W) | Kansas City Current (W) (38') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-17T23:08:52.606743+00:00 | Utah Royals (W) × Kansas City Current (W) | Kansas City Current (W) (38') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-10-17T23:04:51.317137+00:00 | Universitario de Vinto × San Antonio Bulo Bulo | San Antonio Bulo Bulo (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-17T23:04:51.317137+00:00 | Atlético-MG × Coritiba | Atlético-MG (74') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-17T22:48:29.286383+00:00 | Universitario de Vinto × San Antonio Bulo Bulo | San Antonio Bulo Bulo (70') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -364,15 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-17T19:53:02.541026+00:00 | Roma × Genoa | Roma (50') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-17T19:53:02.541026+00:00 | Telstar × Feyenoord | Feyenoord (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-17T19:53:02.541026+00:00 | Red Star × Saint-Étienne | Saint-Étienne (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T19:53:02.541026+00:00 | Real Madrid (W) × Espanyol (W) | Real Madrid (W) (60') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T19:53:02.541026+00:00 | Paris Saint Germain (W) × OL Lyonnes (W) | OL Lyonnes (W) (46') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T19:53:02.541026+00:00 | Paris Saint Germain (W) × OL Lyonnes (W) | OL Lyonnes (W) (46') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T19:53:02.541026+00:00 | Paris Saint Germain (W) × OL Lyonnes (W) | OL Lyonnes (W) (46') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **137**.
-Novas cotacoes capturadas na ultima execucao: **6**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
