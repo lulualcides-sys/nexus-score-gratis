@@ -22,6 +22,53 @@ def new_quote(row,selection,value,bookmaker,source,when):
         for i in reversed(indices[1:-5]):items.pop(i)
     return True
 
+
+
+def append_trio(row, prices, bookmaker, source, now_ts):
+    """Grava um pacote 1/X/2 atômico. Valores não alterados também compõem a foto.
+
+    Rejeita pacotes parciais, apostas já iniciadas, odds falsas e
+    captura onde cada seleção teria horário/casa diferente.
+    """
+    fixture = row.get('fixture') or {}
+    try:
+        kickoff = int(fixture.get('start_timestamp') or 0)
+    except (TypeError, ValueError):
+        return 0
+    if fixture.get('phase') != 'scheduled' or not kickoff or now_ts >= kickoff:
+        return 0
+    if not isinstance(prices, dict) or set(prices) != {'home','draw','away'}:
+        return 0
+    if not isinstance(bookmaker, str) or not bookmaker.strip() or not isinstance(source, str) or not source.strip():
+        return 0
+    if not all(isinstance(prices[k], (float,int)) and not isinstance(prices[k],bool)
+               and math.isfinite(prices[k]) and 1.01 < prices[k] < 1000
+               for k in ('home','draw','away')):
+        return 0
+    offers = row.setdefault('odds_quotes',[])
+    groups = {}
+    for item in offers:
+        if (item.get('market')!='1x2' or item.get('source')!=source or
+                item.get('bookmaker')!=bookmaker):
+            continue
+        key=item.get('captured_at')
+        if key:
+            groups.setdefault(key,{})[item.get('selection')]=item.get('odds')
+    last = sorted((when,group) for when,group in groups.items()
+                  if set(group)=={'home','draw','away'})
+    if last and all(float(last[-1][1][k])==float(prices[k])
+                    for k in ('home','draw','away')):
+        return 0
+    when=datetime.fromtimestamp(now_ts,timezone.utc).isoformat()
+    if last and last[-1][0]==when:
+        return 0
+    for selection in ('home','draw','away'):
+        offers.append({'market':'1x2','selection':selection,
+                       'odds':round(float(prices[selection]),4),
+                       'bookmaker':bookmaker[:55],'source':source[:40],
+                       'captured_at':when})
+    return 3
+
 def append_quote(row,selection,value,bookmaker,source,now_ts):
     f=row.get('fixture') or {}
     if f.get('phase')!='scheduled':return False
