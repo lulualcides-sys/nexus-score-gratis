@@ -14,7 +14,7 @@ from coletar import (NOW, BR, HISTORY, DAY, read, write, fetch, fotmob_list,
                    fotmob_lineups, momentum, stats as fotmob_stats, fotmob_events, merge as merge_pressure)
 from odds_capture import get as espn_get, threeway
 from sofascore_odds import calendar as sofa_calendar, event_quotes as sofa_quotes, link_fixtures
-from pregame_refresh_quotes import new_quote
+from pregame_refresh_quotes import new_quote, append_trio
 from espn_scoreboard_odds import collect_odds as espn_scoreboard_odds
 from the_odds_api_source import collect_odds as independent_odds
 
@@ -54,12 +54,11 @@ def espn_quotes(packet,row,now_ts):
     for offer in offers:
         if not isinstance(offer,dict):continue
         prices=threeway(offer)
-        if not prices:continue
+        if set(prices)!={'home','draw','away'}:continue
         provider=offer.get('provider') or {}
         bookmaker=str((provider.get('name') if isinstance(provider,dict) else '') or
             offer.get('providerName') or 'Não informada')[:55]
-        return sum(new_quote(row,sel,val,bookmaker,'ESPN',NOW.isoformat())
-                   for sel,val in prices.items())
+        return append_trio(row,prices,bookmaker,'ESPN',now_ts)
     return 0
 
 def compare_lineups(row,incoming):
@@ -217,8 +216,7 @@ def run():
                     # Mesmo se houver odds, recusar armazenar depois do kickoff.
                     f=row.get('fixture') or {}
                     if NOW.timestamp()>=int(f.get('start_timestamp') or 0):continue
-                    count=sum(new_quote(row,sel,price,bookmaker,'SofaScore',
-                                        NOW.isoformat()) for sel,price in prices.items())
+                    count=append_trio(row,prices,bookmaker,'SofaScore',now_ts)
                     result['sofascore_quotes_added']+=count
                     result['odds_updated']+=count
                 except Exception as err:
