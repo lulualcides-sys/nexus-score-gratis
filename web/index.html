@@ -861,6 +861,11 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
 <style>
+.nexus-hot-match{color:#ffe7ae!important;border-color:#ce8e44!important;background:#54321e!important;font-weight:850;animation:nexusHotBorder 1.6s ease-in-out infinite}
+@keyframes nexusHotBorder{50%{box-shadow:0 0 13px #ffaa554b}}
+@media(prefers-reduced-motion:reduce){.nexus-hot-match{animation:none}}
+</style>
+<style>
 /* NEXUS 5.33: cartões 25% menores e alertas clicáveis */
 .nexus-clickable-alert{cursor:pointer;text-align:left;font:inherit;line-height:1.45;border:1px solid #e2a251;max-width:440px;min-height:72px;box-shadow:0 6px 30px #0008;}
 .nexus-clickable-alert:hover,.nexus-clickable-alert:focus-visible{outline:2px solid #fed883;transform:translateY(-1px)}
@@ -2074,12 +2079,14 @@ function renderMatches(){
    const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(a)}–${esc(b)}</span>`:''};
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
+   const hot=hotGameSignal(d);
+   const hotBadge=hot?'<span class="indicator nexus-hot-match" title="Pressão recente + ação ofensiva confirmada · clique no jogo">🔥 PRESSÃO FORTE · GOL PODE SAIR</span>':'';
    const rulebadge=state.rules.length||$('#dominance-filter').value!=='any'?`<span class="indicator ${status==='pass'?'matched-badge':'scan-badge'}">${status==='pass'?'✓ FILTROS OK':'? SEM SCAN / DADO'}</span>`:d?'<span class="indicator scan-badge">✓ ANALISADO</span>':'';
    const when=m.start_timestamp?new Date(Number(m.start_timestamp)*1000).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}):'';
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
    const oddsView=teamOddsChips(d||m,cachedPre||m);
    const listOdds=oddsView.available?`<div class="match-list-odds"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
-   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
+   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
  }).join('');
  if($('#match-list').innerHTML!==rowsHTML)$('#match-list').innerHTML=rowsHTML;
 }
@@ -2090,10 +2097,15 @@ function updateLeagues(){
  if([...sel.options].some(o=>o.value===before))sel.value=before;else sel.value='';
 }
 async function loadFavorites(){const d=await api('/api/favorites');state.favorites=new Set((d.favorites||[]).map(x=>x.match_id));updateIndicators()}
+let lastHotHydration=0;
 async function hydrateListDetails(){
- if(state.demo||state.reference||!['live','today','history','favorites'].includes(state.view))return;
+ if(state.demo||state.reference||!['live','today','favorites'].includes(state.view))return;
+ if(Date.now()-lastHotHydration<115000)return;
+ lastHotHydration=Date.now();
  const token=Date.now();state.listHydrationToken=token;
- const candidates=baseMatches().filter(m=>m.phase!=='scheduled'&&!detailFor(m)).slice(0,8);
+ const pool=[...baseMatches(),...state.list.filter(m=>m.live)];
+ const ids=new Set();
+ const candidates=pool.filter(m=>m.live&&!ids.has(m.id)&&(ids.add(m.id),true)&&!detailFor(m)).slice(0,16);
  for(const m of candidates){
   if(state.listHydrationToken!==token)return;
   try{
@@ -2144,18 +2156,25 @@ async function loadList(view=state.view,{silent=false}={}){
   state.loading=false;$('#refresh').disabled=false;renderMatches();
   if(state.selection&&!state.list.find(m=>m.id===state.selection)){state.selection=null;state.detail=null;renderEmpty();}
   if(!silent&&!state.selection&&(state.demo||state.reference||['live','today','history'].includes(state.view))){const first=filteredMatches()[0];if(first)chooseMatch(first.id);}
-  if(!silent)setTimeout(()=>hydrateListDetails(),120);
+  if(!silent||state.view==='live')setTimeout(()=>hydrateListDetails(),120);
  }
 }
 function renderEmpty(){$('#detail-panel').innerHTML='<div class="empty-detail"><div class="empty-orbit"><span>◈</span></div><h2>Inteligência da partida</h2><p>Escolha uma partida para visualizar termômetro, sumário dos lances e estatísticas.</p></div>'}
 async function chooseMatch(id){state.selection=id;state.pressureRange='all';state.matchTab='stats';state.scenarioPeriod='game';let stub=state.list.find(x=>x.id===id);if(stub?.phase==='scheduled'&&state.view!=='history'&&!state.demo&&!state.reference){state.matchTab='prelive';state.detail={...stub,stats:{home:{},away:{}},incidents:[]};const cached=state.preliveCache.get(id);state.prelive=cached&&Date.now()-cached.at<180000?cached.data:null;renderMatches();renderDetail();if(!state.prelive){try{const result=await api('/api/prelive/'+encodeURIComponent(id));state.preliveCache.set(id,{data:result,at:Date.now()});if(state.selection===id){state.prelive=result;renderDetailBody()}}catch(e){if(state.selection===id){state.prelive={available:false,reason:'Falha na coleta do histórico: '+e.message};renderDetailBody()}}}return}renderMatches();$('#detail-panel').innerHTML='<div class="loading">Abrindo '+esc(stub?.home||'partida')+'...<br><small>Consultando termômetro, incidentes e estatísticas.</small></div>';
 try{const d=await api(state.demo?'/api/demo/match/'+encodeURIComponent(id):state.reference?'/api/reference/match/'+encodeURIComponent(id):'/api/match/'+encodeURIComponent(id));if(state.selection!==id)return;observeGoalUpdates([d]);state.detail=d;state.detailsCache.set(String(id),{data:d,at:Date.now()});refreshVisibleListFromCache();renderMatches();renderDetail();maybeAlert(d)}catch(e){if(state.selection===id){$('#detail-panel').innerHTML=`<div class="empty-detail"><h2>Não foi possível carregar</h2><p>${esc(e.message)}</p><p>Esta competição pode não ter gráfico/estatísticas disponíveis.</p></div>`}}}
-function maybeAlert(d){
- if(state.demo||state.reference||!state.settings.alerts_enabled||d?.phase!=='live')return;
+function hotGameSignal(d){
+ if(!d||d.phase!=='live'||state.demo||state.reference)return null;
  const freshness=NexusAudit.freshness(d),p=d.pressure;
- if(!freshness.pressureFresh||p?.score==null||p.score<state.settings.threshold)return;
+ if(!freshness.pressureFresh||p?.score==null||p.score<state.settings.threshold)return null;
  const reading=window.NexusIara?.evaluate?.(d);
- if(!reading?.tags?.includes('ATENÇÃO A NOVO GOL'))return;
+ if(!reading?.tags?.includes('ATENÇÃO A NOVO GOL'))return null;
+ return {freshness,reading,pressure:p};
+}
+function maybeAlert(d){
+ if(!state.settings.alerts_enabled)return;
+ const signal=hotGameSignal(d);
+ if(!signal)return;
+ const {freshness,reading,pressure:p}=signal;
  const now=Date.now(),last=state.lastAlert.get(d.id)||0;
  if(now-last<8*60000)return;
  const who=p.dominant==='HOME'?d.home:p.dominant==='AWAY'?d.away:
@@ -2844,6 +2863,15 @@ function comparisonProjection56(d){
  const homeRate=Number(expected.home),awayRate=Number(expected.away);
  const pre=forecastFromRates(homeRate,awayRate);
  if(!pre)return live||projectionsHTML(d);
+ // Apresentar exatamente os percentuais congelados antes do apito.
+ const saved=baseline.forecast||{},p=saved.one_x_two||{};
+ if(['home','draw','away'].every(k=>p[k]!=null&&Number.isFinite(Number(p[k])))){
+   pre.home=Number(p.home)/100;pre.draw=Number(p.draw)/100;pre.away=Number(p.away)/100;
+ }
+ if(saved.over_2_5_pct!=null&&Number.isFinite(Number(saved.over_2_5_pct)))pre.over25=Number(saved.over_2_5_pct)/100;
+ if(saved.btts_yes_pct!=null&&Number.isFinite(Number(saved.btts_yes_pct)))pre.btts=Number(saved.btts_yes_pct)/100;
+ if(Array.isArray(saved.top_scores)&&saved.top_scores.length)
+   pre.top=saved.top_scores.slice(0,5).filter(x=>x&&x.score).map(x=>({score:String(x.score),probability:Number(x.probability)/100}));
  const pc=x=>(x*100).toFixed(1).replace('.',',')+'%';
  const predicted=pre.home>=pre.draw&&pre.home>=pre.away?'home':pre.away>=pre.draw?'away':'draw';
  const actual=validScore?(hh>aa?'home':hh<aa?'away':'draw'):null;
@@ -2860,7 +2888,7 @@ function comparisonProjection56(d){
  ];
  const check=`<section class="n56-compare"><div class="n56-heading"><h3>🔎 O QUE A PREVISÃO ACERTOU?</h3><span>${finished&&validScore?'RESULTADO FINAL VERIFICADO':'EM ACOMPANHAMENTO'}</span></div><div class="n56-compare-grid">${tiles.map(t=>`<article class="${t[3]}"><small>${esc(t[0])}</small><strong>${esc(t[1])}</strong><span>${esc(t[2])}</span></article>`).join('')}</div>${validScore?`<p>Placar ${finished?'final':'atual'}: <strong>${esc(d.home)} ${hh} × ${aa} ${esc(d.away)}</strong>. Acertos são comparados ao resultado final; antes disso são apenas parciais.</p>`:''}</section>`;
  const preHead=`<div class="n56-heading"><h3>📌 PROJEÇÃO SALVA ANTES DO INÍCIO</h3><span>${esc(baseline.source||'Fonte histórica')} · ${esc(savedDate)}</span></div>`;
- const prePanel=forecastPanel53(pre,d.home,d.away,baseline.source||'Histórico verificado',`Captura pré-jogo: ${savedDate}. Amostras: ${baseline.sample_home} e ${baseline.sample_away}.`,false);
+ const prePanel=forecastPanel53(pre,d.home,d.away,baseline.source||'Histórico verificado',`Captura pré-jogo: ${savedDate}. Amostras: ${baseline.sample?.home?.n??'—'} e ${baseline.sample?.away?.n??'—'} partidas.`,false);
  const livePanel=live||`<section class="n56-compare"><div class="n56-heading"><h3>⚡ PROJEÇÃO AO VIVO</h3><span>${finished?'JOGO ENCERRADO':'SEM DADOS SUFICIENTES'}</span></div><p>${finished?'Partida encerrada. Não recalculamos probabilidade ao vivo após o apito final.':'Ainda não há xG, placar ou minutos suficientes para uma estimativa ao vivo. A previsão pré-jogo permanece visível acima.'}</p></section>`;
  return `<div class="n56-pregame-compare">${preHead}${prePanel}${check}<div class="n56-heading n56-live-heading"><h3>⚡ PROJEÇÃO ATUAL DA PARTIDA</h3><span>${finished?'ENCERRADO':'AO VIVO / EXPERIMENTAL'}</span></div>${livePanel}</div>`;
 }
