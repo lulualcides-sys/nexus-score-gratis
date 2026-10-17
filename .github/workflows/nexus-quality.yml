@@ -26,6 +26,8 @@ jobs:
           python3 -m unittest discover -s tests -v
       - name: Revisão do painel JavaScript
         run: |
+          node --check web/nexus-v531.js
+          node tests/test_nexus_v531.mjs
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-original-enrich.js
