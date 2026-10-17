@@ -30,6 +30,7 @@ jobs:
           node tests/test_nexus_v531.mjs
           node --check web/nexus-audit-v532.js
           node tests/test_nexus_audit_v532.mjs
+          node tests/test_hot_alerts_v533.mjs
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-original-enrich.js
