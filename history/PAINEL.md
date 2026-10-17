@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T12:44:04.413987+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T13:37:15.390131+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **185**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -24,11 +24,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
 | 2026-10-17 | Boyacá Chicó FC × Atlético Nacional | 0-0 | 0 | Match Odds 1X2: Casa 5,25, Empate 3,90, Fora 1,53 |
 | 2026-10-17 | Independiente Medellín × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Millonarios × Jaguares de Córdoba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Fulham × Hull City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Everton × Chelsea | 0-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,95, Empate 3,50, Fora 2,40 |
+| 2026-10-17 | Fulham × Hull City | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 4,00, Fora 5,25 |
+| 2026-10-17 | Everton × Chelsea | 0-2 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,95, Empate 3,50, Fora 2,40 |
 | 2026-10-17 | Newcastle United × Aston Villa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Manchester City × Ipswich Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Brentford × Liverpool | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Manchester City × Ipswich Town | 0-0 | 0 | Match Odds 1X2: Casa 1,26, Empate 6,50, Fora 10,00 |
+| 2026-10-17 | Brentford × Liverpool | 0-0 | 0 | Match Odds 1X2: Casa 2,70, Empate 3,55, Fora 2,55 |
 | 2026-10-17 | Villarreal × Elche | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Valencia × Athletic Club | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Espanyol × Atlético Madrid | 0-0 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 4,90, Empate 4,00, Fora 1,69 |
@@ -36,13 +36,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
 | 2026-10-17 | Troyes × Lens | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Strasbourg × Paris Saint-Germain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Lille × Brest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | SV Elversberg × FC Augsburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Schalke 04 × Mainz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Werder Bremen × SC Paderborn 07 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Hamburg SV × VfB Stuttgart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | 1. FC Union Berlin × Borussia Dortmund | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | SV Elversberg × FC Augsburg | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,40, Empate 3,55, Fora 2,60 |
+| 2026-10-17 | Schalke 04 × Mainz | 0-0 | 0 | Chutes no alvo: 0.0×3.0; Match Odds 1X2: Casa 2,85, Empate 3,40, Fora 2,30 |
+| 2026-10-17 | Werder Bremen × SC Paderborn 07 | 0-0 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 1,65, Empate 4,10, Fora 4,40 |
+| 2026-10-17 | Hamburg SV × VfB Stuttgart | 0-0 | 0 | Chutes no alvo: 0.0×0.0 |
+| 2026-10-17 | 1. FC Union Berlin × Borussia Dortmund | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 5,50, Empate 4,40, Fora 1,49 |
 | 2026-10-17 | Bayern Munich × RB Leipzig | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Venezia × Napoli | 0-0 | 0 | Match Odds 1X2: Casa 4,10, Empate 3,70, Fora 1,77 |
+| 2026-10-17 | Venezia × Napoli | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 4,10, Empate 3,70, Fora 1,77 |
 | 2026-10-17 | AS Roma × Genoa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Bologna × Internazionale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Philadelphia Union × Charlotte FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -86,7 +86,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
 | 2026-10-17 | Toluca × Atlético de San Luis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Mačva Šabac × OFK Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Vojvodina × FK Radnički 1923 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Čukarički × FK Zemun | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Čukarički × FK Zemun | 1-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×3.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Maccabi Petach Tikva × Maccabi Haifa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Hapoel Tel Aviv × Ironi Tiberias | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Maccabi Netanya × Hapoel Ironi Kiryat Shmona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -115,13 +115,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
 | 2026-10-17 | Macarthur FC × Perth Glory | 2-1 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-17 | Central Coast Mariners × Newcastle Jets | 2-2 | 68 | Chutes no alvo: 4.0×4.0, Chutes para fora: 4.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 5.0×2.0 |
 | 2026-10-17 | Wellington Phoenix × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Sukhothai FC × Rasisalai United | 4-1 | 25 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Chonburi FC × Prachuap FC | 1-0 | 5 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Rayong FC × Uthai Thani FC | 1-0 | 42 | Chutes no alvo: 4.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-10-17 | Sukhothai FC × Rasisalai United | 5-1 | 25 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-17 | Chonburi FC × Prachuap FC | 1-2 | 90 | Chutes no alvo: 10.0×4.0, Chutes para fora: 6.0×2.0, Escanteios: 13.0×8.0, Grandes chances: 1.0×1.0 |
+| 2026-10-17 | Rayong FC × Uthai Thani FC | 1-1 | 42 | Chutes no alvo: 4.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-17 | Chiangmai United × Songkhla United FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Nakhon Pathom × Nong Bua Pitchaya FC | 4-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Muang Loei United × Kanchanaburi Power | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Police Tero FC × Kasetsart | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Muang Loei United × Kanchanaburi Power | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Police Tero FC × Kasetsart | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Phrae United × Nakhon Ratchasima FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Deportivo La Guaira × Trujillanos FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Carabobo FC × Deportivo Táchira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -130,8 +130,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **170**.
 | 2026-10-17 | CDT Real Oruro × Aurora | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Universitario de Vinto × San Antonio Bulo Bulo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Blooming × Independiente Petrolero | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Burnley U21 × Aston Villa U21 | 0-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-10-17 | Liverpool U21 × Reading U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Burnley U21 × Aston Villa U21 | 0-1 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×1.0 |
+| 2026-10-17 | Liverpool U21 × Reading U21 | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-17 | Boca Juniors × Talleres | 2-1 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-10-17 | Vélez Sarsfield × Gimnasia Mendoza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Club Atlético Platense × Lanús | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2636 | **Jogos distintos:** 846 | **Resultados verificáveis:** 1331 | **Com gol:** 417 | **Sem gol:** 914 | **Taxa observada:** 31.3%.
-**Evolução da amostra:** 9 datas com coletas | 14 pendentes | 596 indeterminados | 695 incompletos.
+**Observações:** 2662 | **Jogos distintos:** 859 | **Resultados verificáveis:** 1336 | **Com gol:** 417 | **Sem gol:** 919 | **Taxa observada:** 31.2%.
+**Evolução da amostra:** 9 datas com coletas | 10 pendentes | 606 indeterminados | 710 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 465 | 295 | 97 | 198 | 32.9% |
-| 🟥 expulsao_confirmada | 525 | 244 | 76 | 168 | 31.1% |
-| ⚡ pressao_ofensiva_18 | 351 | 212 | 68 | 144 | 32.1% |
-| 🎯 chutes_no_alvo_5 | 441 | 202 | 54 | 148 | 26.7% |
-| 🚩 escanteios_6 | 344 | 141 | 40 | 101 | 28.4% |
-| 💣 grandes_chances_3 | 279 | 128 | 45 | 83 | 35.2% |
+| 🥶 jogo_frio | 468 | 295 | 97 | 198 | 32.9% |
+| 🟥 expulsao_confirmada | 532 | 246 | 76 | 170 | 30.9% |
+| ⚡ pressao_ofensiva_18 | 352 | 213 | 68 | 145 | 31.9% |
+| 🎯 chutes_no_alvo_5 | 444 | 202 | 54 | 148 | 26.7% |
+| 🚩 escanteios_6 | 352 | 142 | 40 | 102 | 28.2% |
+| 💣 grandes_chances_3 | 283 | 129 | 45 | 84 | 34.9% |
 | 🔥 pressao_forte_10min | 104 | 51 | 17 | 34 | 33.3% |
 | 🧨 pressao_total_5_10min | 69 | 35 | 12 | 23 | 34.3% |
 | 🚨 alerta_cruzado_gol | 23 | 14 | 5 | 9 | 35.7% |
@@ -222,12 +222,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Major League Soccer | 148 | 74 | 28 | 46 | 37.8% |
-| Premier League | 118 | 65 | 19 | 46 | 29.2% |
+| Premier League | 120 | 65 | 19 | 46 | 29.2% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | J. League | 78 | 46 | 18 | 28 | 39.1% |
 | Liga Profesional | 78 | 46 | 10 | 36 | 21.7% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
-| Super League | 73 | 39 | 9 | 30 | 23.1% |
+| Super League | 78 | 39 | 9 | 30 | 23.1% |
 | Bundesliga | 60 | 34 | 8 | 26 | 23.5% |
 | Primera División | 51 | 34 | 8 | 26 | 23.5% |
 | LaLiga2 | 56 | 30 | 10 | 20 | 33.3% |
@@ -253,29 +253,55 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 89 | 67 | 26 | 41 | 38.8% |
 | 16–30′ | 254 | 178 | 55 | 123 | 30.9% |
-| 31–45′ | 315 | 229 | 91 | 138 | 39.7% |
+| 31–45′ | 317 | 229 | 91 | 138 | 39.7% |
 | 46–60′ | 414 | 301 | 110 | 191 | 36.5% |
-| 61–75′ | 541 | 328 | 83 | 245 | 25.3% |
-| 76–90′ | 756 | 228 | 52 | 176 | 22.8% |
-| 91+′ | 267 | 0 | 0 | 0 | — |
+| 61–75′ | 550 | 330 | 83 | 247 | 25.2% |
+| 76–90′ | 762 | 231 | 52 | 179 | 22.5% |
+| 91+′ | 276 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2636 | **Jogos monitorados:** 1310 | **Ao vivo:** 184 | **Termômetros recentes:** 8.
+**Registros:** 2662 | **Jogos monitorados:** 1310 | **Ao vivo:** 204 | **Termômetros recentes:** 12.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T12:44:33.167395+00:00 | Keflavík × KR Reykjavík | KR Reykjavík (44') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T12:44:33.167395+00:00 | Madla × Staal Jørpeland | Staal Jørpeland (43') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T12:44:33.167395+00:00 | Harstad × Alta | Alta (88') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | Wolfsburg (85') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | FC Heidenheim (85') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | FC Heidenheim (85') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T13:37:37.189738+00:00 | Falkenbergs FF × Landskrona BoIS | Landskrona BoIS (37') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T13:37:37.189738+00:00 | Molde 2 × Volda | Molde 2 (35') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T13:37:37.189738+00:00 | Madla × Staal Jørpeland | Staal Jørpeland (76') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Chonburi FC × Prachuap FC | Chonburi FC (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Chonburi FC × Prachuap FC | Chonburi FC (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Madla × Staal Jørpeland | Staal Jørpeland (63') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | FC Samgurali Tskhaltubo × FC Meshakhte Tkibuli | FC Meshakhte Tkibuli (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Qingdao Hainiu × Liaoning Tieren | Liaoning Tieren (91') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Qingdao Hainiu × Liaoning Tieren | Liaoning Tieren (91') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Qingdao Hainiu × Liaoning Tieren | Qingdao Hainiu (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Yunnan Yukun × Chongqing Tongliang Long | Yunnan Yukun (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Yunnan Yukun × Chongqing Tongliang Long | Yunnan Yukun (90') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Guangxi Hengchen × Changchun Yatai | Guangxi Hengchen (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Everton × Chelsea | Chelsea (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Everton × Chelsea | Chelsea (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Arsenal (W) × Birmingham City (W) | Arsenal (W) (82') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Arsenal (W) × Birmingham City (W) | Arsenal (W) (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T13:24:06.202549+00:00 | Arsenal (W) × Birmingham City (W) | Arsenal (W) (82') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Guangxi Hengchen × Changchun Yatai | Guangxi Hengchen (66') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Milton Keynes Dons × Luton Town | Luton Town (69') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Peterborough United × Burton Albion | Peterborough United (69') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Fleetwood Town × Rotherham United | Rotherham United (70') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Fleetwood Town × Rotherham United | Fleetwood Town (70') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Shrewsbury Town × Bristol Rovers | Bristol Rovers (69') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Shrewsbury Town × Bristol Rovers | Shrewsbury Town (69') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:56:21.354134+00:00 | Inter Kashi × Odisha FC | Odisha FC (67') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Keflavík × KR Reykjavík | KR Reykjavík (44') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Madla × Staal Jørpeland | Staal Jørpeland (43') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Harstad × Alta | Alta (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | Wolfsburg (85') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | FC Heidenheim (85') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T12:44:33.167395+00:00 | Wolfsburg × FC Heidenheim | FC Heidenheim (85') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-17T12:18:12.925428+00:00 | Harstad × Alta | Alta (60') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-17T12:18:12.925428+00:00 | Guangxi Hengchen × Changchun Yatai | Guangxi Hengchen (48') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-17T12:18:12.925428+00:00 | Guangxi Hengchen × Changchun Yatai | Guangxi Hengchen (48') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-17T11:51:34.656046+00:00 | Guangxi Hengchen × Changchun Yatai | Guangxi Hengchen (21') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-17T11:51:34.656046+00:00 | Shkendija Haracine × FK Struga | Shkendija Haracine (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-17T11:37:22.878761+00:00 | Dalian Yingbo × Shenzhen Peng City | Dalian Yingbo (37') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -342,36 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-17T05:49:16.950320+00:00 | Shimizu S-Pulse × Gamba Osaka | Shimizu S-Pulse (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-17T05:49:16.950320+00:00 | Tokyo Verdy × FC Tokyo | FC Tokyo (45') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-17T05:49:16.950320+00:00 | Tokyo Verdy × FC Tokyo | FC Tokyo (45') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T05:49:16.950320+00:00 | Tokyo Verdy × FC Tokyo | FC Tokyo (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T05:38:55.857063+00:00 | Tokyo Verdy × FC Tokyo | Tokyo Verdy (35') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-17T05:38:55.857063+00:00 | Tochigi City FC × Yokohama FC | Yokohama FC (35') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T05:19:29.932045+00:00 | JEF United Chiba × Yokohama F.Marinos | JEF United Chiba (16') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T05:19:29.932045+00:00 | Sanfrecce Hiroshima × Kyoto Sanga FC | Kyoto Sanga FC (16') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T05:19:29.932045+00:00 | Shimizu S-Pulse × Gamba Osaka | Gamba Osaka (59') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T05:19:29.932045+00:00 | Shimizu S-Pulse × Gamba Osaka | Shimizu S-Pulse (59') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:55:28.388892+00:00 | Atlante × Pumas | Atlante (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:55:28.388892+00:00 | Tijuana × Puebla | Tijuana (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:55:28.388892+00:00 | Caracas FC × Santa Fe | Caracas FC (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:55:28.388892+00:00 | Atlético La Paz × Tlaxcala FC | Tlaxcala FC (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Atlante × Pumas | Pumas (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Atlante × Pumas | Atlante (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Tijuana × Puebla | Tijuana (75') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Tijuana × Puebla | Tijuana (75') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Caracas FC × Santa Fe | Santa Fe (75') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Ventura County FC × Minnesota United 2 | Ventura County FC (120') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:40:13.583364+00:00 | Ventura County FC × Minnesota United 2 | Minnesota United 2 (120') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T04:23:42.732165+00:00 | Atlante × Pumas | Atlante (60') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-17T04:23:42.732165+00:00 | Atlante × Pumas | Atlante (60') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-17T04:23:42.732165+00:00 | Atlante × Pumas | Atlante (60') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-17T04:23:42.732165+00:00 | Tijuana × Puebla | Tijuana (59') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T04:23:42.732165+00:00 | Shimizu S-Pulse × Gamba Osaka | Shimizu S-Pulse (20') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T03:57:36.393850+00:00 | Portland Timbers 2 × St. Louis City 2 | Portland Timbers 2 (97') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T03:40:04.453154+00:00 | Sport Recife × Fortaleza | Equipe não definida (78') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T03:40:04.453154+00:00 | Wellington Olympic × Eastern Suburbs AFC | Eastern Suburbs AFC (81') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **81**.
+Jogos com odds registradas nos ultimos dias: **92**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
