@@ -42,7 +42,7 @@ function pressureWindow(points,end,n){
     dominant:team,difference:round(diff),home_recent:round(h),
     away_recent:round(a),samples:observed.length,expected};
 }
-function buildBoard(ten,five,stats,events,end){
+function buildBoard(ten,five,stats,events,end,points=[]){
   const out=[];
   const add=(emoji,active,available,reason,team=null)=>out.push({emoji,
     name:titleFrom[emoji],state:available?(active?'active':'inactive'):'unavailable',
@@ -70,7 +70,8 @@ function buildBoard(ten,five,stats,events,end){
   const redHit=events.some(e=>e.type==='red_card')||reds.some(n=>n>=1);
   add('🟥',redHit,reds.length>0||events.length>0,redHit?'Expulsão registrada':'Sem expulsão registrada nos dados disponíveis');
   add('⏱️',end>=70&&high,ten.valid&&end>0,'Minuto '+end+' e pressão 10 min: '+ten.level,picked);
-  add('🥶',ten.level==='FRIO',ten.valid,'Janela de pressão real: '+ten.level,picked);
+  const cold=window.NexusUpgrade?.coldAt(points,end)||{active:false,reason:'Sem dados suficientes',latest:null};
+  add('🥶',cold.active,cold.latest!==null,cold.reason,picked);
   const own=stats[(picked||'').toLowerCase()]||{};
   const sot=safeNumber(own.shots_on),big=safeNumber(own.big_chances);
   const available=ten.valid&&five.valid&&picked!==null&&sot!==null&&big!==null;
@@ -91,7 +92,7 @@ const ruleText={
 '🧠':'Odd real antes da entrada + probabilidade calibrada + custos',
 '🟥':'Cartão vermelho confirmado pela fonte',
 '⏱️':'Minuto ≥70 e pressão 10min FORTE/CRÍTICA',
-'🥶':'Pressão 10min FRIA verificada',
+'🥶':'Queda real com 20min de leituras: pressão anterior ≥35, últimos 10min <22 e 5min <18',
 '🚨':'Pressão FORTE, P10 ≥70, P5 ≥65, chutes no alvo ≥3 e chances ≥1 do lado dominante'
 };
 function headToHead(g){
@@ -148,14 +149,14 @@ function instrument(g,detail){
    level:w.level,total_force:w.home_recent!==null&&w.away_recent!==null?w.home_recent+w.away_recent:null
  });
  const stats=detail.stats||{home:{},away:{}};
- const board=buildBoard(ten,five,stats,ev,end);
+ const board=buildBoard(ten,five,stats,ev,end,points);
  const markers=[],previous={},trigger={};
  // Apenas ativações calculadas a partir das amostras OBSERVADAS, como no
  // NEXUS original signal_timeline.py. Nunca usa estatística futura para voltar no tempo.
  const eligible=new Set(['🧨','🔥','⚡','⏱️','🥶']);
  for(let m=10;m<=minutes;m++){
    const t=pressureWindow(points,m,10),f=pressureWindow(points,m,5);
-   const prior=buildBoard(t,f,{home:{},away:{}},[],m);
+   const prior=buildBoard(t,f,{home:{},away:{}},[],m,points);
    for(const item of prior){
      if(!eligible.has(item.emoji))continue;
      const active=item.state==='active';
