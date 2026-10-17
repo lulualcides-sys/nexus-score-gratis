@@ -21,7 +21,7 @@ BR=timezone(timedelta(hours=-3))
 SCOUTS=('shots_on','shots_off','shots_total','corners','big_chances','dangerous_attacks',
         'possession','fouls','yellow_cards','red_cards','offsides','saves','passes',
         'pass_accuracy','xg')
-TYPES={'goal','yellow_card','red_card','penalty_missed','shot_on','shot_off','big_chance_missed'}
+TYPES={'goal','yellow_card','red_card','penalty_missed','shot_on','shot_off','big_chance_missed','substitution'}
 
 def load(path):
     try:
@@ -358,9 +358,15 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         try:minute=int(event.get('minute'))
         except (ValueError,TypeError):continue
         if not 0<=minute<=130:continue
-        events.append({'m':minute,'type':event['type'],
-                       'side':event.get('side') if event.get('side') in ('home','away') else '',
-                       'text':safe(event.get('text'),125)})
+        public_event={'m':minute,'type':event['type'],
+                      'side':event.get('side') if event.get('side') in ('home','away') else '',
+                      'text':safe(event.get('text'),125)}
+        if event['type']=='substitution' and public_event['side']:
+            incoming=safe(event.get('player_in'),80)
+            outgoing=safe(event.get('player_out'),80)
+            if not incoming or not outgoing:continue
+            public_event.update(player_in=incoming,player_out=outgoing)
+        events.append(public_event)
     signals=[]
     for item in row.get('paper_signals') or []:
         q=pregame_signal(item,f)
