@@ -2123,7 +2123,19 @@ async function loadList(view=state.view,{silent=false}={}){
 function renderEmpty(){$('#detail-panel').innerHTML='<div class="empty-detail"><div class="empty-orbit"><span>◈</span></div><h2>Inteligência da partida</h2><p>Escolha uma partida para visualizar termômetro, sumário dos lances e estatísticas.</p></div>'}
 async function chooseMatch(id){state.selection=id;state.pressureRange='all';state.matchTab='stats';state.scenarioPeriod='game';let stub=state.list.find(x=>x.id===id);if(stub?.phase==='scheduled'&&state.view!=='history'&&!state.demo&&!state.reference){state.matchTab='prelive';state.detail={...stub,stats:{home:{},away:{}},incidents:[]};const cached=state.preliveCache.get(id);state.prelive=cached&&Date.now()-cached.at<180000?cached.data:null;renderMatches();renderDetail();if(!state.prelive){try{const result=await api('/api/prelive/'+encodeURIComponent(id));state.preliveCache.set(id,{data:result,at:Date.now()});if(state.selection===id){state.prelive=result;renderDetailBody()}}catch(e){if(state.selection===id){state.prelive={available:false,reason:'Falha na coleta do histórico: '+e.message};renderDetailBody()}}}return}renderMatches();$('#detail-panel').innerHTML='<div class="loading">Abrindo '+esc(stub?.home||'partida')+'...<br><small>Consultando termômetro, incidentes e estatísticas.</small></div>';
 try{const d=await api(state.demo?'/api/demo/match/'+encodeURIComponent(id):state.reference?'/api/reference/match/'+encodeURIComponent(id):'/api/match/'+encodeURIComponent(id));if(state.selection!==id)return;observeGoalUpdates([d]);state.detail=d;state.detailsCache.set(String(id),{data:d,at:Date.now()});refreshVisibleListFromCache();renderMatches();renderDetail();maybeAlert(d)}catch(e){if(state.selection===id){$('#detail-panel').innerHTML=`<div class="empty-detail"><h2>Não foi possível carregar</h2><p>${esc(e.message)}</p><p>Esta competição pode não ter gráfico/estatísticas disponíveis.</p></div>`}}}
-function maybeAlert(d){if(state.demo||state.reference||!state.settings.alerts_enabled)return;const p=d.pressure;if(p?.score===null||p?.score===undefined||p.score<state.settings.threshold)return;const now=Date.now(),last=state.lastAlert.get(d.id)||0;if(now-last<180000)return;state.lastAlert.set(d.id,now);notify(`🔥 Atenção: pressão ${p.score}/100 em ${d.home} x ${d.away}. É intensidade ofensiva, não probabilidade de gol.`)}
+function maybeAlert(d){
+ if(state.demo||state.reference||!state.settings.alerts_enabled||d.phase!=='live')return;
+ const freshness=NexusAudit.freshness(d),p=d.pressure;
+ if(!freshness.pressureFresh || p?.score==null || p.score<state.settings.threshold)return;
+ const v=window.NexusIara?.evaluate?.(d);
+ const now=Date.now(),last=state.lastAlert.get(d.id)||0;
+ if(now-last<300000)return;
+ const who=p.dominant==='HOME'?d.home:p.dominant==='AWAY'?d.away:'Pressão dividida';
+ const signal=v?.tags?.includes('ATENÇÃO A NOVO GOL')?'GOL PODE ESTAR PRÓXIMO': 'PRESSÃO FORTE · MONITORAMENTO';
+ state.lastAlert.set(d.id,now);
+ notify('🔥 '+signal+' · '+who+' · '+p.score+'/100 · pressão até '+freshness.lastPressureMinute+'′. '+
+   'Evidência recente do termômetro; odds/EV+ não estão implícitos neste alerta.','normal','NEXUS · '+d.home+' × '+d.away);
+}
 function renderDetail(){
   const d=state.detail;if(!d)return renderEmpty();
   const fav=state.favorites.has(d.id);
