@@ -246,7 +246,12 @@ function evaluate(d){
        (['shot_on','big_chance','goal'].includes(label)||/[⚽💣]/.test(label));
  });
  const strong=current?.strength==='forte';
- const corroborated=shots!==null&&shots>=3||big!==null&&big>=1||freshThreat;
+ // Scouts acumulados não comprovam que os chutes foram RECENTES.
+ // Para um alerta de gol próximo, exigir lance datado nos 10 min ou
+ // avanço real entre duas capturas, além da pressão vigente.
+ const evolutionSide=evolution?.changes?.some(t=>String(t).startsWith(names[contender]+':'))||false;
+ const corroborated=!!contender && (freshThreat || evolutionSide) &&
+   ((shots!==null&&shots>=1)||(big!==null&&big>=1)||freshThreat);
  if(stale||!current){
    next=evolution?
      'Houve crescimento ofensivo entre duas coletas, mas isso sozinho não permite estimar a chance de outro gol.':
