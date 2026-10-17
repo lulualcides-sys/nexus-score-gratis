@@ -179,7 +179,9 @@ function confrontation(d){
  return panel('NEXUS · Confronto completo','H2H + forma + gols',result,'nexus-comparison');
 }
 if(typeof window!=='undefined'){
- window.comparisonProjection56=(d)=>projection(d,d?.prelive);
+ // Preserva a comparação principal com pré-live CONGELADO e resultado;
+ // este acabamento usa nome distinto para não sobrescrevê-la.
+ window.comparisonProjectionLegacy=(d)=>projection(d,d?.prelive);
  window.preliveProjectionV5=(p,d)=>projection(d,p);
  window.headToHeadHTML=confrontation;
  window.NexusWebPolish={projection,confrontation};
