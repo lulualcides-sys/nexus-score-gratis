@@ -1,11 +1,14 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const NexusUpgrade=require('../web/nexus-v531.js');
 const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 const a=html.indexOf('window.PressureLab = (() => {');
 const b=html.indexOf('})();',a);
 assert.ok(a>=0 && b>a);
 const window={};
-const PressureLab=new Function('window',html.slice(a,b+5)+'\nreturn window.PressureLab;')(window);
+const PressureLab=new Function('window','NexusUpgrade',html.slice(a,b+5)+'\nreturn window.PressureLab;')(window,NexusUpgrade);
 const sample={home:'Al Kholood',away:'Al Qadsiah',phase:'live',live:true,
   status:'AO VIVO',minute:44,score:'0-3',stats:{home:{shots_on:0},away:{shots_on:1}},
   thermometer:{points:[{minute:4,value:-40},{minute:6,value:-25},{minute:7,value:20},{minute:10,value:-30}]},
@@ -39,7 +42,7 @@ const half=PressureLab.chart(sample,'all');
 assert.match(half,/90 POSIÇÕES/);
 assert.doesNotMatch(half,/45 POSIÇÕES/);
 const mobileWindow={innerWidth:390};
-const phoneLab=new Function('window',html.slice(a,b+5)+'\nreturn window.PressureLab;')(mobileWindow);
+const phoneLab=new Function('window','NexusUpgrade',html.slice(a,b+5)+'\nreturn window.PressureLab;')(mobileWindow,NexusUpgrade);
 const phone=phoneLab.chart(sample,'all');
 assert.match(phone,/mobile-periods/);
 assert.match(phone,/0′–30′/);
