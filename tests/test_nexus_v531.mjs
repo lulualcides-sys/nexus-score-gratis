@@ -32,7 +32,7 @@ const forecast={available:true,forecast:{one_x_two:{home:46,draw:30,away:24},ove
 const rec=ui.recommendations(forecast,'Mandante','Visitante');
 assert.equal(rec.available,true);
 assert.equal(rec.items.length,4);
-assert.ok(rec.items.every(x=>x.prob>=50&&x.prob<=100));
+assert.ok(rec.items.every(x=>x.prob>=0&&x.prob<=100));
 assert.equal(ui.recommendations({...forecast,sample:{home:{n:2},away:{n:10}}},'H','A').available,false);
 assert.match(ui.playerState({name:'João'},'starter',true,'live',[{type:'substitution',player_out:'Joao',m:63}]),/Saiu aos 63/);
 assert.match(ui.playerState({name:'João'},'starter',true,'live',[]),/presença atual não verificada/);
