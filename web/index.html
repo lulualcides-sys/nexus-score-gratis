@@ -753,7 +753,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     <button class="nav" data-view="cloud"><span class="nav-ico">☁</span> Coletas GitHub <span class="nav-count">NOVO</span></button>
     <button class="nav" data-view="intelligence"><span class="nav-ico">◈</span> NEXUS LAB 5.29 <span class="nav-count">NOVO</span></button>
     <div class="group-title space-above">FERRAMENTAS</div>
-    <button class="nav" id="open-scanner" data-view="live"><span class="nav-ico">⛭</span> Scanner por critérios</button>
+    <button class="nav" id="open-scanner" data-view="live" style="display:none" aria-hidden="true" tabindex="-1"><span class="nav-ico">⛭</span> Scanner por critérios</button>
     <button class="nav" data-view="legend"><span class="nav-ico">✳</span> Legenda de sinais</button>
     <button class="nav" data-view="settings"><span class="nav-ico">⚙</span> Configurações</button>
     <div class="sidebar-spacer"></div>
@@ -780,8 +780,8 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
             <div class="panel-heading"><div><h2><span class="accent-bar"></span> Partidas <span id="list-subtitle" class="soft">/ do dia</span></h2><p>Pressão por minuto · 12 indicadores · sumário · estatísticas</p></div><span id="list-count" class="count">0 JOGOS</span></div>
             <div class="agenda-days" role="group" aria-label="Agenda de jogos"><button type="button" class="agenda-day" data-day-offset="-1" aria-pressed="false">ONTEM <small id="agenda-day--1">—</small></button><button type="button" class="agenda-day active" data-day-offset="0" aria-pressed="true">HOJE <small id="agenda-day-0">—</small></button><button type="button" class="agenda-day" data-day-offset="1" aria-pressed="false">AMANHÃ <small id="agenda-day-1">—</small></button><button type="button" class="agenda-day" data-day-offset="2" aria-pressed="false">DEPOIS DE AMANHÃ <small id="agenda-day-2">—</small></button></div>
             <div class="today-shortcuts"><button type="button" class="secondary-btn" id="show-upcoming">◷ PRÓXIMOS DO DIA</button><button type="button" class="secondary-btn" id="show-all-today">TODOS OS JOGOS</button><span id="upcoming-count" class="soft"></span><button type="button" class="secondary-btn league-scope-button" id="league-scope-toggle" aria-pressed="false">Mostrar todas as ligas</button></div><div class="filter-row"><label class="search-wrap"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" placeholder="Buscar time ou competição..." autocomplete="off"/></label><select id="status-filter" aria-label="Filtro de jogos"><option value="all">Todos</option><option value="live">Ao vivo</option><option value="scheduled">Próximos do dia</option><option value="finished">Encerrados</option><option value="favorite">★ Favoritos</option></select></div>
-            <div class="advanced-head"><button id="advanced-toggle" class="secondary-btn" aria-expanded="true">⛭ FILTROS AVANÇADOS <span id="rule-count">0</span></button><span class="scan-meta" id="scan-summary">Use os critérios para encontrar jogos com estatísticas verificadas.</span></div>
-            <div id="advanced-filters" class="advanced-filters">
+            <label class="nexus-thermo-toggle"><input type="checkbox" id="only-thermometer"/> <span>🗺️ Somente jogos com termômetro real</span></label><div class="advanced-head" style="display:none" aria-hidden="true"><button id="advanced-toggle" class="secondary-btn" aria-expanded="true">⛭ FILTROS AVANÇADOS <span id="rule-count">0</span></button><span class="scan-meta" id="scan-summary">Use os critérios para encontrar jogos com estatísticas verificadas.</span></div>
+            <div id="advanced-filters" class="advanced-filters" style="display:none" aria-hidden="true">
               <div class="quick-filter-grid">
                 <label>CAMPEONATO <select id="league-filter"><option value="">Todos os campeonatos</option></select></label>
                 <label>PLACAR <select id="score-filter"><option value="any">Qualquer placar</option><option value="draw">Empatado</option><option value="home_lead">Mandante vence</option><option value="away_lead">Visitante vence</option><option value="zero_zero">0 x 0</option><option value="goals">Com gol(s)</option></select></label>
@@ -829,6 +829,17 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
   </main>
 </div>
 <div class="toast-stack" id="toasts" role="status" aria-live="polite"></div>
+<style>
+.nexus-thermo-toggle{display:flex;align-items:center;gap:9px;margin:10px 0 13px;padding:10px 13px;border:1px solid #5a8797;border-radius:9px;background:#eaf3f4;color:#16374d;font-size:12px;font-weight:800;cursor:pointer}
+.nexus-thermo-toggle input{width:18px;height:18px;accent-color:#187d86}
+.nexus-event-exponent{font-size:9px;font-weight:900;fill:#f9d58b;paint-order:stroke;stroke:#122639;stroke-width:2px;pointer-events:none}
+.nexus-v531-picks{margin-block:12px}
+.nexus-v531-pick{display:grid;grid-template-columns:25px 1fr auto;align-items:center;gap:10px;padding:10px 8px;border-bottom:1px solid #cad7d9}
+.nexus-v531-pick b{font-size:12px}.nexus-v531-pick small{display:block;margin-top:3px;font-size:10px;color:#718394}
+.nexus-v531-pick strong{font-size:15px;color:#197f79}.nexus-v531-rank{font-weight:900;color:#5f798c}
+.nexus-player-state{display:block;font-size:10px;color:#52767e;margin-top:4px}
+</style>
+<script src="./nexus-v531.js"></script>
 <script>
 /* NEXUS SCORE 5.29 — adaptador de leitura de snapshots para hospedagem estática.
    A interface vem do pacote ORIGINAL; o servidor Python original não é executado pelo Cloudflare Pages.
@@ -900,7 +911,8 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     add('🧠','VALUE + EV',false,false,'Sem odds verificadas e modelo calibrado, value real é indisponível','Probabilidade calibrada e odd pré-jogo');
     add('🟥','CARTÃO VERMELHO',events.some(e=>e.emoji==='🟥')||statMax('red_cards')>0,events.length>0||statHas('red_cards'),'Eventos e scouts reais registrados','Expulsão confirmada');
     add('⏱️','PRESSÃO APÓS 70',+g.minute>=70&&score>=75,!!points.length&&+g.minute>0,'Pressão no fim da partida','Minuto ≥70 sob pressão forte');
-    add('🥶','JOGO FRIO',score<30,!!points.length,'Termômetro 10 min','Pressão <30');
+    const cold=NexusUpgrade.coldAt(points,m);
+    add('🥶','JOGO FRIO',cold.active,cold.latest!==null,cold.reason,'Queda real de pressão: janela anterior ≥35; últimos 10 min <22; últimos 5 min <18');
     add('🚨','ALERTA CRUZADO',score>=70&&Math.abs(avg5)>=65&&statMax('shots_on')>=3&&statMax('big_chances')>=1,!!points.length&&statHas('shots_on')&&statHas('big_chances'),'Pressão + finalizações + chances claras confirmadas','Pressão ≥70, 5 min ≥65, SOT ≥3, chances ≥1');
     const timeSignals=[];
     const observed=new Map(points.map(p=>[p.minute,p.value]));
@@ -922,14 +934,14 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       else if(s10>=75)signal('🔥','Pressão forte',evidence);
       if(s10>=50&&Math.abs(a10)>=18)signal('⚡','Domínio ofensivo',evidence);
       if(minute>=70&&s10>=75)signal('⏱️','Pressão após 70',evidence);
-      if(s10<30&&minute%9===0)signal('🥶','Jogo frio',evidence);
+      if(NexusUpgrade.coldAt(points,minute).active&&!NexusUpgrade.coldAt(points,minute-3).active)signal('🥶','Queda de pressão',NexusUpgrade.coldAt(points,minute).reason);
     }
     const tl=[...timeSignals,...events.map(e=>({minute:e.minute,emoji:e.emoji,team:e.team,name:e.type,basis:'event',label:e.text,reason:e.text}))];
     const pre=makeForecast(g);
     const forecasts=pre?.forecast;
     const probs=forecasts?.one_x_two;
     return {...listing(g),score:g.score,minute:g.minute,stats,stats_source:g.source,
-      incidents:events,signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
+      incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
       lineups:asLineups(g),head_to_head:[],
       thermometer:{points},scout_pressure:{available:points.length>0,last_graph_minute:m,source:g.source,
         narrative:!points.length?'Sem termômetro real nesta partida': dominant==='HOME'?g.home+' apresenta maior intensidade na última janela observada.':dominant==='AWAY'?g.away+' apresenta maior intensidade na última janela observada.':'Intensidade equilibrada na janela observada.',
@@ -1371,7 +1383,8 @@ window.PressureLab = (() => {
         if(!eventsAt.has(key))eventsAt.set(key,[]);
         eventsAt.get(key).push(e);
       }
-      for(const sameMinute of eventsAt.values()){
+      for(const originalMinute of eventsAt.values()){
+        const sameMinute=NexusUpgrade.groupEvents(originalMinute);
         const first=sameMinute[0],minute=Number(first.minute),home=first.team==='HOME';
         const gap=12,position=x(minute-a),base=Math.max(7,Math.min(327-gap*(sameMinute.length-1),position-gap*(sameMinute.length-1)/2));
         sameMinute.forEach((e,offset)=>{
@@ -1380,7 +1393,8 @@ window.PressureLab = (() => {
             icon==='↗️'?'<circle r="3.4" fill="none" stroke="#22384a" stroke-width="1.4"/><path d="M-2,-2L2,2M2,-2L-2,2" stroke="#22384a" stroke-width="1.1"/>':
               '<text text-anchor="middle" font-size="11" y="4">'+h(icon)+'</text>';
           events+='<g class="mobile-event '+(home?'home':'away')+'" transform="translate('+xx.toFixed(1)+','+yy+')">'+glyph+
-            '<title>'+h(String(e.stamp||minute+'′'))+' · '+h(e.text||'Lance')+'</title></g>';
+            (e.count>1?'<text class="nexus-event-exponent" x="6" y="-5">'+NexusUpgrade.exponent(e.count)+'</text>':'')+
+            '<title>'+h(String(e.stamp||minute+'′'))+' · '+h(e.text||'Lance')+' · '+e.count+' ocorrência(s)</title></g>';
         });
       }
       const shadeStart=Math.max(a,Math.min(b,played));
@@ -1532,17 +1546,17 @@ window.PressureLab = (() => {
     const confirmed=(Array.isArray(d.incidents)?d.incidents:[]).filter(e=>eventGlyph[e.emoji] && ['HOME','AWAY'].includes(e.team) && Number.isInteger(Number(e.minute)) && Number(e.minute)>=eventFrom && Number(e.minute)<=150 && (scope==='all'||Number(e.minute)<=currentThrough) && !hiddenIcons.has(e.emoji));
     // Incidents: one compact marker, located strictly at confirmed minute/team.
     // Shots keep the agreed ● / ⊗ distinction and ● is larger.
-    const events=confirmed.filter(e=>axisEnd===90||Number(e.minute)<=axisEnd).map(e=>{
+    const events=NexusUpgrade.groupEvents(confirmed.filter(e=>axisEnd===90||Number(e.minute)<=axisEnd)).map(e=>{
       const m=Number(e.minute), top=e.team==='HOME';
       const shot=shotEmojis.has(String(e.emoji));
       const yy=shot?(top?14:258):(top?14:258);
       const xx=x(m)+(Number(e.added)>0&&m===90?Math.min(extraW-4,Number(e.added)*8):Number(e.added)>0&&m===45?Math.min(10,Number(e.added)*1.4):0);
       const info=`${h(e.stamp||`${m}'`)} · ${h(e.text||'Lance')} · ${h(top?d.home:d.away)}`;
       const type=String(e.emoji);
-      if(type==='🥅')return `<g class="scout-shot-event ${top?'home':'away'} shot-on" data-shot-kind="on" transform="translate(${xx.toFixed(1)},${yy})"><circle r="5.0"/><title>${info}</title></g>`;
-      if(type==='↗️')return `<g class="scout-shot-event ${top?'home':'away'} shot-off" data-shot-kind="off" transform="translate(${xx.toFixed(1)},${yy})"><circle r="3.6" class="shot-ring"/><path class="shot-cross" d="M-2,-2 L2,2 M2,-2 L-2,2"/><title>${info}</title></g>`;
+      if(type==='🥅')return `<g class="scout-shot-event ${top?'home':'away'} shot-on" data-shot-kind="on" transform="translate(${xx.toFixed(1)},${yy})"><circle r="5.0"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
+      if(type==='↗️')return `<g class="scout-shot-event ${top?'home':'away'} shot-off" data-shot-kind="off" transform="translate(${xx.toFixed(1)},${yy})"><circle r="3.6" class="shot-ring"/><path class="shot-cross" d="M-2,-2 L2,2 M2,-2 L-2,2"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
       const font=type==='❌🥅'?12:type==='⚽🅿️'?13:17;
-      return `<g class="scout-event compact ${top?'home':'away'} ${type==='🚩'?'scout-corner-top':''}" transform="translate(${xx.toFixed(1)},${yy})"><text text-anchor="middle" y="5" font-size="${font}">${h(type)}</text><title>${info}</title></g>`;
+      return `<g class="scout-event compact ${top?'home':'away'} ${type==='🚩'?'scout-corner-top':''}" transform="translate(${xx.toFixed(1)},${yy})"><text text-anchor="middle" y="5" font-size="${font}">${h(type)}</text>${e.count>1?`<text class="nexus-event-exponent" x="7" y="-5">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
     }).join('');
     // Events recognized only by the difference between two cumulative snapshots.
     // Their plotted x-coordinate is the minute they were OBSERVED, never the
@@ -1955,6 +1969,7 @@ function baseMatches(){
    if(filter==='finished'&&m.phase!=='finished')return false;
    if(filter==='scheduled'&&m.phase!=='scheduled')return false;
    if(filter==='favorite'&&!state.favorites.has(m.id))return false;
+   if($('#only-thermometer').checked&&!NexusUpgrade.hasThermometer(m,detailFor(m)))return false;
    if(query&&!`${m.home} ${m.away} ${m.league}`.toLocaleLowerCase('pt-BR').includes(query))return false;
    if(league&&m.league!==league)return false;
    if(!query && !league && !state.reference && !state.demo && state.view!=='history' && !state.showAllLeagues && state.list.some(g=>isPriorityLeague(g.league) && (filter!=='scheduled'||g.phase==='scheduled') && (filter!=='live'||g.live) && (filter!=='finished'||g.phase==='finished')) && !isPriorityLeague(m.league))return false;
@@ -2298,6 +2313,16 @@ function preliveExtrasHTML(p,d){
  <section class="projection-card"><div class="projection-heading"><h3>ESCALAÇÕES</h3><small>${esc(lu.status||'Ainda não anunciadas')}</small></div>
  <p class="prelive-muted">${esc(lu.source||'Fontes públicas')} · Mandante: ${esc((lu.home||[]).length)} jogadores · Visitante: ${esc((lu.away||[]).length)} jogadores. Confira a aba ELENCOS para ver os nomes disponíveis. Escalação provável não é escalação oficial.</p></section>`;
 }
+function fourPreliveSuggestions(p,d){
+ const r=NexusUpgrade.recommendations(p,d.home,d.away), lineup=p?.lineups||{};
+ const confirmed=['home_detail','away_detail'].filter(k=>lineup[k]?.official===true).length;
+ const status=confirmed===2?'Escalações confirmadas nos dois times':confirmed===1?'Somente uma escalação confirmada':'Escalações ainda sem confirmação dupla';
+ const list=r.available?r.items.map((item,i)=>'<div class="nexus-v531-pick"><span class="nexus-v531-rank">'+(i+1)+'</span><div><b>'+esc(item.market)+' · '+esc(item.label)+'</b><small>'+esc(item.basis)+'</small></div><strong>'+item.prob.toFixed(1)+'%</strong></div>').join(''):
+   '<p class="prelive-muted">'+esc(r.reason)+'</p>';
+ return '<section class="n6-panel nexus-v531-picks"><div class="n6-section-title"><h3>◉ Quatro cenários pré-live</h3><span>Modelo estatístico · não são apostas executadas</span></div>'+list+
+ '<p class="prelive-muted">'+esc(status)+'. '+esc(r.available?r.reason:'Sem quatro sugestões automáticas até o modelo obter dados suficientes.')+
+ ' A escalação é informativa e não altera as probabilidades do modelo sem calibração.</p></section>';
+}
 function preliveHTML(d){
  const p=state.prelive;
  const when=d.start_timestamp?new Date(Number(d.start_timestamp)*1000).toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'Horário não informado';
@@ -2354,7 +2379,7 @@ function preliveHTML(d){
  const support=`<section class="n6-panel n6-support"><div class="n6-section-title"><h3>⌁ Informações complementares</h3><span>Atualizadas automaticamente quando a fonte publicar</span></div><div class="n6-support-grid">${oddsBlock}${h2h.length?`<div class="n6-data-note"><b>Confrontos recentes</b>${h2h.slice(0,3).map(x=>`<span>${esc(x.date||'')} · ${esc(x.home)} ${esc(x.score)} ${esc(x.away)}</span>`).join('')}</div>`:`<div class="n6-data-note"><b>Confrontos diretos</b><span>Nenhum resultado encontrado nesta cobertura.</span></div>`}<div class="n6-data-note"><b>Escalações</b><span>${lineupCount?`${lineupCount} jogadores listados · ${esc(lineups.status||'verifique confirmação')}`:'Ainda não publicadas para esta partida. Escalação provável não é confirmação.'}</span></div></div></section>`;
  const errs=(p.errors||[]).filter(x=>typeof x==='string');
  const footer=`<div class="n6-method">Modelo próprio, sem garantia de acerto. ${esc(p.note||'Dados públicos variam por competição.')} ${errs.length?`<details><summary>Ver diagnóstico (${errs.length} fonte(s))</summary><p>${esc(errs.join(' | '))}</p></details>`:''}</div>`;
- return heading+strips+lead+form+forecastHTML+motivation+support+footer;
+ return heading+strips+lead+form+forecastHTML+fourPreliveSuggestions(p,d)+motivation+support+footer;
 }
 
 function tabBar(){
@@ -2416,25 +2441,25 @@ function headToHeadHTML(d){
  return `<section class="analysis-tab-card"><h3>CONFRONTO DIRETO · VITÓRIAS E EMPATES</h3>${report}${content}${summary.skipped?`<small class="h2h-footnote">${summary.skipped} registro(s) descartado(s) por identificação ou placar insuficiente.</small>`:''}</section>`;
 }
 function lineupsHTML(d){
- const lineup=d.lineups||{};
+ const lineup=d.prelive?.lineups?.home_detail||d.prelive?.lineups?.away_detail?d.prelive.lineups:(d.lineups||{});
  const side=(key,name)=>{
    const detail=lineup[key+'_detail']||{};
    const verified=detail.official===true,xi=Array.isArray(detail.xi)?detail.xi:[],
       bench=Array.isArray(detail.bench)?detail.bench:[],
       roster=Array.isArray(detail.roster)?detail.roster:[],
       legacy=Array.isArray(lineup[key])?lineup[key]:[];
-   const players=(label,list)=>
+   const players=(label,list,role)=>
      '<h4 class="nexus-lineup-section">'+esc(label)+'</h4>'+
      list.map(p=>'<div class="lineup-player"><b>'+esc(p.number||'–')+
-       '</b><span>'+esc(p.name||p.player||'Atleta')+'</span></div>').join('');
+       '</b><span>'+esc(p.name||p.player||'Atleta')+'<small class="nexus-player-state">'+esc(NexusUpgrade.playerState(p,role,verified,d.phase,d.events))+'</small></span></div>').join('');
    const state=xi.length?(verified?'CONFIRMADA':'PROVÁVEL'):'AGUARDANDO';
    const status=xi.length?' <span class="nexus-lineup-status '+(verified?'official':'pending')+'">'+
       state+'</span>':' <span class="nexus-lineup-status pending">SEM TITULARES CONFIRMADOS</span>';
    const content=xi.length?
-      players('Titulares · '+xi.length,xi)+(bench.length?players('Reservas · '+bench.length,bench):''):
+      players('Titulares · '+xi.length,xi,'starter')+(bench.length?players('Reservas · '+bench.length,bench,'bench'):''):
       (roster.length||legacy.length?
        '<p class="prelive-muted">Somente plantel geral; não representa a escalação da partida.</p>'+
-        players('Elenco informado',roster.length?roster:legacy):
+        players('Elenco informado',roster.length?roster:legacy,'roster'):
        '<p class="prelive-muted">Aguardando divulgação dos titulares pela fonte.</p>');
    return '<article class="lineup-side"><h3>'+esc(name)+status+'</h3>'+
     (detail.formation?'<p class="prelive-muted">Formação '+esc(detail.formation)+'</p>':'')+
@@ -2899,7 +2924,7 @@ async function loadCloud(){
  try{cloudData=await api('/api/github-collector');renderCloud();if($('#lab-total'))$('#lab-total').textContent=fmtV5(cloudJournalStats(cloudData.signal_journal).total);if(state.labTab==='alerts')renderLab()}
  catch(e){$('#cloud-results').textContent='Falha de sincronização: '+e.message;}
 }
-function connectUI(){setupAdvancedFilters();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';$('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
+function connectUI(){setupAdvancedFilters();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';$('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
 async function silentRefreshSelected(id){
  if(!id||state.selection!==id||state.demo||state.reference||state.view==='history')return;
  const game=state.list.find(x=>x.id===id);if(!game||game.phase==='scheduled')return;

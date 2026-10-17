@@ -36,6 +36,20 @@ class FotmobEventTests(unittest.TestCase):
         self.assertEqual([(e['minute'],e['type'],e['side']) for e in result],
                          [(32,'big_chance_missed','away'),(33,'shot_off','away')])
 
+    def test_verified_substitution_preserves_player_entering_and_leaving(self):
+        detail={'content':{'matchFacts':{'events':{'events':[
+            {'type':'Substitution','time':62,'isHome':True,
+             'swap':[{'name':'Jogador que entrou'},{'name':'Jogador que saiu'}]},
+            {'type':'Substitution','time':63,'isHome':False,'swap':[{'name':'Sem par'}]},
+        ]}}}}
+        events=fotmob_events(detail)
+        self.assertEqual(len(events),1)
+        self.assertEqual(events[0]['type'],'substitution')
+        self.assertEqual(events[0]['minute'],62)
+        self.assertEqual(events[0]['side'],'home')
+        self.assertEqual(events[0]['player_in'],'Jogador que entrou')
+        self.assertEqual(events[0]['player_out'],'Jogador que saiu')
+
     def test_no_data_never_generates_fake_events(self):
         self.assertEqual(fotmob_events({'content':{}}),[])
         self.assertEqual(fotmob_events({'content':{'shotmap':{'shots':[

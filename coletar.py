@@ -152,6 +152,23 @@ def fotmob_events(detail):
         if not isinstance(event,dict):continue
         typ=str(event.get('type') or '').lower().replace(' ','')
         card=str(event.get('card') or event.get('cardType') or '').lower()
+        if 'substitution' in typ:
+            swap=event.get('swap') or []
+            if isinstance(swap,list) and len(swap)>=2 and all(isinstance(v,dict) for v in swap[:2]):
+                # FotMob: primeiro entra, segundo sai; somente nomes efetivamente recebidos.
+                entered=str(swap[0].get('name') or '')[:80].strip()
+                exited=str(swap[1].get('name') or '')[:80].strip()
+                side='home' if event.get('isHome') is True else 'away' if event.get('isHome') is False else ''
+                raw_min=event.get('time')
+                if entered and exited and side:
+                    try: minute=int(raw_min)
+                    except (ValueError,TypeError): continue
+                    if 0<=minute<=130:
+                        label=entered+' ↔ '+exited
+                        found[(minute,'substitution',side,label)]={
+                            'minute':minute,'type':'substitution','side':side,'text':label,
+                            'player_in':entered,'player_out':exited}
+            continue
         if 'penalty' in typ and ('miss' in typ or 'saved' in typ):kind='penalty_missed'
         elif 'goal' in typ and 'disallow' not in typ:kind='goal'
         elif 'red' in typ or 'red' in card:kind='red_card'

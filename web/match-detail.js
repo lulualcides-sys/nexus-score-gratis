@@ -75,7 +75,8 @@
         '" style="--h:'+h.toFixed(2)+'%"></span>';
     }).join('');
     const used={};
-    const markerHTML=events.slice(0,130).map(e=>{
+    const compact=window.NexusUpgrade?.groupEvents ? window.NexusUpgrade.groupEvents(events.slice(0,130)) : events.slice(0,130);
+    const markerHTML=compact.map(e=>{
       const m=Math.max(0,Math.min(scale,Number(e.m)));
       const side=e.side==='home'?'home':e.side==='away'?'away':'unknown';
       const type=eventIcons[e.type]?e.type:'other';
@@ -85,7 +86,7 @@
       const label=(eventNames[e.type]||'Evento')+' · '+m+'′ · '+(e.text||'');
       return '<span class="md-event md-event-'+esc(type)+' md-side-'+side+
         '" style="left:'+(m/scale*100).toFixed(2)+'%;--stack:'+height+'px" title="'+esc(label)+
-        '" aria-label="'+esc(label)+'">'+(eventIcons[e.type]||'•')+'</span>';
+        '" aria-label="'+esc(label)+'">'+(eventIcons[e.type]||'•')+(e.count>1?'<sup>'+esc(window.NexusUpgrade.exponent(e.count))+'</sup>':'')+'</span>';
     }).join('');
     const ticks=[0,15,30,45,60,75,90];
     if(scale===135)ticks.push(105,120,135);
