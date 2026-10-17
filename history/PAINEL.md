@@ -2,144 +2,144 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T02:39:42.735746+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T03:39:37.732102+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-17 | Vancouver FC × HFX Wanderers FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Necaxa × Atlas | 0-1 | 57 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×3.0 |
-| 2026-10-17 | Atlante × Pumas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Tijuana × Puebla | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Atlético Tucumán × Rosario Central | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,00, Fora 2,50 |
+| 2026-10-17 | Banfield × Argentinos Juniors | 0-0 | 0 | Match Odds 1X2: Casa 4,10, Empate 3,45, Fora 1,91 |
+| 2026-10-17 | Vélez Sarsfield × Gimnasia (Mendoza) | 0-0 | 0 | Match Odds 1X2: Casa 1,74, Empate 3,65, Fora 4,70 |
+| 2026-10-17 | Platense × Lanús | 0-0 | 0 | Match Odds 1X2: Casa 2,75, Empate 2,95, Fora 2,80 |
+| 2026-10-17 | Independiente Rivadavia × Tigre | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,20, Fora 4,10 |
+| 2026-10-17 | Botafogo × Chapecoense | 0-0 | 0 | Match Odds 1X2: Casa 1,32, Empate 5,50, Fora 8,50 |
+| 2026-10-17 | Atlético-MG × Coritiba | 0-0 | 0 | Match Odds 1X2: Casa 1,57, Empate 4,10, Fora 5,50 |
+| 2026-10-17 | Athletico-PR × Palmeiras | 0-0 | 0 | Match Odds 1X2: Casa 2,85, Empate 3,45, Fora 2,40 |
+| 2026-10-17 | São Paulo × Vasco da Gama | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,45, Fora 3,45 |
+| 2026-10-17 | Ceará × Juventude | 0-0 | 0 | Match Odds 1X2: Casa 2,75, Empate 3,05, Fora 2,70 |
+| 2026-10-17 | América Mineiro × Operário PR | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,65, Fora 2,15 |
+| 2026-10-17 | Boyacá Chicó FC × Atlético Nacional | 0-0 | 0 | Match Odds 1X2: Casa 5,25, Empate 3,90, Fora 1,53 |
+| 2026-10-17 | Independiente Medellín × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Millonarios × Jaguares de Córdoba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Fulham × Hull City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Everton × Chelsea | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Newcastle United × Aston Villa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Manchester City × Ipswich Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Brentford × Liverpool | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Villarreal × Elche | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Valencia × Athletic Club | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Espanyol × Atlético Madrid | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Real Betis × Barcelona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Troyes × Lens | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Strasbourg × Paris Saint-Germain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Lille × Brest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | SV Elversberg × FC Augsburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Schalke 04 × Mainz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Werder Bremen × SC Paderborn 07 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Hamburg SV × VfB Stuttgart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | 1. FC Union Berlin × Borussia Dortmund | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Bayern Munich × RB Leipzig | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Venezia × Napoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | AS Roma × Genoa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Bologna × Internazionale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Philadelphia Union × Charlotte FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Minnesota United FC × St. Louis CITY SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | New York City FC × LAFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Red Bull New York × Toronto FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | New England Revolution × Chicago Fire FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Atlanta United FC × Inter Miami CF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Orlando City SC × D.C. United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Austin FC × Vancouver Whitecaps | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Houston Dynamo FC × FC Dallas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Sporting Kansas City × Real Salt Lake | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Seattle Sounders FC × CF Montréal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | San Jose Earthquakes × Nashville SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | LA Galaxy × San Diego FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Portland Timbers × Colorado Rapids | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Magallanes × San Luis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Cobreloa × Deportes Recoleta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Nõmme United × Nõmme JK Kalju | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Vancouver FC × HFX Wanderers FC | 1-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 6.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×1.0 |
+| 2026-10-17 | Atlético Ottawa × Forge FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Cavalry FC × Pacific FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Halifax Tides FC × Montréal Roses FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Rothes × Inverurie Loco Works | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Wick Academy × Formartine United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Buckie Thistle × Deveronvale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Forres Mechanics × Huntly | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Banks O'Dee × Clachnacuddin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Nairn County × Turriff United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Fraserburgh × Brora Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Keith × Invergordon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Chicó FC × Atlético Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Independiente Medellín × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Millonarios × CD Jaguares | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Necaxa × Atlas | 0-2 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 8.0×5.0, Escanteios: 9.0×6.0, Grandes chances: 2.0×3.0 |
+| 2026-10-17 | Atlante × Pumas | 0-0 | 14 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-17 | Tijuana × Puebla | 0-0 | 12 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-17 | Chivas × Tigres | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Santos Laguna × Querétaro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | León × CF América | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Toluca × Atlético de San Luis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Mačva Šabac × OFK Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Vojvodina × FK Radnički 1923 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Čukarički × FK Zemun | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Maccabi Petach Tikva × Maccabi Haifa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Hapoel Tel Aviv × Ironi Tiberias | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Maccabi Netanya × Hapoel Ironi Kiryat Shmona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Bnei Sakhnin × Hapoel Petah Tikva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Hapoel Haifa × Hapoel Ramat Gan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Albirex Niigata Ladies × AC Nagano Parceiro Ladies | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Albion Rovers × Troon Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Kilwinning Rangers × Dalbeattie Star | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Gretna FC 2008 × Johnstone Burgh | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Cumbernauld Colts × Newton Stewart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Clydebank × Beith Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Stirling University FC × Hill of Beath Hawthorn | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Tranent × Lochee United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Dunipace × Gala Fairydean Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Cowdenbeath × Bonnyrigg Rose | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Civil Service Strollers × East Stirlingshire | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Broxburn Athletic × Musselburgh Athletic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Bo'ness United × Brechin City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Berwick Rangers × Linlithgow Rose | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | FBC Melgar × Deportivo Garcilaso | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Alianza Lima × Atlético Grau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | ADC Juan Pablo II × Sport Boys | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Olimpia × 2 de Mayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Guaraní × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Auckland FC × Melbourne City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Macarthur FC × Perth Glory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Central Coast Mariners × Newcastle Jets | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Wellington Phoenix × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Sukhothai FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Chonburi FC × Prachuap FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Rayong FC × Uthai Thani FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Chiangmai United × Songkhla United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Nakhon Pathom × Nong Bua Pitchaya FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Muang Loei United × Kanchanaburi Power | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Police Tero FC × Kasetsart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Phrae United × Nakhon Ratchasima FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Deportivo La Guaira × Trujillanos FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Carabobo FC × Deportivo Táchira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Zamora FC × Anzoátegui FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Real Tomayapo × GV San José | 1-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 12.0×10.0, Escanteios: 3.0×3.0, Grandes chances: 7.0×1.0 |
+| 2026-10-17 | CDT Real Oruro × Aurora | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Universitario de Vinto × San Antonio Bulo Bulo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Blooming × Independiente Petrolero | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Burnley U21 × Aston Villa U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Liverpool U21 × Reading U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Boca Juniors × Talleres | 2-1 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
-| 2026-10-17 | Caracas FC × Santa Fe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Cruzeiro × LDU Quito | 2-1 | 0 | Chutes no alvo: 5.0×11.0, Chutes para fora: 8.0×7.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Nacional × Universidad de Chile | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 5.0×9.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-17 | Atlético Rafaela × Quilmes | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Gimnasia y Tiro × Atlanta | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Boston Legacy FC (W) × Racing Louisville (W) | 2-1 | 59 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 2.0×2.0 |
-| 2026-10-17 | Sport Recife × Fortaleza | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Carolina Ascent FC (W) × DC Power FC (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Sporting JAX (W) × Fort Lauderdale United FC (W) | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Correcaminos de la UAT × Dorados | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Atlético La Paz × Tlaxcala FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | San Francisco FC × CD Universitario | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Inter Santa Tecla × Municipal Limeno | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Miramar Rangers × Auckland City FC | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Wellington Olympic × Eastern Suburbs AFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-17 | Portland Timbers 2 × St. Louis City 2 | 1-0 | 0 | Chutes no alvo: 4.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-10-17 | Ventura County FC × Minnesota United 2 | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Defensa y Justicia × Instituto (Córdoba) | 0-1 | 0 | Chutes no alvo: 1.0×3.0; Match Odds 1X2: Casa 2,60, Empate 3,10, Fora 2,85 |
-| 2026-10-16 | Boca Juniors × Talleres (Córdoba) | 2-1 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 1,69, Empate 3,65, Fora 5,25 |
-| 2026-10-16 | Mirassol × Internacional | 2-0 | 0 | Chutes no alvo: 1.0×2.0; Match Odds 1X2: Casa 2,20, Empate 3,35, Fora 3,30 |
-| 2026-10-16 | Ponte Preta × Atlético Goianiense | 1-1 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 10,00, Empate 5,00, Fora 1,31 |
-| 2026-10-16 | Sport × Fortaleza | 0-2 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,40, Empate 3,35, Fora 2,90 |
-| 2026-10-16 | Deportivo × Levante | 1-1 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,10, Empate 3,45, Fora 3,55 |
-| 2026-10-16 | Le Mans × Toulouse | 0-3 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,95, Empate 3,60, Fora 2,30 |
-| 2026-10-16 | Eintracht Frankfurt × FC Cologne | 1-0 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 1,91, Empate 3,95, Fora 3,30 |
-| 2026-10-16 | Frosinone × Sassuolo | 4-2 | 0 | Chutes no alvo: 6.0×4.0; Match Odds 1X2: Casa 2,45, Empate 3,55, Fora 2,55 |
-| 2026-10-16 | Santiago Wanderers × Rangers | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Vancouver FC × HFX Wanderers FC | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Strathspey Thistle × Lossiemouth | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Deportes Quindío × Real Cartagena | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Boca Juniors de Cali × Atlético FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Necaxa × Atlas | 0-1 | 57 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×3.0 |
-| 2026-10-16 | FK Radnik Surdulica × Radnički Niš | 3-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 4.0×0.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Příbram × Třinec | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Karviná × Dukla Praha | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | FC Vlašim × Hanácká Slavia Kromeriz | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | SK Prostějov × Ústí nad Labem | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Baník Ostrava B × Slavia Prague B | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Opava × Vysočina Jihlava | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Celtic B × Caledonian Braves | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Sport Huancayo × Cusco FC | 2-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 9.0×1.0, Escanteios: 9.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Los Chankas × Asociación Deportiva Tarma | 2-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 5.0×2.0, Grandes chances: 2.0×0.0 |
-| 2026-10-16 | Recoleta × Rubio Ñú | 1-0 | 0 | Chutes no alvo: 1.0×7.0, Chutes para fora: 7.0×7.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×2.0 |
-| 2026-10-16 | Sydney FC × Western Sydney Wanderers FC | 0-0 | 88 | Chutes no alvo: 0.0×2.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×2.0 |
-| 2026-10-16 | Ayutthaya United FC × Lamphun Warrior | 0-2 | 89 | Chutes no alvo: 3.0×3.0, Chutes para fora: 1.0×7.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×2.0 |
-| 2026-10-16 | ABB × Real Potosí | 0-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Real Tomayapo × GV San José | 1-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 12.0×12.0, Escanteios: 3.0×3.0, Grandes chances: 7.0×1.0 |
-| 2026-10-16 | Everton U21 × Middlesbrough U21 | 2-1 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 2.0×4.0, Escanteios: 6.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Norwich City U21 × West Ham United U21 | 4-2 | 0 | Chutes no alvo: 10.0×4.0, Chutes para fora: 4.0×1.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Stoke City U21 × Chelsea U21 | 1-2 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×5.0, Grandes chances: 2.0×1.0 |
-| 2026-10-16 | Nottingham Forest U21 × Manchester United U21 | 3-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 2.0×3.0, Escanteios: 1.0×4.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | Boca Juniors × Talleres | 2-1 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Defensa y Justicia × Instituto | 0-1 | 82 | Chutes no alvo: 3.0×3.0, Chutes para fora: 11.0×3.0, Escanteios: 5.0×5.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Estudiantes × Flamengo | 0-0 | 90 | Chutes no alvo: 6.0×0.0, Chutes para fora: 9.0×4.0, Escanteios: 6.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | ZED FC × Azam FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Welwalo Adigrat University × Al Ahli Tripoli | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Breiðablik × Víkingur Reykjavík | 1-2 | 0 | Chutes no alvo: 2.0×6.0, Chutes para fora: 2.0×10.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | ÍBV Vestmannaeyjar × FH Hafnarfjörður | 3-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×4.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Al-Dhafra × United FC | 5-1 | 0 | Chutes no alvo: 7.0×4.0, Chutes para fora: 2.0×4.0, Escanteios: 3.0×7.0, Grandes chances: 4.0×2.0 |
-| 2026-10-16 | Baniyas × Al-Wasl | 0-2 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 9.0×1.0, Escanteios: 2.0×9.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | Deportivo Cuenca × Técnico Universitario | 2-1 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 9.0×8.0, Escanteios: 12.0×5.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | AZ Alkmaar × FC Utrecht | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Universitario Deportes × Palmeiras | 0-1 | 0 | Chutes no alvo: 1.0×9.0, Chutes para fora: 2.0×10.0, Escanteios: 2.0×12.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Club Bolivar × Olimpia | 2-2 | 0 | Chutes no alvo: 3.0×11.0, Chutes para fora: 3.0×7.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Cruzeiro × LDU Quito | 2-1 | 0 | Chutes no alvo: 5.0×12.0, Chutes para fora: 8.0×9.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Deportivo Cali × Libertad | 1-1 | 0 | Chutes no alvo: 0.0×6.0, Chutes para fora: 5.0×5.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Nacional × Universidad de Chile | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 5.0×11.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Atlanta United 2 × Connecticut United | 0-1 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 8.0×6.0, Escanteios: 7.0×3.0, Grandes chances: 3.0×3.0 |
-| 2026-10-16 | Bohemian FC × Waterford FC | 2-1 | 86 | Chutes no alvo: 6.0×4.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×2.0 |
-| 2026-10-16 | Drogheda United × Derry City | 2-0 | 85 | Chutes no alvo: 2.0×4.0, Chutes para fora: 0.0×11.0, Escanteios: 4.0×11.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Galway United FC × Shamrock Rovers | 2-0 | 86 | Chutes no alvo: 4.0×2.0, Chutes para fora: 2.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | St. Patrick's Athletic × Shelbourne | 1-2 | 73 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×1.0 |
-| 2026-10-16 | Finn Harps × Bray Wanderers | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Kerry FC × Cork City | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Longford Town × Athlone Town | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Treaty United × Cobh Ramblers | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Wexford FC × UCD | 2-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Mirassol × Internacional | 2-0 | 85 | Chutes no alvo: 5.0×3.0, Chutes para fora: 9.0×4.0, Escanteios: 5.0×1.0, Grandes chances: 2.0×0.0 |
-| 2026-10-16 | Bodø/Glimt (W) × Lyn Fotball (W) | 1-4 | 0 | Chutes no alvo: 1.0×2.0, Escanteios: 1.0×1.0 |
-| 2026-10-16 | Aalesund (W) × Røa (W) | 1-0 | 0 | Chutes no alvo: 5.0×2.0, Escanteios: 3.0×2.0 |
-| 2026-10-16 | Brommapojkarna × Djurgården | 0-2 | 40 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×1.0 |
-| 2026-10-16 | Atlético Rafaela × Quilmes | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Gimnasia y Tiro × Atlanta | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | IFK Stocksund × Enköping | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Lunds BK × Trelleborgs FF | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Boston Legacy FC (W) × Racing Louisville (W) | 2-1 | 59 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 2.0×2.0 |
-| 2026-10-16 | Supra du Québec × Inter Toronto FC | 3-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 9.0×0.0, Escanteios: 5.0×2.0, Grandes chances: 2.0×1.0 |
-| 2026-10-16 | Henan FC × Tianjin Jinmen Tiger | 0-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | Ponte Preta × Atlético-GO | 1-1 | 73 | Chutes no alvo: 3.0×3.0, Chutes para fora: 2.0×12.0, Escanteios: 1.0×14.0, Grandes chances: 2.0×2.0 |
-| 2026-10-16 | Sport Recife × Fortaleza | 0-2 | 90 | Chutes no alvo: 2.0×4.0, Chutes para fora: 8.0×4.0, Escanteios: 11.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-10-16 | Bunyodkor Tashkent × Sogdiana | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Kokand 1912 × Neftchi Fargona | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Surkhon-2011 × Xorazm | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | AC Horsens × Randers FC | 0-0 | 64 | Chutes no alvo: 2.0×1.0, Chutes para fora: 2.0×4.0, Escanteios: 1.0×6.0, Grandes chances: 0.0×3.0 |
-| 2026-10-16 | Frosinone × Sassuolo | 4-2 | 82 | Chutes no alvo: 10.0×5.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×2.0, Grandes chances: 5.0×2.0; Match Odds 1X2: Casa 2,45, Empate 3,60,  |
-| 2026-10-16 | Kolding IF × Vendsyssel FF | 2-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Aarhus Fremad × Esbjerg fB | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | HB Køge × AB | 2-3 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 0.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-10-16 | Rudeš × Rijeka | 1-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | SC Heerenveen × Excelsior | 4-0 | 73 | Chutes no alvo: 4.0×1.0, Chutes para fora: 6.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 2.0×0.0 |
-| 2026-10-16 | Ayr United × Partick Thistle | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Le Mans × Toulouse | 0-3 | 86 | Chutes no alvo: 1.0×4.0, Chutes para fora: 5.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 3,10, Empate 3,55, F |
-| 2026-10-16 | Annecy FC × Nancy | 1-2 | 76 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×7.0, Grandes chances: 1.0×3.0 |
-| 2026-10-16 | Grenoble × Boulogne | 0-2 | 68 | Chutes no alvo: 1.0×3.0, Chutes para fora: 4.0×5.0, Escanteios: 4.0×7.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Guingamp × Pau | 1-2 | 76 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-16 | Laval × Clermont Foot | 3-3 | 75 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 6.0×3.0, Grandes chances: 1.0×2.0 |
-| 2026-10-16 | Reims × Dijon | 4-2 | 75 | Chutes no alvo: 7.0×3.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 4.0×1.0 |
-| 2026-10-16 | Widzew Łódź × Wisła Kraków | 0-0 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 3.0×11.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×3.0 |
-| 2026-10-16 | Wieczysta Kraków × Raków Częstochowa | 1-2 | 45 | Chutes no alvo: 2.0×6.0, Chutes para fora: 7.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×1.0 |
-| 2026-10-16 | Hapoel Afula × Maccabi Herzliya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Kiryat Yam × SC Kafr Qasim | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Maccabi Kabilio Jaffa × Ironi Modiin | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Maccabi Ahi Nazareth × Hapoel Kfar Saba | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | FC Ashdod × Maccabi Kiryat Gat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | FC Den Bosch × TOP Oss | 2-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×5.0, Grandes chances: 2.0×4.0 |
-| 2026-10-16 | FC Eindhoven × Vitesse | 0-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-10-16 | Helmond Sport × NAC Breda | 0-2 | 0 | Chutes no alvo: 3.0×6.0, Chutes para fora: 1.0×2.0, Escanteios: 2.0×4.0, Grandes chances: 1.0×2.0 |
-| 2026-10-16 | VVV-Venlo × Jong AZ Alkmaar | 4-4 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 8.0×3.0, Escanteios: 6.0×2.0, Grandes chances: 4.0×4.0 |
-| 2026-10-16 | Aluminij × Olimpija Ljubljana | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Deportivo Saprissa × Sporting FC | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Burnley × Wolverhampton Wanderers | 1-2 | 67 | Chutes no alvo: 3.0×4.0, Chutes para fora: 6.0×7.0, Escanteios: 2.0×4.0, Grandes chances: 2.0×2.0 |
-| 2026-10-16 | Rapid Wien × Hartberg | 3-1 | 45 | Chutes no alvo: 4.0×2.0, Chutes para fora: 1.0×5.0, Escanteios: 0.0×4.0, Grandes chances: 3.0×0.0 |
-| 2026-10-16 | Larne × Coleraine | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-16 | Dinamo București × Botoșani | 2-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 10.0×2.0, Escanteios: 7.0×4.0, Grandes chances: 4.0×0.0 |
+| 2026-10-17 | Vélez Sarsfield × Gimnasia Mendoza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Club Atlético Platense × Lanús | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Atlético Tucumán × Rosario Central | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Independiente Rivadavia × Tigre | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Banfield × Argentinos Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Newcastle Jets × Perth Glory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Western Sydney Wanderers FC × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,30 +168,30 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2522 | **Jogos distintos:** 813 | **Resultados verificáveis:** 1280 | **Com gol:** 401 | **Sem gol:** 879 | **Taxa observada:** 31.3%.
-**Evolução da amostra:** 8 datas com coletas | 7 pendentes | 571 indeterminados | 664 incompletos.
+**Observações:** 2538 | **Jogos distintos:** 816 | **Resultados verificáveis:** 1286 | **Com gol:** 404 | **Sem gol:** 882 | **Taxa observada:** 31.4%.
+**Evolução da amostra:** 9 datas com coletas | 12 pendentes | 576 indeterminados | 664 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 448 | 289 | 95 | 194 | 32.9% |
-| 🟥 expulsao_confirmada | 493 | 228 | 70 | 158 | 30.7% |
-| ⚡ pressao_ofensiva_18 | 336 | 204 | 66 | 138 | 32.4% |
-| 🎯 chutes_no_alvo_5 | 424 | 193 | 53 | 140 | 27.5% |
-| 🚩 escanteios_6 | 330 | 135 | 37 | 98 | 27.4% |
-| 💣 grandes_chances_3 | 270 | 124 | 45 | 79 | 36.3% |
-| 🔥 pressao_forte_10min | 100 | 50 | 16 | 34 | 32.0% |
-| 🧨 pressao_total_5_10min | 65 | 34 | 11 | 23 | 32.4% |
+| 🥶 jogo_frio | 449 | 289 | 95 | 194 | 32.9% |
+| 🟥 expulsao_confirmada | 497 | 231 | 73 | 158 | 31.6% |
+| ⚡ pressao_ofensiva_18 | 337 | 204 | 66 | 138 | 32.4% |
+| 🎯 chutes_no_alvo_5 | 426 | 195 | 53 | 142 | 27.2% |
+| 🚩 escanteios_6 | 332 | 135 | 37 | 98 | 27.4% |
+| 💣 grandes_chances_3 | 273 | 125 | 45 | 80 | 36.0% |
+| 🔥 pressao_forte_10min | 101 | 50 | 16 | 34 | 32.0% |
+| 🧨 pressao_total_5_10min | 66 | 34 | 11 | 23 | 32.4% |
 | 🚨 alerta_cruzado_gol | 23 | 14 | 5 | 9 | 35.7% |
-| ⏱️ tensao_tardia_70 | 33 | 9 | 3 | 6 | 33.3% |
+| ⏱️ tensao_tardia_70 | 34 | 9 | 3 | 6 | 33.3% |
 
 ### Equipe
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 66 | 44 | 22 | 22 | 50.0% |
+| Equipe não definida | 67 | 44 | 22 | 22 | 50.0% |
 | FC Twente | 14 | 12 | 2 | 10 | 16.7% |
 | Manchester City | 13 | 12 | 7 | 5 | 58.3% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
@@ -239,12 +239,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ekstraklasa | 42 | 25 | 9 | 16 | 36.0% |
 | J. League | 33 | 25 | 9 | 16 | 36.0% |
 | Super Lig | 29 | 25 | 5 | 20 | 20.0% |
-| Liga MX | 48 | 24 | 11 | 13 | 45.8% |
+| Liga MX | 54 | 24 | 11 | 13 | 45.8% |
 | Championship | 60 | 23 | 9 | 14 | 39.1% |
 | LaLiga | 46 | 22 | 8 | 14 | 36.4% |
 | Ligue 1 | 44 | 22 | 11 | 11 | 50.0% |
 | Belgian Pro League | 40 | 22 | 9 | 13 | 40.9% |
-| Série B | 51 | 21 | 8 | 13 | 38.1% |
+| Série B | 52 | 21 | 8 | 13 | 38.1% |
 | Eliteserien | 43 | 21 | 2 | 19 | 9.5% |
 
 ### Faixa de minuto
@@ -253,22 +253,38 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 87 | 66 | 26 | 40 | 39.4% |
 | 16–30′ | 245 | 173 | 55 | 118 | 31.8% |
-| 31–45′ | 295 | 214 | 83 | 131 | 38.8% |
+| 31–45′ | 295 | 215 | 83 | 132 | 38.6% |
 | 46–60′ | 399 | 293 | 108 | 185 | 36.9% |
-| 61–75′ | 524 | 315 | 79 | 236 | 25.1% |
-| 76–90′ | 711 | 219 | 50 | 169 | 22.8% |
+| 61–75′ | 528 | 317 | 81 | 236 | 25.6% |
+| 76–90′ | 723 | 222 | 51 | 171 | 23.0% |
 | 91+′ | 261 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2522 | **Jogos monitorados:** 664 | **Ao vivo:** 19 | **Termômetros recentes:** 6.
+**Registros:** 2538 | **Jogos monitorados:** 1308 | **Ao vivo:** 20 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T02:39:56.169949+00:00 | Portland Timbers 2 × St. Louis City 2 | Portland Timbers 2 (37') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Sport Recife × Fortaleza | Equipe não definida (78') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Wellington Olympic × Eastern Suburbs AFC | Eastern Suburbs AFC (81') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Portland Timbers 2 × St. Louis City 2 | St. Louis City 2 (79') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Portland Timbers 2 × St. Louis City 2 | Portland Timbers 2 (79') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Ventura County FC × Minnesota United 2 | Minnesota United 2 (75') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:40:04.453154+00:00 | Ventura County FC × Minnesota United 2 | Ventura County FC (75') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T03:22:22.617840+00:00 | Wellington Olympic × Eastern Suburbs AFC | Eastern Suburbs AFC (63') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Necaxa (78') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Necaxa (78') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Necaxa (78') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Necaxa (78') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Necaxa (78') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Necaxa × Atlas | Atlas (78') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Gimnasia y Tiro × Atlanta | Atlanta (74') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Boston Legacy FC (W) × Racing Louisville (W) | Boston Legacy FC (W) (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-17T02:56:48.788499+00:00 | Boston Legacy FC (W) × Racing Louisville (W) | Racing Louisville (W) (78') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-17T02:39:56.169949+00:00 | Portland Timbers 2 × St. Louis City 2 | Portland Timbers 2 (37') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T01:50:18.897792+00:00 | Necaxa × Atlas | Atlas (36') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T01:50:18.897792+00:00 | Boca Juniors × Talleres | Boca Juniors (52') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T01:50:18.897792+00:00 | Boca Juniors × Talleres | Boca Juniors (52') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -352,27 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-16T20:28:08.641393+00:00 | Alcorcón × SD Huesca | SD Huesca (51') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-16T20:28:08.641393+00:00 | Chaves × CF Marialvas | CF Marialvas (64') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-16T20:00:07.303451+00:00 | Breiðablik × Víkingur Reykjavík | Breiðablik (44') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Bohemian FC × Waterford FC | Bohemian FC (59') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Drogheda United × Derry City | Derry City (58') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Galway United FC × Shamrock Rovers | Shamrock Rovers (57') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Frosinone × Sassuolo | Frosinone (55') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Frosinone × Sassuolo | Frosinone (55') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Frosinone × Sassuolo | Frosinone (55') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Le Mans × Toulouse | Le Mans (58') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Hellas Verona × Catanzaro | Hellas Verona (70') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Hellas Verona × Catanzaro | Hellas Verona (70') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Hellas Verona × Catanzaro | Hellas Verona (70') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Hellas Verona × Catanzaro | Hellas Verona (70') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Livorno × Grosseto | Grosseto (69') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T20:00:07.303451+00:00 | Livorno × Grosseto | Grosseto (69') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T19:39:31.369347+00:00 | Frosinone × Sassuolo | Frosinone (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-16T19:39:31.369347+00:00 | Breiðablik × Víkingur Reykjavík | Breiðablik (24') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-16T19:39:31.369347+00:00 | Hellas Verona × Catanzaro | Hellas Verona (50') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **63**.
-Novas cotacoes capturadas na ultima execucao: **0**.
+Jogos com odds registradas nos ultimos dias: **75**.
+Novas cotacoes capturadas na ultima execucao: **36**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
