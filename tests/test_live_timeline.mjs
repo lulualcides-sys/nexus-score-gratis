@@ -18,7 +18,7 @@ const sample={home:'Al Kholood',away:'Al Qadsiah',phase:'live',live:true,
 const live=PressureLab.render(sample,'all').replaceAll('&#39;',"'");
 assert.match(live,/HISTÓRIA DA PRESSÃO · 0–90'/);
 assert.match(live,/4\/44 minutos jogados com pressão/);
-assert.match(live,/44' de jogo · termômetro completo 0–90'/);
+assert.match(live,/44' de jogo · eixo de 90 minutos \(apenas leituras coletadas\)/);
 assert.match(live,/2 gols sem detalhes/);
 assert.match(live,/Última medição de pressão no minuto 10'/);
 assert.match(live,/SEM LEITURA RECENTE/);
