@@ -15,7 +15,7 @@ HISTORY=HOME/'history'
 BR=timezone(timedelta(hours=-3))
 NOW=datetime.now(timezone.utc)
 DAY=NOW.astimezone(BR).date().isoformat()
-DEADLINE=time.monotonic()+73
+DEADLINE=time.monotonic()+(105 if os.getenv('NEXUS_MODE','').lower()=='live' else 82)
 LIVE_MODE=os.getenv('NEXUS_MODE','').lower()=='live'
 LEAGUES=('bra.1','bra.2','eng.1','esp.1','ita.1','ger.1','fra.1','arg.1','usa.1','col.1','uefa.champions','conmebol.libertadores')
 
@@ -288,11 +288,12 @@ def run():
         obs=old.get('observations') or []
         return str((obs[-1] or {}).get('at') or '') if obs else ''
     rotating=sorted(live,key=lambda g:(last_capture(g),-int(g.get('minute') or 0)))
-    chosen=rotating[:(10 if LIVE_MODE else 6)]
+    chosen=rotating[:(16 if LIVE_MODE else 8)]
     details_to_check=chosen+([] if LIVE_MODE else [
         g for g in extra if g['id'] not in {x['id'] for x in chosen}])
     status['live_detail_candidates']=len(live)
     status['live_detail_selected']=len(chosen)
+    status['coverage_policy']='Até 16 jogos vivos por rodada rápida, rodízio por última leitura; pressão somente se a fonte entregar'
     for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
