@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T07:39:07.180006+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T08:39:23.626955+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -112,7 +112,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-10-17 | Olimpia × 2 de Mayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Guaraní × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Auckland FC × Melbourne City FC | 3-1 | 87 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×7.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×1.0 |
-| 2026-10-17 | Macarthur FC × Perth Glory | 0-1 | 80 | Chutes no alvo: 0.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×2.0 |
+| 2026-10-17 | Macarthur FC × Perth Glory | 2-1 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-17 | Central Coast Mariners × Newcastle Jets | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Wellington Phoenix × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Sukhothai FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2598 | **Jogos distintos:** 831 | **Resultados verificáveis:** 1319 | **Com gol:** 415 | **Sem gol:** 904 | **Taxa observada:** 31.5%.
-**Evolução da amostra:** 9 datas com coletas | 12 pendentes | 583 indeterminados | 684 incompletos.
+**Observações:** 2605 | **Jogos distintos:** 831 | **Resultados verificáveis:** 1323 | **Com gol:** 416 | **Sem gol:** 907 | **Taxa observada:** 31.4%.
+**Evolução da amostra:** 9 datas com coletas | 8 pendentes | 584 indeterminados | 690 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 461 | 295 | 97 | 198 | 32.9% |
-| 🟥 expulsao_confirmada | 512 | 238 | 76 | 162 | 31.9% |
+| 🥶 jogo_frio | 462 | 295 | 97 | 198 | 32.9% |
+| 🟥 expulsao_confirmada | 515 | 240 | 76 | 164 | 31.7% |
 | ⚡ pressao_ofensiva_18 | 346 | 210 | 67 | 143 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 437 | 199 | 53 | 146 | 26.6% |
-| 🚩 escanteios_6 | 340 | 140 | 40 | 100 | 28.6% |
-| 💣 grandes_chances_3 | 276 | 128 | 45 | 83 | 35.2% |
+| 🎯 chutes_no_alvo_5 | 438 | 200 | 54 | 146 | 27.0% |
+| 🚩 escanteios_6 | 341 | 141 | 40 | 101 | 28.4% |
+| 💣 grandes_chances_3 | 277 | 128 | 45 | 83 | 35.2% |
 | 🔥 pressao_forte_10min | 102 | 51 | 17 | 34 | 33.3% |
 | 🧨 pressao_total_5_10min | 67 | 35 | 12 | 23 | 34.3% |
 | 🚨 alerta_cruzado_gol | 23 | 14 | 5 | 9 | 35.7% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 68 | 44 | 22 | 22 | 50.0% |
+| Equipe não definida | 69 | 44 | 22 | 22 | 50.0% |
 | FC Twente | 14 | 12 | 2 | 10 | 16.7% |
 | Manchester City | 13 | 12 | 7 | 5 | 58.3% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
@@ -225,8 +225,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 116 | 63 | 19 | 44 | 30.2% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga Profesional | 78 | 46 | 10 | 36 | 21.7% |
+| J. League | 73 | 45 | 18 | 27 | 40.0% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
-| J. League | 66 | 42 | 18 | 24 | 42.9% |
 | Super League | 72 | 39 | 9 | 30 | 23.1% |
 | Bundesliga | 60 | 34 | 8 | 26 | 23.5% |
 | Primera División | 51 | 34 | 8 | 26 | 23.5% |
@@ -253,26 +253,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 89 | 67 | 26 | 41 | 38.8% |
 | 16–30′ | 250 | 178 | 55 | 123 | 30.9% |
-| 31–45′ | 308 | 225 | 91 | 134 | 40.4% |
-| 46–60′ | 409 | 298 | 109 | 189 | 36.6% |
-| 61–75′ | 534 | 325 | 83 | 242 | 25.5% |
-| 76–90′ | 742 | 226 | 51 | 175 | 22.6% |
-| 91+′ | 266 | 0 | 0 | 0 | — |
+| 31–45′ | 308 | 226 | 91 | 135 | 40.3% |
+| 46–60′ | 411 | 300 | 109 | 191 | 36.3% |
+| 61–75′ | 535 | 325 | 83 | 242 | 25.5% |
+| 76–90′ | 745 | 227 | 52 | 175 | 22.9% |
+| 91+′ | 267 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2598 | **Jogos monitorados:** 1310 | **Ao vivo:** 22 | **Termômetros recentes:** 8.
+**Registros:** 2605 | **Jogos monitorados:** 1310 | **Ao vivo:** 29 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T07:39:35.004348+00:00 | Macarthur FC × Perth Glory | Perth Glory (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T07:39:35.004348+00:00 | Brisbane Roar FC × Central Coast Mariners | Central Coast Mariners (82') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-17T07:39:35.004348+00:00 | Brisbane Roar FC × Central Coast Mariners | Central Coast Mariners (82') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T07:39:35.004348+00:00 | Cerezo Osaka × Kawasaki Frontale | Cerezo Osaka (74') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-17T07:39:35.004348+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (36') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T08:39:44.934183+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (75') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T08:18:08.131357+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (54') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-17T08:18:08.131357+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (54') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-17T07:54:33.891601+00:00 | Cerezo Osaka × Kawasaki Frontale | Equipe não definida (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:54:33.891601+00:00 | Cerezo Osaka × Kawasaki Frontale | Kawasaki Frontale (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:54:33.891601+00:00 | Cerezo Osaka × Kawasaki Frontale | Cerezo Osaka (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:54:33.891601+00:00 | Kashima Antlers × V-Varen Nagasaki | V-Varen Nagasaki (92') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:39:35.004348+00:00 | Macarthur FC × Perth Glory | Perth Glory (82') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-17T07:39:35.004348+00:00 | Brisbane Roar FC × Central Coast Mariners | Central Coast Mariners (82') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:39:35.004348+00:00 | Brisbane Roar FC × Central Coast Mariners | Central Coast Mariners (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T07:39:35.004348+00:00 | Cerezo Osaka × Kawasaki Frontale | Cerezo Osaka (74') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-17T07:39:35.004348+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (36') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T07:21:40.704254+00:00 | Macarthur FC × Perth Glory | Perth Glory (64') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T07:21:40.704254+00:00 | Brisbane Roar FC × Central Coast Mariners | Central Coast Mariners (64') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-17T07:21:40.704254+00:00 | Cerezo Osaka × Kawasaki Frontale | Cerezo Osaka (56') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -361,13 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-17T01:38:21.474789+00:00 | Atlético Rafaela × Quilmes | Atlético Rafaela (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-17T01:38:21.474789+00:00 | Boston Legacy FC (W) × Racing Louisville (W) | Racing Louisville (W) (33') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-17T01:38:21.474789+00:00 | Sport Recife × Fortaleza | Sport Recife (96') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T01:19:57.743571+00:00 | Sport Recife × Fortaleza | Sport Recife (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T01:19:57.743571+00:00 | Sport Recife × Fortaleza | Sport Recife (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-17T00:51:58.524796+00:00 | Mirassol × Internacional | Internacional (85') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T00:51:58.524796+00:00 | Sport × Fortaleza | Sport (48') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-17T00:51:58.524796+00:00 | Boca Juniors × Talleres | Talleres (23') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-17T00:51:58.524796+00:00 | Mirassol × Internacional | Mirassol (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-17T00:51:58.524796+00:00 | Sport Recife × Fortaleza | Sport Recife (50') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
