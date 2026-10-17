@@ -144,7 +144,7 @@ def espn_table(doc,league_id,code):
     children=doc.get('children') or []
     if not isinstance(children,list) or len(children)!=1:return None
     entries=(children[0].get('standings') or {}).get('entries') or []
-    if not isinstance(entries,list) or len(entries)!=20:return None
+    if not isinstance(entries,list) or not 8<=len(entries)<=24:return None
     rows=[]
     for idx,entry in enumerate(entries):
         if not isinstance(entry,dict):return None
@@ -167,11 +167,13 @@ def espn_table(doc,league_id,code):
         if not tid.isdigit() or not tname or any(v is None for v in (pts,played)):return None
         rows.append({'id':tid,'name':tname,'position':int(rank),'points':int(pts),
                      'played':int(played),'goal_diff':integer(value('pointDifferential','goalDifference'))})
-    if set(r['position'] for r in rows)!=set(range(1,21)):return None
-    if len({r['id'] for r in rows})!=20:return None
+    if set(r['position'] for r in rows)!=set(range(1,len(rows)+1)):return None
+    if len({r['id'] for r in rows})!=len(rows):return None
     rows.sort(key=lambda item:item['position'])
     return {'league_id':str(league_id),
-            'league':'Brasileirão Série A' if code=='bra.1' else 'Premier League',
+            'league':{'bra.1':'Brasileirão Série A','eng.1':'Premier League','arg.1':'Liga Profesional',
+                      'mex.1':'Liga MX','esp.1':'LaLiga','ger.1':'Bundesliga',
+                      'fra.1':'Ligue 1','ita.1':'Serie A'}.get(code,code),
             'season':str(season.get('displayName') or season.get('year') or '')[:26],
             'teams':rows,'updated_at':NOW.isoformat(),
             'source':'ESPN','join_rule':'Nome completo normalizado e único'}
@@ -194,7 +196,28 @@ def make_context(fixture,table):
             'note':'Urgência situacional pela tabela atual; não prova obrigação matemática de vencer. '
                    'A pontuação pode já refletir o jogo em andamento.'}
 
-def fetch_table(league_id):
+def espn_league_code(league_id, title):
+    """Mapeamento estrito de competições, jamais confundir 'Serie A' genérica."""
+    lid=str(league_id or '')
+    if lid=='268':return 'bra.1'
+    if lid=='47':return 'eng.1'
+    norm=normalized_name(title)
+    codes={
+        'liga profesional':'arg.1',
+        'liga mx':'mex.1',
+        'la liga':'esp.1',
+        'laliga':'esp.1',
+        'bundesliga':'ger.1',
+        'ligue 1':'fra.1',
+        'premier league':'eng.1',
+        'brasileirao serie a':'bra.1'
+    }
+    # "Serie A" pode ser Itália, Brasil ou outra liga. Sem país/ID é ambígua.
+    if norm=='serie a':return 'ita.1' if lid=='55' else None
+    return codes.get(norm)
+
+
+def fetch_table(league_id,league_name=''):
     param=urlencode({'id':league_id})
     for base in ('https://www.fotmob.com/api/data/leagues?','https://www.fotmob.com/api/leagues?'):
         try:
@@ -202,7 +225,7 @@ def fetch_table(league_id):
             table=league_table(d,league_id)
             if table:return table
         except Exception:continue
-    code={'268':'bra.1','47':'eng.1'}.get(str(league_id))
+    code=espn_league_code(league_id,league_name)
     if not code:return None
     for root in ('https://site.api.espn.com/apis/v2/sports/soccer/',
                  'https://site.web.api.espn.com/apis/v2/sports/soccer/'):
@@ -248,13 +271,21 @@ def run():
         attempted=attempts.get(lid) or ''
         return (0 if active==0 else 1, attempted,0 if lid in ('268','47') else 1,lid)
     chosen=sorted(stale,key=priority)[:MAX_LEAGUES]
+    name_by_lid={}
+    for lid in chosen:
+        for _,day,key in targets[lid]:
+            title=str(((docs.get(day) or {}).get('matches') or {}).get(key,{}).get('fixture',{}).get('league') or '')
+            if title:
+                name_by_lid[lid]=title
+                break
     for lid in chosen:attempts[lid]=NOW.isoformat()
     report={'updated_at':NOW.isoformat(),'leagues_found':len(candidates),
             'leagues_queried':len(chosen),'tables_received':0,
             'fixtures_enriched':0,'with_urgency':0,'by_source':{},
+            'espn_fallback_eligible':sum(espn_league_code(lid,name_by_lid.get(lid,'')) is not None for lid in chosen),
             'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
     with ThreadPoolExecutor(max_workers=8) as pool:
-        futures={pool.submit(fetch_table,lid):lid for lid in chosen}
+        futures={pool.submit(fetch_table,lid,name_by_lid.get(lid,'')):lid for lid in chosen}
         for done in as_completed(futures):
             result=done.result()
             if result:
