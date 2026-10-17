@@ -39,6 +39,8 @@ jobs:
         run: |
           python3 -m py_compile pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
           python3 -m unittest discover -s tests -v
+          node --check web/nexus-audit-v532.js
+          node tests/test_nexus_audit_v532.mjs
           node --check web/nexus-original-enrich.js
           node tests/test_original_enrich.mjs
           node tests/test_live_scout_history.mjs
