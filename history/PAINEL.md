@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T08:39:23.626955+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-17T09:38:35.380002+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **24**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -113,7 +113,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-17 | Guaraní × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Auckland FC × Melbourne City FC | 3-1 | 87 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×7.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×1.0 |
 | 2026-10-17 | Macarthur FC × Perth Glory | 2-1 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×2.0 |
-| 2026-10-17 | Central Coast Mariners × Newcastle Jets | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-17 | Central Coast Mariners × Newcastle Jets | 1-0 | 8 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-10-17 | Wellington Phoenix × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Sukhothai FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-17 | Chonburi FC × Prachuap FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 2605 | **Jogos distintos:** 831 | **Resultados verificáveis:** 1323 | **Com gol:** 416 | **Sem gol:** 907 | **Taxa observada:** 31.4%.
-**Evolução da amostra:** 9 datas com coletas | 8 pendentes | 584 indeterminados | 690 incompletos.
+**Observações:** 2610 | **Jogos distintos:** 832 | **Resultados verificáveis:** 1324 | **Com gol:** 416 | **Sem gol:** 908 | **Taxa observada:** 31.4%.
+**Evolução da amostra:** 9 datas com coletas | 7 pendentes | 585 indeterminados | 694 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,15 +177,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 462 | 295 | 97 | 198 | 32.9% |
-| 🟥 expulsao_confirmada | 515 | 240 | 76 | 164 | 31.7% |
-| ⚡ pressao_ofensiva_18 | 346 | 210 | 67 | 143 | 31.9% |
+| 🟥 expulsao_confirmada | 516 | 241 | 76 | 165 | 31.5% |
+| ⚡ pressao_ofensiva_18 | 347 | 210 | 67 | 143 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 438 | 200 | 54 | 146 | 27.0% |
 | 🚩 escanteios_6 | 341 | 141 | 40 | 101 | 28.4% |
 | 💣 grandes_chances_3 | 277 | 128 | 45 | 83 | 35.2% |
-| 🔥 pressao_forte_10min | 102 | 51 | 17 | 34 | 33.3% |
-| 🧨 pressao_total_5_10min | 67 | 35 | 12 | 23 | 34.3% |
+| 🔥 pressao_forte_10min | 103 | 51 | 17 | 34 | 33.3% |
+| 🧨 pressao_total_5_10min | 68 | 35 | 12 | 23 | 34.3% |
 | 🚨 alerta_cruzado_gol | 23 | 14 | 5 | 9 | 35.7% |
-| ⏱️ tensao_tardia_70 | 34 | 9 | 3 | 6 | 33.3% |
+| ⏱️ tensao_tardia_70 | 35 | 9 | 3 | 6 | 33.3% |
 
 ### Equipe
 
@@ -215,7 +215,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Brighton & Hove Albion | 6 | 6 | 5 | 1 | 83.3% |
 | Club Brugge NXT | 6 | 6 | 0 | 6 | 0.0% |
 | Córdoba | 6 | 6 | 0 | 6 | 0.0% |
-| Orlando City | 6 | 6 | 5 | 1 | 83.3% |
+| Mito Hollyhock | 6 | 6 | 2 | 4 | 33.3% |
 
 ### Campeonato
 
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 116 | 63 | 19 | 44 | 30.2% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga Profesional | 78 | 46 | 10 | 36 | 21.7% |
-| J. League | 73 | 45 | 18 | 27 | 40.0% |
+| J. League | 77 | 46 | 18 | 28 | 39.1% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Super League | 72 | 39 | 9 | 30 | 23.1% |
 | Bundesliga | 60 | 34 | 8 | 26 | 23.5% |
@@ -255,20 +255,25 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 250 | 178 | 55 | 123 | 30.9% |
 | 31–45′ | 308 | 226 | 91 | 135 | 40.3% |
 | 46–60′ | 411 | 300 | 109 | 191 | 36.3% |
-| 61–75′ | 535 | 325 | 83 | 242 | 25.5% |
-| 76–90′ | 745 | 227 | 52 | 175 | 22.9% |
+| 61–75′ | 535 | 326 | 83 | 243 | 25.5% |
+| 76–90′ | 750 | 227 | 52 | 175 | 22.9% |
 | 91+′ | 267 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 2605 | **Jogos monitorados:** 1310 | **Ao vivo:** 29 | **Termômetros recentes:** 7.
+**Registros:** 2610 | **Jogos monitorados:** 1310 | **Ao vivo:** 36 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-17T08:39:44.934183+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (75') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-17T09:10:40.809243+00:00 | Ulsan HD FC × Bucheon FC 1995 | Bucheon FC 1995 (76') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-17T08:49:22.455291+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (85') | 🔥 pressao_forte_10min · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T08:49:22.455291+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (85') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T08:49:22.455291+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (85') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T08:49:22.455291+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (85') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-17T08:39:44.934183+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (75') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-17T08:18:08.131357+00:00 | Mito Hollyhock × Urawa Red Diamonds | Urawa Red Diamonds (54') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T08:18:08.131357+00:00 | Mito Hollyhock × Urawa Red Diamonds | Mito Hollyhock (54') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T07:54:33.891601+00:00 | Cerezo Osaka × Kawasaki Frontale | Equipe não definida (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-17T01:38:21.474789+00:00 | Necaxa × Atlas | Atlas (36') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T01:38:21.474789+00:00 | Necaxa × Atlas | Atlas (36') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-17T01:38:21.474789+00:00 | Real Tomayapo × GV San José | Real Tomayapo (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-17T01:38:21.474789+00:00 | Real Tomayapo × GV San José | Real Tomayapo (78') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-17T01:38:21.474789+00:00 | Cruzeiro × LDU Quito | LDU Quito (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-17T01:38:21.474789+00:00 | Atlético Rafaela × Quilmes | Atlético Rafaela (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-17T01:38:21.474789+00:00 | Boston Legacy FC (W) × Racing Louisville (W) | Racing Louisville (W) (33') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-17T01:38:21.474789+00:00 | Sport Recife × Fortaleza | Sport Recife (96') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
