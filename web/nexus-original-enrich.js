@@ -189,6 +189,7 @@ function instrument(g,detail){
  const total=points.length;
  const sourcedetail=detail.scout_pressure||{};
  return {...detail,standings:g.standings||null,
+    pregame_baseline:g.pregame_baseline||null,
     stats_observed_at:g.stats_observed_at||detail.stats_observed_at||null,
     stats_source:g.stats_source||detail.stats_source||g.source||'Fonte pública',
     pressure_observed_at:g.pressure_observed_at||null,
@@ -216,6 +217,13 @@ function instrument(g,detail){
 const factorial=n=>{let v=1;for(let k=2;k<=n;k++)v*=k;return v};
 const pois=(n,l)=>Math.exp(-l)*Math.pow(l,n)/factorial(n);
 function forecast(g){
+ const frozen=g.pregame_baseline;
+ if(frozen?.forecast?.one_x_two && frozen?.captured_at){
+   return {available:true,forecast:frozen.forecast,sample:frozen.sample,
+     source:'Análise congelada antes da partida',frozen:true,
+     frozen_baseline:frozen,checked_at:frozen.captured_at,
+     note:'Quatro cenários históricos registrados antes do início; sem calibração e sem aposta executada.'};
+ }
  const h=g.form?.home||{},a=g.form?.away||{};
  const nh=safeNumber(h.available),na=safeNumber(a.available);
  if(nh===null||na===null||nh<5||na<5){
@@ -317,6 +325,7 @@ function verifiedPrelive(g,model){
  }
  const available=Object.keys(market).length===3;
  return {...model,lineups,head_to_head:headToHead(g),standings:g.standings||null,
+   frozen_baseline:g.pregame_baseline||null,
   odds:{available,phase:'pregame',markets:{'1x2':market},source:source||null,
    bookmaker:bookmaker||null,fetched_at:at||null,
    reason:available?'':'Nenhum trio 1X2 pré-jogo confirmado (mesma casa, fonte e coleta).'},
@@ -379,6 +388,7 @@ function labDashboard(doc){
    market:m.market,entries:m.entries,net_units:m.paper_pl_u
  }));
  return {version:'5.29 original · dados GitHub',updated_at:doc.exported_at,
+   pregame_archive:doc.pregame_archive||[],odds_collection_status:doc.odds_collection_status||{},
    observations:games.length,radar:signals,alerts:[...journal,...alerts],providers,quality,markets,
    backtest:{evaluated_fixtures:settled,total_net_units:pl,
      wins:paper.won||0,win_rate_pct:settled?round(paper.won/settled*100):null,

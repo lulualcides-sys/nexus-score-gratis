@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlencode
 
 from odds_capture import get as espn_get
-from pregame_refresh_quotes import append_quote, threeway_offers
+from pregame_refresh_quotes import append_quote, append_trio, threeway_offers
 
 LEAGUE_NAMES = (
     ('usl championship', 'usa.usl.1'),
@@ -143,7 +143,5 @@ def collect_odds(docs,candidates,now_ts,fetcher=espn_get):
                         status['errors'].append('ESPN odds '+str(linked['id'])+': '+str(err)[:85])
             if current is None:continue
             prices,bookmaker=current
-            for side,val in prices.items():
-                if append_quote(row,side,val,bookmaker,'ESPN',now_ts):
-                    status['quotes_added']+=1
+            status['quotes_added']+=append_trio(row,prices,bookmaker,'ESPN',now_ts)
     return status

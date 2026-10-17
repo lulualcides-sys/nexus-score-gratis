@@ -11,7 +11,7 @@ from datetime import datetime,timezone
 from urllib.parse import urlencode
 
 from espn_scoreboard_odds import normalized_team, parse_ts, plain
-from pregame_refresh_quotes import append_quote
+from pregame_refresh_quotes import append_quote, append_trio
 
 BASE='https://api.the-odds-api.com/v4'
 LEAGUES={
@@ -132,7 +132,6 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
             offer=threeway_from_event(event,now_ts)
             if not offer:continue
             prices,bookmaker=offer
-            for sel,price in prices.items():
-                status['quotes_added']+=int(append_quote(row,sel,price,bookmaker,'The Odds API',now_ts))
+            status['quotes_added']+=append_trio(row,prices,bookmaker,'The Odds API',now_ts)
     status['status']='checked' if not status['errors'] else 'partial'
     return status

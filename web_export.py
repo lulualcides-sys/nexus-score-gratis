@@ -209,6 +209,8 @@ def merge_verified_duplicates(rows):
             matched['head_to_head']=item['head_to_head']
         if not matched.get('standings') and item.get('standings'):
             matched['standings']=item['standings']
+        if not matched.get('pregame_baseline') and item.get('pregame_baseline'):
+            matched['pregame_baseline']=item['pregame_baseline']
         for side in ('home','away'):
             if (item.get('lineups') or {}).get(side) and not (matched.get('lineups') or {}).get(side):
                 matched.setdefault('lineups',{})[side]=item['lineups'][side]
@@ -308,6 +310,123 @@ def historical_h2h(row, cache, espn_cache=None):
             insert(prev.get('at'),prev.get('home'),prev.get('away'),
                    int(m.group(1)),int(m.group(2)),prev.get('competition'),prev.get('source') or 'FotMob')
     return sorted(found.values(),key=lambda x:x['at'],reverse=True)[:20]
+
+
+def public_baseline(row, fixture):
+    """Só dados esportivos congelados antes do início; não inventa histórico."""
+    original = row.get('pregame_baseline') or {}
+    if not isinstance(original, dict) or original.get('schema') != 1:
+        return None
+    start = kickoff_number(fixture.get('start_timestamp'))
+    try:
+        captured = datetime.fromisoformat(original['captured_at'].replace('Z', '+00:00'))
+        if not captured.tzinfo or not start or captured.timestamp() >= start:
+            return None
+    except (KeyError, TypeError, ValueError):
+        return None
+    f = original.get('forecast') or {}
+    p = f.get('one_x_two') or {}
+    if any(number(p.get(k)) is None for k in ('home', 'draw', 'away')):
+        return None
+    picks = []
+    for item in (original.get('indications') or [])[:4]:
+        if not isinstance(item, dict):
+            continue
+        value = number(item.get('probability'))
+        if value is None or not 0 <= value <= 100:
+            continue
+        picks.append({'market': safe(item.get('market'),30),
+                      'selection': safe(item.get('selection'),20),
+                      'probability': round(value,2)})
+    settlement = original.get('settlement') or {}
+    checks = []
+    for x in (settlement.get('checks') or [])[:4]:
+        if not isinstance(x, dict) or x.get('result') not in ('hit','miss'):
+            continue
+        checks.append({'market':safe(x.get('market'),30),
+                       'selection':safe(x.get('selection'),20),
+                       'result':x['result']})
+    o = original.get('odds') or {}
+    prices = o.get('prices') or {}
+    odds = None
+    try:
+        at = datetime.fromisoformat(str(o.get('captured_at','')).replace('Z','+00:00'))
+        if (at.tzinfo and at.timestamp()<start and all(
+                number(prices.get(k)) is not None and 1.01<number(prices[k])<1000
+                for k in ('home','draw','away'))):
+            odds = {'source':safe(o.get('source'),40),
+                    'bookmaker':safe(o.get('bookmaker'),55),
+                    'captured_at':at.isoformat(),
+                    'prices':{k:round(float(prices[k]),4)
+                              for k in ('home','draw','away')},
+                    'recent_at_check':o.get('recent_at_check') is True}
+    except (TypeError,ValueError):
+        pass
+    estimates = {}
+    if odds and odds.get('recent_at_check'):
+        for item in picks:
+            if item['market']=='1x2':
+                side = item['selection']
+                price = odds['prices'].get(side)
+                if price:
+                    estimates = {'market':'1x2','selection':side,'odd':price,
+                                 'ev_pct':round(item['probability']*price-100,2),
+                                 'classification':'theoretical_uncalibrated'}
+    samp = original.get('sample') or {}
+    samples = {side:{'n':int(number((samp.get(side) or {}).get('n')) or 0),
+                     'gf':number((samp.get(side) or {}).get('gf')),
+                     'ga':number((samp.get(side) or {}).get('ga'))}
+               for side in ('home','away')}
+    return {'captured_at':captured.isoformat(),
+            'model':safe(original.get('model'),100),
+            'model_status':'experimental_uncalibrated',
+            'forecast':{'one_x_two':{k:round(float(p[k]),2)
+                                   for k in ('home','draw','away')},
+                        'over_2_5_pct':number(f.get('over_2_5_pct')),
+                        'btts_yes_pct':number(f.get('btts_yes_pct')),
+                        'expected_goals':{
+                            k:number((f.get('expected_goals') or {}).get(k))
+                            for k in ('home','away')},
+                        'top_scores':(f.get('top_scores') or [])[:3]},
+            'sample':samples,'indications':picks,
+            'odds':odds,'model_ev':estimates or None,
+            'settlement':{'status':'finished','score':safe(settlement.get('score'),12),
+                          'hits':sum(x['result']=='hit' for x in checks),
+                          'count':len(checks),'checks':checks}
+                         if checks else None}
+
+
+def prelive_archive():
+    """Até 90 dias de avaliações esportivas já congeladas; sem dados privados."""
+    last = datetime.now(BR).date()
+    cutoff = last - timedelta(days=90)
+    entries = {}
+    for path in sorted(H.glob('20??-??-??.json')):
+        try:
+            day = datetime.strptime(path.stem,'%Y-%m-%d').date()
+        except ValueError:
+            continue
+        if day < cutoff:
+            continue
+        doc = load(path)
+        for row in (doc.get('matches') or {}).values():
+            if not isinstance(row,dict):
+                continue
+            f = row.get('fixture') or {}
+            baseline = public_baseline(row,f)
+            if not baseline:
+                continue
+            ident=safe(f.get('id'),90)
+            if not ident:
+                continue
+            entries[ident] = {'id':ident,'day':path.stem,
+                'home':safe(f.get('home')),'away':safe(f.get('away')),
+                'league':safe(f.get('league'),80),
+                'start_timestamp':f.get('start_timestamp'),
+                'phase':safe(f.get('phase'),15),
+                'score':safe(f.get('score'),12),
+                'pregame_baseline':baseline}
+    return sorted(entries.values(),key=lambda x:x['start_timestamp'] or 0,reverse=True)[:500]
 
 def public_row(row,day,team_cache=None,espn_cache=None):
     if not isinstance(row,dict):return None
@@ -427,6 +546,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'lineups':lineups,'odds':odds[:5],
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
+            'pregame_baseline':public_baseline(row,f),
             'outcomes':score_outcomes(safe(f.get('score'),12),f.get('phase'))}
 
 def paper_summary(rows):
@@ -596,6 +716,9 @@ def main():
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
+             'pregame_archive':prelive_archive(),
+             'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
+               for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
              'alerts':alerts_from(rows),'games':rows}

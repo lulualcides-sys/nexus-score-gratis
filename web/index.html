@@ -816,7 +816,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       </section>
       <section class="standalone-panel hidden nexus5-lab" id="intelligence-view">
         <div class="section-head"><div><h2>◈ NEXUS LAB 5.29 · RADAR INTELIGENTE</h2><p>Análise automática auditável, probabilidade experimental, alerta, avaliação histórica e integridade de dados. Sem odds fabricadas.</p></div><button id="lab-refresh" class="primary-btn">↻ Atualizar radar</button></div>
-        <div class="lab-nav" role="tablist"><button data-lab-tab="radar" class="chosen">◉ RADAR EV+</button><button data-lab-tab="live">⚡ LIVE</button><button data-lab-tab="backtest">▥ BACKTEST</button><button data-lab-tab="model">◈ MODELO</button><button data-lab-tab="quality">◷ QUALIDADE</button><button data-lab-tab="alerts">♧ ALERTAS / RESULTADOS</button><button data-lab-tab="archive">↻ 90 DIAS</button></div>
+        <div class="lab-nav" role="tablist"><button data-lab-tab="radar" class="chosen">◉ RADAR EV+</button><button data-lab-tab="pregame">▣ PRÉ-LIVE SALVO</button><button data-lab-tab="live">⚡ LIVE</button><button data-lab-tab="backtest">▥ BACKTEST</button><button data-lab-tab="model">◈ MODELO</button><button data-lab-tab="quality">◷ QUALIDADE</button><button data-lab-tab="alerts">♧ ALERTAS / RESULTADOS</button><button data-lab-tab="archive">↻ 90 DIAS</button></div>
         <div class="metric-grid lab-metrics"><div class="metric"><div class="metric-top">REGISTROS NA NUVEM</div><div class="metric-value" id="lab-total">—</div><div class="metric-foot">Alertas do histórico cloud · não são apostas</div></div><div class="metric"><div class="metric-top">OPORTUNIDADES EV+</div><div class="metric-value" id="lab-ev">—</div><div class="metric-foot">Somente odds atuais + modelo</div></div><div class="metric"><div class="metric-top">JOGOS AVALIADOS</div><div class="metric-value" id="lab-evaluated">—</div><div class="metric-foot">Entradas antes do jogo, liquidadas</div></div><div class="metric"><div class="metric-top">RESULTADO HISTÓRICO SIMULADO</div><div class="metric-value" id="lab-units">—</div><div class="metric-foot">Com odds observadas, sem execução</div></div></div>
         <div class="lab-panel" id="lab-content"><p>Buscando observações já coletadas...</p></div>
         <div class="lab-disclaimer" id="lab-disclaimer">Motor estatístico local experimental. EV teórico não garante retorno. Somente sinais com odd observada antes da partida poderão gerar resultado em unidades após o encerramento confirmado.</div>
@@ -839,7 +839,27 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 .nexus-v531-pick strong{font-size:15px;color:#197f79}.nexus-v531-rank{font-weight:900;color:#5f798c}
 .nexus-player-state{display:block;font-size:10px;color:#52767e;margin-top:4px}
 </style>
+<style>
+.nexus-audit-card{padding:15px;margin:12px 0;border:1px solid #3b7077;border-radius:12px;background:#142b35;color:#dceef4}
+.nexus-audit-card header{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nexus-audit-card h3{margin:0 0 6px;font-size:15px;color:#bff2ea}
+.nexus-audit-card small,.nexus-audit-meta{font-size:11px;color:#a8c3cf}
+.nexus-audit-status{border:1px solid #629299;border-radius:8px;padding:8px;font-weight:800;font-size:11px;color:#dcefc0}
+.nexus-audit-explain,.nexus-audit-finish{line-height:1.55;font-size:12px;margin:10px 0}
+.nexus-audit-finish{border-top:1px solid #395363;padding-top:10px}
+.nexus-audit-grid{display:grid;gap:5px}
+.nexus-audit-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;align-items:center;padding:9px;border-radius:6px;background:#1b3947}
+.nexus-audit-row b{font-size:12px}.nexus-audit-row span{font-size:11px}.nexus-audit-row strong{font-size:11px;white-space:nowrap}
+.nexus-audit-row .pass{color:#5de5a0}.nexus-audit-row .fail{color:#ff7f8c}.nexus-audit-row .pending{color:#f5ca82}
+.nexus-audit-fresh{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:10px 0;padding:11px;border-radius:8px;border:1px solid #69798a;background:#172735;color:#dce6ee;font-size:11px}
+.nexus-audit-fresh strong{color:#fac777}.nexus-fresh-ok strong{color:#81edac}.nexus-audit-fresh small{width:100%;opacity:.85}
+.nexus-audit-archive-row{border:1px solid #41616f;border-radius:7px;margin:7px 0;padding:9px}
+.nexus-audit-archive-row summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;align-items:center}
+.nexus-audit-archive-row summary small{opacity:.7;font-size:11px}
+@media(max-width:720px){.nexus-audit-row{grid-template-columns:1fr auto}.nexus-audit-row strong{grid-column:1/-1}.nexus-audit-archive-row summary{flex-wrap:wrap}}
+</style>
 <script src="./nexus-v531.js"></script>
+<script src="./nexus-audit-v532.js"></script>
 <script>
 /* NEXUS SCORE 5.29 — adaptador de leitura de snapshots para hospedagem estática.
    A interface vem do pacote ORIGINAL; o servidor Python original não é executado pelo Cloudflare Pages.
@@ -1749,7 +1769,7 @@ window.PressureLab = (() => {
     const gameMinute=Number(d.minute)||0, live=!['finished','ended','final','completed'].includes(String(d.phase||'').toLowerCase())&&(d.live===true||d.phase==='live');
     const axisEnd=live&&gameMinute>0&&gameMinute<=45?45:90;
     const pressureNote=outdated?`Última medição de pressão no minuto ${Math.floor(Number(last))}'; o jogo está no ${Math.floor(gameMinute)}'. Os minutos restantes estão sem dados, não com pressão zero.`:'';
-    const timelineDescription=live?`${Math.floor(gameMinute)}' de jogo · termômetro completo 0–90' · mandante acima / visitante abaixo`:
+    const timelineDescription=live?`${Math.floor(gameMinute)}' de jogo · eixo de 90 minutos (apenas leituras coletadas) · mandante acima / visitante abaixo`:
       d.phase==='scheduled'?`Pré-jogo · ainda sem minutos disputados · mandante acima / visitante abaixo`:
       `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
     return `<section class="match-block scout-main" id="section-thermometer">
@@ -2103,7 +2123,19 @@ async function loadList(view=state.view,{silent=false}={}){
 function renderEmpty(){$('#detail-panel').innerHTML='<div class="empty-detail"><div class="empty-orbit"><span>◈</span></div><h2>Inteligência da partida</h2><p>Escolha uma partida para visualizar termômetro, sumário dos lances e estatísticas.</p></div>'}
 async function chooseMatch(id){state.selection=id;state.pressureRange='all';state.matchTab='stats';state.scenarioPeriod='game';let stub=state.list.find(x=>x.id===id);if(stub?.phase==='scheduled'&&state.view!=='history'&&!state.demo&&!state.reference){state.matchTab='prelive';state.detail={...stub,stats:{home:{},away:{}},incidents:[]};const cached=state.preliveCache.get(id);state.prelive=cached&&Date.now()-cached.at<180000?cached.data:null;renderMatches();renderDetail();if(!state.prelive){try{const result=await api('/api/prelive/'+encodeURIComponent(id));state.preliveCache.set(id,{data:result,at:Date.now()});if(state.selection===id){state.prelive=result;renderDetailBody()}}catch(e){if(state.selection===id){state.prelive={available:false,reason:'Falha na coleta do histórico: '+e.message};renderDetailBody()}}}return}renderMatches();$('#detail-panel').innerHTML='<div class="loading">Abrindo '+esc(stub?.home||'partida')+'...<br><small>Consultando termômetro, incidentes e estatísticas.</small></div>';
 try{const d=await api(state.demo?'/api/demo/match/'+encodeURIComponent(id):state.reference?'/api/reference/match/'+encodeURIComponent(id):'/api/match/'+encodeURIComponent(id));if(state.selection!==id)return;observeGoalUpdates([d]);state.detail=d;state.detailsCache.set(String(id),{data:d,at:Date.now()});refreshVisibleListFromCache();renderMatches();renderDetail();maybeAlert(d)}catch(e){if(state.selection===id){$('#detail-panel').innerHTML=`<div class="empty-detail"><h2>Não foi possível carregar</h2><p>${esc(e.message)}</p><p>Esta competição pode não ter gráfico/estatísticas disponíveis.</p></div>`}}}
-function maybeAlert(d){if(state.demo||state.reference||!state.settings.alerts_enabled)return;const p=d.pressure;if(p?.score===null||p?.score===undefined||p.score<state.settings.threshold)return;const now=Date.now(),last=state.lastAlert.get(d.id)||0;if(now-last<180000)return;state.lastAlert.set(d.id,now);notify(`🔥 Atenção: pressão ${p.score}/100 em ${d.home} x ${d.away}. É intensidade ofensiva, não probabilidade de gol.`)}
+function maybeAlert(d){
+ if(state.demo||state.reference||!state.settings.alerts_enabled||d.phase!=='live')return;
+ const freshness=NexusAudit.freshness(d),p=d.pressure;
+ if(!freshness.pressureFresh || p?.score==null || p.score<state.settings.threshold)return;
+ const v=window.NexusIara?.evaluate?.(d);
+ const now=Date.now(),last=state.lastAlert.get(d.id)||0;
+ if(now-last<300000)return;
+ const who=p.dominant==='HOME'?d.home:p.dominant==='AWAY'?d.away:'Pressão dividida';
+ const signal=v?.tags?.includes('ATENÇÃO A NOVO GOL')?'GOL PODE ESTAR PRÓXIMO': 'PRESSÃO FORTE · MONITORAMENTO';
+ state.lastAlert.set(d.id,now);
+ notify('🔥 '+signal+' · '+who+' · '+p.score+'/100 · pressão até '+freshness.lastPressureMinute+'′. '+
+   'Evidência recente do termômetro; odds/EV+ não estão implícitos neste alerta.','normal','NEXUS · '+d.home+' × '+d.away);
+}
 function renderDetail(){
   const d=state.detail;if(!d)return renderEmpty();
   const fav=state.favorites.has(d.id);
@@ -2379,7 +2411,7 @@ function preliveHTML(d){
  const support=`<section class="n6-panel n6-support"><div class="n6-section-title"><h3>⌁ Informações complementares</h3><span>Atualizadas automaticamente quando a fonte publicar</span></div><div class="n6-support-grid">${oddsBlock}${h2h.length?`<div class="n6-data-note"><b>Confrontos recentes</b>${h2h.slice(0,3).map(x=>`<span>${esc(x.date||'')} · ${esc(x.home)} ${esc(x.score)} ${esc(x.away)}</span>`).join('')}</div>`:`<div class="n6-data-note"><b>Confrontos diretos</b><span>Nenhum resultado encontrado nesta cobertura.</span></div>`}<div class="n6-data-note"><b>Escalações</b><span>${lineupCount?`${lineupCount} jogadores listados · ${esc(lineups.status||'verifique confirmação')}`:'Ainda não publicadas para esta partida. Escalação provável não é confirmação.'}</span></div></div></section>`;
  const errs=(p.errors||[]).filter(x=>typeof x==='string');
  const footer=`<div class="n6-method">Modelo próprio, sem garantia de acerto. ${esc(p.note||'Dados públicos variam por competição.')} ${errs.length?`<details><summary>Ver diagnóstico (${errs.length} fonte(s))</summary><p>${esc(errs.join(' | '))}</p></details>`:''}</div>`;
- return heading+strips+lead+form+forecastHTML+fourPreliveSuggestions(p,d)+motivation+support+footer;
+ return heading+strips+lead+form+forecastHTML+fourPreliveSuggestions(p,d)+(p?.frozen_baseline?NexusAudit.report(p.frozen_baseline,d):'')+motivation+support+footer;
 }
 
 function tabBar(){
@@ -2503,6 +2535,8 @@ function renderDetailBody(){
  if(d.errors?.length)html+=`<div class="error-block">Cobertura parcial: ${esc(d.errors.join(' · '))}</div>`;
  if(d.stale||d.cache_note)html+=`<div class="error-block">${esc(d.cache_note||'Dado em cache; pode estar desatualizado.')}</div>`;
  if(!state.demo&&!state.reference){
+   html+=NexusAudit.freshnessHTML(d);
+   html+=NexusAudit.report(d.pregame_baseline,d);
    html+=(d.phase==='live'&&window.NexusIara?.render)?window.NexusIara.render(d):aiLiveHTML(d);
    html+=liveV5Card(d);
  }
@@ -2654,9 +2688,19 @@ async function loadIntelligence({silent=false}={}){
 function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)return;
  document.querySelectorAll('[data-lab-tab]').forEach(b=>b.classList.toggle('chosen',b.dataset.labTab===state.labTab));
  let html='';const b=data.backtest||{};
- if(state.labTab==='radar'){
+ if(state.labTab==='pregame'){
+   html=NexusAudit.archive(data.pregame_archive||[],200);
+ } else if(state.labTab==='radar'){
   const rows=(data.radar||[]).filter(r=>r.ev_pct>=state.labMinimum&&(!state.labFavorites||state.favorites.has(r.match_id)));
-  html=`<h3>Radar automático · entradas explícitas com EV+</h3><div class="lab-actions"><label>EV mínimo <select id="lab-ev-min"><option value="0" ${state.labMinimum===0?'selected':''}>≥ 0%</option><option value="3" ${state.labMinimum===3?'selected':''}>≥ 3%</option><option value="5" ${state.labMinimum===5?'selected':''}>≥ 5%</option><option value="10" ${state.labMinimum===10?'selected':''}>≥ 10%</option></select></label><label><input type="checkbox" id="lab-only-favs" ${state.labFavorites?'checked':''}/> Só favoritos</label><button id="lab-csv" class="secondary-btn">↓ Exportar registros</button></div><div class="n53-ev-explain"><b>Como interpretar EV+?</b><p>EV+ é a diferença teórica entre a probabilidade calculada pelo modelo e a odd observada. <strong>Ex.: probabilidade 25,8% × odd 6,00 − 1 = +54,8% EV</strong>. Isso NÃO significa 54,8% de chance de lucro. A estimativa depende da qualidade do modelo; nenhum lucro é realizado até haver resultado, e mesmo depois o resultado exibido é hipotético.</p></div><p class="lab-muted">Cada linha agora mostra a entrada sugerida de forma explícita. Exemplo: “${'Mandante vence'}”, “Empate”, “Over 2.5 gols” ou “Ambas marcam · SIM”.</p>${rows.length?rows.map(r=>`<article class="lab-row lab-row-opportunity"><div><strong>${esc(r.home)} × ${esc(r.away)}</strong><small>${esc(r.league||'')} · ${esc(r.odds_source||'')} · ${esc(r.odds_at||'')}</small><div class="lab-opportunity-text"><b>Entrada:</b> ${esc(marketLabel(r))}</div></div><div class="lab-row-numbers">${v5Chip('Odd '+fmtV5(r.odds))}${v5Chip('Prob. '+fmtV5(r.probability)+'%')}<b class="lab-ev-positive">EV+ ${fmtV5(r.ev_pct)}%</b></div></article>`).join(''):labEmpty('Nenhuma oportunidade com odd pública recente e probabilidade calculada. EV não é inventado.')}`;
+  const oddsHealth=data.odds_collection_status||{},independent=oddsHealth.the_odds_api||{},espn=oddsHealth.espn_fallback||{};
+  const blocked=(oddsHealth.errors||[]).some(x=>/403/.test(String(x)));
+  const health='<div class="nexus-audit-fresh nexus-fresh-late"><b>ODDS / FONTES</b>'+
+    '<span>ESPN: '+esc(espn.quotes_added??'—')+' preços nesta coleta · The Odds API: '+
+    esc(independent.status||'não configurada')+
+    (blocked?' · SofaScore: bloqueio HTTP 403':'')+
+    '. Sem cotação recente e modelo calibrado: apenas observação esportiva, NÃO há EV+ validado.</span></div>';
+
+  html=`<h3>Radar · EV matemático experimental, ainda NÃO comprovado</h3>${health}<div class="lab-actions"><label>EV mínimo <select id="lab-ev-min"><option value="0" ${state.labMinimum===0?'selected':''}>≥ 0%</option><option value="3" ${state.labMinimum===3?'selected':''}>≥ 3%</option><option value="5" ${state.labMinimum===5?'selected':''}>≥ 5%</option><option value="10" ${state.labMinimum===10?'selected':''}>≥ 10%</option></select></label><label><input type="checkbox" id="lab-only-favs" ${state.labFavorites?'checked':''}/> Só favoritos</label><button id="lab-csv" class="secondary-btn">↓ Exportar registros</button></div><div class="n53-ev-explain"><b>Como interpretar EV+?</b><p>EV+ é a diferença teórica entre a probabilidade calculada pelo modelo e a odd observada. <strong>Ex.: probabilidade 25,8% × odd 6,00 − 1 = +54,8% EV</strong>. Isso NÃO significa 54,8% de chance de lucro. A estimativa depende da qualidade do modelo; nenhum lucro é realizado até haver resultado, e mesmo depois o resultado exibido é hipotético.</p></div><p class="lab-muted">Cada linha agora mostra a entrada sugerida de forma explícita. Exemplo: “${'Mandante vence'}”, “Empate”, “Over 2.5 gols” ou “Ambas marcam · SIM”.</p>${rows.length?rows.map(r=>`<article class="lab-row lab-row-opportunity"><div><strong>${esc(r.home)} × ${esc(r.away)}</strong><small>${esc(r.league||'')} · ${esc(r.odds_source||'')} · ${esc(r.odds_at||'')}</small><div class="lab-opportunity-text"><b>Entrada:</b> ${esc(marketLabel(r))}</div></div><div class="lab-row-numbers">${v5Chip('Odd '+fmtV5(r.odds))}${v5Chip('Prob. '+fmtV5(r.probability)+'%')}<b class="lab-ev-positive">EV+ ${fmtV5(r.ev_pct)}%</b></div></article>`).join(''):labEmpty('Nenhuma oportunidade com odd pública recente e probabilidade calculada. EV não é inventado.')}`;
  } else if(state.labTab==='live'){
   const q=(data.quality||[]).filter(x=>x.momentum_samples>0).slice(0,30);
   html='<h3>Inteligência ao vivo · janelas de 5, 10 e 15 minutos</h3><p class="lab-muted">Selecione um jogo ao vivo para a leitura completa abaixo do termômetro. Aqui ficam os jogos que já tiveram amostras reais coletadas.</p>'+

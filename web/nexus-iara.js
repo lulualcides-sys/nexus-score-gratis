@@ -151,7 +151,13 @@ function evaluate(d){
  const live=phase==='live'||(d?.live===true&&phase!=='finished');
  const teamHome=name(d,'home'),teamAway=name(d,'away');
  const obs=points(d),last=obs.length?obs[obs.length-1].minute:0;
- const stale=last>0&&minute>0&&(minute-last)>8;
+ const sourceTime=Date.parse(String(d?.observed_at||''));
+ const sourceAge=Number.isFinite(sourceTime)?(Date.now()-sourceTime)/60000:null;
+ const measured=Date.parse(String(d?.pressure_observed_at||''));
+ const pressureAge=Number.isFinite(measured)?(Date.now()-measured)/60000:null;
+ const stale=(last>0&&minute>0&&(minute-last)>8)||
+    (sourceAge!==null&&sourceAge>12)||
+    (last>0&&pressureAge!==null&&pressureAge>12);
  const w5=windowPressure(obs,minute,5);
  const w10=windowPressure(obs,minute,10);
  const previous5=windowPressure(obs,Math.max(0,minute-5),5);
@@ -172,7 +178,8 @@ function evaluate(d){
  let intro='',next='',context='';
  if(stale){
    intro='A curva de pressão parou no '+last+"′, enquanto o jogo está no "+minute+
-       '′. Não é seguro afirmar quem pressiona agora com uma leitura antiga.';
+       '′. Não é seguro afirmar quem pressiona agora com uma leitura antiga.'+
+       (sourceAge!==null&&sourceAge>12?' O último snapshot tem '+Math.floor(sourceAge)+' minutos de atraso.':'');
    tags.push('CURVA ATRASADA');
  }else if(current){
    const side=current.dominant;
@@ -245,8 +252,9 @@ function evaluate(d){
      'Houve crescimento ofensivo entre duas coletas, mas isso sozinho não permite estimar a chance de outro gol.':
      'Sobre mais um gol: sem pressão recente confiável, a IARA não consegue apontar uma tendência atual.';
  }else if(contender&&strong&&corroborated){
-   next=names[contender]+' apresenta pressão forte com apoio de ações ofensivas confirmadas. O cenário merece atenção para uma nova chance de gol, mas não garante que a bola entre.';
+   next='ALERTA FORTE DE GOL: '+names[contender]+' está atacando com pressão intensa e finalizações/chances confirmadas. O gol parece mais próximo para este time, mas a leitura pode errar. Há cenário para uma nova chance de gol, sem garantia de que a bola entre.';
    tags.push('ATENÇÃO A NOVO GOL');
+   tags.push('ALERTA FORTE · PRESSÃO E SCOUTS');
  }else if(contender&&strong){
    next=names[contender]+' pressiona, mas faltam finalizações ou chances confirmadas para sustentar uma leitura de gol próximo.';
  }else if(current.strength==='baixa'){
@@ -266,7 +274,7 @@ function evaluate(d){
  if(fav&&score)evidence.push('Favorito pré-jogo: '+names[fav.side]+' (odds verificadas)');
  if(indicators.length)evidence.push('Indicadores ativos: '+indicators.slice(0,2).map(x=>String(x.emoji||x.name||'')).join(' '));
  if(motivation.available)evidence.push('Tabela '+motivation.source+': '+motivation.evidence.join(' · '));
- const method='Leitura por regras sobre dados públicos; coleta periódica, não transmissão segundo a segundo. Pressão não é probabilidade de gol nem EV+.';
+ const method='Leitura por regras sobre dados públicos; coleta periódica, não transmissão segundo a segundo. A IARA pode indicar que um gol parece próximo quando há evidência recente, mas a indicação pode falhar. Sem odds atuais e modelo calibrado não há EV+ verificado.';
  const commentary=(intro+context).trim();
  return {active:true,heading:'IARA · Visão ao vivo',minute,intro:commentary,next,
    tags:[...new Set(tags)].slice(0,3),confidence,
@@ -287,7 +295,18 @@ function render(d){
   v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
   safe(r.detail)+'</p>').join('')+
   '<small>Urgência esportiva situacional, não obrigação matemática.</small></div>':
-  '<div class="iara-context muted iara-compact"><b>🏆 Must Win</b><p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento.</p></div>';
+  '<div class="iara-context muted iara-compact"><b>🏆 Must Win · ainda NÃO confirmado</b>'+
+  '<p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento. Sem a tabela real, não é possível rotular necessidade de vitória.</p>'+
+  (function(){
+    const f=d.pregame_baseline?.sample||d.prelive?.sample||d.form||{};
+    const h=f.home||{},a=f.away||{};
+    const nH=num(h.n??h.available),nA=num(a.n??a.available);
+    const hF=num(h.gf??h.avg_goals_for),aF=num(a.gf??a.avg_goals_for);
+    if(nH===null||nA===null||nH<5||nA<5||hF===null||aF===null)return '';
+    return '<small>Contexto adicional (NÃO Must Win): últimos '+nH+' / '+nA+
+      ' jogos · média de gols feitos '+safe(d.home)+' '+hF.toFixed(2)+' × '+
+      safe(d.away)+' '+aF.toFixed(2)+'. Sem tabela não se conclui urgência.</small>';
+  })()+'</div>';
  const odds=v.value;
  const evCard=odds?'<div class="iara-ev"><b>📈 EV teórico · Match Odds</b><p>'+
    safe(odds.label)+' · odd '+odds.odds.toFixed(2)+' · modelo '+odds.prob.toFixed(1)+'% · EV '+
