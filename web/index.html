@@ -941,7 +941,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     const forecasts=pre?.forecast;
     const probs=forecasts?.one_x_two;
     return {...listing(g),score:g.score,minute:g.minute,stats,stats_source:g.source,
-      incidents:events,signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
+      incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
       lineups:asLineups(g),head_to_head:[],
       thermometer:{points},scout_pressure:{available:points.length>0,last_graph_minute:m,source:g.source,
         narrative:!points.length?'Sem termômetro real nesta partida': dominant==='HOME'?g.home+' apresenta maior intensidade na última janela observada.':dominant==='AWAY'?g.away+' apresenta maior intensidade na última janela observada.':'Intensidade equilibrada na janela observada.',
@@ -2441,7 +2441,7 @@ function headToHeadHTML(d){
  return `<section class="analysis-tab-card"><h3>CONFRONTO DIRETO · VITÓRIAS E EMPATES</h3>${report}${content}${summary.skipped?`<small class="h2h-footnote">${summary.skipped} registro(s) descartado(s) por identificação ou placar insuficiente.</small>`:''}</section>`;
 }
 function lineupsHTML(d){
- const lineup=d.lineups||{};
+ const lineup=d.prelive?.lineups?.home_detail||d.prelive?.lineups?.away_detail?d.prelive.lineups:(d.lineups||{});
  const side=(key,name)=>{
    const detail=lineup[key+'_detail']||{};
    const verified=detail.official===true,xi=Array.isArray(detail.xi)?detail.xi:[],
