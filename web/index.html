@@ -739,7 +739,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-iara.css">
 <link rel="stylesheet" href="./nexus-unit-pl.css">
 <link rel="stylesheet" href="./nexus-signal-evaluation.css">
-<link rel="stylesheet" href="./nexus-activity.css"/>
+
 </head>
 <body>
 <div class="shell">
@@ -860,6 +860,18 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 </style>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
+<style>
+.nexus-hot-match{color:#ffe7ae!important;border-color:#ce8e44!important;background:#54321e!important;font-weight:850;animation:nexusHotBorder 1.6s ease-in-out infinite}
+@keyframes nexusHotBorder{50%{box-shadow:0 0 13px #ffaa554b}}
+@media(prefers-reduced-motion:reduce){.nexus-hot-match{animation:none}}
+</style>
+<style>
+/* NEXUS 5.33: cartões 25% menores e alertas clicáveis */
+.nexus-clickable-alert{cursor:pointer;text-align:left;font:inherit;line-height:1.45;border:1px solid #e2a251;max-width:440px;min-height:72px;box-shadow:0 6px 30px #0008;}
+.nexus-clickable-alert:hover,.nexus-clickable-alert:focus-visible{outline:2px solid #fed883;transform:translateY(-1px)}
+.nexus-clickable-alert small{display:block;margin-top:6px;color:#ffd38a;font-size:11px;font-weight:850}
+</style>
+
 <script>
 /* NEXUS SCORE 5.29 — adaptador de leitura de snapshots para hospedagem estática.
    A interface vem do pacote ORIGINAL; o servidor Python original não é executado pelo Cloudflare Pages.
@@ -1411,7 +1423,7 @@ window.PressureLab = (() => {
           const xx=base+gap*offset,yy=home?11:128,icon=String(e.emoji);
           const glyph=icon==='🥅'?'<circle r="4.7" fill="#22384a"/>':
             icon==='↗️'?'<circle r="3.4" fill="none" stroke="#22384a" stroke-width="1.4"/><path d="M-2,-2L2,2M2,-2L-2,2" stroke="#22384a" stroke-width="1.1"/>':
-              '<text text-anchor="middle" font-size="11" y="4">'+h(icon)+'</text>';
+              '<text text-anchor="middle" font-size="'+(icon==='🟨'||icon==='🟥'?8.25:11)+'" y="4">'+h(icon)+'</text>';
           events+='<g class="mobile-event '+(home?'home':'away')+'" transform="translate('+xx.toFixed(1)+','+yy+')">'+glyph+
             (e.count>1?'<text class="nexus-event-exponent" x="6" y="-5">'+NexusUpgrade.exponent(e.count)+'</text>':'')+
             '<title>'+h(String(e.stamp||minute+'′'))+' · '+h(e.text||'Lance')+' · '+e.count+' ocorrência(s)</title></g>';
@@ -1575,7 +1587,7 @@ window.PressureLab = (() => {
       const type=String(e.emoji);
       if(type==='🥅')return `<g class="scout-shot-event ${top?'home':'away'} shot-on" data-shot-kind="on" transform="translate(${xx.toFixed(1)},${yy})"><circle r="5.0"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
       if(type==='↗️')return `<g class="scout-shot-event ${top?'home':'away'} shot-off" data-shot-kind="off" transform="translate(${xx.toFixed(1)},${yy})"><circle r="3.6" class="shot-ring"/><path class="shot-cross" d="M-2,-2 L2,2 M2,-2 L-2,2"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
-      const font=type==='❌🥅'?12:type==='⚽🅿️'?13:17;
+      const font=type==='🟨'||type==='🟥'?12.75:type==='❌🥅'?12:type==='⚽🅿️'?13:17;
       return `<g class="scout-event compact ${top?'home':'away'} ${type==='🚩'?'scout-corner-top':''}" transform="translate(${xx.toFixed(1)},${yy})"><text text-anchor="middle" y="5" font-size="${font}">${h(type)}</text>${e.count>1?`<text class="nexus-event-exponent" x="7" y="-5">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
     }).join('');
     // Events recognized only by the difference between two cumulative snapshots.
@@ -1917,7 +1929,26 @@ function observeGoalUpdates(matches){
 }
 
 const STAT_LABELS=[['possession','Posse de bola','%'],['xg','Gols esperados (xG)',''],['total_shots','Finalizações',''],['shots_on','Chutes no alvo',''],['shots_off','Chutes para fora',''],['corners','Escanteios',''],['big_chances','Grandes chances',''],['touches_box','Toques na área adversária',''],['dangerous_attacks','Ataques perigosos',''],['attacks','Ataques',''],['red_cards','Expulsões','']];
-function notify(message,type='normal',title=''){const node=document.createElement('div');node.className='toast '+(type==='warn'?'warn':type==='ev'?'ev':'');const safeMessage=esc(message).replace(/\n/g,'<br>');const safeTitle=title?`<strong>${esc(title)}</strong>`:'';node.innerHTML=`${safeTitle}${safeTitle?'<span class="toast-gap"></span>':''}<span>${safeMessage}</span>`;$('#toasts').append(node);setTimeout(()=>node.remove(),8500)}
+function notify(message,type='normal',title='',matchId=null){
+ const clickable=typeof matchId==='string'&&matchId.length>0;
+ const node=document.createElement(clickable?'button':'div');
+ if(clickable)node.type='button';
+ node.className='toast '+(type==='warn'?'warn':type==='ev'?'ev':'')+(clickable?' nexus-clickable-alert':'');
+ const safeMessage=esc(message).replace(/\\n/g,'<br>');
+ const safeTitle=title?`<strong>${esc(title)}</strong>`:'';
+ node.innerHTML=`${safeTitle}${safeTitle?'<span class="toast-gap"></span>':''}<span>${safeMessage}</span>${clickable?'<small>ABRIR PARTIDA ↗</small>':''}`;
+ if(clickable)node.addEventListener('click',async()=>{
+   if(state.demo||state.reference)return;
+   if(state.view!=='live')await changeView('live');
+   if(!state.list.some(m=>m.id===matchId)){
+     notify('Partida não disponível na lista atual. Atualize os jogos.','warn');return;
+   }
+   await chooseMatch(matchId);
+   document.getElementById('detail-panel')?.scrollIntoView({behavior:'smooth',block:'start'});
+   node.remove();
+ });
+ $('#toasts').append(node);setTimeout(()=>node.remove(),clickable?22000:8500);
+}
 function notice(message){$('#notice-text').textContent=message;$('#notice').classList.remove('hidden')}
 function setSource(text,online){$('#source-label').textContent=text;$('#source-dot').className='status-dot '+(online?'online':'offline')}
 function clock(){try{$('#clock').textContent=new Intl.DateTimeFormat('pt-BR',{timeStyle:'short'}).format(new Date())}catch(_){}}
@@ -2048,12 +2079,14 @@ function renderMatches(){
    const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(a)}–${esc(b)}</span>`:''};
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
+   const hot=hotGameSignal(d);
+   const hotBadge=hot?'<span class="indicator nexus-hot-match" title="Pressão recente + ação ofensiva confirmada · clique no jogo">🔥 PRESSÃO FORTE · GOL PODE SAIR</span>':'';
    const rulebadge=state.rules.length||$('#dominance-filter').value!=='any'?`<span class="indicator ${status==='pass'?'matched-badge':'scan-badge'}">${status==='pass'?'✓ FILTROS OK':'? SEM SCAN / DADO'}</span>`:d?'<span class="indicator scan-badge">✓ ANALISADO</span>':'';
    const when=m.start_timestamp?new Date(Number(m.start_timestamp)*1000).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}):'';
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
    const oddsView=teamOddsChips(d||m,cachedPre||m);
    const listOdds=oddsView.available?`<div class="match-list-odds"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
-   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
+   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
  }).join('');
  if($('#match-list').innerHTML!==rowsHTML)$('#match-list').innerHTML=rowsHTML;
 }
@@ -2064,10 +2097,15 @@ function updateLeagues(){
  if([...sel.options].some(o=>o.value===before))sel.value=before;else sel.value='';
 }
 async function loadFavorites(){const d=await api('/api/favorites');state.favorites=new Set((d.favorites||[]).map(x=>x.match_id));updateIndicators()}
+let lastHotHydration=0;
 async function hydrateListDetails(){
- if(state.demo||state.reference||!['live','today','history','favorites'].includes(state.view))return;
+ if(state.demo||state.reference||!['live','today','favorites'].includes(state.view))return;
+ if(Date.now()-lastHotHydration<115000)return;
+ lastHotHydration=Date.now();
  const token=Date.now();state.listHydrationToken=token;
- const candidates=baseMatches().filter(m=>m.phase!=='scheduled'&&!detailFor(m)).slice(0,8);
+ const pool=[...baseMatches(),...state.list.filter(m=>m.live)];
+ const ids=new Set();
+ const candidates=pool.filter(m=>m.live&&!ids.has(m.id)&&(ids.add(m.id),true)&&!detailFor(m)).slice(0,16);
  for(const m of candidates){
   if(state.listHydrationToken!==token)return;
   try{
@@ -2075,6 +2113,7 @@ async function hydrateListDetails(){
    if(state.listHydrationToken!==token)return;
    state.detailsCache.set(String(m.id),{data:d,at:Date.now()});
    applyDetailToStub(m,d);refreshVisibleListFromCache();
+   maybeAlert(d);
    if(state.selection===m.id)state.detail=d;
    renderMatches();
    if(state.selection===m.id&&state.detail)renderDetail();
@@ -2117,25 +2156,36 @@ async function loadList(view=state.view,{silent=false}={}){
   state.loading=false;$('#refresh').disabled=false;renderMatches();
   if(state.selection&&!state.list.find(m=>m.id===state.selection)){state.selection=null;state.detail=null;renderEmpty();}
   if(!silent&&!state.selection&&(state.demo||state.reference||['live','today','history'].includes(state.view))){const first=filteredMatches()[0];if(first)chooseMatch(first.id);}
-  if(!silent)setTimeout(()=>hydrateListDetails(),120);
+  if(!silent||state.view==='live')setTimeout(()=>hydrateListDetails(),120);
  }
 }
 function renderEmpty(){$('#detail-panel').innerHTML='<div class="empty-detail"><div class="empty-orbit"><span>◈</span></div><h2>Inteligência da partida</h2><p>Escolha uma partida para visualizar termômetro, sumário dos lances e estatísticas.</p></div>'}
 async function chooseMatch(id){state.selection=id;state.pressureRange='all';state.matchTab='stats';state.scenarioPeriod='game';let stub=state.list.find(x=>x.id===id);if(stub?.phase==='scheduled'&&state.view!=='history'&&!state.demo&&!state.reference){state.matchTab='prelive';state.detail={...stub,stats:{home:{},away:{}},incidents:[]};const cached=state.preliveCache.get(id);state.prelive=cached&&Date.now()-cached.at<180000?cached.data:null;renderMatches();renderDetail();if(!state.prelive){try{const result=await api('/api/prelive/'+encodeURIComponent(id));state.preliveCache.set(id,{data:result,at:Date.now()});if(state.selection===id){state.prelive=result;renderDetailBody()}}catch(e){if(state.selection===id){state.prelive={available:false,reason:'Falha na coleta do histórico: '+e.message};renderDetailBody()}}}return}renderMatches();$('#detail-panel').innerHTML='<div class="loading">Abrindo '+esc(stub?.home||'partida')+'...<br><small>Consultando termômetro, incidentes e estatísticas.</small></div>';
 try{const d=await api(state.demo?'/api/demo/match/'+encodeURIComponent(id):state.reference?'/api/reference/match/'+encodeURIComponent(id):'/api/match/'+encodeURIComponent(id));if(state.selection!==id)return;observeGoalUpdates([d]);state.detail=d;state.detailsCache.set(String(id),{data:d,at:Date.now()});refreshVisibleListFromCache();renderMatches();renderDetail();maybeAlert(d)}catch(e){if(state.selection===id){$('#detail-panel').innerHTML=`<div class="empty-detail"><h2>Não foi possível carregar</h2><p>${esc(e.message)}</p><p>Esta competição pode não ter gráfico/estatísticas disponíveis.</p></div>`}}}
-function maybeAlert(d){
- if(state.demo||state.reference||!state.settings.alerts_enabled||d.phase!=='live')return;
+function hotGameSignal(d){
+ if(!d||d.phase!=='live'||state.demo||state.reference)return null;
  const freshness=NexusAudit.freshness(d),p=d.pressure;
- if(!freshness.pressureFresh || p?.score==null || p.score<state.settings.threshold)return;
- const v=window.NexusIara?.evaluate?.(d);
- const now=Date.now(),last=state.lastAlert.get(d.id)||0;
- if(now-last<300000)return;
- const who=p.dominant==='HOME'?d.home:p.dominant==='AWAY'?d.away:'Pressão dividida';
- const signal=v?.tags?.includes('ATENÇÃO A NOVO GOL')?'GOL PODE ESTAR PRÓXIMO': 'PRESSÃO FORTE · MONITORAMENTO';
- state.lastAlert.set(d.id,now);
- notify('🔥 '+signal+' · '+who+' · '+p.score+'/100 · pressão até '+freshness.lastPressureMinute+'′. '+
-   'Evidência recente do termômetro; odds/EV+ não estão implícitos neste alerta.','normal','NEXUS · '+d.home+' × '+d.away);
+ if(!freshness.pressureFresh||p?.score==null||p.score<state.settings.threshold)return null;
+ const reading=window.NexusIara?.evaluate?.(d);
+ if(!reading?.tags?.includes('ATENÇÃO A NOVO GOL'))return null;
+ return {freshness,reading,pressure:p};
 }
+function maybeAlert(d){
+ if(!state.settings.alerts_enabled)return;
+ const signal=hotGameSignal(d);
+ if(!signal)return;
+ const {freshness,reading,pressure:p}=signal;
+ const now=Date.now(),last=state.lastAlert.get(d.id)||0;
+ if(now-last<8*60000)return;
+ const who=p.dominant==='HOME'?d.home:p.dominant==='AWAY'?d.away:
+   reading.intro?.includes(d.away)?d.away:d.home;
+ const key=d.id;
+ state.lastAlert.set(key,now);
+ notify('🔥 '+who+' com pressão forte e ações ofensivas recentes. Minuto '+freshness.lastPressureMinute+
+   '′ confirmado. A IARA vê risco elevado de nova chance; gol NÃO é garantido. Toque para ver os dados.','normal',
+   '🔥 JOGO PEGANDO FOGO · '+d.home+' × '+d.away,key);
+}
+
 function renderDetail(){
   const d=state.detail;if(!d)return renderEmpty();
   const fav=state.favorites.has(d.id);
@@ -2523,7 +2573,7 @@ function renderDetailBody(){
     const p=state.prelive||{};
     const content=state.matchTab==='lineups'?lineupsHTML({...d,lineups:p.lineups}):
        state.matchTab==='headtohead'?headToHeadHTML({...d,head_to_head:p.head_to_head}):
-       state.matchTab==='projections'?preliveProjectionV5(p,d):
+       state.matchTab==='projections'?preliveProjectionV5(p,d)+(p.frozen_baseline?NexusAudit.report(p.frozen_baseline,d):''):
        state.matchTab==='stats'?'<section class="match-block"><h3>Estatísticas da partida</h3><p>O jogo não começou. Os scouts aparecerão quando a fonte publicar.</p></section>':
        preliveHTML(d)+preliveV5Card(p);
     const pre=tabBar()+`<div class="match-tab-content" role="tabpanel">`+content+'</div>';
@@ -2536,7 +2586,6 @@ function renderDetailBody(){
  if(d.stale||d.cache_note)html+=`<div class="error-block">${esc(d.cache_note||'Dado em cache; pode estar desatualizado.')}</div>`;
  if(!state.demo&&!state.reference){
    html+=NexusAudit.freshnessHTML(d);
-   html+=NexusAudit.report(d.pregame_baseline,d);
    html+=(d.phase==='live'&&window.NexusIara?.render)?window.NexusIara.render(d):aiLiveHTML(d);
    html+=liveV5Card(d);
  }
@@ -2549,7 +2598,7 @@ function renderDetailBody(){
  html+=tabBar()+`<div class="match-tab-content" role="tabpanel">`;
  switch(state.matchTab){
   case 'stats': html+=`<div class="analysis-bottom"><section class="match-block">${statHTML(d)}</section><section class="match-block">${summaryHTML(d)}</section></div>`;break;
-  case 'projections':html+=comparisonProjection56(d);break;
+  case 'projections':html+=NexusAudit.report(d.pregame_baseline,d)+comparisonProjection56(d);break;
   case 'headtohead':html+=headToHeadHTML(d);break;
   case 'lineups':html+=lineupsHTML(d);break;
   case 'indicators':html+=indicatorTiles(d);break;
@@ -2692,11 +2741,12 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
    html=NexusAudit.archive(data.pregame_archive||[],200);
  } else if(state.labTab==='radar'){
   const rows=(data.radar||[]).filter(r=>r.ev_pct>=state.labMinimum&&(!state.labFavorites||state.favorites.has(r.match_id)));
-  const oddsHealth=data.odds_collection_status||{},independent=oddsHealth.the_odds_api||{},espn=oddsHealth.espn_fallback||{};
+  const oddsHealth=data.odds_collection_status||{},independent=oddsHealth.the_odds_api||{},apiFootball=oddsHealth.api_football||{},espn=oddsHealth.espn_fallback||{};
   const blocked=(oddsHealth.errors||[]).some(x=>/403/.test(String(x)));
   const health='<div class="nexus-audit-fresh nexus-fresh-late"><b>ODDS / FONTES</b>'+
     '<span>ESPN: '+esc(espn.quotes_added??'—')+' preços nesta coleta · The Odds API: '+
     esc(independent.status||'não configurada')+
+    ' · API-Football: '+esc(apiFootball.status||'não configurada')+
     (blocked?' · SofaScore: bloqueio HTTP 403':'')+
     '. Sem cotação recente e modelo calibrado: apenas observação esportiva, NÃO há EV+ validado.</span></div>';
 
@@ -2814,6 +2864,15 @@ function comparisonProjection56(d){
  const homeRate=Number(expected.home),awayRate=Number(expected.away);
  const pre=forecastFromRates(homeRate,awayRate);
  if(!pre)return live||projectionsHTML(d);
+ // Apresentar exatamente os percentuais congelados antes do apito.
+ const saved=baseline.forecast||{},p=saved.one_x_two||{};
+ if(['home','draw','away'].every(k=>p[k]!=null&&Number.isFinite(Number(p[k])))){
+   pre.home=Number(p.home)/100;pre.draw=Number(p.draw)/100;pre.away=Number(p.away)/100;
+ }
+ if(saved.over_2_5_pct!=null&&Number.isFinite(Number(saved.over_2_5_pct)))pre.over25=Number(saved.over_2_5_pct)/100;
+ if(saved.btts_yes_pct!=null&&Number.isFinite(Number(saved.btts_yes_pct)))pre.btts=Number(saved.btts_yes_pct)/100;
+ if(Array.isArray(saved.top_scores)&&saved.top_scores.length)
+   pre.top=saved.top_scores.slice(0,5).filter(x=>x&&x.score).map(x=>({score:String(x.score),probability:Number(x.probability)/100}));
  const pc=x=>(x*100).toFixed(1).replace('.',',')+'%';
  const predicted=pre.home>=pre.draw&&pre.home>=pre.away?'home':pre.away>=pre.draw?'away':'draw';
  const actual=validScore?(hh>aa?'home':hh<aa?'away':'draw'):null;
@@ -2830,7 +2889,7 @@ function comparisonProjection56(d){
  ];
  const check=`<section class="n56-compare"><div class="n56-heading"><h3>🔎 O QUE A PREVISÃO ACERTOU?</h3><span>${finished&&validScore?'RESULTADO FINAL VERIFICADO':'EM ACOMPANHAMENTO'}</span></div><div class="n56-compare-grid">${tiles.map(t=>`<article class="${t[3]}"><small>${esc(t[0])}</small><strong>${esc(t[1])}</strong><span>${esc(t[2])}</span></article>`).join('')}</div>${validScore?`<p>Placar ${finished?'final':'atual'}: <strong>${esc(d.home)} ${hh} × ${aa} ${esc(d.away)}</strong>. Acertos são comparados ao resultado final; antes disso são apenas parciais.</p>`:''}</section>`;
  const preHead=`<div class="n56-heading"><h3>📌 PROJEÇÃO SALVA ANTES DO INÍCIO</h3><span>${esc(baseline.source||'Fonte histórica')} · ${esc(savedDate)}</span></div>`;
- const prePanel=forecastPanel53(pre,d.home,d.away,baseline.source||'Histórico verificado',`Captura pré-jogo: ${savedDate}. Amostras: ${baseline.sample_home} e ${baseline.sample_away}.`,false);
+ const prePanel=forecastPanel53(pre,d.home,d.away,baseline.source||'Histórico verificado',`Captura pré-jogo: ${savedDate}. Amostras: ${baseline.sample?.home?.n??'—'} e ${baseline.sample?.away?.n??'—'} partidas.`,false);
  const livePanel=live||`<section class="n56-compare"><div class="n56-heading"><h3>⚡ PROJEÇÃO AO VIVO</h3><span>${finished?'JOGO ENCERRADO':'SEM DADOS SUFICIENTES'}</span></div><p>${finished?'Partida encerrada. Não recalculamos probabilidade ao vivo após o apito final.':'Ainda não há xG, placar ou minutos suficientes para uma estimativa ao vivo. A previsão pré-jogo permanece visível acima.'}</p></section>`;
  return `<div class="n56-pregame-compare">${preHead}${prePanel}${check}<div class="n56-heading n56-live-heading"><h3>⚡ PROJEÇÃO ATUAL DA PARTIDA</h3><span>${finished?'ENCERRADO':'AO VIVO / EXPERIMENTAL'}</span></div>${livePanel}</div>`;
 }
@@ -2991,7 +3050,7 @@ async function init(){try{goalSoundEnabled=localStorage.getItem('nexusGoalSoundV
 init();
 
 </script>
-<script src="./nexus-activity.js"></script>
+
 <script src="./nexus-web-polish.js"></script>
 <script src="./nexus-iara.js"></script>
 <script src="./nexus-unit-pl.js"></script>

@@ -24,7 +24,7 @@ def new_quote(row,selection,value,bookmaker,source,when):
 
 
 
-def append_trio(row, prices, bookmaker, source, now_ts):
+def append_trio(row, prices, bookmaker, source, now_ts, source_ts=None):
     """Grava um pacote 1/X/2 atômico. Valores não alterados também compõem a foto.
 
     Rejeita pacotes parciais, apostas já iniciadas, odds falsas e
@@ -59,7 +59,11 @@ def append_trio(row, prices, bookmaker, source, now_ts):
     if last and all(float(last[-1][1][k])==float(prices[k])
                     for k in ('home','draw','away')):
         return 0
-    when=datetime.fromtimestamp(now_ts,timezone.utc).isoformat()
+    measured=now_ts if source_ts is None else source_ts
+    if (not isinstance(measured,(int,float)) or not math.isfinite(measured) or
+            measured>now_ts+120 or measured>=kickoff or measured<=0):
+        return 0
+    when=datetime.fromtimestamp(measured,timezone.utc).isoformat()
     if last and last[-1][0]==when:
         return 0
     for selection in ('home','draw','away'):

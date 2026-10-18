@@ -16,7 +16,7 @@ const base={
  thermometer:{points:pressure(21,35,58)},
  stats:{home:{shots_on:6,big_chances:2,corners:7,red_cards:0},
    away:{shots_on:1,big_chances:0,corners:2,red_cards:0}},
- incidents:[],indicator_board:[{emoji:'🔥',state:'active',team:'HOME'}]
+ incidents:[{minute:33,type:'shot_on',team:'HOME',emoji:'🥅',text:'Chute no alvo confirmado'}],indicator_board:[{emoji:'🔥',state:'active',team:'HOME'}]
 };
 let v=iara.evaluate(base);
 assert.equal(v.active,true);

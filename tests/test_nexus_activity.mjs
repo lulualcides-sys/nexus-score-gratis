@@ -26,6 +26,6 @@ const unsafe={activity_timeline:{basis:'confirmed_event_count',points:[
   {m:3,home:1,away:0,types:{shot_on:1,'<img src=x>':5}}
 ]}};
 assert.doesNotMatch(root.NexusActivity.renderActivity(unsafe),/<img src=x>/);
-assert.match(html,/src="\.\/nexus-activity\.js"/);
-assert.match(html,/href="\.\/nexus-activity\.css"/);
-console.log('NEXUS activity: eventos sem inferir pressao, compatibilidade web, markup OK');
+assert.doesNotMatch(html,/src="\.\/nexus-activity\.js"/);
+assert.doesNotMatch(html,/href="\.\/nexus-activity\.css"/);
+console.log('NEXUS: gráfico ofensivo desativado no site; módulo isolado preservado fora da interface OK');

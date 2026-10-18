@@ -1,5 +1,5 @@
 import unittest
-from standings_context import league_table, team_stakes, make_context
+from standings_context import league_table, team_stakes, make_context, espn_league_code, espn_table
 class MustWinTests(unittest.TestCase):
  def table(self):
   rows=[{'idx':i,'id':100+i,'name':'Time'+str(i),'played':25,'pts':50-i} for i in range(1,21)]
@@ -57,5 +57,24 @@ class MustWinTests(unittest.TestCase):
   self.assertEqual(make_context(fx,table)['home']['position'],1)
   self.assertIsNone(make_context({**fx,'away':'Time desconhecido'},table))
   self.assertIsNone(espn_table({**doc,'children':doc['children']*2},'268','bra.1'))
+
+
+ def test_espn_backup_accepts_18_club_leagues_but_not_groups(self):
+  entries=[{'team':{'id':str(i),'displayName':'Clube '+str(i)},
+            'stats':[{'name':'rank','value':i},{'name':'points','value':49-i},
+                     {'name':'gamesPlayed','value':25}]} for i in range(1,19)]
+  doc={'season':{'year':2026},'children':[{'standings':{'entries':entries}}]}
+  t=espn_table(doc,'77','mex.1')
+  self.assertIsNotNone(t)
+  self.assertEqual(len(t['teams']),18)
+  self.assertEqual(t['league'],'Liga MX')
+  self.assertIsNone(espn_table({**doc,'children':doc['children']*2},'77','mex.1'))
+
+ def test_espn_league_mapping_rejects_ambiguous_names(self):
+  self.assertEqual(espn_league_code('268','Brasileirão Série A'),'bra.1')
+  self.assertEqual(espn_league_code('239','Liga Profesional'),'arg.1')
+  self.assertEqual(espn_league_code('55','Serie A'),'ita.1')
+  self.assertIsNone(espn_league_code('99999','Serie A'))
+  self.assertIsNone(espn_league_code('99999','Primera Division'))
 
 if __name__=='__main__':unittest.main()
