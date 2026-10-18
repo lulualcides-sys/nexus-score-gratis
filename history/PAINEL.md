@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T06:46:21.837213+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T07:38:06.975695+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -72,11 +72,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 | 2026-10-18 | Hapoel Beer Sheva × Hapoel Jerusalem FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Kladno × Česká Lípa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Žižkov × FC Silon Táborsko | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Mynavi Sendai Ladies × INAC Kobe Leonessa | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Mynavi Sendai Ladies × INAC Kobe Leonessa | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Omiya Ardija Ventus × AS Elfen Saitama | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | JEF Ladies × Urawa Ladies | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Cerezo Osaka Sakai × Nojima Stella | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Sanfrecce Hiroshima Regina × NTV Tokyo Verdy Beleza | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Sanfrecce Hiroshima Regina × NTV Tokyo Verdy Beleza | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Aberdeen × Celtic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Glasgow City × Motherwell | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Heart of Midlothian × Partick Thistle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -115,7 +115,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 | 2026-10-18 | Estudiantes × San Lorenzo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Belgrano × River Plate | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Estudiantes de Río Cuarto × Aldosivi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Sydney FC × Adelaide United | 1-1 | 52 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×4.0, Escanteios: 5.0×3.0, Grandes chances: 2.0×0.0 |
+| 2026-10-18 | Sydney FC × Adelaide United | 2-2 | 80 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×6.0, Escanteios: 5.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-18 | Diarra × ASKO Kara | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Tusker FC × Singida Black Stars | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | The Panthers × USM Alger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3170 | **Jogos distintos:** 1046 | **Resultados verificáveis:** 1673 | **Com gol:** 551 | **Sem gol:** 1122 | **Taxa observada:** 32.9%.
-**Evolução da amostra:** 10 datas com coletas | 22 pendentes | 653 indeterminados | 822 incompletos.
+**Observações:** 3173 | **Jogos distintos:** 1047 | **Resultados verificáveis:** 1684 | **Com gol:** 558 | **Sem gol:** 1126 | **Taxa observada:** 33.1%.
+**Evolução da amostra:** 10 datas com coletas | 15 pendentes | 651 indeterminados | 823 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 569 | 378 | 132 | 246 | 34.9% |
-| 🟥 expulsao_confirmada | 592 | 273 | 84 | 189 | 30.8% |
-| ⚡ pressao_ofensiva_18 | 424 | 261 | 83 | 178 | 31.8% |
-| 🎯 chutes_no_alvo_5 | 536 | 253 | 75 | 178 | 29.6% |
-| 🚩 escanteios_6 | 427 | 192 | 66 | 126 | 34.4% |
-| 💣 grandes_chances_3 | 344 | 172 | 65 | 107 | 37.8% |
-| 🔥 pressao_forte_10min | 129 | 69 | 23 | 46 | 33.3% |
+| 🥶 jogo_frio | 570 | 380 | 133 | 247 | 35.0% |
+| 🟥 expulsao_confirmada | 592 | 275 | 86 | 189 | 31.3% |
+| ⚡ pressao_ofensiva_18 | 425 | 263 | 85 | 178 | 32.3% |
+| 🎯 chutes_no_alvo_5 | 536 | 255 | 76 | 179 | 29.8% |
+| 🚩 escanteios_6 | 427 | 193 | 66 | 127 | 34.2% |
+| 💣 grandes_chances_3 | 344 | 173 | 65 | 108 | 37.6% |
+| 🔥 pressao_forte_10min | 130 | 70 | 24 | 46 | 34.3% |
 | 🧨 pressao_total_5_10min | 78 | 43 | 14 | 29 | 32.6% |
 | 🚨 alerta_cruzado_gol | 27 | 18 | 5 | 13 | 27.8% |
 | ⏱️ tensao_tardia_70 | 44 | 14 | 4 | 10 | 28.6% |
@@ -225,8 +225,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 142 | 78 | 23 | 55 | 29.5% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
+| J. League | 88 | 55 | 22 | 33 | 40.0% |
 | Liga MX | 90 | 49 | 22 | 27 | 44.9% |
-| J. League | 85 | 49 | 20 | 29 | 40.8% |
 | Bundesliga | 82 | 46 | 11 | 35 | 23.9% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Primera División | 63 | 42 | 12 | 30 | 28.6% |
@@ -239,8 +239,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eredivisie | 55 | 30 | 10 | 20 | 33.3% |
 | Serie A | 53 | 30 | 6 | 24 | 20.0% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
+| Ekstraklasa | 48 | 29 | 11 | 18 | 37.9% |
 | Primera A | 40 | 29 | 10 | 19 | 34.5% |
-| Ekstraklasa | 48 | 28 | 10 | 18 | 35.7% |
 | League Two | 38 | 28 | 6 | 22 | 21.4% |
 | Championship | 64 | 27 | 11 | 16 | 40.7% |
 | LaLiga | 54 | 27 | 10 | 17 | 37.0% |
@@ -251,31 +251,34 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 96 | 72 | 29 | 43 | 40.3% |
+| 1–15′ | 98 | 74 | 31 | 43 | 41.9% |
 | 16–30′ | 272 | 197 | 64 | 133 | 32.5% |
-| 31–45′ | 384 | 285 | 119 | 166 | 41.8% |
-| 46–60′ | 519 | 387 | 131 | 256 | 33.9% |
-| 61–75′ | 694 | 454 | 136 | 318 | 30.0% |
-| 76–90′ | 880 | 278 | 72 | 206 | 25.9% |
+| 31–45′ | 385 | 286 | 120 | 166 | 42.0% |
+| 46–60′ | 519 | 390 | 134 | 256 | 34.4% |
+| 61–75′ | 694 | 455 | 137 | 318 | 30.1% |
+| 76–90′ | 880 | 282 | 72 | 210 | 25.5% |
 | 91+′ | 325 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3170 | **Jogos monitorados:** 1730 | **Ao vivo:** 33 | **Termômetros recentes:** 13.
+**Registros:** 3173 | **Jogos monitorados:** 1730 | **Ao vivo:** 27 | **Termômetros recentes:** 12.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T06:46:51.797961+00:00 | Sydney FC × Adelaide United | Adelaide United (53') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T06:46:51.797961+00:00 | Fagiano Okayama FC × Vissel Kobe | Fagiano Okayama FC (85') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Sydney FC × Adelaide United | Adelaide United (48') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Jeonbuk Hyundai Motors FC × Jeju SK | Jeonbuk Hyundai Motors FC (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T07:38:50.883036+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (35') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T07:15:00.027463+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (12') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T07:15:00.027463+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (12') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T06:46:51.797961+00:00 | Sydney FC × Adelaide United | Adelaide United (53') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T06:46:51.797961+00:00 | Fagiano Okayama FC × Vissel Kobe | Fagiano Okayama FC (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Sydney FC × Adelaide United | Adelaide United (48') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Jeonbuk Hyundai Motors FC × Jeju SK | Jeonbuk Hyundai Motors FC (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T06:41:02.999239+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (79') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-18T05:54:24.828825+00:00 | Fagiano Okayama FC × Vissel Kobe | Fagiano Okayama FC (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T05:29:08.446447+00:00 | Fagiano Okayama FC × Vissel Kobe | Vissel Kobe (27') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T05:05:25.272494+00:00 | Cruz Azul × FC Juárez | Cruz Azul (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T01:13:49.091060+00:00 | New England Revolution × Chicago Fire FC | Chicago Fire FC (75') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
