@@ -13,6 +13,9 @@ on:
       - "live_momentum.py"
       - "activity_timeline.py"
       - "web_export.py"
+      - "web/nexus-alert-center-v537.js"
+      - "web/nexus-market-quality-v538.js"
+      - "tests/test_nexus_triple_patch_v538.mjs"
       - "market_evidence.py"
       - "odds_fixture_bridge.py"
       - "signal_registry.py"
@@ -45,6 +48,9 @@ jobs:
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_audit_v532.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_classic_projections_v534.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_evidence_v535.mjs; fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_triple_patch_v538.mjs; fi
+          node --check web/nexus-alert-center-v537.js
+          node --check web/nexus-market-quality-v538.js
           node --check web/nexus-original-enrich.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_original_enrich.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_live_scout_history.mjs; fi
