@@ -3190,7 +3190,7 @@ function renderCloudSignalJournal(journal){
   e.basis==='confirmed_event'?'Evento confirmado':'Scout acumulado, não minuto do lance')+'</small></td>'+
   '<td>'+fmt(e,5)+'</td><td>'+fmt(e,10)+'</td><td>'+fmt(e,15)+'</td></tr>').join('');
  box.innerHTML=cloudJournalSummary(journal)+
-  (rows?'<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div>':
+  (rows?'<details class="nexus-audit-list-toggle nexus-journal-toggle"><summary>Mostrar / ocultar lista de alertas · '+Math.min(entries.length,60)+' registros</summary><div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div></details>':
    '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
 function renderCloud(){
