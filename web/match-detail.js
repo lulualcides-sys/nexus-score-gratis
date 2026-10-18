@@ -209,12 +209,21 @@
       }).join('');
       const missing= !leaders.goals?.name&&!leaders.assists?.name&&!star.player?'<p class="md-muted">Artilheiro, líder de assistências ou destaque não confirmados nesta coleta.</p>':'';
       const highlight=star.player?'<p class="md-muted">★ '+esc(star.label)+
-        ': '+esc(star.player)+'</p>':'';
+        ': '+esc(star.player)+(star.rating!=null&&Number.isFinite(Number(star.rating))&&Number(star.rating)>=0&&Number(star.rating)<=10?' · nota '+esc(Number(star.rating).toFixed(1))+'/10':'')+'</p>':'';
+      const decorate=p=>{
+        const name=String(p.name||'').trim().toLocaleLowerCase('pt-BR');
+        const isStar=Boolean(name)&&String(star.player||'').trim().toLocaleLowerCase('pt-BR')===name;
+        const isLeader=Boolean(name)&&String(leaders.rating?.name||'').trim().toLocaleLowerCase('pt-BR')===name;
+        const raw=p.average_rating??p.avg_rating??p.rating??(isStar?star.rating:null)??(isLeader?leaders.rating?.value:null);
+        const n=raw==null||raw===''?NaN:Number(raw);
+        const grade=Number.isFinite(n)&&n>=0&&n<=10?'<small class="nexus-player-badge">★ '+esc(n.toFixed(1))+'/10</small>':'';
+        return (isStar?'<small class="nexus-player-badge highlight">★ Destaque</small>':'')+grade;
+      };
       if(lineup&&(lineup.starters||[]).length){
         const formation=lineup.formation?' · Formação '+esc(lineup.formation):'';
         const section=(name,players)=>'<div class="md-roster-section"><h4>'+esc(name)+'</h4>'+
           players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
-          '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>';
+          '</b><span>'+esc(p.name)+decorate(p)+'</span></div>').join('')+'</div>';
         return '<article class="md-form-team">'+heading+badges+highlight+missing+
           '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação não confirmada')+
           ' · FotMob'+formation+'. Sem saída registrada não garante presença atual.</p>'+
@@ -226,7 +235,7 @@
       return '<article class="md-form-team">'+heading+badges+highlight+
         groups.map(group=>'<div class="md-roster-section"><h4>'+esc(group.section)+'</h4>'+
           (group.players||[]).map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
-          '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>').join('')+'</article>';
+          '</b><span>'+esc(p.name)+decorate(p)+'</span></div>').join('')+'</div>').join('')+'</article>';
     });
     return '<div class="md-note">Escalação quando fornecida pelo FotMob; caso contrário, elenco geral do clube. Plantel não significa escalação titular confirmada.</div>'+
       '<div class="md-form-grid">'+details.join('')+'</div>';

@@ -2762,17 +2762,32 @@ function lineupsHTML(d){
      '<p class="n539-unknown">Artilheiro e assistências da temporada: fonte ainda não forneceu ranking completo do clube.</p>';
    const highlight=star.player?'<p class="n539-star">★ '+esc(star.label||'Destaque da partida')+
       ': <strong>'+esc(star.player)+'</strong>'+
-      (star.rating!=null?' · '+Number(star.rating).toFixed(2):'')+' · FotMob</p>':'';
+      (star.rating!=null&&Number.isFinite(Number(star.rating))&&Number(star.rating)>=0&&Number(star.rating)<=10?' · '+Number(star.rating).toFixed(2)+'/10':'')+' · FotMob</p>':'';
    const departureCount=xi.filter(p=>(d.events||[]).some(e=>e.type==='substitution'&&
       String(e.player_out||'').trim().toLowerCase()===String(p.name||'').trim().toLowerCase())).length;
    const summary=xi.length?'<div class="n539-squad-status">'+
       (verified?'✓ XI OFICIAL':'XI PROVÁVEL')+' · '+xi.length+' titulares · '+
       bench.length+' reservas · '+departureCount+' saídas confirmadas'+
       '<small>Sem evento de saída não garante presença em campo. Cartões e substituições podem alterar o XI.</small></div>':'';
+   const validRating=v=>v==null||v===''||!Number.isFinite(Number(v))||Number(v)<0||Number(v)>10?null:Number(v);
+   const notes=p=>{
+     const name=String(p.name||p.player||'').trim().toLocaleLowerCase('pt-BR');
+     if(!name)return '';
+     const isStar=String(star.player||'').trim().toLocaleLowerCase('pt-BR')===name;
+     const isLeader=String(records.rating?.name||'').trim().toLocaleLowerCase('pt-BR')===name;
+     const individual=validRating(p.average_rating??p.avg_rating??p.rating);
+     const match=isStar?validRating(star.rating):null;
+     const season=isLeader?validRating(records.rating?.value):null;
+     const rating=individual??match??season;
+     const source=individual!==null?'nota individual':match!==null?'nota da partida':'destaque da temporada';
+     return (isStar?'<small class="nexus-player-badge highlight">★ Destaque</small>':'')+
+       (rating!==null?'<small class="nexus-player-badge" title="'+esc(source)+'">★ '+esc(rating.toFixed(1))+'/10 · '+esc(source)+'</small>':'');
+   };
    const players=(label,list,role)=>
      '<h4 class="nexus-lineup-section">'+esc(label)+'</h4>'+
      list.map(p=>'<div class="lineup-player"><b>'+esc(p.number||'–')+
-       '</b><span>'+esc(p.name||p.player||'Atleta')+'<small class="nexus-player-state">'+esc(NexusUpgrade.playerState(p,role,verified,d.phase,d.events))+'</small></span></div>').join('');
+       '</b><span>'+esc(p.name||p.player||'Atleta')+notes(p)+
+       '<small class="nexus-player-state">'+esc(NexusUpgrade.playerState(p,role,verified,d.phase,d.events))+'</small></span></div>').join('');
    const state=xi.length?(verified?'CONFIRMADA':'PROVÁVEL'):'AGUARDANDO';
    const status=xi.length?' <span class="nexus-lineup-status '+(verified?'official':'pending')+'">'+
       state+'</span>':' <span class="nexus-lineup-status pending">SEM TITULARES CONFIRMADOS</span>';

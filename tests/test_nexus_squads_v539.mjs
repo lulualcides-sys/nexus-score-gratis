@@ -41,10 +41,13 @@ assert.match(output,/Camisa 9/);
 assert.match(output,/Líder de assistências/);
 assert.match(output,/Craque/);
 assert.match(output,/Melhor em campo/);
+assert.match(output,/★ Destaque/);
+assert.match(output,/7\\.9\\/10/);
 assert.match(output,/TITULAR/);
 const unknown=lineup({...base,team_leaders:{},match_stars:{}});
 assert.match(unknown,/ranking completo/);
 assert.doesNotMatch(unknown,/12 gols/);
+assert.doesNotMatch(unknown,/★ Destaque/);
 const malicious=lineup({...base,team_leaders:{home:{
  goals:{name:'<img src=x onerror=alert(1)>',value:12}}}});
 assert.doesNotMatch(malicious,/<img/);
