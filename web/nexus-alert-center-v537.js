@@ -21,9 +21,15 @@ function clean(raw,now=Date.now()){
 }
 function add(items,evt,now=Date.now()){
  if(!evt||typeof evt.match_id!=='string'||!evt.match_id)return clean(items,now);
- const id=evt.match_id+'|'+String(evt.kind||'pressure')+'|'+Math.floor(now/(8*60000));
+ const previous=clean(items,now);
+ const prefix=evt.match_id+'|'+String(evt.kind||'pressure')+'|';
+ // Cooldown deslizante, não bucket de relógio: passar de 15:59 para
+ // 16:00 nunca duplica uma notificação sobre a mesma pressão.
+ if(previous.some(x=>x.id.startsWith(prefix)&&now>=x.at&&now-x.at<8*60000))
+   return previous;
+ const id=prefix+String(Math.floor(now));
  const newest={id,match_id:evt.match_id,title:evt.title,message:evt.message,at:now,read:false};
- return clean([newest,...items],now);
+ return clean([newest,...previous],now);
 }
 function read(storage){
  try{return clean(JSON.parse(storage.getItem(KEY)||'[]'))}catch(_){return []}

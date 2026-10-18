@@ -51,7 +51,13 @@ const now=Date.now();
 const record={match_id:'match-4',title:'🔥 JOGO PEGANDO FOGO',message:'Gol pode estar próximo.',kind:'hot'};
 const entries=hub.add([],record,now);
 assert.equal(entries.length,1);
-assert.equal(hub.add(entries,record,now+60000).length,1,'cooldown same 8min bucket');
+assert.equal(hub.add(entries,record,now+60000).length,1,'cooldown móvel de 8min');
+const crossingBoundary=Math.floor(now/(8*60000))*(8*60000)-1000;
+const priorToBoundary=hub.add([],record,crossingBoundary);
+assert.equal(hub.add(priorToBoundary,record,crossingBoundary+60000).length,1,
+ 'notificação não duplica ao cruzar o limite do bucket');
+assert.equal(hub.add(priorToBoundary,record,crossingBoundary+8*60000).length,2,
+ 'após 8 minutos completos um novo alerta pode ser emitido');
 assert.equal(hub.clean(entries,now+49*3600000).length,0,'expire stale');
 assert.match(hub.render(entries).html,/ABRIR PARTIDA/);
 assert.equal(hub.mark(entries,entries[0].id)[0].read,true);
