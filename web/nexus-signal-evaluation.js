@@ -3,7 +3,7 @@
  */
 (function(root){
   "use strict";
-  const H=['5','10','15'];
+  const H=['5','10','15','20','25','30','35','40'];
   const dims={by_signal:'Tipo de sinal',by_team:'Equipe',by_league:'Campeonato',
               by_minute_band:'Faixa de minuto',by_minute:'Minuto exato'};
   const cleanHTML=x=>String(x??'').replace(/[&<>"']/g,ch=>({
@@ -85,8 +85,8 @@
     if(typeof document==='undefined')return;
     const host=document.getElementById('cloud-signal-evaluation');
     if(!host)return;
-    const data=stored?.views?stored:fallback(journal||{});
-    const complete=Boolean(stored?.views);
+    const data=stored?.views?.['40']?stored:fallback(journal||{});
+    const complete=Boolean(stored?.views?.['40']);
     const summary=data.horizons?.[horizon]||{};
     const view=data.views?.[horizon]||{};
     const rows=Array.isArray(view[dimension])?view[dimension]:[];
