@@ -818,9 +818,9 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
         <section class="nexus-evaluation" id="cloud-signal-evaluation" aria-label="Avaliação histórica dos sinais por equipe, liga, minuto e evolução da amostra"></section>
-        <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option></select></label>
+        <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option><option value="Over 1.5 FT">Over 1.5 FT (quando disponível)</option><option value="Lay Goleada">Lay Goleada (em estudo)</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
-        <div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
+        <button type="button" id="cloud-hide-results" class="secondary-btn" aria-expanded="true" aria-controls="cloud-results">Ocultar lista de partidas e mercados</button><div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
       </section>
       <section class="standalone-panel hidden nexus5-lab" id="intelligence-view">
         <div class="section-head"><div><h2>◈ NEXUS LAB 5.29 · RADAR INTELIGENTE</h2><p>Análise automática auditável, probabilidade experimental, alerta, avaliação histórica e integridade de dados. Sem odds fabricadas.</p></div><button id="lab-refresh" class="primary-btn">↻ Atualizar radar</button></div>
@@ -3301,5 +3301,16 @@ init();
 <script src="./nexus-iara.js"></script>
 <script src="./nexus-unit-pl.js"></script>
 <script src="./nexus-signal-evaluation.js"></script>
+<script>
+(function(){
+ const btn=document.getElementById('cloud-hide-results'),el=document.getElementById('cloud-results');
+ if(!btn||!el)return;
+ btn.onclick=()=>{
+ const hidden=el.classList.toggle('hidden');
+ btn.setAttribute('aria-expanded',String(!hidden));
+ btn.textContent=hidden?'Mostrar lista de partidas e mercados':'Ocultar lista de partidas e mercados';
+ };
+})();
+</script>
 </body>
 </html>
