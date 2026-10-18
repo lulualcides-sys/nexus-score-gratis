@@ -207,6 +207,7 @@
           esc(key==='goals'?'⚽ Artilheiro':key==='assists'?'🅰 Assistências':'⭐ Nota da temporada')+
           ': '+esc(x.name)+' · '+esc(x.value)+'</p>':'';
       }).join('');
+      const missing= !leaders.goals?.name&&!leaders.assists?.name&&!star.player?'<p class="md-muted">Artilheiro, líder de assistências ou destaque não confirmados nesta coleta.</p>':'';
       const highlight=star.player?'<p class="md-muted">★ '+esc(star.label)+
         ': '+esc(star.player)+'</p>':'';
       if(lineup&&(lineup.starters||[]).length){
@@ -214,10 +215,10 @@
         const section=(name,players)=>'<div class="md-roster-section"><h4>'+esc(name)+'</h4>'+
           players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>';
-        return '<article class="md-form-team">'+heading+badges+highlight+
+        return '<article class="md-form-team">'+heading+badges+highlight+missing+
           '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação não confirmada')+
           ' · FotMob'+formation+'. Sem saída registrada não garante presença atual.</p>'+
-          section('Titulares',lineup.starters||[])+
+          section(lineup.status==='confirmed'?'Titulares confirmados':'Jogadores informados (não confirmados)',lineup.starters||[])+
           ((lineup.subs||[]).length?section('Reservas',lineup.subs):'')+'</article>';
       }
       if(!groups.length)return '<article class="md-form-team">'+heading+badges+highlight+
