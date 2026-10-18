@@ -245,7 +245,7 @@
     const label={home:'Casa',draw:'Empate',away:'Fora'};
     const format=(items,mode)=>items.map(o=>
       '<div class="md-odd"><small>'+esc(label[o.sel]||o.sel)+'</small><b>'+esc(o.odd)+'</b>'+
-      '<span>'+esc(o.bookmaker||o.source||'Fonte')+'</span></div>').join('');
+      '<span>'+esc(o.bookmaker||o.source||'Fonte')+' · '+esc(o.at||o.captured_at||'horário não informado')+'</span></div>').join('');
     return '<div class="md-subtitle">Cotações pré-jogo registradas</div>'+
       (list.length?'<div class="md-odds">'+format(list)+'</div>':noData('Nenhuma odd pré-jogo verificada nesta partida.'))+
       (historical.length?'<div class="md-subtitle">Odds históricas de fechamento · não são preços atuais</div>'+
@@ -261,10 +261,19 @@
       '<div class="md-market '+(hit?'md-hit':'md-miss')+'"><small>'+name+'</small><b>'+(hit?'SIM':'NÃO')+'</b></div>'
       ).join('')+'</div><p class="md-muted">Resultado do mercado, não P/L de uma operação executada.</p>';
   }
-  function indicators(g){
+  function mustWin(g){
+ const m=g.must_win||g.mustWin||null;
+ if(!m||typeof m!=='object'||!m.source||!m.table_verified){
+  return '<div class="md-note">Must Win: indisponível sem classificação verificada e contexto competitivo; não inferir urgência pela posição isolada.</div>';
+ }
+ return '<div class="md-note">Must Win · '+esc(m.label||m.status||'Contexto disponível')+
+   ' · Fonte '+esc(m.source)+' · '+esc(m.updated_at||'data não informada')+
+   '</div>';
+}
+function indicators(g){
     const entries=Array.isArray(g.signals)?g.signals:[];
     const validated=entries.filter(s=>Number.isFinite(Number(s.ev_pct))&&Number.isFinite(Number(s.odds)));
-    const head='<div class="md-note">EV+ exige probabilidade validada e odd registrada antes da entrada. O resultado de mercado, sozinho, não comprova valor esperado.</div>';
+    const head=mustWin(g)+'<div class="md-note">EV+ exige probabilidade validada e odd registrada antes da entrada. O resultado de mercado, sozinho, não comprova valor esperado.</div>';
     if(!validated.length)return head+noData('Nenhum sinal EV+ validado ou entrada experimental auditada neste confronto.');
     return head+validated.map(s=>'<div class="md-signal"><b>'+esc(s.selection||'Mercado')+'</b>'+
        '<span>Odd '+esc(s.odds)+' · EV estimado '+esc(s.ev_pct)+'% · Amostra '+esc(s.sample_size||'—')+
