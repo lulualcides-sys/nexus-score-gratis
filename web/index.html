@@ -1828,7 +1828,19 @@ window.PressureLab = (() => {
     const kind=d.source?.includes('DEMONSTRAÇÃO')?' · DEMONSTRAÇÃO FICTÍCIA':d.verified_reference?' · HISTÓRICO REAL':'';
     const embedded=d.odds?.markets?.['1x2']?d.odds:null;
     const quote=embedded||d.prelive?.odds||{};
-    const mk=quote.markets?.['1x2']||{};
+    const verifiedQuotes=quote.markets?.['1x2']||{};
+    const archived=Array.isArray(d.closing_odds)?d.closing_odds:[];
+    const closeByBook={};
+    for(const q of archived){
+      if(!q||!['home','draw','away'].includes(q.sel)||!(Number(q.odd)>1.01))continue;
+      const label=String(q.bookmaker||'Fonte identificada');
+      (closeByBook[label]??={})[q.sel]=Number(q.odd);
+    }
+    const availableHistory=Object.entries(closeByBook).find(([,v])=>
+      ['home','draw','away'].every(x=>Number(v[x])>1.01));
+    const useHistorical=d.phase==='finished'&&
+      !['home','draw','away'].every(x=>Number(verifiedQuotes[x])>1.01)&&!!availableHistory;
+    const mk=useHistorical?availableHistory[1]:verifiedQuotes;
     const odd=v=>v!=null&&Number.isFinite(Number(v))&&Number(v)>1.01?Number(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:3}):'—';
     const homeOdd=odd(mk.home), drawOdd=odd(mk.draw), awayOdd=odd(mk.away);
     const hasQuotes=[homeOdd,drawOdd,awayOdd].every(v=>v!=='—');
@@ -1836,10 +1848,13 @@ window.PressureLab = (() => {
     const timeLabel=quoteAt&&Number.isFinite(quoteAt.getTime())?
       ' · capturadas '+quoteAt.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit'}):'';
     const stage=quote.phase==='live'?'ODDS AO VIVO':'ODDS PRÉ-JOGO';
-    const priceNote=hasQuotes?
+    const priceNote=useHistorical?
+      '<b>ODDS HISTÓRICAS DE FECHAMENTO</b> · '+h(availableHistory[0])+
+      ' / Football-Data.co.uk · não foram observadas antes do jogo pelo NEXUS; não são preços atuais nem EV.':
+      hasQuotes?
       '<b>'+h(stage)+'</b> · '+h(quote.source||'Fonte verificada')+
       (quote.bookmaker?' / '+h(quote.bookmaker):'')+h(timeLabel):
-      'Odds 1/X/2 não disponíveis nesta coleta; valores ausentes não são zero.';
+      'Odds 1/X/2 não disponíveis nas fontes autorizadas; não criamos preços retrospectivos.';
     const scorers=(Array.isArray(d.goal_scorers)?d.goal_scorers:[]).filter(Boolean);
     const latest=scorers.slice().sort((a,b)=>Number(a.minute||0)-Number(b.minute||0)).pop()||null;
     // Only an observed NEW goal should animate; existing goals at first page load are silent.
@@ -1851,7 +1866,7 @@ window.PressureLab = (() => {
       const expected=scorePair?Number(scorePair[side==='home'?1:2]):null;
       const missing=expected===null?0:Math.max(0,expected-known.length);
       return known.slice(0,8)
-        .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small></div>`).join('')+
+        .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small>${g.assist?'<small title="Assistência confirmada">🅰 '+h(g.assist)+'</small>':''}</div>`).join('')+
         (missing>0?`<div class="nexus-missing-goal"><b>+${missing} gol${missing>1?'s':''} sem detalhes</b><small>Autor e minuto não informados na fonte</small></div>`:'');
     };
     const crest = (uri, initials, team) => {
