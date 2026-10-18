@@ -80,7 +80,7 @@ jobs:
           git fetch origin main
           python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
           python3 web_export.py
-          git add history/ web/data.json
+          git add history/ web/data.json web/listing.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "NEXUS: escalações/odds pre-jogo atualizadas"
           for attempt in 1 2 3 4; do
@@ -92,7 +92,7 @@ jobs:
             }
             python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
             python3 web_export.py
-            git add history/signal_registry.json web/data.json
+            git add history/signal_registry.json web/data.json web/listing.json
             if ! git diff --cached --quiet; then
               git commit -m "NEXUS: mescla alertas da nuvem sem perdas"
             fi
