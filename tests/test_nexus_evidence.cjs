@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const js=fs.readFileSync('web/match-detail.js','utf8');
+new vm.Script(js);
+assert(js.includes('signal.model_calibrated===true&&signal.odds_verified===true'),'EV requires calibrated model and verified odds');
+assert(js.includes('captured<kickoff*1000'),'EV requires pre-match timestamp');
+assert(js.includes("lineup.status==='confirmed'?'Titulares confirmados'"),'lineups distinguish confirmed');
+assert(js.includes('Artilheiro, líder de assistências ou destaque não confirmados'),'no fictional stars');
+assert(js.includes('Autor não identificado pela fonte'),'goal attribution unknown marker');
+assert(js.includes('m.table_verified'),'Must Win provenance');
+assert(js.includes('horário não informado'),'odds provenance');
+const html=fs.readFileSync('web/index.html','utf8');
+assert(html.includes('listing.json'),'compact listing still available');
+assert(html.includes('score_unverified=true'),'conflicting score quarantine');
+console.log('NEXUS evidence and UX: 9 checks OK');
