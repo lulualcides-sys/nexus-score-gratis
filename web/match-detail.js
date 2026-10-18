@@ -264,11 +264,13 @@
   function outcomes(g){
     const o=g.outcomes||{};
     if(!o.correct_score)return noData('Mercados pendentes até a confirmação do placar final.');
+    const sh=g.home_score==null?null:Number(g.home_score),sa=g.away_score==null?null:Number(g.away_score);
+    const margin=g.phase==='finished'&&Number.isFinite(sh)&&Number.isFinite(sa)?Math.abs(sh-sa):null;
     const items=[['Over 1.5 FT',o.over_15],['Over 2.5 FT',o.over_25],
-      ['Over 3.5 FT',o.over_35],['BTTS — Sim',o.btts]];
+      ['Over 3.5 FT',o.over_35],['BTTS — Sim',o.btts],...(margin===null?[]:[['Lay goleada (margem 3+)',margin<3]])];
     return '<div class="md-market-grid">'+items.map(([name,hit])=>
       '<div class="md-market '+(hit?'md-hit':'md-miss')+'"><small>'+name+'</small><b>'+(hit?'SIM':'NÃO')+'</b></div>'
-      ).join('')+'</div><p class="md-muted">Resultado do mercado, não P/L de uma operação executada.</p>';
+      ).join('')+'</div><p class="md-muted">Lay goleada aqui é uma regra descritiva: contra vitória por 3+ gols de diferença. Resultado esportivo, não odd de Lay, lucro ou aposta executada.</p>';
   }
   function mustWin(g){
  const m=g.must_win||g.mustWin||null;
