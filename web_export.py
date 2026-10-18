@@ -10,6 +10,7 @@ import json
 import math
 import re
 from signal_evaluation import evaluate
+from nexus_intelligence_v6 import evaluate_v6
 from market_evidence import audit_markets
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots
@@ -771,6 +772,7 @@ def main():
         'diagnostics':registry.get('diagnostics') or {},
         'items':all_signal_items[:5000],
         'note':'Sinais 5.29 na nuvem; gols em janelas de 5 a 40 minutos conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
+    radar_v6=evaluate_v6(registry,rows)
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
@@ -794,6 +796,7 @@ def main():
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
+             'intelligence_v6':radar_v6,
              'alerts':alerts_from(rows),'games':rows}
     # Feed de jogos sem dados financeiros nem detalhes extensos.
     OUT.parent.mkdir(parents=True,exist_ok=True)

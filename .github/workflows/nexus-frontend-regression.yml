@@ -6,6 +6,9 @@ on:
       - 'web/match-detail.js'
       - 'web/nexus-evidence-v535.js'
       - 'web/nexus-signal-evaluation.js'
+      - 'web/nexus-intelligence-v6.js'
+      - 'web/nexus-intelligence-v6.css'
+      - 'tests/test_nexus_intelligence_v6.mjs'
       - 'tests/test_nexus_reconcile.cjs'
       - 'tests/test_nexus_evidence.cjs'
       - 'tests/test_nexus_signal_evaluation.mjs'
@@ -27,6 +30,7 @@ jobs:
           node tests/test_nexus_reconcile.cjs
           node tests/test_nexus_evidence.cjs
           node tests/test_nexus_signal_evaluation.mjs
+          node tests/test_nexus_intelligence_v6.mjs
           node tests/test_nexus_evidence_v535.mjs
           node --check tests/test_nexus_squads_v539.mjs
           node tests/test_nexus_squads_v539.mjs
@@ -35,3 +39,4 @@ jobs:
           node --check web/nexus-market-quality-v538.js
           node --check web/nexus-evidence-v535.js
           node --check web/nexus-signal-evaluation.js
+          node --check web/nexus-intelligence-v6.js

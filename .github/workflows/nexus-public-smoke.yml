@@ -5,6 +5,8 @@ on:
     paths:
       - 'web/index.html'
       - 'web/nexus-signal-evaluation.js'
+      - 'web/nexus-intelligence-v6.js'
+      - 'web/nexus-intelligence-v6.css'
       - 'web/nexus-evidence-v535.js'
       - 'web/match-detail.js'
       - 'web/nexus-signal-evaluation.css'
@@ -24,7 +26,7 @@ jobs:
         run: |
           set -euo pipefail
           base="https://nexus-score-gratis.pages.dev"
-          files=(index.html nexus-signal-evaluation.js nexus-evidence-v535.js match-detail.js nexus-signal-evaluation.css)
+          files=(index.html nexus-signal-evaluation.js nexus-evidence-v535.js match-detail.js nexus-signal-evaluation.css nexus-intelligence-v6.js nexus-intelligence-v6.css)
           for attempt in $(seq 1 24); do
             found=true
             for filename in "${files[@]}"; do

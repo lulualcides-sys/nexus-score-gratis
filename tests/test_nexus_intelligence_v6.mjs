@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import fs from 'node:fs';
+const require=createRequire(import.meta.url);
+const v6=require('../web/nexus-intelligence-v6.js');
+const a={market:'over_15',finished_verified:4,hits:3,misses:1};
+assert.equal(v6.historicalScenario(a,1.8,100).profit,140);
+const lay={market:'lay_goleada',finished_verified:4,hits:3,misses:1};
+assert.equal(v6.historicalScenario(lay,2,100).profit,200);
+assert.equal(v6.historicalScenario({...a,finished_verified:0},1.8,100),null);
+assert.equal(v6.historicalScenario(a,1,100),null);
+assert.equal(v6.historicalScenario(a,1.8,-20),null);
+const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+assert.match(html,/nexus-intelligence-v6\.js/);
+assert.match(html,/cloud-intelligence-v6/);
+assert.match(html,/NexusIntelligenceV6\?\.render/);
+console.log('NEXUS 6.0: cenários financeiros hipotéticos, ligação e segurança OK');

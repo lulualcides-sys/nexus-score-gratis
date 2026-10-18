@@ -1,0 +1,25 @@
+.nexus-v6{border:1px solid #284f61;border-radius:14px;margin:18px 0;padding:16px;background:#102538;color:#dae9f1}
+.nexus-v6-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.nexus-v6-head h3{margin:0 0 6px;color:#daffff;font-size:18px}
+.nexus-v6-head p,.nexus-v6 p,.nexus-v6 small{line-height:1.5;font-size:12px}
+#nexus-v6-compact{background:#23526b;border:1px solid #448aa5;border-radius:8px;color:#e9faff;padding:9px 12px}
+.nexus-v6-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:13px 0}
+.nexus-v6-kpis>div{border:1px solid #2a5066;background:#193347;border-radius:8px;padding:11px;display:grid;gap:5px}
+.nexus-v6-kpis b{font-size:21px;color:#9ef1d7}.nexus-v6-kpis small{color:#b0cbd8}
+.nexus-v6-meta{color:#adcbd9}
+.nexus-v6-filters{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}
+.nexus-v6-filters label,.nexus-v6-sim label{display:flex;flex-direction:column;gap:5px;font-size:12px}
+.nexus-v6 select,.nexus-v6 input{background:#fff;color:#162a3c;padding:8px;border:1px solid #8da8b5;border-radius:7px;max-width:100%}
+.nexus-v6-scroll{overflow:auto;max-height:430px;border:1px solid #436075;border-radius:9px}
+.nexus-v6 table{border-collapse:collapse;width:100%;min-width:720px;font-size:12px}
+.nexus-v6 th,.nexus-v6 td{text-align:left;padding:9px;border-bottom:1px solid #344e62;color:#dcebf1}
+.nexus-v6 thead{position:sticky;top:0;background:#15354a}
+.nexus-v6-markets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.nexus-v6-market{border:1px solid #365a69;border-radius:9px;display:grid;gap:5px;padding:12px}
+.nexus-v6-market strong{font-size:22px;color:#94e4d0}.nexus-v6-market span{font-size:12px}
+.nexus-v6-sim{border:1px solid #477c89;border-radius:10px;padding:12px;margin-top:14px}
+.nexus-v6-sim label{display:inline-flex;margin:5px 9px 7px 0}
+.nexus-v6-sim #nexus-v6-result{font-weight:700;color:#f3e0ac}
+@media(max-width:700px){.nexus-v6{padding:11px}.nexus-v6-head{flex-direction:column}
+.nexus-v6-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+.nexus-v6-markets{grid-template-columns:1fr}.nexus-v6-sim label{display:flex}}
