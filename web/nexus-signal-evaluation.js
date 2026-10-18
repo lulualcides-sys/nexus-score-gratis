@@ -80,7 +80,7 @@
   }
   const fmtPct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'—':
     Number(x).toLocaleString('pt-BR',{maximumFractionDigits:1})+'%';
-  let horizon='10',dimension='by_signal';
+  let horizon='40',dimension='by_signal';
   function render(stored,journal){
     if(typeof document==='undefined')return;
     const host=document.getElementById('cloud-signal-evaluation');
@@ -125,10 +125,27 @@
      '</tbody></table></div>':'<p>Nenhum alerta válido nesta amostra.</p>')+
      '<h4>Evolução da amostra · '+horizon+' min</h4>'+
      (graph?'<div class="nexus-evolution">'+graph+'</div>':'<p>Sem datas de captura verificáveis.</p>')+
+     '<section class="nexus-simulator" style="margin:16px 0;padding:14px;border:1px solid #64748b;border-radius:10px">'+
+     '<h4>Simulador hipotético de valores · NÃO são odds reais</h4>'+
+     '<label>Mercado <select id="nexus-sim-market"><option>Over 1.5 gols</option><option>Lay goleada (contra 3+ gols de diferença)</option><option>Over 2.5 gols</option></select></label> '+
+     '<label>Odd fictícia <input id="nexus-sim-odd" type="number" min="1.01" max="100" step="0.05" value="1.80" style="width:84px"></label> '+
+     '<label>Valor hipotético R$ <input id="nexus-sim-stake" type="number" min="1" max="100000" step="1" value="100" style="width:96px"></label>'+
+     '<p id="nexus-sim-output" aria-live="polite"></p>'+
+     '<small>Simulação manual: ganho líquido se acertar = stake × (odd − 1); perda se errar = stake. No Lay, o valor representa a responsabilidade, e não uma operação real. Não utiliza taxas históricas como chances calibradas.</small></section>'+
      '<p class="nexus-evaluation-disclaimer">Taxa = gols ÷ (gols + sem gol). Exclui resultados não verificáveis;'+
      ' alertas no mesmo jogo são correlacionados. Não é probabilidade calibrada nem EV+. '+
      'Sem odd de entrada, stake/risco e liquidação por operação não há lucro real em unidades. '+
      'P/L paper de entradas prévias é contabilizado separadamente.</p>';
+    const simulate=()=>{
+      const odd=Number(host.querySelector('#nexus-sim-odd')?.value),stake=Number(host.querySelector('#nexus-sim-stake')?.value);
+      const output=host.querySelector('#nexus-sim-output');
+      if(!output)return;
+      if(!Number.isFinite(odd)||odd<=1||odd>100||!Number.isFinite(stake)||stake<=0||stake>100000){output.textContent='Informe odd entre 1,01 e 100 e valor entre R$ 1 e R$ 100.000.';return;}
+      const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+      output.textContent='CENÁRIO FICTÍCIO · ganho se acertar: '+fmt(stake*(odd-1))+' · perda se errar: '+fmt(stake)+' · sem previsão de lucro.';
+    };
+    for(const id of ['nexus-sim-odd','nexus-sim-stake','nexus-sim-market'])host.querySelector('#'+id)?.addEventListener('input',simulate);
+    simulate();
     host.querySelector('#nexus-eval-horizon').onchange=e=>{horizon=e.target.value;render(stored,journal)};
     host.querySelector('#nexus-eval-dimension').onchange=e=>{dimension=e.target.value;render(stored,journal)};
   }
