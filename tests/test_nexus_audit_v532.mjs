@@ -43,6 +43,6 @@ for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)){
  if(match[1].trim()) new vm.Script(match[1]);
 }
 assert.match(html,/src="\.\/nexus-audit-v532\.js"/);
-assert.match(html,/html\+=NexusAudit\.report\(d\.pregame_baseline,d\)/);
+assert.match(html,/d\.pregame_baseline\?NexusAudit\.report\(d\.pregame_baseline,d\)/);
 assert.match(html,/data-lab-tab="pregame"/);
 console.log('NEXUS: freshness, EV status, pregame archive and inline syntax OK');
