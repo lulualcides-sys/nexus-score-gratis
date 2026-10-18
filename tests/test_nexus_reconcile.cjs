@@ -1,0 +1,21 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const html=fs.readFileSync(require('node:path').join(__dirname,'../web/index.html'),'utf8');
+const start=html.indexOf('function nexusReconcileFixtures(games){');
+const end=html.indexOf('\nfunction baseMatches(){',start);
+assert(start>=0 && end>start,'Conciliação existente');
+const context=vm.createContext({});
+vm.runInContext(html.slice(start,end)+'\nthis.reconcile=nexusReconcileFixtures;',context);
+const game=(id,score,opts={})=>({id,league:'Liga 1',home:'São Paulo',away:'Santos',start_timestamp:1780000000,
+ home_score:score?.[0]??null,away_score:score?.[1]??null,phase:'finished',...opts});
+const same=context.reconcile([game('a',[1,0]),game('b',[1,0])]);
+assert.equal(same.length,1,'não repetir jogo idêntico');
+const conflict=context.reconcile([game('a',[1,0]),game('b',[2,0])]);
+assert.equal(conflict.length,1);
+assert.equal(conflict[0].nexus_conflict,true,'não ocultar divergência');
+assert.equal(conflict[0].home_score,1,'não inventar nem substituir placar divergente');
+assert.equal(context.reconcile([game('a',[1,0]),game('c',[1,0],{away:'Corinthians'})]).length,2,'jogos distintos preservados');
+assert(html.includes('id="nexus-hide-list"'),'controle para ocultar lista');
+assert(html.includes("hideList.setAttribute('aria-expanded'"),'estado acessível do controle');
+console.log('NEXUS smoke/regressão: 6 verificações OK');
