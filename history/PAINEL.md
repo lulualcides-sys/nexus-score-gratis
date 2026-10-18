@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T09:38:51.258681+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T10:38:09.011470+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **41**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-10-18 | Borussia Mönchengladbach × TSG Hoffenheim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Bayer Leverkusen × SC Freiburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Juventus × Lazio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Udinese × Lecce | 0-0 | 0 | Match Odds 1X2: Casa 1,80, Empate 3,35, Fora 4,40 |
+| 2026-10-18 | Udinese × Lecce | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 1,80, Empate 3,35, Fora 4,40 |
 | 2026-10-18 | Fiorentina × Como | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | AC Milan × Atalanta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | FC Cincinnati × Columbus Crew | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3185 | **Jogos distintos:** 1049 | **Resultados verificáveis:** 1695 | **Com gol:** 559 | **Sem gol:** 1136 | **Taxa observada:** 33.0%.
-**Evolução da amostra:** 10 datas com coletas | 11 pendentes | 654 indeterminados | 825 incompletos.
+**Observações:** 3190 | **Jogos distintos:** 1052 | **Resultados verificáveis:** 1697 | **Com gol:** 559 | **Sem gol:** 1138 | **Taxa observada:** 32.9%.
+**Evolução da amostra:** 10 datas com coletas | 16 pendentes | 651 indeterminados | 826 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 572 | 383 | 134 | 249 | 35.0% |
-| 🟥 expulsao_confirmada | 592 | 275 | 86 | 189 | 31.3% |
+| 🥶 jogo_frio | 573 | 383 | 134 | 249 | 35.0% |
+| 🟥 expulsao_confirmada | 595 | 276 | 86 | 190 | 31.2% |
 | ⚡ pressao_ofensiva_18 | 426 | 264 | 85 | 179 | 32.2% |
 | 🎯 chutes_no_alvo_5 | 538 | 256 | 76 | 180 | 29.7% |
-| 🚩 escanteios_6 | 429 | 194 | 66 | 128 | 34.0% |
+| 🚩 escanteios_6 | 430 | 195 | 66 | 129 | 33.8% |
 | 💣 grandes_chances_3 | 345 | 174 | 65 | 109 | 37.4% |
 | 🔥 pressao_forte_10min | 131 | 71 | 24 | 47 | 33.8% |
 | 🧨 pressao_total_5_10min | 79 | 44 | 14 | 30 | 31.8% |
@@ -222,7 +222,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Major League Soccer | 208 | 111 | 42 | 69 | 37.8% |
-| Premier League | 142 | 78 | 23 | 55 | 29.5% |
+| Premier League | 143 | 78 | 23 | 55 | 29.5% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
@@ -236,7 +236,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | LaLiga2 | 63 | 32 | 11 | 21 | 34.4% |
 | Ligue 1 | 55 | 32 | 13 | 19 | 40.6% |
 | USL Championship | 45 | 31 | 17 | 14 | 54.8% |
-| Eredivisie | 55 | 30 | 10 | 20 | 33.3% |
+| Eredivisie | 56 | 30 | 10 | 20 | 33.3% |
 | Serie A | 53 | 30 | 6 | 24 | 20.0% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
 | Ekstraklasa | 48 | 29 | 11 | 18 | 37.9% |
@@ -252,22 +252,27 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 98 | 74 | 31 | 43 | 41.9% |
-| 16–30′ | 272 | 197 | 64 | 133 | 32.5% |
-| 31–45′ | 387 | 289 | 120 | 169 | 41.5% |
+| 16–30′ | 273 | 197 | 64 | 133 | 32.5% |
+| 31–45′ | 388 | 289 | 120 | 169 | 41.5% |
 | 46–60′ | 519 | 390 | 134 | 256 | 34.4% |
-| 61–75′ | 695 | 456 | 138 | 318 | 30.3% |
-| 76–90′ | 889 | 289 | 72 | 217 | 24.9% |
+| 61–75′ | 697 | 458 | 138 | 320 | 30.1% |
+| 76–90′ | 890 | 289 | 72 | 217 | 24.9% |
 | 91+′ | 325 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3185 | **Jogos monitorados:** 1730 | **Ao vivo:** 29 | **Termômetros recentes:** 11.
+**Registros:** 3190 | **Jogos monitorados:** 1730 | **Ao vivo:** 61 | **Termômetros recentes:** 14.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-18T10:38:45.278093+00:00 | PEC Zwolle × Go Ahead Eagles | PEC Zwolle (21') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:38:45.278093+00:00 | Polissya Zhytomyr × Dynamo Kyiv | Polissya Zhytomyr (35') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:18:22.561212+00:00 | Sturm Graz II × Kapfenberger SV | Kapfenberger SV (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-18T09:59:02.631813+00:00 | Sturm Graz II × Kapfenberger SV | Sturm Graz II (71') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T09:59:02.631813+00:00 | Sturm Graz II × Kapfenberger SV | Kapfenberger SV (71') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T09:11:22.499607+00:00 | FC Seoul × Gimcheon Sangmu | Gimcheon Sangmu (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-18T09:11:22.499607+00:00 | Gangwon FC × Incheon United | Gangwon FC (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T09:11:22.499607+00:00 | Gangwon FC × Incheon United | Gangwon FC (83') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T02:06:00.520572+00:00 | São Paulo × Vasco da Gama | São Paulo (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-18T02:06:00.520572+00:00 | Boise × AV Alta | Boise (32') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T02:06:00.520572+00:00 | FC Tulsa × Oakland Roots SC | Oakland Roots SC (73') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T01:43:18.372102+00:00 | Austin FC × Vancouver Whitecaps | Vancouver Whitecaps (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T01:43:18.372102+00:00 | Houston Dynamo FC × FC Dallas | Houston Dynamo FC (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T01:43:18.372102+00:00 | Sporting Kansas City × Real Salt Lake | Real Salt Lake (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-18T01:43:18.372102+00:00 | Sporting Kansas City × Real Salt Lake | Real Salt Lake (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-18T01:43:18.372102+00:00 | Denver Summit FC (W) × Angel City FC (W) | Angel City FC (W) (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
