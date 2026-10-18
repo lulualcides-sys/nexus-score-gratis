@@ -53,7 +53,7 @@ function auditHTML(report){
 function normalizeSummary(evaluation,journal){
  const e=evaluation&&typeof evaluation==='object'?evaluation:{};
  const slots={};
- for(const n of ['5','10','15']){
+ for(const n of ['5','10','15','20','25','30','35','40']){
   const v=e.horizons?.[n]||null;
   if(v&&num(v.observations)!==null){
    slots[n]={observations:Math.max(0,num(v.observations)),settled:Math.max(0,num(v.settled)||0),
@@ -136,7 +136,7 @@ function alertHTML(data){
     hour:'2-digit',minute:'2-digit'}):'sem horário verificável';
  };
  const outcome=x=>{
-  const status=x.outcome_conflict?'indeterminado':x.outcomes?.['10']||'pendente';
+  const status=x.outcome_conflict?'indeterminado':x.outcomes?.['40']||'pendente';
   const string=label[status]||'Não verificável';
   return '<span class="nexus-evidence-result '+(tone[status]||'unknown')+'">'+h(string)+'</span>';
  };
@@ -147,7 +147,7 @@ function alertHTML(data){
     '<small>'+h(a.league||'')+' · '+h(a.minute==null?'?':String(a.minute))+'′ · '+
     h(stamp(a.captured_at))+'</small><small>'+h(a.rule||'Observação')+
     (a.basis==='cumulative_stat_snapshot'?' · scout acumulado':'')+'</small></div>'+
-    '<div class="nexus-evidence-horizons">'+['5','10','15'].map(n=>{
+    '<div class="nexus-evidence-horizons">'+['5','10','15','20','25','30','35','40'].map(n=>{
       const state=a.outcome_conflict?'indeterminado':a.outcomes?.[n]||'pendente';
       return '<span title="'+h(label[state]||'Indisponível')+'">'+n+'m: '+
          h(state==='gol_confirmado'?'✓ Gol':state==='sem_gol_confirmado'?'✕ Sem gol':
@@ -156,9 +156,9 @@ function alertHTML(data){
      }).join('')+'</div></article>').join('')+'</div>':
    '<p class="nexus-evidence-await">Sem alertas com minuto confirmado na amostra acessível. Confira o histórico da nuvem ou aguarde a próxima coleta.</p>';
  return '<div class="nexus-evidence-alerts"><h3>Alertas esportivos · acertos e erros verificáveis</h3>'+
- '<p>Avaliação dos alertas reais registrados, em janelas independentes de 5, 10 e 15 minutos. '+
+ '<p>Avaliação dos alertas reais registrados, em janelas independentes de 5 a 40 minutos. '+
  'Não são odds, apostas ou cálculo de EV+.</p>'+
- '<div class="nexus-evidence-windows">'+['5','10','15'].map(card).join('')+'</div>'+
+ '<div class="nexus-evidence-windows">'+['5','10','15','20','25','30','35','40'].map(card).join('')+'</div>'+
  calibrationHTML(d.signal_evaluation)+
  '<p class="nexus-evidence-foot">A taxa usa apenas gols/sem gol confirmados. Alertas da mesma partida são correlacionados. '+
  'Alertas pendentes e janelas sem cobertura não entram na taxa.</p>'+
