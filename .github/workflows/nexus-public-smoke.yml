@@ -1,0 +1,30 @@
+name: NEXUS public Cloudflare smoke
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/index.html'
+      - '.github/workflows/nexus-public-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Wait for public Pages deployment and verify release marker
+        run: |
+          set -eu
+          URL="https://nexus-score-gratis.pages.dev/"
+          for attempt in $(seq 1 12); do
+            if curl -fsSL --connect-timeout 8 --max-time 20 "$URL" -o /tmp/nexus-public.html &&
+               grep -q 'name="nexus-release-marker" content="nexus-20261018-40min-audit"' /tmp/nexus-public.html; then
+              echo "Public page verified with correct release marker."
+              exit 0
+            fi
+            echo "Deploy not yet verified, attempt $attempt/12"
+            sleep 15
+          done
+          echo "Unable to confirm Cloudflare public release marker" >&2
+          exit 1
