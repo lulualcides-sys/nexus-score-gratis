@@ -43,7 +43,7 @@ assert.equal(ctx.hotGameSignal(base),null);
 assert.doesNotMatch(html,/src="\.\/nexus-activity\.js"/);
 assert.doesNotMatch(html,/href="\.\/nexus-activity\.css"/);
 assert.match(html,/font=type==='🟨'\|\|type==='🟥'\?12\.75/);
-assert.match(html,/case 'projections':html\+=NexusAudit\.report\(d\.pregame_baseline,d\)\+comparisonProjection56\(d\)/);
+assert.match(html,/case 'projections':html\+=classicProjection57\(d\)/);
 assert.match(html,/function notify\(message,type='normal',title='',matchId=null\)/);
 assert.match(html,/document\.createElement\(clickable\?'button':'div'\)/);
 const polish=fs.readFileSync(new URL('../web/nexus-web-polish.js',import.meta.url),'utf8');
