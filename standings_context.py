@@ -14,7 +14,7 @@ from coletar import HISTORY,DAY,NOW,fetch,read,write
 CACHE=HISTORY/'standings_cache.json'
 STATUS=HISTORY/'standings_status.json'
 TTL_MIN=55
-MAX_LEAGUES=16
+MAX_LEAGUES=24
 MAX_TEAMS=30
 
 def integer(v):
@@ -283,6 +283,8 @@ def run():
             'leagues_queried':len(chosen),'tables_received':0,
             'fixtures_enriched':0,'with_urgency':0,'by_source':{},
             'espn_fallback_eligible':sum(espn_league_code(lid,name_by_lid.get(lid,'')) is not None for lid in chosen),
+            'cache_tables_present':sum(bool(cache.get(lid)) for lid in candidates),
+            'cache_tables_reused_fresh':0,'fixtures_without_verified_table':0,
             'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid,name_by_lid.get(lid,'')):lid for lid in chosen}
@@ -304,10 +306,13 @@ def run():
                     measured=datetime.fromisoformat(str(table['updated_at']).replace('Z','+00:00'))
                     if 0<=(NOW-measured).total_seconds()<=6*3600:
                         context=make_context(f,table)
+                        if context and lid not in chosen:
+                            report['cache_tables_reused_fresh']+=1
                 except (KeyError,TypeError,ValueError):pass
             if not context:
                 # Não continuar publicando uma classificação antiga como atual.
                 row.pop('standings_context',None)
+                report['fixtures_without_verified_table']+=1
                 continue
             if row.get('standings_context')!=context:
                 row['standings_context']=context

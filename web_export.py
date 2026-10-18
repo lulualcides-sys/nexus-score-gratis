@@ -671,6 +671,22 @@ def historical_xg_summary(status):
             'season':'2025/2026' if valid else None,
             'scope':'historico_final','live_xg':False,'ev_plus':False}
 
+def make_listing(rows,exported_at,collector):
+    """Feed da agenda: sem detalhes, sem histórico financeiro, sem dados inventados."""
+    fields=('id','day','home','away','home_logo','away_logo','league',
+            'round','start_timestamp','minute','score','phase','halftime',
+            'status_short','source','sources','observed_at',
+            'pressure_observed_at','pressure_last_minute','odds','stats')
+    games=[]
+    for game in rows:
+        item={field:game.get(field) for field in fields}
+        points=game.get('pressure') or []
+        item['pressure']=points if game.get('phase')=='live' else points[-1:]
+        games.append(item)
+    return {'schema':3,'format':'listing_only','exported_at':exported_at,
+            'collector':collector,'games':games}
+
+
 def main():
     today=datetime.now(BR).date()
     days={(today-timedelta(days=i)).isoformat() for i in range(3)}
@@ -704,6 +720,7 @@ def main():
     historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable','momentum_status_counts','stats_detail_available') if key in last}
+    standings_status=load(H/'standings_status.json')
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
@@ -719,6 +736,11 @@ def main():
                 'openfootball_cc0':{k:cc0.get(k) for k in ('updated_at','checked','cross_verified','conflicts','ambiguous','unmatched','unavailable','datasets_fetched','cache_hits','errors')}},
 
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
+             'standings_collection_status':{k:standings_status.get(k) for k in (
+               'updated_at','leagues_found','leagues_queried','tables_received',
+               'fixtures_enriched','with_urgency','cache_tables_present',
+               'cache_tables_reused_fresh','fixtures_without_verified_table',
+               'unqueried_leagues','by_source')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
              'pregame_archive':pregame,
@@ -728,6 +750,14 @@ def main():
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
              'alerts':alerts_from(rows),'games':rows}
+    # Feed de jogos sem dados financeiros nem detalhes extensos.
+    OUT.parent.mkdir(parents=True,exist_ok=True)
+    lite=make_listing(rows,payload['exported_at'],payload['collector'])
+    lite_path=OUT.parent/'listing.json'
+    lite_tmp=lite_path.with_suffix('.tmp')
+    lite_tmp.write_text(json.dumps(lite,ensure_ascii=False,separators=(',',':'))+'\n',
+                        encoding='utf-8')
+    lite_tmp.replace(lite_path)
     OUT.parent.mkdir(parents=True,exist_ok=True)
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')

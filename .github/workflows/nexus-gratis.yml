@@ -17,6 +17,9 @@ on:
       - "api_football_odds.py"
       - "pregame_refresh_quotes.py"
       - "web_export.py"
+      - "web/nexus-alert-center-v537.js"
+      - "web/nexus-market-quality-v538.js"
+      - "tests/test_nexus_triple_patch_v538.mjs"
       - "market_evidence.py"
       - "web/nexus-evidence-v535.js"
       - "web/nexus-evidence-v535.css"
@@ -84,6 +87,9 @@ jobs:
           node tests/test_classic_projections_v534.mjs
           node --check web/nexus-evidence-v535.js
           node tests/test_nexus_evidence_v535.mjs
+          node tests/test_nexus_triple_patch_v538.mjs
+          node --check web/nexus-alert-center-v537.js
+          node --check web/nexus-market-quality-v538.js
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-original-enrich.js
@@ -171,7 +177,7 @@ jobs:
           git fetch origin main
           python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
           python3 web_export.py
-          git add history/ web/data.json
+          git add history/ web/data.json web/listing.json
           if ! git diff --cached --quiet; then
             if git diff --cached --name-only | grep -q '^web/'; then
               git commit -m "NEXUS Web: atualiza partidas públicas"
@@ -195,7 +201,7 @@ jobs:
               }
               python3 signal_registry.py --merge-remote /tmp/nexus-local-signals.json
               python3 web_export.py
-              git add history/signal_registry.json web/data.json
+              git add history/signal_registry.json web/data.json web/listing.json
               if ! git diff --cached --quiet; then
                 git commit -m "NEXUS: mescla alertas da nuvem sem perdas"
               fi
