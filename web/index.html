@@ -2693,6 +2693,29 @@ function lineupsHTML(d){
       bench=Array.isArray(detail.bench)?detail.bench:[],
       roster=Array.isArray(detail.roster)?detail.roster:[],
       legacy=Array.isArray(lineup[key])?lineup[key]:[];
+   const records=d.team_leaders?.[key]||d.prelive?.team_leaders?.[key]||{};
+   const star=d.match_stars?.[key]||{};
+   const sourceStars=(records.goals||records.assists||records.rating)?'<div class="n539-team-facts">'+
+     [['goals','⚽ Artilheiro'],['assists','🅰 Líder de assistências'],['rating','⭐ Melhor nota da temporada']]
+       .map(([field,title])=>{
+         const data=records[field];
+         if(!data?.name||!Number.isFinite(Number(data.value)))return '';
+         const pool=xi.some(p=>String(p.name||'').toLowerCase()===String(data.name).toLowerCase())?
+           ' · TITULAR':bench.some(p=>String(p.name||'').toLowerCase()===String(data.name).toLowerCase())?
+           ' · RESERVA':' · presença não verificada';
+         return '<div class="n539-fact"><small>'+esc(title)+pool+'</small><b>'+
+           esc(data.name)+'</b><span>'+esc(data.value)+(field==='rating'?' nota':'')+'</span></div>';
+       }).join('')+'</div>':
+     '<p class="n539-unknown">Artilheiro e assistências da temporada: fonte ainda não forneceu ranking completo do clube.</p>';
+   const highlight=star.player?'<p class="n539-star">★ '+esc(star.label||'Destaque da partida')+
+      ': <strong>'+esc(star.player)+'</strong>'+
+      (star.rating!=null?' · '+Number(star.rating).toFixed(2):'')+' · FotMob</p>':'';
+   const departureCount=xi.filter(p=>(d.events||[]).some(e=>e.type==='substitution'&&
+      String(e.player_out||'').trim().toLowerCase()===String(p.name||'').trim().toLowerCase())).length;
+   const summary=xi.length?'<div class="n539-squad-status">'+
+      (verified?'✓ XI OFICIAL':'XI PROVÁVEL')+' · '+xi.length+' titulares · '+
+      bench.length+' reservas · '+departureCount+' saídas confirmadas'+
+      '<small>Sem evento de saída não garante presença em campo. Cartões e substituições podem alterar o XI.</small></div>':'';
    const players=(label,list,role)=>
      '<h4 class="nexus-lineup-section">'+esc(label)+'</h4>'+
      list.map(p=>'<div class="lineup-player"><b>'+esc(p.number||'–')+
@@ -2708,10 +2731,10 @@ function lineupsHTML(d){
        '<p class="prelive-muted">Aguardando divulgação dos titulares pela fonte.</p>');
    return '<article class="lineup-side"><h3>'+esc(name)+status+'</h3>'+
     (detail.formation?'<p class="prelive-muted">Formação '+esc(detail.formation)+'</p>':'')+
-    content+'</article>';
+    summary+sourceStars+highlight+content+'</article>';
  };
  return '<section class="analysis-tab-card nexus-lineups"><h3>ESCALAÇÕES · TITULARES E RESERVAS</h3>'+
-   '<p class="prelive-muted">Consulta automática nos 75 min antes do jogo, incluindo a janela dos 30 min. '+
+   '<p class="prelive-muted">Titulares, reservas, substituições e destaques verificados. Artilheiro e líder de assistências aparecem apenas quando o FotMob disponibilizar estatísticas individuais da equipe. '+
    'O NEXUS distingue prováveis das escalações identificadas como oficiais; a publicação depende da fonte.</p>'+
    '<div class="lineup-grid">'+side('home',d.home)+side('away',d.away)+'</div></section>';
 }
