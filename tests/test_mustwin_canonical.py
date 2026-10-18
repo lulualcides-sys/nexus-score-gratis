@@ -3,6 +3,7 @@ import unittest
 from unittest.mock import patch
 from coletar import canonical_league_ids, fotmob_list
 from fotmob_three_days import assign_fixture
+from web_export import public_row
 from standings_context import (league_table, make_context, espn_table,
                                 espn_league_code, fetch_table)
 
@@ -104,6 +105,29 @@ class CanonicalLeagueTests(unittest.TestCase):
         self.assertIsNone(make_context({'league_id':'130','home':'East 1',
                                         'away':'West unknown'},table))
         self.assertIsNone(espn_table(packet,'268','bra.1'))
+
+    def test_public_export_preserves_verified_table_conferences(self):
+        sections=[
+          {'name':'Eastern','data':{'table':{'all':table_rows('East',15,1000)}}},
+          {'name':'Western','data':{'table':{'all':table_rows('West',15,2000)}}}
+        ]
+        league=league_table({'details':{'id':130,'name':'MLS',
+            'selectedSeason':'2026'},'table':sections},'130')
+        fixture={'id':'fotmob-123','league_id':'130','league_id_verified':True,
+                 'home_id':'1002','away_id':'2002','home':'East 2',
+                 'away':'West 2','league':'Major League Soccer',
+                 'phase':'live','minute':25,'start_timestamp':1792000000}
+        result=public_row({'fixture':fixture,
+                           'standings_context':make_context(fixture,league)},
+                          '2026-10-17')
+        self.assertEqual(result['standings']['home']['group'],'Eastern')
+        self.assertEqual(result['standings']['away']['group'],'Western')
+        self.assertEqual(result['standings']['table_url'],
+                         'https://www.fotmob.com/leagues/130/table')
+        older=public_row({'fixture':{**fixture,'league_id_verified':False},
+                          'standings_context':make_context(fixture,league)},
+                         '2026-10-17')
+        self.assertIsNone(older['standings']['table_url'])
 
     def test_direct_fotmob_fetch_prefers_primary_league_id(self):
         p={'details':{'id':268,'name':'Brasileirão'},
