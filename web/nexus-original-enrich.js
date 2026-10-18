@@ -389,6 +389,7 @@ function labDashboard(doc){
  }));
  return {version:'5.29 original · dados GitHub',updated_at:doc.exported_at,
    pregame_archive:doc.pregame_archive||[],odds_collection_status:doc.odds_collection_status||{},
+   standings_collection_status:doc.standings_collection_status||{},
    market_evidence:doc.market_evidence||null,
    signal_evaluation:doc.signal_evaluation||null,
    signal_journal:doc.signal_journal||{items:[],diagnostics:{}},
