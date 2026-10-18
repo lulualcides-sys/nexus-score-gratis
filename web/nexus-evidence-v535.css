@@ -1,0 +1,29 @@
+/* NEXUS 5.35: prestação de contas esportiva transparente */
+.nexus-evidence-explain{background:#193548;border:1px solid #416782;border-radius:10px;padding:13px 14px;color:#cde4f0;font-size:12px;line-height:1.6}
+.nexus-evidence-foot{font-size:11px;color:#a4c3d0;line-height:1.6;margin:12px 0}
+.nexus-evidence-scroll{overflow:auto;border:1px solid #3b5f75;border-radius:9px;margin:12px 0}
+.nexus-evidence-scroll table{min-width:790px;width:100%;border-collapse:collapse;font-size:12px}
+.nexus-evidence-scroll th,.nexus-evidence-scroll td{text-align:left;border-bottom:1px solid #324c62;padding:11px 9px;color:#e0f0f5;font-variant-numeric:tabular-nums}
+.nexus-evidence-scroll thead th{position:sticky;top:0;background:#20374a;color:#a4dfe3;font-size:10px}
+.nexus-evidence-await{background:#1a2c3e;border:1px dashed #587389;padding:16px;border-radius:10px;color:#bacddd;line-height:1.6;font-size:12px}
+.nexus-evidence-alerts{display:flex;flex-direction:column;gap:12px}
+.nexus-evidence-alerts>h3{margin:7px 0 0;font-size:15px}
+.nexus-evidence-alerts>p{font-size:12px;line-height:1.6;color:#adc9d6}
+.nexus-evidence-windows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
+.nexus-evidence-window{background:#1b3446;border:1px solid #527386;padding:14px;border-radius:10px;min-width:0}
+.nexus-evidence-window small{display:block;color:#94d5df;font-size:10px;font-weight:750}
+.nexus-evidence-window strong{display:block;color:#f3f9fa;font-size:27px;margin:8px 0}
+.nexus-evidence-window p{font-size:11px;color:#a8c8d6;line-height:1.6;margin:6px 0}
+.nexus-evidence-alert-list{max-height:510px;overflow:auto;display:grid;gap:6px;padding:1px}
+.nexus-evidence-alert{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:13px;align-items:center;background:#1d3243;border:1px solid #3f5667;border-radius:8px;padding:12px}
+.nexus-evidence-alert strong{font-size:12px;color:#edf7fa}
+.nexus-evidence-alert small{display:block;font-size:10px;color:#a1bbd1;margin-top:4px;line-height:1.35}
+.nexus-evidence-horizons{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.nexus-evidence-horizons span{font-size:10px;font-weight:750;border:1px solid #426176;background:#1a2837;padding:5px 7px;border-radius:7px;white-space:nowrap;color:#e5eef7}
+.nexus-evidence-legacy{border:1px solid #4d6c7d;border-radius:10px;padding:12px}
+.nexus-evidence-legacy summary{cursor:pointer;color:#bfdeea;font-size:12px;font-weight:750}
+.nexus-evidence-old{border-top:1px solid #385363;padding:9px 0}
+.nexus-evidence-old b{display:block;color:#d8eaf0;font-size:11px}
+.nexus-evidence-old small{display:block;color:#a0bbc9;margin-top:4px;font-size:10px}
+.cloud-audit-stats>div span{font-size:10px;color:#8ebcc9;margin-top:3px}
+@media(max-width:750px){.nexus-evidence-windows{grid-template-columns:1fr}.nexus-evidence-alert{grid-template-columns:1fr}.nexus-evidence-horizons{justify-content:flex-start}}
