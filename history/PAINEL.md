@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:16:17.235675+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:17:04.633870+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **122**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **123**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -32,7 +32,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **122**.
 | 2026-10-18 | AFC Bournemouth × Sunderland | 2-0 | 0 | Chutes no alvo: 6.0×0.0; Match Odds 1X2: Casa 2,10, Empate 3,35, Fora 3,65 |
 | 2026-10-18 | Real Madrid × Sevilla | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Osasuna × Racing Santander | 2-0 | 0 | Chutes no alvo: 7.0×1.0; Match Odds 1X2: Casa 1,95, Empate 3,75, Fora 3,70 |
-| 2026-10-18 | Málaga × Real Sociedad | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,60, Fora 2,25 |
+| 2026-10-18 | Málaga × Real Sociedad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Celta Vigo × Alavés | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,25, Empate 3,10, Fora 3,60 |
 | 2026-10-18 | Paris FC × Stade Rennais | 0-0 | 0 | Match Odds 1X2: Casa 2,15, Empate 3,55, Fora 3,35 |
 | 2026-10-18 | Lyon × Nice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -66,7 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **122**.
 | 2026-10-18 | Toluca × Atlético de San Luis | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Cruz Azul × FC Juárez | 5-0 | 90 | Chutes no alvo: 9.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×7.0, Grandes chances: 5.0×1.0 |
 | 2026-10-18 | Monterrey × Pachuca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 2-0 | 0 | Chutes no alvo: 8.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 4.0×0.0 |
+| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 2-0 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Novi Pazar × FK IMT Beograd | 1-2 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Hapoel Beer Sheva × Hapoel Jerusalem FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3574 | **Jogos distintos:** 1142 | **Resultados verificáveis:** 1926 | **Com gol:** 642 | **Sem gol:** 1284 | **Taxa observada:** 33.3%.
-**Evolução da amostra:** 10 datas com coletas | 28 pendentes | 706 indeterminados | 914 incompletos.
+**Observações:** 3584 | **Jogos distintos:** 1145 | **Resultados verificáveis:** 1926 | **Com gol:** 642 | **Sem gol:** 1284 | **Taxa observada:** 33.3%.
+**Evolução da amostra:** 10 datas com coletas | 38 pendentes | 706 indeterminados | 914 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,12 +177,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 659 | 444 | 160 | 284 | 36.0% |
-| ⚡ pressao_ofensiva_18 | 500 | 312 | 99 | 213 | 31.7% |
-| 🟥 expulsao_confirmada | 645 | 304 | 94 | 210 | 30.9% |
+| ⚡ pressao_ofensiva_18 | 506 | 312 | 99 | 213 | 31.7% |
+| 🟥 expulsao_confirmada | 647 | 304 | 94 | 210 | 30.9% |
 | 🎯 chutes_no_alvo_5 | 594 | 286 | 85 | 201 | 29.7% |
-| 🚩 escanteios_6 | 466 | 209 | 71 | 138 | 34.0% |
+| 🚩 escanteios_6 | 467 | 209 | 71 | 138 | 34.0% |
 | 💣 grandes_chances_3 | 372 | 187 | 74 | 113 | 39.6% |
-| 🔥 pressao_forte_10min | 161 | 91 | 31 | 60 | 34.1% |
+| 🔥 pressao_forte_10min | 162 | 91 | 31 | 60 | 34.1% |
 | 🧨 pressao_total_5_10min | 93 | 53 | 16 | 37 | 30.2% |
 | 🚨 alerta_cruzado_gol | 30 | 21 | 6 | 15 | 28.6% |
 | ⏱️ tensao_tardia_70 | 54 | 19 | 6 | 13 | 31.6% |
@@ -209,7 +209,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | OL Lyonnes (W) | 9 | 9 | 4 | 5 | 44.4% |
 | Hellas Verona | 13 | 8 | 5 | 3 | 62.5% |
 | Brighton & Hove Albion | 11 | 8 | 7 | 1 | 87.5% |
-| Manchester City (W) | 10 | 8 | 5 | 3 | 62.5% |
+| Manchester City (W) | 11 | 8 | 5 | 3 | 62.5% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | WSG Tirol | 9 | 8 | 1 | 7 | 12.5% |
 | Palmeiras | 13 | 7 | 0 | 7 | 0.0% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 184 | 107 | 33 | 74 | 30.8% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
-| Bundesliga | 106 | 58 | 14 | 44 | 24.1% |
+| Bundesliga | 107 | 58 | 14 | 44 | 24.1% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga MX | 90 | 49 | 22 | 27 | 44.9% |
 | Super League | 93 | 47 | 15 | 32 | 31.9% |
@@ -236,7 +236,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ligue 1 | 63 | 40 | 18 | 22 | 45.0% |
 | Super Lig | 46 | 40 | 14 | 26 | 35.0% |
 | Serie A | 69 | 39 | 9 | 30 | 23.1% |
-| WSL | 50 | 39 | 10 | 29 | 25.6% |
+| WSL | 51 | 39 | 10 | 29 | 25.6% |
 | 2. Bundesliga | 61 | 37 | 14 | 23 | 37.8% |
 | Ekstraklasa | 56 | 36 | 12 | 24 | 33.3% |
 | Serie B | 55 | 34 | 10 | 24 | 29.4% |
@@ -253,21 +253,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 103 | 76 | 31 | 45 | 40.8% |
 | 16–30′ | 299 | 214 | 74 | 140 | 34.6% |
-| 31–45′ | 486 | 372 | 150 | 222 | 40.3% |
-| 46–60′ | 570 | 424 | 144 | 280 | 34.0% |
+| 31–45′ | 490 | 372 | 150 | 222 | 40.3% |
+| 46–60′ | 572 | 424 | 144 | 280 | 34.0% |
 | 61–75′ | 756 | 506 | 152 | 354 | 30.0% |
-| 76–90′ | 1002 | 334 | 91 | 243 | 27.2% |
+| 76–90′ | 1006 | 334 | 91 | 243 | 27.2% |
 | 91+′ | 358 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3574 | **Jogos monitorados:** 1730 | **Ao vivo:** 145 | **Termômetros recentes:** 18.
+**Registros:** 3584 | **Jogos monitorados:** 1730 | **Ao vivo:** 147 | **Termômetros recentes:** 23.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Malmö FF × Häcken | Häcken (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Zemplín Michalovce × FC Košice | Zemplín Michalovce (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | FC Groningen × Ajax | FC Groningen (31') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (85') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Manchester City (W) × Brighton (W) | Manchester City (W) (90') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | CS Hammam-Lif × JS Omrane | CS Hammam-Lif (79') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:16:30.023087+00:00 | Molde × Start | Molde (16') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:16:30.023087+00:00 | OB × Brøndby IF | Brøndby IF (57') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:16:30.023087+00:00 | OB × Brøndby IF | Brøndby IF (57') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
@@ -358,20 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T14:37:37.277384+00:00 | AFC Bournemouth × Sunderland | Sunderland (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-18T14:37:37.277384+00:00 | Angers × Marseille | Marseille (81') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T14:37:37.277384+00:00 | Fiorentina × Como | Como (68') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | OB × Brøndby IF | Equipe não definida (34') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Zemplín Michalovce × FC Košice | Zemplín Michalovce (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Celtic × Heart of Midlothian | Heart of Midlothian (37') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Celtic × Heart of Midlothian | Heart of Midlothian (37') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Celtic × Heart of Midlothian | Celtic (37') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | AFC Bournemouth × Sunderland | AFC Bournemouth (76') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | AFC Bournemouth × Sunderland | Sunderland (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Angers × Marseille | Angers (81') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Dinamo Moscow × CSKA Moscow | CSKA Moscow (59') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:37:37.277384+00:00 | Dinamo Moscow × CSKA Moscow | CSKA Moscow (59') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **134**.
+Jogos com odds registradas nos ultimos dias: **132**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
