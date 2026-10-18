@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T08:39:42.222643+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T09:38:51.258681+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-10-18 | Borussia Mönchengladbach × TSG Hoffenheim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Bayer Leverkusen × SC Freiburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Juventus × Lazio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Udinese × Lecce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Udinese × Lecce | 0-0 | 0 | Match Odds 1X2: Casa 1,80, Empate 3,35, Fora 4,40 |
 | 2026-10-18 | Fiorentina × Como | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | AC Milan × Atalanta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | FC Cincinnati × Columbus Crew | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -71,7 +71,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Hapoel Beer Sheva × Hapoel Jerusalem FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Kladno × Česká Lípa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Žižkov × FC Silon Táborsko | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Žižkov × FC Silon Táborsko | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Mynavi Sendai Ladies × INAC Kobe Leonessa | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Omiya Ardija Ventus × AS Elfen Saitama | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | JEF Ladies × Urawa Ladies | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3182 | **Jogos distintos:** 1047 | **Resultados verificáveis:** 1688 | **Com gol:** 559 | **Sem gol:** 1129 | **Taxa observada:** 33.1%.
-**Evolução da amostra:** 10 datas com coletas | 20 pendentes | 651 indeterminados | 823 incompletos.
+**Observações:** 3185 | **Jogos distintos:** 1049 | **Resultados verificáveis:** 1695 | **Com gol:** 559 | **Sem gol:** 1136 | **Taxa observada:** 33.0%.
+**Evolução da amostra:** 10 datas com coletas | 11 pendentes | 654 indeterminados | 825 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,14 +178,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 572 | 383 | 134 | 249 | 35.0% |
 | 🟥 expulsao_confirmada | 592 | 275 | 86 | 189 | 31.3% |
-| ⚡ pressao_ofensiva_18 | 426 | 263 | 85 | 178 | 32.3% |
-| 🎯 chutes_no_alvo_5 | 537 | 256 | 76 | 180 | 29.7% |
-| 🚩 escanteios_6 | 427 | 193 | 66 | 127 | 34.2% |
-| 💣 grandes_chances_3 | 345 | 173 | 65 | 108 | 37.6% |
-| 🔥 pressao_forte_10min | 131 | 70 | 24 | 46 | 34.3% |
-| 🧨 pressao_total_5_10min | 79 | 43 | 14 | 29 | 32.6% |
-| 🚨 alerta_cruzado_gol | 28 | 18 | 5 | 13 | 27.8% |
-| ⏱️ tensao_tardia_70 | 45 | 14 | 4 | 10 | 28.6% |
+| ⚡ pressao_ofensiva_18 | 426 | 264 | 85 | 179 | 32.2% |
+| 🎯 chutes_no_alvo_5 | 538 | 256 | 76 | 180 | 29.7% |
+| 🚩 escanteios_6 | 429 | 194 | 66 | 128 | 34.0% |
+| 💣 grandes_chances_3 | 345 | 174 | 65 | 109 | 37.4% |
+| 🔥 pressao_forte_10min | 131 | 71 | 24 | 47 | 33.8% |
+| 🧨 pressao_total_5_10min | 79 | 44 | 14 | 30 | 31.8% |
+| 🚨 alerta_cruzado_gol | 28 | 19 | 5 | 14 | 26.3% |
+| ⏱️ tensao_tardia_70 | 45 | 15 | 4 | 11 | 26.7% |
 
 ### Equipe
 
@@ -198,6 +198,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Vancouver Whitecaps | 16 | 11 | 5 | 6 | 45.5% |
 | Rosenborg | 12 | 11 | 2 | 9 | 18.2% |
 | Red Bull New York | 16 | 10 | 2 | 8 | 20.0% |
+| Machida Zelvia | 12 | 10 | 0 | 10 | 0.0% |
 | Accrington Stanley | 9 | 9 | 0 | 9 | 0.0% |
 | Benfica | 9 | 9 | 1 | 8 | 11.1% |
 | OL Lyonnes (W) | 9 | 9 | 4 | 5 | 44.4% |
@@ -215,7 +216,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Vélez Sarsfield | 8 | 7 | 1 | 6 | 14.3% |
 | Boca Juniors | 7 | 7 | 1 | 6 | 14.3% |
 | San Diego FC | 12 | 6 | 0 | 6 | 0.0% |
-| FC Tokyo | 10 | 6 | 5 | 1 | 83.3% |
 
 ### Campeonato
 
@@ -224,7 +224,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Major League Soccer | 208 | 111 | 42 | 69 | 37.8% |
 | Premier League | 142 | 78 | 23 | 55 | 29.5% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
-| J. League | 97 | 59 | 23 | 36 | 39.0% |
+| J. League | 97 | 65 | 23 | 42 | 35.4% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga MX | 90 | 49 | 22 | 27 | 44.9% |
 | Bundesliga | 82 | 46 | 11 | 35 | 23.9% |
@@ -256,24 +256,27 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 387 | 289 | 120 | 169 | 41.5% |
 | 46–60′ | 519 | 390 | 134 | 256 | 34.4% |
 | 61–75′ | 695 | 456 | 138 | 318 | 30.3% |
-| 76–90′ | 886 | 282 | 72 | 210 | 25.5% |
+| 76–90′ | 889 | 289 | 72 | 217 | 24.9% |
 | 91+′ | 325 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3182 | **Jogos monitorados:** 1730 | **Ao vivo:** 29 | **Termômetros recentes:** 12.
+**Registros:** 3185 | **Jogos monitorados:** 1730 | **Ao vivo:** 29 | **Termômetros recentes:** 11.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T09:11:22.499607+00:00 | FC Seoul × Gimcheon Sangmu | Gimcheon Sangmu (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T09:11:22.499607+00:00 | Gangwon FC × Incheon United | Gangwon FC (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-18T09:11:22.499607+00:00 | Gangwon FC × Incheon United | Gangwon FC (83') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-18T08:26:54.526866+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T08:03:06.938699+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T07:41:13.955530+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (38') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -365,13 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T01:43:18.372102+00:00 | Sporting Kansas City × Real Salt Lake | Real Salt Lake (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-18T01:43:18.372102+00:00 | Sporting Kansas City × Real Salt Lake | Real Salt Lake (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-18T01:43:18.372102+00:00 | Denver Summit FC (W) × Angel City FC (W) | Angel City FC (W) (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:39:38.618855+00:00 | Independiente Medellín × Once Caldas | Independiente Medellín (28') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T01:39:38.618855+00:00 | León × CF América | CF América (32') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T01:17:50.470124+00:00 | Atlanta United × Inter Miami CF | Inter Miami CF (76') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **109**.
+Jogos com odds registradas nos ultimos dias: **111**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
