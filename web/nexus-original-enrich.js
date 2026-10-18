@@ -389,6 +389,9 @@ function labDashboard(doc){
  }));
  return {version:'5.29 original · dados GitHub',updated_at:doc.exported_at,
    pregame_archive:doc.pregame_archive||[],odds_collection_status:doc.odds_collection_status||{},
+   market_evidence:doc.market_evidence||null,
+   signal_evaluation:doc.signal_evaluation||null,
+   signal_journal:doc.signal_journal||{items:[],diagnostics:{}},
    observations:games.length,radar:signals,alerts:[...journal,...alerts],providers,quality,markets,
    backtest:{evaluated_fixtures:settled,total_net_units:pl,
      wins:paper.won||0,win_rate_pct:settled?round(paper.won/settled*100):null,
@@ -427,11 +430,14 @@ function cloudCollector(doc){
    market_policy:'Somente dados esportivos e operações paper. Informações financeiras pessoais permanecem privadas.',
    updated_at:doc.exported_at,games:rows,
    audit:{stake_brl:100,quotes_registered:quotes,
+      market_evidence:doc.market_evidence||null,
+      proof_of_execution:false,
       trades_verified:0,actual_net_pl_brl:null,
       settled_paper:settled,paper_profit_loss_brl:settled?Number(paper.paper_pl_u||0)*100:null,
       markets:selected,
       note:'Sem operações pessoais publicadas. EV+ só com preço pré-entrada e calibração; paper não é lucro recebido.'},
    platform_snapshot:null,signal_journal:doc.signal_journal||{items:[],diagnostics:{}},
+   signal_evaluation:doc.signal_evaluation||null,
    historical_xg:doc.historical_xg||{available:false,matches_verified:0,live_xg:false,ev_plus:false}};
 }
 window.fetch=async function(request,options){

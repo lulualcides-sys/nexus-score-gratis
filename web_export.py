@@ -10,6 +10,7 @@ import json
 import math
 import re
 from signal_evaluation import evaluate
+from market_evidence import audit_markets
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots
 from activity_timeline import observed_activity
@@ -708,6 +709,8 @@ def main():
         'diagnostics':registry.get('diagnostics') or {},
         'items':(registry.get('items') or [])[:400],
         'note':'Sinais 5.29 na nuvem; gols em 5/10/15 min conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
+    pregame=prelive_archive()
+    evidence=audit_markets(pregame)
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
@@ -718,7 +721,8 @@ def main():
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
-             'pregame_archive':prelive_archive(),
+             'pregame_archive':pregame,
+             'market_evidence':evidence,
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),

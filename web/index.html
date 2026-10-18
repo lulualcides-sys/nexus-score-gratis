@@ -740,6 +740,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-unit-pl.css">
 <link rel="stylesheet" href="./nexus-signal-evaluation.css">
 
+<link rel="stylesheet" href="./nexus-evidence-v535.css"/>
 </head>
 <body>
 <div class="shell">
@@ -860,6 +861,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 </style>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
+<script src="./nexus-evidence-v535.js"></script>
 <style>
 .n57-classic{display:flex;flex-direction:column;gap:13px;min-width:0}
 .n57-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#e9f4fa}
@@ -2785,31 +2787,7 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
   html='<h3>Diagnóstico de fontes · qualidade e atualização</h3><div class="lab-tags">'+Object.entries(data.providers||{}).map(([name,value])=>v5Chip(name+' · '+String(value).slice(0,80))).join('')+'</div>'+
   (q.length?q.map(x=>`<article class="lab-row"><div><strong>${esc(x.match_id)}</strong><small>Scouts: ${fmtV5(x.stats_available)}/${fmtV5(x.stats_expected)} · pressão: ${esc(x.momentum_source||'não disponível')} · ${esc(x.updated_at||'')}</small></div><div class="lab-row-numbers">${v5Chip(x.state)}${v5Chip(x.momentum_coverage_pct+'% minutos')}</div></article>`).join(''):labEmpty('Ainda sem coleta local de scouts ou pressão. As fontes públicas podem falhar ou limitar consultas.'));
  } else if(state.labTab==='alerts'){
-  const journal=cloudData?.signal_journal||{};
-  const a=data.alerts||[],pv=data.pressure_validation||{},windows=pv.windows||{},records=pv.records||[];
-  const vStake=data.stake_100||{};
-  const hasPressureSample=[5,10,15].some(n=>{const v=windows[String(n)]||{};return Number(v.hit||0)+Number(v.miss||0)+Number(v.pending||0)+Number(v.unverified||0)>0});
-  const summary=hasPressureSample?[5,10,15].map(n=>{
-    const v=windows[String(n)]||{},f=v.fixed_2x_example||{};
-    return `<div class="stake-window-card"><small>GOL EM ATÉ ${n} MIN APÓS ALERTA</small><strong>${v.hit_pct==null?'Sem amostra':fmtV5(v.hit_pct)+'%'}</strong><span>${v.hit||0} acertos · ${v.miss||0} sem gol · ${v.pending||0} pendentes · ${v.unverified||0} indeterminados</span><div class="stake-results"><b class="${Number(f.profit_brl)>=0?'positive':'negative'}">${f.roi_pct!=null?brl(f.profit_brl):'Sem liquidação'}</b><small>${f.roi_pct!=null?'ROI didático '+fmtV5(f.roi_pct)+'% · risco '+brl(f.total_staked_brl):'Aguardando dados verificáveis'}</small></div></div>`;
-  }).join(''):'<div class="lab-empty lab-empty-compact"><strong>Aguardando os primeiros alertas completos</strong><p>Para avaliar 5, 10 e 15 minutos, precisamos registrar pressão, minuto, placar do alerta e resultado posterior.</p></div>';
-  const word=s=>s==='goal'?'✓ Houve gol':s==='no_goal'?'✕ Sem gol':s==='unknown'?'? Não verificável':'… Pendente';
-  const simulated=r=>{
-    if(r==='goal')return `<strong class="stake-win">+${brl(100)}</strong>`;
-    if(r==='no_goal')return `<strong class="stake-loss">−${brl(100)}</strong>`;
-    return '<small>—</small>';
-  };
-  const validatedTrades=(vStake.entries||[]);
-  html=cloudJournalSummary(journal)+'<h3>Laboratório local · simulações separadas</h3><p class="n53-export-row"><a class="secondary-btn" href="/api/v53/pressure-alerts.csv" download>↓ Exportar todos os alertas (.CSV)</a> <a class="secondary-btn" href="/api/v5/export" download>↓ Exportar entradas EV+ (.CSV)</a></p>'+
-    '<p class="lab-muted"><b>Pressão:</b> cada janela de 5, 10 e 15 minutos é avaliada SEPARADAMENTE. Sem cotação real de gol, mostramos apenas exercício hipotético de R$ 100 por sinal à odd fixa de 2,00, sem comissão. <b>Não é lucro obtido nem EV+ comprovado.</b></p>'+
-    `<div class="n53-result-summary">${summary}</div>`+
-    (records.length?records.map(x=>`<article class="lab-row"><div><strong>${esc(x.home)} × ${esc(x.away)} · ${esc(x.minute)}' · pressão: ${x.direction==='home'?esc(x.home):esc(x.away)}</strong><small>Placar no alerta ${esc(x.score_home)}–${esc(x.score_away)} · pressão ${fmtV5(x.pressure)} · ${esc(x.created_at)} · ${esc(x.source||'')}</small></div><div class="lab-row-numbers">${[5,10,15].map(n=>`<span class="stake-row-item">${n} min: ${word(x['result_'+n])} ${simulated(x['result_'+n])}</span>`).join('')}</div></article>`).join(''):labEmpty('Nenhum alerta com minuto e placar salvo. A partir de agora eles ficam registrados e classificados prospectivamente.'))+
-    '<h3>Resultados EV+ · stake fixa R$ 100 com odds registradas</h3>'+
-    `<div class="n53-result-summary"><div><small>JOGOS LIQUIDADOS</small><strong>${fmtV5(vStake.evaluated_fixtures||0)}</strong><span>${vStake.wins||0} acertos · ${vStake.losses||0} erros</span></div><div><small>RETORNO HIPOTÉTICO LÍQUIDO</small><strong class="${Number(vStake.net_brl)>=0?'stake-win':'stake-loss'}">${vStake.evaluated_fixtures?brl(vStake.net_brl):'—'}</strong><span>Total arriscado: ${brl(vStake.risked_brl||0)}</span></div><div><small>ROI HIPOTÉTICO</small><strong>${vStake.roi_pct==null?'—':fmtV5(vStake.roi_pct)+'%'}</strong><span>Somente primeira entrada por partida com odd registrada</span></div></div>`+
-    `<p class="lab-muted">${esc(vStake.method||'Sem odds registradas não há apuração financeira para EV+.')}</p>`+
-    (validatedTrades.length?validatedTrades.slice(0,50).map(x=>`<article class="lab-row"><div><strong>${esc(x.home)} × ${esc(x.away)}</strong><small>${esc(marketLabel(x))} · odd ${fmtV5(x.odds)} · ${esc(x.status||'')}</small></div><div class="lab-row-numbers"><b class="${Number(x.net_brl)>=0?'stake-win':'stake-loss'}">${brl(x.net_brl)}</b></div></article>`).join(''):labEmpty('Nenhuma operação com odd real salva antes da partida e placar final verificado. Não atribuímos dinheiro aos EV+ teóricos sem cotação.'))+
-    '<details class="journal-old"><summary>Exibir observações antigas sem resultado auditável ('+a.length+')</summary>'+
-    (a.length?a.slice(0,30).map(x=>`<article class="lab-row"><div><strong>${esc(x.message)}</strong><small>${esc(x.created_at)} · ${esc(x.category)} · impossível calcular resultado sem registro anterior</small></div></article>`).join(''):labEmpty('Sem registros antigos.'))+'</details>';
+  html=NexusEvidence.alertHTML(data);
  } else if(state.labTab==='archive'){
   html='<h3>Arquivo de 90 dias · partidas já observadas</h3><p class="lab-muted">O histórico cresce enquanto o NEXUS está executando. A fonte nem sempre fornece momentum retroativo de partidas não coletadas.</p><div id="lab-archive"><span>Consultando arquivo local…</span></div>';
  }
@@ -2993,12 +2971,9 @@ function cloudChart(points){
 }
 function renderCloudAudit(report){
  const box=$('#cloud-audit');if(!box)return;
- const data=report||{}, rows=data.markets||[];
- const money=n=>Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
- const total=data.trades_verified||0;
- const line=rows.map(m=>`<tr><td>${esc(m.market)}</td><td>${Number(m.priced_games||0)}</td><td>${Number(m.experimental_ev_plus||0)}</td><td>${Number(m.settled_paper||0)}</td><td>${esc(Number(m.paper_units||0).toFixed(2))}u</td><td>${money(m.paper_brl)}</td><td>${Number(m.trades_executed||0)}</td><td>${money(m.actual_net_pl_brl)}</td></tr>`).join('');
- box.innerHTML=`<div class="cloud-audit-head"><h3>Auditoria por mercado · stake simulada R$ ${Number(data.stake_brl||100)}</h3><small>Odds efetivamente registradas, sem completar preços ausentes. EV+ apenas com probabilidade prévia.</small></div><div class="cloud-audit-stats"><div><small>REGISTROS DE ODDS · BRUTOS</small><b>${Number(data.quotes_registered||0)}</b></div><div><small>P/L SIMULADO · com entradas congeladas</small><b>${money(data.paper_profit_loss_brl)}</b></div><div><small>EXECUÇÕES COM COMPROVANTE</small><b>${total}</b></div><div><small>LUCRO REAL REGISTRADO</small><b>${total?money(data.actual_net_pl_brl):'Sem operações'}</b></div></div>${line?`<div class="cloud-audit-scroll"><table><thead><tr><th>Mercado</th><th>Jogos com odd</th><th>EV+ experimental</th><th>Simulações liquidadas</th><th>Unidades simuladas</th><th>P/L simulado</th><th>Trades executados</th><th>NetPL real</th></tr></thead><tbody>${line}</tbody></table></div>`:`<div class="cloud-audit-empty">Há ${Number(data.quotes_registered||0)} registros brutos de cotações no histórico, mas nenhum mercado com entrada pré-jogo validada e resultado liquidado nesta auditoria. Esses registros não são apostas nem lucro.</div>`}<p class="cloud-audit-note">${esc(data.note||'P/L real exige registro da operação executada. O resultado teórico não equivale a lucro recebido.')}</p>`;
+ box.innerHTML=NexusEvidence.auditHTML(report);
 }
+
 function renderPlatformSnapshot(platform){
  const target=$('#cloud-platform');if(!target)return;
  if(!platform){target.innerHTML='<p class="cloud-audit-note">Nenhum extrato privado importado; lucro e perdas reais indisponíveis.</p>';return}
