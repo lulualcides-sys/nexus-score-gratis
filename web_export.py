@@ -704,6 +704,7 @@ def main():
     historical_xg=historical_xg_summary(load(H/'soccerdata_xg_status.json'))
     fotmob=load(H/'fotmob_form_status.json')
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable','momentum_status_counts','stats_detail_available') if key in last}
+    standings_status=load(H/'standings_status.json')
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
@@ -719,6 +720,11 @@ def main():
                 'openfootball_cc0':{k:cc0.get(k) for k in ('updated_at','checked','cross_verified','conflicts','ambiguous','unmatched','unavailable','datasets_fetched','cache_hits','errors')}},
 
              'fotmob_form_status':{k:fotmob.get(k) for k in ('updated_at','teams_discovered','requests_succeeded','games_with_form','teams_with_10','roster_teams')},
+             'standings_collection_status':{k:standings_status.get(k) for k in (
+               'updated_at','leagues_found','leagues_queried','tables_received',
+               'fixtures_enriched','with_urgency','cache_tables_present',
+               'cache_tables_reused_fresh','fixtures_without_verified_table',
+               'unqueried_leagues','by_source')},
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
              'pregame_archive':pregame,
