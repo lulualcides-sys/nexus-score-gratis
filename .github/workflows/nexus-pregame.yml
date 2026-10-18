@@ -13,6 +13,7 @@ on:
       - "live_momentum.py"
       - "activity_timeline.py"
       - "web_export.py"
+      - "market_evidence.py"
       - "odds_fixture_bridge.py"
       - "signal_registry.py"
       - "standings_context.py"
@@ -38,11 +39,12 @@ jobs:
           persist-credentials: true
       - name: Validar rotina
         run: |
-          python3 -m py_compile api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
+          python3 -m py_compile market_evidence.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then python3 -m unittest discover -s tests -v; fi
           node --check web/nexus-audit-v532.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_audit_v532.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_classic_projections_v534.mjs; fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_evidence_v535.mjs; fi
           node --check web/nexus-original-enrich.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_original_enrich.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_live_scout_history.mjs; fi
