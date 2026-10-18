@@ -80,23 +80,68 @@ function report(b,g){
 }
 function archive(rows,limit=120){
  const records=Array.isArray(rows)?rows.slice(0,limit):[];
- if(!records.length)return '<div class="lab-empty"><strong>Histórico pré-live ainda vazio</strong><p>Somente previsões realmente capturadas antes do início entrarão aqui. Jogos antigos sem captura NÃO serão inventados.</p></div>';
- let frozen=0,settled=0,hits=0,decisions=0,odds=0;
- for(const r of records){if(!r.pregame_baseline)continue;frozen++;
-  if(r.pregame_baseline.odds)odds++;
-  if(r.pregame_baseline.settlement){settled++;hits+=Number(r.pregame_baseline.settlement.hits||0);decisions+=Number(r.pregame_baseline.settlement.count||0);}
+ if(!records.length)return '<div class="lab-empty"><strong>Histórico pré-live ainda vazio</strong>'+
+  '<p>Somente previsões realmente capturadas antes do início entrarão aqui. Jogos antigos sem captura NÃO serão inventados.</p></div>';
+ let versions=0,settledGames=0,hits=0,decisions=0,odds=0,conflicts=0,divergent=0;
+ for(const r of records){
+  const variants=Array.isArray(r.variants)&&r.variants.length?r.variants:[r];
+  versions+=variants.length;
+  if(r.result_conflict)conflicts++;
+  if(r.forecast_divergence)divergent++;
+  if(!r.result_conflict&&variants.some(v=>v.pregame_baseline?.settlement))settledGames++;
+  for(const v of variants){
+   const b=v.pregame_baseline||{};
+   if(b.odds)odds++;
+   if(!r.result_conflict&&b.settlement){
+    hits+=Number(b.settlement.hits||0);decisions+=Number(b.settlement.count||0);
+   }
+  }
  }
  const list=records.map(r=>{
-  const b=r.pregame_baseline||{},set=b.settlement;
-  return '<details class="nexus-audit-archive-row"><summary><b>'+html(r.home)+' × '+html(r.away)+'</b>'+
-   '<small>'+html(r.day)+' · '+html(r.league)+'</small><strong>'+
-   (set?html(set.hits)+'/'+html(set.count)+' cenários':'Pendente')+'</strong></summary>'+report(b,r)+'</details>';
+  const variants=Array.isArray(r.variants)&&r.variants.length?r.variants:[r];
+  const score=r.result_conflict?'PLACARES CONFLITANTES':
+    r.score&&r.phase==='finished'?'FT '+r.score:
+    variants.some(v=>v.pregame_baseline?.settlement)?
+      'Conferência registrada':'Pendente';
+  const divergent=!!r.forecast_divergence;
+  const sourceList=Array.isArray(r.sources)?r.sources.filter(Boolean).join(' + '):'';
+  const explanation=r.result_conflict?
+    '<p class="nexus-audit-warning">As fontes registraram placares finais diferentes. '+ 
+    'A avaliação fica suspensa até uma conferência confiável. Nenhuma versão foi descartada.</p>':
+    variants.length>1?
+    '<p class="nexus-audit-warning">'+
+    (divergent?'<strong>PREVISÕES DIFERENTES:</strong> ':'')+
+    'Existem '+variants.length+' análises originais do mesmo confronto. '+
+    'As amostras/fonte podem divergir; não fazemos média, não escolhemos uma previsão depois de conhecer o placar, '+
+    'nem contamos essas versões como jogos distintos.</p>':'';
+  return '<details class="nexus-audit-archive-row"><summary><b>'+
+    html(r.home)+' × '+html(r.away)+'</b><small>'+
+    html(r.day||'')+' · '+html(r.league||sourceList)+'</small>'+
+    '<span class="nexus-audit-versions">'+variants.length+
+      (variants.length===1?' versão salva':' versões salvas')+'</span>'+
+    '<strong>'+html(score)+'</strong></summary>'+
+    explanation+
+    '<div class="nexus-audit-snapshots">'+variants.map((v,i)=>
+      '<section class="nexus-audit-variant"><h4>Versão '+(i+1)+' · '+html(v.source||r.source||'Fonte registrada')+
+      (v.league?' · '+html(v.league):'')+'</h4>'+
+      report(v.pregame_baseline||r.pregame_baseline||{},{
+        ...r,phase:r.result_conflict?'conflict':r.phase,
+        score:r.result_conflict?'':r.score
+      })+'</section>').join('')+'</div></details>';
  }).join('');
- return '<div class="nexus-audit-archive"><h3>Memória pré-live congelada · até 90 dias</h3>'+
- '<p>Previsões capturadas: '+frozen+' · Jogos avaliados: '+settled+' · Cenários certos: '+
- hits+'/'+decisions+' · com cotações pré-jogo registradas: '+odds+'. Não é ROI, não significa EV+.</p>'+
- list+'</div>';
+ return '<section class="nexus-audit-archive"><h3>Memória pré-live congelada · até 90 dias</h3>'+
+  '<p><strong>'+records.length+'</strong> partidas distintas · '+versions+
+  ' versões originais · '+settledGames+' partidas com resultado conferido · '+
+  hits+'/'+decisions+' cenários verificados (versões correlacionadas) · '+odds+
+  ' versões com odds antigas registradas.'+
+  (divergent?' · '+divergent+' jogos com previsões divergentes.':'')+
+  (conflicts?' · '+conflicts+' com placar conflitante, não avaliados.':'')+
+  ' Não é ROI nem EV+ validado.</p>'+
+  '<details class="nexus-audit-list-toggle"><summary>Mostrar / ocultar lista de '+records.length+
+  ' partidas salvas</summary><div class="nexus-audit-list-content">'+list+
+  '</div></details></section>';
 }
+
 root.NexusAudit={freshness,freshnessHTML,status,report,archive};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusAudit;
 })(typeof window!=='undefined'?window:globalThis);

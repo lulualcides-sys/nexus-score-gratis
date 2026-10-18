@@ -14,6 +14,7 @@ from market_evidence import audit_markets
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots
 from activity_timeline import observed_activity
+from pregame_archive_merge import consolidate as consolidate_prelive
 
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
@@ -405,10 +406,15 @@ def public_baseline(row, fixture):
 
 
 def prelive_archive():
-    """Até 90 dias de avaliações esportivas já congeladas; sem dados privados."""
+    """Até 90 dias de pré-live, uma partida por confronto com variantes originais.
+
+    O histórico fonte não é editado. Consolida previsões FotMob/ESPN de
+    mesma partida e compara com placar final CONFIRMADO de qualquer registro
+    compatível. Se houver placares divergentes, não liquida no painel.
+    """
     last = datetime.now(BR).date()
     cutoff = last - timedelta(days=90)
-    entries = {}
+    records = []
     for path in sorted(H.glob('20??-??-??.json')):
         try:
             day = datetime.strptime(path.stem,'%Y-%m-%d').date()
@@ -418,23 +424,15 @@ def prelive_archive():
             continue
         doc = load(path)
         for row in (doc.get('matches') or {}).values():
-            if not isinstance(row,dict):
-                continue
+            if not isinstance(row,dict):continue
             f = row.get('fixture') or {}
+            if not isinstance(f,dict) or not f.get('home') or not f.get('away'):
+                continue
             baseline = public_baseline(row,f)
-            if not baseline:
-                continue
-            ident=safe(f.get('id'),90)
-            if not ident:
-                continue
-            entries[ident] = {'id':ident,'day':path.stem,
-                'home':safe(f.get('home')),'away':safe(f.get('away')),
-                'league':safe(f.get('league'),80),
-                'start_timestamp':f.get('start_timestamp'),
-                'phase':safe(f.get('phase'),15),
-                'score':safe(f.get('score'),12),
-                'pregame_baseline':baseline}
-    return sorted(entries.values(),key=lambda x:x['start_timestamp'] or 0,reverse=True)[:500]
+            # Importante: jogos ESPN sem baseline podem conter o placar FT
+            # necessário para verificar a previsão FotMob, e vice-versa.
+            records.append({'fixture':f,'day':path.stem,'pregame_baseline':baseline})
+    return consolidate_prelive(records)
 
 def public_row(row,day,team_cache=None,espn_cache=None):
     if not isinstance(row,dict):return None

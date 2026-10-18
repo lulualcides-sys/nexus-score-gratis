@@ -864,6 +864,27 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 .nexus-audit-archive-row{border:1px solid #41616f;border-radius:7px;margin:7px 0;padding:9px}
 .nexus-audit-archive-row summary{display:flex;justify-content:space-between;gap:10px;cursor:pointer;align-items:center}
 .nexus-audit-archive-row summary small{opacity:.7;font-size:11px}
+.nexus-audit-list-toggle{border:1px solid #416b7c;background:#152b39;border-radius:10px;padding:0;margin:12px 0}
+.nexus-audit-list-toggle>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:9px;
+ padding:13px 15px;color:#d5f7f3;font-size:12px;font-weight:800;background:#203d4b;
+ border-radius:10px;user-select:none}
+.nexus-audit-list-toggle>summary::-webkit-details-marker{display:none}
+.nexus-audit-list-toggle>summary::before{content:'▸';color:#8df5d1;font-size:17px}
+.nexus-audit-list-toggle[open]>summary::before{content:'▾'}
+.nexus-audit-list-toggle>summary:hover,.nexus-audit-list-toggle>summary:focus-visible{
+ background:#2b5060;outline:2px solid #7be7dd;outline-offset:-2px}
+.nexus-audit-list-content{padding:8px 10px 12px}
+.nexus-audit-archive-row>summary{flex-wrap:wrap}
+.nexus-audit-versions{border:1px solid #527b89;background:#1d4050;color:#b4eee1;
+ padding:4px 7px;border-radius:7px;font-size:10px;font-weight:750}
+.nexus-audit-warning{border:1px solid #76633e;background:#332c21;color:#f2d5a3;
+ padding:10px 12px;border-radius:8px;font-size:11px;line-height:1.6;margin:11px 0}
+.nexus-audit-snapshots{display:grid;gap:13px;margin:12px 0}
+.nexus-audit-variant{border:1px solid #3b5f70;border-radius:9px;background:#112838;padding:10px}
+.nexus-audit-variant h4{font-size:12px;color:#bdeff2;margin:5px 6px}
+.nexus-audit-variant .nexus-audit-card{margin:8px 0 4px}
+.nexus-journal-toggle .cloud-audit-scroll{margin:6px 10px 12px}
+
 @media(max-width:720px){.nexus-audit-row{grid-template-columns:1fr auto}.nexus-audit-row strong{grid-column:1/-1}.nexus-audit-archive-row summary{flex-wrap:wrap}}
 </style>
 <script src="./nexus-v531.js"></script>
@@ -3190,7 +3211,7 @@ function renderCloudSignalJournal(journal){
   e.basis==='confirmed_event'?'Evento confirmado':'Scout acumulado, não minuto do lance')+'</small></td>'+
   '<td>'+fmt(e,5)+'</td><td>'+fmt(e,10)+'</td><td>'+fmt(e,15)+'</td></tr>').join('');
  box.innerHTML=cloudJournalSummary(journal)+
-  (rows?'<div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div>':
+  (rows?'<details class="nexus-audit-list-toggle nexus-journal-toggle"><summary>Mostrar / ocultar lista de alertas · '+Math.min(entries.length,60)+' registros</summary><div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div></details>':
    '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
 function renderCloud(){
