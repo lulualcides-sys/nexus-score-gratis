@@ -1,0 +1,22 @@
+name: NEXUS frontend regression
+on:
+  push:
+    paths:
+      - 'web/index.html'
+      - 'tests/test_nexus_reconcile.cjs'
+      - '.github/workflows/nexus-frontend-regression.yml'
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: JavaScript regression and UI smoke
+        run: |
+          node tests/test_nexus_reconcile.cjs
+          node --check web/app.js
+          node --check web/match-detail.js
+          node --check web/nexus-market-quality-v538.js
