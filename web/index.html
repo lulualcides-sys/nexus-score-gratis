@@ -765,8 +765,14 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     <header class="header">
       <div class="mobile-head"><button class="menu-btn" id="menu-button" aria-label="Abrir menu">☰</button></div>
       <div><div class="eyebrow">CENTRAL DE MONITORAMENTO <span class="dot-sep">◆</span> <span id="page-kicker">AGENDA</span></div><h1 id="page-title">Jogos de hoje</h1></div>
-      <div class="header-actions"><button type="button" id="goal-sound-toggle" class="goal-sound-toggle" aria-pressed="false" title="Som opcional de gol para jogos abertos ou favoritos">🔇 Som de gol: desligado</button><span class="data-pill" id="mode-pill"><span class="pulsar"></span> DADOS REAIS</span><span class="clock" id="clock">--:--</span><button class="icon-btn" id="refresh" title="Atualizar agora" aria-label="Atualizar">↻</button></div>
+      <div class="header-actions"><button type="button" id="nexus-alert-open" class="nexus-alert-trigger" aria-expanded="false" aria-controls="nexus-alert-center" title="Alertas de jogos quentes salvos neste dispositivo">🔔 Alertas <span id="nexus-alert-unread" hidden>0</span></button><button type="button" id="goal-sound-toggle" class="goal-sound-toggle" aria-pressed="false" title="Som opcional de gol para jogos abertos ou favoritos">🔇 Som de gol: desligado</button><span class="data-pill" id="mode-pill"><span class="pulsar"></span> DADOS REAIS</span><span class="clock" id="clock">--:--</span><button class="icon-btn" id="refresh" title="Atualizar agora" aria-label="Atualizar">↻</button></div>
     </header>
+    <section id="nexus-alert-center" class="nexus-alert-center" hidden aria-label="Alertas de jogos quentes">
+      <div class="nexus-alert-top"><strong>🔔 CENTRAL DE ALERTAS</strong><button id="nexus-alert-close" type="button" aria-label="Fechar central">✕</button></div>
+      <p>Alertas deste dispositivo, conservados por até 48 horas. Pressão observada não garante gol nem EV+.</p>
+      <div id="nexus-alert-list" class="nexus-alert-scroll"></div>
+      <button id="nexus-alert-clear" type="button" class="secondary-btn">Limpar alertas salvos</button>
+    </section>
     <div class="body">
       <div class="announcement" id="notice"><span class="ann-icon">ⓘ</span><span id="notice-text">Carregando a lista de jogos. Os sinais dependem da cobertura gratuita disponível.</span><button id="dismiss-notice" aria-label="Fechar aviso">×</button></div>
       <section id="dashboard-view">
@@ -862,6 +868,25 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
 <script src="./nexus-evidence-v535.js"></script>
+<script src="./nexus-alert-center-v537.js"></script>
+<style>
+.nexus-alert-trigger{font-size:12px;font-weight:800;border:1px solid #3d6274;border-radius:9px;background:#183044;color:#e8f8fc;padding:9px 11px;cursor:pointer}
+.nexus-alert-trigger #nexus-alert-unread{display:inline-block;margin-left:3px;padding:2px 6px;border-radius:30px;background:#c85b41;color:#fff}
+.nexus-alert-trigger #nexus-alert-unread[hidden]{display:none}
+.nexus-alert-center{position:fixed;top:70px;right:16px;width:min(440px,calc(100vw - 32px));max-height:78vh;overflow:hidden;z-index:10050;border:1px solid #5a7788;border-radius:13px;padding:14px;background:#132c3c;box-shadow:0 20px 60px #000a;color:#e6f1f7}
+.nexus-alert-center[hidden]{display:none}
+.nexus-alert-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.nexus-alert-top button{background:none;border:0;color:#e6f1f7;font-size:16px;cursor:pointer}
+.nexus-alert-center>p{color:#a0c0cd;font-size:11px;line-height:1.6;margin:8px 0 12px}
+.nexus-alert-scroll{max-height:49vh;overflow:auto;display:grid;gap:8px;margin:10px 0}
+.nexus-alert-entry{display:flex;flex-direction:column;gap:5px;align-items:stretch;text-align:left;width:100%;background:#1b3a4d;color:#e4f1f8;border:1px solid #537184;border-radius:9px;padding:12px;cursor:pointer}
+.nexus-alert-entry.new{border-left:4px solid #ffa45b}
+.nexus-alert-entry.read{opacity:.75}
+.nexus-alert-entry strong{font-size:12px}.nexus-alert-entry small{color:#a1c0d0;font-size:10px}.nexus-alert-entry span{font-size:11px;line-height:1.5}.nexus-alert-entry em{font-size:10px;font-weight:800;color:#f6c37f;font-style:normal}
+.nexus-alert-entry:hover,.nexus-alert-entry:focus-visible{outline:2px solid #ffb765}
+@media(max-width:700px){.nexus-alert-center{top:55px}.nexus-alert-trigger{font-size:11px;padding:7px}.header-actions{flex-wrap:wrap;gap:6px}}
+</style>
+
 <style>
 .n57-classic{display:flex;flex-direction:column;gap:13px;min-width:0}
 .n57-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;color:#e9f4fa}
@@ -1976,6 +2001,50 @@ function observeGoalUpdates(matches){
 }
 
 const STAT_LABELS=[['possession','Posse de bola','%'],['xg','Gols esperados (xG)',''],['total_shots','Finalizações',''],['shots_on','Chutes no alvo',''],['shots_off','Chutes para fora',''],['corners','Escanteios',''],['big_chances','Grandes chances',''],['touches_box','Toques na área adversária',''],['dangerous_attacks','Ataques perigosos',''],['attacks','Ataques',''],['red_cards','Expulsões','']];
+function updateAlertsHub(){
+ const hub=window.NexusNoticeHub;if(!hub)return;
+ const items=hub.read(localStorage),view=hub.render(items);
+ const count=document.getElementById('nexus-alert-unread');
+ if(count){count.hidden=view.unread===0;count.textContent=String(view.unread);}
+ const list=document.getElementById('nexus-alert-list');if(list)list.innerHTML=view.html;
+}
+function saveHotNotice(matchId,title,message){
+ if(!window.NexusNoticeHub||!matchId)return;
+ const hub=window.NexusNoticeHub;
+ hub.save(localStorage,hub.add(hub.read(localStorage),
+  {match_id:matchId,kind:'hot',title,message}));
+ updateAlertsHub();
+}
+function bindAlertHub(){
+ const panel=document.getElementById('nexus-alert-center');
+ const trigger=document.getElementById('nexus-alert-open');
+ if(!panel||!trigger)return;
+ trigger.addEventListener('click',()=>{
+  panel.hidden=!panel.hidden;
+  trigger.setAttribute('aria-expanded',String(!panel.hidden));
+  updateAlertsHub();
+ });
+ document.getElementById('nexus-alert-close').addEventListener('click',()=>{
+  panel.hidden=true;trigger.setAttribute('aria-expanded','false');
+ });
+ document.getElementById('nexus-alert-clear').addEventListener('click',()=>{
+  window.NexusNoticeHub.save(localStorage,[]);
+  updateAlertsHub();
+ });
+ document.getElementById('nexus-alert-list').addEventListener('click',async e=>{
+  const item=e.target.closest('[data-nexus-alert-id]');if(!item)return;
+  const hub=window.NexusNoticeHub;
+  hub.save(localStorage,hub.mark(hub.read(localStorage),item.dataset.nexusAlertId));
+  updateAlertsHub();
+  panel.hidden=true;trigger.setAttribute('aria-expanded','false');
+  const id=item.dataset.nexusMatch;
+  if(state.view!=='live')await changeView('live');
+  if(state.list.some(m=>m.id===id))await chooseMatch(id);
+  else notify('Essa partida não está mais na lista ao vivo. Consulte o Histórico.','warn');
+ });
+ updateAlertsHub();
+}
+
 function notify(message,type='normal',title='',matchId=null){
  const clickable=typeof matchId==='string'&&matchId.length>0;
  const node=document.createElement(clickable?'button':'div');
@@ -1984,6 +2053,7 @@ function notify(message,type='normal',title='',matchId=null){
  const safeMessage=esc(message).replace(/\\n/g,'<br>');
  const safeTitle=title?`<strong>${esc(title)}</strong>`:'';
  node.innerHTML=`${safeTitle}${safeTitle?'<span class="toast-gap"></span>':''}<span>${safeMessage}</span>${clickable?'<small>ABRIR PARTIDA ↗</small>':''}`;
+ if(clickable)saveHotNotice(matchId,title,message);
  if(clickable)node.addEventListener('click',async()=>{
    if(state.demo||state.reference)return;
    if(state.view!=='live')await changeView('live');
@@ -3097,7 +3167,7 @@ async function loadCloud(){
  try{cloudData=await api('/api/github-collector');renderCloud();if($('#lab-total'))$('#lab-total').textContent=fmtV5(cloudJournalStats(cloudData.signal_journal).total);if(state.labTab==='alerts')renderLab()}
  catch(e){$('#cloud-results').textContent='Falha de sincronização: '+e.message;}
 }
-function connectUI(){setupAdvancedFilters();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';$('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
+function connectUI(){setupAdvancedFilters();bindAlertHub();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';$('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
 async function silentRefreshSelected(id){
  if(!id||state.selection!==id||state.demo||state.reference||state.view==='history')return;
  const game=state.list.find(x=>x.id===id);if(!game||game.phase==='scheduled')return;
