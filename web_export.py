@@ -766,7 +766,7 @@ def main():
     registry=load(H/'signal_registry.json')
     signal_journal={'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
-        'items':(registry.get('items') or [])[:2000],
+        'items':(registry.get('items') or [])[:5000],
         'note':'Sinais 5.29 na nuvem; gols em janelas de 5 a 40 minutos conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
