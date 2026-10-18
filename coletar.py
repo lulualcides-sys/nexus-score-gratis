@@ -104,6 +104,7 @@ def fotmob_list(day):
             canonical_id, edition_id=canonical_league_ids(league)
             out.append({'id':'fotmob-'+mid,'home':home['name'],'away':away['name'],
                 'league':str(league.get('name') or ''),'minute':minute,'live':live,
+                'round':str(event.get('tournamentStage') or '')[:30] if str(event.get('tournamentStage') or '').isdigit() else '',
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
                 'halftime':ht,'status_short':'HT' if ht else '',
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
@@ -487,6 +488,9 @@ def run():
                 signature=momentum_shape(packet)
                 status['momentum_shape_counts'][signature]=(
                     status['momentum_shape_counts'].get(signature,0)+1)
+            round_from_detail=str((packet.get('general') or {}).get('matchRound') or '').strip()
+            if round_from_detail and not (before.get('fixture') or {}).get('round'):
+                before.setdefault('fixture',{})['round']=round_from_detail[:35]
             before['momentum_diagnostic']={'state':diagnosis['state'],
                 'source_path':diagnosis['source_path'], 'checked_at':NOW.isoformat()}
             before['thermometer']={'points':merge((before.get('thermometer') or {}).get('points') or [],points)}
