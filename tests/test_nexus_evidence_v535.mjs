@@ -26,7 +26,7 @@ assert.match(display,/PARTIDAS COM PRÉ-LIVE CONGELADO/);
 assert.match(display,/2 acertos|Acertos/);
 assert.match(display,/EV teórico positivo/);
 assert.match(display,/NÃO representam 267 operações/);
-assert.match(display,/Sem entradas paper liquidadas/);
+assert.match(display,/Nenhuma entrada paper liquidada/);
 assert.doesNotMatch(display,/R\$\s*0,00/);
 assert.doesNotMatch(display,/EXECUÇÕES COM COMPROVANTE.*0/);
 assert.doesNotMatch(display,/Trades executados/);
