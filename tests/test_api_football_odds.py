@@ -47,7 +47,7 @@ class APIFootballFreeOddsTests(unittest.TestCase):
  def test_reject_wrong_team_and_ambiguous_event(self):
   now,row,events,quotes=self.fixtures()
   wrong=[{**events[0],'teams':{
-      'home':{'name':'Outro Vélez'},'away':{'name':'Gimnasia Mendoza'}}]
+      'home':{'name':'Outro Vélez'},'away':{'name':'Gimnasia Mendoza'}}}]
   self.assertIsNone(match_fixture(row['fixture'],wrong))
   self.assertIsNone(match_fixture(row['fixture'],events*2))
   self.assertIsNone(odds_trio({'response':[{
