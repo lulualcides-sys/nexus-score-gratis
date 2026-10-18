@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:36:50.825761+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:49:54.502383+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **125**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -33,13 +33,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 | 2026-10-18 | Real Madrid × Sevilla | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Osasuna × Racing Santander | 2-0 | 0 | Chutes no alvo: 7.0×1.0; Match Odds 1X2: Casa 1,95, Empate 3,75, Fora 3,70 |
 | 2026-10-18 | Málaga × Real Sociedad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Celta Vigo × Alavés | 1-0 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,25, Empate 3,10, Fora 3,60 |
-| 2026-10-18 | Paris FC × Stade Rennais | 1-0 | 0 | Chutes no alvo: 3.0×0.0; Match Odds 1X2: Casa 2,15, Empate 3,55, Fora 3,35 |
+| 2026-10-18 | Celta Vigo × Alavés | 2-0 | 0 | Chutes no alvo: 3.0×6.0; Match Odds 1X2: Casa 2,25, Empate 3,10, Fora 3,60 |
+| 2026-10-18 | Paris FC × Stade Rennais | 1-1 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 2,15, Empate 3,55, Fora 3,35 |
 | 2026-10-18 | Lyon × Nice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Lorient × AS Monaco | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 3,65, Empate 3,40, Fora 2,10 |
 | 2026-10-18 | Le Havre AC × AJ Auxerre | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,30, Empate 3,50, Fora 3,10 |
 | 2026-10-18 | Angers × Marseille | 2-5 | 0 | Chutes no alvo: 3.0×8.0; Match Odds 1X2: Casa 3,75, Empate 3,85, Fora 1,91 |
-| 2026-10-18 | Borussia Mönchengladbach × TSG Hoffenheim | 0-0 | 0 | Chutes no alvo: 0.0×0.0 |
+| 2026-10-18 | Borussia Mönchengladbach × TSG Hoffenheim | 0-1 | 0 | Chutes no alvo: 0.0×1.0 |
 | 2026-10-18 | Bayer Leverkusen × SC Freiburg | 2-1 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 1,59, Empate 4,30, Fora 4,60 |
 | 2026-10-18 | Juventus × Lazio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Udinese × Lecce | 0-3 | 0 | Chutes no alvo: 2.0×11.0; Match Odds 1X2: Casa 1,80, Empate 3,35, Fora 4,40 |
@@ -66,7 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 | 2026-10-18 | Toluca × Atlético de San Luis | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Cruz Azul × FC Juárez | 5-0 | 90 | Chutes no alvo: 9.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×7.0, Grandes chances: 5.0×1.0 |
 | 2026-10-18 | Monterrey × Pachuca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 4-0 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
+| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 5-1 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Novi Pazar × FK IMT Beograd | 1-2 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Hapoel Beer Sheva × Hapoel Jerusalem FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -79,7 +79,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 | 2026-10-18 | Sanfrecce Hiroshima Regina × NTV Tokyo Verdy Beleza | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Aberdeen × Celtic | 0-6 | 0 | Chutes no alvo: 0.0×4.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Glasgow City × Motherwell | 3-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 8.0×0.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-18 | Heart of Midlothian × Partick Thistle | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Heart of Midlothian × Partick Thistle | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Rangers × Hibernian LFC | 4-2 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×3.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Spartans FC × Montrose | 0-3 | 0 | Chutes no alvo: 0.0×6.0, Chutes para fora: 0.0×4.0, Escanteios: 2.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Cienciano × CD UT Cajamarca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,30 +168,31 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3641 | **Jogos distintos:** 1158 | **Resultados verificáveis:** 1942 | **Com gol:** 650 | **Sem gol:** 1292 | **Taxa observada:** 33.5%.
-**Evolução da amostra:** 10 datas com coletas | 70 pendentes | 703 indeterminados | 926 incompletos.
+**Observações:** 3674 | **Jogos distintos:** 1162 | **Resultados verificáveis:** 1990 | **Com gol:** 670 | **Sem gol:** 1320 | **Taxa observada:** 33.7%.
+**Evolução da amostra:** 10 datas com coletas | 52 pendentes | 706 indeterminados | 926 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 675 | 449 | 162 | 287 | 36.1% |
-| ⚡ pressao_ofensiva_18 | 520 | 316 | 102 | 214 | 32.3% |
-| 🟥 expulsao_confirmada | 650 | 306 | 94 | 212 | 30.7% |
-| 🎯 chutes_no_alvo_5 | 599 | 287 | 86 | 201 | 30.0% |
-| 🚩 escanteios_6 | 469 | 210 | 72 | 138 | 34.3% |
-| 💣 grandes_chances_3 | 375 | 188 | 74 | 114 | 39.4% |
-| 🔥 pressao_forte_10min | 167 | 93 | 32 | 61 | 34.4% |
-| 🧨 pressao_total_5_10min | 97 | 53 | 16 | 37 | 30.2% |
-| 🚨 alerta_cruzado_gol | 33 | 21 | 6 | 15 | 28.6% |
-| ⏱️ tensao_tardia_70 | 56 | 19 | 6 | 13 | 31.6% |
+| 🥶 jogo_frio | 686 | 461 | 170 | 291 | 36.9% |
+| ⚡ pressao_ofensiva_18 | 525 | 331 | 106 | 225 | 32.0% |
+| 🟥 expulsao_confirmada | 654 | 308 | 96 | 212 | 31.2% |
+| 🎯 chutes_no_alvo_5 | 601 | 289 | 87 | 202 | 30.1% |
+| 🚩 escanteios_6 | 473 | 214 | 75 | 139 | 35.0% |
+| 💣 grandes_chances_3 | 379 | 190 | 75 | 115 | 39.5% |
+| 🔥 pressao_forte_10min | 169 | 97 | 33 | 64 | 34.0% |
+| 🧨 pressao_total_5_10min | 98 | 56 | 16 | 40 | 28.6% |
+| 🚨 alerta_cruzado_gol | 33 | 23 | 6 | 17 | 26.1% |
+| ⏱️ tensao_tardia_70 | 56 | 21 | 6 | 15 | 28.6% |
 
 ### Equipe
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 97 | 62 | 28 | 34 | 45.2% |
+| Equipe não definida | 98 | 64 | 30 | 34 | 46.9% |
+| Olympiacos | 16 | 16 | 0 | 16 | 0.0% |
 | Manchester City | 18 | 12 | 7 | 5 | 58.3% |
 | FC Twente | 14 | 12 | 2 | 10 | 16.7% |
 | Rosenborg | 13 | 12 | 2 | 10 | 16.7% |
@@ -209,13 +210,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | OL Lyonnes (W) | 9 | 9 | 4 | 5 | 44.4% |
 | Hellas Verona | 13 | 8 | 5 | 3 | 62.5% |
 | Brighton & Hove Albion | 11 | 8 | 7 | 1 | 87.5% |
+| Brøndby IF | 11 | 8 | 2 | 6 | 25.0% |
 | Manchester City (W) | 11 | 8 | 5 | 3 | 62.5% |
 | Shelbourne | 9 | 8 | 0 | 8 | 0.0% |
 | WSG Tirol | 9 | 8 | 1 | 7 | 12.5% |
 | Palmeiras | 13 | 7 | 0 | 7 | 0.0% |
 | Liverpool | 12 | 7 | 5 | 2 | 71.4% |
-| Bohemian FC | 11 | 7 | 7 | 0 | 100.0% |
-| Chicago Fire FC | 11 | 7 | 1 | 6 | 14.3% |
 
 ### Campeonato
 
@@ -225,149 +225,149 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 184 | 107 | 33 | 74 | 30.8% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
-| Bundesliga | 107 | 58 | 14 | 44 | 24.1% |
+| Super League | 113 | 60 | 15 | 45 | 25.0% |
+| Bundesliga | 108 | 58 | 14 | 44 | 24.1% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
 | Liga MX | 90 | 49 | 22 | 27 | 44.9% |
-| Super League | 109 | 48 | 15 | 33 | 31.2% |
+| Ligue 1 | 74 | 48 | 19 | 29 | 39.6% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Primera División | 63 | 42 | 12 | 30 | 28.6% |
 | Eredivisie | 77 | 41 | 15 | 26 | 36.6% |
-| Ligue 1 | 71 | 41 | 19 | 22 | 46.3% |
 | Série A | 67 | 41 | 17 | 24 | 41.5% |
 | Super Lig | 46 | 40 | 14 | 26 | 35.0% |
 | Serie A | 69 | 39 | 9 | 30 | 23.1% |
 | WSL | 51 | 39 | 10 | 29 | 25.6% |
 | 2. Bundesliga | 61 | 37 | 14 | 23 | 37.8% |
+| Eliteserien | 66 | 36 | 7 | 29 | 19.4% |
+| Serie B | 57 | 36 | 10 | 26 | 27.8% |
 | Ekstraklasa | 56 | 36 | 12 | 24 | 33.3% |
-| Serie B | 57 | 34 | 10 | 24 | 29.4% |
-| LaLiga2 | 75 | 32 | 11 | 21 | 34.4% |
-| LaLiga | 62 | 31 | 12 | 19 | 38.7% |
+| LaLiga2 | 76 | 35 | 14 | 21 | 40.0% |
+| LaLiga | 63 | 34 | 15 | 19 | 44.1% |
+| Superligaen | 56 | 33 | 13 | 20 | 39.4% |
 | USL Championship | 45 | 31 | 17 | 14 | 54.8% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
-| Eliteserien | 63 | 29 | 3 | 26 | 10.3% |
-| Primera A | 40 | 29 | 10 | 19 | 34.5% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 106 | 77 | 32 | 45 | 41.6% |
-| 16–30′ | 308 | 215 | 74 | 141 | 34.4% |
-| 31–45′ | 505 | 373 | 151 | 222 | 40.5% |
-| 46–60′ | 575 | 433 | 148 | 285 | 34.2% |
-| 61–75′ | 782 | 508 | 154 | 354 | 30.3% |
-| 76–90′ | 1006 | 336 | 91 | 245 | 27.1% |
-| 91+′ | 359 | 0 | 0 | 0 | — |
+| 1–15′ | 107 | 79 | 32 | 47 | 40.5% |
+| 16–30′ | 311 | 224 | 76 | 148 | 33.9% |
+| 31–45′ | 508 | 381 | 154 | 227 | 40.4% |
+| 46–60′ | 583 | 437 | 152 | 285 | 34.8% |
+| 61–75′ | 789 | 531 | 163 | 368 | 30.7% |
+| 76–90′ | 1016 | 338 | 93 | 245 | 27.5% |
+| 91+′ | 360 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3641 | **Jogos monitorados:** 1730 | **Ao vivo:** 150 | **Termômetros recentes:** 25.
+**Registros:** 3674 | **Jogos monitorados:** 1730 | **Ao vivo:** 151 | **Termômetros recentes:** 20.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Brann (36') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Vålerenga (36') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:37:11.718857+00:00 | Celta Vigo × Deportivo Alavés | Deportivo Alavés (65') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:37:11.718857+00:00 | Granada × Cádiz | Cádiz (63') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:36:08.913372+00:00 | Sandefjord × Lillestrøm | Sandefjord (36') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Örgryte × GAIS | Örgryte (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Örgryte × GAIS | Örgryte (62') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Malmö FF × Häcken | Malmö FF (64') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Malmö FF × Häcken | Malmö FF (64') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Malmö FF × Häcken | Malmö FF (64') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Malmö FF × Häcken | Malmö FF (64') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | OB × Brøndby IF | Brøndby IF (90') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Celtic × Heart of Midlothian | Equipe não definida (91') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Granada × Cádiz | Granada (76') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (53') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (53') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (53') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Panetolikos × Olympiacos | Panetolikos (90') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Felgueiras 1932 × AD Fafe | AD Fafe (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:50:27.606576+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (88') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Vålerenga × Brann | Brann (41') | 🥶 jogo_frio · pressão observada | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Molde × Start | Molde (41') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Molde × Start | Molde (41') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Örgryte × GAIS | GAIS (53') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Malmö FF × Häcken | Häcken (55') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Flekkerøy × Våg | Flekkerøy (85') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | OB × Brøndby IF | OB (82') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Celtic × Heart of Midlothian | Celtic (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Le Havre × Auxerre | Auxerre (26') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Lorient × Monaco | Lorient (26') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Paris FC × Rennes | Paris FC (21') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Celta Vigo × Deportivo Alavés | Deportivo Alavés (69') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Borussia Mönchengladbach × Hoffenheim | Hoffenheim (10') | 🥶 jogo_frio · pressão observada | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | CF Calamocha × Peña Sport | CF Calamocha (49') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Al-Sadd × Al-Duhail SC | Al-Duhail SC (49') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Al-Sadd × Al-Duhail SC | Al-Duhail SC (49') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Mafra × Santa Clara | Santa Clara (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:41:26.059751+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (80') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Brann (36') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Vålerenga (36') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Celta Vigo × Deportivo Alavés | Deportivo Alavés (65') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Granada × Cádiz | Cádiz (63') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:36:08.913372+00:00 | Sandefjord × Lillestrøm | Sandefjord (36') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | FC Groningen × Ajax | FC Groningen (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:36:08.913372+00:00 | Paris FC × Rennes | Paris FC (16') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (74') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (74') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:35:16.421344+00:00 | Celta Vigo × Alavés | Alavés (62') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:35:16.421344+00:00 | Le Havre × Auxerre | Auxerre (20') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Sandefjord × Lillestrøm | Sandefjord (34') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | OB × Brøndby IF | Brøndby IF (74') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Lorient × Monaco | Monaco (19') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Celta Vigo × Deportivo Alavés | Equipe não definida (61') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Granada × Cádiz | Granada (60') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Cesena × Avellino | Cesena (17') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:34:04.854719+00:00 | Northeast United FC × Kerala Blasters FC | Equipe não definida (72') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Molde × Start | Molde (33') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Molde × Start | Molde (33') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Sandefjord × Lillestrøm | Sandefjord (33') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | OB × Brøndby IF | Brøndby IF (73') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Le Havre × Auxerre | Auxerre (18') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Lorient × Monaco | Monaco (18') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:36:08.913372+00:00 | Paris FC × Rennes | Paris FC (16') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (74') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (74') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:35:16.421344+00:00 | Celta Vigo × Alavés | Alavés (62') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-18T15:35:16.421344+00:00 | Le Havre × Auxerre | Auxerre (20') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Sandefjord × Lillestrøm | Sandefjord (34') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | OB × Brøndby IF | Brøndby IF (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Lorient × Monaco | Monaco (19') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Celta Vigo × Deportivo Alavés | Equipe não definida (61') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Granada × Cádiz | Granada (60') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Panetolikos × Olympiacos | Olympiacos (74') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Cesena × Avellino | Cesena (17') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:34:04.854719+00:00 | Northeast United FC × Kerala Blasters FC | Equipe não definida (72') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Molde × Start | Molde (33') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Molde × Start | Molde (33') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Sandefjord × Lillestrøm | Sandefjord (33') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | OB × Brøndby IF | Brøndby IF (73') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Le Havre × Auxerre | Auxerre (18') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Lorient × Monaco | Monaco (18') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Paris FC × Rennes | Paris FC (13') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Celta Vigo × Deportivo Alavés | Celta Vigo (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Granada × Cádiz | Granada (59') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Cesena × Avellino | Cesena (16') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Felgueiras 1932 × AD Fafe | AD Fafe (73') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (71') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Vålerenga × Brann | Vålerenga (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Vålerenga × Brann | Vålerenga (29') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Flekkerøy × Våg | Flekkerøy (73') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Celta Vigo × Deportivo Alavés | Celta Vigo (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Granada × Cádiz | Granada (59') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Cesena × Avellino | Cesena (16') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Felgueiras 1932 × AD Fafe | AD Fafe (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (71') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Vålerenga × Brann | Vålerenga (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Vålerenga × Brann | Vålerenga (29') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Flekkerøy × Våg | Flekkerøy (73') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | FC Groningen × Ajax | Ajax (43') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | FC Groningen × Ajax | Ajax (43') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | FC Groningen × Ajax | Ajax (43') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Le Havre × Auxerre | Auxerre (14') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Lorient × Monaco | Monaco (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Le Havre × Auxerre | Auxerre (14') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Lorient × Monaco | Monaco (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Veles Moscow × Shinnik Yaroslavl | Veles Moscow (72') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | CS Hammam-Lif × JS Omrane | CS Hammam-Lif (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (68') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:17:26.269404+00:00 | Malmö FF × Häcken | Häcken (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Malmö FF × Häcken | Häcken (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Zemplín Michalovce × FC Košice | Zemplín Michalovce (84') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | FC Groningen × Ajax | FC Groningen (31') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (85') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Manchester City (W) × Brighton (W) | Manchester City (W) (90') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | CS Hammam-Lif × JS Omrane | CS Hammam-Lif (79') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Molde × Start | Molde (16') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | OB × Brøndby IF | Brøndby IF (57') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | OB × Brøndby IF | Brøndby IF (57') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | OB × Brøndby IF | Brøndby IF (57') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Zemplín Michalovce × FC Košice | FC Košice (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Zemplín Michalovce × FC Košice | FC Košice (83') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Zemplín Michalovce × FC Košice | Zemplín Michalovce (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Dukla Banská Bystrica × Zeleziarne Podbrezová | Dukla Banská Bystrica (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Celtic × Heart of Midlothian | Celtic (58') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (84') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (84') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Panetolikos × Olympiacos | Panetolikos (57') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Manchester City (W) × Brighton (W) | Manchester City (W) (89') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Manchester City (W) × Brighton (W) | Manchester City (W) (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | CS Hammam-Lif × JS Omrane | CS Hammam-Lif (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (55') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:16:30.023087+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (55') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:02:53.630428+00:00 | Manchester City (W) × Brighton (W) | Manchester City (W) (76') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Khorfakkan × Al-Wahda | Al-Wahda (91') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Kalba FC × Al-Jazira | Kalba FC (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Örgryte × GAIS | Örgryte (28') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Dukla Banská Bystrica × Zeleziarne Podbrezová | Zeleziarne Podbrezová (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Dinamo Moscow × CSKA Moscow | CSKA Moscow (81') | 🥶 jogo_frio · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Debrecen × Zalaegerszeg | Debrecen (68') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Siwelele × Polokwane City | Equipe não definida (70') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Bari × Crotone | Crotone (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:58:30.380508+00:00 | Bari × Crotone | Crotone (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Örgryte × GAIS | Örgryte (25') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Fiorentina × Como | Fiorentina (87') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (64') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kayserispor × Batman Petrolspor | Kayserispor (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kayserispor × Batman Petrolspor | Kayserispor (96') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
