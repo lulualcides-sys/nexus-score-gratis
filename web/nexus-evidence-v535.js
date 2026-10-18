@@ -76,6 +76,43 @@ function normalizeSummary(evaluation,journal){
  }
  return slots;
 }
+function uncertainty(hits,total){
+ // Intervalo Wilson 95% para ocorrências observadas, não probabilidade futura.
+ const n=num(total),k=num(hits);if(n===null||k===null||n<=0||k<0||k>n)return null;
+ const z=1.96,p=k/n,d=1+z*z/n;
+ const mid=(p+z*z/(2*n))/d,half=z*Math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d;
+ return {low:Math.max(0,Math.round((mid-half)*1000)/10),
+         high:Math.min(100,Math.round((mid+half)*1000)/10)};
+}
+function calibrationHTML(evaluation){
+ const e=evaluation&&typeof evaluation==='object'?evaluation:{};
+ const bySignal=Array.isArray(e.views?.['10']?.by_signal)?
+  e.views['10'].by_signal:Array.isArray(e.by_signal)?e.by_signal:[];
+ const byBand=Array.isArray(e.views?.['10']?.by_minute_band)?
+  e.views['10'].by_minute_band:[];
+ if(!bySignal.length)return '<section class="nexus-evidence-model"><h3>IARA · resultados observados por sinal</h3>'+
+  '<p>Ainda não existem observações verificáveis suficientes para avaliar cada tipo de alerta.</p></section>';
+ const result=(list,limit)=>list.filter(x=>x&&Number.isFinite(Number(x.settled)))
+   .sort((a,b)=>Number(b.settled)-Number(a.settled)).slice(0,limit)
+   .map(x=>{
+    const n=Number(x.settled),p=n?Number(x.hits)/n*100:null;
+    const ci=n>=20?uncertainty(x.hits,n):null;
+    const conclusion=n<20?'Amostra pequena':n<50?'Em observação':'Amostra maior, ainda não calibrada';
+    return '<tr><th>'+h(x.label)+'</th><td>'+count(n)+'</td><td>'+pct(p)+'</td>'+
+      '<td>'+h(ci?ci.low+'%–'+ci.high+'%':'—')+'</td>'+
+      '<td>'+h(conclusion)+'</td></tr>';
+   }).join('');
+ const header='<table class="nexus-evidence-breakdown"><thead><tr><th>Grupo</th><th>Desfechos</th>'+
+  '<th>Gols até 10 min</th><th>Wilson 95%*</th><th>Qualidade</th></tr></thead><tbody>';
+ return '<section class="nexus-evidence-model"><h3>◉ IARA · o que os alertas realmente produziram</h3>'+
+ '<p>Comparação histórica por tipo de sinal e trecho do jogo. Sem extrapolar para uma chance individual de gol.</p>'+
+ '<div class="nexus-evidence-scroll">'+header+result(bySignal,8)+'</tbody></table></div>'+
+ (byBand.length?'<details><summary>Ver desempenho por intervalo do jogo</summary>'+
+ '<div class="nexus-evidence-scroll">'+header+result(byBand,7)+'</tbody></table></div></details>':'')+
+ '<p><small>*Intervalo estatístico descritivo (Wilson), assumindo observações independentes; jogos repetidos violam essa hipótese. '+
+ 'Não é intervalo de calibração nem previsão operacional. Ajustar parâmetros exige validação fora da amostra.</small></p></section>';
+}
+
 function alertHTML(data){
  const d=data&&typeof data==='object'?data:{},journal=d.signal_journal||{};
  const summary=normalizeSummary(d.signal_evaluation,journal);
@@ -122,6 +159,7 @@ function alertHTML(data){
  '<p>Avaliação dos alertas reais registrados, em janelas independentes de 5, 10 e 15 minutos. '+
  'Não são odds, apostas ou cálculo de EV+.</p>'+
  '<div class="nexus-evidence-windows">'+['5','10','15'].map(card).join('')+'</div>'+
+ calibrationHTML(d.signal_evaluation)+
  '<p class="nexus-evidence-foot">A taxa usa apenas gols/sem gol confirmados. Alertas da mesma partida são correlacionados. '+
  'Alertas pendentes e janelas sem cobertura não entram na taxa.</p>'+
  '<h3>Memória de alertas com minuto confirmado <small>('+count(alerts.length)+' mostrados · últimos 80)</small></h3>'+
