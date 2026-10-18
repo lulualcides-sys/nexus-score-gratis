@@ -2233,7 +2233,7 @@ function updateLeagues(){
 async function loadFavorites(){const d=await api('/api/favorites');state.favorites=new Set((d.favorites||[]).map(x=>x.match_id));updateIndicators()}
 let lastHotHydration=0;
 async function hydrateListDetails(){
- if(state.demo||state.reference||!['live','today','favorites'].includes(state.view))return;
+ if(state.demo||state.reference||!['live','favorites'].includes(state.view))return;
  if(Date.now()-lastHotHydration<115000)return;
  lastHotHydration=Date.now();
  const token=Date.now();state.listHydrationToken=token;
