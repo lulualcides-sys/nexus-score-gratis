@@ -59,6 +59,7 @@ const alerts=e.alertHTML(data);
 assert.match(alerts,/GOL ATÉ 5 MIN/);
 assert.match(alerts,/GOL ATÉ 10 MIN/);
 assert.match(alerts,/GOL ATÉ 15 MIN/);
+assert.match(alerts,/GOL ATÉ 40 MIN/);
 assert.match(alerts,/gol confirmado|Gol/);
 assert.match(alerts,/Sem gol/);
 assert.match(alerts,/Parcial|Pendente/);
