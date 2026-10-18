@@ -14,7 +14,7 @@ H=ROOT/'history'
 JOURNAL=H/'signal_registry.json'
 WINDOWS=(5,10,15,20,25,30,35,40)
 COOLDOWN=12
-MAX_ALERTS=10000
+# O diário não elimina observações antigas por volume. A interface limita apenas a exibição.
 
 def read(path):
     try:
@@ -247,7 +247,7 @@ def update(docs,previous=None,observed_at=None):
             fixture,row=current[entry['match_id']]
             resolve(entry,fixture,row)
     entries.sort(key=lambda x:str(x.get('captured_at') or ''),reverse=True)
-    return {'schema':1,'updated_at':when,'items':entries[:MAX_ALERTS],
+    return {'schema':1,'updated_at':when,'items':entries,
         'diagnostics':diagnostics(docs),
         'notice':'Alertas de pressão verificados quando possível. Não representam apostas nem EV+.'}
 
@@ -296,7 +296,7 @@ def merge_journals(*journals):
         deduped.append(item)
     entries=sorted(deduped,key=lambda e:str(e.get('captured_at') or ''),reverse=True)
     return {'schema':1,'updated_at':newest.get('updated_at'),
-            'items':entries[:MAX_ALERTS],'diagnostics':newest.get('diagnostics') or {},
+            'items':entries,'diagnostics':newest.get('diagnostics') or {},
             'notice':'Registros unidos entre jobs. Não equivale a EV+ ou apostas.'}
 
 def merge_remote(backup_path=None):

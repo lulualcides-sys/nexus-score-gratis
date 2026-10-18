@@ -100,6 +100,16 @@ class SignalRegistryTests(unittest.TestCase):
         self.assertEqual(len(result['items']),1)
         self.assertEqual(result['items'][0]['id'],'snapshot-first')
 
+    def test_merge_does_not_truncate_archived_observations(self):
+        entries=[{'id':f'historical-{n}','match_id':f'match-{n}',
+                  'captured_at':'2026-10-09T12:00:00Z',
+                  'basis':'pressure_window','outcomes':{'40':'pendente'}}
+                 for n in range(10010)]
+        before={'updated_at':'2026-10-09T12:00:00Z','items':entries}
+        merged=merge_journals(before,{'items':[]})
+        self.assertEqual(len(merged['items']),len(entries))
+        self.assertEqual({x['id'] for x in merged['items']},{x['id'] for x in entries})
+
     def test_same_score_after_horizon_is_no_goal(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-0'),self.data())
