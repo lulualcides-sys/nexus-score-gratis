@@ -992,8 +992,15 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       if(entries.length)return entries.map(p=>({name:p.name,number:p.number||''}));
       return (rosters[side]||[]).flatMap(group=>group.players||[]).slice(0,25);
     };
-    return {home:get('home'),away:get('away'),status:
-      (lineups.home?.starters?.length||lineups.away?.starters?.length)?'Lineups reportadas (confirmar status)':'Elenco geral; não equivale a escalação titular',
+    return {home:get('home'),away:get('away'),
+      home_detail:{xi:lineups.home?.starters||[],bench:lineups.home?.subs||[],
+        official:lineups.home?.status==='confirmed',formation:lineups.home?.formation||'',
+        roster:(rosters.home||[]).flatMap(c=>c.players||[])},
+      away_detail:{xi:lineups.away?.starters||[],bench:lineups.away?.subs||[],
+        official:lineups.away?.status==='confirmed',formation:lineups.away?.formation||'',
+        roster:(rosters.away||[]).flatMap(c=>c.players||[])},
+      status:(lineups.home?.status==='confirmed'&&lineups.away?.status==='confirmed')?
+        'Duas escalações confirmadas':'Escalações parciais ou ainda previstas',
       source:'FotMob · coleta GitHub'};
   }
   function details(g){
@@ -1058,14 +1065,19 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     const probs=forecasts?.one_x_two;
     return {...listing(g),score:g.score,minute:g.minute,stats,stats_source:g.source,
       incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
-      lineups:asLineups(g),head_to_head:[],
+      lineups:asLineups(g),team_leaders:g.team_leaders||{},
+      match_stars:g.match_stars||{},closing_odds:g.closing_odds||[],
+      head_to_head:g.head_to_head||[],
       thermometer:{points},scout_pressure:{available:points.length>0,last_graph_minute:m,source:g.source,
         narrative:!points.length?'Sem termômetro real nesta partida': dominant==='HOME'?g.home+' apresenta maior intensidade na última janela observada.':dominant==='AWAY'?g.away+' apresenta maior intensidade na última janela observada.':'Intensidade equilibrada na janela observada.',
         windows:{},goal_markers:events.filter(e=>e.emoji==='⚽')} ,
       pressure_source:g.source,pressure_samples:points.length,
       pressure:{score,level:lvl,dominant,difference:range.length?fixed(avg):null,minute:+g.minute||0},
       pressure5:{score:range.length?Math.round(Math.abs(avg5)):null},
-      goal_scorers:events.filter(e=>e.emoji==='⚽').map(e=>({minute:e.minute,team:e.team==='HOME'?'home':'away',player:e.text,stamp:e.stamp})),
+      goal_scorers:(g.events||[]).filter(e=>e.type==='goal'&&['home','away'].includes(e.side))
+        .map(e=>({minute:Number(e.m),team:e.side,player:e.player||e.text||'Autor não informado',
+                  assist:e.assist||'',own_goal:e.own_goal===true,penalty:e.penalty===true,
+                  source:e.source||'Fonte não informada',stamp:String(e.m)+"'"})),
       odds:{available:(g.odds||[]).length===3,markets:quoteMap(g.odds),
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
         fetched_at:g.odds?.[0]?.at||null,phase:g.odds_scope||'pregame'},
