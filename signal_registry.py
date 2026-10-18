@@ -12,7 +12,7 @@ import json,math,re,hashlib,sys,subprocess
 ROOT=Path(__file__).resolve().parent
 H=ROOT/'history'
 JOURNAL=H/'signal_registry.json'
-WINDOWS=(5,10,15)
+WINDOWS=(5,10,15,20,25,30,35,40)
 COOLDOWN=12
 MAX_ALERTS=10000
 
