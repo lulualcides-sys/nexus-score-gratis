@@ -38,6 +38,24 @@ def utc_ts(value):
     except (TypeError,ValueError):pass
     return None
 
+def confirmed_halftime(status, active=True):
+    """HT somente por status explícito do fornecedor, nunca só porque chegou aos 45'."""
+    if not active or not isinstance(status,dict):
+        return False
+    objects=[status, status.get('liveTime') or {},status.get('reason') or {},
+             status.get('type') or {}]
+    raw=[]
+    for obj in objects:
+        if not isinstance(obj,dict):
+            continue
+        raw.extend(str(obj.get(key) or '').strip() for key in
+                   ('short','shortDetail','description','name','detail','long','displayName','text'))
+    return any(re.fullmatch(
+        r'(?:STATUS[_ -]?)?(?:HT|HALF[_ -]?TIME|INTERVALO|INTERMISSION|'
+        r'1ST[_ -]?HALF[_ -]?(?:ENDED|OVER)|FIRST[_ -]?HALF[_ -]?(?:ENDED|OVER))',
+        item,re.I) for item in raw if item)
+
+
 def fotmob_list(day):
     params=urlencode({'date':day.replace('-','')})
     obj=None
@@ -64,12 +82,14 @@ def fotmob_list(day):
             live=bool(status.get('started')) and not bool(status.get('finished'))
             finished=bool(status.get('finished'))
             clock=str((status.get('liveTime') or {}).get('short') or '')
-            found=re.search(r'(?<!\d)(\d{1,3})(?:\+\d+)?[\'′ ]?',clock)
-            minute=int(found.group(1)) if live and found else 0
+            ht=confirmed_halftime(status,live)
+            found=re.search(r"(?<!\\d)(\\d{1,3})(?:\\+\\d+)?['′ ]?",clock)
+            minute=int(found.group(1)) if live and found else 45 if ht else 0
             scores=[safe_int(home.get('score')),safe_int(away.get('score'))]
             out.append({'id':'fotmob-'+mid,'home':home['name'],'away':away['name'],
                 'league':str(league.get('name') or ''),'minute':minute,'live':live,
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
+                'halftime':ht,'status_short':'HT' if ht else '',
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
                 'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),
                 'home_id':str(home.get('id') or ''),'away_id':str(away.get('id') or ''),
@@ -94,13 +114,15 @@ def espn_league(code):
         status=event.get('status') or {}
         state=str((status.get('type') or {}).get('state') or '').lower()
         live=state in ('in','inprogress')
-        found=re.search(r'^(\d{1,3})',str(status.get('displayClock') or ''))
-        minute=int(found.group(1)) if live and found else 0
+        ht=confirmed_halftime(status,live)
+        found=re.search(r'^(\\d{1,3})',str(status.get('displayClock') or ''))
+        minute=int(found.group(1)) if live and found else 45 if ht else 0
         out.append({'id':'espn-'+code+'-'+str(event.get('id')),
             'home':(h.get('team') or {}).get('displayName',''),
             'away':(a.get('team') or {}).get('displayName',''),
             'league':code,'minute':minute,'live':live,
             'phase':'live' if live else 'finished' if state=='post' else 'scheduled',
+            'halftime':ht,'status_short':'HT' if ht else '',
             'score':str(h.get('score','?'))+'-'+str(a.get('score','?')),
             'source':'ESPN','start_timestamp':utc_ts(event.get('date')),'collected_at':NOW.isoformat()})
     return out
