@@ -66,7 +66,7 @@ const brokenStamp=classic({...d,pregame_baseline:{...frozen,captured_at:'2026-10
 assert.match(brokenStamp,/SEM PRÉ-LIVE REGISTRADO/);
 
 assert.match(html,/case 'projections':html\+=classicProjection57\(d\)/);
-assert.match(html,/NexusAudit\.report\(d\.pregame_baseline,d\)/);
+assert.match(html,/NexusMarketQuality\.render\(d\.pregame_baseline,d\)/);
 assert.match(html,/halftime:g\.halftime===true/);
 assert.doesNotMatch(oldFile,/window\.comparisonProjection56\s*=/);
 for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)){
