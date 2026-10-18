@@ -153,12 +153,18 @@
       '<span class="md-event-time">'+esc(e.m)+'′</span><span class="md-event-symbol md-event-'+esc(e.type)+'">'+
       (eventIcons[e.type]||'•')+'</span><span><b>'+esc(eventNames[e.type]||e.type)+'</b>'+
       '<small>'+esc(e.side==='home'?g.home:e.side==='away'?g.away:'Equipe não identificada')+
-      (e.text?' · '+esc(e.text):'')+'</small></span></div>').join('')+'</div>';
+      (e.text?' · '+esc(e.text):'')+
+      (e.type==='goal'&&e.assist?' · Assistência: '+esc(e.assist):'')+
+      (e.type==='goal'&&e.own_goal?' · Gol contra':'')+
+      '</small></span></div>').join('')+'</div>';
   }
   function statistics(g){
     const available=stats.filter(([key])=>paired(g,key).some(v=>v!==null));
     if(!available.length)return noData('Scouts indisponíveis nesta coleta. Não usamos números estimados como se fossem reais.');
-    return '<div class="md-stats-head"><span>'+logo(g.home_logo,g.home)+' Casa</span><span>Fora '+logo(g.away_logo,g.away)+'</span></div>'+
+    return '<p class="md-muted">Estatísticas observadas de '+esc(g.stats_source||g.source||'fonte disponível')+
+      (g.stats_observed_at?' · última coleta '+esc(g.stats_observed_at):'')+
+      '. Campos ausentes ficam sem valor; não são transformados em zero.</p>'+
+      '<div class="md-stats-head"><span>'+logo(g.home_logo,g.home)+' Casa</span><span>Fora '+logo(g.away_logo,g.away)+'</span></div>'+
       available.map(([key,label])=>{
         const [h,a]=paired(g,key), left=h===null?'—':h,right=a===null?'—':a;
         const max=Math.max((h||0)+(a||0),1);
@@ -192,19 +198,29 @@
     const details=['home','away'].map(side=>{
       const team=g[side],lineup=lineups[side]||null,groups=(g.roster||{})[side]||[];
       const heading='<div class="md-team-row">'+logo(g[side+'_logo'],team)+'<b>'+esc(team)+'</b></div>';
+      const leaders=(g.team_leaders||{})[side]||{};
+      const star=(g.match_stars||{})[side]||{};
+      const badges=['goals','assists','rating'].map(key=>{
+        const x=leaders[key];return x?.name?'<p class="md-muted">'+
+          esc(key==='goals'?'⚽ Artilheiro':key==='assists'?'🅰 Assistências':'⭐ Nota da temporada')+
+          ': '+esc(x.name)+' · '+esc(x.value)+'</p>':'';
+      }).join('');
+      const highlight=star.player?'<p class="md-muted">★ '+esc(star.label)+
+        ': '+esc(star.player)+'</p>':'';
       if(lineup&&(lineup.starters||[]).length){
         const formation=lineup.formation?' · Formação '+esc(lineup.formation):'';
         const section=(name,players)=>'<div class="md-roster-section"><h4>'+esc(name)+'</h4>'+
           players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>';
-        return '<article class="md-form-team">'+heading+
-          '<p class="md-muted">Escalação disponível na fonte FotMob'+formation+'.</p>'+
+        return '<article class="md-form-team">'+heading+badges+highlight+
+          '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação provável')+
+          ' · FotMob'+formation+'. Sem saída registrada não garante presença atual.</p>'+
           section('Titulares',lineup.starters||[])+
           ((lineup.subs||[]).length?section('Reservas',lineup.subs):'')+'</article>';
       }
-      if(!groups.length)return '<article class="md-form-team">'+heading+
+      if(!groups.length)return '<article class="md-form-team">'+heading+badges+highlight+
         noData('Elenco ou escalação não disponível na coleta desta equipe.')+'</article>';
-      return '<article class="md-form-team">'+heading+
+      return '<article class="md-form-team">'+heading+badges+highlight+
         groups.map(group=>'<div class="md-roster-section"><h4>'+esc(group.section)+'</h4>'+
           (group.players||[]).map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>').join('')+'</article>';
@@ -232,7 +248,7 @@
       '<span>'+esc(o.bookmaker||o.source||'Fonte')+'</span></div>').join('');
     return '<div class="md-subtitle">Cotações pré-jogo registradas</div>'+
       (list.length?'<div class="md-odds">'+format(list)+'</div>':noData('Nenhuma odd pré-jogo verificada nesta partida.'))+
-      (historical.length?'<div class="md-subtitle">Odds históricas de fechamento</div>'+
+      (historical.length?'<div class="md-subtitle">Odds históricas de fechamento · não são preços atuais</div>'+
       '<div class="md-odds">'+format(historical)+'</div>'+
       '<p class="md-muted">Não foram observadas como entrada pré-jogo e não compõem P/L experimental.</p>':'');
   }

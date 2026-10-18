@@ -325,6 +325,7 @@ function verifiedPrelive(g,model){
  }
  const available=Object.keys(market).length===3;
  return {...model,lineups,head_to_head:headToHead(g),standings:g.standings||null,
+   team_leaders:g.team_leaders||{},match_stars:g.match_stars||{},
    frozen_baseline:g.pregame_baseline||null,
   odds:{available,phase:'pregame',markets:{'1x2':market},source:source||null,
    bookmaker:bookmaker||null,fetched_at:at||null,

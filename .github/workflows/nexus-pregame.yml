@@ -49,6 +49,7 @@ jobs:
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_classic_projections_v534.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_evidence_v535.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_triple_patch_v538.mjs; fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_squads_v539.mjs; fi
           node --check web/nexus-alert-center-v537.js
           node --check web/nexus-market-quality-v538.js
           node --check web/nexus-original-enrich.js

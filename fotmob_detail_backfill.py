@@ -10,7 +10,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
 from urllib.parse import urlencode
-from coletar import DAY, HISTORY, NOW, read, write, fetch, stats, momentum, fotmob_events, fotmob_lineups, merge
+from coletar import DAY, HISTORY, NOW, read, write, fetch, stats, momentum, fotmob_events, fotmob_lineups, fotmob_match_stars, merge_verified_events, merge
 from scout_snapshots import append_snapshot
 
 LIMIT = 42
@@ -42,14 +42,17 @@ def run():
             f=row.get('fixture') or {}
             if f.get('phase') not in ('finished','live'):continue
             last=float(attempts.get(key) or 0)
-            if current-last<RETRY_HOURS*3600:continue
+            goals=sum(1 for e in row.get('events') or [] if e.get('type')=='goal')
+            score=re.fullmatch(r'(\d+)\s*[-–:]\s*(\d+)',str(f.get('score') or ''))
+            missing_goals=bool(score) and int(score[1])+int(score[2])>goals
+            if current-last<(3 if missing_goals else RETRY_HOURS)*3600:continue
             s=row.get('stats') or {}
             n=len(s.get('home') or {})+len(s.get('away') or {})
             incidents=len(row.get('events') or [])
             lineup_count=len(row.get('lineups') or {})
             points=len((row.get('thermometer') or {}).get('points') or [])
-            if n>=7 and incidents>=3 and lineup_count>=2:continue
-            priority=(0 if points and (n<5 or incidents<3) else 1 if n<3 else 2,
+            if n>=7 and incidents>=3 and lineup_count>=2 and not missing_goals and row.get('match_stars'):continue
+            priority=(0 if missing_goals else 1 if points and (n<5 or incidents<3) else 2 if n<3 else 3,
                       0 if f.get('phase')=='live' else 1,
                       -int(f.get('start_timestamp') or 0))
             choices.append((priority,d,key))
@@ -57,7 +60,8 @@ def run():
     choices=choices[:LIMIT]
     info={'updated_at':NOW.isoformat(),'days':days,'eligible':len(choices),
           'requests':0,'scout_fields_added':0,'matches_with_stats':0,'events_added':0,
-          'lineups_added':0,'pressure_points_added':0,'errors':[]}
+          'lineups_added':0,'pressure_points_added':0,'missing_goal_priority':sum(p[0][0]==0 for p in choices),
+          'errors':[]}
     begun=time.monotonic()
     def read_match(day,key):
         mid=key.split('-',1)[1]
@@ -73,6 +77,9 @@ def run():
                 packet=fut.result()
                 if time.monotonic()-begun>MAX_SECONDS:break
                 row=docs[d]['matches'][key]
+                edition_round=str((packet.get('general') or {}).get('matchRound') or '').strip()
+                if edition_round and not (row.get('fixture') or {}).get('round'):
+                    row.setdefault('fixture',{})['round']=edition_round[:35]
                 extracted=stats(packet)
                 if (row.get('fixture') or {}).get('phase')=='live':
                     row['scout_snapshots']=append_snapshot(row.get('scout_snapshots'),
@@ -85,10 +92,10 @@ def run():
                 if row['stats']['home'] or row['stats']['away']:info['matches_with_stats']+=1
                 new_events=fotmob_events(packet)
                 before=row.get('events') or []
-                unique={(e.get('minute'),e.get('type'),e.get('side'),e.get('text')):e
-                    for e in before+new_events if isinstance(e,dict)}
-                row['events']=sorted(unique.values(),key=lambda x:(x.get('minute') or 0,x.get('type') or ''))[:180]
-                info['events_added']+=len(row['events'])-len(before)
+                row['events']=merge_verified_events(before,new_events)
+                info['events_added']+=max(0,len(row['events'])-len(before))
+                stars=fotmob_match_stars(packet)
+                if stars:row['match_stars']={**(row.get('match_stars') or {}),**stars}
                 lineups=fotmob_lineups(packet)
                 if lineups:
                     old=row.get('lineups') or {}

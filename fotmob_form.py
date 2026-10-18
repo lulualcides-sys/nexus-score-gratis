@@ -13,6 +13,7 @@ from urllib.request import Request, urlopen
 
 from coletar import HISTORY, DAY, NOW, read, write, utc_ts
 from team_form import summarise
+from team_player_leaders import team_player_leaders
 
 LIMIT_PER_RUN = 80
 TTL_HOURS = 40
@@ -109,7 +110,7 @@ def fetch_team(tid):
     if len(raw)>4_500_000:raise ValueError('resposta FotMob muito grande')
     doc=json.loads(raw)
     if not isinstance(doc,dict):raise ValueError('Resposta FotMob inválida')
-    return {'updated_at':NOW.isoformat(),'games':team_matches(doc,tid),'roster':roster(doc)}
+    return {'updated_at':NOW.isoformat(),'games':team_matches(doc,tid),'roster':roster(doc),'leaders':team_player_leaders(doc,tid)}
 
 def recent_games(items,start_ts):
     try:cutoff=int(start_ts)
@@ -175,6 +176,8 @@ def main():
                 row.setdefault('team_form',{})[side]=result
             if players:
                 row.setdefault('team_roster',{})[side]=players
+            if entry.get('leaders'):
+                row.setdefault('team_leaders',{})[side]=entry['leaders']
     for day,doc in docs.items():
         for row in (doc.get('matches') or {}).values():
             forms=row.get('team_form') or {}

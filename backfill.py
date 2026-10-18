@@ -108,7 +108,7 @@ def extract_events(packet):
     # Eventos pontuais reais da ESPN; não representam pressão minuto a minuto.
     events=[]
     rows=[]
-    for key in ('keyEvents','plays'):
+    for key in ('keyEvents','plays','scoringPlays'):
         value=packet.get(key)
         if isinstance(value,list):rows.extend(value)
     if not rows:
@@ -118,6 +118,14 @@ def extract_events(packet):
         if not isinstance(e,dict):continue
         name=str(((e.get('type') or {}).get('text')) or e.get('type') or e.get('text') or e.get('shortText') or '').lower()
         description=str(e.get('text') or e.get('shortText') or '')[:150]
+        players=e.get('participants') or []
+        athlete=''
+        if isinstance(players,list):
+            for participant in players:
+                if not isinstance(participant,dict):continue
+                athlete=str((participant.get('athlete') or {}).get('displayName') or
+                            (participant.get('athlete') or {}).get('fullName') or '')[:90]
+                if athlete:break
         flag=norm(name+' '+description)
         if any(k in flag for k in ('missedpenalty','penaltymissed')):kind='penalty_missed'
         elif 'redcard' in flag:kind='red_card'
@@ -137,7 +145,9 @@ def extract_events(packet):
         if side not in ('home','away'):
             side=team.get('homeAway') or ''
         events.append({'minute':minute,'type':kind,'side':side if side in ('home','away') else '',
-                       'text':description})
+                       'text':athlete or description,
+                       'player':athlete if kind=='goal' else '',
+                       'source':'ESPN'})
     # Não inferir time se informação não estiver disponível.
     unique={(e['minute'],e['type'],e['side'],e['text']):e for e in events}
     return sorted(unique.values(),key=lambda x:x['minute'])[:130]
@@ -175,14 +185,17 @@ def main():
             if before.get('phase')=='finished' and f['phase']!='finished':continue
             row['fixture']={**before,**f}
             has_stats=any((row.get('stats') or {}).get(k) for k in ('home','away'))
-            if (f['phase'] in ('finished','live') and not has_stats):
+            goal_count=sum(1 for e in row.get('events') or [] if e.get('type')=='goal')
+            scored=re.fullmatch(r'(\d+)\s*[-–:]\s*(\d+)',str(f.get('score') or ''))
+            missing_goals=bool(scored) and int(scored[1])+int(scored[2])>goal_count
+            if f['phase'] in ('finished','live') and (not has_stats or missing_goals):
                 jobs.append((day,f['id'],row))
         doc['day']=day
         doc['updated_at']=NOW.isoformat()
         status['games']+=len(matches)
     # Limita chamadas e não atrasa o GitHub Actions.
     jobs.sort(key=lambda item: (0 if item[2]['fixture']['phase']=='live' else 1,
-                                item[0],item[1]))
+                                -int((item[2].get('fixture') or {}).get('start_timestamp') or 0)))
     jobs=jobs[:28]
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={}
@@ -204,8 +217,14 @@ def main():
                 status['with_stats']+=1
             if events:
                 prior=row.get('events') or []
-                combined={(e.get('minute'),e.get('type'),e.get('text')):e
-                          for e in prior+events if isinstance(e,dict)}
+                combined={}
+                for e in prior+events:
+                    if not isinstance(e,dict):continue
+                    key=(e.get('minute'),e.get('type'),e.get('side')) if e.get('type')=='goal' else (
+                        e.get('minute'),e.get('type'),e.get('side'),e.get('text'))
+                    previous=combined.get(key)
+                    if not previous or (e.get('player') and not previous.get('player')):
+                        combined[key]=e
                 row['events']=sorted(combined.values(),key=lambda e:e.get('minute') or 0)[-130:]
                 status['events']+=len(events)
             status['details']+=1

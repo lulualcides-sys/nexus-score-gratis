@@ -741,6 +741,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-signal-evaluation.css">
 
 <link rel="stylesheet" href="./nexus-evidence-v535.css"/>
+<link rel="stylesheet" href="./nexus-squads-v539.css"/>
 </head>
 <body>
 <div class="shell">
@@ -992,8 +993,15 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       if(entries.length)return entries.map(p=>({name:p.name,number:p.number||''}));
       return (rosters[side]||[]).flatMap(group=>group.players||[]).slice(0,25);
     };
-    return {home:get('home'),away:get('away'),status:
-      (lineups.home?.starters?.length||lineups.away?.starters?.length)?'Lineups reportadas (confirmar status)':'Elenco geral; não equivale a escalação titular',
+    return {home:get('home'),away:get('away'),
+      home_detail:{xi:lineups.home?.starters||[],bench:lineups.home?.subs||[],
+        official:lineups.home?.status==='confirmed',formation:lineups.home?.formation||'',
+        roster:(rosters.home||[]).flatMap(c=>c.players||[])},
+      away_detail:{xi:lineups.away?.starters||[],bench:lineups.away?.subs||[],
+        official:lineups.away?.status==='confirmed',formation:lineups.away?.formation||'',
+        roster:(rosters.away||[]).flatMap(c=>c.players||[])},
+      status:(lineups.home?.status==='confirmed'&&lineups.away?.status==='confirmed')?
+        'Duas escalações confirmadas':'Escalações parciais ou ainda previstas',
       source:'FotMob · coleta GitHub'};
   }
   function details(g){
@@ -1058,14 +1066,19 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     const probs=forecasts?.one_x_two;
     return {...listing(g),score:g.score,minute:g.minute,stats,stats_source:g.source,
       incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
-      lineups:asLineups(g),head_to_head:[],
+      lineups:asLineups(g),team_leaders:g.team_leaders||{},
+      match_stars:g.match_stars||{},closing_odds:g.closing_odds||[],
+      head_to_head:g.head_to_head||[],
       thermometer:{points},scout_pressure:{available:points.length>0,last_graph_minute:m,source:g.source,
         narrative:!points.length?'Sem termômetro real nesta partida': dominant==='HOME'?g.home+' apresenta maior intensidade na última janela observada.':dominant==='AWAY'?g.away+' apresenta maior intensidade na última janela observada.':'Intensidade equilibrada na janela observada.',
         windows:{},goal_markers:events.filter(e=>e.emoji==='⚽')} ,
       pressure_source:g.source,pressure_samples:points.length,
       pressure:{score,level:lvl,dominant,difference:range.length?fixed(avg):null,minute:+g.minute||0},
       pressure5:{score:range.length?Math.round(Math.abs(avg5)):null},
-      goal_scorers:events.filter(e=>e.emoji==='⚽').map(e=>({minute:e.minute,team:e.team==='HOME'?'home':'away',player:e.text,stamp:e.stamp})),
+      goal_scorers:(g.events||[]).filter(e=>e.type==='goal'&&['home','away'].includes(e.side))
+        .map(e=>({minute:Number(e.m),team:e.side,player:e.player||e.text||'Autor não informado',
+                  assist:e.assist||'',own_goal:e.own_goal===true,penalty:e.penalty===true,
+                  source:e.source||'Fonte não informada',stamp:String(e.m)+"'"})),
       odds:{available:(g.odds||[]).length===3,markets:quoteMap(g.odds),
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
         fetched_at:g.odds?.[0]?.at||null,phase:g.odds_scope||'pregame'},
@@ -1816,7 +1829,19 @@ window.PressureLab = (() => {
     const kind=d.source?.includes('DEMONSTRAÇÃO')?' · DEMONSTRAÇÃO FICTÍCIA':d.verified_reference?' · HISTÓRICO REAL':'';
     const embedded=d.odds?.markets?.['1x2']?d.odds:null;
     const quote=embedded||d.prelive?.odds||{};
-    const mk=quote.markets?.['1x2']||{};
+    const verifiedQuotes=quote.markets?.['1x2']||{};
+    const archived=Array.isArray(d.closing_odds)?d.closing_odds:[];
+    const closeByBook={};
+    for(const q of archived){
+      if(!q||!['home','draw','away'].includes(q.sel)||!(Number(q.odd)>1.01))continue;
+      const label=String(q.bookmaker||'Fonte identificada');
+      (closeByBook[label]??={})[q.sel]=Number(q.odd);
+    }
+    const availableHistory=Object.entries(closeByBook).find(([,v])=>
+      ['home','draw','away'].every(x=>Number(v[x])>1.01));
+    const useHistorical=d.phase==='finished'&&
+      !['home','draw','away'].every(x=>Number(verifiedQuotes[x])>1.01)&&!!availableHistory;
+    const mk=useHistorical?availableHistory[1]:verifiedQuotes;
     const odd=v=>v!=null&&Number.isFinite(Number(v))&&Number(v)>1.01?Number(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:3}):'—';
     const homeOdd=odd(mk.home), drawOdd=odd(mk.draw), awayOdd=odd(mk.away);
     const hasQuotes=[homeOdd,drawOdd,awayOdd].every(v=>v!=='—');
@@ -1824,10 +1849,13 @@ window.PressureLab = (() => {
     const timeLabel=quoteAt&&Number.isFinite(quoteAt.getTime())?
       ' · capturadas '+quoteAt.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit'}):'';
     const stage=quote.phase==='live'?'ODDS AO VIVO':'ODDS PRÉ-JOGO';
-    const priceNote=hasQuotes?
+    const priceNote=useHistorical?
+      '<b>ODDS HISTÓRICAS DE FECHAMENTO</b> · '+h(availableHistory[0])+
+      ' / Football-Data.co.uk · não foram observadas antes do jogo pelo NEXUS; não são preços atuais nem EV.':
+      hasQuotes?
       '<b>'+h(stage)+'</b> · '+h(quote.source||'Fonte verificada')+
       (quote.bookmaker?' / '+h(quote.bookmaker):'')+h(timeLabel):
-      'Odds 1/X/2 não disponíveis nesta coleta; valores ausentes não são zero.';
+      'Odds 1/X/2 não disponíveis nas fontes autorizadas; não criamos preços retrospectivos.';
     const scorers=(Array.isArray(d.goal_scorers)?d.goal_scorers:[]).filter(Boolean);
     const latest=scorers.slice().sort((a,b)=>Number(a.minute||0)-Number(b.minute||0)).pop()||null;
     // Only an observed NEW goal should animate; existing goals at first page load are silent.
@@ -1839,7 +1867,7 @@ window.PressureLab = (() => {
       const expected=scorePair?Number(scorePair[side==='home'?1:2]):null;
       const missing=expected===null?0:Math.max(0,expected-known.length);
       return known.slice(0,8)
-        .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small></div>`).join('')+
+        .map(g=>`<div class="n56-goal-line ${scorePulse&&latest&&g===latest?'latest':''}"><span>⚽</span><b>${h(g.player||'Autor não informado')}</b><small>${h(g.stamp||String(g.minute)+"'")}${g.penalty?' · P':''}${g.own_goal?' · GC':''}</small>${g.assist?'<small title="Assistência confirmada">🅰 '+h(g.assist)+'</small>':''}</div>`).join('')+
         (missing>0?`<div class="nexus-missing-goal"><b>+${missing} gol${missing>1?'s':''} sem detalhes</b><small>Autor e minuto não informados na fonte</small></div>`:'');
     };
     const crest = (uri, initials, team) => {
@@ -2666,6 +2694,29 @@ function lineupsHTML(d){
       bench=Array.isArray(detail.bench)?detail.bench:[],
       roster=Array.isArray(detail.roster)?detail.roster:[],
       legacy=Array.isArray(lineup[key])?lineup[key]:[];
+   const records=d.team_leaders?.[key]||d.prelive?.team_leaders?.[key]||{};
+   const star=d.match_stars?.[key]||{};
+   const sourceStars=(records.goals||records.assists||records.rating)?'<div class="n539-team-facts">'+
+     [['goals','⚽ Artilheiro'],['assists','🅰 Líder de assistências'],['rating','⭐ Melhor nota da temporada']]
+       .map(([field,title])=>{
+         const data=records[field];
+         if(!data?.name||!Number.isFinite(Number(data.value)))return '';
+         const pool=xi.some(p=>String(p.name||'').toLowerCase()===String(data.name).toLowerCase())?
+           ' · TITULAR':bench.some(p=>String(p.name||'').toLowerCase()===String(data.name).toLowerCase())?
+           ' · RESERVA':' · presença não verificada';
+         return '<div class="n539-fact"><small>'+esc(title)+pool+'</small><b>'+
+           esc(data.name)+'</b><span>'+esc(data.value)+(field==='rating'?' nota':'')+'</span></div>';
+       }).join('')+'</div>':
+     '<p class="n539-unknown">Artilheiro e assistências da temporada: fonte ainda não forneceu ranking completo do clube.</p>';
+   const highlight=star.player?'<p class="n539-star">★ '+esc(star.label||'Destaque da partida')+
+      ': <strong>'+esc(star.player)+'</strong>'+
+      (star.rating!=null?' · '+Number(star.rating).toFixed(2):'')+' · FotMob</p>':'';
+   const departureCount=xi.filter(p=>(d.events||[]).some(e=>e.type==='substitution'&&
+      String(e.player_out||'').trim().toLowerCase()===String(p.name||'').trim().toLowerCase())).length;
+   const summary=xi.length?'<div class="n539-squad-status">'+
+      (verified?'✓ XI OFICIAL':'XI PROVÁVEL')+' · '+xi.length+' titulares · '+
+      bench.length+' reservas · '+departureCount+' saídas confirmadas'+
+      '<small>Sem evento de saída não garante presença em campo. Cartões e substituições podem alterar o XI.</small></div>':'';
    const players=(label,list,role)=>
      '<h4 class="nexus-lineup-section">'+esc(label)+'</h4>'+
      list.map(p=>'<div class="lineup-player"><b>'+esc(p.number||'–')+
@@ -2681,10 +2732,10 @@ function lineupsHTML(d){
        '<p class="prelive-muted">Aguardando divulgação dos titulares pela fonte.</p>');
    return '<article class="lineup-side"><h3>'+esc(name)+status+'</h3>'+
     (detail.formation?'<p class="prelive-muted">Formação '+esc(detail.formation)+'</p>':'')+
-    content+'</article>';
+    summary+sourceStars+highlight+content+'</article>';
  };
  return '<section class="analysis-tab-card nexus-lineups"><h3>ESCALAÇÕES · TITULARES E RESERVAS</h3>'+
-   '<p class="prelive-muted">Consulta automática nos 75 min antes do jogo, incluindo a janela dos 30 min. '+
+   '<p class="prelive-muted">Titulares, reservas, substituições e destaques verificados. Artilheiro e líder de assistências aparecem apenas quando o FotMob disponibilizar estatísticas individuais da equipe. '+
    'O NEXUS distingue prováveis das escalações identificadas como oficiais; a publicação depende da fonte.</p>'+
    '<div class="lineup-grid">'+side('home',d.home)+side('away',d.away)+'</div></section>';
 }
@@ -2707,7 +2758,7 @@ function renderDetailBody(){
  const d=state.detail;if(!d)return;
   if(d.phase==='scheduled'&&!state.demo&&!state.reference){
     const p=state.prelive||{};
-    const content=state.matchTab==='lineups'?lineupsHTML({...d,lineups:p.lineups}):
+    const content=state.matchTab==='lineups'?lineupsHTML({...d,lineups:p.lineups,team_leaders:p.team_leaders,match_stars:p.match_stars}):
        state.matchTab==='headtohead'?headToHeadHTML({...d,head_to_head:p.head_to_head}):
        state.matchTab==='projections'?preliveProjectionV5(p,d)+(p.frozen_baseline?NexusAudit.report(p.frozen_baseline,d):''):
        state.matchTab==='stats'?'<section class="match-block"><h3>Estatísticas da partida</h3><p>O jogo não começou. Os scouts aparecerão quando a fonte publicar.</p></section>':

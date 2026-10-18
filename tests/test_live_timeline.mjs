@@ -127,6 +127,6 @@ assert.match(withPregameOdds,/3,40/);
 assert.match(withPregameOdds,/4,10/);
 assert.doesNotMatch(withPregameOdds,/ODDS AO VIVO/);
 const missingOdds=PressureLab.render({...sample,odds:{markets:{'1x2':{}}}},'all');
-assert.match(missingOdds,/Odds 1\/X\/2 não disponíveis nesta coleta/);
+assert.match(missingOdds,/Odds 1\/X\/2 não disponíveis nas fontes autorizadas/);
 
 console.log('NEXUS: gráfico completo 0-90 no celular, sem rolagem, cobertura real e placar auditável OK');

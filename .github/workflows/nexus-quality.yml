@@ -36,6 +36,7 @@ jobs:
           node --check web/nexus-evidence-v535.js
           node tests/test_nexus_evidence_v535.mjs
           node tests/test_nexus_triple_patch_v538.mjs
+          node tests/test_nexus_squads_v539.mjs
           node --check web/nexus-alert-center-v537.js
           node --check web/nexus-market-quality-v538.js
           node --check web/app.js
