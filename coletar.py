@@ -83,7 +83,7 @@ def fotmob_list(day):
             finished=bool(status.get('finished'))
             clock=str((status.get('liveTime') or {}).get('short') or '')
             ht=confirmed_halftime(status,live)
-            found=re.search(r"(?<!\\d)(\\d{1,3})(?:\\+\\d+)?['′ ]?",clock)
+            found=re.search(r"(?<!\d)(\d{1,3})(?:\+\d+)?['′ ]?",clock)
             minute=int(found.group(1)) if live and found else 45 if ht else 0
             scores=[safe_int(home.get('score')),safe_int(away.get('score'))]
             out.append({'id':'fotmob-'+mid,'home':home['name'],'away':away['name'],
@@ -115,7 +115,7 @@ def espn_league(code):
         state=str((status.get('type') or {}).get('state') or '').lower()
         live=state in ('in','inprogress')
         ht=confirmed_halftime(status,live)
-        found=re.search(r'^(\\d{1,3})',str(status.get('displayClock') or ''))
+        found=re.search(r'^(\d{1,3})',str(status.get('displayClock') or ''))
         minute=int(found.group(1)) if live and found else 45 if ht else 0
         out.append({'id':'espn-'+code+'-'+str(event.get('id')),
             'home':(h.get('team') or {}).get('displayName',''),
