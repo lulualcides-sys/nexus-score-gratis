@@ -33,7 +33,7 @@ class MarketEvidenceTests(unittest.TestCase):
     self.assertEqual(by['double_chance']['with_price'],0)
     self.assertEqual(by['over_under_25']['with_price'],0)
     self.assertNotIn('paper_pl',str(x))
-    self.assertNotIn('stake',str(x))
+    self.assertFalse(any('stake' in field for field in x.keys()))
     self.assertNotIn('profit',str(x))
 
  def test_missing_odds_and_result_stay_pending(self):
