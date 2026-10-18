@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'web/index.html'
+      - 'web/match-detail.js'
       - 'tests/test_nexus_reconcile.cjs'
       - '.github/workflows/nexus-frontend-regression.yml'
   workflow_dispatch:
