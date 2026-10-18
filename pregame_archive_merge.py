@@ -6,7 +6,7 @@ Apenas calcula conferências esportivas de versões capturadas, sem P/L.
 import copy
 import re
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pregame_audit import resolve
 
 SCORE=re.compile(r'^(\d{1,2})\s*[-–:]\s*(\d{1,2})$')
@@ -37,7 +37,7 @@ def consolidate(records):
         if matched is None:
             matched={'home':str(f.get('home') or '')[:110],
                      'away':str(f.get('away') or '')[:110],
-                     'day':datetime.fromtimestamp(kick,timezone.utc).date().isoformat(),
+                     'day':datetime.fromtimestamp(kick,timezone(timedelta(hours=-3))).date().isoformat(),
                      'league':str(f.get('league') or '')[:80],
                      'start_timestamp':kick,'variants':[],
                      'final_scores':set(),'observed_phases':set(),'sources':set()}
