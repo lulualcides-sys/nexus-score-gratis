@@ -201,10 +201,15 @@ def espn_league_code(league_id, title):
     lid=str(league_id or '')
     if lid=='268':return 'bra.1'
     if lid=='47':return 'eng.1'
+    if lid=='130':return 'usa.1'
+    if lid=='230':return 'mex.1'
+    if lid=='274':return 'col.1'
     norm=normalized_name(title)
     codes={
         'liga profesional':'arg.1',
         'liga mx':'mex.1',
+        'major league soccer':'usa.1',
+        'mls':'usa.1',
         'la liga':'esp.1',
         'laliga':'esp.1',
         'bundesliga':'ger.1',
