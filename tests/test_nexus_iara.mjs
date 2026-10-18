@@ -100,6 +100,16 @@ assert.equal(iara.standingsMotivation({...mustWin,standings:{
   ...mustWin.standings,source:'Fonte não verificada'}}).available,false);
 assert.match(iara.render(mustWin),/Sair da zona de rebaixamento/);
 assert.match(iara.render(mustWin),/Defender o G4/);
+const neutralTable={...mustWin,standings:{
+ source:'FotMob',league:'MLS',updated_at:'2026-10-17T20:00:00Z',
+ home:{position:9,points:34,played:27,group:'Conferência Leste',reasons:[]},
+ away:{position:9,points:33,played:27,group:'Conferência Oeste',reasons:[]}}};
+assert.equal(iara.standingsMotivation(neutralTable).available,true);
+assert.equal(iara.standingsMotivation(neutralTable).list.length,0);
+assert.match(iara.render(neutralTable),/Classificação encontrada: sem urgência especial/);
+assert.match(iara.render(neutralTable),/Conferência Leste/);
+assert.match(iara.render(neutralTable),/Conferência Oeste/);
+assert.doesNotMatch(iara.render(neutralTable),/Aguardando classificação verificada/);
 assert.match(iara.evaluate(mustWin).intro,/aumenta o peso esportivo/);
 assert.match(iara.render(base),/Aguardando classificação verificada/);
 const evTest={...mustWin,prelive:{

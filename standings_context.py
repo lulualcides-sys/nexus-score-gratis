@@ -24,7 +24,26 @@ def integer(v):
 def league_table(doc,league_id):
     if not isinstance(doc,dict):return None
     tables=doc.get('table') or []
-    if not isinstance(tables,list) or len(tables)!=1:return None
+    if not isinstance(tables,list) or not tables:return None
+    if len(tables)!=1:
+        # MLS: duas conferências (Leste/Oeste). Comparar posições apenas
+        # dentro da respectiva conferência. Rejeitar grupos de copas.
+        if str(league_id)!='130' or len(tables)!=2:return None
+        groups=[]
+        seen=set()
+        for idx,section in enumerate(tables):
+            sub=league_table({**doc,'table':[section]},league_id)
+            if sub is None or not 8<=len(sub['teams'])<=18:return None
+            ids={str(t['id']) for t in sub['teams']}
+            if seen.intersection(ids):return None
+            seen.update(ids)
+            info=section.get('data') or {}
+            label=str(section.get('name') or info.get('name') or
+                      info.get('groupName') or f'Conferência {idx+1}')[:70]
+            groups.append({'name':label,'teams':sub['teams']})
+        if len(seen)<16:return None
+        return {**sub,'teams':[], 'groups':groups,
+                'league':str((doc.get('details') or {}).get('name') or 'MLS')[:80]}
     section=tables[0].get('data') or {}
     if not isinstance(section,dict):return None
     tab=section.get('table') or {}
@@ -54,6 +73,7 @@ def zones(table):
     league_id=str(table.get('league_id') or '')
     title=str(table.get('league') or '').casefold()
     count=len(table.get('teams') or [])
+    if table.get('groups'):return {'drop':0,'top':0}
     # Somente torneios de pontos corridos cujas zonas são conhecidas.
     if count==20 and league_id=='47':
         return {'drop':3,'top':4}
@@ -64,10 +84,17 @@ def zones(table):
 
 def team_stakes(table,tid):
     rows=table.get('teams') or []
+    group_name=None
+    for group in (table.get('groups') or []):
+        possible=[r for r in (group.get('teams') or []) if str(r['id'])==str(tid)]
+        if possible:
+            rows=group['teams']
+            group_name=group.get('name') or 'Conferência'
+            break
     me=next((r for r in rows if str(r['id'])==str(tid)),None)
     if not me:return None
     rank=me['position'];pts=me['points'];n=len(rows)
-    rules=zones(table);reasons=[]
+    rules=zones({**table,'teams':rows});reasons=[]
     if rules['top'] and me['played']>=3:
         fourth=rows[3]['points']
         fifth=rows[4]['points']
@@ -112,10 +139,13 @@ def team_stakes(table,tid):
                 reasons.append({'kind':'buscar_posicao','label':'Subir na tabela',
                                 'detail':f'{rank}º lugar, {pts} pontos. O {rank-1}º soma '
                                          f'{above["points"]}; diferença de {diff} ponto(s).'})
+    if group_name:
+        for reason in reasons:
+            reason['detail']=str(group_name)+': '+reason['detail']
     level='alta' if any(x['kind'] in ('sair_z4','buscar_g4') for x in reasons) else (
           'moderada' if reasons else 'sem_alerta')
     return {'position':rank,'points':pts,'played':me['played'],'goal_diff':me.get('goal_diff'),
-            'total_teams':n,'level':level,'reasons':reasons[:3],
+            'total_teams':n,'group':group_name,'level':level,'reasons':reasons[:3],
             'source':'FotMob','updated_at':table.get('updated_at')}
 
 def normalized_name(value):
@@ -128,8 +158,10 @@ def normalized_name(value):
 def team_stakes_from_name(table,fixture_name):
     search=normalized_name(fixture_name)
     if not search:return None
-    matches=[row for row in table.get('teams') or []
-             if normalized_name(row.get('name'))==search]
+    rows=list(table.get('teams') or [])
+    for group in (table.get('groups') or []):
+        rows.extend(group.get('teams') or [])
+    matches=[row for row in rows if normalized_name(row.get('name'))==search]
     if len(matches)!=1:return None
     return team_stakes(table,matches[0]['id'])
 
@@ -142,7 +174,23 @@ def espn_table(doc,league_id,code):
     year=integer(season.get('year'))
     if year is not None and year not in (current_year,current_year-1):return None
     children=doc.get('children') or []
-    if not isinstance(children,list) or len(children)!=1:return None
+    if not isinstance(children,list) or not children:return None
+    if len(children)!=1:
+        if code!='usa.1' or str(league_id)!='130' or len(children)!=2:
+            return None
+        groups=[]
+        seen=set()
+        for idx,child in enumerate(children):
+            parsed=espn_table({**doc,'children':[child]},league_id,code)
+            if parsed is None or not 8<=len(parsed['teams'])<=18:return None
+            ids={str(r['id']) for r in parsed['teams']}
+            if seen.intersection(ids):return None
+            seen.update(ids)
+            label=str(child.get('name') or child.get('abbreviation') or
+                      f'Conferência {idx+1}')[:70]
+            groups.append({'name':label,'teams':parsed['teams']})
+        if len(seen)<16:return None
+        return {**parsed,'league':'MLS','teams':[], 'groups':groups}
     entries=(children[0].get('standings') or {}).get('entries') or []
     if not isinstance(entries,list) or not 8<=len(entries)<=24:return None
     rows=[]
@@ -189,11 +237,13 @@ def make_context(fixture,table):
         home=team_stakes_from_name(table,fixture.get('home'))
         away=team_stakes_from_name(table,fixture.get('away'))
     else:return None
-    if not home or not away or home['position']==away['position']:return None
+    if not home or not away:return None
+    if (home['position']==away['position'] and
+            home.get('group')==away.get('group')):return None
     return {'source':table.get('source'),'updated_at':table['updated_at'],
             'league':table['league'],'season':table['season'],
             'home':home,'away':away,
-            'note':'Urgência situacional pela tabela atual; não prova obrigação matemática de vencer. '
+            'note':'Posições por conferência quando aplicável. Urgência situacional pela tabela atual; não prova obrigação matemática de vencer. '
                    'A pontuação pode já refletir o jogo em andamento.'}
 
 def espn_league_code(league_id, title):
@@ -201,10 +251,15 @@ def espn_league_code(league_id, title):
     lid=str(league_id or '')
     if lid=='268':return 'bra.1'
     if lid=='47':return 'eng.1'
+    if lid=='130':return 'usa.1'
+    if lid=='230':return 'mex.1'
+    if lid=='274':return 'col.1'
     norm=normalized_name(title)
     codes={
         'liga profesional':'arg.1',
         'liga mx':'mex.1',
+        'major league soccer':'usa.1',
+        'mls':'usa.1',
         'la liga':'esp.1',
         'laliga':'esp.1',
         'bundesliga':'ger.1',
@@ -267,9 +322,19 @@ def run():
     # Rodízio: sem isso as mesmas 24 ligas monopolizavam todas as consultas e
     # a maioria dos campeonatos nunca era verificada.
     def priority(lid):
-        active=min(v[0] for v in targets[lid])
+        all_games=targets[lid]
+        active=min(v[0] for v in all_games)
+        live_games=sum(v[0]==0 for v in all_games)
+        upcoming_games=sum(v[0]==1 for v in all_games)
+        verified=any(((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
+            'fixture',{}).get('league_id_verified') is True
+            for _,day,key in all_games)
         attempted=attempts.get(lid) or ''
-        return (0 if active==0 else 1, attempted,0 if lid in ('268','47') else 1,lid)
+        # Priorizar tabelas dos jogos AO VIVO que mais aparecem. ID primary
+        # confirmado tem precedência sobre ID de edição não resolvido.
+        return (0 if live_games else 1, 0 if verified else 1,
+                -live_games, -upcoming_games, attempted,
+                0 if lid in ('268','47','130','230','274') else 1,lid)
     chosen=sorted(stale,key=priority)[:MAX_LEAGUES]
     name_by_lid={}
     for lid in chosen:
@@ -283,9 +348,15 @@ def run():
             'leagues_queried':len(chosen),'tables_received':0,
             'fixtures_enriched':0,'with_urgency':0,'by_source':{},
             'espn_fallback_eligible':sum(espn_league_code(lid,name_by_lid.get(lid,'')) is not None for lid in chosen),
+            'primary_leagues_prioritized':sum(any(
+                ((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
+                    'fixture',{}).get('league_id_verified') is True
+                for _,day,key in targets[lid]) for lid in chosen),
+            'live_leagues_prioritized':sum(any(a==0 for a,_,_ in targets[lid]) for lid in chosen),
             'cache_tables_present':sum(bool(cache.get(lid)) for lid in candidates),
             'cache_tables_reused_fresh':0,'fixtures_without_verified_table':0,
             'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
+    report['tables_unavailable']=0
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid,name_by_lid.get(lid,'')):lid for lid in chosen}
         for done in as_completed(futures):
@@ -295,6 +366,8 @@ def run():
                 report['tables_received']+=1
                 src=result.get('source') or 'desconhecida'
                 report['by_source'][src]=report['by_source'].get(src,0)+1
+            else:
+                report['tables_unavailable']+=1
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
             f=row.get('fixture') or {}
