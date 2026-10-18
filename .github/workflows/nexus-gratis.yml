@@ -14,6 +14,7 @@ on:
       - "sofascore_odds.py"
       - "espn_scoreboard_odds.py"
       - "the_odds_api_source.py"
+      - "api_football_odds.py"
       - "pregame_refresh_quotes.py"
       - "web_export.py"
       - "odds_fixture_bridge.py"
@@ -72,7 +73,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile pregame_audit.py signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py scout_snapshots.py live_momentum.py activity_timeline.py
+          python3 -m py_compile api_football_odds.py pregame_audit.py signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py scout_snapshots.py live_momentum.py activity_timeline.py
           python3 -m unittest discover -s tests -v
           node --check web/nexus-audit-v532.js
           node tests/test_nexus_audit_v532.mjs
