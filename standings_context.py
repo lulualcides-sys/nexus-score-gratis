@@ -322,9 +322,19 @@ def run():
     # Rodízio: sem isso as mesmas 24 ligas monopolizavam todas as consultas e
     # a maioria dos campeonatos nunca era verificada.
     def priority(lid):
-        active=min(v[0] for v in targets[lid])
+        all_games=targets[lid]
+        active=min(v[0] for v in all_games)
+        live_games=sum(v[0]==0 for v in all_games)
+        upcoming_games=sum(v[0]==1 for v in all_games)
+        verified=any(((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
+            'fixture',{}).get('league_id_verified') is True
+            for _,day,key in all_games)
         attempted=attempts.get(lid) or ''
-        return (0 if active==0 else 1, attempted,0 if lid in ('268','47') else 1,lid)
+        # Priorizar tabelas dos jogos AO VIVO que mais aparecem. ID primary
+        # confirmado tem precedência sobre ID de edição não resolvido.
+        return (0 if live_games else 1, 0 if verified else 1,
+                -live_games, -upcoming_games, attempted,
+                0 if lid in ('268','47','130','230','274') else 1,lid)
     chosen=sorted(stale,key=priority)[:MAX_LEAGUES]
     name_by_lid={}
     for lid in chosen:
@@ -338,9 +348,15 @@ def run():
             'leagues_queried':len(chosen),'tables_received':0,
             'fixtures_enriched':0,'with_urgency':0,'by_source':{},
             'espn_fallback_eligible':sum(espn_league_code(lid,name_by_lid.get(lid,'')) is not None for lid in chosen),
+            'primary_leagues_prioritized':sum(any(
+                ((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
+                    'fixture',{}).get('league_id_verified') is True
+                for _,day,key in targets[lid]) for lid in chosen),
+            'live_leagues_prioritized':sum(any(a==0 for a,_,_ in targets[lid]) for lid in chosen),
             'cache_tables_present':sum(bool(cache.get(lid)) for lid in candidates),
             'cache_tables_reused_fresh':0,'fixtures_without_verified_table':0,
             'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
+    report['tables_unavailable']=0
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid,name_by_lid.get(lid,'')):lid for lid in chosen}
         for done in as_completed(futures):
@@ -350,6 +366,8 @@ def run():
                 report['tables_received']+=1
                 src=result.get('source') or 'desconhecida'
                 report['by_source'][src]=report['by_source'].get(src,0)+1
+            else:
+                report['tables_unavailable']+=1
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
             f=row.get('fixture') or {}
