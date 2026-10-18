@@ -11,7 +11,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 BR=ZoneInfo('America/Sao_Paulo')
-HORIZONS=('5','10','15')
+HORIZONS=('5','10','15','20','25','30','35','40')
 HIT='gol_confirmado'
 MISS='sem_gol_confirmado'
 PENDING='pendente'
