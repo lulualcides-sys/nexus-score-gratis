@@ -142,7 +142,9 @@
       if(!output)return;
       if(!Number.isFinite(odd)||odd<=1||odd>100||!Number.isFinite(stake)||stake<=0||stake>100000){output.textContent='Informe odd entre 1,01 e 100 e valor entre R$ 1 e R$ 100.000.';return;}
       const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-      output.textContent='CENÁRIO FICTÍCIO · ganho se acertar: '+fmt(stake*(odd-1))+' · perda se errar: '+fmt(stake)+' · sem previsão de lucro.';
+      const lay=host.querySelector('#nexus-sim-market')?.selectedIndex===1;
+      const gain=lay?stake/(odd-1):stake*(odd-1);
+      output.textContent='CENÁRIO FICTÍCIO '+(lay?'LAY (responsabilidade informada)':'BACK')+' · ganho se acertar: '+fmt(gain)+' · perda se errar: '+fmt(stake)+' · sem previsão de lucro.';
     };
     for(const id of ['nexus-sim-odd','nexus-sim-stake','nexus-sim-market'])host.querySelector('#'+id)?.addEventListener('input',simulate);
     simulate();
