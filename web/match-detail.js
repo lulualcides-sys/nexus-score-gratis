@@ -270,7 +270,7 @@
       ['Over 3.5 FT',o.over_35],['BTTS — Sim',o.btts],...(margin===null?[]:[['Lay goleada (margem 3+)',margin<3]])];
     return '<div class="md-market-grid">'+items.map(([name,hit])=>
       '<div class="md-market '+(hit?'md-hit':'md-miss')+'"><small>'+name+'</small><b>'+(hit?'SIM':'NÃO')+'</b></div>'
-      ).join('')+'</div><p class="md-muted">Lay goleada aqui é uma regra descritiva: contra vitória por 3+ gols de diferença. Resultado esportivo, não odd de Lay, lucro ou aposta executada.</p>';
+      ).join('')+'</div><p class="md-muted">Lay goleada aqui é uma regra descritiva: contra vitória por 3+ gols de diferença. Resultado do mercado, não P/L de uma operação executada. Não representa odd de Lay, lucro ou aposta executada.</p>';
   }
   function mustWin(g){
  const m=g.must_win||g.mustWin||null;
