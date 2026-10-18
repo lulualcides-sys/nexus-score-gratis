@@ -2226,7 +2226,7 @@ function baseMatches(){
    if(query&&!`${m.home} ${m.away} ${m.league}`.toLocaleLowerCase('pt-BR').includes(query))return false;
    if(league&&m.league!==league)return false;
    if(!query && !league && !state.reference && !state.demo && state.view!=='history' && !state.showAllLeagues && state.list.some(g=>isPriorityLeague(g.league) && (filter!=='scheduled'||g.phase==='scheduled') && (filter!=='live'||g.live) && (filter!=='finished'||g.phase==='finished')) && !isPriorityLeague(m.league))return false;
-   const h=Number(m.home_score),a=Number(m.away_score),min=Number(m.minute);
+   const h=m.home_score==null?NaN:Number(m.home_score),a=m.away_score==null?NaN:Number(m.away_score),min=m.minute==null?NaN:Number(m.minute);
    if(score==='draw'&&h!==a || score==='home_lead'&&h<=a || score==='away_lead'&&a<=h || score==='zero_zero'&&(h!==0||a!==0)||score==='goals'&&h+a===0)return false;
    if(period==='ht1'&&(min<1||min>45)||period==='ht2'&&min<46||period==='late'&&min<70)return false;
    return true;
