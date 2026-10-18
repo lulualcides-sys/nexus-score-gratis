@@ -3,7 +3,7 @@
 'use strict';
 const KEY='nexusHotAlertsV537';
 const MAX=80,MAX_AGE=48*3600*1000;
-const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;':'&quot;',"'":'&#39;'}[c]));
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function clean(raw,now=Date.now()){
  if(!Array.isArray(raw))return [];
  const seen=new Set();
