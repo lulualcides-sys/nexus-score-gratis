@@ -309,13 +309,26 @@ def run():
         old=fixtures.get(game['id']) or {}
         obs=old.get('observations') or []
         return str((obs[-1] or {}).get('at') or '') if obs else ''
-    rotating=sorted(live,key=lambda g:(last_capture(g),-int(g.get('minute') or 0)))
-    chosen=rotating[:(16 if LIVE_MODE else 8)]
+    def priority(game):
+        old=fixtures.get(game['id']) or {}
+        diagnosis=(old.get('momentum_diagnostic') or {}).get('state')
+        prior=(old.get('thermometer') or {}).get('points') or []
+        last_pressure=max((int(p.get('minute') or p.get('m') or 0) for p in prior
+                           if isinstance(p,dict)),default=0)
+        seen=last_capture(game)
+        # Sinais com pressão já observada mas atrasada merecem prioridade.
+        # Jogos novos recebem uma consulta inicial; sem cobertura conhecida
+        # ficam no rodízio, sem bloquear as partidas com pressão real.
+        group=0 if last_pressure and int(game.get('minute') or 0)-last_pressure>=3 else (
+              1 if not seen else 3 if diagnosis=='not_provided' else 2)
+        return (group,seen,-int(game.get('minute') or 0))
+    rotating=sorted(live,key=priority)
+    chosen=rotating[:(18 if LIVE_MODE else 12)]
     details_to_check=chosen+([] if LIVE_MODE else [
         g for g in extra if g['id'] not in {x['id'] for x in chosen}])
     status['live_detail_candidates']=len(live)
     status['live_detail_selected']=len(chosen)
-    status['coverage_policy']='Até 16 jogos vivos por rodada rápida, rodízio por última leitura; pressão somente se a fonte entregar'
+    status['coverage_policy']='Rodízio de até 18 jogos na rodada rápida (12 na padrão): pressão real atrasada e jogos novos primeiro; sem interpolar ausência da fonte'
     for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
