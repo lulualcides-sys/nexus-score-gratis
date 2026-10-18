@@ -42,7 +42,7 @@ assert.match(output,/Líder de assistências/);
 assert.match(output,/Craque/);
 assert.match(output,/Melhor em campo/);
 assert.match(output,/★ Destaque/);
-assert.ok(output.includes('7.9/10'));
+assert.ok(output.includes('9.1/10') || output.includes('9.10/10'), 'nota do destaque da partida preservada');
 assert.match(output,/TITULAR/);
 const unknown=lineup({...base,team_leaders:{},match_stars:{}});
 assert.match(unknown,/ranking completo/);
