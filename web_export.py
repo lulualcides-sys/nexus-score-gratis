@@ -528,6 +528,8 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'home_logo':verified_logo(f.get('home_logo')),'away_logo':verified_logo(f.get('away_logo')),
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
             'score':safe(f.get('score'),12),'phase':safe(f.get('phase'),12),
+            'halftime':f.get('halftime') is True and f.get('phase')=='live',
+            'status_short':'HT' if f.get('halftime') is True and f.get('phase')=='live' else '',
             'source':safe(f.get('source'),30),'sources':sources,'closing_odds':closing[:9],
             'score_verification':(row.get('score_verifications') or {}).get('openfootball_cc0'),
             'observed_at':safe(f.get('collected_at'),36),
