@@ -334,8 +334,14 @@ def fotmob_lineups(detail):
             out=[]
             for v in items[:25]:
                 if not isinstance(v,dict) or not v.get('name'):continue
-                out.append({'name':str(v['name'])[:80],
-                            'number':str(v.get('shirtNumber') or '')[:4]})
+                rating=(v.get('performance') or {}).get('rating')
+                try: grade=float(rating)
+                except (TypeError,ValueError): grade=None
+                athlete={'name':str(v['name'])[:80],
+                         'number':str(v.get('shirtNumber') or '')[:4],
+                         'id':str(v.get('id') or '')[:16]}
+                if grade is not None and 0<=grade<=10: athlete['rating']=round(grade,2)
+                out.append(athlete)
             return out
         starters=players(team.get('starters'))
         subs=players(team.get('subs'))
@@ -474,6 +480,8 @@ def run():
                 before['events']=sorted(unique.values(),key=lambda e:e['minute'])[-150:]
             lineups=fotmob_lineups(packet)
             if lineups:before['lineups']={**(before.get('lineups') or {}),**lineups}
+            stars=fotmob_match_stars(packet)
+            if stars:before['match_stars']={**(before.get('match_stars') or {}),**stars}
             observations=before.get('observations') or []
             observations.append({'at':NOW.isoformat(),'minute':match['minute'],'score':match['score'],'samples':len(points)})
             before['observations']=observations[-72:]
