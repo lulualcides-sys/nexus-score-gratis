@@ -4,6 +4,8 @@ on:
     paths:
       - 'web/index.html'
       - 'web/match-detail.js'
+      - 'web/nexus-evidence-v535.js'
+      - 'web/nexus-signal-evaluation.js'
       - 'tests/test_nexus_reconcile.cjs'
       - 'tests/test_nexus_evidence.cjs'
       - '.github/workflows/nexus-frontend-regression.yml'
@@ -23,3 +25,5 @@ jobs:
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-market-quality-v538.js
+          node --check web/nexus-evidence-v535.js
+          node --check web/nexus-signal-evaluation.js
