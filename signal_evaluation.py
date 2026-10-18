@@ -129,7 +129,11 @@ def evaluate(journal):
                   'by_minute':_groups(entries,h,'minute',limit=120),
                   'by_minute_band':_groups(entries,h,'band',limit=7),
                   'evolution':_progress(entries,h)}
+    days=sorted({e['day'] for e in entries})
     return {'schema':1,'window_minutes':10,'summary':horizons['10'],
+            'first_observed_day':days[0] if days else None,
+            'last_observed_day':days[-1] if days else None,
+            'days_observed':len(days),
             'horizons':horizons,**views['10'],'views':views,
             'updated_at':journal.get('updated_at') if isinstance(journal,dict) else None,
             'money_status':'unavailable_without_entry_odds_and_trade_results',
