@@ -77,6 +77,9 @@ def run():
                 packet=fut.result()
                 if time.monotonic()-begun>MAX_SECONDS:break
                 row=docs[d]['matches'][key]
+                edition_round=str((packet.get('general') or {}).get('matchRound') or '').strip()
+                if edition_round and not (row.get('fixture') or {}).get('round'):
+                    row.setdefault('fixture',{})['round']=edition_round[:35]
                 extracted=stats(packet)
                 if (row.get('fixture') or {}).get('phase')=='live':
                     row['scout_snapshots']=append_snapshot(row.get('scout_snapshots'),
