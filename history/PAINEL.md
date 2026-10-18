@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:35:47.120787+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T15:36:50.825761+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 
@@ -53,7 +53,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 | 2026-10-18 | FC Kuressaare × FCI Levadia | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Flora Tallinn × Tammeka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Harju Jalgpallikool × Pärnu JK Vaprus | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | Paide Linnameeskond × Narva Trans | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-18 | Paide Linnameeskond × Narva Trans | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | AFC Toronto × Calgary Wild FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Ottawa Rapid FC × Vancouver Rise FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Envigado × Barranquilla FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -66,7 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **124**.
 | 2026-10-18 | Toluca × Atlético de San Luis | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Cruz Azul × FC Juárez | 5-0 | 90 | Chutes no alvo: 9.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×7.0, Grandes chances: 5.0×1.0 |
 | 2026-10-18 | Monterrey × Pachuca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 3-0 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
+| 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 4-0 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Novi Pazar × FK IMT Beograd | 1-2 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-18 | Hapoel Beer Sheva × Hapoel Jerusalem FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,22 +168,22 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3636 | **Jogos distintos:** 1158 | **Resultados verificáveis:** 1939 | **Com gol:** 647 | **Sem gol:** 1292 | **Taxa observada:** 33.4%.
-**Evolução da amostra:** 10 datas com coletas | 68 pendentes | 703 indeterminados | 926 incompletos.
+**Observações:** 3641 | **Jogos distintos:** 1158 | **Resultados verificáveis:** 1942 | **Com gol:** 650 | **Sem gol:** 1292 | **Taxa observada:** 33.5%.
+**Evolução da amostra:** 10 datas com coletas | 70 pendentes | 703 indeterminados | 926 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 674 | 449 | 162 | 287 | 36.1% |
-| ⚡ pressao_ofensiva_18 | 519 | 315 | 101 | 214 | 32.1% |
+| 🥶 jogo_frio | 675 | 449 | 162 | 287 | 36.1% |
+| ⚡ pressao_ofensiva_18 | 520 | 316 | 102 | 214 | 32.3% |
 | 🟥 expulsao_confirmada | 650 | 306 | 94 | 212 | 30.7% |
-| 🎯 chutes_no_alvo_5 | 597 | 287 | 86 | 201 | 30.0% |
-| 🚩 escanteios_6 | 469 | 209 | 71 | 138 | 34.0% |
+| 🎯 chutes_no_alvo_5 | 599 | 287 | 86 | 201 | 30.0% |
+| 🚩 escanteios_6 | 469 | 210 | 72 | 138 | 34.3% |
 | 💣 grandes_chances_3 | 375 | 188 | 74 | 114 | 39.4% |
-| 🔥 pressao_forte_10min | 167 | 92 | 31 | 61 | 33.7% |
-| 🧨 pressao_total_5_10min | 96 | 53 | 16 | 37 | 30.2% |
+| 🔥 pressao_forte_10min | 167 | 93 | 32 | 61 | 34.4% |
+| 🧨 pressao_total_5_10min | 97 | 53 | 16 | 37 | 30.2% |
 | 🚨 alerta_cruzado_gol | 33 | 21 | 6 | 15 | 28.6% |
 | ⏱️ tensao_tardia_70 | 56 | 19 | 6 | 13 | 31.6% |
 
@@ -232,7 +232,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Primera División | 63 | 42 | 12 | 30 | 28.6% |
 | Eredivisie | 77 | 41 | 15 | 26 | 36.6% |
-| Ligue 1 | 70 | 41 | 19 | 22 | 46.3% |
+| Ligue 1 | 71 | 41 | 19 | 22 | 46.3% |
 | Série A | 67 | 41 | 17 | 24 | 41.5% |
 | Super Lig | 46 | 40 | 14 | 26 | 35.0% |
 | Serie A | 69 | 39 | 9 | 30 | 23.1% |
@@ -240,11 +240,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 2. Bundesliga | 61 | 37 | 14 | 23 | 37.8% |
 | Ekstraklasa | 56 | 36 | 12 | 24 | 33.3% |
 | Serie B | 57 | 34 | 10 | 24 | 29.4% |
-| LaLiga2 | 74 | 32 | 11 | 21 | 34.4% |
-| LaLiga | 61 | 31 | 12 | 19 | 38.7% |
+| LaLiga2 | 75 | 32 | 11 | 21 | 34.4% |
+| LaLiga | 62 | 31 | 12 | 19 | 38.7% |
 | USL Championship | 45 | 31 | 17 | 14 | 54.8% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
-| Eliteserien | 61 | 29 | 3 | 26 | 10.3% |
+| Eliteserien | 63 | 29 | 3 | 26 | 10.3% |
 | Primera A | 40 | 29 | 10 | 19 | 34.5% |
 
 ### Faixa de minuto
@@ -252,28 +252,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 106 | 77 | 32 | 45 | 41.6% |
-| 16–30′ | 307 | 215 | 74 | 141 | 34.4% |
-| 31–45′ | 503 | 373 | 151 | 222 | 40.5% |
-| 46–60′ | 575 | 431 | 146 | 285 | 33.9% |
-| 61–75′ | 780 | 507 | 153 | 354 | 30.2% |
+| 16–30′ | 308 | 215 | 74 | 141 | 34.4% |
+| 31–45′ | 505 | 373 | 151 | 222 | 40.5% |
+| 46–60′ | 575 | 433 | 148 | 285 | 34.2% |
+| 61–75′ | 782 | 508 | 154 | 354 | 30.3% |
 | 76–90′ | 1006 | 336 | 91 | 245 | 27.1% |
 | 91+′ | 359 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3636 | **Jogos monitorados:** 1730 | **Ao vivo:** 150 | **Termômetros recentes:** 19.
+**Registros:** 3641 | **Jogos monitorados:** 1730 | **Ao vivo:** 150 | **Termômetros recentes:** 25.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T15:36:08.913372+00:00 | Celta Vigo × Alavés | Alavés (63') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Brann (36') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Vålerenga × Brann | Vålerenga (36') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Celta Vigo × Deportivo Alavés | Deportivo Alavés (65') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:37:11.718857+00:00 | Granada × Cádiz | Cádiz (63') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | Sandefjord × Lillestrøm | Sandefjord (36') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | FC Groningen × Ajax | FC Groningen (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | Paris FC × Rennes | Paris FC (16') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Northeast United FC (74') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:36:08.913372+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (74') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:35:16.421344+00:00 | Celta Vigo × Alavés | Alavés (62') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:35:16.421344+00:00 | Le Havre × Auxerre | Auxerre (20') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:34:04.854719+00:00 | Sandefjord × Lillestrøm | Sandefjord (34') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:34:04.854719+00:00 | OB × Brøndby IF | Brøndby IF (74') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:34:04.854719+00:00 | Lorient × Monaco | Monaco (19') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
@@ -293,7 +298,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T15:33:09.637893+00:00 | Le Havre × Auxerre | Auxerre (18') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Lorient × Monaco | Monaco (18') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Paris FC × Rennes | Paris FC (13') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:33:09.637893+00:00 | Celta Vigo × Deportivo Alavés | Celta Vigo (60') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:33:09.637893+00:00 | Celta Vigo × Deportivo Alavés | Celta Vigo (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Granada × Cádiz | Granada (59') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:33:09.637893+00:00 | Panetolikos × Olympiacos | Olympiacos (73') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
@@ -313,15 +318,15 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T15:29:40.650874+00:00 | FC Groningen × Ajax | Ajax (43') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Le Havre × Auxerre | Auxerre (14') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Lorient × Monaco | Monaco (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-18T15:29:40.650874+00:00 | Veles Moscow × Shinnik Yaroslavl | Veles Moscow (72') | 🚩 escanteios_6 · scout acumulado | indeterminado | pendente | pendente | indisponível |
+| 2026-10-18T15:29:40.650874+00:00 | Veles Moscow × Shinnik Yaroslavl | Veles Moscow (72') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Panathinaikos × Asteras Tripolis | Panathinaikos (45') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | CS Hammam-Lif × JS Omrane | CS Hammam-Lif (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T15:29:40.650874+00:00 | Northeast United FC × Kerala Blasters FC | Kerala Blasters FC (68') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T15:17:26.269404+00:00 | Örgryte × GAIS | GAIS (46') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Malmö FF × Häcken | Häcken (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T15:17:26.269404+00:00 | Halmstads BK × Hammarby | Hammarby (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T14:56:31.205648+00:00 | Bayer Leverkusen × Freiburg | Bayer Leverkusen (64') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-18T14:56:31.205648+00:00 | Kayserispor × Batman Petrolspor | Kayserispor (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-18T14:56:31.205648+00:00 | Kayserispor × Batman Petrolspor | Kayserispor (96') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kayserispor × Batman Petrolspor | Kayserispor (96') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kalamata × OFI Crete | OFI Crete (87') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kalamata × OFI Crete | OFI Crete (87') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kalamata × OFI Crete | OFI Crete (87') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-18T14:56:31.205648+00:00 | Kalamata × OFI Crete | OFI Crete (87') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
