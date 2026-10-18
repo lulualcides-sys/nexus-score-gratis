@@ -8,6 +8,8 @@ on:
       - 'web/nexus-signal-evaluation.js'
       - 'tests/test_nexus_reconcile.cjs'
       - 'tests/test_nexus_evidence.cjs'
+      - 'tests/test_nexus_signal_evaluation.mjs'
+      - 'tests/test_nexus_evidence_v535.mjs'
       - '.github/workflows/nexus-frontend-regression.yml'
   workflow_dispatch:
 jobs:
@@ -22,6 +24,8 @@ jobs:
         run: |
           node tests/test_nexus_reconcile.cjs
           node tests/test_nexus_evidence.cjs
+          node tests/test_nexus_signal_evaluation.mjs
+          node tests/test_nexus_evidence_v535.mjs
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-market-quality-v538.js
