@@ -2758,7 +2758,7 @@ function renderDetailBody(){
  const d=state.detail;if(!d)return;
   if(d.phase==='scheduled'&&!state.demo&&!state.reference){
     const p=state.prelive||{};
-    const content=state.matchTab==='lineups'?lineupsHTML({...d,lineups:p.lineups}):
+    const content=state.matchTab==='lineups'?lineupsHTML({...d,lineups:p.lineups,team_leaders:p.team_leaders,match_stars:p.match_stars}):
        state.matchTab==='headtohead'?headToHeadHTML({...d,head_to_head:p.head_to_head}):
        state.matchTab==='projections'?preliveProjectionV5(p,d)+(p.frozen_baseline?NexusAudit.report(p.frozen_baseline,d):''):
        state.matchTab==='stats'?'<section class="match-block"><h3>Estatísticas da partida</h3><p>O jogo não começou. Os scouts aparecerão quando a fonte publicar.</p></section>':
