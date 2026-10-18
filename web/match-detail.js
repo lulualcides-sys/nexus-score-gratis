@@ -281,9 +281,17 @@
 }
 function indicators(g){
     const entries=Array.isArray(g.signals)?g.signals:[];
-    const validated=entries.filter(s=>Number.isFinite(Number(s.ev_pct))&&Number.isFinite(Number(s.odds)));
+    const validated=entries.filter(signal=>{
+      const ev=Number(signal.ev_pct),price=Number(signal.odds);
+      const captured=Date.parse(signal.captured_at||signal.at||'');
+      const kickoff=Number(g.start_timestamp);
+      return signal.model_calibrated===true&&signal.odds_verified===true&&
+        Number.isFinite(ev)&&Number.isFinite(price)&&price>1&&price<1000&&
+        Number.isFinite(captured)&&Number.isFinite(kickoff)&&kickoff>0&&
+        captured<kickoff*1000;
+    });
     const head=mustWin(g)+'<div class="md-note">EV+ exige probabilidade validada e odd registrada antes da entrada. O resultado de mercado, sozinho, não comprova valor esperado.</div>';
-    if(!validated.length)return head+noData('Nenhum sinal EV+ validado ou entrada experimental auditada neste confronto.');
+    if(!validated.length)return head+noData('Nenhum sinal com modelo calibrado, preço verificado e captura anterior ao início; sinais experimentais não são rotulados como EV+ validado.');
     return head+validated.map(s=>'<div class="md-signal"><b>'+esc(s.selection||'Mercado')+'</b>'+
        '<span>Odd '+esc(s.odds)+' · EV estimado '+esc(s.ev_pct)+'% · Amostra '+esc(s.sample_size||'—')+
        '</span><small>'+esc(s.status||'Pendente')+
