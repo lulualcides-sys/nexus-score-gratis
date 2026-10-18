@@ -33,14 +33,19 @@ def _rank(rows,field,split_day):
         wins=sum(r['outcomes']['40']=='gol_confirmado' for r in settled)
         after=[r for r in settled if split_day and r['day']>=split_day]
         before=[r for r in settled if split_day and r['day']<split_day]
-        value=_wilson_lower(wins,n)
-        # Índice de confiança DESCRITIVO, não probabilidade de gol nem EV.
-        quality=round(value*0.75+min(n,100)*0.25,1) if n>=20 else None
+        # A amostra posterior NÃO influencia o índice: evita vazamento do teste.
+        development=before if split_day else settled
+        dn=len(development)
+        dw=sum(r['outcomes']['40']=='gol_confirmado' for r in development)
+        value=_wilson_lower(dw,dn)
+        # Índice DESCRITIVO, jamais probabilidade, odd ou EV calibrado.
+        quality=round(value*0.75+min(dn,100)*0.25,1) if dn>=20 else None
         results.append({'label':label,'matches':len({r['match_id'] for r in group}),
                         'observations':len(group),'settled':n,'hits':wins,'misses':n-wins,
                         'rate_pct':round(100*wins/n,1) if n else None,
                         'wilson_lower_pct':value,'quality_index':quality,
-                        'state':'amostra_minima' if n>=20 else 'amostra_insuficiente',
+                        'state':'amostra_minima' if dn>=20 else 'amostra_insuficiente',
+                        'quality_basis':'development_only' if split_day else 'all_observations_no_holdout',
                         'train_settled':len(before),'test_settled':len(after),
                         'train_rate_pct':round(100*sum(x['outcomes']['40']=='gol_confirmado' for x in before)/len(before),1) if before else None,
                         'test_rate_pct':round(100*sum(x['outcomes']['40']=='gol_confirmado' for x in after)/len(after),1) if after else None,

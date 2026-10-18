@@ -40,6 +40,20 @@ class NexusIntelligenceV6Tests(unittest.TestCase):
         self.assertTrue(result['split_date'])
         self.assertEqual(result['model_status'],'descriptive_not_calibrated')
         self.assertNotIn('profit',str(result))
+    def test_holdout_outcomes_cannot_change_training_rank_score(self):
+        raw=[]
+        for i in range(30):
+            day=f'2026-10-{(i%10)+1:02d}'
+            raw.append(self.signal(i,day,'fixture'+str(i),hit=i%2==0))
+        before=evaluate_v6({'items':raw},[],as_of=date(2026,10,18))
+        score_before=before['signal_ranking'][0]['quality_index']
+        cutoff=before['split_date']
+        altered=[{**r,'outcomes':{'40':'gol_confirmado'}}
+                 if r['captured_at'][:10]>=cutoff else r for r in raw]
+        after=evaluate_v6({'items':altered},[],as_of=date(2026,10,18))
+        self.assertEqual(score_before,after['signal_ranking'][0]['quality_index'])
+        self.assertEqual(after['signal_ranking'][0]['quality_basis'],'development_only')
+
     def test_low_sample_does_not_claim_score(self):
         report=evaluate_v6({'items':[self.signal(1,'2026-10-01','a')]},[],as_of=date(2026,10,18))
         self.assertIsNone(report['signal_ranking'][0]['quality_index'])
