@@ -824,7 +824,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       <section class="standalone-panel hidden nexus5-lab" id="intelligence-view">
         <div class="section-head"><div><h2>◈ NEXUS LAB 5.29 · RADAR INTELIGENTE</h2><p>Análise automática auditável, probabilidade experimental, alerta, avaliação histórica e integridade de dados. Sem odds fabricadas.</p></div><button id="lab-refresh" class="primary-btn">↻ Atualizar radar</button></div>
         <div class="lab-nav" role="tablist"><button data-lab-tab="radar" class="chosen">◉ RADAR EV+</button><button data-lab-tab="pregame">▣ PRÉ-LIVE SALVO</button><button data-lab-tab="live">⚡ LIVE</button><button data-lab-tab="backtest">▥ BACKTEST</button><button data-lab-tab="model">◈ MODELO</button><button data-lab-tab="quality">◷ QUALIDADE</button><button data-lab-tab="alerts">♧ ALERTAS / RESULTADOS</button><button data-lab-tab="archive">↻ 90 DIAS</button></div>
-        <div class="metric-grid lab-metrics"><div class="metric"><div class="metric-top">REGISTROS NA NUVEM</div><div class="metric-value" id="lab-total">—</div><div class="metric-foot">Alertas do histórico cloud · não são apostas</div></div><div class="metric"><div class="metric-top">OPORTUNIDADES EV+</div><div class="metric-value" id="lab-ev">—</div><div class="metric-foot">Somente odds atuais + modelo</div></div><div class="metric"><div class="metric-top">JOGOS AVALIADOS</div><div class="metric-value" id="lab-evaluated">—</div><div class="metric-foot">Entradas antes do jogo, liquidadas</div></div><div class="metric"><div class="metric-top">RESULTADO HISTÓRICO SIMULADO</div><div class="metric-value" id="lab-units">—</div><div class="metric-foot">Com odds observadas, sem execução</div></div></div>
+        <div class="metric-grid lab-metrics"><div class="metric"><div class="metric-top">REGISTROS NA NUVEM</div><div class="metric-value" id="lab-total">—</div><div class="metric-foot">Alertas do histórico cloud · não são apostas</div></div><div class="metric"><div class="metric-top">EV TEÓRICO · NÃO VALIDADO</div><div class="metric-value" id="lab-ev">—</div><div class="metric-foot">Não são entradas nem EV comprovado</div></div><div class="metric"><div class="metric-top">JOGOS AVALIADOS</div><div class="metric-value" id="lab-evaluated">—</div><div class="metric-foot">Entradas antes do jogo, liquidadas</div></div><div class="metric"><div class="metric-top">RESULTADO HISTÓRICO SIMULADO</div><div class="metric-value" id="lab-units">—</div><div class="metric-foot">Com odds observadas, sem execução</div></div></div>
         <div class="lab-panel" id="lab-content"><p>Buscando observações já coletadas...</p></div>
         <div class="lab-disclaimer" id="lab-disclaimer">Motor estatístico local experimental. EV teórico não garante retorno. Somente sinais com odd observada antes da partida poderão gerar resultado em unidades após o encerramento confirmado.</div>
       </section>
@@ -869,6 +869,23 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <script src="./nexus-audit-v532.js"></script>
 <script src="./nexus-evidence-v535.js"></script>
 <script src="./nexus-alert-center-v537.js"></script>
+<script src="./nexus-market-quality-v538.js"></script>
+<style>
+.nexus-market-check,.nexus-market-coverage{padding:14px;border:1px solid #3b6979;border-radius:11px;background:#142938;color:#e0edf5;margin:12px 0}
+.nexus-market-check h3,.nexus-market-coverage h3{font-size:14px;color:#a8e1dd;margin:0 0 9px}
+.nexus-market-check p,.nexus-market-coverage p{font-size:11px;line-height:1.65;color:#aac6d5}
+.nexus-market-check>small,.nexus-market-coverage>small{display:block;font-size:10px;line-height:1.5;color:#9fbdcc}
+.nexus-market-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:13px 0}
+.nexus-market-grid article{padding:12px;border:1px solid #496779;border-radius:8px;background:#1c3545;min-width:0}
+.nexus-market-grid article small{display:block;color:#a9cad5;font-size:10px}
+.nexus-market-grid article strong{display:block;color:#f4fbfc;font-size:14px;margin:6px 0}
+.nexus-market-grid article div{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.nexus-market-grid article span,.nexus-market-grid article b{font-size:11px;color:#d5ecf1}
+.nexus-market-grid article b{color:#ffca81}
+.nexus-market-grid article p{margin:7px 0 0}
+@media(max-width:720px){.nexus-market-grid{grid-template-columns:1fr}}
+</style>
+
 <style>
 .nexus-alert-trigger{font-size:12px;font-weight:800;border:1px solid #3d6274;border-radius:9px;background:#183044;color:#e8f8fc;padding:9px 11px;cursor:pointer}
 .nexus-alert-trigger #nexus-alert-unread{display:inline-block;margin-left:3px;padding:2px 6px;border-radius:30px;background:#c85b41;color:#fff}
@@ -2715,7 +2732,7 @@ function renderDetailBody(){
  html+=tabBar()+`<div class="match-tab-content" role="tabpanel">`;
  switch(state.matchTab){
   case 'stats': html+=`<div class="analysis-bottom"><section class="match-block">${statHTML(d)}</section><section class="match-block">${summaryHTML(d)}</section></div>`;break;
-  case 'projections':html+=classicProjection57(d)+(d.pregame_baseline?NexusAudit.report(d.pregame_baseline,d):'');break;
+  case 'projections':html+=classicProjection57(d)+(d.pregame_baseline?NexusMarketQuality.render(d.pregame_baseline,d):'');break;
   case 'headtohead':html+=headToHeadHTML(d);break;
   case 'lineups':html+=lineupsHTML(d);break;
   case 'indicators':html+=indicatorTiles(d);break;
@@ -2823,25 +2840,10 @@ function radarOpportunityText(r){
  return `${r.home} x ${r.away} · Entrada: ${label} · Odd ${fmtV5(r.odds)} · Prob. ${fmtV5(r.probability)}% · EV+ ${fmtV5(r.ev_pct)}%`;
 }
 function syncLabToasts(data){
- if(!state.settings.alerts_enabled||!data)return;
- let fired=0;
- for(const r of (data.radar||[]).filter(x=>Number(x.ev_pct)>0).slice(0,8)){
-   const key=`radar:${r.match_id}:${r.market}:${r.selection}:${r.odds_at}`;
-   if(state.popupSeen.has(key))continue;
-   state.popupSeen.add(key);
-   notify(radarOpportunityText(r),'ev','Radar EV+');
-   fired++; if(fired>=2)break;
- }
- if(fired>=2)return;
- for(const a of (data.alerts||[]).slice(0,10)){
-   const created=Date.parse(a.created_at||'');
-   if(!Number.isFinite(created)||Date.now()-created>5*60*1000||created>Date.now()+60000)continue;
-   const key=`alert:${a.match_id}:${a.category}:${a.created_at}`;
-   if(state.popupSeen.has(key))continue;
-   state.popupSeen.add(key);
-   notify(a.message,a.category==='ev'?'ev':'normal','Alerta NEXUS');
-   fired++; if(fired>=2)break;
- }
+ // O radar estatístico não dispara notificações EV+ com probabilidade
+ // ainda NÃO calibrada ou odds pré-jogo antigas. Apenas o termômetro
+ // fresco com lance recente pode gerar alerta quente clicável.
+ return;
 }
 
 async function loadIntelligence({silent=false}={}){
@@ -2878,7 +2880,7 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
   html=`<h3>Calibração e memória estatística</h3><div class="lab-mini-grid"><div><small>Sinais com desfecho</small><strong>${fmtV5(b.settled_signals)}</strong></div><div><small>Amostras Brier</small><strong>${fmtV5(b.brier_samples)}</strong></div><div><small>Brier menor é melhor</small><strong>${b.brier_score==null?'—':fmtV5(b.brier_score)}</strong></div></div>${(b.calibration||[]).filter(x=>x.samples).map(x=>`<article class="lab-row"><strong>Probabilidade ${esc(x.range)}</strong><div class="lab-row-numbers">${v5Chip(x.samples+' amostras')}${v5Chip('Modelo '+fmtV5(x.predicted_pct)+'%')}${v5Chip('Ocorrido '+fmtV5(x.actual_pct)+'%')}</div></article>`).join('')}${b.brier_samples>=30?'<p>Já existe amostra inicial para medir o erro das probabilidades, mas ainda não valida o modelo como lucrativo.</p>':labEmpty('São necessárias várias previsões anteriores ao resultado para medir a calibração. O modelo não ajusta parâmetros automaticamente sem validação fora da amostra.')}<p class="lab-muted">Nenhum modelo generativo externo. Probabilidades pré-live vêm de Poisson experimental; leitura live é descritiva de scouts reais.</p>`;
  } else if(state.labTab==='quality'){
   const q=data.quality||[];
-  html='<h3>Diagnóstico de fontes · qualidade e atualização</h3><div class="lab-tags">'+Object.entries(data.providers||{}).map(([name,value])=>v5Chip(name+' · '+String(value).slice(0,80))).join('')+'</div>'+
+  html=NexusMarketQuality.coverageHTML(data.market_evidence,data.odds_collection_status,data.standings_collection_status)+'<h3>Diagnóstico de fontes · qualidade e atualização</h3><div class="lab-tags">'+Object.entries(data.providers||{}).map(([name,value])=>v5Chip(name+' · '+String(value).slice(0,80))).join('')+'</div>'+
   (q.length?q.map(x=>`<article class="lab-row"><div><strong>${esc(x.match_id)}</strong><small>Scouts: ${fmtV5(x.stats_available)}/${fmtV5(x.stats_expected)} · pressão: ${esc(x.momentum_source||'não disponível')} · ${esc(x.updated_at||'')}</small></div><div class="lab-row-numbers">${v5Chip(x.state)}${v5Chip(x.momentum_coverage_pct+'% minutos')}</div></article>`).join(''):labEmpty('Ainda sem coleta local de scouts ou pressão. As fontes públicas podem falhar ou limitar consultas.'));
  } else if(state.labTab==='alerts'){
   html=NexusEvidence.alertHTML(data);
