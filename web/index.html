@@ -3185,7 +3185,7 @@ function cloudJournalStats(journal){
  const unique=new Set(records.map(x=>String(x.match_id||'')).filter(Boolean)).size;
  const type=k=>records.filter(x=>x.basis===k).length;
  const windows={};
- for(const n of [5,10,15]){
+ for(const n of [5,10,15,20,25,30,35,40]){
   const w={hit:0,miss:0,pending:0,incomplete:0,unknown:0};
   for(const e of records){
    const value=e.outcomes?.[String(n)];
@@ -3210,7 +3210,7 @@ function cloudJournalSummary(journal){
   '<div class="journal-kpis">'+stat('OBSERVAÇÕES',x.total)+stat('PARTIDAS DISTINTAS',x.unique)+
   stat('PRESSÃO OBSERVADA',x.pressure)+stat('SCOUTS ACUMULADOS',x.cumulative)+
   stat('EVENTOS CONFIRMADOS',x.events)+stat('JOGOS AO VIVO NA COLETA',Number(journal?.diagnostics?.matches_live||0))+'</div>'+
-  '<div class="journal-ranges">'+[5,10,15].map(n=>{
+  '<div class="journal-ranges">'+[5,10,15,20,25,30,35,40].map(n=>{
    const w=x.windows[n];
    return '<section><small>GOL EM ATÉ '+n+' MIN</small><strong>'+pct(w.rate)+'</strong>'+
     '<p>'+w.valid+' resultados verificáveis · '+w.hit+' com gol · '+w.miss+' sem gol</p>'+
@@ -3230,9 +3230,9 @@ function renderCloudSignalJournal(journal){
   '<td>'+esc(e.minute)+'′</td><td>'+esc(e.icon)+' '+esc(e.rule)+
   '<small style="display:block">'+(e.basis==='pressure_window'?'Pressão observada':
   e.basis==='confirmed_event'?'Evento confirmado':'Scout acumulado, não minuto do lance')+'</small></td>'+
-  '<td>'+fmt(e,5)+'</td><td>'+fmt(e,10)+'</td><td>'+fmt(e,15)+'</td></tr>').join('');
+  '<td>'+fmt(e,5)+'</td><td>'+fmt(e,10)+'</td><td>'+fmt(e,15)+'</td><td>'+fmt(e,20)+'</td><td>'+fmt(e,30)+'</td><td>'+fmt(e,40)+'</td></tr>').join('');
  box.innerHTML=cloudJournalSummary(journal)+
-  (rows?'<details class="nexus-audit-list-toggle nexus-journal-toggle"><summary>Mostrar / ocultar lista de alertas · '+Math.min(entries.length,60)+' registros</summary><div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th></tr></thead><tbody>'+rows+'</tbody></table></div></details>':
+  (rows?'<details class="nexus-audit-list-toggle nexus-journal-toggle"><summary>Mostrar / ocultar lista de alertas · '+Math.min(entries.length,60)+' registros</summary><div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th><th>20 min</th><th>30 min</th><th>40 min</th></tr></thead><tbody>'+rows+'</tbody></table></div></details>':
    '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
 function renderCloud(){
