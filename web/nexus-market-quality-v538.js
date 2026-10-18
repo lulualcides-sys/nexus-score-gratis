@@ -19,7 +19,7 @@ function analyse(b,fixture){
  const o=b.odds||{},prices=o.prices||{};
  const priceTime=Date.parse(String(o.captured_at||''))/1000;
  const compatible=!!o.source&&!!o.bookmaker&&o.recent_at_check===true&&
-  Number.isFinite(priceTime)&&priceTime<start&&priceTime<=frozen+50*60&&
+  Number.isFinite(priceTime)&&priceTime<start&&
   ['home','draw','away'].every(k=>N(prices[k])!==null&&N(prices[k])>1.01&&N(prices[k])<1000);
  const settled=new Map((b.settlement?.checks||[]).filter(x=>x&&
   ['hit','miss'].includes(x.result)).map(x=>[x.market+'|'+x.selection,x.result]));
