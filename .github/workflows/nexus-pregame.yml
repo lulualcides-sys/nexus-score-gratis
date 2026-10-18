@@ -42,6 +42,7 @@ jobs:
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then python3 -m unittest discover -s tests -v; fi
           node --check web/nexus-audit-v532.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_audit_v532.mjs; fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_classic_projections_v534.mjs; fi
           node --check web/nexus-original-enrich.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_original_enrich.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_live_scout_history.mjs; fi
