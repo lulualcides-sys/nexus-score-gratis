@@ -153,6 +153,8 @@
       '<span class="md-event-time">'+esc(e.m)+'′</span><span class="md-event-symbol md-event-'+esc(e.type)+'">'+
       (eventIcons[e.type]||'•')+'</span><span><b>'+esc(eventNames[e.type]||e.type)+'</b>'+
       '<small>'+esc(e.side==='home'?g.home:e.side==='away'?g.away:'Equipe não identificada')+
+      (e.type==='goal' && !e.text && !e.player?' · Autor não identificado pela fonte':'')+
+      (e.type==='goal' && e.player?' · '+esc(e.player):'')+
       (e.text?' · '+esc(e.text):'')+
       (e.type==='goal'&&e.assist?' · Assistência: '+esc(e.assist):'')+
       (e.type==='goal'&&e.own_goal?' · Gol contra':'')+
@@ -213,7 +215,7 @@
           players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+'</span></div>').join('')+'</div>';
         return '<article class="md-form-team">'+heading+badges+highlight+
-          '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação provável')+
+          '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação não confirmada')+
           ' · FotMob'+formation+'. Sem saída registrada não garante presença atual.</p>'+
           section('Titulares',lineup.starters||[])+
           ((lineup.subs||[]).length?section('Reservas',lineup.subs):'')+'</article>';
