@@ -109,6 +109,12 @@ assert.equal(iara.standingsMotivation(neutralTable).list.length,0);
 assert.match(iara.render(neutralTable),/Classificação encontrada: sem urgência especial/);
 assert.match(iara.render(neutralTable),/Conferência Leste/);
 assert.match(iara.render(neutralTable),/Conferência Oeste/);
+const sourced={...neutralTable,standings:{...neutralTable.standings,
+ table_url:'https://www.fotmob.com/leagues/130/table'}};
+assert.match(iara.render(sourced),/Ver tabela original do campeonato/);
+assert.match(iara.render(sourced),/fotmob\.com\/leagues\/130\/table/);
+const maliciousLink={...sourced,standings:{...sourced.standings,table_url:'javascript:alert(1)'}};
+assert.doesNotMatch(iara.render(maliciousLink),/href="javascript:/);
 assert.doesNotMatch(iara.render(neutralTable),/Aguardando classificação verificada/);
 assert.match(iara.evaluate(mustWin).intro,/aumenta o peso esportivo/);
 assert.match(iara.render(base),/Aguardando classificação verificada/);
