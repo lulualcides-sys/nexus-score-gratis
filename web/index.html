@@ -2289,7 +2289,9 @@ async function loadList(view=state.view,{silent=false}={}){
  }finally{
   state.loading=false;$('#refresh').disabled=false;renderMatches();
   if(state.selection&&!state.list.find(m=>m.id===state.selection)){state.selection=null;state.detail=null;renderEmpty();}
-  if(!silent&&!state.selection&&(state.demo||state.reference||['live','today','history'].includes(state.view))){const first=filteredMatches()[0];if(first)chooseMatch(first.id);}
+  // Patch 5.36: não carregar 10MB de detalhes automaticamente no primeiro acesso.
+  // Abrir os detalhes reais apenas após seleção explícita de uma partida.
+  if(!silent&&!state.selection&&(state.demo||state.reference)){const first=filteredMatches()[0];if(first)chooseMatch(first.id);}
   if(!silent||state.view==='live')setTimeout(()=>hydrateListDetails(),120);
  }
 }
