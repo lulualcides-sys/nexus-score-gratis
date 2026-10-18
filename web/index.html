@@ -902,6 +902,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
   'use strict';
   const realFetch=window.fetch.bind(window);
   let snapshot=null,last=0;
+  let listingSnapshot=null,listingLast=0,listingFlight=null;
   const one=(v)=>v!=null&&Number.isFinite(+v)?+v:null;
   const blank={home:{},away:{}};
   const has=(v)=>v!==null && Number.isFinite(v);
@@ -913,6 +914,25 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     if(!response.ok)throw Error('Coleta pública indisponível: '+response.status);
     const value=await response.json();if(!Array.isArray(value.games))throw Error('Snapshot NEXUS incompleto');
     snapshot=value;last=Date.now();return value;
+  }
+  // A listagem não exige o arquivo de detalhes (~10MB). Em caso de
+  // ausência do feed novo, permanece funcional usando o legado completo.
+  async function listingData(){
+    if(listingSnapshot&&Date.now()-listingLast<45000)return listingSnapshot;
+    if(listingFlight)return listingFlight;
+    listingFlight=(async()=>{
+      try{
+        const response=await realFetch('./listing.json?t='+Math.floor(Date.now()/300000),{cache:'no-store'});
+        if(!response.ok)throw Error('Feed compacto '+response.status);
+        const value=await response.json();
+        if(value.format!=='listing_only'||!Array.isArray(value.games))throw Error('Feed compacto inválido');
+        listingSnapshot=value;listingLast=Date.now();return value;
+      }catch(error){
+        console.warn('NEXUS: listagem compacta indisponível; usando snapshot integral.',error);
+        return data();
+      }finally{listingFlight=null}
+    })();
+    return listingFlight;
   }
   function incident(e){
     const glyph={goal:'⚽',shot_on:'🥅',shot_off:'↗️',big_chance_missed:'💣❌',penalty_missed:'❌🥅',yellow_card:'🟨',red_card:'🟥'};
@@ -1081,7 +1101,11 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       }
       return json({error:'Ação indisponível no modo estático'},405);
     }
-    const doc=await data(),all=doc.games||[],today=tzDay(new Date());
+    // Favoritos e configurações nunca precisaram baixar o histórico.
+    if(path==='/api/settings')return json({auto_refresh:true,alerts_enabled:true,threshold:50,...savedSettings()});
+    if(path==='/api/favorites')return json({favorites:savedFavorites()});
+    const lists=new Set(['/api/live','/api/today','/api/agenda','/api/archive','/api/providers']);
+    const doc=await (lists.has(path)?listingData():data()),all=doc.games||[],today=tzDay(new Date());
     const item=(id)=>all.find(g=>String(g.id)===id);
     if(path==='/api/settings')return json({auto_refresh:true,alerts_enabled:true,threshold:50,...savedSettings()});
     if(path==='/api/favorites')return json({favorites:savedFavorites()});
@@ -1117,7 +1141,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     }
     return realFetch(req,options);
   };
-  window.NexusWebBridge={data,details,listing,makeForecast};
+  window.NexusWebBridge={data,listingData,details,listing,makeForecast};
 })();
 
 </script>
