@@ -10,6 +10,8 @@ on:
       - 'tests/test_nexus_evidence.cjs'
       - 'tests/test_nexus_signal_evaluation.mjs'
       - 'tests/test_nexus_evidence_v535.mjs'
+      - 'tests/test_nexus_squads_v539.mjs'
+      - 'web/nexus-squads-v539.css'
       - '.github/workflows/nexus-frontend-regression.yml'
   workflow_dispatch:
 jobs:

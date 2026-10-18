@@ -15,7 +15,7 @@ permissions:
 jobs:
   verify-publication:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 9
     steps:
       - name: Obter arquivos de origem
         uses: actions/checkout@v4
@@ -25,14 +25,21 @@ jobs:
           set -euo pipefail
           base="https://nexus-score-gratis.pages.dev"
           files=(index.html nexus-signal-evaluation.js nexus-evidence-v535.js match-detail.js nexus-signal-evaluation.css)
-          for attempt in $(seq 1 12); do
+          for attempt in $(seq 1 24); do
             found=true
             for filename in "${files[@]}"; do
               path="/${filename}"
               if [[ "${filename}" == "index.html" ]]; then path="/"; fi
               if ! curl -fsSL --connect-timeout 5 --max-time 12 "${base}${path}" -o "/tmp/nexus-${filename}" ||
                  ! cmp -s "web/${filename}" "/tmp/nexus-${filename}"; then
-                echo "Tentativa ${attempt}/12: asset divergente/indisponível: ${filename}"
+                echo "Tentativa ${attempt}/24: asset divergente/indisponível: ${filename}"
+                if [[ "${filename}" == "index.html" ]] && [[ -f "/tmp/nexus-${filename}" ]]; then
+                  echo "Origem:"; wc -c "web/${filename}"; sha256sum "web/${filename}"
+                  echo "Site:"; wc -c "/tmp/nexus-${filename}"; sha256sum "/tmp/nexus-${filename}"
+                  echo "Marcas da origem e do site:"
+                  grep -om1 'name="nexus-release-marker"[^>]*' "web/${filename}" || true
+                  grep -om1 'name="nexus-release-marker"[^>]*' "/tmp/nexus-${filename}" || true
+                fi
                 found=false
                 break
               fi
