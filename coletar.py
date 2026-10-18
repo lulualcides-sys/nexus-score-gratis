@@ -56,6 +56,21 @@ def confirmed_halftime(status, active=True):
         item,re.I) for item in raw if item)
 
 
+def canonical_league_ids(league):
+    """FotMob matches[].leagues: id = edição/calendário, primaryId = campeonato.
+
+    O endpoint /api/data/leagues?id= recebe o identificador canônico primaryId.
+    Não confundir com o ID da edição, que pode mudar todo ano.
+    """
+    if not isinstance(league,dict):
+        return '', ''
+    season=str(league.get('id') or '')
+    primary=str(league.get('primaryId') or '')
+    if not primary.isdecimal() or int(primary)<=0:
+        primary=season if season.isdecimal() and int(season)>0 else ''
+    return primary, season
+
+
 def fotmob_list(day):
     params=urlencode({'date':day.replace('-','')})
     obj=None
@@ -86,6 +101,7 @@ def fotmob_list(day):
             found=re.search(r"(?<!\d)(\d{1,3})(?:\+\d+)?['′ ]?",clock)
             minute=int(found.group(1)) if live and found else 45 if ht else 0
             scores=[safe_int(home.get('score')),safe_int(away.get('score'))]
+            canonical_id, edition_id=canonical_league_ids(league)
             out.append({'id':'fotmob-'+mid,'home':home['name'],'away':away['name'],
                 'league':str(league.get('name') or ''),'minute':minute,'live':live,
                 'phase':'finished' if finished else 'live' if live else 'scheduled',
@@ -93,7 +109,8 @@ def fotmob_list(day):
                 'score':'-'.join(str(v) if v is not None else '?' for v in scores),
                 'source':'FotMob','start_timestamp':utc_ts(status.get('utcTime') or event.get('time')),
                 'home_id':str(home.get('id') or ''),'away_id':str(away.get('id') or ''),
-                'league_id':str(league.get('id') or ''),
+                'league_id':canonical_id, 'league_edition_id':edition_id,
+                'league_id_verified':str(league.get('primaryId') or '').isdecimal(),
                 'collected_at':NOW.isoformat(),
                 'home_logo':('https://images.fotmob.com/image_resources/logo/teamlogo/'+str(home['id'])+'.png')
                     if str(home.get('id') or '').isdigit() else '',
