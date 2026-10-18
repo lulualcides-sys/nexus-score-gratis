@@ -76,7 +76,8 @@ class SignalRegistryTests(unittest.TestCase):
     def test_changed_score_without_goal_minute_is_unknown(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-1'),self.data())
-        self.assertTrue(all(s=='indeterminado' for s in item['outcomes'].values()))
+        self.assertTrue(all(item['outcomes'][str(n)]=='indeterminado' for n in (5,10,15,20)))
+        self.assertTrue(all(item['outcomes'][str(n)]=='pendente' for n in (25,30,35,40)))
     def test_merge_concurrent_jobs_preserves_all_events_and_outcomes(self):
         raw=active_signals(self.game(),self.data(),'2026-10-09T17:00:00Z')[0]
         first={**raw,'id':'first','outcomes':{'5':'gol_confirmado','10':'pendente'}}
@@ -102,7 +103,8 @@ class SignalRegistryTests(unittest.TestCase):
     def test_same_score_after_horizon_is_no_goal(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-0'),self.data())
-        self.assertTrue(all(s=='sem_gol_confirmado' for s in item['outcomes'].values()))
+        self.assertTrue(all(item['outcomes'][str(n)]=='sem_gol_confirmado' for n in (5,10,15,20)))
+        self.assertTrue(all(item['outcomes'][str(n)]=='pendente' for n in (25,30,35,40)))
     def test_window_not_completed_after_full_time(self):
         row={'thermometer':{'points':[{'minute':m,'value':65}
             for m in range(79,89)]},'stats':{'home':{}}}
