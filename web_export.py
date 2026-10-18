@@ -671,6 +671,22 @@ def historical_xg_summary(status):
             'season':'2025/2026' if valid else None,
             'scope':'historico_final','live_xg':False,'ev_plus':False}
 
+def make_listing(rows,exported_at,collector):
+    """Feed da agenda: sem detalhes, sem histórico financeiro, sem dados inventados."""
+    fields=('id','day','home','away','home_logo','away_logo','league',
+            'round','start_timestamp','minute','score','phase','halftime',
+            'status_short','source','sources','observed_at',
+            'pressure_observed_at','pressure_last_minute','odds','stats')
+    games=[]
+    for game in rows:
+        item={field:game.get(field) for field in fields}
+        points=game.get('pressure') or []
+        item['pressure']=points if game.get('phase')=='live' else points[-1:]
+        games.append(item)
+    return {'schema':3,'format':'listing_only','exported_at':exported_at,
+            'collector':collector,'games':games}
+
+
 def main():
     today=datetime.now(BR).date()
     days={(today-timedelta(days=i)).isoformat() for i in range(3)}
@@ -734,23 +750,9 @@ def main():
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
              'alerts':alerts_from(rows),'games':rows}
-    # Patch 5.36: feed LEVE para listagens. Detalhes e historico continuam
-    # em data.json, consultados somente ao abrir partida/LAB.
-    lite_fields=('id','day','home','away','home_logo','away_logo','league',
-                 'round','start_timestamp','minute','score','phase','halftime',
-                 'status_short','source','sources','observed_at',
-                 'pressure_observed_at','pressure_last_minute','odds','stats')
+    # Feed de jogos sem dados financeiros nem detalhes extensos.
     OUT.parent.mkdir(parents=True,exist_ok=True)
-    lite_games=[]
-    for game in rows:
-        item={field:game.get(field) for field in lite_fields}
-        # Pressao nao e estimada: no ao vivo usa amostras fornecidas; jogos
-        # finalizados mantem apenas marcador da ultima observacao na listagem.
-        pts=game.get('pressure') or []
-        item['pressure']=pts if game.get('phase')=='live' else pts[-1:]
-        lite_games.append(item)
-    lite={'schema':3,'format':'listing_only','exported_at':payload['exported_at'],
-          'collector':payload['collector'],'games':lite_games}
+    lite=make_listing(rows,payload['exported_at'],payload['collector'])
     lite_path=OUT.parent/'listing.json'
     lite_tmp=lite_path.with_suffix('.tmp')
     lite_tmp.write_text(json.dumps(lite,ensure_ascii=False,separators=(',',':'))+'\n',
