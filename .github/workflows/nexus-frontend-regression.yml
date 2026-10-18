@@ -5,6 +5,7 @@ on:
       - 'web/index.html'
       - 'web/match-detail.js'
       - 'tests/test_nexus_reconcile.cjs'
+      - 'tests/test_nexus_evidence.cjs'
       - '.github/workflows/nexus-frontend-regression.yml'
   workflow_dispatch:
 jobs:
@@ -18,6 +19,7 @@ jobs:
       - name: JavaScript regression and UI smoke
         run: |
           node tests/test_nexus_reconcile.cjs
+          node tests/test_nexus_evidence.cjs
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-market-quality-v538.js
