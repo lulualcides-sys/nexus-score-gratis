@@ -505,8 +505,14 @@ def public_row(row,day,team_cache=None,espn_cache=None):
                      for t in (data.get('reasons') or [])[:3] if isinstance(t,dict)]
             return {'position':data.get('position'),'points':data.get('points'),
                     'played':data.get('played'),'total_teams':data.get('total_teams'),
+                    'group':safe(data.get('group'),70),
                     'level':safe(data.get('level'),24),'reasons':reasons}
+        canonical=str(f.get('league_id') or '')
+        table_url=('https://www.fotmob.com/leagues/'+canonical+'/table'
+                   if f.get('league_id_verified') is True and
+                      canonical.isdecimal() and 0<int(canonical)<100000 else None)
         ranking={'home':compact_rank('home'),'away':compact_rank('away'),
+                 'table_url':table_url,
                  'source':safe(context.get('source'),20),
                  'league':safe(context.get('league'),80),
                  'season':safe(context.get('season'),25),
