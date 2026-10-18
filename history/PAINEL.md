@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T10:49:11.172193+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T10:50:15.822243+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **41**.
 
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 78 | 50 | 22 | 28 | 44.0% |
+| Equipe não definida | 77 | 50 | 22 | 28 | 44.0% |
 | Manchester City | 18 | 12 | 7 | 5 | 58.3% |
 | FC Twente | 14 | 12 | 2 | 10 | 16.7% |
 | Atlético Tucumán | 12 | 12 | 2 | 10 | 16.7% |
@@ -235,7 +235,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie B | 49 | 34 | 10 | 24 | 29.4% |
 | LaLiga2 | 63 | 32 | 11 | 21 | 34.4% |
 | Ligue 1 | 55 | 32 | 13 | 19 | 40.6% |
-| Eredivisie | 57 | 31 | 11 | 20 | 35.5% |
+| Eredivisie | 58 | 31 | 11 | 20 | 35.5% |
 | USL Championship | 45 | 31 | 17 | 14 | 54.8% |
 | Serie A | 55 | 30 | 6 | 24 | 20.0% |
 | Liga Portugal | 46 | 30 | 8 | 22 | 26.7% |
@@ -245,15 +245,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Championship | 64 | 27 | 11 | 16 | 40.7% |
 | LaLiga | 54 | 27 | 10 | 17 | 37.0% |
 | Eliteserien | 49 | 27 | 3 | 24 | 11.1% |
-| Super Lig | 34 | 27 | 7 | 20 | 25.9% |
+| Super Lig | 33 | 27 | 7 | 20 | 25.9% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 100 | 74 | 31 | 43 | 41.9% |
-| 16–30′ | 276 | 198 | 65 | 133 | 32.8% |
-| 31–45′ | 390 | 289 | 120 | 169 | 41.5% |
+| 16–30′ | 275 | 198 | 65 | 133 | 32.8% |
+| 31–45′ | 391 | 289 | 120 | 169 | 41.5% |
 | 46–60′ | 520 | 390 | 134 | 256 | 34.4% |
 | 61–75′ | 697 | 458 | 138 | 320 | 30.1% |
 | 76–90′ | 890 | 289 | 72 | 217 | 24.9% |
@@ -262,20 +262,20 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3198 | **Jogos monitorados:** 1730 | **Ao vivo:** 61 | **Termômetros recentes:** 15.
+**Registros:** 3198 | **Jogos monitorados:** 1730 | **Ao vivo:** 61 | **Termômetros recentes:** 14.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T10:49:39.484907+00:00 | Udinese × Lecce | Equipe não definida (18') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:49:39.484907+00:00 | Górnik Zabrze × Piast Gliwice | Górnik Zabrze (33') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:49:39.484907+00:00 | Górnik Zabrze × Piast Gliwice | Górnik Zabrze (33') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:49:39.484907+00:00 | Kasımpaşa × Samsunspor | Kasımpaşa (19') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:45:16.213854+00:00 | Udinese × Lecce | Lecce (14') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:45:16.213854+00:00 | PEC Zwolle × Go Ahead Eagles | Equipe não definida (28') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:50:41.878645+00:00 | Udinese × Lecce | Lecce (19') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:50:41.878645+00:00 | PEC Zwolle × Go Ahead Eagles | PEC Zwolle (33') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:50:41.878645+00:00 | Górnik Zabrze × Piast Gliwice | Górnik Zabrze (34') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:50:41.878645+00:00 | Górnik Zabrze × Piast Gliwice | Górnik Zabrze (34') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:45:16.213854+00:00 | Udinese × Lecce | Lecce (14') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-18T10:45:16.213854+00:00 | PEC Zwolle × Go Ahead Eagles | Equipe não definida (28') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T10:45:16.213854+00:00 | Reus × Espanyol B | Reus (47') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-18T10:45:16.213854+00:00 | Kasımpaşa × Samsunspor | Kasımpaşa (15') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T10:45:16.213854+00:00 | Kasımpaşa × Samsunspor | Kasımpaşa (15') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-18T10:38:45.278093+00:00 | PEC Zwolle × Go Ahead Eagles | PEC Zwolle (21') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T10:38:45.278093+00:00 | Polissya Zhytomyr × Dynamo Kyiv | Polissya Zhytomyr (35') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-18T10:18:22.561212+00:00 | Sturm Graz II × Kapfenberger SV | Kapfenberger SV (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
