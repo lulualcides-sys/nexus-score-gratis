@@ -27,3 +27,12 @@
 .nexus-evidence-old small{display:block;color:#a0bbc9;margin-top:4px;font-size:10px}
 .cloud-audit-stats>div span{font-size:10px;color:#8ebcc9;margin-top:3px}
 @media(max-width:750px){.nexus-evidence-windows{grid-template-columns:1fr}.nexus-evidence-alert{grid-template-columns:1fr}.nexus-evidence-horizons{justify-content:flex-start}}
+
+/* Patch 5.37 — análises descritivas de alertas por tipo e fase */
+.nexus-evidence-model{border:1px solid #446777;background:#162b3a;border-radius:10px;padding:13px;margin:10px 0}
+.nexus-evidence-model h3{font-size:14px;color:#bce9ed;margin:0 0 8px}
+.nexus-evidence-model p{color:#a9c7d2;font-size:11px;line-height:1.6}
+.nexus-evidence-breakdown{width:100%;min-width:600px;border-collapse:collapse;font-size:11px}
+.nexus-evidence-breakdown th,.nexus-evidence-breakdown td{padding:9px;border-bottom:1px solid #344c5b;text-align:left}
+.nexus-evidence-breakdown th{color:#bde7e6}
+.nexus-evidence-model details>summary{cursor:pointer;padding:8px 0;color:#bbd9e7;font-size:12px;font-weight:750}
