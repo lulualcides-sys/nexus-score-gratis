@@ -3207,8 +3207,9 @@ function cloudJournalSummary(journal){
  const stat=(label,value)=>'<div><small>'+label+'</small><b>'+value+'</b></div>';
  return '<section class="journal-stats"><h3>Resultados verificados na nuvem</h3>'+
   '<p>Atualização: '+esc(journal?.updated_at||'Aguardando coleta')+
-  '. Observações não são apostas: sem odds e sem modelo calibrado não há EV+ ou lucro comprovado.</p>'+
-  '<div class="journal-kpis">'+stat('OBSERVAÇÕES',x.total)+stat('PARTIDAS DISTINTAS',x.unique)+
+  '. Observações não são apostas: sem odds e sem modelo calibrado não há EV+ ou lucro comprovado.</p>'+ 
+  (Number(journal?.total_records)>x.total?'<p><b>Diário completo: '+Number(journal.total_records).toLocaleString('pt-BR')+' registros.</b> Exibidos os '+x.total+' mais recentes por limite de tamanho do painel; métricas abaixo referem-se somente à amostra exibida.</p>':'')+
+  '<div class="journal-kpis">'+stat('OBSERVAÇÕES EXIBIDAS',x.total)+stat('PARTIDAS DISTINTAS',x.unique)+
   stat('PRESSÃO OBSERVADA',x.pressure)+stat('SCOUTS ACUMULADOS',x.cumulative)+
   stat('EVENTOS CONFIRMADOS',x.events)+stat('JOGOS AO VIVO NA COLETA',Number(journal?.diagnostics?.matches_live||0))+'</div>'+
   '<div class="journal-ranges">'+[5,10,15,20,25,30,35,40].map(n=>{

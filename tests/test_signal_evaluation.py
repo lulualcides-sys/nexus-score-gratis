@@ -41,6 +41,30 @@ class SignalEvaluationTests(unittest.TestCase):
         self.assertEqual(result['evolution'][-1]['cumulative_settled'],2)
         self.assertEqual(result['evolution'][-1]['cumulative_rate_pct'],50.0)
 
+    def test_exact_first_goal_timing_and_fixture_dedup(self):
+        first=self.make('a','2026-10-09T10:00:00Z',match='m1',minute=35)
+        first['outcomes']['40']='gol_confirmado'
+        first['goals_after_alert']=[{'minute':47,'team':'home'},{'minute':51,'team':'away'}]
+        duplicate=self.make('b','2026-10-09T10:01:00Z',match='m1',minute=36)
+        duplicate['outcomes']['40']='gol_confirmado'
+        duplicate['goals_after_alert']=[{'minute':47,'team':'home'}]
+        unverified=self.make('c','2026-10-09T10:02:00Z',match='m2',minute=50)
+        unverified['outcomes']['40']='gol_confirmado'
+        unverified['goals_after_alert']=[]
+        pending=self.make('d','2026-10-09T10:03:00Z',match='m3',minute=60)
+        pending['outcomes']['40']='pendente'
+        pending['goals_after_alert']=[{'minute':70,'team':'home'}]
+        report=evaluate({'items':[first,duplicate,unverified,pending]})
+        timing=report['goal_timing']
+        self.assertEqual(timing['confirmed_goal_alerts'],3)
+        self.assertEqual(timing['minute_known_alerts'],2)
+        self.assertEqual(timing['minute_missing_alerts'],1)
+        self.assertEqual(timing['unique_matches_with_timed_goals'],1)
+        self.assertEqual(timing['median_delay_minutes'],11.5)
+        self.assertEqual(timing['bins'][2]['alerts'],2)
+        self.assertEqual(timing['first_alert_per_match']['matches'],3)
+        self.assertEqual(timing['first_alert_per_match']['hits'],2)
+
     def test_no_records_returns_null_rate_not_zero(self):
         x=evaluate({'items':[]})
         self.assertIsNone(x['summary']['rate_pct'])

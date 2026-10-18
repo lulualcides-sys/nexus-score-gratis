@@ -59,7 +59,18 @@ def _entries(journal):
         side=r.get('team')
         team=(r.get('home') if side=='home' else r.get('away') if side=='away' else None)
         icon=str(r.get('icon') or '')
-        yield {'day':day,'match_id':match,'minute':minute,
+        # Apenas gols com minuto de evento verificado: resultado no placar, por si,
+        # não permite inferir quando aconteceu o primeiro gol após o alerta.
+        delays=[]
+        if statuses.get('40')==HIT:
+            for goal in r.get('goals_after_alert') or []:
+                if not isinstance(goal,dict):continue
+                try:goal_minute=int(goal.get('minute'))
+                except (TypeError,ValueError,OverflowError):continue
+                if minute<goal_minute<=minute+40 and goal.get('team') in ('home','away'):
+                    delays.append(goal_minute-minute)
+        yield {'first_goal_delay':min(delays) if delays else None,
+               'day':day,'match_id':match,'minute':minute,
                'signal':(icon+' '+rule).strip()[:110],
                'team':str(team or 'Equipe não definida')[:100],
                'league':str(r.get('league') or 'Campeonato não informado')[:100],
@@ -118,6 +129,33 @@ def _progress(entries,horizon):
     return series
 
 
+def _goal_timing(entries):
+    """Atraso até o primeiro gol, somente com minuto confirmado, após o alerta."""
+    confirmed=[e for e in entries if e['outcomes']['40']==HIT]
+    dated=[e for e in confirmed if isinstance(e.get('first_goal_delay'),int)
+           and 1<=e['first_goal_delay']<=40]
+    bins=[]
+    for lo in range(1,41,5):
+        hi=lo+4
+        sample=[e for e in dated if lo<=e['first_goal_delay']<=hi]
+        bins.append({'label':f'{lo}–{hi} min','from_min':lo,'to_min':hi,
+                     'alerts':len(sample),'matches':len({e['match_id'] for e in sample})})
+    delays=sorted(e['first_goal_delay'] for e in dated)
+    n=len(delays)
+    median=((delays[(n-1)//2]+delays[n//2])/2) if n else None
+    first_per_fixture={}
+    for entry in sorted(entries,key=lambda e:(e['day'],e['minute'],e['signal'])):
+        first_per_fixture.setdefault(entry['match_id'],entry)
+    return {'window_minutes':40,'confirmed_goal_alerts':len(confirmed),
+            'minute_known_alerts':n,'minute_missing_alerts':len(confirmed)-n,
+            'unique_matches_with_timed_goals':len({e['match_id'] for e in dated}),
+            'mean_delay_minutes':round(sum(delays)/n,1) if n else None,
+            'median_delay_minutes':median,
+            'bins':bins,
+            'first_alert_per_match':_rollup(list(first_per_fixture.values()),'40'),
+            'note':'Tempo até o primeiro gol confirmado (minuto exato). Não é chance calibrada, nem recomendação de manter posição até o fim.'}
+
+
 def evaluate(journal):
     entries=list(_entries(journal))
     horizons={h:_rollup(entries,h) for h in HORIZONS}
@@ -131,6 +169,7 @@ def evaluate(journal):
                   'evolution':_progress(entries,h)}
     days=sorted({e['day'] for e in entries})
     return {'schema':1,'window_minutes':10,'summary':horizons['10'],
+            'goal_timing':_goal_timing(entries),
             'first_observed_day':days[0] if days else None,
             'last_observed_day':days[-1] if days else None,
             'days_observed':len(days),

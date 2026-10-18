@@ -92,6 +92,33 @@
     const rows=Array.isArray(view[dimension])?view[dimension]:[];
     const evolution=Array.isArray(view.evolution)?view.evolution:[];
     const pct=fmtPct(summary.rate_pct);
+    const timing=complete?data.goal_timing:null;
+    const money=n=>Number(n).toLocaleString('pt-BR',{maximumFractionDigits:1});
+    const timingBars=Array.isArray(timing?.bins)?timing.bins.map(bucket=>{
+      const total=Number(timing.minute_known_alerts)||0;
+      const amount=Number(bucket.alerts)||0;
+      const fraction=total?Math.min(100,amount/total*100):0;
+      return '<div class="nexus-goal-delay-row"><span>'+cleanHTML(bucket.label)+'</span>'+
+        '<span class="nexus-goal-delay-track"><i style="width:'+fraction.toFixed(1)+'%"></i></span>'+
+        '<b>'+amount+'</b></div>';
+    }).join(''):'';
+    const timingHTML='<section class="nexus-goal-delay"><h4>Em qual minuto saiu o primeiro gol após o alerta?</h4>'+
+      (timing&&Number(timing.minute_known_alerts)>0?
+        '<p>Gols com minuto comprovado: <b>'+Number(timing.minute_known_alerts)+
+        '</b> sinais, em <b>'+Number(timing.unique_matches_with_timed_goals)+
+        '</b> partidas. Tempo médio: <b>'+money(timing.mean_delay_minutes)+
+        ' min</b> · mediana: <b>'+money(timing.median_delay_minutes)+' min</b>.</p>'+
+        '<div class="nexus-goal-delay-bars">'+timingBars+'</div>':
+        '<p>Ainda sem gols com minuto do evento comprovado para distribuir por intervalo. Aguardar coletas.</p>')+
+      '<p>Gols até 40 min sem minuto individual confirmado: '+Number(timing?.minute_missing_alerts||0)+
+      '. Distribuição apenas entre gols com minuto registrado; não representa chance de ocorrer gol em cada intervalo.</p>'+
+      (timing?.first_alert_per_match?
+        '<p><b>Primeiro alerta por partida:</b> '+
+        Number(timing.first_alert_per_match.settled||0)+' resultados verificáveis em '+
+        Number(timing.first_alert_per_match.matches||0)+' jogos, '+
+        fmtPct(timing.first_alert_per_match.rate_pct)+
+        ' com gol até 40 min. Isto reduz a repetição de alertas no mesmo jogo, mas não calibra probabilidades.</p>':'')+
+      '</section>';
     const maxN=Math.max(1,...evolution.map(v=>Number(v.cumulative_settled)||0));
     const graph=evolution.slice(-45).map(r=>{
       const width=Math.max(0,Math.min(100,(Number(r.cumulative_settled)||0)/maxN*100));
@@ -123,6 +150,7 @@
      (lines?'<div class="nexus-evaluation-scroll"><table><thead><tr><th>Grupo</th><th>Obs.</th><th>Jogos</th>'+
      '<th>Verificados</th><th>Gol</th><th>Sem gol</th><th>Taxa</th></tr></thead><tbody>'+lines+
      '</tbody></table></div>':'<p>Nenhum alerta válido nesta amostra.</p>')+
+     timingHTML+
      '<h4>Evolução da amostra · '+horizon+' min</h4>'+
      (graph?'<div class="nexus-evolution">'+graph+'</div>':'<p>Sem datas de captura verificáveis.</p>')+
      '<section class="nexus-simulator" style="margin:16px 0;padding:14px;border:1px solid #64748b;border-radius:10px">'+

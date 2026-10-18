@@ -764,9 +764,12 @@ def main():
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable','momentum_status_counts','stats_detail_available') if key in last}
     standings_status=load(H/'standings_status.json')
     registry=load(H/'signal_registry.json')
-    signal_journal={'updated_at':registry.get('updated_at'),
+    all_signal_items=registry.get('items') or []
+    signal_journal={'total_records':len(all_signal_items),
+        'export_limit':5000,'truncated':len(all_signal_items)>5000,
+        'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
-        'items':(registry.get('items') or [])[:5000],
+        'items':all_signal_items[:5000],
         'note':'Sinais 5.29 na nuvem; gols em janelas de 5 a 40 minutos conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
     pregame=prelive_archive()
     evidence=audit_markets(pregame)

@@ -86,10 +86,11 @@ function uncertainty(hits,total){
 }
 function calibrationHTML(evaluation){
  const e=evaluation&&typeof evaluation==='object'?evaluation:{};
- const bySignal=Array.isArray(e.views?.['10']?.by_signal)?
-  e.views['10'].by_signal:Array.isArray(e.by_signal)?e.by_signal:[];
- const byBand=Array.isArray(e.views?.['10']?.by_minute_band)?
-  e.views['10'].by_minute_band:[];
+ const window=Array.isArray(e.views?.['40']?.by_signal)?'40':'10';
+ const bySignal=Array.isArray(e.views?.[window]?.by_signal)?
+  e.views[window].by_signal:Array.isArray(e.by_signal)?e.by_signal:[];
+ const byBand=Array.isArray(e.views?.[window]?.by_minute_band)?
+  e.views[window].by_minute_band:[];
  if(!bySignal.length)return '<section class="nexus-evidence-model"><h3>IARA · resultados observados por sinal</h3>'+
   '<p>Ainda não existem observações verificáveis suficientes para avaliar cada tipo de alerta.</p></section>';
  const result=(list,limit)=>list.filter(x=>x&&Number.isFinite(Number(x.settled)))
@@ -103,7 +104,7 @@ function calibrationHTML(evaluation){
       '<td>'+h(conclusion)+'</td></tr>';
    }).join('');
  const header='<table class="nexus-evidence-breakdown"><thead><tr><th>Grupo</th><th>Desfechos</th>'+
-  '<th>Gols até 10 min</th><th>Wilson 95%*</th><th>Qualidade</th></tr></thead><tbody>';
+  '<th>Gols até '+window+' min</th><th>Wilson 95%*</th><th>Qualidade</th></tr></thead><tbody>';
  return '<section class="nexus-evidence-model"><h3>◉ IARA · o que os alertas realmente produziram</h3>'+
  '<p>Comparação histórica por tipo de sinal e trecho do jogo. Sem extrapolar para uma chance individual de gol.</p>'+
  '<div class="nexus-evidence-scroll">'+header+result(bySignal,8)+'</tbody></table></div>'+

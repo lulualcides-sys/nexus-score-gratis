@@ -15,3 +15,13 @@
 .nexus-evolution-row em{font-style:normal;text-align:right}.nexus-evolution-track{height:9px;background:#ebe7df;border-radius:5px;overflow:hidden}
 .nexus-evolution-track i{display:block;height:100%;background:#57849a;border-radius:5px}
 @media(max-width:700px){.nexus-evaluation-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.nexus-evolution-row{grid-template-columns:75px minmax(30px,1fr) 82px 38px;gap:6px;font-size:10px}}
+
+/* Auditoria de tempo até gol, sem gráficos falsamente preditivos. */
+.nexus-goal-delay{border:1px solid #486178;border-radius:10px;padding:14px;margin:16px 0;background:rgba(30,65,89,.09)}
+.nexus-goal-delay h4{margin:0 0 8px}.nexus-goal-delay p{font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.nexus-goal-delay-bars{display:grid;gap:7px;margin:12px 0}
+.nexus-goal-delay-row{display:grid;grid-template-columns:80px minmax(0,1fr) 45px;align-items:center;gap:10px;font-size:12px}
+.nexus-goal-delay-track{height:11px;border-radius:6px;background:rgba(130,160,175,.22);overflow:hidden}
+.nexus-goal-delay-track i{height:100%;display:block;border-radius:6px;background:#5cc2c1}
+.nexus-goal-delay-row b{text-align:right}
+@media(max-width:680px){.nexus-goal-delay-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px}}
