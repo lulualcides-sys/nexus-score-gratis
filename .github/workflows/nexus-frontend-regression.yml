@@ -26,6 +26,8 @@ jobs:
           node tests/test_nexus_evidence.cjs
           node tests/test_nexus_signal_evaluation.mjs
           node tests/test_nexus_evidence_v535.mjs
+          node --check tests/test_nexus_squads_v539.mjs
+          node tests/test_nexus_squads_v539.mjs
           node --check web/app.js
           node --check web/match-detail.js
           node --check web/nexus-market-quality-v538.js
