@@ -31,6 +31,7 @@ jobs:
           python3 -m py_compile api_football_odds.py
           node --check web/nexus-audit-v532.js
           node tests/test_nexus_audit_v532.mjs
+          node tests/test_nexus_prelive_archive_v540.mjs
           node tests/test_hot_alerts_v533.mjs
           node tests/test_classic_projections_v534.mjs
           node --check web/nexus-evidence-v535.js
