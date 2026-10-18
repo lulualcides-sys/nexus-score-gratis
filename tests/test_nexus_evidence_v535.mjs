@@ -8,6 +8,10 @@ const e=require('../web/nexus-evidence-v535.js');
 const html=readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 assert.match(html,/nexus-evidence-v535\.css/);
 assert.match(html,/nexus-evidence-v535\.js/);
+assert.match(html,/id="cloud-load-more"/);
+assert.match(html,/visible\.slice\(0,cloudVisibleLimit\)/);
+assert.match(html,/Exibindo o último snapshot disponível/);
+assert.match(html,/nexus-feed-freshness/);
 assert.match(html,/box\.innerHTML=NexusEvidence\.auditHTML\(report\)/);
 assert.match(html,/html=NexusEvidence\.alertHTML\(data\)/);
 const market={market_evidence:{fixtures_with_frozen_forecast:7,

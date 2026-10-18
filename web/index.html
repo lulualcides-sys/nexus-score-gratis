@@ -743,6 +743,13 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 
 <link rel="stylesheet" href="./nexus-evidence-v535.css"/>
 <link rel="stylesheet" href="./nexus-squads-v539.css"/>
+<style>
+.nexus-feed-freshness{margin:9px 0 14px;padding:10px 13px;border-radius:8px;background:#183a38;border:1px solid #3e7c70;color:#a5e6d5;font-size:12px}
+.nexus-feed-freshness.stale{background:#352820;border-color:#916b42;color:#ffe2ac}
+.nexus-feed-error{border-left:3px solid #f4ae6f;padding:9px 12px;background:#4d332533;color:#ffd7a6}
+#cloud-load-more{display:block;margin:13px auto;max-width:100%;min-height:40px}
+#cloud-load-more.hidden{display:none!important}
+</style>
 </head>
 <body>
 <div class="shell">
@@ -815,6 +822,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
           <button id="cloud-refresh" class="primary-btn" type="button">↻ Atualizar registros</button></div>
         <div class="cloud-metrics" id="cloud-metrics"></div>
         <div class="cloud-help" id="cloud-status"></div>
+        <div id="cloud-feed-freshness" class="nexus-feed-freshness" role="status" aria-live="polite"></div>
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
@@ -822,6 +830,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option><option value="Over 1.5 FT">Over 1.5 FT (quando disponível)</option><option value="Lay Goleada">Lay Goleada (em estudo)</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
         <button type="button" id="cloud-hide-results" class="secondary-btn" aria-expanded="true" aria-controls="cloud-results">Ocultar lista de partidas e mercados</button><div id="cloud-results" class="cloud-match-list"><p>Carregando coletas...</p></div>
+        <button type="button" id="cloud-load-more" class="secondary-btn hidden" aria-controls="cloud-results">Mostrar mais partidas</button>
       </section>
       <section class="standalone-panel hidden nexus5-lab" id="intelligence-view">
         <div class="section-head"><div><h2>◈ NEXUS LAB 5.29 · RADAR INTELIGENTE</h2><p>Análise automática auditável, probabilidade experimental, alerta, avaliação histórica e integridade de dados. Sem odds fabricadas.</p></div><button id="lab-refresh" class="primary-btn">↻ Atualizar radar</button></div>
@@ -3237,9 +3246,19 @@ function renderCloudSignalJournal(journal){
   (rows?'<details class="nexus-audit-list-toggle nexus-journal-toggle"><summary>Mostrar / ocultar lista de alertas · '+Math.min(entries.length,60)+' registros</summary><div class="cloud-audit-scroll"><table><thead><tr><th>Partida</th><th>Min</th><th>Alerta</th><th>5 min</th><th>10 min</th><th>15 min</th><th>20 min</th><th>30 min</th><th>40 min</th></tr></thead><tbody>'+rows+'</tbody></table></div></details>':
    '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
+let cloudVisibleLimit=40;
 function renderCloud(){
  const meta=$('#cloud-metrics'),status=$('#cloud-status'),target=$('#cloud-results');
  if(!cloudData){meta.innerHTML='';status.textContent='Aguardando dados';target.textContent='';return;}
+ const fresh=$('#cloud-feed-freshness');
+ if(fresh){
+  const collected=Date.parse(cloudData.status?.updated_at||cloudData.exported_at||'');
+  const minutes=Number.isFinite(collected)?Math.max(0,Math.floor((Date.now()-collected)/60000)):null;
+  fresh.className='nexus-feed-freshness'+(minutes===null||minutes>180?' stale':'');
+  fresh.textContent=minutes===null?'Fonte sem horário verificável: não considerar estatísticas atuais.':
+    minutes>180?'ATENÇÃO: coleta esportiva com '+minutes+' minutos de atraso. Não utilizar como live.':
+    'Último registro da fonte: '+minutes+' min atrás. Coleta periódica, não odds ao vivo.';
+ }
  const rows=cloudData.games||[];
  renderCloudAudit(cloudData.audit);
  renderPlatformSnapshot(cloudData.platform_snapshot);
@@ -3253,7 +3272,15 @@ function renderCloud(){
  status.innerHTML=`<b>${cloudData.connected?'Fonte conectada: '+esc(cloudData.source):'Fonte privada ainda não sincronizada no PC'}</b><p>${esc(cloudData.market_policy||'')}</p><p>Última coleta: ${esc(cloudData.status?.updated_at?safeCloudDate(cloudData.status.updated_at):'ainda não registrada')} · Fontes: ${esc((cloudData.status?.sources||[]).join(', ')||'indisponíveis')}</p><p>${cloudData.historical_xg?.available?'xG histórico: '+Number(cloudData.historical_xg.matches_verified||0)+' partidas da Premier League 2025/26 (SoccerData/Understat). Não é xG ao vivo nem EV+ comprovado.':'xG histórico SoccerData: fonte ainda não validada.'}</p><p>Sincronização automática local: ${cloudData.sync?.connected?'ATIVA (última: '+esc(safeCloudDate(cloudData.sync.last_sync))+')':'PENDENTE — '+esc(cloudData.sync?.last_error||'autorize o GitHub CLI uma vez com gh auth login --web')}. Após a autenticação, o NEXUS sincroniza sozinho aproximadamente a cada 15 minutos enquanto estiver aberto. Não cole tokens aqui.</p><a href="${repo}/blob/main/history/PAINEL.md" target="_blank" rel="noopener noreferrer">Abrir relatório no GitHub ↗</a> · <a href="${repo}/actions" target="_blank" rel="noopener noreferrer">Execuções ↗</a>`;
  const search=$('#cloud-search').value.trim().toLowerCase(),market=$('#cloud-market').value;
  const visible=rows.filter(g=>(!search||[g.home,g.away,g.league].join(' ').toLowerCase().includes(search))&&(!market||(g.markets||[]).some(m=>m.name===market&&m.observed)));
- target.innerHTML=visible.length?visible.map(g=>{
+ const preview=visible.slice(0,cloudVisibleLimit);
+ const more=$('#cloud-load-more');
+ if(more){
+  const remaining=visible.length-preview.length;
+  more.classList.toggle('hidden',remaining<=0);
+  more.textContent=remaining>0?'Mostrar mais partidas ('+remaining+' restantes)':'Lista completa exibida';
+  more.onclick=()=>{cloudVisibleLimit=Math.min(visible.length,cloudVisibleLimit+40);renderCloud()};
+ }
+ target.innerHTML=preview.length?preview.map(g=>{
   const items=(g.markets||[]).filter(m=>m.observed).length;
   const s=g.stats||{};
   const marketOdds=(g.quotes||[]).slice(0,8).map(q=>`<span class="cloud-price">${esc(q.market)} · ${esc(q.selection)} @ <b>${Number(q.odds).toFixed(2)}</b> · ${esc(q.source)} · ${esc(safeCloudDate(q.captured_at))}</span>`).join('');
@@ -3262,11 +3289,22 @@ function renderCloud(){
  }).join(''):'<p class="cloud-empty">Ainda não há partidas coletadas para o filtro escolhido. Quando o GitHub executar e o acesso estiver autenticado, elas aparecem aqui. <a href="https://github.com/lulualcides-sys/nexus-score-gratis/actions" target="_blank" rel="noopener noreferrer">Ver Actions</a>.</p>';
 }
 async function loadCloud(){
- $('#cloud-results').innerHTML='<p>Consultando histórico privado...</p>';
- try{cloudData=await api('/api/github-collector');renderCloud();if($('#lab-total'))$('#lab-total').textContent=fmtV5(cloudJournalStats(cloudData.signal_journal).total);if(state.labTab==='alerts')renderLab()}
- catch(e){$('#cloud-results').textContent='Falha de sincronização: '+e.message;}
+ const previous=cloudData;
+ if(!previous)$('#cloud-results').innerHTML='<p>Consultando histórico...</p>';
+ try{
+  const next=await api('/api/github-collector');
+  cloudData=next;renderCloud();
+  if($('#lab-total'))$('#lab-total').textContent=fmtV5(cloudJournalStats(cloudData.signal_journal).total);
+  if(state.labTab==='alerts')renderLab();
+ }catch(e){
+  if(previous){
+   cloudData=previous;renderCloud();
+   const panel=$('#cloud-status');
+   if(panel)panel.insertAdjacentHTML('afterbegin','<p class="nexus-feed-error">Falha na atualização: '+esc(e.message)+'. Exibindo o último snapshot disponível.</p>');
+  }else $('#cloud-results').textContent='Falha de sincronização: '+e.message;
+ }
 }
-function connectUI(){setupAdvancedFilters();bindAlertHub();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';const hideList=$('#nexus-hide-list');
+function connectUI(){setupAdvancedFilters();bindAlertHub();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=()=>{cloudVisibleLimit=40;renderCloud()};$('#cloud-market').onchange=()=>{cloudVisibleLimit=40;renderCloud()};bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';const hideList=$('#nexus-hide-list');
  if(hideList)hideList.onclick=()=>{const hidden=$('#match-list').classList.toggle('hidden');hideList.textContent=hidden?'Mostrar lista de partidas':'Ocultar lista de partidas';hideList.setAttribute('aria-expanded',String(!hidden));};
  $('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
 async function silentRefreshSelected(id){
