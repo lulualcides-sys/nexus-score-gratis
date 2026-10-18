@@ -283,6 +283,37 @@ def fotmob_events(detail):
     return sorted(found.values(),key=lambda e:(e['minute'],e['type'],e['side']))[:180]
 
 
+def merge_verified_events(previous,incoming):
+    """Consolida gols do mesmo minuto e time sem contar duas fontes duas vezes."""
+    output={}
+    for e in list(previous or [])+list(incoming or []):
+        if not isinstance(e,dict):continue
+        minute=e.get('minute')
+        try:minute=int(minute)
+        except (ValueError,TypeError):continue
+        if not 0<=minute<=130:continue
+        kind=str(e.get('type') or '')
+        side=str(e.get('side') or '')
+        key=(minute,kind,side) if kind=='goal' else (
+            minute,kind,side,str(e.get('text') or ''))
+        old=output.get(key)
+        if old is None:
+            output[key]=dict(e)
+            continue
+        def quality(x):
+            player=str(x.get('player') or '').strip()
+            return (bool(player and player!='Autor não informado'),
+                    bool(x.get('assist')),x.get('source')=='FotMob · matchFacts')
+        if quality(e)>quality(old):
+            combined={**old,**e}
+            if not e.get('assist') and old.get('assist'):combined['assist']=old['assist']
+            output[key]=combined
+        elif not old.get('assist') and e.get('assist'):
+            old['assist']=e['assist']
+    return sorted(output.values(),key=lambda e:(e.get('minute') or 0,
+                                                e.get('type') or '',e.get('side') or ''))[:180]
+
+
 def fotmob_match_stars(detail):
     """Destaque declarado ou maior nota da partida; NÃO artilheiro da temporada."""
     c=detail.get('content') or {}
@@ -474,10 +505,7 @@ def run():
                 before['stats_source']='FotMob'
             new_events=fotmob_events(packet)
             if new_events:
-                prior=before.get('events') or []
-                unique={(e['minute'],e['type'],e.get('side',''),e.get('text','')):e
-                        for e in prior+new_events if isinstance(e,dict) and e.get('minute') is not None}
-                before['events']=sorted(unique.values(),key=lambda e:e['minute'])[-150:]
+                before['events']=merge_verified_events(before.get('events'),new_events)
             lineups=fotmob_lineups(packet)
             if lineups:before['lineups']={**(before.get('lineups') or {}),**lineups}
             stars=fotmob_match_stars(packet)
