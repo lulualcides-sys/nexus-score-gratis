@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 3701 | **Jogos distintos:** 1166 | **Resultados verificáveis:** 2007 | **Com gol:** 677 | **Sem gol:** 1330 | **Taxa observada:** 33.7%.
-**Evolução da amostra:** 10 datas com coletas | 57 pendentes | 706 indeterminados | 931 incompletos.
+**Evolução da amostra:** 10 datas com coletas | 54 pendentes | 709 indeterminados | 931 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
