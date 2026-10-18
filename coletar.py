@@ -170,43 +170,52 @@ def stats(detail):
     return out
 
 def fotmob_events(detail):
-    """Eventos realmente reportados por matchFacts e shotmap, sem inferir stats."""
+    """Lances verificados, com autores extraídos de matchFacts e shotmap.
+
+    Os dois feeds se complementam: shotmap pode identificar gols que não foram
+    enviados no bloco matchFacts. Nunca inferir gol pelo placar nem contabilizar
+    o mesmo gol duas vezes. Penaltis de desempate são excluídos.
+    """
     content=detail.get('content') or {}
     general=detail.get('general') or {}
     home_id=str((general.get('homeTeam') or {}).get('id') or '')
     away_id=str((general.get('awayTeam') or {}).get('id') or '')
     found={}
-    def insert(minute,kind,side,text):
+    def name(value):
+        if isinstance(value,dict):
+            value=value.get('name') or value.get('fullName') or value.get('displayName')
+        v=str(value or '').strip()[:100]
+        return '' if v.casefold() in ('goal','gol','own goal','penalty','unknown','none') else v
+    def insert(minute,kind,side,label,**extra):
         try:m=int(minute)
         except (ValueError,TypeError):return
         if not 0<=m<=130:return
         if side not in ('home','away'):side=''
-        label=str(text or '')[:125]
-        key=(m,kind,side,label)
-        found[key]={'minute':m,'type':kind,'side':side,'text':label}
+        val=str(label or '')[:125]
+        key=(m,kind,side,val)
+        item={'minute':m,'type':kind,'side':side,'text':val}
+        item.update({k:v for k,v in extra.items() if v is not None and v!=''})
+        found[key]=item
     raw=(content.get('matchFacts') or {}).get('events') or {}
     listed=raw.get('events') if isinstance(raw,dict) else raw
     if not isinstance(listed,list):listed=[]
     for event in listed:
-        if not isinstance(event,dict):continue
+        if not isinstance(event,dict) or event.get('isPenaltyShootoutEvent') is True:continue
         typ=str(event.get('type') or '').lower().replace(' ','')
         card=str(event.get('card') or event.get('cardType') or '').lower()
         if 'substitution' in typ:
             swap=event.get('swap') or []
             if isinstance(swap,list) and len(swap)>=2 and all(isinstance(v,dict) for v in swap[:2]):
-                # FotMob: primeiro entra, segundo sai; somente nomes efetivamente recebidos.
-                entered=str(swap[0].get('name') or '')[:80].strip()
-                exited=str(swap[1].get('name') or '')[:80].strip()
+                entered=name(swap[0].get('name'))
+                exited=name(swap[1].get('name'))
                 side='home' if event.get('isHome') is True else 'away' if event.get('isHome') is False else ''
                 raw_min=event.get('time')
                 if entered and exited and side:
-                    try: minute=int(raw_min)
-                    except (ValueError,TypeError): continue
+                    try:minute=int(raw_min)
+                    except (ValueError,TypeError):continue
                     if 0<=minute<=130:
-                        label=entered+' ↔ '+exited
-                        found[(minute,'substitution',side,label)]={
-                            'minute':minute,'type':'substitution','side':side,'text':label,
-                            'player_in':entered,'player_out':exited}
+                        insert(minute,'substitution',side,entered+' ↔ '+exited,
+                               player_in=entered,player_out=exited,source='FotMob · matchFacts')
             continue
         if 'penalty' in typ and ('miss' in typ or 'saved' in typ):kind='penalty_missed'
         elif 'goal' in typ and 'disallow' not in typ:kind='goal'
@@ -214,32 +223,101 @@ def fotmob_events(detail):
         elif 'yellow' in typ or 'yellow' in card:kind='yellow_card'
         else:continue
         side='home' if event.get('isHome') is True else 'away' if event.get('isHome') is False else ''
-        raw_min=event.get('time') or event.get('timeStr') or ''
+        raw_min=event.get('time') if event.get('time') is not None else event.get('timeStr')
         if isinstance(raw_min,str):
             match=re.search(r'\d{1,3}',raw_min)
             raw_min=match.group(0) if match else None
-        player=(event.get('player') or {}).get('name') if isinstance(event.get('player'),dict) else ''
-        insert(raw_min,kind,side,event.get('nameStr') or player or event.get('text') or '')
+        if kind=='goal':
+            player=name(event.get('player')) or name(event.get('nameStr'))
+            assist=name(event.get('assist')) or name(event.get('assistPlayer'))
+            own=bool(event.get('ownGoal')) or 'owngoal' in typ
+            penalty='penalty' in str(event.get('goalDescription') or '').lower() or 'penalty' in typ
+            insert(raw_min,kind,side,player or 'Autor não informado',
+                   player=player,assist=assist,own_goal=own,penalty=penalty,
+                   source='FotMob · matchFacts')
+        else:
+            player=name(event.get('player')) or name(event.get('nameStr'))
+            insert(raw_min,kind,side,player or event.get('text') or '',
+                   source='FotMob · matchFacts')
     shots=(content.get('shotmap') or {}).get('shots') or []
-    for shot in shots[:140]:
+    for shot in shots[:200]:
         if not isinstance(shot,dict):continue
-        event_type=str(shot.get('eventType') or '').lower()
-        if 'goal' in event_type or shot.get('isOwnGoal'):continue
-        if shot.get('isBlocked') is True:continue
-        if shot.get('isOnTarget') is True:kind='shot_on'
-        elif shot.get('isOnTarget') is False and any(
-                name in event_type for name in ('miss','offtarget','offtarget','wide')):
-            kind='shot_off'
-        else:continue
+        typ=str(shot.get('eventType') or '').lower()
         tid=str(shot.get('teamId') or '')
         side='home' if tid and tid==home_id else 'away' if tid and tid==away_id else ''
-        # Nunca atribuir lance ao mandante quando a equipe não foi confirmada.
         if not side:continue
-        # A grande chance desperdiçada é um único chute, não dois ícones.
+        minute=shot.get('min')
+        if 'goal' in typ or shot.get('isOwnGoal') is True:
+            try:m=int(minute)
+            except (ValueError,TypeError):continue
+            player=name(shot.get('playerName'))
+            own=shot.get('isOwnGoal') is True
+            # FotMob atribui o teamId do chute ao time do atleta; autogol
+            # credita o gol ao adversário, sem inventar autoria.
+            credited='away' if own and side=='home' else 'home' if own else side
+            matches=[k for k in found if k[0]==m and k[1]=='goal' and k[2]==credited]
+            if matches:
+                key=next((k for k in matches if found[k].get('player')),matches[0])
+                existing=found[key]
+                if not existing.get('player') and player:
+                    # Completar autoria no mesmo gol, sem acrescentar outra ocorrência.
+                    existing['text']=player
+                    existing['player']=player
+                    if key[3]!=player:
+                        found.pop(key,None)
+                        found[(m,'goal',credited,player)]=existing
+                continue
+            insert(m,'goal',credited,player or 'Autor não informado',
+                   player=player,assist=name(shot.get('assistPlayerName')),
+                   own_goal=own,penalty='penalty' in str(shot.get('situation') or '').lower(),
+                   source='FotMob · shotmap')
+            continue
+        if shot.get('isBlocked') is True:continue
+        if shot.get('isOnTarget') is True:kind='shot_on'
+        elif shot.get('isOnTarget') is False and any(t in typ for t in ('miss','offtarget','wide')):
+            kind='shot_off'
+        else:continue
         big=shot.get('isBigChance') is True or shot.get('bigChance') is True
         if big and kind=='shot_off':kind='big_chance_missed'
-        insert(shot.get('min'),kind,side,shot.get('playerName') or '')
-    return sorted(found.values(),key=lambda e:(e['minute'],e['type']))[:150]
+        insert(minute,kind,side,name(shot.get('playerName')),source='FotMob · shotmap')
+    return sorted(found.values(),key=lambda e:(e['minute'],e['type'],e['side']))[:180]
+
+
+def fotmob_match_stars(detail):
+    """Destaque declarado ou maior nota da partida; NÃO artilheiro da temporada."""
+    c=detail.get('content') or {}
+    facts=c.get('matchFacts') or {}
+    general=detail.get('general') or {}
+    home_id=str((general.get('homeTeam') or {}).get('id') or '')
+    away_id=str((general.get('awayTeam') or {}).get('id') or '')
+    answer={}
+    pom=facts.get('playerOfTheMatch') or {}
+    if isinstance(pom,dict):
+        raw=pom.get('name')
+        player=raw.get('fullName') or raw.get('name') if isinstance(raw,dict) else raw
+        tid=str(pom.get('teamId') or '')
+        side='home' if tid and tid==home_id else 'away' if tid and tid==away_id else None
+        if side and player:
+            answer[side]={'player':str(player)[:80],'kind':'player_of_match',
+                          'label':'Melhor em campo (FotMob)','source':'FotMob'}
+    lineup=c.get('lineup') or {}
+    for side,key in (('home','homeTeam'),('away','awayTeam')):
+        if side in answer:continue
+        team=lineup.get(key) or {}
+        if not isinstance(team,dict):continue
+        candidates=[]
+        for category in ('starters','subs'):
+            for athlete in team.get(category) or []:
+                if not isinstance(athlete,dict) or not athlete.get('name'):continue
+                rating=(athlete.get('performance') or {}).get('rating')
+                try:n=float(rating)
+                except (TypeError,ValueError):continue
+                if 0<=n<=10:candidates.append((n,str(athlete['name'])[:80]))
+        if candidates:
+            score,player=sorted(candidates,key=lambda x:(-x[0],x[1]))[0]
+            answer[side]={'player':player,'kind':'match_rating','label':'Maior nota da partida',
+                          'rating':round(score,2),'source':'FotMob'}
+    return answer
 
 def fotmob_lineups(detail):
     content=detail.get('content') or {}
