@@ -144,7 +144,7 @@
       const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
       const lay=host.querySelector('#nexus-sim-market')?.selectedIndex===1;
       const gain=lay?stake/(odd-1):stake*(odd-1);
-      const historic=(!lay && host.querySelector('#nexus-sim-market')?.selectedIndex===0 && Number(summary.settled)>=20 && Number.isFinite(Number(summary.rate_pct)))?Number(summary.rate_pct)/100:null;
+      const historic=(!lay && host.querySelector('#nexus-sim-market')?.selectedIndex===0 && Number(summary.settled)>=20 && summary.rate_pct!=null && Number.isFinite(Number(summary.rate_pct)))?Number(summary.rate_pct)/100:null;
       const hypothetical=historic===null?'':(' · Cálculo ilustrativo sobre a taxa observada de GOL em '+horizon+' min (não representa a liquidação de Over 1.5): '+fmt(stake*(historic*(odd-1)-(1-historic)))+' por alerta; alertas correlacionados, sem EV validado.');
       output.textContent='CENÁRIO FICTÍCIO '+(lay?'LAY (responsabilidade informada)':'BACK')+' · ganho se acertar: '+fmt(gain)+' · perda se errar: '+fmt(stake)+' · sem previsão de lucro.'+hypothetical;
     };
