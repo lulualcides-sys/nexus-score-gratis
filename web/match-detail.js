@@ -242,14 +242,20 @@
       }).join('')+'</div>';
   }
   function odds(g){
-    const list=(g.odds||[]).filter(x=>Number(x.odd)>1);
+    const kickoff=Number(g.start_timestamp);
+    const list=(g.odds||[]).filter(x=>{
+      const price=Number(x.odd),at=Date.parse(x.at||x.captured_at||'');
+      return Number.isFinite(price)&&price>1&&price<1000&&
+        Number.isFinite(at)&&Number.isFinite(kickoff)&&kickoff>0&&at<kickoff*1000&&
+        !!(x.bookmaker||x.source);
+    });
     const historical=(g.closing_odds||[]).filter(x=>Number(x.odd)>1);
     const label={home:'Casa',draw:'Empate',away:'Fora'};
     const format=(items,mode)=>items.map(o=>
       '<div class="md-odd"><small>'+esc(label[o.sel]||o.sel)+'</small><b>'+esc(o.odd)+'</b>'+
       '<span>'+esc(o.bookmaker||o.source||'Fonte')+' · '+esc(o.at||o.captured_at||'horário não informado')+'</span></div>').join('');
     return '<div class="md-subtitle">Cotações pré-jogo registradas</div>'+
-      (list.length?'<div class="md-odds">'+format(list)+'</div>':noData('Nenhuma odd pré-jogo verificada nesta partida.'))+
+      (list.length?'<div class="md-odds">'+format(list)+'</div>':noData('Nenhuma odd pré-jogo com origem, horário anterior ao início e preço íntegro verificados nesta partida.'))+
       (historical.length?'<div class="md-subtitle">Odds históricas de fechamento · não são preços atuais</div>'+
       '<div class="md-odds">'+format(historical)+'</div>'+
       '<p class="md-muted">Não foram observadas como entrada pré-jogo e não compõem P/L experimental.</p>':'');
