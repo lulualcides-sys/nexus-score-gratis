@@ -2200,7 +2200,7 @@ function nexusReconcileFixtures(games){
  for(const g of games){
   const start=Number(g.start_timestamp);
   const key=[norm(g.league),norm(g.home),norm(g.away),Number.isFinite(start)&&start>0?Math.floor(start/300):String(g.day||'')].join('|');
-  if(!norm(g.home)||!norm(g.away)){out.push(g);continue;}
+  if(!norm(g.home)||!norm(g.away)||!(Number.isFinite(start)&&start>0)){out.push(g);continue;}
   const first=seen.get(key);
   if(!first){const item={...g};seen.set(key,item);out.push(item);continue;}
   const score=x=>x.home_score!=null&&x.away_score!=null?String(x.home_score)+'-'+String(x.away_score):null;
@@ -2208,7 +2208,7 @@ function nexusReconcileFixtures(games){
    first.nexus_conflict=true;first.nexus_conflict_reason='Placar divergente entre fontes: '+score(first)+' / '+score(g);first.home_score=null;first.away_score=null;first.score_unverified=true;continue;
   }
   const rich=x=>(x.phase==='finished'?2:x.phase==='live'?1:0)+(Array.isArray(x.events)?x.events.length:0)+(Array.isArray(x.pressure)?x.pressure.length:0);
-  if(rich(g)>rich(first))Object.assign(first,{...g,nexus_merged:true});
+  if(!first.nexus_conflict&&rich(g)>rich(first))Object.assign(first,{...g,nexus_merged:true});
   else first.nexus_merged=true;
  }
  return out;
