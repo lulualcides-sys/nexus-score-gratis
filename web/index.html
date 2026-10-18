@@ -1212,7 +1212,22 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     if(path.startsWith('/api/prelive/')){const id=decodeURIComponent(path.split('/').pop());const g=item(id);return g?json(makeForecast(g)):json({error:'Jogo não coletado'},404)}
     if(path==='/api/legend')return json({legend:[]});
     if(path==='/api/history')return json({items:[]});
-    if(path==='/api/github-collector')return json({updated_at:doc.exported_at,source_status:doc.source_status||{},summary:doc.market_history||{},matches:doc.games.length});
+    if(path==='/api/github-collector')return json({
+      ...doc,
+      connected:true,
+      source:'Snapshot público GitHub · sem conexão privada',
+      status:doc.collector||{},
+      audit:{
+        ...doc.market_evidence,
+        market_evidence:doc.market_evidence||null,
+        settled_paper:Number(doc.paper?.settled)||0,
+        paper_profit_loss_brl:null,
+        quotes_registered:Number(doc.odds_collection_status?.odds_updated)||0
+      },
+      platform_snapshot:null,
+      sync:{connected:false,last_error:'modo público Cloudflare — sem token local'},
+      market_policy:'Dados coletados periodicamente; odds não são cotações ao vivo, e cenários fictícios não são operações.'
+    });
     if(path==='/api/v5/dashboard')return json({version:'5.29 WEB',updated_at:doc.exported_at,observations:doc.games.length,radar:[],markets:[],signals:[],
       quality:{source:'snapshot GitHub',note:'Motor Python do NEXUS 5.29 não disponível no Pages estático.'}});
     if(path==='/api/v5/radar')return json({opportunities:[]});

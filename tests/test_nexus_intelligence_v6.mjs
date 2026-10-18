@@ -14,4 +14,8 @@ const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 assert.match(html,/nexus-intelligence-v6\.js/);
 assert.match(html,/cloud-intelligence-v6/);
 assert.match(html,/NexusIntelligenceV6\?\.render/);
+assert.match(html,/if\(path==='\/api\/github-collector'\)return json\(\{/);
+assert.match(html,/intelligence_v6/);
+assert.match(html,/connected:true/);
+assert.match(html,/\.\.\.doc,/);
 console.log('NEXUS 6.0: cenários financeiros hipotéticos, ligação e segurança OK');
