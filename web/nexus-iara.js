@@ -105,6 +105,8 @@ function standingsMotivation(d){
  }
  return {available:evidence.length===2,list:list.slice(0,4),evidence,
   source:ctx.source,updated_at:ctx.updated_at,
+  table_url:/^https:\/\/www\.fotmob\.com\/leagues\/[1-9][0-9]*\/table$/.test(String(ctx.table_url||''))?
+    ctx.table_url:null,
   note:'Must Win situacional; a posição atual não torna a vitória matematicamente obrigatória.'};
 }
 function experimentalValue(d){
@@ -303,7 +305,10 @@ function render(d){
     safe(r.detail)+'</p>').join(''):
    '<p>Classificação encontrada: sem urgência especial comprovada pelas posições atuais.</p>')+
   '<small>Fonte '+safe(v.motivation.source)+' · coleta '+safe(v.motivation.updated_at||'não informada')+
-  '. Contexto esportivo, não obrigação matemática de vencer. Posições por conferência quando necessário.</small></div>':
+  '. Contexto esportivo, não obrigação matemática de vencer. Posições por conferência quando necessário.</small>'+
+  (v.motivation.table_url?'<p><a href="'+safe(v.motivation.table_url)+
+   '" target="_blank" rel="noopener noreferrer">Ver tabela original do campeonato ↗</a></p>':'')+
+  '</div>':
   '<div class="iara-context muted iara-compact"><b>🏆 Must Win · ainda NÃO confirmado</b>'+
   '<p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento. Sem a tabela real, não é possível rotular necessidade de vitória.</p>'+
   (function(){
