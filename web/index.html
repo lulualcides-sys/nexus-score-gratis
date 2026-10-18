@@ -801,7 +801,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
               <div class="preset-row"><input id="preset-name" maxlength="45" placeholder="Nome do meu filtro" aria-label="Nome do perfil"/><button class="secondary-btn" id="save-preset">Salvar perfil</button><select id="preset-picker" aria-label="Perfis salvos"><option value="">Meus perfis...</option></select><button class="secondary-btn" id="load-preset">Carregar</button><button class="secondary-btn" id="clear-rules">Limpar</button></div>
               <div class="scan-actions"><button id="scan-matches" class="primary-btn">◉ ANALISAR ATÉ 6 PARTIDAS</button><span id="scan-progress">Condições com estatísticas exigem análise. Não exibimos jogos não verificados como aprovados.</span></div>
             </div>
-            <div class="match-scroll" id="match-list"><div class="loading">Carregando partidas...</div></div>
+            <div class="nexus-list-controls"><button type="button" id="nexus-hide-list" aria-controls="match-list" aria-expanded="true">Ocultar lista de partidas</button><span id="nexus-list-quality" aria-live="polite"></span></div><div class="match-scroll" id="match-list"><div class="loading">Carregando partidas...</div></div>
             <div class="list-footer"><span id="list-footer-msg">Sem cobrança nem chave de API</span><button class="text-link" id="demo-toggle">Experimentar demonstração ↗</button></div>
           </section>
           <section class="panel detail-panel" id="detail-panel">
@@ -2194,6 +2194,25 @@ function refreshVisibleListFromCache(){
  });
 }
 function detailFor(m){const entry=cacheEntryForMatch(m);if(!entry)return null;const fresh=state.demo||Date.now()-entry.at<120000;return fresh&&!entry.data.stale?entry.data:null}
+function nexusReconcileFixtures(games){
+ const seen=new Map(),out=[];
+ const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+ for(const g of games){
+  const start=Number(g.start_timestamp);
+  const key=[norm(g.league),norm(g.home),norm(g.away),Number.isFinite(start)&&start>0?Math.round(start/300):String(g.day||'')].join('|');
+  if(!norm(g.home)||!norm(g.away)){out.push(g);continue;}
+  const first=seen.get(key);
+  if(!first){const item={...g};seen.set(key,item);out.push(item);continue;}
+  const score=x=>x.home_score!=null&&x.away_score!=null?String(x.home_score)+'-'+String(x.away_score):null;
+  if(score(first)&&score(g)&&score(first)!==score(g)){
+   first.nexus_conflict=true;first.nexus_conflict_reason='Placar divergente entre fontes: '+score(first)+' / '+score(g);continue;
+  }
+  const rich=x=>(x.phase==='finished'?2:x.phase==='live'?1:0)+(Array.isArray(x.events)?x.events.length:0)+(Array.isArray(x.pressure)?x.pressure.length:0);
+  if(rich(g)>rich(first))Object.assign(first,{...g,nexus_merged:true});
+  else first.nexus_merged=true;
+ }
+ return out;
+}
 function baseMatches(){
  const query=$('#search').value.trim().toLocaleLowerCase('pt-BR'), filter=$('#status-filter').value;
  const league=$('#league-filter').value,score=$('#score-filter').value,period=$('#period-filter').value;
@@ -2233,6 +2252,8 @@ function filteredMatches(){return baseMatches().filter(m=>resultStatus(m)!=='fai
 function renderMatches(){
  updateIndicators();const base=baseMatches(),matches=filteredMatches();
  const selected=matches.filter(m=>resultStatus(m)==='pass').length,unknown=matches.length-selected;
+ const conflicts=state.list.filter(x=>x.nexus_conflict).length;
+ const quality=$('#nexus-list-quality');if(quality)quality.textContent=conflicts?conflicts+' conflito(s) de placar entre fontes · confira antes de analisar':'Partidas repetidas consolidadas';
  $('#list-count').textContent=(state.rules.length||$('#dominance-filter').value!=='any'?`${selected} OK · ${unknown} SEM DADOS`:`${matches.length} JOGOS`);
  $('#scan-summary').textContent=state.rules.length?`${selected} aprovados · ${unknown} aguardando análise/dados`: 'Monte condições e faça a análise das partidas.';
  $('#upcoming-count').textContent=base.filter(m=>m.phase==='scheduled').length+' partidas programadas';
@@ -2312,7 +2333,7 @@ async function loadList(view=state.view,{silent=false}={}){
  try{
   const endpoint=state.demo?'/api/demo/live':state.reference?'/api/reference/list':view==='history'?'/api/archive':(['today','favorites'].includes(view)?'/api/agenda?offset='+state.dayOffset:'/api/live');
   const d=await api(endpoint);
-  state.list=d.matches||[];refreshVisibleListFromCache();observeGoalUpdates(state.list);state.dayResults.set(state.dayOffset,state.list.length);updateLeagues();state.error=null;updateAgendaButtons();
+  state.list=nexusReconcileFixtures(d.matches||[]);refreshVisibleListFromCache();observeGoalUpdates(state.list);state.dayResults.set(state.dayOffset,state.list.length);updateLeagues();state.error=null;updateAgendaButtons();
   const collectedAt=Date.parse(String(d.updated_at||''));
   const collectedOK=Number.isFinite(collectedAt)&&collectedAt>0;
   const ageMin=collectedOK?Math.max(0,Math.floor((Date.now()-collectedAt)/60000)):null;
@@ -3243,7 +3264,9 @@ async function loadCloud(){
  try{cloudData=await api('/api/github-collector');renderCloud();if($('#lab-total'))$('#lab-total').textContent=fmtV5(cloudJournalStats(cloudData.signal_journal).total);if(state.labTab==='alerts')renderLab()}
  catch(e){$('#cloud-results').textContent='Falha de sincronização: '+e.message;}
 }
-function connectUI(){setupAdvancedFilters();bindAlertHub();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';$('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
+function connectUI(){setupAdvancedFilters();bindAlertHub();$('#cloud-refresh').onclick=loadCloud;$('#cloud-search').oninput=renderCloud;$('#cloud-market').onchange=renderCloud;bindLab();document.getElementById('goal-sound-toggle').onclick=toggleGoalSound;updateGoalSoundButton();document.querySelectorAll('[data-day-offset]').forEach(button=>button.onclick=()=>chooseAgendaDay(Number(button.dataset.dayOffset)));$('#league-scope-toggle').onclick=()=>{state.showAllLeagues=!state.showAllLeagues;renderMatches()};$('#show-upcoming').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value=state.dayOffset===-1?'all':'scheduled';renderMatches();const next=filteredMatches()[0];if(next)await chooseMatch(next.id)};$('#show-all-today').onclick=async()=>{if(state.view!=='today')await changeView('today');$('#status-filter').value='all';renderMatches()};$('#open-scanner').onclick=async()=>{if(state.view!=='live')await changeView('live');$('#advanced-filters').classList.remove('hidden');$('#advanced-toggle').setAttribute('aria-expanded','true');$('#advanced-toggle').scrollIntoView({behavior:'smooth',block:'start'})};document.querySelectorAll('.nav').forEach(b=>b.onclick=()=>changeView(b.dataset.view));$('#search').oninput=renderMatches;$('#status-filter').onchange=renderMatches;$('#only-thermometer').onchange=renderMatches;$('#refresh').onclick=async()=>{if(state.view==='cloud')return loadCloud();if(state.view==='history')return loadList('history',{silent:true});if(state.selection)state.preliveCache.delete(state.selection);await loadList(state.view);if(state.selection)await chooseMatch(state.selection)};$('#demo-toggle').onclick=toggleDemo;$('#demo-setting').onclick=toggleDemo;$('#menu-button').onclick=()=>$('#sidebar').classList.toggle('open');$('#dismiss-notice').onclick=()=>$('#notice').classList.add('hidden');$('#setting-threshold').oninput=e=>$('#setting-threshold-val').textContent=e.target.value;$('#save-settings').onclick=saveSettings;$('#export-csv').onclick=()=>location.href='/api/export';const hideList=$('#nexus-hide-list');
+ if(hideList)hideList.onclick=()=>{const hidden=$('#match-list').classList.toggle('hidden');hideList.textContent=hidden?'Mostrar lista de partidas':'Ocultar lista de partidas';hideList.setAttribute('aria-expanded',String(!hidden));};
+ $('#match-list').onclick=e=>{const fav=e.target.closest('[data-favorite]');if(fav){e.stopPropagation();toggleFavorite(fav.dataset.favorite);return}const match=e.target.closest('[data-match]');if(match)chooseMatch(match.dataset.match)};$('#match-list').onkeydown=e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('[data-match]')){e.preventDefault();chooseMatch(e.target.dataset.match)}}}
 async function silentRefreshSelected(id){
  if(!id||state.selection!==id||state.demo||state.reference||state.view==='history')return;
  const game=state.list.find(x=>x.id===id);if(!game||game.phase==='scheduled')return;
@@ -3267,6 +3290,13 @@ init();
 
 </script>
 
+<style>
+.nexus-list-controls{display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding:8px 12px;color:#8faec1;font-size:11px}
+#nexus-hide-list{background:#173448;color:#b9f3ee;border:1px solid #326878;border-radius:8px;padding:9px 12px;font-weight:750}
+#nexus-hide-list:focus-visible{outline:2px solid #4ae6d4;outline-offset:2px}
+#nexus-list-quality{overflow-wrap:anywhere}
+@media(max-width:640px){.nexus-list-controls{align-items:stretch;flex-direction:column}.nexus-list-controls button{width:100%}.detail-panel{min-width:0}}
+</style>
 <script src="./nexus-web-polish.js"></script>
 <script src="./nexus-iara.js"></script>
 <script src="./nexus-unit-pl.js"></script>
