@@ -171,6 +171,6 @@ function alertHTML(data){
    ' · '+h(a.category||'monitoramento')+'</small></div>').join('')+'</details>':'')+
  '</div>';
 }
-root.NexusEvidence={auditHTML,normalizeSummary,alertHTML};
+root.NexusEvidence={auditHTML,normalizeSummary,alertHTML,uncertainty,calibrationHTML};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusEvidence;
 })(typeof window!=='undefined'?window:globalThis);
