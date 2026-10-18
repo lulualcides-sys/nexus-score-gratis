@@ -22,4 +22,6 @@ assert.equal(a.views['10'].by_minute_band.length,3);
 assert.equal(a.views['10'].evolution.at(-1).cumulative_settled,2);
 assert.equal(model.cleanHTML('<img src=x>'),'&lt;img src=x&gt;');
 assert.equal(model.fallback({items:[]}).summary.rate_pct,null);
-console.log('NEXUS avaliação de sinais: ok');
+assert.equal(model.fallback({items:[{...items[0],outcomes:{'40':'gol_confirmado'}}]}).horizons['40'].hits,1);
+assert.equal(model.fallback({items:[{...items[0],outcomes:{'40':'pendente'}}]}).horizons['40'].settled,0);
+console.log('NEXUS avaliação de sinais 5 a 40 min: ok');
