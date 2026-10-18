@@ -2741,11 +2741,12 @@ function renderLab(){const data=state.labData||{},p=$('#lab-content');if(!p)retu
    html=NexusAudit.archive(data.pregame_archive||[],200);
  } else if(state.labTab==='radar'){
   const rows=(data.radar||[]).filter(r=>r.ev_pct>=state.labMinimum&&(!state.labFavorites||state.favorites.has(r.match_id)));
-  const oddsHealth=data.odds_collection_status||{},independent=oddsHealth.the_odds_api||{},espn=oddsHealth.espn_fallback||{};
+  const oddsHealth=data.odds_collection_status||{},independent=oddsHealth.the_odds_api||{},apiFootball=oddsHealth.api_football||{},espn=oddsHealth.espn_fallback||{};
   const blocked=(oddsHealth.errors||[]).some(x=>/403/.test(String(x)));
   const health='<div class="nexus-audit-fresh nexus-fresh-late"><b>ODDS / FONTES</b>'+
     '<span>ESPN: '+esc(espn.quotes_added??'—')+' preços nesta coleta · The Odds API: '+
     esc(independent.status||'não configurada')+
+    ' · API-Football: '+esc(apiFootball.status||'não configurada')+
     (blocked?' · SofaScore: bloqueio HTTP 403':'')+
     '. Sem cotação recente e modelo calibrado: apenas observação esportiva, NÃO há EV+ validado.</span></div>';
 
