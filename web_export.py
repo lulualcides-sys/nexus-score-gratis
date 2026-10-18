@@ -734,6 +734,7 @@ def main():
                  'round','start_timestamp','minute','score','phase','halftime',
                  'status_short','source','sources','observed_at',
                  'pressure_observed_at','pressure_last_minute','odds','stats')
+    OUT.parent.mkdir(parents=True,exist_ok=True)
     lite_games=[]
     for game in rows:
         item={field:game.get(field) for field in lite_fields}
@@ -746,7 +747,7 @@ def main():
           'collector':payload['collector'],'games':lite_games}
     lite_path=OUT.parent/'listing.json'
     lite_tmp=lite_path.with_suffix('.tmp')
-    lite_tmp.write_text(json.dumps(lite,ensure_ascii=False,separators=(',',':'))+'\\n',
+    lite_tmp.write_text(json.dumps(lite,ensure_ascii=False,separators=(',',':'))+'\n',
                         encoding='utf-8')
     lite_tmp.replace(lite_path)
     OUT.parent.mkdir(parents=True,exist_ok=True)
