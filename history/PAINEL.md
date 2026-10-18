@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T07:38:06.975695+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-18T08:39:42.222643+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,24 +168,24 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 3173 | **Jogos distintos:** 1047 | **Resultados verificáveis:** 1684 | **Com gol:** 558 | **Sem gol:** 1126 | **Taxa observada:** 33.1%.
-**Evolução da amostra:** 10 datas com coletas | 15 pendentes | 651 indeterminados | 823 incompletos.
+**Observações:** 3182 | **Jogos distintos:** 1047 | **Resultados verificáveis:** 1688 | **Com gol:** 559 | **Sem gol:** 1129 | **Taxa observada:** 33.1%.
+**Evolução da amostra:** 10 datas com coletas | 20 pendentes | 651 indeterminados | 823 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 570 | 380 | 133 | 247 | 35.0% |
+| 🥶 jogo_frio | 572 | 383 | 134 | 249 | 35.0% |
 | 🟥 expulsao_confirmada | 592 | 275 | 86 | 189 | 31.3% |
-| ⚡ pressao_ofensiva_18 | 425 | 263 | 85 | 178 | 32.3% |
-| 🎯 chutes_no_alvo_5 | 536 | 255 | 76 | 179 | 29.8% |
+| ⚡ pressao_ofensiva_18 | 426 | 263 | 85 | 178 | 32.3% |
+| 🎯 chutes_no_alvo_5 | 537 | 256 | 76 | 180 | 29.7% |
 | 🚩 escanteios_6 | 427 | 193 | 66 | 127 | 34.2% |
-| 💣 grandes_chances_3 | 344 | 173 | 65 | 108 | 37.6% |
-| 🔥 pressao_forte_10min | 130 | 70 | 24 | 46 | 34.3% |
-| 🧨 pressao_total_5_10min | 78 | 43 | 14 | 29 | 32.6% |
-| 🚨 alerta_cruzado_gol | 27 | 18 | 5 | 13 | 27.8% |
-| ⏱️ tensao_tardia_70 | 44 | 14 | 4 | 10 | 28.6% |
+| 💣 grandes_chances_3 | 345 | 173 | 65 | 108 | 37.6% |
+| 🔥 pressao_forte_10min | 131 | 70 | 24 | 46 | 34.3% |
+| 🧨 pressao_total_5_10min | 79 | 43 | 14 | 29 | 32.6% |
+| 🚨 alerta_cruzado_gol | 28 | 18 | 5 | 13 | 27.8% |
+| ⏱️ tensao_tardia_70 | 45 | 14 | 4 | 10 | 28.6% |
 
 ### Equipe
 
@@ -224,8 +224,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Major League Soccer | 208 | 111 | 42 | 69 | 37.8% |
 | Premier League | 142 | 78 | 23 | 55 | 29.5% |
 | Liga Profesional | 107 | 68 | 14 | 54 | 20.6% |
+| J. League | 97 | 59 | 23 | 36 | 39.0% |
 | Champions League | 95 | 56 | 36 | 20 | 64.3% |
-| J. League | 88 | 55 | 22 | 33 | 40.0% |
 | Liga MX | 90 | 49 | 22 | 27 | 44.9% |
 | Bundesliga | 82 | 46 | 11 | 35 | 23.9% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
@@ -253,22 +253,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 98 | 74 | 31 | 43 | 41.9% |
 | 16–30′ | 272 | 197 | 64 | 133 | 32.5% |
-| 31–45′ | 385 | 286 | 120 | 166 | 42.0% |
+| 31–45′ | 387 | 289 | 120 | 169 | 41.5% |
 | 46–60′ | 519 | 390 | 134 | 256 | 34.4% |
-| 61–75′ | 694 | 455 | 137 | 318 | 30.1% |
-| 76–90′ | 880 | 282 | 72 | 210 | 25.5% |
+| 61–75′ | 695 | 456 | 138 | 318 | 30.3% |
+| 76–90′ | 886 | 282 | 72 | 210 | 25.5% |
 | 91+′ | 325 | 0 | 0 | 0 | — |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 3173 | **Jogos monitorados:** 1730 | **Ao vivo:** 27 | **Termômetros recentes:** 12.
+**Registros:** 3182 | **Jogos monitorados:** 1730 | **Ao vivo:** 29 | **Termômetros recentes:** 12.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-18T07:38:50.883036+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (35') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:40:12.024625+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (79') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-18T08:26:54.526866+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-18T08:03:06.938699+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T07:41:13.955530+00:00 | Machida Zelvia × Avispa Fukuoka | Machida Zelvia (38') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-18T07:38:50.883036+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T07:15:00.027463+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (12') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T07:15:00.027463+00:00 | Machida Zelvia × Avispa Fukuoka | Avispa Fukuoka (12') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T06:46:51.797961+00:00 | Sydney FC × Adelaide United | Adelaide United (53') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -359,15 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T01:39:38.618855+00:00 | Independiente Medellín × Once Caldas | Independiente Medellín (28') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T01:39:38.618855+00:00 | León × CF América | CF América (32') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T01:17:50.470124+00:00 | Atlanta United × Inter Miami CF | Inter Miami CF (76') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-18T01:17:50.470124+00:00 | Red Bull New York × Toronto FC | Red Bull New York (77') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T01:17:50.470124+00:00 | São Paulo × Vasco da Gama | São Paulo (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-18T01:17:22.948330+00:00 | León × CF América | León (11') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-18T01:17:22.948330+00:00 | New England Revolution × Chicago Fire FC | Chicago Fire FC (79') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T01:17:22.948330+00:00 | Red Bull New York × Toronto FC | Red Bull New York (76') | 🚩 escanteios_6 · scout acumulado | pendente | gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | Atlanta United × Inter Miami CF | Inter Miami CF (72') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New England Revolution × Chicago Fire FC | Chicago Fire FC (75') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T01:13:49.091060+00:00 | New York City FC × Los Angeles FC | New York City FC (72') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
