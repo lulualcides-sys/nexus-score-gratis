@@ -7,7 +7,7 @@ A contagem usa observações, não jogos independentes: sinais na mesma partida
 podem ser correlacionados.
 """
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 BR=ZoneInfo('America/Sao_Paulo')
@@ -156,8 +156,20 @@ def _goal_timing(entries):
             'note':'Tempo até o primeiro gol confirmado (minuto exato). Não é chance calibrada, nem recomendação de manter posição até o fim.'}
 
 
+def _earliest_per_match(entries):
+    """Primeiro sinal de cada jogo: amostra descritiva menos correlacionada."""
+    seen={}
+    for entry in sorted(entries,key=lambda e:(e['day'],e['minute'],e['signal'])):
+        seen.setdefault(entry['match_id'],entry)
+    return list(seen.values())
+
+
 def evaluate(journal):
-    entries=list(_entries(journal))
+    all_entries=list(_entries(journal))
+    all_days=sorted({e['day'] for e in all_entries})
+    cutoff=(datetime.fromisoformat(all_days[-1]).date()-timedelta(days=89)).isoformat() if all_days else None
+    entries=[e for e in all_entries if cutoff is None or e['day']>=cutoff]
+    earliest=_earliest_per_match(entries)
     horizons={h:_rollup(entries,h) for h in HORIZONS}
     views={}
     for h in HORIZONS:
@@ -166,6 +178,12 @@ def evaluate(journal):
                   'by_league':_groups(entries,h,'league',limit=100),
                   'by_minute':_groups(entries,h,'minute',limit=120),
                   'by_minute_band':_groups(entries,h,'band',limit=7),
+                  'first_match':_rollup(earliest,h),
+                  'by_signal_first_match':_groups(earliest,h,'signal'),
+                  'by_team_first_match':_groups(earliest,h,'team',limit=100),
+                  'by_league_first_match':_groups(earliest,h,'league',limit=100),
+                  'by_minute_first_match':_groups(earliest,h,'minute',limit=120),
+                  'by_minute_band_first_match':_groups(earliest,h,'band',limit=7),
                   'evolution':_progress(entries,h)}
     days=sorted({e['day'] for e in entries})
     return {'schema':1,'window_minutes':10,'summary':horizons['10'],
@@ -173,6 +191,9 @@ def evaluate(journal):
             'first_observed_day':days[0] if days else None,
             'last_observed_day':days[-1] if days else None,
             'days_observed':len(days),
+            'history_window_days':90,'history_start_day':cutoff,
+            'raw_observations_all_dates':len(all_entries),
+            'observations_older_than_90_days':len(all_entries)-len(entries),
             'horizons':horizons,**views['10'],'views':views,
             'updated_at':journal.get('updated_at') if isinstance(journal,dict) else None,
             'money_status':'unavailable_without_entry_odds_and_trade_results',

@@ -80,16 +80,23 @@
   }
   const fmtPct=x=>x===null||x===undefined||!Number.isFinite(Number(x))?'—':
     Number(x).toLocaleString('pt-BR',{maximumFractionDigits:1})+'%';
-  let horizon='40',dimension='by_signal';
+  let horizon='40',dimension='by_signal',unit='fixtures';
+  let scenarioOdd='1.80',scenarioStake='100',scenarioMarket='goal';
   function render(stored,journal){
     if(typeof document==='undefined')return;
     const host=document.getElementById('cloud-signal-evaluation');
     if(!host)return;
     const data=stored?.views?.['40']?stored:fallback(journal||{});
     const complete=Boolean(stored?.views?.['40']);
-    const summary=data.horizons?.[horizon]||{};
     const view=data.views?.[horizon]||{};
-    const rows=Array.isArray(view[dimension])?view[dimension]:[];
+    const fixtureMode=unit==='fixtures'&&Boolean(view.first_match);
+    const summary=(fixtureMode?view.first_match:data.horizons?.[horizon])||{};
+    const dimensionKey=dimension+(fixtureMode?'_first_match':'');
+    const rows=Array.isArray(view[dimensionKey])?view[dimensionKey]:[];
+    const historyLabel=complete&&Number(data.days_observed)>0?
+      'Cobertura real: '+Number(data.days_observed)+' dias observados entre '+
+      cleanHTML(data.first_observed_day||'—')+' e '+cleanHTML(data.last_observed_day||'—')+
+      ' · janela dos últimos 90 dias do histórico salvo.':'Cobertura histórica ainda não verificada.';
     const evolution=Array.isArray(view.evolution)?view.evolution:[];
     const pct=fmtPct(summary.rate_pct);
     const timing=complete?data.goal_timing:null;
@@ -134,12 +141,19 @@
       '</td></tr>').join('');
     host.innerHTML='<div class="nexus-evaluation-heading"><div><h3>Avaliação histórica por sinais</h3>'+
      '<p>Gols confirmados após alertas, com contagem por equipe, campeonato e minuto.</p></div>'+
-     '<small>'+(complete?'Resumo de todo o diário disponível':'Subamostra dos alertas sincronizados')+'</small></div>'+
+     '<small>'+(complete?'Diário auditado':'Subamostra dos alertas sincronizados')+'</small></div>'+
+     '<p class="nexus-evaluation-meta">'+historyLabel+'</p>'+
      '<div class="nexus-evaluation-controls"><label>Janela de verificação '+
      '<select id="nexus-eval-horizon">'+H.map(h=>'<option value="'+h+'" '+(h===horizon?'selected':'')+'>'+h+' minutos</option>').join('')+
      '</select></label><label>Agrupar por <select id="nexus-eval-dimension">'+
      Object.entries(dims).map(([id,name])=>'<option value="'+id+'" '+(dimension===id?'selected':'')+'>'+name+'</option>').join('')+
+     '</select></label><label>Unidade de contagem <select id="nexus-eval-unit">'+
+     '<option value="fixtures" '+(unit==='fixtures'?'selected':'')+'>Primeiro alerta de cada jogo</option>'+
+     '<option value="alerts" '+(unit==='alerts'?'selected':'')+'>Todos os alertas</option>'+
      '</select></label></div>'+
+     '<p class="nexus-evaluation-meta">'+(fixtureMode?
+       'Cada partida entra uma vez: primeiro alerta registrado.' :
+       'Um mesmo jogo pode gerar vários alertas correlacionados.')+'</p>'+
      '<div class="nexus-evaluation-kpis"><div><small>OBSERVAÇÕES</small><b>'+Number(summary.observations||0)+'</b></div>'+
      '<div><small>RESULTADOS VERIFICÁVEIS</small><b>'+Number(summary.settled||0)+'</b></div>'+
      '<div><small>COM GOL / SEM GOL</small><b>'+Number(summary.hits||0)+' / '+Number(summary.misses||0)+'</b></div>'+
@@ -155,9 +169,14 @@
      (graph?'<div class="nexus-evolution">'+graph+'</div>':'<p>Sem datas de captura verificáveis.</p>')+
      '<section class="nexus-simulator" style="margin:16px 0;padding:14px;border:1px solid #64748b;border-radius:10px">'+
      '<h4>Simulador hipotético de valores · NÃO são odds reais</h4>'+
-     '<label>Mercado <select id="nexus-sim-market"><option>Over 1.5 gols</option><option>Lay goleada (contra 3+ gols de diferença)</option><option>Over 2.5 gols</option></select></label> '+
-     '<label>Odd fictícia <input id="nexus-sim-odd" type="number" min="1.01" max="100" step="0.05" value="1.80" style="width:84px"></label> '+
-     '<label>Valor hipotético R$ <input id="nexus-sim-stake" type="number" min="1" max="100000" step="1" value="100" style="width:96px"></label>'+
+     '<label>Cenário fictício <select id="nexus-sim-market">'+
+     '<option value="goal" '+(scenarioMarket==='goal'?'selected':'')+'>Gol em até '+horizon+' min após alerta</option>'+
+     '<option value="over15" '+(scenarioMarket==='over15'?'selected':'')+'>Over 1.5 FT</option>'+
+     '<option value="lay" '+(scenarioMarket==='lay'?'selected':'')+'>Lay goleada</option>'+
+     '<option value="over25" '+(scenarioMarket==='over25'?'selected':'')+'>Over 2.5 FT</option>'+
+     '</select></label> '+
+     '<label>Odd fictícia <input id="nexus-sim-odd" type="number" min="1.01" max="100" step="0.05" value="'+scenarioOdd+'" style="width:84px"></label> '+
+     '<label>Valor hipotético R$ <input id="nexus-sim-stake" type="number" min="1" max="100000" step="1" value="'+scenarioStake+'" style="width:96px"></label>'+
      '<p id="nexus-sim-output" aria-live="polite"></p>'+
      '<small>Simulação manual: ganho líquido se acertar = stake × (odd − 1); perda se errar = stake. No Lay, o valor representa a responsabilidade, e não uma operação real. Não utiliza taxas históricas como chances calibradas.</small></section>'+
      '<p class="nexus-evaluation-disclaimer">Taxa = gols ÷ (gols + sem gol). Exclui resultados não verificáveis;'+
@@ -170,16 +189,25 @@
       if(!output)return;
       if(!Number.isFinite(odd)||odd<=1||odd>100||!Number.isFinite(stake)||stake<=0||stake>100000){output.textContent='Informe odd entre 1,01 e 100 e valor entre R$ 1 e R$ 100.000.';return;}
       const fmt=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-      const lay=host.querySelector('#nexus-sim-market')?.selectedIndex===1;
+      const market=host.querySelector('#nexus-sim-market')?.value;
+      const lay=market==='lay';
       const gain=lay?stake/(odd-1):stake*(odd-1);
-      const historic=(!lay && host.querySelector('#nexus-sim-market')?.selectedIndex===0 && Number(summary.settled)>=20 && summary.rate_pct!=null && Number.isFinite(Number(summary.rate_pct)))?Number(summary.rate_pct)/100:null;
+      const historic=(market==='goal' && Number(summary.settled)>=20 &&
+        summary.rate_pct!=null && Number.isFinite(Number(summary.rate_pct)))?Number(summary.rate_pct)/100:null;
       const hypothetical=historic===null?'':(' · Cálculo ilustrativo sobre a taxa observada de GOL em '+horizon+' min (não representa a liquidação de Over 1.5): '+fmt(stake*(historic*(odd-1)-(1-historic)))+' por alerta; alertas correlacionados, sem EV validado.');
       output.textContent='CENÁRIO FICTÍCIO '+(lay?'LAY (responsabilidade informada)':'BACK')+' · ganho se acertar: '+fmt(gain)+' · perda se errar: '+fmt(stake)+' · sem previsão de lucro.'+hypothetical;
     };
-    for(const id of ['nexus-sim-odd','nexus-sim-stake','nexus-sim-market'])host.querySelector('#'+id)?.addEventListener('input',simulate);
+    for(const id of ['nexus-sim-odd','nexus-sim-stake','nexus-sim-market'])
+      host.querySelector('#'+id)?.addEventListener('input',()=>{
+        scenarioOdd=host.querySelector('#nexus-sim-odd')?.value||'';
+        scenarioStake=host.querySelector('#nexus-sim-stake')?.value||'';
+        scenarioMarket=host.querySelector('#nexus-sim-market')?.value||'goal';
+        simulate();
+      });
     simulate();
     host.querySelector('#nexus-eval-horizon').onchange=e=>{horizon=e.target.value;render(stored,journal)};
     host.querySelector('#nexus-eval-dimension').onchange=e=>{dimension=e.target.value;render(stored,journal)};
+    host.querySelector('#nexus-eval-unit').onchange=e=>{unit=e.target.value;render(stored,journal)};
   }
   root.NexusSignalEvaluation={render};
   if(typeof module!=='undefined'&&module.exports)module.exports={fallback,cleanHTML,minuteBand:band};

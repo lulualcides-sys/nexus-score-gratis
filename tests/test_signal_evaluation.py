@@ -65,6 +65,25 @@ class SignalEvaluationTests(unittest.TestCase):
         self.assertEqual(timing['first_alert_per_match']['matches'],3)
         self.assertEqual(timing['first_alert_per_match']['hits'],2)
 
+    def test_rolling_90_days_first_alert_per_fixture(self):
+        early=self.make('old','2026-05-01T10:00:00Z',match='historical')
+        early['outcomes']['40']='gol_confirmado'
+        initial=self.make('current-1','2026-10-09T10:00:00Z',match='fixtureA',minute=30)
+        initial['outcomes']['40']='gol_confirmado'
+        repeated=self.make('current-2','2026-10-09T10:05:00Z',match='fixtureA',minute=35)
+        repeated['outcomes']['40']='sem_gol_confirmado'
+        other=self.make('current-3','2026-10-09T11:05:00Z',match='fixtureB',minute=52)
+        other['outcomes']['40']='sem_gol_confirmado'
+        report=evaluate({'items':[early,initial,repeated,other]})
+        self.assertEqual(report['history_window_days'],90)
+        self.assertEqual(report['observations_older_than_90_days'],1)
+        self.assertEqual(report['horizons']['40']['observations'],3)
+        fixtures=report['views']['40']['first_match']
+        self.assertEqual(fixtures['observations'],2)
+        self.assertEqual(fixtures['hits'],1)
+        self.assertEqual(fixtures['misses'],1)
+        self.assertEqual(sum(v['observations'] for v in report['views']['40']['by_signal_first_match']),2)
+
     def test_no_records_returns_null_rate_not_zero(self):
         x=evaluate({'items':[]})
         self.assertIsNone(x['summary']['rate_pct'])

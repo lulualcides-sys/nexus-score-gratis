@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - 'web/index.html'
+      - 'web/nexus-signal-evaluation.js'
+      - 'web/nexus-evidence-v535.js'
+      - 'web/match-detail.js'
+      - 'web/nexus-signal-evaluation.css'
       - '.github/workflows/nexus-public-smoke.yml'
   workflow_dispatch:
 permissions:
@@ -13,18 +17,31 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Wait for public Pages deployment and verify release marker
+      - name: Obter arquivos de origem
+        uses: actions/checkout@v4
+      - name: Comparar assets públicos com o commit atual
+        shell: bash
         run: |
-          set -eu
-          URL="https://nexus-score-gratis.pages.dev/"
+          set -euo pipefail
+          base="https://nexus-score-gratis.pages.dev"
+          files=(index.html nexus-signal-evaluation.js nexus-evidence-v535.js match-detail.js nexus-signal-evaluation.css)
           for attempt in $(seq 1 12); do
-            if curl -fsSL --connect-timeout 8 --max-time 20 -w "HTTP status: %{http_code} bytes: %{size_download}\\n" "$URL" -o /tmp/nexus-public.html &&
-               grep -q 'name="nexus-release-marker" content="nexus-20261018-40min-audit"' /tmp/nexus-public.html; then
-              echo "Public page verified with correct release marker."
+            found=true
+            for filename in "${files[@]}"; do
+              path="/${filename}"
+              if [[ "${filename}" == "index.html" ]]; then path="/"; fi
+              if ! curl -fsSL --connect-timeout 5 --max-time 12 "${base}${path}" -o "/tmp/nexus-${filename}" ||
+                 ! cmp -s "web/${filename}" "/tmp/nexus-${filename}"; then
+                echo "Tentativa ${attempt}/12: asset divergente/indisponível: ${filename}"
+                found=false
+                break
+              fi
+            done
+            if [[ "${found}" == true ]]; then
+              echo "Cloudflare Pages: HTML e 4 assets correspondem byte a byte ao commit ${GITHUB_SHA}."
               exit 0
             fi
-            echo "Deploy not yet verified, attempt $attempt/12"; if [ -f /tmp/nexus-public.html ]; then grep -om1 "<title>[^<]*</title>" /tmp/nexus-public.html || true; fi
             sleep 15
           done
-          echo "Unable to confirm Cloudflare public release marker" >&2
+          echo "Cloudflare Pages: versão pública ainda não corresponde ao commit." >&2
           exit 1

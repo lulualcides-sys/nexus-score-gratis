@@ -25,3 +25,8 @@
 .nexus-goal-delay-track i{height:100%;display:block;border-radius:6px;background:#5cc2c1}
 .nexus-goal-delay-row b{text-align:right}
 @media(max-width:680px){.nexus-goal-delay-row{grid-template-columns:72px minmax(0,1fr) 34px;gap:6px}}
+
+.nexus-evaluation-controls label{min-width:0}.nexus-evaluation-controls select{max-width:100%;min-height:36px}
+.nexus-evaluation .nexus-simulator input,.nexus-evaluation .nexus-simulator select{border:1px solid #63839a;border-radius:6px;padding:7px}
+.nexus-evaluation .nexus-simulator label{display:inline-flex;align-items:center;gap:5px;margin:5px 7px 5px 0}
+@media(max-width:680px){.nexus-evaluation{padding:12px}.nexus-evaluation-controls{display:grid;grid-template-columns:1fr}.nexus-evaluation .nexus-simulator label{width:100%;justify-content:space-between}}
