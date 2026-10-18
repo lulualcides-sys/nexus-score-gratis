@@ -17,6 +17,8 @@ on:
       - "api_football_odds.py"
       - "pregame_refresh_quotes.py"
       - "web_export.py"
+      - "team_player_leaders.py"
+      - "web/nexus-squads-v539.css"
       - "web/nexus-alert-center-v537.js"
       - "web/nexus-market-quality-v538.js"
       - "tests/test_nexus_triple_patch_v538.mjs"
@@ -88,6 +90,7 @@ jobs:
           node --check web/nexus-evidence-v535.js
           node tests/test_nexus_evidence_v535.mjs
           node tests/test_nexus_triple_patch_v538.mjs
+          node tests/test_nexus_squads_v539.mjs
           node --check web/nexus-alert-center-v537.js
           node --check web/nexus-market-quality-v538.js
           node --check web/app.js
