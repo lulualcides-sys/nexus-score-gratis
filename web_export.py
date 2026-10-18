@@ -102,8 +102,15 @@ def public_lineups(lineups):
         if not isinstance(group,dict):continue
         def people(values):
             if not isinstance(values,list):return []
-            return [{'name':safe(x.get('name'),80),'number':safe(x.get('number'),4)}
-                     for x in values[:25] if isinstance(x,dict) and x.get('name')]
+            output=[]
+            for x in values[:25]:
+                if not isinstance(x,dict) or not x.get('name'):continue
+                item={'name':safe(x.get('name'),80),'number':safe(x.get('number'),4),
+                      'id':safe(x.get('id'),16)}
+                rating=number(x.get('rating'))
+                if rating is not None and 0<=rating<=10:item['rating']=round(rating,2)
+                output.append(item)
+            return output
         starters=people(group.get('starters'))
         subs=people(group.get('subs'))
         if starters or subs:
@@ -481,6 +488,12 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         public_event={'m':minute,'type':event['type'],
                       'side':event.get('side') if event.get('side') in ('home','away') else '',
                       'text':safe(event.get('text'),125)}
+        if event['type']=='goal':
+            public_event.update(player=safe(event.get('player'),90),
+                                assist=safe(event.get('assist'),90),
+                                own_goal=event.get('own_goal') is True,
+                                penalty=event.get('penalty') is True,
+                                source=safe(event.get('source'),50))
         if event['type']=='substitution' and public_event['side']:
             incoming=safe(event.get('player_in'),80)
             outgoing=safe(event.get('player_out'),80)
@@ -494,6 +507,30 @@ def public_row(row,day,team_cache=None,espn_cache=None):
     forms=row.get('team_form') or {}
     rosters=row.get('team_roster') or {}
     lineups=public_lineups(row.get('lineups') or {})
+    stars={}
+    for side in ('home','away'):
+        data=(row.get('match_stars') or {}).get(side) or {}
+        if isinstance(data,dict) and data.get('player') and data.get('source')=='FotMob':
+            stars[side]={'player':safe(data['player'],80),'label':safe(data.get('label'),75),
+                         'kind':safe(data.get('kind'),35),'source':'FotMob',
+                         'rating':number(data.get('rating'))}
+    leaders={}
+    for side in ('home','away'):
+        data=(row.get('team_leaders') or {}).get(side) or {}
+        if not isinstance(data,dict):continue
+        available={}
+        for key in ('goals','assists','rating'):
+            player=data.get(key) or {}
+            if not isinstance(player,dict) or player.get('source')!='FotMob · atletas da equipe':
+                continue
+            value=number(player.get('value'))
+            if value is not None and player.get('name'):
+                available[key]={'name':safe(player['name'],80),'value':value,
+                                'source':'FotMob · atletas da equipe'}
+        if available:
+            available['updated_at']=safe(data.get('updated_at'),40)
+            available['coverage_players']=data.get('coverage_players')
+            leaders[side]=available
     h2h=historical_h2h(row,team_cache,espn_cache)
     context=row.get('standings_context') or {}
     ranking=None
@@ -552,7 +589,8 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'head_to_head':h2h,'standings':ranking,
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
-            'lineups':lineups,'odds':odds[:5],
+            'lineups':lineups,'match_stars':stars,'team_leaders':leaders,
+            'odds':odds[:5],
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
             'pregame_baseline':public_baseline(row,f),
