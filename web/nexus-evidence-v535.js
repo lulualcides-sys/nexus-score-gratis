@@ -40,7 +40,7 @@ function auditHTML(report){
  kpi('COTAÇÕES BRUTAS',count(d.quotes_registered),'Podem existir três ou mais preços por partida')+
  kpi('PARTIDAS COM PRÉ-LIVE CONGELADO',evidence?count(evidence.fixtures_with_frozen_forecast):'—','Não reconstruídas após o início')+
  kpi('PARTIDAS COM DESFECHO ESPORTIVO',evidence?count(evidence.fixtures_with_result):'—','Conferência de previsões por mercado')+
- kpi('P/L PAPER AUDITADO',paper,paperCount?''+paperCount+' entradas hipotéticas previamente registradas':'Sem entradas paper liquidadas; não é R$ 0,00')+
+ kpi('P/L PAPER AUDITADO',paper,paperCount?''+paperCount+' entradas hipotéticas previamente registradas':'Nenhuma entrada paper liquidada; valor indisponível')+
  '</div>'+
  '<p class="nexus-evidence-explain"><b>Os '+count(d.quotes_registered)+' preços brutos NÃO representam '+count(d.quotes_registered)+' operações.</b> '+
  'A conferência esportiva e o P/L paper são separados das operações reais. Sem entrada prévia, odd e liquidação, o resultado financeiro fica indisponível (—).</p>'+
@@ -124,7 +124,7 @@ function alertHTML(data){
  '<div class="nexus-evidence-windows">'+['5','10','15'].map(card).join('')+'</div>'+
  '<p class="nexus-evidence-foot">A taxa usa apenas gols/sem gol confirmados. Alertas da mesma partida são correlacionados. '+
  'Alertas pendentes e janelas sem cobertura não entram na taxa.</p>'+
- '<h3>Memória de alertas com minuto confirmado <small>('+count(unique.size)+' exibidos de até 80 recentes)</small></h3>'+
+ '<h3>Memória de alertas com minuto confirmado <small>('+count(alerts.length)+' mostrados · últimos 80)</small></h3>'+
  observations+
  (feed.length?'<details class="nexus-evidence-legacy"><summary>Ver outras '+count(feed.length)+
  ' mensagens do radar (não equivalem a resultados de apostas)</summary>'+
