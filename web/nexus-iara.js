@@ -96,7 +96,7 @@ function standingsMotivation(d){
    const item=ctx[side],club=name(d,side);
    const rank=num(item?.position),points=num(item?.points),played=num(item?.played);
    if(rank===null||points===null||played===null||played<3)continue;
-   evidence.push(club+': '+rank+'º, '+points+' pts');
+   evidence.push(club+': '+rank+'º'+(item.group?' na '+String(item.group):'')+', '+points+' pts');
    for(const r of (Array.isArray(item?.reasons)?item.reasons:[]).slice(0,2)){
      if(!r?.kind||!r?.detail)continue;
      list.push({team:club,side,kind:String(r.kind),label:String(r.label||'Disputa por posições'),
@@ -296,10 +296,14 @@ function render(d){
  const tagHTML=v.tags.map(x=>'<span class="iara-pill">'+safe(x)+'</span>').join('');
  const facts=v.evidence.length?
    '<div class="iara-evidence">'+v.evidence.map(x=>'<span>'+safe(x)+'</span>').join('')+'</div>':'';
- const mustWin=v.motivation?.list?.length?'<div class="iara-context"><b>🏆 MUST WIN · situação na tabela</b>'+
-  v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
-  safe(r.detail)+'</p>').join('')+
-  '<small>Urgência esportiva situacional, não obrigação matemática.</small></div>':
+ const mustWin=v.motivation?.available?'<div class="iara-context"><b>🏆 Must Win · classificação real</b>'+
+  '<p>'+v.motivation.evidence.map(safe).join(' · ')+'</p>'+
+  (v.motivation.list.length?
+   v.motivation.list.map(r=>'<p><strong>'+safe(r.team)+' · '+safe(r.label)+'</strong> — '+
+    safe(r.detail)+'</p>').join(''):
+   '<p>Classificação encontrada: sem urgência especial comprovada pelas posições atuais.</p>')+
+  '<small>Fonte '+safe(v.motivation.source)+' · coleta '+safe(v.motivation.updated_at||'não informada')+
+  '. Contexto esportivo, não obrigação matemática de vencer. Posições por conferência quando necessário.</small></div>':
   '<div class="iara-context muted iara-compact"><b>🏆 Must Win · ainda NÃO confirmado</b>'+
   '<p>Aguardando classificação verificada para analisar posições, G4 e rebaixamento. Sem a tabela real, não é possível rotular necessidade de vitória.</p>'+
   (function(){
