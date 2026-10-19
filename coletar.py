@@ -427,6 +427,25 @@ def scout_priority(game,old):
     else:group=3
     return (group,last,-minute)
 
+def choose_scout_games(live,fixtures,limit):
+    """Reservar vagas para rechecagem de jogos sem dados mesmo sob alta demanda.
+
+    Nao muda nem inventa scouts: escolhe apenas quais detalhes consultar.
+    """
+    if limit<=0:return []
+    def priority(game):
+        return scout_priority(game,fixtures.get(game['id']) or {})
+    ordered=sorted(live,key=priority)
+    if len(ordered)<=limit:return ordered
+    without=[g for g in ordered if priority(g)[0]==4]
+    quota=min(len(without),max(1,limit//6))
+    others=[g for g in ordered if priority(g)[0]!=4]
+    picked=others[:limit-quota]+without[:quota]
+    if len(picked)<limit:
+        picked_ids={g['id'] for g in picked}
+        picked.extend(g for g in ordered if g['id'] not in picked_ids)
+    return picked[:limit]
+
 def run():
     HISTORY.mkdir(exist_ok=True)
     file=HISTORY/(DAY+'.json')
@@ -462,16 +481,16 @@ def run():
         (fixtures.get(g['id']) or {}).get('thermometer',{}).get('points') and
         not (fixtures.get(g['id']) or {}).get('events')]
     extra=sorted(recent_with_pressure,key=lambda g:g.get('start_timestamp') or 0,reverse=True)[:2]
-    # Rodizio de consultas com retorno esportivo conhecido e jogos novos.
-    def priority(game):
-        return scout_priority(game,fixtures.get(game['id']) or {})
-    rotating=sorted(live,key=priority)
-    chosen=rotating[:(18 if LIVE_MODE else 12)]
+    # Prioridade por qualidade dos scouts, com vagas reservadas para
+    # rechecagens quando a fonte havia negado momentum anteriormente.
+    chosen=choose_scout_games(live,fixtures,18 if LIVE_MODE else 12)
     details_to_check=chosen+([] if LIVE_MODE else [
         g for g in extra if g['id'] not in {x['id'] for x in chosen}])
     status['live_detail_candidates']=len(live)
     status['live_detail_selected']=len(chosen)
-    status['coverage_policy']='Rodízio por scout observado, pressão atrasada e primeira consulta. Jogos sem dados continuam no rodízio; sem interpolar ausência da fonte'
+    status['missing_momentum_rechecks_planned']=sum(
+        scout_priority(g,fixtures.get(g['id']) or {})[0]==4 for g in chosen)
+    status['coverage_policy']='Priorizar scouts observados e partidas novas; reservar até 1/6 das consultas para verificar novamente fontes sem momentum. Sem interpolar pressão.'
     for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
@@ -537,6 +556,10 @@ def run():
                 status['activity_events']+=activity['total_events']
         except Exception as exc:
             status['errors'].append('Detalhe '+match['id']+': '+str(exc)[:130])
+    # Qualidade REAL da coleta, denominador: detalhes que foram retornados.
+    n=status['details_collected']
+    status['scouts_detail_pct']=round(100*status['stats_detail_available']/n,1) if n else None
+    status['source_momentum_pct']=round(100*status['momentum_status_counts'].get('observed',0)/n,1) if n else None
     write(file,{'day':DAY,'updated_at':NOW.isoformat(),'matches':fixtures})
     status['ok']=bool(status['sources'])
     for path in HISTORY.glob('20??-??-??.json'):
