@@ -22,8 +22,8 @@ function render(doc,odds){
   host.innerHTML='<h3>NEXUS 6.0 — Radar Inteligente</h3><p>Sem coleta histórica válida para esta versão. O arquivo antigo não foi removido.</p>';
   return;
  }
- const rankings=tab==='leagues'?doc.league_ranking:doc.signal_ranking;
- const filtered=(rankings||[]).filter(x=>Number(x.settled)>=minSample);
+ const rankings=(tab==='leagues'?doc.league_ranking:doc.signal_ranking)||[];
+ const filtered=rankings.filter(x=>(tab!=='leagues'||NexusLeagueCoverage.category(x.label))&&Number(x.settled)>=minSample);
  const markets=Array.isArray(doc.markets?.markets)?doc.markets.markets:[];
  const market=markets.find(m=>m.market===scenario);
  const last=doc.last_day||'—',first=doc.first_day||'—';
