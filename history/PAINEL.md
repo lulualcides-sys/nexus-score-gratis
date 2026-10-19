@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:35:41.842608+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:36:46.974961+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 
@@ -89,7 +89,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-19 | Jong PSV × FC Dordrecht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Jong FC Utrecht × Roda JC Kerkrade | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sporting FC × Deportiva San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Rodina × FC Orenburg | 0-0 | 5 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-19 | Rodina × FC Orenburg | 0-0 | 6 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-19 | FC Voluntari × FCSB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Universitatea Cluj × FC Argeș Pitesti | 2-2 | 0 | Chutes no alvo: 6.0×9.0, Chutes para fora: 4.0×5.0, Escanteios: 5.0×5.0, Grandes chances: 2.0×2.0 |
 | 2026-10-19 | Antigua Guatemala × Club Xelajú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -114,10 +114,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-19 | Sporting San Miguelito × Tauro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Escorpiones × Puntarenas FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CD FAS × CD Platense Municipal | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Al-Fayha × Al Ahli | 2-2 | 66 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×2.0 |
+| 2026-10-19 | Al-Fayha × Al Ahli | 2-2 | 67 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×2.0 |
 | 2026-10-19 | Al Hilal × Al Hazem | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Al Shabab × Al-Faisaly | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Omonia Nicosia × Olympiakos Nicosia | 0-1 | 0 | Chutes no alvo: 0.0×2.0, Escanteios: 0.0×2.0 |
+| 2026-10-19 | Omonia Nicosia × Olympiakos Nicosia | 0-2 | 0 | Chutes no alvo: 0.0×2.0, Escanteios: 0.0×2.0 |
 | 2026-10-19 | Pafos FC × APOEL Nicosia | 0-0 | 0 | Chutes no alvo: 3.0×5.0, Escanteios: 4.0×4.0 |
 | 2026-10-19 | Tigres (W) × Querétaro (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CF América (W) × Pachuca (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -268,9 +268,9 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-19T16:36:04.382167+00:00 | Al-Fayha × Al Ahli | Equipe não definida (67') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-19T16:37:05.235452+00:00 | Al-Fayha × Al Ahli | Al-Fayha (68') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-19T16:32:03.399421+00:00 | Al-Fayha × Al Ahli | Al Ahli (63') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-19T16:32:03.399421+00:00 | Pafos FC × APOEL Nicosia | APOEL Nicosia (70') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-19T16:32:03.399421+00:00 | Pafos FC × APOEL Nicosia | APOEL Nicosia (70') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-19T16:23:26.190499+00:00 | Damac FC × Al Taee | Damac FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-19T15:53:19.413031+00:00 | Manisa Futbol Kulübü × Muğlaspor | Muğlaspor (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T15:53:19.413031+00:00 | El Gouna FC × Smouha SC | Smouha SC (90') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
