@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T13:49:47.517068+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T13:55:05.799025+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 
@@ -134,7 +134,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-10-19 | Cong An Ho Chí Minh City × Viettel | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rivers United FC × Barau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Niki Volou × Panionios | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | PAOK Thessaloniki B × Kalamaria | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | PAOK Thessaloniki B × Kalamaria | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Kuwait SC × Al-Salibikhaet | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Havadar SC × Foolad Khuzestan B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Naft Gachsaran × FC Fard | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
