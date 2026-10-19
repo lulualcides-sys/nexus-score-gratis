@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timezone
 from the_odds_api_source import (threeway_from_event, find_matching_fixture, collect_odds)
 
-NOW=1791580000
+NOW=1791580000-220
 
 def fixture():
     return {"fixture":{"home":"Lexington SC","away":"FC Tulsa","phase":"scheduled",
@@ -36,6 +36,20 @@ class OddsAPISourceTests(unittest.TestCase):
         self.assertIsNone(find_matching_fixture(f,[event(away="Indy Eleven")]))
         self.assertIsNone(find_matching_fixture(f,[event(start=NOW+4000)]))
         self.assertIsNone(find_matching_fixture(f,[event(),event()]))
+    def test_free_monthly_budget_does_not_poll_every_five_minutes(self):
+        row=fixture()
+        docs={'2026-10-09':{'matches':{'fotmob-1':row}}}
+        calls=[]
+        def fetch(url):calls.append(url);return []
+        status=collect_odds(docs,[('2026-10-09','fotmob-1',2000)],NOW+600,key='free',fetcher=fetch)
+        self.assertEqual(status['status'],'waiting_free_slot')
+        self.assertEqual(calls,[])
+    def test_soccer_region_groups_in_catalog(self):
+        from the_odds_api_source import fixture_sport_keys
+        sports=[{'key':'soccer_epl','group':'Soccer - England','title':'EPL'},
+                {'key':'basketball_nba','group':'Basketball','title':'NBA'}]
+        self.assertEqual(fixture_sport_keys('Premier League',sports),['soccer_epl'])
+
     def test_skip_without_key_and_no_api_call(self):
         row=fixture(); docs={"2026-10-09":{"matches":{"fotmob-1":row}}}
         status=collect_odds(docs,[("2026-10-09","fotmob-1",2000)],NOW,key="",fetcher=lambda url:1)

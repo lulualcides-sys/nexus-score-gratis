@@ -43,7 +43,7 @@ def fixture_sport_keys(league,sports):
                 break
     return [s['key'] for s in sports if isinstance(s,dict) and
       str(s.get('key') or '').startswith('soccer_') and
-      (str(s.get('group') or '').lower()=='soccer') and
+      (str(s.get('group') or '').lower().startswith('soccer')) and
       any(t in (str(s.get('key') or '')+' '+plain(s.get('title'))).lower() for t in aliases)]
 
 def find_matching_fixture(fixture,events):
@@ -96,6 +96,12 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
     status={'status':'not_configured' if not key else 'running','sports_queried':0,
             'matched':0,'quotes_added':0,'errors':[]}
     if not key:return status
+    # FREE 500 credits/mo: at most 2 UTC slots/day × 3 leagues (186 at 31 days).
+    # Without this guard, a 5-minute GitHub schedule could exhaust the free plan.
+    now=datetime.fromtimestamp(now_ts,timezone.utc)
+    if now.hour not in (12,21) or now.minute>=5:
+        status['status']='waiting_free_slot'
+        return status
     try:
         sports=fetcher(BASE+'/sports/?'+urlencode({'apiKey':key}))
         if not isinstance(sports,list):raise ValueError('catálogo indisponível')
@@ -115,7 +121,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
         for sport in fixture_sport_keys(f.get('league'),sports):
             relevant.setdefault(sport,[]).append((row,f))
     # Quotas: máximo de 8 competições por coleta; sem varrer milhares de ligas.
-    for sport,fixtures in list(relevant.items())[:8]:
+    for sport,fixtures in list(relevant.items())[:3]:
         try:
             response=fetcher(BASE+'/sports/'+sport+'/odds/?'+urlencode({
                 'apiKey':key,'regions':'eu','markets':'h2h','oddsFormat':'decimal',

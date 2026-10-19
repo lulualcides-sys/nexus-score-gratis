@@ -18,6 +18,7 @@ from pregame_refresh_quotes import new_quote, append_trio
 from espn_scoreboard_odds import collect_odds as espn_scoreboard_odds
 from the_odds_api_source import collect_odds as independent_odds
 from api_football_odds import collect_odds as api_football_odds
+from oddspapi_odds import collect_odds as odds_papi_odds
 
 LOOKAHEAD=75*60
 AFTER=150*60
@@ -238,6 +239,11 @@ def run():
     result['odds_updated']+=result['the_odds_api']['quotes_added']
     if result['the_odds_api']['errors']:
         result['errors'].extend(result['the_odds_api']['errors'][:4])
+    # OddsPapi: Betano BR/Betano no plano zero (<=186 requests/31 dias).
+    result['odds_papi']=odds_papi_odds(docs,candidates,now_ts)
+    result['odds_updated']+=result['odds_papi']['quotes_added']
+    if result['odds_papi']['errors']:
+        result['errors'].extend(result['odds_papi']['errors'][:3])
     # API-Football: somente com segredo opcional e teto <=64 req/dia.
     result['api_football']=api_football_odds(docs,candidates,now_ts)
     result['odds_updated']+=result['api_football']['quotes_added']

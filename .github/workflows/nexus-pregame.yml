@@ -24,6 +24,7 @@ on:
       - "espn_scoreboard_odds.py"
       - "the_odds_api_source.py"
       - "api_football_odds.py"
+      - "oddspapi_odds.py"
       - "pregame_refresh_quotes.py"
       - ".github/workflows/nexus-pregame.yml"
 permissions:
@@ -42,7 +43,7 @@ jobs:
           persist-credentials: true
       - name: Validar rotina
         run: |
-          python3 -m py_compile market_evidence.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
+          python3 -m py_compile market_evidence.py oddspapi_odds.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then python3 -m unittest discover -s tests -v; fi
           node --check web/nexus-audit-v532.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_audit_v532.mjs
@@ -65,6 +66,7 @@ jobs:
         env:
           NEXUS_THE_ODDS_API_KEY: ${{ secrets.NEXUS_THE_ODDS_API_KEY }}
           NEXUS_API_FOOTBALL_KEY: ${{ secrets.NEXUS_API_FOOTBALL_KEY }}
+          NEXUS_ODDSPAPI_KEY: ${{ secrets.NEXUS_ODDSPAPI_KEY }}
         run: python3 pregame_refresh.py
       - name: Congelar e verificar previsões anteriores ao jogo
         run: python3 pregame_audit.py

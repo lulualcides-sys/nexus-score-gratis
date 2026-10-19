@@ -794,7 +794,7 @@ def main():
              'pregame_archive':pregame,
              'market_evidence':evidence,
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
-               for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','espn_fallback','errors')},
+               for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','odds_papi','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
              'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
              'intelligence_v6':radar_v6,
