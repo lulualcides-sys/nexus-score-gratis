@@ -913,7 +913,7 @@ def alerts_from(rows,now_ts=None):
                               str(x.get('observed_at') or '')))
     for item in alerts:
         item['id']='|'.join(str(item.get(k) or '')[:70] for k in
-                          ('match_id','kind','observed_at'))
+                          ('match_id','kind','title','observed_at'))
     return alerts[:35]
 
 def historical_xg_summary(status):
