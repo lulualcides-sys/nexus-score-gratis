@@ -39,6 +39,10 @@ assert.match(c.coverageEvidence(stale,clock).reason,/sem horário recente/);
 const undated={...complete,observed_at:undefined,stats_observed_at:undefined,
  pressure_observed_at:undefined};
 assert.equal(c.coverageStatus(undated,clock),'parcial');
+const legacy={...complete,observed_at:undefined,stats_observed_at:undefined,
+ pressure_observed_at:undefined,collected_at:observed,stats_updated_at:observed,
+ pressure_updated_at:observed};
+assert.equal(c.coverageStatus(legacy,clock),'completa');
 assert.equal(c.analysisPriority(undated,clock).freshness,'unknown');
 assert.equal(c.observationFreshness(new Date((clock+3600)*1000).toISOString(),clock),'future');
 assert.equal(c.observationFreshness('invalid',clock),'unknown');
