@@ -33,12 +33,20 @@ def validation_report(archive):
         item={'brier':sum((probs[i]-(1 if i==actual else 0))**2 for i in range(3)),
               'loss':-math.log(probs[actual]),'hit':int(actual==forecast),
               'confidence':probs[forecast]}
+        item['actual']=actual
         scored.append(item);leagues[str(row.get('league') or 'Nao informado')].append(item)
     def describe(items):
         n=len(items)
-        return {'n':n,'brier':round(sum(x['brier'] for x in items)/n,4) if n else None,
-                'log_loss':round(sum(x['loss'] for x in items)/n,4) if n else None,
-                'top_pick_accuracy_pct':round(100*sum(x['hit'] for x in items)/n,1) if n else None}
+        if not n:return {'n':0,'brier':None,'log_loss':None,
+                          'top_pick_accuracy_pct':None,'uniform_baseline_brier':None,
+                          'skill_vs_uniform':None}
+        brier=sum(x['brier'] for x in items)/n
+        uniform=2/3
+        return {'n':n,'brier':round(brier,4),
+                'log_loss':round(sum(x['loss'] for x in items)/n,4),
+                'top_pick_accuracy_pct':round(100*sum(x['hit'] for x in items)/n,1),
+                'uniform_baseline_brier':round(uniform,4),
+                'skill_vs_uniform':round(1-brier/uniform,4)}
     bins=[]
     for low,high in [(0,.4),(.4,.5),(.5,.6),(.6,.7),(.7,1.01)]:
         items=[x for x in scored if low<=x['confidence']<high]
@@ -51,4 +59,13 @@ def validation_report(archive):
             'by_league':[{'league':k,**describe(v)} for k,v in
                          sorted(leagues.items(),key=lambda x:-len(x[1]))[:20]],
             'confidence_bins':bins,'validated':False,
+            'calibration_error_pct':round(sum(
+                 len([x for x in scored if low<=x['confidence']<high])/len(scored)*
+                 abs(sum(x['confidence'] for x in scored if low<=x['confidence']<high)/
+                 len([x for x in scored if low<=x['confidence']<high])-
+                 sum(x['hit'] for x in scored if low<=x['confidence']<high)/
+                 len([x for x in scored if low<=x['confidence']<high]))
+                 for low,high in [(0,.4),(.4,.5),(.5,.6),(.6,.7),(.7,1.01)]
+                 if any(low<=x['confidence']<high for x in scored)
+                )*100,2) if scored else None,
             'note':'Previsoes congeladas e placares verificados, sem recalibracao retroativa. EV+ segue indisponivel.'}

@@ -80,6 +80,23 @@ function coverageEvidence(g){
       status==='parcial'?'Dados reais disponíveis, mas cobertura insuficiente para análise completa':
        'Sem scouts verificáveis para avaliação' };
 }
+function analysisPriority(g,nowSec=Date.now()/1000){
+ const status=coverageStatus(g);
+ const phase=g?.phase||'';
+ const start=Number(g?.start_timestamp);
+ const minutes=Number.isFinite(start)?(start-nowSec)/60:null;
+ const fresh=!g?.stale && (g?.observed_at?Date.now()-Date.parse(g.observed_at)<20*60000:true);
+ // Radar de dados, NAO indicador de aposta ou liquidez de mercado.
+ let score=status==='completa'?65:status==='parcial'?30:0;
+ if(phase==='live')score+=12;
+ if(phase==='scheduled'&&minutes!==null&&minutes>0&&minutes<=120)score+=10;
+ if(fresh)score+=8;
+ if(odds(g))score+=5;
+ return {score:Math.min(100,score),status,kind:'data_quality_not_betting_signal',
+   reason:status==='completa'?'Scouts e termômetro medidos':
+          status==='parcial'?'Dados parciais disponíveis':'Scouts insuficientes',
+   warning:'Sem dados não há justificativa para inferir pressão ou EV+'};
+}
 function leagueStats(games){
  const groups=new Map();
  for(const g of games||[]){
@@ -93,6 +110,6 @@ function leagueStats(games){
  }
  return [...groups.values()].filter(x=>x.covered>0).sort((a,b)=>b.measured-a.measured||b.covered-a.covered||a.league.localeCompare(b.league,'pt-BR'));
 }
-root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence};
+root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);

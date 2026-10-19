@@ -18,6 +18,13 @@ assert.equal(c.level(agenda),1);
 assert.equal(c.visible(noCoverage),false);
 assert.equal(c.visible({...match,league:'League Two'}),false);
 assert.equal(c.leagueStats([match,agenda,noCoverage]).length,2);
+const complete={...match,pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
+stats:{home:{shots_on:2,corners:3},away:{shots_on:0,corners:1}}};
+const higher=c.analysisPriority(complete,1792000000);
+const lower=c.analysisPriority(match,1792000000);
+assert.ok(higher.score>lower.score);
+assert.equal(higher.kind,'data_quality_not_betting_signal');
+assert.equal(c.analysisPriority(noCoverage).status,'insuficiente');
 const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 assert.match(html,/NexusLeagueCoverage\.visible\(m\)/);
 assert.match(html,/leagueStats\(state\.list\)/);
