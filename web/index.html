@@ -2674,9 +2674,26 @@ function oddsComparisonHTML(d,live=false){
  const labels={'1x2':'Resultado 1X2','over_under_25':'Over/Under 2,5 gols',
                'over_under_15':'Over/Under 1,5 gols',
                'over_under_35':'Over/Under 3,5 gols',
-               btts:'Ambas marcam',ah_0:'Handicap asiático 0'};
+               btts:'Ambas marcam',ah_0:'Handicap asiático 0',
+               ah_m05:'Handicap asiático -0,5',ah_p05:'Handicap asiático +0,5',
+               ah_m1:'Handicap asiático -1'};
  const names={home:'Mandante',draw:'Empate',away:'Visitante',
               over:'Over 2,5',under:'Under 2,5',yes:'Sim',no:'Não'};
+ const sideName=(market,sel)=>{
+   const names={
+     ah_0:{home:'Mandante 0',away:'Visitante 0'},
+     ah_m05:{home:'Mandante -0,5',away:'Visitante +0,5'},
+     ah_p05:{home:'Mandante +0,5',away:'Visitante -0,5'},
+     ah_m1:{home:'Mandante -1',away:'Visitante +1'}
+   };
+   if(names[market]?.[sel])return names[market][sel];
+   if(market.startsWith('over_under_')){
+     const line=market.slice(-2)==='15'?'1,5':market.slice(-2)==='35'?'3,5':'2,5';
+     return (sel==='over'?'Mais de ':'Menos de ')+line;
+   }
+   return namesFallback[sel]||sel;
+ };
+ const namesFallback=names;
  const fmt=n=>Number(n).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:3});
  const at=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?'não informado':
    d.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',
@@ -2686,9 +2703,7 @@ function oddsComparisonHTML(d,live=false){
  const body=Object.entries(groups).map(([market,items])=>
    '<div class="odds-compare-market"><h4>'+esc(labels[market])+'</h4>'+
    items.map(q=>'<div class="odds-compare-row"><div class="odds-best-line"><span>'+
-     esc((market==='over_under_15'||market==='over_under_35')
-       ?(q.selection==='over'?'Mais de ':'Menos de ')+(market==='over_under_15'?'1,5':'3,5')
-       :(names[q.selection]||q.selection))+'</span><b>'+fmt(q.best.odds)+'</b><small>'+
+     esc(sideName(market,q.selection))+'</span><b>'+fmt(q.best.odds)+'</b><small>'+
      esc(q.best.bookmaker)+' · '+esc(q.best.source)+' · '+esc(at(q.best.at))+'</small></div>'+
      ((q.alternatives||[]).length?'<div class="odds-compare-alternatives">'+
       q.alternatives.slice(0,3).map(o=>'<span>'+esc(o.bookmaker)+' '+fmt(o.odds)+
