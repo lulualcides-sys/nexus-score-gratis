@@ -1,5 +1,7 @@
 import unittest
 import json
+import tempfile
+from pathlib import Path
 from datetime import datetime,timezone
 from urllib.parse import parse_qs,urlsplit
 from oddspapi_odds import collect_odds,extract_1x2,match_fixture
@@ -71,7 +73,7 @@ class OddsPapiFreeTests(unittest.TestCase):
         calls=[]
         def f(url):calls.append(url);return []
         self.assertEqual(collect_odds(docs,choices,NOW,key='',fetcher=f)['status'],'not_configured')
-        self.assertEqual(collect_odds(docs,choices,NOW+3600,key='free',fetcher=f)['status'],'waiting_free_slot')
+        self.assertEqual(collect_odds(docs,choices,NOW+7200,key='free',fetcher=f)['status'],'waiting_free_slot')
         self.assertEqual(calls,[])
     def test_fetched_betano_quote_preserves_real_observation(self):
         docs={'2026-10-19':{'matches':{'f1':fixture()}}}
@@ -90,4 +92,54 @@ class OddsPapiFreeTests(unittest.TestCase):
         self.assertEqual({o['bookmaker'] for o in offers},{'Betano BR'})
         self.assertEqual({o['source'] for o in offers},{'OddsPapi'})
         self.assertEqual(len(offers),3)
+
+    def test_delayed_runner_uses_once_per_window(self):
+        later=NOW+27*60 # 21h30 UTC: runner chegou atrasado
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            return [event()] if '/fixtures?' in url else pricepacket()
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger=Path(tmp)/'usage.json'
+            first=collect_odds(docs,[('2026-10-19','f1',480)],later,
+                               key='mock',fetcher=fetch,ledger_path=ledger)
+            self.assertEqual(first['status'],'checked')
+            self.assertEqual(first['requests'],2)
+            second=collect_odds(docs,[('2026-10-19','f1',480)],later+10*60,
+                                key='mock',fetcher=fetch,ledger_path=ledger)
+            self.assertEqual(second['status'],'already_checked')
+            self.assertEqual(len(calls),2)
+            usage=json.loads(ledger.read_text())
+            self.assertEqual(usage['requests'],2)
+            self.assertEqual(usage['slots']['2026-10-19T21']['requests'],2)
+    def test_usage_budget_rejects_new_paid_requests(self):
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger=Path(tmp)/'usage.json'
+            ledger.write_text(json.dumps({'month':'2026-10',
+                                          'requests':186,'slots':{}}))
+            calls=[]
+            def fetch(url):calls.append(url);return []
+            out=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,
+                             key='mock',fetcher=fetch,ledger_path=ledger)
+            self.assertEqual(out['status'],'free_budget_exhausted')
+            self.assertEqual(calls,[])
+    def test_error_consumes_reserved_request_only_once(self):
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        with tempfile.TemporaryDirectory() as tmp:
+            ledger=Path(tmp)/'usage.json'
+            calls=[]
+            def fetch(url):
+                calls.append(url)
+                raise RuntimeError('simulated provider outage')
+            first=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,
+                               key='mock',fetcher=fetch,ledger_path=ledger)
+            self.assertEqual(first['status'],'unavailable')
+            self.assertEqual(first['requests'],1)
+            again=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,
+                               key='mock',fetcher=fetch,ledger_path=ledger)
+            self.assertEqual(again['status'],'already_checked')
+            self.assertEqual(len(calls),1)
+            self.assertEqual(json.loads(ledger.read_text())['requests'],1)
 if __name__=='__main__':unittest.main()

@@ -243,7 +243,7 @@ def run():
     if result['the_odds_api']['errors']:
         result['errors'].extend(result['the_odds_api']['errors'][:4])
     # OddsPapi: Betano BR/Betano no plano zero (<=186 requests/31 dias).
-    result['odds_papi']=odds_papi_odds(docs,odds_candidates,now_ts)
+    result['odds_papi']=odds_papi_odds(docs,odds_candidates,now_ts,ledger_path=HISTORY/'oddspapi_usage.json')
     result['odds_updated']+=result['odds_papi']['quotes_added']
     if result['odds_papi']['errors']:
         result['errors'].extend(result['odds_papi']['errors'][:3])
@@ -264,7 +264,7 @@ def run():
             write(p,doc)
             changes=True
     if due:write(ATTEMPTS,{'updated_at':NOW.isoformat(),'matches':attempts})
-    if changes:
+    if changes or result['odds_papi']['requests']:
         write(STATUS,result)
     print(json.dumps(result,ensure_ascii=False))
     return result

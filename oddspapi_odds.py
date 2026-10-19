@@ -8,6 +8,7 @@ Only exact, unambiguous fixture matches and full 1/X/2 offers are stored.
 Requires the user's self-created free secret NEXUS_ODDSPAPI_KEY.
 """
 import json, math, os
+from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from urllib.parse import urlencode
 from urllib.request import Request,urlopen
@@ -17,6 +18,8 @@ from pregame_refresh_quotes import append_trio
 
 BASE='https://api.oddspapi.io/v4'
 SLOTS_UTC=(12,21)
+SLOT_WINDOW_HOURS=2 # atrasos do GitHub Actions nao podem cancelar a coleta
+MONTHLY_BUDGET=186 # limite conservador: ate 3 requisicoes x 2 janelas x 31 dias
 BOOKMAKERS=('betano.bet.br','pinnacle','bet365')
 MARKET_1X2='101'
 SELECTIONS={'101':'home','102':'draw','103':'away'}
@@ -26,6 +29,39 @@ def http_json(url):
     with urlopen(req,timeout=9) as resp:raw=resp.read(3200001)
     if len(raw)>3200000:raise ValueError('Resposta da API maior que o limite')
     return json.loads(raw)
+
+
+def free_slot_id(instant):
+    """Janela em UTC estendida contra atrasos de agendamento."""
+    for hour in SLOTS_UTC:
+        if hour<=instant.hour<hour+SLOT_WINDOW_HOURS:
+            return instant.strftime('%Y-%m-%d')+'T%02d'%hour
+    return None
+
+def load_usage(path, instant):
+    """Falha de leitura interrompe coleta para nao gastar creditos sem controle."""
+    path=Path(path)
+    if path.exists():
+        with path.open('r',encoding='utf-8') as f:
+            data=json.load(f)
+        if not isinstance(data,dict):raise ValueError('Ledger de cota invalido')
+    else:data={}
+    month=instant.strftime('%Y-%m')
+    if data.get('month')!=month:
+        data={'month':month,'requests':0,'slots':{}}
+    if (not isinstance(data.get('requests'),int) or data['requests']<0 or
+        not isinstance(data.get('slots'),dict)):
+        raise ValueError('Ledger de cota invalido')
+    return data
+
+def save_usage(path, data):
+    path=Path(path)
+    path.parent.mkdir(parents=True,exist_ok=True)
+    tmp=path.with_name(path.name+'.tmp')
+    with tmp.open('w',encoding='utf-8') as f:
+        json.dump(data,f,ensure_ascii=False,sort_keys=True,separators=(',',':'))
+        f.write('\n')
+    os.replace(tmp,path)
 
 def match_fixture(fixture,listed):
     home=normalized_team(fixture.get('home'))
@@ -82,7 +118,7 @@ def extract_1x2(packet,now_ts):
     items=available_1x2(packet,now_ts)
     return items[0] if items else None
 
-def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
+def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=None):
     key=os.getenv('NEXUS_ODDSPAPI_KEY','') if key is None else key
     result={'status':'not_configured' if not key else 'waiting_free_slot',
             'requests':0,'matched':0,'quotes_added':0,'errors':[],
@@ -90,7 +126,29 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
             'free_tier_monthly_max_requests':186}
     if not key:return result
     instant=datetime.fromtimestamp(now_ts,timezone.utc)
-    if instant.hour not in SLOTS_UTC or instant.minute>=5:return result
+    slot=free_slot_id(instant)
+    if not slot:return result
+    usage=None
+    if ledger_path is not None:
+        try:
+            usage=load_usage(ledger_path,instant)
+        except (OSError,ValueError):
+            result['status']='budget_unavailable'
+            return result
+        if slot in usage['slots']:
+            result['status']='already_checked'
+            return result
+        if usage['requests']+3>MONTHLY_BUDGET:
+            result['status']='free_budget_exhausted'
+            return result
+    def reserve_request():
+        # Persistir ANTES de cada chamada: falhas, retries e reinicios gastam cota.
+        if usage is not None:
+            usage['requests']+=1
+            record=usage['slots'].setdefault(slot,{'requests':0,'attempted_at':instant.isoformat()})
+            record['requests']+=1
+            save_usage(ledger_path,usage)
+        result['requests']+=1
     relevant=[]
     for day,mid,delta in candidates:
         if not 0<delta<=6*3600:continue
@@ -113,7 +171,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
             'statusId':0,'hasOdds':'true',
             'bookmakers':','.join(BOOKMAKERS)}
     try:
-        result['requests']+=1
+        reserve_request()
         listing=fetcher(BASE+'/fixtures?'+urlencode(params))
         if isinstance(listing,dict):listing=listing.get('data') or listing.get('fixtures')
         if not isinstance(listing,list):raise ValueError('Lista de partidas não retornada')
@@ -132,7 +190,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
         try:
             url=BASE+'/odds?'+urlencode({'fixtureId':event['fixtureId'],
                 'bookmakers':','.join(BOOKMAKERS),'apiKey':key,'verbosity':3})
-            result['requests']+=1
+            reserve_request()
             packet=fetcher(url)
             if not isinstance(packet,dict):continue
             if str(packet.get('fixtureId'))!=str(event.get('fixtureId')):continue

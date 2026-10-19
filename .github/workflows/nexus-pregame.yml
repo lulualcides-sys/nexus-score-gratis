@@ -117,7 +117,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain -- history/20??-??-??.json history/signal_registry.json)" ]]; then
+          if [[ -z "$(git status --porcelain -- history/20??-??-??.json history/signal_registry.json history/oddspapi_usage.json history/pregame_refresh_status.json)" ]]; then
             echo "Nenhuma alteração esportiva nesta janela."
             exit 0
           fi
