@@ -34,6 +34,20 @@ class OddsPapiFreeTests(unittest.TestCase):
         old=pricepacket()
         old['bookmakerOdds']['betano.bet.br']['markets']['101']['outcomes']['101']['players']['0']['changedAt']=date(NOW-90000)
         self.assertIsNone(extract_1x2(old,NOW))
+    def test_no_prices_never_claims_bookmaker_data(self):
+        from oddspapi_odds import available_1x2
+        self.assertEqual(available_1x2({'hasOdds':False},NOW),[])
+        self.assertIsNone(extract_1x2({'hasOdds':False},NOW))
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        no_prices={**event(),'hasOdds':False}
+        def fetch(url):
+            return [event()] if '/fixtures?' in url else no_prices
+        result=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,
+                            key='free-test',fetcher=fetch)
+        self.assertEqual(result['status'],'checked')
+        self.assertEqual(result['quotes_added'],0)
+        self.assertEqual(result['errors'],[])
+        self.assertFalse(docs['2026-10-19']['matches']['f1'].get('odds_quotes'))
     def test_multiple_bookmakers_one_free_api_request(self):
         docs={'2026-10-19':{'matches':{'f1':fixture()}}}
         many=pricepacket()
