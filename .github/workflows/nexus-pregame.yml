@@ -41,6 +41,44 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - name: Diagnosticar autenticação OddsPapi (sem consumir cota)
+        if: github.event_name != 'schedule'
+        env:
+          NEXUS_ODDSPAPI_KEY: ${{ secrets.NEXUS_ODDSPAPI_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from urllib.parse import urlencode
+          from urllib.request import urlopen, Request
+          from urllib.error import HTTPError, URLError
+          key = os.environ.get('NEXUS_ODDSPAPI_KEY', '').strip()
+          if not key:
+              print('ODDSPAPI_DIAG: missing_secret')
+              raise SystemExit(0)
+          url = 'https://api.oddspapi.io/v4/account?' + urlencode({'apiKey': key})
+          try:
+              with urlopen(Request(url, headers={'Accept': 'application/json'}), timeout=15) as reply:
+                  account = json.load(reply)
+              if not isinstance(account, dict) or not isinstance(account.get('subscriptions'), list):
+                  print('ODDSPAPI_DIAG: authenticated_but_unexpected_account_format')
+              else:
+                  active = next((s for s in account['subscriptions'] if isinstance(s, dict) and s.get('is_active') is True), {})
+                  books = active.get('bookmakers') or {}
+                  sports = active.get('sport_ids') or []
+                  public = {
+                      'status': 'authenticated',
+                      'subscription_active': bool(active),
+                      'soccer_access': 10 in sports,
+                      'bookmakers_enabled': [b for b in ('betano.bet.br', 'pinnacle', 'bet365') if b in books],
+                      'request_limit': active.get('request_limit'),
+                      'request_count': active.get('request_count')
+                  }
+                  print('ODDSPAPI_DIAG: ' + json.dumps(public, sort_keys=True))
+          except HTTPError as error:
+              print('ODDSPAPI_DIAG: http_error_' + str(error.code))
+          except (URLError, TimeoutError, ValueError, TypeError):
+              print('ODDSPAPI_DIAG: request_unavailable_or_invalid_response')
+          PY
       - name: Validar rotina
         run: |
           python3 -m py_compile market_evidence.py oddspapi_odds.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
