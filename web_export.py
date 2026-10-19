@@ -14,6 +14,7 @@ from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_movements import movements
 from model_validation import validation_report
+from source_health import quality_report
 from oddspapi_historical import historical_clv
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots, snapshot_deltas
@@ -926,6 +927,8 @@ def main():
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
     model_validation=validation_report(pregame)
+    health=quality_report(rows,last,load(H/'pregame_refresh_status.json'),
+                          datetime.now(timezone.utc).timestamp())
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
@@ -943,6 +946,7 @@ def main():
              'odds_bridge':odds_bridge,
              'pregame_archive':pregame,
              'market_evidence':evidence,'model_validation':model_validation,
+             'source_health':health,
              'historical_odds_status':load(H/'oddspapi_historical_status.json').get('updated_at'),
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','odds_papi','espn_fallback','errors')},
