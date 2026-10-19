@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:16:48.441328+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:37:42.282852+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4143 | **Jogos distintos:** 1276 | **Resultados verificáveis:** 2314 | **Com gol:** 797 | **Sem gol:** 1517 | **Taxa observada:** 34.4%.
-**Evolução da amostra:** 10 datas com coletas | 17 pendentes | 785 indeterminados | 1027 incompletos.
+**Observações:** 4143 | **Jogos distintos:** 1276 | **Resultados verificáveis:** 2317 | **Com gol:** 797 | **Sem gol:** 1520 | **Taxa observada:** 34.4%.
+**Evolução da amostra:** 10 datas com coletas | 14 pendentes | 785 indeterminados | 1027 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 796 | 542 | 205 | 337 | 37.8% |
+| 🥶 jogo_frio | 796 | 544 | 205 | 339 | 37.7% |
 | ⚡ pressao_ofensiva_18 | 602 | 396 | 129 | 267 | 32.6% |
 | 🟥 expulsao_confirmada | 724 | 340 | 105 | 235 | 30.9% |
 | 🎯 chutes_no_alvo_5 | 671 | 329 | 105 | 224 | 31.9% |
 | 🚩 escanteios_6 | 524 | 245 | 87 | 158 | 35.5% |
-| 💣 grandes_chances_3 | 417 | 216 | 85 | 131 | 39.4% |
+| 💣 grandes_chances_3 | 417 | 217 | 85 | 132 | 39.2% |
 | 🔥 pressao_forte_10min | 196 | 123 | 45 | 78 | 36.6% |
 | 🧨 pressao_total_5_10min | 110 | 69 | 21 | 48 | 30.4% |
 | ⏱️ tensao_tardia_70 | 67 | 28 | 8 | 20 | 28.6% |
@@ -233,10 +233,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eredivisie | 95 | 55 | 28 | 27 | 50.9% |
 | Eliteserien | 86 | 55 | 14 | 41 | 25.5% |
 | LaLiga2 | 101 | 54 | 19 | 35 | 35.2% |
-| Liga MX | 92 | 49 | 22 | 27 | 44.9% |
+| Liga MX | 92 | 51 | 22 | 29 | 43.1% |
 | Serie B | 70 | 48 | 17 | 31 | 35.4% |
 | Primera División | 76 | 47 | 13 | 34 | 27.7% |
-| Primera A | 65 | 46 | 15 | 31 | 32.6% |
+| Primera A | 65 | 47 | 15 | 32 | 31.9% |
 | Super Lig | 54 | 46 | 19 | 27 | 41.3% |
 | Serie A | 82 | 43 | 11 | 32 | 25.6% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 120 | 92 | 34 | 58 | 37.0% |
 | 16–30′ | 340 | 250 | 86 | 164 | 34.4% |
-| 31–45′ | 629 | 491 | 208 | 283 | 42.4% |
+| 31–45′ | 629 | 494 | 208 | 286 | 42.1% |
 | 46–60′ | 633 | 484 | 173 | 311 | 35.7% |
 | 61–75′ | 897 | 613 | 185 | 428 | 30.2% |
 | 76–90′ | 1126 | 383 | 110 | 273 | 28.7% |
@@ -262,17 +262,17 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4143 | **Jogos monitorados:** 1730 | **Ao vivo:** 27 | **Termômetros recentes:** 12.
+**Registros:** 4143 | **Jogos monitorados:** 1730 | **Ao vivo:** 26 | **Termômetros recentes:** 11.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-19T02:17:13.110980+00:00 | Deportivo Cali × Junior FC | Junior FC (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-19T02:11:50.845899+00:00 | Monterrey × Pachuca | Monterrey (41') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-19T02:17:13.110980+00:00 | Deportivo Cali × Junior FC | Junior FC (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-19T02:11:50.845899+00:00 | Monterrey × Pachuca | Monterrey (41') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T02:11:50.845899+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (81') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:44:47.465049+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (22') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-19T01:44:47.465049+00:00 | Monterrey × Pachuca | Monterrey (41') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-19T01:44:47.465049+00:00 | Monterrey × Pachuca | Monterrey (41') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T01:42:40.267231+00:00 | Independiente del Valle × Universitario Deportes | Universitario Deportes (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Cienciano × CD UT Cajamarca | CD UT Cajamarca (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
