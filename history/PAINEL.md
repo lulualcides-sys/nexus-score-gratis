@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:10:19.533420+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:11:17.623873+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 
@@ -91,7 +91,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 | 2026-10-19 | Sporting FC × Deportiva San Carlos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rodina × FC Orenburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | FC Voluntari × FCSB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Universitatea Cluj × FC Argeș Pitesti | 2-1 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 2.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×1.0 |
+| 2026-10-19 | Universitatea Cluj × FC Argeș Pitesti | 2-1 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 2.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×1.0 |
 | 2026-10-19 | Antigua Guatemala × Club Xelajú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Deportivo Marquense × CD Suchitepéquez | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CSD Municipal × Guastatoya | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -108,7 +108,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 | 2026-10-19 | Manisa Futbol Kulübü × Muğlaspor | 3-4 | 0 | Chutes no alvo: 6.0×9.0, Chutes para fora: 2.0×0.0, Escanteios: 3.0×5.0, Grandes chances: 2.0×4.0 |
 | 2026-10-19 | FC Kharkiv × Liviy Bereh | 2-1 | 0 | Chutes no alvo: 6.0×2.0, Escanteios: 0.0×3.0 |
 | 2026-10-19 | Diosgyori VTK × Kazincbarcikai BSC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Bayern München (W) × VfB Stuttgart (W) | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-19 | Bayern München (W) × VfB Stuttgart (W) | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-19 | Aveley × Maldon & Tiptree | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Redditch United × Worcester | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sporting San Miguelito × Tauro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
