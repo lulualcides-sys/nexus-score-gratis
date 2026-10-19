@@ -142,4 +142,28 @@ class OddsPapiFreeTests(unittest.TestCase):
             self.assertEqual(again['status'],'already_checked')
             self.assertEqual(len(calls),1)
             self.assertEqual(json.loads(ledger.read_text())['requests'],1)
+
+    def test_accepted_odds_calls_are_paced_to_avoid_429(self):
+        docs={'2026-10-19':{'matches':{
+            'f1':fixture(),
+            'f2':{'fixture':{**fixture()['fixture'],'id':'f2',
+                'away':'Botafogo','start_timestamp':NOW+2700}}}}}
+        other={**event(),'fixtureId':'odds456',
+               'participant2Name':'Botafogo','startTime':date(NOW+2700)}
+        durations=[]
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            if '/fixtures?' in url:return [event(),other]
+            if 'odds456' in url:return {**pricepacket(),'fixtureId':'odds456',
+                                        'startTime':date(NOW+2700)}
+            return pricepacket()
+        result=collect_odds(docs,[('2026-10-19','f1',2100),
+                                  ('2026-10-19','f2',2700)],NOW,
+                            key='mock',fetcher=fetch,
+                            sleep_fn=durations.append)
+        self.assertEqual(result['status'],'checked')
+        self.assertEqual(result['requests'],3)
+        self.assertEqual(len(calls),3)
+        self.assertEqual(durations,[1.2])
 if __name__=='__main__':unittest.main()

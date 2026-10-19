@@ -7,7 +7,7 @@ UTC slots/day, with one fixture listing and two price lookups in each slot:
 Only exact, unambiguous fixture matches and full 1/X/2 offers are stored.
 Requires the user's self-created free secret NEXUS_ODDSPAPI_KEY.
 """
-import json, math, os
+import json, math, os, time
 from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from urllib.parse import urlencode
@@ -118,7 +118,7 @@ def extract_1x2(packet,now_ts):
     items=available_1x2(packet,now_ts)
     return items[0] if items else None
 
-def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=None):
+def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=None,sleep_fn=time.sleep):
     key=os.getenv('NEXUS_ODDSPAPI_KEY','') if key is None else key
     result={'status':'not_configured' if not key else 'waiting_free_slot',
             'requests':0,'matched':0,'quotes_added':0,'errors':[],
@@ -185,7 +185,10 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
         if event:matched.append((row,event))
     # At most two per slot, prioritizing closest start time, not thousands of leagues.
     matched.sort(key=lambda pair:parse_ts(pair[1].get('startTime')) or float('inf'))
-    for row,event in matched[:2]:
+    for index,(row,event) in enumerate(matched[:2]):
+        # OddsPapi v4 limita chamadas /odds a ~1 por segundo.
+        # Ritmo conservador evita 429 sem retries cobrados da cota mensal.
+        if index:sleep_fn(1.2)
         result['matched']+=1
         try:
             url=BASE+'/odds?'+urlencode({'fixtureId':event['fixtureId'],
