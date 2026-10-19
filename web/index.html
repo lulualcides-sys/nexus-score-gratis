@@ -750,6 +750,17 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 #cloud-load-more{display:block;margin:13px auto;max-width:100%;min-height:40px}
 #cloud-load-more.hidden{display:none!important}
 </style>
+<style>
+.odds-compare{margin:14px 0 18px;padding:17px;border:1px solid #245675;background:linear-gradient(155deg,#10283b,#0c1d2d);border-radius:12px}
+.odds-compare h3{margin:0;font-size:14px;color:#b9f2ff}.odds-compare-market{margin-top:15px}
+.odds-compare-market h4{font-size:12px;color:#87cae6;margin:0 0 6px}
+.odds-compare-row{padding:9px 0;border-bottom:1px solid #2c4259}
+.odds-best-line{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.odds-best-line span{font-weight:650;min-width:115px}.odds-best-line b{font-size:17px;color:#74edca}
+.odds-best-line small,.odds-compare-alternatives{font-size:11px;color:#9db5c7}
+.odds-compare-alternatives{display:flex;flex-wrap:wrap;gap:10px;padding-top:5px;margin-left:10px}
+.odds-compare-alternatives span{border:1px solid #304b61;border-radius:4px;padding:3px 6px}
+</style>
 </head>
 <body>
 <div class="shell">
@@ -983,7 +994,20 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
   const blank={home:{},away:{}};
   const has=(v)=>v!==null && Number.isFinite(v);
   const fixed=(v,n=1)=>Number(v.toFixed(n));
-  const quoteMap=q=>{const odds={'1x2':{}};for(const v of (q||[]))if(v?.market==='1x2'||v?.sel){const sel=v.sel||v.selection;if(['home','draw','away'].includes(sel)&&+v.odd>1)odds['1x2'][sel]=Number(v.odd)}return odds;};
+  const quoteMap=q=>{
+    const groups=new Map();
+    for(const v of (q||[])){
+      if(!v||!['home','draw','away'].includes(v.sel||v.selection))continue;
+      if(v.market&&v.market!=='1x2')continue;
+      if(!(Number(v.odd)>1.01)||!v.bookmaker||!v.at||!v.source)continue;
+      const key=[v.source,v.bookmaker,v.at].join('|');
+      if(!groups.has(key))groups.set(key,{at:v.at,values:{}});
+      groups.get(key).values[v.sel||v.selection]=Number(v.odd);
+    }
+    const valid=[...groups.values()].filter(v=>['home','draw','away'].every(k=>v.values[k]>1.01))
+      .sort((a,b)=>Date.parse(b.at)-Date.parse(a.at));
+    return {'1x2':valid[0]?.values||{}};
+  };
   async function data(){
     if(snapshot&&Date.now()-last<45000)return snapshot;
     const response=await realFetch('./data.json?t='+Math.floor(Date.now()/300000),{cache:'no-store'});
@@ -1101,6 +1125,8 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
       lineups:asLineups(g),team_leaders:g.team_leaders||{},
       match_stars:g.match_stars||{},closing_odds:g.closing_odds||[],
+      odds_comparison:g.odds_comparison||[],
+      live_odds_comparison:g.live_odds_comparison||[],
       head_to_head:g.head_to_head||[],
       thermometer:{points},scout_pressure:{available:points.length>0,last_graph_minute:m,source:g.source,
         narrative:!points.length?'Sem termômetro real nesta partida': dominant==='HOME'?g.home+' apresenta maior intensidade na última janela observada.':dominant==='AWAY'?g.away+' apresenta maior intensidade na última janela observada.':'Intensidade equilibrada na janela observada.',
@@ -1112,7 +1138,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         .map(e=>({minute:Number(e.m),team:e.side,player:e.player||e.text||'Autor não informado',
                   assist:e.assist||'',own_goal:e.own_goal===true,penalty:e.penalty===true,
                   source:e.source||'Fonte não informada',stamp:String(e.m)+"'"})),
-      odds:{available:(g.odds||[]).length===3,markets:quoteMap(g.odds),
+      odds:{available:Object.keys(quoteMap(g.odds)['1x2']).length===3,markets:quoteMap(g.odds),
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
         fetched_at:g.odds?.[0]?.at||null,phase:g.odds_scope||'pregame'},
       projections:probs?{home:probs.home,draw:probs.draw,away:probs.away,
@@ -1133,9 +1159,11 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       halftime:g.halftime===true&&g.phase==='live',status_short:g.status_short||'',
       live:g.phase==='live',minute:g.minute||0,source:(g.sources||[g.source]).join(' · '),
       round:g.round||'',archive_day:g.day,
+      odds_comparison:g.odds_comparison||[],
+      live_odds_comparison:g.live_odds_comparison||[],
       has_saved_thermometer:!!g.pressure?.length,
       scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),
-        available:(g.odds||[]).length===3,phase:g.odds_scope||'pregame',
+        available:Object.keys(quoteMap(g.odds)['1x2']).length===3,phase:g.odds_scope||'pregame',
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
         fetched_at:g.odds?.[0]?.at||null}};
   }
@@ -2559,7 +2587,7 @@ function aiPreliveHTML(d,p){
  const delta=ranks[0].p-ranks[1].p;
  let read=delta<8?`O modelo considera o confronto entre ${d.home} e ${d.away} relativamente equilibrado.`:`O modelo aponta ${ranks[0].name} como cenário 1/X/2 mais provável (${ranks[0].p.toFixed(1)}%), com vantagem estimada de ${delta.toFixed(1)} pontos sobre a segunda opção.`;
  const ev=[];
- const quotes=odds.markets?.['1x2']||{};
+ const quotes=(p?.model_status==='validated_calibrated'&&p?.validation?.backtest_passed===true)?(odds.markets?.['1x2']||{}):{};
  for(const [key,label] of [['home',d.home],['draw','Empate'],['away',d.away]]){
    const price=Number(quotes[key]),prob=Number(pr[key]);if(!(price>1.01 && prob>0))continue;
    const value=(prob/100*price-1)*100;
@@ -2593,6 +2621,38 @@ function aiLiveHTML(d){
  if(d.minute && +d.minute>=75 && direction)message+=' Como a partida está na reta final, o tempo restante aumenta a incerteza sobre uma possível reação.';
  return aiPanel({phase:confirmed?'AO VIVO':'PARTIDA',title:'Quem está melhor?',reading:message,evidence,confidence:used>=3&&confirmed?'MODERADA':'LIMITADA',source:d.stats_source||d.source,warning:'Leitura descritiva do jogo, não probabilidade calibrada de gol nem aposta recomendada.'});
 }
+
+function oddsComparisonHTML(d,live=false){
+ const rows=live?(d.live_odds_comparison||[]):(d.odds_comparison||[]);
+ const mode=live?'AO VIVO':'PRÉ-JOGO';
+ if(!Array.isArray(rows)||!rows.length)return live?
+   '<section class="projection-card odds-compare"><h3>ODDS AO VIVO</h3><p class="prelive-muted">Nenhuma cotação live recente verificada. Preços pré-jogo e históricos não são odds ao vivo.</p></section>':'';
+ const labels={'1x2':'Resultado 1X2','over_under_25':'Over/Under 2,5 gols',
+               btts:'Ambas marcam',ah_0:'Handicap asiático 0'};
+ const names={home:'Mandante',draw:'Empate',away:'Visitante',
+              over:'Over 2,5',under:'Under 2,5',yes:'Sim',no:'Não'};
+ const fmt=n=>Number(n).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:3});
+ const at=s=>{const d=new Date(s);return Number.isNaN(d.getTime())?'não informado':
+   d.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',
+     day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});};
+ const groups={};
+ for(const q of rows)if(q&&labels[q.market]&&q.best){(groups[q.market]??=[]).push(q);}
+ const body=Object.entries(groups).map(([market,items])=>
+   '<div class="odds-compare-market"><h4>'+esc(labels[market])+'</h4>'+
+   items.map(q=>'<div class="odds-compare-row"><div class="odds-best-line"><span>'+
+     esc(names[q.selection]||q.selection)+'</span><b>'+fmt(q.best.odds)+'</b><small>'+
+     esc(q.best.bookmaker)+' · '+esc(q.best.source)+' · '+esc(at(q.best.at))+'</small></div>'+
+     ((q.alternatives||[]).length?'<div class="odds-compare-alternatives">'+
+      q.alternatives.slice(0,3).map(o=>'<span>'+esc(o.bookmaker)+' '+fmt(o.odds)+
+        ' <small>'+esc(at(o.at))+'</small></span>').join('')+'</div>':'')+
+     '</div>').join('')+'</div>').join('');
+ return '<section class="projection-card odds-compare"><div class="projection-heading"><h3>'+
+   'MELHORES ODDS '+mode+'</h3><small>Comparação de preços observados</small></div>'+
+   body+'<p class="prelive-muted">Melhor preço observado por seleção, casa e horário. Não são cotações garantidas nem comprovam liquidez. '+
+   (live?'Somente dados live de até 15 minutos.':'Somente dados pré-jogo das últimas 24 horas.')+
+   ' EV+ indisponível sem probabilidade independente e calibrada.</p></section>';
+}
+
 function preliveOddsHTML(p,d){
  const odds=p?.odds||{};
  const markets=odds.markets||{};
@@ -2613,7 +2673,8 @@ function preliveOddsHTML(p,d){
      const odd=Number(quotes[key]);
      if(!Number.isFinite(odd)||odd<1.01||odd>1000)return `<div class="ev-line"><label>${esc(title)}</label><b class="ev-blank">Sem odd</b></div>`;
      const prob=probabilities[market]?.[key];
-     const trusted=typeof prob==='number'&&Number.isFinite(prob)&&prob>=0&&prob<=100;
+     const trusted=p?.model_status==='validated_calibrated'&&p?.validation?.backtest_passed===true
+       &&typeof prob==='number'&&Number.isFinite(prob)&&prob>=0&&prob<=100;
      const ev=trusted?((prob/100*odd-1)*100):null;
      const fair=trusted&&prob>0?(100/prob).toFixed(2):'—';
      return `<div class="ev-line"><label>${esc(title)}<small>${trusted?`${prob.toFixed(1)}% · odd justa ${fair}`:'Sem probabilidade suficiente'}</small></label><strong class="quoted-odd">${odd.toFixed(2)}</strong><b class="${ev===null?'ev-blank':ev>0?'ev-positive':'ev-negative'}">${ev===null?'EV indisponível':`EV ${ev>0?'+':''}${ev.toFixed(1)}%`}</b></div>`;
@@ -2654,7 +2715,7 @@ function preliveHTML(d){
  const minutesToGo=d.start_timestamp?Math.ceil((Number(d.start_timestamp)*1000-Date.now())/60000):null;
  const lineupMessage=minutesToGo!==null&&minutesToGo<=30&&minutesToGo>=-15?
   ' · Janela de conferência de escalações iniciada':'';
- const heading=`<section class="projection-card prelive-hero n6-hero"><div class="projection-heading"><h3>◷ PRÉ-JOGO · CENTRAL DE ANÁLISE</h3><small>${esc(when)} · Brasília</small></div><div class="prelive-versus"><div>${crestMini(d.home_crest,(d.home||'?').slice(0,1))}<b>${esc(d.home)}</b><div class="team-odds-strip"><span>1</span><strong>${heroOdds.home}</strong></div></div><strong>VS<div class="team-odds-strip center"><span>X</span><strong>${heroOdds.draw}</strong></div></strong><div>${crestMini(d.away_crest,(d.away||'?').slice(0,1),true)}<b>${esc(d.away)}</b><div class="team-odds-strip"><span>2</span><strong>${heroOdds.away}</strong></div></div></div><small>Campeonato: ${esc(d.league||'Não identificado')} · Agenda: ${esc(d.source||'fontes públicas')} · ${esc(oddInfo)}${esc(lineupMessage)}</small></section>`;
+ const heading=`<section class="projection-card prelive-hero n6-hero"><div class="projection-heading"><h3>◷ PRÉ-JOGO · CENTRAL DE ANÁLISE</h3><small>${esc(when)} · Brasília</small></div><div class="prelive-versus"><div>${crestMini(d.home_crest,(d.home||'?').slice(0,1))}<b>${esc(d.home)}</b><div class="team-odds-strip"><span>1</span><strong>${heroOdds.home}</strong></div></div><strong>VS<div class="team-odds-strip center"><span>X</span><strong>${heroOdds.draw}</strong></div></strong><div>${crestMini(d.away_crest,(d.away||'?').slice(0,1),true)}<b>${esc(d.away)}</b><div class="team-odds-strip"><span>2</span><strong>${heroOdds.away}</strong></div></div></div><small>Campeonato: ${esc(d.league||'Não identificado')} · Agenda: ${esc(d.source||'fontes públicas')} · ${esc(oddInfo)}${esc(lineupMessage)}</small></section>`+oddsComparisonHTML(d,false);
  if(!p)return heading+'<section class="n6-panel n6-loading"><span class="n6-pulse"></span><strong>Buscando os últimos resultados, escalações e cotações disponíveis…</strong><p>Os dados são atualizados automaticamente. Não é necessário preencher nada.</p></section>';
  const f=p.forecast||null, samples=p.sample||{}, home=samples.home||{}, away=samples.away||{};
  const h2h=Array.isArray(p.head_to_head)?p.head_to_head:[];
@@ -2867,6 +2928,7 @@ function renderDetailBody(){
  if(d.stale||d.cache_note)html+=`<div class="error-block">${esc(d.cache_note||'Dado em cache; pode estar desatualizado.')}</div>`;
  if(!state.demo&&!state.reference){
    html+=NexusAudit.freshnessHTML(d);
+   if(d.phase==='live')html+=oddsComparisonHTML(d,true);
    html+=(d.phase==='live'&&window.NexusIara?.render)?window.NexusIara.render(d):aiLiveHTML(d);
    html+=liveV5Card(d);
  }
@@ -3185,7 +3247,7 @@ function classicProjection57(d){
  return '<div class="n57-classic">'+head+classic+observed+followUp+extra+'</div>';
 }
 
-function preliveV5Card(p){if(!p)return '';const available=p.v5_odds_opportunities||[],good=available.filter(x=>x.ev_pct>0);if(!good.length)return '';
+function preliveV5Card(p){if(!p||p.model_status!=='validated_calibrated'||p.validation?.backtest_passed!==true)return '';const available=p.v5_odds_opportunities||[],good=available.filter(x=>x.ev_pct>0);if(!good.length)return '';
  return `<section class="match-block nexus-v5"><div class="subhead">◈ RADAR EV+ AUTOMÁTICO <span>${good.length} SINAIS TEÓRICOS</span></div>${good.length?good.sort((a,b)=>b.ev_pct-a.ev_pct).slice(0,5).map(x=>`<div class="lab-row"><strong>${esc(marketLabel(x))}</strong><div class="lab-row-numbers">${v5Chip('Odd '+fmtV5(x.odds))}${v5Chip('P '+fmtV5(x.probability)+'%')}<b>EV ${fmtV5(x.ev_pct)}%</b></div></div>`).join(''):labEmpty('Sem preços públicos recentes ou sem amostra suficiente para calcular EV.')}<small>Fonte: ${esc(p.odds?.source||'indisponível')}, ${esc(p.odds?.fetched_at||'sem data')}. Modelo não calibrado; sem garantia de lucro.</small></section>`;
 }
 function bindLab(){document.querySelectorAll('[data-lab-tab]').forEach(b=>b.onclick=()=>{state.labTab=b.dataset.labTab;renderLab()});$('#lab-refresh').onclick=()=>loadIntelligence();$('#lab-content').addEventListener('change',e=>{if(e.target.id==='lab-ev-min'){state.labMinimum=Number(e.target.value);renderLab()}if(e.target.id==='lab-only-favs'){state.labFavorites=e.target.checked;renderLab()}});$('#lab-content').addEventListener('click',e=>{if(e.target.id==='lab-csv')location.href='/api/v5/export'});}

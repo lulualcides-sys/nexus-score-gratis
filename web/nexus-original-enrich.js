@@ -316,12 +316,17 @@ function verifiedPrelive(g,model){
  });
  // Recusar pacotes parciais e preços publicados após o início.
  const market={};let source='',bookmaker='',at='';
- const sameCapture=quotes.length===3 &&
-   new Set(quotes.map(q=>[q.source||'',q.bookmaker||'',q.at||''].join('|'))).size===1;
- if(sameCapture){
-   for(const q of quotes)market[q.sel]=Number(q.odd);
-   if(Object.keys(market).length!==3){for(const k of Object.keys(market))delete market[k];}
-   else {source=quotes[0].source||'';bookmaker=quotes[0].bookmaker||'';at=quotes[0].at||'';}
+ const groups=new Map();
+ for(const q of quotes){
+   const key=[q.source,q.bookmaker,q.at].join('|');
+   if(!groups.has(key))groups.set(key,{prices:{},sample:q});
+   groups.get(key).prices[q.sel]=Number(q.odd);
+ }
+ const complete=[...groups.values()].filter(x=>['home','draw','away'].every(s=>x.prices[s]>1.01))
+   .sort((a,b)=>Date.parse(b.sample.at)-Date.parse(a.sample.at));
+ if(complete.length){
+   Object.assign(market,complete[0].prices);
+   const q=complete[0].sample;source=q.source||'';bookmaker=q.bookmaker||'';at=q.at||'';
  }
  const available=Object.keys(market).length===3;
  return {...model,lineups,head_to_head:headToHead(g),standings:g.standings||null,
@@ -337,10 +342,12 @@ function availability(g){
  const s=g.stats||{},h=s.home||{},a=s.away||{};
  const got=k=>h[k]!=null||a[k]!=null;
  const price=(g.odds||[]).length>0;
+ const markets=(g.odds_comparison||[]).map(q=>q.market);
+ const hasMarket=m=>markets.includes(m);
  const finished=!!g.outcomes?.correct_score;
  return [
-  {name:'Over / Under gols',observed:price||finished,coverage:price?'Odd 1X2 registrada, mas O/U sem preço':finished?'Placar final disponível, sem odds O/U':'Sem resultado'},
-  {name:'Ambas marcam (BTTS)',observed:finished,coverage:finished?'Placar encerrado; sem preço BTTS':'Sem odds verificadas'},
+  {name:'Over / Under gols',observed:hasMarket('over_under_25')||finished,coverage:hasMarket('over_under_25')?'Precos O/U observados':finished?'Placar final sem odd O/U':'Sem odd verificada'},
+  {name:'Ambas marcam (BTTS)',observed:hasMarket('btts')||finished,coverage:hasMarket('btts')?'Precos BTTS observados':finished?'Placar final sem odd BTTS':'Sem odd verificada'},
   {name:'Match Odds (1X2)',observed:price||finished,coverage:price?'Odds 1X2 verificadas':finished?'Resultado conhecido; odd ausente':'Sem preço'},
   {name:'Escanteios',observed:got('corners'),coverage:got('corners')?'Scout confirmado':'Sem scouts'},
   {name:'Finalizações',observed:got('shots_on')||got('shots_off'),coverage:got('shots_on')||got('shots_off')?'Scouts confirmados':'Sem scouts'},

@@ -435,6 +435,53 @@ def prelive_archive():
             records.append({'fixture':f,'day':path.stem,'pregame_baseline':baseline})
     return consolidate_prelive(records)
 
+
+ODDS_SELECTIONS={
+ '1x2':('home','draw','away'),
+ 'over_under_25':('over','under'),
+ 'btts':('yes','no'),
+ 'ah_0':('home','away'),
+}
+def public_odds_comparison(quotes,fixture,phase,now_ts):
+    """Comparacao de precos reais, por fase, sem misturar casas e horarios."""
+    if fixture.get('phase')!=('live' if phase=='live' else 'scheduled'):return []
+    try:kickoff=int(fixture.get('start_timestamp') or 0)
+    except (ValueError,TypeError):return []
+    if not kickoff:return []
+    latest={}
+    for q in quotes:
+        if not isinstance(q,dict):continue
+        market=q.get('market')
+        sel=q.get('selection') or q.get('sel')
+        if market not in ODDS_SELECTIONS or sel not in ODDS_SELECTIONS[market]:continue
+        value=number(q.get('odds',q.get('odd')))
+        if value is None or not 1.01<value<1000:continue
+        book=safe(q.get('bookmaker'),55)
+        source=safe(q.get('source'),40)
+        if not book or not source:continue
+        try:at=datetime.fromisoformat(str(q.get('captured_at') or q.get('at') or '').replace('Z','+00:00'))
+        except (ValueError,TypeError):continue
+        if at.tzinfo is None:continue
+        t=at.timestamp()
+        if t>now_ts+120:continue
+        if phase=='pregame' and (t>=kickoff or now_ts-t>24*3600):continue
+        if phase=='live' and (t<kickoff or now_ts-t>900):continue
+        key=(market,sel,book,source)
+        if key not in latest or latest[key]['unix']<t:
+            latest[key]={'odds':round(value,3),'bookmaker':book,'source':source,
+                         'at':at.isoformat(),'unix':t}
+    grouped={}
+    for (market,sel,_,_),v in latest.items():
+        grouped.setdefault((market,sel),[]).append(v)
+    out=[]
+    for (market,sel),offers in sorted(grouped.items()):
+        offers.sort(key=lambda x:(-x['odds'],-x['unix'],x['bookmaker']))
+        clean=[{k:v for k,v in q.items() if k!='unix'} for q in offers[:5]]
+        out.append({'market':market,'selection':sel,'best':clean[0],
+                    'alternatives':clean[1:4],
+                    'books_compared':len(offers),'phase':phase})
+    return out[:18]
+
 def public_row(row,day,team_cache=None,espn_cache=None):
     if not isinstance(row,dict):return None
     f=row.get('fixture') or {}
@@ -497,6 +544,16 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         last=partial[0][1] if partial else {}
         odds=[{**last[side],'trio_complete':False}
               for side in ('home','draw','away') if side in last]
+    pre_items=(row.get('market_quotes') or [])
+    live_items=(row.get('live_odds_quotes') or [])
+    if not isinstance(pre_items,list):pre_items=[]
+    if not isinstance(live_items,list):live_items=[]
+    pre_comp=public_odds_comparison(
+        [{**x,'market':'1x2','selection':x['sel'],'odds':x['odd'],
+          'captured_at':x['at']} for x in odds if x.get('trio_complete')]
+        +pre_items,f,'pregame',datetime.now(timezone.utc).timestamp())
+    live_comp=public_odds_comparison(
+        live_items,f,'live',datetime.now(timezone.utc).timestamp())
     events=[]
     for event in row.get('events') or []:
         if not isinstance(event,dict) or event.get('type') not in TYPES:continue
@@ -609,6 +666,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'match_stars':stars,'team_leaders':leaders,
             'odds':odds[:15],
+            'odds_comparison':pre_comp,'live_odds_comparison':live_comp,
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
             'pregame_baseline':public_baseline(row,f),
