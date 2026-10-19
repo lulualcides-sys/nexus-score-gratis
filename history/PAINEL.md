@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T13:34:50.726450+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T13:44:07.420624+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -41,7 +41,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-19 | Sarmiento × Barracas Central | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Fram Reykjavík × ÍA Akranes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Esteghlal × Gol Gohar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Mes Shahr Babak × Persepolis | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Mes Shahr Babak × Persepolis | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Fajr Sepasi × Paykan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Mushuc Runa × Orense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Corinthians × Caracas FC | 7-0 | 0 | Chutes no alvo: 11.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
@@ -77,7 +77,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-19 | Monza × Cagliari | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,15, Fora 3,15 |
 | 2026-10-19 | Parma × Torino | 0-0 | 0 | Match Odds 1X2: Casa 3,05, Empate 2,95, Fora 2,40 |
 | 2026-10-19 | Tottenham Hotspur × Coventry City | 0-0 | 0 | Match Odds 1X2: Casa 1,54, Empate 4,50, Fora 5,75 |
-| 2026-10-19 | Petrovac × Otrant | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Petrovac × Otrant | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sutjeska × FK Bokelj | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rodez × Montpellier | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Wisła Płock × Radomiak Radom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 4157 | **Jogos distintos:** 1280 | **Resultados verificáveis:** 2324 | **Com gol:** 801 | **Sem gol:** 1523 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 11 datas com coletas | 12 pendentes | 787 indeterminados | 1034 incompletos.
+**Evolução da amostra:** 11 datas com coletas | 15 pendentes | 784 indeterminados | 1034 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4157 | **Jogos monitorados:** 1755 | **Ao vivo:** 25 | **Termômetros recentes:** 5.
+**Registros:** 4157 | **Jogos monitorados:** 1755 | **Ao vivo:** 24 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
@@ -292,7 +292,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Guabirá (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Belgrano (Córdoba) × River Plate | River Plate (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Independiente Santa Fe | Llaneros FC (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Santa Fe | Santa Fe (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
