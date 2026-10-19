@@ -16,12 +16,20 @@ const h={scope:'observed_data_quality_not_ev',live_fresh:10,live_games_in_feed:1
  collector_scout_yield_pct:75,pregame_matches_with_price_comparison:4,
  live_matches_with_price_comparison:0,
  providers:{oddspapi:{status:'waiting_free_slot'},sofascore:{status:'blocked_403'}},
+ live_by_league:[{league:'Brasileirão Série A',fresh_live_games:3,
+   with_recent_scouts:2,with_recent_pressure:1,
+   scouts_coverage_pct:66.7,pressure_coverage_pct:33.3},
+  {league:'<img onerror=1>',fresh_live_games:1,with_recent_scouts:0,
+   with_recent_pressure:0,scouts_coverage_pct:0,pressure_coverage_pct:0}],
  warnings:['<img src=x onerror=alert(1)>']};
 const view=ctx.show(h);
 assert.match(view,/QUALIDADE DAS FONTES/);
 assert.match(view,/60%/);
 assert.match(view,/waiting_free_slot/);
 assert.match(view,/blocked_403/);
+assert.match(view,/Cobertura ao vivo por campeonato/);
+assert.match(view,/Brasileirão Série A/);
+assert.match(view,/66,7%/);
 assert.ok(!view.includes('<img'));
 assert.match(view,/&lt;img/);
 assert.match(html,/id="cloud-source-health"/);
