@@ -20,7 +20,7 @@ class ChronologicalValidationTests(unittest.TestCase):
     self.assertEqual(chronological_audit(rows)['evaluated'],1)
  def test_unsorted_input_independent_of_order(self):
     p=[.5,.3,.2]
-    rows=[{'kickoff':n*100,'league':'L','actual':n%3,'probabilities':p} for n in range(40)]
+    rows=[{'kickoff':n*4*3600,'league':'L','actual':n%3,'probabilities':p} for n in range(40)]
     a=chronological_audit(rows)
     b=chronological_audit(list(reversed(rows)))
     self.assertEqual(a['model_brier'],b['model_brier'])
@@ -38,4 +38,12 @@ class ChronologicalValidationTests(unittest.TestCase):
     g=make([.5,.3,.2],0,start=now,identifier='1')
     g['variants'][0]['pregame_baseline']['captured_at']=datetime.fromtimestamp(now+30,timezone.utc).isoformat()
     self.assertEqual(validation_report([g])['eligible'],0)
+
+ def test_overlapping_fixtures_cannot_use_unfinished_results(self):
+    p=[.5,.3,.2]
+    history=[{'kickoff':0,'league':'L','actual':n%3,'probabilities':p} for n in range(26)]
+    next_game={'kickoff':90*60,'league':'L','actual':0,'probabilities':p}
+    self.assertEqual(chronological_audit(history+[next_game])['evaluated'],0)
+    next_game['kickoff']=4*3600
+    self.assertEqual(chronological_audit(history+[next_game])['evaluated'],1)
 if __name__=='__main__':unittest.main()

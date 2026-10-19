@@ -18,8 +18,15 @@ def chronological_audit(scored,minimum_prior=25):
         if not isinstance(row.get('kickoff'),(int,float)):continue
         by_kickoff.setdefault(row['kickoff'],[]).append(row)
     histories={}
+    pending=[]
     checked=[]
     for kickoff in sorted(by_kickoff):
+        # Resultado so integra a referencia depois de um periodo
+        # conservador de 3h apos o inicio (nao vazar jogos sobrepostos).
+        finished=[x for x in pending if x['kickoff']+3*3600<=kickoff]
+        pending=[x for x in pending if x['kickoff']+3*3600>kickoff]
+        for past in finished:
+            histories.setdefault(past['league'],[]).append(past['actual'])
         group=by_kickoff[kickoff]
         for item in group:
             league=item['league']
@@ -34,13 +41,12 @@ def chronological_audit(scored,minimum_prior=25):
             checked.append({'league':league,'brier':brier,'reference':reference,
                             'model_logloss':-math.log(pred[actual]),
                             'reference_logloss':-math.log(frequencies[actual])})
-        # Atualizacao apos pontuar todo o horario, sem vazamento intra-rodada.
-        for item in group:
-            histories.setdefault(item['league'],[]).append(item['actual'])
+        # Sem acesso ao resultado antes de tempo plausivel do apito final.
+        pending.extend(group)
     n=len(checked)
     mean=lambda key:round(sum(x[key] for x in checked)/n,4) if n else None
     return {'status':'observed_comparison' if n else 'insufficient_prior_games',
-            'evaluated':n,'minimum_prior_league_results':minimum_prior,
+            'evaluated':n,'minimum_prior_league_results':minimum_prior,'conservative_result_delay_hours':3,
             'model_brier':mean('brier'),
             'prior_results_baseline_brier':mean('reference'),
             'model_log_loss':mean('model_logloss'),
