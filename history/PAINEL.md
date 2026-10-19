@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T03:43:37.500223+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T04:43:27.795064+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -93,7 +93,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-19 | FC Voluntari × FCSB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Universitatea Cluj × FC Argeș Pitesti | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Antigua Guatemala × Club Xelajú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Deportivo Marquense × CD Suchitepéquez | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Deportivo Marquense × CD Suchitepéquez | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CSD Municipal × Guastatoya | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Termalica Nieciecza × Puszcza Niepołomice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Getafe × Rayo Vallecano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4154 | **Jogos distintos:** 1278 | **Resultados verificáveis:** 2322 | **Com gol:** 800 | **Sem gol:** 1522 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 11 datas com coletas | 13 pendentes | 787 indeterminados | 1032 incompletos.
+**Observações:** 4155 | **Jogos distintos:** 1278 | **Resultados verificáveis:** 2323 | **Com gol:** 801 | **Sem gol:** 1522 | **Taxa observada:** 34.5%.
+**Evolução da amostra:** 11 datas com coletas | 15 pendentes | 784 indeterminados | 1033 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,7 +178,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 797 | 544 | 205 | 339 | 37.7% |
 | ⚡ pressao_ofensiva_18 | 602 | 396 | 129 | 267 | 32.6% |
-| 🟥 expulsao_confirmada | 729 | 343 | 106 | 237 | 30.9% |
+| 🟥 expulsao_confirmada | 730 | 344 | 107 | 237 | 31.1% |
 | 🎯 chutes_no_alvo_5 | 673 | 330 | 106 | 224 | 32.1% |
 | 🚩 escanteios_6 | 527 | 246 | 88 | 158 | 35.8% |
 | 💣 grandes_chances_3 | 417 | 217 | 85 | 132 | 39.2% |
@@ -255,21 +255,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 340 | 250 | 86 | 164 | 34.4% |
 | 31–45′ | 630 | 495 | 208 | 287 | 42.0% |
 | 46–60′ | 634 | 486 | 174 | 312 | 35.8% |
-| 61–75′ | 898 | 613 | 185 | 428 | 30.2% |
+| 61–75′ | 898 | 614 | 186 | 428 | 30.3% |
 | 76–90′ | 1134 | 385 | 112 | 273 | 29.1% |
-| 91+′ | 398 | 1 | 1 | 0 | 100.0% |
+| 91+′ | 399 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4154 | **Jogos monitorados:** 1749 | **Ao vivo:** 18 | **Termômetros recentes:** 5.
+**Registros:** 4155 | **Jogos monitorados:** 1749 | **Ao vivo:** 17 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-19T03:35:17.439249+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (71') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-19T03:21:43.756679+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (57') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-19T04:10:17.029335+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (106') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T03:35:17.439249+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (71') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-19T03:21:43.756679+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (57') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Junior FC (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -289,7 +290,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Guabirá (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Belgrano (Córdoba) × River Plate | River Plate (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Independiente Santa Fe | Llaneros FC (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Santa Fe | Santa Fe (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T22:35:02.948430+00:00 | Liverpool FC × Club Atletico Peñarol | Club Atletico Peñarol (47') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T22:12:26.928701+00:00 | Bucaramanga × América de Cali | Bucaramanga (51') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-18T22:12:26.928701+00:00 | Bahia × Flamengo | Flamengo (43') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T22:12:26.928701+00:00 | Bahia × Flamengo | Flamengo (43') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
