@@ -45,4 +45,22 @@ class SourceHealthTests(unittest.TestCase):
     self.assertEqual(info['live_fresh'],0)
     self.assertEqual(info['live_matches_with_price_comparison'],1)
     self.assertEqual(info['fresh_live_with_recent_scouts'],0)
+ def test_live_by_league_uses_only_recent_matches(self):
+    good=live('one')
+    good['league']='Brasileirão Série A'
+    stale=live('two',scouts_age=5000)
+    stale['league']='Brasileirão Série A'
+    old=live('old',age=5000)
+    old['league']='Liga B'
+    empty={'phase':'live','league':'Liga B','observed_at':at(60),
+           'stats':{'home':{},'away':{}},'pressure':[]}
+    r=quality_report([good,stale,old,empty],{}, {}, NOW)
+    by={item['league']:item for item in r['live_by_league']}
+    self.assertEqual(by['Brasileirão Série A']['fresh_live_games'],2)
+    self.assertEqual(by['Brasileirão Série A']['with_recent_scouts'],1)
+    self.assertEqual(by['Brasileirão Série A']['with_recent_pressure'],1)
+    self.assertEqual(by['Brasileirão Série A']['scouts_coverage_pct'],50)
+    self.assertEqual(by['Liga B']['fresh_live_games'],1)
+    self.assertEqual(by['Liga B']['with_recent_pressure'],0)
+    self.assertEqual(sum(x['fresh_live_games'] for x in r['live_by_league']),r['live_fresh'])
 if __name__=='__main__':unittest.main()
