@@ -61,9 +61,9 @@ def available_1x2(packet,now_ts):
             if not isinstance(outcome,dict):break
             players=outcome.get('players') or {}
             if not isinstance(players,dict):break
-            offers=[p for p in players.values() if isinstance(p,dict) and p.get('active') is True]
-            if len(offers)!=1:break
-            offer=offers[0]
+            active_players=[p for p in players.values() if isinstance(p,dict) and p.get('active') is True]
+            if len(active_players)!=1:break
+            offer=active_players[0]
             try:price=float(offer.get('price'))
             except (ValueError,TypeError,OverflowError):break
             changed=parse_ts(offer.get('bookmakerChangedAt') or offer.get('changedAt'))
