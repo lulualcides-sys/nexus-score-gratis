@@ -70,7 +70,7 @@ function render(doc,odds){
    ['ESPN',prices.espn_fallback?.quotes_added],
    ['API-Football',prices.api_football?.odds_updated??prices.api_football?.quotes_added],
    ['The Odds API · grátis',prices.the_odds_api?.odds_updated??prices.the_odds_api?.quotes_added],
-   ['OddsPapi · Betano BR',prices.odds_papi?.quotes_added],
+   ['OddsPapi · múltiplas casas',prices.odds_papi?.quotes_added],
    ['Coleta geral',prices.odds_updated]];
  const sourceInfo=provider.map(([label,value])=>'<span>'+esc(label)+': '+
    (Number.isFinite(Number(value))&&value!=null?n(value):'sem contagem')+'</span>').join(' · ');
@@ -125,11 +125,11 @@ function render(doc,odds){
    '<p>'+sourceInfo+' · atualização '+esc(prices.updated_at||'não informada')+'</p>'+
    '<p>Fontes gratuitas/permitidas existentes continuam em operação. Sem preços confiáveis, '+
    'o painel mostra indisponível; não inventa cotações nem usa serviços pagos.</p>'+
-   '<p class="nexus-v6-free-info"><b>Betano Brasil (OddsPapi): </b>'+
+   '<p class="nexus-v6-free-info"><b>OddsPapi (Betano BR, Pinnacle e Bet365): </b>'+
    esc(prices.odds_papi?.status==='not_configured'?'falta chave GRATUITA':
        prices.odds_papi?.status==='waiting_free_slot'?'aguardando janela de cota gratuita':
        prices.odds_papi?.status||'ainda não consultado')+
-   ' · consulta direta sem login Betano. 250 consultas/mês gratuitas anunciadas, NEXUS limitado a 186. '+
+   ' · sem login em casas de apostas. Plano gratuito anunciado: 250 consultas/mês; coleta programada para até 186. '+
    'O Flashscore serve como conferência manual, não coletor automatizado.</p></div>';
  const button=host.querySelector('#nexus-v6-compact');
  button.onclick=()=>{compact=!compact;saveFilters();render(doc,odds)};
