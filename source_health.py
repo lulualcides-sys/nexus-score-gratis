@@ -83,7 +83,8 @@ def odds_budget_health(now_ts,ledger=None,historical=None):
     successful=sum(bool(v.get('result')=='collected') for v in attempts.values() if isinstance(v,dict))
     return {'status':'recorded' if recorded else 'no_monthly_record',
             'monthly_limit_conservative':MONTHLY_BUDGET,
-            'used_this_month':consumed,'remaining_this_month':MONTHLY_BUDGET-consumed,
+            'used_this_month':consumed if recorded else None,
+            'remaining_this_month':MONTHLY_BUDGET-consumed if recorded else None,
             'next_collection_window_utc':next_slot,
             'historical_attempts':len(attempts),
             'historical_collected':successful,
