@@ -20,7 +20,7 @@ class SourceHealthTests(unittest.TestCase):
     data=[live('a'),live('b',scouts_age=3600),
           live('c',age=3600),
           {'phase':'live','observed_at':at(60),'stats':{'home':{}}},
-          {'phase':'scheduled','odds_comparison':[{'market':'btts'}]}]
+          {'phase':'scheduled','odds_comparison':[{'market':'btts','best':{'odds':1.95,'at':at(50)}}]}]
     report=quality_report(data,{'updated_at':at(50),'details_collected':12,
                   'stats_detail_available':8,'momentum_status_counts':{'observed':2}},
                   {'updated_at':at(40),'errors':['SofaScore calendário HTTP 403'],
@@ -40,10 +40,10 @@ class SourceHealthTests(unittest.TestCase):
     self.assertEqual(freshness(at(-300),NOW,20),'invalid_future')
  def test_never_treat_old_live_price_as_current_collection(self):
     old=live('a',age=3600)
-    old['live_odds_comparison']=[{'market':'1x2'}]
+    old['live_odds_comparison']=[{'market':'1x2','best':{'odds':2.1,'at':at(60)}}]
     info=quality_report([old],{'updated_at':at(0)}, {},NOW)
     self.assertEqual(info['live_fresh'],0)
-    self.assertEqual(info['live_matches_with_price_comparison'],1)
+    self.assertEqual(info['live_matches_with_price_comparison'],0)
     self.assertEqual(info['fresh_live_with_recent_scouts'],0)
  def test_live_by_league_uses_only_recent_matches(self):
     good=live('one')
@@ -82,4 +82,26 @@ class SourceHealthTests(unittest.TestCase):
     self.assertIsNone(stat['remaining_this_month'])
     self.assertEqual(stat['historical_status'],'not_yet_recorded')
     self.assertNotIn('apiKey',str(stat))
+ def test_only_recent_verified_odds_are_counted(self):
+    current=live('current')
+    current['live_odds_comparison']=[{'market':'1x2',
+                                     'best':{'odds':2.1,'at':at(80)}}]
+    old_price=live('old-price')
+    old_price['live_odds_comparison']=[{'market':'1x2',
+                                       'best':{'odds':2.4,'at':at(1500)}}]
+    missing_date=live('without-timestamp')
+    missing_date['live_odds_comparison']=[{'market':'btts','best':{'odds':1.8}}]
+    scheduled={'phase':'scheduled','odds_comparison':[{'market':'1x2',
+             'best':{'odds':1.9,'at':at(60)}}]}
+    info=quality_report([current,old_price,missing_date,scheduled],{}, {},NOW)
+    self.assertEqual(info['live_matches_with_price_comparison'],1)
+    self.assertEqual(info['pregame_matches_with_price_comparison'],1)
+    self.assertEqual(info['live_odds_recency_minutes'],10)
+    self.assertEqual(info['pregame_odds_recency_minutes'],180)
+ def test_reject_fake_prices_and_future_timestamp(self):
+    bad=live('bad')
+    bad['live_odds_comparison']=[{'best':{'odds':1.0,'at':at(30)}},
+       {'best':{'odds':100000,'at':at(30)}},
+       {'best':{'odds':1.83,'at':at(-400)}}]
+    self.assertEqual(quality_report([bad],{}, {},NOW)['live_matches_with_price_comparison'],0)
 if __name__=='__main__':unittest.main()
