@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T09:46:36.105459+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T10:42:11.767189+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -105,7 +105,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-19 | Bursaspor × Pendikspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Esenler Erokspor × Mardin 1969 Spor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Manisa Futbol Kulübü × Muğlaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | FC Kharkiv × Liviy Bereh | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | FC Kharkiv × Liviy Bereh | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Escanteios: 0.0×0.0 |
 | 2026-10-19 | Diosgyori VTK × Kazincbarcikai BSC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Bayern München (W) × VfB Stuttgart (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Aveley × Maldon & Tiptree | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4155 | **Jogos monitorados:** 1755 | **Ao vivo:** 17 | **Termômetros recentes:** 5.
+**Registros:** 4155 | **Jogos monitorados:** 1755 | **Ao vivo:** 18 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
