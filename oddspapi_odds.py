@@ -14,7 +14,7 @@ from urllib.parse import urlencode
 from urllib.request import Request,urlopen
 
 from espn_scoreboard_odds import normalized_team,parse_ts
-from pregame_refresh_quotes import append_trio
+from pregame_refresh_quotes import append_trio,append_market_group
 
 BASE='https://api.oddspapi.io/v4'
 SLOTS_UTC=(12,21)
@@ -23,6 +23,19 @@ MONTHLY_BUDGET=186 # limite conservador: ate 3 requisicoes x 2 janelas x 31 dias
 BOOKMAKERS=('betano.bet.br','pinnacle','bet365')
 MARKET_1X2='101'
 SELECTIONS={'101':'home','102':'draw','103':'away'}
+# IDs e outcomes documentados por OddsPapi v4; nao inferir outros mercados.
+EXTRA_SPECS={
+    'over_under_25':('1010',{'1010':'over','1011':'under'}),
+    'btts':('104',{'104':'yes','105':'no'}),
+}
+# No Asian Handicap 0, identificar a selecao apenas pelo identificador
+# explicitamente fornecido pelo operador (home/away), nunca pela ordem.
+AH_ZERO_ID='1072'
+PRIMARY_LEAGUES=('premier league','bundesliga','la liga','laliga',
+ 'serie a','ligue 1','brasileir','libertadores','champions league',
+ 'europa league','eredivisie','liga portugal','primeira liga',
+ 'major league soccer','mls','ligapro argentina','argentina primera')
+
 
 def http_json(url):
     req=Request(url,headers={'Accept':'application/json','User-Agent':'NEXUS/6.1-verified-free-odds'})
@@ -72,6 +85,8 @@ def match_fixture(fixture,listed):
     found=[]
     for event in listed:
         if not isinstance(event,dict) or not event.get('hasOdds'):continue
+        if fixture.get('phase')=='live' and event.get('statusId')!=1:continue
+        if fixture.get('phase')=='scheduled' and event.get('statusId') not in (0,None):continue
         stamp=parse_ts(event.get('startTime'))
         if not stamp or abs(stamp-kickoff)>600:continue
         if (normalized_team(event.get('participant1Name'))==home and
@@ -79,12 +94,73 @@ def match_fixture(fixture,listed):
             found.append(event)
     return found[0] if len(found)==1 else None
 
-def available_1x2(packet,now_ts):
+def priority_score(fixture,delta):
+    """Ranking por proximidade e prestigio (heuristica, NAO liquidez medida)."""
+    league=str(fixture.get('league') or '').casefold()
+    preferred=any(s in league for s in PRIMARY_LEAGUES)
+    minutes=abs(delta)/60
+    return round((0 if preferred else 110)+minutes+(0 if minutes<=75 else 25),2)
+
+def active_outcomes(bookmaker,market_id,ids,now_ts,phase):
+    market=(bookmaker.get('markets') or {}).get(market_id)
+    if not isinstance(market,dict) or market.get('marketActive') is not True:return None
+    values={}
+    for oid,selection in ids.items():
+        outcome=(market.get('outcomes') or {}).get(oid)
+        if not isinstance(outcome,dict):return None
+        players=outcome.get('players') or {}
+        if not isinstance(players,dict):return None
+        active=[p for p in players.values() if isinstance(p,dict) and p.get('active') is True]
+        if len(active)!=1:return None
+        offer=active[0]
+        try:price=float(offer.get('price'))
+        except (ValueError,TypeError,OverflowError):return None
+        changed=parse_ts(offer.get('bookmakerChangedAt') or offer.get('changedAt'))
+        ttl=600 if phase=='live' else 24*3600
+        if not math.isfinite(price) or not 1.01<price<1000 or changed is None or changed>now_ts+120 or now_ts-changed>ttl:
+            return None
+        values[selection]=round(price,4)
+    return values if len(values)==len(ids) else None
+
+def available_extra_markets(packet,now_ts,phase='pregame'):
+    if not isinstance(packet,dict) or not packet.get('hasOdds'):return []
+    if phase=='live' and packet.get('statusId')!=1:return []
+    if phase=='pregame' and packet.get('statusId') not in (None,0):return []
+    found=[]
+    for slug in BOOKMAKERS:
+        book=(packet.get('bookmakerOdds') or {}).get(slug)
+        if not isinstance(book,dict) or not book.get('bookmakerIsActive') or book.get('suspended'):continue
+        name={'betano.bet.br':'Betano BR','pinnacle':'Pinnacle','bet365':'Bet365'}.get(slug,slug)
+        for market,(mid,ids) in EXTRA_SPECS.items():
+            values=active_outcomes(book,mid,ids,now_ts,phase)
+            if values:found.append((market,values,name))
+        # Nao adivinhar odds de handicap, nem sinal do spread.
+        ah=(book.get('markets') or {}).get(AH_ZERO_ID) or {}
+        if isinstance(ah,dict) and ah.get('marketActive') is True:
+            pairs={}
+            for oid,outcome in (ah.get('outcomes') or {}).items():
+                for p in (outcome.get('players') or {}).values():
+                    if not isinstance(p,dict) or p.get('active') is not True:continue
+                    sel=str(p.get('bookmakerOutcomeId') or '').lower().strip()
+                    if sel not in ('home','away') or sel in pairs:continue
+                    price=p.get('price')
+                    changed=parse_ts(p.get('bookmakerChangedAt') or p.get('changedAt'))
+                    try:price=float(price)
+                    except (ValueError,TypeError,OverflowError):continue
+                    ttl=600 if phase=='live' else 86400
+                    if math.isfinite(price) and 1.01<price<1000 and changed is not None and -120<=now_ts-changed<=ttl:
+                        pairs[sel]=round(price,4)
+            if set(pairs)=={'home','away'}:found.append(('ah_0',pairs,name))
+    return found
+
+def available_1x2(packet,now_ts,phase='pregame'):
     """Official OddsPapi market catalog: fulltime=101, 1/X/2=101/102/103.
     Reject undocumented numeric market IDs instead of guessing outcomes.
     """
     if not isinstance(packet,dict) or not packet.get('hasOdds'):return []
     if parse_ts(packet.get('startTime')) is None:return []
+    if phase=='live' and packet.get('statusId')!=1:return []
+    if phase=='pregame' and packet.get('statusId') not in (None,0):return []
     offers=[]
     for book in BOOKMAKERS:
         bookmaker=(packet.get('bookmakerOdds') or {}).get(book)
@@ -104,7 +180,7 @@ def available_1x2(packet,now_ts):
             except (ValueError,TypeError,OverflowError):break
             changed=parse_ts(offer.get('bookmakerChangedAt') or offer.get('changedAt'))
             if (not math.isfinite(price) or not 1.01<price<1000 or changed is None or
-                changed>now_ts+120 or now_ts-changed>24*3600):
+                changed>now_ts+120 or now_ts-changed>(600 if phase=='live' else 24*3600)):
                 break
             selections[side]=round(price,4)
         if set(selections)=={'home','draw','away'}:
@@ -123,7 +199,8 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
     result={'status':'not_configured' if not key else 'waiting_free_slot',
             'requests':0,'matched':0,'quotes_added':0,'errors':[],
             'provider':'OddsPapi','bookmakers':'Betano BR / Pinnacle / Bet365',
-            'free_tier_monthly_max_requests':186}
+            'free_tier_monthly_max_requests':186,'markets_added':0,'live_quotes_added':0,
+            'prioritized':[]}
     if not key:return result
     instant=datetime.fromtimestamp(now_ts,timezone.utc)
     slot=free_slot_id(instant)
@@ -151,25 +228,25 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
         result['requests']+=1
     relevant=[]
     for day,mid,delta in candidates:
-        if not 0<delta<=6*3600:continue
         row=((docs.get(day) or {}).get('matches') or {}).get(mid)
         if not isinstance(row,dict):continue
         fixture=row.get('fixture') or {}
-        if fixture.get('phase')!='scheduled':continue
+        phase=fixture.get('phase')
+        if not ((phase=='scheduled' and 0<delta<=6*3600) or
+                (phase=='live' and -150*60<=delta<=0)):continue
         try:kickoff=int(fixture.get('start_timestamp') or 0)
         except (ValueError,TypeError):continue
-        if kickoff<=now_ts:continue
-        relevant.append((row,fixture))
+        if not kickoff or (phase=='scheduled' and kickoff<=now_ts):continue
+        relevant.append((row,fixture,delta))
     if not relevant:
         result['status']='no_pregame_candidates'
         return result
-    start=datetime.fromtimestamp(now_ts,timezone.utc).replace(microsecond=0)
-    end=start+timedelta(hours=6)
+    start=datetime.fromtimestamp(now_ts,timezone.utc).replace(microsecond=0)-timedelta(hours=3)
+    end=start+timedelta(hours=9)
     params={'apiKey':key,'sportId':10,
             'from':start.isoformat().replace('+00:00','Z'),
             'to':end.isoformat().replace('+00:00','Z'),
-            'statusId':0,'hasOdds':'true',
-            'bookmakers':','.join(BOOKMAKERS)}
+            'hasOdds':'true','bookmakers':','.join(BOOKMAKERS)}
     try:
         reserve_request()
         listing=fetcher(BASE+'/fixtures?'+urlencode(params))
@@ -180,12 +257,15 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
         result['errors'].append(str(err)[:130])
         return result
     matched=[]
-    for row,fixture in relevant:
+    for row,fixture,delta in relevant:
         event=match_fixture(fixture,listing)
-        if event:matched.append((row,event))
-    # At most two per slot, prioritizing closest start time, not thousands of leagues.
-    matched.sort(key=lambda pair:parse_ts(pair[1].get('startTime')) or float('inf'))
-    for index,(row,event) in enumerate(matched[:2]):
+        if event:matched.append((row,fixture,event,priority_score(fixture,delta)))
+    # Janela com limite de 2 jogos: 1 live + 1 pre quando ambos existirem.
+    matched.sort(key=lambda pair:pair[3])
+    live=next((m for m in matched if m[1].get('phase')=='live'),None)
+    pre=next((m for m in matched if m[1].get('phase')=='scheduled'),None)
+    selected=([live,pre] if live and pre else matched[:2])
+    for index,(row,fixture,event,score) in enumerate(selected):
         # OddsPapi v4 limita chamadas /odds a ~1 por segundo.
         # Ritmo conservador evita 429 sem retries cobrados da cota mensal.
         if index:sleep_fn(1.2)
@@ -197,8 +277,21 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
             packet=fetcher(url)
             if not isinstance(packet,dict):continue
             if str(packet.get('fixtureId'))!=str(event.get('fixtureId')):continue
-            for values,book in available_1x2(packet,now_ts):
-                result['quotes_added']+=append_trio(row,values,book,'OddsPapi',now_ts)
+            phase='live' if fixture.get('phase')=='live' else 'pregame'
+            if phase=='live' and packet.get('statusId')!=1:continue
+            if phase=='pregame' and packet.get('statusId') not in (None,0):continue
+            result['prioritized'].append({'league':str(fixture.get('league') or '')[:60],
+                                           'phase':phase,'priority_score':score})
+            for values,book in available_1x2(packet,now_ts,phase):
+                if phase=='live':
+                    result['live_quotes_added']+=append_market_group(
+                        row,'1x2',values,book,'OddsPapi',now_ts,phase='live')
+                else:
+                    result['quotes_added']+=append_trio(row,values,book,'OddsPapi',now_ts)
+            for market,values,book in available_extra_markets(packet,now_ts,phase):
+                count=append_market_group(row,market,values,book,'OddsPapi',now_ts,phase)
+                if phase=='live':result['live_quotes_added']+=count
+                else:result['markets_added']+=count
         except Exception as err:
             if len(result['errors'])<3:result['errors'].append(str(err)[:130])
     result['status']='checked' if not result['errors'] else 'partial'

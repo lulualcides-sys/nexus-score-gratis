@@ -245,6 +245,8 @@ def run():
     # OddsPapi: Betano BR/Betano no plano zero (<=186 requests/31 dias).
     result['odds_papi']=odds_papi_odds(docs,odds_candidates,now_ts,ledger_path=HISTORY/'oddspapi_usage.json')
     result['odds_updated']+=result['odds_papi']['quotes_added']
+    result['odds_updated']+=result['odds_papi']['markets_added']
+    result['odds_updated']+=result['odds_papi']['live_quotes_added']
     if result['odds_papi']['errors']:
         result['errors'].extend(result['odds_papi']['errors'][:3])
     # API-Football: somente com segredo opcional e teto <=64 req/dia.

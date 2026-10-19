@@ -4,7 +4,7 @@ import tempfile
 from pathlib import Path
 from datetime import datetime,timezone
 from urllib.parse import parse_qs,urlsplit
-from oddspapi_odds import collect_odds,extract_1x2,match_fixture
+from oddspapi_odds import collect_odds,extract_1x2,match_fixture,available_extra_markets,priority_score
 NOW=int(datetime(2026,10,19,21,3,tzinfo=timezone.utc).timestamp())
 def date(ts):
     return datetime.fromtimestamp(ts,timezone.utc).isoformat()
@@ -166,4 +166,64 @@ class OddsPapiFreeTests(unittest.TestCase):
         self.assertEqual(result['requests'],3)
         self.assertEqual(len(calls),3)
         self.assertEqual(durations,[1.2])
+
+    def test_new_markets_only_when_complete_and_active(self):
+        p=pricepacket()
+        bookmaker=p['bookmakerOdds']['betano.bet.br']
+        base=lambda price:{'players':{'0':{'active':True,'price':price,'changedAt':date(NOW-100)}}}
+        bookmaker['markets']['104']={'marketActive':True,'outcomes':{
+            '104':base(1.85),'105':base(1.98)}}
+        bookmaker['markets']['1010']={'marketActive':True,'outcomes':{
+            '1010':base(2.05),'1011':base(1.82)}}
+        bookmaker['markets']['1072']={'marketActive':True,'outcomes':{
+            'a':{'players':{'0':{'active':True,'price':1.6,
+                               'bookmakerOutcomeId':'home','changedAt':date(NOW-90)}}},
+            'b':{'players':{'0':{'active':True,'price':2.3,
+                               'bookmakerOutcomeId':'away','changedAt':date(NOW-90)}}}}}
+        found={name:values for name,values,book in available_extra_markets(p,NOW)}
+        self.assertEqual(found['btts'],{'yes':1.85,'no':1.98})
+        self.assertEqual(found['over_under_25'],{'over':2.05,'under':1.82})
+        self.assertEqual(found['ah_0'],{'home':1.6,'away':2.3})
+        bookmaker['markets']['104']['outcomes']['105']['players']['0']['active']=False
+        self.assertNotIn('btts',{n for n,_,_ in available_extra_markets(p,NOW)})
+    def test_priority_high_coverage_and_near_kickoff(self):
+        premier={'league':'Premier League'}
+        minor={'league':'Unlisted minor division'}
+        self.assertLess(priority_score(premier,1800),priority_score(minor,1800))
+        self.assertLess(priority_score(premier,1800),priority_score(premier,7200))
+    def test_single_paid_request_returns_three_real_markets(self):
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        data=pricepacket()
+        d=lambda price:{'players':{'0':{'active':True,'price':price,'changedAt':date(NOW-60)}}}
+        data['bookmakerOdds']['betano.bet.br']['markets']['1010']={
+            'marketActive':True,'outcomes':{'1010':d(1.8),'1011':d(2.1)}}
+        data['bookmakerOdds']['betano.bet.br']['markets']['104']={
+            'marketActive':True,'outcomes':{'104':d(1.7),'105':d(2.2)}}
+        def fetch(url):return [event()] if '/fixtures?' in url else data
+        out=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,
+                         key='fake',fetcher=fetch)
+        self.assertEqual(out['requests'],2)
+        self.assertEqual(out['quotes_added'],3)
+        self.assertEqual(out['markets_added'],4)
+        self.assertEqual({i['market'] for i in docs['2026-10-19']['matches']['f1']['market_quotes']},
+                         {'btts','over_under_25'})
+    def test_live_market_keeps_strict_separate_phase(self):
+        data=pricepacket()
+        data['statusId']=1
+        fixture_live={**fixture()['fixture'],'phase':'live',
+                       'start_timestamp':NOW-600}
+        listed={**event(),'statusId':1,'startTime':date(NOW-600)}
+        data.update({'startTime':date(NOW-600),'statusId':1})
+        # Atualizar o horario de preco; precos antigos nao sao LIVE.
+        for m in data['bookmakerOdds']['betano.bet.br']['markets'].values():
+            for out in m['outcomes'].values():
+                for offer in out['players'].values():
+                    offer['changedAt']=date(NOW-55)
+        docs={'2026-10-19':{'matches':{'f1':{'fixture':fixture_live}}}}
+        def fetch(url):return [listed] if '/fixtures?' in url else data
+        got=collect_odds(docs,[('2026-10-19','f1',-600)],NOW,key='mock',fetcher=fetch)
+        self.assertEqual(got['live_quotes_added'],3)
+        self.assertEqual(got['quotes_added'],0)
+        self.assertFalse(docs['2026-10-19']['matches']['f1'].get('odds_quotes'))
+        self.assertEqual({q['phase'] for q in docs['2026-10-19']['matches']['f1']['live_odds_quotes']},{'live'})
 if __name__=='__main__':unittest.main()

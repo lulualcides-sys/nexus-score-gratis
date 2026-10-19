@@ -73,6 +73,47 @@ def append_trio(row, prices, bookmaker, source, now_ts, source_ts=None):
                        'captured_at':when})
     return 3
 
+
+# Odds adicionais sao guardadas separadamente das capturas 1X2; nenhum
+# resultado historico recebe cotacao live/pre-jogo por inferencia.
+EXTRA_MARKETS={
+    'over_under_25':('over','under'),
+    'btts':('yes','no'),
+    'ah_0':('home','away'),
+}
+def append_market_group(row,market,prices,bookmaker,source,now_ts,phase='pregame'):
+    if market not in EXTRA_MARKETS and market!='1x2':return 0
+    fixture=row.get('fixture') or {}
+    if fixture.get('phase')!=('scheduled' if phase=='pregame' else 'live'):return 0
+    try:kickoff=int(fixture.get('start_timestamp') or 0)
+    except (ValueError,TypeError):return 0
+    if not kickoff or ((now_ts>=kickoff) if phase=='pregame' else (now_ts<kickoff)):return 0
+    selections=('home','draw','away') if market=='1x2' else EXTRA_MARKETS[market]
+    if not isinstance(prices,dict) or set(prices)!=set(selections):return 0
+    if not isinstance(bookmaker,str) or not bookmaker.strip() or not source:return 0
+    if not all(isinstance(prices[s],(float,int)) and not isinstance(prices[s],bool)
+               and math.isfinite(prices[s]) and 1.01<float(prices[s])<1000
+               for s in selections):return 0
+    key='market_quotes' if phase=='pregame' else 'live_odds_quotes'
+    items=row.setdefault(key,[])
+    old=[v for v in items if v.get('market')==market and
+         v.get('bookmaker')==bookmaker and v.get('source')==source]
+    if old:
+        latest={}
+        for offer in old:latest[offer['selection']]=offer['odds']
+        if set(latest)==set(selections) and all(float(latest[s])==float(prices[s])
+                                                for s in selections):return 0
+    stamp=datetime.fromtimestamp(now_ts,timezone.utc).isoformat()
+    for selection in selections:
+        items.append({'market':market,'selection':selection,
+                      'odds':round(float(prices[selection]),4),
+                      'bookmaker':bookmaker[:55],'source':str(source)[:40],
+                      'captured_at':stamp,'phase':phase})
+    # Reduzir histórico por mercado/casa, preservando somente fotos completas.
+    if len(items)>180:
+        items[:]=items[-180:]
+    return len(selections)
+
 def append_quote(row,selection,value,bookmaker,source,now_ts):
     f=row.get('fixture') or {}
     if f.get('phase')!='scheduled':return False
