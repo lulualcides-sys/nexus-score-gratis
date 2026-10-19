@@ -64,6 +64,22 @@ function coverageStatus(g){
  if(visible(g))return 'parcial';
  return 'insuficiente';
 }
+function coverageEvidence(g){
+ const status=coverageStatus(g);
+ const p=g?.pressure||g?.thermometer;
+ const points=Array.isArray(p)?p:Array.isArray(p?.points)?p.points:[];
+ const sourceSamples=points.length||Number(p?.samples||0);
+ const stats=g?.scoreboard_stats||g?.stats||{};
+ const scouts=['shots_on','shots_total','corners','big_chances','possession','xg'];
+ const perSide=side=>scouts.filter(k=>num(stats?.[side]?.[k])).length;
+ const realOdds=odds(g);
+ return {status,source_pressure_samples:sourceSamples,
+    home_scout_fields:perSide('home'),away_scout_fields:perSide('away'),
+    odds_observed:realOdds,
+    reason:status==='completa'?'Pressão e estatísticas observadas nos dois times':
+      status==='parcial'?'Dados reais disponíveis, mas cobertura insuficiente para análise completa':
+       'Sem scouts verificáveis para avaliação' };
+}
 function leagueStats(games){
  const groups=new Map();
  for(const g of games||[]){
@@ -77,6 +93,6 @@ function leagueStats(games){
  }
  return [...groups.values()].filter(x=>x.covered>0).sort((a,b)=>b.measured-a.measured||b.covered-a.covered||a.league.localeCompare(b.league,'pt-BR'));
 }
-root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus};
+root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);

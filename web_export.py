@@ -13,7 +13,7 @@ from signal_evaluation import evaluate
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_fixture_bridge import bridge_pregame_prices
-from scout_snapshots import public_snapshots
+from scout_snapshots import public_snapshots, snapshot_deltas
 from activity_timeline import observed_activity
 from pregame_archive_merge import consolidate as consolidate_prelive
 
@@ -661,6 +661,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
                  'source_path':safe((row.get('momentum_diagnostic') or {}).get('source_path'),70),
                  'checked_at':safe((row.get('momentum_diagnostic') or {}).get('checked_at'),42)},
             'pressure':points,'stats':stats,'scout_snapshots':public_snapshots(row.get('scout_snapshots')),
+            'scout_trend':snapshot_deltas(row.get('scout_snapshots')) if f.get('phase')=='live' else {'status':'not_live'},
             'head_to_head':h2h,'standings':ranking,
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},

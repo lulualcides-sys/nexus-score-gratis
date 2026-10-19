@@ -78,3 +78,36 @@ def public_snapshots(history):
                     'source':str(item.get('source') or 'Fonte publica')[:40],
                     'stats':observed})
     return sorted(out,key=lambda x:(x['at'],x['m']))[-72:]
+
+def snapshot_deltas(history, max_gap_minutes=40):
+    """Diferencas ENTRE capturas observadas, sem atribuir minuto dos lances."""
+    snapshots=public_snapshots(history)
+    if len(snapshots)<2:return {'status':'insufficient','reason':'Menos de duas coletas reais'}
+    a,b=snapshots[-2:]
+    try:
+        start=datetime.fromisoformat(a['at']);end=datetime.fromisoformat(b['at'])
+    except (ValueError,TypeError):
+        return {'status':'insufficient','reason':'Horario da coleta invalido'}
+    elapsed=(end-start).total_seconds()/60
+    if not 0<elapsed<=max_gap_minutes:
+        return {'status':'insufficient','reason':'Coletas distantes ou desordenadas'}
+    if a.get('source')!=b.get('source'):
+        return {'status':'insufficient','reason':'Fontes diferentes; evitar misturar scouts'}
+    fields=('shots_on','shots_total','corners','big_chances','dangerous_attacks','xg')
+    observed={'home':{},'away':{}}
+    for side in observed:
+        for field in fields:
+            old=a.get('stats',{}).get(side,{}).get(field)
+            new=b.get('stats',{}).get(side,{}).get(field)
+            if old is None or new is None or new<old:continue
+            delta=round(new-old,3)
+            if field!='xg':delta=int(delta)
+            observed[side][field]=delta
+    if not any(observed.values()):
+        return {'status':'insufficient','reason':'Nao ha contadores comparaveis'}
+    return {'status':'observed_delta','source':b['source'],'from_at':a['at'],
+            'to_at':b['at'],'elapsed_minutes':round(elapsed,1),
+            'from_minute':a['m'],'to_minute':b['m'],
+            'changes':observed,
+            'note':'Variacao de totais entre capturas reais; minuto de cada lance desconhecido'}
+
