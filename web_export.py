@@ -10,7 +10,7 @@ import json
 import math
 import re
 from signal_evaluation import evaluate
-from nexus_intelligence_v6 import evaluate_v6
+from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots
@@ -772,7 +772,8 @@ def main():
         'diagnostics':registry.get('diagnostics') or {},
         'items':all_signal_items[:5000],
         'note':'Sinais 5.29 na nuvem; gols em janelas de 5 a 40 minutos conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
-    radar_v6=evaluate_v6(registry,rows)
+    archive_stats=read_finished_archive(H,as_of=today)
+    radar_v6=evaluate_v6(registry,rows,as_of=today,historical_archive=archive_stats)
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),

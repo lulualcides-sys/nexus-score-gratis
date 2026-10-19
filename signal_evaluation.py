@@ -7,6 +7,7 @@ A contagem usa observações, não jogos independentes: sinais na mesma partida
 podem ser correlacionados.
 """
 from collections import defaultdict
+import math
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -69,7 +70,21 @@ def _entries(journal):
                 except (TypeError,ValueError,OverflowError):continue
                 if minute<goal_minute<=minute+40 and goal.get('team') in ('home','away'):
                     delays.append(goal_minute-minute)
-        yield {'first_goal_delay':min(delays) if delays else None,
+        def safe_number(value):
+            try:
+                v=float(value)
+                return round(v,2) if math.isfinite(v) and 0<=v<=10000 else None
+            except (ValueError,TypeError,OverflowError):return None
+        pressure=r.get('pressure10')
+        score=safe_number(pressure.get('score')) if isinstance(pressure,dict) else None
+        yield {'context':{
+                 'pressure10_score':score,
+                 'pressure10_level':str(pressure.get('level') or '')[:20] if isinstance(pressure,dict) else '',
+                 'shots_on':safe_number(r.get('shots_on')),
+                 'big_chances':safe_number(r.get('big_chances')),
+                 'basis':str(r.get('basis') or '')[:35],
+                },
+               'first_goal_delay':min(delays) if delays else None,
                'day':day,'match_id':match,'minute':minute,
                'signal':(icon+' '+rule).strip()[:110],
                'team':str(team or 'Equipe não definida')[:100],

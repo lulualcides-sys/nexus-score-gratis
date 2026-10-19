@@ -1,6 +1,9 @@
 import unittest
 from datetime import date,datetime,timezone
-from nexus_intelligence_v6 import evaluate_v6,_markets,_wilson_lower
+import json
+import tempfile
+from pathlib import Path
+from nexus_intelligence_v6 import evaluate_v6,_markets,_wilson_lower,read_finished_archive
 
 class NexusIntelligenceV6Tests(unittest.TestCase):
     def signal(self,i,day,fixture,hit=True,rule='pressao'):
@@ -53,6 +56,44 @@ class NexusIntelligenceV6Tests(unittest.TestCase):
         after=evaluate_v6({'items':altered},[],as_of=date(2026,10,18))
         self.assertEqual(score_before,after['signal_ranking'][0]['quality_index'])
         self.assertEqual(after['signal_ranking'][0]['quality_basis'],'development_only')
+
+    def test_90day_archived_market_history_read_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            hist=Path(tmp)
+            source=hist/'2026-10-09.json'
+            doc={'matches':{'old_a':{'fixture':self.game('a','1-1')},
+                            'old_b':{'fixture':self.game('b','3-0')},
+                            'ongoing':{'fixture':self.game('c','2-2','live')}}}
+            original=json.dumps(doc)
+            source.write_text(original,encoding='utf-8')
+            (hist/'2026-01-01.json').write_text('{"matches":{}}',encoding='utf-8')
+            archive=read_finished_archive(hist,as_of=date(2026,10,18))
+            self.assertEqual(archive['files_seen'],1)
+            self.assertEqual(archive['files_read'],1)
+            report=evaluate_v6({'items':[]},[],as_of=date(2026,10,18),historical_archive=archive)
+            self.assertEqual(report['markets']['distinct_verified_games'],2)
+            self.assertEqual(report['markets']['coverage']['files_read'],1)
+            self.assertEqual(source.read_text(encoding='utf-8'),original)
+    def test_horizon_comparison_independent_first_match(self):
+        signal=self.signal(1,'2026-10-01','match-A')
+        signal['outcomes'].update({'10':'sem_gol_confirmado','20':'gol_confirmado',
+                                   '30':'gol_confirmado','40':'gol_confirmado'})
+        repeated=self.signal(2,'2026-10-01','match-A')
+        repeated['minute']=43
+        report=evaluate_v6({'items':[signal,repeated]},[],as_of=date(2026,10,18))
+        self.assertEqual([v['minutes'] for v in report['horizon_comparison']],[10,20,30,40])
+        self.assertEqual(report['horizon_comparison'][0]['misses'],1)
+        self.assertEqual(report['horizon_comparison'][-1]['hits'],1)
+        self.assertEqual(report['distinct_matches'],1)
+    def test_context_measured_not_invented(self):
+        signal=self.signal(1,'2026-10-01','match-A')
+        signal['pressure10']={'score':70,'level':'FORTE'}
+        signal['shots_on']=5
+        report=evaluate_v6({'items':[signal]},[],as_of=date(2026,10,18))
+        item=report['signal_ranking'][0]
+        self.assertEqual(item['median_pressure10'],70.0)
+        self.assertEqual(item['median_shots_on'],5.0)
+        self.assertIsNone(item['median_big_chances'])
 
     def test_low_sample_does_not_claim_score(self):
         report=evaluate_v6({'items':[self.signal(1,'2026-10-01','a')]},[],as_of=date(2026,10,18))

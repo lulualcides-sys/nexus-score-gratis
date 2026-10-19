@@ -6,6 +6,10 @@ from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 import math
 import re
+import json
+from pathlib import Path
+from statistics import median
+from signal_evaluation import _rollup, _goal_timing
 from signal_evaluation import _entries, _earliest_per_match
 
 MARKETS=(
@@ -28,6 +32,15 @@ def _rank(rows,field,split_day):
         grouped[entry[field]].append(entry)
     results=[]
     for label,group in grouped.items():
+        context=group
+        def midpoint(field):
+            values=[e.get('context',{}).get(field) for e in context]
+            clean=sorted(float(v) for v in values if isinstance(v,(int,float)) and math.isfinite(v))
+            return round(median(clean),1) if clean else None
+        basis={}
+        for e in group:
+            b=e.get('context',{}).get('basis')
+            if b:basis[b]=basis.get(b,0)+1
         settled=[r for r in group if r['outcomes']['40'] in ('gol_confirmado','sem_gol_confirmado')]
         n=len(settled)
         wins=sum(r['outcomes']['40']=='gol_confirmado' for r in settled)
@@ -42,6 +55,11 @@ def _rank(rows,field,split_day):
         quality=round(value*0.75+min(dn,100)*0.25,1) if dn>=20 else None
         results.append({'label':label,'matches':len({r['match_id'] for r in group}),
                         'observations':len(group),'settled':n,'hits':wins,'misses':n-wins,
+                        'median_pressure10':midpoint('pressure10_score'),
+                        'median_shots_on':midpoint('shots_on'),
+                        'median_big_chances':midpoint('big_chances'),
+                        'signal_bases':basis,
+                        'minute_range':f"{min(e['minute'] for e in group)}–{max(e['minute'] for e in group)}" if group else None,
                         'rate_pct':round(100*wins/n,1) if n else None,
                         'wilson_lower_pct':value,'quality_index':quality,
                         'state':'amostra_minima' if dn>=20 else 'amostra_insuficiente',
@@ -52,6 +70,36 @@ def _rank(rows,field,split_day):
                         'test_usable':len(after)>=10 and len(before)>=20})
     return sorted(results,key=lambda x:(x['quality_index'] is None,
                                          -(x['quality_index'] or 0),-x['settled'],x['label']))[:80]
+
+def read_finished_archive(history_dir,as_of=None):
+    """Read-only archive, no files rewritten or records deleted; last 90 calendar days."""
+    today=as_of.date() if isinstance(as_of,datetime) else as_of
+    if today is None:today=datetime.now(timezone.utc).date()
+    cutoff=(today-timedelta(days=89)).isoformat()
+    rows=[]
+    files_seen=files_read=errors=0
+    for path in sorted(Path(history_dir).glob('20??-??-??.json')):
+        if not cutoff<=path.stem<=today.isoformat():continue
+        files_seen+=1
+        try:
+            doc=json.loads(path.read_text(encoding='utf-8'))
+            collection=doc.get('matches') if isinstance(doc,dict) else {}
+            if not isinstance(collection,dict):errors+=1;continue
+            files_read+=1
+            for key,item in collection.items():
+                if not isinstance(item,dict):continue
+                f=item.get('fixture')
+                if not isinstance(f,dict):continue
+                # fixture date, when valid, remains authoritative to avoid UTC day mismatch.
+                row={'id':str(f.get('id') or key),'score':f.get('score'),
+                     'phase':f.get('phase'),'start_timestamp':f.get('start_timestamp')}
+                rows.append(row)
+        except (OSError,ValueError,TypeError,UnicodeError):
+            errors+=1
+    return {'games':rows,'files_seen':files_seen,'files_read':files_read,
+            'files_failed':errors,'from_day':cutoff,'to_day':today.isoformat(),
+            'status':'partial' if errors else 'read_only_complete_available_files'}
+
 
 def _markets(games,cutoff):
     verified={}
@@ -87,7 +135,7 @@ def _markets(games,cutoff):
             'prices':'not_assumed','markets':out,
             'note':'Mercados descritivos por placar final. Sem odds de entrada: não são operações liquidadas nem P/L.'}
 
-def evaluate_v6(journal,games,as_of=None):
+def evaluate_v6(journal,games,as_of=None,historical_archive=None):
     today=as_of.date() if isinstance(as_of,datetime) else as_of
     if today is None:today=datetime.now(timezone.utc).date()
     cutoff=(today-timedelta(days=89)).isoformat()
@@ -98,14 +146,28 @@ def evaluate_v6(journal,games,as_of=None):
     cutoff_test=days[max(1,int(len(days)*0.7))] if len(days)>=4 else None
     rank_signals=_rank(first,'signal',cutoff_test)
     rank_leagues=_rank(first,'league',cutoff_test)
-    return {'schema':1,'name':'NEXUS 6.0','window_minutes':40,'history_days':90,
+    horizon_comparison=[]
+    for minutes in (10,20,30,40):
+        summary=_rollup(first,str(minutes))
+        horizon_comparison.append({'minutes':minutes,**summary})
+    timed=_goal_timing(first)
+    archive=historical_archive if isinstance(historical_archive,dict) else None
+    market_rows=(archive.get('games') or []) if archive else games
+    market_report=_markets(market_rows,cutoff)
+    if archive:
+        market_report['scope']='finished_matches_in_90day_archive_files'
+        market_report['coverage']={key:archive.get(key) for key in
+            ('files_seen','files_read','files_failed','from_day','to_day','status')}
+    return {'schema':2,'name':'NEXUS 6.1','window_minutes':40,'history_days':90,
+            'horizon_comparison':horizon_comparison,
+            'goal_timing':timed,
             'first_day':days[0] if days else None,'last_day':days[-1] if days else None,
             'observed_days':len(days),'distinct_matches':len(first),
             'original_alerts_untouched':True,'first_alert_per_fixture':True,
             'split_date':cutoff_test,'split_rule':'70% primeiros dias / 30% últimos dias, se houver ao menos 4 dias',
             'min_ranking_settled':20,'min_test_settled':10,
             'signal_ranking':rank_signals,'league_ranking':rank_leagues,
-            'markets':_markets(games,cutoff),
+            'markets':market_report,
             'model_status':'descriptive_not_calibrated',
             'quality_formula':'0.75 × limite inferior Wilson 95% + 0.25 × min(amostra,100)',
             'disclaimer':'Índice 0–100 não é probabilidade, odd, EV+ ou previsão de lucro. Teste fora da amostra é histórico, não prospectivo.'}
