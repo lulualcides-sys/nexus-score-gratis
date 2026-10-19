@@ -43,6 +43,16 @@ PRIMARY_LEAGUES=('premier league','bundesliga','la liga','laliga',
  'major league soccer','mls','ligapro argentina','argentina primera')
 
 
+def safe_provider_error(error):
+    """Nunca publicar query string nem token recebido numa excecao da API."""
+    status=getattr(error,'code',None)
+    if isinstance(status,int) and 400<=status<=599:
+        return 'provider_http_'+str(status)
+    if isinstance(error,TimeoutError):
+        return 'provider_timeout'
+    return 'provider_unavailable'
+
+
 def http_json(url):
     req=Request(url,headers={'Accept':'application/json','User-Agent':'NEXUS/6.1-verified-free-odds'})
     with urlopen(req,timeout=9) as resp:raw=resp.read(3200001)
@@ -248,7 +258,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
         if not isinstance(listing,list):raise ValueError('Lista de partidas não retornada')
     except Exception as err:
         result['status']='unavailable'
-        result['errors'].append(str(err)[:130])
+        result['errors'].append(safe_provider_error(err))
         return result
     matched=[]
     for row,fixture,delta in relevant:
@@ -291,6 +301,6 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
                 if phase=='live':result['live_quotes_added']+=count
                 else:result['markets_added']+=count
         except Exception as err:
-            if len(result['errors'])<3:result['errors'].append(str(err)[:130])
+            if len(result['errors'])<3:result['errors'].append(safe_provider_error(err))
     result['status']='checked' if not result['errors'] else 'partial'
     return result
