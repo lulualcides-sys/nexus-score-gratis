@@ -401,6 +401,32 @@ def merge(old,new):
         if isinstance(p,dict) and safe_int(p.get('minute')):observed[int(p['minute'])]=p
     return [observed[k] for k in sorted(observed)]
 
+def scout_priority(game,old):
+    """Preferir scouts realmente observados sem inventar pressao ou ignorar jogos novos.
+
+    Jogos que nunca foram consultados tem prioridade inicial. Fontes com scouts
+    verificaveis merecem atualizacoes mais frequentes; sem dados entram no rodizio.
+    """
+    old=old if isinstance(old,dict) else {}
+    minute=int(game.get('minute') or 0)
+    diagnosis=(old.get('momentum_diagnostic') or {}).get('state')
+    points=(old.get('thermometer') or {}).get('points') or []
+    last_pressure=max((int(p.get('minute') or p.get('m') or 0)
+                       for p in points if isinstance(p,dict)),default=0)
+    observations=old.get('observations') or []
+    last=str((observations[-1] or {}).get('at') or '') if observations else ''
+    scouts=(old.get('stats') or {})
+    measured=any(isinstance(scouts.get(side),dict) and
+                 any(v is not None for v in scouts[side].values())
+                 for side in ('home','away'))
+    snapshots=bool(old.get('scout_snapshots'))
+    if last_pressure and minute-last_pressure>=3: group=0
+    elif not last:group=1
+    elif measured or snapshots:group=2
+    elif diagnosis=='not_provided':group=4
+    else:group=3
+    return (group,last,-minute)
+
 def run():
     HISTORY.mkdir(exist_ok=True)
     file=HISTORY/(DAY+'.json')
@@ -436,32 +462,16 @@ def run():
         (fixtures.get(g['id']) or {}).get('thermometer',{}).get('points') and
         not (fixtures.get(g['id']) or {}).get('events')]
     extra=sorted(recent_with_pressure,key=lambda g:g.get('start_timestamp') or 0,reverse=True)[:2]
-    # Coleta de scouts em ciclos de dez minutos: alterna jogos por hora
-    # da última verificação; não deixa os mesmos três fixos para sempre.
-    def last_capture(game):
-        old=fixtures.get(game['id']) or {}
-        obs=old.get('observations') or []
-        return str((obs[-1] or {}).get('at') or '') if obs else ''
+    # Rodizio de consultas com retorno esportivo conhecido e jogos novos.
     def priority(game):
-        old=fixtures.get(game['id']) or {}
-        diagnosis=(old.get('momentum_diagnostic') or {}).get('state')
-        prior=(old.get('thermometer') or {}).get('points') or []
-        last_pressure=max((int(p.get('minute') or p.get('m') or 0) for p in prior
-                           if isinstance(p,dict)),default=0)
-        seen=last_capture(game)
-        # Sinais com pressão já observada mas atrasada merecem prioridade.
-        # Jogos novos recebem uma consulta inicial; sem cobertura conhecida
-        # ficam no rodízio, sem bloquear as partidas com pressão real.
-        group=0 if last_pressure and int(game.get('minute') or 0)-last_pressure>=3 else (
-              1 if not seen else 3 if diagnosis=='not_provided' else 2)
-        return (group,seen,-int(game.get('minute') or 0))
+        return scout_priority(game,fixtures.get(game['id']) or {})
     rotating=sorted(live,key=priority)
     chosen=rotating[:(18 if LIVE_MODE else 12)]
     details_to_check=chosen+([] if LIVE_MODE else [
         g for g in extra if g['id'] not in {x['id'] for x in chosen}])
     status['live_detail_candidates']=len(live)
     status['live_detail_selected']=len(chosen)
-    status['coverage_policy']='Rodízio de até 18 jogos na rodada rápida (12 na padrão): pressão real atrasada e jogos novos primeiro; sem interpolar ausência da fonte'
+    status['coverage_policy']='Rodízio por scout observado, pressão atrasada e primeira consulta. Jogos sem dados continuam no rodízio; sem interpolar ausência da fonte'
     for match in details_to_check:
         if time.monotonic()>DEADLINE:break
         if not match['id'].startswith('fotmob-'):continue
