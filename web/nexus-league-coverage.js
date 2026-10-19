@@ -60,10 +60,14 @@ function observationFreshness(value,nowSec=Date.now()/1000,maxMinutes=20){
  return lag<=maxMinutes*60000?'fresh':'stale';
 }
 function sourceFreshness(g,nowSec=Date.now()/1000){
- const observed=observationFreshness(g?.observed_at,nowSec);
- const statsAt=g?.stats_observed_at||(g?.scoreboard_stats?g?.observed_at:null);
+ // Compatibilidade com nomes reais dos timestamps usados pelos adaptadores.
+ const recorded=g?.observed_at||g?.collected_at||g?.fixture?.collected_at;
+ const observed=observationFreshness(recorded,nowSec);
+ const statsAt=g?.stats_observed_at||g?.stats_updated_at||
+               (g?.scoreboard_stats?recorded:null);
+ const pressureAt=g?.pressure_observed_at||g?.pressure_updated_at;
  return {observed,stats:observationFreshness(statsAt,nowSec),
-         pressure:observationFreshness(g?.pressure_observed_at,nowSec)};
+         pressure:observationFreshness(pressureAt,nowSec)};
 }
 function coverageStatus(g,nowSec=Date.now()/1000){
  if(!category(g?.league))return 'insuficiente';
