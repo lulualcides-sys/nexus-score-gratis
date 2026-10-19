@@ -3,7 +3,8 @@
 The feed is periodic, not a real-time sportsbook API. This module exports
 health/freshness metadata rather than assigning probabilities or EV.
 """
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from oddspapi_odds import MONTHLY_BUDGET, SLOTS_UTC
 import math
 
 def timestamp(value):
@@ -57,7 +58,40 @@ def live_league_quality(fresh_games,now_ts,limit=16):
     return results[:limit]
 
 
-def quality_report(games,collector,pregame,now_ts):
+def odds_budget_health(now_ts,ledger=None,historical=None):
+    """Resumo PUBLICO do limite autoimposto, sem IDs, chaves ou URLs."""
+    ledger=ledger if isinstance(ledger,dict) else {}
+    historical=historical if isinstance(historical,dict) else {}
+    date=datetime.fromtimestamp(now_ts,timezone.utc)
+    month=date.strftime('%Y-%m')
+    recorded=ledger.get('month')==month
+    try:
+        consumed=int(ledger.get('requests') or 0) if recorded else 0
+    except (TypeError,ValueError,OverflowError):consumed=0
+    consumed=max(0,min(consumed,MONTHLY_BUDGET))
+    next_slot=None
+    for offset in (0,1):
+        day=date+timedelta(days=offset)
+        for hour in SLOTS_UTC:
+            candidate=day.replace(hour=hour,minute=0,second=0,microsecond=0)
+            if candidate>date:
+                next_slot=candidate.isoformat()
+                break
+        if next_slot:break
+    attempts=historical.get('attempts') or {}
+    if not isinstance(attempts,dict):attempts={}
+    successful=sum(bool(v.get('result')=='collected') for v in attempts.values() if isinstance(v,dict))
+    return {'status':'recorded' if recorded else 'no_monthly_record',
+            'monthly_limit_conservative':MONTHLY_BUDGET,
+            'used_this_month':consumed,'remaining_this_month':MONTHLY_BUDGET-consumed,
+            'next_collection_window_utc':next_slot,
+            'historical_attempts':len(attempts),
+            'historical_collected':successful,
+            'historical_status':'recorded' if attempts else 'not_yet_recorded',
+            'note':'Limite conservador da automacao, nao saldo oficial do provedor. Sem extrair chave, IDs ou preco ficticio.'}
+
+
+def quality_report(games,collector,pregame,now_ts,odds_usage=None,historical_status=None):
     """Describe coverage denominators and provider problems explicitly."""
     games=games if isinstance(games,list) else []
     collector=collector if isinstance(collector,dict) else {}
@@ -86,6 +120,7 @@ def quality_report(games,collector,pregame,now_ts):
     errors=[str(e)[:110] for e in (pregame.get('errors') or []) if isinstance(e,str)]
     return {
       'scope':'observed_data_quality_not_ev',
+      'odds_budget_health':odds_budget_health(now_ts,odds_usage,historical_status),
       'as_of':datetime.fromtimestamp(now_ts,timezone.utc).isoformat(),
       'collector_freshness':freshness(collector.get('updated_at'),now_ts,20),
       'odds_collector_freshness':freshness(pregame.get('updated_at'),now_ts,180),
