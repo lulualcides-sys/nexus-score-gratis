@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:37:42.282852+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:39:48.766699+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -10,13 +10,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-19 | Deportivo Cali × Junior FC | 0-0 | 45 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-19 | Monterrey × Pachuca | 2-0 | 45 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 4.0×0.0 |
+| 2026-10-19 | Deportivo Cali × Junior FC | 0-0 | 56 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-19 | Monterrey × Pachuca | 2-0 | 65 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-19 | Cienciano × CD UT Cajamarca | 1-0 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 13.0×6.0, Escanteios: 5.0×1.0, Grandes chances: 7.0×0.0 |
 | 2026-10-19 | Guabirá × Oriente Petrolero | 1-1 | 0 | Chutes no alvo: 2.0×6.0, Chutes para fora: 6.0×7.0, Escanteios: 4.0×6.0, Grandes chances: 1.0×1.0 |
 | 2026-10-19 | Corinthians × Caracas FC | 7-0 | 0 | Chutes no alvo: 11.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-19 | Independiente del Valle × Universitario Deportes | 4-2 | 0 | Chutes no alvo: 9.0×3.0, Chutes para fora: 10.0×5.0, Escanteios: 5.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-19 | Austin FC II × San Jose Earthquakes II | 1-1 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×4.0, Grandes chances: 2.0×0.0 |
+| 2026-10-19 | Austin FC II × San Jose Earthquakes II | 2-1 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-19 | Deportivo Marquense × CD Suchitepéquez | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CSD Municipal × Guastatoya | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CD FAS × CD Platense Municipal | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -74,11 +74,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-18 | Independiente Medellín × Once Caldas | 0-2 | 88 | Chutes no alvo: 3.0×5.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-10-18 | Bucaramanga × América de Cali | 1-1 | 90 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×2.0 |
 | 2026-10-18 | Llaneros FC × Santa Fe | 1-0 | 86 | Chutes no alvo: 10.0×3.0, Chutes para fora: 6.0×3.0, Escanteios: 7.0×3.0, Grandes chances: 3.0×2.0 |
-| 2026-10-18 | Deportivo Cali × Junior FC | 0-0 | 45 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-18 | Deportivo Cali × Junior FC | 0-0 | 56 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | León × CF América | 3-5 | 88 | Chutes no alvo: 6.0×9.0, Chutes para fora: 1.0×5.0, Escanteios: 6.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-18 | Toluca × Atlético de San Luis | 1-1 | 90 | Chutes no alvo: 7.0×5.0, Chutes para fora: 11.0×9.0, Escanteios: 15.0×2.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Cruz Azul × FC Juárez | 5-0 | 90 | Chutes no alvo: 9.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×7.0, Grandes chances: 5.0×1.0 |
-| 2026-10-18 | Monterrey × Pachuca | 2-0 | 45 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 4.0×0.0 |
+| 2026-10-18 | Monterrey × Pachuca | 2-0 | 65 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 5-1 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Novi Pazar × FK IMT Beograd | 1-2 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 1-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 1.0×5.0, Escanteios: 2.0×5.0, Grandes chances: 1.0×0.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4143 | **Jogos distintos:** 1276 | **Resultados verificáveis:** 2317 | **Com gol:** 797 | **Sem gol:** 1520 | **Taxa observada:** 34.4%.
-**Evolução da amostra:** 10 datas com coletas | 14 pendentes | 785 indeterminados | 1027 incompletos.
+**Observações:** 4145 | **Jogos distintos:** 1277 | **Resultados verificáveis:** 2319 | **Com gol:** 799 | **Sem gol:** 1520 | **Taxa observada:** 34.5%.
+**Evolução da amostra:** 10 datas com coletas | 11 pendentes | 788 indeterminados | 1027 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,8 +179,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 796 | 544 | 205 | 339 | 37.7% |
 | ⚡ pressao_ofensiva_18 | 602 | 396 | 129 | 267 | 32.6% |
 | 🟥 expulsao_confirmada | 724 | 340 | 105 | 235 | 30.9% |
-| 🎯 chutes_no_alvo_5 | 671 | 329 | 105 | 224 | 31.9% |
-| 🚩 escanteios_6 | 524 | 245 | 87 | 158 | 35.5% |
+| 🎯 chutes_no_alvo_5 | 672 | 330 | 106 | 224 | 32.1% |
+| 🚩 escanteios_6 | 525 | 246 | 88 | 158 | 35.8% |
 | 💣 grandes_chances_3 | 417 | 217 | 85 | 132 | 39.2% |
 | 🔥 pressao_forte_10min | 196 | 123 | 45 | 78 | 36.6% |
 | 🧨 pressao_total_5_10min | 110 | 69 | 21 | 48 | 30.4% |
@@ -256,18 +256,20 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 629 | 494 | 208 | 286 | 42.1% |
 | 46–60′ | 633 | 484 | 173 | 311 | 35.7% |
 | 61–75′ | 897 | 613 | 185 | 428 | 30.2% |
-| 76–90′ | 1126 | 383 | 110 | 273 | 28.7% |
+| 76–90′ | 1128 | 385 | 112 | 273 | 29.1% |
 | 91+′ | 398 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4143 | **Jogos monitorados:** 1730 | **Ao vivo:** 26 | **Termômetros recentes:** 11.
+**Registros:** 4145 | **Jogos monitorados:** 1730 | **Ao vivo:** 26 | **Termômetros recentes:** 11.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-19T02:37:07.505894+00:00 | Austin FC II × San Jose Earthquakes II | Austin FC II (86') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-19T02:37:07.505894+00:00 | Austin FC II × San Jose Earthquakes II | San Jose Earthquakes II (86') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-19T02:17:13.110980+00:00 | Deportivo Cali × Junior FC | Junior FC (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T02:11:50.845899+00:00 | Monterrey × Pachuca | Monterrey (41') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T02:11:50.845899+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (81') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T21:57:16.100347+00:00 | Estudiantes × San Lorenzo | Estudiantes (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T21:57:16.100347+00:00 | FC Cincinnati × Columbus Crew | FC Cincinnati (45') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-18T21:57:16.100347+00:00 | FC Cincinnati × Columbus Crew | FC Cincinnati (45') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T21:57:16.100347+00:00 | FC Cincinnati × Columbus Crew | FC Cincinnati (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T21:57:16.100347+00:00 | Bahia × Flamengo | Flamengo (27') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
