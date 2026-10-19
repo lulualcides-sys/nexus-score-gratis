@@ -11,7 +11,7 @@ const agenda={league:'Copa do Brasil',phase:'scheduled',start_timestamp:17925000
 const noCoverage={league:'La Liga',phase:'live',stats:{home:{},away:{}}};
 assert.equal(c.level(match),2);
 assert.equal(c.coverageStatus(match),'parcial');
-assert.equal(c.coverageStatus({...match,pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
+assert.equal(c.coverageStatus({...match,phase:'finished',pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
   stats:{home:{shots_on:2,corners:3},away:{shots_on:0,corners:1}}}),'completa');
 assert.equal(c.coverageStatus(noCoverage),'insuficiente');
 assert.equal(c.level(agenda),1);
