@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone, timedelta
-from source_health import quality_report, freshness
+from source_health import quality_report, freshness, odds_budget_health
 NOW=int(datetime(2026,10,19,16,tzinfo=timezone.utc).timestamp())
 def at(seconds):return datetime.fromtimestamp(NOW-seconds,timezone.utc).isoformat()
 def live(match_id,age=70,scouts_age=70,pressure=True):
@@ -63,4 +63,22 @@ class SourceHealthTests(unittest.TestCase):
     self.assertEqual(by['Liga B']['fresh_live_games'],1)
     self.assertEqual(by['Liga B']['with_recent_pressure'],0)
     self.assertEqual(sum(x['fresh_live_games'] for x in r['live_by_league']),r['live_fresh'])
+ def test_free_budget_and_history_sanitized(self):
+    ledger={'month':'2026-10','requests':3,'slots':{'private-metadata':'ignored'}}
+    private={'attempts':{'id123SECRET':{'result':'collected'},
+                         'id456SECRET':{'result':'no_prices'}}}
+    stat=odds_budget_health(NOW,ledger,private)
+    self.assertEqual(stat['used_this_month'],3)
+    self.assertEqual(stat['remaining_this_month'],183)
+    self.assertEqual(stat['historical_collected'],1)
+    self.assertEqual(stat['historical_attempts'],2)
+    self.assertTrue(stat['next_collection_window_utc'].startswith('2026-10-19T21:'))
+    self.assertNotIn('id123SECRET',str(stat))
+    self.assertNotIn('private-metadata',str(stat))
+ def test_expired_month_and_unseen_historical_stay_unverified(self):
+    stat=odds_budget_health(NOW,{'month':'2026-09','requests':186},{})
+    self.assertEqual(stat['status'],'no_monthly_record')
+    self.assertEqual(stat['used_this_month'],0)
+    self.assertEqual(stat['historical_status'],'not_yet_recorded')
+    self.assertNotIn('apiKey',str(stat))
 if __name__=='__main__':unittest.main()
