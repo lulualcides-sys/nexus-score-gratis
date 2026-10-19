@@ -221,11 +221,19 @@
       };
       if(lineup&&(lineup.starters||[]).length){
         const formation=lineup.formation?' · Formação '+esc(lineup.formation):'';
+        const normalize=x=>String(x||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]/g,'');
+        const named=[...(lineup.starters||[]),...(lineup.subs||[])].map(x=>normalize(x.name));
+        const focus=[leaders.goals?.name,leaders.assists?.name,star.player].filter(Boolean);
+        const missingPlayers=[...new Set(focus.map(x=>String(x)))].filter(x=>!named.includes(normalize(x)));
+        const absences=lineup.status==='confirmed'&&missingPlayers.length?
+          '<p class="md-note"><b>Jogadores de destaque não relacionados nesta escalação:</b> '+
+          missingPlayers.map(esc).join(', ')+
+          '. Não confirma lesão, suspensão ou ausência no clube.</p>':'';
         const section=(name,players)=>'<div class="md-roster-section"><h4>'+esc(name)+'</h4>'+
           players.map(p=>'<div class="md-roster-player"><b>'+esc(p.number||'•')+
           '</b><span>'+esc(p.name)+decorate(p)+'</span></div>').join('')+'</div>';
         return '<article class="md-form-team">'+heading+badges+highlight+missing+
-          '<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação não confirmada')+
+          absences+'<p class="md-muted">'+esc(lineup.status==='confirmed'?'Escalação OFICIAL':'Escalação não confirmada')+
           ' · FotMob'+formation+'. Sem saída registrada não garante presença atual.</p>'+
           section(lineup.status==='confirmed'?'Titulares confirmados':'Jogadores informados (não confirmados)',lineup.starters||[])+
           ((lineup.subs||[]).length?section('Reservas',lineup.subs):'')+'</article>';

@@ -18,4 +18,6 @@ assert.match(html,/if\(path==='\/api\/github-collector'\)return json\(\{/);
 assert.match(html,/intelligence_v6/);
 assert.match(html,/connected:true/);
 assert.match(html,/\.\.\.doc,/);
+assert.match(fs.readFileSync(new URL('../web/nexus-intelligence-v6.js',import.meta.url),'utf8'),/nexus-v61-horizons/);
+assert.match(fs.readFileSync(new URL('../web/nexus-intelligence-v6.js',import.meta.url),'utf8'),/nexusV61Filters/);
 console.log('NEXUS 6.0: cenários financeiros hipotéticos, ligação e segurança OK');

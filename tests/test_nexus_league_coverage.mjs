@@ -10,6 +10,10 @@ const match={league:'Premier League',phase:'live',stats:{home:{shots_on:0},away:
 const agenda={league:'Copa do Brasil',phase:'scheduled',start_timestamp:1792500000,home:'Casa',away:'Fora',source:'ESPN'};
 const noCoverage={league:'La Liga',phase:'live',stats:{home:{},away:{}}};
 assert.equal(c.level(match),2);
+assert.equal(c.coverageStatus(match),'parcial');
+assert.equal(c.coverageStatus({...match,pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
+  stats:{home:{shots_on:2,corners:3},away:{shots_on:0,corners:1}}}),'completa');
+assert.equal(c.coverageStatus(noCoverage),'insuficiente');
 assert.equal(c.level(agenda),1);
 assert.equal(c.visible(noCoverage),false);
 assert.equal(c.visible({...match,league:'League Two'}),false);

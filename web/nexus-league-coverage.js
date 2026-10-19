@@ -51,17 +51,32 @@ function level(g){
  return agenda(g)?1:0;
 }
 const visible=g=>level(g)>0;
+function coverageStatus(g){
+ if(!category(g?.league))return 'insuficiente';
+ const stats=g.scoreboard_stats||g.stats||{};
+ const keys=['shots_on','shots_total','corners','big_chances','possession','xg'];
+ const count=s=>keys.filter(k=>num(stats[s]?.[k])).length;
+ const p=g.pressure||g.thermometer;
+ const hasPressure=(Array.isArray(p)&&p.length>=3)||
+   (Array.isArray(p?.points)&&p.points.length>=3)||
+   (num(p?.samples)&&Number(p.samples)>=3);
+ if(hasPressure&&count('home')>=2&&count('away')>=2)return 'completa';
+ if(visible(g))return 'parcial';
+ return 'insuficiente';
+}
 function leagueStats(games){
  const groups=new Map();
  for(const g of games||[]){
    if(!category(g?.league))continue;
-   const x=groups.get(g.league)||{league:g.league,covered:0,measured:0};
+   const x=groups.get(g.league)||{league:g.league,covered:0,measured:0,completa:0,parcial:0,insuficiente:0,total:0};
+   x.total++;
+   x[coverageStatus(g)]++;
    if(visible(g))x.covered++;
    if(level(g)===2)x.measured++;
    groups.set(g.league,x);
  }
  return [...groups.values()].filter(x=>x.covered>0).sort((a,b)=>b.measured-a.measured||b.covered-a.covered||a.league.localeCompare(b.league,'pt-BR'));
 }
-root.NexusLeagueCoverage={category,level,visible,leagueStats,measured};
+root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);

@@ -23,3 +23,14 @@
 @media(max-width:700px){.nexus-v6{padding:11px}.nexus-v6-head{flex-direction:column}
 .nexus-v6-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
 .nexus-v6-markets{grid-template-columns:1fr}.nexus-v6-sim label{display:flex}}
+
+/* NEXUS 6.1 — comparação temporal e motivos do radar */
+.nexus-v61-horizons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:11px 0 17px}
+.nexus-v61-horizon{display:flex;flex-direction:column;gap:5px;padding:12px;border:1px solid #38687d;border-radius:9px;background:#19384a}
+.nexus-v61-horizon b{font-size:12px}.nexus-v61-horizon span{font-size:11px;color:#bfdeec}.nexus-v61-horizon strong{font-size:23px;color:#88e7ce}
+.nexus-v61-horizon small{font-size:10px;opacity:.82}
+.nexus-v61-context{display:block;color:#99d3ed;font-size:11px;font-weight:400;margin-top:4px}
+.nexus-coverage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:10px 0}
+.nexus-coverage-grid>div{display:grid;gap:5px;border:1px solid #426679;border-radius:8px;padding:8px}
+.nexus-coverage-grid span{font-size:11px}
+@media(max-width:720px){.nexus-v61-horizons{grid-template-columns:repeat(2,minmax(0,1fr))}.nexus-coverage-grid{grid-template-columns:1fr}}
