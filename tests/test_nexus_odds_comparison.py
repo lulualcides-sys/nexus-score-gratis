@@ -58,4 +58,14 @@ class BestPriceTests(unittest.TestCase):
         self.assertEqual({x['market'] for x in compared},
                          {'over_under_15','over_under_35'})
         self.assertEqual(len(compared),2)
+    def test_asian_lines_not_crossed_between_markets(self):
+        f={'phase':'scheduled','start_timestamp':int(self.t+1800)}
+        q=[self.quote('Pinnacle',1.92,self.now-timedelta(minutes=1),
+                      market='ah_m05',sel='home'),
+           self.quote('Pinnacle',2.15,self.now-timedelta(minutes=1),
+                      market='ah_p05',sel='home')]
+        result=public_odds_comparison(q,f,'pregame',self.t)
+        self.assertEqual({x['market'] for x in result},{'ah_m05','ah_p05'})
+        self.assertEqual(len(result),2)
+
 if __name__=='__main__':unittest.main()

@@ -256,4 +256,20 @@ class OddsPapiFreeTests(unittest.TestCase):
         found={market for market,_,_ in available_extra_markets(p,NOW)}
         self.assertNotIn('over_under_35',found)
         self.assertIn('over_under_15',found)
+    def test_asian_handicap_multiple_lines_from_single_response(self):
+        item=pricepacket()
+        market=item['bookmakerOdds']['betano.bet.br']['markets']
+        def val(odd):return {'players':{'0':{'active':True,'price':odd,
+                                'changedAt':date(NOW-80)}}}
+        for mid,home,away in [('1068','1068','1069'),('1076','1076','1077'),
+                              ('1064','1064','1065')]:
+            market[mid]={'marketActive':True,'outcomes':{home:val(1.84),
+                                                         away:val(1.94)}}
+        found={name:values for name,values,book in available_extra_markets(item,NOW)}
+        for label in ('ah_m05','ah_p05','ah_m1'):
+            self.assertEqual(found[label],{'home':1.84,'away':1.94})
+        market['1068']['outcomes']['1069']['players']['0']['active']=False
+        self.assertNotIn('ah_m05',{name for name,_,_ in available_extra_markets(item,NOW)})
+        self.assertIn('ah_m1',{name for name,_,_ in available_extra_markets(item,NOW)})
+
 if __name__=='__main__':unittest.main()

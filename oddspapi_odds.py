@@ -29,6 +29,10 @@ EXTRA_SPECS={
     'over_under_15':('1012',{'1012':'over','1013':'under'}),
     'over_under_35':('1014',{'1014':'over','1015':'under'}),
     'btts':('104',{'104':'yes','105':'no'}),
+    # Asian Handicap: mesmo mercado e mesma linha em ambas selecoes.
+    'ah_m05':('1068',{'1068':'home','1069':'away'}),
+    'ah_p05':('1076',{'1076':'home','1077':'away'}),
+    'ah_m1':('1064',{'1064':'home','1065':'away'}),
 }
 # No Asian Handicap 0, identificar a selecao apenas pelo identificador
 # explicitamente fornecido pelo operador (home/away), nunca pela ordem.

@@ -86,6 +86,9 @@ EXTRA_MARKETS={
     'over_under_35':('over','under'),
     'btts':('yes','no'),
     'ah_0':('home','away'),
+    'ah_m05':('home','away'),
+    'ah_p05':('home','away'),
+    'ah_m1':('home','away'),
 }
 def append_market_group(row,market,prices,bookmaker,source,now_ts,phase='pregame'):
     if market not in EXTRA_MARKETS and market!='1x2':return 0

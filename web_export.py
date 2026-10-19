@@ -447,6 +447,9 @@ ODDS_SELECTIONS={
  'over_under_35':('over','under'),
  'btts':('yes','no'),
  'ah_0':('home','away'),
+ 'ah_m05':('home','away'),
+ 'ah_p05':('home','away'),
+ 'ah_m1':('home','away'),
 }
 def public_odds_comparison(quotes,fixture,phase,now_ts):
     """Comparacao de precos reais, por fase, sem misturar casas e horarios."""
