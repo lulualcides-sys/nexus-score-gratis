@@ -799,57 +799,121 @@ def live_delta_alert(game,now_ts):
                      '). Minuto dos lances desconhecido; nao e previsao de gol ou EV+.',
             'observed_at':trend['to_at']}
 
-def alerts_from(rows):
+def recent_observation(value,now_ts,limit_minutes=20):
+    """Sem hora observada e fonte recente, nenhum evento recebe rotulo 'ao vivo'."""
+    try:
+        at=datetime.fromisoformat(str(value).replace('Z','+00:00'))
+        if at.tzinfo is None:return False
+        age=now_ts-at.timestamp()
+        return -120<=age<=limit_minutes*60
+    except (ValueError,TypeError,OverflowError):
+        return False
+
+def observed_milestones(g,now_ts):
+    """Alertas de marco so com transicao de contadores REAIS entre capturas."""
+    if g.get('phase')!='live':return []
+    snapshots=g.get('scout_snapshots') or []
+    if not isinstance(snapshots,list) or len(snapshots)<2:return []
+    a,b=snapshots[-2:]
+    if not isinstance(a,dict) or not isinstance(b,dict):return []
+    if (a.get('source')!=b.get('source') or
+        not recent_observation(b.get('at'),now_ts,20)):return []
+    try:
+        t1=datetime.fromisoformat(str(a['at']).replace('Z','+00:00')).timestamp()
+        t2=datetime.fromisoformat(str(b['at']).replace('Z','+00:00')).timestamp()
+    except (ValueError,TypeError,OverflowError,KeyError):return []
+    if not 0<t2-t1<=40*60:return []
+    found=[]
+    for key,limit,title in [('shots_on',7,'Sete chutes no alvo'),
+                            ('corners',9,'Nove escanteios')]:
+        totals=[]
+        for item in (a,b):
+            stats=item.get('stats') or {}
+            team=[]
+            for side in ('home','away'):
+                val=number((stats.get(side) or {}).get(key))
+                if val is None or val<0:team=[];break
+                team.append(val)
+            totals.append(sum(team) if len(team)==2 else None)
+        previous,current=totals
+        if previous is None or current is None or not previous<limit<=current:continue
+        found.append({'kind':'stat_milestone','match_id':g.get('id'),'day':g.get('day'),
+                      'title':title+' observados · '+safe(g.get('home'))+' × '+safe(g.get('away')),
+                      'detail':str(int(previous))+' → '+str(int(current))+
+                        ' entre duas coletas ('+safe(b.get('source'),40)+
+                        '). Nao ha minuto exato confirmado nem EV+.',
+                      'observed_at':b['at']})
+    return found
+
+def alerts_from(rows,now_ts=None):
+    now_ts=datetime.now(timezone.utc).timestamp() if now_ts is None else now_ts
     alerts=[]
     for g in rows:
-        if len(alerts)>=35:break
-        if g['phase']=='finished':continue
-        for s in g['signals']:
-            if (s['status']=='pending' and s['ev_pct']>5 and
-                s.get('model_validated') is True and s.get('probability_calibrated') is True):
-                alerts.append({'kind':'ev_experimental','match_id':g['id'],'day':g['day'],
-                               'title':'EV experimental '+s['selection'].upper()+' · '+safe(g['home'])+' × '+safe(g['away']),
-                               'detail':'EV '+str(s['ev_pct'])+'% · odd '+str(s['odds'])+
-                                        ' · modelo '+safe(s['model'])+' (nao validado)',
-                               'observed_at':s['captured_at']})
-        if g['phase']=='scheduled':
-            for change in (g.get('odds_movements') or [])[:2]:
-                alerts.append({'kind':'odds_movement','match_id':g['id'],'day':g['day'],
-                    'title':'Mudanca de odd '+safe(change['bookmaker'],35)+' · '+safe(g['home'])+' × '+safe(g['away']),
-                    'detail':str(change['selection'])+' '+str(change['first_odd'])+' → '+str(change['last_odd'])+
-                        ' ('+str(change['change_pct'])+'%) · '+safe(change['source'],24)+
-                        ' · horario: '+str(change['last_at'])+
-                        '. Movimento observado, nao implica EV+.',
-                    'observed_at':change['last_at']})
-            lineups=g.get('lineups') or {}
-            if all((lineups.get(side) or {}).get('status')=='confirmed' and
-                   len((lineups.get(side) or {}).get('starters') or [])>=9
-                   for side in ('home','away')):
-                alerts.append({'kind':'lineups_confirmed','match_id':g['id'],'day':g['day'],
-                    'title':'Escalacoes confirmadas · '+safe(g['home'])+' × '+safe(g['away']),
-                    'detail':'Onze inicial confirmado pelas fontes disponiveis. Confira titulares no detalhe antes da partida.',
-                    'observed_at':(lineups.get('home') or {}).get('updated_at') or g.get('observed_at')})
-        if g['phase']=='scheduled' and g['odds'] and not g['signals']:
-            quotes=', '.join(x['sel']+' '+str(x['odd']) for x in g['odds'][:3])
-            alerts.append({'kind':'odds_watch','match_id':g['id'],'day':g['day'],
-                           'title':'Cotações 1X2 · '+g['home']+' × '+g['away'],
-                           'detail':quotes+'. Sem probabilidade validada: EV+ indisponível.',
-                           'observed_at':g['odds'][0].get('at')})
-        if g['phase']=='live':
-            delta=live_delta_alert(g,datetime.now(timezone.utc).timestamp())
+        if not isinstance(g,dict) or g.get('phase')=='finished':continue
+        phase=g.get('phase')
+        if phase=='live':
+            # Dados de ontem, minutos atrasados ou sem hora verificada nao
+            # disparam alertas ao vivo ao carregar o site novamente.
+            if not recent_observation(g.get('observed_at'),now_ts,20):continue
+            delta=live_delta_alert(g,now_ts)
             if delta:alerts.append(delta)
-            on=[number((g['stats'].get(side) or {}).get('shots_on')) for side in ('home','away')]
-            corners=[number((g['stats'].get(side) or {}).get('corners')) for side in ('home','away')]
-            if all(x is not None for x in on) and sum(on)>=7:
-                alerts.append({'kind':'stat_watch','match_id':g['id'],'day':g['day'],
-                               'title':'Finalizacoes no alvo · '+g['home']+' × '+g['away'],
-                               'detail':str(int(sum(on)))+' chutes no alvo registrados. Somente monitoramento; EV nao calculado.',
-                               'observed_at':g['observed_at']})
-            if all(x is not None for x in corners) and sum(corners)>=9:
-                alerts.append({'kind':'stat_watch','match_id':g['id'],'day':g['day'],
-                               'title':'Escanteios · '+g['home']+' × '+g['away'],
-                               'detail':str(int(sum(corners)))+' escanteios registrados. Somente monitoramento; EV nao calculado.',
-                               'observed_at':g['observed_at']})
+            alerts.extend(observed_milestones(g,now_ts))
+            continue
+        if phase!='scheduled':continue
+        try:kickoff=int(g.get('start_timestamp') or 0)
+        except (ValueError,TypeError):continue
+        if not 0<kickoff-now_ts<=6*3600:continue
+        for change in (g.get('odds_movements') or [])[:2]:
+            if not isinstance(change,dict) or not recent_observation(change.get('last_at'),now_ts,30):continue
+            alerts.append({'kind':'odds_movement','match_id':g.get('id'),'day':g.get('day'),
+                'title':'Mudanca de odd '+safe(change.get('bookmaker'),35)+' · '+
+                      safe(g.get('home'))+' × '+safe(g.get('away')),
+                'detail':safe(change.get('selection'))+' '+str(change.get('first_odd'))+
+                    ' → '+str(change.get('last_odd'))+' ('+str(change.get('change_pct'))+
+                    '%) · '+safe(change.get('source'),24)+
+                    '. Movimento observado, nao implica EV+.',
+                'observed_at':change['last_at']})
+        lineups=g.get('lineups') or {}
+        if (recent_observation(g.get('observed_at'),now_ts,30) and
+            all((lineups.get(side) or {}).get('status')=='confirmed' and
+                len((lineups.get(side) or {}).get('starters') or [])>=9
+                for side in ('home','away'))):
+            alerts.append({'kind':'lineups_confirmed','match_id':g.get('id'),'day':g.get('day'),
+                'title':'Escalacoes confirmadas · '+safe(g.get('home'))+' × '+safe(g.get('away')),
+                'detail':'Titulares confirmados pela fonte. Confira a escalação antes do início.',
+                'observed_at':g.get('observed_at')})
+        quotes=g.get('odds') or []
+        if (quotes and not g.get('signals') and
+            recent_observation(quotes[0].get('at'),now_ts,90)):
+            labels=[]
+            for q in quotes[:3]:
+                if isinstance(q,dict) and q.get('sel') in ('home','draw','away'):
+                    labels.append(q['sel']+' '+str(q.get('odd')))
+            if labels:
+                alerts.append({'kind':'odds_watch','match_id':g.get('id'),'day':g.get('day'),
+                    'title':'Cotações 1X2 observadas · '+safe(g.get('home'))+' × '+safe(g.get('away')),
+                    'detail':', '.join(labels)+'. Sem probabilidade calibrada: EV+ indisponivel.',
+                    'observed_at':quotes[0]['at']})
+        for signal in g.get('signals') or []:
+            if not isinstance(signal,dict):continue
+            if (signal.get('status')=='pending' and
+                (number(signal.get('ev_pct')) or 0)>5 and
+                signal.get('model_validated') is True and
+                signal.get('probability_calibrated') is True and
+                recent_observation(signal.get('captured_at'),now_ts,30)):
+                alerts.append({'kind':'model_review','match_id':g.get('id'),'day':g.get('day'),
+                    'title':'Avaliação de modelo validado · '+safe(g.get('home'))+' × '+safe(g.get('away')),
+                    'detail':'EV teorico '+str(signal.get('ev_pct'))+'%, odd '+
+                            str(signal.get('odds'))+'. Verificar evidencias antes de qualquer conclusão.',
+                    'observed_at':signal.get('captured_at')})
+    # Ordenar sinais mais especificos antes de cotações rotineiras.
+    importance={'stat_delta':0,'odds_movement':1,'stat_milestone':2,
+                'lineups_confirmed':3,'model_review':4,'odds_watch':5}
+    alerts.sort(key=lambda x:(importance.get(x.get('kind'),9),str(x.get('match_id') or ''),
+                              str(x.get('observed_at') or '')))
+    for item in alerts:
+        item['id']='|'.join(str(item.get(k) or '')[:70] for k in
+                          ('match_id','kind','observed_at'))
     return alerts[:35]
 
 def historical_xg_summary(status):
