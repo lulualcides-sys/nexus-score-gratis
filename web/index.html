@@ -3487,6 +3487,7 @@ function modelValidationHTML(r){
  const n=Number(r.eligible)||0,minimum=Number(r.minimum_for_review)||200;
  const stats=r.overall||{};
  const chrono=r.chronological||{};
+ const binary=Array.isArray(r.binary_markets?.markets)?r.binary_markets.markets:[];
  const number=(x,dec=2)=>x===null||x===undefined||!Number.isFinite(Number(x))?'—':
    Number(x).toLocaleString('pt-BR',{minimumFractionDigits:dec,maximumFractionDigits:dec});
  const league=(r.by_league||[]).filter(x=>x.n>=5).slice(0,5)
@@ -3504,6 +3505,17 @@ function modelValidationHTML(r){
      chrono.beats_prior_results_baseline===false?'Referência menor ou igual erro':'Amostra insuficiente')+'</b></div></div>'+
    '<p>A referência usa somente os resultados anteriores de cada liga, sem conhecer o placar futuro. '+
    'Amostra pequena ou desempenho superior à referência não liberam EV+ automaticamente.</p>'+
+   (binary.length?'<h4>Mercados: gols e ambas marcam</h4>'+
+    '<div class="nexus-model-metrics">'+binary.map(m=>{
+      const chron=m.chronological||{};
+      return '<div><b>'+esc(m.label||m.market||'Mercado')+'</b>'+
+        '<p>Jogos: '+number(m.n,0)+' · Brier '+number(m.brier,3)+
+        ' · erro de calibração '+number(m.calibration_error_pct,1)+'%</p>'+
+        '<p>Teste cronológico: '+number(chron.evaluated,0)+
+        ' jogos · Brier modelo '+number(chron.brier,3)+
+        ' · referência anterior '+number(chron.baseline_brier,3)+'</p>'+
+        '<small>Previsão experimental · não validada para EV+.</small></div>';
+    }).join('')+'</div>':'')+
    '<p>As previsões foram congeladas antes dos jogos e comparadas apenas com placares finais confirmados. '+
    'O histórico NÃO habilita EV+ automaticamente; faltam validação fora da amostra e preços de entrada verificáveis.</p>'+
    (league?'<div class="nexus-model-leagues">'+league+'</div>':'')+'</details>';
