@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T12:52:02.102589+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T13:30:30.363948+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -70,18 +70,18 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-19 | BFC Daugavpils × Auda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Dila Gori × Iberia 1999 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Goiás × Náutico | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Belshina Bobruisk × Slavia Mozyr | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Belshina Bobruisk × Slavia Mozyr | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Dinamo Minsk × Arsenal Dzerzhinsk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Torpedo Zhodino × Naftan Novopolotsk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Viborg × FC Midtjylland | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Monza × Cagliari | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,15, Fora 3,15 |
-| 2026-10-19 | Parma × Torino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Tottenham Hotspur × Coventry City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Petrovac × Otrant | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Parma × Torino | 0-0 | 0 | Match Odds 1X2: Casa 3,05, Empate 2,95, Fora 2,40 |
+| 2026-10-19 | Tottenham Hotspur × Coventry City | 0-0 | 0 | Match Odds 1X2: Casa 1,54, Empate 4,50, Fora 5,75 |
+| 2026-10-19 | Petrovac × Otrant | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sutjeska × FK Bokelj | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rodez × Montpellier | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Wisła Płock × Radomiak Radom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Arsimi × GFK Tikves Kavadarci | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Arsimi × GFK Tikves Kavadarci | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Hapoel Kfar Shalem × Hapoel Ironi Akko | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Hapoel Raanana × Bnei Yehuda Tel Aviv | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Maccabi Bnei Raina × Hapoel Rishon LeZion | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -96,7 +96,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-19 | Deportivo Marquense × CD Suchitepéquez | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CSD Municipal × Guastatoya | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Termalica Nieciecza × Puszcza Niepołomice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Getafe × Rayo Vallecano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Getafe × Rayo Vallecano | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 2,90, Fora 2,65 |
 | 2026-10-19 | Celta Fortuna × Tenerife | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Braga × Gil Vicente | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sūduva × FK Kauno Žalgiris | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -133,7 +133,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-19 | Al-Jahra × Kazma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Cong An Ho Chí Minh City × Viettel | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rivers United FC × Barau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Niki Volou × Panionios | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Niki Volou × Panionios | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | PAOK Thessaloniki B × Kalamaria | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Kuwait SC × Al-Salibikhaet | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Havadar SC × Foolad Khuzestan B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 4157 | **Jogos distintos:** 1280 | **Resultados verificáveis:** 2324 | **Com gol:** 801 | **Sem gol:** 1523 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 11 datas com coletas | 16 pendentes | 784 indeterminados | 1033 incompletos.
+**Evolução da amostra:** 11 datas com coletas | 15 pendentes | 784 indeterminados | 1034 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,13 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4157 | **Jogos monitorados:** 1755 | **Ao vivo:** 23 | **Termômetros recentes:** 5.
+**Registros:** 4157 | **Jogos monitorados:** 1755 | **Ao vivo:** 25 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-19T12:52:38.228106+00:00 | Cong An Ho Chí Minh City × Viettel | Cong An Ho Chí Minh City (93') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-19T12:52:38.228106+00:00 | Cong An Ho Chí Minh City × Viettel | Cong An Ho Chí Minh City (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T11:43:32.753080+00:00 | FC Kharkiv × Liviy Bereh | FC Kharkiv (70') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T04:10:17.029335+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (106') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T03:35:17.439249+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (71') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **156**.
+Jogos com odds registradas nos ultimos dias: **159**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
