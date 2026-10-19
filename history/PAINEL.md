@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T03:23:15.726174+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T03:24:18.886652+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -275,7 +275,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T03:07:01.651760+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T03:07:01.651760+00:00 | Deportivo Cali × Junior FC | Junior FC (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T03:07:01.651760+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-19T03:07:01.651760+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-19T03:07:01.651760+00:00 | Deportivo Marquense × CD Suchitepéquez | CD Suchitepéquez (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T02:37:07.505894+00:00 | Austin FC II × San Jose Earthquakes II | Austin FC II (86') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-19T02:37:07.505894+00:00 | Austin FC II × San Jose Earthquakes II | San Jose Earthquakes II (86') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-19T02:17:13.110980+00:00 | Deportivo Cali × Junior FC | Junior FC (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
