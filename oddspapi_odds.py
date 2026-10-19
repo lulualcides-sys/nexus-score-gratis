@@ -47,8 +47,8 @@ def available_1x2(packet,now_ts):
     """Official OddsPapi market catalog: fulltime=101, 1/X/2=101/102/103.
     Reject undocumented numeric market IDs instead of guessing outcomes.
     """
-    if not isinstance(packet,dict) or not packet.get('hasOdds'):return None
-    if parse_ts(packet.get('startTime')) is None:return None
+    if not isinstance(packet,dict) or not packet.get('hasOdds'):return []
+    if parse_ts(packet.get('startTime')) is None:return []
     offers=[]
     for book in BOOKMAKERS:
         bookmaker=(packet.get('bookmakerOdds') or {}).get(book)
