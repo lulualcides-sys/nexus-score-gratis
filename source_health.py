@@ -92,6 +92,20 @@ def odds_budget_health(now_ts,ledger=None,historical=None):
             'note':'Limite conservador da automacao, nao saldo oficial do provedor. Sem extrair chave, IDs ou preco ficticio.'}
 
 
+def fresh_comparison(game,field,now_ts,max_minutes):
+    """A cotacao só conta se o horario da MELHOR odd for verificável e recente."""
+    entries=game.get(field) or []
+    if not isinstance(entries,list):return False
+    for row in entries:
+        if not isinstance(row,dict):continue
+        best=row.get('best') or {}
+        if not isinstance(best,dict):continue
+        if (isinstance(best.get('odds'),(int,float)) and
+            math.isfinite(best['odds']) and 1.01<best['odds']<1000 and
+            freshness(best.get('at'),now_ts,max_minutes)=='fresh'):
+            return True
+    return False
+
 def quality_report(games,collector,pregame,now_ts,odds_usage=None,historical_status=None):
     """Describe coverage denominators and provider problems explicitly."""
     games=games if isinstance(games,list) else []
@@ -104,8 +118,8 @@ def quality_report(games,collector,pregame,now_ts,odds_usage=None,historical_sta
     pressure=[g for g in fresh if isinstance(g.get('pressure'),list) and
               len(g['pressure'])>0 and freshness(g.get('pressure_observed_at'),now_ts,20)=='fresh']
     prematch=[g for g in games if isinstance(g,dict) and g.get('phase')=='scheduled']
-    live_odds=sum(bool(g.get('live_odds_comparison')) for g in live)
-    pre_odds=sum(bool(g.get('odds_comparison')) for g in prematch)
+    live_odds=sum(fresh_comparison(g,'live_odds_comparison',now_ts,10) for g in fresh)
+    pre_odds=sum(fresh_comparison(g,'odds_comparison',now_ts,180) for g in prematch)
     details=collector.get('details_collected')
     try: details=int(details)
     except (TypeError,ValueError):details=0
@@ -141,6 +155,8 @@ def quality_report(games,collector,pregame,now_ts,odds_usage=None,historical_sta
       'collector_pressure_yield_pct':ratio(momentum,details),
       'pregame_matches_with_price_comparison':pre_odds,
       'live_matches_with_price_comparison':live_odds,
+      'live_odds_recency_minutes':10,
+      'pregame_odds_recency_minutes':180,
       'providers':{
         'fotmob':{'status':'observed' if details else 'no_recent_details',
                   'observed_scouts':measured,'details_queried':details},
