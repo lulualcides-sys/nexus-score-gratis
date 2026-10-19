@@ -3478,6 +3478,14 @@ function sourceHealthHTML(h){
    '<div class="nexus-health-grid">'+cells.map(([name,value])=>
      '<div><small>'+esc(name)+'</small><strong>'+esc(value)+'</strong></div>').join('')+'</div>'+
    '<p>'+statuses.map(([name,status])=>'<b>'+esc(name)+'</b>: '+esc(status||'sem dados')).join(' · ')+'</p>'+
+   (Array.isArray(h.live_by_league)&&h.live_by_league.length?
+    '<details><summary>Cobertura ao vivo por campeonato · '+h.live_by_league.length+
+    ' ligas</summary><div class="nexus-health-grid">'+
+    h.live_by_league.slice(0,16).map(x=>
+      '<div><b>'+esc(x.league)+'</b><small>'+n(x.fresh_live_games)+' jogos frescos</small>'+
+      '<small>Scouts: '+n(x.with_recent_scouts)+' ('+pct(x.scouts_coverage_pct)+')</small>'+
+      '<small>Pressão: '+n(x.with_recent_pressure)+' ('+pct(x.pressure_coverage_pct)+')</small></div>'
+    ).join('')+'</div><small>Porcentagens relativas às partidas ao vivo recentes de cada campeonato; amostras pequenas têm alta incerteza.</small></details>':'')+
    (h.warnings||[]).slice(0,4).map(x=>'<p class="nexus-health-warning">'+esc(x)+'</p>').join('')+
    '<small>Leituras com hora e origem verificáveis; nenhuma pontuação de qualidade é EV+, probabilidade de gol ou liquidez.</small></details>';
 }
