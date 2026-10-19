@@ -2319,7 +2319,8 @@ function baseMatches(){
    const priA=isPriorityLeague(a.league)?0:1, priB=isPriorityLeague(b.league)?0:1;
    const tsA=Number(a.start_timestamp||0), tsB=Number(b.start_timestamp||0);
    const rank=x=>({completa:3,parcial:2,insuficiente:0})[NexusLeagueCoverage.coverageStatus(detailFor(x)||x)]||0;
-   const radar=$('#radar-sort').checked?(rank(b)-rank(a)):0;
+   const quality=x=>NexusLeagueCoverage.analysisPriority(detailFor(x)||x).score;
+   const radar=$('#radar-sort').checked?(quality(b)-quality(a)||rank(b)-rank(a)):0;
    return phaseA-phaseB || radar || priA-priB || tsA-tsB || String(a.league||'').localeCompare(String(b.league||''),'pt-BR');
  });
 }

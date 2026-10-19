@@ -24,6 +24,7 @@ const higher=c.analysisPriority(complete,1792000000);
 const lower=c.analysisPriority(match,1792000000);
 assert.ok(higher.score>lower.score);
 assert.equal(higher.kind,'data_quality_not_betting_signal');
+assert.match(fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8'),/NexusLeagueCoverage\.analysisPriority\(/);
 assert.equal(c.analysisPriority(noCoverage).status,'insuficiente');
 const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 assert.match(html,/NexusLeagueCoverage\.visible\(m\)/);
