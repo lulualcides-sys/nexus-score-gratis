@@ -778,6 +778,14 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 .nexus-coverage-parcial{border:1px solid #937035!important;color:#f0cf8d!important}
 .nexus-coverage-insuficiente{border:1px solid #5b6377!important;color:#a4aec2!important}
 </style>
+<style>
+.nexus-model-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:10px 0}
+.nexus-model-metrics div{border:1px solid #315365;padding:8px;background:#11283a;font-size:11px}
+.nexus-model-metrics b{display:block;color:#8ce5cc;font-size:16px}
+.nexus-model-leagues{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:11px}
+.nexus-model-leagues span{border:1px solid #315365;border-radius:5px;padding:5px}
+@media(max-width:620px){.nexus-model-metrics{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="shell">
@@ -852,6 +860,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-help" id="cloud-status"></div>
         <div id="cloud-feed-freshness" class="nexus-feed-freshness" role="status" aria-live="polite"></div>
         <div id="cloud-league-coverage" class="nexus-feed-freshness" aria-label="Cobertura esportiva dos campeonatos"></div>
+        <div id="cloud-model-validation" class="nexus-feed-freshness" aria-label="Acurácia e calibração das previsões históricas"></div>
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
@@ -3397,6 +3406,26 @@ function renderCloudSignalJournal(journal){
    '<p class="cloud-audit-note">Nenhum alerta capturado.</p>');
 }
 let cloudVisibleLimit=40;
+
+function modelValidationHTML(r){
+ if(!r||typeof r!=='object')return '<p>Calibração ainda não calculada. EV+ indisponível.</p>';
+ const n=Number(r.eligible)||0,minimum=Number(r.minimum_for_review)||200;
+ const stats=r.overall||{};
+ const number=(x,dec=2)=>x===null||x===undefined||!Number.isFinite(Number(x))?'—':
+   Number(x).toLocaleString('pt-BR',{minimumFractionDigits:dec,maximumFractionDigits:dec});
+ const league=(r.by_league||[]).filter(x=>x.n>=5).slice(0,5)
+   .map(x=>'<span>'+esc(x.league)+': '+esc(x.n)+' jogos · Brier '+number(x.brier,3)+'</span>').join('');
+ return '<details><summary>Validação histórica da IA · '+n+' de '+minimum+
+   ' jogos mínimos para revisão · '+(r.validated?'VALIDADO':'EXPERIMENTAL')+'</summary>'+
+   '<div class="nexus-model-metrics"><div>Amostra verificada <b>'+esc(n)+'</b></div>'+
+   '<div>Brier (menor é melhor) <b>'+number(stats.brier,3)+'</b></div>'+
+   '<div>Log loss <b>'+number(stats.log_loss,3)+'</b></div>'+
+   '<div>Acerto do palpite principal <b>'+number(stats.top_pick_accuracy_pct,1)+'%</b></div></div>'+
+   '<p>As previsões foram congeladas antes dos jogos e comparadas apenas com placares finais confirmados. '+
+   'O histórico NÃO habilita EV+ automaticamente; faltam validação fora da amostra e preços de entrada verificáveis.</p>'+
+   (league?'<div class="nexus-model-leagues">'+league+'</div>':'')+'</details>';
+}
+
 function renderCloud(){
  const meta=$('#cloud-metrics'),status=$('#cloud-status'),target=$('#cloud-results');
  if(!cloudData){meta.innerHTML='';status.textContent='Aguardando dados';target.textContent='';return;}
@@ -3415,6 +3444,8 @@ function renderCloud(){
  renderCloudSignalJournal(cloudData.signal_journal);
  window.NexusSignalEvaluation?.render(cloudData.signal_evaluation,cloudData.signal_journal);
  window.NexusIntelligenceV6?.render(cloudData.intelligence_v6,cloudData.odds_collection_status);
+ const validatedPanel=$('#cloud-model-validation');
+ if(validatedPanel)validatedPanel.innerHTML=modelValidationHTML(cloudData.model_validation);
  const scoped=rows.filter(NexusLeagueCoverage.visible);
  const coveredLeagues=NexusLeagueCoverage.leagueStats(rows);
  const coveragePanel=$('#cloud-league-coverage');

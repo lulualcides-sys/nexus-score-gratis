@@ -36,6 +36,7 @@ jobs:
           node tests/test_nexus_intelligence_v6.mjs
           node tests/test_nexus_league_coverage.mjs
           node tests/test_nexus_radar_v545.mjs
+          node tests/test_nexus_model_panel_v546.mjs
           node tests/test_nexus_evidence_v535.mjs
           node --check tests/test_nexus_squads_v539.mjs
           node tests/test_nexus_squads_v539.mjs
