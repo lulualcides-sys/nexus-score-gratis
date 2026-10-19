@@ -2372,8 +2372,9 @@ function renderMatches(){
    const p=d?.pressure||m.pressure;
    const press=m.phase==='scheduled'?'<span class="indicator medium">◷ PRÉ-LIVE</span>':p?.score===null||p?.score===undefined?(d?.period_pressure?.available?'<span class="indicator medium">Índice ofensivo por tempo ✓</span>':'<span class="indicator">Pressão: analisar</span>'):`<span class="indicator ${p.score>=75?'high':p.score>=45?'medium':''}">Pressão ${esc(p.score)}/100</span>`;
    const quality=NexusLeagueCoverage.coverageEvidence(d||m);
+   const freshnessNote=quality.stale_live?(quality.freshness?.observed==='unknown'?' · SEM HORÁRIO':' · DADOS ANTIGOS'):'';
    const qualityBadge='<span class="indicator nexus-coverage-'+esc(quality.status)+'" title="'+
-     esc(quality.reason)+'">Cobertura: '+esc(quality.status)+'</span>';
+     esc(quality.reason)+'">Cobertura: '+esc(quality.status)+esc(freshnessNote)+'</span>';
    const hasThermometer=Boolean(m.has_saved_thermometer || m.__hasThermo || (d?.scout_pressure?.available && Array.isArray(d?.thermometer?.points) && d.thermometer.points.length) || d?.period_pressure?.available);
    const thermoBadge=hasThermometer?'<span class="indicator thermo-badge" title="Partida com termômetro disponível">🗺️</span>':'';
    // Mostrar scout real já na lista quando fornecido pelo placar ESPN
