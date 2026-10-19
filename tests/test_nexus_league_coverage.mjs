@@ -18,10 +18,32 @@ assert.equal(c.level(agenda),1);
 assert.equal(c.visible(noCoverage),false);
 assert.equal(c.visible({...match,league:'League Two'}),false);
 assert.equal(c.leagueStats([match,agenda,noCoverage]).length,2);
-const complete={...match,pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
-stats:{home:{shots_on:2,corners:3},away:{shots_on:0,corners:1}}};
-const higher=c.analysisPriority(complete,1792000000);
-const lower=c.analysisPriority(match,1792000000);
+const clock=1792000000;
+const observed=new Date(clock*1000-3*60000).toISOString();
+const complete={...match,observed_at:observed,
+ stats_observed_at:observed,pressure_observed_at:observed,
+ pressure:[{m:1,v:40},{m:2,v:42},{m:3,v:45}],
+ stats:{home:{shots_on:2,corners:3},away:{shots_on:0,corners:1}}};
+const higher=c.analysisPriority(complete,clock);
+const lower=c.analysisPriority(match,clock);
+assert.equal(c.coverageStatus(complete,clock),'completa');
+assert.equal(c.analysisPriority(complete,clock).freshness,'fresh');
+const stale={...complete,observed_at:new Date((clock-3600)*1000).toISOString(),
+ stats_observed_at:new Date((clock-3600)*1000).toISOString(),
+ pressure_observed_at:new Date((clock-3600)*1000).toISOString()};
+assert.equal(c.coverageStatus(stale,clock),'parcial');
+assert.equal(c.analysisPriority(stale,clock).freshness,'stale');
+assert.ok(c.analysisPriority(stale,clock).score<=10);
+assert.equal(c.coverageEvidence(stale,clock).stale_live,true);
+assert.match(c.coverageEvidence(stale,clock).reason,/sem horário recente/);
+const undated={...complete,observed_at:undefined,stats_observed_at:undefined,
+ pressure_observed_at:undefined};
+assert.equal(c.coverageStatus(undated,clock),'parcial');
+assert.equal(c.analysisPriority(undated,clock).freshness,'unknown');
+assert.equal(c.observationFreshness(new Date((clock+3600)*1000).toISOString(),clock),'future');
+assert.equal(c.observationFreshness('invalid',clock),'unknown');
+const withOldPrice={...stale,odds:[{odd:2.3,source:'Betano'}]};
+assert.equal(c.analysisPriority(withOldPrice,clock).score,c.analysisPriority(stale,clock).score);
 assert.ok(higher.score>lower.score);
 assert.equal(higher.kind,'data_quality_not_betting_signal');
 assert.match(fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8'),/NexusLeagueCoverage\.analysisPriority\(/);

@@ -51,7 +51,21 @@ function level(g){
  return agenda(g)?1:0;
 }
 const visible=g=>level(g)>0;
-function coverageStatus(g){
+function observationFreshness(value,nowSec=Date.now()/1000,maxMinutes=20){
+ if(typeof value!=='string'||!value.trim())return 'unknown';
+ const stamp=Date.parse(value);
+ if(!Number.isFinite(stamp))return 'unknown';
+ const lag=nowSec*1000-stamp;
+ if(lag< -120000)return 'future';
+ return lag<=maxMinutes*60000?'fresh':'stale';
+}
+function sourceFreshness(g,nowSec=Date.now()/1000){
+ const observed=observationFreshness(g?.observed_at,nowSec);
+ const statsAt=g?.stats_observed_at||(g?.scoreboard_stats?g?.observed_at:null);
+ return {observed,stats:observationFreshness(statsAt,nowSec),
+         pressure:observationFreshness(g?.pressure_observed_at,nowSec)};
+}
+function coverageStatus(g,nowSec=Date.now()/1000){
  if(!category(g?.league))return 'insuficiente';
  const stats=g.scoreboard_stats||g.stats||{};
  const keys=['shots_on','shots_total','corners','big_chances','possession','xg'];
@@ -60,12 +74,20 @@ function coverageStatus(g){
  const hasPressure=(Array.isArray(p)&&p.length>=3)||
    (Array.isArray(p?.points)&&p.points.length>=3)||
    (num(p?.samples)&&Number(p.samples)>=3);
- if(hasPressure&&count('home')>=2&&count('away')>=2)return 'completa';
+ const hasBothScouts=count('home')>=2&&count('away')>=2;
+ if(hasPressure&&hasBothScouts){
+   // Dados coletados anteriormente nao viram status "completa" em jogo live.
+   if(g.phase!=='live')return 'completa';
+   const fresh=sourceFreshness(g,nowSec);
+   if(!g.stale&&fresh.observed==='fresh'&&fresh.stats==='fresh'&&fresh.pressure==='fresh')
+      return 'completa';
+ }
  if(visible(g))return 'parcial';
  return 'insuficiente';
 }
-function coverageEvidence(g){
- const status=coverageStatus(g);
+function coverageEvidence(g,nowSec=Date.now()/1000){
+ const status=coverageStatus(g,nowSec);
+ const fresh=sourceFreshness(g,nowSec);
  const p=g?.pressure||g?.thermometer;
  const points=Array.isArray(p)?p:Array.isArray(p?.points)?p.points:[];
  const sourceSamples=points.length||Number(p?.samples||0);
@@ -73,26 +95,33 @@ function coverageEvidence(g){
  const scouts=['shots_on','shots_total','corners','big_chances','possession','xg'];
  const perSide=side=>scouts.filter(k=>num(stats?.[side]?.[k])).length;
  const realOdds=odds(g);
+ const staleLive=g?.phase==='live'&&(g?.stale||fresh.observed!=='fresh'||
+   (sourceSamples>0&&fresh.pressure!=='fresh')||
+   (perSide('home')+perSide('away')>0&&fresh.stats!=='fresh'));
  return {status,source_pressure_samples:sourceSamples,
     home_scout_fields:perSide('home'),away_scout_fields:perSide('away'),
-    odds_observed:realOdds,
-    reason:status==='completa'?'Pressão e estatísticas observadas nos dois times':
-      status==='parcial'?'Dados reais disponíveis, mas cobertura insuficiente para análise completa':
+    odds_observed:realOdds, freshness:fresh, stale_live:!!staleLive,
+    reason:staleLive?'Dados ao vivo sem horário recente verificado; não usar como pressão atual':
+      status==='completa'?'Pressão e scouts recentes observados nos dois times':
+      status==='parcial'?'Dados observados, mas cobertura insuficiente para análise completa':
        'Sem scouts verificáveis para avaliação' };
 }
 function analysisPriority(g,nowSec=Date.now()/1000){
- const status=coverageStatus(g);
+ const status=coverageStatus(g,nowSec);
  const phase=g?.phase||'';
  const start=Number(g?.start_timestamp);
- const minutes=Number.isFinite(start)?(start-nowSec)/60:null;
- const fresh=!g?.stale && (g?.observed_at?Date.now()-Date.parse(g.observed_at)<20*60000:true);
+ const minutes=Number.isFinite(start)&&start>0?(start-nowSec)/60:null;
+ const freshness=sourceFreshness(g,nowSec);
+ const fresh=!g?.stale && freshness.observed==='fresh';
  // Radar de dados, NAO indicador de aposta ou liquidez de mercado.
  let score=status==='completa'?65:status==='parcial'?30:0;
  if(phase==='live')score+=12;
  if(phase==='scheduled'&&minutes!==null&&minutes>0&&minutes<=120)score+=10;
  if(fresh)score+=8;
- if(odds(g))score+=5;
- return {score:Math.min(100,score),status,kind:'data_quality_not_betting_signal',
+ if(odds(g)&&(phase!=='live'||fresh))score+=5;
+ if(phase==='live'&&!fresh)score=Math.min(10,score);
+ return {score:Math.min(100,score),status,freshness:freshness.observed,
+         kind:'data_quality_not_betting_signal',
    reason:status==='completa'?'Scouts e termômetro medidos':
           status==='parcial'?'Dados parciais disponíveis':'Scouts insuficientes',
    warning:'Sem dados não há justificativa para inferir pressão ou EV+'};
@@ -110,6 +139,6 @@ function leagueStats(games){
  }
  return [...groups.values()].filter(x=>x.covered>0).sort((a,b)=>b.measured-a.measured||b.covered-a.covered||a.league.localeCompare(b.league,'pt-BR'));
 }
-root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority};
+root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority,observationFreshness,sourceFreshness};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);
