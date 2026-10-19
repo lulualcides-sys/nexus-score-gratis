@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T05:40:36.318109+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T06:55:27.996800+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 4155 | **Jogos distintos:** 1278 | **Resultados verificáveis:** 2323 | **Com gol:** 801 | **Sem gol:** 1522 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 11 datas com coletas | 15 pendentes | 784 indeterminados | 1033 incompletos.
+**Evolução da amostra:** 11 datas com coletas | 12 pendentes | 787 indeterminados | 1033 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -290,7 +290,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Guabirá (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Belgrano (Córdoba) × River Plate | River Plate (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Independiente Santa Fe | Llaneros FC (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Santa Fe | Santa Fe (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
