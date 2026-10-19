@@ -13,6 +13,11 @@ on:
       - 'web/nexus-signal-evaluation.css'
       - '.github/workflows/nexus-public-smoke.yml'
   workflow_dispatch:
+# Cloudflare Pages publica a versao mais recente; evitar verificacoes de
+# commits superados em fila (e falsos atrasos de publicacao).
+concurrency:
+  group: nexus-cloudflare-smoke-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:

@@ -20,6 +20,11 @@ on:
       - 'web/nexus-squads-v539.css'
       - '.github/workflows/nexus-frontend-regression.yml'
   workflow_dispatch:
+# Somente a revisao mais recente do mesmo branch precisa de validacao visual.
+# Nunca cancela a coleta esportiva, que grava estado persistente.
+concurrency:
+  group: nexus-frontend-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   verify:
     runs-on: ubuntu-latest
