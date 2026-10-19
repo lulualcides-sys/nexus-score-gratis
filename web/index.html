@@ -3468,8 +3468,8 @@ function sourceHealthHTML(h){
  ['Com pressão recente',n(h.fresh_live_with_recent_pressure)+' ('+pct(h.pressure_pct_of_fresh_live)+')'],
  ['Consultas com scouts',n(h.collector_details_with_scouts)+' / '+n(h.collector_details_queried)],
  ['Aproveitamento de scouts',pct(h.collector_scout_yield_pct)],
- ['Jogos pré-jogo com odds',n(h.pregame_matches_with_price_comparison)],
- ['Jogos live com odds',n(h.live_matches_with_price_comparison)]
+ ['Pré-jogo com odds recentes (3 h)',n(h.pregame_matches_with_price_comparison)],
+ ['Ao vivo com odds recentes (10 min)',n(h.live_matches_with_price_comparison)]
  ];
  const quota=h.odds_budget_health||{};
  const providers=h.providers||{};
