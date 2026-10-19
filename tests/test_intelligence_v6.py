@@ -43,6 +43,20 @@ class NexusIntelligenceV6Tests(unittest.TestCase):
         self.assertTrue(result['split_date'])
         self.assertEqual(result['model_status'],'descriptive_not_calibrated')
         self.assertNotIn('profit',str(result))
+    def test_market_chronological_split_never_uses_test_to_rank(self):
+        games=[]
+        for i in range(30):
+            g=self.game('match-'+str(i),'2-0' if i%2 else '0-0')
+            g['start_timestamp']=int(datetime(2026,10,(i%10)+1,tzinfo=timezone.utc).timestamp())
+            games.append(g)
+        data=_markets(games,'2026-09-01')
+        self.assertIsNotNone(data['split_date'])
+        markets={m['market']:m for m in data['markets']}
+        m=markets['over_15']
+        self.assertEqual(m['train_settled']+m['test_settled'],30)
+        self.assertEqual(m['train_hits']+m['test_hits'],m['hits'])
+        self.assertIsNotNone(m['test_rate_pct'])
+
     def test_holdout_outcomes_cannot_change_training_rank_score(self):
         raw=[]
         for i in range(30):

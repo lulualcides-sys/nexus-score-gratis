@@ -41,6 +41,14 @@ assert.match(output,/Camisa 9/);
 assert.match(output,/Líder de assistências/);
 assert.match(output,/Craque/);
 assert.match(output,/Melhor em campo/);
+const missingTop=lineup({...base,team_leaders:{home:{goals:{name:'Atacante Ausente',value:17}}},
+  match_stars:{}});
+assert.match(missingTop,/Atacante Ausente/);
+assert.match(missingTop,/Destaque não relacionado na escalação oficial/);
+const probable=lineup({...base,lineups:{...base.lineups,
+ home_detail:{...base.lineups.home_detail,official:false}},
+ team_leaders:{home:{goals:{name:'Atacante Ausente',value:17}}},match_stars:{}});
+assert.doesNotMatch(probable,/Destaque não relacionado na escalação oficial/);
 assert.match(output,/★ Destaque/);
 assert.ok(output.includes('9.1/10') || output.includes('9.10/10'), 'nota do destaque da partida preservada');
 assert.match(output,/TITULAR/);

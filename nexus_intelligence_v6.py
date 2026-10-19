@@ -116,22 +116,37 @@ def _markets(games,cutoff):
         match=re.fullmatch(r'\s*(\d{1,2})\s*[-–:]\s*(\d{1,2})\s*',text)
         if not match:continue
         hg,ag=map(int,match.groups())
-        if fid in verified and verified[fid]!=(hg,ag):conflicted.add(fid)
-        else:verified[fid]=(hg,ag)
+        if fid in verified and verified[fid][:2]!=(hg,ag):conflicted.add(fid)
+        else:verified[fid]=(hg,ag,day)
     for fid in conflicted:verified.pop(fid,None)
+    settled_days=sorted({stamp for _,_,stamp in verified.values()})
+    split=settled_days[max(1,int(len(settled_days)*0.7))] if len(settled_days)>=4 else None
     out=[]
     for key,label in MARKETS:
         hits=0
-        for hg,ag in verified.values():
+        training_hits=training_n=test_hits=test_n=0
+        for hg,ag,day in verified.values():
             value={'over_15':hg+ag>=2,'over_25':hg+ag>=3,
                    'btts':hg>0 and ag>0,'lay_goleada':abs(hg-ag)<3}[key]
             hits+=int(value)
+            if split and day>=split:
+                test_n+=1
+                test_hits+=int(value)
+            elif split:
+                training_n+=1
+                training_hits+=int(value)
         n=len(verified)
         out.append({'market':key,'label':label,'finished_verified':n,'hits':hits,'misses':n-hits,
                     'rate_pct':round(100*hits/n,1) if n else None,
+                    'train_settled':training_n,'train_hits':training_hits,
+                    'train_rate_pct':round(100*training_hits/training_n,1) if training_n else None,
+                    'test_settled':test_n,'test_hits':test_hits,
+                    'test_rate_pct':round(100*test_hits/test_n,1) if test_n else None,
+                    'split_date':split,'test_usable':test_n>=10 and training_n>=20,
                     'has_real_entry_odds':False,'money_status':'unavailable_without_verified_prices'})
     return {'scope':'finished_matches_in_current_snapshot_only','distinct_verified_games':len(verified),
             'conflicting_games_excluded':len(conflicted),
+            'split_date':split,'days_with_verified_results':len(settled_days),
             'prices':'not_assumed','markets':out,
             'note':'Mercados descritivos por placar final. Sem odds de entrada: não são operações liquidadas nem P/L.'}
 

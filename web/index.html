@@ -2785,6 +2785,13 @@ function lineupsHTML(d){
       (star.rating!=null&&Number.isFinite(Number(star.rating))&&Number(star.rating)>=0&&Number(star.rating)<=10?' · '+Number(star.rating).toFixed(2)+'/10':'')+' · FotMob</p>':'';
    const departureCount=xi.filter(p=>(d.events||[]).some(e=>e.type==='substitution'&&
       String(e.player_out||'').trim().toLowerCase()===String(p.name||'').trim().toLowerCase())).length;
+   const normName=x=>String(x||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLocaleLowerCase('pt-BR').replace(/[^a-z0-9]/g,'');
+   const listed=new Set([...xi,...bench].map(p=>normName(p.name||p.player)));
+   const focus=[records.goals?.name,records.assists?.name,star.player].filter(Boolean);
+   const unlisted=[...new Set(focus.map(String))].filter(x=>!listed.has(normName(x)));
+   const unlistedNotice=verified&&xi.length&&unlisted.length?
+     '<p class="n539-unknown"><b>★ Destaque não relacionado na escalação oficial:</b> '+
+     unlisted.map(esc).join(', ')+'. Não confirma lesão ou suspensão.</p>':'';
    const summary=xi.length?'<div class="n539-squad-status">'+
       (verified?'✓ XI OFICIAL':'XI PROVÁVEL')+' · '+xi.length+' titulares · '+
       bench.length+' reservas · '+departureCount+' saídas confirmadas'+
@@ -2819,7 +2826,7 @@ function lineupsHTML(d){
        '<p class="prelive-muted">Aguardando divulgação dos titulares pela fonte.</p>');
    return '<article class="lineup-side"><h3>'+esc(name)+status+'</h3>'+
     (detail.formation?'<p class="prelive-muted">Formação '+esc(detail.formation)+'</p>':'')+
-    summary+sourceStars+highlight+content+'</article>';
+    summary+sourceStars+highlight+unlistedNotice+content+'</article>';
  };
  return '<section class="analysis-tab-card nexus-lineups"><h3>ESCALAÇÕES · TITULARES E RESERVAS</h3>'+
    '<p class="prelive-muted">Titulares, reservas, substituições e destaques verificados. Artilheiro e líder de assistências aparecem apenas quando o FotMob disponibilizar estatísticas individuais da equipe. '+
