@@ -995,7 +995,9 @@ def main():
     evidence=audit_markets(pregame)
     model_validation=validation_report(pregame)
     health=quality_report(rows,last,load(H/'pregame_refresh_status.json'),
-                          datetime.now(timezone.utc).timestamp())
+                          datetime.now(timezone.utc).timestamp(),
+                          odds_usage=load(H/'oddspapi_usage.json'),
+                          historical_status=load(H/'oddspapi_historical_status.json'))
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
