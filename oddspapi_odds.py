@@ -259,7 +259,11 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
     matched=[]
     for row,fixture,delta in relevant:
         event=match_fixture(fixture,listing)
-        if event:matched.append((row,fixture,event,priority_score(fixture,delta)))
+        if event:
+            fixture_id=str(event.get('fixtureId') or '')
+            if fixture_id.startswith('id') and len(fixture_id)<=80:
+                row['oddspapi_fixture_id']=fixture_id
+            matched.append((row,fixture,event,priority_score(fixture,delta)))
     # Janela com limite de 2 jogos: 1 live + 1 pre quando ambos existirem.
     matched.sort(key=lambda pair:pair[3])
     live=next((m for m in matched if m[1].get('phase')=='live'),None)

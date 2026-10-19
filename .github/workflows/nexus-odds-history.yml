@@ -1,0 +1,43 @@
+name: NEXUS — histórico OddsPapi gratuito
+on:
+  schedule:
+    - cron: "23 23 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nexus-history
+  cancel-in-progress: false
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+      - name: Testar antes da consulta
+        run: |
+          python3 -m py_compile oddspapi_history.py model_validation.py
+          python3 -m unittest discover -s tests -p test_nexus_oddspapi_history.py -v
+      - name: Consultar somente historicos elegiveis
+        env:
+          NEXUS_ODDSPAPI_KEY: ${{ secrets.NEXUS_ODDSPAPI_KEY }}
+        run: python3 oddspapi_history.py
+      - name: Publicar somente se houve dados reais novos
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain -- history/20??-??-??.json)" ]]; then
+            echo "Sem historicos novos"; exit 0
+          fi
+          python3 web_export.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add history/20??-??-??.json web/data.json web/listing.json
+          git commit -m "NEXUS: odds historicas gratuitas auditadas"
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort || true; exit 1; }
+          done
+          exit 1
