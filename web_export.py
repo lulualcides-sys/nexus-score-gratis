@@ -14,6 +14,7 @@ from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_movements import movements
 from model_validation import validation_report
+from oddspapi_historical import historical_clv
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots, snapshot_deltas
 from activity_timeline import observed_activity
@@ -675,6 +676,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'odds':odds[:15],
             'odds_comparison':pre_comp,'live_odds_comparison':live_comp,
             'odds_movements':quote_movements,
+            'odds_historical_audit':historical_clv(row) if f.get('phase')=='finished' else [],
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
             'pregame_baseline':public_baseline(row,f),
@@ -822,7 +824,7 @@ def make_listing(rows,exported_at,collector):
     fields=('id','day','home','away','home_logo','away_logo','league',
             'round','start_timestamp','minute','score','phase','halftime',
             'status_short','source','sources','observed_at',
-            'pressure_observed_at','pressure_last_minute','odds','stats','odds_movements','odds_comparison','live_odds_comparison','scout_trend')
+            'pressure_observed_at','pressure_last_minute','odds','stats','odds_movements','odds_comparison','live_odds_comparison','scout_trend','odds_historical_audit')
     games=[]
     for game in rows:
         item={field:game.get(field) for field in fields}
@@ -897,6 +899,7 @@ def main():
              'odds_bridge':odds_bridge,
              'pregame_archive':pregame,
              'market_evidence':evidence,'model_validation':model_validation,
+             'historical_odds_status':load(H/'oddspapi_historical_status.json').get('updated_at'),
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','odds_papi','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
