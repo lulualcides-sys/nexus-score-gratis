@@ -168,15 +168,15 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4196 | **Jogos distintos:** 1289 | **Resultados verificáveis:** 2343 | **Com gol:** 807 | **Sem gol:** 1536 | **Taxa observada:** 34.4%.
-**Evolução da amostra:** 11 datas com coletas | 17 pendentes | 794 indeterminados | 1042 incompletos.
+**Observações:** 4197 | **Jogos distintos:** 1289 | **Resultados verificáveis:** 2343 | **Com gol:** 807 | **Sem gol:** 1536 | **Taxa observada:** 34.4%.
+**Evolução da amostra:** 11 datas com coletas | 15 pendentes | 797 indeterminados | 1042 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 812 | 555 | 208 | 347 | 37.5% |
+| 🥶 jogo_frio | 813 | 555 | 208 | 347 | 37.5% |
 | ⚡ pressao_ofensiva_18 | 607 | 398 | 130 | 268 | 32.7% |
 | 🟥 expulsao_confirmada | 739 | 346 | 107 | 239 | 30.9% |
 | 🎯 chutes_no_alvo_5 | 680 | 333 | 107 | 226 | 32.1% |
@@ -255,20 +255,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 343 | 252 | 86 | 166 | 34.1% |
 | 31–45′ | 636 | 500 | 209 | 291 | 41.8% |
 | 46–60′ | 642 | 492 | 175 | 317 | 35.6% |
-| 61–75′ | 910 | 618 | 188 | 430 | 30.4% |
+| 61–75′ | 911 | 618 | 188 | 430 | 30.4% |
 | 76–90′ | 1141 | 387 | 114 | 273 | 29.5% |
 | 91+′ | 403 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4196 | **Jogos monitorados:** 1755 | **Ao vivo:** 46 | **Termômetros recentes:** 7.
+**Registros:** 4197 | **Jogos monitorados:** 1755 | **Ao vivo:** 46 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
 | 2026-10-19T16:37:05.235452+00:00 | Al-Fayha × Al Ahli | Al-Fayha (68') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-19T16:36:04.382167+00:00 | Al-Fayha × Al Ahli | Equipe não definida (67') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-19T16:32:03.399421+00:00 | Al-Fayha × Al Ahli | Al Ahli (63') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-19T16:32:03.399421+00:00 | Pafos FC × APOEL Nicosia | APOEL Nicosia (70') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-19T16:23:26.190499+00:00 | Damac FC × Al Taee | Damac FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -331,7 +332,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Guabirá (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Belgrano (Córdoba) × River Plate | River Plate (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Independiente Santa Fe | Llaneros FC (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Santa Fe | Santa Fe (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T00:02:55.811733+00:00 | Chicago Stars (W) × Seattle Reign FC (W) | Seattle Reign FC (W) (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:02:55.811733+00:00 | CD FAS × CD Platense Municipal | CD FAS (32') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-18T23:48:02.851612+00:00 | Belgrano × River Plate | Belgrano (33') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-18T23:48:02.851612+00:00 | Remo × RB Bragantino | Remo (51') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
