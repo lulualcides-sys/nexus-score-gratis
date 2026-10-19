@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T03:06:33.647518+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T03:08:13.121485+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
@@ -26,7 +26,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-19 | Internacional FC de Palmira × Unión Magdalena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Real Cartagena × Patriotas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Deportivo Pasto × Alianza FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Deportivo Cali × Junior FC | 0-0 | 85 | Chutes no alvo: 6.0×2.0, Chutes para fora: 9.0×2.0, Escanteios: 5.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-19 | Deportivo Cali × Junior FC | 0-0 | 89 | Chutes no alvo: 7.0×2.0, Chutes para fora: 10.0×2.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-19 | Monterrey × Pachuca | 2-1 | 65 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-19 | Beitar Jerusalem × Maccabi Tel Aviv | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Cienciano × CD UT Cajamarca | 1-0 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 13.0×6.0, Escanteios: 5.0×1.0, Grandes chances: 7.0×0.0 |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4149 | **Jogos distintos:** 1278 | **Resultados verificáveis:** 2320 | **Com gol:** 800 | **Sem gol:** 1520 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 11 datas com coletas | 18 pendentes | 784 indeterminados | 1027 incompletos.
+**Observações:** 4152 | **Jogos distintos:** 1278 | **Resultados verificáveis:** 2320 | **Com gol:** 800 | **Sem gol:** 1520 | **Taxa observada:** 34.5%.
+**Evolução da amostra:** 11 datas com coletas | 18 pendentes | 787 indeterminados | 1027 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 796 | 544 | 205 | 339 | 37.7% |
+| 🥶 jogo_frio | 797 | 544 | 205 | 339 | 37.7% |
 | ⚡ pressao_ofensiva_18 | 602 | 396 | 129 | 267 | 32.6% |
-| 🟥 expulsao_confirmada | 726 | 341 | 106 | 235 | 31.1% |
+| 🟥 expulsao_confirmada | 727 | 341 | 106 | 235 | 31.1% |
 | 🎯 chutes_no_alvo_5 | 673 | 330 | 106 | 224 | 32.1% |
-| 🚩 escanteios_6 | 526 | 246 | 88 | 158 | 35.8% |
+| 🚩 escanteios_6 | 527 | 246 | 88 | 158 | 35.8% |
 | 💣 grandes_chances_3 | 417 | 217 | 85 | 132 | 39.2% |
 | 🔥 pressao_forte_10min | 196 | 123 | 45 | 78 | 36.6% |
 | 🧨 pressao_total_5_10min | 110 | 69 | 21 | 48 | 30.4% |
@@ -236,7 +236,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 92 | 51 | 22 | 29 | 43.1% |
 | Serie B | 70 | 48 | 17 | 31 | 35.4% |
 | Primera División | 77 | 47 | 13 | 34 | 27.7% |
-| Primera A | 67 | 47 | 15 | 32 | 31.9% |
+| Primera A | 70 | 47 | 15 | 32 | 31.9% |
 | Super Lig | 54 | 46 | 19 | 27 | 41.3% |
 | Serie A | 82 | 43 | 11 | 32 | 25.6% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
@@ -256,18 +256,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 630 | 494 | 208 | 286 | 42.1% |
 | 46–60′ | 633 | 485 | 174 | 311 | 35.9% |
 | 61–75′ | 897 | 613 | 185 | 428 | 30.2% |
-| 76–90′ | 1131 | 385 | 112 | 273 | 29.1% |
+| 76–90′ | 1134 | 385 | 112 | 273 | 29.1% |
 | 91+′ | 398 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4149 | **Jogos monitorados:** 1749 | **Ao vivo:** 20 | **Termômetros recentes:** 5.
+**Registros:** 4152 | **Jogos monitorados:** 1749 | **Ao vivo:** 20 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (90') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (90') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-19T03:07:33.463268+00:00 | Deportivo Cali × Junior FC | Junior FC (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-19T03:07:01.651760+00:00 | Deportivo Cali × Junior FC | Deportivo Cali (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-19T03:07:01.651760+00:00 | Deportivo Cali × Junior FC | Junior FC (89') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-19T03:07:01.651760+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
@@ -284,7 +287,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Oriente Petrolero (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Guabirá × Oriente Petrolero | Guabirá (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T01:15:31.720998+00:00 | Independiente del Valle × Universitario Deportes | Independiente del Valle (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-19T01:15:31.720998+00:00 | CD FAS × CD Platense Municipal | CD FAS (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Belgrano (Córdoba) × River Plate | River Plate (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Independiente Santa Fe | Llaneros FC (87') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T00:54:14.274462+00:00 | Llaneros FC × Santa Fe | Santa Fe (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -365,14 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-18T22:12:26.928701+00:00 | Bahia × Flamengo | Flamengo (43') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-18T22:12:26.928701+00:00 | Bay FC (W) × Portland Thorns (W) | Portland Thorns (W) (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-18T21:57:16.100347+00:00 | Bucaramanga × América de Cali | América de Cali (45') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T21:57:16.100347+00:00 | Bucaramanga × América de Cali | América de Cali (45') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T21:57:16.100347+00:00 | Bucaramanga × América de Cali | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-18T21:57:16.100347+00:00 | Alianza Atlético × Universitario de Deportes | Alianza Atlético (70') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **155**.
-Novas cotacoes capturadas na ultima execucao: **30**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
