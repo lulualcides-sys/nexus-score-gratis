@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:08:06.979014+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T16:10:19.533420+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 
@@ -60,10 +60,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 | 2026-10-19 | KFUM 2 × Frigg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Melhus × Ranheim 2 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Rosenborg 2 × NTNUI | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Os × Sogndal 2 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Os × Sogndal 2 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Brann 2 × Austevoll | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Åsane 2 × Varegg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Åkra × Stabæk 2 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Åkra × Stabæk 2 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Lyn 2 × Ørn Horten | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Sarpsborg 08 2 × Bjørkelangen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | RFS × FK Tukums 2000 | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
@@ -117,7 +117,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **27**.
 | 2026-10-19 | Al-Fayha × Al Ahli | 1-1 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×1.0 |
 | 2026-10-19 | Al Hilal × Al Hazem | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | Al Shabab × Al-Faisaly | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-19 | Omonia Nicosia × Olympiakos Nicosia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-19 | Omonia Nicosia × Olympiakos Nicosia | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Escanteios: 0.0×0.0 |
 | 2026-10-19 | Pafos FC × APOEL Nicosia | 0-0 | 0 | Chutes no alvo: 3.0×3.0, Escanteios: 2.0×4.0 |
 | 2026-10-19 | Tigres (W) × Querétaro (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-19 | CF América (W) × Pachuca (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
