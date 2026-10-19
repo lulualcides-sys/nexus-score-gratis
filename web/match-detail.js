@@ -271,7 +271,7 @@
     const label={home:'Casa',draw:'Empate',away:'Fora'};
     const format=(items,mode)=>items.map(o=>
       '<div class="md-odd"><small>'+esc(label[o.sel]||o.sel)+'</small><b>'+esc(o.odd)+'</b>'+
-      '<span>'+esc(o.bookmaker||o.source||'Fonte')+' · '+esc(o.at||o.captured_at||'horário não informado')+'</span></div>').join('');
+      '<span>'+esc(o.bookmaker||o.source||'Fonte')+' · '+esc(o.at||o.captured_at||'horário não informado')+(o.trio_complete===false?' · preço individual (trio incompleto)':'')+'</span></div>').join('');
     return '<div class="md-subtitle">Cotações pré-jogo registradas</div>'+
       (list.length?'<div class="md-odds">'+format(list)+'</div>':noData('Nenhuma odd pré-jogo verificada nesta partida (exige fonte, horário anterior ao início e preço íntegro).'))+
       (historical.length?'<div class="md-subtitle">Odds históricas de fechamento · não são preços atuais</div>'+

@@ -485,8 +485,18 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         if provider not in chosen:
             chosen[provider]=group
         if len(chosen)>=5:break
-    odds=[group[side] for group in chosen.values()
-          for side in ('home','draw','away')]
+    if chosen:
+        odds=[{**group[side],'trio_complete':True} for group in chosen.values()
+              for side in ('home','draw','away')]
+    else:
+        # Legado: manter apenas a última captura de uma casa identificada.
+        # Odds isoladas são dados reais, mas NÃO são um trio 1X2 comparável.
+        partial=sorted(((tag,g) for tag,g in quote_groups.items()
+                        if tag[1] and tag[2]),
+                       key=lambda item:item[0][2],reverse=True)
+        last=partial[0][1] if partial else {}
+        odds=[{**last[side],'trio_complete':False}
+              for side in ('home','draw','away') if side in last]
     events=[]
     for event in row.get('events') or []:
         if not isinstance(event,dict) or event.get('type') not in TYPES:continue

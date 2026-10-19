@@ -37,11 +37,15 @@ class PublicMultiBookmakerOddsTests(unittest.TestCase):
         offers=public_row(row,'2026-10-19')['odds']
         self.assertEqual(len(offers),3)
         self.assertEqual({o['at'] for o in offers},{'2026-10-19T12:00:00+00:00'})
-    def test_incomplete_and_unattributed_offers_never_display(self):
+    def test_incomplete_and_unattributed_offers_remain_distinct(self):
         row=self.row()
         self.add(row,'Other Book','2026-10-19T12:00:00+00:00',{'home':2.1,'draw':3.2})
         self.add(row,'','2026-10-19T12:02:00+00:00',
                  {'home':2.1,'draw':3.2,'away':3.8})
-        self.assertEqual(public_row(row,'2026-10-19')['odds'],[])
+        quotes=public_row(row,'2026-10-19')['odds']
+        self.assertEqual(len(quotes),2)
+        self.assertEqual({q['bookmaker'] for q in quotes},{'Other Book'})
+        self.assertEqual({q['sel'] for q in quotes},{'home','draw'})
+        self.assertTrue(all(q['trio_complete'] is False for q in quotes))
 
 if __name__=='__main__':unittest.main()
