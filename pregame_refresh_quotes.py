@@ -82,6 +82,8 @@ def append_trio(row, prices, bookmaker, source, now_ts, source_ts=None):
 # resultado historico recebe cotacao live/pre-jogo por inferencia.
 EXTRA_MARKETS={
     'over_under_25':('over','under'),
+    'over_under_15':('over','under'),
+    'over_under_35':('over','under'),
     'btts':('yes','no'),
     'ah_0':('home','away'),
 }

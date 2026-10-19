@@ -26,6 +26,8 @@ SELECTIONS={'101':'home','102':'draw','103':'away'}
 # IDs e outcomes documentados por OddsPapi v4; nao inferir outros mercados.
 EXTRA_SPECS={
     'over_under_25':('1010',{'1010':'over','1011':'under'}),
+    'over_under_15':('1012',{'1012':'over','1013':'under'}),
+    'over_under_35':('1014',{'1014':'over','1015':'under'}),
     'btts':('104',{'104':'yes','105':'no'}),
 }
 # No Asian Handicap 0, identificar a selecao apenas pelo identificador

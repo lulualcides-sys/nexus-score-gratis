@@ -442,6 +442,8 @@ def prelive_archive():
 ODDS_SELECTIONS={
  '1x2':('home','draw','away'),
  'over_under_25':('over','under'),
+ 'over_under_15':('over','under'),
+ 'over_under_35':('over','under'),
  'btts':('yes','no'),
  'ah_0':('home','away'),
 }

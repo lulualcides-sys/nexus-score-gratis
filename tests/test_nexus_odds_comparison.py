@@ -47,4 +47,15 @@ class BestPriceTests(unittest.TestCase):
                       market='over_under_25',sel='under')],f,'pregame',self.t)
         self.assertEqual(data,[])
 
+
+    def test_new_goal_lines_are_kept_separate(self):
+        f={'phase':'scheduled','start_timestamp':int(self.t+3600)}
+        offers=[self.quote('Pinnacle',1.5,self.now-timedelta(minutes=2),
+                          market='over_under_15',sel='over'),
+                self.quote('Betano BR',2.4,self.now-timedelta(minutes=2),
+                          market='over_under_35',sel='over')]
+        compared=public_odds_comparison(offers,f,'pregame',self.t)
+        self.assertEqual({x['market'] for x in compared},
+                         {'over_under_15','over_under_35'})
+        self.assertEqual(len(compared),2)
 if __name__=='__main__':unittest.main()

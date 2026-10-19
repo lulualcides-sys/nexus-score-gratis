@@ -239,4 +239,21 @@ class OddsPapiFreeTests(unittest.TestCase):
         self.assertIn('ah_0',{slug for slug,_,_ in available_extra_markets(data,NOW)})
         m['1072']['outcomes']['1073']['players']['0']['active']=False
         self.assertNotIn('ah_0',{slug for slug,_,_ in available_extra_markets(data,NOW)})
+
+    def test_documented_goal_lines_15_and_35_without_new_request(self):
+        p=pricepacket()
+        books=p['bookmakerOdds']['betano.bet.br']['markets']
+        def v(price):return {'players':{'0':{'active':True,'price':price,
+                                             'changedAt':date(NOW-50)}}}
+        books['1012']={'marketActive':True,'outcomes':{
+            '1012':v(1.44),'1013':v(2.75)}}
+        books['1014']={'marketActive':True,'outcomes':{
+            '1014':v(3.21),'1015':v(1.36)}}
+        found={market:prices for market,prices,book in available_extra_markets(p,NOW)}
+        self.assertEqual(found['over_under_15'],{'over':1.44,'under':2.75})
+        self.assertEqual(found['over_under_35'],{'over':3.21,'under':1.36})
+        books['1014']['outcomes']['1015']['players']['0']['changedAt']=date(NOW-90000)
+        found={market for market,_,_ in available_extra_markets(p,NOW)}
+        self.assertNotIn('over_under_35',found)
+        self.assertIn('over_under_15',found)
 if __name__=='__main__':unittest.main()

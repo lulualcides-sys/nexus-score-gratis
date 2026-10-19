@@ -5,7 +5,8 @@ const H=s=>String(s??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'
 const N=v=>v===null||v===undefined||v===''||typeof v==='boolean'||!Number.isFinite(Number(v))?null:Number(v);
 const P=v=>N(v)===null?'—':N(v).toLocaleString('pt-BR',{maximumFractionDigits:1})+'%';
 const labels={ '1x2':'Resultado 1X2','double_chance':'Dupla chance',
- 'over_under_25':'Total 2,5 gols','btts':'Ambas marcam'};
+ 'over_under_25':'Total 2,5 gols','over_under_15':'Total 1,5 gols',
+ 'over_under_35':'Total 3,5 gols','btts':'Ambas marcam'};
 const selections={home:'Mandante vence',draw:'Empate',away:'Visitante vence',
  '1X':'Mandante ou empate','X2':'Visitante ou empate','12':'Mandante ou visitante',
  over:'Over 2.5',under:'Under 2.5',yes:'SIM',no:'NÃO'};

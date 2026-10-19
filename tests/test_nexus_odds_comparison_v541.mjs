@@ -27,4 +27,11 @@ const injected=context.render({odds_comparison:[{
 }]},false);
 assert.ok(!injected.includes('<img src=x'));
 assert.ok(injected.includes('&lt;img'));
+const odd15={...b,market:'over_under_15',selection:'over'};
+const odd35={...b,market:'over_under_35',selection:'under'};
+const markets=context.render({odds_comparison:[odd15,odd35]},false);
+assert.match(markets,/Over\/Under 1,5 gols/);
+assert.match(markets,/Over\/Under 3,5 gols/);
+assert.match(markets,/Mais de 1,5/);
+assert.match(markets,/Menos de 3,5/);
 console.log('NEXUS 5.41: comparacao por casa/horario, fases e escape HTML OK');

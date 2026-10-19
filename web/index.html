@@ -2663,6 +2663,8 @@ function oddsComparisonHTML(d,live=false){
  if(!Array.isArray(rows)||!rows.length)return live?
    '<section class="projection-card odds-compare"><h3>ODDS AO VIVO</h3><p class="prelive-muted">Nenhuma cotação live recente verificada. Preços pré-jogo e históricos não são odds ao vivo.</p></section>':'';
  const labels={'1x2':'Resultado 1X2','over_under_25':'Over/Under 2,5 gols',
+               'over_under_15':'Over/Under 1,5 gols',
+               'over_under_35':'Over/Under 3,5 gols',
                btts:'Ambas marcam',ah_0:'Handicap asiático 0'};
  const names={home:'Mandante',draw:'Empate',away:'Visitante',
               over:'Over 2,5',under:'Under 2,5',yes:'Sim',no:'Não'};
@@ -2675,7 +2677,9 @@ function oddsComparisonHTML(d,live=false){
  const body=Object.entries(groups).map(([market,items])=>
    '<div class="odds-compare-market"><h4>'+esc(labels[market])+'</h4>'+
    items.map(q=>'<div class="odds-compare-row"><div class="odds-best-line"><span>'+
-     esc(names[q.selection]||q.selection)+'</span><b>'+fmt(q.best.odds)+'</b><small>'+
+     esc((market==='over_under_15'||market==='over_under_35')
+       ?(q.selection==='over'?'Mais de ':'Menos de ')+(market==='over_under_15'?'1,5':'3,5')
+       :(names[q.selection]||q.selection))+'</span><b>'+fmt(q.best.odds)+'</b><small>'+
      esc(q.best.bookmaker)+' · '+esc(q.best.source)+' · '+esc(at(q.best.at))+'</small></div>'+
      ((q.alternatives||[]).length?'<div class="odds-compare-alternatives">'+
       q.alternatives.slice(0,3).map(o=>'<span>'+esc(o.bookmaker)+' '+fmt(o.odds)+
