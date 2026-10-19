@@ -67,6 +67,23 @@ class OddsPapiFreeTests(unittest.TestCase):
         self.assertEqual(len(calls),2)
         qs=docs['2026-10-19']['matches']['f1']['odds_quotes']
         self.assertEqual({x['bookmaker'] for x in qs},{'Betano BR','Pinnacle'})
+    def test_same_provider_fixture_from_two_internal_sources_costs_one_lookup(self):
+        row1=fixture()
+        row2={'fixture':{**fixture()['fixture'],'id':'espn-same'}}
+        docs={'2026-10-19':{'matches':{'f1':row1,'f2':row2}}}
+        requests=[]
+        def fetch(url):
+            requests.append(url)
+            return [event()] if '/fixtures?' in url else pricepacket()
+        result=collect_odds(docs,[('2026-10-19','f1',2100),
+                                  ('2026-10-19','f2',2100)],NOW,
+                            key='fake',fetcher=fetch)
+        self.assertEqual(result['requests'],2)
+        self.assertEqual(len(requests),2)
+        self.assertEqual(result['matched'],1)
+        self.assertEqual(result['duplicate_provider_matches_skipped'],1)
+        self.assertEqual(result['quotes_added'],3)
+
     def test_no_key_no_call_and_free_slots(self):
         docs={'2026-10-19':{'matches':{'f1':fixture()}}}
         choices=[('2026-10-19','f1',2100)]

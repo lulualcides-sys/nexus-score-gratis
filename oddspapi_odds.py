@@ -204,7 +204,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
             'requests':0,'matched':0,'quotes_added':0,'errors':[],
             'provider':'OddsPapi','bookmakers':'Betano BR / Pinnacle / Bet365',
             'free_tier_monthly_max_requests':186,'markets_added':0,'live_quotes_added':0,
-            'prioritized':[]}
+            'prioritized':[],'duplicate_provider_matches_skipped':0}
     if not key:return result
     instant=datetime.fromtimestamp(now_ts,timezone.utc)
     slot=free_slot_id(instant)
@@ -270,6 +270,19 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
             matched.append((row,fixture,event,priority_score(fixture,delta)))
     # Janela com limite de 2 jogos: 1 live + 1 pre quando ambos existirem.
     matched.sort(key=lambda pair:pair[3])
+    # Duas fontes internas podem apontar para o mesmo fixture da OddsPapi.
+    # Uma consulta /odds por ID real evita gastar a cota gratuita em duplicatas.
+    unique_matches=[]
+    provider_ids=set()
+    for item in matched:
+        provider_id=str(item[2].get('fixtureId') or '')
+        if not provider_id:continue
+        if provider_id in provider_ids:
+            result['duplicate_provider_matches_skipped']+=1
+            continue
+        provider_ids.add(provider_id)
+        unique_matches.append(item)
+    matched=unique_matches
     live=next((m for m in matched if m[1].get('phase')=='live'),None)
     pre=next((m for m in matched if m[1].get('phase')=='scheduled'),None)
     selected=([live,pre] if live and pre else matched[:2])
