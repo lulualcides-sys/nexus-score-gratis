@@ -12,6 +12,7 @@ import re
 from signal_evaluation import evaluate
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
+from odds_movements import movements
 from model_validation import validation_report
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots, snapshot_deltas
@@ -545,6 +546,10 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         last=partial[0][1] if partial else {}
         odds=[{**last[side],'trio_complete':False}
               for side in ('home','draw','away') if side in last]
+    try:future_kickoff=int(f.get('start_timestamp') or 0)
+    except (TypeError,ValueError):future_kickoff=0
+    quote_movements=movements(row.get('odds_quotes') or [],future_kickoff,
+                              datetime.now(timezone.utc).timestamp()) if future_kickoff and f.get('phase')=='scheduled' else []
     pre_items=(row.get('market_quotes') or [])
     live_items=(row.get('live_odds_quotes') or [])
     if not isinstance(pre_items,list):pre_items=[]
@@ -669,6 +674,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'lineups':lineups,'match_stars':stars,'team_leaders':leaders,
             'odds':odds[:15],
             'odds_comparison':pre_comp,'live_odds_comparison':live_comp,
+            'odds_movements':quote_movements,
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
             'pregame_baseline':public_baseline(row,f),
@@ -758,6 +764,23 @@ def alerts_from(rows):
                                'detail':'EV '+str(s['ev_pct'])+'% · odd '+str(s['odds'])+
                                         ' · modelo '+safe(s['model'])+' (nao validado)',
                                'observed_at':s['captured_at']})
+        if g['phase']=='scheduled':
+            for change in (g.get('odds_movements') or [])[:2]:
+                alerts.append({'kind':'odds_movement','match_id':g['id'],'day':g['day'],
+                    'title':'Mudanca de odd '+safe(change['bookmaker'],35)+' · '+safe(g['home'])+' × '+safe(g['away']),
+                    'detail':str(change['selection'])+' '+str(change['first_odd'])+' → '+str(change['last_odd'])+
+                        ' ('+str(change['change_pct'])+'%) · '+safe(change['source'],24)+
+                        ' · horario: '+str(change['last_at'])+
+                        '. Movimento observado, nao implica EV+.',
+                    'observed_at':change['last_at']})
+            lineups=g.get('lineups') or {}
+            if all((lineups.get(side) or {}).get('status')=='confirmed' and
+                   len((lineups.get(side) or {}).get('starters') or [])>=9
+                   for side in ('home','away')):
+                alerts.append({'kind':'lineups_confirmed','match_id':g['id'],'day':g['day'],
+                    'title':'Escalacoes confirmadas · '+safe(g['home'])+' × '+safe(g['away']),
+                    'detail':'Onze inicial confirmado pelas fontes disponiveis. Confira titulares no detalhe antes da partida.',
+                    'observed_at':(lineups.get('home') or {}).get('updated_at') or g.get('observed_at')})
         if g['phase']=='scheduled' and g['odds'] and not g['signals']:
             quotes=', '.join(x['sel']+' '+str(x['odd']) for x in g['odds'][:3])
             alerts.append({'kind':'odds_watch','match_id':g['id'],'day':g['day'],
@@ -799,7 +822,7 @@ def make_listing(rows,exported_at,collector):
     fields=('id','day','home','away','home_logo','away_logo','league',
             'round','start_timestamp','minute','score','phase','halftime',
             'status_short','source','sources','observed_at',
-            'pressure_observed_at','pressure_last_minute','odds','stats')
+            'pressure_observed_at','pressure_last_minute','odds','stats','odds_movements','odds_comparison','live_odds_comparison','scout_trend')
     games=[]
     for game in rows:
         item={field:game.get(field) for field in fields}
