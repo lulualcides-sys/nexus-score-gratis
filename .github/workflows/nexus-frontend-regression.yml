@@ -9,6 +9,8 @@ on:
       - 'web/nexus-intelligence-v6.js'
       - 'web/nexus-league-coverage.js'
       - 'tests/test_nexus_radar_v545.mjs'
+      - 'tests/test_nexus_source_health_v547.mjs'
+      - 'tests/test_nexus_odds_comparison_v541.mjs'
       - 'tests/test_nexus_league_coverage.mjs'
       - 'web/nexus-intelligence-v6.css'
       - 'tests/test_nexus_intelligence_v6.mjs'
@@ -42,6 +44,8 @@ jobs:
           node tests/test_nexus_league_coverage.mjs
           node tests/test_nexus_radar_v545.mjs
           node tests/test_nexus_model_panel_v546.mjs
+          node tests/test_nexus_source_health_v547.mjs
+          node tests/test_nexus_odds_comparison_v541.mjs
           node tests/test_nexus_evidence_v535.mjs
           node --check tests/test_nexus_squads_v539.mjs
           node tests/test_nexus_squads_v539.mjs

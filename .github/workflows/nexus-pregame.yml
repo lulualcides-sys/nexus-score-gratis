@@ -26,6 +26,8 @@ on:
       - "api_football_odds.py"
       - "oddspapi_odds.py"
       - "oddspapi_historical.py"
+      - "source_health.py"
+      - "tests/test_nexus_source_health_v547.mjs"
       - "tests/test_oddspapi_historical.py"
       - "pregame_refresh_quotes.py"
       - ".github/workflows/nexus-pregame.yml"
@@ -83,7 +85,7 @@ jobs:
           PY
       - name: Validar rotina
         run: |
-          python3 -m py_compile market_evidence.py oddspapi_odds.py oddspapi_historical.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
+          python3 -m py_compile market_evidence.py oddspapi_odds.py oddspapi_historical.py source_health.py api_football_odds.py pregame_audit.py signal_registry.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py standings_context.py coletar.py web_export.py odds_fixture_bridge.py scout_snapshots.py live_momentum.py activity_timeline.py
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then python3 -m unittest discover -s tests -v; fi
           node --check web/nexus-audit-v532.js
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_audit_v532.mjs
@@ -95,7 +97,7 @@ jobs:
           node --check web/nexus-alert-center-v537.js
           node --check web/nexus-market-quality-v538.js
           node --check web/nexus-original-enrich.js
-          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_odds_comparison_v541.mjs; node tests/test_nexus_historical_audit_v542.mjs; fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_odds_comparison_v541.mjs; node tests/test_nexus_historical_audit_v542.mjs; node tests/test_nexus_source_health_v547.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_original_enrich.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_live_scout_history.mjs; fi
       - name: Atualizar scouts reais e placares ao vivo (melhor esforço)

@@ -34,4 +34,11 @@ assert.match(markets,/Over\/Under 1,5 gols/);
 assert.match(markets,/Over\/Under 3,5 gols/);
 assert.match(markets,/Mais de 1,5/);
 assert.match(markets,/Menos de 3,5/);
+const handicap=context.render({odds_comparison:[
+  {...b,market:'ah_m05',selection:'home'},
+  {...b,market:'ah_p05',selection:'away'},
+  {...b,market:'ah_m1',selection:'home'}]},false);
+assert.match(handicap,/Mandante -0,5/);
+assert.match(handicap,/Visitante -0,5/);
+assert.match(handicap,/Mandante -1/);
 console.log('NEXUS 5.41: comparacao por casa/horario, fases e escape HTML OK');
