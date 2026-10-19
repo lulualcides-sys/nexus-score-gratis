@@ -45,12 +45,20 @@ class PublicDashboardTests(unittest.TestCase):
         self.assertEqual(result['status'],'insufficient_data')
 
     def test_alerts_never_invent_an_ev_from_only_odds(self):
-        row={'phase':'scheduled','home':'A','away':'B','id':'id','day':'2026-10-08',
-             'signals':[],'odds':[{'sel':'home','odd':2.5,'at':'2026-10-08T12:00:00Z'}],
-             'stats':{'home':{},'away':{}},'observed_at':''}
-        alerts=x.alerts_from([row])
+        now=datetime(2026,10,19,16,tzinfo=timezone.utc)
+        stamp=int(now.timestamp())
+        row={'phase':'scheduled','home':'A','away':'B','id':'id','day':'2026-10-19',
+             'start_timestamp':stamp+3600,
+             'signals':[],'odds':[{'sel':'home','odd':2.5,
+                                   'at':datetime.fromtimestamp(stamp-600,timezone.utc).isoformat()}],
+             'stats':{'home':{},'away':{}},'observed_at':now.isoformat()}
+        alerts=x.alerts_from([row],stamp)
         self.assertEqual(alerts[0]['kind'],'odds_watch')
-        self.assertIn('EV+ indisponível',alerts[0]['detail'])
+        self.assertIn('EV+ indisponivel',alerts[0]['detail'])
+        stale={**row,'odds':[{'sel':'home','odd':2.5,'at':'2026-10-08T12:00:00Z'}]}
+        self.assertEqual(x.alerts_from([stale],stamp),[])
+        no_kickoff={**row,'start_timestamp':None}
+        self.assertEqual(x.alerts_from([no_kickoff],stamp),[])
 
 if __name__=='__main__':
     unittest.main()
