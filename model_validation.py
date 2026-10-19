@@ -55,6 +55,8 @@ def chronological_audit(scored,minimum_prior=25):
             'scope':'chronological_sports_only_no_ev',
             'note':'Comparacao cronologica, usando apenas placares anteriores de cada liga. Nao valida apostas nem EV+.'}
 
+from binary_market_validation import binary_market_report
+
 def validation_report(archive):
     scored=[]
     leagues=defaultdict(list)
@@ -119,6 +121,7 @@ def validation_report(archive):
             'by_league':[{'league':k,**describe(v)} for k,v in
                          sorted(leagues.items(),key=lambda x:-len(x[1]))[:20]],
             'confidence_bins':bins,'validated':False,
+            'binary_markets':binary_market_report(archive),
             'chronological':chronological_audit(scored),
             'calibration_error_pct':round(sum(
                  len([x for x in scored if low<=x['confidence']<high])/len(scored)*
