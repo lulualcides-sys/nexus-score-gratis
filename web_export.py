@@ -12,6 +12,7 @@ import re
 from signal_evaluation import evaluate
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
+from model_validation import validation_report
 from odds_fixture_bridge import bridge_pregame_prices
 from scout_snapshots import public_snapshots, snapshot_deltas
 from activity_timeline import observed_activity
@@ -855,6 +856,7 @@ def main():
     radar_v6=evaluate_v6(registry,rows,as_of=today,historical_archive=archive_stats)
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
+    model_validation=validation_report(pregame)
     payload={'app':'NEXUS SCORE WEB','schema':2,'exported_at':datetime.now(timezone.utc).isoformat(),
              'collector':status,'backfill':{k:backfill.get(k) for k in ('days','games','with_stats','events','checked_at')},
              'team_form_status':{k:team_form.get(k) for k in ('checked_at','teams','games_with_form','complete_team_samples')},
@@ -871,7 +873,7 @@ def main():
              'notice':'Atualizacao periodica, sem odds em tempo real. EV experimental nao e recomendacao nem lucro realizado.',
              'odds_bridge':odds_bridge,
              'pregame_archive':pregame,
-             'market_evidence':evidence,
+             'market_evidence':evidence,'model_validation':model_validation,
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','odds_papi','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
