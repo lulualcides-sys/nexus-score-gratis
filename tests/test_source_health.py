@@ -78,7 +78,8 @@ class SourceHealthTests(unittest.TestCase):
  def test_expired_month_and_unseen_historical_stay_unverified(self):
     stat=odds_budget_health(NOW,{'month':'2026-09','requests':186},{})
     self.assertEqual(stat['status'],'no_monthly_record')
-    self.assertEqual(stat['used_this_month'],0)
+    self.assertIsNone(stat['used_this_month'])
+    self.assertIsNone(stat['remaining_this_month'])
     self.assertEqual(stat['historical_status'],'not_yet_recorded')
     self.assertNotIn('apiKey',str(stat))
 if __name__=='__main__':unittest.main()
