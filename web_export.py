@@ -753,6 +753,46 @@ def market_history(rows):
              for name,fn in selectors],
              'note':'Frequencias de placares encerrados, sem odds de entrada e sem indicador de lucro ou EV+'}
 
+def live_delta_alert(game,now_ts):
+    """One factual alert from measured scout differences, never synthetic pressure."""
+    if game.get('phase')!='live':return None
+    trend=game.get('scout_trend') or {}
+    if trend.get('status')!='observed_delta':return None
+    try:
+        last=datetime.fromisoformat(str(trend['to_at']).replace('Z','+00:00')).timestamp()
+        elapsed=float(trend.get('elapsed_minutes'))
+    except (ValueError,TypeError,KeyError):return None
+    if not 0<elapsed<=40 or last>now_ts+120 or now_ts-last>15*60:return None
+    changes=trend.get('changes') or {}
+    ranked=[]
+    for side in ('home','away'):
+        values=changes.get(side) or {}
+        if not isinstance(values,dict):continue
+        shots=number(values.get('shots_on'))
+        big=number(values.get('big_chances'))
+        xg=number(values.get('xg'))
+        total=number(values.get('shots_total'))
+        corners=number(values.get('corners'))
+        if any((n is not None and n<0) for n in (shots,big,xg,total,corners)):continue
+        pieces=[]
+        if shots is not None and shots>=2:pieces.append(str(int(shots))+' chutes no alvo')
+        if big is not None and big>=1:pieces.append(str(int(big))+' chance(s) clara(s)')
+        if xg is not None and xg>=0.45:pieces.append('xG +'+str(round(xg,2)))
+        if total is not None and total>=4:pieces.append(str(int(total))+' finalizacoes')
+        if corners is not None and corners>=4:pieces.append(str(int(corners))+' escanteios')
+        if pieces:
+            weight=(shots or 0)*2+(big or 0)*4+(xg or 0)*6+(total or 0)*.5
+            ranked.append((weight,side,pieces))
+    if not ranked:return None
+    _,side,pieces=max(ranked,key=lambda x:x[0])
+    team=game.get('home') if side=='home' else game.get('away')
+    return {'kind':'stat_delta','match_id':game.get('id'),'day':game.get('day'),
+            'title':'Aumento ofensivo observado · '+safe(team,80),
+            'detail':', '.join(pieces)+' em '+str(round(elapsed,1))+
+                     ' min entre coletas reais ('+safe(trend.get('source'),40)+
+                     '). Minuto dos lances desconhecido; nao e previsao de gol ou EV+.',
+            'observed_at':trend['to_at']}
+
 def alerts_from(rows):
     alerts=[]
     for g in rows:
@@ -790,6 +830,8 @@ def alerts_from(rows):
                            'detail':quotes+'. Sem probabilidade validada: EV+ indisponível.',
                            'observed_at':g['odds'][0].get('at')})
         if g['phase']=='live':
+            delta=live_delta_alert(g,datetime.now(timezone.utc).timestamp())
+            if delta:alerts.append(delta)
             on=[number((g['stats'].get(side) or {}).get('shots_on')) for side in ('home','away')]
             corners=[number((g['stats'].get(side) or {}).get('corners')) for side in ('home','away')]
             if all(x is not None for x in on) and sum(on)>=7:
