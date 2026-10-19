@@ -749,7 +749,8 @@ def alerts_from(rows):
         if len(alerts)>=35:break
         if g['phase']=='finished':continue
         for s in g['signals']:
-            if s['status']=='pending' and s['ev_pct']>5:
+            if (s['status']=='pending' and s['ev_pct']>5 and
+                s.get('model_validated') is True and s.get('probability_calibrated') is True):
                 alerts.append({'kind':'ev_experimental','match_id':g['id'],'day':g['day'],
                                'title':'EV experimental '+s['selection'].upper()+' · '+safe(g['home'])+' × '+safe(g['away']),
                                'detail':'EV '+str(s['ev_pct'])+'% · odd '+str(s['odds'])+

@@ -93,6 +93,7 @@ jobs:
           node --check web/nexus-alert-center-v537.js
           node --check web/nexus-market-quality-v538.js
           node --check web/nexus-original-enrich.js
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_nexus_odds_comparison_v541.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_original_enrich.mjs; fi
           if [ "$GITHUB_EVENT_NAME" != "schedule" ]; then node tests/test_live_scout_history.mjs; fi
       - name: Atualizar scouts reais e placares ao vivo (melhor esforço)

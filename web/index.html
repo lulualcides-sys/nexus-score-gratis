@@ -2677,12 +2677,12 @@ function preliveOddsHTML(p,d){
        &&typeof prob==='number'&&Number.isFinite(prob)&&prob>=0&&prob<=100;
      const ev=trusted?((prob/100*odd-1)*100):null;
      const fair=trusted&&prob>0?(100/prob).toFixed(2):'—';
-     return `<div class="ev-line"><label>${esc(title)}<small>${trusted?`${prob.toFixed(1)}% · odd justa ${fair}`:'Sem probabilidade suficiente'}</small></label><strong class="quoted-odd">${odd.toFixed(2)}</strong><b class="${ev===null?'ev-blank':ev>0?'ev-positive':'ev-negative'}">${ev===null?'EV indisponível':`EV ${ev>0?'+':''}${ev.toFixed(1)}%`}</b></div>`;
+     return `<div class="ev-line"><label>${esc(title)}<small>${trusted?`${prob.toFixed(1)}% · odd justa ${fair}`:'Sem probabilidade calibrada'}</small></label><strong class="quoted-odd">${odd.toFixed(2)}</strong><b class="${ev===null?'ev-blank':ev>0?'ev-positive':'ev-negative'}">${ev===null?'EV indisponível':`EV ${ev>0?'+':''}${ev.toFixed(1)}%`}</b></div>`;
    }).join('');
    return `<div class="odds-market"><h4>${market==='1x2'?'MATCH ODDS · 1 / X / 2':market==='over_2_5'?'TOTAL DE GOLS · 2.5':'AMBAS MARCAM'}</h4><div class="ev-grid">${lines}</div></div>`;
  }).join('');
  const intro=`<section class="projection-card"><div class="projection-heading"><h3>ODDS AUTOMÁTICAS + EV</h3><small>Sem cadastro, chave ou digitação</small></div>`;
- if(!available)return intro+`<p class="prelive-muted">${esc(odds.reason||'Nenhuma odd pública disponível para esta partida.')}</p><p class="prelive-muted">Não calculamos EV sem cotação real. A coleta é automática e depende da disponibilidade das fontes.</p></section>`; return intro+origin+sections+`<p class="prelive-muted">EV bruto = probabilidade do modelo × odd decimal − 1. Preços de fontes públicas podem estar atrasados ou indisponíveis; EV+ teórico não garante lucro, pois o modelo não foi validado por backtest. Verifique disponibilidade no mercado antes de operar.</p></section>`;
+ if(!available)return intro+`<p class="prelive-muted">${esc(odds.reason||'Nenhuma odd pública disponível para esta partida.')}</p><p class="prelive-muted">Não calculamos EV sem cotação real. A coleta é automática e depende da disponibilidade das fontes.</p></section>`; return intro+origin+sections+`<p class="prelive-muted">EV+ indisponível sem modelo calibrado e preço verificável. As projeções experimentais não geram sinais de valor. Confirme os preços diretamente com a casa antes de operar.</p></section>`;
 }
 function preliveExtrasHTML(p,d){
  const h2h=p?.head_to_head||[];
