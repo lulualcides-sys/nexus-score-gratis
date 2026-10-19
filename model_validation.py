@@ -6,15 +6,65 @@ from datetime import datetime
 SCORE=re.compile(r'^(\d{1,2})-(\d{1,2})$')
 MIN_SAMPLE=200
 
+
+def chronological_audit(scored,minimum_prior=25):
+    """Baseline de mercado neutro calculada SOMENTE de jogos encerrados anteriormente.
+
+    Folds do mesmo horario nao veem o resultado um do outro.
+    Nao valida o modelo, nao inventa odds, nao calcula EV.
+    """
+    by_kickoff={}
+    for row in scored:
+        if not isinstance(row.get('kickoff'),(int,float)):continue
+        by_kickoff.setdefault(row['kickoff'],[]).append(row)
+    histories={}
+    checked=[]
+    for kickoff in sorted(by_kickoff):
+        group=by_kickoff[kickoff]
+        for item in group:
+            league=item['league']
+            previous=histories.get(league,[])
+            if len(previous)<minimum_prior:continue
+            # Laplace/Dirichlet: class count +1, protege contra p=0.
+            frequencies=[(previous.count(side)+1)/(len(previous)+3) for side in range(3)]
+            actual=item['actual']
+            pred=item['probabilities']
+            brier=sum((pred[i]-(1 if i==actual else 0))**2 for i in range(3))
+            reference=sum((frequencies[i]-(1 if i==actual else 0))**2 for i in range(3))
+            checked.append({'league':league,'brier':brier,'reference':reference,
+                            'model_logloss':-math.log(pred[actual]),
+                            'reference_logloss':-math.log(frequencies[actual])})
+        # Atualizacao apos pontuar todo o horario, sem vazamento intra-rodada.
+        for item in group:
+            histories.setdefault(item['league'],[]).append(item['actual'])
+    n=len(checked)
+    mean=lambda key:round(sum(x[key] for x in checked)/n,4) if n else None
+    return {'status':'observed_comparison' if n else 'insufficient_prior_games',
+            'evaluated':n,'minimum_prior_league_results':minimum_prior,
+            'model_brier':mean('brier'),
+            'prior_results_baseline_brier':mean('reference'),
+            'model_log_loss':mean('model_logloss'),
+            'prior_results_baseline_log_loss':mean('reference_logloss'),
+            'beats_prior_results_baseline':(mean('brier')<mean('reference')) if n else None,
+            'scope':'chronological_sports_only_no_ev',
+            'note':'Comparacao cronologica, usando apenas placares anteriores de cada liga. Nao valida apostas nem EV+.'}
+
 def validation_report(archive):
     scored=[]
     leagues=defaultdict(list)
+    seen=set()
     for row in archive if isinstance(archive,list) else []:
         if not isinstance(row,dict) or row.get('result_conflict') is True or row.get('phase')!='finished':continue
         match=SCORE.fullmatch(str(row.get('score') or ''))
         if not match:continue
         kickoff=row.get('start_timestamp')
         if not isinstance(kickoff,(float,int)):continue
+        league=str(row.get('league') or 'Nao informado')
+        # Dados esportivos repetidos nao contam duas vezes no backtest.
+        home=str(row.get('home') or '')
+        away=str(row.get('away') or '')
+        unique=(league,kickoff,home.casefold(),away.casefold()) if home and away else (league,kickoff,str(row.get('id')))
+        if unique in seen:continue
         variants=row.get('variants') or []
         if not isinstance(variants,list) or not variants:continue
         baseline=sorted(variants,key=lambda v:str((v.get('pregame_baseline') or {}).get('captured_at') or ''))[0].get('pregame_baseline') or {}
@@ -34,7 +84,11 @@ def validation_report(archive):
               'loss':-math.log(probs[actual]),'hit':int(actual==forecast),
               'confidence':probs[forecast]}
         item['actual']=actual
-        scored.append(item);leagues[str(row.get('league') or 'Nao informado')].append(item)
+        item['kickoff']=kickoff
+        item['league']=league
+        item['probabilities']=probs
+        seen.add(unique)
+        scored.append(item);leagues[league].append(item)
     def describe(items):
         n=len(items)
         if not n:return {'n':0,'brier':None,'log_loss':None,
@@ -59,6 +113,7 @@ def validation_report(archive):
             'by_league':[{'league':k,**describe(v)} for k,v in
                          sorted(leagues.items(),key=lambda x:-len(x[1]))[:20]],
             'confidence_bins':bins,'validated':False,
+            'chronological':chronological_audit(scored),
             'calibration_error_pct':round(sum(
                  len([x for x in scored if low<=x['confidence']<high])/len(scored)*
                  abs(sum(x['confidence'] for x in scored if low<=x['confidence']<high)/
