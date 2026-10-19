@@ -3470,6 +3470,7 @@ function sourceHealthHTML(h){
  ['Jogos pré-jogo com odds',n(h.pregame_matches_with_price_comparison)],
  ['Jogos live com odds',n(h.live_matches_with_price_comparison)]
  ];
+ const quota=h.odds_budget_health||{};
  const providers=h.providers||{};
  const statuses=[['FotMob',providers.fotmob?.status],['ESPN',providers.espn?.status],
   ['OddsPapi',providers.oddspapi?.status],['SofaScore',providers.sofascore?.status]];
@@ -3478,6 +3479,16 @@ function sourceHealthHTML(h){
    '<div class="nexus-health-grid">'+cells.map(([name,value])=>
      '<div><small>'+esc(name)+'</small><strong>'+esc(value)+'</strong></div>').join('')+'</div>'+
    '<p>'+statuses.map(([name,status])=>'<b>'+esc(name)+'</b>: '+esc(status||'sem dados')).join(' · ')+'</p>'+
+   (quota.monthly_limit_conservative?
+    '<div class="nexus-health-grid"><div><small>OddsPapi · limite de segurança</small><strong>'+
+      n(quota.used_this_month)+'/'+n(quota.monthly_limit_conservative)+'</strong>'+
+      '<small>Restante: '+n(quota.remaining_this_month)+' requisições nesta configuração</small></div>'+
+    '<div><small>Próxima janela gratuita (UTC)</small><strong>'+
+      esc(quota.next_collection_window_utc||'indisponível')+'</strong></div>'+
+    '<div><small>Histórico OddsPapi confirmado</small><strong>'+
+      n(quota.historical_collected)+' de '+n(quota.historical_attempts)+'</strong>'+
+      '<small>'+esc(quota.historical_status||'não registrado')+'</small></div></div>'+
+    '<small>Limite voluntário do Nexus, não saldo oficial da OddsPapi; ausência de histórico não significa odd disponível.</small>':'')+
    (Array.isArray(h.live_by_league)&&h.live_by_league.length?
     '<details><summary>Cobertura ao vivo por campeonato · '+h.live_by_league.length+
     ' ligas</summary><div class="nexus-health-grid">'+
