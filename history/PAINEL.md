@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:40:32.181551+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-19T02:42:58.803218+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -78,7 +78,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-18 | León × CF América | 3-5 | 88 | Chutes no alvo: 6.0×9.0, Chutes para fora: 1.0×5.0, Escanteios: 6.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-10-18 | Toluca × Atlético de San Luis | 1-1 | 90 | Chutes no alvo: 7.0×5.0, Chutes para fora: 11.0×9.0, Escanteios: 15.0×2.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Cruz Azul × FC Juárez | 5-0 | 90 | Chutes no alvo: 9.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×7.0, Grandes chances: 5.0×1.0 |
-| 2026-10-18 | Monterrey × Pachuca | 2-0 | 65 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 4.0×1.0 |
+| 2026-10-18 | Monterrey × Pachuca | 2-1 | 65 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-18 | FK Crvena Zvezda × Mladost Lučani | 5-1 | 0 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-18 | Novi Pazar × FK IMT Beograd | 1-2 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-18 | Železničar Pančevo × Partizan Beograd | 1-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 1.0×5.0, Escanteios: 2.0×5.0, Grandes chances: 1.0×0.0 |
