@@ -33,6 +33,30 @@ def _observed_scouts(game):
                 return True
     return False
 
+def live_league_quality(fresh_games,now_ts,limit=16):
+    """Cobertura por liga somente sobre partidas AO VIVO com horario recente."""
+    groups={}
+    for g in fresh_games:
+        league=str(g.get('league') or 'Campeonato não informado').strip()[:85]
+        entry=groups.setdefault(league,{'league':league,'fresh_live_games':0,
+               'with_recent_scouts':0,'with_recent_pressure':0})
+        entry['fresh_live_games']+=1
+        if (_observed_scouts(g) and
+            freshness(g.get('stats_observed_at'),now_ts,20)=='fresh'):
+            entry['with_recent_scouts']+=1
+        if (isinstance(g.get('pressure'),list) and g['pressure'] and
+            freshness(g.get('pressure_observed_at'),now_ts,20)=='fresh'):
+            entry['with_recent_pressure']+=1
+    results=[]
+    for item in groups.values():
+        n=item['fresh_live_games']
+        results.append({**item,
+                        'scouts_coverage_pct':round(100*item['with_recent_scouts']/n,1),
+                        'pressure_coverage_pct':round(100*item['with_recent_pressure']/n,1)})
+    results.sort(key=lambda x:(-x['fresh_live_games'],-x['with_recent_pressure'],x['league']))
+    return results[:limit]
+
+
 def quality_report(games,collector,pregame,now_ts):
     """Describe coverage denominators and provider problems explicitly."""
     games=games if isinstance(games,list) else []
@@ -68,6 +92,7 @@ def quality_report(games,collector,pregame,now_ts):
       'live_games_in_feed':len(live),
       'live_fresh':len(fresh),
       'live_stale_or_unverified':len(live)-len(fresh),
+      'live_by_league':live_league_quality(fresh,now_ts),
       'fresh_live_with_any_scouts':len(scouts),
       'fresh_live_with_recent_scouts':len(recent_scouts),
       'fresh_live_with_recent_pressure':len(pressure),
