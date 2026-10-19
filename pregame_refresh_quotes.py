@@ -56,10 +56,14 @@ def append_trio(row, prices, bookmaker, source, now_ts, source_ts=None):
             groups.setdefault(key,{})[item.get('selection')]=item.get('odds')
     last = sorted((when,group) for when,group in groups.items()
                   if set(group)=={'home','draw','away'})
+    measured=now_ts if source_ts is None else source_ts
     if last and all(float(last[-1][1][k])==float(prices[k])
                     for k in ('home','draw','away')):
-        return 0
-    measured=now_ts if source_ts is None else source_ts
+        # Mesmo preco rechecado depois de 30 min e uma nova observacao real:
+        # nao deixar o ultimo timestamp de captura eternamente desatualizado.
+        try:prior=datetime.fromisoformat(str(last[-1][0]).replace('Z','+00:00')).timestamp()
+        except (ValueError,TypeError):prior=measured
+        if measured-prior<1800:return 0
     if (not isinstance(measured,(int,float)) or not math.isfinite(measured) or
             measured>now_ts+120 or measured>=kickoff or measured<=0):
         return 0
@@ -102,7 +106,12 @@ def append_market_group(row,market,prices,bookmaker,source,now_ts,phase='pregame
         latest={}
         for offer in old:latest[offer['selection']]=offer['odds']
         if set(latest)==set(selections) and all(float(latest[s])==float(prices[s])
-                                                for s in selections):return 0
+                                                for s in selections):
+            try:prior=datetime.fromisoformat(str(old[-1]['captured_at']).replace('Z','+00:00')).timestamp()
+            except (ValueError,TypeError,KeyError):prior=now_ts
+            # Reconfirmar preco ao vivo, sem fingir que houve mudanca.
+            minimum=300 if phase=='live' else 1800
+            if now_ts-prior<minimum:return 0
     stamp=datetime.fromtimestamp(now_ts,timezone.utc).isoformat()
     for selection in selections:
         items.append({'market':market,'selection':selection,

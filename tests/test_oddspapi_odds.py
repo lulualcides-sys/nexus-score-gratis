@@ -176,10 +176,10 @@ class OddsPapiFreeTests(unittest.TestCase):
         bookmaker['markets']['1010']={'marketActive':True,'outcomes':{
             '1010':base(2.05),'1011':base(1.82)}}
         bookmaker['markets']['1072']={'marketActive':True,'outcomes':{
-            'a':{'players':{'0':{'active':True,'price':1.6,
-                               'bookmakerOutcomeId':'home','changedAt':date(NOW-90)}}},
-            'b':{'players':{'0':{'active':True,'price':2.3,
-                               'bookmakerOutcomeId':'away','changedAt':date(NOW-90)}}}}}
+            '1072':{'players':{'0':{'active':True,'price':1.6,
+                               'bookmakerOutcomeId':'opaque-4','changedAt':date(NOW-90)}}},
+            '1073':{'players':{'0':{'active':True,'price':2.3,
+                               'bookmakerOutcomeId':'opaque-7','changedAt':date(NOW-90)}}}}}
         found={name:values for name,values,book in available_extra_markets(p,NOW)}
         self.assertEqual(found['btts'],{'yes':1.85,'no':1.98})
         self.assertEqual(found['over_under_25'],{'over':2.05,'under':1.82})
@@ -226,4 +226,17 @@ class OddsPapiFreeTests(unittest.TestCase):
         self.assertEqual(got['quotes_added'],0)
         self.assertFalse(docs['2026-10-19']['matches']['f1'].get('odds_quotes'))
         self.assertEqual({q['phase'] for q in docs['2026-10-19']['matches']['f1']['live_odds_quotes']},{'live'})
+
+    def test_ah0_rejects_incomplete_and_wrong_outcome_ids(self):
+        data=pricepacket()
+        m=data['bookmakerOdds']['betano.bet.br']['markets']
+        base=lambda p:{'players':{'0':{'active':True,'price':p,
+                                     'changedAt':date(NOW-30)}}}
+        m['1072']={'marketActive':True,'outcomes':{'1072':base(1.85),
+                                                   'bogus':base(2.0)}}
+        self.assertNotIn('ah_0',{slug for slug,_,_ in available_extra_markets(data,NOW)})
+        m['1072']['outcomes']['1073']=base(2.1)
+        self.assertIn('ah_0',{slug for slug,_,_ in available_extra_markets(data,NOW)})
+        m['1072']['outcomes']['1073']['players']['0']['active']=False
+        self.assertNotIn('ah_0',{slug for slug,_,_ in available_extra_markets(data,NOW)})
 if __name__=='__main__':unittest.main()

@@ -134,23 +134,11 @@ def available_extra_markets(packet,now_ts,phase='pregame'):
         for market,(mid,ids) in EXTRA_SPECS.items():
             values=active_outcomes(book,mid,ids,now_ts,phase)
             if values:found.append((market,values,name))
-        # Nao adivinhar odds de handicap, nem sinal do spread.
-        ah=(book.get('markets') or {}).get(AH_ZERO_ID) or {}
-        if isinstance(ah,dict) and ah.get('marketActive') is True:
-            pairs={}
-            for oid,outcome in (ah.get('outcomes') or {}).items():
-                for p in (outcome.get('players') or {}).values():
-                    if not isinstance(p,dict) or p.get('active') is not True:continue
-                    sel=str(p.get('bookmakerOutcomeId') or '').lower().strip()
-                    if sel not in ('home','away') or sel in pairs:continue
-                    price=p.get('price')
-                    changed=parse_ts(p.get('bookmakerChangedAt') or p.get('changedAt'))
-                    try:price=float(price)
-                    except (ValueError,TypeError,OverflowError):continue
-                    ttl=600 if phase=='live' else 86400
-                    if math.isfinite(price) and 1.01<price<1000 and changed is not None and -120<=now_ts-changed<=ttl:
-                        pairs[sel]=round(price,4)
-            if set(pairs)=={'home','away'}:found.append(('ah_0',pairs,name))
+        # Handicap asiatico 0 usa outcomes 1072/1073 no catalogo OddsPapi,
+        # INDEPENDENTE do bookmakerOutcomeId, que pode ser um codigo opaco.
+        pairs=active_outcomes(book,AH_ZERO_ID,
+                              {'1072':'home','1073':'away'},now_ts,phase)
+        if pairs:found.append(('ah_0',pairs,name))
     return found
 
 def available_1x2(packet,now_ts,phase='pregame'):
