@@ -16,6 +16,18 @@ class PregameRefreshTests(unittest.TestCase):
         found={x[1] for x in fixture_candidates({'today':doc},now)}
         self.assertEqual(found,{'fotmob-1','fotmob-2','fotmob-4'})
 
+    def test_odds_scan_six_hours_without_expanding_lineup_requests(self):
+        now=1800000000
+        docs={'2026-10-09':{'matches':{
+          'soon':{'fixture':{'phase':'scheduled','start_timestamp':now+60*60}},
+          'later':{'fixture':{'phase':'scheduled','start_timestamp':now+4*3600}},
+          'too_far':{'fixture':{'phase':'scheduled','start_timestamp':now+7*3600}}
+        }}}
+        normal={x[1] for x in fixture_candidates(docs,now)}
+        odds={x[1] for x in fixture_candidates(docs,now,lookahead=6*3600)}
+        self.assertEqual(normal,{'soon'})
+        self.assertEqual(odds,{'soon','later'})
+
     def test_live_details_merge_only_confirmed_measurements_and_events(self):
         row={'fixture':{'phase':'live','minute':44},'thermometer':{
             'points':[{'minute':5,'value':-30}]},

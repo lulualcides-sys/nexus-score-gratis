@@ -14,6 +14,13 @@ from espn_scoreboard_odds import normalized_team, parse_ts, plain
 from pregame_refresh_quotes import append_quote, append_trio
 
 BASE='https://api.the-odds-api.com/v4'
+ESPN_LEAGUE_ALIASES={
+  'bra.1':('brazil',),'bra.2':('brazil',),'eng.1':('epl',),
+  'eng.2':('efl_champ',),'esp.1':('la_liga',),
+  'ger.1':('bundesliga',),'ita.1':('italy_serie_a',),
+  'fra.1':('france_ligue_one',),'arg.1':('argentina',),
+  'usa.1':('mls',),'uefa.champions':('uefa_champs_league',),
+}
 LEAGUES={
   'usl championship':('usl',),
   'major league soccer':('mls',),
@@ -32,11 +39,11 @@ LEAGUES={
 
 def fixture_sport_keys(league,sports):
     norm=plain(league)
-    aliases=()
+    aliases=ESPN_LEAGUE_ALIASES.get(norm.strip(),())
     # Correspondência do nome inteiro evita equiparar ligas 'championship' diferentes.
-    if 'usl championship' in norm: aliases=('usl',)
-    elif 'efl championship' in norm or norm.strip()=='championship':aliases=LEAGUES['championship']
-    else:
+    if not aliases and 'usl championship' in norm: aliases=('usl',)
+    elif not aliases and ('efl championship' in norm or norm.strip()=='championship'):aliases=LEAGUES['championship']
+    elif not aliases:
         for needle,values in LEAGUES.items():
             if needle in norm:
                 aliases=values

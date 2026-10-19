@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OddsPapi free optional source: Betano BR 1X2 (never scrapes Betano/Flashscore).
+"""OddsPapi free optional source: verified 1X2 from multiple bookmakers (no scraping).
 
 Free tier: 250 requests/month. This source deliberately allows at most two
 UTC slots/day, with one fixture listing and two price lookups in each slot:
@@ -17,7 +17,7 @@ from pregame_refresh_quotes import append_trio
 
 BASE='https://api.oddspapi.io/v4'
 SLOTS_UTC=(12,21)
-BOOKMAKERS=('betano.bet.br','betano')
+BOOKMAKERS=('betano.bet.br','pinnacle','bet365')
 MARKET_1X2='101'
 SELECTIONS={'101':'home','102':'draw','103':'away'}
 
@@ -43,12 +43,13 @@ def match_fixture(fixture,listed):
             found.append(event)
     return found[0] if len(found)==1 else None
 
-def extract_1x2(packet,now_ts):
+def available_1x2(packet,now_ts):
     """Official OddsPapi market catalog: fulltime=101, 1/X/2=101/102/103.
     Reject undocumented numeric market IDs instead of guessing outcomes.
     """
     if not isinstance(packet,dict) or not packet.get('hasOdds'):return None
     if parse_ts(packet.get('startTime')) is None:return None
+    offers=[]
     for book in BOOKMAKERS:
         bookmaker=(packet.get('bookmakerOdds') or {}).get(book)
         if not isinstance(bookmaker,dict) or not bookmaker.get('bookmakerIsActive') or bookmaker.get('suspended'):continue
@@ -71,21 +72,28 @@ def extract_1x2(packet,now_ts):
                 break
             selections[side]=round(price,4)
         if set(selections)=={'home','draw','away'}:
-            return selections,'Betano BR' if book=='betano.bet.br' else 'Betano'
-    return None
+            name={'betano.bet.br':'Betano BR','pinnacle':'Pinnacle',
+                  'bet365':'Bet365'}.get(book,book)
+            offers.append((selections,name))
+    return offers
+
+def extract_1x2(packet,now_ts):
+    """Compatibilidade com a interface anterior; primeiro conjunto válido."""
+    items=available_1x2(packet,now_ts)
+    return items[0] if items else None
 
 def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
     key=os.getenv('NEXUS_ODDSPAPI_KEY','') if key is None else key
     result={'status':'not_configured' if not key else 'waiting_free_slot',
             'requests':0,'matched':0,'quotes_added':0,'errors':[],
-            'provider':'OddsPapi','bookmakers':'Betano BR / Betano',
+            'provider':'OddsPapi','bookmakers':'Betano BR / Pinnacle / Bet365',
             'free_tier_monthly_max_requests':186}
     if not key:return result
     instant=datetime.fromtimestamp(now_ts,timezone.utc)
     if instant.hour not in SLOTS_UTC or instant.minute>=5:return result
     relevant=[]
     for day,mid,delta in candidates:
-        if not 0<delta<=75*60:continue
+        if not 0<delta<=6*3600:continue
         row=((docs.get(day) or {}).get('matches') or {}).get(mid)
         if not isinstance(row,dict):continue
         fixture=row.get('fixture') or {}
@@ -98,7 +106,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
         result['status']='no_pregame_candidates'
         return result
     start=datetime.fromtimestamp(now_ts,timezone.utc).replace(microsecond=0)
-    end=start+timedelta(minutes=75)
+    end=start+timedelta(hours=6)
     params={'apiKey':key,'sportId':10,
             'from':start.isoformat().replace('+00:00','Z'),
             'to':end.isoformat().replace('+00:00','Z'),
@@ -128,10 +136,8 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
             packet=fetcher(url)
             if not isinstance(packet,dict):continue
             if str(packet.get('fixtureId'))!=str(event.get('fixtureId')):continue
-            prices=extract_1x2(packet,now_ts)
-            if not prices:continue
-            values,book=prices
-            result['quotes_added']+=append_trio(row,values,book,'OddsPapi',now_ts)
+            for values,book in available_1x2(packet,now_ts):
+                result['quotes_added']+=append_trio(row,values,book,'OddsPapi',now_ts)
         except Exception as err:
             if len(result['errors'])<3:result['errors'].append(str(err)[:130])
     result['status']='checked' if not result['errors'] else 'partial'

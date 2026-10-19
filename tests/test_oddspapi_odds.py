@@ -1,4 +1,5 @@
 import unittest
+import json
 from datetime import datetime,timezone
 from urllib.parse import parse_qs,urlsplit
 from oddspapi_odds import collect_odds,extract_1x2,match_fixture
@@ -33,6 +34,23 @@ class OddsPapiFreeTests(unittest.TestCase):
         old=pricepacket()
         old['bookmakerOdds']['betano.bet.br']['markets']['101']['outcomes']['101']['players']['0']['changedAt']=date(NOW-90000)
         self.assertIsNone(extract_1x2(old,NOW))
+    def test_multiple_bookmakers_one_free_api_request(self):
+        docs={'2026-10-19':{'matches':{'f1':fixture()}}}
+        many=pricepacket()
+        # Outro bookmaker fornece os seus próprios três preços; nunca misturar casas.
+        another=json.loads(json.dumps(many['bookmakerOdds']['betano.bet.br']))
+        another['markets']['101']['outcomes']['101']['players']['0']['price']=2.13
+        many['bookmakerOdds']['pinnacle']=another
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            return [event()] if '/fixtures?' in url else many
+        result=collect_odds(docs,[('2026-10-19','f1',2100)],NOW,key='test-free',fetcher=fetch)
+        self.assertEqual(result['requests'],2)
+        self.assertEqual(result['quotes_added'],6)
+        self.assertEqual(len(calls),2)
+        qs=docs['2026-10-19']['matches']['f1']['odds_quotes']
+        self.assertEqual({x['bookmaker'] for x in qs},{'Betano BR','Pinnacle'})
     def test_no_key_no_call_and_free_slots(self):
         docs={'2026-10-19':{'matches':{'f1':fixture()}}}
         choices=[('2026-10-19','f1',2100)]

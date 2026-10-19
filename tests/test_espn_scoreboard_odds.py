@@ -26,6 +26,30 @@ class ESPNFixtureOddsTests(unittest.TestCase):
         self.assertEqual(normalized_team("Lexington SC"),"lexington")
         self.assertEqual(normalized_team("FC Tulsa"),"tulsa")
         self.assertEqual(league_code("USL Championship"),"usa.usl.1")
+    def test_real_nexus_history_espn_league_codes_are_not_dropped(self):
+        for league in ('bra.1','bra.2','eng.1','esp.1','ita.1','arg.1','uefa.champions'):
+            self.assertEqual(league_code(league),league)
+        fixture=game(home='Corinthians',away='Vitória',league='bra.1')
+        docs={'2026-10-09':{'matches':{'fotmob-123':fixture}}}
+        response={'events':[event(home='Corinthians',away='Vitória',offers=prices())]}
+        queried=[]
+        def fetch(url):
+            queried.append(url)
+            return response
+        s=collect_odds(docs,[('2026-10-09','fotmob-123',1800)],NOW,fetch)
+        self.assertEqual(s['candidate_games'],1)
+        self.assertEqual(s['mapped_games'],1)
+        self.assertEqual(s['boards_checked'],1)
+        self.assertIn('/bra.1/scoreboard',queried[0])
+        self.assertEqual(s['quotes_added'],3)
+    def test_unmapped_league_diagnostic_without_fake_odds(self):
+        row=game(league='Regional Sub-20')
+        docs={'2026-10-09':{'matches':{'fotmob-123':row}}}
+        st=collect_odds(docs,[('2026-10-09','fotmob-123',1800)],NOW,
+                        lambda url:self.fail('Unexpected ESPN query'))
+        self.assertEqual(st['leagues_unmapped'],['Regional Sub-20'])
+        self.assertFalse(row.get('odds_quotes'))
+
     def test_match_requires_kickoff_and_both_sides(self):
         row=game()["fixture"]
         self.assertIsNotNone(linked_event(row,[event()]))

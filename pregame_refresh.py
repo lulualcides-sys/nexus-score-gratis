@@ -27,7 +27,7 @@ MIN_WAIT=8*60
 ATTEMPTS=HISTORY/'pregame_attempts.json'
 STATUS=HISTORY/'pregame_refresh_status.json'
 
-def fixture_candidates(docs,now_ts):
+def fixture_candidates(docs,now_ts,lookahead=LOOKAHEAD):
     choices=[]
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
@@ -36,7 +36,7 @@ def fixture_candidates(docs,now_ts):
             if f.get('phase') not in ('scheduled','live'):continue
             try: delta=int(f.get('start_timestamp') or 0)-now_ts
             except (ValueError,TypeError):continue
-            if -AFTER<=delta<=LOOKAHEAD and delta:
+            if -AFTER<=delta<=lookahead and delta:
                 choices.append((day,key,delta))
     return choices
 
@@ -123,7 +123,7 @@ def run():
     days=[today]
     local_hour=NOW.astimezone(BR).hour
     if local_hour<=3:days.append(today-timedelta(days=1))
-    if local_hour>=22:days.append(today+timedelta(days=1))
+    if local_hour>=18:days.append(today+timedelta(days=1))
     docs={d.isoformat():read(HISTORY/(d.isoformat()+'.json')) for d in days}
     # Refrescar programação de hoje e das próximas horas; evita não detectar
     # partidas adicionadas após a execução completa horária.
@@ -149,6 +149,9 @@ def run():
         except Exception as err:
             failures.append('Agenda '+day.isoformat()+': '+str(err)[:100])
     candidates=fixture_candidates(docs,now_ts)
+    # As casas publicam odds horas antes da escalação. A janela de odds não
+    # amplia o volume de pedidos por detalhes FotMob (que continua em 75min).
+    odds_candidates=fixture_candidates(docs,now_ts,lookahead=6*3600)
     attempts=read(ATTEMPTS).get('matches') or {}
     due=[entry for entry in candidates if now_ts-float(attempts.get(entry[1]) or 0)>=MIN_WAIT]
     # Alternar o atendimento quando muitas partidas acontecem simultaneamente.
@@ -229,23 +232,23 @@ def run():
             'SofaScore calendário indisponível: '+str(err)[:110])
     # Fonte alternativa para partidas FotMob: agenda ESPN + resumo por ID ESPN,
     # com verificação estrita de clubes e horário antes de aceitar preços.
-    result['espn_fallback']=espn_scoreboard_odds(docs,candidates,now_ts)
+    result['espn_fallback']=espn_scoreboard_odds(docs,odds_candidates,now_ts)
     result['odds_updated']+=result['espn_fallback']['quotes_added']
     if result['espn_fallback']['errors']:
         result['errors'].extend(result['espn_fallback']['errors'][:4])
     # Provedor adicional 1X2 independente (chave opcional, nunca enviada ao navegador).
     # O dashboard continua funcionando quando um provedor falha ou bloqueia.
-    result['the_odds_api']=independent_odds(docs,candidates,now_ts)
+    result['the_odds_api']=independent_odds(docs,odds_candidates,now_ts)
     result['odds_updated']+=result['the_odds_api']['quotes_added']
     if result['the_odds_api']['errors']:
         result['errors'].extend(result['the_odds_api']['errors'][:4])
     # OddsPapi: Betano BR/Betano no plano zero (<=186 requests/31 dias).
-    result['odds_papi']=odds_papi_odds(docs,candidates,now_ts)
+    result['odds_papi']=odds_papi_odds(docs,odds_candidates,now_ts)
     result['odds_updated']+=result['odds_papi']['quotes_added']
     if result['odds_papi']['errors']:
         result['errors'].extend(result['odds_papi']['errors'][:3])
     # API-Football: somente com segredo opcional e teto <=64 req/dia.
-    result['api_football']=api_football_odds(docs,candidates,now_ts)
+    result['api_football']=api_football_odds(docs,odds_candidates,now_ts)
     result['odds_updated']+=result['api_football']['quotes_added']
     if result['api_football']['errors']:
         result['errors'].extend(result['api_football']['errors'][:3])

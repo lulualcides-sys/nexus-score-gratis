@@ -55,6 +55,15 @@ class OddsAPISourceTests(unittest.TestCase):
         status=collect_odds(docs,[("2026-10-09","fotmob-1",2000)],NOW,key="",fetcher=lambda url:1)
         self.assertEqual(status["status"],"not_configured")
         self.assertFalse(row.get("odds_quotes"))
+    def test_current_espn_codes_resolve_soccer_sports(self):
+        from the_odds_api_source import fixture_sport_keys
+        sport=[{'key':'soccer_epl','group':'Soccer','title':'EPL'},
+               {'key':'soccer_brazil_campeonato','group':'Soccer','title':'Brazil Campeonato Brasileiro'},
+               {'key':'soccer_italy_serie_a','group':'Soccer','title':'Serie A Italy'}]
+        self.assertEqual(fixture_sport_keys('eng.1',sport),['soccer_epl'])
+        self.assertEqual(fixture_sport_keys('bra.1',sport),['soccer_brazil_campeonato'])
+        self.assertEqual(fixture_sport_keys('ita.1',sport),['soccer_italy_serie_a'])
+
     def test_capture_only_when_key_and_fixture_matched(self):
         row=fixture(); docs={"2026-10-09":{"matches":{"fotmob-1":row}}}
         calls=[]

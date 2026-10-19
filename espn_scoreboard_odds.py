@@ -13,6 +13,11 @@ from urllib.parse import urlencode
 from odds_capture import get as espn_get
 from pregame_refresh_quotes import append_quote, append_trio, threeway_offers
 
+# As partidas salvas por ESPN usam siglas como bra.1, ita.1, eng.1.
+# Uma conversão somente por nome descartava todas essas partidas antes da consulta.
+ESPN_CODES=frozenset(('bra.1','bra.2','arg.1','eng.1','eng.2','esp.1',
+  'ger.1','fra.1','ita.1','usa.1','usa.usl.1','col.1',
+  'uefa.champions','uefa.europa','conmebol.libertadores','conmebol.sudamericana'))
 LEAGUE_NAMES = (
     ('usl championship', 'usa.usl.1'),
     ('major league soccer', 'usa.1'),
@@ -49,7 +54,8 @@ def normalized_team(name):
     return ' '.join(w for w in words if w not in generic)
 
 def league_code(name):
-    s=plain(name).replace('-',' ')
+    s=plain(name).strip().replace('-',' ')
+    if s in ESPN_CODES:return s
     for needle,code in LEAGUE_NAMES:
         if needle in s:return code
     return None
@@ -97,7 +103,8 @@ def scoreboard_offers(event):
 def collect_odds(docs,candidates,now_ts,fetcher=espn_get):
     """Atualiza odds_quotes em memória; o chamador mantém persistência."""
     status={'matched':0,'boards_checked':0,'summaries_checked':0,
-            'quotes_added':0,'errors':[]}
+            'quotes_added':0,'candidate_games':0,'mapped_games':0,
+            'leagues_unmapped':[], 'errors':[]}
     groups={}
     for day,key,delta in candidates:
         if delta<=0:continue
@@ -107,8 +114,14 @@ def collect_odds(docs,candidates,now_ts,fetcher=espn_get):
         try:
             if int(fixture.get('start_timestamp') or 0)<=now_ts:continue
         except (ValueError,TypeError):continue
+        status['candidate_games']+=1
         code=league_code(fixture.get('league'))
-        if not code:continue
+        if not code:
+            name=str(fixture.get('league') or '')[:75]
+            if name and name not in status['leagues_unmapped'] and len(status['leagues_unmapped'])<8:
+                status['leagues_unmapped'].append(name)
+            continue
+        status['mapped_games']+=1
         groups.setdefault((code,day),[]).append((key,row,fixture))
     # Uma agenda por liga e dia. Reduz chamadas ao invés de requisitar cada jogo.
     for (code,day),games in list(groups.items())[:18]:
