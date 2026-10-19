@@ -16,7 +16,7 @@ class ChronologicalValidationTests(unittest.TestCase):
  def test_same_kickoff_does_not_leak_other_outcomes(self):
     rows=[{'kickoff':20,'league':'L','actual':0,'probabilities':[.5,.3,.2]} for _ in range(26)]
     self.assertEqual(chronological_audit(rows)['evaluated'],0)
-    rows.append({'kickoff':21,'league':'L','actual':1,'probabilities':[.5,.3,.2]})
+    rows.append({'kickoff':4*3600,'league':'L','actual':1,'probabilities':[.5,.3,.2]})
     self.assertEqual(chronological_audit(rows)['evaluated'],1)
  def test_unsorted_input_independent_of_order(self):
     p=[.5,.3,.2]
