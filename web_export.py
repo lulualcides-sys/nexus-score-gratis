@@ -473,11 +473,20 @@ def public_row(row,day,team_cache=None,espn_cache=None):
         tag=(offer.get('source') or '',offer.get('bookmaker') or '',offer.get('at') or '')
         group=quote_groups.setdefault(tag,{})
         group[offer['sel']]=offer
-    ranked=sorted(quote_groups.values(),
-      key=lambda group:(len(group)==3,max((q.get('at') or '') for q in group.values())),
-      reverse=True)
-    selected=ranked[0] if ranked else {}
-    odds=[selected[side] for side in ('home','draw','away') if side in selected]
+    # Preservar uma captura íntegra por casa/fonte. Nunca compor 1X2 usando
+    # preços de casas, consultas ou horários diferentes.
+    complete_groups=sorted(
+        ((tag,group) for tag,group in quote_groups.items()
+         if set(group)=={'home','draw','away'} and all(tag)),
+        key=lambda item:item[0][2],reverse=True)
+    chosen={}
+    for tag,group in complete_groups:
+        provider=(tag[0],tag[1])
+        if provider not in chosen:
+            chosen[provider]=group
+        if len(chosen)>=5:break
+    odds=[group[side] for group in chosen.values()
+          for side in ('home','draw','away')]
     events=[]
     for event in row.get('events') or []:
         if not isinstance(event,dict) or event.get('type') not in TYPES:continue
@@ -589,7 +598,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
             'form':{s:public_form(forms.get(s)) for s in ('home','away')},
             'roster':{s:public_roster(rosters.get(s)) for s in ('home','away')},
             'lineups':lineups,'match_stars':stars,'team_leaders':leaders,
-            'odds':odds[:5],
+            'odds':odds[:15],
             'events':events[:130], 'activity_timeline':observed_activity(row.get('events')),
             'signals':signals[:20],
             'pregame_baseline':public_baseline(row,f),
