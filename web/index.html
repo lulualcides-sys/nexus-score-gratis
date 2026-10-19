@@ -751,6 +751,14 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 #cloud-load-more.hidden{display:none!important}
 </style>
 <style>
+.nexus-source-health{color:#d9edf7;margin:10px 0 15px}
+.nexus-source-health summary{cursor:pointer;font-size:13px;font-weight:750}
+.nexus-health-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:12px 0}
+.nexus-health-grid>div{padding:10px;border-radius:8px;border:1px solid #315066;background:#0d2433}
+.nexus-health-grid small{display:block;color:#adc5d5}
+.nexus-health-grid strong{display:block;color:#b8f2ff;font-size:18px}
+.nexus-health-warning{color:#ffdb9c}
+@media(max-width:580px){.nexus-health-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .odds-compare{margin:14px 0 18px;padding:17px;border:1px solid #245675;background:linear-gradient(155deg,#10283b,#0c1d2d);border-radius:12px}
 .odds-compare h3{margin:0;font-size:14px;color:#b9f2ff}.odds-compare-market{margin-top:15px}
 .odds-compare-market h4{font-size:12px;color:#87cae6;margin:0 0 6px}
@@ -859,6 +867,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-metrics" id="cloud-metrics"></div>
         <div class="cloud-help" id="cloud-status"></div>
         <div id="cloud-feed-freshness" class="nexus-feed-freshness" role="status" aria-live="polite"></div>
+        <div id="cloud-source-health" class="nexus-feed-freshness" aria-label="Saúde das fontes e qualidade das coletas"></div>
         <div id="cloud-league-coverage" class="nexus-feed-freshness" aria-label="Cobertura esportiva dos campeonatos"></div>
         <div id="cloud-model-validation" class="nexus-feed-freshness" aria-label="Acurácia e calibração das previsões históricas"></div>
         <div class="cloud-audit" id="cloud-audit" aria-label="Auditoria financeira por mercado"></div>
@@ -3431,6 +3440,33 @@ function renderCloudSignalJournal(journal){
 }
 let cloudVisibleLimit=40;
 
+function sourceHealthHTML(h){
+ if(h?.scope!=='observed_data_quality_not_ev')
+  return '<p>Auditoria das fontes indisponível. Não interpretar partidas sem horário como dados atuais.</p>';
+ const n=x=>x==null||!Number.isFinite(Number(x))?'—':Number(x).toLocaleString('pt-BR',{maximumFractionDigits:1});
+ const pct=x=>x==null?'—':n(x)+'%';
+ const cells=[
+ ['Jogos ao vivo encontrados',n(h.live_games_in_feed)],
+ ['Jogos ao vivo frescos',n(h.live_fresh)],
+ ['Com scouts recentes',n(h.fresh_live_with_recent_scouts)+' ('+pct(h.scouts_pct_of_fresh_live)+')'],
+ ['Com pressão recente',n(h.fresh_live_with_recent_pressure)+' ('+pct(h.pressure_pct_of_fresh_live)+')'],
+ ['Consultas com scouts',n(h.collector_details_with_scouts)+' / '+n(h.collector_details_queried)],
+ ['Aproveitamento de scouts',pct(h.collector_scout_yield_pct)],
+ ['Jogos pré-jogo com odds',n(h.pregame_matches_with_price_comparison)],
+ ['Jogos live com odds',n(h.live_matches_with_price_comparison)]
+ ];
+ const providers=h.providers||{};
+ const statuses=[['FotMob',providers.fotmob?.status],['ESPN',providers.espn?.status],
+  ['OddsPapi',providers.oddspapi?.status],['SofaScore',providers.sofascore?.status]];
+ return '<details class="nexus-source-health"><summary><b>QUALIDADE DAS FONTES</b> · '+n(h.live_fresh)+
+   ' jogos frescos · '+n(h.fresh_live_with_recent_pressure)+' com pressão medida</summary>'+
+   '<div class="nexus-health-grid">'+cells.map(([name,value])=>
+     '<div><small>'+esc(name)+'</small><strong>'+esc(value)+'</strong></div>').join('')+'</div>'+
+   '<p>'+statuses.map(([name,status])=>'<b>'+esc(name)+'</b>: '+esc(status||'sem dados')).join(' · ')+'</p>'+
+   (h.warnings||[]).slice(0,4).map(x=>'<p class="nexus-health-warning">'+esc(x)+'</p>').join('')+
+   '<small>Leituras com hora e origem verificáveis; nenhuma pontuação de qualidade é EV+, probabilidade de gol ou liquidez.</small></details>';
+}
+
 function modelValidationHTML(r){
  if(!r||typeof r!=='object')return '<p>Calibração ainda não calculada. EV+ indisponível.</p>';
  const n=Number(r.eligible)||0,minimum=Number(r.minimum_for_review)||200;
@@ -3476,6 +3512,8 @@ function renderCloud(){
  renderCloudSignalJournal(cloudData.signal_journal);
  window.NexusSignalEvaluation?.render(cloudData.signal_evaluation,cloudData.signal_journal);
  window.NexusIntelligenceV6?.render(cloudData.intelligence_v6,cloudData.odds_collection_status);
+ const sourcePanel=$('#cloud-source-health');
+ if(sourcePanel)sourcePanel.innerHTML=sourceHealthHTML(cloudData.source_health);
  const validatedPanel=$('#cloud-model-validation');
  if(validatedPanel)validatedPanel.innerHTML=modelValidationHTML(cloudData.model_validation);
  const scoped=rows.filter(NexusLeagueCoverage.visible);
