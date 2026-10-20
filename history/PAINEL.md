@@ -2,37 +2,37 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T21:41:39.192932+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T22:39:55.501733+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-20 | Londrina × Cuiabá | 0-0 | 0 | Match Odds 1X2: Casa 2,90, Empate 3,15, Fora 2,50 |
+| 2026-10-20 | Londrina × Cuiabá | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,90, Empate 3,15, Fora 2,50 |
 | 2026-10-20 | Millonarios × Once Caldas | 0-0 | 0 | Match Odds 1X2: Casa 1,67, Empate 3,60, Fora 4,60 |
 | 2026-10-20 | Cúcuta Deportivo × Atlético Nacional | 0-0 | 0 | Match Odds 1X2: Casa 5,25, Empate 4,00, Fora 1,53 |
 | 2026-10-20 | Internacional de Bogotá × Fortaleza CEIF | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,30, Fora 3,10 |
-| 2026-10-20 | Deportivo Pereira × Boyacá Chicó FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,10, Empate 3,15, Fora 3,25 |
+| 2026-10-20 | Deportivo Pereira × Boyacá Chicó FC | 1-0 | 0 | Chutes no alvo: 3.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,15, Fora 3,25 |
 | 2026-10-20 | VfB Stuttgart × Atlético Madrid | 1-1 | 0 | Chutes no alvo: 5.0×3.0; Match Odds 1X2: Casa 3,20, Empate 3,90, Fora 2,10 |
 | 2026-10-20 | Liverpool × Villarreal | 4-3 | 0 | Chutes no alvo: 7.0×5.0; Match Odds 1X2: Casa 1,53, Empate 4,60, Fora 5,75 |
 | 2026-10-20 | FC Porto × PSV Eindhoven | 0-1 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 1,56, Empate 4,70, Fora 5,25 |
-| 2026-10-20 | Paris Saint-Germain × Barcelona | 4-2 | 0 | Chutes no alvo: 15.0×5.0; Match Odds 1X2: Casa 2,45, Empate 4,40, Fora 2,45 |
+| 2026-10-20 | Paris Saint-Germain × Barcelona | 4-2 | 0 | Chutes no alvo: 14.0×5.0; Match Odds 1X2: Casa 2,45, Empate 4,40, Fora 2,45 |
 | 2026-10-20 | Napoli × Bodo/Glimt | 4-3 | 0 | Chutes no alvo: 8.0×6.0; Match Odds 1X2: Casa 1,62, Empate 4,40, Fora 4,90 |
 | 2026-10-20 | Manchester City × AEK Athens | 5-1 | 0 | Chutes no alvo: 7.0×3.0; Match Odds 1X2: Casa 1,11, Empate 10,00, Fora 20,00 |
 | 2026-10-20 | AS Roma × Slovan Bratislava | 4-0 | 0 | Chutes no alvo: 10.0×0.0; Match Odds 1X2: Casa 1,15, Empate 8,50, Fora 16,00 |
 | 2026-10-20 | Fenerbahce × Slavia Prague | 2-2 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 1,59, Empate 4,40, Fora 5,25 |
 | 2026-10-20 | Sabah FK × Borussia Dortmund | 1-2 | 0 | Chutes no alvo: 4.0×9.0; Match Odds 1X2: Casa 9,50, Empate 6,00, Fora 1,29 |
 | 2026-10-20 | Independiente Valle del Cauca × Boca Juniors de Cali | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Atlético FC × Deportes Quindío | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Atlético FC × Deportes Quindío | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Tigres FC × Real Cundinamarca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Real Cartagena × Patriotas | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Millonarios × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Cúcuta × Atlético Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Deportivo Pasto × Alianza FC | 0-1 | 73 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-20 | Internacional de Bogotá × Fortaleza FC | 0-0 | 0 | Match Odds 1X2: Casa 2,37, Empate 3,45, Fora 3,01 |
-| 2026-10-20 | Deportivo Pereira × Chicó FC | 0-0 | 9 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Deportivo Pereira × Chicó FC | 1-0 | 52 | Chutes no alvo: 3.0×2.0, Chutes para fora: 6.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-20 | Atlético de San Luis × Querétaro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | FC Juárez × Atlante | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Chivas × Necaxa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -63,7 +63,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-20 | Chonburi FC × Pattaya City | 2-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Corinthians × Vitória | 1-1 | 90 | Chutes no alvo: 6.0×5.0, Chutes para fora: 7.0×0.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×2.0 |
 | 2026-10-20 | IFK Norrköping × Örebro | 2-2 | 0 | Chutes no alvo: 6.0×2.0, Escanteios: 6.0×2.0 |
-| 2026-10-20 | Londrina × Cuiabá | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Londrina × Cuiabá | 0-0 | 7 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Goiás × Náutico | 0-0 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 12.0×10.0, Escanteios: 13.0×8.0, Grandes chances: 2.0×0.0 |
 | 2026-10-20 | Xorazm × Buxoro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Dunfermline Athletic × Partick Thistle | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4675 | **Jogos distintos:** 1408 | **Resultados verificáveis:** 2613 | **Com gol:** 902 | **Sem gol:** 1711 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 12 datas com coletas | 17 pendentes | 891 indeterminados | 1154 incompletos.
+**Observações:** 4677 | **Jogos distintos:** 1409 | **Resultados verificáveis:** 2618 | **Com gol:** 907 | **Sem gol:** 1711 | **Taxa observada:** 34.6%.
+**Evolução da amostra:** 12 datas com coletas | 19 pendentes | 886 indeterminados | 1154 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,15 +177,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 930 | 638 | 240 | 398 | 37.6% |
-| ⚡ pressao_ofensiva_18 | 693 | 454 | 147 | 307 | 32.4% |
+| ⚡ pressao_ofensiva_18 | 694 | 455 | 148 | 307 | 32.5% |
 | 🎯 chutes_no_alvo_5 | 754 | 368 | 115 | 253 | 31.2% |
-| 🟥 expulsao_confirmada | 788 | 358 | 112 | 246 | 31.3% |
+| 🟥 expulsao_confirmada | 788 | 359 | 113 | 246 | 31.5% |
 | 🚩 escanteios_6 | 576 | 271 | 101 | 170 | 37.3% |
 | 💣 grandes_chances_3 | 463 | 243 | 95 | 148 | 39.1% |
-| 🔥 pressao_forte_10min | 230 | 143 | 50 | 93 | 35.0% |
-| 🧨 pressao_total_5_10min | 124 | 78 | 25 | 53 | 32.1% |
+| 🔥 pressao_forte_10min | 231 | 144 | 51 | 93 | 35.4% |
+| 🧨 pressao_total_5_10min | 124 | 79 | 26 | 53 | 32.9% |
 | ⏱️ tensao_tardia_70 | 76 | 31 | 9 | 22 | 29.0% |
-| 🚨 alerta_cruzado_gol | 41 | 29 | 8 | 21 | 27.6% |
+| 🚨 alerta_cruzado_gol | 41 | 30 | 9 | 21 | 30.0% |
 
 ### Equipe
 
@@ -236,13 +236,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | League Two | 90 | 57 | 16 | 41 | 28.1% |
 | Eredivisie | 95 | 55 | 28 | 27 | 50.9% |
 | Eliteserien | 86 | 55 | 14 | 41 | 25.5% |
+| League One | 110 | 54 | 17 | 37 | 31.5% |
 | LaLiga | 90 | 53 | 21 | 32 | 39.6% |
 | Super Lig | 62 | 52 | 20 | 32 | 38.5% |
 | Liga MX | 92 | 51 | 22 | 29 | 43.1% |
-| League One | 110 | 50 | 13 | 37 | 26.0% |
 | Serie B | 70 | 48 | 17 | 31 | 35.4% |
 | Primera División | 77 | 47 | 13 | 34 | 27.7% |
-| Primera A | 71 | 47 | 15 | 32 | 31.9% |
+| Primera A | 73 | 47 | 15 | 32 | 31.9% |
 | Superligaen | 72 | 44 | 14 | 30 | 31.8% |
 | Conference League | 78 | 43 | 16 | 27 | 37.2% |
 | Ekstraklasa | 68 | 41 | 14 | 27 | 34.1% |
@@ -253,21 +253,23 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 130 | 101 | 38 | 63 | 37.6% |
 | 16–30′ | 395 | 297 | 98 | 199 | 33.0% |
-| 31–45′ | 769 | 597 | 234 | 363 | 39.2% |
+| 31–45′ | 771 | 597 | 234 | 363 | 39.2% |
 | 46–60′ | 674 | 515 | 184 | 331 | 35.7% |
-| 61–75′ | 1001 | 675 | 215 | 460 | 31.9% |
+| 61–75′ | 1001 | 680 | 220 | 460 | 32.4% |
 | 76–90′ | 1254 | 427 | 132 | 295 | 30.9% |
 | 91+′ | 452 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4675 | **Jogos monitorados:** 1741 | **Ao vivo:** 27 | **Termômetros recentes:** 7.
+**Registros:** 4677 | **Jogos monitorados:** 1741 | **Ao vivo:** 27 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-20T22:29:17.621904+00:00 | Deportivo Pereira × Chicó FC | Deportivo Pereira (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T22:29:17.621904+00:00 | Deportivo Pereira × Chicó FC | Deportivo Pereira (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
 | 2026-10-20T20:43:59.972827+00:00 | VfB Stuttgart × Atlético Madrid | Atlético Madrid (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-20T20:43:59.972827+00:00 | Liverpool × Villarreal | Liverpool (84') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-20T20:43:59.972827+00:00 | Napoli × Bodo/Glimt | Napoli (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
@@ -327,14 +329,14 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-20T20:37:32.393629+00:00 | FC Porto × PSV Eindhoven | PSV Eindhoven (81') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-20T20:37:32.393629+00:00 | Annagh United × Limavady | Limavady (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-20T20:37:32.393629+00:00 | Yeovil Town × Leatherhead | Leatherhead (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Largs Thistle × Pollok | Largs Thistle (67') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Largs Thistle × Pollok | Largs Thistle (67') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | AFC Wimbledon × Mansfield Town | AFC Wimbledon (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | AFC Wimbledon × Mansfield Town | AFC Wimbledon (66') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Blackpool × Milton Keynes Dons | Blackpool (65') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🚨 alerta_cruzado_gol · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Bromley × Leicester City | Leicester City (63') | 🚨 alerta_cruzado_gol · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Burton Albion × Bradford City | Bradford City (66') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Burton Albion × Bradford City | Bradford City (66') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Burton Albion × Bradford City | Bradford City (66') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -355,7 +357,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-20T20:08:45.075275+00:00 | Stevenage × Plymouth Argyle | Plymouth Argyle (66') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Barnet × Swindon Town | Swindon Town (64') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Bristol Rovers × Salford City | Bristol Rovers (64') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Cheltenham Town × Fleetwood Town | Cheltenham Town (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T20:08:45.075275+00:00 | Cheltenham Town × Fleetwood Town | Cheltenham Town (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Chesterfield × Colchester United | Colchester United (66') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Chesterfield × Colchester United | Colchester United (66') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Chesterfield × Colchester United | Colchester United (66') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-20T20:08:45.075275+00:00 | Gillingham × Port Vale | Gillingham (51') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Northampton Town × Tranmere Rovers | Northampton Town (67') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-20T20:08:45.075275+00:00 | Rochdale × Grimsby Town | Grimsby Town (66') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Rochdale × Grimsby Town | Grimsby Town (66') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Rochdale × Grimsby Town | Grimsby Town (66') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
