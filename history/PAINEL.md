@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T05:41:06.382827+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T06:49:58.255698+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -268,7 +268,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20T03:34:44.742313+00:00 | Escorpiones × Puntarenas FC | Escorpiones (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T03:34:44.742313+00:00 | Escorpiones × Puntarenas FC | Escorpiones (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Corinthians × Vitória | Corinthians (76') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Goiás × Náutico | Goiás (72') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Escorpiones × Puntarenas FC | Escorpiones (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
