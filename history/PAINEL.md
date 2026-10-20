@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T17:43:51.459938+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T18:47:03.820798+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **41**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -22,8 +22,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-20 | Napoli × Bodo/Glimt | 0-0 | 0 | Match Odds 1X2: Casa 1,62, Empate 4,40, Fora 4,90 |
 | 2026-10-20 | Manchester City × AEK Athens | 0-0 | 0 | Match Odds 1X2: Casa 1,11, Empate 10,00, Fora 20,00 |
 | 2026-10-20 | AS Roma × Slovan Bratislava | 0-0 | 0 | Match Odds 1X2: Casa 1,15, Empate 8,50, Fora 16,00 |
-| 2026-10-20 | Fenerbahce × Slavia Prague | 2-1 | 0 | Chutes no alvo: 3.0×1.0; Match Odds 1X2: Casa 1,59, Empate 4,40, Fora 5,25 |
-| 2026-10-20 | Sabah FK × Borussia Dortmund | 1-1 | 0 | Chutes no alvo: 3.0×5.0; Match Odds 1X2: Casa 9,50, Empate 6,00, Fora 1,29 |
+| 2026-10-20 | Fenerbahce × Slavia Prague | 2-2 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 1,59, Empate 4,40, Fora 5,25 |
+| 2026-10-20 | Sabah FK × Borussia Dortmund | 1-2 | 0 | Chutes no alvo: 4.0×9.0; Match Odds 1X2: Casa 9,50, Empate 6,00, Fora 1,29 |
 | 2026-10-20 | Independiente Valle del Cauca × Boca Juniors de Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Atlético FC × Deportes Quindío | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Tigres FC × Real Cundinamarca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -39,10 +39,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-20 | Largs Thistle × Pollok | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Hajer × Al Najma | 2-4 | 0 | Chutes no alvo: 4.0×5.0, Chutes para fora: 7.0×6.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×3.0 |
 | 2026-10-20 | Al-Orobah FC × Al Bukayriyah | 1-1 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 2.0×2.0, Escanteios: 3.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-10-20 | Al Akhdoud × Al-Adalah | 1-2 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×3.0 |
+| 2026-10-20 | Al Akhdoud × Al-Adalah | 1-3 | 0 | Chutes no alvo: 2.0×11.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×8.0 |
 | 2026-10-20 | Deportivo Riestra × Unión | 1-1 | 72 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×1.0 |
 | 2026-10-20 | Sarmiento × Barracas Central | 1-1 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 5.0×10.0, Escanteios: 1.0×4.0, Grandes chances: 2.0×3.0 |
-| 2026-10-20 | Karlovac × Rijeka | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Karlovac × Rijeka | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Fenerbahçe U19 × Slavia Prague U19 | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Sabah FK U19 × Borussia Dortmund U19 | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Roma U19 × Slovan Bratislava U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -62,40 +62,40 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-20 | Uthai Thani FC × Nakhon Pathom | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Chonburi FC × Pattaya City | 2-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Corinthians × Vitória | 1-1 | 90 | Chutes no alvo: 6.0×5.0, Chutes para fora: 7.0×0.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×2.0 |
-| 2026-10-20 | IFK Norrköping × Örebro | 0-1 | 0 | Chutes no alvo: 2.0×1.0, Escanteios: 2.0×2.0 |
+| 2026-10-20 | IFK Norrköping × Örebro | 2-2 | 0 | Chutes no alvo: 6.0×2.0, Escanteios: 6.0×2.0 |
 | 2026-10-20 | Londrina × Cuiabá | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Goiás × Náutico | 0-0 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 12.0×10.0, Escanteios: 13.0×8.0, Grandes chances: 2.0×0.0 |
 | 2026-10-20 | Xorazm × Buxoro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Dunfermline Athletic × Partick Thistle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Sporting FC × Deportiva San Carlos | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Wolverhampton Wanderers × Portsmouth | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Wolverhampton Wanderers × Portsmouth | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | AFC Wimbledon × Mansfield Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Blackpool × Milton Keynes Dons | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Bromley × Leicester City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Burton Albion × Bradford City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Bromley × Leicester City | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Burton Albion × Bradford City | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Cambridge United × Wycombe Wanderers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Doncaster Rovers × Stockport County | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Huddersfield Town × Peterborough United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Luton Town × Barnsley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Notts County × Sheffield Wednesday | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Oxford United × Wigan Athletic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Stevenage × Plymouth Argyle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Barnet × Swindon Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Bristol Rovers × Salford City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Cheltenham Town × Fleetwood Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Notts County × Sheffield Wednesday | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Oxford United × Wigan Athletic | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Stevenage × Plymouth Argyle | 0-0 | 1 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Barnet × Swindon Town | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Bristol Rovers × Salford City | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Cheltenham Town × Fleetwood Town | 0-0 | 3 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Chesterfield × Colchester United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Crawley Town × Shrewsbury Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Exeter City × Crewe Alexandra | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Crawley Town × Shrewsbury Town | 0-0 | 2 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Exeter City × Crewe Alexandra | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Gillingham × Port Vale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Northampton Town × Tranmere Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Rochdale × Grimsby Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Rotherham United × Newport County | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Walsall × Oldham Athletic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | York City × Accrington Stanley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Northampton Town × Tranmere Rovers | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Rochdale × Grimsby Town | 0-0 | 2 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Rotherham United × Newport County | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | Walsall × Oldham Athletic | 0-0 | 2 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-20 | York City × Accrington Stanley | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Larne × Linfield | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Antigua Guatemala × Club Xelajú | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Deportivo Malacateco × Comunicaciones FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | HB Køge (W) × Brøndby IF (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | HB Køge (W) × Brøndby IF (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Ebbsfleet United × Horsham | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Schalke 04 II × FC Köln II | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Brentwood Town × Dartford | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -123,19 +123,19 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-20 | Sporting San Miguelito × Tauro FC | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Escorpiones × Puntarenas FC | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Al Diriyah × Al Riyadh | 1-0 | 80 | Chutes no alvo: 6.0×3.0, Chutes para fora: 4.0×6.0, Escanteios: 2.0×8.0, Grandes chances: 2.0×1.0 |
-| 2026-10-20 | Al-Ettifaq × Al Ittihad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Al Nassr FC × Neom SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Al-Ettifaq × Al Ittihad | 1-1 | 45 | Chutes no alvo: 3.0×3.0, Chutes para fora: 1.0×4.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×1.0 |
+| 2026-10-20 | Al Nassr FC × Neom SC | 0-0 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×2.0 |
 | 2026-10-20 | Al-Taawoun × Al Qadsiah | 0-1 | 70 | Chutes no alvo: 1.0×4.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×13.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | ASA Târgu Mureș × Chindia Târgoviște | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Toluca (W) × Santos Laguna (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Club León (W) × Atlante (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Pineto × Reggiana | 2-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 2.0×4.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-20 | Asyut Petroleum × Zamalek SC | 0-1 | 84 | Chutes no alvo: 2.0×6.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×2.0; Match Odds 1X2: Casa 9,20, Empate 4,43, F |
-| 2026-10-20 | Wadi Degla FC × National Bank | 1-0 | 40 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-20 | Tala'ea El Gaish × Pyramids FC | 1-3 | 41 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×1.0 |
+| 2026-10-20 | Wadi Degla FC × National Bank | 1-1 | 80 | Chutes no alvo: 1.0×7.0, Chutes para fora: 4.0×5.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×1.0 |
+| 2026-10-20 | Tala'ea El Gaish × Pyramids FC | 1-3 | 81 | Chutes no alvo: 3.0×6.0, Chutes para fora: 7.0×8.0, Escanteios: 3.0×7.0, Grandes chances: 0.0×1.0 |
 | 2026-10-20 | ZED FC × Modern Sport FC | 3-2 | 74 | Chutes no alvo: 6.0×3.0, Chutes para fora: 5.0×10.0, Escanteios: 4.0×4.0, Grandes chances: 2.0×3.0 |
 | 2026-10-20 | Wealdstone × Nottingham Forest U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Boreham Wood × Middlesbrough U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Boreham Wood × Middlesbrough U21 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Isenmulang Kalteng × Java United F.C. | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Dewa United FC × Persijap Jepara | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4478 | **Jogos distintos:** 1361 | **Resultados verificáveis:** 2522 | **Com gol:** 862 | **Sem gol:** 1660 | **Taxa observada:** 34.2%.
-**Evolução da amostra:** 12 datas com coletas | 25 pendentes | 836 indeterminados | 1095 incompletos.
+**Observações:** 4494 | **Jogos distintos:** 1363 | **Resultados verificáveis:** 2535 | **Com gol:** 870 | **Sem gol:** 1665 | **Taxa observada:** 34.3%.
+**Evolução da amostra:** 12 datas com coletas | 22 pendentes | 842 indeterminados | 1095 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 884 | 610 | 228 | 382 | 37.4% |
-| ⚡ pressao_ofensiva_18 | 657 | 435 | 141 | 294 | 32.4% |
-| 🎯 chutes_no_alvo_5 | 726 | 360 | 112 | 248 | 31.1% |
-| 🟥 expulsao_confirmada | 770 | 353 | 110 | 243 | 31.2% |
-| 🚩 escanteios_6 | 557 | 261 | 94 | 167 | 36.0% |
-| 💣 grandes_chances_3 | 439 | 233 | 91 | 142 | 39.1% |
-| 🔥 pressao_forte_10min | 215 | 137 | 47 | 90 | 34.3% |
+| 🥶 jogo_frio | 888 | 614 | 229 | 385 | 37.3% |
+| ⚡ pressao_ofensiva_18 | 660 | 437 | 142 | 295 | 32.5% |
+| 🎯 chutes_no_alvo_5 | 729 | 362 | 114 | 248 | 31.5% |
+| 🟥 expulsao_confirmada | 772 | 354 | 111 | 243 | 31.4% |
+| 🚩 escanteios_6 | 559 | 264 | 97 | 167 | 36.7% |
+| 💣 grandes_chances_3 | 440 | 234 | 91 | 143 | 38.9% |
+| 🔥 pressao_forte_10min | 216 | 137 | 47 | 90 | 34.3% |
 | 🧨 pressao_total_5_10min | 118 | 74 | 23 | 51 | 31.1% |
 | ⏱️ tensao_tardia_70 | 73 | 31 | 9 | 22 | 29.0% |
 | 🚨 alerta_cruzado_gol | 39 | 28 | 7 | 21 | 25.0% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 124 | 80 | 35 | 45 | 43.8% |
+| Equipe não definida | 124 | 81 | 36 | 45 | 44.4% |
 | FC Cincinnati | 21 | 16 | 3 | 13 | 18.8% |
 | Olympiacos | 16 | 16 | 0 | 16 | 0.0% |
 | Al Hilal | 16 | 13 | 1 | 12 | 7.7% |
@@ -213,26 +213,26 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Malmö FF | 10 | 10 | 0 | 10 | 0.0% |
 | Manchester United (W) | 10 | 10 | 0 | 10 | 0.0% |
 | Deportivo Cali | 17 | 9 | 1 | 8 | 11.1% |
+| Borussia Dortmund | 15 | 9 | 3 | 6 | 33.3% |
 | Palmeiras | 15 | 9 | 1 | 8 | 11.1% |
 | Al Shabab | 12 | 9 | 5 | 4 | 55.6% |
-| Flamengo | 11 | 9 | 1 | 8 | 11.1% |
 
 ### Campeonato
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 261 | 154 | 45 | 109 | 29.2% |
+| Premier League | 271 | 160 | 49 | 111 | 30.6% |
 | Major League Soccer | 219 | 120 | 45 | 75 | 37.5% |
 | Liga Profesional | 137 | 91 | 18 | 73 | 19.8% |
 | Super League | 127 | 73 | 22 | 51 | 30.1% |
 | Ligue 1 | 105 | 73 | 26 | 47 | 35.6% |
 | Bundesliga | 115 | 66 | 18 | 48 | 27.3% |
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
+| Champions League | 104 | 64 | 40 | 24 | 62.5% |
 | LaLiga2 | 110 | 63 | 26 | 37 | 41.3% |
 | Série A | 100 | 62 | 27 | 35 | 43.5% |
-| Champions League | 101 | 59 | 38 | 21 | 64.4% |
 | Serie A | 97 | 57 | 20 | 37 | 35.1% |
-| Saudi Pro League | 76 | 56 | 21 | 35 | 37.5% |
+| Saudi Pro League | 77 | 56 | 21 | 35 | 37.5% |
 | Eredivisie | 95 | 55 | 28 | 27 | 50.9% |
 | Eliteserien | 86 | 55 | 14 | 41 | 25.5% |
 | LaLiga | 90 | 53 | 21 | 32 | 39.6% |
@@ -253,33 +253,49 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 130 | 101 | 38 | 63 | 37.6% |
 | 16–30′ | 375 | 281 | 94 | 187 | 33.5% |
-| 31–45′ | 723 | 563 | 222 | 341 | 39.4% |
-| 46–60′ | 663 | 508 | 177 | 331 | 34.8% |
-| 61–75′ | 948 | 645 | 200 | 445 | 31.0% |
-| 76–90′ | 1210 | 423 | 130 | 293 | 30.7% |
+| 31–45′ | 726 | 568 | 224 | 344 | 39.4% |
+| 46–60′ | 665 | 510 | 179 | 331 | 35.1% |
+| 61–75′ | 955 | 649 | 202 | 447 | 31.1% |
+| 76–90′ | 1214 | 425 | 132 | 293 | 31.1% |
 | 91+′ | 429 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4478 | **Jogos monitorados:** 1741 | **Ao vivo:** 38 | **Termômetros recentes:** 10.
+**Registros:** 4494 | **Jogos monitorados:** 1741 | **Ao vivo:** 64 | **Termômetros recentes:** 24.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Al Akhdoud × Al-Adalah | Al-Adalah (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Al Akhdoud × Al-Adalah | Al-Adalah (45') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Wadi Degla FC × National Bank | Wadi Degla FC (42') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Tala'ea El Gaish × Pyramids FC | Tala'ea El Gaish (42') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Fenerbahçe × Slavia Prague | Slavia Prague (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-20T18:47:30.997182+00:00 | Wadi Degla FC × National Bank | National Bank (81') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-20T18:47:30.997182+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (82') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | IFK Norrköping × Örebro | IFK Norrköping (80') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | IFK Norrköping × Örebro | IFK Norrköping (80') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | Al-Ettifaq × Al Ittihad | Al Ittihad (39') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | Wadi Degla FC × National Bank | National Bank (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | Wadi Degla FC × National Bank | Wadi Degla FC (72') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (74') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T18:38:32.855468+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (74') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T18:06:55.700113+00:00 | Wadi Degla FC × National Bank | National Bank (45') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-20T18:06:55.700113+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T18:06:55.700113+00:00 | Fenerbahçe × Slavia Prague | Slavia Prague (63') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T18:06:55.700113+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (65') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T18:06:55.700113+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (65') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T17:47:40.696740+00:00 | Wadi Degla FC × National Bank | National Bank (46') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T17:47:40.696740+00:00 | Wadi Degla FC × National Bank | Wadi Degla FC (46') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Al Akhdoud × Al-Adalah | Al-Adalah (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Al Akhdoud × Al-Adalah | Al-Adalah (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Wadi Degla FC × National Bank | Wadi Degla FC (42') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Tala'ea El Gaish × Pyramids FC | Tala'ea El Gaish (42') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Fenerbahçe × Slavia Prague | Slavia Prague (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-20T17:44:23.046321+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T17:17:03.031884+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (15') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T17:17:03.031884+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (15') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T17:17:03.031884+00:00 | Tala'ea El Gaish × Pyramids FC | Pyramids FC (15') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-20T17:17:03.031884+00:00 | Fenerbahçe × Slavia Prague | Fenerbahçe (31') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-20T17:17:03.031884+00:00 | Fenerbahçe × Slavia Prague | Fenerbahçe (31') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-20T17:17:03.031884+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (32') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T17:17:03.031884+00:00 | Sabah FK × Borussia Dortmund | Borussia Dortmund (32') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-20T16:41:42.940861+00:00 | Al Diriyah × Al Riyadh | Al Diriyah (80') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
@@ -352,22 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T20:42:21.216253+00:00 | Getafe × Rayo Vallecano | Rayo Vallecano (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T20:42:21.216253+00:00 | Getafe × Rayo Vallecano | Getafe (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-19T20:42:21.216253+00:00 | Fram Reykjavík × ÍA Akranes | ÍA Akranes (67') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-19T20:42:21.216253+00:00 | Getafe × Rayo Vallecano | Rayo Vallecano (82') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:42:21.216253+00:00 | Getafe × Rayo Vallecano | Rayo Vallecano (82') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:42:21.216253+00:00 | Getafe × Rayo Vallecano | Rayo Vallecano (82') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Fram Reykjavík × ÍA Akranes | Fram Reykjavík (61') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (79') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (79') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (79') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (79') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (79') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Waterford FC × Galway United FC | Waterford FC (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Waterford FC × Galway United FC | Waterford FC (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Parma × Torino | Parma (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Tottenham Hotspur × Coventry City | Coventry City (77') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Tottenham Hotspur × Coventry City | Coventry City (77') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Tottenham Hotspur × Coventry City | Coventry City (77') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-19T20:36:18.309476+00:00 | Rodez × Montpellier | Montpellier (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
