@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T03:42:02.845678+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T04:40:27.547553+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -121,7 +121,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-20 | Uxbridge × Malvern Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Yate Town × Sholing | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Sporting San Miguelito × Tauro FC | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Escorpiones × Puntarenas FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Escorpiones × Puntarenas FC | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Al Diriyah × Al Riyadh | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Al-Ettifaq × Al Ittihad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Al Nassr FC × Neom SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 4438 | **Jogos distintos:** 1349 | **Resultados verificáveis:** 2498 | **Com gol:** 856 | **Sem gol:** 1642 | **Taxa observada:** 34.3%.
-**Evolução da amostra:** 12 datas com coletas | 18 pendentes | 831 indeterminados | 1091 incompletos.
+**Evolução da amostra:** 12 datas com coletas | 17 pendentes | 832 indeterminados | 1091 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,13 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4438 | **Jogos monitorados:** 1740 | **Ao vivo:** 23 | **Termômetros recentes:** 7.
+**Registros:** 4438 | **Jogos monitorados:** 1740 | **Ao vivo:** 22 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20T03:34:44.742313+00:00 | Escorpiones × Puntarenas FC | Escorpiones (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T03:34:44.742313+00:00 | Escorpiones × Puntarenas FC | Escorpiones (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Corinthians × Vitória | Corinthians (76') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Goiás × Náutico | Goiás (72') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Escorpiones × Puntarenas FC | Escorpiones (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **161**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
