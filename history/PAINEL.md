@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T07:48:56.451296+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T08:44:33.332450+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -55,9 +55,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-20 | Vasco da Gama × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | LDU Quito × Olimpia | 0-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Libertad × Universidad de Chile | 2-1 | 0 | Chutes no alvo: 3.0×8.0, Chutes para fora: 6.0×9.0, Escanteios: 2.0×10.0, Grandes chances: 0.0×0.0 |
-| 2026-10-20 | Romklao United × Sukhothai FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Nakhon Phanom United × Marines | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | See Khwae City × Udon Banchan United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Romklao United × Sukhothai FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Nakhon Phanom United × Marines | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | See Khwae City × Udon Banchan United | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Suphanburi FC × Lamphun Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Uthai Thani FC × Nakhon Pathom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Chonburi FC × Pattaya City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4438 | **Jogos monitorados:** 1740 | **Ao vivo:** 22 | **Termômetros recentes:** 7.
+**Registros:** 4438 | **Jogos monitorados:** 1740 | **Ao vivo:** 26 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
