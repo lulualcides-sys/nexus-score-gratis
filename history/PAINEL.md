@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T12:52:26.339955+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-20T13:50:14.327540+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -45,13 +45,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-20 | Karlovac × Rijeka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Fenerbahçe U19 × Slavia Prague U19 | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Sabah FK U19 × Borussia Dortmund U19 | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Roma U19 × Slovan Bratislava U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | FC Porto U19 × PSV Eindhoven U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Roma U19 × Slovan Bratislava U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | FC Porto U19 × PSV Eindhoven U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Liverpool U19 × Villarreal U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Manchester City U19 × AEK Athens U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Paris Saint Germain U19 × Barcelona U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Paris Saint Germain U19 × Barcelona U19 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | SSC Napoli U19 × Bodø/Glimt U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | VfB Stuttgart U19 × Atlético Madrid U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | VfB Stuttgart U19 × Atlético Madrid U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Vasco da Gama × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | LDU Quito × Olimpia | 0-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-20 | Libertad × Universidad de Chile | 2-1 | 0 | Chutes no alvo: 3.0×8.0, Chutes para fora: 6.0×9.0, Escanteios: 2.0×10.0, Grandes chances: 0.0×0.0 |
@@ -129,7 +129,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-20 | ASA Târgu Mureș × Chindia Târgoviște | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Toluca (W) × Santos Laguna (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Club León (W) × Atlante (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Pineto × Reggiana | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Pineto × Reggiana | 2-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 2.0×4.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×0.0 |
 | 2026-10-20 | Asyut Petroleum × Zamalek SC | 0-0 | 0 | Match Odds 1X2: Casa 9,20, Empate 4,43, Fora 1,40 |
 | 2026-10-20 | Wadi Degla FC × National Bank | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Tala'ea El Gaish × Pyramids FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -137,8 +137,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-20 | Wealdstone × Nottingham Forest U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Boreham Wood × Middlesbrough U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Isenmulang Kalteng × Java United F.C. | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Dewa United FC × Persijap Jepara | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-20 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Dewa United FC × Persijap Jepara | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-20 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-20 | Al-Ittihad × Ahal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4439 | **Jogos distintos:** 1350 | **Resultados verificáveis:** 2498 | **Com gol:** 856 | **Sem gol:** 1642 | **Taxa observada:** 34.3%.
-**Evolução da amostra:** 12 datas com coletas | 18 pendentes | 832 indeterminados | 1091 incompletos.
+**Observações:** 4441 | **Jogos distintos:** 1350 | **Resultados verificáveis:** 2499 | **Com gol:** 856 | **Sem gol:** 1643 | **Taxa observada:** 34.3%.
+**Evolução da amostra:** 12 datas com coletas | 18 pendentes | 833 indeterminados | 1091 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 873 | 603 | 227 | 376 | 37.6% |
 | ⚡ pressao_ofensiva_18 | 650 | 428 | 139 | 289 | 32.5% |
 | 🎯 chutes_no_alvo_5 | 719 | 356 | 111 | 245 | 31.2% |
-| 🟥 expulsao_confirmada | 764 | 352 | 110 | 242 | 31.2% |
+| 🟥 expulsao_confirmada | 766 | 353 | 110 | 243 | 31.2% |
 | 🚩 escanteios_6 | 554 | 259 | 94 | 165 | 36.3% |
 | 💣 grandes_chances_3 | 436 | 232 | 91 | 141 | 39.2% |
 | 🔥 pressao_forte_10min | 214 | 136 | 46 | 90 | 33.8% |
@@ -224,8 +224,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 248 | 143 | 41 | 102 | 28.7% |
 | Major League Soccer | 219 | 120 | 45 | 75 | 37.5% |
 | Liga Profesional | 137 | 91 | 18 | 73 | 19.8% |
+| Super League | 127 | 73 | 22 | 51 | 30.1% |
 | Ligue 1 | 105 | 73 | 26 | 47 | 35.6% |
-| Super League | 125 | 72 | 22 | 50 | 30.6% |
 | Bundesliga | 115 | 66 | 18 | 48 | 27.3% |
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
 | LaLiga2 | 110 | 63 | 26 | 37 | 41.3% |
@@ -255,20 +255,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 373 | 279 | 93 | 186 | 33.3% |
 | 31–45′ | 701 | 550 | 220 | 330 | 40.0% |
 | 46–60′ | 661 | 506 | 177 | 329 | 35.0% |
-| 61–75′ | 945 | 644 | 200 | 444 | 31.1% |
-| 76–90′ | 1203 | 420 | 130 | 290 | 31.0% |
+| 61–75′ | 946 | 645 | 200 | 445 | 31.0% |
+| 76–90′ | 1204 | 420 | 130 | 290 | 31.0% |
 | 91+′ | 429 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4439 | **Jogos monitorados:** 1740 | **Ao vivo:** 31 | **Termômetros recentes:** 7.
+**Registros:** 4441 | **Jogos monitorados:** 1741 | **Ao vivo:** 33 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-20T12:45:03.745940+00:00 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | PSIM Yogyakarta (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-20T13:50:38.118153+00:00 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | PSIM Yogyakarta (88') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-20T13:24:13.349860+00:00 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | PSIM Yogyakarta (62') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-20T12:45:03.745940+00:00 | Bhayangkara Presisi Indonesia FC × PSIM Yogyakarta | PSIM Yogyakarta (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-20T03:34:44.742313+00:00 | Escorpiones × Puntarenas FC | Escorpiones (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Corinthians × Vitória | Corinthians (76') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-20T03:06:59.120700+00:00 | Goiás × Náutico | Goiás (72') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
@@ -366,12 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-19T19:37:00.028092+00:00 | Fram Reykjavík × ÍA Akranes | Fram Reykjavík (20') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-19T19:37:00.028092+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (36') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-19T19:37:00.028092+00:00 | Derry City × St. Patrick's Athletic | St. Patrick's Athletic (36') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-19T19:37:00.028092+00:00 | Tottenham Hotspur × Coventry City | Tottenham Hotspur (36') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-19T19:37:00.028092+00:00 | Rodez × Montpellier | Montpellier (45') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **166**.
+Jogos com odds registradas nos ultimos dias: **171**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
