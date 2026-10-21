@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T21:42:51.675605+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T22:41:09.091016+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -59,11 +59,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-21 | Real Betis U19 × Feyenoord U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sporting CP U19 × LASK U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Vasco da Gama × Boca Juniors | 1-3 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×2.0 |
-| 2026-10-21 | Montevideo City Torque × Atlético-MG | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Montevideo City Torque × Atlético-MG | 0-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 3.0×0.0, Grandes chances: 2.0×1.0 |
 | 2026-10-21 | CF Montréal × Forge FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Trekvogels × De Graafschap | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Colo Colo × Caracas FC | 2-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×0.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-21 | Santa Fe × Corinthians | 1-4 | 0 | Chutes no alvo: 4.0×11.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-21 | Colo Colo × Caracas FC | 3-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 12.0×2.0, Escanteios: 5.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-21 | Santa Fe × Corinthians | 1-5 | 0 | Chutes no alvo: 4.0×11.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-21 | Palmeiras × Independiente del Valle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Belgrano × Universitario Deportes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Dome FC × Sisaket United | 0-7 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -86,7 +86,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-21 | Sogndal × Raufoss | 2-1 | 0 | Chutes no alvo: 5.0×2.0, Escanteios: 7.0×5.0 |
 | 2026-10-21 | Sarasota Paradise × FC Naples | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Cosmos × Spokane Velocity FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Brooklyn × Birmingham Legion FC | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 3,55, Fora 2,40 |
+| 2026-10-21 | Brooklyn × Birmingham Legion FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 2,55, Empate 3,55, F |
 | 2026-10-21 | Sporting JAX × Louisville City FC | 0-0 | 0 | Match Odds 1X2: Casa 6,00, Empate 5,00, Fora 1,36 |
 | 2026-10-21 | Aalesund 2 × Nardo | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Kolbotn (W) × Åsane (W) | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4905 | **Jogos distintos:** 1468 | **Resultados verificáveis:** 2756 | **Com gol:** 964 | **Sem gol:** 1792 | **Taxa observada:** 35.0%.
-**Evolução da amostra:** 13 datas com coletas | 23 pendentes | 936 indeterminados | 1190 incompletos.
+**Observações:** 4905 | **Jogos distintos:** 1468 | **Resultados verificáveis:** 2757 | **Com gol:** 964 | **Sem gol:** 1793 | **Taxa observada:** 35.0%.
+**Evolução da amostra:** 13 datas com coletas | 22 pendentes | 936 indeterminados | 1190 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,7 +178,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 985 | 672 | 258 | 414 | 38.4% |
 | ⚡ pressao_ofensiva_18 | 741 | 493 | 160 | 333 | 32.5% |
-| 🎯 chutes_no_alvo_5 | 791 | 382 | 121 | 261 | 31.7% |
+| 🎯 chutes_no_alvo_5 | 791 | 383 | 121 | 262 | 31.6% |
 | 🟥 expulsao_confirmada | 813 | 370 | 119 | 251 | 32.2% |
 | 🚩 escanteios_6 | 595 | 280 | 103 | 177 | 36.8% |
 | 💣 grandes_chances_3 | 478 | 253 | 101 | 152 | 39.9% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 148 | 114 | 42 | 72 | 36.8% |
 | 16–30′ | 408 | 309 | 100 | 209 | 32.4% |
-| 31–45′ | 828 | 642 | 253 | 389 | 39.4% |
+| 31–45′ | 828 | 643 | 253 | 390 | 39.3% |
 | 46–60′ | 705 | 536 | 194 | 342 | 36.2% |
 | 61–75′ | 1024 | 690 | 223 | 467 | 32.3% |
 | 76–90′ | 1336 | 463 | 150 | 313 | 32.4% |
@@ -262,13 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4905 | **Jogos monitorados:** 1076 | **Ao vivo:** 25 | **Termômetros recentes:** 9.
+**Registros:** 4905 | **Jogos monitorados:** 1076 | **Ao vivo:** 27 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T21:43:11.312955+00:00 | Colo Colo × Caracas FC | Colo Colo (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T21:43:11.312955+00:00 | Colo Colo × Caracas FC | Colo Colo (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T21:06:54.038095+00:00 | Warrenpoint Town × Crusaders | Crusaders (111') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T20:42:40.604526+00:00 | Bayern Munich × Arsenal | Bayern Munich (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T20:42:40.604526+00:00 | Real Madrid × RB Leipzig | Real Madrid (82') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
