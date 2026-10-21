@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T20:42:18.722871+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T21:42:51.675605+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -14,13 +14,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-21 | Llaneros FC × Deportivo Cali | 0-0 | 0 | Match Odds 1X2: Casa 2,65, Empate 3,00, Fora 2,60 |
 | 2026-10-21 | Palmeiras × Fluminense | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,30, Fora 3,90 |
 | 2026-10-21 | Levante × Athletic Club | 3-1 | 0 | Chutes no alvo: 7.0×4.0; Match Odds 1X2: Casa 3,65, Empate 3,20, Fora 2,15 |
-| 2026-10-21 | Bayern Munich × Arsenal | 2-2 | 0 | Chutes no alvo: 5.0×4.0; Match Odds 1X2: Casa 2,05, Empate 3,90, Fora 3,25 |
-| 2026-10-21 | Real Madrid × RB Leipzig | 2-0 | 0 | Chutes no alvo: 9.0×5.0; Match Odds 1X2: Casa 1,24, Empate 7,50, Fora 10,00 |
-| 2026-10-21 | Club Brugge × Lens | 3-0 | 0 | Chutes no alvo: 5.0×6.0; Match Odds 1X2: Casa 2,00, Empate 4,10, Fora 3,35 |
-| 2026-10-21 | Real Betis × Feyenoord Rotterdam | 1-0 | 0 | Chutes no alvo: 9.0×2.0; Match Odds 1X2: Casa 1,56, Empate 4,80, Fora 5,25 |
-| 2026-10-21 | Internazionale × Shakhtar Donetsk | 1-0 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 1,21, Empate 7,50, Fora 11,00 |
-| 2026-10-21 | Sporting CP × LASK Linz | 1-3 | 0 | Chutes no alvo: 2.0×7.0; Match Odds 1X2: Casa 1,19, Empate 8,00, Fora 12,00 |
-| 2026-10-21 | Aston Villa × Viking FK | 3-0 | 0 | Chutes no alvo: 10.0×2.0; Match Odds 1X2: Casa 1,22, Empate 7,00, Fora 11,00 |
+| 2026-10-21 | Bayern Munich × Arsenal | 2-2 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 2,05, Empate 3,90, Fora 3,25 |
+| 2026-10-21 | Real Madrid × RB Leipzig | 4-1 | 0 | Chutes no alvo: 11.0×6.0; Match Odds 1X2: Casa 1,24, Empate 7,50, Fora 10,00 |
+| 2026-10-21 | Club Brugge × Lens | 3-0 | 0 | Chutes no alvo: 5.0×7.0; Match Odds 1X2: Casa 2,00, Empate 4,10, Fora 3,35 |
+| 2026-10-21 | Real Betis × Feyenoord Rotterdam | 1-0 | 0 | Chutes no alvo: 10.0×2.0; Match Odds 1X2: Casa 1,56, Empate 4,80, Fora 5,25 |
+| 2026-10-21 | Internazionale × Shakhtar Donetsk | 1-0 | 0 | Chutes no alvo: 5.0×4.0; Match Odds 1X2: Casa 1,21, Empate 7,50, Fora 11,00 |
+| 2026-10-21 | Sporting CP × LASK Linz | 2-3 | 0 | Chutes no alvo: 4.0×7.0; Match Odds 1X2: Casa 1,19, Empate 8,00, Fora 12,00 |
+| 2026-10-21 | Aston Villa × Viking FK | 3-1 | 0 | Chutes no alvo: 10.0×3.0; Match Odds 1X2: Casa 1,22, Empate 7,00, Fora 11,00 |
 | 2026-10-21 | Como × Manchester United | 4-1 | 0 | Chutes no alvo: 8.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,85, Fora 3,00 |
 | 2026-10-21 | Lille × Galatasaray | 2-4 | 0 | Chutes no alvo: 5.0×4.0; Match Odds 1X2: Casa 2,20, Empate 3,70, Fora 3,10 |
 | 2026-10-21 | FC Cincinnati × D.C. United | 0-0 | 0 | Match Odds 1X2: Casa 1,56, Empate 4,60, Fora 4,50 |
@@ -62,8 +62,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-21 | Montevideo City Torque × Atlético-MG | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | CF Montréal × Forge FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Trekvogels × De Graafschap | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Colo Colo × Caracas FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Santa Fe × Corinthians | 1-1 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 1.0×5.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-21 | Colo Colo × Caracas FC | 2-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×0.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-21 | Santa Fe × Corinthians | 1-4 | 0 | Chutes no alvo: 4.0×11.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-21 | Palmeiras × Independiente del Valle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Belgrano × Universitario Deportes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Dome FC × Sisaket United | 0-7 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -82,7 +82,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-21 | Kasem Bundit University × MOF Customs United | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Bangkok FC × Nong Bua Pitchaya FC | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Ratchaburi FC × Pattani FC | 4-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | FC Cincinnati × DC United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | FC Cincinnati × DC United | 0-0 | 0 | Match Odds 1X2: Casa 1,59, Empate 4,92, Fora 4,83 |
 | 2026-10-21 | Sogndal × Raufoss | 2-1 | 0 | Chutes no alvo: 5.0×2.0, Escanteios: 7.0×5.0 |
 | 2026-10-21 | Sarasota Paradise × FC Naples | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Cosmos × Spokane Velocity FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -116,8 +116,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-21 | Deportivo Malacateco × Comunicaciones FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Levante × Athletic Club | 3-1 | 83 | Chutes no alvo: 5.0×4.0, Chutes para fora: 2.0×8.0, Escanteios: 3.0×8.0, Grandes chances: 1.0×1.0; Match Odds 1X2: Casa 3,65, Empate 3,30, F |
 | 2026-10-21 | Terrassa × Girona B | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Whyteleafe × Burgess Hill Town | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Avro × Ashton United | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Whyteleafe × Burgess Hill Town | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Avro × Ashton United | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | CD FAS × Isidro Metapan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Lion City Sailors FC × Tampines Rovers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Chivas (W) × Necaxa (W) | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -135,9 +135,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-21 | Al Ahly SC × Olympic El Qanah FC | 3-3 | 80 | Chutes no alvo: 3.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 6.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-21 | Ceramica Cleopatra × Petrojet-Suez | 2-0 | 85 | Chutes no alvo: 3.0×1.0, Chutes para fora: 7.0×8.0, Escanteios: 2.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-21 | Burnley FC Women (W) × Aston Villa (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Durham Women FC (W) × Birmingham City (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Everton (W) × Newcastle United (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Liverpool (W) × Manchester United (W) | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Durham Women FC (W) × Birmingham City (W) | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Everton (W) × Newcastle United (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Liverpool (W) × Manchester United (W) | 3-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Southampton (W) × Crystal Palace (W) | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | West Ham United (W) × London City Lionesses (W) | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
@@ -168,23 +168,23 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4903 | **Jogos distintos:** 1466 | **Resultados verificáveis:** 2740 | **Com gol:** 959 | **Sem gol:** 1781 | **Taxa observada:** 35.0%.
-**Evolução da amostra:** 13 datas com coletas | 51 pendentes | 931 indeterminados | 1181 incompletos.
+**Observações:** 4905 | **Jogos distintos:** 1468 | **Resultados verificáveis:** 2756 | **Com gol:** 964 | **Sem gol:** 1792 | **Taxa observada:** 35.0%.
+**Evolução da amostra:** 13 datas com coletas | 23 pendentes | 936 indeterminados | 1190 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 985 | 670 | 256 | 414 | 38.2% |
-| ⚡ pressao_ofensiva_18 | 741 | 491 | 160 | 331 | 32.6% |
-| 🎯 chutes_no_alvo_5 | 790 | 379 | 120 | 259 | 31.7% |
-| 🟥 expulsao_confirmada | 812 | 369 | 119 | 250 | 32.2% |
-| 🚩 escanteios_6 | 595 | 278 | 102 | 176 | 36.7% |
-| 💣 grandes_chances_3 | 478 | 251 | 100 | 151 | 39.8% |
-| 🔥 pressao_forte_10min | 246 | 154 | 55 | 99 | 35.7% |
+| 🥶 jogo_frio | 985 | 672 | 258 | 414 | 38.4% |
+| ⚡ pressao_ofensiva_18 | 741 | 493 | 160 | 333 | 32.5% |
+| 🎯 chutes_no_alvo_5 | 791 | 382 | 121 | 261 | 31.7% |
+| 🟥 expulsao_confirmada | 813 | 370 | 119 | 251 | 32.2% |
+| 🚩 escanteios_6 | 595 | 280 | 103 | 177 | 36.8% |
+| 💣 grandes_chances_3 | 478 | 253 | 101 | 152 | 39.9% |
+| 🔥 pressao_forte_10min | 246 | 156 | 55 | 101 | 35.3% |
 | 🧨 pressao_total_5_10min | 133 | 85 | 27 | 58 | 31.8% |
-| ⏱️ tensao_tardia_70 | 82 | 33 | 11 | 22 | 33.3% |
+| ⏱️ tensao_tardia_70 | 82 | 35 | 11 | 24 | 31.4% |
 | 🚨 alerta_cruzado_gol | 41 | 30 | 9 | 21 | 30.0% |
 
 ### Equipe
@@ -204,6 +204,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Vancouver Whitecaps | 16 | 11 | 5 | 6 | 45.5% |
 | Molde | 13 | 11 | 3 | 8 | 27.3% |
 | Bradford City | 11 | 11 | 0 | 11 | 0.0% |
+| Inter | 16 | 10 | 2 | 8 | 20.0% |
 | Red Bull New York | 16 | 10 | 2 | 8 | 20.0% |
 | St. Patrick's Athletic | 15 | 10 | 1 | 9 | 10.0% |
 | AFC Bournemouth | 14 | 10 | 3 | 7 | 30.0% |
@@ -215,7 +216,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Malmö FF | 10 | 10 | 0 | 10 | 0.0% |
 | Manchester United (W) | 10 | 10 | 0 | 10 | 0.0% |
 | Deportivo Cali | 17 | 9 | 1 | 8 | 11.1% |
-| Roma | 16 | 9 | 5 | 4 | 55.6% |
 
 ### Campeonato
 
@@ -229,10 +229,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Super League | 127 | 73 | 22 | 51 | 30.1% |
 | Ligue 1 | 105 | 73 | 26 | 47 | 35.6% |
 | Bundesliga | 115 | 66 | 18 | 48 | 27.3% |
+| League One | 122 | 64 | 18 | 46 | 28.1% |
 | LaLiga2 | 110 | 63 | 26 | 37 | 41.3% |
 | Série A | 100 | 62 | 27 | 35 | 43.5% |
 | Liga MX | 108 | 60 | 24 | 36 | 40.0% |
-| League One | 122 | 59 | 18 | 41 | 30.5% |
 | Saudi Pro League | 82 | 58 | 21 | 37 | 36.2% |
 | LaLiga | 97 | 57 | 21 | 36 | 36.8% |
 | Serie A | 97 | 57 | 20 | 37 | 35.1% |
@@ -253,51 +253,53 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 148 | 114 | 42 | 72 | 36.8% |
 | 16–30′ | 408 | 309 | 100 | 209 | 32.4% |
-| 31–45′ | 827 | 641 | 252 | 389 | 39.3% |
+| 31–45′ | 828 | 642 | 253 | 389 | 39.4% |
 | 46–60′ | 705 | 536 | 194 | 342 | 36.2% |
 | 61–75′ | 1024 | 690 | 223 | 467 | 32.3% |
-| 76–90′ | 1336 | 448 | 146 | 302 | 32.6% |
-| 91+′ | 455 | 2 | 2 | 0 | 100.0% |
+| 76–90′ | 1336 | 463 | 150 | 313 | 32.4% |
+| 91+′ | 456 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4903 | **Jogos monitorados:** 1076 | **Ao vivo:** 42 | **Termômetros recentes:** 13.
+**Registros:** 4905 | **Jogos monitorados:** 1076 | **Ao vivo:** 25 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T20:42:40.604526+00:00 | Bayern Munich × Arsenal | Bayern Munich (83') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Real Madrid × RB Leipzig | Real Madrid (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Club Brugge × Lens | Lens (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Internazionale × Shakhtar Donetsk | Internazionale (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Internazionale × Shakhtar Donetsk | Internazionale (82') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Sporting CP × LASK Linz | LASK Linz (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Santa Fe × Corinthians | Corinthians (42') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Reading × Leyton Orient | Leyton Orient (85') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:42:40.604526+00:00 | Real Madrid × RB Leipzig | Equipe não definida (82') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-21T21:43:11.312955+00:00 | Colo Colo × Caracas FC | Colo Colo (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T21:06:54.038095+00:00 | Warrenpoint Town × Crusaders | Crusaders (111') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Bayern Munich × Arsenal | Bayern Munich (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Real Madrid × RB Leipzig | Real Madrid (82') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Club Brugge × Lens | Lens (82') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Internazionale × Shakhtar Donetsk | Internazionale (82') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Internazionale × Shakhtar Donetsk | Internazionale (82') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Sporting CP × LASK Linz | LASK Linz (82') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Santa Fe × Corinthians | Corinthians (42') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Reading × Leyton Orient | Leyton Orient (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:42:40.604526+00:00 | Real Madrid × RB Leipzig | Equipe não definida (82') | 🥶 jogo_frio · pressão observada | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Reading × Leyton Orient | Leyton Orient (80') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-21T20:38:03.995828+00:00 | Bayern München × Arsenal | Bayern München (79') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Inter (78') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Inter (78') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | LASK (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Aston Villa × Viking | Aston Villa (78') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T20:38:03.995828+00:00 | Club Brugge × Lens | Lens (79') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Real Madrid × RB Leipzig | Real Madrid (78') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Shakhtar Donetsk (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Inter (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Inter × Shakhtar Donetsk | Inter (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | Sporting CP (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Sporting CP × LASK | LASK (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Aston Villa × Viking | Aston Villa (78') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T20:38:03.995828+00:00 | Club Brugge × Lens | Lens (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Montrose × Aberdeen | Montrose (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Montrose × Aberdeen | Aberdeen (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Spartans FC × Hibernian LFC | Hibernian LFC (67') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -366,12 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-21T17:40:24.261534+00:00 | Ceramica Cleopatra × Petrojet-Suez | Petrojet-Suez (41') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T17:40:24.261534+00:00 | Vanløse IF × Nykøbing FC | Nykøbing FC (40') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-21T17:40:24.261534+00:00 | Vanløse IF × Nykøbing FC | Nykøbing FC (40') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-21T17:39:36.184412+00:00 | Ceramica Cleopatra × Petrojet-Suez | Ceramica Cleopatra (40') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T17:39:36.184412+00:00 | Lille × Galatasaray | Galatasaray (45') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **111**.
+Jogos com odds registradas nos ultimos dias: **112**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
