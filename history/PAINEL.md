@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T15:44:45.765688+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T16:42:35.103742+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -46,14 +46,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-10-21 | Motherwell × Partick Thistle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Spartans FC × Hibernian LFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Al Jeel × Al-Jandal | 0-0 | 0 | Match Odds 1X2: Casa 3,45, Empate 3,15, Fora 2,12 |
-| 2026-10-21 | Al Anwar × Al-Wehda | 1-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×4.0, Grandes chances: 2.0×1.0 |
+| 2026-10-21 | Al Anwar × Al-Wehda | 1-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 8.0×7.0, Escanteios: 2.0×9.0, Grandes chances: 4.0×2.0 |
 | 2026-10-21 | Jeddah × Al Jabalain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Palmeiras × Fluminense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Como U19 × Manchester United U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Lille U19 × Galatasaray U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Aston Villa U19 × Viking U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Club Brugge U19 × Lens U19 | 4-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Bayern München U19 × Arsenal U19 | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Bayern München U19 × Arsenal U19 | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Inter U19 × Shakhtar Donetsk U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Real Madrid U19 × RB Leipzig U19 | 5-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Real Betis U19 × Feyenoord U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -86,9 +86,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-10-21 | Sogndal × Raufoss | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sarasota Paradise × FC Naples | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Cosmos × Spokane Velocity FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Brooklyn × Birmingham Legion FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Brooklyn × Birmingham Legion FC | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 3,55, Fora 2,40 |
 | 2026-10-21 | Sporting JAX × Louisville City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Aalesund 2 × Nardo | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Aalesund 2 × Nardo | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Kolbotn (W) × Åsane (W) | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Londrina × Cuiabá | 1-0 | 90 | Chutes no alvo: 2.0×7.0, Chutes para fora: 9.0×9.0, Escanteios: 2.0×8.0, Grandes chances: 4.0×1.0 |
 | 2026-10-21 | Avispa Fukuoka × Gamba Osaka | 1-2 | 83 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×6.0, Grandes chances: 0.0×2.0 |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4787 | **Jogos distintos:** 1436 | **Resultados verificáveis:** 2686 | **Com gol:** 934 | **Sem gol:** 1752 | **Taxa observada:** 34.8%.
-**Evolução da amostra:** 13 datas com coletas | 26 pendentes | 907 indeterminados | 1168 incompletos.
+**Observações:** 4794 | **Jogos distintos:** 1438 | **Resultados verificáveis:** 2690 | **Com gol:** 935 | **Sem gol:** 1755 | **Taxa observada:** 34.8%.
+**Evolução da amostra:** 13 datas com coletas | 23 pendentes | 912 indeterminados | 1169 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 960 | 654 | 248 | 406 | 37.9% |
+| 🥶 jogo_frio | 960 | 655 | 248 | 407 | 37.9% |
 | ⚡ pressao_ofensiva_18 | 722 | 477 | 155 | 322 | 32.5% |
-| 🎯 chutes_no_alvo_5 | 763 | 374 | 116 | 258 | 31.0% |
-| 🟥 expulsao_confirmada | 801 | 365 | 117 | 248 | 32.1% |
-| 🚩 escanteios_6 | 586 | 275 | 101 | 174 | 36.7% |
-| 💣 grandes_chances_3 | 469 | 247 | 97 | 150 | 39.3% |
+| 🎯 chutes_no_alvo_5 | 764 | 374 | 116 | 258 | 31.0% |
+| 🟥 expulsao_confirmada | 805 | 367 | 118 | 249 | 32.2% |
+| 🚩 escanteios_6 | 587 | 275 | 101 | 174 | 36.7% |
+| 💣 grandes_chances_3 | 470 | 248 | 97 | 151 | 39.1% |
 | 🔥 pressao_forte_10min | 237 | 149 | 53 | 96 | 35.6% |
 | 🧨 pressao_total_5_10min | 129 | 82 | 27 | 55 | 32.9% |
 | ⏱️ tensao_tardia_70 | 79 | 33 | 11 | 22 | 33.3% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 274 | 164 | 50 | 114 | 30.5% |
+| Premier League | 274 | 165 | 50 | 115 | 30.3% |
 | Major League Soccer | 219 | 120 | 45 | 75 | 37.5% |
 | J. League | 154 | 102 | 44 | 58 | 43.1% |
 | Liga Profesional | 137 | 91 | 18 | 73 | 19.8% |
@@ -253,25 +253,32 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 142 | 108 | 40 | 68 | 37.0% |
 | 16–30′ | 400 | 302 | 99 | 203 | 32.8% |
-| 31–45′ | 791 | 613 | 238 | 375 | 38.8% |
-| 46–60′ | 692 | 530 | 191 | 339 | 36.0% |
+| 31–45′ | 791 | 614 | 238 | 376 | 38.8% |
+| 46–60′ | 694 | 531 | 191 | 340 | 36.0% |
 | 61–75′ | 1017 | 687 | 221 | 466 | 32.2% |
-| 76–90′ | 1293 | 445 | 144 | 301 | 32.4% |
-| 91+′ | 452 | 1 | 1 | 0 | 100.0% |
+| 76–90′ | 1297 | 446 | 144 | 302 | 32.3% |
+| 91+′ | 453 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4787 | **Jogos monitorados:** 1076 | **Ao vivo:** 33 | **Termômetros recentes:** 10.
+**Registros:** 4794 | **Jogos monitorados:** 1076 | **Ao vivo:** 36 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T15:45:12.706981+00:00 | Ghazl Al Mahalla × Al Ittihad Alexandria | Ghazl Al Mahalla (79') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T15:38:47.437740+00:00 | Inter U19 × Shakhtar Donetsk U19 | Shakhtar Donetsk U19 (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T15:38:47.437740+00:00 | Nea Salamis × APEA Akrotiri | APEA Akrotiri (37') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-21T15:38:47.437740+00:00 | AEK Larnaca × Akritas Chlorakas | AEK Larnaca (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-21T16:40:57.298756+00:00 | Al Anwar × Al-Wehda | Al-Wehda (83') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T16:40:57.298756+00:00 | Al Anwar × Al-Wehda | Al-Wehda (83') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T16:40:57.298756+00:00 | Deportivo Malacateco × Comunicaciones FC | Comunicaciones FC (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T16:40:57.298756+00:00 | Nea Salamis × APEA Akrotiri | APEA Akrotiri (78') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-21T16:12:10.661414+00:00 | Al Anwar × Al-Wehda | Al Anwar (54') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-21T16:12:10.661414+00:00 | Nea Salamis × APEA Akrotiri | APEA Akrotiri (50') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-21T16:12:10.661414+00:00 | AEK Larnaca × Akritas Chlorakas | AEK Larnaca (97') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-21T15:45:12.706981+00:00 | Ghazl Al Mahalla × Al Ittihad Alexandria | Ghazl Al Mahalla (79') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-21T15:38:47.437740+00:00 | Inter U19 × Shakhtar Donetsk U19 | Shakhtar Donetsk U19 (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-21T15:38:47.437740+00:00 | Nea Salamis × APEA Akrotiri | APEA Akrotiri (37') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-21T15:38:47.437740+00:00 | AEK Larnaca × Akritas Chlorakas | AEK Larnaca (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-21T15:07:39.989617+00:00 | Ghazl Al Mahalla × Al Ittihad Alexandria | Ghazl Al Mahalla (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-21T14:44:07.065839+00:00 | Real Betis U19 × Feyenoord U19 | Equipe não definida (84') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T14:34:38.186917+00:00 | Aston Villa U19 × Viking U19 | Viking U19 (73') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -361,17 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-21T00:53:17.895684+00:00 | Cúcuta × Atlético Nacional | Atlético Nacional (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T00:53:17.895684+00:00 | Internacional de Bogotá × Fortaleza FC | Internacional de Bogotá (79') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-21T00:53:17.895684+00:00 | Chivas × Necaxa | Chivas (42') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T00:53:17.895684+00:00 | Chivas × Necaxa | Chivas (42') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T00:35:55.754920+00:00 | Cúcuta × Atlético Nacional | Atlético Nacional (47') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T00:02:08.638555+00:00 | Cúcuta × Atlético Nacional | Atlético Nacional (32') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T00:02:08.638555+00:00 | Londrina × Cuiabá | Cuiabá (71') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-21T00:02:08.638555+00:00 | Londrina × Cuiabá | Londrina (71') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-20T23:41:42.339341+00:00 | Internacional de Bogotá × Fortaleza FC | Fortaleza FC (26') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-20T23:41:42.339341+00:00 | Internacional de Bogotá × Fortaleza FC | Fortaleza FC (26') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **107**.
+Jogos com odds registradas nos ultimos dias: **108**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
