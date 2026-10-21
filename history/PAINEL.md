@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T12:51:47.168444+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T13:49:07.118415+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -50,13 +50,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-21 | Jeddah × Al Jabalain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Palmeiras × Fluminense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Como U19 × Manchester United U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Lille U19 × Galatasaray U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Lille U19 × Galatasaray U19 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Aston Villa U19 × Viking U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Club Brugge U19 × Lens U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Club Brugge U19 × Lens U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Bayern München U19 × Arsenal U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Inter U19 × Shakhtar Donetsk U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Real Madrid U19 × RB Leipzig U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Real Betis U19 × Feyenoord U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Real Betis U19 × Feyenoord U19 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sporting CP U19 × LASK U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Vasco da Gama × Boca Juniors | 1-3 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×2.0 |
 | 2026-10-21 | Montevideo City Torque × Atlético-MG | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -69,19 +69,19 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-21 | Dome FC × Sisaket United | 0-7 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Buriram United × DPU Thayang FC | 8-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Thap Luang United × Rayong FC | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Ayutthaya United FC × Muang Thong United | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Ayutthaya United FC × Muang Thong United | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Chumphon United × Songkhla United FC | 3-6 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Rasisalai United × Port FC | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Kasetsart × Chanthaburi FC | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Burapha United × Chiangrai United | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Bangkok United × Old Blood FC | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Police Tero FC × Surin City | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Warin Chamrap × Karin United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Bangkok United × Old Blood FC | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Police Tero FC × Surin City | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Warin Chamrap × Karin United | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Khonkaen United FC × BG Pathum United | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Phitsanulok FC × Royal Thai Fleet | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Phitsanulok FC × Royal Thai Fleet | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Kasem Bundit University × MOF Customs United | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Bangkok FC × Nong Bua Pitchaya FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Ratchaburi FC × Pattani FC | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Bangkok FC × Nong Bua Pitchaya FC | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Ratchaburi FC × Pattani FC | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | FC Cincinnati × DC United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sogndal × Raufoss | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sarasota Paradise × FC Naples | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -89,7 +89,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-21 | Brooklyn × Birmingham Legion FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Sporting JAX × Louisville City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Aalesund 2 × Nardo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Kolbotn (W) × Åsane (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Kolbotn (W) × Åsane (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Londrina × Cuiabá | 1-0 | 90 | Chutes no alvo: 2.0×7.0, Chutes para fora: 9.0×9.0, Escanteios: 2.0×8.0, Grandes chances: 4.0×1.0 |
 | 2026-10-21 | Avispa Fukuoka × Gamba Osaka | 1-2 | 83 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×6.0, Grandes chances: 0.0×2.0 |
 | 2026-10-21 | FC Tokyo × Kashiwa Reysol | 0-0 | 84 | Chutes no alvo: 2.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 2.0×5.0, Grandes chances: 3.0×2.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4777 | **Jogos distintos:** 1430 | **Resultados verificáveis:** 2681 | **Com gol:** 932 | **Sem gol:** 1749 | **Taxa observada:** 34.8%.
-**Evolução da amostra:** 13 datas com coletas | 22 pendentes | 907 indeterminados | 1167 incompletos.
+**Observações:** 4778 | **Jogos distintos:** 1431 | **Resultados verificáveis:** 2681 | **Com gol:** 932 | **Sem gol:** 1749 | **Taxa observada:** 34.8%.
+**Evolução da amostra:** 13 datas com coletas | 23 pendentes | 907 indeterminados | 1167 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 958 | 653 | 248 | 405 | 38.0% |
 | ⚡ pressao_ofensiva_18 | 721 | 476 | 154 | 322 | 32.4% |
 | 🎯 chutes_no_alvo_5 | 763 | 374 | 116 | 258 | 31.0% |
-| 🟥 expulsao_confirmada | 794 | 362 | 116 | 246 | 32.0% |
+| 🟥 expulsao_confirmada | 795 | 362 | 116 | 246 | 32.0% |
 | 🚩 escanteios_6 | 586 | 275 | 101 | 174 | 36.7% |
 | 💣 grandes_chances_3 | 469 | 247 | 97 | 150 | 39.3% |
 | 🔥 pressao_forte_10min | 237 | 149 | 53 | 96 | 35.6% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 142 | 108 | 40 | 68 | 37.0% |
 | 16–30′ | 400 | 302 | 99 | 203 | 32.8% |
 | 31–45′ | 788 | 611 | 237 | 374 | 38.8% |
-| 46–60′ | 691 | 529 | 190 | 339 | 35.9% |
+| 46–60′ | 692 | 529 | 190 | 339 | 35.9% |
 | 61–75′ | 1015 | 685 | 221 | 464 | 32.3% |
 | 76–90′ | 1289 | 445 | 144 | 301 | 32.4% |
 | 91+′ | 452 | 1 | 1 | 0 | 100.0% |
@@ -262,12 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4777 | **Jogos monitorados:** 1076 | **Ao vivo:** 40 | **Termômetros recentes:** 9.
+**Registros:** 4778 | **Jogos monitorados:** 1076 | **Ao vivo:** 35 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-21T13:49:25.116467+00:00 | Real Betis U19 × Feyenoord U19 | Real Betis U19 (48') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-21T12:13:50.203651+00:00 | Urawa Red Diamonds × JEF United Chiba | Urawa Red Diamonds (81') | 🥶 jogo_frio · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T11:44:52.012576+00:00 | Fagiano Okayama FC × Mito Hollyhock | Mito Hollyhock (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T11:44:52.012576+00:00 | Fagiano Okayama FC × Mito Hollyhock | Fagiano Okayama FC (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -367,11 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-20T23:16:04.335694+00:00 | Deportivo Pereira × Chicó FC | Chicó FC (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-20T23:16:04.335694+00:00 | Londrina × Cuiabá | Cuiabá (46') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-20T22:56:31.500375+00:00 | Deportivo Pereira × Chicó FC | Deportivo Pereira (70') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-20T22:56:31.500375+00:00 | Londrina × Cuiabá | Cuiabá (26') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **105**.
+Jogos com odds registradas nos ultimos dias: **107**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
