@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T04:41:22.364574+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T05:40:44.617634+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -32,14 +32,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-21 | Internacional de Bogotá × Fortaleza FC | 1-0 | 90 | Chutes no alvo: 2.0×3.0, Chutes para fora: 1.0×11.0, Escanteios: 3.0×7.0, Grandes chances: 0.0×1.0 |
 | 2026-10-21 | Atlético de San Luis × Querétaro FC | 2-1 | 83 | Chutes no alvo: 4.0×4.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-21 | FC Juárez × Atlante | 0-1 | 79 | Chutes no alvo: 1.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 7.0×8.0, Grandes chances: 0.0×2.0 |
-| 2026-10-21 | Tigres × León | 0-1 | 69 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×2.0, Escanteios: 14.0×3.0, Grandes chances: 1.0×2.0 |
+| 2026-10-21 | Tigres × León | 0-2 | 69 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×2.0, Escanteios: 14.0×3.0, Grandes chances: 1.0×2.0 |
 | 2026-10-21 | Chivas × Necaxa | 1-0 | 76 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-21 | Puebla × Monterrey | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Atlas × CF América | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Toluca × Tijuana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | AS Elfen Saitama × Mynavi Sendai Ladies | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | AS Elfen Saitama × Mynavi Sendai Ladies | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Nojima Stella × Albirex Niigata Ladies | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | INAC Kobe Leonessa × JEF Ladies | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | INAC Kobe Leonessa × JEF Ladies | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Celtic × Heart of Midlothian | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Glasgow City × Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Montrose × Aberdeen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -104,7 +104,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-21 | Albirex Niigata × Sagan Tosu | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Júbilo Iwata × Oita Trinita | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Ventforet Kofu × Yokohama FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Montedio Yamagata × Hokkaido Consadole Sapporo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Montedio Yamagata × Hokkaido Consadole Sapporo | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | RB Omiya Ardija × Kataller Toyama | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Shonan Bellmare × Iwaki FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Tegevajaro Miyazaki × Blaublitz Akita | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -120,10 +120,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-10-21 | Avro × Ashton United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | CD FAS × Isidro Metapan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Lion City Sailors FC × Tampines Rovers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Chivas (W) × Necaxa (W) | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Fukushima United × Giravanz Kitakyushu | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Chivas (W) × Necaxa (W) | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Fukushima United × Giravanz Kitakyushu | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Nagano Parceiro × FC Ryūkyū | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Tochigi SC × Reilac Shiga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Tochigi SC × Reilac Shiga | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Ehime FC × Renofa Yamaguchi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | FC Gifu × SC Sagamihara | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Kagoshima United × Kochi United SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 4720 | **Jogos distintos:** 1420 | **Resultados verificáveis:** 2644 | **Com gol:** 911 | **Sem gol:** 1733 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 13 datas com coletas | 26 pendentes | 890 indeterminados | 1160 incompletos.
+**Evolução da amostra:** 13 datas com coletas | 22 pendentes | 894 indeterminados | 1160 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,16 +262,16 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4720 | **Jogos monitorados:** 1076 | **Ao vivo:** 31 | **Termômetros recentes:** 10.
+**Registros:** 4720 | **Jogos monitorados:** 1076 | **Ao vivo:** 28 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-21T04:40:16.141307+00:00 | Tigres × León | Tigres (68') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🧨 pressao_total_5_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-21T04:40:16.141307+00:00 | Tigres × León | Tigres (68') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-21T04:12:49.047110+00:00 | Tigres × León | León (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T04:12:49.047110+00:00 | Tigres × León | Tigres (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T03:41:07.116326+00:00 | Tigres × León | Tigres (28') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
