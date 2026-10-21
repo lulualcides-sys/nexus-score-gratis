@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T03:42:02.463874+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-21T04:41:22.364574+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -32,14 +32,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-21 | Internacional de Bogotá × Fortaleza FC | 1-0 | 90 | Chutes no alvo: 2.0×3.0, Chutes para fora: 1.0×11.0, Escanteios: 3.0×7.0, Grandes chances: 0.0×1.0 |
 | 2026-10-21 | Atlético de San Luis × Querétaro FC | 2-1 | 83 | Chutes no alvo: 4.0×4.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-21 | FC Juárez × Atlante | 0-1 | 79 | Chutes no alvo: 1.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 7.0×8.0, Grandes chances: 0.0×2.0 |
-| 2026-10-21 | Tigres × León | 0-1 | 28 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×0.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-10-21 | Tigres × León | 0-1 | 69 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×2.0, Escanteios: 14.0×3.0, Grandes chances: 1.0×2.0 |
 | 2026-10-21 | Chivas × Necaxa | 1-0 | 76 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×2.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-21 | Puebla × Monterrey | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Atlas × CF América | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Toluca × Tijuana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | AS Elfen Saitama × Mynavi Sendai Ladies | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | AS Elfen Saitama × Mynavi Sendai Ladies | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Nojima Stella × Albirex Niigata Ladies | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | INAC Kobe Leonessa × JEF Ladies | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | INAC Kobe Leonessa × JEF Ladies | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Celtic × Heart of Midlothian | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Glasgow City × Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Montrose × Aberdeen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -120,7 +120,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-21 | Avro × Ashton United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | CD FAS × Isidro Metapan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Lion City Sailors FC × Tampines Rovers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Chivas (W) × Necaxa (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-21 | Chivas (W) × Necaxa (W) | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Fukushima United × Giravanz Kitakyushu | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Nagano Parceiro × FC Ryūkyū | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Tochigi SC × Reilac Shiga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,23 +168,23 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4714 | **Jogos distintos:** 1420 | **Resultados verificáveis:** 2641 | **Com gol:** 911 | **Sem gol:** 1730 | **Taxa observada:** 34.5%.
-**Evolução da amostra:** 13 datas com coletas | 23 pendentes | 890 indeterminados | 1160 incompletos.
+**Observações:** 4720 | **Jogos distintos:** 1420 | **Resultados verificáveis:** 2644 | **Com gol:** 911 | **Sem gol:** 1733 | **Taxa observada:** 34.5%.
+**Evolução da amostra:** 13 datas com coletas | 26 pendentes | 890 indeterminados | 1160 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 936 | 640 | 241 | 399 | 37.7% |
-| ⚡ pressao_ofensiva_18 | 705 | 464 | 150 | 314 | 32.3% |
+| 🥶 jogo_frio | 937 | 641 | 241 | 400 | 37.6% |
+| ⚡ pressao_ofensiva_18 | 706 | 465 | 150 | 315 | 32.3% |
 | 🎯 chutes_no_alvo_5 | 759 | 372 | 115 | 257 | 30.9% |
 | 🟥 expulsao_confirmada | 792 | 360 | 114 | 246 | 31.7% |
-| 🚩 escanteios_6 | 583 | 274 | 101 | 173 | 36.9% |
+| 🚩 escanteios_6 | 584 | 275 | 101 | 174 | 36.7% |
 | 💣 grandes_chances_3 | 465 | 244 | 95 | 149 | 38.9% |
-| 🔥 pressao_forte_10min | 232 | 146 | 51 | 95 | 34.9% |
-| 🧨 pressao_total_5_10min | 125 | 80 | 26 | 54 | 32.5% |
-| ⏱️ tensao_tardia_70 | 76 | 31 | 9 | 22 | 29.0% |
+| 🔥 pressao_forte_10min | 233 | 146 | 51 | 95 | 34.9% |
+| 🧨 pressao_total_5_10min | 126 | 80 | 26 | 54 | 32.5% |
+| ⏱️ tensao_tardia_70 | 77 | 31 | 9 | 22 | 29.0% |
 | 🚨 alerta_cruzado_gol | 41 | 30 | 9 | 21 | 30.0% |
 
 ### Equipe
@@ -231,8 +231,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | J. League | 97 | 65 | 23 | 42 | 35.4% |
 | LaLiga2 | 110 | 63 | 26 | 37 | 41.3% |
 | Série A | 100 | 62 | 27 | 35 | 43.5% |
+| Liga MX | 108 | 60 | 24 | 36 | 40.0% |
 | Saudi Pro League | 82 | 58 | 21 | 37 | 36.2% |
-| Liga MX | 102 | 57 | 24 | 33 | 42.1% |
 | Serie A | 97 | 57 | 20 | 37 | 35.1% |
 | Primera A | 91 | 57 | 16 | 41 | 28.1% |
 | League Two | 90 | 57 | 16 | 41 | 28.1% |
@@ -252,23 +252,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 131 | 102 | 38 | 64 | 37.3% |
-| 16–30′ | 400 | 301 | 99 | 202 | 32.9% |
-| 31–45′ | 777 | 603 | 235 | 368 | 39.0% |
+| 16–30′ | 400 | 302 | 99 | 203 | 32.8% |
+| 31–45′ | 779 | 605 | 235 | 370 | 38.8% |
 | 46–60′ | 678 | 519 | 184 | 335 | 35.5% |
-| 61–75′ | 1011 | 685 | 221 | 464 | 32.3% |
+| 61–75′ | 1015 | 685 | 221 | 464 | 32.3% |
 | 76–90′ | 1265 | 430 | 133 | 297 | 30.9% |
 | 91+′ | 452 | 1 | 1 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4714 | **Jogos monitorados:** 1076 | **Ao vivo:** 27 | **Termômetros recentes:** 10.
+**Registros:** 4720 | **Jogos monitorados:** 1076 | **Ao vivo:** 31 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-21T03:41:07.116326+00:00 | Tigres × León | Tigres (28') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:41:51.169244+00:00 | Tigres × León | Tigres (70') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:40:16.141307+00:00 | Tigres × León | Tigres (68') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-21T04:12:49.047110+00:00 | Tigres × León | León (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-21T04:12:49.047110+00:00 | Tigres × León | Tigres (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-21T03:41:07.116326+00:00 | Tigres × León | Tigres (28') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-21T03:12:41.972271+00:00 | Millonarios × Once Caldas | Once Caldas (82') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-21T03:12:41.972271+00:00 | Cúcuta × Atlético Nacional | Atlético Nacional (87') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-21T03:12:41.972271+00:00 | Internacional de Bogotá × Fortaleza FC | Fortaleza FC (62') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
@@ -362,17 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-20T20:37:32.393629+00:00 | Liverpool × Villarreal | Liverpool (79') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-20T20:37:32.393629+00:00 | Liverpool × Villarreal | Liverpool (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-20T20:37:32.393629+00:00 | Liverpool × Villarreal | Liverpool (79') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-20T20:37:32.393629+00:00 | Liverpool × Villarreal | Liverpool (79') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
-| 2026-10-20T20:37:32.393629+00:00 | FC Porto × PSV Eindhoven | PSV Eindhoven (81') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-20T20:37:32.393629+00:00 | Annagh United × Limavady | Limavady (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-20T20:37:32.393629+00:00 | Yeovil Town × Leatherhead | Leatherhead (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | Largs Thistle × Pollok | Largs Thistle (67') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-20T20:08:45.075275+00:00 | AFC Wimbledon × Mansfield Town | AFC Wimbledon (66') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **100**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
