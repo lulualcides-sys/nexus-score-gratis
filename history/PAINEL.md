@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T12:51:26.352367+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T13:51:58.805047+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -40,9 +40,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-22 | Cosmos × Spokane Velocity FC | 3-3 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-22 | Brooklyn × Birmingham Legion FC | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-22 | Sporting JAX × Louisville City FC | 0-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×9.0, Grandes chances: 1.0×1.0 |
-| 2026-10-22 | Bunyodkor Tashkent × Mashal Muborak | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Bunyodkor Tashkent × Mashal Muborak | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Budućnost Podgorica × FK Arsenal Tivat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Mornar × OFK Mladost Donja Gorica | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Mornar × OFK Mladost Donja Gorica | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Fort Lauderdale United FC (W) × Carolina Ascent FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Shahaniya × Al-Sadd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -50,17 +50,17 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-22 | CD FAS × Isidro Metapan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al Ahli × Al Khaleej | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al Fateh FC × Al Shabab | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Al Hazem × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Al Hazem × Al-Fayha | 1-0 | 12 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-22 | Sardarapat × Urartu FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | FC Bihor Oradea × CSM Reșița | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | FC Bihor Oradea × CSM Reșița | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Persik × PSS Sleman | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | PSM Makassar × Persebaya Surabaya | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Madura United × Persib Bandung | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Madura United × Persib Bandung | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Gharraf × Al Naft | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al Talaba × Al Quwa Al Jawiya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Zakho × Erbil | 0-0 | 0 | Match Odds 1X2: Casa 2,86, Empate 2,86, Fora 2,43 |
-| 2026-10-22 | Công An Hà Nội × Thanh Hòa FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Công An Hà Nội × Thanh Hòa FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Juventus × Rennes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Olympiacos × Sparta Prague | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Ferencváros × Torreense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4965 | **Jogos monitorados:** 543 | **Ao vivo:** 22 | **Termômetros recentes:** 7.
+**Registros:** 4965 | **Jogos monitorados:** 543 | **Ao vivo:** 28 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
