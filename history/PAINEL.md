@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T07:51:55.433757+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T08:48:32.838088+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -32,7 +32,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-22 | Libertad × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchabun FC × Banbueng FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchaburi FC × Lopburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Surindra × Phichit United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Surindra × Phichit United | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | VRN Muangnont × Samui United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Prachuap FC × Nonthaburi United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Cincinnati × DC United | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×9.0, Grandes chances: 2.0×3.0 |
@@ -54,7 +54,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-22 | Sardarapat × Urartu FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Bihor Oradea × CSM Reșița | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Persik × PSS Sleman | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Persik × PSS Sleman | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | PSM Makassar × Persebaya Surabaya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Madura United × Persib Bandung | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Gharraf × Al Naft | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4964 | **Jogos monitorados:** 543 | **Ao vivo:** 19 | **Termômetros recentes:** 7.
+**Registros:** 4964 | **Jogos monitorados:** 543 | **Ao vivo:** 24 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
