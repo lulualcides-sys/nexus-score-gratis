@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T11:42:27.169691+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T12:51:26.352367+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
@@ -59,7 +59,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-22 | Madura United × Persib Bandung | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Gharraf × Al Naft | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al Talaba × Al Quwa Al Jawiya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Zakho × Erbil | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Zakho × Erbil | 0-0 | 0 | Match Odds 1X2: Casa 2,86, Empate 2,86, Fora 2,43 |
 | 2026-10-22 | Công An Hà Nội × Thanh Hòa FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Juventus × Rennes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Olympiacos × Sparta Prague | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **64**.
+Jogos com odds registradas nos ultimos dias: **65**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
