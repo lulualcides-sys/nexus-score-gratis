@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T08:48:32.838088+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T09:44:59.820752+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
@@ -32,7 +32,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | Libertad × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchabun FC × Banbueng FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchaburi FC × Lopburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Surindra × Phichit United | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Surindra × Phichit United | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | VRN Muangnont × Samui United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Prachuap FC × Nonthaburi United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Cincinnati × DC United | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×9.0, Grandes chances: 2.0×3.0 |
@@ -54,7 +54,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | Sardarapat × Urartu FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Bihor Oradea × CSM Reșița | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Persik × PSS Sleman | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Persik × PSS Sleman | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | PSM Makassar × Persebaya Surabaya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Madura United × Persib Bandung | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Gharraf × Al Naft | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | C.S. Cartaginés × CD Olimpia | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Motagua × LD Alajuelense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Firpo × Deportivo Saprissa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Lions FC × Preston Lions | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Lions FC × Preston Lions | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Columbus Crew × St. Louis City | 0-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×0.0 |
 | 2026-10-22 | Barranquilla FC × América de Cali | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Jazira × Ajman | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
