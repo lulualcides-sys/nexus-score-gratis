@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T21:39:57.886113+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T22:38:55.666014+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -28,8 +28,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-22 | Belgrano × Universitario Deportes | 4-2 | 0 | Chutes no alvo: 8.0×3.0, Chutes para fora: 5.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Olimpia × Cruzeiro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | LDU Quito × Club Bolivar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Universidad de Chile × Deportivo Cali | 2-3 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 14.0×4.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-22 | Libertad × Nacional | 2-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-22 | Universidad de Chile × Deportivo Cali | 2-3 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 14.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-22 | Libertad × Nacional | 2-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Phetchabun FC × Banbueng FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchaburi FC × Lopburi FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Surindra × Phichit United | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5187 | **Jogos monitorados:** 543 | **Ao vivo:** 21 | **Termômetros recentes:** 7.
+**Registros:** 5187 | **Jogos monitorados:** 543 | **Ao vivo:** 20 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
