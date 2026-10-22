@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T22:38:55.666014+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T23:38:49.486708+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -10,6 +10,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
+| 2026-10-23 | Flamengo × Estudiantes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-23 | Olimpia × Cruzeiro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-23 | LDU Quito × Club Bolivar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Atlético Nacional × Deportivo Pasto | 0-0 | 0 | Match Odds 1X2: Casa 1,28, Empate 4,80, Fora 9,50 |
 | 2026-10-22 | Flamengo × Estudiantes de La Plata | 0-0 | 0 | Match Odds 1X2: Casa 1,38, Empate 4,60, Fora 9,00 |
 | 2026-10-22 | Santa Fe × CD Jaguares | 2-1 | 72 | Chutes no alvo: 3.0×1.0, Chutes para fora: 5.0×6.0, Escanteios: 5.0×4.0, Grandes chances: 2.0×0.0 |
@@ -29,7 +32,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-22 | Olimpia × Cruzeiro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | LDU Quito × Club Bolivar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Universidad de Chile × Deportivo Cali | 2-3 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 14.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-22 | Libertad × Nacional | 2-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-22 | Libertad × Nacional | 2-2 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×7.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Phetchabun FC × Banbueng FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchaburi FC × Lopburi FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Surindra × Phichit United | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -137,9 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-21 | AS Elfen Saitama × Mynavi Sendai Ladies | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | Nojima Stella × Albirex Niigata Ladies | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-21 | INAC Kobe Leonessa × JEF Ladies | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-21 | Celtic × Heart of Midlothian | 2-4 | 0 | Chutes no alvo: 2.0×8.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-21 | Glasgow City × Rangers | 1-2 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-21 | Montrose × Aberdeen | 2-0 | 0 | Chutes no alvo: 5.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 7.0×2.0, Grandes chances: 0.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **65**.
+Jogos com odds registradas nos ultimos dias: **50**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
