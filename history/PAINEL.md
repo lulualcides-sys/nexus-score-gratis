@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T10:41:28.437249+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T11:42:27.169691+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
@@ -30,11 +30,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-10-22 | LDU Quito × Club Bolivar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Universidad de Chile × Deportivo Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Libertad × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Phetchabun FC × Banbueng FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Phetchabun FC × Banbueng FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Phetchaburi FC × Lopburi FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Surindra × Phichit United | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | VRN Muangnont × Samui United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Prachuap FC × Nonthaburi United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Prachuap FC × Nonthaburi United | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Cincinnati × DC United | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×9.0, Grandes chances: 2.0×3.0 |
 | 2026-10-22 | Sarasota Paradise × FC Naples | 1-2 | 0 | Chutes no alvo: 5.0×7.0, Chutes para fora: 5.0×5.0, Escanteios: 8.0×4.0, Grandes chances: 1.0×2.0 |
 | 2026-10-22 | Cosmos × Spokane Velocity FC | 3-3 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 1.0×1.0 |
