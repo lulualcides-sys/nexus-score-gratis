@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T09:44:59.820752+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T10:41:28.437249+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -30,9 +30,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | LDU Quito × Club Bolivar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Universidad de Chile × Deportivo Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Libertad × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Phetchabun FC × Banbueng FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Phetchaburi FC × Lopburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Surindra × Phichit United | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Phetchabun FC × Banbueng FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Phetchaburi FC × Lopburi FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Surindra × Phichit United | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | VRN Muangnont × Samui United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Prachuap FC × Nonthaburi United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Cincinnati × DC United | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×9.0, Grandes chances: 2.0×3.0 |
@@ -55,7 +55,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | FC Bihor Oradea × CSM Reșița | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Persik × PSS Sleman | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | PSM Makassar × Persebaya Surabaya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | PSM Makassar × Persebaya Surabaya | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Madura United × Persib Bandung | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Gharraf × Al Naft | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al Talaba × Al Quwa Al Jawiya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-22 | C.S. Cartaginés × CD Olimpia | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Motagua × LD Alajuelense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Firpo × Deportivo Saprissa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Lions FC × Preston Lions | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Lions FC × Preston Lions | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Columbus Crew × St. Louis City | 0-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×0.0 |
 | 2026-10-22 | Barranquilla FC × América de Cali | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Jazira × Ajman | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4964 | **Jogos distintos:** 1486 | **Resultados verificáveis:** 2787 | **Com gol:** 973 | **Sem gol:** 1814 | **Taxa observada:** 34.9%.
-**Evolução da amostra:** 14 datas com coletas | 24 pendentes | 957 indeterminados | 1196 incompletos.
+**Observações:** 4965 | **Jogos distintos:** 1487 | **Resultados verificáveis:** 2787 | **Com gol:** 973 | **Sem gol:** 1814 | **Taxa observada:** 34.9%.
+**Evolução da amostra:** 14 datas com coletas | 24 pendentes | 957 indeterminados | 1197 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 998 | 678 | 259 | 419 | 38.2% |
 | ⚡ pressao_ofensiva_18 | 747 | 496 | 160 | 336 | 32.3% |
 | 🎯 chutes_no_alvo_5 | 803 | 392 | 125 | 267 | 31.9% |
-| 🟥 expulsao_confirmada | 823 | 375 | 121 | 254 | 32.3% |
+| 🟥 expulsao_confirmada | 824 | 375 | 121 | 254 | 32.3% |
 | 🚩 escanteios_6 | 605 | 283 | 105 | 178 | 37.1% |
 | 💣 grandes_chances_3 | 483 | 254 | 101 | 153 | 39.8% |
 | 🔥 pressao_forte_10min | 247 | 157 | 55 | 102 | 35.0% |
@@ -226,7 +226,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
 | J. League | 154 | 102 | 44 | 58 | 43.1% |
 | Liga Profesional | 137 | 91 | 18 | 73 | 19.8% |
-| Super League | 127 | 73 | 22 | 51 | 30.1% |
+| Super League | 128 | 73 | 22 | 51 | 30.1% |
 | Ligue 1 | 105 | 73 | 26 | 47 | 35.6% |
 | Liga MX | 131 | 69 | 24 | 45 | 34.8% |
 | Bundesliga | 115 | 66 | 18 | 48 | 27.3% |
@@ -257,17 +257,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 46–60′ | 709 | 538 | 195 | 343 | 36.2% |
 | 61–75′ | 1040 | 696 | 223 | 473 | 32.0% |
 | 76–90′ | 1353 | 477 | 155 | 322 | 32.5% |
-| 91+′ | 459 | 2 | 2 | 0 | 100.0% |
+| 91+′ | 460 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4964 | **Jogos monitorados:** 543 | **Ao vivo:** 24 | **Termômetros recentes:** 7.
+**Registros:** 4965 | **Jogos monitorados:** 543 | **Ao vivo:** 22 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-22T10:23:06.554740+00:00 | PSM Makassar × Persebaya Surabaya | PSM Makassar (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-22T05:40:44.474854+00:00 | Sarasota Paradise × FC Naples | Sarasota Paradise (72') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-22T05:40:44.474854+00:00 | Sarasota Paradise × FC Naples | Sarasota Paradise (72') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-22T04:41:11.406467+00:00 | Pachuca × Cruz Azul | Equipe não definida (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-21T20:10:28.646818+00:00 | Real Madrid × RB Leipzig | Real Madrid (51') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Aston Villa × Viking | Aston Villa (50') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Club Brugge × Lens | Lens (51') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-21T20:10:28.646818+00:00 | Club Brugge × Lens | Club Brugge (51') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
