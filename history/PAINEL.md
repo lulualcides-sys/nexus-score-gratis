@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T04:40:48.094960+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T05:40:26.698125+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -18,8 +18,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-22 | Puebla × Monterrey | 1-4 | 89 | Chutes no alvo: 4.0×6.0, Chutes para fora: 6.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 2.0×3.0 |
 | 2026-10-22 | Atlas × CF América | 2-5 | 89 | Chutes no alvo: 5.0×6.0, Chutes para fora: 10.0×2.0, Escanteios: 8.0×4.0, Grandes chances: 2.0×3.0 |
 | 2026-10-22 | Toluca × Tijuana | 2-2 | 89 | Chutes no alvo: 4.0×4.0, Chutes para fora: 15.0×5.0, Escanteios: 15.0×4.0, Grandes chances: 2.0×4.0 |
-| 2026-10-22 | Pachuca × Cruz Azul | 1-1 | 68 | Chutes no alvo: 2.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×2.0 |
-| 2026-10-22 | Santos Laguna × Pumas | 1-0 | 62 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
+| 2026-10-22 | Pachuca × Cruz Azul | 1-2 | 68 | Chutes no alvo: 2.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×2.0 |
+| 2026-10-22 | Santos Laguna × Pumas | 2-0 | 62 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-10-22 | Flamengo × Estudiantes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Palmeiras × Fluminense | 0-1 | 86 | Chutes no alvo: 0.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-10-22 | Tractor × Sanat Naft Abadan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -36,7 +36,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-22 | VRN Muangnont × Samui United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Prachuap FC × Nonthaburi United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Cincinnati × DC United | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×9.0, Grandes chances: 2.0×3.0 |
-| 2026-10-22 | Sarasota Paradise × FC Naples | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Sarasota Paradise × FC Naples | 1-2 | 0 | Chutes no alvo: 5.0×7.0, Chutes para fora: 5.0×5.0, Escanteios: 8.0×4.0, Grandes chances: 1.0×2.0 |
 | 2026-10-22 | Cosmos × Spokane Velocity FC | 3-3 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-22 | Brooklyn × Birmingham Legion FC | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-22 | Sporting JAX × Louisville City FC | 0-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×9.0, Grandes chances: 1.0×1.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 4962 | **Jogos distintos:** 1486 | **Resultados verificáveis:** 2787 | **Com gol:** 973 | **Sem gol:** 1814 | **Taxa observada:** 34.9%.
-**Evolução da amostra:** 14 datas com coletas | 26 pendentes | 953 indeterminados | 1196 incompletos.
+**Observações:** 4964 | **Jogos distintos:** 1486 | **Resultados verificáveis:** 2787 | **Com gol:** 973 | **Sem gol:** 1814 | **Taxa observada:** 34.9%.
+**Evolução da amostra:** 14 datas com coletas | 24 pendentes | 957 indeterminados | 1196 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,8 +179,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 998 | 678 | 259 | 419 | 38.2% |
 | ⚡ pressao_ofensiva_18 | 747 | 496 | 160 | 336 | 32.3% |
 | 🎯 chutes_no_alvo_5 | 803 | 392 | 125 | 267 | 31.9% |
-| 🟥 expulsao_confirmada | 822 | 375 | 121 | 254 | 32.3% |
-| 🚩 escanteios_6 | 604 | 283 | 105 | 178 | 37.1% |
+| 🟥 expulsao_confirmada | 823 | 375 | 121 | 254 | 32.3% |
+| 🚩 escanteios_6 | 605 | 283 | 105 | 178 | 37.1% |
 | 💣 grandes_chances_3 | 483 | 254 | 101 | 153 | 39.8% |
 | 🔥 pressao_forte_10min | 247 | 157 | 55 | 102 | 35.0% |
 | 🧨 pressao_total_5_10min | 134 | 86 | 27 | 59 | 31.4% |
@@ -255,23 +255,25 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 413 | 313 | 100 | 213 | 31.9% |
 | 31–45′ | 842 | 647 | 256 | 391 | 39.6% |
 | 46–60′ | 709 | 538 | 195 | 343 | 36.2% |
-| 61–75′ | 1038 | 696 | 223 | 473 | 32.0% |
+| 61–75′ | 1040 | 696 | 223 | 473 | 32.0% |
 | 76–90′ | 1353 | 477 | 155 | 322 | 32.5% |
 | 91+′ | 459 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4962 | **Jogos monitorados:** 541 | **Ao vivo:** 21 | **Termômetros recentes:** 9.
+**Registros:** 4964 | **Jogos monitorados:** 541 | **Ao vivo:** 19 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-22T04:41:11.406467+00:00 | Pachuca × Cruz Azul | Equipe não definida (68') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-22T04:41:11.406467+00:00 | Pachuca × Cruz Azul | Cruz Azul (68') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-22T04:41:11.406467+00:00 | Santos Laguna × Pumas | Santos Laguna (63') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-22T04:41:11.406467+00:00 | Santos Laguna × Pumas | Pumas (63') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-22T05:40:44.474854+00:00 | Sarasota Paradise × FC Naples | Sarasota Paradise (72') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-22T05:40:44.474854+00:00 | Sarasota Paradise × FC Naples | Sarasota Paradise (72') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-22T04:41:11.406467+00:00 | Pachuca × Cruz Azul | Equipe não definida (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-22T04:41:11.406467+00:00 | Pachuca × Cruz Azul | Cruz Azul (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-22T04:41:11.406467+00:00 | Santos Laguna × Pumas | Santos Laguna (63') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-22T04:41:11.406467+00:00 | Santos Laguna × Pumas | Pumas (63') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-22T03:42:31.053758+00:00 | Llaneros FC × Deportivo Cali | Llaneros FC (68') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-22T03:42:31.053758+00:00 | Pachuca × Cruz Azul | Cruz Azul (32') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-22T03:42:31.053758+00:00 | Santos Laguna × Pumas | Pumas (29') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-21T20:10:28.646818+00:00 | Aston Villa × Viking | Aston Villa (50') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Club Brugge × Lens | Lens (51') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-21T20:10:28.646818+00:00 | Club Brugge × Lens | Club Brugge (51') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-21T19:45:48.247261+00:00 | Celtic × Heart of Midlothian | Heart of Midlothian (59') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-21T19:45:48.247261+00:00 | Montrose × Aberdeen | Aberdeen (59') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
