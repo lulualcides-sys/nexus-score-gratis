@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T05:40:26.698125+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-22T06:52:04.335679+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -41,6 +41,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-22 | Brooklyn × Birmingham Legion FC | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-22 | Sporting JAX × Louisville City FC | 0-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×9.0, Grandes chances: 1.0×1.0 |
 | 2026-10-22 | Bunyodkor Tashkent × Mashal Muborak | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Budućnost Podgorica × FK Arsenal Tivat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Mornar × OFK Mladost Donja Gorica | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Fort Lauderdale United FC (W) × Carolina Ascent FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Shahaniya × Al-Sadd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -138,8 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-21 | Celtic × Heart of Midlothian | 2-4 | 0 | Chutes no alvo: 2.0×8.0, Chutes para fora: 3.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-21 | Glasgow City × Rangers | 1-2 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-21 | Montrose × Aberdeen | 2-0 | 0 | Chutes no alvo: 5.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 7.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-21 | Motherwell × Partick Thistle | 1-1 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-21 | Spartans FC × Hibernian LFC | 0-2 | 0 | Chutes no alvo: 0.0×7.0, Chutes para fora: 3.0×8.0, Escanteios: 0.0×6.0, Grandes chances: 0.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 4964 | **Jogos monitorados:** 541 | **Ao vivo:** 19 | **Termômetros recentes:** 7.
+**Registros:** 4964 | **Jogos monitorados:** 543 | **Ao vivo:** 19 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
