@@ -2,40 +2,40 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T00:55:47.069218+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T01:46:06.730482+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-23 | Atlético Nacional × Deportivo Pasto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-23 | Flamengo × Estudiantes | 0-0 | 20 | Chutes no alvo: 0.0×3.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×2.0 |
-| 2026-10-23 | Olimpia × Cruzeiro | 0-1 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-23 | LDU Quito × Club Bolivar | 3-0 | 0 | Chutes no alvo: 6.0×1.0, Chutes para fora: 7.0×3.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-23 | Atlético Nacional × Deportivo Pasto | 1-0 | 24 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-23 | Flamengo × Estudiantes | 0-0 | 45 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 0.0×4.0, Grandes chances: 0.0×2.0 |
+| 2026-10-23 | Olimpia × Cruzeiro | 0-2 | 0 | Chutes no alvo: 0.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-23 | LDU Quito × Club Bolivar | 6-0 | 0 | Chutes no alvo: 10.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-23 | Fort Lauderdale United FC (W) × Carolina Ascent FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-23 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-23 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | FC Motagua × LD Alajuelense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Atlético Nacional × Deportivo Pasto | 0-0 | 0 | Match Odds 1X2: Casa 1,28, Empate 4,80, Fora 9,50 |
+| 2026-10-22 | Atlético Nacional × Deportivo Pasto | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,28, Empate 4,80, Fora 9,50 |
 | 2026-10-22 | Flamengo × Estudiantes de La Plata | 0-0 | 0 | Chutes no alvo: 0.0×3.0; Match Odds 1X2: Casa 1,38, Empate 4,60, Fora 9,00 |
 | 2026-10-22 | Santa Fe × CD Jaguares | 2-1 | 72 | Chutes no alvo: 3.0×1.0, Chutes para fora: 5.0×6.0, Escanteios: 5.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-22 | Llaneros FC × Deportivo Cali | 0-3 | 90 | Chutes no alvo: 2.0×7.0, Chutes para fora: 6.0×1.0, Escanteios: 6.0×3.0, Grandes chances: 0.0×2.0 |
-| 2026-10-22 | Atlético Nacional × Deportivo Pasto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Atlético Nacional × Deportivo Pasto | 1-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Puebla × Monterrey | 1-4 | 89 | Chutes no alvo: 4.0×6.0, Chutes para fora: 6.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 2.0×3.0 |
 | 2026-10-22 | Atlas × CF América | 2-5 | 89 | Chutes no alvo: 5.0×6.0, Chutes para fora: 10.0×2.0, Escanteios: 8.0×4.0, Grandes chances: 2.0×3.0 |
 | 2026-10-22 | Toluca × Tijuana | 2-2 | 89 | Chutes no alvo: 4.0×4.0, Chutes para fora: 15.0×5.0, Escanteios: 15.0×4.0, Grandes chances: 2.0×4.0 |
 | 2026-10-22 | Pachuca × Cruz Azul | 1-2 | 68 | Chutes no alvo: 2.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×2.0 |
 | 2026-10-22 | Santos Laguna × Pumas | 2-0 | 62 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×0.0 |
-| 2026-10-22 | Flamengo × Estudiantes | 0-0 | 24 | Chutes no alvo: 0.0×3.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×4.0, Grandes chances: 0.0×2.0 |
+| 2026-10-22 | Flamengo × Estudiantes | 0-0 | 45 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 0.0×4.0, Grandes chances: 0.0×2.0 |
 | 2026-10-22 | Palmeiras × Fluminense | 0-1 | 86 | Chutes no alvo: 0.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-10-22 | Tractor × Sanat Naft Abadan | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | CF Montréal × Forge FC | 1-1 | 0 | Chutes no alvo: 8.0×2.0, Chutes para fora: 2.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 2.0×1.0 |
 | 2026-10-22 | Palmeiras × Independiente del Valle | 1-1 | 0 | Chutes no alvo: 3.0×6.0, Chutes para fora: 6.0×7.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Belgrano × Universitario Deportes | 4-2 | 0 | Chutes no alvo: 8.0×3.0, Chutes para fora: 5.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-22 | Olimpia × Cruzeiro | 0-1 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-22 | LDU Quito × Club Bolivar | 3-0 | 0 | Chutes no alvo: 6.0×1.0, Chutes para fora: 7.0×3.0, Escanteios: 3.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-22 | Olimpia × Cruzeiro | 0-3 | 0 | Chutes no alvo: 0.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-22 | LDU Quito × Club Bolivar | 6-0 | 0 | Chutes no alvo: 10.0×2.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Universidad de Chile × Deportivo Cali | 2-3 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 14.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Libertad × Nacional | 2-2 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 7.0×7.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-22 | Phetchabun FC × Banbueng FC | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -52,7 +52,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-22 | Budućnost Podgorica × FK Arsenal Tivat | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Mornar × OFK Mladost Donja Gorica | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Fort Lauderdale United FC (W) × Carolina Ascent FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Alebrijes Oaxaca × Cruz Azul Hidalgo | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Al-Shahaniya × Al-Sadd | 0-4 | 0 | Chutes no alvo: 1.0×13.0, Chutes para fora: 1.0×4.0, Escanteios: 0.0×6.0, Grandes chances: 1.0×1.0 |
 | 2026-10-22 | Al-Gharafa × Al-Ahli | 2-2 | 0 | Chutes no alvo: 4.0×7.0, Chutes para fora: 6.0×7.0, Escanteios: 6.0×6.0, Grandes chances: 5.0×4.0 |
 | 2026-10-22 | CD FAS × Isidro Metapan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -61,7 +61,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-22 | Al Hazem × Al-Fayha | 2-2 | 78 | Chutes no alvo: 5.0×4.0, Chutes para fora: 2.0×1.0, Escanteios: 5.0×7.0, Grandes chances: 1.0×3.0 |
 | 2026-10-22 | Sardarapat × Urartu FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | FC Bihor Oradea × CSM Reșița | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-22 | Atlas (W) × Club León (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-22 | Atlas (W) × Club León (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Persik × PSS Sleman | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | PSM Makassar × Persebaya Surabaya | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-22 | Madura United × Persib Bandung | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,7 +168,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 5189 | **Jogos distintos:** 1530 | **Resultados verificáveis:** 2947 | **Com gol:** 1036 | **Sem gol:** 1911 | **Taxa observada:** 35.2%.
+**Observações:** 5193 | **Jogos distintos:** 1533 | **Resultados verificáveis:** 2951 | **Com gol:** 1038 | **Sem gol:** 1913 | **Taxa observada:** 35.2%.
 **Evolução da amostra:** 14 datas com coletas | 26 pendentes | 984 indeterminados | 1232 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
@@ -176,10 +176,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1065 | 724 | 279 | 445 | 38.5% |
-| ⚡ pressao_ofensiva_18 | 799 | 536 | 171 | 365 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 831 | 411 | 134 | 277 | 32.6% |
-| 🟥 expulsao_confirmada | 836 | 383 | 125 | 258 | 32.6% |
+| 🥶 jogo_frio | 1067 | 725 | 279 | 446 | 38.5% |
+| ⚡ pressao_ofensiva_18 | 799 | 537 | 171 | 366 | 31.8% |
+| 🎯 chutes_no_alvo_5 | 832 | 413 | 136 | 277 | 32.9% |
+| 🟥 expulsao_confirmada | 837 | 383 | 125 | 258 | 32.6% |
 | 🚩 escanteios_6 | 620 | 291 | 108 | 183 | 37.1% |
 | 💣 grandes_chances_3 | 504 | 270 | 108 | 162 | 40.0% |
 | 🔥 pressao_forte_10min | 264 | 172 | 60 | 112 | 34.9% |
@@ -236,7 +236,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | League One | 122 | 64 | 18 | 46 | 28.1% |
 | LaLiga2 | 110 | 63 | 26 | 37 | 41.3% |
 | Série A | 100 | 62 | 27 | 35 | 43.5% |
-| Primera A | 99 | 61 | 16 | 45 | 26.2% |
+| Primera A | 100 | 61 | 16 | 45 | 26.2% |
 | LaLiga | 97 | 57 | 21 | 36 | 36.8% |
 | Serie A | 97 | 57 | 20 | 37 | 35.1% |
 | League Two | 90 | 57 | 16 | 41 | 28.1% |
@@ -252,9 +252,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 164 | 127 | 46 | 81 | 36.2% |
-| 16–30′ | 431 | 329 | 104 | 225 | 31.6% |
-| 31–45′ | 936 | 735 | 291 | 444 | 39.6% |
-| 46–60′ | 738 | 556 | 197 | 359 | 35.4% |
+| 16–30′ | 432 | 331 | 104 | 227 | 31.4% |
+| 31–45′ | 938 | 737 | 293 | 444 | 39.8% |
+| 46–60′ | 739 | 556 | 197 | 359 | 35.4% |
 | 61–75′ | 1065 | 714 | 235 | 479 | 32.9% |
 | 76–90′ | 1393 | 484 | 161 | 323 | 33.3% |
 | 91+′ | 462 | 2 | 2 | 0 | 100.0% |
@@ -262,14 +262,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5189 | **Jogos monitorados:** 543 | **Ao vivo:** 24 | **Termômetros recentes:** 8.
+**Registros:** 5193 | **Jogos monitorados:** 543 | **Ao vivo:** 28 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-23T00:56:11.264708+00:00 | Flamengo × Estudiantes | Estudiantes (25') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-23T00:56:11.264708+00:00 | LDU Quito × Club Bolivar | LDU Quito (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-23T01:46:24.251159+00:00 | Atlético Nacional × Deportivo Pasto | Atlético Nacional (46') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-23T01:46:24.251159+00:00 | Alebrijes Oaxaca × Cruz Azul Hidalgo | Cruz Azul Hidalgo (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-23T01:26:13.019365+00:00 | Flamengo × Estudiantes | Estudiantes (25') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-23T01:26:13.019365+00:00 | Olimpia × Cruzeiro | Cruzeiro (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-23T00:56:11.264708+00:00 | Flamengo × Estudiantes | Estudiantes (25') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-23T00:56:11.264708+00:00 | LDU Quito × Club Bolivar | LDU Quito (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-22T20:45:17.983775+00:00 | Celtic × Celta Vigo | Equipe não definida (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-22T20:45:17.983775+00:00 | AFC Bournemouth × Milan | Milan (83') | 🥶 jogo_frio · pressão observada | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-22T20:45:17.983775+00:00 | Hoffenheim × Lyon | Lyon (80') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
@@ -364,10 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-22T19:42:50.967060+00:00 | Ajax × Atalanta | Ajax (42') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-22T19:42:50.967060+00:00 | Borac Banja Luka × KuPS | Borac Banja Luka (43') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-22T19:42:50.967060+00:00 | Borac Banja Luka × KuPS | Borac Banja Luka (43') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:42:50.967060+00:00 | Borac Banja Luka × KuPS | Borac Banja Luka (43') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:42:50.967060+00:00 | AGF × Egnatia | Egnatia (42') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:42:50.967060+00:00 | AGF × Egnatia | AGF (42') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:20:11.827314+00:00 | Olympiacos × Sparta Prague | Equipe não definida (20') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
