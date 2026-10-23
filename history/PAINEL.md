@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T08:44:29.337463+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T09:42:21.523490+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -47,7 +47,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-23 | CD UT Cajamarca × FBC Melgar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Libertad × Luqueño | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Rubio Ñú × Guaraní | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-23 | Brisbane Roar FC × Perth Glory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-23 | Brisbane Roar FC × Perth Glory | 2-0 | 42 | Chutes no alvo: 4.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 3.0×0.0 |
 | 2026-10-23 | Everton U21 × Wolverhampton Wanderers U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Fulham U21 × Brighton & Hove Albion U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Manchester City U21 × Stoke City U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 5201 | **Jogos distintos:** 1534 | **Resultados verificáveis:** 2957 | **Com gol:** 1041 | **Sem gol:** 1916 | **Taxa observada:** 35.2%.
-**Evolução da amostra:** 14 datas com coletas | 24 pendentes | 986 indeterminados | 1234 incompletos.
+**Observações:** 5203 | **Jogos distintos:** 1535 | **Resultados verificáveis:** 2957 | **Com gol:** 1041 | **Sem gol:** 1916 | **Taxa observada:** 35.2%.
+**Evolução da amostra:** 15 datas com coletas | 26 pendentes | 986 indeterminados | 1234 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1067 | 726 | 280 | 446 | 38.6% |
+| 🥶 jogo_frio | 1068 | 726 | 280 | 446 | 38.6% |
 | ⚡ pressao_ofensiva_18 | 801 | 539 | 172 | 367 | 31.9% |
 | 🎯 chutes_no_alvo_5 | 834 | 414 | 137 | 277 | 33.1% |
 | 🟥 expulsao_confirmada | 839 | 384 | 125 | 259 | 32.6% |
 | 🚩 escanteios_6 | 622 | 292 | 108 | 184 | 37.0% |
-| 💣 grandes_chances_3 | 504 | 270 | 108 | 162 | 40.0% |
+| 💣 grandes_chances_3 | 505 | 270 | 108 | 162 | 40.0% |
 | 🔥 pressao_forte_10min | 264 | 172 | 60 | 112 | 34.9% |
 | 🧨 pressao_total_5_10min | 143 | 93 | 30 | 63 | 32.3% |
 | ⏱️ tensao_tardia_70 | 84 | 36 | 11 | 25 | 30.6% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 164 | 127 | 46 | 81 | 36.2% |
 | 16–30′ | 432 | 331 | 104 | 227 | 31.4% |
-| 31–45′ | 938 | 737 | 293 | 444 | 39.8% |
+| 31–45′ | 940 | 737 | 293 | 444 | 39.8% |
 | 46–60′ | 742 | 560 | 198 | 362 | 35.4% |
 | 61–75′ | 1065 | 714 | 235 | 479 | 32.9% |
 | 76–90′ | 1398 | 486 | 163 | 323 | 33.5% |
@@ -262,12 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5201 | **Jogos monitorados:** 657 | **Ao vivo:** 18 | **Termômetros recentes:** 7.
+**Registros:** 5203 | **Jogos monitorados:** 657 | **Ao vivo:** 21 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-23T09:42:43.566277+00:00 | Brisbane Roar FC × Perth Glory | Brisbane Roar FC (43') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-23T09:42:43.566277+00:00 | Brisbane Roar FC × Perth Glory | Brisbane Roar FC (43') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-23T02:56:55.623514+00:00 | Atlético Nacional × Deportivo Pasto | Atlético Nacional (83') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-23T02:56:55.623514+00:00 | Atlético Nacional × Deportivo Pasto | Atlético Nacional (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-23T02:41:12.906817+00:00 | Atlético Nacional × Deportivo Pasto | Atlético Nacional (83') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-22T19:52:47.222531+00:00 | Thun × Hajduk Split | Thun (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-22T19:42:50.967060+00:00 | Celtic × Celta Vigo | Celta Vigo (42') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-22T19:42:50.967060+00:00 | AFC Bournemouth × Milan | AFC Bournemouth (42') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-22T19:42:50.967060+00:00 | AFC Bournemouth × Milan | AFC Bournemouth (42') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-22T19:42:50.967060+00:00 | AFC Bournemouth × Milan | AFC Bournemouth (42') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
