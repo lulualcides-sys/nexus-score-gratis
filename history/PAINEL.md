@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T10:40:22.989624+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-23T11:43:29.835709+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -47,12 +47,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-23 | CD UT Cajamarca × FBC Melgar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Libertad × Luqueño | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Rubio Ñú × Guaraní | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-23 | Brisbane Roar FC × Perth Glory | 2-1 | 80 | Chutes no alvo: 5.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×3.0 |
+| 2026-10-23 | Brisbane Roar FC × Perth Glory | 2-1 | 87 | Chutes no alvo: 6.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-23 | Everton U21 × Wolverhampton Wanderers U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Fulham U21 × Brighton & Hove Albion U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Manchester City U21 × Stoke City U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | West Ham United U21 × Burnley U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-23 | Ipswich Town U21 × Birmingham U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-23 | Ipswich Town U21 × Birmingham U21 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Gimnasia Mendoza × Club Atlético Platense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Tigre × Atlético Tucumán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-23 | Gimnasia LP × Sarmiento | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 5206 | **Jogos distintos:** 1536 | **Resultados verificáveis:** 2961 | **Com gol:** 1043 | **Sem gol:** 1918 | **Taxa observada:** 35.2%.
-**Evolução da amostra:** 15 datas com coletas | 25 pendentes | 986 indeterminados | 1234 incompletos.
+**Observações:** 5209 | **Jogos distintos:** 1537 | **Resultados verificáveis:** 2961 | **Com gol:** 1043 | **Sem gol:** 1918 | **Taxa observada:** 35.2%.
+**Evolução da amostra:** 15 datas com coletas | 26 pendentes | 986 indeterminados | 1236 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1068 | 727 | 280 | 447 | 38.5% |
+| 🥶 jogo_frio | 1069 | 727 | 280 | 447 | 38.5% |
 | ⚡ pressao_ofensiva_18 | 801 | 539 | 172 | 367 | 31.9% |
-| 🎯 chutes_no_alvo_5 | 835 | 415 | 138 | 277 | 33.3% |
+| 🎯 chutes_no_alvo_5 | 836 | 415 | 138 | 277 | 33.3% |
 | 🟥 expulsao_confirmada | 841 | 385 | 126 | 259 | 32.7% |
-| 🚩 escanteios_6 | 622 | 292 | 108 | 184 | 37.0% |
+| 🚩 escanteios_6 | 623 | 292 | 108 | 184 | 37.0% |
 | 💣 grandes_chances_3 | 505 | 271 | 108 | 163 | 39.9% |
 | 🔥 pressao_forte_10min | 264 | 172 | 60 | 112 | 34.9% |
 | 🧨 pressao_total_5_10min | 143 | 93 | 30 | 63 | 32.3% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 282 | 171 | 54 | 117 | 31.6% |
+| Premier League | 284 | 171 | 54 | 117 | 31.6% |
 | Major League Soccer | 225 | 123 | 46 | 77 | 37.4% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
@@ -254,21 +254,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 164 | 127 | 46 | 81 | 36.2% |
 | 16–30′ | 432 | 331 | 104 | 227 | 31.4% |
 | 31–45′ | 940 | 739 | 293 | 446 | 39.6% |
-| 46–60′ | 743 | 561 | 199 | 362 | 35.5% |
+| 46–60′ | 745 | 561 | 199 | 362 | 35.5% |
 | 61–75′ | 1066 | 715 | 236 | 479 | 33.0% |
-| 76–90′ | 1398 | 486 | 163 | 323 | 33.5% |
+| 76–90′ | 1399 | 486 | 163 | 323 | 33.5% |
 | 91+′ | 463 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5206 | **Jogos monitorados:** 657 | **Ao vivo:** 22 | **Termômetros recentes:** 7.
+**Registros:** 5209 | **Jogos monitorados:** 657 | **Ao vivo:** 25 | **Termômetros recentes:** 7.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-23T10:40:52.314811+00:00 | Brothers Union × Abahani Limited | Equipe não definida (91') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-23T11:12:48.839296+00:00 | Dynamo Kyiv × Kudrivka | Dynamo Kyiv (50') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-23T11:12:48.839296+00:00 | Dynamo Kyiv × Kudrivka | Dynamo Kyiv (50') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-23T10:44:22.086137+00:00 | Brisbane Roar FC × Perth Glory | Brisbane Roar FC (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-23T10:40:52.314811+00:00 | Brothers Union × Abahani Limited | Equipe não definida (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-23T10:15:31.489046+00:00 | Brisbane Roar FC × Perth Glory | Brisbane Roar FC (59') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-23T10:15:31.489046+00:00 | Brothers Union × Abahani Limited | Equipe não definida (66') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-23T09:42:43.566277+00:00 | Brisbane Roar FC × Perth Glory | Brisbane Roar FC (43') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-22T19:52:47.222531+00:00 | FC Midtjylland × St.Truiden | St.Truiden (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-22T19:52:47.222531+00:00 | Lincoln Red Imps FC × FC Twente | FC Twente (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-22T19:52:47.222531+00:00 | Lincoln Red Imps FC × FC Twente | FC Twente (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:52:47.222531+00:00 | Lincoln Red Imps FC × FC Twente | FC Twente (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:52:47.222531+00:00 | Borac Banja Luka × KuPS | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-22T19:52:47.222531+00:00 | AGF × Egnatia | Egnatia (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
