@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-24T09:39:46.517310+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-24T10:39:58.009993+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **37**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -43,7 +43,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-10-24 | FC Augsburg × 1. FC Union Berlin | 0-0 | 0 | Match Odds 1X2: Casa 1,80, Empate 3,90, Fora 3,75 |
 | 2026-10-24 | RB Leipzig × SV Elversberg | 0-0 | 0 | Match Odds 1X2: Casa 1,40, Empate 5,00, Fora 6,00 |
 | 2026-10-24 | Borussia Dortmund × Eintracht Frankfurt | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-24 | Napoli × AS Roma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-24 | Napoli × AS Roma | 0-0 | 0 | Match Odds 1X2: Casa 2,60, Empate 3,20, Fora 2,60 |
 | 2026-10-24 | Lazio × Parma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Cagliari × Bologna | 0-0 | 0 | Match Odds 1X2: Casa 2,85, Empate 2,85, Fora 2,60 |
 | 2026-10-24 | Como × Sassuolo | 0-0 | 0 | Match Odds 1X2: Casa 1,45, Empate 4,70, Fora 5,50 |
@@ -117,7 +117,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-10-24 | 2 de Mayo × Recoleta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Newcastle Jets × Macarthur FC | 1-1 | 83 | Chutes no alvo: 3.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 5.0×5.0, Grandes chances: 2.0×1.0 |
 | 2026-10-24 | Western Sydney Wanderers FC × Auckland FC | 5-2 | 85 | Chutes no alvo: 4.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 7.0×5.0, Grandes chances: 3.0×1.0 |
-| 2026-10-24 | Melbourne Victory × Melbourne City FC | 1-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×5.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×2.0 |
+| 2026-10-24 | Melbourne Victory × Melbourne City FC | 1-1 | 78 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×9.0, Escanteios: 2.0×2.0, Grandes chances: 1.0×3.0 |
 | 2026-10-24 | Wellington Phoenix × Central Coast Mariners | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Port FC × Rayong FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Buriram United × Sisaket United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 5624 | **Jogos distintos:** 1662 | **Resultados verificáveis:** 3169 | **Com gol:** 1139 | **Sem gol:** 2030 | **Taxa observada:** 35.9%.
-**Evolução da amostra:** 16 datas com coletas | 31 pendentes | 1062 indeterminados | 1362 incompletos.
+**Observações:** 5636 | **Jogos distintos:** 1669 | **Resultados verificáveis:** 3174 | **Com gol:** 1141 | **Sem gol:** 2033 | **Taxa observada:** 35.9%.
+**Evolução da amostra:** 16 datas com coletas | 36 pendentes | 1063 indeterminados | 1363 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1164 | 788 | 303 | 485 | 38.5% |
-| ⚡ pressao_ofensiva_18 | 858 | 576 | 191 | 385 | 33.2% |
+| 🥶 jogo_frio | 1167 | 791 | 304 | 487 | 38.4% |
+| ⚡ pressao_ofensiva_18 | 860 | 576 | 191 | 385 | 33.2% |
 | 🎯 chutes_no_alvo_5 | 918 | 449 | 155 | 294 | 34.5% |
-| 🟥 expulsao_confirmada | 884 | 402 | 134 | 268 | 33.3% |
+| 🟥 expulsao_confirmada | 890 | 403 | 135 | 268 | 33.5% |
 | 🚩 escanteios_6 | 673 | 305 | 114 | 191 | 37.4% |
-| 💣 grandes_chances_3 | 552 | 294 | 122 | 172 | 41.5% |
+| 💣 grandes_chances_3 | 553 | 295 | 122 | 173 | 41.4% |
 | 🔥 pressao_forte_10min | 283 | 184 | 65 | 119 | 35.3% |
 | 🧨 pressao_total_5_10min | 155 | 100 | 33 | 67 | 33.0% |
 | ⏱️ tensao_tardia_70 | 90 | 39 | 12 | 27 | 30.8% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 302 | 182 | 57 | 125 | 31.3% |
+| Premier League | 306 | 184 | 58 | 126 | 31.5% |
 | Major League Soccer | 225 | 123 | 46 | 77 | 37.4% |
 | J. League | 192 | 123 | 51 | 72 | 41.5% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
@@ -243,33 +243,45 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | League Two | 90 | 57 | 16 | 41 | 28.1% |
 | Eliteserien | 86 | 55 | 14 | 41 | 25.5% |
 | Serie B | 76 | 54 | 21 | 33 | 38.9% |
-| Super Lig | 66 | 54 | 22 | 32 | 40.7% |
+| Super Lig | 67 | 54 | 22 | 32 | 40.7% |
 | Premier Division | 88 | 51 | 16 | 35 | 31.4% |
-| Ekstraklasa | 82 | 50 | 18 | 32 | 36.0% |
+| Ekstraklasa | 83 | 50 | 18 | 32 | 36.0% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 178 | 134 | 47 | 87 | 35.1% |
-| 16–30′ | 448 | 341 | 105 | 236 | 30.8% |
-| 31–45′ | 1038 | 814 | 333 | 481 | 40.9% |
-| 46–60′ | 800 | 592 | 214 | 378 | 36.1% |
-| 61–75′ | 1128 | 759 | 259 | 500 | 34.1% |
+| 1–15′ | 180 | 134 | 47 | 87 | 35.1% |
+| 16–30′ | 451 | 343 | 106 | 237 | 30.9% |
+| 31–45′ | 1041 | 815 | 334 | 481 | 41.0% |
+| 46–60′ | 802 | 594 | 214 | 380 | 36.0% |
+| 61–75′ | 1129 | 759 | 259 | 500 | 34.1% |
 | 76–90′ | 1543 | 527 | 179 | 348 | 34.0% |
-| 91+′ | 489 | 2 | 2 | 0 | 100.0% |
+| 91+′ | 490 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5624 | **Jogos monitorados:** 1318 | **Ao vivo:** 30 | **Termômetros recentes:** 8.
+**Registros:** 5636 | **Jogos monitorados:** 1318 | **Ao vivo:** 56 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-24T09:40:11.547700+00:00 | Gloria Bistrița × CSC Dumbrăvița | CSC Dumbrăvița (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T09:30:20.605530+00:00 | Melbourne Victory × Melbourne City FC | Melbourne City FC (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Gomel × Dinamo Minsk | Gomel (38') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Piast Gliwice × Cracovia | Cracovia (25') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Akron Togliatti × Dinamo Moscow | Dinamo Moscow (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Académica × Leixões | Leixões (37') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Eyüpspor × Kasımpaşa | Kasımpaşa (10') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Ümraniyespor × Sivasspor | Sivasspor (11') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:40:42.951161+00:00 | Arambagh × City Club | Arambagh (92') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-24T10:18:06.513402+00:00 | Gomel × Dinamo Minsk | Gomel (16') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-24T10:18:06.513402+00:00 | Akron Togliatti × Dinamo Moscow | Dinamo Moscow (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T10:18:06.513402+00:00 | Arambagh × City Club | Arambagh (70') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T09:57:36.659808+00:00 | Melbourne Victory × Melbourne City FC | Melbourne Victory (59') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:57:36.659808+00:00 | Melbourne Victory × Melbourne City FC | Melbourne City FC (59') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:40:11.547700+00:00 | Gloria Bistrița × CSC Dumbrăvița | CSC Dumbrăvița (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-24T09:30:20.605530+00:00 | Melbourne Victory × Melbourne City FC | Melbourne City FC (45') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-24T09:30:20.605530+00:00 | Henan FC × Beijing Guoan | Beijing Guoan (101') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-24T09:30:20.605530+00:00 | Liaoning Tieren × Zhejiang Professional | Liaoning Tieren (95') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-24T09:30:20.605530+00:00 | Shenzhen Peng City × Shanghai Shenhua | Shanghai Shenhua (103') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -356,22 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-24T04:40:26.336427+00:00 | Atlante × Atlético de San Luis | Atlante (80') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-24T04:40:26.336427+00:00 | Atlante × Atlético de San Luis | Atlante (80') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-24T04:40:26.336427+00:00 | Atlante × Atlético de San Luis | Atlante (80') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T04:40:26.336427+00:00 | Atlante × Atlético de San Luis | Atlante (80') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T04:40:26.336427+00:00 | Atlante × Atlético de San Luis | Atlante (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T04:40:26.336427+00:00 | Western Sydney Wanderers FC × Brisbane Roar FC | Brisbane Roar FC (66') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-24T04:40:26.336427+00:00 | Western Sydney Wanderers FC × Brisbane Roar FC | Western Sydney Wanderers FC (66') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Audax Italiano × Huachipato | Audax Italiano (66') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Audax Italiano × Huachipato | Audax Italiano (66') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Chicó FC × Bucaramanga | Chicó FC (67') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Western Sydney Wanderers FC × Brisbane Roar FC | Western Sydney Wanderers FC (25') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Cruzeiro × Remo | Cruzeiro (60') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Portland Thorns (W) × North Carolina Courage (W) | Portland Thorns (W) (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T03:41:41.965704+00:00 | Juventud de las Piedras × Club Atletico Peñarol | Club Atletico Peñarol (64') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Junior FC × Águilas Doradas | Águilas Doradas (68') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **76**.
+Jogos com odds registradas nos ultimos dias: **77**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
