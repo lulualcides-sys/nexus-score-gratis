@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-24T08:40:52.330168+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-24T09:39:46.517310+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -117,7 +117,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 | 2026-10-24 | 2 de Mayo × Recoleta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Newcastle Jets × Macarthur FC | 1-1 | 83 | Chutes no alvo: 3.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 5.0×5.0, Grandes chances: 2.0×1.0 |
 | 2026-10-24 | Western Sydney Wanderers FC × Auckland FC | 5-2 | 85 | Chutes no alvo: 4.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 7.0×5.0, Grandes chances: 3.0×1.0 |
-| 2026-10-24 | Melbourne Victory × Melbourne City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-24 | Melbourne Victory × Melbourne City FC | 1-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×5.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×2.0 |
 | 2026-10-24 | Wellington Phoenix × Central Coast Mariners | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Port FC × Rayong FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-24 | Buriram United × Sisaket United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 5612 | **Jogos distintos:** 1655 | **Resultados verificáveis:** 3164 | **Com gol:** 1139 | **Sem gol:** 2025 | **Taxa observada:** 36.0%.
-**Evolução da amostra:** 16 datas com coletas | 36 pendentes | 1053 indeterminados | 1359 incompletos.
+**Observações:** 5624 | **Jogos distintos:** 1662 | **Resultados verificáveis:** 3169 | **Com gol:** 1139 | **Sem gol:** 2030 | **Taxa observada:** 35.9%.
+**Evolução da amostra:** 16 datas com coletas | 31 pendentes | 1062 indeterminados | 1362 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1163 | 788 | 303 | 485 | 38.5% |
+| 🥶 jogo_frio | 1164 | 788 | 303 | 485 | 38.5% |
 | ⚡ pressao_ofensiva_18 | 858 | 576 | 191 | 385 | 33.2% |
-| 🎯 chutes_no_alvo_5 | 915 | 447 | 155 | 292 | 34.7% |
-| 🟥 expulsao_confirmada | 882 | 402 | 134 | 268 | 33.3% |
-| 🚩 escanteios_6 | 672 | 304 | 114 | 190 | 37.5% |
-| 💣 grandes_chances_3 | 547 | 292 | 122 | 170 | 41.8% |
+| 🎯 chutes_no_alvo_5 | 918 | 449 | 155 | 294 | 34.5% |
+| 🟥 expulsao_confirmada | 884 | 402 | 134 | 268 | 33.3% |
+| 🚩 escanteios_6 | 673 | 305 | 114 | 191 | 37.4% |
+| 💣 grandes_chances_3 | 552 | 294 | 122 | 172 | 41.5% |
 | 🔥 pressao_forte_10min | 283 | 184 | 65 | 119 | 35.3% |
 | 🧨 pressao_total_5_10min | 155 | 100 | 33 | 67 | 33.0% |
 | ⏱️ tensao_tardia_70 | 90 | 39 | 12 | 27 | 30.8% |
@@ -228,11 +228,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
 | Liga Profesional | 157 | 99 | 18 | 81 | 18.2% |
 | Europa League | 167 | 96 | 27 | 69 | 28.1% |
+| Super League | 143 | 78 | 22 | 56 | 28.2% |
 | Liga MX | 141 | 77 | 26 | 51 | 33.8% |
 | Saudi Pro League | 109 | 76 | 32 | 44 | 42.1% |
 | Bundesliga | 128 | 75 | 26 | 49 | 34.7% |
 | Ligue 1 | 112 | 75 | 26 | 49 | 34.7% |
-| Super League | 133 | 73 | 22 | 51 | 30.1% |
 | LaLiga2 | 116 | 69 | 27 | 42 | 39.1% |
 | Primera A | 107 | 66 | 19 | 47 | 28.8% |
 | League One | 122 | 64 | 18 | 46 | 28.1% |
@@ -253,28 +253,40 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 178 | 134 | 47 | 87 | 35.1% |
 | 16–30′ | 448 | 341 | 105 | 236 | 30.8% |
-| 31–45′ | 1037 | 814 | 333 | 481 | 40.9% |
+| 31–45′ | 1038 | 814 | 333 | 481 | 40.9% |
 | 46–60′ | 800 | 592 | 214 | 378 | 36.1% |
-| 61–75′ | 1121 | 754 | 259 | 495 | 34.4% |
-| 76–90′ | 1542 | 527 | 179 | 348 | 34.0% |
-| 91+′ | 486 | 2 | 2 | 0 | 100.0% |
+| 61–75′ | 1128 | 759 | 259 | 500 | 34.1% |
+| 76–90′ | 1543 | 527 | 179 | 348 | 34.0% |
+| 91+′ | 489 | 2 | 2 | 0 | 100.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 5612 | **Jogos monitorados:** 1318 | **Ao vivo:** 37 | **Termômetros recentes:** 8.
+**Registros:** 5624 | **Jogos monitorados:** 1318 | **Ao vivo:** 30 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-24T08:38:39.647161+00:00 | Chengdu Rongcheng FC × Dalian Yingbo | Chengdu Rongcheng FC (48') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T08:38:39.647161+00:00 | Henan FC × Beijing Guoan | Henan FC (49') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T08:38:39.647161+00:00 | Gamba Osaka × Kyoto Sanga FC | Kyoto Sanga FC (76') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-24T08:38:39.647161+00:00 | Gamba Osaka × Kyoto Sanga FC | Gamba Osaka (76') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-24T08:12:07.437749+00:00 | Henan FC × Beijing Guoan | Henan FC (42') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-24T08:12:07.437749+00:00 | Wuhan Three Towns × Shandong Taishan | Shandong Taishan (42') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-24T08:12:07.437749+00:00 | Wuhan Three Towns × Shandong Taishan | Shandong Taishan (42') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-24T09:40:11.547700+00:00 | Gloria Bistrița × CSC Dumbrăvița | CSC Dumbrăvița (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-24T09:30:20.605530+00:00 | Melbourne Victory × Melbourne City FC | Melbourne City FC (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-24T09:30:20.605530+00:00 | Henan FC × Beijing Guoan | Beijing Guoan (101') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-24T09:30:20.605530+00:00 | Liaoning Tieren × Zhejiang Professional | Liaoning Tieren (95') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-24T09:30:20.605530+00:00 | Shenzhen Peng City × Shanghai Shenhua | Shanghai Shenhua (103') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Chongqing Tongliang Long × Qingdao Hainiu | Chongqing Tongliang Long (74') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Chongqing Tongliang Long × Qingdao Hainiu | Qingdao Hainiu (74') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Chongqing Tongliang Long × Qingdao Hainiu | Chongqing Tongliang Long (74') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Liaoning Tieren × Zhejiang Professional | Zhejiang Professional (70') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Qingdao West Coast × Yunnan Yukun | Qingdao West Coast (75') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Qingdao West Coast × Yunnan Yukun | Qingdao West Coast (75') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-24T09:05:01.433096+00:00 | Tianjin Jinmen Tiger × Shanghai Port | Shanghai Port (75') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T08:38:39.647161+00:00 | Chengdu Rongcheng FC × Dalian Yingbo | Chengdu Rongcheng FC (48') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T08:38:39.647161+00:00 | Henan FC × Beijing Guoan | Henan FC (49') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T08:38:39.647161+00:00 | Gamba Osaka × Kyoto Sanga FC | Kyoto Sanga FC (76') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-24T08:38:39.647161+00:00 | Gamba Osaka × Kyoto Sanga FC | Gamba Osaka (76') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-24T08:12:07.437749+00:00 | Henan FC × Beijing Guoan | Henan FC (42') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T08:12:07.437749+00:00 | Wuhan Three Towns × Shandong Taishan | Shandong Taishan (42') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-24T08:12:07.437749+00:00 | Wuhan Three Towns × Shandong Taishan | Shandong Taishan (42') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-24T08:12:07.437749+00:00 | Gamba Osaka × Kyoto Sanga FC | Gamba Osaka (50') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-24T07:53:09.654098+00:00 | Gamba Osaka × Kyoto Sanga FC | Gamba Osaka (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-24T07:53:09.654098+00:00 | Tokyo Verdy × Avispa Fukuoka | Avispa Fukuoka (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -356,18 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-24T03:41:41.965704+00:00 | Portland Thorns (W) × North Carolina Courage (W) | Portland Thorns (W) (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-24T03:41:41.965704+00:00 | Juventud de las Piedras × Club Atletico Peñarol | Club Atletico Peñarol (64') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-24T02:43:28.167649+00:00 | Junior FC × Águilas Doradas | Águilas Doradas (68') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Necaxa × FC Juárez | FC Juárez (73') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Necaxa × FC Juárez | Necaxa (73') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Utah Royals (W) × Seattle Reign FC (W) | Utah Royals (W) (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Tepatitlán FC × Cancún FC | Tepatitlán FC (82') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-24T02:43:28.167649+00:00 | Juventud Antoniana × Sol de America Formosa | Sol de America Formosa (82') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-24T02:40:04.924119+00:00 | Portland Thorns (W) × North Carolina Courage (W) | Equipe não definida (29') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-24T02:40:04.924119+00:00 | Portland Thorns (W) × North Carolina Courage (W) | Portland Thorns (W) (29') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-24T02:15:05.829905+00:00 | Tigre × Atlético Tucumán | Tigre (44') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-24T02:15:05.829905+00:00 | Tigre × Atlético Tucumán | Atlético Tucumán (44') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-24T01:48:34.197958+00:00 | Tigre × Atlético Tucumán | Tigre (44') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-24T01:48:34.197958+00:00 | Chicago Stars (W) × Houston Dash (W) | Houston Dash (W) (50') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-24T01:48:34.197958+00:00 | Chicago Stars (W) × Houston Dash (W) | Houston Dash (W) (50') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
