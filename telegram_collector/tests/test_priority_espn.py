@@ -106,6 +106,39 @@ class PriorityEspnTests(unittest.TestCase):
             self.assertEqual(len(doc["games"]), 1)
             self.assertEqual(len(next(iter(doc["games"].values()))["observations"]), 1)
 
+    def test_espn_summary_fallback_only_for_pregame_and_bounded(self):
+        from telegram_collector.priority_espn import PRIORITY
+        seen = []
+        no_board_odds = event(odds=False)
+        full = event()["competitions"][0]["odds"]
+        def fetch_board(code, day):
+            if code == "esp.1" and day == "2026-10-25":
+                return [no_board_odds]
+            return []
+        def fetch_summary(code, event_id):
+            seen.append((code,event_id))
+            return full
+        with TemporaryDirectory() as tmp:
+            report = run(Path(tmp), NOW, board_fetcher=fetch_board,
+                         summary_fetcher=fetch_summary, max_boards=35, max_summaries=1)
+            self.assertEqual(report["summary_checks"], 1)
+            self.assertEqual(report["summary_with_prices"], 1)
+            self.assertEqual(report["new_quotes"], 3)
+            self.assertEqual(len(seen), 1)
+            rec = json.loads((Path(tmp) / "2026-10-25.json").read_text())
+            saved = next(iter(rec["games"].values()))
+            self.assertEqual(saved["observations"][0]["odds"][0]["source"], "ESPN public summary")
+
+    def test_espn_summary_does_not_backfill_after_kickoff(self):
+        def fetch_board(code, day):
+            return [event(phase="post", odds=False)] if code == "esp.1" and day == "2026-10-25" else []
+        called = []
+        with TemporaryDirectory() as tmp:
+            report = run(Path(tmp), NOW, board_fetcher=fetch_board,
+                         summary_fetcher=lambda *args: called.append(args), max_boards=35)
+            self.assertEqual(report["summary_checks"], 0)
+            self.assertFalse(called)
+
     def test_fetch_failure_does_not_destroy_archive(self):
         def broken(code, day):
             raise TimeoutError("provider went away")
