@@ -21,7 +21,7 @@ API = "https://guest.api.arcadia.pinnacle.com/0.1"
 PUBLIC_WEB_CLIENT_KEY = "CmX2KcMrXuFmNg6YFbmTxE0y9CIrOi0R"
 REFERENCE = "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml"
 SOCCER_SPORT_ID = 29
-MAX_MATCHUPS = 12
+MAX_MATCHUPS = 16
 MAX_PRICE_ITEMS = 240
 MAX_BYTES = 6_000_000
 LOCAL = ZoneInfo("America/Sao_Paulo")
@@ -199,6 +199,61 @@ def get_focus_matches(payload, now, limit=MAX_MATCHUPS):
     return sorted(matches, key=priority)[:limit]
 
 
+
+def coverage_missing_targets(directory, now):
+    """Radar existente: não requisitar nada além dos feeds já coletados."""
+    report = Path(directory) / "priority-coverage.json"
+    if not report.is_file():
+        return []
+    try:
+        d = json.loads(report.read_text(encoding="utf-8"))
+        at = timestamp(d.get("checked_at"))
+        if (d.get("schema") != 1 or at is None or not
+                -120 <= (now - at).total_seconds() <= 6*3600):
+            return []
+        games = d.get("priority_fixtures")
+        if not isinstance(games, list):
+            return []
+        return [g for g in games if isinstance(g,dict)
+                and g.get("coverage") in ("no_bookmaker_price","indicative_only")]
+    except (ValueError, TypeError, OSError):
+        return []
+
+
+def select_focus_schedule(available, now, targets, max_games):
+    """Reserve vagas para jogos importantes SEM preço e rode o resto do catálogo.
+
+    A rotação é por bloco de três horas, não por usuário/IP. Reduz repetição
+    de partidas e amplia cobertura sem aumentar o limite de requests.
+    """
+    from telegram_collector.coverage_radar import same_teams_and_time
+    if max_games <= 0:
+        return [], 0
+    priority = []
+    for game in available:
+        kick = timestamp(game.get("kickoff_utc"))
+        if kick is None:
+            continue
+        if any(same_teams_and_time(
+                {"home":game["home"],"away":game["away"],
+                 "kickoff_unix":kick.timestamp()},
+                target) for target in targets):
+            priority.append(game)
+    priority.sort(key=lambda x: x["kickoff_utc"])
+    # At most ~1/3 requests reserved; the rest rotate throughout the day.
+    reserved = min(len(priority), max(1, max_games//3))
+    chosen = priority[:reserved]
+    used = {g["provider_matchup_id"] for g in chosen}
+    others = [g for g in available if g["provider_matchup_id"] not in used]
+    n = min(max_games-len(chosen), len(others))
+    if others and n:
+        slot = int(now.timestamp() // (3*3600))
+        start = (slot*n) % len(others)
+        for i in range(n):
+            chosen.append(others[(start+i)%len(others)])
+    return chosen, reserved
+
+
 def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
     directory = Path(directory) / "public-no-key"
     directory.mkdir(parents=True, exist_ok=True)
@@ -229,10 +284,14 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
               and 0 <= (now-timestamp(v["blocked_at"])).total_seconds() < 86400}
     try:
         response = getter("/sports/29/matchups/highlighted")
-        available = get_focus_matches(response, now, max_games + 20)
-        games = [g for g in available if str(g["provider_matchup_id"]) not in denied][:max_games]
-        status["previously_denied_skipped"] = len(available) - len(
-            [g for g in available if str(g["provider_matchup_id"]) not in denied])
+        available = get_focus_matches(response, now, limit=250)
+        approved = [g for g in available if str(g["provider_matchup_id"]) not in denied]
+        status["previously_denied_skipped"] = len(available) - len(approved)
+        targets = coverage_missing_targets(directory.parent, now)
+        games, targeted = select_focus_schedule(approved, now, targets, max_games)
+        status["priority_no_odds_targeted"] = targeted
+        status["rotating_catalogue_games"] = len(games) - targeted
+        status["all_scheduled_candidates"] = len(approved)
         status["matches_discovered"] = (len(response) if isinstance(response,list) else
                                         len(next((response[k] for k in ("matchups","data","items")
                                                   if isinstance(response.get(k),list)),[])))
