@@ -112,6 +112,44 @@ def fetch(fetcher=urlopen):
     return json.loads(raw)
 
 
+def archive_changes(parsed, directory):
+    """Persist changes in bookmaker price and fair benchmark by day, without repeat spam."""
+    day = parsed["generated_at"][:10]
+    target = Path(directory) / ("tipsaudit-" + day + ".json")
+    try:
+        existing = json.loads(target.read_text(encoding="utf-8")) if target.is_file() else {}
+        if not isinstance(existing, dict):
+            raise ValueError("Invalid previous public-source archive")
+    except (ValueError, OSError) as exc:
+        raise ValueError("Previous public-source archive cannot be read safely") from exc
+    if not existing:
+        existing = {"schema": 1, "day": day, "attribution_required": ATTRIBUTION, "matches": {}}
+    changes = 0
+    for item in parsed["matches"]:
+        ident = item["provider_match_id"]
+        key = ident + "|" + item["kickoff_utc"]
+        rec = existing["matches"].setdefault(key, {
+            "id": ident,
+            "home": item["home"], "away": item["away"],
+            "league": item["league"], "kickoff_utc": item["kickoff_utc"],
+            "snapshots": [],
+        })
+        snap = {
+            "fair_odds_modelled_not_bookmaker": item["benchmark_fair_odds"],
+            "bookmaker_quote_indicative": item["best_soft_bookmaker_quote"],
+            "benchmark_read_at": item["benchmark_read_at"],
+        }
+        if not rec["snapshots"] or any(
+            rec["snapshots"][-1].get(k) != v for k, v in snap.items()
+        ):
+            rec["snapshots"].append({"observed_in_feed_at": parsed["generated_at"], **snap})
+            changes += 1
+    if changes:
+        target.write_text(json.dumps(existing, separators=(",", ":"), ensure_ascii=False) + "\n",
+                          encoding="utf-8")
+    return changes
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--archive", default="market-history")
@@ -123,9 +161,10 @@ def main():
         data = parse(fetch())
         output = archive / "tipsaudit-latest.json"
         output.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+        changes = archive_changes(data, archive)
         summary = {
             "checked_at": checked, "source": SOURCE, "status": "ok",
-            "matches": len(data["matches"]),
+            "matches": len(data["matches"]), "history_changes": changes,
             "quotes_indicative": sum(x["best_soft_bookmaker_quote"] is not None for x in data["matches"]),
             "not_verified_as_tradable": True,
         }
