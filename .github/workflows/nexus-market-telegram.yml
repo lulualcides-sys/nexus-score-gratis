@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          python3 -m py_compile telegram_collector/collect.py
+          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py
           python3 -m unittest discover -s telegram_collector/tests -v
   archive:
     if: github.event_name != 'pull_request'
@@ -48,6 +48,8 @@ jobs:
           git -C _market_data checkout HEAD
       - name: Coletar mercados silenciosamente; Telegram só no fechamento diário
         run: python3 telegram_collector/collect.py --archive _market_data/market-history --history-dir history --no-telegram
+      - name: Consultar feed público gratuito sem conta, sem chave, sem contornar bloqueios
+        run: python3 telegram_collector/public_no_key.py --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
         if: success()
         shell: bash
