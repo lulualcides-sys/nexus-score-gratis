@@ -137,6 +137,9 @@ def classify_market(m, key):
 
 
 def parse_markets(raw, observed):
+    if isinstance(raw,dict):
+        raw = next((raw[k] for k in ("markets","data","items")
+                    if isinstance(raw.get(k),list)), None)
     if not isinstance(raw, list):
         return []
     quotes = []
@@ -219,7 +222,9 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
     try:
         response = getter("/sports/29/matchups/highlighted")
         games = get_focus_matches(response, now, max_games)
-        status["matches_discovered"] = len(response)
+        status["matches_discovered"] = (len(response) if isinstance(response,list) else
+                                        len(next((response[k] for k in ("matchups","data","items")
+                                                  if isinstance(response.get(k),list)),[])))
         result = {}
         known = {}
         if archive.exists():
