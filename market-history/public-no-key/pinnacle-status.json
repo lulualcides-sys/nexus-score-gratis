@@ -1,17 +1,23 @@
 {
-  "checked_at": "2026-10-25T20:30:32.324129+00:00",
+  "checked_at": "2026-10-25T20:33:14.310883+00:00",
   "source": "Pinnacle public Arcadia guest",
   "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
-  "status": "unavailable",
-  "matches_discovered": 0,
-  "matches_checked": 0,
-  "new_price_snapshots": 0,
-  "odds_observed": 0,
-  "market_families": {},
+  "status": "ok",
+  "matches_discovered": 37,
+  "matches_checked": 11,
+  "new_price_snapshots": 11,
+  "odds_observed": 1249,
+  "market_families": {
+    "match_odds": 75,
+    "total_goals": 672,
+    "asian_handicap": 502
+  },
   "errors": [
     {
-      "error": "ValueError",
-      "http_status": null
+      "matchup_id": 1638780185,
+      "error": "HTTPError",
+      "http_status": 403,
+      "reason": "HTTP Error 403: Forbidden"
     }
   ],
   "requires_account": false,
