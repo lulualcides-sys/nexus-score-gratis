@@ -2,7 +2,8 @@
 """Coleta independente: lê apenas o snapshot PÚBLICO NEXUS e arquiva evidências sem inventar odds ou P/L."""
 import argparse
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 import hashlib
 import json
 import os
@@ -52,6 +53,101 @@ def finite_nonnegative(v):
         pass
     return None
 
+
+
+MIN_LIQUIDITY_BRL = 3000.0
+BR_TZ = ZoneInfo("America/Sao_Paulo")
+
+
+def normalize_liquidity(game):
+    """Aceita somente volume negociado confirmado, em BRL, com fonte e hora.
+    Preço, quantidade de casas e métricas esportivas NÃO são liquidez.
+    Outros tipos de volume/moedas continuam desconhecidos até verificação.
+    """
+    raw = game.get("liquidity")
+    if not isinstance(raw, dict):
+        return {"status": "unknown", "minimum_brl": MIN_LIQUIDITY_BRL}
+    amount = finite_nonnegative(raw.get("amount"))
+    currency = str(raw.get("currency") or "").upper()
+    kind = str(raw.get("kind") or "")
+    source = str(raw.get("source") or "").strip()
+    time = str(raw.get("observed_at") or "")
+    try:
+        observed = datetime.fromisoformat(time.replace("Z", "+00:00"))
+        good_time = observed.tzinfo is not None and observed.timestamp() <= datetime.now(timezone.utc).timestamp() + 120
+    except (ValueError, TypeError, OverflowError):
+        good_time = False
+    if (amount is None or currency != "BRL" or kind not in ("total_matched", "matched_volume")
+            or not source or not good_time):
+        return {"status": "unknown", "minimum_brl": MIN_LIQUIDITY_BRL}
+    return {"status": "qualified" if amount >= MIN_LIQUIDITY_BRL else "below",
+            "amount": amount, "currency": "BRL", "kind": kind,
+            "source": source[:70], "observed_at": time,
+            "minimum_brl": MIN_LIQUIDITY_BRL}
+
+
+def augment_from_nexus_history(games, history_dir, collected_at):
+    """Amplia jogos/odds com os arquivos locais já produzidos pelo NEXUS.
+    Sem novas requisições, sem uso de tokens e sem sobrescrever odds existentes.
+    """
+    history_dir = Path(history_dir)
+    expanded = {str(g.get("id")): dict(g) for g in games if isinstance(g, dict) and g.get("id")}
+    for game in expanded.values():
+        game["odds"] = list(game.get("odds") or [])
+    local_today = datetime.fromisoformat(collected_at.replace("Z", "+00:00")).astimezone(BR_TZ).date()
+    days = {(local_today - timedelta(days=i)).isoformat() for i in range(3)}
+    days.update(str(g.get("day")) for g in expanded.values() if g.get("day"))
+    for day in sorted(days):
+        if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", day):
+            continue
+        f = history_dir / (day + ".json")
+        if not f.is_file():
+            continue
+        data = json.loads(f.read_text(encoding="utf-8"))
+        rows = data.get("matches") if isinstance(data, dict) else None
+        if not isinstance(rows, dict):
+            continue
+        for match_id, record in rows.items():
+            if not isinstance(record, dict):
+                continue
+            fixture = record.get("fixture")
+            if not isinstance(fixture, dict) or not fixture.get("home") or not fixture.get("away"):
+                continue
+            match_id = str(fixture.get("id") or match_id)
+            if not match_id:
+                continue
+            if match_id not in expanded:
+                expanded[match_id] = {
+                    "id": match_id, "day": day, "home": fixture.get("home"),
+                    "away": fixture.get("away"), "league": fixture.get("league"),
+                    "start_timestamp": fixture.get("start_timestamp"),
+                    "phase": fixture.get("phase"), "minute": fixture.get("minute"),
+                    "score": fixture.get("score"), "source": fixture.get("source"),
+                    "sources": record.get("sources") or [fixture.get("source") or "NEXUS"],
+                    "observed_at": fixture.get("collected_at"),
+                    "stats": record.get("stats") or {}, "odds": []}
+            game = expanded[match_id]
+            for field in ("market_quotes", "live_odds_quotes", "odds_quotes"):
+                quotes = record.get(field)
+                if not isinstance(quotes, list):
+                    continue
+                for q in quotes:
+                    if not isinstance(q, dict):
+                        continue
+                    market = str(q.get("market") or ("1x2" if field == "odds_quotes" else ""))
+                    phase = "live" if field == "live_odds_quotes" else "pregame"
+                    # Não reclassificar closing odds nem informações sem proveniência.
+                    if not market or not (q.get("captured_at") or q.get("at")):
+                        continue
+                    game["odds"].append({
+                        "market": market, "selection": q.get("selection") or q.get("sel") or "",
+                        "odds": q.get("odds", q.get("odd")),
+                        "source": q.get("source"), "bookmaker": q.get("bookmaker"),
+                        "captured_at": q.get("captured_at") or q.get("at"),
+                        "phase": q.get("phase") or phase})
+            if isinstance(record.get("liquidity"), dict):
+                game["liquidity"] = record["liquidity"]
+    return list(expanded.values())
 
 def normalize_quotes(game):
     """Retém somente odds presentes, com hora e fonte. Sem odds de fechamento como entrada."""
@@ -139,7 +235,8 @@ def observation(game, collected_at):
             "stats_observed_at": game.get("stats_observed_at"),
             "pressure_observed_at": game.get("pressure_observed_at"),
             "pressure_last_minute": game.get("pressure_last_minute"),
-            "odds": normalize_quotes(game), "settlement": settle_markets(game)}
+            "odds": normalize_quotes(game), "liquidity": normalize_liquidity(game),
+            "settlement": settle_markets(game)}
 
 
 def signature(snapshot):
@@ -262,6 +359,7 @@ def main():
     p.add_argument("--source", default=os.environ.get("NEXUS_SOURCE_URL") or SOURCE)
     p.add_argument("--archive", default="market-history")
     p.add_argument("--no-telegram", action="store_true")
+    p.add_argument("--history-dir", default=None, help="NEXUS local history/ (no extra APIs)")
     args = p.parse_args()
     archive = Path(args.archive)
     try:
@@ -270,8 +368,15 @@ def main():
         if not updated:
             raise ValueError("Snapshot sem horário de exportação NEXUS")
         collected = now_utc()
-        changed = ingest_games(result["games"], archive, collected)
-        report = report_from_games(result["games"], updated, changed)
+        games = (augment_from_nexus_history(result["games"], args.history_dir, collected)
+                 if args.history_dir else result["games"])
+        changed = ingest_games(games, archive, collected)
+        report = report_from_games(games, updated, changed)
+        states = Counter(normalize_liquidity(g)["status"] for g in games)
+        report["liquidity_minimum_brl"] = MIN_LIQUIDITY_BRL
+        report["liquidity_qualified"] = states["qualified"]
+        report["liquidity_below"] = states["below"]
+        report["liquidity_unknown"] = states["unknown"]
         (archive / "status.json").write_text(
             json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(json.dumps({k: report[k] for k in (
