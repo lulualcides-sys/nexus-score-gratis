@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "collected_at": "2026-10-25T18:05:27+00:00",
+  "nexus_exported_at": "2026-10-25T17:53:53.540456+00:00",
+  "games_in_feed": 1504,
+  "live_games_in_feed": 101,
+  "finished_games_in_feed": 1270,
+  "new_observations": 1504,
+  "quotes_observed": 354,
+  "market_families": {
+    "match_odds": {
+      "prices_observed": 354,
+      "status": "odds_observed"
+    },
+    "double_chance": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "draw_no_bet": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "asian_handicap": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_goals": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "team_goals": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "first_half_goals": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "both_teams_to_score": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "correct_score": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "half_time": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "half_time_full_time": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "odd_even_goals": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "first_goal": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "last_goal": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "clean_sheet": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_corners": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "team_corners": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "corner_handicap": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_yellow_cards": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "team_yellow_cards": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "red_cards": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_shots": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_shots_on_target": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "big_chances": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "total_fouls": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "penalties": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    },
+    "goal_time": {
+      "prices_observed": 0,
+      "status": "prices_unavailable"
+    }
+  },
+  "quoted_market_names": {
+    "1x2": 354
+  },
+  "note": "Pesquisa e coleta: sem EV validado, sem execução, sem P/L real."
+}
