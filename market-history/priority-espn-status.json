@@ -1,33 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:27:51.214501+00:00",
+  "checked_at": "2026-10-25T20:32:47.838562+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 22,
-  "created_games": 2,
+  "priority_fixtures_seen": 18,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Estoril x Moreirense",
-      "league": "por.1",
-      "kickoff": 1792942200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "C.D. Nacional x Braga",
-      "league": "por.1",
-      "kickoff": 1792951200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Rio Ave x FC Famalicao",
-      "league": "por.1",
-      "kickoff": 1792951200,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Independiente x Boca Juniors",
       "league": "arg.1",

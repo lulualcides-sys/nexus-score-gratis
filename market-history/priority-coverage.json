@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:27:54.007006+00:00",
+  "checked_at": "2026-10-25T20:32:50.701247+00:00",
   "horizon_hours": 48,
   "important_games": 21,
   "verified_bookmaker_games": 11,
@@ -11,6 +11,13 @@
     "matched": 5,
     "indicative": 4,
     "new_priority": 2
+  },
+  "pinnacle_guest": {
+    "status": "unavailable",
+    "matched": 0,
+    "new_verified_game": 0,
+    "offers": 0,
+    "market_families": {}
   },
   "priority_fixtures": [
     {
@@ -236,7 +243,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -255,7 +262,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 18,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -328,7 +335,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 20,
+      "verified_quotes": 23,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -378,7 +385,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 27,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -415,7 +422,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 10,
+      "verified_quotes": 13,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
