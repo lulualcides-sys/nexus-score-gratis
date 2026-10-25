@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T22:35:58.818914+00:00",
+  "checked_at": "2026-10-25T23:09:00.306468+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 20,
@@ -17,12 +17,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético Nacional x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1792969800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Independiente x Boca Juniors",
       "league": "arg.1",
       "kickoff": 1792958400,
@@ -35,9 +29,21 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "kickoff": 1792974600,
+      "fixture": "Atlas x Puebla",
+      "league": "mex.1",
+      "kickoff": 1792969200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Querétaro x Cruz Azul",
+      "league": "mex.1",
+      "kickoff": 1792976400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "América x Pachuca",
+      "league": "mex.1",
+      "kickoff": 1792976700,
       "reason": "no_verified_public_1x2"
     },
     {
