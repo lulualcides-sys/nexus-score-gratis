@@ -1,8 +1,8 @@
 name: "NEXUS | Telegram resumo diário"
 on:
   schedule:
-    # 19h15 BRT (22h15 UTC), todos os dias; GitHub pode atrasar.
-    - cron: "15 22 * * *"
+    # 00h12 BRT (03h12 UTC); arquiva o DIA ANTERIOR, sem enviar Telegram.
+    - cron: "12 3 * * *"
   workflow_dispatch:
 permissions:
   contents: write
