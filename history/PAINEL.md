@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-25T06:48:50.716295+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-25T07:43:59.152728+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -27,7 +27,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-25 | Real Sociedad × Levante | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Barcelona × Real Madrid | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Celta Vigo × Real Betis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Athletic Club × Getafe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | Athletic Club × Getafe | 0-0 | 0 | Match Odds 1X2: Casa 1,56, Empate 4,00, Fora 6,50 |
 | 2026-10-25 | Toulouse × Troyes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Stade Rennais × Strasbourg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | AS Monaco × Lille | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -103,7 +103,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-25 | Leicester City × Southampton | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Middlesbrough U21 × Tottenham Hotspur U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Central Córdoba de Santiago × Vélez Sarsfield | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | San Lorenzo × Newell's Old Boys | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | San Lorenzo × Newell's Old Boys | 0-0 | 90 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×3.0, Escanteios: 6.0×5.0, Grandes chances: 0.0×1.0 |
 | 2026-10-25 | Independiente × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Rosario Central × Huracán | 2-0 | 75 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×4.0, Grandes chances: 5.0×0.0 |
 | 2026-10-25 | Barracas Central × Estudiantes de Río Cuarto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 6591 | **Jogos distintos:** 1928 | **Resultados verificáveis:** 3745 | **Com gol:** 1350 | **Sem gol:** 2395 | **Taxa observada:** 36.0%.
-**Evolução da amostra:** 17 datas com coletas | 58 pendentes | 1215 indeterminados | 1573 incompletos.
+**Observações:** 6605 | **Jogos distintos:** 1932 | **Resultados verificáveis:** 3753 | **Com gol:** 1354 | **Sem gol:** 2399 | **Taxa observada:** 36.1%.
+**Evolução da amostra:** 17 datas com coletas | 60 pendentes | 1215 indeterminados | 1577 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1357 | 922 | 356 | 566 | 38.6% |
-| ⚡ pressao_ofensiva_18 | 1012 | 681 | 233 | 448 | 34.2% |
-| 🎯 chutes_no_alvo_5 | 1067 | 520 | 178 | 342 | 34.2% |
-| 🟥 expulsao_confirmada | 1023 | 474 | 155 | 319 | 32.7% |
-| 🚩 escanteios_6 | 795 | 371 | 144 | 227 | 38.8% |
+| 🥶 jogo_frio | 1364 | 926 | 359 | 567 | 38.8% |
+| ⚡ pressao_ofensiva_18 | 1014 | 683 | 233 | 450 | 34.1% |
+| 🎯 chutes_no_alvo_5 | 1068 | 521 | 178 | 343 | 34.2% |
+| 🟥 expulsao_confirmada | 1024 | 474 | 155 | 319 | 32.7% |
+| 🚩 escanteios_6 | 798 | 372 | 145 | 227 | 39.0% |
 | 💣 grandes_chances_3 | 635 | 343 | 140 | 203 | 40.8% |
 | 🔥 pressao_forte_10min | 340 | 221 | 76 | 145 | 34.4% |
 | 🧨 pressao_total_5_10min | 184 | 121 | 39 | 82 | 32.2% |
@@ -223,9 +223,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier League | 342 | 203 | 61 | 142 | 30.0% |
 | Major League Soccer | 266 | 144 | 63 | 81 | 43.8% |
-| J. League | 202 | 125 | 51 | 74 | 40.8% |
+| J. League | 212 | 133 | 55 | 78 | 41.4% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
-| Liga Profesional | 169 | 105 | 20 | 85 | 19.0% |
+| Liga Profesional | 171 | 105 | 20 | 85 | 19.0% |
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
 | Serie B | 134 | 102 | 31 | 71 | 30.4% |
 | Super League | 188 | 101 | 32 | 69 | 31.7% |
@@ -252,28 +252,42 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 199 | 144 | 49 | 95 | 34.0% |
-| 16–30′ | 476 | 364 | 112 | 252 | 30.8% |
-| 31–45′ | 1282 | 1001 | 410 | 591 | 41.0% |
-| 46–60′ | 926 | 675 | 242 | 433 | 35.9% |
-| 61–75′ | 1353 | 934 | 326 | 608 | 34.9% |
-| 76–90′ | 1802 | 623 | 209 | 414 | 33.5% |
+| 16–30′ | 478 | 366 | 113 | 253 | 30.9% |
+| 31–45′ | 1284 | 1003 | 411 | 592 | 41.0% |
+| 46–60′ | 927 | 675 | 242 | 433 | 35.9% |
+| 61–75′ | 1357 | 938 | 328 | 610 | 35.0% |
+| 76–90′ | 1807 | 623 | 209 | 414 | 33.5% |
 | 91+′ | 553 | 4 | 2 | 2 | 50.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 6591 | **Jogos monitorados:** 1654 | **Ao vivo:** 66 | **Termômetros recentes:** 16.
+**Registros:** 6605 | **Jogos monitorados:** 1654 | **Ao vivo:** 58 | **Termômetros recentes:** 18.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T06:49:17.234641+00:00 | Cerezo Osaka × JEF United Chiba | Cerezo Osaka (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Yokohama F.Marinos (86') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Nagoya Grampus (86') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Nagoya Grampus (86') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T06:49:17.234641+00:00 | Urawa Red Diamonds × V-Varen Nagasaki | V-Varen Nagasaki (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T06:49:17.234641+00:00 | Montedio Yamagata × Tegevajaro Miyazaki | Montedio Yamagata (88') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | San Lorenzo × Newell's Old Boys | San Lorenzo (90') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | San Lorenzo × Newell's Old Boys | San Lorenzo (90') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | Louisville City FC × Detroit City FC | Louisville City FC (46') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | Cerezo Osaka × JEF United Chiba | Cerezo Osaka (81') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | FC Tokyo × Mito Hollyhock | FC Tokyo (41') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | Kawasaki Frontale × Fagiano Okayama FC | Fagiano Okayama FC (41') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | Urawa Red Diamonds × V-Varen Nagasaki | Urawa Red Diamonds (84') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:44:26.934967+00:00 | Iwaki FC × Júbilo Iwata | Júbilo Iwata (81') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | Cerezo Osaka × JEF United Chiba | Cerezo Osaka (62') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | Cerezo Osaka × JEF United Chiba | JEF United Chiba (62') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | FC Tokyo × Mito Hollyhock | FC Tokyo (22') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | Kawasaki Frontale × Fagiano Okayama FC | Fagiano Okayama FC (22') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | Urawa Red Diamonds × V-Varen Nagasaki | Urawa Red Diamonds (65') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T07:25:17.487505+00:00 | Urawa Red Diamonds × V-Varen Nagasaki | Urawa Red Diamonds (65') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Cerezo Osaka × JEF United Chiba | Cerezo Osaka (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Yokohama F.Marinos (86') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Nagoya Grampus (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Nagoya Grampus × Yokohama F.Marinos | Nagoya Grampus (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Urawa Red Diamonds × V-Varen Nagasaki | V-Varen Nagasaki (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T06:49:17.234641+00:00 | Montedio Yamagata × Tegevajaro Miyazaki | Montedio Yamagata (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-25T06:14:00.859511+00:00 | Cerezo Osaka × JEF United Chiba | Cerezo Osaka (10') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-25T06:14:00.859511+00:00 | Nagoya Grampus × Yokohama F.Marinos | Nagoya Grampus (51') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-25T05:54:35.392236+00:00 | Nagoya Grampus × Yokohama F.Marinos | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
@@ -354,24 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-25T00:37:17.725630+00:00 | O'Higgins × Cobresal | Cobresal (46') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T00:37:17.725630+00:00 | O'Higgins × Cobresal | Cobresal (46') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T00:37:17.725630+00:00 | O'Higgins × Cobresal | Cobresal (46') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | América de Cali × Cúcuta | Cúcuta (46') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | León × Toluca | León (46') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | Independiente Petrolero × ABB | Independiente Petrolero (46') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | Atlanta United × Chicago Fire FC | Atlanta United (45') | 🥶 jogo_frio · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | DC United × FC Cincinnati | DC United (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | Orlando City × New York City FC | New York City FC (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | Philadelphia Union × New England Revolution | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T00:37:17.725630+00:00 | Tampa Bay Rowdies × Sporting JAX | Tampa Bay Rowdies (60') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T00:04:44.221308+00:00 | O'Higgins × Cobresal | O'Higgins (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T00:04:44.221308+00:00 | 2 de Mayo × Recoleta | 2 de Mayo (78') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | janela_incompleta | indisponível |
-| 2026-10-25T00:04:44.221308+00:00 | DC United × FC Cincinnati | DC United (25') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T00:04:44.221308+00:00 | Orlando City × New York City FC | New York City FC (25') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T00:04:44.221308+00:00 | Denver Summit FC (W) × Racing Louisville (W) | Denver Summit FC (W) (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-24T23:51:02.484501+00:00 | América de Cali × Cúcuta | Cúcuta (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **120**.
+Jogos com odds registradas nos ultimos dias: **122**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
