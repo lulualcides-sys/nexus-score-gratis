@@ -113,6 +113,14 @@ class PinnacleGuestTests(TestCase):
             self.assertEqual(len(calls),3)
             stored=Path(folder)/"public-no-key"/"pinnacle-latest.json"
             self.assertTrue(stored.exists())
+            blocked=Path(folder)/"public-no-key"/"pinnacle-denied.json"
+            self.assertTrue(blocked.exists())
+            self.assertIn("2",json.loads(blocked.read_text())["events"])
+            calls.clear()
+            later=run(Path(folder),NOW+timedelta(minutes=2),getter=getter,max_games=3)
+            self.assertEqual(later["status"],"ok")
+            self.assertEqual(later["matches_checked"],2)
+            self.assertTrue(all(not x.endswith("/2/markets/related/straight") for x in calls))
 
     def test_feed_unavailable_does_not_claim_prices(self):
         def blocked(path):
