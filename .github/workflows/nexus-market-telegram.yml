@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py
+          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py
           python3 -m unittest discover -s telegram_collector/tests -v
   archive:
     if: github.event_name != 'pull_request'
@@ -53,6 +53,8 @@ jobs:
         run: PYTHONPATH=. python3 -m telegram_collector.priority_espn --archive _market_data/market-history
       - name: Consultar feed público gratuito sem conta, sem chave, sem contornar bloqueios
         run: python3 telegram_collector/public_no_key.py --archive _market_data/market-history
+      - name: Auditar cobertura de partidas importantes e cruzar fontes sem inventar odds
+        run: PYTHONPATH=. python3 -m telegram_collector.coverage_radar --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
         if: success()
         shell: bash
