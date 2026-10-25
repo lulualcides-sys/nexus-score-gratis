@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:36:16.253318+00:00",
+  "checked_at": "2026-10-25T21:10:44.903924+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 18,
-  "created_games": 0,
+  "priority_fixtures_seen": 20,
+  "created_games": 2,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -14,18 +14,6 @@
       "fixture": "Independiente x Boca Juniors",
       "league": "arg.1",
       "kickoff": 1792958400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "River Plate x Racing Club",
-      "league": "arg.1",
-      "kickoff": 1792966500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "kickoff": 1792974600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -44,6 +32,18 @@
       "fixture": "América x Pachuca",
       "league": "mex.1",
       "kickoff": 1792976700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Alianza FC x Internacional de Bogotá",
+      "league": "col.1",
+      "kickoff": 1792962300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Nacional x Independiente Medellín",
+      "league": "col.1",
+      "kickoff": 1792969800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -74,6 +74,18 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Coritiba x Grêmio",
+      "league": "bra.1",
+      "kickoff": 1793053800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Flamengo x Atlético-MG",
+      "league": "bra.1",
+      "kickoff": 1793055600,
       "reason": "no_verified_public_1x2"
     }
   ],
