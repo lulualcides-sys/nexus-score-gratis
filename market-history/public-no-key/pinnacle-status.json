@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-25T20:30:32.324129+00:00",
+  "source": "Pinnacle public Arcadia guest",
+  "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
+  "status": "unavailable",
+  "matches_discovered": 0,
+  "matches_checked": 0,
+  "new_price_snapshots": 0,
+  "odds_observed": 0,
+  "market_families": {},
+  "errors": [
+    {
+      "error": "ValueError",
+      "http_status": null
+    }
+  ],
+  "requires_account": false,
+  "requires_user_api_key": false,
+  "guarantees_available_to_bet": false,
+  "liquidity_verified": false
+}
