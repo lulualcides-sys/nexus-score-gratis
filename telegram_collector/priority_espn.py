@@ -113,10 +113,15 @@ def parse_event(event):
     ts = parse_ts(event.get("date"))
     if not ts:
         return None
-    comp = (event.get("competitions") or [{}])[0]
+    competitions = event.get("competitions")
+    if not isinstance(competitions, list) or not competitions:
+        return None
+    comp = competitions[0]
     if not isinstance(comp, dict):
         return None
     competitors = comp.get("competitors") or []
+    if not isinstance(competitors, list):
+        return None
     home = [x for x in competitors if isinstance(x,dict) and x.get("homeAway") == "home"]
     away = [x for x in competitors if isinstance(x,dict) and x.get("homeAway") == "away"]
     if len(home) != 1 or len(away) != 1:
@@ -127,7 +132,9 @@ def parse_event(event):
     h, a = label(home[0]), label(away[0])
     if not h or not a or normalized_team(h) == normalized_team(a):
         return None
-    state = ((event.get("status") or {}).get("type") or {}).get("state")
+    status = event.get("status") or {}
+    status_type = status.get("type") or {} if isinstance(status, dict) else {}
+    state = status_type.get("state") if isinstance(status_type, dict) else None
     phase = {"pre": "scheduled", "in": "live", "post": "finished"}.get(state)
     if not phase:
         return None
@@ -243,7 +250,7 @@ def add_fixture(archive, code, league, event, observed):
     if not previous:
         current["recorded_at"] = observed
     if event["phase"] == "finished" and event["score"]:
-        if current.get("phase") != "finished":
+        if not previous or current.get("phase") != "finished":
             current["phase"] = "finished"
             current["score"] = event["score"]
             current["settlement"] = settle_markets({"phase": "finished", "score": event["score"],
