@@ -63,7 +63,9 @@ ALIASES = (
 )
 PRIORITY_CODES = {code for code, _ in PRIORITY}
 PRIORITY_ORDER = {code: i for i, (code, _) in enumerate(PRIORITY)}
-MAX_BOARDS = 8
+MAX_BOARDS = 10
+MAX_SUMMARIES = 3
+SUMMARY_HORIZON_HOURS = 8
 MAX_BYTES = 2_000_000
 MATCH_WINDOW_SECONDS = 600
 RUN_HORIZON_HOURS = 28
@@ -79,7 +81,7 @@ def league_code(name):
     return None
 
 
-def valid_odds(offers, at, kickoff):
+def valid_odds(offers, at, kickoff, source="ESPN public scoreboard"):
     """Um trio completo 1/X/2 do mesmo bookmaker. Sem bookmaker -> sem preço."""
     if not 0 < at < kickoff:
         return []
@@ -100,7 +102,7 @@ def valid_odds(offers, at, kickoff):
         for selection in ("home", "draw", "away"):
             clean.append({
                 "market": "1x2", "selection": selection, "odds": prices[selection],
-                "source": "ESPN public scoreboard", "bookmaker": book.strip()[:60],
+                "source": source, "bookmaker": book.strip()[:60],
                 "captured_at": datetime.fromtimestamp(at, timezone.utc).isoformat(),
                 "scope": "pregame", "time_basis": "public_feed_observed",
             })
@@ -200,6 +202,30 @@ def http_board(code, day):
     return payload["events"]
 
 
+def http_summary(code, event_id):
+    """Officially public ESPN site JSON, without account/key; bounded fallback."""
+    if code not in PRIORITY_CODES or not re.fullmatch(r"\d{1,16}", str(event_id)):
+        raise ValueError("Invalid ESPN summary identifier")
+    url = API + code + "/summary?" + urlencode({"event": event_id})
+    req = Request(url, headers={"Accept": "application/json", "User-Agent": "NEXUS-DataLab/1.0"})
+    with urlopen(req, timeout=8) as response:
+        raw = response.read(MAX_BYTES + 1)
+    if len(raw) > MAX_BYTES:
+        raise ValueError("ESPN summary response too large")
+    data = json.loads(raw)
+    if not isinstance(data, dict):
+        raise ValueError("Invalid ESPN summary JSON")
+    picks = data.get("pickcenter")
+    if isinstance(picks, (dict,list)) and picks:
+        return picks if isinstance(picks,list) else [picks]
+    header = data.get("header") or {}
+    competitions = header.get("competitions") or [] if isinstance(header,dict) else []
+    if isinstance(competitions,list) and competitions and isinstance(competitions[0],dict):
+        prices = competitions[0].get("odds") or []
+        return prices if isinstance(prices,list) else [prices]
+    return []
+
+
 def game_key(game):
     try:
         kickoff = int(game.get("kickoff_unix") or 0)
@@ -255,7 +281,8 @@ def add_fixture(archive, code, league, event, observed):
             current["score"] = event["score"]
             current["settlement"] = settle_markets({"phase": "finished", "score": event["score"],
                                                     "stats": current.get("stats") or {}})
-    quoted = valid_odds(event["odds"], datetime.fromisoformat(observed).timestamp(), event["ts"]) if event["phase"] == "scheduled" else []
+    quoted = valid_odds(event["odds"], datetime.fromisoformat(observed).timestamp(), event["ts"],
+                        source=event.get("price_feed","ESPN public scoreboard")) if event["phase"] == "scheduled" else []
     prev_quotes = current.get("odds") or []
     if quoted:
         # Multiple bookmakers, each with a self-contained and timestamped trio.
@@ -275,7 +302,8 @@ def add_fixture(archive, code, league, event, observed):
     return created, len(fresh), key, bool(quoted or current.get("odds"))
 
 
-def run(directory, now, board_fetcher=http_board, max_boards=MAX_BOARDS):
+def run(directory, now, board_fetcher=http_board, max_boards=MAX_BOARDS,
+        summary_fetcher=http_summary, max_summaries=MAX_SUMMARIES):
     """Never throw away existing data if a public endpoint fails."""
     directory = Path(directory)
     archive = {}
@@ -292,7 +320,8 @@ def run(directory, now, board_fetcher=http_board, max_boards=MAX_BOARDS):
     report = {"schema": 1, "checked_at": now.isoformat(),
               "boards_requested": len(groups), "boards_ok": 0,
               "priority_fixtures_seen": 0, "created_games": 0,
-              "new_quotes": 0, "errors": [], "missing_quote_fixtures": [],
+              "new_quotes": 0, "summary_checks": 0, "summary_with_prices": 0,
+              "errors": [], "missing_quote_fixtures": [],
               "source": "ESPN public JSON scoreboard no key",
               "scope": "Independent source, no liquidity claim"}
     observed = now.astimezone(timezone.utc).isoformat()
@@ -317,6 +346,26 @@ def run(directory, now, board_fetcher=http_board, max_boards=MAX_BOARDS):
             if match_day != day:
                 continue
             report["priority_fixtures_seen"] += 1
+            # A ESPN às vezes publica 1X2 no summary, mas não no scoreboard.
+            # Limite pequeno por execução e apenas pré-jogo nas próximas 8h.
+            if (match["phase"] == "scheduled" and now.timestamp() < match["ts"]
+                    <= now.timestamp() + SUMMARY_HORIZON_HOURS * 3600
+                    and report["summary_checks"] < max_summaries
+                    and not valid_odds(match["odds"], now.timestamp(), match["ts"])):
+                report["summary_checks"] += 1
+                try:
+                    extra = summary_fetcher(code, match["espn_id"])
+                    if valid_odds(extra, now.timestamp(), match["ts"],
+                                  source="ESPN public summary"):
+                        match["odds"] = extra
+                        match["price_feed"] = "ESPN public summary"
+                        report["summary_with_prices"] += 1
+                except Exception as exc:
+                    if len(report["errors"]) < 8:
+                        report["errors"].append({"league": code,
+                                                 "event": match["espn_id"],
+                                                 "source": "summary",
+                                                 "error": type(exc).__name__})
             created, quotes, key, has_price = add_fixture(archive, code, league, match, observed)
             report["created_games"] += created
             report["new_quotes"] += quotes
