@@ -72,10 +72,31 @@ RUN_HORIZON_HOURS = 28
 
 
 def league_code(name):
+    """Only unequivocal competition names, never a fuzzy substring.
+
+    'Canadian Premier League' != 'English Premier League';
+    'MLS Next Pro' != 'MLS'; women's leagues != men's league codes.
+    """
     key = normalized_team(name)
+    if not key:
+        return None
+    excluded = ("femen", "feminin", "women", "womens", "feminil",
+                "next pro", "premier league canada", "canadian premier",
+                "sub 20", "u20", "u19", "u21", "u23", "reserves", "reserve",
+                "juvenil", "youth", "segunda", "division 2")
+    if any(x in key for x in excluded):
+        return None
+    # Generic "Premier League" is not a country identifier.
+    if key == "premier league":
+        return None
     for code, aliases in ALIASES:
-        if key == normalized_team(code) or any(
-            normalized_team(a) in key for a in aliases
+        names = {normalized_team(code)} | {normalized_team(alias) for alias in aliases}
+        # Some ESPN fixtures include a clearly delimited stage suffix.
+        if key in names or any(
+            key.startswith(alias + " " + stage)
+            for alias in names if alias
+            for stage in ("group", "round", "quarter", "semi", "final",
+                          "playoff", "playoffs", "apertura", "clausura")
         ):
             return code
     return None
@@ -256,12 +277,15 @@ def add_fixture(archive, code, league, event, observed):
     key = candidates[0] if candidates else eid
     if key not in records:
         records[key] = {"id": key, "home": event["home"], "away": event["away"],
-                        "league": league, "day": day, "source": ["ESPN"],
+                        "league": league, "league_code": code,
+                        "day": day, "source": ["ESPN"],
                         "kickoff_unix": event["ts"], "observations": []}
         created = True
     else:
         created = False
     game = records[key]
+    if not game.get("league_code") and str(key).startswith("espn-" + code + "-"):
+        game["league_code"] = code
     previous = game.get("observations") or []
     if previous:
         last = previous[-1]
