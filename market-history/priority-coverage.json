@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:35:23.843349+00:00",
+  "checked_at": "2026-10-25T20:36:19.226487+00:00",
   "horizon_hours": 48,
   "important_games": 21,
   "verified_bookmaker_games": 16,
@@ -438,7 +438,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 16,
+      "verified_quotes": 19,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
