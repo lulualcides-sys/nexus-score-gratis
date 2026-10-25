@@ -31,6 +31,17 @@ python3 telegram_collector/daily.py --archive market-history --no-telegram
 
 O segundo comando exige acesso ao snapshot público do NEXUS. O terceiro pode gerar um relatório vazio se não houver coletas salvas para o dia. A rotina de produção lê arquivos da branch isolada.
 
+## Fonte nova — odds sem cadastro e sem chave
+
+Adicionado `public_no_key.py`, leitura da API JSON **expressamente gratuita** de [TipsAudit](https://tipsaudit.com/api), com atribuição obrigatória [tipsaudit.com](https://tipsaudit.com/). Executa dentro do GitHub Actions junto da coleta, sem credenciais, sem login e sem scraping das páginas de casas de aposta.
+
+- Arquiva em `market-history/public-no-key/tipsaudit-latest.json` e atualiza `market-history/public-no-key/status.json`.
+- Guarda **odd justa calculada** separadamente da **melhor cotação observada de uma casa**, quando a API fornece essa cotação com nome da casa. Não mistura uma com a outra.
+- O preço publicado no feed **não traz necessariamente o horário de atualização da própria casa**. Por isso aparece como `indicative_feed_quote_unconfirmed_source_time`, e **não entra como odd de entrada verificada** ou prova de liquidez de R$ 3.000.
+- A cobertura desse feed é focada em **1X2**. Não resolve automaticamente handicap, escanteios, cartões nem os demais 27 mercados.
+- Se a fonte não responder, não inventa odds: mantém o último registro de sucesso e marca `unavailable`. Não interrompe o coletor principal.
+- Fonte e condições: [documentação pública](https://tipsaudit.com/api), com permissão específica de uso do endpoint e obrigação de atribuição. Uma página aberta sem login, por si só, **não autoriza coleta automatizada**.
+
 ## Onde encontrar odds — sem custos extras
 
 Veja [ODDS_SOURCES.md](ODDS_SOURCES.md). O NEXUS já contém integrações opcionais OddsPapi (limite de cota mensal próprio) e API-Football. A coleta independente reaproveita os dados exportados e o `history/` do mesmo repositório, **sem duplicar requisições de odds nem gastar cota de API à parte**. Fontes alternativas exigem licença ou chave gratuita próprias e só serão ativadas conforme disponibilidade e direitos de uso.
