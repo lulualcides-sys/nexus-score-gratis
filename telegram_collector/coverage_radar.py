@@ -28,14 +28,38 @@ def unix(value):
         return None
 
 
-def priority_match(league):
+def priority_match(league, record=None):
+    # O código explícito do placar ESPN prevalece sobre nomes ambíguos.
+    if isinstance(record,dict):
+        code = str(record.get("league_code") or "")
+        if code in PRIORITY_ORDER:
+            return code
+        gid = str(record.get("id") or "")
+        for code in PRIORITY_ORDER:
+            if gid.startswith("espn-" + code + "-"):
+                return code
     return league_code(league)
+
+def normalized_club(name):
+    key = normalized_team(name)
+    # Apenas aliases inequívocos, não fuzzy matching de times.
+    aliases = {
+        "lafc": "los angeles",
+        "la galaxy": "los angeles galaxy",
+        "academico de viseu": "academico viseu",
+        "columbus crew ii": "columbus crew 2",
+    }
+    return aliases.get(key,key)
 
 
 def same_teams_and_time(a, b):
-    x, y = normalized_team(a.get("home")), normalized_team(a.get("away"))
-    bx, by = normalized_team(b.get("home")), normalized_team(b.get("away"))
+    x, y = normalized_club(a.get("home")), normalized_club(a.get("away"))
+    bx, by = normalized_club(b.get("home")), normalized_club(b.get("away"))
     if not all((x, y, bx, by)) or x != bx or y != by:
+        return False
+    left_code = priority_match(a.get("league"),a)
+    right_code = priority_match(b.get("league"),b)
+    if left_code and right_code and left_code != right_code:
         return False
     try:
         a_ts, b_ts = float(a["kickoff_unix"]), float(b["kickoff_unix"])
@@ -72,7 +96,7 @@ def collect_records(folder, now):
         document = json.loads(f.read_text(encoding="utf-8"))
         if not isinstance(document, dict) or not isinstance(document.get("games"), dict):
             raise ValueError("Histórico NEXUS malformado: " + date)
-        for game in document["games"].values():
+        for match_id, game in document["games"].items():
             if not isinstance(game, dict):
                 continue
             try:
@@ -83,7 +107,7 @@ def collect_records(folder, now):
                 continue
             if not game.get("home") or not game.get("away"):
                 continue
-            code = priority_match(game.get("league"))
+            code = priority_match(game.get("league"),{**game,"id":str(match_id)})
             if not code:
                 continue
             observations = game.get("observations") or []
@@ -92,7 +116,9 @@ def collect_records(folder, now):
                 "home": str(game["home"]), "away": str(game["away"]),
                 "league": str(game.get("league") or ""), "league_code": code,
                 "kickoff_unix": kickoff, "phase": status,
-                "data_sources": game.get("source") or [],
+                "data_sources": (game.get("source") if isinstance(game.get("source"),list)
+                                 else [game["source"]] if isinstance(game.get("source"),str)
+                                 else []),
                 "verified_quotes": len(verified_odds(game)),
                 "indicative_bookmaker_quotes": [],
                 "fair_odds_modelled": None,
