@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T19:51:22.310519+00:00",
+  "checked_at": "2026-10-25T19:54:23.757586+00:00",
   "boards_requested": 8,
   "boards_ok": 8,
   "priority_fixtures_seen": 26,
-  "created_games": 2,
+  "created_games": 0,
   "new_quotes": 0,
   "errors": [],
   "missing_quote_fixtures": [
