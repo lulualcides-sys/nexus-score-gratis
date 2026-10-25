@@ -107,34 +107,29 @@ def parse_matchup(m, now):
 
 
 def classify_market(m, key):
-    kind = str(m.get("type") or "").lower()
-    label = str(m.get("name") or m.get("label") or "").lower()
-    bits = key.lower().split(";")
-    if len(bits) >= 3:
-        code = bits[2]
-        if code in ("m", "moneyline") and not kind:
-            kind = "moneyline"
-        if code in ("s", "spread") and not kind:
-            kind = "spread"
-        if code in ("t", "total") and not kind:
-            kind = "total"
-        if code in ("tt", "teamtotal") and not kind:
-            kind = "teamtotal"
-    combo = kind + " " + label
-    if "corner" in combo:
-        return "total_corners"
-    if "card" in combo or "booking" in combo:
-        return "total_yellow_cards"
-    if "teamtotal" in combo or "team total" in combo:
-        return "team_goals"
-    if "spread" in combo or "handicap" in combo:
-        return "asian_handicap"
-    if "total" in combo or "over/under" in combo:
-        return "total_goals"
-    if "moneyline" in combo or "match odds" in combo:
-        return "match_odds"
-    return "unclassified"
+    """Preserva semântica REAL da Arcadia: period 0=FT, 1=1º tempo.
 
+    A chave original é obrigatória e tem prioridade sobre labels genéricos.
+    Ex.: s;0;tt;1.5;home é gol de EQUIPE, não total da partida;
+    s;0;ou;2.5 é total da partida; s;1;m é 1X2 de 1º tempo.
+    """
+    bits = str(key or "").lower().split(";")
+    code = bits[2] if len(bits) >= 3 else ""
+    period = bits[1] if len(bits) >= 2 else ""
+    if period not in ("0","1"):
+        return "unclassified"
+    first = period == "1"
+    if code in ("m", "moneyline"):
+        return "half_time" if first else "match_odds"
+    if code in ("s", "spread"):
+        return "first_half_handicap" if first else "asian_handicap"
+    if code in ("tt", "teamtotal"):
+        return "first_half_team_goals" if first else "team_goals"
+    if code in ("ou", "t", "total"):
+        return "first_half_goals" if first else "total_goals"
+    # Não adivinhar cartões, escanteios ou outros mercados por palavra
+    # solta em uma descrição não verificada.
+    return "unclassified"
 
 def parse_markets(raw, observed):
     if isinstance(raw,dict):
