@@ -1,31 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T19:54:23.757586+00:00",
-  "boards_requested": 8,
-  "boards_ok": 8,
-  "priority_fixtures_seen": 26,
-  "created_games": 0,
-  "new_quotes": 0,
+  "checked_at": "2026-10-25T20:03:30.513485+00:00",
+  "boards_requested": 10,
+  "boards_ok": 10,
+  "priority_fixtures_seen": 18,
+  "created_games": 1,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Independiente x Boca Juniors",
-      "league": "arg.1",
-      "kickoff": 1792958400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "River Plate x Racing Club",
-      "league": "arg.1",
-      "kickoff": 1792966500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "kickoff": 1792974600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Estoril x Moreirense",
       "league": "por.1",
@@ -45,21 +29,27 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Sporting CP x Académico de Viseu",
-      "league": "por.1",
-      "kickoff": 1792960200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Alianza FC x Internacional de Bogotá",
-      "league": "col.1",
-      "kickoff": 1792962300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Atlético Nacional x Independiente Medellín",
       "league": "col.1",
       "kickoff": 1792969800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Independiente x Boca Juniors",
+      "league": "arg.1",
+      "kickoff": 1792958400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "River Plate x Racing Club",
+      "league": "arg.1",
+      "kickoff": 1792966500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
+      "league": "arg.1",
+      "kickoff": 1792974600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -78,6 +68,12 @@
       "fixture": "América x Pachuca",
       "league": "mex.1",
       "kickoff": 1792976700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Paris Saint-Germain x Lyon",
+      "league": "fra.1",
+      "kickoff": 1793043000,
       "reason": "no_verified_public_1x2"
     }
   ],
