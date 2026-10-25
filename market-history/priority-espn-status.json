@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:21:20.317080+00:00",
+  "checked_at": "2026-10-25T23:22:53.764576+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 21,
-  "created_games": 1,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -53,6 +53,12 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Sevilla x Osasuna",
+      "league": "esp.1",
+      "kickoff": 1793044800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Unión (Santa Fe) x Estudiantes de La Plata",
       "league": "arg.1",
       "kickoff": 1793052000,
@@ -86,12 +92,6 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sevilla x Osasuna",
-      "league": "esp.1",
-      "kickoff": 1793044800,
       "reason": "no_verified_public_1x2"
     }
   ],

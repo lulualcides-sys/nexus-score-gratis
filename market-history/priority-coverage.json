@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:21:24.546979+00:00",
+  "checked_at": "2026-10-25T23:22:57.449974+00:00",
   "horizon_hours": 48,
   "important_games": 17,
-  "verified_bookmaker_games": 11,
+  "verified_bookmaker_games": 10,
   "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 5,
+  "missing_bookmaker_price_games": 6,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
@@ -14,18 +14,18 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 7,
-    "new_verified_game": 3,
-    "offers": 827,
+    "matched": 4,
+    "new_verified_game": 2,
+    "offers": 453,
     "market_families": {
-      "match_odds": 30,
-      "team_goals": 96,
-      "asian_handicap": 214,
-      "total_goals": 214,
-      "half_time": 21,
-      "first_half_team_goals": 28,
-      "first_half_handicap": 112,
-      "first_half_goals": 112
+      "match_odds": 15,
+      "team_goals": 52,
+      "asian_handicap": 118,
+      "total_goals": 112,
+      "half_time": 12,
+      "first_half_team_goals": 16,
+      "first_half_handicap": 64,
+      "first_half_goals": 64
     }
   },
   "priority_fixtures": [
@@ -37,17 +37,15 @@
       "kickoff_unix": 1793053800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
+        "ESPN"
       ],
-      "verified_quotes": 131,
+      "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Flamengo",
@@ -137,16 +135,14 @@
       "kickoff_unix": 1792969200.0,
       "phase": "live",
       "data_sources": [
-        "FotMob",
-        "Pinnacle guest"
+        "FotMob"
       ],
-      "verified_quotes": 111,
+      "verified_quotes": 3,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 108,
       "coverage": "verified_price"
     },
     {
@@ -160,7 +156,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 114,
+      "verified_quotes": 117,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.8,
@@ -204,7 +200,7 @@
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
-      "verified_quotes": 108,
+      "verified_quotes": 106,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.14,
@@ -218,7 +214,7 @@
         "TipsAudit",
         "Pinnacle guest"
       ],
-      "pinnacle_guest_quotes": 108,
+      "pinnacle_guest_quotes": 106,
       "coverage": "verified_price"
     },
     {
@@ -250,7 +246,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 36,
+      "verified_quotes": 39,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -303,10 +299,9 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob",
-        "ESPN",
-        "Pinnacle guest"
+        "ESPN"
       ],
-      "verified_quotes": 171,
+      "verified_quotes": 38,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -324,7 +319,6 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
       "tipsaudit_id": "11483",
       "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
     },
     {
@@ -402,6 +396,23 @@
     }
   ],
   "top_missing": [
+    {
+      "home": "Coritiba",
+      "away": "Grêmio",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793053800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
     {
       "home": "Flamengo",
       "away": "Atlético-MG",
