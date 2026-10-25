@@ -20,6 +20,24 @@ class MarketCollectorTests(unittest.TestCase):
         self.assertEqual(quotes[0]["odds"], 2.05)
         self.assertEqual(quotes[0]["captured_at"], "2026-10-25T10:00:00+00:00")
 
+    def test_preserves_all_bookmakers_without_inventing_prices(self):
+        game = {"odds_comparison": [{
+            "market": "over_under_25", "selection": "over", "phase": "pregame",
+            "best": {"odds": 2.1, "bookmaker": "Pinnacle", "source": "OddsPapi",
+                     "at": "2026-10-24T12:00:00+00:00"},
+            "alternatives": [
+                {"odds": 2.03, "bookmaker": "Bet365", "source": "OddsPapi",
+                 "at": "2026-10-24T12:00:00+00:00"},
+                {"odds": 1.95, "bookmaker": "Betano BR", "source": "OddsPapi",
+                 "at": "2026-10-24T12:00:00+00:00"}
+            ]
+        }]}
+        prices = normalize_quotes(game)
+        self.assertEqual(len(prices), 3)
+        self.assertEqual({p["bookmaker"] for p in prices},
+                         {"Pinnacle", "Bet365", "Betano BR"})
+        self.assertTrue(all(p["scope"] == "pregame" for p in prices))
+
     def test_finished_without_stats_does_not_invent_corner_outcome(self):
         g = {"phase": "finished", "score": "2-1", "stats": {}}
         m = settle_markets(g)
