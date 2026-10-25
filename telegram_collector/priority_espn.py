@@ -19,6 +19,7 @@ from zoneinfo import ZoneInfo
 
 from espn_scoreboard_odds import normalized_team, parse_ts
 from odds_capture import threeway
+from telegram_collector.collect import settle_markets
 
 ZONE = ZoneInfo("America/Sao_Paulo")
 API = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
@@ -61,6 +62,7 @@ ALIASES = (
     ("col.1", ("colombian primera a", "colombia primera a", "col.1")),
 )
 PRIORITY_CODES = {code for code, _ in PRIORITY}
+PRIORITY_ORDER = {code: i for i, (code, _) in enumerate(PRIORITY)}
 MAX_BOARDS = 8
 MAX_BYTES = 2_000_000
 MATCH_WINDOW_SECONDS = 600
@@ -161,7 +163,7 @@ def choose_boards(now, archives, max_boards=MAX_BOARDS):
                 key = (code, datetime.fromtimestamp(kickoff, ZONE).date().isoformat())
                 soon[key] = min(soon.get(key, kickoff), kickoff)
     board_dates = (today.isoformat(), (today + timedelta(days=1)).isoformat())
-    urgent = sorted(soon, key=lambda item: (soon[item], list(PRIORITY_CODES).index(item[0]) if item[0] in PRIORITY_CODES else 999))
+    urgent = sorted(soon, key=lambda item: (soon[item], PRIORITY_ORDER.get(item[0], 999)))
     selected = urgent[:max_boards]
     # Public league catalog from ESPN-API (GitHub), rotate remaining boards.
     routine = [(code, day) for day in board_dates for code, _ in PRIORITY]
@@ -197,7 +199,7 @@ def game_key(game):
     except (ValueError, TypeError):
         return None
     h, a = normalized_team(game.get("home")), normalized_team(game.get("away"))
-    return h, a, kickoff if h and a and kickoff else None
+    return (h, a, kickoff) if h and a and kickoff else None
 
 
 def add_fixture(archive, code, league, event, observed):
@@ -244,6 +246,8 @@ def add_fixture(archive, code, league, event, observed):
         if current.get("phase") != "finished":
             current["phase"] = "finished"
             current["score"] = event["score"]
+            current["settlement"] = settle_markets({"phase": "finished", "score": event["score"],
+                                                    "stats": current.get("stats") or {}})
     quoted = valid_odds(event["odds"], datetime.fromisoformat(observed).timestamp(), event["ts"]) if event["phase"] == "scheduled" else []
     prev_quotes = current.get("odds") or []
     if quoted:
@@ -261,7 +265,7 @@ def add_fixture(archive, code, league, event, observed):
     if changed:
         current["recorded_at"] = observed
         game["observations"].append(current)
-    return created, len(fresh), key, bool(quoted)
+    return created, len(fresh), key, bool(quoted or current.get("odds"))
 
 
 def run(directory, now, board_fetcher=http_board, max_boards=MAX_BOARDS):
