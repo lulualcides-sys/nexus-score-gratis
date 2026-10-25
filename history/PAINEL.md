@@ -2,22 +2,22 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-25T21:38:47.560052+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-25T22:36:47.299505+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **18**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-10-25 | Aldosivi × Belgrano (Córdoba) | 1-0 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 3,95, Empate 3,20, Fora 2,05 |
-| 2026-10-25 | River Plate × Racing Club | 0-0 | 0 | Match Odds 1X2: Casa 1,47, Empate 4,30, Fora 7,00 |
-| 2026-10-25 | Independiente × Boca Juniors | 0-0 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 3,75, Empate 3,15, Fora 2,10 |
+| 2026-10-25 | River Plate × Racing Club | 0-0 | 0 | Chutes no alvo: 1.0×2.0; Match Odds 1X2: Casa 1,47, Empate 4,30, Fora 7,00 |
+| 2026-10-25 | Independiente × Boca Juniors | 0-1 | 0 | Chutes no alvo: 5.0×4.0; Match Odds 1X2: Casa 3,75, Empate 3,15, Fora 2,10 |
 | 2026-10-25 | Central Córdoba (Santiago del Estero) × Vélez Sarsfield | 0-0 | 0 | Match Odds 1X2: Casa 3,35, Empate 3,25, Fora 2,20 |
 | 2026-10-25 | Barracas Central × Estudiantes de Río Cuarto | 0-0 | 0 | Match Odds 1X2: Casa 1,59, Empate 3,65, Fora 6,50 |
 | 2026-10-25 | Fortaleza CEIF × Deportivo Cali | 1-1 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 3,25, Empate 2,95, Fora 2,20 |
 | 2026-10-25 | Deportes Tolima × Deportivo Pasto | 0-0 | 0 | Match Odds 1X2: Casa 1,43, Empate 4,00, Fora 7,00 |
-| 2026-10-25 | Alianza FC × Internacional de Bogotá | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,35, Empate 3,05, Fora 2,90 |
+| 2026-10-25 | Alianza FC × Internacional de Bogotá | 1-0 | 0 | Chutes no alvo: 5.0×1.0; Match Odds 1X2: Casa 2,35, Empate 3,05, Fora 2,90 |
 | 2026-10-25 | Atlético Nacional × Independiente Medellín | 0-0 | 0 | Match Odds 1X2: Casa 1,77, Empate 3,55, Fora 4,10 |
 | 2026-10-25 | Sunderland × Leeds United | 0-0 | 0 | Chutes no alvo: 1.0×0.0; Match Odds 1X2: Casa 2,95, Empate 3,20, Fora 2,50 |
 | 2026-10-25 | Liverpool × Brighton & Hove Albion | 2-0 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 2,10, Empate 3,90, Fora 3,20 |
@@ -25,7 +25,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-25 | Manchester United × AFC Bournemouth | 0-3 | 0 | Chutes no alvo: 5.0×4.0; Match Odds 1X2: Casa 2,30, Empate 3,60, Fora 3,00 |
 | 2026-10-25 | Crystal Palace × Newcastle United | 0-2 | 0 | Chutes no alvo: 4.0×2.0; Match Odds 1X2: Casa 2,80, Empate 3,65, Fora 2,40 |
 | 2026-10-25 | Real Sociedad × Levante | 2-1 | 0 | Chutes no alvo: 3.0×2.0; Match Odds 1X2: Casa 1,57, Empate 4,60, Fora 5,25 |
-| 2026-10-25 | Barcelona × Real Madrid | 1-1 | 0 | Chutes no alvo: 6.0×4.0; Match Odds 1X2: Casa 1,57, Empate 5,75, Fora 4,10 |
+| 2026-10-25 | Barcelona × Real Madrid | 1-2 | 0 | Chutes no alvo: 6.0×5.0; Match Odds 1X2: Casa 1,57, Empate 5,75, Fora 4,10 |
 | 2026-10-25 | Celta Vigo × Real Betis | 0-0 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 3,20, Empate 3,55, Fora 2,25 |
 | 2026-10-25 | Athletic Club × Getafe | 4-0 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 1,56, Empate 4,00, Fora 6,50 |
 | 2026-10-25 | Toulouse × Troyes | 0-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,53, Empate 4,50, Fora 6,00 |
@@ -43,21 +43,21 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-25 | Internazionale × Fiorentina | 2-1 | 0 | Chutes no alvo: 11.0×2.0; Match Odds 1X2: Casa 1,32, Empate 5,25, Fora 7,00 |
 | 2026-10-25 | LAFC × LA Galaxy | 0-0 | 0 | Match Odds 1X2: Casa 1,53, Empate 4,50, Fora 5,00 |
 | 2026-10-25 | Deportes Temuco × San Marcos | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Antofagasta × Curicó Unido | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | Antofagasta × Curicó Unido | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Nõmme JK Kalju × Flora Tallinn | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Cavalry FC × Vancouver FC | 1-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 6.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×0.0 |
-| 2026-10-25 | Inter Toronto FC × Atlético Ottawa | 1-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×3.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-10-25 | Pacific FC × Forge FC | 0-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-25 | Vancouver Rise FC × Calgary Wild FC | 3-2 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 3.0×2.0, Escanteios: 2.0×6.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Cavalry FC × Vancouver FC | 1-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×2.0, Grandes chances: 2.0×0.0 |
+| 2026-10-25 | Inter Toronto FC × Atlético Ottawa | 2-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 3.0×4.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Pacific FC × Forge FC | 1-1 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 5.0×4.0, Escanteios: 3.0×5.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Vancouver Rise FC × Calgary Wild FC | 3-2 | 0 | Chutes no alvo: 4.0×5.0, Chutes para fora: 4.0×8.0, Escanteios: 2.0×9.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Unión La Calera × Universidad Católica | 3-1 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×8.0, Escanteios: 3.0×2.0, Grandes chances: 1.0×3.0 |
-| 2026-10-25 | Palestino × Colo Colo | 0-1 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Palestino × Colo Colo | 1-1 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 6.0×4.0, Escanteios: 3.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | O'Higgins × Cobresal | 1-1 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 13.0×7.0, Escanteios: 10.0×9.0, Grandes chances: 1.0×3.0 |
 | 2026-10-25 | Ñublense × Coquimbo Unido | 2-1 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 6.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-10-25 | Universidad de Concepción × Deportes Limache | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Atlético Nacional × Independiente Medellín | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Tolima × Deportivo Pasto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Fortaleza FC × Deportivo Cali | 1-1 | 90 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 5.0×2.0, Grandes chances: 1.0×1.0 |
-| 2026-10-25 | Alianza FC × Internacional de Bogotá | 1-0 | 34 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Alianza FC × Internacional de Bogotá | 1-0 | 72 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 5.0×2.0, Grandes chances: 2.0×0.0 |
 | 2026-10-25 | Once Caldas × Deportivo Pereira | 1-1 | 90 | Chutes no alvo: 12.0×2.0, Chutes para fora: 11.0×3.0, Escanteios: 12.0×0.0, Grandes chances: 4.0×1.0 |
 | 2026-10-25 | América de Cali × Cúcuta | 2-1 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 8.0×4.0, Escanteios: 6.0×4.0, Grandes chances: 2.0×0.0 |
 | 2026-10-25 | León × Toluca | 1-1 | 90 | Chutes no alvo: 7.0×5.0, Chutes para fora: 6.0×6.0, Escanteios: 3.0×6.0, Grandes chances: 5.0×1.0 |
@@ -80,9 +80,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-25 | Universitario de Deportes × ADC Juan Pablo II | 3-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 5.0×0.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Club Deportivo Moquegua × Alianza Lima | 0-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 6.0×8.0, Escanteios: 3.0×7.0, Grandes chances: 1.0×0.0 |
 | 2026-10-25 | Comerciantes Unidos × Cienciano | 3-1 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 3.0×4.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×2.0 |
-| 2026-10-25 | Sport Boys × FC Cajamarca | 2-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 3.0×2.0, Grandes chances: 2.0×0.0 |
+| 2026-10-25 | Sport Boys × FC Cajamarca | 4-2 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 9.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-25 | Deportivo Garcilaso × Los Chankas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Sportivo San Lorenzo × Cerro Porteño | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | Sportivo San Lorenzo × Cerro Porteño | 0-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | 2 de Mayo × Recoleta | 0-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 9.0×4.0, Escanteios: 8.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Sportivo Ameliano × Olimpia | 2-3 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 5.0×6.0, Escanteios: 3.0×2.0, Grandes chances: 1.0×3.0 |
 | 2026-10-25 | Wellington Phoenix × Central Coast Mariners | 2-0 | 82 | Chutes no alvo: 5.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 3.0×1.0 |
@@ -104,16 +104,16 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-25 | Middlesbrough U21 × Tottenham Hotspur U21 | 1-2 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 0.0×3.0, Escanteios: 5.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Central Córdoba de Santiago × Vélez Sarsfield | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | San Lorenzo × Newell's Old Boys | 0-0 | 90 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×3.0, Escanteios: 6.0×5.0, Grandes chances: 0.0×1.0 |
-| 2026-10-25 | Independiente × Boca Juniors | 0-0 | 80 | Chutes no alvo: 3.0×2.0, Chutes para fora: 14.0×4.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×4.0 |
+| 2026-10-25 | Independiente × Boca Juniors | 0-1 | 80 | Chutes no alvo: 3.0×2.0, Chutes para fora: 14.0×4.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×4.0 |
 | 2026-10-25 | Rosario Central × Huracán | 2-0 | 75 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×4.0, Grandes chances: 5.0×0.0 |
 | 2026-10-25 | Barracas Central × Estudiantes de Río Cuarto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Aldosivi × Belgrano | 1-0 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 7.0×9.0, Escanteios: 3.0×9.0, Grandes chances: 3.0×2.0 |
-| 2026-10-25 | River Plate × Racing Club | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | River Plate × Racing Club | 0-0 | 15 | Chutes no alvo: 1.0×2.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Suwon FC × Chungnam Asan FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Sydney FC × Melbourne City FC | 0-5 | 89 | Chutes no alvo: 2.0×10.0, Chutes para fora: 2.0×3.0, Escanteios: 0.0×7.0, Grandes chances: 0.0×2.0 |
 | 2026-10-25 | Wellington Phoenix × Melbourne Victory | 0-1 | 90 | Chutes no alvo: 4.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-10-25 | ASKO Kara × Diarra | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | FAR Rabat × CO Korhogo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-25 | FAR Rabat × CO Korhogo | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Al Ahly SC × Kitara FC | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Singida Black Stars × Tusker FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Maniema Union × Kabuscorp Palanca | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -123,21 +123,21 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **28**.
 | 2026-10-25 | Sepahan × Mes Shahr Babak | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Persepolis × Foolad Khuzestan | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Esteghlal Khuzestan × Shams Azar Qazvin | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Aucas × Barcelona SC | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Aucas × Barcelona SC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 7.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-25 | Leones del Norte × Libertad | 4-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-10-25 | Emelec × Guayaquil City | 0-1 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 13.0×7.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×1.0 |
 | 2026-10-25 | Corinthians × Independiente del Valle | 5-0 | 0 | Chutes no alvo: 9.0×2.0, Chutes para fora: 2.0×10.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Cruzeiro × Libertad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Deportivo Cali × Olimpia | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Deportivo Cali × Olimpia | 0-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Independiente Petrolero × ABB | 4-2 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-25 | Always Ready × CDT Real Oruro | 5-1 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 15.0×3.0, Escanteios: 13.0×1.0, Grandes chances: 6.0×1.0 |
-| 2026-10-25 | Aurora × Real Tomayapo | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Aurora × Real Tomayapo | 1-0 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 5.0×4.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-25 | Oriente Petrolero × The Strongest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Crown Legacy FC × Columbus Crew 2 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Chattanooga FC × Connecticut United | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-25 | Chattanooga FC × Connecticut United | 2-1 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 5.0×1.0, Escanteios: 2.0×4.0, Grandes chances: 3.0×0.0 |
 | 2026-10-25 | Austin FC II × Los Angeles FC II | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Portland Timbers 2 × Ventura County FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-25 | Portuguesa FC × Carabobo FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 3,56, Empate 3,11, F |
+| 2026-10-25 | Portuguesa FC × Carabobo FC | 0-2 | 0 | Chutes no alvo: 2.0×6.0, Chutes para fora: 7.0×3.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 3,56, Empate 3,11, F |
 | 2026-10-25 | Deportivo La Guaira × Metropolitanos FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-25 | Kruger United × AmaZulu FC | 0-1 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 12.0×5.0, Escanteios: 8.0×8.0, Grandes chances: 0.0×0.0 |
 
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7265 | **Jogos distintos:** 2102 | **Resultados verificáveis:** 4183 | **Com gol:** 1559 | **Sem gol:** 2624 | **Taxa observada:** 37.3%.
-**Evolução da amostra:** 17 datas com coletas | 68 pendentes | 1292 indeterminados | 1722 incompletos.
+**Observações:** 7287 | **Jogos distintos:** 2111 | **Resultados verificáveis:** 4194 | **Com gol:** 1562 | **Sem gol:** 2632 | **Taxa observada:** 37.2%.
+**Evolução da amostra:** 17 datas com coletas | 69 pendentes | 1300 indeterminados | 1724 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1500 | 1030 | 402 | 628 | 39.0% |
-| ⚡ pressao_ofensiva_18 | 1140 | 770 | 267 | 503 | 34.7% |
-| 🎯 chutes_no_alvo_5 | 1165 | 579 | 204 | 375 | 35.2% |
-| 🟥 expulsao_confirmada | 1102 | 515 | 176 | 339 | 34.2% |
-| 🚩 escanteios_6 | 876 | 420 | 171 | 249 | 40.7% |
-| 💣 grandes_chances_3 | 694 | 381 | 154 | 227 | 40.4% |
-| 🔥 pressao_forte_10min | 383 | 251 | 96 | 155 | 38.2% |
+| 🥶 jogo_frio | 1503 | 1031 | 402 | 629 | 39.0% |
+| ⚡ pressao_ofensiva_18 | 1142 | 773 | 267 | 506 | 34.5% |
+| 🎯 chutes_no_alvo_5 | 1174 | 583 | 206 | 377 | 35.3% |
+| 🟥 expulsao_confirmada | 1105 | 515 | 176 | 339 | 34.2% |
+| 🚩 escanteios_6 | 878 | 421 | 171 | 250 | 40.6% |
+| 💣 grandes_chances_3 | 697 | 382 | 155 | 227 | 40.6% |
+| 🔥 pressao_forte_10min | 383 | 252 | 96 | 156 | 38.1% |
 | 🧨 pressao_total_5_10min | 206 | 136 | 51 | 85 | 37.5% |
 | ⏱️ tensao_tardia_70 | 132 | 57 | 22 | 35 | 38.6% |
 | 🚨 alerta_cruzado_gol | 67 | 44 | 16 | 28 | 36.4% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 382 | 228 | 64 | 164 | 28.1% |
+| Premier League | 382 | 229 | 65 | 164 | 28.4% |
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 266 | 144 | 63 | 81 | 43.8% |
 | Super League | 220 | 122 | 37 | 85 | 30.3% |
@@ -238,13 +238,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eredivisie | 152 | 87 | 42 | 45 | 48.3% |
 | 2. Bundesliga | 134 | 87 | 33 | 54 | 37.9% |
 | League One | 155 | 84 | 27 | 57 | 32.1% |
-| LaLiga | 140 | 83 | 30 | 53 | 36.1% |
+| LaLiga | 141 | 83 | 30 | 53 | 36.1% |
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
 | Liga MX | 149 | 80 | 26 | 54 | 32.5% |
 | Saudi Pro League | 117 | 80 | 35 | 45 | 43.8% |
 | Super Lig | 87 | 73 | 26 | 47 | 35.6% |
 | Ekstraklasa | 120 | 72 | 31 | 41 | 43.1% |
-| Primera A | 117 | 69 | 20 | 49 | 29.0% |
+| Primera A | 120 | 71 | 20 | 51 | 28.2% |
 | Belgian Pro League | 123 | 68 | 42 | 26 | 61.8% |
 
 ### Faixa de minuto
@@ -252,44 +252,66 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 204 | 147 | 50 | 97 | 34.0% |
-| 16–30′ | 516 | 399 | 133 | 266 | 33.3% |
-| 31–45′ | 1437 | 1131 | 464 | 667 | 41.0% |
-| 46–60′ | 996 | 727 | 270 | 457 | 37.1% |
-| 61–75′ | 1487 | 1039 | 374 | 665 | 36.0% |
-| 76–90′ | 2007 | 733 | 266 | 467 | 36.3% |
-| 91+′ | 618 | 7 | 2 | 5 | 28.6% |
+| 16–30′ | 517 | 401 | 133 | 268 | 33.2% |
+| 31–45′ | 1441 | 1137 | 464 | 673 | 40.8% |
+| 46–60′ | 998 | 728 | 271 | 457 | 37.2% |
+| 61–75′ | 1498 | 1040 | 375 | 665 | 36.1% |
+| 76–90′ | 2009 | 734 | 267 | 467 | 36.4% |
+| 91+′ | 620 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7265 | **Jogos monitorados:** 1654 | **Ao vivo:** 81 | **Termômetros recentes:** 19.
+**Registros:** 7287 | **Jogos monitorados:** 1654 | **Ao vivo:** 70 | **Termômetros recentes:** 15.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-25T21:39:23.466383+00:00 | Barcelona × Real Madrid | Barcelona (76') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:39:23.466383+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (34') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:39:23.466383+00:00 | Kansas City Current (W) × Washington Spirit (W) | Washington Spirit (W) (30') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:39:23.466383+00:00 | HFX Wanderers FC × Supra du Québec | Supra du Québec (64') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:39:23.466383+00:00 | Barcelona × Real Madrid | Barcelona (76') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (74') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | Alianza FC × Internacional de Bogotá | Internacional de Bogotá (74') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | FC Naples × Spokane Velocity FC | Spokane Velocity FC (46') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | Kansas City Current (W) × Washington Spirit (W) | Kansas City Current (W) (68') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | Kansas City Current (W) × Washington Spirit (W) | Kansas City Current (W) (68') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:37:27.399612+00:00 | La Luz × Miramar Misiones | Miramar Misiones (36') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (73') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Alianza FC × Internacional de Bogotá | Internacional de Bogotá (73') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Sport Boys × FC Cajamarca | Sport Boys (92') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Aurora × Real Tomayapo | Aurora (62') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Chattanooga FC × Connecticut United | Chattanooga FC (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Chattanooga FC × Connecticut United | Chattanooga FC (73') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:35:50.952738+00:00 | Kansas City Current (W) × Washington Spirit (W) | Kansas City Current (W) (67') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:12:37.763326+00:00 | Palestino × Colo Colo | Palestino (79') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-25T22:12:37.763326+00:00 | Aucas × Barcelona SC | Aucas (42') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T22:12:37.763326+00:00 | Kansas City Current (W) × Washington Spirit (W) | Washington Spirit (W) (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T22:12:37.763326+00:00 | Sporting CP × Académico Viseu | Sporting CP (72') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-25T21:56:50.456726+00:00 | Vancouver Rise FC × Calgary Wild FC | Calgary Wild FC (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-25T21:56:50.456726+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T21:56:50.456726+00:00 | Sport Boys × FC Cajamarca | Sport Boys (53') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T21:56:50.456726+00:00 | Portuguesa FC × Carabobo FC | Carabobo FC (27') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T21:56:50.456726+00:00 | Barcelona × Real Madrid | Barcelona (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-25T21:39:23.466383+00:00 | Barcelona × Real Madrid | Barcelona (76') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-25T21:39:23.466383+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (34') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T21:39:23.466383+00:00 | Kansas City Current (W) × Washington Spirit (W) | Washington Spirit (W) (30') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-25T21:39:23.466383+00:00 | HFX Wanderers FC × Supra du Québec | Supra du Québec (64') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-25T21:39:23.466383+00:00 | Barcelona × Real Madrid | Barcelona (76') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-25T21:34:12.170180+00:00 | Vancouver Rise FC × Calgary Wild FC | Calgary Wild FC (66') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T21:34:12.170180+00:00 | Alianza FC × Internacional de Bogotá | Alianza FC (29') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Independiente × Boca Juniors | Independiente (76') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Independiente × Boca Juniors | Boca Juniors (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Independiente × Boca Juniors | Independiente (76') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Independiente × Boca Juniors | Boca Juniors (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-25T21:34:12.170180+00:00 | Udinese × Milan | Milan (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-25T21:34:12.170180+00:00 | Udinese × Milan | Udinese (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Barcelona (71') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Barcelona (71') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Real Madrid (71') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Barcelona (71') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Barcelona (71') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Barcelona × Real Madrid | Real Madrid (71') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-25T21:34:12.170180+00:00 | Sporting CP × Académico Viseu | Sporting CP (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-25T21:10:26.266601+00:00 | HFX Wanderers FC × Supra du Québec | Supra du Québec (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T21:10:26.266601+00:00 | HFX Wanderers FC × Supra du Québec | Supra du Québec (45') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T21:10:26.266601+00:00 | Udinese × Milan | Milan (68') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T21:10:26.266601+00:00 | Udinese × Milan | Milan (68') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T21:10:26.266601+00:00 | Sporting CP × Académico Viseu | Sporting CP (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-25T21:10:26.266601+00:00 | Sporting CP × Académico Viseu | Sporting CP (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T20:52:38.584956+00:00 | Fortaleza FC × Deportivo Cali | Fortaleza FC (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-25T20:52:38.584956+00:00 | Independiente × Boca Juniors | Boca Juniors (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T20:52:38.584956+00:00 | Emelec × Guayaquil City | Emelec (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -346,28 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-25T19:51:10.708528+00:00 | Union St.Gilloise × Cercle Brugge | Cercle Brugge (75') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T19:51:10.708528+00:00 | Tlaxcala FC × Correcaminos de la UAT | Tlaxcala FC (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-25T19:51:10.708528+00:00 | OFI Crete × PAOK Thessaloniki | PAOK Thessaloniki (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T19:51:10.708528+00:00 | Manchester United (W) × Manchester City (W) | Manchester City (W) (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T19:51:10.708528+00:00 | Manchester United (W) × Manchester City (W) | Manchester City (W) (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T19:51:10.708528+00:00 | Manchester United (W) × Manchester City (W) | Manchester City (W) (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T19:51:10.708528+00:00 | KACM × Difaâ El Jadida | KACM (86') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Aldosivi × Belgrano | Belgrano (91') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Molde × Fredrikstad | Fredrikstad (61') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Molde × Fredrikstad | Fredrikstad (61') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Molde × Fredrikstad | Fredrikstad (61') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Orlando Pride (W) × Gotham FC (W) | Orlando Pride (W) (28') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | AZ Alkmaar × FC Twente | FC Twente (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Union St.Gilloise × Cercle Brugge | Union St.Gilloise (60') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Union St.Gilloise × Cercle Brugge | Union St.Gilloise (60') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:36:05.162002+00:00 | Union St.Gilloise × Cercle Brugge | Union St.Gilloise (60') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | FC Liège × Patro Eisden | Patro Eisden (53') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Molde × Fredrikstad | Fredrikstad (55') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Orlando Pride (W) × Gotham FC (W) | Gotham FC (W) (22') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | AZ Alkmaar × FC Twente | AZ Alkmaar (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Union St.Gilloise × Cercle Brugge | Union St.Gilloise (53') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Union St.Gilloise × Cercle Brugge | Union St.Gilloise (53') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Nacional × Braga | Braga (66') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | Rio Ave × Famalicão | Rio Ave (69') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-25T19:29:26.565921+00:00 | OFI Crete × PAOK Thessaloniki | PAOK Thessaloniki (70') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
