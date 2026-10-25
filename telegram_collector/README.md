@@ -1,31 +1,37 @@
-# NEXUS Market Research + Telegram (v1)
+# NEXUS DATA LAB — Multimercado + Telegram diário (v2)
 
-Este coletor **não altera os scripts do NEXUS**, não acessa a conta Bolsa/Layback e não opera apostas. Usa apenas `https://nexus-score-gratis.pages.dev/data.json`, o snapshot público produzido pelo NEXUS.
+Coletor GRATUITO independente, sem alterar os scripts centrais da coleta NEXUS, o GitHub Pages ou a Bolsa/Layback.
+Origem: `https://nexus-score-gratis.pages.dev/data.json`, exportação pública já produzida pelo NEXUS.
+Arquivo persistente: branch `market-telegram-data`, pasta `market-history/`.
 
-## O que está coletado
+## Rotina de trabalho
 
-- Lê todos os jogos presentes na exportação e arquiva snapshots **que mudaram**, identificados por jogo/data/minuto/placar/scouts/odds reais.
-- Mantém a evidência observada: fonte, horário, odd decimal **quando existente**, minuto, placar, scouts e resultados confirmados após o fim.
-- Catálogo de 27 famílias (Match Odds, dupla chance, total/linhas de gols, ambas marcam, escanteios, cartões, chutes, chances, handicaps etc.). Uma família no catálogo **não significa odds disponíveis**.
-- Usa mercados descobertos dinamicamente na lista de odds do NEXUS. Não transforma odd pré-jogo em live, não inventa cotações ou EV, não apresenta simulação como lucro real.
-- Guarda o histórico na **branch `market-telegram-data`**; evita commits horários na `main` e builds extras do Cloudflare.
-- GitHub Actions dispara a coleta às **:41 de cada hora** (pode atrasar), independentemente do PC. Não equivale a coleta a cada minuto.
+- **De hora em hora (minuto 41 UTC):** coleta silenciosa de todos os jogos disponíveis no snapshot NEXUS, com deduplicação. **Não envia Telegram a cada jogo ou execução.**
+- Preserva as odds observadas dos mercados que a fonte efetivamente forneceu, inclusive **cotações alternativas de outras casas**, com preço, minuto do jogo, fase, fonte e horário disponível.
+- Categoriza **27 famílias de mercados**; o catálogo NÃO indica disponibilidade de odds para todas.
+- O histórico é acumulado sem transformações retroativas: registros sem hora/casa/fase inequívoca ficam disponíveis para auditoria, mas NÃO contam como odds verificadas no fechamento diário.
+- **19h15 horário de Brasília, todos os dias:** `.github/workflows/nexus-market-daily.yml` consolida o histórico local disponível e envia **uma mensagem resumida ao MESMO bot do Telegram**, `@NexusQuantAlertasBot` (via Secrets da conta).
+- O resumo traz jogos, partidas encerradas, quantidade de odds com proveniência, mercados e casas realmente capturados e placares esportivos agregados de 1X2, Over 2.5, BTTS, cantos, amarelos e chutes no alvo, quando dados existem.
+- Não calcula EV+, ROI nem lucro fictício. Um percentual de acerto de mercado não é rentabilidade. O arquivo `market-history/daily/AAAA-MM-DD.json` registra os resultados; o arquivo `.sent.json` evita reenvios em execuções normais. Atrasos, quedas antes de persistir o marcador ou falhas de entrega impedem garantia absoluta de exatamente uma mensagem.
+- Coletas e notificações dependem da disponibilidade do GitHub Actions e das fontes; a precisão temporal do NEXUS não é segundo a segundo.
 
-## Telegram
+## Reaproveitar o Telegram existente
 
-No GitHub, vá a **Settings → Secrets and variables → Actions** do repositório NEXUS e adicione dois **repository secrets**:
-- `TELEGRAM_BOT_TOKEN`: crie um bot com [@BotFather](https://t.me/BotFather). Nunca envie o token no chat ou faça commit.
-- `TELEGRAM_CHAT_ID`: abra o chat do bot, toque em **Start**. Pegue o `chat.id` pelo método oficial `getUpdates`, pelo console do próprio bot ou ferramenta confiável. Também pode usar ID do grupo/canal ao qual o bot tenha permissão.
+Os workflows usam SOMENTE os GitHub Secrets já previstos:
+`TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID`. Não registre um novo bot. Os Secrets devem estar cadastrados neste repositório NEXUS. Nenhuma credencial é escrita em arquivos, logs ou mensagens públicas.
+Se faltarem os Secrets, o histórico e os resumos em JSON continuam; as mensagens NÃO serão enviadas.
+Para testar manualmente um dia no Actions, execute `NEXUS | Telegram resumo diário` pelo `workflow_dispatch`; se a marca `.sent.json` existir para a data local, não repetirá o envio.
 
-O envio é um resumo com os dados observados e os mercados que **realmente tiveram cotações**. Não é uma recomendação de aposta ou promessa de lucro. Sem os dois secrets, o coletor continua a criar histórico, mas **não envia mensagens**.
-
-## Teste e segurança
+## Testes
 
 ```bash
 python3 -m unittest discover -s telegram_collector/tests -v
 python3 telegram_collector/collect.py --archive market-history --no-telegram
+python3 telegram_collector/daily.py --archive market-history --no-telegram
 ```
 
-O primeiro comando usa casos sintéticos (não invoca rede). O segundo consulta o NEXUS público; necessita rede. A rotina de GitHub tem validação antes da coleta. Os dados só entram quando existem e podem ser verificáveis. Para ampliar a cobertura será necessário conectar fontes de odds/estatísticas com licença e cadência adequadas.
+O segundo comando exige acesso ao snapshot público do NEXUS. O terceiro pode gerar um relatório vazio se não houver coletas salvas para o dia. A rotina de produção lê arquivos da branch isolada.
 
-**Status de implantação:** a presença destes arquivos não comprova sucesso do primeiro job, disponibilidade da fonte ao vivo ou entrega de Telegram. Confirme no GitHub Actions e no arquivo `market-history/status.json` da branch de dados.
+## Onde encontrar odds — sem custos extras
+
+Veja [ODDS_SOURCES.md](ODDS_SOURCES.md). O NEXUS já contém integrações opcionais OddsPapi (limite de cota mensal próprio) e API-Football. A coleta independente apenas reaproveita os dados já exportados, **sem duplicar requisições nem gastar cota de API à parte**. Fontes alternativas exigem licença ou chave gratuita próprias e só serão ativadas conforme disponibilidade e direitos de uso.
