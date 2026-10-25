@@ -37,6 +37,13 @@ class PriorityEspnTests(unittest.TestCase):
         self.assertEqual(league_code("Champions League"), "uefa.champions")
         self.assertEqual(league_code("Copa do Brasil"), "bra.copa_do_brazil")
         self.assertIsNone(league_code("Primera División"))  # ambiguous countries
+        self.assertIsNone(league_code("Canadian Premier League"))
+        self.assertIsNone(league_code("Premier League"))  # ambiguous countries
+        self.assertIsNone(league_code("Copa Libertadores Femenina"))
+        self.assertIsNone(league_code("Liga MX Femenil"))
+        self.assertIsNone(league_code("MLS Next Pro"))
+        self.assertEqual(league_code("UEFA Champions League"), "uefa.champions")
+        self.assertEqual(league_code("Copa Libertadores"), "conmebol.libertadores")
 
     def test_strict_quotes_require_full_trio_and_named_book(self):
         sample = parse_event(event())
