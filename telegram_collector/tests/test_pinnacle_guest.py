@@ -43,6 +43,11 @@ class PinnacleGuestTests(TestCase):
         self.assertIn("guest_feed",q[0]["odds_kind"])
         self.assertFalse(any("probability" in x for x in q))
 
+    def test_market_envelopes_are_supported_without_inventing_prices(self):
+        self.assertEqual(len(parse_markets({"markets":[market()]},NOW)),2)
+        self.assertEqual(len(parse_markets({"data":[market()]},NOW)),2)
+        self.assertEqual(parse_markets({"error":"blocked"},NOW),[])
+
     def test_closed_markets_and_missing_selections_dropped(self):
         stopped={**market(),"status":"suspended"}
         odd={**market(),"prices":[{"designation":"over","price":1.80}]}
