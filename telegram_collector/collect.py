@@ -98,7 +98,7 @@ def augment_from_nexus_history(games, history_dir, collected_at):
     days = {(local_today - timedelta(days=i)).isoformat() for i in range(3)}
     days.update(str(g.get("day")) for g in expanded.values() if g.get("day"))
     for day in sorted(days):
-        if not re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", day):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", day):
             continue
         f = history_dir / (day + ".json")
         if not f.is_file():
