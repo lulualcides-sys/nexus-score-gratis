@@ -31,7 +31,12 @@ TOTAL_FIELDS = {"corners": "total_corners", "shots_on": "total_shots_on_target",
 FAMILY = {"1x2": "match_odds", "match_odds": "match_odds",
           "btts": "both_teams_to_score", "both_teams_to_score": "both_teams_to_score",
           "over_under": "total_goals", "over_under_25": "total_goals",
-          "double_chance": "double_chance", "correct_score": "correct_score"}
+          "double_chance": "double_chance", "correct_score": "correct_score",
+          "over_under_05": "total_goals", "over_under_15": "total_goals",
+          "over_under_35": "total_goals", "over_under_45": "total_goals",
+          "over_under_55": "total_goals", "over_under_65": "total_goals",
+          "ah_0": "asian_handicap", "ah_m05": "asian_handicap",
+          "ah_p05": "asian_handicap", "ah_m1": "asian_handicap"}
 
 
 def now_utc():
@@ -65,18 +70,24 @@ def normalize_quotes(game):
                     "scope": str(x.get("phase") or "unverified_time_scope")})
     for group in ("odds_comparison", "live_odds_comparison"):
         for x in game.get(group) or []:
-            if not isinstance(x, dict) or not isinstance(x.get("best"), dict):
+            if not isinstance(x, dict):
                 continue
-            b = x["best"]
-            odd = finite_nonnegative(b.get("odds"))
-            if odd is None or odd <= 1.0:
-                continue
-            out.append({"market": str(x.get("market") or "unknown"),
-                        "selection": str(x.get("selection") or ""),
-                        "odds": odd, "source": str(b.get("source") or ""),
-                        "bookmaker": str(b.get("bookmaker") or ""),
-                        "captured_at": str(b.get("at") or ""),
-                        "scope": str(x.get("phase") or ("live" if group.startswith("live") else "pregame"))})
+            # O NEXUS fornece a melhor cotação e alternativas de outras casas.
+            # Preservar ambas: comparar só o best esconderia cobertura real.
+            alternatives = x.get("alternatives") if isinstance(x.get("alternatives"), list) else []
+            offers = [x.get("best")] + alternatives[:4]
+            for b in offers:
+                if not isinstance(b, dict):
+                    continue
+                odd = finite_nonnegative(b.get("odds"))
+                if odd is None or odd <= 1.0:
+                    continue
+                out.append({"market": str(x.get("market") or "unknown"),
+                            "selection": str(x.get("selection") or ""),
+                            "odds": odd, "source": str(b.get("source") or ""),
+                            "bookmaker": str(b.get("bookmaker") or ""),
+                            "captured_at": str(b.get("at") or ""),
+                            "scope": str(x.get("phase") or ("live" if group.startswith("live") else "pregame"))})
     # O mesmo preço pode aparecer na lista e comparação. Deduplicação exata.
     unique = {}
     for q in out:
