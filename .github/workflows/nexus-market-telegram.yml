@@ -41,7 +41,7 @@ jobs:
           python3 -m unittest discover -s telegram_collector/tests -v
       - name: Preparar branch separada para histórico (sem Cloudflare build)
         run: |
-          git fetch origin market-telegram-data:refs/remotes/origin/market-telegram-data
+          git fetch --depth=1 origin market-telegram-data:refs/remotes/origin/market-telegram-data
           git worktree add --no-checkout --detach _market_data origin/market-telegram-data
           git -C _market_data sparse-checkout init --cone
           git -C _market_data sparse-checkout set market-history
