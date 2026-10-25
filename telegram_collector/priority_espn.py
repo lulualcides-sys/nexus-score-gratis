@@ -50,7 +50,7 @@ ALIASES = (
     ("bra.1", ("brasileirao", "brasileirao serie a", "brazilian serie a")),
     ("eng.1", ("premier league", "eng.1")),
     ("esp.1", ("laliga", "la liga", "esp.1")),
-    ("ita.1", ("serie a italy", "italian serie a", "ita.1")),
+    ("ita.1", ("serie a italy", "serie a italia", "italian serie a", "ita.1")),
     ("ger.1", ("bundesliga", "ger.1")),
     ("fra.1", ("ligue 1", "fra.1")),
     ("mex.1", ("liga mx", "mex.1")),
