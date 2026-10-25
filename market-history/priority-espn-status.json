@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T21:39:34.155219+00:00",
+  "checked_at": "2026-10-25T22:09:13.087017+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 20,
-  "created_games": 0,
+  "priority_fixtures_seen": 29,
+  "created_games": 2,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -86,6 +86,54 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Estoril x Moreirense",
+      "league": "por.1",
+      "kickoff": 1792942200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "C.D. Nacional x Braga",
+      "league": "por.1",
+      "kickoff": 1792951200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Rio Ave x FC Famalicao",
+      "league": "por.1",
+      "kickoff": 1792951200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Fortuna Sittard x Excelsior",
+      "league": "ned.1",
+      "kickoff": 1792926900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "NEC Nijmegen x FC Groningen",
+      "league": "ned.1",
+      "kickoff": 1792935000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "PSV Eindhoven x Feyenoord Rotterdam",
+      "league": "ned.1",
+      "kickoff": 1792935000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sparta Rotterdam x Ajax Amsterdam",
+      "league": "ned.1",
+      "kickoff": 1792943100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AZ Alkmaar x FC Twente",
+      "league": "ned.1",
+      "kickoff": 1792954800,
       "reason": "no_verified_public_1x2"
     }
   ],
