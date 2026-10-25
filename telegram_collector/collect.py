@@ -281,7 +281,12 @@ def ingest_games(games, directory, collected_at):
                 "id": match_id, "day": day, "home": str(g.get("home") or ""),
                 "away": str(g.get("away") or ""), "league": str(g.get("league") or ""),
                 "source": g.get("sources") or [g.get("source") or "unknown"],
+                "league_code": str(g.get("league_code") or "")[:40],
                 "kickoff_unix": g.get("start_timestamp"), "observations": []})
+            if (not record.get("league_code") and isinstance(g.get("league_code"),str)
+                    and g["league_code"].strip()):
+                record["league_code"] = g["league_code"].strip()[:40]
+                modified = True
             snapshot = observation(g, collected_at)
             snap_hash = signature(snapshot)
             if not record["observations"] or signature(record["observations"][-1]) != snap_hash:
