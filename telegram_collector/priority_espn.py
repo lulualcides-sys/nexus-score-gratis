@@ -188,7 +188,11 @@ def choose_boards(now, archives, max_boards=MAX_BOARDS):
                 continue
             if not now.timestamp() < kickoff <= end:
                 continue
-            code = league_code(game.get("league"))
+            gid = str(game.get("id") or "")
+            saved = str(game.get("league_code") or "")
+            code = saved if saved in PRIORITY_CODES else league_code(game.get("league"))
+            if not code:
+                code = next((x for x in PRIORITY_CODES if gid.startswith("espn-" + x + "-")),None)
             if code:
                 key = (code, datetime.fromtimestamp(kickoff, ZONE).date().isoformat())
                 soon[key] = min(soon.get(key, kickoff), kickoff)
