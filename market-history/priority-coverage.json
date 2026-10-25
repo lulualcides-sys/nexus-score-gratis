@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:06:50.204407+00:00",
+  "checked_at": "2026-10-25T20:09:01.414564+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 11,
@@ -132,7 +132,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 24,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -180,7 +180,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 29,
+      "verified_quotes": 30,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -362,7 +362,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 17,
+      "verified_quotes": 21,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -381,7 +381,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 14,
+      "verified_quotes": 15,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -399,7 +399,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -519,7 +519,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 17,
+      "verified_quotes": 20,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -621,7 +621,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -659,7 +659,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 17,
+      "verified_quotes": 21,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -677,7 +677,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 7,
+      "verified_quotes": 10,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
