@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:13:51.526868+00:00",
+  "checked_at": "2026-10-25T20:27:54.007006+00:00",
   "horizon_hours": 48,
-  "important_games": 19,
+  "important_games": 21,
   "verified_bookmaker_games": 11,
   "indicative_only_games": 3,
-  "missing_bookmaker_price_games": 5,
+  "missing_bookmaker_price_games": 7,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
@@ -359,7 +359,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 18,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -422,6 +422,42 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "Jaguares de Córdoba",
+      "away": "Llaneros FC",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793055600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Independiente Santa Fe",
+      "away": "Atlético Bucaramanga",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793063100.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -499,6 +535,40 @@
       "league": "Liga Profesional Argentina",
       "league_code": "arg.1",
       "kickoff_unix": 1793060100.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Jaguares de Córdoba",
+      "away": "Llaneros FC",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793055600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Independiente Santa Fe",
+      "away": "Atlético Bucaramanga",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793063100.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"

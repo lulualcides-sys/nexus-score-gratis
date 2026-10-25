@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-10-25T20:13:50+00:00",
+  "checked_at": "2026-10-25T20:27:52+00:00",
   "source": "https://tipsaudit.com/api/v1/predictions",
   "status": "ok",
   "matches": 305,
-  "history_changes": 59,
-  "quotes_indicative": 59,
+  "history_changes": 61,
+  "quotes_indicative": 53,
   "not_verified_as_tradable": true
 }
