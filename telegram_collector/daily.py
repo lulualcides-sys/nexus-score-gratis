@@ -2,7 +2,7 @@
 """Resumo diário do arquivo multimercado NEXUS, sem apostas nem odds inventadas."""
 import argparse
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import json
 import os
 from pathlib import Path
@@ -56,12 +56,31 @@ def summarize(document, day):
     priced_fixtures = set()
     unique_quotes = set()
     finals = 0
+    qualified_games = set()
+    below_games = set()
+    qualified_prices = set()
     for game_id, game in records.items():
         if not isinstance(game, dict):
             continue
         observations = game.get("observations") or []
         if not observations:
             continue
+        best_status = "unknown"
+        for obs in observations:
+            liq = obs.get("liquidity") if isinstance(obs, dict) else {}
+            if not isinstance(liq, dict):
+                continue
+            if liq.get("status") == "qualified" and liq.get("currency") == "BRL" and (
+                    isinstance(liq.get("amount"), (int, float)) and liq["amount"] >= 3000
+                    and liq.get("source") and valid_time(liq.get("observed_at"))):
+                best_status = "qualified"
+                break
+            if liq.get("status") == "below" and liq.get("currency") == "BRL":
+                best_status = "below"
+        if best_status == "qualified":
+            qualified_games.add(str(game_id))
+        elif best_status == "below":
+            below_games.add(str(game_id))
         latest = observations[-1]
         states[str(latest.get("phase") or "unknown")] += 1
         settled = latest.get("settlement") or {}
@@ -98,6 +117,8 @@ def summarize(document, day):
                 if key in unique_quotes:
                     continue
                 unique_quotes.add(key)
+                if str(game_id) in qualified_games:
+                    qualified_prices.add(key)
                 market = str(quote.get("market") or "unclassified")[:80]
                 names[market] += 1
                 families[FAMILY.get(market, market)] += 1
@@ -108,6 +129,11 @@ def summarize(document, day):
         "games": len(records), "finished": finals,
         "live": states["live"], "scheduled": states["scheduled"],
         "quotes_verified": len(unique_quotes), "games_with_verified_odds": len(priced_fixtures),
+        "liquidity_minimum_brl": 3000,
+        "liquidity_qualified_games": len(qualified_games),
+        "liquidity_below_games": len(below_games),
+        "liquidity_unknown_games": len(records) - len(qualified_games) - len(below_games),
+        "qualified_game_quotes_verified": len(qualified_prices),
         "market_families_catalogued": len(MARKET_FAMILIES),
         "market_families_with_verified_prices": len(families),
         "market_families_quoted": dict(families.most_common()),
@@ -126,6 +152,8 @@ def format_message(s):
     return (
         f"📊 NEXUS DATA LAB | Diário {s['day']}\n"
         f"⚽ Partidas: {s['games']} | Finalizadas: {s['finished']} | Ao vivo: {s['live']}\n"
+        f"💰 Volume confirmado ≥ R$ 3 mil: {s['liquidity_qualified_games']} jogos | "
+        f"sem volume verificável: {s['liquidity_unknown_games']}\n"
         f"🎯 Odds auditáveis: {s['quotes_verified']} em {s['games_with_verified_odds']} jogos\n"
         f"📚 Famílias com odds: {s['market_families_with_verified_prices']}/{s['market_families_catalogued']}\n"
         f"Mercados: {markets}\n"
@@ -156,7 +184,7 @@ def main():
     parser.add_argument("--day", default=None, help="Dia em America/Sao_Paulo, AAAA-MM-DD")
     parser.add_argument("--no-telegram", action="store_true")
     args = parser.parse_args()
-    day = args.day or datetime.now(TZ).date().isoformat()
+    day = args.day or (datetime.now(TZ).date() - timedelta(days=1)).isoformat()
     datetime.strptime(day, "%Y-%m-%d")
     archive = Path(args.archive)
     raw = archive / (day + ".json")
