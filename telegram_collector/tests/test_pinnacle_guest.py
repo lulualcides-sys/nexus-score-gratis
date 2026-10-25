@@ -70,7 +70,7 @@ class PinnacleGuestTests(TestCase):
             odds[0]["prices"][0]["price"]=-120
             c=run(Path(d),NOW+timedelta(minutes=6),getter=feed)
             self.assertEqual(c["new_price_snapshots"],1)
-            p=next((Path(d)/"public-no-key").glob("pinnacle-*.json"))
+            p=next((Path(d)/"public-no-key").glob("pinnacle-20*.json"))
             saved=json.loads(p.read_text())
             self.assertEqual(len(saved["games"]["111"]["snapshots"]),2)
 
