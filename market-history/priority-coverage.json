@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T22:09:15.700088+00:00",
+  "checked_at": "2026-10-25T22:36:02.035952+00:00",
   "horizon_hours": 48,
   "important_games": 18,
   "verified_bookmaker_games": 12,
@@ -15,7 +15,7 @@
   "pinnacle_guest": {
     "status": "checked",
     "matched": 8,
-    "new_verified_game": 6,
+    "new_verified_game": 3,
     "offers": 933,
     "market_families": {
       "match_odds": 33,
@@ -140,7 +140,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 108,
+      "verified_quotes": 111,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -151,8 +151,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.7,
-        "draw": 4.3,
+        "home": 1.69,
+        "draw": 4.31,
         "away": 5.63
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11478/atlas-vs-puebla-2026-10-25",
@@ -172,12 +172,12 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 108,
+      "verified_quotes": 111,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.78,
-        "draw": 4.0,
-        "away": 2.06
+        "home": 3.8,
+        "draw": 3.94,
+        "away": 2.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
       "tipsaudit_id": "11484",
@@ -196,7 +196,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 106,
+      "verified_quotes": 109,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.65,
@@ -283,7 +283,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -371,7 +371,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 28,
+      "verified_quotes": 31,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -389,7 +389,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 25,
+      "verified_quotes": 28,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
