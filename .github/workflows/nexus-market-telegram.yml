@@ -42,7 +42,10 @@ jobs:
       - name: Preparar branch separada para histórico (sem Cloudflare build)
         run: |
           git fetch origin market-telegram-data:refs/remotes/origin/market-telegram-data
-          git worktree add --detach _market_data origin/market-telegram-data
+          git worktree add --no-checkout --detach _market_data origin/market-telegram-data
+          git -C _market_data sparse-checkout init --cone
+          git -C _market_data sparse-checkout set market-history
+          git -C _market_data checkout HEAD
       - name: Coletar todos os mercados presentes no NEXUS e avisar no Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
