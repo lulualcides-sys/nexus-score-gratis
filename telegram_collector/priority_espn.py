@@ -133,9 +133,9 @@ def parse_event(event):
     if not h or not a or normalized_team(h) == normalized_team(a):
         return None
     status = event.get("status") or {}
-    status_type = status.get("type") or {} if isinstance(status, dict) else {}
+    status_type = status.get("type") if isinstance(status, dict) else {}
     state = status_type.get("state") if isinstance(status_type, dict) else None
-    phase = {"pre": "scheduled", "in": "live", "post": "finished"}.get(state)
+    phase = {"pre": "scheduled", "in": "live", "post": "finished"}.get(state) if isinstance(state, str) else None
     if not phase:
         return None
     score = ""
