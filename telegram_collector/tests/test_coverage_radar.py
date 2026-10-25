@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 from telegram_collector.coverage_radar import (
-    build, collect_records, same_teams_and_time, priority_match, enrich_pinnacle
+    build, collect_records, same_teams_and_time, priority_match, enrich_pinnacle, read_book_quality
 )
 
 class CoverageRadarTests(unittest.TestCase):
@@ -130,6 +130,20 @@ class CoverageRadarTests(unittest.TestCase):
             bad=enrich_pinnacle(records,path,now)
             self.assertEqual(bad["offers"],0)
             self.assertEqual(records[0]["verified_quotes"],0)
+
+    def test_book_quality_attached_only_if_fresh(self):
+        now=datetime.now(timezone.utc)
+        with TemporaryDirectory() as tmp:
+            p=Path(tmp)/"pinnacle-depth.json"
+            p.write_text(json.dumps({"schema":1,"checked_at":now.isoformat(),
+                "status":"fresh","complete_market_lines":77,
+                "incomplete_market_lines":3,"families":{"match_odds":{
+                    "complete_lines":22,"median_overround_pct":5.1}}}))
+            good=read_book_quality(p,now)
+            self.assertEqual(good["complete_market_lines"],77)
+            self.assertEqual(good["families"]["match_odds"]["median_overround_pct"],5.1)
+            old=read_book_quality(p,now+timedelta(hours=5))
+            self.assertEqual(old["status"],"stale")
 
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
