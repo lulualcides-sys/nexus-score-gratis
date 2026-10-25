@@ -7,7 +7,7 @@ from unittest import TestCase
 
 from telegram_collector.pinnacle_guest import (
     decimal_american, parse_markets, parse_matchup, get_focus_matches,
-    classify_market, run
+    classify_market, run, select_focus_schedule, coverage_missing_targets
 )
 NOW = datetime(2026,10,25,13,0,tzinfo=timezone.utc)
 KICK = NOW + timedelta(hours=3)
@@ -25,6 +25,39 @@ def market(key="s;0;t;2.5", typ="", first=-125, second=110):
                       {"designation":"under","points":2.5,"price":second}]}
 
 class PinnacleGuestTests(TestCase):
+    def test_rotation_and_high_priority_missing_fixture_without_extra_calls(self):
+        base=[sample_match(mid=i,league="Bundesliga") for i in range(1,25)]
+        base[16]["participants"][0]["name"]="Flamengo"
+        base[16]["participants"][1]["name"]="Atletico Mineiro"
+        available=get_focus_matches(base,NOW,limit=100)
+        goal={"home":"Flamengo","away":"Atletico Mineiro",
+              "kickoff_unix":KICK.timestamp(),
+              "coverage":"no_bookmaker_price"}
+        first, targeted=select_focus_schedule(available,NOW,[goal],8)
+        self.assertEqual(targeted,1)
+        self.assertIn(17,[x["provider_matchup_id"] for x in first])
+        self.assertEqual(len(first),8)
+        # Same slot -> same schedule, later 3h slot -> rotates catalogue.
+        again,_=select_focus_schedule(available,NOW+timedelta(minutes=1),[goal],8)
+        self.assertEqual([x["provider_matchup_id"] for x in first],
+                         [x["provider_matchup_id"] for x in again])
+        next_slot,_=select_focus_schedule(available,NOW+timedelta(hours=3),[goal],8)
+        self.assertNotEqual([x["provider_matchup_id"] for x in first],
+                            [x["provider_matchup_id"] for x in next_slot])
+
+    def test_only_recent_priority_coverage_can_direct_requests(self):
+        with TemporaryDirectory() as folder:
+            path=Path(folder)/"priority-coverage.json"
+            doc={"schema":1,"checked_at":NOW.isoformat(),
+                 "priority_fixtures":[
+                    {"home":"Flamengo","away":"Atletico Mineiro",
+                     "kickoff_unix":KICK.timestamp(),
+                     "coverage":"no_bookmaker_price"},
+                    {"home":"AAA","away":"BBB","coverage":"verified_price"}]}
+            path.write_text(json.dumps(doc))
+            self.assertEqual(len(coverage_missing_targets(Path(folder),NOW)),1)
+            self.assertEqual(coverage_missing_targets(Path(folder),NOW+timedelta(hours=7)),[])
+
     def test_american_to_decimal_strict(self):
         self.assertEqual(decimal_american(-125),1.8)
         self.assertEqual(decimal_american(150),2.5)
