@@ -1,0 +1,60 @@
+name: "NEXUS | mercados independentes + Telegram"
+on:
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'telegram_collector/**'
+      - '.github/workflows/nexus-market-telegram.yml'
+permissions:
+  contents: write
+concurrency:
+  group: nexus-market-telegram
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 -m py_compile telegram_collector/collect.py
+          python3 -m unittest discover -s telegram_collector/tests -v
+  archive:
+    if: github.event_name != 'pull_request'
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Ler versão principal do NEXUS sem modificar seus coletores
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Verificar sintaxe e regressões antes da coleta
+        run: |
+          python3 -m py_compile telegram_collector/collect.py
+          python3 -m unittest discover -s telegram_collector/tests -v
+      - name: Preparar branch separada para histórico (sem Cloudflare build)
+        run: |
+          git fetch origin market-telegram-data:refs/remotes/origin/market-telegram-data
+          git worktree add --detach _market_data origin/market-telegram-data
+      - name: Coletar todos os mercados presentes no NEXUS e avisar no Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 telegram_collector/collect.py --archive _market_data/market-history
+      - name: Salvar histórico exclusivamente na branch de dados
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd _market_data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add market-history/
+          if ! git diff --cached --quiet; then
+            git commit -m "NEXUS markets: archive verified public observations"
+            git push origin HEAD:market-telegram-data
+          else
+            echo "Nenhuma mudança no histórico"
+          fi
