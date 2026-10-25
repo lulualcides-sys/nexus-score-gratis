@@ -267,11 +267,38 @@ def enrich_pinnacle(records, path, now):
     return {"status":"checked", "matched":matched, "new_verified_game":gains,
             "offers":offers, "market_families":fam}
 
+
+def read_book_quality(path, now):
+    """Não repassar indicadores de preços antigos como se fossem atuais."""
+    path=Path(path)
+    if not path.is_file():
+        return {"status":"unavailable"}
+    try:
+        data=json.loads(path.read_text(encoding="utf-8"))
+        at=unix(data.get("checked_at")) if isinstance(data,dict) else None
+        if (not isinstance(data,dict) or data.get("schema")!=1
+                or data.get("status")!="fresh" or at is None
+                or not -120 <= now.timestamp()-at <= 4*3600):
+            return {"status":"stale"}
+        return {
+            "status":"fresh",
+            "bookmaker_snapshot_at":data.get("bookmaker_snapshot_at"),
+            "complete_market_lines":int(data.get("complete_market_lines",0)),
+            "incomplete_market_lines":int(data.get("incomplete_market_lines",0)),
+            "odds_eligible_for_quality":int(data.get("odds_eligible_for_quality",0)),
+            "invalid_quote_records":int(data.get("invalid_quote_records",0)),
+            "families":data.get("families") or {},
+        }
+    except (OSError,ValueError,TypeError):
+        return {"status":"unavailable"}
+
+
 def build(directory, now):
     folder = Path(directory)
     games = collect_records(folder, now)
     feed = enrich_tipsaudit(games, folder / "public-no-key" / "tipsaudit-latest.json", now)
     pinnacle = enrich_pinnacle(games, folder / "public-no-key" / "pinnacle-latest.json", now)
+    quality = read_book_quality(folder / "public-no-key" / "pinnacle-depth.json", now)
     games.sort(key=lambda g: (PRIORITY_ORDER.get(g["league_code"],999), g["kickoff_unix"],g["home"]))
     verified = [x for x in games if x["verified_quotes"]]
     indicative_only = [x for x in games if not x["verified_quotes"] and x["indicative_bookmaker_quotes"]]
@@ -288,6 +315,7 @@ def build(directory, now):
         "missing_bookmaker_price_games": len(missing),
         "tipsaudit": feed,
         "pinnacle_guest": pinnacle,
+        "book_quality": quality,
         "priority_fixtures": games[:150],
         "top_missing": [{k:v for k,v in item.items() if k not in ("fair_odds_modelled",)}
                         for item in missing[:MAX_REPORTED_MISSING]],
