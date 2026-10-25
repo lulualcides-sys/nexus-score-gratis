@@ -32,3 +32,23 @@
 4. Rejeitar nomes de times ou ligas ambíguos: não copiar preços entre jogos.
 5. Não colocar CSV de terceiros cujo uso/redistribuição seja restrito em GitHub público.
 6. Apenas calcular ROI/PL prospectivo com odds registradas antes do evento e entradas congeladas.
+
+## Evolução de qualidade do bookmaker e seleção dinâmica (25/10/2026)
+
+O pipeline passou de capturar linhas isoladas para **validar a integridade do livro de preços**:
+
+- `telegram_collector/pinnacle_guest.py` seleciona até **16 jogos por rodada de três horas**. Usa o `priority-coverage.json` para reservar até um terço das consultas para partidas relevantes sem odds ou apenas com cotações indicativas e roda as outras partidas do catálogo em intervalos de três horas. Não usa contas adicionais, proxies ou contorno de 401/403/429.
+- `telegram_collector/market_depth.py` valida frescor da captura, bookmaker, presença de todas as seleções, linha original, período e odds numéricas. Só calcula **overround** (margem implícita da casa) em mercados completos: 1X2 com três resultados; totais e handicap com os dois lados. Handicaps têm pontos com sinais opostos por seleção; são agrupados pela chave original do mercado.
+- O relatório `market-history/public-no-key/pinnacle-depth.json` registra mercados completos/incompletos, preços inválidos e mediana de overround por família; **overround não é lucro, ROI nem volume transacionado**.
+- `telegram_collector/coverage_radar.py` só incorpora a auditoria se for de até quatro horas atrás. O resumo do Telegram de **00h01 Brasília** agora inclui linhas completas, margem 1X2 quando disponível e até três jogos importantes ainda sem odds. O bot financeiro permanece separado.
+- Um dos testes de nuvem mostrou **16 jogos, 1.384 odds elegíveis para auditoria, 676 linhas completas, 0 linhas incompletas, 18 registros rejeitados** e margem mediana 1X2 de aproximadamente 5,02%. Números da janela observada, não expectativa de próximos jogos. 
+
+### Fontes avaliadas adicionalmente
+
+- [lacausecrypto/mcp-sports-hub](https://github.com/lacausecrypto/mcp-sports-hub): muitas integrações; as fontes de odds de maior cobertura exigem conta, chave ou testes de acesso. Serve como catálogo de opções, **não uma fonte própria de odds sem cadastro**.
+- [DanielTomaro13/sportsdata-mcp Unibet Kambi](https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/documentation/Unibet.md): aposta esportiva com oferta pública de diversos mercados, mas direcionada ao mercado australiano e com geobloqueio frequente em datacenters. **Não implantado**; depende de confirmação de uso autorizado e disponibilidade em GitHub Actions.
+- [odds-api/odds-api](https://github.com/odds-api/odds-api): SDK, exemplos e contrato OpenAPI abertos, porém dados reais precisam de chave `ODDS_API_KEY`. **Não resolve** a exigência de zero cadastro.
+- [Betfair licença oficial](https://support.developer.betfair.com/hc/en-us/articles/360002464152-Which-API-Licence-Do-I-Require): qualquer acesso à API oficial Exchange exige uma conta KYC verificada. Sem essa conta, **não declarar volume negociado > R$3.000** usando cotações de outras fontes.
+- [pinnacleapi/pinnacleapi-documentation](https://github.com/pinnacleapi/pinnacleapi-documentation): acesso à API oficial da Pinnacle fechado ao público em 2025; nosso coletor usa **somente** a superfície de visitante do site, não a API profissional/licenciada.
+
+**Ainda faltando para paridade com uma casa:** odds de escanteios/cartões com origem verificável; dados de volume negociado genuíno; maior cobertura de competições e eventos; métricas de confiabilidade por fonte; regulamentação e infraestrutura de negociação (não fazem parte de um coletor de pesquisa).
