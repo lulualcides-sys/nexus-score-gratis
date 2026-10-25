@@ -82,7 +82,9 @@ def summarize(document, now):
                 invalid += 1
                 continue
             market_key = str(quote["raw_market_key"])
-            ident = (family, market_key, str(quote.get("period")), str(quote.get("line")))
+            ident = (family, market_key, str(quote.get("period")))
+            # Handicap: linha de home -0.5 corresponde à linha away +0.5.
+            # O código bruto do mercado (key) é o identificador da mesma linha.
             # A mesma seleção não pode ser contada duas vezes para a mesma linha.
             if selection in grouped[ident]:
                 continue
@@ -93,7 +95,7 @@ def summarize(document, now):
             usable = True
         if usable:
             quoted_games += 1
-        for (family, key, period, line), selections in grouped.items():
+        for (family, key, period), selections in grouped.items():
             if set(selections) != EXPECTED[family]:
                 incomplete += 1
                 families[family]["incomplete_lines"] += 1
@@ -108,7 +110,7 @@ def summarize(document, now):
                 example.append({
                     "fixture": str(game.get("home") or "")[:70] + " x " +
                                str(game.get("away") or "")[:70],
-                    "market_family": family, "raw_market_key": key, "line": line,
+                    "market_family": family, "raw_market_key": key, "line_from_market_key": key,
                     "observed_at":document["checked_at"],
                     "selections":selections, "overround_pct":round(margin*100,2)
                 })
