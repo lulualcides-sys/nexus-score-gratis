@@ -332,34 +332,6 @@ def report_from_games(games, updated_at, changed):
             "note": "Pesquisa e coleta: sem EV validado, sem execução, sem P/L real."}
 
 
-def telegram_send(report):
-    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
-    if not token or not chat:
-        print("Telegram não configurado: configure os dois secrets no GitHub.", flush=True)
-        return False
-    if report["new_observations"] == 0:
-        print("Sem novidades esportivas para notificar.", flush=True)
-        return False
-    markets = ", ".join(f"{k}: {n}" for k, n in sorted(
-        report["quoted_market_names"].items(), key=lambda kv: -kv[1])[:7]) or "Nenhuma cotação verificável"
-    msg = (f"📊 NEXUS | Coleta de mercados\n"
-           f"Jogos na base: {report['games_in_feed']} | Ao vivo: {report['live_games_in_feed']}\n"
-           f"Novas observações: {report['new_observations']}\n"
-           f"Cotações observadas: {report['quotes_observed']}\n"
-           f"Mercados com preços: {markets}\n"
-           f"⚠️ Monitoramento de dados, não sinal de lucro ou aposta.\n"
-           f"https://nexus-score-gratis.pages.dev/")
-    payload = json.dumps({"chat_id": chat, "text": msg}, ensure_ascii=False).encode()
-    req = request.Request("https://api.telegram.org/bot" + token + "/sendMessage",
-                          data=payload, headers={"Content-Type": "application/json"}, method="POST")
-    with request.urlopen(req, timeout=20) as response:
-        result = json.loads(response.read(20000))
-    if not result.get("ok"):
-        raise RuntimeError("Telegram não confirmou o envio")
-    print("Resumo enviado ao Telegram.", flush=True)
-    return True
-
-
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--source", default=os.environ.get("NEXUS_SOURCE_URL") or SOURCE)
@@ -388,8 +360,7 @@ def main():
         print(json.dumps({k: report[k] for k in (
             "collected_at", "nexus_exported_at", "games_in_feed",
             "new_observations", "quotes_observed")}, ensure_ascii=False))
-        if not args.no_telegram:
-            telegram_send(report)
+        print("Coleta silenciosa; Telegram exclusivamente no resumo diário do Nexus Quant.")
     except Exception as exc:
         # Não declarar como coletado se o provedor ou Telegram falhar.
         print(f"Coleta com erro: {type(exc).__name__}: {exc}", file=sys.stderr)
