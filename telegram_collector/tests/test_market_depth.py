@@ -31,6 +31,15 @@ class QualityTests(unittest.TestCase):
         self.assertAlmostEqual(out["families"]["match_odds"]["median_overround_pct"],-1.19,delta=.08)
         self.assertNotIn("roi",out)
 
+    def test_asian_handicap_opposite_price_points_form_one_market(self):
+        first=q("s;0;s;-0.5","asian_handicap","home",2.46)
+        second=q("s;0;s;-0.5","asian_handicap","away",1.5587)
+        first["line"]=-0.5
+        second["line"]=0.5
+        out=summarize(doc([first,second]),NOW)
+        self.assertEqual(out["complete_market_lines"],1)
+        self.assertEqual(out["families"]["asian_handicap"]["complete_lines"],1)
+
     def test_one_sided_market_is_not_complete(self):
         d=doc([q("s;0;m","match_odds","home",1.7)])
         out=summarize(d,NOW)
