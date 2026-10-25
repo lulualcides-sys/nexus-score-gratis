@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 from telegram_collector.coverage_radar import (
-    build, collect_records, same_teams_and_time
+    build, collect_records, same_teams_and_time, priority_match
 )
 
 class CoverageRadarTests(unittest.TestCase):
@@ -79,6 +79,28 @@ class CoverageRadarTests(unittest.TestCase):
         self.assertTrue(same_teams_and_time(
             {"home":"Real Madrid CF","away":"Barcelona","kickoff_unix":2000},
             {"home":"Real Madrid","away":"Barcelona FC","kickoff_unix":2200}))
+
+    def test_protected_club_aliases_and_correct_league_identity(self):
+        self.assertTrue(same_teams_and_time(
+            {"home":"LAFC", "away":"LA Galaxy","kickoff_unix":1100000,
+             "league":"usa.1"},
+            {"home":"Los Angeles FC", "away":"Los Angeles Galaxy",
+             "kickoff_unix":1100200,"league":"MLS"}))
+        self.assertTrue(same_teams_and_time(
+            {"home":"Sporting CP","away":"Académico Viseu","kickoff_unix":1100000,
+             "league":"por.1"},
+            {"home":"Sporting CP","away":"Académico de Viseu",
+             "kickoff_unix":1100000,"league":"Liga Portugal"}))
+        self.assertFalse(same_teams_and_time(
+            {"home":"Team A","away":"Team B","kickoff_unix":1100000,
+             "league":"eng.1"},
+            {"home":"Team A","away":"Team B","kickoff_unix":1100000,
+             "league":"ita.1"}))
+        self.assertIsNone(priority_match("Canadian Premier League"))
+        self.assertIsNone(priority_match("MLS Next Pro"))
+        self.assertIsNone(priority_match("Liga MX Femenil Apertura"))
+        self.assertEqual(priority_match("Premier League",{"league_code":"eng.1"}),"eng.1")
+        self.assertEqual(priority_match("Premier League",{"id":"espn-eng.1-123"}),"eng.1")
 
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
