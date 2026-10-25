@@ -28,12 +28,9 @@ jobs:
           git -C _market_data sparse-checkout init --cone
           git -C _market_data sparse-checkout set market-history
           git -C _market_data checkout HEAD
-      - name: Gerar resultado do dia e enviar pelo MESMO bot configurado
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 telegram_collector/daily.py --archive _market_data/market-history
-      - name: Arquivar relatório e marcador para não repetir mensagens
+      - name: Gerar resultado diário para o bot existente no Nexus Quant
+        run: python3 telegram_collector/daily.py --archive _market_data/market-history --no-telegram
+      - name: Arquivar resultado diário na branch de dados
         run: |
           set -euo pipefail
           cd _market_data
