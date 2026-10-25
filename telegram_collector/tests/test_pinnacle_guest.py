@@ -60,7 +60,7 @@ class PinnacleGuestTests(TestCase):
         odds=[market(), market("s;0;m",typ="moneyline")]
         options=[sample_match()]
         def feed(path):
-            return options if path == "/sports/29/matchups" else odds
+            return options if path == "/sports/29/matchups/highlighted" else odds
         with TemporaryDirectory() as d:
             a=run(Path(d),NOW,getter=feed)
             self.assertEqual(a["odds_observed"],4)
@@ -73,6 +73,12 @@ class PinnacleGuestTests(TestCase):
             p=next((Path(d)/"public-no-key").glob("pinnacle-20*.json"))
             saved=json.loads(p.read_text())
             self.assertEqual(len(saved["games"]["111"]["snapshots"]),2)
+
+    def test_supported_guest_envelope(self):
+        wrapped = {"matchups": [sample_match()]}
+        self.assertEqual(get_focus_matches(wrapped,NOW)[0]["provider_matchup_id"],111)
+        with self.assertRaises(ValueError):
+            get_focus_matches({"error": "restricted"},NOW)
 
     def test_feed_unavailable_does_not_claim_prices(self):
         def blocked(path):
