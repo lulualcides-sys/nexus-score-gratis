@@ -6,6 +6,7 @@ from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import re
@@ -67,7 +68,12 @@ def normalize_liquidity(game):
     raw = game.get("liquidity")
     if not isinstance(raw, dict):
         return {"status": "unknown", "minimum_brl": MIN_LIQUIDITY_BRL}
-    amount = finite_nonnegative(raw.get("amount"))
+    try:
+        amount = float(raw.get("amount"))
+        if not math.isfinite(amount) or amount < 0 or amount > 1e15:
+            amount = None
+    except (ValueError, TypeError, OverflowError):
+        amount = None
     currency = str(raw.get("currency") or "").upper()
     kind = str(raw.get("kind") or "")
     source = str(raw.get("source") or "").strip()
