@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:09:04.099390+00:00",
+  "checked_at": "2026-10-25T23:21:24.546979+00:00",
   "horizon_hours": 48,
-  "important_games": 18,
-  "verified_bookmaker_games": 12,
+  "important_games": 17,
+  "verified_bookmaker_games": 11,
   "indicative_only_games": 1,
   "missing_bookmaker_price_games": 5,
   "tipsaudit": {
     "status": "checked",
-    "matched": 4,
+    "matched": 5,
     "indicative": 3,
-    "new_priority": 2
+    "new_priority": 1
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 8,
+    "matched": 7,
     "new_verified_game": 3,
-    "offers": 933,
+    "offers": 827,
     "market_families": {
-      "match_odds": 33,
-      "team_goals": 106,
-      "asian_handicap": 242,
-      "total_goals": 240,
-      "half_time": 24,
-      "first_half_team_goals": 32,
-      "first_half_handicap": 128,
-      "first_half_goals": 128
+      "match_odds": 30,
+      "team_goals": 96,
+      "asian_handicap": 214,
+      "total_goals": 214,
+      "half_time": 21,
+      "first_half_team_goals": 28,
+      "first_half_handicap": 112,
+      "first_half_goals": 112
     }
   },
   "priority_fixtures": [
@@ -70,10 +70,14 @@
     {
       "home": "Sevilla",
       "away": "Osasuna",
-      "kickoff_unix": 1793044800.0,
       "league": "La Liga",
       "league_code": "esp.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793044800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "Pinnacle guest"
+      ],
       "verified_quotes": 133,
       "indicative_bookmaker_quotes": [
         {
@@ -91,11 +95,7 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit",
-        "Pinnacle guest"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
     },
@@ -135,7 +135,7 @@
       "league": "Liga MX",
       "league_code": "mex.1",
       "kickoff_unix": 1792969200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob",
         "Pinnacle guest"
@@ -160,7 +160,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 111,
+      "verified_quotes": 114,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.8,
@@ -222,27 +222,6 @@
       "coverage": "verified_price"
     },
     {
-      "home": "River Plate",
-      "away": "Racing Club",
-      "league": "arg.1",
-      "league_code": "arg.1",
-      "kickoff_unix": 1792966500.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 141,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 106,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Barracas Central",
       "away": "Estudiantes de Río Cuarto",
       "league": "arg.1",
@@ -253,7 +232,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 37,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -271,7 +250,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 36,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -354,7 +333,7 @@
       "league": "col.1",
       "league_code": "col.1",
       "kickoff_unix": 1792969800.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob"
