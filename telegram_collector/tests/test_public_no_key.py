@@ -1,5 +1,8 @@
 import unittest
-from telegram_collector.public_no_key import parse
+from tempfile import TemporaryDirectory
+from pathlib import Path
+import json
+from telegram_collector.public_no_key import parse, archive_changes
 
 class PublicNoKeyTests(unittest.TestCase):
     def sample(self):
@@ -27,6 +30,22 @@ class PublicNoKeyTests(unittest.TestCase):
         self.assertEqual(q["price_source_updated_at"], None)
         self.assertIn("unconfirmed", q["verification"])
         self.assertEqual(out["attribution_required"], "https://tipsaudit.com/")
+
+    def test_archive_prices_only_when_changed(self):
+        data = parse(self.sample())
+        with TemporaryDirectory() as folder:
+            target = Path(folder)
+            self.assertEqual(archive_changes(data, target), 1)
+            self.assertEqual(archive_changes(data, target), 0)
+            data["matches"][0]["best_soft_bookmaker_quote"]["price"] = 1.76
+            self.assertEqual(archive_changes(data, target), 1)
+            files = list(target.glob("tipsaudit-*.json"))
+            self.assertEqual(len(files), 1)
+            saved = json.loads(files[0].read_text())
+            record = next(iter(saved["matches"].values()))
+            self.assertEqual(len(record["snapshots"]), 2)
+            self.assertEqual(record["snapshots"][0]["bookmaker_quote_indicative"]["price"], 1.71)
+            self.assertEqual(record["snapshots"][1]["bookmaker_quote_indicative"]["price"], 1.76)
 
     def test_no_odd_invented_from_fair_odds(self):
         sample = self.sample()
