@@ -5,7 +5,7 @@ from tempfile import TemporaryDirectory
 import unittest
 
 from telegram_collector.coverage_radar import (
-    build, collect_records, same_teams_and_time, priority_match
+    build, collect_records, same_teams_and_time, priority_match, enrich_pinnacle
 )
 
 class CoverageRadarTests(unittest.TestCase):
@@ -101,6 +101,35 @@ class CoverageRadarTests(unittest.TestCase):
         self.assertIsNone(priority_match("Liga MX Femenil Apertura"))
         self.assertEqual(priority_match("Premier League",{"league_code":"eng.1"}),"eng.1")
         self.assertEqual(priority_match("Premier League",{"id":"espn-eng.1-123"}),"eng.1")
+
+    def test_guest_pinnacle_is_verified_only_if_pregame_recent_same_teams(self):
+        now=datetime.now(timezone.utc)
+        k=(now+timedelta(hours=2)).timestamp()
+        records=[{"home":"Liverpool","away":"Chelsea","league":"Premier League",
+                  "league_code":"eng.1","kickoff_unix":k,
+                  "verified_quotes":0, "indicative_bookmaker_quotes":[],
+                  "data_sources":["ESPN"]}]
+        quote = {"bookmaker":"Pinnacle", "source":"Pinnacle public guest web feed",
+                 "selection":"over", "raw_market_key":"s;0;t;2.5",
+                 "market_family":"total_goals", "odds_decimal":1.94,
+                 "line":2.5,"observed_at":now.isoformat()}
+        payload={"schema":1,"checked_at":now.isoformat(),
+                 "matches":{"22":{"home":"Liverpool FC","away":"Chelsea",
+                                  "kickoff_utc":datetime.fromtimestamp(k,timezone.utc).isoformat(),
+                                  "odds":[quote]}}}
+        with TemporaryDirectory() as tmp:
+            path=Path(tmp)/"pinnacle-latest.json"
+            path.write_text(json.dumps(payload))
+            out=enrich_pinnacle(records,path,now)
+            self.assertEqual(out["new_verified_game"],1)
+            self.assertEqual(records[0]["verified_quotes"],1)
+            self.assertEqual(out["market_families"]["total_goals"],1)
+            records[0]["verified_quotes"]=0
+            payload["matches"]["22"]["odds"][0]["observed_at"]=(now+timedelta(hours=5)).isoformat()
+            path.write_text(json.dumps(payload))
+            bad=enrich_pinnacle(records,path,now)
+            self.assertEqual(bad["offers"],0)
+            self.assertEqual(records[0]["verified_quotes"],0)
 
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
