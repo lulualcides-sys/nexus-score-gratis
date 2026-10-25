@@ -31,6 +31,18 @@ python3 telegram_collector/daily.py --archive market-history --no-telegram
 
 O segundo comando exige acesso ao snapshot público do NEXUS. O terceiro pode gerar um relatório vazio se não houver coletas salvas para o dia. A rotina de produção lê arquivos da branch isolada.
 
+## Redundância para jogos importantes (sem chave)
+
+O módulo [priority_espn.py](priority_espn.py), baseado na documentação open source de [sportsdata-mcp](https://github.com/DanielTomaro13/sportsdata-mcp) e no [catálogo ESPN-API](https://github.com/0xShakhawat/ESPN-API/blob/main/docs/sports/soccer.md), consulta placares públicos sem login em até **8 combinações liga/dia por execução**. Executa como etapa independente; se a ESPN estiver indisponível, o NEXUS continua funcionando.
+
+- Prioriza Champions League, Libertadores, Brasileirão, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Liga MX, Liga Argentina e outras competições da lista no código. Rodízio de ligas evita buscar só uma competição.
+- Registra jogos importantes ausentes da primeira coleta; não preenche odds artificiais. Quando a ESPN apresenta uma oferta 1X2 completa, armazena **os 3 preços de uma mesma casa** e a hora em que o feed foi consultado, somente antes do apito.
+- Faz correspondência por **mandante, visitante e horário até 10 minutos**; quando já há uma partida equivalente no histórico do NEXUS, prefere reaproveitá-la. Não converte probabilidades de modelo em odd.
+- O resultado `market-history/priority-espn-status.json` apresenta tentativas, jogos descobertos, cotações registradas, erros e exemplos de partidas importantes **sem odds públicas verificadas**.
+- A API ESPN não é oficialmente documentada/suportada: poderá mudar ou ficar indisponível. Cobertura de jogos **não garante cobertura de cotações**. Não há validação de liquidez de R$ 3 mil nessa fonte.
+
+**Ferramenta examinada, mas não implantada:** [OddsHarvester](https://github.com/jordantete/OddsHarvester) suporta dezenas de mercados, porém depende da coleta automatizada do OddsPortal, cujos [Termos de Uso §2.11](https://www.oddsportal.com/terms/) proíbem scraping sem consentimento. Não é uma fonte segura de produção para este sistema.
+
 ## Fonte nova — odds sem cadastro e sem chave
 
 Adicionado `public_no_key.py`, leitura da API JSON **expressamente gratuita** de [TipsAudit](https://tipsaudit.com/api), com atribuição obrigatória [tipsaudit.com](https://tipsaudit.com/). Executa dentro do GitHub Actions junto da coleta, sem credenciais, sem login e sem scraping das páginas de casas de aposta.
