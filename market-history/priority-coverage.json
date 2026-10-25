@@ -1,0 +1,998 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-25T20:06:50.204407+00:00",
+  "horizon_hours": 48,
+  "important_games": 33,
+  "verified_bookmaker_games": 11,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 18,
+  "tipsaudit": {
+    "status": "checked",
+    "matched": 5,
+    "indicative": 4,
+    "new_priority": 5
+  },
+  "priority_fixtures": [
+    {
+      "home": "Deportivo Cali",
+      "away": "Olimpia",
+      "league": "Copa Libertadores Femenina - Quarter-finals",
+      "league_code": "conmebol.libertadores",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cruzeiro",
+      "away": "Libertad",
+      "league": "Copa Libertadores Femenina - Quarter-finals",
+      "league_code": "conmebol.libertadores",
+      "kickoff_unix": 1792972800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cavalry FC",
+      "away": "Vancouver FC",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "HFX Wanderers FC",
+      "away": "Supra du Québec",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Inter Toronto FC",
+      "away": "Atlético Ottawa",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Pacific FC",
+      "away": "Forge FC",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Barcelona",
+      "away": "Real Madrid",
+      "league": "esp.1",
+      "league_code": "esp.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 23,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Sevilla",
+      "away": "Osasuna",
+      "kickoff_unix": 1793044800.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.02,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.97,
+        "draw": 3.61,
+        "away": 4.62
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
+      "tipsaudit_id": "11873",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Udinese",
+      "away": "AC Milan",
+      "league": "ita.1",
+      "league_code": "ita.1",
+      "kickoff_unix": 1792957500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 29,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Paris Saint-Germain",
+      "away": "Lyon",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793043000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.42,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.4,
+        "draw": 6.31,
+        "away": 7.78
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
+      "tipsaudit_id": "11457",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Atlas",
+      "away": "Puebla",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792969200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.73,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.69,
+        "draw": 4.31,
+        "away": 5.63
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11478/atlas-vs-puebla-2026-10-25",
+      "tipsaudit_id": "11478",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Tigres (W)",
+      "away": "Monterrey (W)",
+      "league": "Liga MX Femenil Apertura",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792973160.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Querétaro FC",
+      "away": "Cruz Azul",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792976400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 3.76,
+        "draw": 4.0,
+        "away": 2.07
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
+      "tipsaudit_id": "11484",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "CF América",
+      "away": "Pachuca",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792976700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.65,
+        "draw": 4.7,
+        "away": 5.48
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
+      "tipsaudit_id": "11479",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Club Tijuana",
+      "away": "Santos Laguna",
+      "kickoff_unix": 1792984200.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.09,
+        "draw": 3.98,
+        "away": 3.71
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
+      "tipsaudit_id": "11486",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Independiente",
+      "away": "Boca Juniors",
+      "league": "arg.1",
+      "league_code": "arg.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 27,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "River Plate",
+      "away": "Racing Club",
+      "league": "arg.1",
+      "league_code": "arg.1",
+      "kickoff_unix": 1792966500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 17,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Barracas Central",
+      "away": "Estudiantes de Río Cuarto",
+      "league": "arg.1",
+      "league_code": "arg.1",
+      "kickoff_unix": 1792974600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 14,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Central Córdoba (Santiago del Estero)",
+      "away": "Vélez Sarsfield",
+      "league": "arg.1",
+      "league_code": "arg.1",
+      "kickoff_unix": 1792974600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 9,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Chattanooga",
+      "away": "Connecticut FC",
+      "kickoff_unix": 1792962000.0,
+      "league": "MLS Next Pro",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.18,
+        "draw": 3.91,
+        "away": 3.49
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12249/chattanooga-vs-connecticut-fc-2026-10-25",
+      "tipsaudit_id": "12249",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Chattanooga FC",
+      "away": "Connecticut United",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792962000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Crown Legacy",
+      "away": "Columbus Crew II",
+      "kickoff_unix": 1792969200.0,
+      "league": "MLS Next Pro",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.87,
+        "draw": 4.52,
+        "away": 4.1
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12250/crown-legacy-vs-columbus-crew-ii-2026-10-25",
+      "tipsaudit_id": "12250",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Crown Legacy FC",
+      "away": "Columbus Crew 2",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792969200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Austin FC II",
+      "away": "Los Angeles FC II",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792974600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.67,
+        "draw": 4.73,
+        "away": 5.3
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12251/austin-ii-vs-los-angeles-fc-ii-2026-10-26",
+      "tipsaudit_id": "12251",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "LAFC",
+      "away": "LA Galaxy",
+      "league": "usa.1",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792976400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 17,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Los Angeles FC",
+      "away": "LA Galaxy",
+      "league": "Major League Soccer",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792976400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Los Angeles FC",
+      "away": "Los Angeles Galaxy",
+      "kickoff_unix": 1792976400.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.6,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.59,
+        "draw": 5.03,
+        "away": 5.82
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
+      "tipsaudit_id": "11483",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Portland Timbers 2",
+      "away": "Ventura County FC",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792980000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Sporting CP",
+      "away": "Académico Viseu",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1792960200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Sporting CP",
+      "away": "Académico de Viseu",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1792960200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 6,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Alianza FC",
+      "away": "Internacional de Bogotá",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1792962300.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 24,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Atlético Nacional",
+      "away": "Independiente Medellín",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1792969800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 17,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Deportes Tolima",
+      "away": "Deportivo Pasto",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1792977300.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 7,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    }
+  ],
+  "top_missing": [
+    {
+      "home": "Deportivo Cali",
+      "away": "Olimpia",
+      "league": "Copa Libertadores Femenina - Quarter-finals",
+      "league_code": "conmebol.libertadores",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cruzeiro",
+      "away": "Libertad",
+      "league": "Copa Libertadores Femenina - Quarter-finals",
+      "league_code": "conmebol.libertadores",
+      "kickoff_unix": 1792972800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cavalry FC",
+      "away": "Vancouver FC",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "HFX Wanderers FC",
+      "away": "Supra du Québec",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Inter Toronto FC",
+      "away": "Atlético Ottawa",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Pacific FC",
+      "away": "Forge FC",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "kickoff_unix": 1792958400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Tigres (W)",
+      "away": "Monterrey (W)",
+      "league": "Liga MX Femenil Apertura",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792973160.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Querétaro FC",
+      "away": "Cruz Azul",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792976400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
+      "tipsaudit_id": "11484",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "CF América",
+      "away": "Pachuca",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1792976700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
+      "tipsaudit_id": "11479",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Club Tijuana",
+      "away": "Santos Laguna",
+      "kickoff_unix": 1792984200.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
+      "tipsaudit_id": "11486",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Chattanooga",
+      "away": "Connecticut FC",
+      "kickoff_unix": 1792962000.0,
+      "league": "MLS Next Pro",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12249/chattanooga-vs-connecticut-fc-2026-10-25",
+      "tipsaudit_id": "12249",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Chattanooga FC",
+      "away": "Connecticut United",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792962000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Crown Legacy",
+      "away": "Columbus Crew II",
+      "kickoff_unix": 1792969200.0,
+      "league": "MLS Next Pro",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12250/crown-legacy-vs-columbus-crew-ii-2026-10-25",
+      "tipsaudit_id": "12250",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Crown Legacy FC",
+      "away": "Columbus Crew 2",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792969200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Austin FC II",
+      "away": "Los Angeles FC II",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792974600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12251/austin-ii-vs-los-angeles-fc-ii-2026-10-26",
+      "tipsaudit_id": "12251",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Los Angeles FC",
+      "away": "LA Galaxy",
+      "league": "Major League Soccer",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792976400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Portland Timbers 2",
+      "away": "Ventura County FC",
+      "league": "MLS Next Pro - Conference - Semi-finals",
+      "league_code": "usa.1",
+      "kickoff_unix": 1792980000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Sporting CP",
+      "away": "Académico Viseu",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1792960200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    }
+  ],
+  "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
+}
