@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:26:35.651641+00:00",
+  "checked_at": "2026-10-25T23:34:10.143904+00:00",
   "horizon_hours": 48,
   "important_games": 17,
   "verified_bookmaker_games": 10,
@@ -9,7 +9,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
-    "indicative": 3,
+    "indicative": 2,
     "new_priority": 1
   },
   "pinnacle_guest": {
@@ -222,7 +222,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 126,
+      "verified_quotes": 129,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.8,
@@ -251,7 +251,7 @@
       "fair_odds_modelled": {
         "home": 1.67,
         "draw": 4.6,
-        "away": 5.41
+        "away": 5.42
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
       "tipsaudit_id": "11479",
@@ -312,7 +312,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 48,
+      "verified_quotes": 51,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -368,19 +368,11 @@
         "ESPN"
       ],
       "verified_quotes": 38,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.6,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.59,
-        "draw": 4.99,
-        "away": 5.85
+        "home": 1.61,
+        "draw": 4.93,
+        "away": 5.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
       "tipsaudit_id": "11483",
