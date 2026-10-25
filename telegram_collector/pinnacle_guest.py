@@ -186,8 +186,13 @@ def parse_markets(raw, observed):
 
 
 def get_focus_matches(payload, now, limit=MAX_MATCHUPS):
+    # Alguns endpoints guest retornam lista direta; outros encapsulam em
+    # 'matchups' ou 'data'. Não tratar envelopes de erro como catálogo vazio.
+    if isinstance(payload, dict):
+        payload = next((payload[k] for k in ("matchups", "data", "items")
+                        if isinstance(payload.get(k), list)), None)
     if not isinstance(payload, list):
-        raise ValueError("Matchup listing is not a list")
+        raise ValueError("Matchup listing has no supported list envelope")
     matches = [m for m in (parse_matchup(row, now) for row in payload) if m]
     def priority(m):
         league = m["league"].lower()
@@ -212,7 +217,7 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
     target = directory / "pinnacle-latest.json"
     archive = directory / ("pinnacle-" + now.astimezone(LOCAL).date().isoformat() + ".json")
     try:
-        response = getter("/sports/29/matchups")
+        response = getter("/sports/29/matchups/highlighted")
         games = get_focus_matches(response, now, max_games)
         status["matches_discovered"] = len(response)
         result = {}
@@ -230,7 +235,8 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
             except (HTTPError, URLError, ValueError, TimeoutError, OSError) as e:
                 if len(status["errors"]) < 10:
                     status["errors"].append({"matchup_id":mid,"error":type(e).__name__,
-                                             "http_status":getattr(e,"code",None)})
+                                             "http_status":getattr(e,"code",None),
+                                             "reason":str(e)[:120]})
                 continue
             status["matches_checked"] += 1
             result[str(mid)] = {**game, "odds": prices}
@@ -263,7 +269,8 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
     except (HTTPError, URLError, ValueError, TimeoutError, OSError) as exc:
         status["status"] = "unavailable"
         status["errors"].append({"error":type(exc).__name__,
-                                 "http_status":getattr(exc,"code",None)})
+                                 "http_status":getattr(exc,"code",None),
+                                 "reason":str(exc)[:120]})
         # STOP on blocked feed. No retry, fake headers, proxies or credential guessing.
     (directory/"pinnacle-status.json").write_text(json.dumps(status,indent=2,ensure_ascii=False)+"\n",
                                                   encoding="utf-8")
