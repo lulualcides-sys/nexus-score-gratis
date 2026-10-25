@@ -46,11 +46,8 @@ jobs:
           git -C _market_data sparse-checkout init --cone
           git -C _market_data sparse-checkout set market-history
           git -C _market_data checkout HEAD
-      - name: Coletar todos os mercados presentes no NEXUS e avisar no Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 telegram_collector/collect.py --archive _market_data/market-history
+      - name: Coletar mercados silenciosamente; Telegram só no fechamento diário
+        run: python3 telegram_collector/collect.py --archive _market_data/market-history --no-telegram
       - name: Salvar histórico exclusivamente na branch de dados
         if: success()
         shell: bash
