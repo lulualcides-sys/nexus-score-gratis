@@ -1,1 +1,1 @@
-{"checked_at":"2026-10-25T10:39:49.971138+00:00","days":["2026-10-25","2026-10-24","2026-10-23"],"details":28,"errors":[],"events":2,"failed_leagues":0,"games":1656,"with_stats":28}
+{"checked_at":"2026-10-25T11:38:42.887301+00:00","days":["2026-10-25","2026-10-24","2026-10-23"],"details":27,"errors":["detail espn-bra.2-401860402: <urlopen error _ssl.c:983: The handshake operation timed out>"],"events":2,"failed_leagues":0,"games":1656,"with_stats":27}
