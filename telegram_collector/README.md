@@ -31,9 +31,22 @@ python3 telegram_collector/daily.py --archive market-history --no-telegram
 
 O segundo comando exige acesso ao snapshot público do NEXUS. O terceiro pode gerar um relatório vazio se não houver coletas salvas para o dia. A rotina de produção lê arquivos da branch isolada.
 
+## Radar de cobertura de jogos importantes (prioridade absoluta)
+
+O arquivo [coverage_radar.py](coverage_radar.py) cruza as partidas dos jogos mais importantes na branch de dados com o feed gratuito TipsAudit, **sem consumir novas requisições de terceiros**. Resultado em `market-history/priority-coverage.json`, sempre com identificação de fonte.
+
+- `verified_bookmaker_games`: jogos com ao menos uma odd recebida de casa identificada, com horário e fase consistentes. Não implica liquidez de R$ 3.000.
+- `indicative_only_games`: jogo encontrado com cotação indicativa de uma casa no TipsAudit, mas **sem confirmação do horário de origem**. Não entra como odd válida de entrada.
+- `missing_bookmaker_price_games`: partida importante encontrada, ainda sem preço de casa. Permanece no radar para tentar novamente no próximo ciclo.
+- A união das fontes só ocorre com mandante, visitante e kickoff coincidentes (até 10 minutos) — sem cruzamento aproximado perigoso entre jogos diferentes.
+- Além dos placares ESPN, a fonte `priority_espn.py` agora tenta o **resumo público da ESPN** em até três partidas pré-jogo sem odds por rodada, apenas nas 8 horas antes do começo.
+- O monitoramento de jogos é abrangente, mas a qualidade continua explícita. **Nenhum software pode garantir que toda casa publique todo mercado sem login ou licença.**
+
+O [relatório de futebol do Nexus Quant](https://github.com/lulualcides-sys/nexus-quant-paper/blob/main/src/nexus_football_daily.py) reaproveita o mesmo radar na mensagem única das **00h01 de Brasília**. Se esse arquivo estiver desatualizado ou indisponível, o fechamento normal é enviado mesmo assim.
+
 ## Redundância para jogos importantes (sem chave)
 
-O módulo [priority_espn.py](priority_espn.py), baseado na documentação open source de [sportsdata-mcp](https://github.com/DanielTomaro13/sportsdata-mcp) e no [catálogo ESPN-API](https://github.com/0xShakhawat/ESPN-API/blob/main/docs/sports/soccer.md), consulta placares públicos sem login em até **8 combinações liga/dia por execução**. Executa como etapa independente; se a ESPN estiver indisponível, o NEXUS continua funcionando.
+O módulo [priority_espn.py](priority_espn.py), baseado na documentação open source de [sportsdata-mcp](https://github.com/DanielTomaro13/sportsdata-mcp) e no [catálogo ESPN-API](https://github.com/0xShakhawat/ESPN-API/blob/main/docs/sports/soccer.md), consulta placares públicos sem login em até **10 combinações liga/dia por execução**. Executa como etapa independente; se a ESPN estiver indisponível, o NEXUS continua funcionando.
 
 - Prioriza Champions League, Libertadores, Brasileirão, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Liga MX, Liga Argentina e outras competições da lista no código. Rodízio de ligas evita buscar só uma competição.
 - Registra jogos importantes ausentes da primeira coleta; não preenche odds artificiais. Quando a ESPN apresenta uma oferta 1X2 completa, armazena **os 3 preços de uma mesma casa** e a hora em que o feed foi consultado, somente antes do apito.
