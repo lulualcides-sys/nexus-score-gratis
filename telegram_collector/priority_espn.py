@@ -43,8 +43,8 @@ PRIORITY = (
     ("col.1", "Colômbia Primera A"),
 )
 ALIASES = (
-    ("uefa.champions", ("champions league", "liga dos campeoes")),
-    ("conmebol.libertadores", ("libertadores",)),
+    ("uefa.champions", ("champions league", "uefa champions league", "liga dos campeoes")),
+    ("conmebol.libertadores", ("libertadores", "copa libertadores", "conmebol libertadores")),
     ("conmebol.sudamericana", ("sudamericana", "sul americana", "sul-americana")),
     ("bra.copa_do_brazil", ("copa do brasil",)),
     ("bra.1", ("brasileirao", "brasileirao serie a", "brazilian serie a")),
