@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-25T20:33:40.768877+00:00",
+  "checked_at": "2026-10-25T20:34:28.073096+00:00",
   "source": "Pinnacle public Arcadia guest",
   "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
-  "status": "ok",
+  "status": "partial_blocked",
   "matches_discovered": 37,
-  "matches_checked": 11,
+  "matches_checked": 8,
   "new_price_snapshots": 0,
-  "odds_observed": 1249,
+  "odds_observed": 879,
   "market_families": {
-    "match_odds": 75,
-    "total_goals": 672,
-    "asian_handicap": 502
+    "match_odds": 51,
+    "total_goals": 470,
+    "asian_handicap": 358
   },
   "errors": [
     {
