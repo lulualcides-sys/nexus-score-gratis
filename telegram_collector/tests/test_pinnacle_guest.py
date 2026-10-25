@@ -1,6 +1,7 @@
 import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.error import HTTPError
 from tempfile import TemporaryDirectory
 from unittest import TestCase
 
@@ -84,6 +85,25 @@ class PinnacleGuestTests(TestCase):
         self.assertEqual(get_focus_matches(wrapped,NOW)[0]["provider_matchup_id"],111)
         with self.assertRaises(ValueError):
             get_focus_matches({"error": "restricted"},NOW)
+
+    def test_rate_or_access_block_stops_next_requests_and_keeps_prices(self):
+        calls = []
+        matches = [sample_match(mid=1),sample_match(mid=2),sample_match(mid=3)]
+        def getter(path):
+            calls.append(path)
+            if path == "/sports/29/matchups/highlighted":
+                return matches
+            if path.endswith("/2/markets/related/straight"):
+                raise HTTPError(path, 403, "Forbidden", None, None)
+            return [market()]
+        with TemporaryDirectory() as folder:
+            result=run(Path(folder),NOW,getter=getter,max_games=3)
+            self.assertEqual(result["status"],"partial_blocked")
+            self.assertEqual(result["matches_checked"],1)
+            self.assertEqual(result["odds_observed"],2)
+            self.assertEqual(len(calls),3)
+            stored=Path(folder)/"public-no-key"/"pinnacle-latest.json"
+            self.assertTrue(stored.exists())
 
     def test_feed_unavailable_does_not_claim_prices(self):
         def blocked(path):
