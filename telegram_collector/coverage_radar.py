@@ -196,10 +196,82 @@ def enrich_tipsaudit(records, path, now):
             "new_priority": added}
 
 
+
+def enrich_pinnacle(records, path, now):
+    """Usa apenas odds observadas do feed guest Pinnacle, sem preço inferido.
+
+    Correspondência dos DOIS clubes e kickoff <= 10min, sem criar fixture
+    fictícia e sem aceitar snapshot com mais de 4 horas.
+    """
+    path = Path(path)
+    if not path.exists():
+        return {"status": "unavailable", "matched": 0, "new_verified_game": 0,
+                "offers": 0, "market_families": {}}
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(doc,dict) or doc.get("schema") != 1:
+        raise ValueError("Pinnacle guest snapshot schema mismatch")
+    if not isinstance(doc.get("matches"),dict):
+        raise ValueError("Pinnacle guest snapshot match list malformed")
+    at = unix(doc.get("checked_at"))
+    age = now.timestamp() - at if at is not None else float("inf")
+    if not -120 <= age <= 4 * 3600:
+        return {"status": "stale", "matched": 0, "new_verified_game": 0,
+                "offers": 0, "market_families": {}}
+    matched, gains, offers = 0, 0, 0
+    fam = {}
+    for entry in doc["matches"].values():
+        if not isinstance(entry,dict):
+            continue
+        when = unix(entry.get("kickoff_utc"))
+        if when is None or when <= now.timestamp()-3600 or when > now.timestamp()+HORIZON_HOURS*3600:
+            continue
+        target = {"home":entry.get("home"),"away":entry.get("away"),
+                  "kickoff_unix":when}
+        candidates = [rec for rec in records if same_teams_and_time(rec,target)]
+        if len(candidates) != 1:
+            continue
+        good = set()
+        prices = entry.get("odds") or []
+        if not isinstance(prices,list):
+            continue
+        for q in prices:
+            if not isinstance(q,dict) or q.get("bookmaker") != "Pinnacle":
+                continue
+            quote_at = unix(q.get("observed_at"))
+            if quote_at is None or quote_at >= when or quote_at > now.timestamp() + 120:
+                continue
+            try:
+                price = float(q.get("odds_decimal"))
+            except (ValueError, TypeError, OverflowError):
+                continue
+            if not 1.01 < price < 1000 or not q.get("raw_market_key") or not q.get("selection"):
+                continue
+            key = (str(q["raw_market_key"]),str(q["selection"]),price,quote_at,str(q.get("line")))
+            good.add(key)
+            name = str(q.get("market_family") or "unclassified")
+            fam[name] = fam.get(name,0)+1
+        if not good:
+            continue
+        rec = candidates[0]
+        had_price = rec.get("verified_quotes",0) > 0
+        # Adiciona QUOTATIONS da Pinnacle, e não snapshots de odds justas
+        # calculadas pelo TipsAudit.
+        rec["pinnacle_guest_quotes"] = len(good)
+        rec["verified_quotes"] = int(rec.get("verified_quotes") or 0) + len(good)
+        sources = rec.setdefault("data_sources",[])
+        if "Pinnacle guest" not in sources:
+            sources.append("Pinnacle guest")
+        matched += 1
+        gains += not had_price
+        offers += len(good)
+    return {"status":"checked", "matched":matched, "new_verified_game":gains,
+            "offers":offers, "market_families":fam}
+
 def build(directory, now):
     folder = Path(directory)
     games = collect_records(folder, now)
     feed = enrich_tipsaudit(games, folder / "public-no-key" / "tipsaudit-latest.json", now)
+    pinnacle = enrich_pinnacle(games, folder / "public-no-key" / "pinnacle-latest.json", now)
     games.sort(key=lambda g: (PRIORITY_ORDER.get(g["league_code"],999), g["kickoff_unix"],g["home"]))
     verified = [x for x in games if x["verified_quotes"]]
     indicative_only = [x for x in games if not x["verified_quotes"] and x["indicative_bookmaker_quotes"]]
@@ -215,6 +287,7 @@ def build(directory, now):
         "indicative_only_games": len(indicative_only),
         "missing_bookmaker_price_games": len(missing),
         "tipsaudit": feed,
+        "pinnacle_guest": pinnacle,
         "priority_fixtures": games[:150],
         "top_missing": [{k:v for k,v in item.items() if k not in ("fair_odds_modelled",)}
                         for item in missing[:MAX_REPORTED_MISSING]],
