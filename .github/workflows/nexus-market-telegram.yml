@@ -1,7 +1,7 @@
 name: "NEXUS | mercados independentes + Telegram"
 on:
   schedule:
-    - cron: "41 * * * *"
+    - cron: "14,34,54 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -47,7 +47,7 @@ jobs:
           git -C _market_data sparse-checkout set market-history
           git -C _market_data checkout HEAD
       - name: Coletar mercados silenciosamente; Telegram só no fechamento diário
-        run: python3 telegram_collector/collect.py --archive _market_data/market-history --no-telegram
+        run: python3 telegram_collector/collect.py --archive _market_data/market-history --history-dir history --no-telegram
       - name: Salvar histórico exclusivamente na branch de dados
         if: success()
         shell: bash
