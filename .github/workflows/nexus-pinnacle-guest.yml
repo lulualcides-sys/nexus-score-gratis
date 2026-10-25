@@ -1,0 +1,53 @@
+name: "NEXUS | odds guest Pinnacle grátis"
+on:
+  schedule:
+    # A cada 3 horas, somente leitura dos feeds públicos. GitHub pode atrasar.
+    - cron: "18 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "telegram_collector/pinnacle_guest.py"
+      - "telegram_collector/tests/test_pinnacle_guest.py"
+      - ".github/workflows/nexus-pinnacle-guest.yml"
+permissions:
+  contents: write
+concurrency:
+  # Serializa gravações na mesma branch de dados com o coletor principal.
+  group: nexus-market-telegram
+  cancel-in-progress: false
+jobs:
+  public-odds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Validar parser e compatibilidade com o NEXUS
+        run: |
+          python3 -m py_compile telegram_collector/pinnacle_guest.py
+          python3 -m unittest discover -s telegram_collector/tests -v
+      - name: Montar histórico isolado (sem publicar no site ou Telegram)
+        run: |
+          git fetch origin market-telegram-data:refs/remotes/origin/market-telegram-data
+          git worktree add --no-checkout --detach _market_data origin/market-telegram-data
+          git -C _market_data sparse-checkout init --cone
+          git -C _market_data sparse-checkout set market-history
+          git -C _market_data checkout HEAD
+      - name: Ler preços públicos Pinnacle sem conta e sem contornar limites
+        run: PYTHONPATH=. python3 -m telegram_collector.pinnacle_guest --archive _market_data/market-history
+      - name: Persistir resultado na branch dedicada
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd _market_data
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add market-history/public-no-key/
+          if ! git diff --cached --quiet; then
+            git commit -m 'NEXUS markets: public guest odds snapshots'
+            git push origin HEAD:market-telegram-data
+          else
+            echo "Sem novas alterações publicadas"
+          fi
