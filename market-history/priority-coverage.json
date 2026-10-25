@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T21:10:47.538370+00:00",
+  "checked_at": "2026-10-25T21:39:40.063792+00:00",
   "horizon_hours": 48,
-  "important_games": 20,
-  "verified_bookmaker_games": 13,
+  "important_games": 19,
+  "verified_bookmaker_games": 12,
   "indicative_only_games": 1,
   "missing_bookmaker_price_games": 6,
   "tipsaudit": {
@@ -149,9 +149,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.69,
-        "draw": 4.31,
-        "away": 5.64
+        "home": 1.7,
+        "draw": 4.3,
+        "away": 5.63
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11478/atlas-vs-puebla-2026-10-25",
       "tipsaudit_id": "11478",
@@ -198,8 +198,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.65,
-        "draw": 4.71,
-        "away": 5.48
+        "draw": 4.7,
+        "away": 5.51
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
       "tipsaudit_id": "11479",
@@ -243,7 +243,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 130,
+      "verified_quotes": 137,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -263,7 +263,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 25,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -281,7 +281,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 24,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -336,7 +336,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 27,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -353,25 +353,6 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
       "tipsaudit_id": "11483",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Sporting CP",
-      "away": "Académico Viseu",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1792960200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob",
-        "ESPN"
-      ],
-      "verified_quotes": 18,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -405,7 +386,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 28,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -423,7 +404,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 25,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,

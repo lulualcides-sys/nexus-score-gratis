@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T21:10:44.903924+00:00",
+  "checked_at": "2026-10-25T21:39:34.155219+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 20,
-  "created_games": 2,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -65,18 +65,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Jaguares de Córdoba x Llaneros FC",
-      "league": "col.1",
-      "kickoff": 1793055600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
-      "league": "col.1",
-      "kickoff": 1793063100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Coritiba x Grêmio",
       "league": "bra.1",
       "kickoff": 1793053800,
@@ -86,6 +74,18 @@
       "fixture": "Flamengo x Atlético-MG",
       "league": "bra.1",
       "kickoff": 1793055600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Jaguares de Córdoba x Llaneros FC",
+      "league": "col.1",
+      "kickoff": 1793055600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
+      "league": "col.1",
+      "kickoff": 1793063100,
       "reason": "no_verified_public_1x2"
     }
   ],
