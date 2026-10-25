@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "collected_at": "2026-10-25T19:09:02+00:00",
+  "collected_at": "2026-10-25T19:14:55+00:00",
   "nexus_exported_at": "2026-10-25T18:42:56.360463+00:00",
   "games_in_feed": 1504,
   "live_games_in_feed": 79,
   "finished_games_in_feed": 1310,
-  "new_observations": 0,
+  "new_observations": 1504,
   "quotes_observed": 354,
   "market_families": {
     "match_odds": {
@@ -120,5 +120,9 @@
   "quoted_market_names": {
     "1x2": 354
   },
-  "note": "Pesquisa e coleta: sem EV validado, sem execução, sem P/L real."
+  "note": "Pesquisa e coleta: sem EV validado, sem execução, sem P/L real.",
+  "liquidity_minimum_brl": 3000.0,
+  "liquidity_qualified": 0,
+  "liquidity_below": 0,
+  "liquidity_unknown": 1504
 }
