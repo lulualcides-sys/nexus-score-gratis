@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:32:50.701247+00:00",
+  "checked_at": "2026-10-25T20:35:23.843349+00:00",
   "horizon_hours": 48,
   "important_games": 21,
-  "verified_bookmaker_games": 11,
-  "indicative_only_games": 3,
-  "missing_bookmaker_price_games": 7,
+  "verified_bookmaker_games": 16,
+  "indicative_only_games": 1,
+  "missing_bookmaker_price_games": 4,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
@@ -13,11 +13,15 @@
     "new_priority": 2
   },
   "pinnacle_guest": {
-    "status": "unavailable",
-    "matched": 0,
-    "new_verified_game": 0,
-    "offers": 0,
-    "market_families": {}
+    "status": "checked",
+    "matched": 6,
+    "new_verified_game": 5,
+    "offers": 669,
+    "market_families": {
+      "match_odds": 39,
+      "total_goals": 360,
+      "asian_handicap": 270
+    }
   },
   "priority_fixtures": [
     {
@@ -46,7 +50,7 @@
       "league": "La Liga",
       "league_code": "esp.1",
       "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 133,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -65,9 +69,11 @@
       "tipsaudit_id": "11873",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
-        "TipsAudit"
+        "TipsAudit",
+        "Pinnacle guest"
       ],
-      "coverage": "indicative_only"
+      "pinnacle_guest_quotes": 133,
+      "coverage": "verified_price"
     },
     {
       "home": "Udinese",
@@ -125,9 +131,10 @@
       "kickoff_unix": 1792969200.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 108,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -145,7 +152,8 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11478/atlas-vs-puebla-2026-10-25",
       "tipsaudit_id": "11478",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "pinnacle_guest_quotes": 108,
+      "coverage": "verified_price"
     },
     {
       "home": "Querétaro FC",
@@ -155,9 +163,10 @@
       "kickoff_unix": 1792976400.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 108,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.76,
@@ -167,7 +176,8 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
       "tipsaudit_id": "11484",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 108,
+      "coverage": "verified_price"
     },
     {
       "home": "CF América",
@@ -177,9 +187,10 @@
       "kickoff_unix": 1792976700.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 106,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.65,
@@ -189,7 +200,8 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
       "tipsaudit_id": "11479",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 106,
+      "coverage": "verified_price"
     },
     {
       "home": "Club Tijuana",
@@ -198,7 +210,7 @@
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 108,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.09,
@@ -209,9 +221,11 @@
       "tipsaudit_id": "11486",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
-        "TipsAudit"
+        "TipsAudit",
+        "Pinnacle guest"
       ],
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 108,
+      "coverage": "verified_price"
     },
     {
       "home": "Independiente",
@@ -241,14 +255,16 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 130,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 106,
       "coverage": "verified_price"
     },
     {
@@ -422,7 +438,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 16,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -468,57 +484,6 @@
     }
   ],
   "top_missing": [
-    {
-      "home": "Querétaro FC",
-      "away": "Cruz Azul",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1792976400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
-      "tipsaudit_id": "11484",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "CF América",
-      "away": "Pachuca",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1792976700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
-      "tipsaudit_id": "11479",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Club Tijuana",
-      "away": "Santos Laguna",
-      "kickoff_unix": 1792984200.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
-      "tipsaudit_id": "11486",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "Unión (Santa Fe)",
       "away": "Estudiantes de La Plata",
