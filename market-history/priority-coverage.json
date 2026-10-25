@@ -1,16 +1,16 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T20:11:47.959724+00:00",
+  "checked_at": "2026-10-25T20:13:51.526868+00:00",
   "horizon_hours": 48,
-  "important_games": 22,
+  "important_games": 19,
   "verified_bookmaker_games": 11,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 7,
+  "indicative_only_games": 3,
+  "missing_bookmaker_price_games": 5,
   "tipsaudit": {
     "status": "checked",
-    "matched": 4,
+    "matched": 5,
     "indicative": 4,
-    "new_priority": 3
+    "new_priority": 2
   },
   "priority_fixtures": [
     {
@@ -318,24 +318,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "LAFC",
-      "away": "LA Galaxy",
-      "league": "usa.1",
-      "league_code": "usa.1",
-      "kickoff_unix": 1792976400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 20,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Los Angeles FC",
       "away": "LA Galaxy",
       "league": "Major League Soccer",
@@ -343,24 +325,10 @@
       "kickoff_unix": 1792976400.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "ESPN"
       ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Los Angeles FC",
-      "away": "Los Angeles Galaxy",
-      "kickoff_unix": 1792976400.0,
-      "league": "MLS",
-      "league_code": "usa.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 20,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -377,11 +345,8 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
       "tipsaudit_id": "11483",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "indicative_only"
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
     },
     {
       "home": "Sporting CP",
@@ -391,27 +356,10 @@
       "kickoff_unix": 1792960200.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sporting CP",
-      "away": "Académico de Viseu",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1792960200.0,
-      "phase": "scheduled",
-      "data_sources": [
+        "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -554,40 +502,6 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Los Angeles FC",
-      "away": "LA Galaxy",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1792976400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sporting CP",
-      "away": "Académico Viseu",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1792960200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
       ],
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
