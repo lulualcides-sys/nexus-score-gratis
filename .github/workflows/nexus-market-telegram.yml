@@ -27,8 +27,8 @@ jobs:
           git worktree add --detach _market_data origin/market-telegram-data
       - name: Coletar todos os mercados presentes no NEXUS e avisar no Telegram
         env:
-          TELEGRAM_BOT_TOKEN: \${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: \${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python3 telegram_collector/collect.py --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
         if: success()
