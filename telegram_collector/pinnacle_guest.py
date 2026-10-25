@@ -214,9 +214,25 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
     }
     target = directory / "pinnacle-latest.json"
     archive = directory / ("pinnacle-" + now.astimezone(LOCAL).date().isoformat() + ".json")
+    denied_path = directory / "pinnacle-denied.json"
+    denied = {}
+    if denied_path.is_file():
+        try:
+            saved = json.loads(denied_path.read_text(encoding="utf-8"))
+            if isinstance(saved, dict) and isinstance(saved.get("events"),dict):
+                denied = saved["events"]
+        except (ValueError, OSError):
+            denied = {}
+    # Do not request a denied resource again in the next 24 hours.
+    denied = {str(k):v for k,v in denied.items() if isinstance(v,dict)
+              and (timestamp(v.get("blocked_at")) is not None)
+              and 0 <= (now-timestamp(v["blocked_at"])).total_seconds() < 86400}
     try:
         response = getter("/sports/29/matchups/highlighted")
-        games = get_focus_matches(response, now, max_games)
+        available = get_focus_matches(response, now, max_games + 20)
+        games = [g for g in available if str(g["provider_matchup_id"]) not in denied][:max_games]
+        status["previously_denied_skipped"] = len(available) - len(
+            [g for g in available if str(g["provider_matchup_id"]) not in denied])
         status["matches_discovered"] = (len(response) if isinstance(response,list) else
                                         len(next((response[k] for k in ("matchups","data","items")
                                                   if isinstance(response.get(k),list)),[])))
@@ -241,6 +257,11 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
                 # Never continue cycling events if guest feed denies access or
                 # imposes a rate limit. Keep earlier successful observations.
                 if code in (401,403,429):
+                    if code in (401,403):
+                        denied[str(mid)] = {"blocked_at":now.isoformat(),"status":code}
+                        denied_path.write_text(json.dumps(
+                            {"schema":1,"events":denied},ensure_ascii=False,indent=2)+"\n",
+                            encoding="utf-8")
                     status["status"] = ("partial_blocked" if status["matches_checked"]
                                         else "blocked")
                     break
