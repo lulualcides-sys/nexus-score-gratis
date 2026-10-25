@@ -238,10 +238,17 @@ def run(directory, now, getter=get_json, max_games=MAX_MATCHUPS):
                 markets = getter("/matchups/" + str(mid) + "/markets/related/straight")
                 prices = parse_markets(markets, now)
             except (HTTPError, URLError, ValueError, TimeoutError, OSError) as e:
+                code = getattr(e,"code",None)
                 if len(status["errors"]) < 10:
                     status["errors"].append({"matchup_id":mid,"error":type(e).__name__,
-                                             "http_status":getattr(e,"code",None),
+                                             "http_status":code,
                                              "reason":str(e)[:120]})
+                # Never continue cycling events if guest feed denies access or
+                # imposes a rate limit. Keep earlier successful observations.
+                if code in (401,403,429):
+                    status["status"] = ("partial_blocked" if status["matches_checked"]
+                                        else "blocked")
+                    break
                 continue
             status["matches_checked"] += 1
             result[str(mid)] = {**game, "odds": prices}
