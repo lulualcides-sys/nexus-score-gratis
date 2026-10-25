@@ -39,7 +39,7 @@ class PinnacleGuestTests(TestCase):
         self.assertEqual(q[0]["market_family"],"total_goals")
         self.assertEqual(q[0]["line"],2.5)
         self.assertEqual(q[0]["odds_decimal"],1.8)
-        self.assertEqual(q[2]["market_family"],"asian_handicap")
+        self.assertEqual(q[2]["market_family"],"first_half_handicap")
         self.assertEqual(q[2]["period"],0)
         self.assertIn("guest_feed",q[0]["odds_kind"])
         self.assertFalse(any("probability" in x for x in q))
@@ -48,6 +48,15 @@ class PinnacleGuestTests(TestCase):
         self.assertEqual(len(parse_markets({"markets":[market()]},NOW)),2)
         self.assertEqual(len(parse_markets({"data":[market()]},NOW)),2)
         self.assertEqual(parse_markets({"error":"blocked"},NOW),[])
+
+    def test_full_match_team_total_and_half_time_are_not_mixed(self):
+        self.assertEqual(classify_market({}, "s;0;tt;1.5;home"), "team_goals")
+        self.assertEqual(classify_market({}, "s;0;ou;2.5"), "total_goals")
+        self.assertEqual(classify_market({}, "s;1;tt;0.5;home"), "first_half_team_goals")
+        self.assertEqual(classify_market({}, "s;1;ou;1.5"), "first_half_goals")
+        self.assertEqual(classify_market({}, "s;1;m"), "half_time")
+        self.assertEqual(classify_market({}, "s;0;s;-0.5"), "asian_handicap")
+        self.assertEqual(classify_market({}, "unsupported"), "unclassified")
 
     def test_closed_markets_and_missing_selections_dropped(self):
         stopped={**market(),"status":"suspended"}
