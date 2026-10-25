@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:24:10.181370+00:00",
+  "checked_at": "2026-10-25T23:25:48.144310+00:00",
   "horizon_hours": 48,
   "important_games": 17,
-  "verified_bookmaker_games": 9,
-  "indicative_only_games": 2,
+  "verified_bookmaker_games": 10,
+  "indicative_only_games": 1,
   "missing_bookmaker_price_games": 6,
   "tipsaudit": {
     "status": "checked",
@@ -14,18 +14,84 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 1,
-    "new_verified_game": 1,
-    "offers": 131,
+    "matched": 4,
+    "new_verified_game": 2,
+    "offers": 453,
     "market_families": {
-      "match_odds": 6,
-      "team_goals": 16,
-      "asian_handicap": 34,
-      "total_goals": 36,
-      "half_time": 3,
-      "first_half_team_goals": 4,
-      "first_half_handicap": 16,
-      "first_half_goals": 16
+      "match_odds": 15,
+      "team_goals": 52,
+      "asian_handicap": 118,
+      "total_goals": 112,
+      "half_time": 12,
+      "first_half_team_goals": 16,
+      "first_half_handicap": 64,
+      "first_half_goals": 64
+    }
+  },
+  "book_quality": {
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-10-25T23:24:34.351125+00:00",
+    "complete_market_lines": 676,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 1384,
+    "invalid_quote_records": 18,
+    "families": {
+      "asian_handicap": {
+        "games": 16,
+        "odds": 326,
+        "complete_lines": 163,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.81
+      },
+      "first_half_goals": {
+        "games": 16,
+        "odds": 206,
+        "complete_lines": 103,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.52
+      },
+      "first_half_handicap": {
+        "games": 16,
+        "odds": 182,
+        "complete_lines": 91,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.6
+      },
+      "first_half_team_goals": {
+        "games": 16,
+        "odds": 62,
+        "complete_lines": 31,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.07
+      },
+      "half_time": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.53
+      },
+      "match_odds": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.02
+      },
+      "team_goals": {
+        "games": 16,
+        "odds": 164,
+        "complete_lines": 82,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.7
+      },
+      "total_goals": {
+        "games": 16,
+        "odds": 348,
+        "complete_lines": 174,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.32
+      }
     }
   },
   "priority_fixtures": [
@@ -37,17 +103,15 @@
       "kickoff_unix": 1793053800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
+        "ESPN"
       ],
-      "verified_quotes": 131,
+      "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Flamengo",
@@ -75,9 +139,10 @@
       "kickoff_unix": 1793044800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 133,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -95,7 +160,8 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "pinnacle_guest_quotes": 133,
+      "coverage": "verified_price"
     },
     {
       "home": "Paris Saint-Germain",
@@ -153,9 +219,10 @@
       "kickoff_unix": 1792976400.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 123,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.8,
@@ -165,6 +232,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
       "tipsaudit_id": "11484",
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 108,
       "coverage": "verified_price"
     },
     {
@@ -175,9 +243,10 @@
       "kickoff_unix": 1792976700.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 109,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.67,
@@ -187,6 +256,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
       "tipsaudit_id": "11479",
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 106,
       "coverage": "verified_price"
     },
     {
@@ -196,7 +266,7 @@
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 106,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.14,
@@ -207,9 +277,11 @@
       "tipsaudit_id": "11486",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
-        "TipsAudit"
+        "TipsAudit",
+        "Pinnacle guest"
       ],
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 106,
+      "coverage": "verified_price"
     },
     {
       "home": "Barracas Central",
@@ -240,7 +312,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 42,
+      "verified_quotes": 45,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
@@ -391,6 +463,23 @@
   ],
   "top_missing": [
     {
+      "home": "Coritiba",
+      "away": "Grêmio",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793053800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Flamengo",
       "away": "Atlético-MG",
       "league": "Brasileirão Série A",
@@ -405,23 +494,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Club Tijuana",
-      "away": "Santos Laguna",
-      "kickoff_unix": 1792984200.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
-      "tipsaudit_id": "11486",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
       "coverage": "no_bookmaker_price"
     },
     {
