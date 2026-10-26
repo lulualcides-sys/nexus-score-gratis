@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T07:11:39.998183+00:00",
-  "bookmaker_snapshot_at": "2026-10-26T07:11:38.116892+00:00",
+  "checked_at": "2026-10-26T10:01:54.712158+00:00",
+  "bookmaker_snapshot_at": "2026-10-26T10:01:54.055804+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1352,
-  "invalid_quote_records": 26,
-  "complete_market_lines": 660,
+  "matches_catalogued": 3,
+  "matches_with_priced_markets": 3,
+  "odds_eligible_for_quality": 222,
+  "invalid_quote_records": 6,
+  "complete_market_lines": 108,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 330,
-      "complete_lines": 165,
+      "games": 3,
+      "odds": 54,
+      "complete_lines": 27,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.16
+      "median_overround_pct": 5.19
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "games": 3,
+      "odds": 30,
+      "complete_lines": 15,
       "incomplete_lines": 0,
       "median_overround_pct": 6.56
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 182,
-      "complete_lines": 91,
+      "games": 3,
+      "odds": 30,
+      "complete_lines": 15,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.69
+      "median_overround_pct": 5.62
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 62,
-      "complete_lines": 31,
-      "incomplete_lines": 0,
-      "median_overround_pct": 6.17
-    },
-    "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.87
-    },
-    "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.56
-    },
-    "team_goals": {
-      "games": 16,
-      "odds": 158,
-      "complete_lines": 79,
+      "games": 3,
+      "odds": 12,
+      "complete_lines": 6,
       "incomplete_lines": 0,
       "median_overround_pct": 6.33
     },
-    "total_goals": {
-      "games": 16,
-      "odds": 334,
-      "complete_lines": 167,
+    "half_time": {
+      "games": 3,
+      "odds": 9,
+      "complete_lines": 3,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.64
+      "median_overround_pct": 6.59
+    },
+    "match_odds": {
+      "games": 3,
+      "odds": 9,
+      "complete_lines": 3,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.36
+    },
+    "team_goals": {
+      "games": 3,
+      "odds": 28,
+      "complete_lines": 14,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.36
+    },
+    "total_goals": {
+      "games": 3,
+      "odds": 50,
+      "complete_lines": 25,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.7
     }
   },
   "examples": [
     {
-      "fixture": "Borussia Monchengladbach x Karlsruher",
+      "fixture": "FC Koln x Union Berlin",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-26T07:11:38.116892+00:00",
+      "observed_at": "2026-10-26T10:01:54.055804+00:00",
       "selections": {
-        "home": 1.3597,
-        "away": 7.17,
-        "draw": 5.29
+        "home": 1.8621,
+        "away": 3.88,
+        "draw": 3.81
       },
-      "overround_pct": 6.4
+      "overround_pct": 5.72
     },
     {
-      "fixture": "Borussia Monchengladbach x Karlsruher",
+      "fixture": "FC Koln x Union Berlin",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "selections": {
+        "home": 1.8772,
+        "away": 1.9804
+      },
+      "overround_pct": 3.77
+    },
+    {
+      "fixture": "FC Koln x Union Berlin",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.5",
       "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-26T07:11:38.116892+00:00",
+      "observed_at": "2026-10-26T10:01:54.055804+00:00",
       "selections": {
-        "home": 2.0,
-        "away": 1.8403
+        "home": 3.16,
+        "away": 1.3597
       },
-      "overround_pct": 4.34
+      "overround_pct": 5.19
     },
     {
-      "fixture": "Borussia Monchengladbach x Karlsruher",
+      "fixture": "FC Koln x Union Berlin",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.5",
-      "line_from_market_key": "s;0;s;-2.5",
-      "observed_at": "2026-10-26T07:11:38.116892+00:00",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-10-26T10:01:54.055804+00:00",
       "selections": {
-        "home": 3.39,
-        "away": 1.3067
+        "home": 2.83,
+        "away": 1.4292
       },
-      "overround_pct": 6.03
+      "overround_pct": 5.3
     },
     {
-      "fixture": "Borussia Monchengladbach x Karlsruher",
+      "fixture": "FC Koln x Union Berlin",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-10-26T07:11:38.116892+00:00",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-26T10:01:54.055804+00:00",
       "selections": {
-        "home": 3.06,
-        "away": 1.3623
+        "home": 2.51,
+        "away": 1.5405
       },
-      "overround_pct": 6.09
-    },
-    {
-      "fixture": "Borussia Monchengladbach x Karlsruher",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-26T07:11:38.116892+00:00",
-      "selections": {
-        "home": 2.72,
-        "away": 1.4405
-      },
-      "overround_pct": 6.19
+      "overround_pct": 4.75
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
