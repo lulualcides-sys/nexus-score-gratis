@@ -117,7 +117,8 @@ def collect_records(folder, now):
             home_stats = stats.get("home") if isinstance(stats,dict) else None
             away_stats = stats.get("away") if isinstance(stats,dict) else None
             def both_observed(field):
-                return (isinstance(home_stats,dict) and isinstance(away_stats,dict)
+                return (status in ("live","finished") and
+                        isinstance(home_stats,dict) and isinstance(away_stats,dict)
                         and isinstance(home_stats.get(field),(int,float))
                         and isinstance(away_stats.get(field),(int,float))
                         and not isinstance(home_stats[field],bool)
