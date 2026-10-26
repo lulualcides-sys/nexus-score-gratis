@@ -173,6 +173,31 @@ class CoverageRadarTests(unittest.TestCase):
             p.write_text(json.dumps(data))
             self.assertEqual(read_price_movements(p,now)["status"],"stale")
 
+    def test_actual_match_stats_do_not_masquerade_as_corner_card_odds(self):
+        now=datetime.now(timezone.utc)
+        kickoff=now-timedelta(minutes=40)
+        local_day=kickoff.astimezone(__import__("zoneinfo").ZoneInfo("America/Sao_Paulo")).date().isoformat()
+        matches={"schema":1,"day":local_day,"games":{
+            "espn-eng.1-123":{
+                "id":"espn-eng.1-123","home":"Arsenal","away":"Chelsea",
+                "league":"Premier League","league_code":"eng.1",
+                "kickoff_unix":kickoff.timestamp(),"source":["ESPN"],
+                "observations":[{"phase":"finished","score":"1-1","odds":[],
+                    "stats_source":"ESPN public soccer boxscore",
+                    "stats":{"home":{"corners":8,"yellow_cards":2,"shots_on":5},
+                             "away":{"corners":2,"yellow_cards":3,"shots_on":4}}}]}}}
+        with TemporaryDirectory() as folder:
+            p=Path(folder)
+            (p/(local_day+".json")).write_text(json.dumps(matches))
+            results=build(p,now)
+            self.assertEqual(results["games_with_corners_stats"],1)
+            self.assertEqual(results["games_with_yellow_cards_stats"],1)
+            self.assertEqual(results["games_with_shots_on_target_stats"],1)
+            self.assertEqual(results["verified_bookmaker_games"],0)
+            self.assertEqual(results["missing_bookmaker_price_games"],1)
+            game=results["priority_fixtures"][0]
+            self.assertEqual(game["boxscore_stats_source"],"ESPN public soccer boxscore")
+
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
             result = build(Path(folder), datetime.now(timezone.utc))
