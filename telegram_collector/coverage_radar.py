@@ -293,12 +293,59 @@ def read_book_quality(path, now):
         return {"status":"unavailable"}
 
 
+
+def read_price_movements(path, now):
+    """Movimentos só se houve duas cotações pré-jogo e última coleta recente."""
+    path = Path(path)
+    if not path.is_file():
+        return {"status":"unavailable"}
+    try:
+        data=json.loads(path.read_text(encoding="utf-8"))
+        at=unix(data.get("checked_at")) if isinstance(data,dict) else None
+        if (not isinstance(data,dict) or data.get("schema")!=1 or
+                data.get("status")!="fresh" or at is None or
+                not -120 <= now.timestamp()-at <= 4*3600):
+            return {"status":"stale"}
+        rows=data.get("top_changes")
+        if not isinstance(rows,list):
+            return {"status":"unavailable"}
+        good=[]
+        for row in rows[:15]:
+            if not isinstance(row,dict) or row.get("betting_execution_confirmed") is not False:
+                continue
+            try:
+                delta=float(row.get("implied_probability_change_pp"))
+                start=unix(row.get("first_observed"))
+                end=unix(row.get("last_observed"))
+                kickoff=unix(row.get("kickoff_utc"))
+            except (ValueError,TypeError,OverflowError):
+                continue
+            if (start is None or end is None or kickoff is None or
+                    not start < end < kickoff or abs(delta)>100 or
+                    not row.get("home") or not row.get("away") or
+                    not row.get("raw_market_key") or not row.get("selection")):
+                continue
+            good.append({k:row[k] for k in ("home","away","market_family",
+                                          "raw_market_key","selection",
+                                          "first_odds","last_odds",
+                                          "implied_probability_change_pp")})
+        return {
+            "status":"fresh", "selections_with_changes":int(
+                data.get("market_selections_with_changes") or 0),
+            "historical_snapshots":int(data.get("snapshots_processed") or 0),
+            "top_changes":good[:3],
+        }
+    except (OSError,ValueError,TypeError,KeyError,OverflowError):
+        return {"status":"unavailable"}
+
+
 def build(directory, now):
     folder = Path(directory)
     games = collect_records(folder, now)
     feed = enrich_tipsaudit(games, folder / "public-no-key" / "tipsaudit-latest.json", now)
     pinnacle = enrich_pinnacle(games, folder / "public-no-key" / "pinnacle-latest.json", now)
     quality = read_book_quality(folder / "public-no-key" / "pinnacle-depth.json", now)
+    movements = read_price_movements(folder / "public-no-key" / "pinnacle-motion-latest.json", now)
     games.sort(key=lambda g: (PRIORITY_ORDER.get(g["league_code"],999), g["kickoff_unix"],g["home"]))
     verified = [x for x in games if x["verified_quotes"]]
     indicative_only = [x for x in games if not x["verified_quotes"] and x["indicative_bookmaker_quotes"]]
@@ -316,6 +363,7 @@ def build(directory, now):
         "tipsaudit": feed,
         "pinnacle_guest": pinnacle,
         "book_quality": quality,
+        "price_movements": movements,
         "priority_fixtures": games[:150],
         "top_missing": [{k:v for k,v in item.items() if k not in ("fair_odds_modelled",)}
                         for item in missing[:MAX_REPORTED_MISSING]],
