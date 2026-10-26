@@ -42,7 +42,24 @@ def normalized_team(name):
     s = unicodedata.normalize("NFKD", str(name or "")).encode("ascii", "ignore").decode().lower()
     words = re.findall(r"[a-z0-9]+", s)
     skip = {"fc", "cf", "ac", "sc", "afc", "football", "club", "clube", "de", "the"}
-    return " ".join(w for w in words if w not in skip)
+    normalized = " ".join(w for w in words if w not in skip)
+    # Exact club-name aliases only: no risky fuzzy matching across clubs.
+    aliases = {
+        "ca osasuna": "osasuna", "osasuna": "osasuna",
+        "olympique lyonnais": "lyon", "olympique lyon": "lyon",
+        "lyon": "lyon",
+        "paris sg": "paris saint germain",
+        "paris saint germain": "paris saint germain",
+        "sevilla": "sevilla",
+    }
+    return aliases.get(normalized, normalized)
+
+
+def canonical_league(code):
+    return bool(re.fullmatch(
+        r"(?:[a-z]{2,12}\.[1-9]|(?:uefa|conmebol|caf|afc|concacaf)\.[a-z0-9_]+)",
+        str(code or ""),
+    ))
 
 
 def utc_date(ts):
@@ -102,7 +119,7 @@ def historical_rows(history, as_of):
                 continue
             league = str(fixture.get("league_code") or fixture.get("league") or "")
             h, a = normalized_team(fixture.get("home")), normalized_team(fixture.get("away"))
-            if not league or not h or not a or h == a:
+            if not canonical_league(league) or not h or not a or h == a:
                 continue
             key = (league, h, a, date.isoformat())
             records[key] = {"league":league, "home":h, "away":a,
@@ -357,7 +374,7 @@ def future_fixtures(archive,now):
             continue
         code=str(g.get("league_code") or "")
         h,a=str(g.get("home") or "").strip(),str(g.get("away") or "").strip()
-        if not code or not normalized_team(h) or not normalized_team(a) or normalized_team(h)==normalized_team(a):
+        if not canonical_league(code) or not normalized_team(h) or not normalized_team(a) or normalized_team(h)==normalized_team(a):
             continue
         key=(code,normalized_team(h),normalized_team(a),kickoff)
         out[key]={"league_code":code,"league":g.get("league") or code,
