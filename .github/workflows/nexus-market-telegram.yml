@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py telegram_collector/priority_boxscore.py
+          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py telegram_collector/priority_boxscore.py telegram_collector/optional_odds_api.py
           python3 -m unittest discover -s telegram_collector/tests -v
   archive:
     if: github.event_name != 'pull_request'
@@ -58,6 +58,10 @@ jobs:
         run: python3 telegram_collector/public_no_key.py --archive _market_data/market-history
       - name: Auditar cobertura de partidas importantes e cruzar fontes sem inventar odds
         run: PYTHONPATH=. python3 -m telegram_collector.coverage_radar --archive _market_data/market-history
+      - name: Mercado oficial opcional de escanteios e cartoes no plano gratuito
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: PYTHONPATH=. python3 -m telegram_collector.optional_odds_api --archive _market_data/market-history
       - name: Verificar saúde das fontes e partidas sem preços de casa
         run: PYTHONPATH=. python3 -m telegram_collector.source_health --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
