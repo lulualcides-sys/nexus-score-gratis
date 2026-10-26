@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T02:23:18.673750+00:00",
+  "checked_at": "2026-10-26T03:08:31.674089+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
-  "created_games": 0,
+  "priority_fixtures_seen": 12,
+  "created_games": 3,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -62,6 +62,24 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sassuolo x Lazio",
+      "league": "ita.1",
+      "kickoff": 1793122200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AS Roma x Cagliari",
+      "league": "ita.1",
+      "kickoff": 1793130300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Torino x Como",
+      "league": "ita.1",
+      "kickoff": 1793130300,
       "reason": "no_verified_public_1x2"
     }
   ],
