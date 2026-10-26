@@ -29,6 +29,7 @@ jobs:
           set -euo pipefail
           git fetch --depth=1 origin market-telegram-data:refs/remotes/origin/market-telegram-data
           git show refs/remotes/origin/market-telegram-data:market-history/model-only/latest.json > /tmp/nexus-model-only.json
+          git show refs/remotes/origin/market-telegram-data:market-history/model-only/backtest-latest.json > /tmp/nexus-model-backtest.json
       - name: Validar formato e não expor credenciais nem odds de casas
         run: |
           python3 - <<'PY'
@@ -53,6 +54,13 @@ jobs:
                   assert k not in fixture
           Path("web/nexus-model-odds.json").write_text(
               json.dumps(source,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
+          test=json.loads(Path("/tmp/nexus-model-backtest.json").read_text(encoding="utf-8"))
+          assert test.get("schema")==1 and test.get("model_version")==source["model_version"]
+          assert test.get("walk_forward") is True
+          assert test.get("uses_future_results_in_training") is False
+          assert isinstance(test.get("historical_fixtures_tested"),int)
+          Path("web/nexus-model-backtest.json").write_text(
+              json.dumps(test,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
           print("Modelo validado e pronto: " + str(source["fixtures_priced"]) + " jogos calculados")
           PY
       - name: Validar JavaScript isolado do novo painel
@@ -71,7 +79,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add web/nexus-model-odds.json
+          git add web/nexus-model-odds.json web/nexus-model-backtest.json
           if git diff --cached --quiet; then
             echo "Nenhuma mudança no motor público"
           else
