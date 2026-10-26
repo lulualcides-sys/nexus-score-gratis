@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T03:08:36.334956+00:00",
+  "checked_at": "2026-10-26T03:42:49.865696+00:00",
   "horizon_hours": 48,
   "important_games": 13,
   "verified_bookmaker_games": 2,
@@ -11,7 +11,7 @@
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 3,
+    "matched": 2,
     "indicative": 2,
     "new_priority": 0
   },
@@ -341,13 +341,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 2.21,
-        "draw": 3.86,
-        "away": 3.46
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
-      "tipsaudit_id": "11486",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 106,
       "official_verified_total_corners_quotes": 12,
