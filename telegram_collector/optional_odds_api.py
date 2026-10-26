@@ -44,6 +44,7 @@ MARKET_KEYS={
     "alternate_totals_cards":"total_cards",
 }
 MAX_DAILY_EVENTS=2
+MAX_FREE_EVENT_LISTS=8
 MAX_MONTHLY_LOCAL_CREDITS=240
 MIN_PROVIDER_CREDITS_LEFT=20
 MAX_RESPONSE=1_500_000
@@ -275,6 +276,7 @@ def run(folder, now, key=None, getter=get_json, probe=None):
     targets=read_targets(Path(folder),now)
     status["eligible_priority_games"]=len(targets)
     status["status"]="ok" if targets else "key_valid_no_eligible_fixture"
+    events_cache={}
     for target in targets:
         if len(used)>=MAX_DAILY_EVENTS or reserved+2>MAX_MONTHLY_LOCAL_CREDITS:
             break
@@ -283,11 +285,17 @@ def run(folder, now, key=None, getter=get_json, probe=None):
         if identity in used:
             continue
         try:
-            events,_=getter(sport,None,key)
-            if not isinstance(events,list):
-                raise ValueError("Official event list invalid")
-            status["free_event_lists_checked"]=int(status.get("free_event_lists_checked") or 0)+1
-            status["free_events_seen"]=int(status.get("free_events_seen") or 0)+len(events)
+            if sport not in events_cache:
+                if len(events_cache)>=MAX_FREE_EVENT_LISTS:
+                    status["free_event_list_limit_reached"]=True
+                    break
+                listing,_=getter(sport,None,key)
+                if not isinstance(listing,list):
+                    raise ValueError("Official event list invalid")
+                events_cache[sport]=listing
+                status["free_event_lists_checked"]=len(events_cache)
+                status["free_events_seen"]=int(status.get("free_events_seen") or 0)+len(listing)
+            events=events_cache[sport]
             possibles=[]
             for event in events:
                 if not isinstance(event,dict):
