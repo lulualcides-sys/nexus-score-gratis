@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py telegram_collector/priority_boxscore.py telegram_collector/optional_odds_api.py telegram_collector/model_only.py
+          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py telegram_collector/priority_boxscore.py telegram_collector/optional_odds_api.py telegram_collector/model_only.py telegram_collector/model_backtest.py
           python3 -m unittest discover -s telegram_collector/tests -v
   archive:
     if: github.event_name != 'pull_request'
@@ -64,6 +64,8 @@ jobs:
         run: PYTHONPATH=. python3 -m telegram_collector.coverage_radar --archive _market_data/market-history
       - name: Calcular probabilidades próprias de FT HT ambas gols e HT-FT (sem odds de casas)
         run: PYTHONPATH=. python3 -m telegram_collector.model_only --archive _market_data/market-history --history-dir history
+      - name: Validar motor próprio cronologicamente em jogos históricos sem odds de casas
+        run: PYTHONPATH=. python3 -m telegram_collector.model_backtest --archive _market_data/market-history --history-dir history
       - name: Verificar saúde das fontes e partidas sem preços de casa
         run: PYTHONPATH=. python3 -m telegram_collector.source_health --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
