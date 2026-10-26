@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:15:15.350703+00:00",
+  "checked_at": "2026-10-26T01:20:39.863795+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 9,
+  "priority_fixtures_seen": 25,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -62,6 +62,42 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlas x Puebla",
+      "league": "mex.1",
+      "kickoff": 1792969200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Querétaro x Cruz Azul",
+      "league": "mex.1",
+      "kickoff": 1792976400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "América x Pachuca",
+      "league": "mex.1",
+      "kickoff": 1792976700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Independiente x Boca Juniors",
+      "league": "arg.1",
+      "kickoff": 1792958400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "River Plate x Racing Club",
+      "league": "arg.1",
+      "kickoff": 1792966500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
+      "league": "arg.1",
+      "kickoff": 1792974600,
       "reason": "no_verified_public_1x2"
     }
   ],
