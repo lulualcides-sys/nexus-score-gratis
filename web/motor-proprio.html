@@ -31,13 +31,14 @@ footer{margin-top:25px;padding-top:22px;border-top:1px solid var(--border);color
 <div class="box"><strong id="when">—</strong><span>Atualização em Brasília</span></div>
 </div>
 <div class="notice" id="notice" role="status">Carregando previsões teóricas...</div>
+<div class="panel" id="audit" style="margin:10px 0;color:#c9dbea">Verificação histórica do modelo ainda não disponível.</div>
 <div class="controls">
 <div><label for="filter">Filtrar jogos</label><select id="filter"><option value="all">Todos</option><option value="priced">Com probabilidades</option><option value="missing">Sem histórico suficiente</option></select></div>
 <div><label for="fixture">Escolher confronto</label><select id="fixture"><option>Carregando...</option></select></div>
 </div>
 <div class="panel" id="match"></div>
 <div class="markets" id="markets"></div>
-<footer>**Nota:** preço exibido = 1/probabilidade, sem margem de bookmaker. É preço teórico NEXUS, não odd oferecida por casa, dica de aposta, EV comprovado ou retorno. A distribuição conjunta de gols por tempo liga matematicamente HT, FT e HT/FT. O modelo ainda não possui backtest prospectivo validado; use a classificação de amostra antes de interpretar números.</footer>
+<footer><strong>Nota:</strong> preço exibido = 1/probabilidade, sem margem de bookmaker. É preço teórico NEXUS, não odd oferecida por casa, dica de aposta, EV comprovado ou retorno. A distribuição conjunta de gols por tempo liga matematicamente HT, FT e HT/FT. O modelo ainda não possui backtest prospectivo validado; use a classificação de amostra antes de interpretar números.</footer>
 </main>
 <script>
 "use strict";
@@ -70,6 +71,19 @@ function paint(){byId("markets").replaceChildren();byId("match").replaceChildren
 }
 function filters(){var f=byId("filter").value,old=byId("fixture").value,available=[];byId("fixture").replaceChildren();(data.fixtures||[]).forEach(function(g,i){if(f==="priced"&&!g.markets||f==="missing"&&g.markets)return;available.push(i);var opt=el("option","",g.home+" × "+g.away+(g.markets?" · modelo válido":" · dados insuficientes"));opt.value=i;byId("fixture").append(opt)});if(available.length)byId("fixture").value=available.includes(+old)?old:available.find(i=>data.fixtures[i].markets)??available[0];paint()}
 byId("filter").onchange=filters;byId("fixture").onchange=paint;
+fetch("./nexus-model-backtest.json",{cache:"no-store"}).then(function(response){
+ if(!response.ok)throw Error("sem teste histórico publicado");
+ return response.json();
+}).then(function(result){
+ if(result.schema!==1||result.walk_forward!==true||result.uses_future_results_in_training!==false)throw Error("teste inválido");
+ var amount=result.historical_fixtures_tested||0;
+ var box=byId("audit");
+ if(result.status==="diagnostic_sample"&&amount>=40&&typeof result.rps_1x2==="number"){
+   box.textContent="AUDITORIA HISTÓRICA (walk-forward): "+amount+" jogos avaliados em "+result.leagues_tested+" ligas · RPS 1X2 "+result.rps_1x2.toFixed(4)+" · Brier 1X2 "+result.brier_1x2.toFixed(4)+" · Brier Over 2,5 "+Number(result.brier_over_2_5).toFixed(4)+". Menor = melhor. Diagnóstico retrospectivo; não comprova calibração nem lucro.";
+ }else{
+   box.textContent="Auditoria histórica: somente "+amount+" jogos elegíveis; amostra insuficiente para considerar a precisão validada.";
+ }
+}).catch(function(){byId("audit").textContent="Auditoria histórica ainda não publicada. O motor não deve ser tratado como calibrado."});
 fetch("./nexus-model-odds.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("previsões ainda não publicadas");return r.json()}).then(function(d){if(d.schema!==1||!Array.isArray(d.fixtures))throw Error("formato inválido");data=d;byId("total").textContent=d.fixtures_found;byId("available").textContent=d.fixtures_priced;byId("training").textContent=Number(d.historical_finished_games||0).toLocaleString("pt-BR");byId("when").textContent=fmtTime(d.generated_at);byId("notice").textContent=(Date.now()-Date.parse(d.generated_at)>12*3600000?"ATENÇÃO: arquivo desatualizado. ":"")+"Probabilidades exclusivamente calculadas pelo NEXUS. "+d.fixtures_priced+" jogo(s) com histórico suficiente; "+d.fixtures_without_model+" não precificado(s). Sem preços de casas.";filters()}).catch(function(error){byId("notice").textContent="O motor está instalado, mas os dados ainda não foram publicados nesta página: "+error.message;byId("match").append(el("p","tip","O motor matemático permanece independente dos coletores."))});
 </script>
 </body></html>
