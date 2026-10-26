@@ -75,6 +75,33 @@ def get_json(sport, event_id, key, reader=urlopen):
     return parsed,header
 
 
+
+def probe_key(key, reader=urlopen):
+    """Free /v4/sports credential check, zero API credits per provider docs.
+
+    Return only a boolean and the public quota number: never print URL/token.
+    """
+    request=Request("https://api.the-odds-api.com/v4/sports/?" +
+                    urlencode({"apiKey":key}),headers={
+                        "Accept":"application/json",
+                        "User-Agent":"NEXUS-public-football-research/1.0"})
+    with reader(request,timeout=12) as response:
+        raw=response.read(MAX_RESPONSE+1)
+        remaining=response.headers.get("x-requests-remaining")
+    if len(raw)>MAX_RESPONSE:
+        raise ValueError("Provider credential-check response too large")
+    payload=json.loads(raw)
+    if not isinstance(payload,list):
+        raise ValueError("Provider credential-check unexpected schema")
+    remaining_count=None
+    if remaining is not None:
+        try:
+            remaining_count=max(0,int(remaining))
+        except (ValueError,TypeError):
+            pass
+    return {"valid":True, "remaining_credits":remaining_count}
+
+
 def parse_market_prices(payload, match, checked):
     """No odds unless exact event identity, bookmaker, price and time match."""
     if not isinstance(payload,dict) or not isinstance(payload.get("bookmakers"),list):
@@ -159,7 +186,11 @@ def read_targets(folder, now):
         kickoff=float(game.get("kickoff_unix") or 0)
         if not now.timestamp() < kickoff <= now.timestamp()+36*3600:
             continue
-        if game.get("coverage") not in ("no_bookmaker_price","indicative_only"):
+        # Match odds / goal odds do not imply ANY corners/cards pricing.
+        # Search these missing markets even if 1X2 is fully verified.
+        has_corners = int(game.get("official_verified_total_corners_quotes") or 0) > 0
+        has_cards = int(game.get("official_verified_total_cards_quotes") or 0) > 0
+        if has_corners and has_cards:
             continue
         targets.append({**game,"kickoff_utc":datetime.fromtimestamp(kickoff,timezone.utc).isoformat()})
     targets.sort(key=lambda g:g["kickoff_unix"])
@@ -184,7 +215,7 @@ def atomic_write(path,data):
     tmp.replace(path)
 
 
-def run(folder, now, key=None, getter=get_json):
+def run(folder, now, key=None, getter=get_json, probe=None):
     archive=Path(folder)/"official-free-odds"
     archive.mkdir(parents=True,exist_ok=True)
     status={"schema":1,"checked_at":now.isoformat(),
@@ -197,6 +228,32 @@ def run(folder, now, key=None, getter=get_json):
     if not key:
         atomic_write(archive/"status.json",status)
         return status
+    status["key_configured"]=True
+    if probe is not None:
+        try:
+            verified=probe(key)
+            if not isinstance(verified,dict) or verified.get("valid") is not True:
+                raise ValueError("Unexpected credential verification")
+            status["credential_status"]="verified"
+            remaining=verified.get("remaining_credits")
+            if isinstance(remaining,int):
+                status["provider_credits_remaining"]=remaining
+                if remaining < MIN_PROVIDER_CREDITS_LEFT:
+                    status["status"]="provider_quota_low"
+                    atomic_write(archive/"status.json",status)
+                    return status
+        except HTTPError as exc:
+            status["credential_status"]="invalid_or_restricted"
+            status["status"]="invalid_key_or_permission" if exc.code in (401,403) else "key_validation_failed"
+            status["errors"].append({"status":exc.code,"type":"HTTPError"})
+            atomic_write(archive/"status.json",status)
+            return status
+        except (URLError,ValueError,OSError,TimeoutError) as exc:
+            status["credential_status"]="unverified"
+            status["status"]="key_validation_failed"
+            status["errors"].append({"type":type(exc).__name__})
+            atomic_write(archive/"status.json",status)
+            return status
     ledger_path,ledger=daily_budget(archive,now)
     day=now.astimezone(BR).date().isoformat()
     used=ledger.setdefault("daily_lookups",{}).setdefault(day,[])
@@ -206,7 +263,8 @@ def run(folder, now, key=None, getter=get_json):
         atomic_write(archive/"status.json",status)
         return status
     targets=read_targets(Path(folder),now)
-    status["status"]="ok"
+    status["eligible_priority_games"]=len(targets)
+    status["status"]="ok" if targets else "key_valid_no_eligible_fixture"
     for target in targets:
         if len(used)>=MAX_DAILY_EVENTS or reserved+2>MAX_MONTHLY_LOCAL_CREDITS:
             break
@@ -287,7 +345,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--archive",default="market-history")
     args=p.parse_args()
-    report=run(args.archive,datetime.now(timezone.utc))
+    report=run(args.archive,datetime.now(timezone.utc),probe=probe_key)
     print(json.dumps(report,ensure_ascii=False))
 
 
