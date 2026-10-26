@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T13:30:54.009685+00:00",
+  "checked_at": "2026-10-26T15:18:47.961267+00:00",
   "horizon_hours": 48,
   "important_games": 15,
   "verified_bookmaker_games": 9,
@@ -12,15 +12,24 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 2,
-    "indicative": 1,
+    "indicative": 2,
     "new_priority": 0
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 0,
+    "matched": 1,
     "new_verified_game": 0,
-    "offers": 0,
-    "market_families": {}
+    "offers": 135,
+    "market_families": {
+      "match_odds": 6,
+      "team_goals": 18,
+      "asian_handicap": 34,
+      "total_goals": 38,
+      "half_time": 3,
+      "first_half_team_goals": 4,
+      "first_half_handicap": 16,
+      "first_half_goals": 16
+    }
   },
   "official_corners_cards": {
     "status": "checked",
@@ -32,75 +41,95 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-26T10:01:54.055804+00:00",
-    "complete_market_lines": 108,
+    "bookmaker_snapshot_at": "2026-10-26T14:58:45.055731+00:00",
+    "complete_market_lines": 644,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 222,
-    "invalid_quote_records": 6,
+    "odds_eligible_for_quality": 1320,
+    "invalid_quote_records": 28,
     "families": {
       "asian_handicap": {
-        "games": 3,
-        "odds": 54,
-        "complete_lines": 27,
+        "games": 16,
+        "odds": 326,
+        "complete_lines": 163,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.19
+        "median_overround_pct": 5.16
       },
       "first_half_goals": {
-        "games": 3,
-        "odds": 30,
-        "complete_lines": 15,
+        "games": 16,
+        "odds": 184,
+        "complete_lines": 92,
         "incomplete_lines": 0,
         "median_overround_pct": 6.56
       },
       "first_half_handicap": {
-        "games": 3,
-        "odds": 30,
-        "complete_lines": 15,
+        "games": 16,
+        "odds": 180,
+        "complete_lines": 90,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.62
+        "median_overround_pct": 5.69
       },
       "first_half_team_goals": {
-        "games": 3,
-        "odds": 12,
-        "complete_lines": 6,
+        "games": 16,
+        "odds": 62,
+        "complete_lines": 31,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.33
+        "median_overround_pct": 6.12
       },
       "half_time": {
-        "games": 3,
-        "odds": 9,
-        "complete_lines": 3,
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.59
+        "median_overround_pct": 6.14
       },
       "match_odds": {
-        "games": 3,
-        "odds": 9,
-        "complete_lines": 3,
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.36
+        "median_overround_pct": 5.67
       },
       "team_goals": {
-        "games": 3,
-        "odds": 28,
-        "complete_lines": 14,
+        "games": 16,
+        "odds": 152,
+        "complete_lines": 76,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.36
+        "median_overround_pct": 6.18
       },
       "total_goals": {
-        "games": 3,
-        "odds": 50,
-        "complete_lines": 25,
+        "games": 16,
+        "odds": 320,
+        "complete_lines": 160,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.7
+        "median_overround_pct": 5.56
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 716,
-    "historical_snapshots": 29,
+    "selections_with_changes": 1105,
+    "historical_snapshots": 42,
     "top_changes": [
+      {
+        "home": "Flamengo",
+        "away": "Atletico Mineiro",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;3.5",
+        "selection": "over",
+        "first_odds": 2.45,
+        "last_odds": 1.3165,
+        "implied_probability_change_pp": 35.143
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atletico Mineiro",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;3.5",
+        "selection": "under",
+        "first_odds": 1.5747,
+        "last_odds": 3.17,
+        "implied_probability_change_pp": -31.958
+      },
       {
         "home": "Flamengo",
         "away": "Atletico Mineiro",
@@ -108,28 +137,8 @@
         "raw_market_key": "s;1;s;-1.0",
         "selection": "home",
         "first_odds": 1.4717,
-        "last_odds": 2.66,
-        "implied_probability_change_pp": -30.355
-      },
-      {
-        "home": "Flamengo",
-        "away": "Atletico Mineiro",
-        "market_family": "first_half_handicap",
-        "raw_market_key": "s;1;s;-1.0",
-        "selection": "away",
-        "first_odds": 2.49,
-        "last_odds": 1.4902,
-        "implied_probability_change_pp": 26.944
-      },
-      {
-        "home": "Coritiba",
-        "away": "Gremio",
-        "market_family": "total_goals",
-        "raw_market_key": "s;0;ou;2.25",
-        "selection": "over",
-        "first_odds": 1.6803,
-        "last_odds": 1.813,
-        "implied_probability_change_pp": -4.356
+        "last_odds": 2.49,
+        "implied_probability_change_pp": -27.788
       }
     ]
   },
@@ -187,9 +196,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 141,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -205,12 +215,13 @@
       ],
       "fair_odds_modelled": {
         "home": 1.9,
-        "draw": 3.6,
-        "away": 5.09
+        "draw": 3.61,
+        "away": 5.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
     },
     {
@@ -290,16 +301,24 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.38,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.39,
-        "draw": 5.99,
-        "away": 8.85
+        "home": 1.35,
+        "draw": 6.35,
+        "away": 9.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
@@ -383,7 +402,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
