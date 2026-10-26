@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:36:34.634111+00:00",
+  "checked_at": "2026-10-26T01:52:14.469636+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 25,
+  "priority_fixtures_seen": 13,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -65,39 +65,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlas x Puebla",
-      "league": "mex.1",
-      "kickoff": 1792969200,
+      "fixture": "Alianza FC x Internacional de Bogotá",
+      "league": "col.1",
+      "kickoff": 1792962300,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Querétaro x Cruz Azul",
-      "league": "mex.1",
-      "kickoff": 1792976400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "América x Pachuca",
-      "league": "mex.1",
-      "kickoff": 1792976700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Independiente x Boca Juniors",
-      "league": "arg.1",
-      "kickoff": 1792958400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "River Plate x Racing Club",
-      "league": "arg.1",
-      "kickoff": 1792966500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Barracas Central x Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "kickoff": 1792974600,
+      "fixture": "Atlético Nacional x Independiente Medellín",
+      "league": "col.1",
+      "kickoff": 1792969800,
       "reason": "no_verified_public_1x2"
     }
   ],
