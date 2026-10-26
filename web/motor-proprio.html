@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXUS | Odds próprias e probabilidades</title>
+<style>
+:root{color-scheme:dark;--bg:#08131f;--p:#122336;--p2:#182a3f;--border:#30445b;--txt:#eef6ff;--mut:#9eb2c8;--cyan:#63eee1;--orange:#ffd494}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#173952 0%,var(--bg) 46%);color:var(--txt);font:14px/1.55 system-ui,Segoe UI,Arial,sans-serif}
+main{max-width:1220px;margin:auto;padding:24px 19px 80px}header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--border);padding-bottom:24px;flex-wrap:wrap}.brand{font-weight:900;font-size:21px;letter-spacing:1px}.brand em{color:var(--cyan);font-style:normal}a{color:var(--cyan)}a.back{border:1px solid var(--border);padding:9px 15px;border-radius:9px;text-decoration:none}
+h1{font-size:clamp(29px,4vw,42px);line-height:1.15;margin:15px 0}h2{font-size:19px;margin:0 0 8px}h3{font-size:15px;margin:0 0 6px}.sub{color:var(--mut)}.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:1.8px;text-transform:uppercase;font-weight:850}.hero{padding:30px 0 8px}.hero p{max-width:800px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.box,.panel{background:var(--p);border:1px solid var(--border);border-radius:13px;padding:17px}.box strong{font-size:25px;display:block}.box span{color:var(--mut);font-size:12px}
+.notice{background:#34281d77;border-left:3px solid var(--orange);padding:12px 15px;border-radius:6px;color:#f6d9b4;margin:17px 0}
+.controls{display:grid;grid-template-columns:1fr 2fr;gap:12px;margin:18px 0}.controls label{display:block;text-transform:uppercase;letter-spacing:1px;color:var(--mut);font-size:11px;font-weight:800;margin-bottom:6px}
+select{background:#0b1928;border:1px solid #506175;color:var(--txt);border-radius:8px;padding:12px;width:100%;min-width:0}
+.line{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px}.line strong{font-size:21px}.line b{color:var(--cyan)}
+.tip{color:var(--orange);font-size:12px}.stats{color:var(--mut);margin:12px 0 0}.markets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:15px}.market{background:#101e30;border:1px solid var(--border);border-radius:13px;padding:17px;min-width:0}.market.wide{grid-column:1/-1}.market p{color:var(--mut);font-size:12px;margin:0 0 12px}
+.outcomes{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:8px}.outcome{background:var(--p2);border:1px solid #344a62;border-radius:9px;padding:10px;min-width:0}.outcome small{color:var(--mut);display:block;min-height:25px;font-size:11px;line-height:1.3}.outcome b{color:var(--cyan);font-size:23px;display:block}.outcome span{font-size:12px}.track{height:4px;border-radius:6px;background:#2c3f54;margin-top:9px;overflow:hidden}.track div{height:100%;background:var(--cyan)}
+.lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.lines section{border:1px solid #31455b;padding:11px;border-radius:10px}
+footer{margin-top:25px;padding-top:22px;border-top:1px solid var(--border);color:var(--mut);font-size:12px}
+@media(max-width:820px){.metrics{grid-template-columns:repeat(2,1fr)}.markets,.controls{grid-template-columns:1fr}.market.wide{grid-column:1}.lines{grid-template-columns:1fr 1fr}.line strong{font-size:16px}}
+@media(max-width:440px){.lines{grid-template-columns:1fr}.outcomes{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:15px 12px 65px}}
+</style>
+</head>
+<body><main>
+<header><div><div class="brand">NEXUS <em>SCORE</em></div><div class="eyebrow">MOTOR INDEPENDENTE · GOLS E RESULTADOS</div></div><a class="back" href="./index.html">Voltar ao NEXUS</a></header>
+<div class="hero"><div class="eyebrow">ODDS TEÓRICAS · 100% CÁLCULO · SEM BOOKMAKER</div><h1>Motor próprio de probabilidades</h1><p class="sub">Final, intervalo, HT/FT, ambas marcam, over/under, dupla chance, gols por equipe e placar exato. Não inclui handicap, cartões, escanteios nem jogadores.</p></div>
+<div class="metrics">
+<div class="box"><strong id="total">—</strong><span>Jogos encontrados</span></div>
+<div class="box"><strong id="available">—</strong><span>Com modelo válido</span></div>
+<div class="box"><strong id="training">—</strong><span>Partidas históricas</span></div>
+<div class="box"><strong id="when">—</strong><span>Atualização em Brasília</span></div>
+</div>
+<div class="notice" id="notice" role="status">Carregando previsões teóricas...</div>
+<div class="controls">
+<div><label for="filter">Filtrar jogos</label><select id="filter"><option value="all">Todos</option><option value="priced">Com probabilidades</option><option value="missing">Sem histórico suficiente</option></select></div>
+<div><label for="fixture">Escolher confronto</label><select id="fixture"><option>Carregando...</option></select></div>
+</div>
+<div class="panel" id="match"></div>
+<div class="markets" id="markets"></div>
+<footer>**Nota:** preço exibido = 1/probabilidade, sem margem de bookmaker. É preço teórico NEXUS, não odd oferecida por casa, dica de aposta, EV comprovado ou retorno. A distribuição conjunta de gols por tempo liga matematicamente HT, FT e HT/FT. O modelo ainda não possui backtest prospectivo validado; use a classificação de amostra antes de interpretar números.</footer>
+</main>
+<script>
+"use strict";
+var data=null, byId=id=>document.getElementById(id);
+function el(tag,css,value){var x=document.createElement(tag);if(css)x.className=css;if(value!==undefined)x.textContent=String(value);return x}
+function fmtTime(s){var d=new Date(s);return isNaN(d.getTime())?"—":d.toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}
+var labels={"1":"Casa","2":"Visitante","X":"Empate","1X":"Casa/empate","X2":"Empate/fora","12":"Casa/fora","Sim":"Sim","Não":"Não","Over":"Acima","Under":"Abaixo"};
+function outcome(parent,key,v){if(!v||typeof v.percent!=="number")return;var wrap=el("div","outcome");wrap.append(el("small","",labels[key]||key),el("b","",typeof v.fair_odds==="number"?v.fair_odds.toFixed(2):"—"),el("span","",v.percent.toFixed(2)+"%"));var track=el("div","track"),bar=el("div");bar.style.width=Math.max(0,Math.min(100,v.percent))+"%";track.append(bar);wrap.append(track);parent.append(wrap)}
+function simple(title,subtitle,book,wide){var card=el("section","market"+(wide?" wide":""));card.append(el("h3","",title),el("p","",subtitle));var cont=el("div","outcomes");Object.entries(book||{}).forEach(function(entry){outcome(cont,entry[0],entry[1])});card.append(cont);byId("markets").append(card)}
+function total(title,subtitle,book){var card=el("section","market wide");card.append(el("h3","",title),el("p","",subtitle));var rows=el("div","lines");Object.entries(book||{}).forEach(function(entry){var cell=el("section");cell.append(el("h3","",entry[0]+" gols"));var grid=el("div","outcomes");Object.entries(entry[1]).forEach(function(v){outcome(grid,v[0],v[1])});cell.append(grid);rows.append(cell)});card.append(rows);byId("markets").append(card)}
+function paint(){byId("markets").replaceChildren();byId("match").replaceChildren();if(!data)return;var g=data.fixtures[+byId("fixture").value];if(!g)return;
+ var teams=el("div","line");teams.append(el("strong","",g.home),el("b",""," × "),el("strong","",g.away));byId("match").append(teams);
+ byId("match").append(el("div","stats",String(g.league)+" · "+fmtTime(g.kickoff_utc)));
+ if(!g.markets){byId("match").append(el("p","tip","Sem previsão: histórico insuficiente, distribuição HT ainda não confiável ou liga sem resultados suficientes."));byId("match").append(el("span","stats",g.model_status));return}
+ var e=g.estimates;byId("match").append(el("p","stats","Gols esperados: "+e.lambda_home_ft.toFixed(2)+" / "+e.lambda_away_ft.toFixed(2)+" · Jogos na liga: "+e.league_training_games+" · Jogos dos times: "+e.home_team_games+" / "+e.away_team_games));
+ byId("match").append(el("p","tip",e.history_quality==="limited"?"Amostra limitada: estimativas experimentais, sem calibração comprovada.":"Amostra moderada: modelo ainda não validado prospectivamente."));
+ if(e.half_time_calibration_source!=="league_observed_halftimes")byId("match").append(el("p","tip","HT estimado a partir de intervalos de outras ligas: menor confiabilidade."));
+ var m=g.markets;
+ simple("Resultado final (FT)","Vitória casa, empate e fora. Somam 100%.",m.ft_1x2);
+ simple("Resultado no intervalo (HT)","Somente placar do primeiro tempo.",m.ht_1x2);
+ simple("Ambas marcam (FT)","Gols para os dois times no jogo.",m.btts_ft);
+ simple("Ambas marcam (HT)","Gols para os dois times até o intervalo.",m.btts_ht);
+ simple("Dupla chance FT","Sem handicap.",m.double_chance_ft);
+ simple("HT / FT","Nove combinações; mesmo modelo dos dois tempos.",m.ht_ft,true);
+ total("Over / Under FT","Soma dos gols das duas equipes.",m.ft_total_goals);
+ total("Over / Under HT","Soma dos gols até o intervalo.",m.ht_total_goals);
+ total("Total de gols da casa (FT)","Gols individuais do mandante.",m.home_team_goals_ft);
+ total("Total de gols de fora (FT)","Gols individuais do visitante.",m.away_team_goals_ft);
+ simple("Placar exato (FT)","Oito placares mais prováveis, não exaustivos.",m.correct_score_ft,true);
+}
+function filters(){var f=byId("filter").value,old=byId("fixture").value,available=[];byId("fixture").replaceChildren();(data.fixtures||[]).forEach(function(g,i){if(f==="priced"&&!g.markets||f==="missing"&&g.markets)return;available.push(i);var opt=el("option","",g.home+" × "+g.away+(g.markets?" · modelo válido":" · dados insuficientes"));opt.value=i;byId("fixture").append(opt)});if(available.length)byId("fixture").value=available.includes(+old)?old:available.find(i=>data.fixtures[i].markets)??available[0];paint()}
+byId("filter").onchange=filters;byId("fixture").onchange=paint;
+fetch("./nexus-model-odds.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw Error("previsões ainda não publicadas");return r.json()}).then(function(d){if(d.schema!==1||!Array.isArray(d.fixtures))throw Error("formato inválido");data=d;byId("total").textContent=d.fixtures_found;byId("available").textContent=d.fixtures_priced;byId("training").textContent=Number(d.historical_finished_games||0).toLocaleString("pt-BR");byId("when").textContent=fmtTime(d.generated_at);byId("notice").textContent=(Date.now()-Date.parse(d.generated_at)>12*3600000?"ATENÇÃO: arquivo desatualizado. ":"")+"Probabilidades exclusivamente calculadas pelo NEXUS. "+d.fixtures_priced+" jogo(s) com histórico suficiente; "+d.fixtures_without_model+" não precificado(s). Sem preços de casas.";filters()}).catch(function(error){byId("notice").textContent="O motor está instalado, mas os dados ainda não foram publicados nesta página: "+error.message;byId("match").append(el("p","tip","O motor matemático permanece independente dos coletores."))});
+</script>
+</body></html>
