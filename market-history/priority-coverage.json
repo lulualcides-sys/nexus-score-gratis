@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T00:57:21.400843+00:00",
+  "checked_at": "2026-10-26T01:02:33.203753+00:00",
   "horizon_hours": 48,
-  "important_games": 15,
+  "important_games": 16,
   "verified_bookmaker_games": 9,
   "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 5,
+  "missing_bookmaker_price_games": 6,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 5,
+    "matched": 3,
     "indicative": 2,
     "new_priority": 1
   },
@@ -215,9 +215,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.97,
-        "draw": 3.62,
-        "away": 4.62
+        "home": 1.96,
+        "draw": 3.63,
+        "away": 4.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -251,8 +251,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.39,
-        "draw": 6.38,
-        "away": 7.98
+        "draw": 6.39,
+        "away": 7.99
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
@@ -276,13 +276,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 3.81,
-        "draw": 3.98,
-        "away": 2.06
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11484/club-queretaro-vs-cruz-azul-2026-10-26",
-      "tipsaudit_id": "11484",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 108,
       "coverage": "verified_price"
@@ -298,16 +294,16 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 160,
+      "verified_quotes": 163,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.68,
-        "draw": 4.58,
-        "away": 5.33
+        "home": 1.74,
+        "draw": 4.34,
+        "away": 5.17
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
       "tipsaudit_id": "11479",
@@ -325,9 +321,9 @@
       "verified_quotes": 106,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.15,
-        "draw": 3.9,
-        "away": 3.59
+        "home": 2.16,
+        "draw": 3.89,
+        "away": 3.58
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
       "tipsaudit_id": "11486",
@@ -440,22 +436,40 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 229,
+      "verified_quotes": 232,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.61,
-        "draw": 4.96,
-        "away": 5.66
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
-      "tipsaudit_id": "11483",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
+    },
+    {
+      "home": "Santa Clara",
+      "away": "Benfica",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793040300.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Deportes Tolima",
@@ -467,7 +481,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 42,
+      "verified_quotes": 48,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -573,6 +587,27 @@
       "league": "Liga Profesional Argentina",
       "league_code": "arg.1",
       "kickoff_unix": 1793060100.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Santa Clara",
+      "away": "Benfica",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793040300.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
