@@ -19,7 +19,7 @@ def priors(n=75,league="eng.1",with_ht=True):
         # Realistically variable team strengths and outcomes, not odds.
         h,a=("Arsenal","Chelsea") if j%2==0 else ("Chelsea","Arsenal")
         ft=[(2,1),(1,1),(1,0),(0,1),(2,2)][j%5]
-        ht=(min(ft[0],int(ft[0]>0)),min(ft[1],int(ft[1]>0))) if with_ht else None
+        ht=(int(ft[0]>1),int(ft[1]>0)) if with_ht else None
         result.append({
             "league":league,"home":normalized_team(h),"away":normalized_team(a),
             "date":(NOW-timedelta(days=2+j)).date(),
@@ -154,7 +154,7 @@ class MathsTests(unittest.TestCase):
             self.assertEqual(x["fixtures_without_model"],1)
             self.assertEqual(x["fixtures"][0]["model_status"],"insufficient_league_results")
             self.assertNotIn("markets",x["fixtures"][0])
-            self.assertNotIn("bookmaker",json.dumps(x["fixtures"][0]))
+            self.assertTrue(x["fixtures"][0]["not_a_bookmaker_quote"])
             self.assertEqual(x["excluded_markets"],
                              ["handicap","escanteios","cartoes","jogadores"])
 
