@@ -70,3 +70,7 @@ Adicionado `public_no_key.py`, leitura da API JSON **expressamente gratuita** de
 ## Onde encontrar odds — sem custos extras
 
 Veja [ODDS_SOURCES.md](ODDS_SOURCES.md). O NEXUS já contém integrações opcionais OddsPapi (limite de cota mensal próprio) e API-Football. A coleta independente reaproveita os dados exportados e o `history/` do mesmo repositório, **sem duplicar requisições de odds nem gastar cota de API à parte**. Fontes alternativas exigem licença ou chave gratuita próprias e só serão ativadas conforme disponibilidade e direitos de uso.
+
+## Projeto futuro — motor de odds NEXUS próprio
+
+A diretriz de independência das casas foi documentada em [NEXUS_MOTOR_PROPRIO_ODDS_ROADMAP.md](../research/NEXUS_MOTOR_PROPRIO_ODDS_ROADMAP.md). Continuar coletando **somente dados reais acessíveis/permitidos**, com origem e horário identificados, para desenvolver futuramente probabilidades e **odds teóricas NEXUS** testadas prospectivamente. Odds calculadas não são odds executáveis de casas, nem liquidez. O desenvolvimento do motor próprio está **planejado, não concluído**.
