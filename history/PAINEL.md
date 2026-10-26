@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T10:49:19.162497+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T12:35:18.391355+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -34,7 +34,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-26 | Maccabi Haifa × Hapoel Beer Sheva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Deportivo Garcilaso × Los Chankas | 4-0 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 3.0×4.0, Escanteios: 3.0×3.0, Grandes chances: 5.0×1.0 |
 | 2026-10-26 | Sportivo San Lorenzo × Cerro Porteño | 1-2 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 5.0×10.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×5.0 |
-| 2026-10-26 | Muang Thong United × Police Tero FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Muang Thong United × Police Tero FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Al Bukayriyah × Hajer | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Al-Ula FC × Al-Orobah FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Bournemouth U21 × Brentford U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -103,7 +103,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-26 | Mardin 1969 Spor × Manisa Futbol Kulübü | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Veraguas United × Union Cocle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Ararat Armenia × FC Noah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-26 | Geylang International FC × Hougang United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Geylang International FC × Hougang United FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | AEK Larnaca × Omonia Nicosia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Nea Salamis × Pafos FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | FC Metaloglobus București × Râmnicu Vâlcea | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -115,8 +115,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-26 | AZ Picerno × Salernitana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Geita Gold FC × Fountain Gate FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Bhayangkara Presisi Lampung FC × PSM Makassar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-26 | Persebaya Surabaya × Madura United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-26 | Persija Jakarta × Persik | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Persebaya Surabaya × Madura United | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Persija Jakarta × Persik | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Neftchi Fargona × Al Ittihad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Al Ahli × Al-Gharafa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Al-Ain × Tractor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -125,9 +125,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-26 | Al Quwa Al Jawiya × Pakhtakor Tashkent | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Zakynthos APS × Pyrgos AFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | FC Fard × Havadar SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-26 | Kara Gostar × Naft Masjed Soleyman FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Kara Gostar × Naft Masjed Soleyman FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Mes Kerman × Shahin Bandar Ameri | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-26 | Niroye Zamini × Qeshm Island | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-26 | Niroye Zamini × Qeshm Island | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Mohun Bagan SG × Chennaiyin FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Lobos UPNFM × CD Olimpia | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Nacional × Liverpool FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 7368 | **Jogos distintos:** 2137 | **Resultados verificáveis:** 4242 | **Com gol:** 1581 | **Sem gol:** 2661 | **Taxa observada:** 37.3%.
-**Evolução da amostra:** 18 datas com coletas | 41 pendentes | 1336 indeterminados | 1749 incompletos.
+**Evolução da amostra:** 18 datas com coletas | 57 pendentes | 1320 indeterminados | 1749 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7368 | **Jogos monitorados:** 1674 | **Ao vivo:** 57 | **Termômetros recentes:** 13.
+**Registros:** 7368 | **Jogos monitorados:** 1674 | **Ao vivo:** 66 | **Termômetros recentes:** 13.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
@@ -326,7 +326,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T00:07:51.244366+00:00 | Deportivo Garcilaso × Los Chankas | Deportivo Garcilaso (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | Atlético Nacional × Independiente Medellín | Independiente Medellín (43') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | Deportivo Garcilaso × Los Chankas | Deportivo Garcilaso (41') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-25T23:54:44.556135+00:00 | Sportivo San Lorenzo × Cerro Porteño | Cerro Porteño (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-25T23:54:44.556135+00:00 | Sportivo San Lorenzo × Cerro Porteño | Cerro Porteño (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | River Plate × Racing Club | River Plate (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | River Plate × Racing Club | River Plate (74') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | San Diego Wave FC (W) × Boston Legacy FC (W) | San Diego Wave FC (W) (46') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
