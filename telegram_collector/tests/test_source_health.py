@@ -24,6 +24,10 @@ class SourceHealthTests(unittest.TestCase):
         self.put("priority-espn-status.json",{"checked_at":NOW.isoformat(),
                                              "boards_ok":8,"priority_fixtures_seen":32,
                                              "new_quotes":9})
+        self.put("priority-boxscore-status.json",{"checked_at":NOW.isoformat(),
+                                                    "status":"ok", "checked":3,
+                                                    "games_enriched":2,
+                                                    "observed_statistics_fields":12})
         self.put("public-no-key/status.json",{"checked_at":NOW.isoformat(),
                                                "status":"ok","quotes_indicative":50})
         self.put("public-no-key/pinnacle-status.json",{"checked_at":NOW.isoformat(),
@@ -32,10 +36,12 @@ class SourceHealthTests(unittest.TestCase):
                    "important_games":20,"verified_bookmaker_games":10,
                    "missing_bookmaker_price_games":7})
         out=run(self.path,NOW)
-        self.assertEqual(out["sources_ok"],4)
+        self.assertEqual(out["sources_ok"],5)
         self.assertEqual(out["overall_status"],"ok")
         self.assertEqual(out["priority_coverage"]["verified_bookmaker_games"],10)
         self.assertEqual(out["source_status"]["pinnacle"]["games_priced"],5)
+        self.assertEqual(out["source_status"]["espn_boxscore"]["statistics_fields_observed"],12)
+        self.assertIsNone(out["source_status"]["espn_boxscore"]["odds_observed"])
         self.assertTrue((self.path/"source-health.json").is_file())
 
     def test_blocked_or_stale_sources_never_reported_healthy(self):
