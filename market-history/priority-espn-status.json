@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T03:42:47.407329+00:00",
+  "checked_at": "2026-10-26T04:21:58.637176+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 9,
@@ -29,18 +29,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Unión (Santa Fe) x Estudiantes de La Plata",
-      "league": "arg.1",
-      "kickoff": 1793052000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Instituto (Córdoba) x Deportivo Riestra",
-      "league": "arg.1",
-      "kickoff": 1793060100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Coritiba x Grêmio",
       "league": "bra.1",
       "kickoff": 1793053800,
@@ -50,18 +38,6 @@
       "fixture": "Flamengo x Atlético-MG",
       "league": "bra.1",
       "kickoff": 1793055600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Jaguares de Córdoba x Llaneros FC",
-      "league": "col.1",
-      "kickoff": 1793055600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
-      "league": "col.1",
-      "kickoff": 1793063100,
       "reason": "no_verified_public_1x2"
     }
   ],
