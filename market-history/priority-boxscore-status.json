@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-26T00:46:28.135877+00:00",
+  "status": "ok",
+  "candidates": 3,
+  "checked": 3,
+  "games_enriched": 0,
+  "observed_statistics_fields": 0,
+  "errors": [],
+  "source": "ESPN public soccer summary / boxscore",
+  "bookmaker_odds_observed": 0,
+  "liquidity_verified": false
+}
