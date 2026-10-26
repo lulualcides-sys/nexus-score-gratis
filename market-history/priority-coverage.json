@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T07:28:44.746899+00:00",
+  "checked_at": "2026-10-26T08:19:29.604713+00:00",
   "horizon_hours": 48,
   "important_games": 12,
   "verified_bookmaker_games": 8,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 2,
-    "indicative": 1,
+    "indicative": 2,
     "new_priority": 0
   },
   "pinnacle_guest": {
@@ -206,11 +206,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.97,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.95,
-        "draw": 3.64,
-        "away": 4.7
+        "home": 1.94,
+        "draw": 3.62,
+        "away": 4.78
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -311,8 +319,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.39,
-        "draw": 6.37,
-        "away": 8.06
+        "draw": 6.3,
+        "away": 8.14
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
