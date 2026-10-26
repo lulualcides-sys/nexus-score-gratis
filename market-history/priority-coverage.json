@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T18:11:22.858713+00:00",
+  "checked_at": "2026-10-26T18:56:56.578001+00:00",
   "horizon_hours": 48,
   "important_games": 15,
   "verified_bookmaker_games": 9,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 2,
-    "indicative": 2,
+    "indicative": 1,
     "new_priority": 0
   },
   "pinnacle_guest": {
@@ -154,7 +154,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 143,
+      "verified_quotes": 146,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -177,7 +177,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 11,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -200,24 +200,16 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 36,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.92,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.86,
+        "home": 1.85,
         "draw": 3.67,
-        "away": 5.25
+        "away": 5.33
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -301,7 +293,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 39,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -317,8 +309,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.36,
-        "draw": 6.22,
-        "away": 9.74
+        "draw": 6.23,
+        "away": 9.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
@@ -335,7 +327,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -357,7 +349,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -424,7 +416,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
