@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T10:17:44.951443+00:00",
+  "checked_at": "2026-10-26T11:13:06.007787+00:00",
   "horizon_hours": 48,
-  "important_games": 14,
-  "verified_bookmaker_games": 8,
+  "important_games": 15,
+  "verified_bookmaker_games": 9,
   "indicative_only_games": 0,
   "missing_bookmaker_price_games": 6,
   "games_with_corners_stats": 0,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 2,
-    "indicative": 2,
+    "indicative": 1,
     "new_priority": 0
   },
   "pinnacle_guest": {
@@ -204,9 +204,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.94,
-        "draw": 3.59,
-        "away": 4.87
+        "home": 1.92,
+        "draw": 3.58,
+        "away": 5.02
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -295,19 +295,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.38,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.37,
-        "draw": 6.5,
-        "away": 8.72
+        "home": 1.38,
+        "draw": 6.08,
+        "away": 9.01
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
@@ -359,15 +351,14 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Santa Clara",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793040300.0,
+      "home": "Argentinos Juniors",
+      "away": "Independiente Rivadavia",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793138400.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "FotMob"
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
@@ -380,6 +371,29 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Santa Clara",
+      "away": "Benfica",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793040300.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 3,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
     },
     {
       "home": "Jaguares de Córdoba",
@@ -535,15 +549,14 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Santa Clara",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793040300.0,
+      "home": "Argentinos Juniors",
+      "away": "Independiente Rivadavia",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793138400.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "FotMob"
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
