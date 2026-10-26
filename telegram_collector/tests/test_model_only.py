@@ -7,7 +7,7 @@ import unittest
 
 from telegram_collector.model_only import (
     generate, historical_rows, make_probability_book, normalized_team,
-    team_rates, scoreline, integer_goals,
+    team_rates, scoreline, integer_goals, canonical_league,
 )
 
 NOW=datetime(2026,10,25,15,0,tzinfo=timezone.utc)
@@ -157,6 +157,16 @@ class MathsTests(unittest.TestCase):
             self.assertTrue(x["fixtures"][0]["not_a_bookmaker_quote"])
             self.assertEqual(x["excluded_markets"],
                              ["handicap","escanteios","cartoes","jogadores"])
+
+    def test_ambiguous_premier_league_is_not_mixed_across_countries(self):
+        self.assertTrue(canonical_league("eng.1"))
+        self.assertTrue(canonical_league("fra.1"))
+        self.assertTrue(canonical_league("conmebol.libertadores"))
+        self.assertFalse(canonical_league("Premier League"))
+        self.assertFalse(canonical_league("Championship"))
+        self.assertFalse(canonical_league("Ligue 1"))
+        self.assertEqual(normalized_team("CA Osasuna"),normalized_team("Osasuna"))
+        self.assertEqual(normalized_team("Olympique Lyonnais"),normalized_team("Lyon"))
 
     def test_goals_parser_strict(self):
         self.assertEqual(scoreline("2-1"),(2,1))
