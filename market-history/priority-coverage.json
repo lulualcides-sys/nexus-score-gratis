@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T08:19:29.604713+00:00",
+  "checked_at": "2026-10-26T09:17:49.689517+00:00",
   "horizon_hours": 48,
-  "important_games": 12,
+  "important_games": 14,
   "verified_bookmaker_games": 8,
   "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 4,
+  "missing_bookmaker_price_games": 6,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -216,9 +216,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.94,
-        "draw": 3.62,
-        "away": 4.78
+        "home": 1.93,
+        "draw": 3.63,
+        "away": 4.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -437,6 +437,50 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "Cúcuta Deportivo",
+      "away": "Águilas Doradas",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793142000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Boyacá Chicó FC",
+      "away": "Atlético Junior",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793149500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -513,6 +557,48 @@
       "data_sources": [
         "ESPN",
         "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cúcuta Deportivo",
+      "away": "Águilas Doradas",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793142000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Boyacá Chicó FC",
+      "away": "Atlético Junior",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793149500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,

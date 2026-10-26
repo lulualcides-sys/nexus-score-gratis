@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T08:19:25.587434+00:00",
+  "checked_at": "2026-10-26T09:17:46.337075+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 9,
-  "created_games": 0,
+  "priority_fixtures_seen": 11,
+  "created_games": 2,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -38,6 +38,18 @@
       "fixture": "Flamengo x Atlético-MG",
       "league": "bra.1",
       "kickoff": 1793055600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cúcuta Deportivo x Águilas Doradas",
+      "league": "col.1",
+      "kickoff": 1793142000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Boyacá Chicó FC x Atlético Junior",
+      "league": "col.1",
+      "kickoff": 1793149500,
       "reason": "no_verified_public_1x2"
     }
   ],
