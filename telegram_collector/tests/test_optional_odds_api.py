@@ -63,6 +63,52 @@ class OfficialOptionalOddsTests(unittest.TestCase):
         stale["bookmakers"][0]["markets"][0]["last_update"]=(NOW+timedelta(hours=6)).isoformat()
         self.assertEqual(len(parse_market_prices(stale,{**target(),"provider_event_id":"abcd1234"},NOW)),2)
 
+    def test_already_covered_1x2_game_still_qualifies_for_corners_cards(self):
+        from telegram_collector.optional_odds_api import read_targets
+        with TemporaryDirectory() as folder:
+            self.make_data(folder)
+            p=Path(folder)/"priority-coverage.json"
+            data=json.loads(p.read_text())
+            data["priority_fixtures"][0]["coverage"]="verified_price"
+            p.write_text(json.dumps(data))
+            selected=read_targets(folder,NOW)
+            self.assertEqual(len(selected),1)
+            self.assertEqual(selected[0]["league_code"],"eng.1")
+            data["priority_fixtures"][0]["official_verified_total_corners_quotes"]=2
+            data["priority_fixtures"][0]["official_verified_total_cards_quotes"]=2
+            p.write_text(json.dumps(data))
+            self.assertEqual(read_targets(folder,NOW),[])
+
+    def test_free_credential_probe_rejects_invalid_key_without_paid_requests(self):
+        with TemporaryDirectory() as folder:
+            self.make_data(folder)
+            calls=[]
+            def invalid(k):
+                calls.append("check")
+                return {"valid":False}
+            report=run(folder,NOW,key="test-only",probe=invalid,
+                       getter=lambda *args: (_ for _ in ()).throw(
+                           AssertionError("Paid network must not be called")))
+            self.assertEqual(calls,["check"])
+            self.assertEqual(report["status"],"key_validation_failed")
+            self.assertEqual(report["event_odds_requests"],0)
+
+    def test_free_credential_probe_confirms_secret_even_without_target(self):
+        with TemporaryDirectory() as folder:
+            probes=[]
+            def valid(k):
+                probes.append(k=="owner-secret-not-disclosed")
+                return {"valid":True,"remaining_credits":468}
+            result=run(folder,NOW,key="owner-secret-not-disclosed",probe=valid,
+                       getter=lambda *args: (_ for _ in ()).throw(
+                           AssertionError("No fixtures, so no event listing")))
+            self.assertEqual(result["credential_status"],"verified")
+            self.assertEqual(result["status"],"key_valid_no_eligible_fixture")
+            self.assertEqual(result["provider_credits_remaining"],468)
+            self.assertEqual(probes,[True])
+            self.assertNotIn("owner-secret-not-disclosed",
+                             (Path(folder)/"official-free-odds"/"status.json").read_text())
+
     def test_key_enables_two_bounded_calls_and_ledger_prevents_more(self):
         with TemporaryDirectory() as folder:
             self.make_data(folder)
