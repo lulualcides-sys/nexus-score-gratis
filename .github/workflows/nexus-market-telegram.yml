@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py
+          python3 -m py_compile telegram_collector/collect.py telegram_collector/public_no_key.py telegram_collector/priority_espn.py telegram_collector/coverage_radar.py telegram_collector/source_health.py telegram_collector/priority_boxscore.py
           python3 -m unittest discover -s telegram_collector/tests -v
   archive:
     if: github.event_name != 'pull_request'
@@ -51,6 +51,9 @@ jobs:
       - name: Checar jogos importantes na ESPN publica sem cadastro (fallback independente)
         continue-on-error: true
         run: PYTHONPATH=. python3 -m telegram_collector.priority_espn --archive _market_data/market-history
+      - name: Complementar escanteios cartoes e chutes reais pela ESPN publica
+        continue-on-error: true
+        run: PYTHONPATH=. python3 -m telegram_collector.priority_boxscore --archive _market_data/market-history
       - name: Consultar feed público gratuito sem conta, sem chave, sem contornar bloqueios
         run: python3 telegram_collector/public_no_key.py --archive _market_data/market-history
       - name: Auditar cobertura de partidas importantes e cruzar fontes sem inventar odds
