@@ -78,3 +78,14 @@ A integração ficou mais próxima de um pipeline de dados auditável, sem simul
 ### Confiabilidade do envio diário (00h01 Brasília)
 
 O fechamento de futebol no repositório independente `nexus-quant-paper` agora **não envia nem marca como entregue** um dia se o JSON bruto estiver indisponível ou inválido. O workflow tenta às 00h01, 00h21, 00h41 e 01h01 de Brasília; assim atrasos da publicação não viram relatórios vazios ou marcadores permanentes. O marcador existente garante apenas um Telegram válido por dia, e os testes simulam a falha na primeira consulta seguida da entrega correta no retry. Horários do GitHub Actions são aproximados e podem sofrer atraso. Os 10 robôs financeiros não foram alterados.
+
+
+## Atualização: escanteios/cartões sem invasão de contas (25/10/2026)
+
+- **Estatísticas ESPN sem chave:** referência examinada [0xTeran/football-stats-mcp](https://github.com/0xTeran/football-stats-mcp). O módulo próprio `telegram_collector/priority_boxscore.py` lê a API pública de resumo da ESPN, limitada a seis partidas verificadas por rodada. Só publica escanteios/cartões/chutes quando os dois times e os números estão presentes; não altera odds pré-jogo. A primeira execução registrou 0 partidas elegíveis e, portanto, 0 estatísticas adicionais. Isso não equivale a obter odds de cartões/escanteios.
+- **Odds oficiais opcionais:** [The Odds API](https://the-odds-api.com/) (domínio com hífens; não é theoddsapi.com). [Starter grátis](https://the-odds-api.com/) com 500 créditos/mês, sujeito à cobertura real por região/mercado. [Mercados](https://the-odds-api.com/sports-odds-data/betting-markets.html): alternate_totals_corners e alternate_totals_cards.
+- Módulo `telegram_collector/optional_odds_api.py` implementado e testado; só consulta quando o TITULAR adiciona seu próprio segredo GitHub `THE_ODDS_API_KEY`. Sem chave, status no_key e ZERO requisições. Não cria contas nem usa credenciais de terceiros.
+- Para ativar sem compartilhar senha: obter uma chave gratuita em https://the-odds-api.com/ e adicioná-la no GitHub do NEXUS em Settings -> Secrets and variables -> Actions -> New repository secret, nome THE_ODDS_API_KEY. Não incluir a chave em commits ou chats.
+- Budget limitado a até 2 partidas por dia e no máximo 240 créditos reservados por mês; um único region UK e dois mercados por consulta. Preserva dados reais (bookmaker, seleção, linha, horário, jogo) separados de probabilidades modeladas e de liquidez.
+- O fluxo salva em market-history/official-free-odds; o radar e o Telegram agora diferenciam cotações oficiais de cartões/escanteios e estatísticas da partida.
+- **Estado verificado:** conector integrado e testes aprovados, mas a fonte oficial está com status no_key, 0 preços. Não foi criada conta por impossibilidade de comprovar identidade/autorização na plataforma a partir deste chat. A cobertura BRL >R$3 mil segue sem comprovação.
