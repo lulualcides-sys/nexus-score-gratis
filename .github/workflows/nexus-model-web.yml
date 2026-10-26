@@ -1,0 +1,80 @@
+name: "NEXUS | publicar motor de odds próprias na web"
+on:
+  schedule:
+    # 8 atualizações diárias, independentes dos feeds externos de odds.
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "web/motor-proprio.html"
+      - "telegram_collector/model_only.py"
+      - ".github/workflows/nexus-model-web.yml"
+permissions:
+  contents: write
+concurrency:
+  group: nexus-own-model-web
+  cancel-in-progress: false
+jobs:
+  sync-model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Buscar somente último cálculo já arquivado
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 origin market-telegram-data:refs/remotes/origin/market-telegram-data
+          git show refs/remotes/origin/market-telegram-data:market-history/model-only/latest.json > /tmp/nexus-model-only.json
+      - name: Validar formato e não expor credenciais nem odds de casas
+        run: |
+          python3 - <<'PY'
+          import datetime as dt
+          import json
+          from pathlib import Path
+          source=json.loads(Path("/tmp/nexus-model-only.json").read_text(encoding="utf-8"))
+          assert source.get("schema")==1
+          assert source.get("model_version","").startswith("nexus-poisson-segmented-")
+          assert source.get("source")=="NEXUS independently computed Poisson model"
+          matches=source.get("fixtures")
+          assert isinstance(matches,list) and len(matches)<=100
+          assert source.get("fixtures_priced")==sum(bool(x.get("markets")) for x in matches)
+          assert source.get("fixtures_without_model")==sum(not bool(x.get("markets")) for x in matches)
+          date=dt.datetime.fromisoformat(source["generated_at"].replace("Z","+00:00"))
+          age=(dt.datetime.now(dt.timezone.utc)-date).total_seconds()
+          assert -120<=age<12*3600, "modelo está obsoleto"
+          for fixture in matches:
+              assert fixture.get("not_a_bookmaker_quote") is True
+              assert fixture.get("kickoff_utc")
+              for k in ("bookmaker","real_bookmaker_odds","api_key","token","secrets"):
+                  assert k not in fixture
+          Path("web/nexus-model-odds.json").write_text(
+              json.dumps(source,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
+          print("Modelo validado e pronto: " + str(source["fixtures_priced"]) + " jogos calculados")
+          PY
+      - name: Validar JavaScript isolado do novo painel
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          text=Path("web/motor-proprio.html").read_text(encoding="utf-8")
+          assert text.count("<script>")==1 and text.count("</script>")==1
+          script=text.split("<script>",1)[1].split("</script>",1)[0]
+          Path("/tmp/nexus-model-browser.js").write_text(script,encoding="utf-8")
+          PY
+          node --check /tmp/nexus-model-browser.js
+      - name: Publicar apenas JSON de probabilidades calculadas
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add web/nexus-model-odds.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma mudança no motor público"
+          else
+            git commit -m "NEXUS model: publish independent theoretical probabilities"
+            git push origin HEAD:main
+          fi
