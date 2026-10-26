@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:22:33.594165+00:00",
+  "checked_at": "2026-10-26T01:31:01.617823+00:00",
   "horizon_hours": 48,
-  "important_games": 16,
-  "verified_bookmaker_games": 8,
+  "important_games": 14,
+  "verified_bookmaker_games": 6,
   "indicative_only_games": 1,
   "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
@@ -325,51 +325,6 @@
       ],
       "pinnacle_guest_quotes": 106,
       "official_verified_total_corners_quotes": 6,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Barracas Central",
-      "away": "Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "league_code": "arg.1",
-      "kickoff_unix": 1792974600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 44,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Central Córdoba (Santiago del Estero)",
-      "away": "Vélez Sarsfield",
-      "league": "arg.1",
-      "league_code": "arg.1",
-      "kickoff_unix": 1792974600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 60,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
     {
