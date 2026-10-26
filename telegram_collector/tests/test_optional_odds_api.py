@@ -160,6 +160,7 @@ class OfficialOptionalOddsTests(unittest.TestCase):
             first=run(folder,NOW,key="own-personal-free-key",getter=fake)
             self.assertEqual(first["prices_observed"],4)
             self.assertEqual(first["event_odds_requests"],1)
+            self.assertEqual(first["provider_credits_remaining"],450)
             second=run(folder,NOW+timedelta(minutes=5),key="own-personal-free-key",getter=fake)
             self.assertEqual(second["event_odds_requests"],0)
             self.assertEqual(calls,[("soccer_epl",None),("soccer_epl","abcd1234")])
