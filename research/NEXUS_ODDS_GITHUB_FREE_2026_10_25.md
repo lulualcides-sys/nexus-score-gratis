@@ -52,3 +52,25 @@ O pipeline passou de capturar linhas isoladas para **validar a integridade do li
 - [pinnacleapi/pinnacleapi-documentation](https://github.com/pinnacleapi/pinnacleapi-documentation): acesso à API oficial da Pinnacle fechado ao público em 2025; nosso coletor usa **somente** a superfície de visitante do site, não a API profissional/licenciada.
 
 **Ainda faltando para paridade com uma casa:** odds de escanteios/cartões com origem verificável; dados de volume negociado genuíno; maior cobertura de competições e eventos; métricas de confiabilidade por fonte; regulamentação e infraestrutura de negociação (não fazem parte de um coletor de pesquisa).
+
+
+## Continuidade: line movement + saúde de fontes (25/10/2026, Brasil)
+
+A integração ficou mais próxima de um pipeline de dados auditável, sem simular um sportsbook que já precifica todos os mercados:
+
+- \`telegram_collector/market_motion.py\`: lê exclusivamente o histórico da Pinnacle na branch de dados. Compara primeiro e último preço da **mesma seleção, mercado e linha**, com timestamp individual validado **antes** do início do jogo. Mudança apresentada em pontos percentuais de probabilidade **implícita bruta**. Guarda \`pinnacle-motion-latest.json\`; não afirma EV, P&L, probabilidade calibrada ou volume. O primeiro arquivo real trouxe 899 seleções com mudança, em 28 jogos e 53 capturas históricas. Nem todas as partidas permaneciam futuras na hora do resumo; é histórico, não sinal para apostar agora.
+- \`telegram_collector/coverage_radar.py\`: inclui apenas resumo de movimento recente, recusando amostras futuras e divergências de timestamps.
+- \`src/nexus_football_daily.py\` no projeto \`nexus-quant-paper\`: resumo único das 00h01 menciona movimentos observados e o maior deslocamento de probabilidade implícita. Sem avisos por jogo.
+- \`telegram_collector/source_health.py\`: consulta, sem rede e sem chaves, os status do NEXUS, ESPN, TipsAudit, Pinnacle e radar. Registra frescor, número de odds, HTTP 401/403/429, jogos sem odds. Arquiva \`market-history/source-health.json\` na coleta regular.
+- Testes de regressão: vigiar se o movimento é realmente pré-jogo, não misturar seleções ou linhas, não usar cotação de um jogo depois de começar e não declarar fonte restrita como saudável.
+
+### Novas referências GitHub (avaliação cuidadosa)
+
+1. **[MadunaCapital/scanner-ingestion](https://github.com/MadunaCapital/scanner-ingestion)** — camada isolada de scrapers e *freshness circuit breaker*, um por site. Padrão arquitetural aproveitado no monitor de fontes; não incorporamos código nem endpoints cuja licença/autorização não esteja clara.
+2. **[MadunaCapital/scanner-schemas](https://github.com/MadunaCapital/scanner-schemas)** — especificações de um comparador com fontes públicas na África do Sul. A descrição de um endpoint aberto **não equivale** a licença para redistribuição em GitHub público; não ativamos scraping sem conferir as condições da fonte.
+3. **[DanielTomaro13/sportsdata-mcp](https://github.com/DanielTomaro13/sportsdata-mcp)** — inventário adicional de integrações públicas e exigências por provedor. O fato de haver um conector sem chave não autoriza contornar 401/403, um login, CAPTCHA ou termos da casa.
+4. **[odds-api/odds-api](https://github.com/odds-api/odds-api)** — API/SDK aberto apenas como ferramenta; produção exige chave. Não cumpre a restrição do usuário.
+5. **[Kambi Odds Feed+](https://www.kambi.com/what-we-do/odds-feed/)** — fonte comercial, NÃO é feed gratuito sem cadastro.
+6. **[Pinnacle API oficial](https://www.pinnacle.com/en/api)** — acesso requer solicitação e pode ter custo; não confundir com o feed web já observado.
+
+**Limites mantidos:** nenhuma invasão de conta, uso de senha/token alheio, contorno de autenticação, ou mascaramento/proxy para evitar limite; um feed bloqueado será marcado como indisponível. Prioridade de expansão: eventos importantes, cartões, escanteios, tempo real e fonte comprovada de liquidez; odds simuladas nunca substituem odds reais de casa.
