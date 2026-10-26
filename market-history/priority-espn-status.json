@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:52:14.469636+00:00",
+  "checked_at": "2026-10-26T02:23:18.673750+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
+  "priority_fixtures_seen": 23,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -62,18 +62,6 @@
       "fixture": "Independiente Santa Fe x Atlético Bucaramanga",
       "league": "col.1",
       "kickoff": 1793063100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Alianza FC x Internacional de Bogotá",
-      "league": "col.1",
-      "kickoff": 1792962300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1792969800,
       "reason": "no_verified_public_1x2"
     }
   ],

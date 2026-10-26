@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:52:17.878519+00:00",
+  "checked_at": "2026-10-26T02:23:22.265884+00:00",
   "horizon_hours": 48,
-  "important_games": 14,
-  "verified_bookmaker_games": 6,
+  "important_games": 10,
+  "verified_bookmaker_games": 2,
   "indicative_only_games": 1,
   "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
@@ -258,50 +258,6 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Querétaro FC",
-      "away": "Cruz Azul",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1792976400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 75,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "CF América",
-      "away": "Pachuca",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1792976700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 57,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Club Tijuana",
       "away": "Santos Laguna",
       "kickoff_unix": 1792984200.0,
@@ -312,7 +268,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.17,
-        "draw": 3.91,
+        "draw": 3.92,
         "away": 3.52
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11486/club-tijuana-vs-santos-laguna-2026-10-26",
@@ -372,29 +328,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Los Angeles FC",
-      "away": "LA Galaxy",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1792976400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob",
-        "ESPN"
-      ],
-      "verified_quotes": 99,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Santa Clara",
       "away": "Benfica",
       "league": "Liga Portugal",
@@ -415,28 +348,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportes Tolima",
-      "away": "Deportivo Pasto",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1792977300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 66,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Jaguares de Córdoba",
