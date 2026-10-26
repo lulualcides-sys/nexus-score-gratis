@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T16:15:04.425737+00:00",
-  "bookmaker_snapshot_at": "2026-10-26T16:15:03.024604+00:00",
+  "checked_at": "2026-10-26T19:06:36.829972+00:00",
+  "bookmaker_snapshot_at": "2026-10-26T19:06:34.091758+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1312,
-  "invalid_quote_records": 28,
-  "complete_market_lines": 640,
+  "odds_eligible_for_quality": 1468,
+  "invalid_quote_records": 26,
+  "complete_market_lines": 718,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 324,
-      "complete_lines": 162,
+      "odds": 350,
+      "complete_lines": 175,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.16
+      "median_overround_pct": 5.13
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 184,
-      "complete_lines": 92,
+      "odds": 214,
+      "complete_lines": 107,
       "incomplete_lines": 0,
       "median_overround_pct": 6.57
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 178,
-      "complete_lines": 89,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.68
+      "median_overround_pct": 5.65
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 62,
       "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.12
+      "median_overround_pct": 6.1
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.14
+      "median_overround_pct": 5.71
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.67
+      "median_overround_pct": 5.4
     },
     "team_goals": {
       "games": 16,
-      "odds": 152,
-      "complete_lines": 76,
+      "odds": 178,
+      "complete_lines": 89,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.16
+      "median_overround_pct": 6.29
     },
     "total_goals": {
       "games": 16,
-      "odds": 316,
-      "complete_lines": 158,
+      "odds": 374,
+      "complete_lines": 187,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.64
+      "median_overround_pct": 5.63
     }
   },
   "examples": [
     {
-      "fixture": "Coritiba x Gremio",
+      "fixture": "Sevilla x Osasuna",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-26T16:15:03.024604+00:00",
+      "observed_at": "2026-10-26T19:06:34.091758+00:00",
       "selections": {
-        "home": 2.25,
-        "away": 3.29,
-        "draw": 3.51
+        "home": 1.9524,
+        "away": 4.49,
+        "draw": 3.4
       },
-      "overround_pct": 3.33
+      "overround_pct": 2.9
     },
     {
-      "fixture": "Coritiba x Gremio",
+      "fixture": "Sevilla x Osasuna",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-26T16:15:03.024604+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-26T19:06:34.091758+00:00",
       "selections": {
-        "home": 1.9434,
-        "away": 1.9434
+        "home": 1.9615,
+        "away": 1.9615
       },
-      "overround_pct": 2.91
+      "overround_pct": 1.96
     },
     {
-      "fixture": "Coritiba x Gremio",
+      "fixture": "Sevilla x Osasuna",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-10-26T19:06:34.091758+00:00",
+      "selections": {
+        "home": 3.8,
+        "away": 1.3021
+      },
+      "overround_pct": 3.11
+    },
+    {
+      "fixture": "Sevilla x Osasuna",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-26T16:15:03.024604+00:00",
+      "observed_at": "2026-10-26T19:06:34.091758+00:00",
       "selections": {
-        "home": 4.05,
-        "away": 1.266
+        "home": 3.34,
+        "away": 1.3663
       },
-      "overround_pct": 3.68
+      "overround_pct": 3.13
     },
     {
-      "fixture": "Coritiba x Gremio",
+      "fixture": "Sevilla x Osasuna",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-26T16:15:03.024604+00:00",
+      "observed_at": "2026-10-26T19:06:34.091758+00:00",
       "selections": {
-        "home": 3.55,
-        "away": 1.3226
+        "home": 2.89,
+        "away": 1.4673
       },
-      "overround_pct": 3.78
-    },
-    {
-      "fixture": "Coritiba x Gremio",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-26T16:15:03.024604+00:00",
-      "selections": {
-        "home": 2.69,
-        "away": 1.5102
-      },
-      "overround_pct": 3.39
+      "overround_pct": 2.75
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
