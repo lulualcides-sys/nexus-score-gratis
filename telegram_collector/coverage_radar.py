@@ -288,6 +288,87 @@ def enrich_pinnacle(records, path, now):
             "offers":offers, "market_families":fam}
 
 
+
+def enrich_official_corners_cards(records, directory, now):
+    """Only authenticated *owner-supplied* free API quotes, matched exactly.
+
+    Never conflate observed sports stats with real bookmaker odds; no key
+    means no quotes and no fabricated liquidity claim.
+    """
+    from telegram_collector.optional_odds_api import as_utc, MARKET_KEYS
+    folder=Path(directory)
+    seen=set()
+    family_counts={"total_corners":0,"total_cards":0}
+    priced_games=set()
+    checked_files=0
+    for day_offset in (-1,0):
+        day=(now.astimezone(ZONE).date()+timedelta(days=day_offset)).isoformat()
+        file=folder/("quotes-"+day+".json")
+        if not file.is_file():
+            continue
+        data=json.loads(file.read_text(encoding="utf-8"))
+        if not isinstance(data,dict) or data.get("schema")!=1 or not isinstance(data.get("matches"),dict):
+            continue
+        checked_files+=1
+        for event_id,event in data["matches"].items():
+            if not isinstance(event,dict):
+                continue
+            kickoff=as_utc(event.get("kickoff_utc"))
+            if kickoff is None:
+                continue
+            target={"home":event.get("home"),"away":event.get("away"),
+                    "kickoff_unix":kickoff.timestamp(),
+                    "league_code":event.get("league_code")}
+            candidates=[x for x in records if same_teams_and_time(x,target)]
+            if len(candidates)!=1:
+                continue
+            game=candidates[0]
+            for obs in event.get("observations") or []:
+                if not isinstance(obs,dict):
+                    continue
+                at=as_utc(obs.get("captured_at"))
+                if at is None or not at < kickoff or not -120 <= (now-at).total_seconds() <= 4*3600:
+                    continue
+                for q in obs.get("prices") or []:
+                    if not isinstance(q,dict) or not q.get("bookmaker"):
+                        continue
+                    family=q.get("market_family")
+                    if family not in MARKET_KEYS.values() or MARKET_KEYS.get(q.get("raw_market_key")) != family:
+                        continue
+                    source_at=as_utc(q.get("bookmaker_market_updated_at"))
+                    if source_at is None or not source_at <= at or source_at >= kickoff:
+                        continue
+                    if q.get("source")!="The Odds API free official user-key feed":
+                        continue
+                    try:
+                        price=float(q["odds_decimal"])
+                        line=float(q["line"])
+                    except (ValueError,TypeError,OverflowError,KeyError):
+                        continue
+                    if not 1.01<price<1000 or not 0<line<100:
+                        continue
+                    if q.get("selection") not in ("over","under"):
+                        continue
+                    id_=(event_id,str(q["bookmaker"]),family,line,q["selection"],at.isoformat(),price)
+                    if id_ in seen:
+                        continue
+                    seen.add(id_)
+                    family_counts[family]+=1
+                    priced_games.add(id(game))
+                    game["verified_quotes"]=int(game.get("verified_quotes") or 0)+1
+                    key="official_verified_"+family+"_quotes"
+                    game[key]=int(game.get(key) or 0)+1
+                    sources=game.setdefault("data_sources",[])
+                    if "The Odds API official free" not in sources:
+                        sources.append("The Odds API official free")
+    return {"status":"checked" if checked_files else "no_observed_prices",
+            "priced_games":len(priced_games),
+            "verified_corners_quotes":family_counts["total_corners"],
+            "verified_cards_quotes":family_counts["total_cards"],
+            "files_checked":checked_files,
+            "liquidity_verified":False}
+
+
 def read_book_quality(path, now):
     """Não repassar indicadores de preços antigos como se fossem atuais."""
     path=Path(path)
@@ -364,6 +445,7 @@ def build(directory, now):
     games = collect_records(folder, now)
     feed = enrich_tipsaudit(games, folder / "public-no-key" / "tipsaudit-latest.json", now)
     pinnacle = enrich_pinnacle(games, folder / "public-no-key" / "pinnacle-latest.json", now)
+    official = enrich_official_corners_cards(games, folder / "official-free-odds", now)
     quality = read_book_quality(folder / "public-no-key" / "pinnacle-depth.json", now)
     movements = read_price_movements(folder / "public-no-key" / "pinnacle-motion-latest.json", now)
     games.sort(key=lambda g: (PRIORITY_ORDER.get(g["league_code"],999), g["kickoff_unix"],g["home"]))
@@ -385,6 +467,7 @@ def build(directory, now):
         "games_with_shots_on_target_stats": sum(bool(x.get("observed_shots_on_counts")) for x in games),
         "tipsaudit": feed,
         "pinnacle_guest": pinnacle,
+        "official_corners_cards": official,
         "book_quality": quality,
         "price_movements": movements,
         "priority_fixtures": games[:150],
