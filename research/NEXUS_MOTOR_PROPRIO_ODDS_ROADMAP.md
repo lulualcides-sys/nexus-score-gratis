@@ -1,5 +1,8 @@
 # NEXUS — Plano de independência de fontes de odds (motor próprio)
 
+> **PADRÃO ATUALIZADO EM 25/10/2026 — PREVALECE SOBRE ITENS HISTÓRICOS DESTE PLANO:** o motor próprio já possui primeira implementação experimental; a orientação atual é **somente estudar e registrar**, sem alterações em produção até novo pedido. Os únicos mercados previstos para o motor próprio são FT/HT 1X2, HT/FT, BTTS, Over/Under de gols, dupla chance, gols por equipe e placar exato. **Não** desenvolver handicap, cartões, escanteios ou mercados de jogadores no motor sem nova instrução. Pesquisa atual e testes de qualidade em [NEXUS_MOTOR_PADRAO_E_ESTUDO_2026_10_25.md](NEXUS_MOTOR_PADRAO_E_ESTUDO_2026_10_25.md).
+
+
 **Data de definição:** 25 de outubro de 2026  
 **Objetivo solicitado:** observar e registrar o funcionamento das fontes/casas de apostas permitidas, aprender com dados históricos e construir **um motor próprio de probabilidades e odds indicativas** no NEXUS. A meta é reduzir ao mínimo a dependência de sites de odds de terceiros, mantendo a qualidade verificável.
 
