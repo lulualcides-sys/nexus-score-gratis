@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T20:16:57.732801+00:00",
+  "checked_at": "2026-10-26T21:05:56.938476+00:00",
   "horizon_hours": 48,
-  "important_games": 14,
-  "verified_bookmaker_games": 8,
+  "important_games": 12,
+  "verified_bookmaker_games": 6,
   "indicative_only_games": 0,
   "missing_bookmaker_price_games": 6,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 0,
@@ -17,18 +17,18 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 2,
+    "matched": 1,
     "new_verified_game": 0,
-    "offers": 264,
+    "offers": 131,
     "market_families": {
-      "half_time": 6,
-      "first_half_team_goals": 8,
-      "first_half_handicap": 32,
-      "first_half_goals": 32,
-      "match_odds": 12,
-      "team_goals": 32,
-      "asian_handicap": 68,
-      "total_goals": 74
+      "half_time": 3,
+      "first_half_team_goals": 4,
+      "first_half_handicap": 16,
+      "first_half_goals": 16,
+      "match_odds": 6,
+      "team_goals": 16,
+      "asian_handicap": 34,
+      "total_goals": 36
     }
   },
   "official_corners_cards": {
@@ -154,7 +154,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 152,
+      "verified_quotes": 155,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -177,7 +177,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 25,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -187,31 +187,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Sevilla",
-      "away": "Osasuna",
-      "league": "La Liga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793044800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 178,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
     },
     {
@@ -281,29 +256,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Paris Saint-Germain",
-      "away": "Lyon",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793043000.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 42,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Unión (Santa Fe)",
       "away": "Estudiantes de La Plata",
       "league": "Liga Profesional Argentina",
@@ -313,7 +265,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 39,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -335,7 +287,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 29,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -379,7 +331,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -401,7 +353,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
