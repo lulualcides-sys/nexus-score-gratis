@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-25T23:24:36.137233+00:00",
-  "bookmaker_snapshot_at": "2026-10-25T23:24:34.351125+00:00",
+  "checked_at": "2026-10-26T00:32:07.286661+00:00",
+  "bookmaker_snapshot_at": "2026-10-26T00:32:04.984614+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1384,
-  "invalid_quote_records": 18,
-  "complete_market_lines": 676,
+  "odds_eligible_for_quality": 1460,
+  "invalid_quote_records": 16,
+  "complete_market_lines": 714,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 326,
-      "complete_lines": 163,
+      "odds": 348,
+      "complete_lines": 174,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.81
+      "median_overround_pct": 4.8
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 206,
-      "complete_lines": 103,
+      "odds": 214,
+      "complete_lines": 107,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.52
+      "median_overround_pct": 6.5
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 182,
-      "complete_lines": 91,
+      "odds": 188,
+      "complete_lines": 94,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.6
+      "median_overround_pct": 5.45
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 62,
       "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.07
+      "median_overround_pct": 5.37
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.53
+      "median_overround_pct": 5.1
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.02
+      "median_overround_pct": 4.55
     },
     "team_goals": {
       "games": 16,
-      "odds": 164,
-      "complete_lines": 82,
+      "odds": 176,
+      "complete_lines": 88,
       "incomplete_lines": 0,
       "median_overround_pct": 5.7
     },
     "total_goals": {
       "games": 16,
-      "odds": 348,
-      "complete_lines": 174,
+      "odds": 376,
+      "complete_lines": 188,
       "incomplete_lines": 0,
       "median_overround_pct": 5.32
     }
   },
   "examples": [
     {
-      "fixture": "Club Tijuana x Santos Laguna",
+      "fixture": "Coritiba x Gremio",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-25T23:24:34.351125+00:00",
+      "observed_at": "2026-10-26T00:32:04.984614+00:00",
       "selections": {
-        "home": 2.09,
-        "away": 3.45,
-        "draw": 3.75
+        "home": 2.22,
+        "away": 3.29,
+        "draw": 3.52
       },
-      "overround_pct": 3.5
+      "overround_pct": 3.85
     },
     {
-      "fixture": "Club Tijuana x Santos Laguna",
+      "fixture": "Coritiba x Gremio",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-25T23:24:34.351125+00:00",
+      "observed_at": "2026-10-26T00:32:04.984614+00:00",
       "selections": {
-        "home": 1.8333,
-        "away": 2.09
+        "home": 1.9259,
+        "away": 1.9615
       },
-      "overround_pct": 2.39
+      "overround_pct": 2.91
     },
     {
-      "fixture": "Club Tijuana x Santos Laguna",
+      "fixture": "Coritiba x Gremio",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-25T23:24:34.351125+00:00",
+      "observed_at": "2026-10-26T00:32:04.984614+00:00",
       "selections": {
-        "home": 3.37,
-        "away": 1.3521
+        "home": 3.93,
+        "away": 1.2717
       },
-      "overround_pct": 3.63
+      "overround_pct": 4.08
     },
     {
-      "fixture": "Club Tijuana x Santos Laguna",
+      "fixture": "Coritiba x Gremio",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-25T23:24:34.351125+00:00",
+      "observed_at": "2026-10-26T00:32:04.984614+00:00",
       "selections": {
-        "home": 2.99,
-        "away": 1.4255
+        "home": 3.46,
+        "away": 1.33
       },
-      "overround_pct": 3.6
+      "overround_pct": 4.09
     },
     {
-      "fixture": "Club Tijuana x Santos Laguna",
+      "fixture": "Coritiba x Gremio",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-25T23:24:34.351125+00:00",
+      "observed_at": "2026-10-26T00:32:04.984614+00:00",
       "selections": {
-        "home": 2.41,
-        "away": 1.6211
+        "home": 2.63,
+        "away": 1.5181
       },
-      "overround_pct": 3.18
+      "overround_pct": 3.89
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
