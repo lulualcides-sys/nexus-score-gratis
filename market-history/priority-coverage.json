@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T00:33:54.788015+00:00",
+  "checked_at": "2026-10-26T00:35:28.354568+00:00",
   "horizon_hours": 48,
   "important_games": 15,
   "verified_bookmaker_games": 9,
@@ -243,7 +243,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 144,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.81,
@@ -267,7 +267,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 118,
+      "verified_quotes": 121,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.68,
@@ -389,7 +389,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 187,
+      "verified_quotes": 190,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.61,
