@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T10:01:54.712158+00:00",
-  "bookmaker_snapshot_at": "2026-10-26T10:01:54.055804+00:00",
+  "checked_at": "2026-10-26T14:58:47.114634+00:00",
+  "bookmaker_snapshot_at": "2026-10-26T14:58:45.055731+00:00",
   "status": "fresh",
-  "matches_catalogued": 3,
-  "matches_with_priced_markets": 3,
-  "odds_eligible_for_quality": 222,
-  "invalid_quote_records": 6,
-  "complete_market_lines": 108,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1320,
+  "invalid_quote_records": 28,
+  "complete_market_lines": 644,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 3,
-      "odds": 54,
-      "complete_lines": 27,
+      "games": 16,
+      "odds": 326,
+      "complete_lines": 163,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.19
+      "median_overround_pct": 5.16
     },
     "first_half_goals": {
-      "games": 3,
-      "odds": 30,
-      "complete_lines": 15,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
       "median_overround_pct": 6.56
     },
     "first_half_handicap": {
-      "games": 3,
-      "odds": 30,
-      "complete_lines": 15,
+      "games": 16,
+      "odds": 180,
+      "complete_lines": 90,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.62
+      "median_overround_pct": 5.69
     },
     "first_half_team_goals": {
-      "games": 3,
-      "odds": 12,
-      "complete_lines": 6,
+      "games": 16,
+      "odds": 62,
+      "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.33
+      "median_overround_pct": 6.12
     },
     "half_time": {
-      "games": 3,
-      "odds": 9,
-      "complete_lines": 3,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.59
+      "median_overround_pct": 6.14
     },
     "match_odds": {
-      "games": 3,
-      "odds": 9,
-      "complete_lines": 3,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.36
+      "median_overround_pct": 5.67
     },
     "team_goals": {
-      "games": 3,
-      "odds": 28,
-      "complete_lines": 14,
+      "games": 16,
+      "odds": 152,
+      "complete_lines": 76,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.36
+      "median_overround_pct": 6.18
     },
     "total_goals": {
-      "games": 3,
-      "odds": 50,
-      "complete_lines": 25,
+      "games": 16,
+      "odds": 320,
+      "complete_lines": 160,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.7
+      "median_overround_pct": 5.56
     }
   },
   "examples": [
     {
-      "fixture": "FC Koln x Union Berlin",
+      "fixture": "Flamengo x Atletico Mineiro",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "observed_at": "2026-10-26T14:58:45.055731+00:00",
       "selections": {
-        "home": 1.8621,
-        "away": 3.88,
-        "draw": 3.81
+        "home": 1.2755,
+        "away": 11.42,
+        "draw": 6.1
       },
-      "overround_pct": 5.72
+      "overround_pct": 3.55
     },
     {
-      "fixture": "FC Koln x Union Berlin",
+      "fixture": "Flamengo x Atletico Mineiro",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-10-26T14:58:45.055731+00:00",
       "selections": {
-        "home": 1.8772,
-        "away": 1.9804
+        "home": 2.03,
+        "away": 1.8696
       },
-      "overround_pct": 3.77
+      "overround_pct": 2.75
     },
     {
-      "fixture": "FC Koln x Union Berlin",
+      "fixture": "Flamengo x Atletico Mineiro",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "raw_market_key": "s;0;s;-2.75",
+      "line_from_market_key": "s;0;s;-2.75",
+      "observed_at": "2026-10-26T14:58:45.055731+00:00",
       "selections": {
-        "home": 3.16,
-        "away": 1.3597
+        "home": 3.72,
+        "away": 1.3003
       },
-      "overround_pct": 5.19
+      "overround_pct": 3.79
     },
     {
-      "fixture": "FC Koln x Union Berlin",
+      "fixture": "Flamengo x Atletico Mineiro",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "raw_market_key": "s;0;s;-2.5",
+      "line_from_market_key": "s;0;s;-2.5",
+      "observed_at": "2026-10-26T14:58:45.055731+00:00",
       "selections": {
-        "home": 2.83,
-        "away": 1.4292
+        "home": 3.04,
+        "away": 1.4115
       },
-      "overround_pct": 5.3
+      "overround_pct": 3.74
     },
     {
-      "fixture": "FC Koln x Union Berlin",
+      "fixture": "Flamengo x Atletico Mineiro",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-26T10:01:54.055804+00:00",
+      "raw_market_key": "s;0;s;-2.25",
+      "line_from_market_key": "s;0;s;-2.25",
+      "observed_at": "2026-10-26T14:58:45.055731+00:00",
       "selections": {
-        "home": 2.51,
-        "away": 1.5405
+        "home": 2.72,
+        "away": 1.5
       },
-      "overround_pct": 4.75
+      "overround_pct": 3.43
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
