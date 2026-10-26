@@ -111,7 +111,18 @@ def collect_records(folder, now):
             if not code:
                 continue
             observations = game.get("observations") or []
-            status = observations[-1].get("phase") if observations and isinstance(observations[-1],dict) else "unknown"
+            last = observations[-1] if observations and isinstance(observations[-1],dict) else {}
+            status = last.get("phase") or "unknown"
+            stats = last.get("stats") or {}
+            home_stats = stats.get("home") if isinstance(stats,dict) else None
+            away_stats = stats.get("away") if isinstance(stats,dict) else None
+            def both_observed(field):
+                return (isinstance(home_stats,dict) and isinstance(away_stats,dict)
+                        and isinstance(home_stats.get(field),(int,float))
+                        and isinstance(away_stats.get(field),(int,float))
+                        and not isinstance(home_stats[field],bool)
+                        and not isinstance(away_stats[field],bool)
+                        and 0 <= home_stats[field] < 10000 and 0 <= away_stats[field] < 10000)
             rec = {
                 "home": str(game["home"]), "away": str(game["away"]),
                 "league": str(game.get("league") or ""), "league_code": code,
@@ -120,6 +131,10 @@ def collect_records(folder, now):
                                  else [game["source"]] if isinstance(game.get("source"),str)
                                  else []),
                 "verified_quotes": len(verified_odds(game)),
+                "observed_corner_counts": both_observed("corners"),
+                "observed_card_counts": both_observed("yellow_cards"),
+                "observed_shots_on_counts": both_observed("shots_on"),
+                "boxscore_stats_source": str(last.get("stats_source") or "")[:80],
                 "indicative_bookmaker_quotes": [],
                 "fair_odds_modelled": None,
                 "tipsaudit_source_url": None,
@@ -134,6 +149,10 @@ def collect_records(folder, now):
                 for item in rec["data_sources"]:
                     if item not in linked["data_sources"]:
                         linked["data_sources"].append(item)
+                for field in ("observed_corner_counts","observed_card_counts","observed_shots_on_counts"):
+                    linked[field] = bool(linked.get(field)) or rec[field]
+                if rec["boxscore_stats_source"] and not linked.get("boxscore_stats_source"):
+                    linked["boxscore_stats_source"]=rec["boxscore_stats_source"]
                 continue
             out.append(rec)
     return out
@@ -360,6 +379,9 @@ def build(directory, now):
         "verified_bookmaker_games": len(verified),
         "indicative_only_games": len(indicative_only),
         "missing_bookmaker_price_games": len(missing),
+        "games_with_corners_stats": sum(bool(x.get("observed_corner_counts")) for x in games),
+        "games_with_yellow_cards_stats": sum(bool(x.get("observed_card_counts")) for x in games),
+        "games_with_shots_on_target_stats": sum(bool(x.get("observed_shots_on_counts")) for x in games),
         "tipsaudit": feed,
         "pinnacle_guest": pinnacle,
         "book_quality": quality,
