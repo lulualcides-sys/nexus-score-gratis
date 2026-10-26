@@ -145,6 +145,34 @@ class CoverageRadarTests(unittest.TestCase):
             old=read_book_quality(p,now+timedelta(hours=5))
             self.assertEqual(old["status"],"stale")
 
+    def test_price_movements_only_from_valid_two_pregame_observations(self):
+        from telegram_collector.coverage_radar import read_price_movements
+        now=datetime.now(timezone.utc)
+        before=(now-timedelta(minutes=40)).isoformat()
+        after=(now-timedelta(minutes=10)).isoformat()
+        kickoff=(now+timedelta(hours=2)).isoformat()
+        data={"schema":1,"checked_at":now.isoformat(),"status":"fresh",
+              "market_selections_with_changes":4,"snapshots_processed":8,
+              "top_changes":[{"home":"Flamengo","away":"Corinthians",
+                  "raw_market_key":"s;0;ou;2.5","market_family":"total_goals",
+                  "selection":"over","first_odds":2.15,"last_odds":1.92,
+                  "first_observed":before,"last_observed":after,
+                  "kickoff_utc":kickoff,"implied_probability_change_pp":5.57,
+                  "betting_execution_confirmed":False}]}
+        with TemporaryDirectory() as tmp:
+            p=Path(tmp)/"pinnacle-motion-latest.json"
+            p.write_text(json.dumps(data))
+            summary=read_price_movements(p,now)
+            self.assertEqual(summary["status"],"fresh")
+            self.assertEqual(len(summary["top_changes"]),1)
+            data["top_changes"][0]["last_observed"]=(now+timedelta(hours=3)).isoformat()
+            p.write_text(json.dumps(data))
+            self.assertEqual(read_price_movements(p,now)["top_changes"],[])
+            data["top_changes"][0]["last_observed"]=after
+            data["checked_at"]=(now-timedelta(hours=5)).isoformat()
+            p.write_text(json.dumps(data))
+            self.assertEqual(read_price_movements(p,now)["status"],"stale")
+
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
             result = build(Path(folder), datetime.now(timezone.utc))
