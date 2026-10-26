@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:10:32.064974+00:00",
+  "checked_at": "2026-10-26T01:11:22.102399+00:00",
   "source_count": 5,
   "sources_ok": 5,
   "source_status": {
@@ -35,7 +35,7 @@
     },
     "pinnacle": {
       "status": "ok",
-      "age_minutes": 38.5,
+      "age_minutes": 39.3,
       "odds_observed": 1580,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 16,

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:10:31.938437+00:00",
+  "checked_at": "2026-10-26T01:11:21.986485+00:00",
   "horizon_hours": 48,
   "important_games": 16,
   "verified_bookmaker_games": 9,
@@ -479,7 +479,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 63,
+      "verified_quotes": 66,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
