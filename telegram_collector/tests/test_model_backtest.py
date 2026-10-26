@@ -23,7 +23,7 @@ class IndependentBacktestTests(unittest.TestCase):
             date=(NOW-timedelta(days=95-k)).date()
             home,away=("Arsenal","Chelsea") if k%2==0 else ("Chelsea","Arsenal")
             full=((1,1) if k%3==0 else (2,1))
-            half=(0,0) if k%3==0 else (1,0)
+            half=(1,0)
             rows.append({"league":"eng.1","home":home.lower(),"away":away.lower(),
                          "date":date,"ft":full,"ht":half,
                          "source":"test"})
