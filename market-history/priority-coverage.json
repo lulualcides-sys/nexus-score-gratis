@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T06:20:33.050397+00:00",
+  "checked_at": "2026-10-26T07:28:44.746899+00:00",
   "horizon_hours": 48,
   "important_games": 12,
   "verified_bookmaker_games": 8,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 2,
-    "indicative": 2,
+    "indicative": 1,
     "new_priority": 0
   },
   "pinnacle_guest": {
@@ -41,10 +41,10 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-26T03:55:17.616275+00:00",
-    "complete_market_lines": 657,
+    "bookmaker_snapshot_at": "2026-10-26T07:11:38.116892+00:00",
+    "complete_market_lines": 660,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1346,
+    "odds_eligible_for_quality": 1352,
     "invalid_quote_records": 26,
     "families": {
       "asian_handicap": {
@@ -52,28 +52,28 @@
         "odds": 330,
         "complete_lines": 165,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.21
+        "median_overround_pct": 5.16
       },
       "first_half_goals": {
         "games": 16,
         "odds": 190,
         "complete_lines": 95,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.62
+        "median_overround_pct": 6.56
       },
       "first_half_handicap": {
         "games": 16,
-        "odds": 180,
-        "complete_lines": 90,
+        "odds": 182,
+        "complete_lines": 91,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.81
+        "median_overround_pct": 5.69
       },
       "first_half_team_goals": {
         "games": 16,
         "odds": 62,
         "complete_lines": 31,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.22
+        "median_overround_pct": 6.17
       },
       "half_time": {
         "games": 16,
@@ -87,29 +87,60 @@
         "odds": 48,
         "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.47
+        "median_overround_pct": 5.56
       },
       "team_goals": {
         "games": 16,
-        "odds": 156,
-        "complete_lines": 78,
+        "odds": 158,
+        "complete_lines": 79,
         "incomplete_lines": 0,
         "median_overround_pct": 6.33
       },
       "total_goals": {
         "games": 16,
-        "odds": 332,
-        "complete_lines": 166,
+        "odds": 334,
+        "complete_lines": 167,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.68
+        "median_overround_pct": 5.64
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 16,
-    "top_changes": []
+    "selections_with_changes": 592,
+    "historical_snapshots": 26,
+    "top_changes": [
+      {
+        "home": "Flamengo",
+        "away": "Atletico Mineiro",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;-1.0",
+        "selection": "home",
+        "first_odds": 1.4717,
+        "last_odds": 2.66,
+        "implied_probability_change_pp": -30.355
+      },
+      {
+        "home": "Flamengo",
+        "away": "Atletico Mineiro",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;-1.0",
+        "selection": "away",
+        "first_odds": 2.49,
+        "last_odds": 1.4902,
+        "implied_probability_change_pp": 26.944
+      },
+      {
+        "home": "Coritiba",
+        "away": "Gremio",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;2.25",
+        "selection": "over",
+        "first_odds": 1.6803,
+        "last_odds": 1.813,
+        "implied_probability_change_pp": -4.356
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -175,19 +206,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.02,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.95,
         "draw": 3.64,
-        "away": 4.68
+        "away": 4.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -287,9 +310,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.38,
-        "draw": 6.46,
-        "away": 8.21
+        "home": 1.39,
+        "draw": 6.37,
+        "away": 8.06
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",

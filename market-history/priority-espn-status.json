@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T06:20:30.105800+00:00",
+  "checked_at": "2026-10-26T07:28:42.124334+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
+  "priority_fixtures_seen": 9,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -38,24 +38,6 @@
       "fixture": "Flamengo x Atlético-MG",
       "league": "bra.1",
       "kickoff": 1793055600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sassuolo x Lazio",
-      "league": "ita.1",
-      "kickoff": 1793122200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AS Roma x Cagliari",
-      "league": "ita.1",
-      "kickoff": 1793130300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Torino x Como",
-      "league": "ita.1",
-      "kickoff": 1793130300,
       "reason": "no_verified_public_1x2"
     }
   ],
