@@ -329,8 +329,18 @@ def run(folder, now, key=None, getter=get_json, probe=None):
             remain=headers.get("x-requests-remaining")
             if remain is not None:
                 try:
-                    if int(remain) < MIN_PROVIDER_CREDITS_LEFT:
+                    current_remaining=max(0,int(remain))
+                    status["provider_credits_remaining"]=current_remaining
+                    if current_remaining < MIN_PROVIDER_CREDITS_LEFT:
                         status["status"]="provider_quota_low"
+                except (ValueError,TypeError):
+                    pass
+            charged=headers.get("x-requests-last")
+            if charged is not None:
+                try:
+                    cost=max(0,int(charged))
+                    status["actual_provider_credits_charged_this_run"]=int(
+                        status.get("actual_provider_credits_charged_this_run") or 0)+cost
                 except (ValueError,TypeError):
                     pass
             parsed=parse_market_prices(prices,match,now)
