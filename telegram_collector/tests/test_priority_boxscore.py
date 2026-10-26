@@ -97,6 +97,20 @@ class BoxscoreTests(unittest.TestCase):
             self.assertEqual(retry["checked"],0)
             self.assertEqual(len(calls),1)
 
+    def test_live_stats_do_not_move_backwards_when_espn_is_late(self):
+        record=game("live")
+        record["observations"][-1]["stats"]={
+            "home":{"corners":9,"yellow_cards":4,"shots_on":6},
+            "away":{"corners":5,"yellow_cards":1,"shots_on":2}}
+        changed,_=apply_stats(record,summary(),NOW.isoformat())
+        self.assertTrue(changed)
+        snap=record["observations"][-1]
+        self.assertEqual(snap["stats"]["home"]["corners"],9)
+        self.assertEqual(snap["stats"]["away"]["corners"],5)
+        self.assertEqual(snap["stats"]["home"]["yellow_cards"],4)
+        self.assertEqual(snap["stats"]["away"]["shots_total"],8)
+        self.assertEqual(snap["odds"],record["observations"][0]["odds"])
+
     def test_summary_bad_team_names_does_not_change_stats(self):
         original=game()
         before=json.dumps(original,sort_keys=True)
