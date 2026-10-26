@@ -27,7 +27,17 @@ ALLOWED_SPORTS={
     "esp.1":"soccer_spain_la_liga",
     "ger.1":"soccer_germany_bundesliga",
     "ita.1":"soccer_italy_serie_a",
+    "fra.1":"soccer_france_ligue_one",
+    "bra.1":"soccer_brazil_campeonato",
+    "arg.1":"soccer_argentina_primera_division",
+    "mex.1":"soccer_mexico_ligamx",
+    "usa.1":"soccer_usa_mls",
+    "por.1":"soccer_portugal_primeira_liga",
+    "ned.1":"soccer_netherlands_eredivisie",
     "uefa.champions":"soccer_uefa_champs_league",
+    "uefa.europa":"soccer_uefa_europa_league",
+    "conmebol.libertadores":"soccer_conmebol_copa_libertadores",
+    "conmebol.sudamericana":"soccer_conmebol_copa_sudamericana",
 }
 MARKET_KEYS={
     "alternate_totals_corners":"total_corners",
@@ -276,6 +286,8 @@ def run(folder, now, key=None, getter=get_json, probe=None):
             events,_=getter(sport,None,key)
             if not isinstance(events,list):
                 raise ValueError("Official event list invalid")
+            status["free_event_lists_checked"]=int(status.get("free_event_lists_checked") or 0)+1
+            status["free_events_seen"]=int(status.get("free_events_seen") or 0)+len(events)
             possibles=[]
             for event in events:
                 if not isinstance(event,dict):
@@ -289,6 +301,10 @@ def run(folder, now, key=None, getter=get_json, probe=None):
                 if same_teams_and_time(target,check):
                     possibles.append(event)
             if len(possibles)!=1:
+                if len(possibles)==0:
+                    status["events_not_matched"]=int(status.get("events_not_matched") or 0)+1
+                else:
+                    status["ambiguous_events"]=int(status.get("ambiguous_events") or 0)+1
                 continue
             event_id=str(possibles[0].get("id") or "")
             if not re.fullmatch(r"[A-Za-z0-9_-]{1,80}",event_id):
