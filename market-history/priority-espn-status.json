@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T17:17:42.972504+00:00",
+  "checked_at": "2026-10-26T18:11:18.609429+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
+  "priority_fixtures_seen": 13,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -38,6 +38,12 @@
       "fixture": "Torino x Como",
       "league": "ita.1",
       "kickoff": 1793130300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Argentinos Juniors x Independiente Rivadavia",
+      "league": "arg.1",
+      "kickoff": 1793138400,
       "reason": "no_verified_public_1x2"
     }
   ],

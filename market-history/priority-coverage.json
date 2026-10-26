@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T17:17:47.423313+00:00",
+  "checked_at": "2026-10-26T18:11:22.858713+00:00",
   "horizon_hours": 48,
   "important_games": 15,
   "verified_bookmaker_games": 9,
@@ -154,7 +154,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 137,
+      "verified_quotes": 143,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -177,7 +177,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 11,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -200,7 +200,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -215,9 +215,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.87,
-        "draw": 3.64,
-        "away": 5.22
+        "home": 1.86,
+        "draw": 3.67,
+        "away": 5.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -301,7 +301,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -316,9 +316,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.35,
-        "draw": 6.37,
-        "away": 9.86
+        "home": 1.36,
+        "draw": 6.22,
+        "away": 9.74
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
@@ -335,7 +335,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -402,7 +402,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 18,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -424,7 +424,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
