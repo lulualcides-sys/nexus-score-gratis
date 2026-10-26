@@ -74,3 +74,17 @@ Veja [ODDS_SOURCES.md](ODDS_SOURCES.md). O NEXUS já contém integrações opcio
 ## Projeto futuro — motor de odds NEXUS próprio
 
 A diretriz de independência das casas foi documentada em [NEXUS_MOTOR_PROPRIO_ODDS_ROADMAP.md](../research/NEXUS_MOTOR_PROPRIO_ODDS_ROADMAP.md). Continuar coletando **somente dados reais acessíveis/permitidos**, com origem e horário identificados, para desenvolver futuramente probabilidades e **odds teóricas NEXUS** testadas prospectivamente. Odds calculadas não são odds executáveis de casas, nem liquidez. O desenvolvimento do motor próprio está **planejado, não concluído**.
+
+
+## Motor matemático NEXUS independente — IMPLEMENTADO (26/10/2026)
+
+Não consulta odds de casas para calcular preços. Usa somente resultados finalizados disponíveis em `history/20??-??-??.json` e `history/openfootball_cc0_cache.json`; liga exige código canônico, partidas recentes e amostra mínima. HT é ajustado por proporção de gols históricos observada no 1º tempo. Como ainda não há calibração comprovada, são **odds teóricas experimentais**, não entradas nem P/L.
+
+- `telegram_collector/model_only.py`: Poisson independente com shrinkage de força ofensiva/defensiva, taxa média por mando, decaimento temporal. A mesma distribuição conjunta de gols por HT + 2º tempo fornece **FT 1X2, HT 1X2, HT/FT (9), BTTS FT/HT, O/U FT 0.5–5.5, O/U HT 0.5–2.5, dupla chance FT, totais por equipe FT e placar exato FT**. A implementação NÃO ajusta a correção Dixon–Coles (rho); pode ser pesquisada depois e validada por backtests.
+- Recusa previsão para equipe/liga com histórico insuficiente; mostra quantos jogos embasaram a estimativa, nível de confiança limitado e quando HT usa uma razão global de ligas distintas.
+- `telegram_collector/model_backtest.py`: teste histórico **walk-forward** sem placares futuros no treinamento, registrando RPS, Brier e log loss de 1X2, e Brier O/U2.5 + BTTS. O primeiro diagnóstico após a limpeza dos códigos de competição testou **50 jogos em seis ligas**, RPS **0.25597** e Brier 1X2 **0.6968**. Esses resultados **NÃO** demonstram calibração ou vantagem sobre bookies; amostra pequena.
+- Saídas isoladas em `market-history/model-only/latest.json` e `backtest-latest.json`, branch `market-telegram-data`. O workflow de mercado grava primeiro, sem misturar previsões com odds de casas.
+- `.github/workflows/nexus-model-web.yml`: a cada três horas copia **somente probabilidades calculadas e relatório de validação** para `web/nexus-model-odds.json` e `web/nexus-model-backtest.json` em `main`; valida que não há fonte bookmaker, API key ou dados de negociação. A publicação é idempotente via commit não forçado com rebase.
+- Painel independente `web/motor-proprio.html`, vinculado no menu principal do NEXUS. Design compatível com celular. Visualiza os mercados solicitados, mostra todos os jogos e os casos recusados e permite filtrar por disponibilidade. Deploy do Cloudflare Pages dependerá do fluxo de publicação do site.
+- Primeira coleta do motor original: **627 resultados elegíveis**, 10 jogos futuros, **5 modelados**. Mudanças nos jogos ou fontes alteram esses números; nenhuma previsão é garantia de acerto.
+- Fora do escopo: **handicaps, cartões, escanteios e mercados de jogadores**. O motor não envia apostas nem se conecta às credenciais da The Odds API.
