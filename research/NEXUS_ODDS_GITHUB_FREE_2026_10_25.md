@@ -74,3 +74,7 @@ A integração ficou mais próxima de um pipeline de dados auditável, sem simul
 6. **[Pinnacle API oficial](https://www.pinnacle.com/en/api)** — acesso requer solicitação e pode ter custo; não confundir com o feed web já observado.
 
 **Limites mantidos:** nenhuma invasão de conta, uso de senha/token alheio, contorno de autenticação, ou mascaramento/proxy para evitar limite; um feed bloqueado será marcado como indisponível. Prioridade de expansão: eventos importantes, cartões, escanteios, tempo real e fonte comprovada de liquidez; odds simuladas nunca substituem odds reais de casa.
+
+### Confiabilidade do envio diário (00h01 Brasília)
+
+O fechamento de futebol no repositório independente `nexus-quant-paper` agora **não envia nem marca como entregue** um dia se o JSON bruto estiver indisponível ou inválido. O workflow tenta às 00h01, 00h21, 00h41 e 01h01 de Brasília; assim atrasos da publicação não viram relatórios vazios ou marcadores permanentes. O marcador existente garante apenas um Telegram válido por dia, e os testes simulam a falha na primeira consulta seguida da entrega correta no retry. Horários do GitHub Actions são aproximados e podem sofrer atraso. Os 10 robôs financeiros não foram alterados.
