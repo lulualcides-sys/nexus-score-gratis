@@ -9,6 +9,8 @@ on:
     paths:
       - "telegram_collector/pinnacle_guest.py"
       - "telegram_collector/market_depth.py"
+      - "telegram_collector/market_motion.py"
+      - "telegram_collector/tests/test_market_motion.py"
       - "telegram_collector/tests/test_market_depth.py"
       - "telegram_collector/tests/test_pinnacle_guest.py"
       - ".github/workflows/nexus-pinnacle-guest.yml"
@@ -28,7 +30,7 @@ jobs:
           fetch-depth: 1
       - name: Validar parser e compatibilidade com o NEXUS
         run: |
-          python3 -m py_compile telegram_collector/pinnacle_guest.py telegram_collector/market_depth.py
+          python3 -m py_compile telegram_collector/pinnacle_guest.py telegram_collector/market_depth.py telegram_collector/market_motion.py
           python3 -m unittest discover -s telegram_collector/tests -v
       - name: Montar histórico isolado (sem publicar no site ou Telegram)
         run: |
@@ -41,6 +43,8 @@ jobs:
         run: PYTHONPATH=. python3 -m telegram_collector.pinnacle_guest --archive _market_data/market-history
       - name: Auditar frescor, linhas completas e margem do bookmaker
         run: PYTHONPATH=. python3 -m telegram_collector.market_depth --archive _market_data/market-history
+      - name: Calcular movimentação real de odds sem consultar terceiros
+        run: PYTHONPATH=. python3 -m telegram_collector.market_motion --archive _market_data/market-history
       - name: Persistir resultado na branch dedicada
         shell: bash
         run: |
