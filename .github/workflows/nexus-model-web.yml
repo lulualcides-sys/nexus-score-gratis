@@ -76,5 +76,17 @@ jobs:
             echo "Nenhuma mudança no motor público"
           else
             git commit -m "NEXUS model: publish independent theoretical probabilities"
-            git push origin HEAD:main
+            # O coletor principal também altera main: rebase sem forçar push.
+            for retry in 1 2 3; do
+              git fetch --no-tags --depth=50 origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "Motor independente publicado com sucesso"
+                break
+              fi
+              if [ "$retry" -eq 3 ]; then
+                echo "Não foi possível publicar sem conflito"
+                exit 1
+              fi
+            done
           fi
