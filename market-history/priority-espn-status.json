@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T21:41:25.214869+00:00",
+  "checked_at": "2026-10-26T22:17:53.335004+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 14,
+  "priority_fixtures_seen": 13,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Flamengo x Atlético-MG",
-      "league": "bra.1",
-      "kickoff": 1793055600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Sassuolo x Lazio",
       "league": "ita.1",
@@ -50,6 +44,12 @@
       "fixture": "Boyacá Chicó FC x Atlético Junior",
       "league": "col.1",
       "kickoff": 1793149500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santa Clara x Benfica",
+      "league": "por.1",
+      "kickoff": 1793040300,
       "reason": "no_verified_public_1x2"
     }
   ],
