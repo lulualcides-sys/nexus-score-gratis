@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T23:05:09.958616+00:00",
+  "checked_at": "2026-10-26T23:38:14.543833+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 11,
+  "priority_fixtures_seen": 10,
   "created_games": 0,
   "new_quotes": 6,
   "summary_checks": 2,
@@ -44,12 +44,6 @@
       "fixture": "Boyacá Chicó FC x Atlético Junior",
       "league": "col.1",
       "kickoff": 1793149500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Santa Clara x Benfica",
-      "league": "por.1",
-      "kickoff": 1793040300,
       "reason": "no_verified_public_1x2"
     }
   ],

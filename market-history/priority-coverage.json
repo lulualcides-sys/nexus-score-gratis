@@ -1,35 +1,26 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T23:05:15.407144+00:00",
+  "checked_at": "2026-10-26T23:38:19.595331+00:00",
   "horizon_hours": 48,
-  "important_games": 11,
-  "verified_bookmaker_games": 5,
-  "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 6,
+  "important_games": 15,
+  "verified_bookmaker_games": 4,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 1,
   "games_with_yellow_cards_stats": 1,
   "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 0,
-    "indicative": 0,
-    "new_priority": 0
+    "indicative": 4,
+    "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 1,
+    "matched": 0,
     "new_verified_game": 0,
-    "offers": 131,
-    "market_families": {
-      "half_time": 3,
-      "first_half_team_goals": 4,
-      "first_half_handicap": 16,
-      "first_half_goals": 16,
-      "match_odds": 6,
-      "team_goals": 16,
-      "asian_handicap": 34,
-      "total_goals": 36
-    }
+    "offers": 0,
+    "market_families": {}
   },
   "official_corners_cards": {
     "status": "checked",
@@ -144,43 +135,19 @@
   },
   "priority_fixtures": [
     {
-      "home": "Coritiba",
-      "away": "Grêmio",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793053800.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 161,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Flamengo",
       "away": "Atlético-MG",
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1793055600.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 36,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -265,7 +232,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 43,
+      "verified_quotes": 46,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -300,6 +267,148 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Charlotte",
+      "away": "CF Montreal",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.55,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.52,
+        "draw": 5.63,
+        "away": 6.08
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
+      "tipsaudit_id": "12137",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Inter Miami",
+      "away": "FC Cincinnati",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.55,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.51,
+        "draw": 5.61,
+        "away": 6.33
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
+      "tipsaudit_id": "12136",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "New England Revolution",
+      "away": "New York Red Bulls",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.0,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.98,
+        "draw": 4.56,
+        "away": 3.62
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
+      "tipsaudit_id": "12135",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "New York City FC",
+      "away": "Atlanta United FC",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.81,
+        "draw": 4.37,
+        "away": 4.6
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12134/new-york-city-fc-vs-atlanta-united-fc-2026-10-28",
+      "tipsaudit_id": "12134",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Toronto FC",
+      "away": "DC United",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.01,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.97,
+        "draw": 4.16,
+        "away": 3.95
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
+      "tipsaudit_id": "12133",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
       "home": "Jaguares de Córdoba",
       "away": "Llaneros FC",
       "league": "Colômbia Primera A",
@@ -331,7 +440,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -471,6 +580,23 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "New York City FC",
+      "away": "Atlanta United FC",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12134/new-york-city-fc-vs-atlanta-united-fc-2026-10-28",
+      "tipsaudit_id": "12134",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
