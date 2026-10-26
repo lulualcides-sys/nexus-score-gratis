@@ -13,6 +13,7 @@ from pathlib import Path
 SOURCES = (
     ("nexus", "status.json", "collected_at", 75*60, "quotes_observed"),
     ("espn_priority", "priority-espn-status.json", "checked_at", 75*60, "new_quotes"),
+    ("espn_boxscore", "priority-boxscore-status.json", "checked_at", 75*60, "observed_statistics_fields"),
     ("tipsaudit", "public-no-key/status.json", "checked_at", 75*60, "quotes_indicative"),
     ("pinnacle", "public-no-key/pinnacle-status.json", "checked_at", 4*3600, "odds_observed"),
 )
@@ -50,12 +51,18 @@ def assess(root, now):
                 item["age_minutes"]=round(age/60,1)
             quote=d.get(quote_field)
             if isinstance(quote,int) and not isinstance(quote,bool) and quote >= 0:
-                item["odds_observed"]=quote
+                if name=="espn_boxscore":
+                    item["statistics_fields_observed"]=quote
+                else:
+                    item["odds_observed"]=quote
             if name == "pinnacle":
                 item["games_priced"]=d.get("matches_checked",0)
                 item["denied_requests"]=sum(
                     1 for error in d.get("errors",[]) if
                     isinstance(error,dict) and error.get("http_status") in (401,403,429))
+            if name == "espn_boxscore":
+                item["summaries_checked"]=d.get("checked",0)
+                item["games_with_stats_enriched"]=d.get("games_enriched",0)
             if name == "espn_priority":
                 item["scoreboards_checked"]=d.get("boards_ok",0)
                 item["priority_fixtures_seen"]=d.get("priority_fixtures_seen",0)
