@@ -288,6 +288,12 @@ def add_fixture(archive, code, league, event, observed):
     else:
         created = False
     game = records[key]
+    # Provenance: retain the ESPN ID for the SAME two teams and kickoff.
+    # This allows low-cost public boxscore lookup for corners/cards/shots,
+    # independently of prices. Never associate IDs from league mismatches.
+    if (not game.get("league_code") or game.get("league_code") == code):
+        game["espn_event_id"] = event["espn_id"]
+        game["espn_league_code"] = code
     if not game.get("league_code") and str(key).startswith("espn-" + code + "-"):
         game["league_code"] = code
     previous = game.get("observations") or []
