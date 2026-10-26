@@ -56,12 +56,12 @@ jobs:
         run: PYTHONPATH=. python3 -m telegram_collector.priority_boxscore --archive _market_data/market-history
       - name: Consultar feed público gratuito sem conta, sem chave, sem contornar bloqueios
         run: python3 telegram_collector/public_no_key.py --archive _market_data/market-history
-      - name: Auditar cobertura de partidas importantes e cruzar fontes sem inventar odds
-        run: PYTHONPATH=. python3 -m telegram_collector.coverage_radar --archive _market_data/market-history
       - name: Mercado oficial opcional de escanteios e cartoes no plano gratuito
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: PYTHONPATH=. python3 -m telegram_collector.optional_odds_api --archive _market_data/market-history
+      - name: Auditar cobertura de partidas importantes e cruzar fontes sem inventar odds
+        run: PYTHONPATH=. python3 -m telegram_collector.coverage_radar --archive _market_data/market-history
       - name: Verificar saúde das fontes e partidas sem preços de casa
         run: PYTHONPATH=. python3 -m telegram_collector.source_health --archive _market_data/market-history
       - name: Salvar histórico exclusivamente na branch de dados
