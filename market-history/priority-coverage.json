@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T00:55:39.980461+00:00",
+  "checked_at": "2026-10-26T00:56:31.720161+00:00",
   "horizon_hours": 48,
   "important_games": 15,
   "verified_bookmaker_games": 9,
@@ -30,6 +30,14 @@
       "first_half_handicap": 96,
       "first_half_goals": 96
     }
+  },
+  "official_corners_cards": {
+    "status": "no_observed_prices",
+    "priced_games": 0,
+    "verified_corners_quotes": 0,
+    "verified_cards_quotes": 0,
+    "files_checked": 0,
+    "liquidity_verified": false
   },
   "book_quality": {
     "status": "fresh",
@@ -262,7 +270,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 177,
+      "verified_quotes": 180,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -290,7 +298,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 154,
+      "verified_quotes": 157,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -432,7 +440,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 223,
+      "verified_quotes": 226,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
