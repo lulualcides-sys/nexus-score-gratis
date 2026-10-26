@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T18:56:52.936868+00:00",
+  "checked_at": "2026-10-26T19:48:09.273820+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
+  "priority_fixtures_seen": 14,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -44,6 +44,24 @@
       "fixture": "Argentinos Juniors x Independiente Rivadavia",
       "league": "arg.1",
       "kickoff": 1793138400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cúcuta Deportivo x Águilas Doradas",
+      "league": "col.1",
+      "kickoff": 1793142000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Boyacá Chicó FC x Atlético Junior",
+      "league": "col.1",
+      "kickoff": 1793149500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santa Clara x Benfica",
+      "league": "por.1",
+      "kickoff": 1793040300,
       "reason": "no_verified_public_1x2"
     }
   ],

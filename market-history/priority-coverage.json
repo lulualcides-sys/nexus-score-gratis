@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T18:56:56.578001+00:00",
+  "checked_at": "2026-10-26T19:48:12.352222+00:00",
   "horizon_hours": 48,
-  "important_games": 15,
-  "verified_bookmaker_games": 9,
+  "important_games": 14,
+  "verified_bookmaker_games": 8,
   "indicative_only_games": 0,
   "missing_bookmaker_price_games": 6,
   "games_with_corners_stats": 0,
@@ -11,24 +11,24 @@
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 2,
-    "indicative": 1,
+    "matched": 1,
+    "indicative": 0,
     "new_priority": 0
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 1,
+    "matched": 2,
     "new_verified_game": 0,
-    "offers": 131,
+    "offers": 264,
     "market_families": {
-      "match_odds": 6,
-      "team_goals": 16,
-      "asian_handicap": 34,
-      "total_goals": 36,
-      "half_time": 3,
-      "first_half_team_goals": 4,
-      "first_half_handicap": 16,
-      "first_half_goals": 16
+      "half_time": 6,
+      "first_half_team_goals": 8,
+      "first_half_handicap": 32,
+      "first_half_goals": 32,
+      "match_odds": 12,
+      "team_goals": 32,
+      "asian_handicap": 68,
+      "total_goals": 74
     }
   },
   "official_corners_cards": {
@@ -41,75 +41,95 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-26T16:15:03.024604+00:00",
-    "complete_market_lines": 640,
+    "bookmaker_snapshot_at": "2026-10-26T19:06:34.091758+00:00",
+    "complete_market_lines": 718,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1312,
-    "invalid_quote_records": 28,
+    "odds_eligible_for_quality": 1468,
+    "invalid_quote_records": 26,
     "families": {
       "asian_handicap": {
         "games": 16,
-        "odds": 324,
-        "complete_lines": 162,
+        "odds": 350,
+        "complete_lines": 175,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.16
+        "median_overround_pct": 5.13
       },
       "first_half_goals": {
         "games": 16,
-        "odds": 184,
-        "complete_lines": 92,
+        "odds": 214,
+        "complete_lines": 107,
         "incomplete_lines": 0,
         "median_overround_pct": 6.57
       },
       "first_half_handicap": {
         "games": 16,
-        "odds": 178,
-        "complete_lines": 89,
+        "odds": 194,
+        "complete_lines": 97,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.68
+        "median_overround_pct": 5.65
       },
       "first_half_team_goals": {
         "games": 16,
         "odds": 62,
         "complete_lines": 31,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.12
+        "median_overround_pct": 6.1
       },
       "half_time": {
         "games": 16,
         "odds": 48,
         "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.14
+        "median_overround_pct": 5.71
       },
       "match_odds": {
         "games": 16,
         "odds": 48,
         "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.67
+        "median_overround_pct": 5.4
       },
       "team_goals": {
         "games": 16,
-        "odds": 152,
-        "complete_lines": 76,
+        "odds": 178,
+        "complete_lines": 89,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.16
+        "median_overround_pct": 6.29
       },
       "total_goals": {
         "games": 16,
-        "odds": 316,
-        "complete_lines": 158,
+        "odds": 374,
+        "complete_lines": 187,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.64
+        "median_overround_pct": 5.63
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 1128,
-    "historical_snapshots": 47,
+    "selections_with_changes": 1156,
+    "historical_snapshots": 55,
     "top_changes": [
+      {
+        "home": "Flamengo",
+        "away": "Atletico Mineiro",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;3.0",
+        "selection": "over",
+        "first_odds": 1.9346,
+        "last_odds": 1.2155,
+        "implied_probability_change_pp": 30.58
+      },
+      {
+        "home": "Rot-Weiss Essen",
+        "away": "RB Leipzig",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;3.0",
+        "selection": "away",
+        "first_odds": 3.27,
+        "last_odds": 1.6711,
+        "implied_probability_change_pp": 29.26
+      },
       {
         "home": "Flamengo",
         "away": "Atletico Mineiro",
@@ -117,28 +137,8 @@
         "raw_market_key": "s;0;ou;3.5",
         "selection": "over",
         "first_odds": 2.45,
-        "last_odds": 1.3846,
-        "implied_probability_change_pp": 31.407
-      },
-      {
-        "home": "Flamengo",
-        "away": "Atletico Mineiro",
-        "market_family": "total_goals",
-        "raw_market_key": "s;0;ou;3.5",
-        "selection": "under",
-        "first_odds": 1.5747,
-        "last_odds": 2.84,
-        "implied_probability_change_pp": -28.293
-      },
-      {
-        "home": "Flamengo",
-        "away": "Atletico Mineiro",
-        "market_family": "first_half_handicap",
-        "raw_market_key": "s;1;s;-1.0",
-        "selection": "home",
-        "first_odds": 1.4717,
-        "last_odds": 2.5,
-        "implied_probability_change_pp": -27.949
+        "last_odds": 1.4651,
+        "implied_probability_change_pp": 27.438
       }
     ]
   },
@@ -154,7 +154,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 146,
+      "verified_quotes": 149,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -177,7 +177,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -198,22 +198,24 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 36,
+      "verified_quotes": 175,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.85,
-        "draw": 3.67,
-        "away": 5.33
+        "home": 1.97,
+        "draw": 3.61,
+        "away": 4.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
     },
     {
@@ -293,27 +295,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 39,
+      "verified_quotes": 42,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.38,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.36,
-        "draw": 6.23,
-        "away": 9.67
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
-      "tipsaudit_id": "11457",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -327,7 +317,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -349,7 +339,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -384,29 +374,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Santa Clara",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793040300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 18,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Jaguares de Córdoba",
       "away": "Llaneros FC",
       "league": "Colômbia Primera A",
@@ -416,7 +383,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -438,7 +405,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
