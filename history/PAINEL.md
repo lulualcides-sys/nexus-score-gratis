@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T04:43:48.750278+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T05:43:52.784854+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -30,7 +30,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-26 | Atlas × Puebla | 4-3 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 8.0×7.0, Escanteios: 6.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-26 | CF América × Pachuca | 1-2 | 74 | Chutes no alvo: 5.0×3.0, Chutes para fora: 7.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 3.0×0.0 |
 | 2026-10-26 | Querétaro FC × Cruz Azul | 1-3 | 76 | Chutes no alvo: 2.0×7.0, Chutes para fora: 2.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×2.0 |
-| 2026-10-26 | Tijuana × Santos Laguna | 2-0 | 64 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×6.0, Escanteios: 3.0×3.0, Grandes chances: 2.0×0.0 |
+| 2026-10-26 | Tijuana × Santos Laguna | 4-1 | 64 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×6.0, Escanteios: 3.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-10-26 | Maccabi Haifa × Hapoel Beer Sheva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-26 | Deportivo Garcilaso × Los Chankas | 4-0 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 3.0×4.0, Escanteios: 3.0×3.0, Grandes chances: 5.0×1.0 |
 | 2026-10-26 | Sportivo San Lorenzo × Cerro Porteño | 1-2 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 5.0×10.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×5.0 |
@@ -168,17 +168,17 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7368 | **Jogos distintos:** 2137 | **Resultados verificáveis:** 4240 | **Com gol:** 1579 | **Sem gol:** 2661 | **Taxa observada:** 37.2%.
-**Evolução da amostra:** 18 datas com coletas | 59 pendentes | 1320 indeterminados | 1749 incompletos.
+**Observações:** 7368 | **Jogos distintos:** 2137 | **Resultados verificáveis:** 4242 | **Com gol:** 1581 | **Sem gol:** 2661 | **Taxa observada:** 37.3%.
+**Evolução da amostra:** 18 datas com coletas | 57 pendentes | 1320 indeterminados | 1749 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1517 | 1042 | 405 | 637 | 38.9% |
+| 🥶 jogo_frio | 1517 | 1043 | 406 | 637 | 38.9% |
 | ⚡ pressao_ofensiva_18 | 1154 | 780 | 271 | 509 | 34.7% |
-| 🎯 chutes_no_alvo_5 | 1193 | 594 | 209 | 385 | 35.2% |
+| 🎯 chutes_no_alvo_5 | 1193 | 595 | 210 | 385 | 35.3% |
 | 🟥 expulsao_confirmada | 1121 | 523 | 180 | 343 | 34.4% |
 | 🚩 escanteios_6 | 890 | 425 | 171 | 254 | 40.2% |
 | 💣 grandes_chances_3 | 704 | 387 | 158 | 229 | 40.8% |
@@ -234,10 +234,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie A | 155 | 98 | 44 | 54 | 44.9% |
 | Europa League | 167 | 96 | 27 | 69 | 28.1% |
 | Ligue 1 | 143 | 91 | 37 | 54 | 40.7% |
+| Liga MX | 166 | 88 | 30 | 58 | 34.1% |
 | Série A | 139 | 88 | 34 | 54 | 38.6% |
 | Eredivisie | 152 | 87 | 42 | 45 | 48.3% |
 | 2. Bundesliga | 134 | 87 | 33 | 54 | 37.9% |
-| Liga MX | 166 | 86 | 28 | 58 | 32.6% |
 | League One | 155 | 84 | 27 | 57 | 32.1% |
 | LaLiga | 141 | 83 | 30 | 53 | 36.1% |
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
@@ -255,21 +255,21 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 520 | 404 | 135 | 269 | 33.4% |
 | 31–45′ | 1460 | 1152 | 469 | 683 | 40.7% |
 | 46–60′ | 1010 | 733 | 272 | 461 | 37.1% |
-| 61–75′ | 1515 | 1060 | 381 | 679 | 35.9% |
+| 61–75′ | 1515 | 1062 | 383 | 679 | 36.1% |
 | 76–90′ | 2021 | 736 | 269 | 467 | 36.5% |
 | 91+′ | 635 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7368 | **Jogos monitorados:** 1674 | **Ao vivo:** 58 | **Termômetros recentes:** 14.
+**Registros:** 7368 | **Jogos monitorados:** 1674 | **Ao vivo:** 57 | **Termômetros recentes:** 13.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-26T04:44:15.262588+00:00 | Tijuana × Santos Laguna | Santos Laguna (65') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-26T04:44:15.262588+00:00 | Tijuana × Santos Laguna | Tijuana (65') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-26T04:44:15.262588+00:00 | Tijuana × Santos Laguna | Santos Laguna (65') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-26T04:44:15.262588+00:00 | Tijuana × Santos Laguna | Tijuana (65') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T03:44:40.143921+00:00 | Atlético Nacional × Independiente Medellín | Independiente Medellín (86') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-26T03:44:40.143921+00:00 | Tijuana × Santos Laguna | Tijuana (26') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-26T03:44:40.143921+00:00 | Portland Timbers 2 × Ventura County FC | Portland Timbers 2 (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
