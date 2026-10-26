@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T21:05:56.938476+00:00",
+  "checked_at": "2026-10-26T21:41:29.738414+00:00",
   "horizon_hours": 48,
   "important_games": 12,
   "verified_bookmaker_games": 6,
@@ -265,7 +265,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 39,
+      "verified_quotes": 45,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -287,7 +287,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 29,
+      "verified_quotes": 32,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -331,7 +331,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 54,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
