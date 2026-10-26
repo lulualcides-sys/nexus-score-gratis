@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T07:58:23.373109+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T08:53:04.143667+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 7368 | **Jogos distintos:** 2137 | **Resultados verificáveis:** 4242 | **Com gol:** 1581 | **Sem gol:** 2661 | **Taxa observada:** 37.3%.
-**Evolução da amostra:** 18 datas com coletas | 57 pendentes | 1320 indeterminados | 1749 incompletos.
+**Evolução da amostra:** 18 datas com coletas | 41 pendentes | 1336 indeterminados | 1749 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -326,7 +326,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T00:07:51.244366+00:00 | Deportivo Garcilaso × Los Chankas | Deportivo Garcilaso (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | Atlético Nacional × Independiente Medellín | Independiente Medellín (43') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | Deportivo Garcilaso × Los Chankas | Deportivo Garcilaso (41') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-25T23:54:44.556135+00:00 | Sportivo San Lorenzo × Cerro Porteño | Cerro Porteño (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-25T23:54:44.556135+00:00 | Sportivo San Lorenzo × Cerro Porteño | Cerro Porteño (64') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | River Plate × Racing Club | River Plate (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | River Plate × Racing Club | River Plate (74') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-25T23:54:44.556135+00:00 | San Diego Wave FC (W) × Boston Legacy FC (W) | San Diego Wave FC (W) (46') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
