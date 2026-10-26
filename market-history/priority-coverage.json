@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T00:31:35.997344+00:00",
+  "checked_at": "2026-10-26T00:33:01.950146+00:00",
   "horizon_hours": 48,
   "important_games": 15,
-  "verified_bookmaker_games": 8,
+  "verified_bookmaker_games": 9,
   "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 6,
+  "missing_bookmaker_price_games": 5,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
@@ -14,85 +14,122 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 4,
-    "new_verified_game": 2,
-    "offers": 453,
+    "matched": 6,
+    "new_verified_game": 3,
+    "offers": 717,
     "market_families": {
-      "match_odds": 15,
-      "team_goals": 52,
-      "asian_handicap": 118,
-      "total_goals": 112,
-      "half_time": 12,
-      "first_half_team_goals": 16,
-      "first_half_handicap": 64,
-      "first_half_goals": 64
+      "match_odds": 27,
+      "team_goals": 84,
+      "asian_handicap": 186,
+      "total_goals": 186,
+      "half_time": 18,
+      "first_half_team_goals": 24,
+      "first_half_handicap": 96,
+      "first_half_goals": 96
     }
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-25T23:24:34.351125+00:00",
-    "complete_market_lines": 676,
+    "bookmaker_snapshot_at": "2026-10-26T00:32:04.984614+00:00",
+    "complete_market_lines": 714,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1384,
-    "invalid_quote_records": 18,
+    "odds_eligible_for_quality": 1460,
+    "invalid_quote_records": 16,
     "families": {
       "asian_handicap": {
         "games": 16,
-        "odds": 326,
-        "complete_lines": 163,
+        "odds": 348,
+        "complete_lines": 174,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.81
+        "median_overround_pct": 4.8
       },
       "first_half_goals": {
         "games": 16,
-        "odds": 206,
-        "complete_lines": 103,
+        "odds": 214,
+        "complete_lines": 107,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.52
+        "median_overround_pct": 6.5
       },
       "first_half_handicap": {
         "games": 16,
-        "odds": 182,
-        "complete_lines": 91,
+        "odds": 188,
+        "complete_lines": 94,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.6
+        "median_overround_pct": 5.45
       },
       "first_half_team_goals": {
         "games": 16,
         "odds": 62,
         "complete_lines": 31,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.07
+        "median_overround_pct": 5.37
       },
       "half_time": {
         "games": 16,
         "odds": 48,
         "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.53
+        "median_overround_pct": 5.1
       },
       "match_odds": {
         "games": 16,
         "odds": 48,
         "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.02
+        "median_overround_pct": 4.55
       },
       "team_goals": {
         "games": 16,
-        "odds": 164,
-        "complete_lines": 82,
+        "odds": 176,
+        "complete_lines": 88,
         "incomplete_lines": 0,
         "median_overround_pct": 5.7
       },
       "total_goals": {
         "games": 16,
-        "odds": 348,
-        "complete_lines": 174,
+        "odds": 376,
+        "complete_lines": 188,
         "incomplete_lines": 0,
         "median_overround_pct": 5.32
       }
     }
+  },
+  "price_movements": {
+    "status": "fresh",
+    "selections_with_changes": 899,
+    "historical_snapshots": 53,
+    "top_changes": [
+      {
+        "home": "River Plate",
+        "away": "Racing Club",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-1.0",
+        "selection": "home",
+        "first_odds": 1.8197,
+        "last_odds": 1.4525,
+        "implied_probability_change_pp": 13.893
+      },
+      {
+        "home": "River Plate",
+        "away": "Racing Club",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-1.0",
+        "selection": "away",
+        "first_odds": 2.1,
+        "last_odds": 2.52,
+        "implied_probability_change_pp": -7.937
+      },
+      {
+        "home": "Barracas Central",
+        "away": "Estudiantes Rio Cuarto",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;-1.0",
+        "selection": "away",
+        "first_odds": 1.5747,
+        "last_odds": 1.7042,
+        "implied_probability_change_pp": -4.826
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -103,15 +140,17 @@
       "kickoff_unix": 1793053800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 131,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 131,
+      "coverage": "verified_price"
     },
     {
       "home": "Flamengo",
@@ -204,7 +243,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 135,
+      "verified_quotes": 138,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.81,
@@ -228,7 +267,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 112,
+      "verified_quotes": 115,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.68,
@@ -347,9 +386,10 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob",
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 48,
+      "verified_quotes": 184,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.61,
@@ -359,6 +399,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/11483/los-angeles-fc-vs-los-angeles-galaxy-2026-10-26",
       "tipsaudit_id": "11483",
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
     },
     {
@@ -417,23 +458,6 @@
     }
   ],
   "top_missing": [
-    {
-      "home": "Coritiba",
-      "away": "Grêmio",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793053800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "Flamengo",
       "away": "Atlético-MG",
