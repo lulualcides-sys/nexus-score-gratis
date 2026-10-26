@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T01:07:22.689396+00:00",
+  "checked_at": "2026-10-26T01:08:50.963270+00:00",
   "horizon_hours": 48,
   "important_games": 16,
   "verified_bookmaker_games": 9,
@@ -11,7 +11,7 @@
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 3,
+    "matched": 2,
     "indicative": 2,
     "new_priority": 1
   },
@@ -32,11 +32,11 @@
     }
   },
   "official_corners_cards": {
-    "status": "no_observed_prices",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
+    "status": "checked",
+    "priced_games": 1,
+    "verified_corners_quotes": 6,
     "verified_cards_quotes": 0,
-    "files_checked": 0,
+    "files_checked": 1,
     "liquidity_verified": false
   },
   "book_quality": {
@@ -300,13 +300,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.74,
-        "draw": 4.34,
-        "away": 5.17
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/11479/club-america-vs-cf-pachuca-2026-10-26",
-      "tipsaudit_id": "11479",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 106,
       "coverage": "verified_price"
@@ -318,7 +314,7 @@
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
-      "verified_quotes": 106,
+      "verified_quotes": 112,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.16,
@@ -330,9 +326,11 @@
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
       "pinnacle_guest_quotes": 106,
+      "official_verified_total_corners_quotes": 6,
       "coverage": "verified_price"
     },
     {
@@ -481,7 +479,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 54,
+      "verified_quotes": 57,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
