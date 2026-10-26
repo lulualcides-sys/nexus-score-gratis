@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T05:43:52.784854+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-26T06:55:49.483742+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -272,7 +272,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T04:44:15.262588+00:00 | Tijuana × Santos Laguna | Tijuana (65') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T03:44:40.143921+00:00 | Atlético Nacional × Independiente Medellín | Independiente Medellín (86') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-26T03:44:40.143921+00:00 | Tijuana × Santos Laguna | Tijuana (26') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T03:44:40.143921+00:00 | Portland Timbers 2 × Ventura County FC | Portland Timbers 2 (83') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-26T03:44:40.143921+00:00 | Portland Timbers 2 × Ventura County FC | Portland Timbers 2 (83') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-26T02:42:43.575222+00:00 | CF América × Pachuca | CF América (48') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-26T02:42:43.575222+00:00 | CF América × Pachuca | CF América (48') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-26T02:42:43.575222+00:00 | CF América × Pachuca | CF América (48') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
