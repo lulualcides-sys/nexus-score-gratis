@@ -198,6 +198,55 @@ class CoverageRadarTests(unittest.TestCase):
             game=results["priority_fixtures"][0]
             self.assertEqual(game["boxscore_stats_source"],"ESPN public soccer boxscore")
 
+    def test_official_real_corners_cards_only_after_identity_and_bookmaker_time(self):
+        from telegram_collector.coverage_radar import enrich_official_corners_cards
+        now=datetime.now(timezone.utc)
+        kickoff=now+timedelta(hours=2)
+        game={
+            "home":"Liverpool","away":"Chelsea","league":"Premier League",
+            "league_code":"eng.1","kickoff_unix":kickoff.timestamp(),
+            "verified_quotes":0,"data_sources":[]}
+        base={"raw_market_key":"alternate_totals_corners",
+              "market_family":"total_corners","selection":"over",
+              "line":9.5,"odds_decimal":1.95,"bookmaker":"Example Sportsbook",
+              "captured_at":now.isoformat(),
+              "bookmaker_market_updated_at":now.isoformat(),
+              "source":"The Odds API free official user-key feed"}
+        book={"schema":1,"matches":{"event-1":{
+            "home":"Liverpool","away":"Chelsea","kickoff_utc":kickoff.isoformat(),
+            "league_code":"eng.1",
+            "observations":[{"captured_at":now.isoformat(),
+                             "prices":[base,{**base,
+                                      "raw_market_key":"alternate_totals_cards",
+                                      "market_family":"total_cards","line":4.5}]}]}}}
+        with TemporaryDirectory() as folder:
+            directory=Path(folder)
+            file=directory/("quotes-"+now.astimezone(
+                __import__("zoneinfo").ZoneInfo("America/Sao_Paulo")).date().isoformat()+".json")
+            file.write_text(json.dumps(book))
+            result=enrich_official_corners_cards([game],directory,now)
+            self.assertEqual(result["verified_corners_quotes"],1)
+            self.assertEqual(result["verified_cards_quotes"],1)
+            self.assertEqual(game["verified_quotes"],2)
+            self.assertFalse(result["liquidity_verified"])
+            wrong={**book}
+            wrong=json.loads(json.dumps(book))
+            wrong["matches"]["event-1"]["home"]="Manchester United"
+            file.write_text(json.dumps(wrong))
+            record={**game,"verified_quotes":0,
+                    "data_sources":[]}
+            rejected=enrich_official_corners_cards([record],directory,now)
+            self.assertEqual(rejected["verified_corners_quotes"],0)
+            self.assertEqual(record["verified_quotes"],0)
+            stale=json.loads(json.dumps(book))
+            stale["matches"]["event-1"]["observations"][0]["prices"][0][
+                "bookmaker_market_updated_at"]=(now+timedelta(hours=3)).isoformat()
+            file.write_text(json.dumps(stale))
+            record={**game,"verified_quotes":0,"data_sources":[]}
+            trusted=enrich_official_corners_cards([record],directory,now)
+            self.assertEqual(trusted["verified_corners_quotes"],0)
+            self.assertEqual(trusted["verified_cards_quotes"],1)
+
     def test_no_archive_is_empty_not_invented(self):
         with TemporaryDirectory() as folder:
             result = build(Path(folder), datetime.now(timezone.utc))
