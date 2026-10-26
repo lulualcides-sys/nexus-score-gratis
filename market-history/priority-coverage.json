@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-26T04:22:02.306853+00:00",
+  "checked_at": "2026-10-26T05:11:00.325867+00:00",
   "horizon_hours": 48,
   "important_games": 12,
   "verified_bookmaker_games": 8,
@@ -185,9 +185,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.96,
-        "draw": 3.63,
-        "away": 4.65
+        "home": 1.95,
+        "draw": 3.64,
+        "away": 4.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11873/sevilla-vs-osasuna-2026-10-26",
       "tipsaudit_id": "11873",
@@ -287,9 +287,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.39,
-        "draw": 6.38,
-        "away": 7.99
+        "home": 1.38,
+        "draw": 6.47,
+        "away": 8.18
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/11457/paris-saint-germain-vs-lyon-2026-10-26",
       "tipsaudit_id": "11457",
