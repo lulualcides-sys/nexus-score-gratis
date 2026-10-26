@@ -109,6 +109,45 @@ class OfficialOptionalOddsTests(unittest.TestCase):
             self.assertNotIn("owner-secret-not-disclosed",
                              (Path(folder)/"official-free-odds"/"status.json").read_text())
 
+    def test_brazil_and_mexico_supported_with_missing_corner_lines(self):
+        from telegram_collector.optional_odds_api import ALLOWED_SPORTS,read_targets
+        self.assertEqual(ALLOWED_SPORTS["bra.1"],"soccer_brazil_campeonato")
+        self.assertEqual(ALLOWED_SPORTS["mex.1"],"soccer_mexico_ligamx")
+        self.assertEqual(ALLOWED_SPORTS["conmebol.libertadores"],"soccer_conmebol_copa_libertadores")
+        with TemporaryDirectory() as folder:
+            p=Path(folder)/"priority-coverage.json"
+            p.write_text(json.dumps({
+                "schema":1,"checked_at":NOW.isoformat(),
+                "priority_fixtures":[
+                    {**target(),"home":"Flamengo","away":"Palmeiras","league_code":"bra.1",
+                     "coverage":"verified_price"},
+                    {**target(),"home":"Queretaro","away":"Cruz Azul","league_code":"mex.1",
+                     "coverage":"verified_price"}]}))
+            games=read_targets(folder,NOW)
+            self.assertEqual(len(games),2)
+
+    def test_event_lists_cached_for_multiple_priority_games_same_league(self):
+        with TemporaryDirectory() as folder:
+            p=Path(folder)/"priority-coverage.json"
+            p.write_text(json.dumps({
+                "schema":1,"checked_at":NOW.isoformat(),
+                "priority_fixtures":[
+                    target(),
+                    {**target(),"home":"Arsenal","away":"Everton"}]}))
+            event_two={**event(),"id":"defg2222","home_team":"Arsenal","away_team":"Everton"}
+            paths=[]
+            def fake(sport,event_id,key):
+                paths.append((sport,event_id))
+                if event_id is None:
+                    return ([event(),event_two],{})
+                return (odds(),{"x-requests-remaining":"490"})
+            data=run(folder,NOW,key="owner-secret",getter=fake)
+            self.assertEqual(data["free_event_lists_checked"],1)
+            self.assertEqual(data["event_odds_requests"],2)
+            self.assertEqual(sum(e is None for _,e in paths),1)
+            self.assertEqual(len(paths),3)
+            self.assertEqual(data["prices_observed"],4) # second fake event has different ID
+
     def test_key_enables_two_bounded_calls_and_ledger_prevents_more(self):
         with TemporaryDirectory() as folder:
             self.make_data(folder)
