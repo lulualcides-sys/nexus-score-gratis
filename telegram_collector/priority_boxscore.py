@@ -175,6 +175,12 @@ def apply_stats(game, data, observed):
         prior=old_stats.get(side)
         side_stats=dict(prior) if isinstance(prior,dict) else {}
         for key,value in parsed[side].items():
+            prev=as_count(side_stats.get(key))
+            # ESPN public live feeds may trail the NEXUS's most recent stats.
+            # Do not move cumulative in-play counters backwards just because
+            # one no-key source updated more slowly.
+            if updated.get("phase")=="live" and prev is not None and value < prev:
+                continue
             if side_stats.get(key) != value:
                 new_fields+=1
             side_stats[key]=value
