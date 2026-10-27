@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T05:40:59.818320+00:00",
+  "checked_at": "2026-10-27T06:20:47.215899+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 6,
+  "priority_fixtures_seen": 11,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -26,6 +26,36 @@
       "fixture": "Argentinos Juniors x Independiente Rivadavia",
       "league": "arg.1",
       "kickoff": 1793138400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AC Milan x Bologna",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Parma x Udinese",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Venezia x Internazionale",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Genoa x Juventus",
+      "league": "ita.1",
+      "kickoff": 1793216700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monza x Napoli",
+      "league": "ita.1",
+      "kickoff": 1793216700,
       "reason": "no_verified_public_1x2"
     }
   ],
