@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T17:19:08.669924+00:00",
+  "checked_at": "2026-10-27T18:12:47.594701+00:00",
   "horizon_hours": 48,
   "important_games": 34,
   "verified_bookmaker_games": 6,
   "indicative_only_games": 9,
   "missing_bookmaker_price_games": 19,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
@@ -250,14 +250,14 @@
       "league": "Serie A Itália",
       "league_code": "ita.1",
       "kickoff_unix": 1793122200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 28,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -276,7 +276,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 44,
+      "verified_quotes": 54,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -298,7 +298,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -430,7 +430,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -468,8 +468,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.53,
-        "draw": 5.52,
-        "away": 6.08
+        "draw": 5.46,
+        "away": 6.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
       "tipsaudit_id": "12137",
@@ -924,7 +924,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,

@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T17:19:04.960836+00:00",
+  "checked_at": "2026-10-27T18:12:44.138385+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 11,
+  "priority_fixtures_seen": 13,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Argentinos Juniors x Independiente Rivadavia",
-      "league": "arg.1",
-      "kickoff": 1793138400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "AC Milan x Bologna",
       "league": "ita.1",
@@ -44,6 +38,18 @@
       "fixture": "Monza x Napoli",
       "league": "ita.1",
       "kickoff": 1793216700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Once Caldas x Alianza FC",
+      "league": "col.1",
+      "kickoff": 1793228400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Internacional de Bogotá x Independiente Medellín",
+      "league": "col.1",
+      "kickoff": 1793235900,
       "reason": "no_verified_public_1x2"
     }
   ],
