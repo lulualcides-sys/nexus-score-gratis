@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T09:15:18.174118+00:00",
+  "checked_at": "2026-10-27T10:13:43.387682+00:00",
   "horizon_hours": 48,
   "important_games": 35,
   "verified_bookmaker_games": 6,
@@ -32,75 +32,95 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-27T07:06:24.951791+00:00",
-    "complete_market_lines": 698,
+    "bookmaker_snapshot_at": "2026-10-27T09:56:53.123542+00:00",
+    "complete_market_lines": 696,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1424,
+    "odds_eligible_for_quality": 1420,
     "invalid_quote_records": 28,
     "families": {
       "asian_handicap": {
         "games": 14,
-        "odds": 326,
-        "complete_lines": 163,
+        "odds": 322,
+        "complete_lines": 161,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.19
+        "median_overround_pct": 4.72
       },
       "first_half_goals": {
         "games": 14,
         "odds": 224,
         "complete_lines": 112,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.54
+        "median_overround_pct": 6.13
       },
       "first_half_handicap": {
         "games": 14,
         "odds": 180,
         "complete_lines": 90,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.67
+        "median_overround_pct": 5.24
       },
       "first_half_team_goals": {
         "games": 14,
         "odds": 54,
         "complete_lines": 27,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.77
+        "median_overround_pct": 5.62
       },
       "half_time": {
         "games": 14,
         "odds": 42,
         "complete_lines": 14,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.51
+        "median_overround_pct": 5.52
       },
       "match_odds": {
         "games": 14,
         "odds": 42,
         "complete_lines": 14,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.05
+        "median_overround_pct": 4.84
       },
       "team_goals": {
         "games": 14,
         "odds": 178,
         "complete_lines": 89,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.05
+        "median_overround_pct": 5.88
       },
       "total_goals": {
         "games": 14,
         "odds": 378,
         "complete_lines": 189,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.56
+        "median_overround_pct": 5.22
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 785,
-    "historical_snapshots": 25,
+    "selections_with_changes": 1003,
+    "historical_snapshots": 39,
     "top_changes": [
+      {
+        "home": "Bradford City",
+        "away": "Peterborough United",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;away",
+        "selection": "under",
+        "first_odds": 1.2717,
+        "last_odds": 2.53,
+        "implied_probability_change_pp": -39.109
+      },
+      {
+        "home": "Bradford City",
+        "away": "Peterborough United",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;away",
+        "selection": "over",
+        "first_odds": 3.48,
+        "last_odds": 1.4831,
+        "implied_probability_change_pp": 38.691
+      },
       {
         "home": "Borussia Dortmund",
         "away": "Werder Bremen",
@@ -108,28 +128,8 @@
         "raw_market_key": "s;0;s;-2.0",
         "selection": "home",
         "first_odds": 1.4975,
-        "last_odds": 3.01,
-        "implied_probability_change_pp": -33.555
-      },
-      {
-        "home": "Borussia Dortmund",
-        "away": "Werder Bremen",
-        "market_family": "asian_handicap",
-        "raw_market_key": "s;0;s;-2.0",
-        "selection": "away",
-        "first_odds": 2.39,
-        "last_odds": 1.3876,
-        "implied_probability_change_pp": 30.226
-      },
-      {
-        "home": "Bradford City",
-        "away": "Peterborough United",
-        "market_family": "asian_handicap",
-        "raw_market_key": "s;0;s;-1.0",
-        "selection": "home",
-        "first_odds": 1.5587,
-        "last_odds": 2.08,
-        "implied_probability_change_pp": -16.079
+        "last_odds": 2.99,
+        "implied_probability_change_pp": -33.333
       }
     ]
   },
@@ -808,16 +808,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.0,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 1.93,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.97,
-        "draw": 4.22,
-        "away": 3.9
+        "home": 1.89,
+        "draw": 4.34,
+        "away": 4.17
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
