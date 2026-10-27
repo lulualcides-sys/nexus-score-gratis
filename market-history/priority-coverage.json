@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T20:23:56.210608+00:00",
+  "checked_at": "2026-10-27T21:08:40.427305+00:00",
   "horizon_hours": 48,
-  "important_games": 33,
-  "verified_bookmaker_games": 5,
-  "indicative_only_games": 8,
-  "missing_bookmaker_price_games": 20,
+  "important_games": 31,
+  "verified_bookmaker_games": 3,
+  "indicative_only_games": 9,
+  "missing_bookmaker_price_games": 19,
   "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
-    "indicative": 8,
+    "indicative": 9,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -245,50 +245,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "AS Roma",
-      "away": "Cagliari",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793130300.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 65,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Torino",
-      "away": "Como",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793130300.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 38,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "AC Milan",
       "away": "Bologna",
       "league": "Serie A Itália",
@@ -408,7 +364,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -557,8 +513,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.77,
-        "draw": 4.48,
+        "home": 1.76,
+        "draw": 4.53,
         "away": 4.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12134/new-york-city-fc-vs-atlanta-united-fc-2026-10-28",
@@ -599,8 +555,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.09,
-        "draw": 4.02,
-        "away": 3.65
+        "draw": 4.05,
+        "away": 3.64
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
@@ -669,9 +625,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.63,
-        "draw": 5.35,
-        "away": 4.97
+        "home": 1.6,
+        "draw": 5.49,
+        "away": 5.16
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -693,16 +649,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 3.5,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.12,
-        "draw": 4.26,
-        "away": 3.4
+        "home": 2.18,
+        "draw": 4.22,
+        "away": 3.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Minnesota United FC",
@@ -730,7 +694,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.9,
+        "draw": 5.92,
         "away": 7.22
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
@@ -763,9 +727,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.89,
-        "draw": 4.34,
-        "away": 4.17
+        "home": 1.85,
+        "draw": 4.44,
+        "away": 4.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -815,9 +779,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.24,
-        "draw": 3.94,
-        "away": 3.33
+        "home": 2.27,
+        "draw": 3.93,
+        "away": 3.27
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
@@ -894,7 +858,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -916,7 +880,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1258,27 +1222,6 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "FC Dallas",
-      "away": "Columbus Crew",
-      "league": "MLS",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793233800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
-      "tipsaudit_id": "12140",
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
