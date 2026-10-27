@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T21:42:30.761235+00:00",
+  "checked_at": "2026-10-27T22:22:42.006653+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 3,
-  "indicative_only_games": 9,
-  "missing_bookmaker_price_games": 19,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "indicative_only_games": 10,
+  "missing_bookmaker_price_games": 18,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
-    "indicative": 9,
+    "indicative": 10,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -32,74 +32,74 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-27T19:00:45.197303+00:00",
-    "complete_market_lines": 502,
+    "bookmaker_snapshot_at": "2026-10-27T21:51:28.185656+00:00",
+    "complete_market_lines": 52,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1024,
-    "invalid_quote_records": 20,
+    "odds_eligible_for_quality": 106,
+    "invalid_quote_records": 0,
     "families": {
       "asian_handicap": {
-        "games": 10,
-        "odds": 240,
-        "complete_lines": 120,
+        "games": 1,
+        "odds": 26,
+        "complete_lines": 13,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.77
+        "median_overround_pct": 3.58
       },
       "first_half_goals": {
-        "games": 10,
-        "odds": 160,
-        "complete_lines": 80,
+        "games": 1,
+        "odds": 16,
+        "complete_lines": 8,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.15
+        "median_overround_pct": 5.04
       },
       "first_half_handicap": {
-        "games": 10,
-        "odds": 134,
-        "complete_lines": 67,
+        "games": 1,
+        "odds": 14,
+        "complete_lines": 7,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.08
+      },
+      "first_half_team_goals": {
+        "games": 1,
+        "odds": 4,
+        "complete_lines": 2,
         "incomplete_lines": 0,
         "median_overround_pct": 5.25
       },
-      "first_half_team_goals": {
-        "games": 10,
-        "odds": 38,
-        "complete_lines": 19,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.58
-      },
       "half_time": {
-        "games": 10,
-        "odds": 30,
-        "complete_lines": 10,
+        "games": 1,
+        "odds": 3,
+        "complete_lines": 1,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.46
+        "median_overround_pct": 4.22
       },
       "match_odds": {
-        "games": 10,
-        "odds": 30,
-        "complete_lines": 10,
+        "games": 1,
+        "odds": 3,
+        "complete_lines": 1,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.77
+        "median_overround_pct": 3.88
       },
       "team_goals": {
-        "games": 10,
-        "odds": 128,
-        "complete_lines": 64,
+        "games": 1,
+        "odds": 12,
+        "complete_lines": 6,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.76
+        "median_overround_pct": 5.18
       },
       "total_goals": {
-        "games": 10,
-        "odds": 264,
-        "complete_lines": 132,
+        "games": 1,
+        "odds": 28,
+        "complete_lines": 14,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.22
+        "median_overround_pct": 4.11
       }
     }
   },
   "price_movements": {
     "status": "fresh",
     "selections_with_changes": 1381,
-    "historical_snapshots": 69,
+    "historical_snapshots": 70,
     "top_changes": [
       {
         "home": "Bradford City",
@@ -360,14 +360,14 @@
       "league": "Liga Profesional Argentina",
       "league_code": "arg.1",
       "kickoff_unix": 1793138400.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 33,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -552,11 +552,19 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.01,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.09,
-        "draw": 4.05,
-        "away": 3.64
+        "home": 1.98,
+        "draw": 4.18,
+        "away": 3.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
@@ -564,7 +572,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Austin FC",
@@ -727,9 +735,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.85,
-        "draw": 4.44,
-        "away": 4.28
+        "home": 1.86,
+        "draw": 4.35,
+        "away": 4.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -779,9 +787,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.27,
-        "draw": 3.93,
-        "away": 3.27
+        "home": 2.3,
+        "draw": 3.92,
+        "away": 3.23
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
@@ -858,7 +866,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 39,
+      "verified_quotes": 45,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -880,7 +888,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 36,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1205,23 +1213,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Toronto FC",
-      "away": "DC United",
-      "kickoff_unix": 1793230200.0,
-      "league": "MLS",
-      "league_code": "usa.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
-      "tipsaudit_id": "12133",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
       "coverage": "no_bookmaker_price"
     },
     {
