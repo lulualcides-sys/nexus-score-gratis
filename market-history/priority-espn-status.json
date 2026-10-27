@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T18:12:44.138385+00:00",
+  "checked_at": "2026-10-27T18:55:41.172185+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
+  "priority_fixtures_seen": 16,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -41,15 +41,33 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Once Caldas x Alianza FC",
-      "league": "col.1",
-      "kickoff": 1793228400,
+      "fixture": "Fluminense x Internacional",
+      "league": "bra.1",
+      "kickoff": 1793226600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Internacional de Bogotá x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1793235900,
+      "fixture": "Red Bull Bragantino x Chapecoense",
+      "league": "bra.1",
+      "kickoff": 1793226600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Palmeiras",
+      "league": "bra.1",
+      "kickoff": 1793226600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Bahia x São Paulo",
+      "league": "bra.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Remo x Botafogo",
+      "league": "bra.1",
+      "kickoff": 1793233800,
       "reason": "no_verified_public_1x2"
     }
   ],
