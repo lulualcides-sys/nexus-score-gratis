@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T22:22:42.006653+00:00",
+  "checked_at": "2026-10-27T23:06:08.013579+00:00",
   "horizon_hours": 48,
-  "important_games": 31,
-  "verified_bookmaker_games": 3,
+  "important_games": 30,
+  "verified_bookmaker_games": 2,
   "indicative_only_games": 10,
   "missing_bookmaker_price_games": 18,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
@@ -353,28 +353,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Argentinos Juniors",
-      "away": "Independiente Rivadavia",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793138400.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 33,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Charlotte FC",
@@ -728,8 +706,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.93,
-          "bookmaker": "GTbets",
+          "price": 1.9,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -866,7 +844,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 45,
+      "verified_quotes": 48,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -888,7 +866,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 36,
+      "verified_quotes": 42,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
