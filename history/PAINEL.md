@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T08:50:46.574935+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T09:48:28.456504+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7558 | **Jogos distintos:** 2193 | **Resultados verificáveis:** 4353 | **Com gol:** 1631 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 66 pendentes | 1353 indeterminados | 1786 incompletos.
+**Observações:** 7559 | **Jogos distintos:** 2194 | **Resultados verificáveis:** 4353 | **Com gol:** 1631 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 49 pendentes | 1371 indeterminados | 1786 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 1550 | 1068 | 418 | 650 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1182 | 800 | 278 | 522 | 34.8% |
 | 🎯 chutes_no_alvo_5 | 1233 | 613 | 219 | 394 | 35.7% |
-| 🟥 expulsao_confirmada | 1146 | 532 | 184 | 348 | 34.6% |
+| 🟥 expulsao_confirmada | 1147 | 532 | 184 | 348 | 34.6% |
 | 🚩 escanteios_6 | 909 | 435 | 177 | 258 | 40.7% |
 | 💣 grandes_chances_3 | 725 | 399 | 165 | 234 | 41.4% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
 | Liga Profesional | 206 | 131 | 34 | 97 | 26.0% |
-| Super League | 221 | 122 | 37 | 85 | 30.3% |
+| Super League | 222 | 122 | 37 | 85 | 30.3% |
 | Bundesliga | 183 | 116 | 46 | 70 | 39.7% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
 | Serie B | 145 | 112 | 37 | 75 | 33.0% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 217 | 157 | 53 | 104 | 33.8% |
 | 16–30′ | 531 | 409 | 136 | 273 | 33.3% |
 | 31–45′ | 1512 | 1193 | 486 | 707 | 40.7% |
-| 46–60′ | 1027 | 747 | 280 | 467 | 37.5% |
+| 46–60′ | 1028 | 747 | 280 | 467 | 37.5% |
 | 61–75′ | 1541 | 1075 | 389 | 686 | 36.2% |
 | 76–90′ | 2088 | 765 | 285 | 480 | 37.3% |
 | 91+′ | 642 | 7 | 2 | 5 | 28.6% |
@@ -262,12 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7558 | **Jogos monitorados:** 1670 | **Ao vivo:** 65 | **Termômetros recentes:** 17.
+**Registros:** 7559 | **Jogos monitorados:** 1670 | **Ao vivo:** 65 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-27T09:25:05.334274+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (55') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (87') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | Coritiba × Grêmio | Grêmio (75') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
@@ -301,8 +302,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-27T00:07:39.088819+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (43') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | Flamengo × Atlético-MG | Flamengo (44') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
