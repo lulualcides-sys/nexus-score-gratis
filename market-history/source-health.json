@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T15:33:14.939446+00:00",
+  "checked_at": "2026-10-27T16:22:32.315846+00:00",
   "source_count": 5,
-  "sources_ok": 5,
+  "sources_ok": 4,
   "source_status": {
     "nexus": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 1792,
+      "odds_observed": 1810,
       "source_file": "status.json"
     },
     "espn_priority": {
@@ -30,24 +30,24 @@
     "tipsaudit": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 57,
+      "odds_observed": 54,
       "source_file": "public-no-key/status.json"
     },
     "pinnacle": {
-      "status": "ok",
-      "age_minutes": 145.6,
-      "odds_observed": 1714,
+      "status": "partial_blocked",
+      "age_minutes": 18.9,
+      "odds_observed": 1486,
       "source_file": "public-no-key/pinnacle-status.json",
-      "games_priced": 15,
-      "denied_requests": 0
+      "games_priced": 13,
+      "denied_requests": 1
     }
   },
   "priority_coverage": {
     "status": "ok",
     "important_games": 34,
     "verified_bookmaker_games": 6,
-    "missing_bookmaker_price_games": 18
+    "missing_bookmaker_price_games": 19
   },
-  "overall_status": "ok",
+  "overall_status": "degraded",
   "important": "Sources marked ok mean freshness/availability, NOT that every fixture has verified bookmaker prices or matched liquidity."
 }

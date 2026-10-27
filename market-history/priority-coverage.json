@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T15:33:11.006906+00:00",
+  "checked_at": "2026-10-27T16:22:28.323594+00:00",
   "horizon_hours": 48,
   "important_games": 34,
   "verified_bookmaker_games": 6,
-  "indicative_only_games": 10,
-  "missing_bookmaker_price_games": 18,
+  "indicative_only_games": 9,
+  "missing_bookmaker_price_games": 19,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
-    "indicative": 10,
+    "indicative": 9,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -32,65 +32,65 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-27T13:07:41.850042+00:00",
-    "complete_market_lines": 749,
+    "bookmaker_snapshot_at": "2026-10-27T16:03:39.949728+00:00",
+    "complete_market_lines": 656,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1528,
-    "invalid_quote_records": 30,
+    "odds_eligible_for_quality": 1338,
+    "invalid_quote_records": 26,
     "families": {
       "asian_handicap": {
-        "games": 15,
-        "odds": 348,
-        "complete_lines": 174,
+        "games": 13,
+        "odds": 314,
+        "complete_lines": 157,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.73
+        "median_overround_pct": 4.78
       },
       "first_half_goals": {
-        "games": 15,
-        "odds": 240,
-        "complete_lines": 120,
+        "games": 13,
+        "odds": 208,
+        "complete_lines": 104,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.15
+        "median_overround_pct": 6.2
       },
       "first_half_handicap": {
-        "games": 15,
-        "odds": 192,
-        "complete_lines": 96,
+        "games": 13,
+        "odds": 172,
+        "complete_lines": 86,
         "incomplete_lines": 0,
         "median_overround_pct": 5.25
       },
       "first_half_team_goals": {
-        "games": 15,
-        "odds": 58,
-        "complete_lines": 29,
+        "games": 13,
+        "odds": 50,
+        "complete_lines": 25,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.61
+        "median_overround_pct": 5.56
       },
       "half_time": {
-        "games": 15,
-        "odds": 45,
-        "complete_lines": 15,
+        "games": 13,
+        "odds": 39,
+        "complete_lines": 13,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.5
+        "median_overround_pct": 5.44
       },
       "match_odds": {
-        "games": 15,
-        "odds": 45,
-        "complete_lines": 15,
+        "games": 13,
+        "odds": 39,
+        "complete_lines": 13,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.8
+        "median_overround_pct": 4.47
       },
       "team_goals": {
-        "games": 15,
-        "odds": 192,
-        "complete_lines": 96,
+        "games": 13,
+        "odds": 168,
+        "complete_lines": 84,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.78
+        "median_overround_pct": 5.7
       },
       "total_goals": {
-        "games": 15,
-        "odds": 408,
-        "complete_lines": 204,
+        "games": 13,
+        "odds": 348,
+        "complete_lines": 174,
         "incomplete_lines": 0,
         "median_overround_pct": 5.23
       }
@@ -98,8 +98,8 @@
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 1104,
-    "historical_snapshots": 52,
+    "selections_with_changes": 1354,
+    "historical_snapshots": 62,
     "top_changes": [
       {
         "home": "Bradford City",
@@ -128,8 +128,8 @@
         "raw_market_key": "s;0;s;-2.0",
         "selection": "home",
         "first_odds": 1.4975,
-        "last_odds": 2.83,
-        "implied_probability_change_pp": -31.442
+        "last_odds": 2.72,
+        "implied_probability_change_pp": -30.013
       }
     ]
   },
@@ -254,7 +254,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -276,7 +276,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 37,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -298,7 +298,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -430,7 +430,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -460,7 +460,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.55,
+          "price": 1.56,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -725,9 +725,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.07,
+        "home": 2.12,
         "draw": 4.26,
-        "away": 3.55
+        "away": 3.4
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -843,24 +843,16 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.25,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.22,
-        "draw": 3.95,
-        "away": 3.38
+        "home": 2.24,
+        "draw": 3.94,
+        "away": 3.33
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Seattle Sounders FC",
@@ -1320,6 +1312,27 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "San Jose Earthquakes",
+      "away": "Colorado Rapids",
+      "league": "MLS",
+      "league_code": "usa.1",
+      "kickoff_unix": 1793241000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
+      "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
