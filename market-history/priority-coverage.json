@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T16:22:28.323594+00:00",
+  "checked_at": "2026-10-27T17:19:08.669924+00:00",
   "horizon_hours": 48,
   "important_games": 34,
   "verified_bookmaker_games": 6,
@@ -254,7 +254,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 28,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -276,7 +276,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 37,
+      "verified_quotes": 44,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -298,7 +298,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 23,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -430,7 +430,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -699,9 +699,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.64,
-        "draw": 5.34,
-        "away": 4.96
+        "home": 1.63,
+        "draw": 5.35,
+        "away": 4.97
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
