@@ -2,15 +2,15 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T21:43:09.403065+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T22:42:58.883666+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **46**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 0-0 | 0 | Match Odds 1X2: Casa 2,05, Empate 3,20, Fora 3,90 |
+| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 0-0 | 0 | Chutes no alvo: 2.0×3.0; Match Odds 1X2: Casa 2,05, Empate 3,20, Fora 3,90 |
 | 2026-10-27 | Ceará × Goiás | 0-0 | 0 | Match Odds 1X2: Casa 2,05, Empate 3,30, Fora 3,65 |
 | 2026-10-27 | Boyacá Chicó FC × Atlético Junior | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,25, Fora 2,15 |
 | 2026-10-27 | Cúcuta Deportivo × Águilas Doradas | 0-0 | 0 | Match Odds 1X2: Casa 2,55, Empate 2,90, Fora 2,80 |
@@ -29,15 +29,15 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **46**.
 | 2026-10-27 | Caledonian Braves × Albion Rovers | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Brechin City × East Stirlingshire | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bonnyrigg Rose × Bo'ness United | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | ADC Juan Pablo II × Sport Huancayo | 1-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×4.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0 |
+| 2026-10-27 | ADC Juan Pablo II × Sport Huancayo | 2-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×4.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Al Taee × Jeddah | 2-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-27 | Al-Wehda × Al-Saqer FC | 2-1 | 0 | Chutes no alvo: 3.0×4.0, Chutes para fora: 4.0×0.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×1.0 |
 | 2026-10-27 | Al-Adalah × Al Jeel | 0-1 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 1.0×1.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-27 | Instituto × Deportivo Riestra | 1-0 | 86 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×1.0, Escanteios: 11.0×1.0, Grandes chances: 3.0×0.0 |
-| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 0-0 | 42 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | AZ Alkmaar U19 × Göztepe U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bolívar × Universitario de Vinto | 2-1 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×1.0, Escanteios: 7.0×0.0, Grandes chances: 5.0×0.0 |
-| 2026-10-27 | Academia Puerto Cabello × Caracas | 0-0 | 0 | Match Odds 1X2: Casa 1,68, Empate 3,49, Fora 5,11 |
+| 2026-10-27 | Academia Puerto Cabello × Caracas | 0-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 1,68, Empate 3,49, F |
 | 2026-10-27 | Deportivo Táchira × Monagas SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Mamelodi Sundowns FC × Marumo Gallants | 1-0 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Orlando Pirates × Milford FC | 3-0 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 5.0×3.0, Escanteios: 7.0×1.0, Grandes chances: 0.0×0.0 |
@@ -107,11 +107,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **46**.
 | 2026-10-27 | Maldon & Tiptree × Eastbourne Borough | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | St Albans × Burgess Hill Town | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Stanway Rovers × Cray Wanderers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Brentwood Town × Cheshunt | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Brentwood Town × Cheshunt | 4-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Enfield Town × Chatham Town | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Whitehawk × Dulwich Hamlet | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Welling United × Leatherhead | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Gainsborough × Curzon | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Gainsborough × Curzon | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bury × Leek Town | 5-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | FC United of Manchester × Quorn | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Alvechurch × Anstey Nomads | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -128,9 +128,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **46**.
 | 2026-10-27 | Berkhamsted × Sholing | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bracknell Town × Gosport Borough | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Chichester City FC × Hanworth Villa | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Hanwell Town × Havant and Waterlooville | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Hanwell Town × Havant and Waterlooville | 6-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Plymouth Parkway × Gloucester City | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Poole Town FC × Chertsey Town | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Poole Town FC × Chertsey Town | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Taunton Town × Frome Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Yate Town × Wimborne Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Veraguas United × Union Cocle | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,30 +168,30 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7834 | **Jogos distintos:** 2268 | **Resultados verificáveis:** 4462 | **Com gol:** 1682 | **Sem gol:** 2780 | **Taxa observada:** 37.7%.
-**Evolução da amostra:** 19 datas com coletas | 102 pendentes | 1417 indeterminados | 1853 incompletos.
+**Observações:** 7843 | **Jogos distintos:** 2270 | **Resultados verificáveis:** 4481 | **Com gol:** 1684 | **Sem gol:** 2797 | **Taxa observada:** 37.6%.
+**Evolução da amostra:** 19 datas com coletas | 68 pendentes | 1417 indeterminados | 1877 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1600 | 1094 | 430 | 664 | 39.3% |
-| ⚡ pressao_ofensiva_18 | 1222 | 819 | 286 | 533 | 34.9% |
-| 🎯 chutes_no_alvo_5 | 1275 | 622 | 223 | 399 | 35.9% |
-| 🟥 expulsao_confirmada | 1195 | 553 | 193 | 360 | 34.9% |
-| 🚩 escanteios_6 | 934 | 442 | 180 | 262 | 40.7% |
-| 💣 grandes_chances_3 | 756 | 411 | 171 | 240 | 41.6% |
-| 🔥 pressao_forte_10min | 414 | 269 | 102 | 167 | 37.9% |
-| 🧨 pressao_total_5_10min | 224 | 146 | 54 | 92 | 37.0% |
-| ⏱️ tensao_tardia_70 | 141 | 59 | 24 | 35 | 40.7% |
-| 🚨 alerta_cruzado_gol | 73 | 47 | 19 | 28 | 40.4% |
+| 🥶 jogo_frio | 1601 | 1096 | 431 | 665 | 39.3% |
+| ⚡ pressao_ofensiva_18 | 1223 | 823 | 287 | 536 | 34.9% |
+| 🎯 chutes_no_alvo_5 | 1276 | 624 | 223 | 401 | 35.7% |
+| 🟥 expulsao_confirmada | 1197 | 554 | 193 | 361 | 34.8% |
+| 🚩 escanteios_6 | 934 | 443 | 180 | 263 | 40.6% |
+| 💣 grandes_chances_3 | 756 | 414 | 171 | 243 | 41.3% |
+| 🔥 pressao_forte_10min | 415 | 271 | 102 | 169 | 37.6% |
+| 🧨 pressao_total_5_10min | 225 | 147 | 54 | 93 | 36.7% |
+| ⏱️ tensao_tardia_70 | 142 | 61 | 24 | 37 | 39.3% |
+| 🚨 alerta_cruzado_gol | 74 | 48 | 19 | 29 | 39.6% |
 
 ### Equipe
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 212 | 126 | 54 | 72 | 42.9% |
+| Equipe não definida | 213 | 126 | 54 | 72 | 42.9% |
 | Manchester City | 42 | 24 | 13 | 11 | 54.2% |
 | Machida Zelvia | 26 | 23 | 6 | 17 | 26.1% |
 | Roma | 30 | 21 | 15 | 6 | 71.4% |
@@ -201,6 +201,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Atalanta | 24 | 18 | 8 | 10 | 44.4% |
 | Paris Saint-Germain | 24 | 18 | 6 | 12 | 33.3% |
 | Panathinaikos | 21 | 18 | 8 | 10 | 44.4% |
+| Rayo Vallecano | 31 | 17 | 1 | 16 | 5.9% |
 | Palmeiras | 26 | 17 | 4 | 13 | 23.5% |
 | FC Cincinnati | 23 | 17 | 4 | 13 | 23.5% |
 | Ajax | 21 | 17 | 7 | 10 | 41.2% |
@@ -215,7 +216,6 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Molde | 18 | 15 | 3 | 12 | 20.0% |
 | Bradford City | 17 | 15 | 1 | 14 | 6.7% |
 | OL Lyonnes (W) | 15 | 15 | 6 | 9 | 40.0% |
-| Borussia Dortmund | 25 | 14 | 3 | 11 | 21.4% |
 
 ### Campeonato
 
@@ -224,7 +224,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 383 | 229 | 65 | 164 | 28.4% |
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
-| Liga Profesional | 206 | 131 | 34 | 97 | 26.0% |
+| Liga Profesional | 207 | 131 | 34 | 97 | 26.0% |
 | Serie B | 182 | 129 | 45 | 84 | 34.9% |
 | Super League | 223 | 124 | 38 | 86 | 30.6% |
 | Bundesliga | 183 | 116 | 46 | 70 | 39.7% |
@@ -244,7 +244,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
 | Primera A | 138 | 81 | 24 | 57 | 29.6% |
 | Saudi Pro League | 122 | 81 | 35 | 46 | 43.2% |
-| Primera División | 125 | 72 | 22 | 50 | 30.6% |
+| Primera División | 126 | 72 | 22 | 50 | 30.6% |
 | Ekstraklasa | 120 | 72 | 31 | 41 | 43.1% |
 
 ### Faixa de minuto
@@ -253,27 +253,36 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 225 | 164 | 53 | 111 | 32.3% |
 | 16–30′ | 534 | 410 | 136 | 274 | 33.2% |
-| 31–45′ | 1573 | 1234 | 502 | 732 | 40.7% |
-| 46–60′ | 1064 | 768 | 292 | 476 | 38.0% |
-| 61–75′ | 1596 | 1100 | 402 | 698 | 36.5% |
-| 76–90′ | 2180 | 779 | 295 | 484 | 37.9% |
-| 91+′ | 662 | 7 | 2 | 5 | 28.6% |
+| 31–45′ | 1574 | 1234 | 502 | 732 | 40.7% |
+| 46–60′ | 1065 | 768 | 292 | 476 | 38.0% |
+| 61–75′ | 1596 | 1105 | 404 | 701 | 36.6% |
+| 76–90′ | 2180 | 793 | 295 | 498 | 37.2% |
+| 91+′ | 669 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7834 | **Jogos monitorados:** 1670 | **Ao vivo:** 111 | **Termômetros recentes:** 21.
+**Registros:** 7843 | **Jogos monitorados:** 1670 | **Ao vivo:** 69 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T21:43:28.709805+00:00 | Torino × Como | Torino (90') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T21:43:28.709805+00:00 | ADC Juan Pablo II × Sport Huancayo | Sport Huancayo (87') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T21:43:28.709805+00:00 | Sporting CP × Marítimo | Marítimo (68') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-27T21:43:28.709805+00:00 | Sporting de Alcazar × Málaga | Málaga (87') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-27T21:43:28.709805+00:00 | Don Benito × CD Extremadura | Don Benito (104') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T21:43:28.709805+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (85') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-27T22:41:02.987800+00:00 | Argentinos Juniors × Independiente Rivadavia | Equipe não definida (42') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-27T22:41:02.987800+00:00 | Academia Puerto Cabello × Caracas | Academia Puerto Cabello (52') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Sporting CP × Marítimo | Sporting CP (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (100') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (100') | 🧨 pressao_total_5_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (100') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (100') | ⏱️ tensao_tardia_70 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (100') | 🚨 alerta_cruzado_gol · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T22:10:59.207473+00:00 | Recreativo Huelva × Rayo Vallecano | Recreativo Huelva (100') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | Torino × Como | Torino (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | ADC Juan Pablo II × Sport Huancayo | Sport Huancayo (87') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | Sporting CP × Marítimo | Marítimo (68') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | Sporting de Alcazar × Málaga | Málaga (87') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | Don Benito × CD Extremadura | Don Benito (104') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:43:28.709805+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Torino × Como | Como (87') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Torino × Como | Como (87') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Torino × Como | Como (87') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -283,9 +292,9 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T21:36:18.125121+00:00 | Torino × Como | Como (87') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Torino × Como | Como (87') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Leicester City × Wigan Athletic | Leicester City (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Milton Keynes Dons × Bromley | Milton Keynes Dons (88') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Luton Town × Doncaster Rovers | Luton Town (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Sheffield Wednesday × Cambridge United | Cambridge United (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Sheffield Wednesday × Cambridge United | Cambridge United (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -294,39 +303,39 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T21:36:18.125121+00:00 | Barnet × York City | York City (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Radcliffe × Chorley | Radcliffe (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | AFC Totton × Torquay United | Torquay United (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Billericay × Hampton & Richmond | Billericay (87') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Dover × Chelmsford | Dover (88') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Billericay × Hampton & Richmond | Billericay (87') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Dover × Chelmsford | Dover (88') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Bromsgrove Sporting × Stratford Town | Stratford Town (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Kettering Town FC × Rushall Olympic | Kettering Town FC (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Sporting CP × Marítimo | Sporting CP (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Sporting CP × Marítimo | Sporting CP (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Borussia Mönchengladbach × Karlsruher SC | Karlsruher SC (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Borussia Mönchengladbach × Karlsruher SC | Borussia Mönchengladbach (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Werder Bremen (86') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Bradford City × Peterborough United | Bradford City (93') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Bradford City × Peterborough United | Bradford City (93') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Borussia Dortmund (86') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Borussia Dortmund × Werder Bremen | Werder Bremen (86') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Fleetwood Town × Arsenal | Arsenal (74') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Bradford City × Peterborough United | Bradford City (93') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Bradford City × Peterborough United | Bradford City (93') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Sporting de Alcazar × Málaga | Málaga (79') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Sporting de Alcazar × Málaga | Sporting de Alcazar (79') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Recreativo Huelva (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Recreativo Huelva (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Roma × Cagliari | Roma (63') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Roma × Cagliari | Roma (63') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Torino × Como | Como (57') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -359,15 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T20:44:21.750108+00:00 | Ascoli × Sampdoria | Sampdoria (85') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T20:44:21.750108+00:00 | Cesena × Empoli | Empoli (82') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T20:44:21.750108+00:00 | Cesena × Empoli | Cesena (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Virtus Entella × Avellino | Avellino (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | LR Vicenza × Modena | Modena (84') | 🥶 jogo_frio · pressão observada | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Mantova × Cremonese | Mantova (85') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Mantova × Cremonese | Mantova (85') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Mantova × Cremonese | Mantova (85') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Mantova × Cremonese | Cremonese (85') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Padova × Südtirol | Südtirol (86') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Padova × Südtirol | Südtirol (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-27T20:44:21.750108+00:00 | Sporting CP × Marítimo | Sporting CP (26') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
