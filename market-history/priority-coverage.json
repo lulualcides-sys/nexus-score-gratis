@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T13:38:28.200048+00:00",
+  "checked_at": "2026-10-27T14:35:07.518266+00:00",
   "horizon_hours": 48,
   "important_games": 35,
   "verified_bookmaker_games": 7,
@@ -254,7 +254,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -276,7 +276,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 20,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -298,7 +298,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -489,8 +489,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.52,
-        "draw": 5.63,
+        "home": 1.53,
+        "draw": 5.52,
         "away": 6.08
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
@@ -523,9 +523,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.51,
-        "draw": 5.61,
-        "away": 6.33
+        "home": 1.5,
+        "draw": 5.68,
+        "away": 6.39
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
       "tipsaudit_id": "12136",
@@ -721,9 +721,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.63,
-        "draw": 5.4,
-        "away": 4.93
+        "home": 1.64,
+        "draw": 5.34,
+        "away": 4.96
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -841,9 +841,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.8,
-        "draw": 4.64,
-        "away": 4.34
+        "home": 1.79,
+        "draw": 4.68,
+        "away": 4.38
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
@@ -935,9 +935,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.47,
-        "draw": 5.94,
-        "away": 6.68
+        "home": 1.46,
+        "draw": 5.96,
+        "away": 6.69
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
