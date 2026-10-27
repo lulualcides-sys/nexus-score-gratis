@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T10:46:38.961066+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T11:44:48.476412+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7561 | **Jogos distintos:** 2195 | **Resultados verificáveis:** 4354 | **Com gol:** 1631 | **Sem gol:** 2723 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 49 pendentes | 1372 indeterminados | 1786 incompletos.
+**Observações:** 7568 | **Jogos distintos:** 2198 | **Resultados verificáveis:** 4356 | **Com gol:** 1633 | **Sem gol:** 2723 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 72 pendentes | 1354 indeterminados | 1786 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,10 +178,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1550 | 1068 | 418 | 650 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1182 | 800 | 278 | 522 | 34.8% |
-| 🎯 chutes_no_alvo_5 | 1233 | 613 | 219 | 394 | 35.7% |
+| 🎯 chutes_no_alvo_5 | 1237 | 613 | 219 | 394 | 35.7% |
 | 🟥 expulsao_confirmada | 1148 | 533 | 184 | 349 | 34.5% |
-| 🚩 escanteios_6 | 909 | 435 | 177 | 258 | 40.7% |
-| 💣 grandes_chances_3 | 726 | 399 | 165 | 234 | 41.4% |
+| 🚩 escanteios_6 | 911 | 436 | 178 | 258 | 40.8% |
+| 💣 grandes_chances_3 | 727 | 400 | 166 | 234 | 41.5% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
 | 🧨 pressao_total_5_10min | 214 | 142 | 52 | 90 | 36.6% |
 | ⏱️ tensao_tardia_70 | 135 | 58 | 23 | 35 | 39.7% |
@@ -253,22 +253,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 217 | 157 | 53 | 104 | 33.8% |
 | 16–30′ | 531 | 409 | 136 | 273 | 33.3% |
-| 31–45′ | 1513 | 1193 | 486 | 707 | 40.7% |
-| 46–60′ | 1028 | 748 | 280 | 468 | 37.4% |
+| 31–45′ | 1513 | 1194 | 487 | 707 | 40.8% |
+| 46–60′ | 1029 | 749 | 281 | 468 | 37.5% |
 | 61–75′ | 1542 | 1075 | 389 | 686 | 36.2% |
-| 76–90′ | 2088 | 765 | 285 | 480 | 37.3% |
+| 76–90′ | 2094 | 765 | 285 | 480 | 37.3% |
 | 91+′ | 642 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7561 | **Jogos monitorados:** 1670 | **Ao vivo:** 72 | **Termômetros recentes:** 17.
+**Registros:** 7568 | **Jogos monitorados:** 1670 | **Ao vivo:** 74 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T10:37:05.955468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (37') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Daejeon Hana Citizen × Vissel Kobe | Daejeon Hana Citizen (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Công An Hà Nội (86') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Shanghai Port (86') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:14:01.594029+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (51') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-27T10:37:05.955468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (37') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T10:04:01.228043+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (68') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-27T09:25:05.334274+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (55') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (87') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
@@ -304,8 +311,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
 | 2026-10-27T00:07:39.088819+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (43') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | Flamengo × Atlético-MG | Flamengo (44') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
@@ -361,13 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T20:44:21.372048+00:00 | Montpellier × Red Star | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:44:21.372048+00:00 | Walsall × Salford City | Salford City (44') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:44:21.372048+00:00 | Sevilla × Osasuna | Sevilla (41') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:44:21.372048+00:00 | Sevilla × Osasuna | Sevilla (41') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:44:21.372048+00:00 | Sevilla × Osasuna | Sevilla (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:44:21.372048+00:00 | FC Andorra × Burgos CF | FC Andorra (51') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Blackburn Rovers U21 × West Bromwich Albion U21 | Blackburn Rovers U21 (66') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Crystal Palace U21 × Southampton U21 | Southampton U21 (68') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Newcastle United U21 × Sunderland U21 | Newcastle United U21 (67') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
