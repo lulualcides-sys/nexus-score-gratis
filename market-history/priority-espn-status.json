@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T01:01:07.799279+00:00",
+  "checked_at": "2026-10-27T01:49:30.748921+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 10,
+  "priority_fixtures_seen": 8,
   "created_games": 0,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
@@ -44,18 +44,6 @@
       "fixture": "Boyacá Chicó FC x Atlético Junior",
       "league": "col.1",
       "kickoff": 1793149500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Coritiba x Grêmio",
-      "league": "bra.1",
-      "kickoff": 1793053800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Flamengo x Atlético-MG",
-      "league": "bra.1",
-      "kickoff": 1793055600,
       "reason": "no_verified_public_1x2"
     }
   ],
