@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T19:00:46.509015+00:00",
-  "bookmaker_snapshot_at": "2026-10-27T19:00:45.197303+00:00",
+  "checked_at": "2026-10-27T21:51:28.659642+00:00",
+  "bookmaker_snapshot_at": "2026-10-27T21:51:28.185656+00:00",
   "status": "fresh",
-  "matches_catalogued": 10,
-  "matches_with_priced_markets": 10,
-  "odds_eligible_for_quality": 1024,
-  "invalid_quote_records": 20,
-  "complete_market_lines": 502,
+  "matches_catalogued": 1,
+  "matches_with_priced_markets": 1,
+  "odds_eligible_for_quality": 106,
+  "invalid_quote_records": 0,
+  "complete_market_lines": 52,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 10,
-      "odds": 240,
-      "complete_lines": 120,
+      "games": 1,
+      "odds": 26,
+      "complete_lines": 13,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.77
+      "median_overround_pct": 3.58
     },
     "first_half_goals": {
-      "games": 10,
-      "odds": 160,
-      "complete_lines": 80,
+      "games": 1,
+      "odds": 16,
+      "complete_lines": 8,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.15
+      "median_overround_pct": 5.04
     },
     "first_half_handicap": {
-      "games": 10,
-      "odds": 134,
-      "complete_lines": 67,
+      "games": 1,
+      "odds": 14,
+      "complete_lines": 7,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.08
+    },
+    "first_half_team_goals": {
+      "games": 1,
+      "odds": 4,
+      "complete_lines": 2,
       "incomplete_lines": 0,
       "median_overround_pct": 5.25
     },
-    "first_half_team_goals": {
-      "games": 10,
-      "odds": 38,
-      "complete_lines": 19,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.58
-    },
     "half_time": {
-      "games": 10,
-      "odds": 30,
-      "complete_lines": 10,
+      "games": 1,
+      "odds": 3,
+      "complete_lines": 1,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.46
+      "median_overround_pct": 4.22
     },
     "match_odds": {
-      "games": 10,
-      "odds": 30,
-      "complete_lines": 10,
+      "games": 1,
+      "odds": 3,
+      "complete_lines": 1,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.77
+      "median_overround_pct": 3.88
     },
     "team_goals": {
-      "games": 10,
-      "odds": 128,
-      "complete_lines": 64,
+      "games": 1,
+      "odds": 12,
+      "complete_lines": 6,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.76
+      "median_overround_pct": 5.18
     },
     "total_goals": {
-      "games": 10,
-      "odds": 264,
-      "complete_lines": 132,
+      "games": 1,
+      "odds": 28,
+      "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.22
+      "median_overround_pct": 4.11
     }
   },
   "examples": [
     {
-      "fixture": "Bradford City x Peterborough United",
+      "fixture": "Villarreal x Espanyol",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-27T19:00:45.197303+00:00",
+      "observed_at": "2026-10-27T21:51:28.185656+00:00",
       "selections": {
-        "home": 1.6369,
-        "away": 4.93,
-        "draw": 4.13
+        "home": 1.4444,
+        "away": 6.72,
+        "draw": 5.06
       },
-      "overround_pct": 5.59
+      "overround_pct": 3.88
     },
     {
-      "fixture": "Bradford City x Peterborough United",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-27T19:00:45.197303+00:00",
-      "selections": {
-        "home": 1.813,
-        "away": 2.05
-      },
-      "overround_pct": 3.94
-    },
-    {
-      "fixture": "Bradford City x Peterborough United",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-27T19:00:45.197303+00:00",
-      "selections": {
-        "home": 3.23,
-        "away": 1.3472
-      },
-      "overround_pct": 5.19
-    },
-    {
-      "fixture": "Bradford City x Peterborough United",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-27T19:00:45.197303+00:00",
-      "selections": {
-        "home": 2.67,
-        "away": 1.4739
-      },
-      "overround_pct": 5.3
-    },
-    {
-      "fixture": "Bradford City x Peterborough United",
+      "fixture": "Villarreal x Espanyol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-27T19:00:45.197303+00:00",
+      "observed_at": "2026-10-27T21:51:28.185656+00:00",
       "selections": {
-        "home": 2.38,
-        "away": 1.5917
+        "home": 1.9901,
+        "away": 1.9174
       },
-      "overround_pct": 4.84
+      "overround_pct": 2.4
+    },
+    {
+      "fixture": "Villarreal x Espanyol",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-2.25",
+      "line_from_market_key": "s;0;s;-2.25",
+      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "selections": {
+        "home": 3.78,
+        "away": 1.2967
+      },
+      "overround_pct": 3.57
+    },
+    {
+      "fixture": "Villarreal x Espanyol",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-2.0",
+      "line_from_market_key": "s;0;s;-2.0",
+      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "selections": {
+        "home": 3.36,
+        "away": 1.3546
+      },
+      "overround_pct": 3.58
+    },
+    {
+      "fixture": "Villarreal x Espanyol",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "selections": {
+        "home": 2.64,
+        "away": 1.5319
+      },
+      "overround_pct": 3.16
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
