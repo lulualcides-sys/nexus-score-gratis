@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T04:41:49.653679+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T05:41:58.166532+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7558 | **Jogos distintos:** 2193 | **Resultados verificáveis:** 4352 | **Com gol:** 1630 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 66 pendentes | 1354 indeterminados | 1786 incompletos.
+**Observações:** 7558 | **Jogos distintos:** 2193 | **Resultados verificáveis:** 4353 | **Com gol:** 1631 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 66 pendentes | 1353 indeterminados | 1786 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,7 +179,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 1550 | 1068 | 418 | 650 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1182 | 800 | 278 | 522 | 34.8% |
 | 🎯 chutes_no_alvo_5 | 1233 | 613 | 219 | 394 | 35.7% |
-| 🟥 expulsao_confirmada | 1146 | 531 | 183 | 348 | 34.5% |
+| 🟥 expulsao_confirmada | 1146 | 532 | 184 | 348 | 34.6% |
 | 🚩 escanteios_6 | 909 | 435 | 177 | 258 | 40.7% |
 | 💣 grandes_chances_3 | 725 | 399 | 165 | 234 | 41.4% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
@@ -242,7 +242,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Super Lig | 111 | 87 | 32 | 55 | 36.8% |
 | League One | 155 | 84 | 27 | 57 | 32.1% |
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
-| Primera A | 138 | 80 | 23 | 57 | 28.8% |
+| Primera A | 138 | 81 | 24 | 57 | 29.6% |
 | Saudi Pro League | 117 | 80 | 35 | 45 | 43.8% |
 | Primera División | 125 | 72 | 22 | 50 | 30.6% |
 | Ekstraklasa | 120 | 72 | 31 | 41 | 43.1% |
@@ -256,7 +256,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 1512 | 1193 | 486 | 707 | 40.7% |
 | 46–60′ | 1027 | 747 | 280 | 467 | 37.5% |
 | 61–75′ | 1541 | 1075 | 389 | 686 | 36.2% |
-| 76–90′ | 2088 | 764 | 284 | 480 | 37.2% |
+| 76–90′ | 2088 | 765 | 285 | 480 | 37.3% |
 | 91+′ | 642 | 7 | 2 | 5 | 28.6% |
 
 
@@ -276,7 +276,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T03:43:56.287798+00:00 | América-MG × Cuiabá | Cuiabá (77') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-27T02:41:50.030308+00:00 | Independiente Santa Fe × Atlético Bucaramanga | Atlético Bucaramanga (75') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-27T02:41:50.030308+00:00 | Santa Fe × Bucaramanga | Bucaramanga (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-10-27T02:41:50.030308+00:00 | Santa Fe × Bucaramanga | Bucaramanga (77') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-27T02:29:37.229426+00:00 | Santa Fe × Bucaramanga | Bucaramanga (43') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T02:02:26.446296+00:00 | Santa Fe × Bucaramanga | Bucaramanga (43') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T02:02:26.446296+00:00 | Instituto × Deportivo Riestra | Instituto (77') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
