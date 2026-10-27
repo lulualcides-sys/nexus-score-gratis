@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T06:20:50.471376+00:00",
+  "checked_at": "2026-10-27T07:24:37.153885+00:00",
   "horizon_hours": 48,
   "important_games": 35,
   "verified_bookmaker_games": 6,
@@ -24,83 +24,114 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 2,
-    "verified_corners_quotes": 40,
+    "priced_games": 0,
+    "verified_corners_quotes": 0,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-27T03:53:05.551032+00:00",
-    "complete_market_lines": 694,
+    "bookmaker_snapshot_at": "2026-10-27T07:06:24.951791+00:00",
+    "complete_market_lines": 698,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1416,
+    "odds_eligible_for_quality": 1424,
     "invalid_quote_records": 28,
     "families": {
       "asian_handicap": {
         "games": 14,
-        "odds": 324,
-        "complete_lines": 162,
+        "odds": 326,
+        "complete_lines": 163,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.17
+        "median_overround_pct": 5.19
       },
       "first_half_goals": {
         "games": 14,
         "odds": 224,
         "complete_lines": 112,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.56
+        "median_overround_pct": 6.54
       },
       "first_half_handicap": {
         "games": 14,
-        "odds": 178,
-        "complete_lines": 89,
+        "odds": 180,
+        "complete_lines": 90,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.73
+        "median_overround_pct": 5.67
       },
       "first_half_team_goals": {
         "games": 14,
         "odds": 54,
         "complete_lines": 27,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.0
+        "median_overround_pct": 5.77
       },
       "half_time": {
         "games": 14,
         "odds": 42,
         "complete_lines": 14,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.55
+        "median_overround_pct": 5.51
       },
       "match_odds": {
         "games": 14,
         "odds": 42,
         "complete_lines": 14,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.13
+        "median_overround_pct": 5.05
       },
       "team_goals": {
         "games": 14,
-        "odds": 176,
-        "complete_lines": 88,
+        "odds": 178,
+        "complete_lines": 89,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.11
+        "median_overround_pct": 6.05
       },
       "total_goals": {
         "games": 14,
-        "odds": 376,
-        "complete_lines": 188,
+        "odds": 378,
+        "complete_lines": 189,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.65
+        "median_overround_pct": 5.56
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 14,
-    "top_changes": []
+    "selections_with_changes": 785,
+    "historical_snapshots": 25,
+    "top_changes": [
+      {
+        "home": "Borussia Dortmund",
+        "away": "Werder Bremen",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-2.0",
+        "selection": "home",
+        "first_odds": 1.4975,
+        "last_odds": 3.01,
+        "implied_probability_change_pp": -33.555
+      },
+      {
+        "home": "Borussia Dortmund",
+        "away": "Werder Bremen",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-2.0",
+        "selection": "away",
+        "first_odds": 2.39,
+        "last_odds": 1.3876,
+        "implied_probability_change_pp": 30.226
+      },
+      {
+        "home": "Bradford City",
+        "away": "Peterborough United",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-1.0",
+        "selection": "home",
+        "first_odds": 1.5587,
+        "last_odds": 2.08,
+        "implied_probability_change_pp": -16.079
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -221,10 +252,9 @@
       "kickoff_unix": 1793122200.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "The Odds API official free"
+        "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -234,7 +264,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "official_verified_total_corners_quotes": 20,
       "coverage": "verified_price"
     },
     {
@@ -245,10 +274,9 @@
       "kickoff_unix": 1793130300.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "The Odds API official free"
+        "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -258,7 +286,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "official_verified_total_corners_quotes": 20,
       "coverage": "verified_price"
     },
     {
@@ -653,8 +680,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.6,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 2.59,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -900,9 +927,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.48,
-        "draw": 5.87,
-        "away": 6.58
+        "home": 1.47,
+        "draw": 5.94,
+        "away": 6.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
