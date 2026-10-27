@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T11:44:48.476412+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T12:53:30.064667+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -50,7 +50,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-10-27 | Ceará × Goiás | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Juventude × Náutico | 3-0 | 86 | Chutes no alvo: 10.0×4.0, Chutes para fora: 7.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-27 | Roma × Cagliari | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Sassuolo × Lazio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Sassuolo × Lazio | 0-0 | 0 | Match Odds 1X2: Casa 3,30, Empate 3,40, Fora 2,05 |
 | 2026-10-27 | Torino × Como | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Arda Kardzhali × Levski Sofia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Cherno More Varna × Septemvri Sofia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,18 +168,18 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7568 | **Jogos distintos:** 2198 | **Resultados verificáveis:** 4356 | **Com gol:** 1633 | **Sem gol:** 2723 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 72 pendentes | 1354 indeterminados | 1786 incompletos.
+**Observações:** 7569 | **Jogos distintos:** 2199 | **Resultados verificáveis:** 4357 | **Com gol:** 1634 | **Sem gol:** 2723 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 67 pendentes | 1353 indeterminados | 1792 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1550 | 1068 | 418 | 650 | 39.1% |
+| 🥶 jogo_frio | 1551 | 1068 | 418 | 650 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1182 | 800 | 278 | 522 | 34.8% |
 | 🎯 chutes_no_alvo_5 | 1237 | 613 | 219 | 394 | 35.7% |
-| 🟥 expulsao_confirmada | 1148 | 533 | 184 | 349 | 34.5% |
+| 🟥 expulsao_confirmada | 1148 | 534 | 185 | 349 | 34.6% |
 | 🚩 escanteios_6 | 911 | 436 | 178 | 258 | 40.8% |
 | 💣 grandes_chances_3 | 727 | 400 | 166 | 234 | 41.5% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
 | Liga Profesional | 206 | 131 | 34 | 97 | 26.0% |
-| Super League | 223 | 123 | 37 | 86 | 30.1% |
+| Super League | 223 | 124 | 38 | 86 | 30.6% |
 | Bundesliga | 183 | 116 | 46 | 70 | 39.7% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
 | Serie B | 145 | 112 | 37 | 75 | 33.0% |
@@ -243,7 +243,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | League One | 155 | 84 | 27 | 57 | 32.1% |
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
 | Primera A | 138 | 81 | 24 | 57 | 29.6% |
-| Saudi Pro League | 117 | 80 | 35 | 45 | 43.8% |
+| Saudi Pro League | 118 | 80 | 35 | 45 | 43.8% |
 | Primera División | 125 | 72 | 22 | 50 | 30.6% |
 | Ekstraklasa | 120 | 72 | 31 | 41 | 43.1% |
 
@@ -251,32 +251,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 217 | 157 | 53 | 104 | 33.8% |
+| 1–15′ | 218 | 157 | 53 | 104 | 33.8% |
 | 16–30′ | 531 | 409 | 136 | 273 | 33.3% |
 | 31–45′ | 1513 | 1194 | 487 | 707 | 40.8% |
 | 46–60′ | 1029 | 749 | 281 | 468 | 37.5% |
-| 61–75′ | 1542 | 1075 | 389 | 686 | 36.2% |
+| 61–75′ | 1542 | 1076 | 390 | 686 | 36.2% |
 | 76–90′ | 2094 | 765 | 285 | 480 | 37.3% |
 | 91+′ | 642 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7568 | **Jogos monitorados:** 1670 | **Ao vivo:** 74 | **Termômetros recentes:** 17.
+**Registros:** 7569 | **Jogos monitorados:** 1670 | **Ao vivo:** 76 | **Termômetros recentes:** 18.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T11:45:12.388468+00:00 | Daejeon Hana Citizen × Vissel Kobe | Daejeon Hana Citizen (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T11:45:12.388468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Công An Hà Nội (86') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Shanghai Port (86') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T12:53:51.079679+00:00 | Abha × Al-Faisaly | Al-Faisaly (14') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Daejeon Hana Citizen × Vissel Kobe | Daejeon Hana Citizen (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Johor Darul Ta'zim × Port FC | Johor Darul Ta'zim (84') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (82') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Công An Hà Nội (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T11:45:12.388468+00:00 | Shanghai Port × Công An Hà Nội | Shanghai Port (86') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T11:14:01.594029+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (51') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T10:37:05.955468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (37') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T10:04:01.228043+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (68') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-27T10:04:01.228043+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (68') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T09:25:05.334274+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (55') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (87') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | Coritiba × Grêmio | Grêmio (75') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
@@ -367,11 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T20:44:21.372048+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (57') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:44:21.372048+00:00 | Montpellier × Red Star | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:44:21.372048+00:00 | Walsall × Salford City | Salford City (44') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-26T20:44:21.372048+00:00 | Sevilla × Osasuna | Sevilla (41') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **155**.
+Jogos com odds registradas nos ultimos dias: **157**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
