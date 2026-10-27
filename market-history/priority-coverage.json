@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T12:09:19.062261+00:00",
+  "checked_at": "2026-10-27T12:51:55.500605+00:00",
   "horizon_hours": 48,
   "important_games": 35,
-  "verified_bookmaker_games": 6,
+  "verified_bookmaker_games": 7,
   "indicative_only_games": 10,
-  "missing_bookmaker_price_games": 19,
+  "missing_bookmaker_price_games": 18,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -254,7 +254,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -276,7 +276,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 7,
+      "verified_quotes": 10,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -430,7 +430,7 @@
       "data_sources": [
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 22,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -440,7 +440,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Argentinos Juniors",
@@ -1232,27 +1232,6 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "US Biskra",
-      "away": "MC Alger",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793109600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
