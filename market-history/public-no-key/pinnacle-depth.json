@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T16:03:42.024169+00:00",
-  "bookmaker_snapshot_at": "2026-10-27T16:03:39.949728+00:00",
+  "checked_at": "2026-10-27T19:00:46.509015+00:00",
+  "bookmaker_snapshot_at": "2026-10-27T19:00:45.197303+00:00",
   "status": "fresh",
-  "matches_catalogued": 13,
-  "matches_with_priced_markets": 13,
-  "odds_eligible_for_quality": 1338,
-  "invalid_quote_records": 26,
-  "complete_market_lines": 656,
+  "matches_catalogued": 10,
+  "matches_with_priced_markets": 10,
+  "odds_eligible_for_quality": 1024,
+  "invalid_quote_records": 20,
+  "complete_market_lines": 502,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 13,
-      "odds": 314,
-      "complete_lines": 157,
+      "games": 10,
+      "odds": 240,
+      "complete_lines": 120,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.78
+      "median_overround_pct": 4.77
     },
     "first_half_goals": {
-      "games": 13,
-      "odds": 208,
-      "complete_lines": 104,
+      "games": 10,
+      "odds": 160,
+      "complete_lines": 80,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.2
+      "median_overround_pct": 6.15
     },
     "first_half_handicap": {
-      "games": 13,
-      "odds": 172,
-      "complete_lines": 86,
+      "games": 10,
+      "odds": 134,
+      "complete_lines": 67,
       "incomplete_lines": 0,
       "median_overround_pct": 5.25
     },
     "first_half_team_goals": {
-      "games": 13,
-      "odds": 50,
-      "complete_lines": 25,
+      "games": 10,
+      "odds": 38,
+      "complete_lines": 19,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.56
+      "median_overround_pct": 5.58
     },
     "half_time": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 10,
+      "odds": 30,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.44
+      "median_overround_pct": 5.46
     },
     "match_odds": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 10,
+      "odds": 30,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.47
+      "median_overround_pct": 4.77
     },
     "team_goals": {
-      "games": 13,
-      "odds": 168,
-      "complete_lines": 84,
+      "games": 10,
+      "odds": 128,
+      "complete_lines": 64,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.7
+      "median_overround_pct": 5.76
     },
     "total_goals": {
-      "games": 13,
-      "odds": 348,
-      "complete_lines": 174,
+      "games": 10,
+      "odds": 264,
+      "complete_lines": 132,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.23
+      "median_overround_pct": 5.22
     }
   },
   "examples": [
     {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
+      "fixture": "Bradford City x Peterborough United",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-27T16:03:39.949728+00:00",
+      "observed_at": "2026-10-27T19:00:45.197303+00:00",
       "selections": {
-        "home": 3.28,
-        "away": 2.13,
-        "draw": 3.76
+        "home": 1.6369,
+        "away": 4.93,
+        "draw": 4.13
       },
-      "overround_pct": 4.03
+      "overround_pct": 5.59
     },
     {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-10-27T16:03:39.949728+00:00",
-      "selections": {
-        "home": 2.02,
-        "away": 1.8696
-      },
-      "overround_pct": 2.99
-    },
-    {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
+      "fixture": "Bradford City x Peterborough United",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-27T16:03:39.949728+00:00",
+      "observed_at": "2026-10-27T19:00:45.197303+00:00",
       "selections": {
-        "home": 4.05,
-        "away": 1.2577
+        "home": 1.813,
+        "away": 2.05
       },
-      "overround_pct": 4.2
+      "overround_pct": 3.94
     },
     {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
+      "fixture": "Bradford City x Peterborough United",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-27T16:03:39.949728+00:00",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-10-27T19:00:45.197303+00:00",
       "selections": {
-        "home": 3.24,
-        "away": 1.361
+        "home": 3.23,
+        "away": 1.3472
       },
-      "overround_pct": 4.34
+      "overround_pct": 5.19
     },
     {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
+      "fixture": "Bradford City x Peterborough United",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-27T16:03:39.949728+00:00",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-10-27T19:00:45.197303+00:00",
       "selections": {
-        "home": 2.86,
-        "away": 1.4525
+        "home": 2.67,
+        "away": 1.4739
       },
-      "overround_pct": 3.81
+      "overround_pct": 5.3
+    },
+    {
+      "fixture": "Bradford City x Peterborough United",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-10-27T19:00:45.197303+00:00",
+      "selections": {
+        "home": 2.38,
+        "away": 1.5917
+      },
+      "overround_pct": 4.84
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
