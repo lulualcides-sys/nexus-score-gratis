@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T12:51:52.832642+00:00",
+  "checked_at": "2026-10-27T13:38:23.586639+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 6,
+  "priority_fixtures_seen": 25,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -14,6 +14,120 @@
       "fixture": "Argentinos Juniors x Independiente Rivadavia",
       "league": "arg.1",
       "kickoff": 1793138400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AC Milan x Bologna",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Parma x Udinese",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Venezia x Internazionale",
+      "league": "ita.1",
+      "kickoff": 1793208600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Genoa x Juventus",
+      "league": "ita.1",
+      "kickoff": 1793216700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monza x Napoli",
+      "league": "ita.1",
+      "kickoff": 1793216700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Charlotte FC x CF Montréal",
+      "league": "usa.1",
+      "kickoff": 1793230200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Inter Miami CF x FC Cincinnati",
+      "league": "usa.1",
+      "kickoff": 1793230200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "New England Revolution x Red Bull New York",
+      "league": "usa.1",
+      "kickoff": 1793230200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "New York City FC x Atlanta United FC",
+      "league": "usa.1",
+      "kickoff": 1793230200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Toronto FC x D.C. United",
+      "league": "usa.1",
+      "kickoff": 1793230200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Austin FC x Real Salt Lake",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Chicago Fire FC x Orlando City SC",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Dallas x Columbus Crew",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Minnesota United FC x Sporting Kansas City",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Nashville SC x Philadelphia Union",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "St. Louis CITY SC x Portland Timbers",
+      "league": "usa.1",
+      "kickoff": 1793233800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "San Jose Earthquakes x Colorado Rapids",
+      "league": "usa.1",
+      "kickoff": 1793241000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Seattle Sounders FC x Houston Dynamo FC",
+      "league": "usa.1",
+      "kickoff": 1793241000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vancouver Whitecaps x San Diego FC",
+      "league": "usa.1",
+      "kickoff": 1793241000,
       "reason": "no_verified_public_1x2"
     }
   ],
