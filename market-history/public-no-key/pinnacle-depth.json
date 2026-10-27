@@ -1,70 +1,70 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T07:06:26.591196+00:00",
-  "bookmaker_snapshot_at": "2026-10-27T07:06:24.951791+00:00",
+  "checked_at": "2026-10-27T09:56:55.424688+00:00",
+  "bookmaker_snapshot_at": "2026-10-27T09:56:53.123542+00:00",
   "status": "fresh",
   "matches_catalogued": 14,
   "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1424,
+  "odds_eligible_for_quality": 1420,
   "invalid_quote_records": 28,
-  "complete_market_lines": 698,
+  "complete_market_lines": 696,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 14,
-      "odds": 326,
-      "complete_lines": 163,
+      "odds": 322,
+      "complete_lines": 161,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.19
+      "median_overround_pct": 4.72
     },
     "first_half_goals": {
       "games": 14,
       "odds": 224,
       "complete_lines": 112,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.54
+      "median_overround_pct": 6.13
     },
     "first_half_handicap": {
       "games": 14,
       "odds": 180,
       "complete_lines": 90,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.67
+      "median_overround_pct": 5.24
     },
     "first_half_team_goals": {
       "games": 14,
       "odds": 54,
       "complete_lines": 27,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.77
+      "median_overround_pct": 5.62
     },
     "half_time": {
       "games": 14,
       "odds": 42,
       "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.51
+      "median_overround_pct": 5.52
     },
     "match_odds": {
       "games": 14,
       "odds": 42,
       "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.05
+      "median_overround_pct": 4.84
     },
     "team_goals": {
       "games": 14,
       "odds": 178,
       "complete_lines": 89,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.05
+      "median_overround_pct": 5.88
     },
     "total_goals": {
       "games": 14,
       "odds": 378,
       "complete_lines": 189,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.56
+      "median_overround_pct": 5.22
     }
   },
   "examples": [
@@ -73,59 +73,59 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-27T07:06:24.951791+00:00",
+      "observed_at": "2026-10-27T09:56:53.123542+00:00",
       "selections": {
-        "home": 3.34,
-        "away": 2.08,
-        "draw": 3.85
+        "home": 3.41,
+        "away": 2.07,
+        "draw": 3.81
       },
-      "overround_pct": 3.99
+      "overround_pct": 3.88
     },
     {
       "fixture": "Hamburger SV x Eintracht Frankfurt",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-10-27T07:06:24.951791+00:00",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-10-27T09:56:53.123542+00:00",
       "selections": {
-        "home": 2.07,
-        "away": 1.8333
+        "home": 1.8264,
+        "away": 2.08
       },
-      "overround_pct": 2.86
-    },
-    {
-      "fixture": "Hamburger SV x Eintracht Frankfurt",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-27T07:06:24.951791+00:00",
-      "selections": {
-        "home": 4.11,
-        "away": 1.2519
-      },
-      "overround_pct": 4.21
+      "overround_pct": 2.83
     },
     {
       "fixture": "Hamburger SV x Eintracht Frankfurt",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-27T07:06:24.951791+00:00",
+      "observed_at": "2026-10-27T09:56:53.123542+00:00",
       "selections": {
-        "home": 3.3,
-        "away": 1.3521
+        "home": 3.37,
+        "away": 1.3401
       },
-      "overround_pct": 4.26
+      "overround_pct": 4.29
     },
     {
       "fixture": "Hamburger SV x Eintracht Frankfurt",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-27T07:06:24.951791+00:00",
+      "observed_at": "2026-10-27T09:56:53.123542+00:00",
       "selections": {
-        "home": 2.92,
-        "away": 1.4367
+        "home": 2.96,
+        "away": 1.4184
+      },
+      "overround_pct": 4.29
+    },
+    {
+      "fixture": "Hamburger SV x Eintracht Frankfurt",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-10-27T09:56:53.123542+00:00",
+      "selections": {
+        "home": 2.56,
+        "away": 1.5435
       },
       "overround_pct": 3.85
     }
