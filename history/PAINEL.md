@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T14:55:33.355482+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T15:53:11.172337+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -30,8 +30,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-27 | Brechin City × East Stirlingshire | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bonnyrigg Rose × Bo'ness United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | ADC Juan Pablo II × Sport Huancayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Al Taee × Jeddah | 1-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-10-27 | Al-Wehda × Al-Saqer FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Al Taee × Jeddah | 2-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-10-27 | Al-Wehda × Al-Saqer FC | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Al-Adalah × Al Jeel | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Instituto × Deportivo Riestra | 1-0 | 86 | Chutes no alvo: 3.0×2.0, Chutes para fora: 7.0×1.0, Escanteios: 11.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -53,7 +53,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 | 2026-10-27 | Sassuolo × Lazio | 0-0 | 0 | Match Odds 1X2: Casa 3,30, Empate 3,40, Fora 2,05 |
 | 2026-10-27 | Torino × Como | 0-0 | 0 | Match Odds 1X2: Casa 4,50, Empate 3,65, Fora 1,71 |
 | 2026-10-27 | Arda Kardzhali × Levski Sofia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Cherno More Varna × Septemvri Sofia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Cherno More Varna × Septemvri Sofia | 2-0 | 0 | Chutes no alvo: 2.0×0.0, Escanteios: 1.0×3.0 |
 | 2026-10-27 | Dinamo Zagreb × Rijeka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Stenhousemuir × Dunfermline Athletic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Ross County × Hamilton Academical | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7579 | **Jogos distintos:** 2203 | **Resultados verificáveis:** 4362 | **Com gol:** 1634 | **Sem gol:** 2728 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 67 pendentes | 1355 indeterminados | 1795 incompletos.
+**Observações:** 7582 | **Jogos distintos:** 2204 | **Resultados verificáveis:** 4363 | **Com gol:** 1635 | **Sem gol:** 2728 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 67 pendentes | 1355 indeterminados | 1797 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,9 +178,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1551 | 1069 | 418 | 651 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1183 | 800 | 278 | 522 | 34.8% |
-| 🎯 chutes_no_alvo_5 | 1238 | 614 | 219 | 395 | 35.7% |
-| 🟥 expulsao_confirmada | 1151 | 535 | 185 | 350 | 34.6% |
-| 🚩 escanteios_6 | 913 | 437 | 178 | 259 | 40.7% |
+| 🎯 chutes_no_alvo_5 | 1239 | 614 | 219 | 395 | 35.7% |
+| 🟥 expulsao_confirmada | 1152 | 536 | 186 | 350 | 34.7% |
+| 🚩 escanteios_6 | 914 | 437 | 178 | 259 | 40.7% |
 | 💣 grandes_chances_3 | 730 | 401 | 166 | 235 | 41.4% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
 | 🧨 pressao_total_5_10min | 214 | 142 | 52 | 90 | 36.6% |
@@ -254,21 +254,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 218 | 158 | 53 | 105 | 33.5% |
 | 16–30′ | 531 | 409 | 136 | 273 | 33.3% |
 | 31–45′ | 1513 | 1194 | 487 | 707 | 40.8% |
-| 46–60′ | 1032 | 749 | 281 | 468 | 37.5% |
+| 46–60′ | 1032 | 750 | 282 | 468 | 37.6% |
 | 61–75′ | 1542 | 1076 | 390 | 686 | 36.2% |
-| 76–90′ | 2098 | 769 | 285 | 484 | 37.1% |
-| 91+′ | 645 | 7 | 2 | 5 | 28.6% |
+| 76–90′ | 2100 | 769 | 285 | 484 | 37.1% |
+| 91+′ | 646 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7579 | **Jogos monitorados:** 1670 | **Ao vivo:** 73 | **Termômetros recentes:** 17.
+**Registros:** 7582 | **Jogos monitorados:** 1670 | **Ao vivo:** 75 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T14:55:53.700061+00:00 | Inter U23 × Scafatese | Scafatese (59') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T15:53:38.890823+00:00 | Panserraikos FC × Niki Volou | Panserraikos FC (92') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T15:21:15.153489+00:00 | Inter U23 × Scafatese | Inter U23 (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T15:21:15.153489+00:00 | Inter U23 × Scafatese | Scafatese (84') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-27T14:55:53.700061+00:00 | Inter U23 × Scafatese | Scafatese (59') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T14:34:44.351833+00:00 | Abha × Al-Faisaly | Abha (97') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T14:34:44.351833+00:00 | Abha × Al-Faisaly | Abha (97') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T14:34:44.351833+00:00 | Csikszereda Miercurea Ciuc × FC Bihor Oradea | FC Bihor Oradea (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T21:22:56.474860+00:00 | FC Andorra × Burgos CF | FC Andorra (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-26T20:57:55.928876+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (71') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:57:55.928876+00:00 | Boulogne × Reims | Reims (55') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:57:55.928876+00:00 | Walsall × Salford City | Salford City (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-26T20:57:55.928876+00:00 | Walsall × Salford City | Salford City (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-26T20:57:55.928876+00:00 | FC Andorra × Burgos CF | FC Andorra (65') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
