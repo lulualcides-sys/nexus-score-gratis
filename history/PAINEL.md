@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T09:48:28.456504+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T10:46:38.961066+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7559 | **Jogos distintos:** 2194 | **Resultados verificáveis:** 4353 | **Com gol:** 1631 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 49 pendentes | 1371 indeterminados | 1786 incompletos.
+**Observações:** 7561 | **Jogos distintos:** 2195 | **Resultados verificáveis:** 4354 | **Com gol:** 1631 | **Sem gol:** 2723 | **Taxa observada:** 37.5%.
+**Evolução da amostra:** 19 datas com coletas | 49 pendentes | 1372 indeterminados | 1786 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -179,9 +179,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🥶 jogo_frio | 1550 | 1068 | 418 | 650 | 39.1% |
 | ⚡ pressao_ofensiva_18 | 1182 | 800 | 278 | 522 | 34.8% |
 | 🎯 chutes_no_alvo_5 | 1233 | 613 | 219 | 394 | 35.7% |
-| 🟥 expulsao_confirmada | 1147 | 532 | 184 | 348 | 34.6% |
+| 🟥 expulsao_confirmada | 1148 | 533 | 184 | 349 | 34.5% |
 | 🚩 escanteios_6 | 909 | 435 | 177 | 258 | 40.7% |
-| 💣 grandes_chances_3 | 725 | 399 | 165 | 234 | 41.4% |
+| 💣 grandes_chances_3 | 726 | 399 | 165 | 234 | 41.4% |
 | 🔥 pressao_forte_10min | 396 | 261 | 98 | 163 | 37.5% |
 | 🧨 pressao_total_5_10min | 214 | 142 | 52 | 90 | 36.6% |
 | ⏱️ tensao_tardia_70 | 135 | 58 | 23 | 35 | 39.7% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
 | Liga Profesional | 206 | 131 | 34 | 97 | 26.0% |
-| Super League | 222 | 122 | 37 | 85 | 30.3% |
+| Super League | 223 | 123 | 37 | 86 | 30.1% |
 | Bundesliga | 183 | 116 | 46 | 70 | 39.7% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
 | Serie B | 145 | 112 | 37 | 75 | 33.0% |
@@ -253,22 +253,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 217 | 157 | 53 | 104 | 33.8% |
 | 16–30′ | 531 | 409 | 136 | 273 | 33.3% |
-| 31–45′ | 1512 | 1193 | 486 | 707 | 40.7% |
-| 46–60′ | 1028 | 747 | 280 | 467 | 37.5% |
-| 61–75′ | 1541 | 1075 | 389 | 686 | 36.2% |
+| 31–45′ | 1513 | 1193 | 486 | 707 | 40.7% |
+| 46–60′ | 1028 | 748 | 280 | 468 | 37.4% |
+| 61–75′ | 1542 | 1075 | 389 | 686 | 36.2% |
 | 76–90′ | 2088 | 765 | 285 | 480 | 37.3% |
 | 91+′ | 642 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7559 | **Jogos monitorados:** 1670 | **Ao vivo:** 65 | **Termômetros recentes:** 17.
+**Registros:** 7561 | **Jogos monitorados:** 1670 | **Ao vivo:** 72 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T09:25:05.334274+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (55') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T10:37:05.955468+00:00 | Kyoto Sanga FC × Newcastle Jets | Kyoto Sanga FC (37') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-27T10:04:01.228043+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (68') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-27T09:25:05.334274+00:00 | PSS Sleman × Borneo Samarinda | PSS Sleman (55') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (87') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | Coritiba × Grêmio | Grêmio (75') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
 | 2026-10-27T03:43:56.287798+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-26T20:23:40.095512+00:00 | Crystal Palace U21 × Southampton U21 | Southampton U21 (68') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-26T20:23:40.095512+00:00 | Newcastle United U21 × Sunderland U21 | Newcastle United U21 (67') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-26T20:23:40.095512+00:00 | Paris Saint-Germain × Lyon | Paris Saint-Germain (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
