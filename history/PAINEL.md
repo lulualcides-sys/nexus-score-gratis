@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T05:41:58.166532+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T06:51:25.569245+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 7558 | **Jogos distintos:** 2193 | **Resultados verificáveis:** 4353 | **Com gol:** 1631 | **Sem gol:** 2722 | **Taxa observada:** 37.5%.
-**Evolução da amostra:** 19 datas com coletas | 66 pendentes | 1353 indeterminados | 1786 incompletos.
+**Evolução da amostra:** 19 datas com coletas | 48 pendentes | 1371 indeterminados | 1786 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -301,8 +301,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-27T00:46:00.053843+00:00 | Juventude × Náutico | Juventude (47') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-27T00:07:39.088819+00:00 | Coritiba × Grêmio | Grêmio (75') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-27T00:07:39.088819+00:00 | América-MG × Cuiabá | Cuiabá (77') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | CD Jaguares × Llaneros FC | CD Jaguares (43') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
 | 2026-10-26T23:43:34.998310+00:00 | Flamengo × Atlético-MG | Flamengo (44') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
