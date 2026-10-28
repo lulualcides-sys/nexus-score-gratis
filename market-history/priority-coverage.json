@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T20:15:13.942602+00:00",
+  "checked_at": "2026-10-28T21:14:44.050623+00:00",
   "horizon_hours": 48,
-  "important_games": 35,
-  "verified_bookmaker_games": 26,
-  "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 4,
-  "games_with_corners_stats": 2,
-  "games_with_yellow_cards_stats": 2,
-  "games_with_shots_on_target_stats": 2,
+  "important_games": 33,
+  "verified_bookmaker_games": 27,
+  "indicative_only_games": 3,
+  "missing_bookmaker_price_games": 3,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 12,
+    "indicative": 14,
     "new_priority": 6
   },
   "pinnacle_guest": {
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -175,7 +175,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 26,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -197,7 +197,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -219,7 +219,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 11,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -241,7 +241,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -327,11 +327,19 @@
       "league_code": "esp.1",
       "phase": "unknown",
       "verified_quotes": 110,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.5,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.59,
-        "away": 7.76
+        "draw": 5.61,
+        "away": 7.77
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -341,50 +349,6 @@
         "Pinnacle guest"
       ],
       "pinnacle_guest_quotes": 110,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Genoa",
-      "away": "Juventus",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793216700.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 35,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Monza",
-      "away": "Napoli",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793216700.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 35,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
     {
@@ -473,11 +437,19 @@
       "league_code": "fra.1",
       "phase": "unknown",
       "verified_quotes": 112,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.26,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 12.14,
-        "draw": 8.16,
-        "away": 1.26
+        "home": 12.54,
+        "draw": 8.35,
+        "away": 1.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
@@ -564,7 +536,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -572,7 +544,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.7,
-        "draw": 4.77,
+        "draw": 4.78,
         "away": 4.91
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
@@ -591,7 +563,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -599,8 +571,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.61,
-        "draw": 5.29,
-        "away": 5.27
+        "draw": 5.28,
+        "away": 5.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
       "tipsaudit_id": "12136",
@@ -618,7 +590,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -648,9 +620,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.17,
-        "draw": 4.23,
-        "away": 3.3
+        "home": 2.16,
+        "draw": 4.25,
+        "away": 3.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
       "tipsaudit_id": "12135",
@@ -671,7 +643,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -697,7 +669,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -734,9 +706,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.95,
-        "draw": 4.2,
-        "away": 4.0
+        "home": 1.96,
+        "draw": 4.19,
+        "away": 3.97
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
@@ -755,7 +727,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 133,
+      "verified_quotes": 136,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -770,9 +742,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.2,
-        "draw": 3.99,
-        "away": 2.29
+        "home": 3.18,
+        "draw": 3.98,
+        "away": 2.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12144/austin-vs-real-salt-lake-2026-10-29",
       "tipsaudit_id": "12144",
@@ -792,7 +764,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 145,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -829,7 +801,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 144,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -844,9 +816,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.28,
-        "draw": 4.21,
-        "away": 3.09
+        "home": 2.29,
+        "draw": 4.1,
+        "away": 3.14
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -865,7 +837,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -882,7 +854,7 @@
       "fair_odds_modelled": {
         "home": 1.45,
         "draw": 5.78,
-        "away": 7.16
+        "away": 7.17
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -901,7 +873,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 137,
+      "verified_quotes": 141,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -916,9 +888,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.83,
-        "draw": 4.33,
-        "away": 4.5
+        "home": 1.82,
+        "draw": 4.32,
+        "away": 4.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -938,15 +910,15 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 145,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.02,
-        "draw": 4.19,
+        "home": 2.03,
+        "draw": 4.18,
         "away": 3.74
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
@@ -966,7 +938,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -988,7 +960,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "verified_price"
     },
     {
       "home": "Seattle Sounders FC",
@@ -1001,7 +973,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1023,7 +995,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12146/seattle-sounders-vs-houston-dynamo-2026-10-29",
       "tipsaudit_id": "12146",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "verified_price"
     },
     {
       "home": "Vancouver Whitecaps",
@@ -1036,7 +1008,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1050,7 +1022,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Once Caldas",
@@ -1062,7 +1034,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1084,7 +1056,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1158,28 +1130,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Vancouver Whitecaps",
-      "away": "San Diego FC",
-      "league": "MLS",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793241000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
-      "tipsaudit_id": "12148",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }
