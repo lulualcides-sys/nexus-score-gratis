@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T01:32:41.425559+00:00",
+  "checked_at": "2026-10-28T02:20:28.015831+00:00",
   "horizon_hours": 48,
-  "important_games": 29,
-  "verified_bookmaker_games": 1,
-  "indicative_only_games": 11,
-  "missing_bookmaker_price_games": 17,
+  "important_games": 28,
+  "verified_bookmaker_games": 0,
+  "indicative_only_games": 10,
+  "missing_bookmaker_price_games": 18,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
-    "indicative": 11,
+    "indicative": 10,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -538,19 +538,11 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.01,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.98,
-        "draw": 4.18,
-        "away": 3.9
+        "home": 2.0,
+        "draw": 4.1,
+        "away": 3.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
@@ -558,7 +550,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Austin FC",
@@ -585,9 +577,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.8,
-        "draw": 4.09,
-        "away": 2.51
+        "home": 2.81,
+        "draw": 4.03,
+        "away": 2.53
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12144/austin-vs-real-salt-lake-2026-10-29",
       "tipsaudit_id": "12144",
@@ -620,8 +612,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.6,
-        "draw": 5.49,
-        "away": 5.16
+        "draw": 5.47,
+        "away": 5.15
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -654,8 +646,8 @@
       ],
       "fair_odds_modelled": {
         "home": 2.18,
-        "draw": 4.22,
-        "away": 3.3
+        "draw": 4.21,
+        "away": 3.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -687,9 +679,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.44,
-        "draw": 5.92,
-        "away": 7.22
+        "home": 1.45,
+        "draw": 5.88,
+        "away": 7.19
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -722,7 +714,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.86,
-        "draw": 4.35,
+        "draw": 4.36,
         "away": 4.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
@@ -749,7 +741,7 @@
       "fair_odds_modelled": {
         "home": 1.79,
         "draw": 4.68,
-        "away": 4.38
+        "away": 4.37
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
@@ -841,28 +833,6 @@
       "tipsaudit_id": "12148",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Boyacá Chicó FC",
-      "away": "Atlético Junior",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793149500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 57,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Once Caldas",
@@ -1160,6 +1130,23 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Toronto FC",
+      "away": "DC United",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
+      "tipsaudit_id": "12133",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
