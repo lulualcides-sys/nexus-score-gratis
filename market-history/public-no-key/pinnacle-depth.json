@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T10:04:12.489613+00:00",
-  "bookmaker_snapshot_at": "2026-10-28T10:04:11.192221+00:00",
+  "checked_at": "2026-10-28T13:16:51.938632+00:00",
+  "bookmaker_snapshot_at": "2026-10-28T13:16:50.649146+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1454,
-  "invalid_quote_records": 20,
-  "complete_market_lines": 713,
+  "matches_catalogued": 5,
+  "matches_with_priced_markets": 5,
+  "odds_eligible_for_quality": 514,
+  "invalid_quote_records": 0,
+  "complete_market_lines": 252,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 330,
-      "complete_lines": 165,
+      "games": 5,
+      "odds": 114,
+      "complete_lines": 57,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.22
+      "median_overround_pct": 3.57
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 232,
-      "complete_lines": 116,
+      "games": 5,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.09
+      "median_overround_pct": 4.98
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "games": 5,
+      "odds": 60,
+      "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.82
+      "median_overround_pct": 3.96
     },
     "first_half_team_goals": {
-      "games": 16,
+      "games": 5,
+      "odds": 20,
+      "complete_lines": 10,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.77
+    },
+    "half_time": {
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
+      "incomplete_lines": 0,
+      "median_overround_pct": 3.89
+    },
+    "match_odds": {
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
+      "incomplete_lines": 0,
+      "median_overround_pct": 3.36
+    },
+    "team_goals": {
+      "games": 5,
       "odds": 62,
       "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
-    },
-    "half_time": {
-      "games": 12,
-      "odds": 36,
-      "complete_lines": 12,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.51
-    },
-    "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.28
-    },
-    "team_goals": {
-      "games": 16,
-      "odds": 170,
-      "complete_lines": 85,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.66
+      "median_overround_pct": 5.18
     },
     "total_goals": {
-      "games": 16,
-      "odds": 386,
-      "complete_lines": 193,
+      "games": 5,
+      "odds": 148,
+      "complete_lines": 74,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.39
+      "median_overround_pct": 4.13
     }
   },
   "examples": [
     {
-      "fixture": "Charlotte FC x CF Montreal",
+      "fixture": "St Louis City SC x Portland Timbers",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-28T10:04:11.192221+00:00",
+      "observed_at": "2026-10-28T13:16:50.649146+00:00",
       "selections": {
-        "home": 1.5848,
-        "away": 5.0,
-        "draw": 4.72
+        "home": 1.9091,
+        "away": 3.77,
+        "draw": 4.09
       },
-      "overround_pct": 4.29
+      "overround_pct": 3.36
     },
     {
-      "fixture": "Charlotte FC x CF Montreal",
+      "fixture": "St Louis City SC x Portland Timbers",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-28T10:04:11.192221+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-28T13:16:50.649146+00:00",
       "selections": {
-        "home": 1.9434,
-        "away": 1.9434
+        "home": 1.9174,
+        "away": 1.9901
       },
-      "overround_pct": 2.91
+      "overround_pct": 2.4
     },
     {
-      "fixture": "Charlotte FC x CF Montreal",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-28T10:04:11.192221+00:00",
-      "selections": {
-        "home": 3.71,
-        "away": 1.2976
-      },
-      "overround_pct": 4.02
-    },
-    {
-      "fixture": "Charlotte FC x CF Montreal",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-28T10:04:11.192221+00:00",
-      "selections": {
-        "home": 2.92,
-        "away": 1.4329
-      },
-      "overround_pct": 4.04
-    },
-    {
-      "fixture": "Charlotte FC x CF Montreal",
+      "fixture": "St Louis City SC x Portland Timbers",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.5",
       "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-28T10:04:11.192221+00:00",
+      "observed_at": "2026-10-28T13:16:50.649146+00:00",
       "selections": {
-        "home": 2.49,
-        "away": 1.5747
+        "home": 3.23,
+        "away": 1.3759
       },
-      "overround_pct": 3.66
+      "overround_pct": 3.64
+    },
+    {
+      "fixture": "St Louis City SC x Portland Timbers",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-10-28T13:16:50.649146+00:00",
+      "selections": {
+        "home": 2.89,
+        "away": 1.4484
+      },
+      "overround_pct": 3.64
+    },
+    {
+      "fixture": "St Louis City SC x Portland Timbers",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-28T13:16:50.649146+00:00",
+      "selections": {
+        "home": 2.57,
+        "away": 1.5587
+      },
+      "overround_pct": 3.07
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
