@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T16:58:01.113730+00:00",
+  "checked_at": "2026-10-28T17:52:47.484457+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 17,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 10,
+    "indicative": 9,
     "new_priority": 1
   },
   "pinnacle_guest": {
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -175,7 +175,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -197,7 +197,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -329,7 +329,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 31,
+      "verified_quotes": 35,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -351,7 +351,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -373,7 +373,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 56,
+      "verified_quotes": 60,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -395,7 +395,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 20,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -417,7 +417,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 20,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -492,9 +492,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.58,
-        "draw": 5.21,
-        "away": 5.72
+        "home": 1.59,
+        "draw": 5.16,
+        "away": 5.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
       "tipsaudit_id": "12137",
@@ -519,19 +519,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.55,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.52,
-        "draw": 5.68,
-        "away": 6.08
+        "home": 1.6,
+        "draw": 5.33,
+        "away": 5.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
       "tipsaudit_id": "12136",
@@ -573,7 +565,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 3.5,
+          "price": 3.35,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -777,9 +769,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.34,
-        "draw": 4.03,
-        "away": 3.08
+        "home": 2.33,
+        "draw": 4.04,
+        "away": 3.09
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -812,9 +804,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.45,
+        "home": 1.46,
         "draw": 5.78,
-        "away": 7.21
+        "away": 7.15
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -973,7 +965,7 @@
       "fair_odds_modelled": {
         "home": 1.47,
         "draw": 5.91,
-        "away": 6.73
+        "away": 6.74
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
@@ -990,7 +982,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,

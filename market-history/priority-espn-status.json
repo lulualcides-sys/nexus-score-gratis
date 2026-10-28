@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T16:57:57.241850+00:00",
+  "checked_at": "2026-10-28T17:52:44.642362+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 28,
@@ -10,12 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Fluminense x Internacional",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Santos x Palmeiras",
       "league": "bra.1",
