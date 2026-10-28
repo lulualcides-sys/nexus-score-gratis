@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T11:29:04.355994+00:00",
+  "checked_at": "2026-10-28T12:14:20.474089+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 17,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 10,
+    "indicative": 9,
     "new_priority": 1
   },
   "pinnacle_guest": {
@@ -329,7 +329,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -351,7 +351,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -373,7 +373,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -529,9 +529,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.54,
-        "draw": 5.44,
-        "away": 5.98
+        "home": 1.5,
+        "draw": 5.61,
+        "away": 6.48
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
       "tipsaudit_id": "12136",
@@ -570,19 +570,11 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 133,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.02,
-          "bookmaker": "MyBookie.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.38,
-        "away": 3.67
+        "home": 2.01,
+        "draw": 4.36,
+        "away": 3.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
       "tipsaudit_id": "12135",
@@ -670,16 +662,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.01,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.1,
-        "away": 3.9
+        "home": 1.99,
+        "draw": 4.14,
+        "away": 3.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Austin FC",
@@ -770,7 +770,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 3.4,
+          "price": 3.3,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -779,7 +779,7 @@
       "fair_odds_modelled": {
         "home": 2.28,
         "draw": 4.07,
-        "away": 3.18
+        "away": 3.17
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -839,9 +839,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.83,
-        "draw": 4.35,
-        "away": 4.44
+        "home": 1.82,
+        "draw": 4.37,
+        "away": 4.48
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -891,15 +891,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.12,
-          "bookmaker": "BetOnline.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.42,
         "draw": 3.8,
@@ -908,7 +900,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Seattle Sounders FC",
@@ -1154,27 +1146,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Toronto FC",
-      "away": "DC United",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793230200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
-      "tipsaudit_id": "12133",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Minnesota United FC",
       "away": "Sporting Kansas City",
       "league": "MLS",
@@ -1215,6 +1186,28 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "San Jose Earthquakes",
+      "away": "Colorado Rapids",
+      "league": "MLS",
+      "league_code": "usa.1",
+      "kickoff_unix": 1793241000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
+      "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }

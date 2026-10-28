@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T11:28:59.813956+00:00",
+  "checked_at": "2026-10-28T12:14:16.734517+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 26,
+  "priority_fixtures_seen": 28,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -140,6 +140,18 @@
       "fixture": "Vancouver Whitecaps x San Diego FC",
       "league": "usa.1",
       "kickoff": 1793241000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Frosinone x Lecce",
+      "league": "ita.1",
+      "kickoff": 1793295000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Fiorentina x Atalanta",
+      "league": "ita.1",
+      "kickoff": 1793303100,
       "reason": "no_verified_public_1x2"
     }
   ],
