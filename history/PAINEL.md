@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T02:00:16.881920+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T02:53:29.088080+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -11,7 +11,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-10-28 | Cúcuta × Águilas Doradas | 0-2 | 90 | Chutes no alvo: 5.0×7.0, Chutes para fora: 9.0×6.0, Escanteios: 12.0×2.0, Grandes chances: 0.0×2.0 |
-| 2026-10-28 | Chicó FC × Junior FC | 0-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-28 | Chicó FC × Junior FC | 0-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-28 | Deportivo Táchira × Monagas SC | 2-0 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 3.0×2.0, Escanteios: 6.0×6.0, Grandes chances: 0.0×0.0 |
 | 2026-10-28 | Ceará × Goiás | 0-0 | 90 | Chutes no alvo: 3.0×9.0, Chutes para fora: 6.0×6.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×2.0 |
 | 2026-10-28 | Alianza FC × CD Marathón | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -19,7 +19,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-28 | Libertad × Independiente CG | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 1-0 | 0 | Chutes no alvo: 6.0×3.0; Match Odds 1X2: Casa 2,05, Empate 3,20, Fora 3,90 |
 | 2026-10-27 | Ceará × Goiás | 0-2 | 0 | Chutes no alvo: 4.0×11.0; Match Odds 1X2: Casa 2,05, Empate 3,30, Fora 3,65 |
-| 2026-10-27 | Boyacá Chicó FC × Atlético Junior | 0-0 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 3,10, Empate 3,25, Fora 2,15 |
+| 2026-10-27 | Boyacá Chicó FC × Atlético Junior | 1-1 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 3,10, Empate 3,25, Fora 2,15 |
 | 2026-10-27 | Cúcuta Deportivo × Águilas Doradas | 0-2 | 0 | Chutes no alvo: 6.0×7.0; Match Odds 1X2: Casa 2,55, Empate 2,90, Fora 2,80 |
 | 2026-10-27 | AS Roma × Cagliari | 4-2 | 0 | Chutes no alvo: 8.0×8.0; Match Odds 1X2: Casa 1,31, Empate 4,90, Fora 9,00 |
 | 2026-10-27 | Torino × Como | 1-3 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 4,60, Empate 3,75, Fora 1,69 |
@@ -28,7 +28,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-10-27 | Narva Trans × Nõmme United | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | AFC Toronto × Halifax Tides FC | 1-1 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 7.0×6.0, Escanteios: 12.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Cúcuta × Águilas Doradas | 0-2 | 47 | Chutes no alvo: 2.0×6.0, Chutes para fora: 1.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×2.0 |
-| 2026-10-27 | Chicó FC × Junior FC | 0-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-10-27 | Chicó FC × Junior FC | 1-1 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Santa Fe × Bucaramanga | 2-1 | 64 | Chutes no alvo: 4.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-10-27 | CD Jaguares × Llaneros FC | 1-0 | 90 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×5.0, Escanteios: 5.0×8.0, Grandes chances: 1.0×0.0 |
 | 2026-10-27 | Newton Stewart × Gretna FC 2008 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7858 | **Jogos monitorados:** 1670 | **Ao vivo:** 66 | **Termômetros recentes:** 17.
+**Registros:** 7858 | **Jogos monitorados:** 1670 | **Ao vivo:** 67 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
