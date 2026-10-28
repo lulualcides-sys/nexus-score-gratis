@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T09:56:31.214864+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T10:53:41.692765+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **23**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -45,9 +45,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-28 | Once Caldas × Alianza FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | FK Radnički 1923 × Železničar Pančevo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Radnički Niš × Partizan Beograd | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Urawa Ladies × Sanfrecce Hiroshima Regina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Urawa Ladies × Sanfrecce Hiroshima Regina | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | AC Nagano Parceiro Ladies × Omiya Ardija Ventus | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | NTV Tokyo Verdy Beleza × Cerezo Osaka Sakai | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | NTV Tokyo Verdy Beleza × Cerezo Osaka Sakai | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Renfrew FC × Troon Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Largs Thistle × Cumnock Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Stirling University FC × Berwick Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -67,7 +67,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-10-28 | Genk U19 × Salzburg U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | NK Bravo U19 × FK Crvena Zvezda U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Dynamo Kyiv U19 × Rangers U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Legia Warszawa U19 × Clermont Foot U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Legia Warszawa U19 × Clermont Foot U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Flora Tallinn U19 × Chelsea U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Benfica U19 × Pafos FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | FCV Farul Constanța U19 × FC Sheriff U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7861 | **Jogos distintos:** 2274 | **Resultados verificáveis:** 4499 | **Com gol:** 1692 | **Sem gol:** 2807 | **Taxa observada:** 37.6%.
-**Evolução da amostra:** 20 datas com coletas | 51 pendentes | 1431 indeterminados | 1880 incompletos.
+**Observações:** 7862 | **Jogos distintos:** 2275 | **Resultados verificáveis:** 4499 | **Com gol:** 1692 | **Sem gol:** 2807 | **Taxa observada:** 37.6%.
+**Evolução da amostra:** 20 datas com coletas | 69 pendentes | 1414 indeterminados | 1880 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -181,7 +181,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 🎯 chutes_no_alvo_5 | 1281 | 632 | 226 | 406 | 35.8% |
 | 🟥 expulsao_confirmada | 1199 | 554 | 193 | 361 | 34.8% |
 | 🚩 escanteios_6 | 938 | 445 | 181 | 264 | 40.7% |
-| 💣 grandes_chances_3 | 756 | 417 | 174 | 243 | 41.7% |
+| 💣 grandes_chances_3 | 757 | 417 | 174 | 243 | 41.7% |
 | 🔥 pressao_forte_10min | 415 | 271 | 102 | 169 | 37.6% |
 | 🧨 pressao_total_5_10min | 225 | 147 | 54 | 93 | 36.7% |
 | ⏱️ tensao_tardia_70 | 142 | 61 | 24 | 37 | 39.3% |
@@ -252,7 +252,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 227 | 165 | 53 | 112 | 32.1% |
-| 16–30′ | 534 | 410 | 136 | 274 | 33.2% |
+| 16–30′ | 535 | 410 | 136 | 274 | 33.2% |
 | 31–45′ | 1579 | 1239 | 503 | 736 | 40.6% |
 | 46–60′ | 1068 | 770 | 292 | 478 | 37.9% |
 | 61–75′ | 1599 | 1113 | 411 | 702 | 36.9% |
@@ -262,12 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7861 | **Jogos monitorados:** 1190 | **Ao vivo:** 58 | **Termômetros recentes:** 17.
+**Registros:** 7862 | **Jogos monitorados:** 1190 | **Ao vivo:** 79 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-28T10:19:46.801122+00:00 | Gamba Osaka × Buriram United | Gamba Osaka (19') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-28T03:53:01.311486+00:00 | Cúcuta × Águilas Doradas | Cúcuta (48') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-28T03:53:01.311486+00:00 | Deportivo Táchira × Monagas SC | Deportivo Táchira (62') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-28T03:53:01.311486+00:00 | Deportivo Táchira × Monagas SC | Monagas SC (62') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T21:06:02.268138+00:00 | Barnet × York City | York City (59') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Radcliffe × Chorley | Radcliffe (63') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Dover × Chelmsford | Dover (57') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Sporting CP × Marítimo | Sporting CP (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
