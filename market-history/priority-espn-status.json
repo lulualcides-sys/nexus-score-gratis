@@ -1,15 +1,27 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T23:10:00.229987+00:00",
+  "checked_at": "2026-10-28T23:43:34.462879+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 26,
-  "created_games": 0,
+  "priority_fixtures_seen": 28,
+  "created_games": 2,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Fluminense x Internacional",
+      "league": "bra.1",
+      "kickoff": 1793226600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Palmeiras",
+      "league": "bra.1",
+      "kickoff": 1793226600,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "San Jose Earthquakes x Colorado Rapids",
       "league": "usa.1",
@@ -26,30 +38,6 @@
       "fixture": "Vancouver Whitecaps x San Diego FC",
       "league": "usa.1",
       "kickoff": 1793241000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Fluminense x Internacional",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Santos x Palmeiras",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bahia x São Paulo",
-      "league": "bra.1",
-      "kickoff": 1793233800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Remo x Botafogo",
-      "league": "bra.1",
-      "kickoff": 1793233800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -92,6 +80,18 @@
       "fixture": "Grêmio x Athletico-PR",
       "league": "bra.1",
       "kickoff": 1793320200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "América de Cali x Fortaleza CEIF",
+      "league": "col.1",
+      "kickoff": 1793315700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Nacional x Independiente Santa Fe",
+      "league": "col.1",
+      "kickoff": 1793323800,
       "reason": "no_verified_public_1x2"
     }
   ],

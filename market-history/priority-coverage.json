@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T23:10:05.326355+00:00",
+  "checked_at": "2026-10-28T23:43:38.109467+00:00",
   "horizon_hours": 48,
-  "important_games": 33,
-  "verified_bookmaker_games": 28,
-  "indicative_only_games": 2,
-  "missing_bookmaker_price_games": 3,
-  "games_with_corners_stats": 2,
-  "games_with_yellow_cards_stats": 3,
-  "games_with_shots_on_target_stats": 3,
+  "important_games": 31,
+  "verified_bookmaker_games": 24,
+  "indicative_only_games": 1,
+  "missing_bookmaker_price_games": 6,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
-    "matched": 13,
-    "indicative": 15,
-    "new_priority": 6
+    "matched": 9,
+    "indicative": 12,
+    "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 9,
-    "new_verified_game": 7,
-    "offers": 1105,
+    "matched": 6,
+    "new_verified_game": 6,
+    "offers": 708,
     "market_families": {
-      "match_odds": 42,
-      "team_goals": 132,
-      "asian_handicap": 282,
-      "total_goals": 298,
-      "half_time": 27,
-      "first_half_team_goals": 36,
-      "first_half_handicap": 144,
-      "first_half_goals": 144
+      "match_odds": 24,
+      "team_goals": 82,
+      "asian_handicap": 180,
+      "total_goals": 188,
+      "half_time": 18,
+      "first_half_team_goals": 24,
+      "first_half_handicap": 96,
+      "first_half_goals": 96
     }
   },
   "official_corners_cards": {
@@ -143,76 +143,6 @@
     ]
   },
   "priority_fixtures": [
-    {
-      "home": "Fluminense",
-      "away": "Internacional",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793226600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 168,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Red Bull Bragantino",
-      "away": "Chapecoense",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793226600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 49,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Santos",
-      "away": "Palmeiras",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793226600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 162,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
-    },
     {
       "home": "Bahia",
       "away": "São Paulo",
@@ -540,19 +470,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 58,
+      "verified_quotes": 61,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.71,
-        "draw": 4.72,
-        "away": 4.88
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
-      "tipsaudit_id": "12137",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -572,22 +498,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.57,
-          "bookmaker": "BetOnline.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.56,
-        "draw": 5.54,
-        "away": 5.65
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
-      "tipsaudit_id": "12136",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -602,7 +516,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -612,38 +526,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "New England Revolution",
-      "away": "New York Red Bulls",
-      "kickoff_unix": 1793230200.0,
-      "league": "MLS",
-      "league_code": "usa.1",
-      "phase": "unknown",
-      "verified_quotes": 135,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.25,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.29,
-        "draw": 4.13,
-        "away": 3.11
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
-      "tipsaudit_id": "12135",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit",
-        "Pinnacle guest"
-      ],
-      "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
     },
     {
@@ -657,19 +539,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 34,
+      "verified_quotes": 38,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.82,
-        "draw": 4.18,
-        "away": 4.73
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12134/new-york-city-fc-vs-atlanta-united-fc-2026-10-28",
-      "tipsaudit_id": "12134",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -683,7 +561,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 34,
+      "verified_quotes": 38,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -710,24 +588,12 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.01,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.97,
-        "draw": 4.06,
-        "away": 4.05
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
-      "tipsaudit_id": "12133",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Austin FC",
@@ -740,7 +606,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -755,9 +621,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.19,
-        "draw": 3.96,
-        "away": 2.31
+        "home": 3.25,
+        "draw": 3.92,
+        "away": 2.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12144/austin-vs-real-salt-lake-2026-10-29",
       "tipsaudit_id": "12144",
@@ -790,9 +656,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.57,
-        "draw": 5.61,
-        "away": 5.44
+        "home": 1.56,
+        "draw": 5.64,
+        "away": 5.53
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -825,9 +691,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.31,
+        "home": 2.3,
         "draw": 4.02,
-        "away": 3.14
+        "away": 3.16
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -845,7 +711,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -860,9 +726,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.46,
-        "draw": 5.76,
-        "away": 7.18
+        "home": 1.44,
+        "draw": 5.86,
+        "away": 7.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -880,7 +746,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 31,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -888,16 +754,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.88,
+          "price": 1.83,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.82,
-        "draw": 4.3,
-        "away": 4.6
+        "home": 1.8,
+        "draw": 4.34,
+        "away": 4.69
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -922,9 +788,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.04,
-        "draw": 4.13,
-        "away": 3.74
+        "home": 2.05,
+        "draw": 4.12,
+        "away": 3.72
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
@@ -985,16 +851,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.85,
+          "price": 1.81,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.78,
-        "draw": 4.4,
-        "away": 4.73
+        "home": 1.77,
+        "draw": 4.41,
+        "away": 4.78
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12146/seattle-sounders-vs-houston-dynamo-2026-10-29",
       "tipsaudit_id": "12146",
@@ -1019,8 +885,8 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.48,
-        "draw": 5.76,
+        "home": 1.49,
+        "draw": 5.75,
         "away": 6.55
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
@@ -1034,14 +900,14 @@
       "league": "Colômbia Primera A",
       "league_code": "col.1",
       "kickoff_unix": 1793228400.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 42,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -1060,7 +926,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1071,6 +937,50 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "América de Cali",
+      "away": "Fortaleza CEIF",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793315700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlético Nacional",
+      "away": "Independiente Santa Fe",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793323800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -1122,6 +1032,69 @@
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1793320200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Toronto FC",
+      "away": "DC United",
+      "league": "Major League Soccer",
+      "league_code": "usa.1",
+      "kickoff_unix": 1793230200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "América de Cali",
+      "away": "Fortaleza CEIF",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793315700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlético Nacional",
+      "away": "Independiente Santa Fe",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793323800.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"

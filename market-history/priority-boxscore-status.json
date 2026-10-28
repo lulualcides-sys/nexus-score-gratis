@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T23:10:02.957900+00:00",
+  "checked_at": "2026-10-28T23:43:36.117005+00:00",
   "status": "ok",
-  "candidates": 5,
-  "checked": 5,
+  "candidates": 7,
+  "checked": 6,
   "games_enriched": 0,
   "observed_statistics_fields": 0,
   "errors": [],
