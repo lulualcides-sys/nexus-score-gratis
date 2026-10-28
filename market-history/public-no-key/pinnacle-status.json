@@ -1,36 +1,30 @@
 {
-  "checked_at": "2026-10-28T01:19:41.887827+00:00",
+  "checked_at": "2026-10-28T04:00:28.033811+00:00",
   "source": "Pinnacle public Arcadia guest",
   "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
-  "status": "partial_blocked",
+  "status": "ok",
   "matches_discovered": 16,
-  "matches_checked": 1,
-  "new_price_snapshots": 1,
-  "odds_observed": 110,
+  "matches_checked": 4,
+  "new_price_snapshots": 4,
+  "odds_observed": 513,
   "market_families": {
-    "match_odds": 3,
-    "team_goals": 12,
-    "asian_handicap": 28,
-    "total_goals": 28,
-    "half_time": 3,
-    "first_half_team_goals": 4,
-    "first_half_handicap": 16,
-    "first_half_goals": 16
+    "match_odds": 21,
+    "team_goals": 62,
+    "asian_handicap": 130,
+    "total_goals": 138,
+    "half_time": 12,
+    "first_half_team_goals": 16,
+    "first_half_handicap": 64,
+    "first_half_goals": 64,
+    "unclassified": 6
   },
-  "errors": [
-    {
-      "matchup_id": 1637181763,
-      "error": "HTTPError",
-      "http_status": 403,
-      "reason": "HTTP Error 403: Forbidden"
-    }
-  ],
+  "errors": [],
   "requires_account": false,
   "requires_user_api_key": false,
   "guarantees_available_to_bet": false,
   "liquidity_verified": false,
-  "previously_denied_skipped": 2,
+  "previously_denied_skipped": 3,
   "priority_no_odds_targeted": 0,
-  "rotating_catalogue_games": 5,
-  "all_scheduled_candidates": 5
+  "rotating_catalogue_games": 4,
+  "all_scheduled_candidates": 4
 }
