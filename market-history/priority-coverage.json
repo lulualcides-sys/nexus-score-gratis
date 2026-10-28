@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T23:40:22.329714+00:00",
+  "checked_at": "2026-10-28T00:17:09.273024+00:00",
   "horizon_hours": 48,
-  "important_games": 30,
-  "verified_bookmaker_games": 2,
+  "important_games": 29,
+  "verified_bookmaker_games": 1,
   "indicative_only_games": 10,
   "missing_bookmaker_price_games": 18,
   "games_with_corners_stats": 0,
@@ -454,9 +454,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.98,
-        "draw": 4.56,
-        "away": 3.62
+        "home": 1.99,
+        "draw": 4.52,
+        "away": 3.63
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
       "tipsaudit_id": "12135",
@@ -835,28 +835,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Cúcuta Deportivo",
-      "away": "Águilas Doradas",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793142000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 48,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Boyacá Chicó FC",
       "away": "Atlético Junior",
       "league": "Colômbia Primera A",
@@ -866,7 +844,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 48,
+      "verified_quotes": 54,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
