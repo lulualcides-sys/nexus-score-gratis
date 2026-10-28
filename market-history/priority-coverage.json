@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T04:17:35.616684+00:00",
+  "checked_at": "2026-10-28T05:16:00.579534+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 12,
@@ -538,19 +538,11 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.02,
-          "bookmaker": "MyBookie.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.4,
-        "away": 3.65
+        "home": 2.01,
+        "draw": 4.33,
+        "away": 3.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
       "tipsaudit_id": "12135",
@@ -558,7 +550,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "New York City FC",
@@ -586,8 +578,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.77,
-        "draw": 4.51,
+        "home": 1.78,
+        "draw": 4.46,
         "away": 4.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12134/new-york-city-fc-vs-atlanta-united-fc-2026-10-28",
@@ -632,16 +624,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.01,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.1,
-        "away": 3.89
+        "home": 1.99,
+        "draw": 4.14,
+        "away": 3.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
       "tipsaudit_id": "12133",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Austin FC",
@@ -662,8 +662,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.59,
-          "bookmaker": "1xBet",
+          "price": 2.55,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -694,24 +694,16 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.66,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.61,
-        "draw": 5.36,
-        "away": 5.16
+        "draw": 5.39,
+        "away": 5.21
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "FC Dallas",
@@ -775,8 +767,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.95,
-        "away": 7.32
+        "draw": 5.94,
+        "away": 7.39
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -799,16 +791,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.85,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.86,
-        "draw": 4.36,
-        "away": 4.31
+        "home": 1.81,
+        "draw": 4.43,
+        "away": 4.49
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "St. Louis CITY SC",
@@ -828,9 +828,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.79,
-        "draw": 4.68,
-        "away": 4.37
+        "home": 1.97,
+        "draw": 4.28,
+        "away": 3.86
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
@@ -856,7 +856,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.33,
-        "draw": 3.9,
+        "draw": 3.88,
         "away": 3.19
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
@@ -917,9 +917,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.47,
-        "draw": 5.93,
-        "away": 6.66
+        "home": 1.48,
+        "draw": 5.79,
+        "away": 6.62
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
@@ -1100,6 +1100,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "New England Revolution",
+      "away": "New York Red Bulls",
+      "kickoff_unix": 1793230200.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
+      "tipsaudit_id": "12135",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Toronto FC",
       "away": "D.C. United",
       "league": "MLS",
@@ -1121,29 +1138,8 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Toronto FC",
-      "away": "DC United",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793230200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12133/toronto-fc-vs-dc-united-2026-10-28",
-      "tipsaudit_id": "12133",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Nashville SC",
-      "away": "Philadelphia Union",
+      "home": "Chicago Fire FC",
+      "away": "Orlando City SC",
       "league": "MLS",
       "league_code": "usa.1",
       "kickoff_unix": 1793233800.0,
@@ -1158,8 +1154,8 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
-      "tipsaudit_id": "12143",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
+      "tipsaudit_id": "12141",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },

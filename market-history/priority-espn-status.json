@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T04:17:32.076509+00:00",
+  "checked_at": "2026-10-28T05:15:57.159184+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 31,
-  "created_games": 3,
+  "priority_fixtures_seen": 29,
+  "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -170,18 +170,6 @@
       "fixture": "Grêmio x Athletico-PR",
       "league": "bra.1",
       "kickoff": 1793320200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Frosinone x Lecce",
-      "league": "ita.1",
-      "kickoff": 1793295000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Fiorentina x Atalanta",
-      "league": "ita.1",
-      "kickoff": 1793303100,
       "reason": "no_verified_public_1x2"
     }
   ],
