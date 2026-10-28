@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T19:26:04.227263+00:00",
+  "checked_at": "2026-10-28T20:15:10.568828+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 31,
+  "priority_fixtures_seen": 26,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Santos x Palmeiras",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Bahia x São Paulo",
       "league": "bra.1",
