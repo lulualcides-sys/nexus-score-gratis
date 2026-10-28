@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T10:53:19.166616+00:00",
+  "checked_at": "2026-10-28T11:28:59.813956+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 29,
+  "priority_fixtures_seen": 26,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -140,24 +140,6 @@
       "fixture": "Vancouver Whitecaps x San Diego FC",
       "league": "usa.1",
       "kickoff": 1793241000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético-MG x Cruzeiro",
-      "league": "bra.1",
-      "kickoff": 1793313000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vasco da Gama x Flamengo",
-      "league": "bra.1",
-      "kickoff": 1793314800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Grêmio x Athletico-PR",
-      "league": "bra.1",
-      "kickoff": 1793320200,
       "reason": "no_verified_public_1x2"
     }
   ],

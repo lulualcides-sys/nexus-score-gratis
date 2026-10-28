@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T10:53:22.970880+00:00",
+  "checked_at": "2026-10-28T11:29:04.355994+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 17,
-  "indicative_only_games": 6,
-  "missing_bookmaker_price_games": 10,
+  "indicative_only_games": 7,
+  "missing_bookmaker_price_games": 9,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 9,
+    "indicative": 10,
     "new_priority": 1
   },
   "pinnacle_guest": {
@@ -373,7 +373,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 10,
+      "verified_quotes": 13,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -492,9 +492,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.6,
-        "draw": 5.13,
-        "away": 5.51
+        "home": 1.62,
+        "draw": 5.09,
+        "away": 5.41
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
       "tipsaudit_id": "12137",
@@ -707,8 +707,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.16,
-        "draw": 4.06,
+        "home": 3.17,
+        "draw": 4.08,
         "away": 2.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12144/austin-vs-real-salt-lake-2026-10-29",
@@ -743,8 +743,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.58,
-        "draw": 5.59,
-        "away": 5.29
+        "draw": 5.58,
+        "away": 5.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -891,16 +891,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 3.12,
+          "bookmaker": "BetOnline.ag",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.38,
-        "draw": 3.82,
-        "away": 3.14
+        "home": 2.42,
+        "draw": 3.8,
+        "away": 3.08
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Seattle Sounders FC",
@@ -964,8 +972,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.43,
-        "draw": 6.17,
-        "away": 7.3
+        "draw": 6.18,
+        "away": 7.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
@@ -1207,28 +1215,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "San Jose Earthquakes",
-      "away": "Colorado Rapids",
-      "league": "MLS",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793241000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
-      "tipsaudit_id": "12147",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }
