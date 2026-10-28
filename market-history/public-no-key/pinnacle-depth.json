@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T04:00:28.764940+00:00",
-  "bookmaker_snapshot_at": "2026-10-28T04:00:28.033811+00:00",
+  "checked_at": "2026-10-28T07:18:35.598455+00:00",
+  "bookmaker_snapshot_at": "2026-10-28T07:18:35.315780+00:00",
   "status": "fresh",
   "matches_catalogued": 4,
   "matches_with_priced_markets": 4,
-  "odds_eligible_for_quality": 426,
+  "odds_eligible_for_quality": 424,
   "invalid_quote_records": 6,
-  "complete_market_lines": 209,
+  "complete_market_lines": 208,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
@@ -15,56 +15,56 @@
       "odds": 98,
       "complete_lines": 49,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.21
+      "median_overround_pct": 4.23
     },
     "first_half_goals": {
       "games": 4,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.7
+      "median_overround_pct": 5.66
     },
     "first_half_handicap": {
       "games": 4,
       "odds": 50,
       "complete_lines": 25,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.76
+      "median_overround_pct": 4.75
     },
     "first_half_team_goals": {
       "games": 4,
       "odds": 16,
       "complete_lines": 8,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.21
+      "median_overround_pct": 5.26
     },
     "half_time": {
       "games": 4,
       "odds": 12,
       "complete_lines": 4,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.46
+      "median_overround_pct": 4.4
     },
     "match_odds": {
       "games": 4,
       "odds": 12,
       "complete_lines": 4,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.93
+      "median_overround_pct": 4.0
     },
     "team_goals": {
       "games": 4,
-      "odds": 54,
-      "complete_lines": 27,
+      "odds": 52,
+      "complete_lines": 26,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.58
+      "median_overround_pct": 5.64
     },
     "total_goals": {
       "games": 4,
       "odds": 120,
       "complete_lines": 60,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.73
+      "median_overround_pct": 4.75
     }
   },
   "examples": [
@@ -73,7 +73,7 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-28T04:00:28.033811+00:00",
+      "observed_at": "2026-10-28T07:18:35.315780+00:00",
       "selections": {
         "home": 1.4202,
         "away": 7.07,
@@ -86,7 +86,7 @@
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-28T04:00:28.033811+00:00",
+      "observed_at": "2026-10-28T07:18:35.315780+00:00",
       "selections": {
         "home": 1.9259,
         "away": 1.9804
@@ -98,7 +98,7 @@
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-2.25",
       "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-10-28T04:00:28.033811+00:00",
+      "observed_at": "2026-10-28T07:18:35.315780+00:00",
       "selections": {
         "home": 3.62,
         "away": 1.3175
@@ -110,7 +110,7 @@
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-2.0",
       "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-28T04:00:28.033811+00:00",
+      "observed_at": "2026-10-28T07:18:35.315780+00:00",
       "selections": {
         "home": 3.21,
         "away": 1.3802
@@ -122,7 +122,7 @@
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.75",
       "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-28T04:00:28.033811+00:00",
+      "observed_at": "2026-10-28T07:18:35.315780+00:00",
       "selections": {
         "home": 2.54,
         "away": 1.5682
