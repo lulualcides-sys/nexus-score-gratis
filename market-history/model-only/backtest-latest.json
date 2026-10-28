@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-10-28T09:55:31.903519+00:00",
+  "evaluated_at": "2026-10-28T10:53:24.794919+00:00",
   "status": "insufficient_backtest_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
