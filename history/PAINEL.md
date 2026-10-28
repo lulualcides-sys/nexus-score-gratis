@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T11:51:26.927181+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T13:02:33.975360+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **33**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -56,17 +56,17 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-28 | Alianza Atlético × Deportivo Garcilaso | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Cienciano × Atlético Grau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Asociación Deportiva Tarma × Club Deportivo Moquegua | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Al-Jandal × Damac FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Al-Jandal × Damac FC | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-28 | Al Najma × Al-Zulfi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Al Jabalain × Al-Raed | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Al-Shamal II × Muaither SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Al-Khor × Al-Gharafa II | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | NK Varaždin × NK Lokomotiva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Persib Bandung × Melbourne Victory | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Persib Bandung × Melbourne Victory | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-28 | St. Patrick's Athletic U19 × Žalgiris Vilnius U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Genk U19 × Salzburg U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | NK Bravo U19 × FK Crvena Zvezda U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Dynamo Kyiv U19 × Rangers U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Dynamo Kyiv U19 × Rangers U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Legia Warszawa U19 × Clermont Foot U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Flora Tallinn U19 × Chelsea U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Benfica U19 × Pafos FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -78,7 +78,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-28 | Fiorentina U19 × Septemvri Sofia U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | HJK U19 × Žilina U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Stabæk U19 × Cardiff Met FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-28 | Qarabağ FK U19 × Dinamo Zagreb U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Qarabağ FK U19 × Dinamo Zagreb U19 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | FC Zuerich U19 × Maccabi Tel Aviv U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | AP Brera Strumica U19 × Hoffenheim U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Zrinjski Mostar U19 × PAOK Thessaloniki FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -120,7 +120,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **29**.
 | 2026-10-28 | Degerfors × Västerås SK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Halmstads BK × Malmö FF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Ceará × Goiás | 0-0 | 90 | Chutes no alvo: 3.0×9.0, Chutes para fora: 6.0×6.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×2.0 |
-| 2026-10-28 | Belshina Bobruisk × Dinamo Minsk | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Belshina Bobruisk × Dinamo Minsk | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Isloch × ML Vitebsk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-28 | Milan × Bologna | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,55, Fora 4,90 |
 | 2026-10-28 | Genoa × Juventus | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7873 | **Jogos distintos:** 2279 | **Resultados verificáveis:** 4505 | **Com gol:** 1695 | **Sem gol:** 2810 | **Taxa observada:** 37.6%.
-**Evolução da amostra:** 20 datas com coletas | 72 pendentes | 1416 indeterminados | 1880 incompletos.
+**Observações:** 7881 | **Jogos distintos:** 2282 | **Resultados verificáveis:** 4508 | **Com gol:** 1697 | **Sem gol:** 2811 | **Taxa observada:** 37.6%.
+**Evolução da amostra:** 20 datas com coletas | 74 pendentes | 1417 indeterminados | 1882 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,12 +177,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1607 | 1100 | 431 | 669 | 39.2% |
-| ⚡ pressao_ofensiva_18 | 1224 | 824 | 288 | 536 | 35.0% |
-| 🎯 chutes_no_alvo_5 | 1283 | 634 | 227 | 407 | 35.8% |
-| 🟥 expulsao_confirmada | 1206 | 557 | 194 | 363 | 34.8% |
+| ⚡ pressao_ofensiva_18 | 1225 | 824 | 288 | 536 | 35.0% |
+| 🎯 chutes_no_alvo_5 | 1284 | 634 | 227 | 407 | 35.8% |
+| 🟥 expulsao_confirmada | 1210 | 560 | 196 | 364 | 35.0% |
 | 🚩 escanteios_6 | 939 | 445 | 181 | 264 | 40.7% |
-| 💣 grandes_chances_3 | 758 | 418 | 175 | 243 | 41.9% |
-| 🔥 pressao_forte_10min | 415 | 271 | 102 | 169 | 37.6% |
+| 💣 grandes_chances_3 | 759 | 418 | 175 | 243 | 41.9% |
+| 🔥 pressao_forte_10min | 416 | 271 | 102 | 169 | 37.6% |
 | 🧨 pressao_total_5_10min | 225 | 147 | 54 | 93 | 36.7% |
 | ⏱️ tensao_tardia_70 | 142 | 61 | 24 | 37 | 39.3% |
 | 🚨 alerta_cruzado_gol | 74 | 48 | 19 | 29 | 39.6% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 385 | 230 | 66 | 164 | 28.7% |
+| Premier League | 386 | 232 | 67 | 165 | 28.9% |
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
 | Liga Profesional | 209 | 133 | 34 | 99 | 25.6% |
@@ -253,30 +253,38 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 227 | 165 | 53 | 112 | 32.1% |
 | 16–30′ | 536 | 411 | 137 | 274 | 33.3% |
-| 31–45′ | 1582 | 1240 | 503 | 737 | 40.6% |
-| 46–60′ | 1069 | 771 | 292 | 479 | 37.9% |
-| 61–75′ | 1600 | 1113 | 411 | 702 | 36.9% |
-| 76–90′ | 2187 | 798 | 297 | 501 | 37.2% |
+| 31–45′ | 1584 | 1241 | 504 | 737 | 40.6% |
+| 46–60′ | 1072 | 771 | 292 | 479 | 37.9% |
+| 61–75′ | 1602 | 1115 | 412 | 703 | 37.0% |
+| 76–90′ | 2188 | 798 | 297 | 501 | 37.2% |
 | 91+′ | 672 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7873 | **Jogos monitorados:** 1190 | **Ao vivo:** 85 | **Termômetros recentes:** 17.
+**Registros:** 7881 | **Jogos monitorados:** 1190 | **Ao vivo:** 90 | **Termômetros recentes:** 18.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-28T11:51:54.366093+00:00 | Legia Warszawa U19 × Clermont Foot U19 | Legia Warszawa U19 (92') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-28T11:51:54.366093+00:00 | Belshina Bobruisk × Dinamo Minsk | Belshina Bobruisk (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-28T11:51:54.366093+00:00 | Menemen × Karacabey Belediye Spor | Menemen (62') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-28T11:38:40.335701+00:00 | Legia Warszawa U19 × Clermont Foot U19 | Legia Warszawa U19 (79') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | pendente | indisponível |
+| 2026-10-28T13:02:56.813113+00:00 | Viettel × FC Seoul | FC Seoul (47') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-28T13:02:56.813113+00:00 | Viettel × FC Seoul | FC Seoul (47') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-28T13:02:56.813113+00:00 | Siarka Tarnobrzeg × Lech Poznań | Lech Poznań (69') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-28T13:02:56.813113+00:00 | Brabrand × AC Horsens | AC Horsens (33') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-28T13:02:56.813113+00:00 | Brabrand × AC Horsens | AC Horsens (33') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-28T12:16:57.266163+00:00 | Belshina Bobruisk × Dinamo Minsk | Belshina Bobruisk (61') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-28T12:16:57.266163+00:00 | Siarka Tarnobrzeg × Lech Poznań | Lech Poznań (46') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-28T12:16:57.266163+00:00 | Menemen × Karacabey Belediye Spor | Menemen (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-28T11:51:54.366093+00:00 | Legia Warszawa U19 × Clermont Foot U19 | Legia Warszawa U19 (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-28T11:51:54.366093+00:00 | Belshina Bobruisk × Dinamo Minsk | Belshina Bobruisk (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-28T11:51:54.366093+00:00 | Menemen × Karacabey Belediye Spor | Menemen (62') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-28T11:38:40.335701+00:00 | Legia Warszawa U19 × Clermont Foot U19 | Legia Warszawa U19 (79') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-10-28T11:38:40.335701+00:00 | Belshina Bobruisk × Dinamo Minsk | Belshina Bobruisk (30') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-28T11:38:40.335701+00:00 | Gamba Osaka × Buriram United | Gamba Osaka (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-28T11:38:40.335701+00:00 | Gamba Osaka × Buriram United | Gamba Osaka (79') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-28T11:38:40.335701+00:00 | Kashima Antlers × Pohang Steelers | Kashima Antlers (81') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-28T11:38:40.335701+00:00 | Kashima Antlers × Pohang Steelers | Kashima Antlers (81') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-28T11:38:40.335701+00:00 | Menemen × Karacabey Belediye Spor | Menemen (49') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-28T11:38:40.335701+00:00 | Menemen × Karacabey Belediye Spor | Menemen (49') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-28T11:02:14.079948+00:00 | Gamba Osaka × Buriram United | Gamba Osaka (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-28T11:02:14.079948+00:00 | Menemen × Karacabey Belediye Spor | Menemen (32') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-28T10:19:46.801122+00:00 | Gamba Osaka × Buriram United | Gamba Osaka (19') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -360,18 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | CD Manacor × Villarreal | Villarreal (77') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Rayo Vallecano (78') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:36:18.125121+00:00 | Recreativo Huelva × Rayo Vallecano | Recreativo Huelva (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Roma × Cagliari | Roma (63') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Roma × Cagliari | Roma (63') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **88**.
+Jogos com odds registradas nos ultimos dias: **89**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
