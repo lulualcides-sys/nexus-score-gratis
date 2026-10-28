@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T21:51:28.185656+00:00",
+  "checked_at": "2026-10-28T01:19:41.887827+00:00",
   "source": "Pinnacle public Arcadia guest",
   "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
   "status": "partial_blocked",
@@ -19,7 +19,7 @@
   },
   "errors": [
     {
-      "matchup_id": 1639085341,
+      "matchup_id": 1637181763,
       "error": "HTTPError",
       "http_status": 403,
       "reason": "HTTP Error 403: Forbidden"
@@ -29,8 +29,8 @@
   "requires_user_api_key": false,
   "guarantees_available_to_bet": false,
   "liquidity_verified": false,
-  "previously_denied_skipped": 1,
+  "previously_denied_skipped": 2,
   "priority_no_odds_targeted": 0,
-  "rotating_catalogue_games": 6,
-  "all_scheduled_candidates": 6
+  "rotating_catalogue_games": 5,
+  "all_scheduled_candidates": 5
 }

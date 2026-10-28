@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-27T21:51:28.659642+00:00",
-  "bookmaker_snapshot_at": "2026-10-27T21:51:28.185656+00:00",
+  "checked_at": "2026-10-28T01:19:42.458253+00:00",
+  "bookmaker_snapshot_at": "2026-10-28T01:19:41.887827+00:00",
   "status": "fresh",
   "matches_catalogued": 1,
   "matches_with_priced_markets": 1,
@@ -15,56 +15,56 @@
       "odds": 26,
       "complete_lines": 13,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.58
+      "median_overround_pct": 3.57
     },
     "first_half_goals": {
       "games": 1,
       "odds": 16,
       "complete_lines": 8,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.04
+      "median_overround_pct": 5.08
     },
     "first_half_handicap": {
       "games": 1,
       "odds": 14,
       "complete_lines": 7,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.08
+      "median_overround_pct": 4.07
     },
     "first_half_team_goals": {
       "games": 1,
       "odds": 4,
       "complete_lines": 2,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.25
+      "median_overround_pct": 5.23
     },
     "half_time": {
       "games": 1,
       "odds": 3,
       "complete_lines": 1,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.22
+      "median_overround_pct": 4.09
     },
     "match_odds": {
       "games": 1,
       "odds": 3,
       "complete_lines": 1,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.88
+      "median_overround_pct": 3.82
     },
     "team_goals": {
       "games": 1,
       "odds": 12,
       "complete_lines": 6,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.18
+      "median_overround_pct": 5.19
     },
     "total_goals": {
       "games": 1,
       "odds": 28,
       "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.11
+      "median_overround_pct": 4.08
     }
   },
   "examples": [
@@ -73,61 +73,61 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "observed_at": "2026-10-28T01:19:41.887827+00:00",
       "selections": {
-        "home": 1.4444,
-        "away": 6.72,
-        "draw": 5.06
+        "home": 1.4202,
+        "away": 7.07,
+        "draw": 5.19
       },
-      "overround_pct": 3.88
+      "overround_pct": 3.82
     },
     {
       "fixture": "Villarreal x Espanyol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "observed_at": "2026-10-28T01:19:41.887827+00:00",
       "selections": {
-        "home": 1.9901,
-        "away": 1.9174
+        "home": 1.9259,
+        "away": 1.9804
       },
-      "overround_pct": 2.4
+      "overround_pct": 2.42
     },
     {
       "fixture": "Villarreal x Espanyol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-2.25",
       "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "observed_at": "2026-10-28T01:19:41.887827+00:00",
       "selections": {
-        "home": 3.78,
-        "away": 1.2967
+        "home": 3.62,
+        "away": 1.3175
       },
-      "overround_pct": 3.57
+      "overround_pct": 3.53
     },
     {
       "fixture": "Villarreal x Espanyol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-2.0",
       "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "observed_at": "2026-10-28T01:19:41.887827+00:00",
       "selections": {
-        "home": 3.36,
-        "away": 1.3546
+        "home": 3.21,
+        "away": 1.3802
       },
-      "overround_pct": 3.58
+      "overround_pct": 3.61
     },
     {
       "fixture": "Villarreal x Espanyol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.75",
       "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-27T21:51:28.185656+00:00",
+      "observed_at": "2026-10-28T01:19:41.887827+00:00",
       "selections": {
-        "home": 2.64,
-        "away": 1.5319
+        "home": 2.54,
+        "away": 1.5682
       },
-      "overround_pct": 3.16
+      "overround_pct": 3.14
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
