@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-10-28T00:17:10.411199+00:00",
+  "evaluated_at": "2026-10-28T01:32:43.201574+00:00",
   "status": "diagnostic_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 644,
+  "historical_matches_available": 647,
   "historical_fixtures_tested": 56,
   "leagues_tested": 6,
   "leagues_samples": {
@@ -18,8 +18,8 @@
     "ita.1": 4
   },
   "skipped_reasons": {
-    "insufficient_team_results": 81,
-    "insufficient_league_results": 3
+    "insufficient_team_results": 82,
+    "insufficient_league_results": 2
   },
   "brier_1x2": 0.67088,
   "rps_1x2": 0.24519,

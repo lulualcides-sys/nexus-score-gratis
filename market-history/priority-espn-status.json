@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T00:17:06.401050+00:00",
+  "checked_at": "2026-10-28T01:32:39.210291+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 28,
+  "priority_fixtures_seen": 27,
   "created_games": 0,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
@@ -164,6 +164,12 @@
       "fixture": "Vancouver Whitecaps x San Diego FC",
       "league": "usa.1",
       "kickoff": 1793241000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Argentinos Juniors x Independiente Rivadavia",
+      "league": "arg.1",
+      "kickoff": 1793138400,
       "reason": "no_verified_public_1x2"
     }
   ],
