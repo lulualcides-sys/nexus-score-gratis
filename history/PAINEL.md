@@ -2,25 +2,32 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-27T23:40:26.925668+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-28T01:05:51.381011+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 1-0 | 0 | Chutes no alvo: 5.0×3.0; Match Odds 1X2: Casa 2,05, Empate 3,20, Fora 3,90 |
-| 2026-10-27 | Ceará × Goiás | 0-0 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 2,05, Empate 3,30, Fora 3,65 |
+| 2026-10-28 | Cúcuta × Águilas Doradas | 0-2 | 90 | Chutes no alvo: 5.0×7.0, Chutes para fora: 9.0×6.0, Escanteios: 12.0×2.0, Grandes chances: 0.0×2.0 |
+| 2026-10-28 | Chicó FC × Junior FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Deportivo Táchira × Monagas SC | 2-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-10-28 | Ceará × Goiás | 0-0 | 90 | Chutes no alvo: 3.0×9.0, Chutes para fora: 6.0×6.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×2.0 |
+| 2026-10-28 | Alianza FC × CD Marathón | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Club Atletico Peñarol × Montevideo City Torque | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-28 | Libertad × Independiente CG | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-27 | Argentinos Juniors × Independiente Rivadavia | 1-0 | 0 | Chutes no alvo: 6.0×3.0; Match Odds 1X2: Casa 2,05, Empate 3,20, Fora 3,90 |
+| 2026-10-27 | Ceará × Goiás | 0-2 | 0 | Chutes no alvo: 4.0×11.0; Match Odds 1X2: Casa 2,05, Empate 3,30, Fora 3,65 |
 | 2026-10-27 | Boyacá Chicó FC × Atlético Junior | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,25, Fora 2,15 |
-| 2026-10-27 | Cúcuta Deportivo × Águilas Doradas | 0-1 | 0 | Chutes no alvo: 1.0×3.0; Match Odds 1X2: Casa 2,55, Empate 2,90, Fora 2,80 |
+| 2026-10-27 | Cúcuta Deportivo × Águilas Doradas | 0-2 | 0 | Chutes no alvo: 6.0×7.0; Match Odds 1X2: Casa 2,55, Empate 2,90, Fora 2,80 |
 | 2026-10-27 | AS Roma × Cagliari | 4-2 | 0 | Chutes no alvo: 8.0×8.0; Match Odds 1X2: Casa 1,31, Empate 4,90, Fora 9,00 |
 | 2026-10-27 | Torino × Como | 1-3 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 4,60, Empate 3,75, Fora 1,69 |
 | 2026-10-27 | Sassuolo × Lazio | 2-6 | 0 | Chutes no alvo: 1.0×8.0; Match Odds 1X2: Casa 3,10, Empate 3,45, Fora 2,10 |
 | 2026-10-27 | FCI Levadia × Tammeka | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Narva Trans × Nõmme United | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | AFC Toronto × Halifax Tides FC | 1-1 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 7.0×6.0, Escanteios: 12.0×7.0, Grandes chances: 0.0×0.0 |
-| 2026-10-27 | Cúcuta × Águilas Doradas | 0-1 | 38 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×2.0 |
+| 2026-10-27 | Cúcuta × Águilas Doradas | 0-2 | 47 | Chutes no alvo: 2.0×6.0, Chutes para fora: 1.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×2.0 |
 | 2026-10-27 | Chicó FC × Junior FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Santa Fe × Bucaramanga | 2-1 | 64 | Chutes no alvo: 4.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-10-27 | CD Jaguares × Llaneros FC | 1-0 | 90 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×5.0, Escanteios: 5.0×8.0, Grandes chances: 1.0×0.0 |
@@ -38,7 +45,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-27 | AZ Alkmaar U19 × Göztepe U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Bolívar × Universitario de Vinto | 2-1 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×1.0, Escanteios: 7.0×0.0, Grandes chances: 5.0×0.0 |
 | 2026-10-27 | Academia Puerto Cabello × Caracas | 0-1 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×8.0, Escanteios: 4.0×4.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 1,68, Empate 3,49, F |
-| 2026-10-27 | Deportivo Táchira × Monagas SC | 1-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-27 | Deportivo Táchira × Monagas SC | 2-0 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Mamelodi Sundowns FC × Marumo Gallants | 1-0 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Orlando Pirates × Milford FC | 3-0 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 5.0×3.0, Escanteios: 7.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-10-27 | Kaizer Chiefs × TS Galaxy | 3-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
@@ -47,7 +54,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-27 | AIK × Elfsborg | 2-2 | 90 | Chutes no alvo: 4.0×4.0, Chutes para fora: 6.0×6.0, Escanteios: 2.0×10.0, Grandes chances: 2.0×3.0 |
 | 2026-10-27 | Landskrona BoIS × Varbergs BoIS FC | 1-1 | 0 | Chutes no alvo: 0.0×0.0, Escanteios: 0.0×0.0 |
 | 2026-10-27 | América-MG × Cuiabá | 1-0 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 2.0×9.0, Escanteios: 2.0×12.0, Grandes chances: 1.0×0.0 |
-| 2026-10-27 | Ceará × Goiás | 0-0 | 38 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×1.0 |
+| 2026-10-27 | Ceará × Goiás | 0-2 | 90 | Chutes no alvo: 3.0×9.0, Chutes para fora: 6.0×6.0, Escanteios: 2.0×7.0, Grandes chances: 1.0×2.0 |
 | 2026-10-27 | Juventude × Náutico | 3-0 | 86 | Chutes no alvo: 10.0×4.0, Chutes para fora: 7.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 4.0×2.0 |
 | 2026-10-27 | Roma × Cagliari | 4-2 | 90 | Chutes no alvo: 8.0×8.0, Chutes para fora: 5.0×7.0, Escanteios: 7.0×7.0, Grandes chances: 8.0×4.0 |
 | 2026-10-27 | Sassuolo × Lazio | 2-6 | 57 | Chutes no alvo: 2.0×6.0, Chutes para fora: 5.0×3.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×4.0; Match Odds 1X2: Casa 3,30, Empate 3,40, F |
@@ -133,13 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-10-27 | Poole Town FC × Chertsey Town | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Taunton Town × Frome Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-27 | Yate Town × Wimborne Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Veraguas United × Union Cocle | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-27 | Ascoli × Sampdoria | 2-0 | 85 | Chutes no alvo: 4.0×5.0, Chutes para fora: 3.0×3.0, Escanteios: 6.0×4.0, Grandes chances: 1.0×1.0 |
-| 2026-10-27 | Benevento × Catanzaro | 1-1 | 85 | Chutes no alvo: 2.0×0.0, Chutes para fora: 10.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×0.0 |
-| 2026-10-27 | Cesena × Empoli | 2-1 | 82 | Chutes no alvo: 3.0×5.0, Chutes para fora: 9.0×4.0, Escanteios: 7.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-10-27 | Virtus Entella × Avellino | 1-1 | 86 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×6.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-10-27 | LR Vicenza × Modena | 1-2 | 83 | Chutes no alvo: 1.0×2.0, Chutes para fora: 3.0×6.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-10-27 | Mantova × Cremonese | 0-2 | 85 | Chutes no alvo: 6.0×5.0, Chutes para fora: 7.0×1.0, Escanteios: 3.0×2.0, Grandes chances: 2.0×2.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 7852 | **Jogos distintos:** 2273 | **Resultados verificáveis:** 4489 | **Com gol:** 1691 | **Sem gol:** 2798 | **Taxa observada:** 37.7%.
-**Evolução da amostra:** 19 datas com coletas | 72 pendentes | 1413 indeterminados | 1878 incompletos.
+**Observações:** 7858 | **Jogos distintos:** 2274 | **Resultados verificáveis:** 4499 | **Com gol:** 1692 | **Sem gol:** 2807 | **Taxa observada:** 37.6%.
+**Evolução da amostra:** 19 datas com coletas | 66 pendentes | 1413 indeterminados | 1880 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1605 | 1097 | 431 | 666 | 39.3% |
-| ⚡ pressao_ofensiva_18 | 1224 | 823 | 287 | 536 | 34.9% |
-| 🎯 chutes_no_alvo_5 | 1278 | 627 | 226 | 401 | 36.0% |
+| 🥶 jogo_frio | 1607 | 1100 | 431 | 669 | 39.2% |
+| ⚡ pressao_ofensiva_18 | 1224 | 824 | 288 | 536 | 35.0% |
+| 🎯 chutes_no_alvo_5 | 1281 | 632 | 226 | 406 | 35.8% |
 | 🟥 expulsao_confirmada | 1198 | 554 | 193 | 361 | 34.8% |
-| 🚩 escanteios_6 | 935 | 444 | 181 | 263 | 40.8% |
+| 🚩 escanteios_6 | 936 | 445 | 181 | 264 | 40.7% |
 | 💣 grandes_chances_3 | 756 | 417 | 174 | 243 | 41.7% |
 | 🔥 pressao_forte_10min | 415 | 271 | 102 | 169 | 37.6% |
 | 🧨 pressao_total_5_10min | 225 | 147 | 54 | 93 | 36.7% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 214 | 126 | 54 | 72 | 42.9% |
+| Equipe não definida | 215 | 127 | 54 | 73 | 42.5% |
 | Manchester City | 42 | 24 | 13 | 11 | 54.2% |
 | Machida Zelvia | 26 | 23 | 6 | 17 | 26.1% |
 | Roma | 30 | 21 | 15 | 6 | 71.4% |
@@ -224,7 +224,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 383 | 229 | 65 | 164 | 28.4% |
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Major League Soccer | 269 | 144 | 63 | 81 | 43.8% |
-| Liga Profesional | 209 | 131 | 34 | 97 | 26.0% |
+| Liga Profesional | 209 | 133 | 34 | 99 | 25.6% |
 | Serie B | 182 | 129 | 45 | 84 | 34.9% |
 | Super League | 223 | 124 | 38 | 86 | 30.6% |
 | Bundesliga | 183 | 116 | 46 | 70 | 39.7% |
@@ -241,11 +241,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eredivisie | 152 | 87 | 42 | 45 | 48.3% |
 | 2. Bundesliga | 134 | 87 | 33 | 54 | 37.9% |
 | Super Lig | 111 | 87 | 32 | 55 | 36.8% |
+| Primera A | 142 | 84 | 25 | 59 | 29.8% |
 | Eliteserien | 126 | 82 | 29 | 53 | 35.4% |
-| Primera A | 140 | 81 | 24 | 57 | 29.6% |
 | Saudi Pro League | 122 | 81 | 35 | 46 | 43.2% |
-| Primera División | 127 | 72 | 22 | 50 | 30.6% |
-| Ekstraklasa | 120 | 72 | 31 | 41 | 43.1% |
+| Série B | 138 | 73 | 21 | 52 | 28.8% |
+| Primera División | 128 | 73 | 22 | 51 | 30.1% |
 
 ### Faixa de minuto
 
@@ -253,27 +253,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 227 | 165 | 53 | 112 | 32.1% |
 | 16–30′ | 534 | 410 | 136 | 274 | 33.2% |
-| 31–45′ | 1577 | 1234 | 502 | 732 | 40.7% |
-| 46–60′ | 1065 | 768 | 292 | 476 | 38.0% |
-| 61–75′ | 1597 | 1112 | 411 | 701 | 37.0% |
-| 76–90′ | 2183 | 793 | 295 | 498 | 37.2% |
-| 91+′ | 669 | 7 | 2 | 5 | 28.6% |
+| 31–45′ | 1579 | 1239 | 503 | 736 | 40.6% |
+| 46–60′ | 1067 | 770 | 292 | 478 | 37.9% |
+| 61–75′ | 1597 | 1113 | 411 | 702 | 36.9% |
+| 76–90′ | 2183 | 795 | 295 | 500 | 37.1% |
+| 91+′ | 671 | 7 | 2 | 5 | 28.6% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 7852 | **Jogos monitorados:** 1670 | **Ao vivo:** 73 | **Termômetros recentes:** 18.
+**Registros:** 7858 | **Jogos monitorados:** 1670 | **Ao vivo:** 65 | **Termômetros recentes:** 17.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-27T23:40:46.538337+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (77') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T23:40:46.538337+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (77') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T23:40:46.538337+00:00 | Ceará × Goiás | Equipe não definida (39') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-27T23:38:39.894637+00:00 | Cúcuta × Águilas Doradas | Águilas Doradas (38') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-27T23:38:39.894637+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (75') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-27T23:38:39.894637+00:00 | Ceará × Goiás | Goiás (37') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-28T00:53:42.497034+00:00 | Ceará × Goiás | Equipe não definida (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-28T00:53:42.497034+00:00 | Ceará × Goiás | Goiás (91') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-28T00:06:04.852599+00:00 | Cúcuta × Águilas Doradas | Águilas Doradas (48') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-28T00:06:04.852599+00:00 | Cúcuta × Águilas Doradas | Águilas Doradas (48') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-28T00:06:04.852599+00:00 | Deportivo Táchira × Monagas SC | Deportivo Táchira (35') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-28T00:06:04.852599+00:00 | Ceará × Goiás | Goiás (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T23:40:46.538337+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (77') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T23:40:46.538337+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (77') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-27T23:40:46.538337+00:00 | Ceará × Goiás | Equipe não definida (39') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T23:38:39.894637+00:00 | Cúcuta × Águilas Doradas | Águilas Doradas (38') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-27T23:38:39.894637+00:00 | Argentinos Juniors × Independiente Rivadavia | Argentinos Juniors (75') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-27T23:38:39.894637+00:00 | Ceará × Goiás | Goiás (37') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T23:11:20.358336+00:00 | Cúcuta × Águilas Doradas | Águilas Doradas (11') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-27T23:11:20.358336+00:00 | Academia Puerto Cabello × Caracas | Academia Puerto Cabello (82') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-27T23:11:20.358336+00:00 | Ceará × Goiás | Goiás (10') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -362,16 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-27T21:06:02.268138+00:00 | Sporting CP × Marítimo | Sporting CP (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Borussia Mönchengladbach × Karlsruher SC | Borussia Mönchengladbach (59') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-27T21:06:02.268138+00:00 | Borussia Dortmund × Werder Bremen | Werder Bremen (56') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Elversberg × Darmstadt | Darmstadt (62') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | 1. FC Köln × Union Berlin | 1. FC Köln (61') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | 1. FC Köln × Union Berlin | 1. FC Köln (61') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Fleetwood Town × Arsenal | Arsenal (45') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Fleetwood Town × Arsenal | Arsenal (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-27T21:06:02.268138+00:00 | Bradford City × Peterborough United | Bradford City (62') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **159**.
+Jogos com odds registradas nos ultimos dias: **74**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
