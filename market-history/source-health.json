@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T14:08:52.175536+00:00",
+  "checked_at": "2026-10-28T15:00:18.467471+00:00",
   "source_count": 5,
   "sources_ok": 4,
   "source_status": {
     "nexus": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 817,
+      "odds_observed": 844,
       "source_file": "status.json"
     },
     "espn_priority": {
@@ -24,18 +24,18 @@
       "odds_observed": null,
       "source_file": "priority-boxscore-status.json",
       "statistics_fields_observed": 0,
-      "summaries_checked": 1,
+      "summaries_checked": 2,
       "games_with_stats_enriched": 0
     },
     "tipsaudit": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 42,
+      "odds_observed": 41,
       "source_file": "public-no-key/status.json"
     },
     "pinnacle": {
       "status": "partial_blocked",
-      "age_minutes": 52.0,
+      "age_minutes": 103.5,
       "odds_observed": 655,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 5,
