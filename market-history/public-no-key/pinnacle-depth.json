@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T07:18:35.598455+00:00",
-  "bookmaker_snapshot_at": "2026-10-28T07:18:35.315780+00:00",
+  "checked_at": "2026-10-28T10:04:12.489613+00:00",
+  "bookmaker_snapshot_at": "2026-10-28T10:04:11.192221+00:00",
   "status": "fresh",
-  "matches_catalogued": 4,
-  "matches_with_priced_markets": 4,
-  "odds_eligible_for_quality": 424,
-  "invalid_quote_records": 6,
-  "complete_market_lines": 208,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1454,
+  "invalid_quote_records": 20,
+  "complete_market_lines": 713,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 4,
-      "odds": 98,
-      "complete_lines": 49,
+      "games": 16,
+      "odds": 330,
+      "complete_lines": 165,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.23
+      "median_overround_pct": 4.22
     },
     "first_half_goals": {
-      "games": 4,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 16,
+      "odds": 232,
+      "complete_lines": 116,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.09
+    },
+    "first_half_handicap": {
+      "games": 16,
+      "odds": 190,
+      "complete_lines": 95,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.82
+    },
+    "first_half_team_goals": {
+      "games": 16,
+      "odds": 62,
+      "complete_lines": 31,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.24
+    },
+    "half_time": {
+      "games": 12,
+      "odds": 36,
+      "complete_lines": 12,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.51
+    },
+    "match_odds": {
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.28
+    },
+    "team_goals": {
+      "games": 16,
+      "odds": 170,
+      "complete_lines": 85,
       "incomplete_lines": 0,
       "median_overround_pct": 5.66
     },
-    "first_half_handicap": {
-      "games": 4,
-      "odds": 50,
-      "complete_lines": 25,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.75
-    },
-    "first_half_team_goals": {
-      "games": 4,
-      "odds": 16,
-      "complete_lines": 8,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.26
-    },
-    "half_time": {
-      "games": 4,
-      "odds": 12,
-      "complete_lines": 4,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.4
-    },
-    "match_odds": {
-      "games": 4,
-      "odds": 12,
-      "complete_lines": 4,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.0
-    },
-    "team_goals": {
-      "games": 4,
-      "odds": 52,
-      "complete_lines": 26,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.64
-    },
     "total_goals": {
-      "games": 4,
-      "odds": 120,
-      "complete_lines": 60,
+      "games": 16,
+      "odds": 386,
+      "complete_lines": 193,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.75
+      "median_overround_pct": 5.39
     }
   },
   "examples": [
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Charlotte FC x CF Montreal",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-28T07:18:35.315780+00:00",
+      "observed_at": "2026-10-28T10:04:11.192221+00:00",
       "selections": {
-        "home": 1.4202,
-        "away": 7.07,
-        "draw": 5.19
+        "home": 1.5848,
+        "away": 5.0,
+        "draw": 4.72
       },
-      "overround_pct": 3.82
+      "overround_pct": 4.29
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Charlotte FC x CF Montreal",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-28T07:18:35.315780+00:00",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-28T10:04:11.192221+00:00",
       "selections": {
-        "home": 1.9259,
-        "away": 1.9804
+        "home": 1.9434,
+        "away": 1.9434
       },
-      "overround_pct": 2.42
+      "overround_pct": 2.91
     },
     {
-      "fixture": "Villarreal x Espanyol",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-10-28T07:18:35.315780+00:00",
-      "selections": {
-        "home": 3.62,
-        "away": 1.3175
-      },
-      "overround_pct": 3.53
-    },
-    {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Charlotte FC x CF Montreal",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-2.0",
       "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-28T07:18:35.315780+00:00",
+      "observed_at": "2026-10-28T10:04:11.192221+00:00",
       "selections": {
-        "home": 3.21,
-        "away": 1.3802
+        "home": 3.71,
+        "away": 1.2976
       },
-      "overround_pct": 3.61
+      "overround_pct": 4.02
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Charlotte FC x CF Montreal",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.75",
       "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-28T07:18:35.315780+00:00",
+      "observed_at": "2026-10-28T10:04:11.192221+00:00",
       "selections": {
-        "home": 2.54,
-        "away": 1.5682
+        "home": 2.92,
+        "away": 1.4329
       },
-      "overround_pct": 3.14
+      "overround_pct": 4.04
+    },
+    {
+      "fixture": "Charlotte FC x CF Montreal",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-10-28T10:04:11.192221+00:00",
+      "selections": {
+        "home": 2.49,
+        "away": 1.5747
+      },
+      "overround_pct": 3.66
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
