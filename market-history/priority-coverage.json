@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T02:20:28.015831+00:00",
+  "checked_at": "2026-10-28T03:16:46.511767+00:00",
   "horizon_hours": 48,
-  "important_games": 28,
-  "verified_bookmaker_games": 0,
-  "indicative_only_games": 10,
-  "missing_bookmaker_price_games": 18,
+  "important_games": 30,
+  "verified_bookmaker_games": 2,
+  "indicative_only_games": 9,
+  "missing_bookmaker_price_games": 19,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 12,
-    "indicative": 10,
+    "indicative": 9,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -24,8 +24,8 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 36,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
@@ -252,9 +252,10 @@
       "kickoff_unix": 1793208600.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "The Odds API official free"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 18,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -264,7 +265,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "official_verified_total_corners_quotes": 18,
+      "coverage": "verified_price"
     },
     {
       "home": "Parma",
@@ -274,9 +276,10 @@
       "kickoff_unix": 1793208600.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "The Odds API official free"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 18,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -286,7 +289,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "official_verified_total_corners_quotes": 18,
+      "coverage": "verified_price"
     },
     {
       "home": "Venezia",
@@ -338,6 +342,50 @@
       "league": "Serie A Itália",
       "league_code": "ita.1",
       "kickoff_unix": 1793216700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Frosinone",
+      "away": "Lecce",
+      "league": "Serie A Itália",
+      "league_code": "ita.1",
+      "kickoff_unix": 1793295000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "league": "Serie A Itália",
+      "league_code": "ita.1",
+      "kickoff_unix": 1793303100.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
@@ -462,9 +510,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.98,
-        "draw": 4.53,
-        "away": 3.63
+        "home": 2.0,
+        "draw": 4.4,
+        "away": 3.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12135/new-england-revolution-vs-new-york-red-bulls-2026-10-28",
       "tipsaudit_id": "12135",
@@ -611,9 +659,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.6,
-        "draw": 5.47,
-        "away": 5.15
+        "home": 1.61,
+        "draw": 5.36,
+        "away": 5.16
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -645,9 +693,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.18,
-        "draw": 4.21,
-        "away": 3.29
+        "home": 2.19,
+        "draw": 4.13,
+        "away": 3.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12140/fc-dallas-vs-columbus-crew-2026-10-29",
       "tipsaudit_id": "12140",
@@ -679,9 +727,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.45,
-        "draw": 5.88,
-        "away": 7.19
+        "home": 1.44,
+        "draw": 5.95,
+        "away": 7.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -703,15 +751,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.9,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.86,
         "draw": 4.36,
@@ -720,7 +760,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "St. Louis CITY SC",
@@ -986,48 +1026,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "AC Milan",
-      "away": "Bologna",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793208600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Parma",
-      "away": "Udinese",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793208600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Venezia",
       "away": "Internazionale",
       "league": "Serie A Itália",
@@ -1075,6 +1073,48 @@
       "league": "Serie A Itália",
       "league_code": "ita.1",
       "kickoff_unix": 1793216700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Frosinone",
+      "away": "Lecce",
+      "league": "Serie A Itália",
+      "league_code": "ita.1",
+      "kickoff_unix": 1793295000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "league": "Serie A Itália",
+      "league_code": "ita.1",
+      "kickoff_unix": 1793303100.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
@@ -1147,6 +1187,27 @@
       "data_sources": [
         "TipsAudit"
       ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Nashville SC",
+      "away": "Philadelphia Union",
+      "league": "MLS",
+      "league_code": "usa.1",
+      "kickoff_unix": 1793233800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
+      "tipsaudit_id": "12143",
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
