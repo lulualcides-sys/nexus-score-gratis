@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T07:11:36.561748+00:00",
+  "checked_at": "2026-10-28T08:06:54.235028+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 12,
@@ -24,18 +24,18 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 2,
-    "verified_corners_quotes": 36,
+    "priced_games": 0,
+    "verified_corners_quotes": 0,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-10-28T04:00:28.033811+00:00",
-    "complete_market_lines": 209,
+    "bookmaker_snapshot_at": "2026-10-28T07:18:35.315780+00:00",
+    "complete_market_lines": 208,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 426,
+    "odds_eligible_for_quality": 424,
     "invalid_quote_records": 6,
     "families": {
       "asian_handicap": {
@@ -43,64 +43,95 @@
         "odds": 98,
         "complete_lines": 49,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.21
+        "median_overround_pct": 4.23
       },
       "first_half_goals": {
         "games": 4,
         "odds": 64,
         "complete_lines": 32,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.7
+        "median_overround_pct": 5.66
       },
       "first_half_handicap": {
         "games": 4,
         "odds": 50,
         "complete_lines": 25,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.76
+        "median_overround_pct": 4.75
       },
       "first_half_team_goals": {
         "games": 4,
         "odds": 16,
         "complete_lines": 8,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.21
+        "median_overround_pct": 5.26
       },
       "half_time": {
         "games": 4,
         "odds": 12,
         "complete_lines": 4,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.46
+        "median_overround_pct": 4.4
       },
       "match_odds": {
         "games": 4,
         "odds": 12,
         "complete_lines": 4,
         "incomplete_lines": 0,
-        "median_overround_pct": 3.93
+        "median_overround_pct": 4.0
       },
       "team_goals": {
         "games": 4,
-        "odds": 54,
-        "complete_lines": 27,
+        "odds": 52,
+        "complete_lines": 26,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.58
+        "median_overround_pct": 5.64
       },
       "total_goals": {
         "games": 4,
         "odds": 120,
         "complete_lines": 60,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.73
+        "median_overround_pct": 4.75
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 4,
-    "top_changes": []
+    "selections_with_changes": 246,
+    "historical_snapshots": 8,
+    "top_changes": [
+      {
+        "home": "Fulham",
+        "away": "Crystal Palace",
+        "market_family": "first_half_goals",
+        "raw_market_key": "s;1;ou;1.0",
+        "selection": "under",
+        "first_odds": 2.29,
+        "last_odds": 2.43,
+        "implied_probability_change_pp": -2.516
+      },
+      {
+        "home": "Fulham",
+        "away": "Crystal Palace",
+        "market_family": "first_half_goals",
+        "raw_market_key": "s;1;ou;1.0",
+        "selection": "over",
+        "first_odds": 1.6135,
+        "last_odds": 1.5525,
+        "implied_probability_change_pp": 2.435
+      },
+      {
+        "home": "Fulham",
+        "away": "Crystal Palace",
+        "market_family": "first_half_goals",
+        "raw_market_key": "s;1;ou;1.25",
+        "selection": "over",
+        "first_odds": 2.07,
+        "last_odds": 1.9804,
+        "implied_probability_change_pp": 2.186
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -287,10 +318,9 @@
       "kickoff_unix": 1793208600.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "The Odds API official free"
+        "ESPN"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -300,7 +330,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "official_verified_total_corners_quotes": 18,
       "coverage": "verified_price"
     },
     {
@@ -311,10 +340,9 @@
       "kickoff_unix": 1793208600.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN",
-        "The Odds API official free"
+        "ESPN"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -324,7 +352,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "official_verified_total_corners_quotes": 18,
       "coverage": "verified_price"
     },
     {
@@ -456,8 +483,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.6,
-        "draw": 5.18,
-        "away": 5.54
+        "draw": 5.13,
+        "away": 5.51
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12137/charlotte-vs-cf-montreal-2026-10-28",
       "tipsaudit_id": "12137",
@@ -491,8 +518,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.54,
-        "draw": 5.46,
-        "away": 5.95
+        "draw": 5.45,
+        "away": 5.96
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12136/inter-miami-vs-fc-cincinnati-2026-10-28",
       "tipsaudit_id": "12136",
@@ -661,9 +688,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.08,
-        "draw": 4.05,
-        "away": 2.33
+        "home": 3.06,
+        "draw": 4.04,
+        "away": 2.35
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12144/austin-vs-real-salt-lake-2026-10-29",
       "tipsaudit_id": "12144",
@@ -696,9 +723,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.57,
-        "draw": 5.61,
-        "away": 5.37
+        "home": 1.58,
+        "draw": 5.57,
+        "away": 5.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12141/chicago-fire-vs-orlando-city-sc-2026-10-29",
       "tipsaudit_id": "12141",
@@ -759,8 +786,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.47,
-        "draw": 5.76,
-        "away": 6.9
+        "draw": 5.77,
+        "away": 6.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12142/minnesota-united-fc-vs-sporting-kansas-city-2026-10-29",
       "tipsaudit_id": "12142",
@@ -793,9 +820,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.82,
-        "draw": 4.33,
-        "away": 4.54
+        "home": 1.86,
+        "draw": 4.29,
+        "away": 4.38
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12143/nashville-sc-vs-philadelphia-union-2026-10-29",
       "tipsaudit_id": "12143",
@@ -820,9 +847,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.97,
-        "draw": 4.28,
-        "away": 3.86
+        "home": 1.98,
+        "draw": 4.23,
+        "away": 3.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12145/st-louis-city-vs-portland-timbers-2026-10-29",
       "tipsaudit_id": "12145",
@@ -918,7 +945,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.45,
-        "draw": 6.02,
+        "draw": 6.01,
         "away": 7.0
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
