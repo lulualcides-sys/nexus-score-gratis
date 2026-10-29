@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T02:23:21.525485+00:00",
+  "checked_at": "2026-10-29T03:17:21.953302+00:00",
   "horizon_hours": 48,
-  "important_games": 17,
-  "verified_bookmaker_games": 3,
+  "important_games": 26,
+  "verified_bookmaker_games": 5,
   "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 9,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "missing_bookmaker_price_games": 16,
+  "games_with_corners_stats": 3,
+  "games_with_yellow_cards_stats": 3,
+  "games_with_shots_on_target_stats": 3,
   "tipsaudit": {
     "status": "checked",
     "matched": 3,
-    "indicative": 7,
-    "new_priority": 7
+    "indicative": 5,
+    "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -33,8 +33,8 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 28,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
@@ -173,9 +173,10 @@
       "kickoff_unix": 1793314800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "The Odds API official free"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 10,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -185,7 +186,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "official_verified_total_corners_quotes": 10,
+      "coverage": "verified_price"
     },
     {
       "home": "Grêmio",
@@ -247,6 +249,30 @@
       "kickoff_unix": 1793295000.0,
       "phase": "scheduled",
       "data_sources": [
+        "ESPN",
+        "The Odds API official free"
+      ],
+      "verified_quotes": 18,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "official_verified_total_corners_quotes": 18,
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "league": "Serie A Itália",
+      "league_code": "ita.1",
+      "kickoff_unix": 1793303100.0,
+      "phase": "scheduled",
+      "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 0,
@@ -262,11 +288,11 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Fiorentina",
-      "away": "Atalanta",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793303100.0,
+      "home": "SV Elversberg",
+      "away": "Mainz",
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "kickoff_unix": 1793388600.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
@@ -314,13 +340,20 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Le Havre",
-      "away": "Paris Saint Germain",
-      "kickoff_unix": 1793383200.0,
+      "home": "Le Havre AC",
+      "away": "Paris Saint-Germain",
       "league": "Ligue 1",
       "league_code": "fra.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793383200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
@@ -337,11 +370,30 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
+    },
+    {
+      "home": "Nice",
+      "away": "Stade Rennais",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793383200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Nice",
@@ -376,11 +428,18 @@
     {
       "home": "Lille",
       "away": "Lens",
-      "kickoff_unix": 1793390700.0,
       "league": "Ligue 1",
       "league_code": "fra.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793390700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
@@ -397,11 +456,30 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
+    },
+    {
+      "home": "CF América",
+      "away": "Tijuana",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793242800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Atletico San Luis",
@@ -426,13 +504,42 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "FC Juarez",
-      "away": "Club Queretaro",
-      "kickoff_unix": 1793408400.0,
+      "home": "Atlético de San Luis",
+      "away": "Atlas",
       "league": "Liga MX",
       "league_code": "mex.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793408400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Juárez",
+      "away": "Querétaro",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793408400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.13,
@@ -441,10 +548,117 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
       "tipsaudit_id": "12533",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Puebla",
+      "away": "U.N.A.M. - Pumas",
+      "kickoff_unix": 1793415600.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 3.24,
+        "draw": 3.77,
+        "away": 2.35
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
+      "tipsaudit_id": "12535",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
       ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Estudiantes de Río Cuarto",
+      "away": "Gimnasia La Plata",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793397600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Huracán",
+      "away": "Tigre",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793397600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Racing Club",
+      "away": "Aldosivi",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793405700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Sarmiento (Junín)",
+      "away": "Rosario Central",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793405700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -453,33 +667,21 @@
       "league": "MLS",
       "league_code": "usa.1",
       "kickoff_unix": 1793241000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
         "Pinnacle guest"
       ],
       "verified_quotes": 160,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.1,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.53,
-        "draw": 3.73,
-        "away": 2.98
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
-      "tipsaudit_id": "12147",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -490,33 +692,21 @@
       "league": "MLS",
       "league_code": "usa.1",
       "kickoff_unix": 1793241000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
         "Pinnacle guest"
       ],
       "verified_quotes": 163,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.81,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.75,
-        "draw": 4.39,
-        "away": 4.96
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12146/seattle-sounders-vs-houston-dynamo-2026-10-29",
-      "tipsaudit_id": "12146",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 129,
       "coverage": "verified_price"
@@ -527,25 +717,21 @@
       "league": "MLS",
       "league_code": "usa.1",
       "kickoff_unix": 1793241000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
         "Pinnacle guest"
       ],
       "verified_quotes": 167,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.54,
-        "draw": 5.45,
-        "away": 6.02
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
-      "tipsaudit_id": "12148",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -618,53 +804,11 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Vasco da Gama",
-      "away": "Flamengo",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793314800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Grêmio",
       "away": "Athletico-PR",
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1793320200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Frosinone",
-      "away": "Lecce",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793295000.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
@@ -702,6 +846,69 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "SV Elversberg",
+      "away": "Mainz",
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "kickoff_unix": 1793388600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Nice",
+      "away": "Stade Rennais",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793383200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "CF América",
+      "away": "Tijuana",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793242800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Atletico San Luis",
       "away": "Atlas",
       "kickoff_unix": 1793408400.0,
@@ -719,20 +926,146 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "FC Juarez",
-      "away": "Club Queretaro",
+      "home": "Atlético de San Luis",
+      "away": "Atlas",
+      "league": "Liga MX",
+      "league_code": "mex.1",
       "kickoff_unix": 1793408400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Juárez",
+      "away": "Querétaro",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793408400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
+      "tipsaudit_id": "12533",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Puebla",
+      "away": "U.N.A.M. - Pumas",
+      "kickoff_unix": 1793415600.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
-      "tipsaudit_id": "12533",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
+      "tipsaudit_id": "12535",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
       ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Estudiantes de Río Cuarto",
+      "away": "Gimnasia La Plata",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793397600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Huracán",
+      "away": "Tigre",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793397600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Racing Club",
+      "away": "Aldosivi",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793405700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Sarmiento (Junín)",
+      "away": "Rosario Central",
+      "league": "Liga Profesional Argentina",
+      "league_code": "arg.1",
+      "kickoff_unix": 1793405700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
