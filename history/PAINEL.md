@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T11:52:29.898914+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T13:04:04.167754+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -62,7 +62,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-29 | Örgryte × Mjällby | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Kalmar FF × GAIS | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Fiorentina × Atalanta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-29 | Frosinone × Lecce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Frosinone × Lecce | 0-0 | 0 | Match Odds 1X2: Casa 1,67, Empate 4,10, Fora 4,30 |
 | 2026-10-29 | Dečić Tuzi × Otrant | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Sutjeska × Jezero | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Nk Brinje Grosuplje × NK Bravo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -87,7 +87,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-29 | Braga × Famalicão | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Modern Sport FC × Al Ahly SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Pyramids FC × Wadi Degla FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-29 | Pamba Jiji × Singida Black Stars | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Pamba Jiji × Singida Black Stars | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Fountain Gate FC × Simba SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | TRA United × Geita Gold FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Namungo FC × Polisi Tanzania FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -99,11 +99,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-29 | CS Sfaxien × Espérance | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Stade Tunisien × Zarzis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Adelaide United × Lion City Sailors FC | 0-2 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 5.0×10.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×1.0 |
-| 2026-10-29 | Tai Po × BG Pathum United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Tai Po × BG Pathum United | 0-3 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-29 | Tampines Rovers FC × Svay Rieng | 1-5 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 2.0×4.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×2.0 |
-| 2026-10-29 | Shanghai Shenhua × Machida Zelvia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Shanghai Shenhua × Machida Zelvia | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×3.0, Escanteios: 1.0×5.0, Grandes chances: 0.0×1.0 |
 | 2026-10-29 | Gangwon FC × Kuching City | 1-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-10-29 | Phnom Penh × Kitchee | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Phnom Penh × Kitchee | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 6.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×1.0 |
 | 2026-10-29 | Concordia Chiajna × Sepsi OSK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Gloria Bistrița × FCSB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | FC Voluntari × Universitatea Craiova | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -117,7 +117,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-29 | Austria Lustenau × Sturm Graz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Everton × Newcastle United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Chrobry Głogów × Polonia Bytom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-29 | Avia Świdnik × Radomiak Radom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Avia Świdnik × Radomiak Radom | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Arka Gdynia × Stal Rzeszów | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Polonia Warszawa × Korona Kielce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Odra Opole × Śląsk Wrocław | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -127,7 +127,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-10-29 | Canberra Croatia × South Melbourne | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Zorya × Kryvbas | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Karpaty × FC Oleksandriya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-29 | Aarhus Fremad × FC København | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-29 | Aarhus Fremad × FC København | 0-1 | 33 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-29 | FC Midtjylland × OB | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Kozakken Boys × FC Utrecht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | GVVV Veenendaal × Noordwijk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8260 | **Jogos distintos:** 2392 | **Resultados verificáveis:** 4727 | **Com gol:** 1790 | **Sem gol:** 2937 | **Taxa observada:** 37.9%.
-**Evolução da amostra:** 21 datas com coletas | 57 pendentes | 1518 indeterminados | 1958 incompletos.
+**Observações:** 8263 | **Jogos distintos:** 2394 | **Resultados verificáveis:** 4728 | **Com gol:** 1790 | **Sem gol:** 2938 | **Taxa observada:** 37.9%.
+**Evolução da amostra:** 21 datas com coletas | 58 pendentes | 1519 indeterminados | 1958 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,9 +177,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1664 | 1142 | 451 | 691 | 39.5% |
-| ⚡ pressao_ofensiva_18 | 1295 | 870 | 306 | 564 | 35.2% |
+| ⚡ pressao_ofensiva_18 | 1296 | 870 | 306 | 564 | 35.2% |
 | 🎯 chutes_no_alvo_5 | 1342 | 662 | 238 | 424 | 36.0% |
-| 🟥 expulsao_confirmada | 1242 | 577 | 201 | 376 | 34.8% |
+| 🟥 expulsao_confirmada | 1244 | 578 | 201 | 377 | 34.8% |
 | 🚩 escanteios_6 | 994 | 475 | 194 | 281 | 40.8% |
 | 💣 grandes_chances_3 | 800 | 436 | 185 | 251 | 42.4% |
 | 🔥 pressao_forte_10min | 447 | 291 | 109 | 182 | 37.5% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 392 | 235 | 69 | 166 | 29.4% |
+| Premier League | 393 | 236 | 69 | 167 | 29.2% |
 | Major League Soccer | 328 | 171 | 77 | 94 | 45.0% |
 | J. League | 232 | 149 | 68 | 81 | 45.6% |
 | Serie B | 197 | 138 | 52 | 86 | 37.7% |
@@ -253,22 +253,25 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 238 | 170 | 53 | 117 | 31.2% |
 | 16–30′ | 576 | 442 | 147 | 295 | 33.3% |
-| 31–45′ | 1672 | 1313 | 537 | 776 | 40.9% |
+| 31–45′ | 1674 | 1314 | 537 | 777 | 40.9% |
 | 46–60′ | 1103 | 795 | 306 | 489 | 38.5% |
-| 61–75′ | 1717 | 1190 | 440 | 750 | 37.0% |
+| 61–75′ | 1718 | 1190 | 440 | 750 | 37.0% |
 | 76–90′ | 2227 | 809 | 304 | 505 | 37.6% |
 | 91+′ | 727 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8260 | **Jogos monitorados:** 782 | **Ao vivo:** 44 | **Termômetros recentes:** 9.
+**Registros:** 8263 | **Jogos monitorados:** 782 | **Ao vivo:** 49 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-29T11:52:52.683933+00:00 | Pamba Jiji × Singida Black Stars | Pamba Jiji (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-29T13:04:21.707369+00:00 | KF Tirana × FC Dinamo City | FC Dinamo City (32') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-29T13:04:21.707369+00:00 | Aarhus Fremad × FC København | FC København (32') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-29T12:25:34.743560+00:00 | Pamba Jiji × Singida Black Stars | Pamba Jiji (64') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-29T11:52:52.683933+00:00 | Pamba Jiji × Singida Black Stars | Pamba Jiji (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-29T10:55:14.989793+00:00 | Tampines Rovers FC × Svay Rieng | Svay Rieng (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-29T08:59:52.219040+00:00 | Adelaide United × Lion City Sailors FC | Lion City Sailors FC (58') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-29T04:54:58.104687+00:00 | CF América × Tijuana | Tijuana (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -365,13 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-28T23:58:49.165970+00:00 | New York City FC × Atlanta United | Atlanta United (18') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-28T23:58:49.165970+00:00 | New York City FC × Atlanta United | Atlanta United (18') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-28T23:58:49.165970+00:00 | Fluminense × Internacional | Fluminense (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-28T23:58:49.165970+00:00 | Santos × Palmeiras | Palmeiras (68') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-28T23:58:49.165970+00:00 | RB Bragantino × Chapecoense | RB Bragantino (70') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-28T23:58:49.165970+00:00 | Luqueño × Recoleta | Luqueño (70') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **75**.
+Jogos com odds registradas nos ultimos dias: **76**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
