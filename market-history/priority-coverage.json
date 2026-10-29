@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T12:14:48.948414+00:00",
+  "checked_at": "2026-10-29T13:15:28.382392+00:00",
   "horizon_hours": 48,
-  "important_games": 23,
+  "important_games": 24,
   "verified_bookmaker_games": 12,
-  "indicative_only_games": 1,
+  "indicative_only_games": 2,
   "missing_bookmaker_price_games": 10,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
@@ -12,8 +12,8 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 4,
-    "indicative": 5,
-    "new_priority": 4
+    "indicative": 6,
+    "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -270,6 +270,36 @@
       "coverage": "verified_price"
     },
     {
+      "home": "Levante",
+      "away": "Atletico Madrid",
+      "kickoff_unix": 1793451600.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.65,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 5.43,
+        "draw": 5.15,
+        "away": 1.61
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12878/levante-vs-atletico-madrid-2026-10-31",
+      "tipsaudit_id": "12878",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
       "home": "Frosinone",
       "away": "Lecce",
       "league": "Serie A Itália",
@@ -279,7 +309,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
