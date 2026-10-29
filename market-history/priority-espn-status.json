@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T22:13:36.348760+00:00",
+  "checked_at": "2026-10-29T22:54:00.579584+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 18,
@@ -10,6 +10,12 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Atlético-MG x Cruzeiro",
+      "league": "bra.1",
+      "kickoff": 1793313000,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Le Havre AC x Paris Saint-Germain",
       "league": "fra.1",
