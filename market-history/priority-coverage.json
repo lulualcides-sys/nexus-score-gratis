@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T14:26:50.631912+00:00",
+  "checked_at": "2026-10-29T15:24:19.424784+00:00",
   "horizon_hours": 48,
-  "important_games": 24,
+  "important_games": 30,
   "verified_bookmaker_games": 11,
-  "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 8,
+  "indicative_only_games": 6,
+  "missing_bookmaker_price_games": 13,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 4,
-    "indicative": 6,
-    "new_priority": 5
+    "indicative": 7,
+    "new_priority": 11
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -259,8 +259,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.59,
-        "away": 7.77
+        "draw": 5.61,
+        "away": 7.76
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -300,6 +300,28 @@
       "coverage": "verified_price"
     },
     {
+      "home": "Rayo Vallecano",
+      "away": "Celta Vigo",
+      "kickoff_unix": 1793459700.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.52,
+        "draw": 3.44,
+        "away": 3.2
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12943/rayo-vallecano-vs-celta-vigo-2026-10-31",
+      "tipsaudit_id": "12943",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Frosinone",
       "away": "Lecce",
       "league": "Serie A Itália",
@@ -310,7 +332,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 152,
+      "verified_quotes": 156,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -334,7 +356,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 144,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -393,6 +415,124 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
       "tipsaudit_id": "12512",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Bayer Leverkusen",
+      "away": "VfB Stuttgart",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.88,
+        "draw": 4.65,
+        "away": 3.95
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12899/bayer-leverkusen-vs-vfb-stuttgart-2026-10-31",
+      "tipsaudit_id": "12899",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Borussia Mönchengladbach",
+      "away": "SC Paderborn 07",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.07,
+        "draw": 4.16,
+        "away": 3.62
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12901/borussia-monchengladbach-vs-sc-paderborn-07-2026-10-31",
+      "tipsaudit_id": "12901",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Augsburg",
+      "away": "SC Freiburg",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 3.23,
+        "draw": 4.01,
+        "away": 2.27
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12900/fc-augsburg-vs-sc-freiburg-2026-10-31",
+      "tipsaudit_id": "12900",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Schalke 04",
+      "away": "RB Leipzig",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 4.55,
+        "draw": 4.06,
+        "away": 1.87
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
+      "tipsaudit_id": "12903",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Werder Bremen",
+      "away": "1899 Hoffenheim",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 3.05,
+          "bookmaker": "Unibet (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 3.0,
+        "draw": 4.2,
+        "away": 2.33
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12902/werder-bremen-vs-1899-hoffenheim-2026-10-31",
+      "tipsaudit_id": "12902",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
@@ -773,6 +913,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Rayo Vallecano",
+      "away": "Celta Vigo",
+      "kickoff_unix": 1793459700.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12943/rayo-vallecano-vs-celta-vigo-2026-10-31",
+      "tipsaudit_id": "12943",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "SV Elversberg",
       "away": "Mainz",
       "league": "Bundesliga",
@@ -791,6 +948,74 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Bayer Leverkusen",
+      "away": "VfB Stuttgart",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12899/bayer-leverkusen-vs-vfb-stuttgart-2026-10-31",
+      "tipsaudit_id": "12899",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Borussia Mönchengladbach",
+      "away": "SC Paderborn 07",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12901/borussia-monchengladbach-vs-sc-paderborn-07-2026-10-31",
+      "tipsaudit_id": "12901",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Augsburg",
+      "away": "SC Freiburg",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12900/fc-augsburg-vs-sc-freiburg-2026-10-31",
+      "tipsaudit_id": "12900",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Schalke 04",
+      "away": "RB Leipzig",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
+      "tipsaudit_id": "12903",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
