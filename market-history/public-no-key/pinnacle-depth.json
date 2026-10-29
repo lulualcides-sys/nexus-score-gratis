@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T04:02:35.628957+00:00",
-  "bookmaker_snapshot_at": "2026-10-29T04:02:34.202453+00:00",
+  "checked_at": "2026-10-29T07:19:26.511688+00:00",
+  "bookmaker_snapshot_at": "2026-10-29T07:19:25.581426+00:00",
   "status": "fresh",
-  "matches_catalogued": 7,
-  "matches_with_priced_markets": 7,
-  "odds_eligible_for_quality": 644,
+  "matches_catalogued": 2,
+  "matches_with_priced_markets": 2,
+  "odds_eligible_for_quality": 144,
   "invalid_quote_records": 0,
-  "complete_market_lines": 315,
+  "complete_market_lines": 70,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 7,
-      "odds": 142,
-      "complete_lines": 71,
+      "games": 2,
+      "odds": 36,
+      "complete_lines": 18,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.64
+      "median_overround_pct": 4.58
     },
     "first_half_goals": {
-      "games": 7,
-      "odds": 100,
-      "complete_lines": 50,
+      "games": 2,
+      "odds": 20,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.89
+      "median_overround_pct": 6.17
     },
     "first_half_handicap": {
-      "games": 7,
-      "odds": 80,
-      "complete_lines": 40,
+      "games": 2,
+      "odds": 20,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.15
+      "median_overround_pct": 5.29
     },
     "first_half_team_goals": {
-      "games": 7,
-      "odds": 28,
-      "complete_lines": 14,
+      "games": 2,
+      "odds": 8,
+      "complete_lines": 4,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.34
+      "median_overround_pct": 6.12
     },
     "half_time": {
-      "games": 7,
-      "odds": 21,
-      "complete_lines": 7,
+      "games": 2,
+      "odds": 6,
+      "complete_lines": 2,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.27
+      "median_overround_pct": 5.51
     },
     "match_odds": {
-      "games": 7,
-      "odds": 21,
-      "complete_lines": 7,
+      "games": 2,
+      "odds": 6,
+      "complete_lines": 2,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.84
+      "median_overround_pct": 5.09
     },
     "team_goals": {
-      "games": 7,
-      "odds": 78,
-      "complete_lines": 39,
+      "games": 2,
+      "odds": 18,
+      "complete_lines": 9,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.25
+      "median_overround_pct": 6.29
     },
     "total_goals": {
-      "games": 7,
-      "odds": 174,
-      "complete_lines": 87,
+      "games": 2,
+      "odds": 30,
+      "complete_lines": 15,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.66
+      "median_overround_pct": 4.96
     }
   },
   "examples": [
     {
-      "fixture": "Fiorentina x Atalanta",
+      "fixture": "Kashiwa Reysol x Urawa Red Diamonds",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-29T04:02:34.202453+00:00",
+      "observed_at": "2026-10-29T07:19:25.581426+00:00",
       "selections": {
-        "home": 2.31,
-        "away": 3.06,
-        "draw": 3.66
+        "home": 2.12,
+        "away": 3.16,
+        "draw": 3.8
       },
-      "overround_pct": 3.29
+      "overround_pct": 5.13
     },
     {
-      "fixture": "Fiorentina x Atalanta",
+      "fixture": "Kashiwa Reysol x Urawa Red Diamonds",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-29T04:02:34.202453+00:00",
+      "observed_at": "2026-10-29T07:19:25.581426+00:00",
       "selections": {
-        "home": 2.01,
-        "away": 1.8929
+        "home": 1.8696,
+        "away": 1.9901
       },
-      "overround_pct": 2.58
+      "overround_pct": 3.74
     },
     {
-      "fixture": "Fiorentina x Atalanta",
+      "fixture": "Kashiwa Reysol x Urawa Red Diamonds",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-29T04:02:34.202453+00:00",
+      "observed_at": "2026-10-29T07:19:25.581426+00:00",
       "selections": {
-        "home": 3.89,
-        "away": 1.2841
+        "home": 3.48,
+        "away": 1.3125
       },
-      "overround_pct": 3.58
+      "overround_pct": 4.93
     },
     {
-      "fixture": "Fiorentina x Atalanta",
+      "fixture": "Kashiwa Reysol x Urawa Red Diamonds",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-29T04:02:34.202453+00:00",
+      "observed_at": "2026-10-29T07:19:25.581426+00:00",
       "selections": {
-        "home": 3.47,
-        "away": 1.3367
+        "home": 3.09,
+        "away": 1.3774
       },
-      "overround_pct": 3.63
+      "overround_pct": 4.96
     },
     {
-      "fixture": "Fiorentina x Atalanta",
+      "fixture": "Kashiwa Reysol x Urawa Red Diamonds",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-29T04:02:34.202453+00:00",
+      "observed_at": "2026-10-29T07:19:25.581426+00:00",
       "selections": {
-        "home": 2.72,
-        "away": 1.5076
+        "home": 2.47,
+        "away": 1.5618
       },
-      "overround_pct": 3.1
+      "overround_pct": 4.51
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
