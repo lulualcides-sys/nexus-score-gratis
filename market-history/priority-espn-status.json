@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T17:23:49.073810+00:00",
+  "checked_at": "2026-10-29T18:16:17.947609+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
-  "created_games": 0,
+  "priority_fixtures_seen": 17,
+  "created_games": 1,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Vasco da Gama x Flamengo",
-      "league": "bra.1",
-      "kickoff": 1793314800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Le Havre AC x Paris Saint-Germain",
       "league": "fra.1",
@@ -44,6 +38,36 @@
       "fixture": "Villarreal x Espanyol",
       "league": "esp.1",
       "kickoff": 1793390400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Estudiantes de Río Cuarto x Gimnasia La Plata",
+      "league": "arg.1",
+      "kickoff": 1793397600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Huracán x Tigre",
+      "league": "arg.1",
+      "kickoff": 1793397600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Racing Club x Aldosivi",
+      "league": "arg.1",
+      "kickoff": 1793405700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sarmiento (Junín) x Rosario Central",
+      "league": "arg.1",
+      "kickoff": 1793405700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Casa Pia x Sporting CP",
+      "league": "por.1",
+      "kickoff": 1793391300,
       "reason": "no_verified_public_1x2"
     }
   ],
