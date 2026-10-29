@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T10:22:36.944895+00:00",
+  "checked_at": "2026-10-29T11:16:47.059173+00:00",
   "horizon_hours": 48,
   "important_games": 23,
   "verified_bookmaker_games": 12,
@@ -391,7 +391,7 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.56,
+        "home": 12.58,
         "draw": 8.38,
         "away": 1.25
       },
