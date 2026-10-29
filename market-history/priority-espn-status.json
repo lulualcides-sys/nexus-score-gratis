@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T15:24:14.116149+00:00",
+  "checked_at": "2026-10-29T16:25:52.097311+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
+  "priority_fixtures_seen": 12,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -35,21 +35,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Corinthians x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1793401200,
+      "fixture": "SV Elversberg x Mainz",
+      "league": "ger.1",
+      "kickoff": 1793388600,
       "reason": "no_verified_public_1x2"
     },
     {
       "fixture": "Villarreal x Espanyol",
       "league": "esp.1",
       "kickoff": 1793390400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SV Elversberg x Mainz",
-      "league": "ger.1",
-      "kickoff": 1793388600,
       "reason": "no_verified_public_1x2"
     }
   ],
