@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T08:08:04.088889+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T08:59:33.093424+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -98,7 +98,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-10-29 | Club Africain × CA Bizertin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | CS Sfaxien × Espérance | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Stade Tunisien × Zarzis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-29 | Adelaide United × Lion City Sailors FC | 0-0 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 0.0×3.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-29 | Adelaide United × Lion City Sailors FC | 0-0 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 4.0×6.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-10-29 | Tai Po × BG Pathum United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Tampines Rovers FC × Svay Rieng | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-29 | Shanghai Shenhua × Machida Zelvia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8257 | **Jogos distintos:** 2389 | **Resultados verificáveis:** 4726 | **Com gol:** 1790 | **Sem gol:** 2936 | **Taxa observada:** 37.9%.
-**Evolução da amostra:** 21 datas com coletas | 56 pendentes | 1517 indeterminados | 1958 incompletos.
+**Observações:** 8258 | **Jogos distintos:** 2390 | **Resultados verificáveis:** 4726 | **Com gol:** 1790 | **Sem gol:** 2936 | **Taxa observada:** 37.9%.
+**Evolução da amostra:** 21 datas com coletas | 57 pendentes | 1517 indeterminados | 1958 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,7 +178,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1664 | 1142 | 451 | 691 | 39.5% |
 | ⚡ pressao_ofensiva_18 | 1295 | 870 | 306 | 564 | 35.2% |
-| 🎯 chutes_no_alvo_5 | 1340 | 661 | 238 | 423 | 36.0% |
+| 🎯 chutes_no_alvo_5 | 1341 | 661 | 238 | 423 | 36.0% |
 | 🟥 expulsao_confirmada | 1241 | 577 | 201 | 376 | 34.8% |
 | 🚩 escanteios_6 | 994 | 475 | 194 | 281 | 40.8% |
 | 💣 grandes_chances_3 | 800 | 436 | 185 | 251 | 42.4% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 238 | 170 | 53 | 117 | 31.2% |
 | 16–30′ | 576 | 442 | 147 | 295 | 33.3% |
 | 31–45′ | 1670 | 1312 | 537 | 775 | 40.9% |
-| 46–60′ | 1102 | 795 | 306 | 489 | 38.5% |
+| 46–60′ | 1103 | 795 | 306 | 489 | 38.5% |
 | 61–75′ | 1717 | 1190 | 440 | 750 | 37.0% |
 | 76–90′ | 2227 | 809 | 304 | 505 | 37.6% |
 | 91+′ | 727 | 8 | 3 | 5 | 37.5% |
@@ -262,12 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8257 | **Jogos monitorados:** 782 | **Ao vivo:** 40 | **Termômetros recentes:** 9.
+**Registros:** 8258 | **Jogos monitorados:** 782 | **Ao vivo:** 41 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-29T08:59:52.219040+00:00 | Adelaide United × Lion City Sailors FC | Lion City Sailors FC (58') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-29T04:54:58.104687+00:00 | CF América × Tijuana | Tijuana (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | Once Caldas × Alianza FC | Once Caldas (71') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | CF América × Tijuana | CF América (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-28T23:58:49.165970+00:00 | Luqueño × Recoleta | Luqueño (70') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-28T23:44:51.061937+00:00 | Red Bull Bragantino × Chapecoense | Red Bull Bragantino (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-28T23:44:51.061937+00:00 | Once Caldas × Alianza FC | Once Caldas (44') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-28T23:27:05.643698+00:00 | Fluminense × Internacional | Fluminense (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
