@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T13:18:56.245961+00:00",
-  "bookmaker_snapshot_at": "2026-10-29T13:18:54.436132+00:00",
+  "checked_at": "2026-10-29T16:09:51.974450+00:00",
+  "bookmaker_snapshot_at": "2026-10-29T16:09:50.791525+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1312,
+  "matches_catalogued": 5,
+  "matches_with_priced_markets": 5,
+  "odds_eligible_for_quality": 538,
   "invalid_quote_records": 0,
-  "complete_market_lines": 640,
+  "complete_market_lines": 264,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 308,
-      "complete_lines": 154,
+      "games": 5,
+      "odds": 120,
+      "complete_lines": 60,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.44
+      "median_overround_pct": 3.8
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "games": 5,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.13
+      "median_overround_pct": 5.76
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 168,
-      "complete_lines": 84,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.99
-    },
-    "first_half_team_goals": {
-      "games": 16,
+      "games": 5,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.07
+      "median_overround_pct": 4.23
+    },
+    "first_half_team_goals": {
+      "games": 5,
+      "odds": 20,
+      "complete_lines": 10,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.29
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.54
+      "median_overround_pct": 4.27
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.71
+      "median_overround_pct": 3.8
     },
     "team_goals": {
-      "games": 16,
-      "odds": 158,
-      "complete_lines": 79,
+      "games": 5,
+      "odds": 68,
+      "complete_lines": 34,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.57
+      "median_overround_pct": 5.48
     },
     "total_goals": {
-      "games": 16,
-      "odds": 328,
-      "complete_lines": 164,
+      "games": 5,
+      "odds": 156,
+      "complete_lines": 78,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.98
+      "median_overround_pct": 4.99
     }
   },
   "examples": [
     {
-      "fixture": "Racing Club x Aldosivi",
+      "fixture": "Le Havre x Paris Saint-Germain",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-29T13:18:54.436132+00:00",
+      "observed_at": "2026-10-29T16:09:50.791525+00:00",
       "selections": {
-        "home": 1.6623,
-        "away": 5.27,
-        "draw": 3.8
+        "home": 10.64,
+        "away": 1.2309,
+        "draw": 7.28
       },
-      "overround_pct": 5.45
+      "overround_pct": 4.38
     },
     {
-      "fixture": "Racing Club x Aldosivi",
+      "fixture": "Le Havre x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-29T13:18:54.436132+00:00",
+      "raw_market_key": "s;0;s;2.0",
+      "line_from_market_key": "s;0;s;2.0",
+      "observed_at": "2026-10-29T16:09:50.791525+00:00",
       "selections": {
-        "home": 1.8772,
-        "away": 1.9901
+        "home": 1.8475,
+        "away": 2.05
       },
-      "overround_pct": 3.52
+      "overround_pct": 2.91
     },
     {
-      "fixture": "Racing Club x Aldosivi",
+      "fixture": "Le Havre x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-29T13:18:54.436132+00:00",
+      "raw_market_key": "s;0;s;1.0",
+      "line_from_market_key": "s;0;s;1.0",
+      "observed_at": "2026-10-29T16:09:50.791525+00:00",
       "selections": {
-        "home": 3.73,
-        "away": 1.2882
+        "home": 3.58,
+        "away": 1.3021
       },
-      "overround_pct": 4.44
+      "overround_pct": 4.73
     },
     {
-      "fixture": "Racing Club x Aldosivi",
+      "fixture": "Le Havre x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-29T13:18:54.436132+00:00",
+      "raw_market_key": "s;0;s;1.25",
+      "line_from_market_key": "s;0;s;1.25",
+      "observed_at": "2026-10-29T16:09:50.791525+00:00",
       "selections": {
-        "home": 2.98,
-        "away": 1.4098
+        "home": 2.74,
+        "away": 1.4651
       },
-      "overround_pct": 4.49
+      "overround_pct": 4.75
     },
     {
-      "fixture": "Racing Club x Aldosivi",
+      "fixture": "Le Havre x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-29T13:18:54.436132+00:00",
+      "raw_market_key": "s;0;s;1.5",
+      "line_from_market_key": "s;0;s;1.5",
+      "observed_at": "2026-10-29T16:09:50.791525+00:00",
       "selections": {
-        "home": 2.61,
-        "away": 1.5181
+        "home": 2.31,
+        "away": 1.6289
       },
-      "overround_pct": 4.19
+      "overround_pct": 4.68
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
