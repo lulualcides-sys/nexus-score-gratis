@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T19:27:22.076872+00:00",
+  "checked_at": "2026-10-29T20:15:46.958432+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 18,
@@ -74,6 +74,18 @@
       "fixture": "Corinthians x Mirassol",
       "league": "bra.1",
       "kickoff": 1793401200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético de San Luis x Atlas",
+      "league": "mex.1",
+      "kickoff": 1793408400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Juárez x Querétaro",
+      "league": "mex.1",
+      "kickoff": 1793408400,
       "reason": "no_verified_public_1x2"
     }
   ],
