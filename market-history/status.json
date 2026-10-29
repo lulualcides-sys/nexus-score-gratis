@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "collected_at": "2026-10-29T13:15:25+00:00",
-  "nexus_exported_at": "2026-10-29T13:04:35.001851+00:00",
+  "collected_at": "2026-10-29T14:26:48+00:00",
+  "nexus_exported_at": "2026-10-29T14:23:06.961098+00:00",
   "games_in_feed": 662,
   "live_games_in_feed": 30,
-  "finished_games_in_feed": 500,
-  "new_observations": 18,
-  "quotes_observed": 1526,
+  "finished_games_in_feed": 507,
+  "new_observations": 21,
+  "quotes_observed": 1544,
   "market_families": {
     "match_odds": {
-      "prices_observed": 1466,
+      "prices_observed": 1484,
       "status": "odds_observed"
     },
     "double_chance": {
@@ -121,7 +121,7 @@
     "over_under_25": 14,
     "ah_m05": 6,
     "ah_m1": 6,
-    "1x2": 1466,
+    "1x2": 1484,
     "over_under_15": 8,
     "ah_p05": 4,
     "btts": 10,
