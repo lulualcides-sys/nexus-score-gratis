@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T08:24:00.310100+00:00",
+  "checked_at": "2026-10-29T09:23:31.583514+00:00",
   "horizon_hours": 48,
   "important_games": 23,
   "verified_bookmaker_games": 7,
@@ -209,7 +209,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.5,
+          "price": 1.49,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -339,15 +339,15 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 1.26,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 1.27,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.54,
-        "draw": 8.35,
+        "home": 12.56,
+        "draw": 8.38,
         "away": 1.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
