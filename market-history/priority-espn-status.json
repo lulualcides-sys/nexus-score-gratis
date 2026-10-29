@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T04:18:55.868370+00:00",
+  "checked_at": "2026-10-29T05:17:54.733491+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
-  "created_games": 2,
+  "priority_fixtures_seen": 9,
+  "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -44,30 +44,6 @@
       "fixture": "Villarreal x Espanyol",
       "league": "esp.1",
       "kickoff": 1793390400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SV Elversberg x Mainz",
-      "league": "ger.1",
-      "kickoff": 1793388600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Le Havre AC x Paris Saint-Germain",
-      "league": "fra.1",
-      "kickoff": 1793383200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Nice x Stade Rennais",
-      "league": "fra.1",
-      "kickoff": 1793383200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lille x Lens",
-      "league": "fra.1",
-      "kickoff": 1793390700,
       "reason": "no_verified_public_1x2"
     }
   ],

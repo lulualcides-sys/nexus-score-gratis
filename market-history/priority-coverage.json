@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T04:18:59.855044+00:00",
+  "checked_at": "2026-10-29T05:17:59.730394+00:00",
   "horizon_hours": 48,
   "important_games": 23,
   "verified_bookmaker_games": 11,
@@ -544,9 +544,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.24,
-        "draw": 3.77,
-        "away": 2.35
+        "home": 3.29,
+        "draw": 3.78,
+        "away": 2.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
       "tipsaudit_id": "12535",
