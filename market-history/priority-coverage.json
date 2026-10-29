@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T11:16:47.059173+00:00",
+  "checked_at": "2026-10-29T12:14:48.948414+00:00",
   "horizon_hours": 48,
   "important_games": 23,
   "verified_bookmaker_games": 12,
@@ -279,7 +279,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -353,9 +353,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.29,
-        "draw": 4.12,
-        "away": 2.2
+        "home": 3.21,
+        "draw": 4.11,
+        "away": 2.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
       "tipsaudit_id": "12512",
@@ -441,9 +441,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.87,
+        "home": 2.93,
         "draw": 4.01,
-        "away": 2.49
+        "away": 2.45
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12982/nice-vs-rennes-2026-10-30",
       "tipsaudit_id": "12982",
@@ -552,9 +552,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.13,
-        "draw": 3.76,
-        "away": 2.41
+        "home": 3.14,
+        "draw": 3.72,
+        "away": 2.42
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
       "tipsaudit_id": "12533",
