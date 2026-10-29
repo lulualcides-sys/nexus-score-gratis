@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T06:14:47.064950+00:00",
+  "checked_at": "2026-10-29T07:16:48.129460+00:00",
   "horizon_hours": 48,
   "important_games": 23,
   "verified_bookmaker_games": 11,
@@ -526,8 +526,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.13,
-        "draw": 3.81,
-        "away": 2.39
+        "draw": 3.76,
+        "away": 2.41
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
       "tipsaudit_id": "12533",
@@ -544,9 +544,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.29,
-        "draw": 3.78,
-        "away": 2.32
+        "home": 3.3,
+        "draw": 3.74,
+        "away": 2.33
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
       "tipsaudit_id": "12535",
