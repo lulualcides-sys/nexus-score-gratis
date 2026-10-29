@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T20:15:51.808743+00:00",
+  "checked_at": "2026-10-29T21:16:50.414640+00:00",
   "horizon_hours": 48,
-  "important_games": 46,
-  "verified_bookmaker_games": 11,
-  "indicative_only_games": 17,
+  "important_games": 47,
+  "verified_bookmaker_games": 10,
+  "indicative_only_games": 19,
   "missing_bookmaker_price_games": 18,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 4,
-    "indicative": 18,
-    "new_priority": 27
+    "indicative": 20,
+    "new_priority": 29
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -175,7 +175,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 25,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -197,7 +197,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -330,8 +330,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.4,
-          "bookmaker": "Unibet (SE)",
+          "price": 1.39,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -378,28 +378,6 @@
         "TipsAudit"
       ],
       "coverage": "indicative_only"
-    },
-    {
-      "home": "Fiorentina",
-      "away": "Atalanta",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793303100.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 24,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "SV Elversberg",
@@ -464,8 +442,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.87,
-        "draw": 4.66,
-        "away": 4.01
+        "draw": 4.63,
+        "away": 4.02
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12899/bayer-leverkusen-vs-vfb-stuttgart-2026-10-31",
       "tipsaudit_id": "12899",
@@ -628,8 +606,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 11.1,
-        "draw": 7.82,
+        "home": 11.19,
+        "draw": 7.74,
         "away": 1.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
@@ -704,15 +682,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.9,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.68,
         "draw": 3.62,
@@ -721,7 +691,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Estac Troyes",
@@ -1063,15 +1033,15 @@
         {
           "selection": "home",
           "price": 1.5,
-          "bookmaker": "LeoVegas (SE)",
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.46,
-        "draw": 5.48,
-        "away": 7.63
+        "home": 1.44,
+        "draw": 5.63,
+        "away": 7.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13019/new-york-city-fc-vs-cf-montreal-2026-10-31",
       "tipsaudit_id": "13019",
@@ -1134,6 +1104,66 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Los Angeles Galaxy",
+      "away": "Austin",
+      "kickoff_unix": 1793480400.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.56,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.51,
+        "draw": 5.58,
+        "away": 6.3
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13068/los-angeles-galaxy-vs-austin-2026-10-31",
+      "tipsaudit_id": "13068",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "San Jose Earthquakes",
+      "away": "Real Salt Lake",
+      "kickoff_unix": 1793480400.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.95,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.42,
+        "draw": 4.2,
+        "away": 2.87
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13067/san-jose-earthquakes-vs-real-salt-lake-2026-10-31",
+      "tipsaudit_id": "13067",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
       "home": "Casa Pia",
       "away": "Sporting CP",
       "league": "Liga Portugal",
@@ -1185,7 +1215,15 @@
       "league_code": "ned.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.18,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
         "home": 2.16,
         "draw": 4.18,
@@ -1197,7 +1235,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "PSV Eindhoven",
@@ -1291,7 +1329,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 26,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1313,7 +1351,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1455,6 +1493,27 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Lille",
+      "away": "Lens",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793390700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
+      "tipsaudit_id": "12522",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -1625,23 +1684,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12950/feyenoord-vs-fortuna-sittard-2026-10-31",
       "tipsaudit_id": "12950",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Heerenveen",
-      "away": "NEC Nijmegen",
-      "kickoff_unix": 1793468700.0,
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
-      "tipsaudit_id": "13009",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
