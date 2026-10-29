@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T05:17:54.733491+00:00",
+  "checked_at": "2026-10-29T06:14:44.794101+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 9,
+  "priority_fixtures_seen": 7,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -32,18 +32,6 @@
       "fixture": "Vasco da Gama x Flamengo",
       "league": "bra.1",
       "kickoff": 1793314800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Corinthians x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1793401200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Villarreal x Espanyol",
-      "league": "esp.1",
-      "kickoff": 1793390400,
       "reason": "no_verified_public_1x2"
     }
   ],
