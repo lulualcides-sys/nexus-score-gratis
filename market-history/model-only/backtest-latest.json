@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-10-29T00:19:53.467052+00:00",
+  "evaluated_at": "2026-10-29T01:33:08.034036+00:00",
   "status": "insufficient_backtest_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 575,
+  "historical_matches_available": 579,
   "historical_fixtures_tested": 37,
   "leagues_tested": 4,
   "leagues_samples": {

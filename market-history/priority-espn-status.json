@@ -1,39 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T00:19:48.370026+00:00",
+  "checked_at": "2026-10-29T01:33:02.929580+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 28,
+  "priority_fixtures_seen": 21,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Fluminense x Internacional",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Santos x Palmeiras",
-      "league": "bra.1",
-      "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Once Caldas x Alianza FC",
-      "league": "col.1",
-      "kickoff": 1793228400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Internacional de Bogotá x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1793235900,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Frosinone x Lecce",
       "league": "ita.1",
