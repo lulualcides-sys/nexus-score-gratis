@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T16:25:55.540422+00:00",
+  "checked_at": "2026-10-29T17:23:51.928637+00:00",
   "horizon_hours": 48,
-  "important_games": 31,
+  "important_games": 32,
   "verified_bookmaker_games": 12,
   "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 15,
+  "missing_bookmaker_price_games": 16,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -13,7 +13,7 @@
     "status": "checked",
     "matched": 4,
     "indicative": 8,
-    "new_priority": 12
+    "new_priority": 13
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -331,7 +331,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 26,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -353,7 +353,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -398,7 +398,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 3.35,
+          "price": 3.3,
           "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -491,15 +491,7 @@
       "league_code": "ger.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.92,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 4.55,
         "draw": 4.06,
@@ -511,7 +503,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Werder Bremen",
@@ -531,9 +523,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.0,
-        "draw": 4.2,
-        "away": 2.33
+        "home": 3.01,
+        "draw": 4.14,
+        "away": 2.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12902/werder-bremen-vs-1899-hoffenheim-2026-10-31",
       "tipsaudit_id": "12902",
@@ -659,9 +651,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.67,
+        "home": 2.66,
         "draw": 3.71,
-        "away": 2.81
+        "away": 2.83
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -850,6 +842,36 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Charlotte",
+      "away": "Orlando City SC",
+      "kickoff_unix": 1793466000.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.93,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.9,
+        "draw": 4.88,
+        "away": 3.71
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13001/charlotte-vs-orlando-city-sc-2026-10-31",
+      "tipsaudit_id": "13001",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
       "home": "Feyenoord",
       "away": "Fortuna Sittard",
       "kickoff_unix": 1793460600.0,
@@ -860,8 +882,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.18,
-        "draw": 10.42,
-        "away": 18.21
+        "draw": 10.41,
+        "away": 18.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12950/feyenoord-vs-fortuna-sittard-2026-10-31",
       "tipsaudit_id": "12950",
@@ -1000,6 +1022,23 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12900/fc-augsburg-vs-sc-freiburg-2026-10-31",
       "tipsaudit_id": "12900",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Schalke 04",
+      "away": "RB Leipzig",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
+      "tipsaudit_id": "12903",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
