@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T23:43:34.462879+00:00",
+  "checked_at": "2026-10-29T00:19:48.370026+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 28,
-  "created_games": 2,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -20,24 +20,6 @@
       "fixture": "Santos x Palmeiras",
       "league": "bra.1",
       "kickoff": 1793226600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "San Jose Earthquakes x Colorado Rapids",
-      "league": "usa.1",
-      "kickoff": 1793241000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Seattle Sounders FC x Houston Dynamo FC",
-      "league": "usa.1",
-      "kickoff": 1793241000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vancouver Whitecaps x San Diego FC",
-      "league": "usa.1",
-      "kickoff": 1793241000,
       "reason": "no_verified_public_1x2"
     },
     {
