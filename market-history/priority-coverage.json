@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T22:54:06.339265+00:00",
+  "checked_at": "2026-10-29T23:25:37.395572+00:00",
   "horizon_hours": 48,
-  "important_games": 47,
+  "important_games": 48,
   "verified_bookmaker_games": 10,
-  "indicative_only_games": 17,
+  "indicative_only_games": 18,
   "missing_bookmaker_price_games": 20,
   "games_with_corners_stats": 1,
   "games_with_yellow_cards_stats": 1,
@@ -12,8 +12,8 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 4,
-    "indicative": 20,
-    "new_priority": 29
+    "indicative": 21,
+    "new_priority": 30
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -175,7 +175,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 37,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -197,7 +197,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 39,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -287,8 +287,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.47,
-        "draw": 5.19,
+        "home": 5.49,
+        "draw": 5.17,
         "away": 1.6
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12878/levante-vs-atletico-madrid-2026-10-31",
@@ -370,8 +370,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.11,
-        "draw": 15.09,
-        "away": 29.22
+        "draw": 15.1,
+        "away": 29.21
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13053/barcelona-vs-alaves-2026-10-31",
       "tipsaudit_id": "13053",
@@ -709,9 +709,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [
         {
-          "selection": "away",
-          "price": 3.2,
-          "bookmaker": "LeoVegas (SE)",
+          "selection": "home",
+          "price": 2.45,
+          "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -831,9 +831,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.3,
-        "draw": 3.74,
-        "away": 2.33
+        "home": 3.46,
+        "draw": 3.84,
+        "away": 2.22
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
       "tipsaudit_id": "12535",
@@ -842,6 +842,36 @@
         "TipsAudit"
       ],
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "CF Pachuca",
+      "away": "Tigres UANL",
+      "kickoff_unix": 1793487600.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.4,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.34,
+        "draw": 3.7,
+        "away": 3.3
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
+      "tipsaudit_id": "13073",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
     },
     {
       "home": "Estudiantes de Río Cuarto",
@@ -1009,9 +1039,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.85,
-        "draw": 4.3,
-        "away": 2.4
+        "home": 2.66,
+        "draw": 4.25,
+        "away": 2.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13022/fc-cincinnati-vs-philadelphia-union-2026-10-31",
       "tipsaudit_id": "13022",
@@ -1329,7 +1359,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 35,
+      "verified_quotes": 39,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1351,7 +1381,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T22:54:00.579584+00:00",
+  "checked_at": "2026-10-29T23:25:33.150979+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 18,
@@ -14,6 +14,12 @@
       "fixture": "Atlético-MG x Cruzeiro",
       "league": "bra.1",
       "kickoff": 1793313000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vasco da Gama x Flamengo",
+      "league": "bra.1",
+      "kickoff": 1793314800,
       "reason": "no_verified_public_1x2"
     },
     {
