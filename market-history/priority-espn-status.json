@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T03:17:16.887563+00:00",
+  "checked_at": "2026-10-29T04:18:55.868370+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
-  "created_games": 10,
+  "priority_fixtures_seen": 13,
+  "created_games": 2,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -35,21 +35,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Grêmio x Athletico-PR",
+      "fixture": "Corinthians x Mirassol",
       "league": "bra.1",
-      "kickoff": 1793320200,
+      "kickoff": 1793401200,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "América de Cali x Fortaleza CEIF",
-      "league": "col.1",
-      "kickoff": 1793315700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Independiente Santa Fe",
-      "league": "col.1",
-      "kickoff": 1793323800,
+      "fixture": "Villarreal x Espanyol",
+      "league": "esp.1",
+      "kickoff": 1793390400,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -74,42 +68,6 @@
       "fixture": "Lille x Lens",
       "league": "fra.1",
       "kickoff": 1793390700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético de San Luis x Atlas",
-      "league": "mex.1",
-      "kickoff": 1793408400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Juárez x Querétaro",
-      "league": "mex.1",
-      "kickoff": 1793408400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Estudiantes de Río Cuarto x Gimnasia La Plata",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Huracán x Tigre",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Racing Club x Aldosivi",
-      "league": "arg.1",
-      "kickoff": 1793405700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sarmiento (Junín) x Rosario Central",
-      "league": "arg.1",
-      "kickoff": 1793405700,
       "reason": "no_verified_public_1x2"
     }
   ],
