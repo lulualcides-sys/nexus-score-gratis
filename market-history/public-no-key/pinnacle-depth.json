@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-28T21:55:52.009828+00:00",
-  "bookmaker_snapshot_at": "2026-10-28T21:55:49.380850+00:00",
+  "checked_at": "2026-10-29T01:18:11.027926+00:00",
+  "bookmaker_snapshot_at": "2026-10-29T01:18:04.419263+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1598,
-  "invalid_quote_records": 0,
-  "complete_market_lines": 783,
+  "odds_eligible_for_quality": 1404,
+  "invalid_quote_records": 2,
+  "complete_market_lines": 686,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 366,
-      "complete_lines": 183,
+      "odds": 330,
+      "complete_lines": 165,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.68
+      "median_overround_pct": 4.46
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 240,
-      "complete_lines": 120,
+      "odds": 208,
+      "complete_lines": 104,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.66
+      "median_overround_pct": 6.11
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "odds": 182,
+      "complete_lines": 91,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.14
+      "median_overround_pct": 5.13
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.27
+      "median_overround_pct": 5.8
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.0
+      "median_overround_pct": 5.25
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.6
+      "median_overround_pct": 4.37
     },
     "team_goals": {
       "games": 16,
-      "odds": 194,
-      "complete_lines": 97,
+      "odds": 170,
+      "complete_lines": 85,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.21
+      "median_overround_pct": 5.32
     },
     "total_goals": {
       "games": 16,
-      "odds": 442,
-      "complete_lines": 221,
+      "odds": 354,
+      "complete_lines": 177,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.66
+      "median_overround_pct": 5.0
     }
   },
   "examples": [
     {
-      "fixture": "New England Revolution x New York Red Bulls",
+      "fixture": "Troyes x Le Mans",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-28T21:55:49.380850+00:00",
+      "observed_at": "2026-10-29T01:18:04.419263+00:00",
       "selections": {
-        "home": 2.15,
-        "away": 3.13,
-        "draw": 4.02
+        "home": 2.37,
+        "away": 3.06,
+        "draw": 3.51
       },
-      "overround_pct": 3.34
+      "overround_pct": 3.36
     },
     {
-      "fixture": "New England Revolution x New York Red Bulls",
+      "fixture": "Troyes x Le Mans",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-28T21:55:49.380850+00:00",
+      "observed_at": "2026-10-29T01:18:04.419263+00:00",
       "selections": {
-        "home": 1.9009,
-        "away": 2.01
+        "home": 2.06,
+        "away": 1.8547
       },
-      "overround_pct": 2.36
+      "overround_pct": 2.46
     },
     {
-      "fixture": "New England Revolution x New York Red Bulls",
+      "fixture": "Troyes x Le Mans",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-28T21:55:49.380850+00:00",
+      "observed_at": "2026-10-29T01:18:04.419263+00:00",
       "selections": {
-        "home": 3.29,
-        "away": 1.365
-      },
-      "overround_pct": 3.66
-    },
-    {
-      "fixture": "New England Revolution x New York Red Bulls",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-28T21:55:49.380850+00:00",
-      "selections": {
-        "home": 2.96,
-        "away": 1.4329
+        "home": 4.2,
+        "away": 1.2538
       },
       "overround_pct": 3.57
     },
     {
-      "fixture": "New England Revolution x New York Red Bulls",
+      "fixture": "Troyes x Le Mans",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "selections": {
+        "home": 3.74,
+        "away": 1.3021
+      },
+      "overround_pct": 3.54
+    },
+    {
+      "fixture": "Troyes x Le Mans",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-28T21:55:49.380850+00:00",
+      "observed_at": "2026-10-29T01:18:04.419263+00:00",
       "selections": {
-        "home": 2.45,
-        "away": 1.6024
+        "home": 2.83,
+        "away": 1.4739
       },
-      "overround_pct": 3.22
+      "overround_pct": 3.18
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
