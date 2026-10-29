@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T09:23:27.385783+00:00",
+  "checked_at": "2026-10-29T10:22:34.315800+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 7,
   "created_games": 0,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Frosinone x Lecce",
-      "league": "ita.1",
-      "kickoff": 1793295000,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Fiorentina x Atalanta",
       "league": "ita.1",
