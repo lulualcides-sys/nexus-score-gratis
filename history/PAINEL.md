@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T05:52:15.018634+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-29T07:03:40.444153+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -276,10 +276,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-29T03:54:41.643726+00:00 | Carabobo FC × Deportivo La Guaira | Carabobo FC (45') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | Metropolitanos FC × Portuguesa FC | Metropolitanos FC (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | Seattle Sounders FC × Houston Dynamo FC | Seattle Sounders FC (55') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | San Diego FC (55') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | San Diego FC (55') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | Porongos × Deportivo Maldonado | Porongos (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-10-29T03:54:41.643726+00:00 | Vancouver Whitecaps × San Diego FC | Vancouver Whitecaps (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-29T02:54:53.531480+00:00 | Internacional de Bogotá × Independiente Medellín | Internacional de Bogotá (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
