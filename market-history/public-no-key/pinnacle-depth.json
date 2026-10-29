@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T01:18:11.027926+00:00",
-  "bookmaker_snapshot_at": "2026-10-29T01:18:04.419263+00:00",
+  "checked_at": "2026-10-29T04:02:35.628957+00:00",
+  "bookmaker_snapshot_at": "2026-10-29T04:02:34.202453+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1404,
-  "invalid_quote_records": 2,
-  "complete_market_lines": 686,
+  "matches_catalogued": 7,
+  "matches_with_priced_markets": 7,
+  "odds_eligible_for_quality": 644,
+  "invalid_quote_records": 0,
+  "complete_market_lines": 315,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 330,
-      "complete_lines": 165,
+      "games": 7,
+      "odds": 142,
+      "complete_lines": 71,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.46
+      "median_overround_pct": 3.64
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 208,
-      "complete_lines": 104,
+      "games": 7,
+      "odds": 100,
+      "complete_lines": 50,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.11
+      "median_overround_pct": 5.89
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 182,
-      "complete_lines": 91,
+      "games": 7,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.13
+      "median_overround_pct": 4.15
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 7,
+      "odds": 28,
+      "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.8
+      "median_overround_pct": 5.34
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 7,
+      "odds": 21,
+      "complete_lines": 7,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.27
+    },
+    "match_odds": {
+      "games": 7,
+      "odds": 21,
+      "complete_lines": 7,
+      "incomplete_lines": 0,
+      "median_overround_pct": 3.84
+    },
+    "team_goals": {
+      "games": 7,
+      "odds": 78,
+      "complete_lines": 39,
       "incomplete_lines": 0,
       "median_overround_pct": 5.25
     },
-    "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.37
-    },
-    "team_goals": {
-      "games": 16,
-      "odds": 170,
-      "complete_lines": 85,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.32
-    },
     "total_goals": {
-      "games": 16,
-      "odds": 354,
-      "complete_lines": 177,
+      "games": 7,
+      "odds": 174,
+      "complete_lines": 87,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.0
+      "median_overround_pct": 4.66
     }
   },
   "examples": [
     {
-      "fixture": "Troyes x Le Mans",
+      "fixture": "Fiorentina x Atalanta",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "observed_at": "2026-10-29T04:02:34.202453+00:00",
       "selections": {
-        "home": 2.37,
+        "home": 2.31,
         "away": 3.06,
-        "draw": 3.51
+        "draw": 3.66
       },
-      "overround_pct": 3.36
+      "overround_pct": 3.29
     },
     {
-      "fixture": "Troyes x Le Mans",
+      "fixture": "Fiorentina x Atalanta",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "observed_at": "2026-10-29T04:02:34.202453+00:00",
       "selections": {
-        "home": 2.06,
-        "away": 1.8547
+        "home": 2.01,
+        "away": 1.8929
       },
-      "overround_pct": 2.46
+      "overround_pct": 2.58
     },
     {
-      "fixture": "Troyes x Le Mans",
+      "fixture": "Fiorentina x Atalanta",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "observed_at": "2026-10-29T04:02:34.202453+00:00",
       "selections": {
-        "home": 4.2,
-        "away": 1.2538
+        "home": 3.89,
+        "away": 1.2841
       },
-      "overround_pct": 3.57
+      "overround_pct": 3.58
     },
     {
-      "fixture": "Troyes x Le Mans",
+      "fixture": "Fiorentina x Atalanta",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "observed_at": "2026-10-29T04:02:34.202453+00:00",
       "selections": {
-        "home": 3.74,
-        "away": 1.3021
+        "home": 3.47,
+        "away": 1.3367
       },
-      "overround_pct": 3.54
+      "overround_pct": 3.63
     },
     {
-      "fixture": "Troyes x Le Mans",
+      "fixture": "Fiorentina x Atalanta",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-29T01:18:04.419263+00:00",
+      "observed_at": "2026-10-29T04:02:34.202453+00:00",
       "selections": {
-        "home": 2.83,
-        "away": 1.4739
+        "home": 2.72,
+        "away": 1.5076
       },
-      "overround_pct": 3.18
+      "overround_pct": 3.1
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
