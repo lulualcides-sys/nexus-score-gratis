@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T01:33:06.730236+00:00",
+  "checked_at": "2026-10-29T02:23:21.525485+00:00",
   "horizon_hours": 48,
-  "important_games": 18,
-  "verified_bookmaker_games": 4,
+  "important_games": 17,
+  "verified_bookmaker_games": 3,
   "indicative_only_games": 5,
   "missing_bookmaker_price_games": 9,
   "games_with_corners_stats": 0,
@@ -459,7 +459,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 154,
+      "verified_quotes": 160,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -474,9 +474,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.5,
-        "draw": 3.75,
-        "away": 3.0
+        "home": 2.53,
+        "draw": 3.73,
+        "away": 2.98
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12147/san-jose-earthquakes-vs-colorado-rapids-2026-10-29",
       "tipsaudit_id": "12147",
@@ -496,7 +496,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 156,
+      "verified_quotes": 163,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -511,9 +511,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.74,
-        "draw": 4.48,
-        "away": 4.94
+        "home": 1.75,
+        "draw": 4.39,
+        "away": 4.96
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12146/seattle-sounders-vs-houston-dynamo-2026-10-29",
       "tipsaudit_id": "12146",
@@ -533,43 +533,21 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 160,
+      "verified_quotes": 167,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.51,
-        "draw": 5.62,
-        "away": 6.3
+        "home": 1.54,
+        "draw": 5.45,
+        "away": 6.02
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12148/vancouver-whitecaps-vs-san-diego-2026-10-29",
       "tipsaudit_id": "12148",
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Internacional de Bogotá",
-      "away": "Independiente Medellín",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793235900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 33,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
     {
