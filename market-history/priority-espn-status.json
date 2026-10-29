@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T18:16:17.947609+00:00",
+  "checked_at": "2026-10-29T19:27:22.076872+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
-  "created_games": 1,
+  "priority_fixtures_seen": 18,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -41,6 +41,12 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Casa Pia x Sporting CP",
+      "league": "por.1",
+      "kickoff": 1793391300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Estudiantes de Río Cuarto x Gimnasia La Plata",
       "league": "arg.1",
       "kickoff": 1793397600,
@@ -65,9 +71,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Casa Pia x Sporting CP",
-      "league": "por.1",
-      "kickoff": 1793391300,
+      "fixture": "Corinthians x Mirassol",
+      "league": "bra.1",
+      "kickoff": 1793401200,
       "reason": "no_verified_public_1x2"
     }
   ],
