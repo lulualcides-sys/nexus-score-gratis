@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T14:05:59.189414+00:00",
+  "checked_at": "2026-10-30T15:01:24.829042+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 29,
@@ -10,18 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "SV Elversberg x Mainz",
-      "league": "ger.1",
-      "kickoff": 1793388600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Villarreal x Espanyol",
-      "league": "esp.1",
-      "kickoff": 1793390400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Casa Pia x Sporting CP",
       "league": "por.1",
