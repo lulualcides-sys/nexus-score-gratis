@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "collected_at": "2026-10-30T11:14:56+00:00",
-  "nexus_exported_at": "2026-10-30T10:53:54.594194+00:00",
+  "collected_at": "2026-10-30T11:56:23+00:00",
+  "nexus_exported_at": "2026-10-30T11:50:45.339690+00:00",
   "games_in_feed": 627,
-  "live_games_in_feed": 17,
-  "finished_games_in_feed": 397,
+  "live_games_in_feed": 19,
+  "finished_games_in_feed": 398,
   "new_observations": 7,
   "quotes_observed": 1496,
   "market_families": {

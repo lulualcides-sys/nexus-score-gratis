@@ -1,25 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T11:14:56.690571+00:00",
+  "checked_at": "2026-10-30T11:56:23.263689+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 19,
-  "created_games": 4,
-  "new_quotes": 6,
-  "summary_checks": 2,
-  "summary_with_prices": 2,
+  "priority_fixtures_seen": 20,
+  "created_games": 0,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
       "fixture": "Lille x Lens",
       "league": "fra.1",
       "kickoff": 1793390700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SV Elversberg x Mainz",
-      "league": "ger.1",
-      "kickoff": 1793388600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -65,27 +59,33 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Troyes x Le Mans",
-      "league": "fra.1",
-      "kickoff": 1793475900,
+      "fixture": "Feyenoord Rotterdam x Fortuna Sittard",
+      "league": "ned.1",
+      "kickoff": 1793460600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Pachuca x Tigres UANL",
-      "league": "mex.1",
-      "kickoff": 1793487600,
+      "fixture": "Heerenveen x NEC Nijmegen",
+      "league": "ned.1",
+      "kickoff": 1793468700,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Monterrey x Tijuana",
-      "league": "mex.1",
-      "kickoff": 1793495100,
+      "fixture": "PSV Eindhoven x Willem II",
+      "league": "ned.1",
+      "kickoff": 1793468700,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Guadalajara x Atlante",
-      "league": "mex.1",
-      "kickoff": 1793495220,
+      "fixture": "Ajax Amsterdam x AZ Alkmaar",
+      "league": "ned.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "SC Cambuur x Go Ahead Eagles",
+      "league": "ned.1",
+      "kickoff": 1793476800,
       "reason": "no_verified_public_1x2"
     }
   ],
