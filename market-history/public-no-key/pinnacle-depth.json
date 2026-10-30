@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T04:04:17.032399+00:00",
-  "bookmaker_snapshot_at": "2026-10-30T04:04:15.004364+00:00",
+  "checked_at": "2026-10-30T07:19:02.332995+00:00",
+  "bookmaker_snapshot_at": "2026-10-30T07:19:00.230810+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1340,
+  "odds_eligible_for_quality": 1538,
   "invalid_quote_records": 0,
-  "complete_market_lines": 654,
+  "complete_market_lines": 753,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 320,
-      "complete_lines": 160,
+      "odds": 330,
+      "complete_lines": 165,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.13
+      "median_overround_pct": 4.7
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "odds": 250,
+      "complete_lines": 125,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.74
+      "median_overround_pct": 6.32
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 172,
-      "complete_lines": 86,
+      "odds": 186,
+      "complete_lines": 93,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.77
+      "median_overround_pct": 5.31
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.69
+      "median_overround_pct": 6.14
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.55
+      "median_overround_pct": 5.68
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.08
+      "median_overround_pct": 4.71
     },
     "team_goals": {
       "games": 16,
-      "odds": 160,
-      "complete_lines": 80,
+      "odds": 190,
+      "complete_lines": 95,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.7
+      "median_overround_pct": 6.36
     },
     "total_goals": {
       "games": 16,
-      "odds": 338,
-      "complete_lines": 169,
+      "odds": 422,
+      "complete_lines": 211,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.75
+      "median_overround_pct": 5.36
     }
   },
   "examples": [
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Elversberg x Mainz 05",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-30T04:04:15.004364+00:00",
+      "observed_at": "2026-10-30T07:19:00.230810+00:00",
       "selections": {
-        "home": 1.4149,
-        "away": 7.11,
-        "draw": 5.23
+        "home": 3.26,
+        "away": 2.11,
+        "draw": 3.95
       },
-      "overround_pct": 3.86
+      "overround_pct": 3.38
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Elversberg x Mainz 05",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-30T04:04:15.004364+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-10-30T07:19:00.230810+00:00",
       "selections": {
-        "home": 1.9091,
-        "away": 2.0
+        "home": 2.05,
+        "away": 1.8621
       },
-      "overround_pct": 2.38
+      "overround_pct": 2.48
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Elversberg x Mainz 05",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-10-30T04:04:15.004364+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-10-30T07:19:00.230810+00:00",
       "selections": {
-        "home": 3.53,
-        "away": 1.3279
+        "home": 4.04,
+        "away": 1.2688
       },
-      "overround_pct": 3.64
+      "overround_pct": 3.57
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Elversberg x Mainz 05",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-30T04:04:15.004364+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-30T07:19:00.230810+00:00",
       "selections": {
-        "home": 3.13,
-        "away": 1.3937
+        "home": 3.24,
+        "away": 1.3745
       },
-      "overround_pct": 3.7
+      "overround_pct": 3.62
     },
     {
-      "fixture": "Villarreal x Espanyol",
+      "fixture": "Elversberg x Mainz 05",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-30T04:04:15.004364+00:00",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-10-30T07:19:00.230810+00:00",
       "selections": {
-        "home": 2.5,
-        "away": 1.5814
+        "home": 2.87,
+        "away": 1.4651
       },
-      "overround_pct": 3.24
+      "overround_pct": 3.1
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
