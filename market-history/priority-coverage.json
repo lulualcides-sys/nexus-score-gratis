@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T21:13:06.333799+00:00",
+  "checked_at": "2026-10-30T21:49:57.084523+00:00",
   "horizon_hours": 48,
-  "important_games": 62,
-  "verified_bookmaker_games": 13,
+  "important_games": 63,
+  "verified_bookmaker_games": 12,
   "indicative_only_games": 21,
-  "missing_bookmaker_price_games": 28,
-  "games_with_corners_stats": 1,
+  "missing_bookmaker_price_games": 30,
+  "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 1,
   "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 14,
     "indicative": 24,
-    "new_priority": 33
+    "new_priority": 35
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -991,7 +991,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 35,
+      "verified_quotes": 38,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1402,27 +1402,48 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Casa Pia",
-      "away": "Sporting CP",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793391300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
+      "home": "Atlanta United FC",
+      "away": "Toronto FC",
+      "kickoff_unix": 1793568600.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
+      "fair_odds_modelled": {
+        "home": 2.28,
+        "draw": 4.28,
+        "away": 3.05
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
+      "tipsaudit_id": "13704",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Nashville SC",
+      "away": "New York Red Bulls",
+      "kickoff_unix": 1793568600.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.53,
+        "draw": 5.23,
+        "away": 6.42
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13706/nashville-sc-vs-new-york-red-bulls-2026-11-01",
+      "tipsaudit_id": "13706",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Feyenoord",
@@ -1708,14 +1729,14 @@
       "league": "col.1",
       "league_code": "col.1",
       "kickoff_unix": 1793394000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 33,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -2120,6 +2141,40 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13703/vancouver-whitecaps-vs-seattle-sounders-2026-11-01",
       "tipsaudit_id": "13703",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlanta United FC",
+      "away": "Toronto FC",
+      "kickoff_unix": 1793568600.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
+      "tipsaudit_id": "13704",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Nashville SC",
+      "away": "New York Red Bulls",
+      "kickoff_unix": 1793568600.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13706/nashville-sc-vs-new-york-red-bulls-2026-11-01",
+      "tipsaudit_id": "13706",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"

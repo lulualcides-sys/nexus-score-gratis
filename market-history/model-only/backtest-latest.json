@@ -1,28 +1,29 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-10-30T21:13:08.056650+00:00",
+  "evaluated_at": "2026-10-30T21:49:58.906165+00:00",
   "status": "diagnostic_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 537,
-  "historical_fixtures_tested": 53,
-  "leagues_tested": 4,
+  "historical_matches_available": 570,
+  "historical_fixtures_tested": 57,
+  "leagues_tested": 5,
   "leagues_samples": {
     "usa.1": 20,
     "bra.1": 17,
     "ita.1": 11,
-    "fra.1": 5
+    "fra.1": 5,
+    "ger.1": 4
   },
   "skipped_reasons": {
     "insufficient_league_results": 4,
-    "insufficient_team_results": 43
+    "insufficient_team_results": 59
   },
-  "brier_1x2": 0.61326,
-  "rps_1x2": 0.20763,
-  "log_loss_1x2": 1.02251,
-  "brier_over_2_5": 0.22896,
-  "brier_btts": 0.23794,
+  "brier_1x2": 0.63765,
+  "rps_1x2": 0.21411,
+  "log_loss_1x2": 1.05912,
+  "brier_over_2_5": 0.24213,
+  "brier_btts": 0.23993,
   "explanation": "Test retrospective scored without later matches in each fit. Lower metric is better; this alone does not establish calibration, profitability or outperforming bookmakers."
 }
