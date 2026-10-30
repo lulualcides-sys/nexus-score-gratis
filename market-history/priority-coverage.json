@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T10:32:13.555515+00:00",
+  "checked_at": "2026-10-30T11:15:00.915526+00:00",
   "horizon_hours": 48,
-  "important_games": 58,
+  "important_games": 61,
   "verified_bookmaker_games": 17,
   "indicative_only_games": 12,
-  "missing_bookmaker_price_games": 29,
+  "missing_bookmaker_price_games": 32,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 16,
-    "indicative": 19,
-    "new_priority": 22
+    "matched": 18,
+    "indicative": 16,
+    "new_priority": 21
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -184,7 +184,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.46,
+          "price": 1.45,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -192,8 +192,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.74,
-        "away": 7.66
+        "draw": 5.58,
+        "away": 7.93
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -240,9 +240,9 @@
       "verified_quotes": 110,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.52,
-        "draw": 3.44,
-        "away": 3.2
+        "home": 2.47,
+        "draw": 3.46,
+        "away": 3.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12943/rayo-vallecano-vs-celta-vigo-2026-10-31",
       "tipsaudit_id": "12943",
@@ -265,8 +265,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.39,
-          "bookmaker": "1xBet",
+          "price": 1.4,
+          "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -297,8 +297,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.13,
-          "bookmaker": "Coolbet",
+          "price": 1.15,
+          "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -392,9 +392,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.44,
-        "draw": 4.09,
-        "away": 2.15
+        "home": 3.45,
+        "draw": 4.05,
+        "away": 2.16
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
       "tipsaudit_id": "12512",
@@ -513,16 +513,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 3.05,
+          "price": 3.0,
           "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.96,
-        "draw": 4.13,
-        "away": 2.38
+        "home": 2.95,
+        "draw": 4.12,
+        "away": 2.39
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12902/werder-bremen-vs-1899-hoffenheim-2026-10-31",
       "tipsaudit_id": "12902",
@@ -609,7 +609,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -624,9 +624,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 9.19,
-        "draw": 6.71,
-        "away": 1.35
+        "home": 9.82,
+        "draw": 6.65,
+        "away": 1.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
@@ -643,7 +643,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -671,19 +671,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.68,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.65,
-        "draw": 3.82,
-        "away": 2.77
+        "home": 2.7,
+        "draw": 3.65,
+        "away": 2.81
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12982/nice-vs-rennes-2026-10-30",
       "tipsaudit_id": "12982",
@@ -729,19 +721,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.75,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.92,
-        "draw": 3.53,
-        "away": 2.68
+        "draw": 3.39,
+        "away": 2.76
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -798,6 +782,28 @@
       "data_sources": [
         "TipsAudit"
       ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Troyes",
+      "away": "Le Mans",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793475900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -895,13 +901,20 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "CF Pachuca",
+      "home": "Pachuca",
       "away": "Tigres UANL",
-      "kickoff_unix": 1793487600.0,
       "league": "Liga MX",
       "league_code": "mex.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793487600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.34,
@@ -910,20 +923,24 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
       "tipsaudit_id": "13073",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
       "home": "Monterrey",
-      "away": "Club Tijuana",
-      "kickoff_unix": 1793495100.0,
+      "away": "Tijuana",
       "league": "Liga MX",
       "league_code": "mex.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793495100.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.57,
@@ -932,10 +949,29 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13075/monterrey-vs-club-tijuana-2026-11-01",
       "tipsaudit_id": "13075",
-      "source_confirmed": "TipsAudit schedule only",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Guadalajara",
+      "away": "Atlante",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793495220.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "ESPN"
       ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -1174,15 +1210,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.63,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.51,
         "draw": 4.46,
@@ -1464,15 +1492,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.2,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.16,
         "draw": 4.18,
@@ -1481,7 +1501,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
       "tipsaudit_id": "13009",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "PSV Eindhoven",
@@ -1586,6 +1606,36 @@
       "tipsaudit_id": "13050",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "PEC Zwolle",
+      "away": "ADO Den Haag",
+      "kickoff_unix": 1793531700.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 3.2,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.33,
+        "draw": 3.93,
+        "away": 3.15
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13571/pec-zwolle-vs-ado-den-haag-2026-11-01",
+      "tipsaudit_id": "13571",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
     },
     {
       "home": "Deportivo Pereira",
@@ -1867,6 +1917,27 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Troyes",
+      "away": "Le Mans",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793475900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Atletico San Luis",
       "away": "Atlas",
       "kickoff_unix": 1793408400.0,
@@ -1945,37 +2016,66 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "CF Pachuca",
+      "home": "Pachuca",
       "away": "Tigres UANL",
-      "kickoff_unix": 1793487600.0,
       "league": "Liga MX",
       "league_code": "mex.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793487600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
       "tipsaudit_id": "13073",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
       "home": "Monterrey",
-      "away": "Club Tijuana",
-      "kickoff_unix": 1793495100.0,
+      "away": "Tijuana",
       "league": "Liga MX",
       "league_code": "mex.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793495100.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13075/monterrey-vs-club-tijuana-2026-11-01",
       "tipsaudit_id": "13075",
-      "source_confirmed": "TipsAudit schedule only",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Guadalajara",
+      "away": "Atlante",
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "kickoff_unix": 1793495220.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "ESPN"
       ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -2132,6 +2232,27 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Heerenveen",
+      "away": "NEC Nijmegen",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793468700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
+      "tipsaudit_id": "13009",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
