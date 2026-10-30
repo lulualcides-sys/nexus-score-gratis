@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T00:05:09.556401+00:00",
+  "checked_at": "2026-10-30T01:04:01.265395+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 18,
+  "priority_fixtures_seen": 15,
   "created_games": 0,
-  "new_quotes": 6,
-  "summary_checks": 2,
-  "summary_with_prices": 2,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Atlético-MG x Cruzeiro",
-      "league": "bra.1",
-      "kickoff": 1793313000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vasco da Gama x Flamengo",
-      "league": "bra.1",
-      "kickoff": 1793314800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Le Havre AC x Paris Saint-Germain",
       "league": "fra.1",

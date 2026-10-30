@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T00:05:12.942645+00:00",
+  "checked_at": "2026-10-30T01:04:05.532084+00:00",
   "horizon_hours": 48,
   "important_games": 46,
-  "verified_bookmaker_games": 8,
-  "indicative_only_games": 18,
-  "missing_bookmaker_price_games": 20,
+  "verified_bookmaker_games": 7,
+  "indicative_only_games": 16,
+  "missing_bookmaker_price_games": 23,
   "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 4,
-    "indicative": 21,
-    "new_priority": 30
+    "indicative": 19,
+    "new_priority": 31
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -236,8 +236,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 1.65,
-          "bookmaker": "1xBet",
+          "price": 1.63,
+          "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -495,9 +495,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.97,
-        "draw": 4.14,
-        "away": 2.37
+        "home": 2.96,
+        "draw": 4.13,
+        "away": 2.38
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12902/werder-bremen-vs-1899-hoffenheim-2026-10-31",
       "tipsaudit_id": "12902",
@@ -515,19 +515,11 @@
       "league_code": "ger.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.37,
-          "bookmaker": "BetOnline.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.36,
         "draw": 6.25,
-        "away": 9.45
+        "away": 9.53
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13005/bayern-munchen-vs-borussia-dortmund-2026-10-31",
       "tipsaudit_id": "13005",
@@ -535,7 +527,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Le Havre AC",
@@ -830,6 +822,28 @@
       "coverage": "indicative_only"
     },
     {
+      "home": "Monterrey",
+      "away": "Club Tijuana",
+      "kickoff_unix": 1793494800.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.61,
+        "draw": 4.9,
+        "away": 5.69
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13075/monterrey-vs-club-tijuana-2026-11-01",
+      "tipsaudit_id": "13075",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Estudiantes de Río Cuarto",
       "away": "Gimnasia La Plata",
       "league": "Liga Profesional Argentina",
@@ -988,16 +1002,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.66,
-          "bookmaker": "1xBet",
+          "price": 2.6,
+          "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.61,
-        "draw": 4.31,
-        "away": 2.6
+        "home": 2.53,
+        "draw": 4.34,
+        "away": 2.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13022/fc-cincinnati-vs-philadelphia-union-2026-10-31",
       "tipsaudit_id": "13022",
@@ -1127,15 +1141,7 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.95,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.42,
         "draw": 4.2,
@@ -1147,7 +1153,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Casa Pia",
@@ -1264,16 +1270,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.82,
+          "price": 1.78,
           "bookmaker": "Unibet (NL)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.73,
-        "draw": 4.9,
-        "away": 4.61
+        "home": 1.69,
+        "draw": 5.02,
+        "away": 4.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13049/ajax-vs-az-alkmaar-2026-10-31",
       "tipsaudit_id": "13049",
@@ -1306,28 +1312,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "América de Cali",
-      "away": "Fortaleza CEIF",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793315700.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 39,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Atlético Nacional",
       "away": "Independiente Santa Fe",
       "league": "Colômbia Primera A",
@@ -1337,7 +1321,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 37,
+      "verified_quotes": 44,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1451,6 +1435,23 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
       "tipsaudit_id": "12903",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Bayern München",
+      "away": "Borussia Dortmund",
+      "kickoff_unix": 1793467800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13005/bayern-munchen-vs-borussia-dortmund-2026-10-31",
+      "tipsaudit_id": "13005",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
@@ -1572,6 +1573,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Monterrey",
+      "away": "Club Tijuana",
+      "kickoff_unix": 1793494800.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13075/monterrey-vs-club-tijuana-2026-11-01",
+      "tipsaudit_id": "13075",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Estudiantes de Río Cuarto",
       "away": "Gimnasia La Plata",
       "league": "Liga Profesional Argentina",
@@ -1666,6 +1684,23 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13028/st-louis-city-vs-san-diego-2026-10-31",
       "tipsaudit_id": "13028",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "San Jose Earthquakes",
+      "away": "Real Salt Lake",
+      "kickoff_unix": 1793480400.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13067/san-jose-earthquakes-vs-real-salt-lake-2026-10-31",
+      "tipsaudit_id": "13067",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
