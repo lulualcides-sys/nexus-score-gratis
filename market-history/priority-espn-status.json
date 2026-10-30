@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T22:22:23.206116+00:00",
+  "checked_at": "2026-10-30T23:07:32.841865+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 31,
-  "created_games": 3,
+  "priority_fixtures_seen": 30,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -14,12 +14,6 @@
       "fixture": "Huracán x Tigre",
       "league": "arg.1",
       "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético de San Luis x Atlas",
-      "league": "mex.1",
-      "kickoff": 1793408400,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -119,6 +113,24 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Deportivo Riestra x Talleres (Córdoba)",
+      "league": "arg.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vélez Sarsfield x San Lorenzo",
+      "league": "arg.1",
+      "kickoff": 1793484900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Estudiantes de La Plata x Instituto (Córdoba)",
+      "league": "arg.1",
+      "kickoff": 1793493000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Pachuca x Tigres UANL",
       "league": "mex.1",
       "kickoff": 1793487600,
@@ -140,24 +152,6 @@
       "fixture": "Llaneros FC x Atlético Junior",
       "league": "col.1",
       "kickoff": 1793487600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportivo Riestra x Talleres (Córdoba)",
-      "league": "arg.1",
-      "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vélez Sarsfield x San Lorenzo",
-      "league": "arg.1",
-      "kickoff": 1793484900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Estudiantes de La Plata x Instituto (Córdoba)",
-      "league": "arg.1",
-      "kickoff": 1793493000,
       "reason": "no_verified_public_1x2"
     }
   ],
