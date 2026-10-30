@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T07:37:27.389163+00:00",
+  "checked_at": "2026-10-30T08:37:22.734056+00:00",
   "source_count": 5,
   "sources_ok": 5,
   "source_status": {
@@ -30,12 +30,12 @@
     "tipsaudit": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 80,
+      "odds_observed": 81,
       "source_file": "public-no-key/status.json"
     },
     "pinnacle": {
       "status": "ok",
-      "age_minutes": 18.5,
+      "age_minutes": 78.4,
       "odds_observed": 1748,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 16,
