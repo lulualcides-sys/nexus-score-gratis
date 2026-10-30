@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T11:50:11.545551+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T13:02:09.465796+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -40,8 +40,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-30 | Guaraní × 2 de Mayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Sportivo Trinidense × Rubio Ñú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Brisbane Roar FC × Auckland FC | 1-1 | 90 | Chutes no alvo: 3.0×1.0, Chutes para fora: 6.0×7.0, Escanteios: 10.0×3.0, Grandes chances: 1.0×1.0 |
-| 2026-10-30 | Sisaket United × Ratchaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-30 | Mahasarakham Sam Bai Tao × Chanthaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-30 | Sisaket United × Ratchaburi FC | 0-0 | 23 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-10-30 | Mahasarakham Sam Bai Tao × Chanthaburi FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Racing Club × Aldosivi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Estudiantes de Río Cuarto × Gimnasia LP | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Sarmiento × Rosario Central | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -80,7 +80,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-30 | AaB × Hobro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Slaven × NK Istra 1961 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Stenhousemuir × Livingston | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-30 | Le Havre × Paris Saint-Germain | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-30 | Le Havre × Paris Saint-Germain | 0-0 | 0 | Match Odds 1X2: Casa 8,50, Empate 5,75, Fora 1,32 |
 | 2026-10-30 | Lille × Lens | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Nice × Rennes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Grenoble × Dijon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8465 | **Jogos distintos:** 2443 | **Resultados verificáveis:** 4836 | **Com gol:** 1846 | **Sem gol:** 2990 | **Taxa observada:** 38.2%.
-**Evolução da amostra:** 22 datas com coletas | 61 pendentes | 1563 indeterminados | 2005 incompletos.
+**Observações:** 8466 | **Jogos distintos:** 2444 | **Resultados verificáveis:** 4836 | **Com gol:** 1846 | **Sem gol:** 2990 | **Taxa observada:** 38.2%.
+**Evolução da amostra:** 22 datas com coletas | 62 pendentes | 1563 indeterminados | 2005 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,7 +177,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1692 | 1162 | 463 | 699 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1334 | 894 | 320 | 574 | 35.8% |
+| ⚡ pressao_ofensiva_18 | 1335 | 894 | 320 | 574 | 35.8% |
 | 🎯 chutes_no_alvo_5 | 1381 | 682 | 246 | 436 | 36.1% |
 | 🟥 expulsao_confirmada | 1259 | 585 | 202 | 383 | 34.5% |
 | 🚩 escanteios_6 | 1018 | 488 | 202 | 286 | 41.4% |
@@ -239,7 +239,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Primera A | 154 | 93 | 28 | 65 | 30.1% |
 | Liga MX | 170 | 91 | 30 | 61 | 33.0% |
 | LaLiga | 149 | 91 | 34 | 57 | 37.4% |
-| Saudi Pro League | 138 | 89 | 42 | 47 | 47.2% |
+| Saudi Pro League | 139 | 89 | 42 | 47 | 47.2% |
 | Eredivisie | 152 | 87 | 42 | 45 | 48.3% |
 | 2. Bundesliga | 134 | 87 | 33 | 54 | 37.9% |
 | Super Lig | 111 | 87 | 32 | 55 | 36.8% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 242 | 172 | 55 | 117 | 32.0% |
 | 16–30′ | 601 | 455 | 154 | 301 | 33.8% |
-| 31–45′ | 1728 | 1348 | 558 | 790 | 41.4% |
+| 31–45′ | 1729 | 1348 | 558 | 790 | 41.4% |
 | 46–60′ | 1118 | 809 | 309 | 500 | 38.2% |
 | 61–75′ | 1762 | 1226 | 456 | 770 | 37.2% |
 | 76–90′ | 2274 | 818 | 311 | 507 | 38.0% |
@@ -262,12 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8465 | **Jogos monitorados:** 854 | **Ao vivo:** 32 | **Termômetros recentes:** 10.
+**Registros:** 8466 | **Jogos monitorados:** 854 | **Ao vivo:** 41 | **Termômetros recentes:** 12.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-10-30T13:02:34.030203+00:00 | Abha × Al Ittihad | Al Ittihad (32') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-10-30T10:33:26.068052+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (74') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-30T09:55:37.452849+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-30T09:11:21.098707+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (11') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -367,11 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-29T20:52:55.162283+00:00 | Auriense × Deportivo A Coruña | Deportivo A Coruña (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-29T20:52:55.162283+00:00 | Conquense × Castellón | Castellón (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-29T20:52:55.162283+00:00 | Ribadesella CF × Racing Santander | Racing Santander (45') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-29T20:52:55.162283+00:00 | Ribadesella CF × Racing Santander | Racing Santander (45') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **77**.
+Jogos com odds registradas nos ultimos dias: **79**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
