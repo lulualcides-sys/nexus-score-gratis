@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T03:34:59.816026+00:00",
+  "checked_at": "2026-10-30T04:30:01.521178+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 19,
-  "created_games": 6,
+  "priority_fixtures_seen": 24,
+  "created_games": 9,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -12,12 +12,6 @@
   "missing_quote_fixtures": [
     {
       "fixture": "Le Havre AC x Paris Saint-Germain",
-      "league": "fra.1",
-      "kickoff": 1793383200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Nice x Stade Rennais",
       "league": "fra.1",
       "kickoff": 1793383200,
       "reason": "no_verified_public_1x2"
@@ -47,12 +41,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Estudiantes de Río Cuarto x Gimnasia La Plata",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Huracán x Tigre",
       "league": "arg.1",
       "kickoff": 1793397600,
@@ -60,12 +48,6 @@
     },
     {
       "fixture": "Racing Club x Aldosivi",
-      "league": "arg.1",
-      "kickoff": 1793405700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sarmiento (Junín) x Rosario Central",
       "league": "arg.1",
       "kickoff": 1793405700,
       "reason": "no_verified_public_1x2"
@@ -89,39 +71,57 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Feyenoord Rotterdam x Fortuna Sittard",
-      "league": "ned.1",
-      "kickoff": 1793460600,
+      "fixture": "Charlotte FC x Orlando City SC",
+      "league": "usa.1",
+      "kickoff": 1793466000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Heerenveen x NEC Nijmegen",
-      "league": "ned.1",
-      "kickoff": 1793468700,
+      "fixture": "Columbus Crew x D.C. United",
+      "league": "usa.1",
+      "kickoff": 1793469600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "PSV Eindhoven x Willem II",
-      "league": "ned.1",
-      "kickoff": 1793468700,
+      "fixture": "FC Cincinnati x Philadelphia Union",
+      "league": "usa.1",
+      "kickoff": 1793469600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Ajax Amsterdam x AZ Alkmaar",
-      "league": "ned.1",
-      "kickoff": 1793476800,
+      "fixture": "New York City FC x CF Montréal",
+      "league": "usa.1",
+      "kickoff": 1793469600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "SC Cambuur x Go Ahead Eagles",
-      "league": "ned.1",
-      "kickoff": 1793476800,
+      "fixture": "Sporting Kansas City x FC Dallas",
+      "league": "usa.1",
+      "kickoff": 1793473200,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Llaneros FC x Atlético Junior",
-      "league": "col.1",
-      "kickoff": 1793487600,
+      "fixture": "St. Louis CITY SC x San Diego FC",
+      "league": "usa.1",
+      "kickoff": 1793473200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "LA Galaxy x Austin FC",
+      "league": "usa.1",
+      "kickoff": 1793480400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "San Jose Earthquakes x Real Salt Lake",
+      "league": "usa.1",
+      "kickoff": 1793480400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Colorado Rapids x Chicago Fire FC",
+      "league": "usa.1",
+      "kickoff": 1793496600,
       "reason": "no_verified_public_1x2"
     }
   ],
