@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T19:04:15.676164+00:00",
-  "bookmaker_snapshot_at": "2026-10-30T19:04:14.028124+00:00",
+  "checked_at": "2026-10-30T21:53:07.230047+00:00",
+  "bookmaker_snapshot_at": "2026-10-30T21:53:06.011124+00:00",
   "status": "fresh",
-  "matches_catalogued": 6,
-  "matches_with_priced_markets": 6,
-  "odds_eligible_for_quality": 612,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1670,
   "invalid_quote_records": 0,
-  "complete_market_lines": 300,
+  "complete_market_lines": 819,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 6,
-      "odds": 138,
-      "complete_lines": 69,
+      "games": 16,
+      "odds": 368,
+      "complete_lines": 184,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.61
+      "median_overround_pct": 3.6
     },
     "first_half_goals": {
-      "games": 6,
-      "odds": 96,
-      "complete_lines": 48,
+      "games": 16,
+      "odds": 252,
+      "complete_lines": 126,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.8
+      "median_overround_pct": 5.51
     },
     "first_half_handicap": {
-      "games": 6,
-      "odds": 68,
-      "complete_lines": 34,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.06
+      "median_overround_pct": 4.07
     },
     "first_half_team_goals": {
-      "games": 6,
-      "odds": 24,
-      "complete_lines": 12,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.04
+      "median_overround_pct": 5.26
     },
     "half_time": {
-      "games": 6,
-      "odds": 18,
-      "complete_lines": 6,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.85
+      "median_overround_pct": 3.98
     },
     "match_odds": {
-      "games": 6,
-      "odds": 18,
-      "complete_lines": 6,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.38
+      "median_overround_pct": 3.45
     },
     "team_goals": {
-      "games": 6,
-      "odds": 76,
-      "complete_lines": 38,
+      "games": 16,
+      "odds": 210,
+      "complete_lines": 105,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.44
+      "median_overround_pct": 5.21
     },
     "total_goals": {
-      "games": 6,
-      "odds": 174,
-      "complete_lines": 87,
+      "games": 16,
+      "odds": 496,
+      "complete_lines": 248,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.92
+      "median_overround_pct": 4.75
     }
   },
   "examples": [
     {
-      "fixture": "Atletico San Luis x Atlas",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-30T19:04:14.028124+00:00",
+      "observed_at": "2026-10-30T21:53:06.011124+00:00",
       "selections": {
-        "home": 2.73,
-        "away": 2.61,
-        "draw": 3.57
+        "home": 3.18,
+        "away": 2.2,
+        "draw": 3.78
       },
-      "overround_pct": 2.96
+      "overround_pct": 3.36
     },
     {
-      "fixture": "Atletico San Luis x Atlas",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-10-30T19:04:14.028124+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-10-30T21:53:06.011124+00:00",
       "selections": {
-        "home": 2.0,
-        "away": 1.9091
+        "home": 1.9804,
+        "away": 1.9259
       },
-      "overround_pct": 2.38
+      "overround_pct": 2.42
     },
     {
-      "fixture": "Atletico San Luis x Atlas",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-30T19:04:14.028124+00:00",
-      "selections": {
-        "home": 4.55,
-        "away": 1.2273
-      },
-      "overround_pct": 3.46
-    },
-    {
-      "fixture": "Atletico San Luis x Atlas",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-30T19:04:14.028124+00:00",
+      "observed_at": "2026-10-30T21:53:06.011124+00:00",
       "selections": {
-        "home": 3.3,
-        "away": 1.3636
+        "home": 3.93,
+        "away": 1.2809
       },
-      "overround_pct": 3.64
+      "overround_pct": 3.52
     },
     {
-      "fixture": "Atletico San Luis x Atlas",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-30T19:04:14.028124+00:00",
+      "observed_at": "2026-10-30T21:53:06.011124+00:00",
       "selections": {
-        "home": 2.71,
-        "away": 1.5076
+        "home": 3.15,
+        "away": 1.3906
       },
-      "overround_pct": 3.23
+      "overround_pct": 3.66
+    },
+    {
+      "fixture": "Augsburg x Freiburg",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-10-30T21:53:06.011124+00:00",
+      "selections": {
+        "home": 2.78,
+        "away": 1.4902
+      },
+      "overround_pct": 3.08
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
