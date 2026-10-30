@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T21:49:54.274461+00:00",
+  "checked_at": "2026-10-30T22:22:23.206116+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 29,
-  "created_games": 0,
+  "priority_fixtures_seen": 31,
+  "created_games": 3,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Corinthians x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1793401200,
+      "fixture": "Huracán x Tigre",
+      "league": "arg.1",
+      "kickoff": 1793397600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -140,6 +140,24 @@
       "fixture": "Llaneros FC x Atlético Junior",
       "league": "col.1",
       "kickoff": 1793487600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Deportivo Riestra x Talleres (Córdoba)",
+      "league": "arg.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vélez Sarsfield x San Lorenzo",
+      "league": "arg.1",
+      "kickoff": 1793484900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Estudiantes de La Plata x Instituto (Córdoba)",
+      "league": "arg.1",
+      "kickoff": 1793493000,
       "reason": "no_verified_public_1x2"
     }
   ],
