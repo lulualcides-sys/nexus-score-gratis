@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T02:02:41.238369+00:00",
+  "checked_at": "2026-10-30T02:54:55.752446+00:00",
   "horizon_hours": 48,
-  "important_games": 47,
-  "verified_bookmaker_games": 13,
+  "important_games": 46,
+  "verified_bookmaker_games": 12,
   "indicative_only_games": 14,
   "missing_bookmaker_price_games": 20,
   "games_with_corners_stats": 0,
@@ -1354,28 +1354,6 @@
         "TipsAudit"
       ],
       "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Nacional",
-      "away": "Independiente Santa Fe",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793323800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 44,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     }
   ],
   "top_missing": [
