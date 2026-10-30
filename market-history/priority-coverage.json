@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T05:17:30.745802+00:00",
+  "checked_at": "2026-10-30T06:15:22.689734+00:00",
   "horizon_hours": 48,
   "important_games": 58,
   "verified_bookmaker_games": 17,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 16,
-    "indicative": 19,
+    "indicative": 18,
     "new_priority": 22
   },
   "pinnacle_guest": {
@@ -164,8 +164,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.43,
-        "draw": 5.69,
-        "away": 7.9
+        "draw": 5.7,
+        "away": 7.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -363,17 +363,17 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [
         {
-          "selection": "home",
-          "price": 3.3,
-          "bookmaker": "Unibet (SE)",
+          "selection": "away",
+          "price": 2.2,
+          "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.22,
-        "draw": 4.06,
-        "away": 2.26
+        "home": 3.37,
+        "draw": 4.11,
+        "away": 2.17
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
       "tipsaudit_id": "12512",
@@ -588,9 +588,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 11.01,
-        "draw": 7.51,
-        "away": 1.29
+        "home": 10.26,
+        "draw": 7.19,
+        "away": 1.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
@@ -646,9 +646,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.83,
-        "draw": 3.99,
-        "away": 2.52
+        "home": 2.7,
+        "draw": 3.98,
+        "away": 2.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12982/nice-vs-rennes-2026-10-30",
       "tipsaudit_id": "12982",
@@ -695,19 +695,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.8,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.87,
-        "draw": 3.62,
-        "away": 2.67
+        "home": 2.89,
+        "draw": 3.53,
+        "away": 2.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -1222,9 +1214,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 4.16,
-        "draw": 4.49,
-        "away": 1.86
+        "home": 4.19,
+        "draw": 4.53,
+        "away": 1.85
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13020/sporting-kansas-city-vs-fc-dallas-2026-10-31",
       "tipsaudit_id": "13020",
@@ -1479,7 +1471,7 @@
       "fair_odds_modelled": {
         "home": 1.07,
         "draw": 24.94,
-        "away": 37.13
+        "away": 37.15
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13010/psv-eindhoven-vs-willem-ii-2026-10-31",
       "tipsaudit_id": "13010",
