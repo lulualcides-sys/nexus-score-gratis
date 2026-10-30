@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T18:58:46.793781+00:00",
+  "checked_at": "2026-10-30T19:53:09.290698+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 29,
@@ -10,12 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Casa Pia x Sporting CP",
-      "league": "por.1",
-      "kickoff": 1793391300,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Huracán x Tigre",
       "league": "arg.1",
@@ -128,6 +122,12 @@
       "fixture": "Colorado Rapids x Chicago Fire FC",
       "league": "usa.1",
       "kickoff": 1793496600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Troyes x Le Mans",
+      "league": "fra.1",
+      "kickoff": 1793475900,
       "reason": "no_verified_public_1x2"
     }
   ],
