@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T20:25:28.216847+00:00",
+  "checked_at": "2026-10-30T21:13:01.479548+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 28,
@@ -10,18 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Huracán x Tigre",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Racing Club x Aldosivi",
-      "league": "arg.1",
-      "kickoff": 1793405700,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Corinthians x Mirassol",
       "league": "bra.1",
