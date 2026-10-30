@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T19:53:09.290698+00:00",
+  "checked_at": "2026-10-30T20:25:28.216847+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 29,
+  "priority_fixtures_seen": 28,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -128,6 +128,30 @@
       "fixture": "Troyes x Le Mans",
       "league": "fra.1",
       "kickoff": 1793475900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Pachuca x Tigres UANL",
+      "league": "mex.1",
+      "kickoff": 1793487600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monterrey x Tijuana",
+      "league": "mex.1",
+      "kickoff": 1793495100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Guadalajara x Atlante",
+      "league": "mex.1",
+      "kickoff": 1793495220,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Llaneros FC x Atlético Junior",
+      "league": "col.1",
+      "kickoff": 1793487600,
       "reason": "no_verified_public_1x2"
     }
   ],

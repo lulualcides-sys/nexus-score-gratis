@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T19:53:14.054779+00:00",
+  "checked_at": "2026-10-30T20:25:34.029708+00:00",
   "horizon_hours": 48,
   "important_games": 65,
   "verified_bookmaker_games": 16,
-  "indicative_only_games": 20,
-  "missing_bookmaker_price_games": 29,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "indicative_only_games": 19,
+  "missing_bookmaker_price_games": 30,
+  "games_with_corners_stats": 3,
+  "games_with_yellow_cards_stats": 4,
+  "games_with_shots_on_target_stats": 4,
   "tipsaudit": {
     "status": "checked",
-    "matched": 16,
-    "indicative": 23,
-    "new_priority": 31
+    "matched": 14,
+    "indicative": 22,
+    "new_priority": 32
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 26,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -176,19 +176,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 35,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "verified_quotes": 39,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.41,
-        "draw": 5.84,
-        "away": 8.41
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
-      "tipsaudit_id": "12521",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -405,19 +401,41 @@
       "coverage": "indicative_only"
     },
     {
+      "home": "Athletic Club",
+      "away": "Real Sociedad",
+      "kickoff_unix": 1793563200.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.22,
+        "draw": 3.84,
+        "away": 3.45
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
+      "tipsaudit_id": "13681",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Elversberg",
       "away": "Mainz 05",
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793388600.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -432,14 +450,14 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793388600.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 37,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -667,28 +685,6 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "MC Oran",
-      "away": "Olympique Akbou",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793386800.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Lille",
       "away": "Lens",
       "league": "Ligue 1",
@@ -699,19 +695,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 51,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "verified_quotes": 54,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 2.83,
-        "draw": 3.41,
-        "away": 2.83
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
-      "tipsaudit_id": "12522",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -1081,7 +1073,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 28,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1103,7 +1095,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1125,7 +1117,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1147,7 +1139,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 11,
+      "verified_quotes": 18,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1340,9 +1332,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 4.19,
-        "draw": 4.53,
-        "away": 1.85
+        "home": 4.17,
+        "draw": 4.51,
+        "away": 1.86
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13020/sporting-kansas-city-vs-fc-dallas-2026-10-31",
       "tipsaudit_id": "13020",
@@ -1551,15 +1543,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.2,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.16,
         "draw": 4.19,
@@ -1568,7 +1552,7 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
       "tipsaudit_id": "13009",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "PSV Eindhoven",
@@ -1780,7 +1764,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1802,7 +1786,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 18,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1839,19 +1823,36 @@
   ],
   "top_missing": [
     {
+      "home": "Athletic Club",
+      "away": "Real Sociedad",
+      "kickoff_unix": 1793563200.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
+      "tipsaudit_id": "13681",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Elversberg",
       "away": "Mainz 05",
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793388600.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
@@ -1891,27 +1892,6 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "MC Oran",
-      "away": "Olympique Akbou",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793386800.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -2254,6 +2234,27 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Heerenveen",
+      "away": "NEC Nijmegen",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793468700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
+      "tipsaudit_id": "13009",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
