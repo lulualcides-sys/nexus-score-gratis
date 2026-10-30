@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T23:07:40.493805+00:00",
+  "checked_at": "2026-10-30T23:43:33.559458+00:00",
   "source_count": 5,
   "sources_ok": 5,
   "source_status": {
     "nexus": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 2062,
+      "odds_observed": 2095,
       "source_file": "status.json"
     },
     "espn_priority": {
@@ -30,12 +30,12 @@
     "tipsaudit": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 109,
+      "odds_observed": 108,
       "source_file": "public-no-key/status.json"
     },
     "pinnacle": {
       "status": "ok",
-      "age_minutes": 74.6,
+      "age_minutes": 110.5,
       "odds_observed": 2019,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 16,

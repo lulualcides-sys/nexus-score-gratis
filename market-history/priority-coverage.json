@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T23:07:36.808672+00:00",
+  "checked_at": "2026-10-30T23:43:29.786135+00:00",
   "horizon_hours": 48,
   "important_games": 64,
   "verified_bookmaker_games": 16,
   "indicative_only_games": 18,
   "missing_bookmaker_price_games": 30,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 14,
@@ -149,14 +149,14 @@
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1793401200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 38,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -781,8 +781,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.67,
-        "draw": 3.71,
+        "home": 2.68,
+        "draw": 3.69,
         "away": 2.81
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12534/atletico-san-luis-vs-atlas-2026-10-31",
@@ -804,7 +804,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -842,9 +842,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.14,
+        "home": 3.15,
         "draw": 3.73,
-        "away": 2.42
+        "away": 2.41
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
       "tipsaudit_id": "12533",
@@ -892,7 +892,7 @@
       "fair_odds_modelled": {
         "home": 2.27,
         "draw": 3.75,
-        "away": 3.42
+        "away": 3.41
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
       "tipsaudit_id": "13073",
@@ -1031,7 +1031,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 31,
+      "verified_quotes": 38,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1053,7 +1053,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 36,
+      "verified_quotes": 46,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1797,7 +1797,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 37,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
