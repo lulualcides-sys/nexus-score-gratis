@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T16:54:19.322613+00:00",
+  "checked_at": "2026-10-30T17:30:57.577099+00:00",
   "horizon_hours": 48,
-  "important_games": 70,
+  "important_games": 71,
   "verified_bookmaker_games": 18,
-  "indicative_only_games": 18,
-  "missing_bookmaker_price_games": 34,
+  "indicative_only_games": 17,
+  "missing_bookmaker_price_games": 36,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 18,
-    "indicative": 25,
-    "new_priority": 30
+    "indicative": 23,
+    "new_priority": 31
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 7,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -176,7 +176,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 23,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -191,9 +191,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.43,
-        "draw": 5.67,
-        "away": 8.06
+        "home": 1.42,
+        "draw": 5.69,
+        "away": 8.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -241,8 +241,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "draw",
-          "price": 3.43,
-          "bookmaker": "1xBet",
+          "price": 3.45,
+          "bookmaker": "Unibet (NL)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -305,16 +305,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.15,
+          "price": 1.14,
           "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.11,
-        "draw": 15.12,
-        "away": 29.21
+        "home": 1.12,
+        "draw": 14.16,
+        "away": 26.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13053/barcelona-vs-alaves-2026-10-31",
       "tipsaudit_id": "13053",
@@ -364,12 +364,42 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 11.94,
-        "draw": 9.18,
+        "home": 12.02,
+        "draw": 9.19,
         "away": 1.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13620/racing-santander-vs-real-madrid-2026-11-01",
       "tipsaudit_id": "13620",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Elche",
+      "away": "Valencia",
+      "kickoff_unix": 1793554200.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.48,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.39,
+        "draw": 3.56,
+        "away": 3.32
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13670/elche-vs-valencia-2026-11-01",
+      "tipsaudit_id": "13670",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
@@ -432,7 +462,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -454,8 +484,8 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.52,
-        "draw": 4.03,
+        "home": 3.56,
+        "draw": 3.97,
         "away": 2.14
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
@@ -558,19 +588,11 @@
       "league_code": "ger.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.88,
-          "bookmaker": "Unibet (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.6,
-        "draw": 4.13,
-        "away": 1.85
+        "home": 4.51,
+        "draw": 4.1,
+        "away": 1.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
       "tipsaudit_id": "12903",
@@ -578,7 +600,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Werder Bremen",
@@ -613,8 +635,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.37,
-        "draw": 6.16,
-        "away": 9.31
+        "draw": 6.17,
+        "away": 9.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13005/bayern-munchen-vs-borussia-dortmund-2026-10-31",
       "tipsaudit_id": "13005",
@@ -690,7 +712,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793378700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -712,7 +734,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793378700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -740,7 +762,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 182,
+      "verified_quotes": 188,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -755,9 +777,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 10.58,
-        "draw": 6.62,
-        "away": 1.33
+        "home": 10.59,
+        "draw": 6.68,
+        "away": 1.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
@@ -775,7 +797,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 45,
+      "verified_quotes": 51,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -803,19 +825,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.65,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.61,
-        "draw": 3.76,
-        "away": 2.86
+        "home": 2.73,
+        "draw": 3.66,
+        "away": 2.77
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12982/nice-vs-rennes-2026-10-30",
       "tipsaudit_id": "12982",
@@ -856,7 +870,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -871,9 +885,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.76,
-        "draw": 3.42,
-        "away": 2.9
+        "home": 2.77,
+        "draw": 3.41,
+        "away": 2.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -888,19 +902,11 @@
       "league_code": "fra.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.2,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.44,
-        "draw": 3.65,
-        "away": 3.17
+        "home": 2.38,
+        "draw": 3.66,
+        "away": 3.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13036/estac-troyes-vs-le-mans-2026-10-31",
       "tipsaudit_id": "13036",
@@ -908,7 +914,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Troyes",
@@ -964,9 +970,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.44,
-        "draw": 5.57,
-        "away": 7.85
+        "home": 1.45,
+        "draw": 5.5,
+        "away": 7.72
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13035/lyon-vs-angers-2026-11-01",
       "tipsaudit_id": "13035",
@@ -986,9 +992,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.47,
+        "home": 2.48,
         "draw": 3.69,
-        "away": 3.09
+        "away": 3.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13645/paris-fc-vs-monaco-2026-11-01",
       "tipsaudit_id": "13645",
@@ -1008,9 +1014,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.8,
-        "draw": 3.69,
-        "away": 2.69
+        "home": 2.81,
+        "draw": 3.7,
+        "away": 2.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12534/atletico-san-luis-vs-atlas-2026-10-31",
       "tipsaudit_id": "12534",
@@ -1062,16 +1068,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 3.3,
+          "price": 3.25,
           "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.15,
+        "home": 3.17,
         "draw": 3.71,
-        "away": 2.42
+        "away": 2.41
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12533/fc-juarez-vs-club-queretaro-2026-10-31",
       "tipsaudit_id": "12533",
@@ -1228,7 +1234,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 7,
+      "verified_quotes": 10,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1250,7 +1256,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1641,9 +1647,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.18,
-        "draw": 10.42,
-        "away": 18.26
+        "home": 1.17,
+        "draw": 10.5,
+        "away": 18.63
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12950/feyenoord-vs-fortuna-sittard-2026-10-31",
       "tipsaudit_id": "12950",
@@ -1919,7 +1925,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -2033,6 +2039,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "FC Schalke 04",
+      "away": "RB Leipzig",
+      "kickoff_unix": 1793457000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12903/fc-schalke-04-vs-rb-leipzig-2026-10-31",
+      "tipsaudit_id": "12903",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Werder Bremen",
       "away": "1899 Hoffenheim",
       "kickoff_unix": 1793457000.0,
@@ -2072,7 +2095,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793378700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -2093,7 +2116,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793378700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -2127,6 +2150,23 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Estac Troyes",
+      "away": "Le Mans",
+      "kickoff_unix": 1793475900.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13036/estac-troyes-vs-le-mans-2026-10-31",
+      "tipsaudit_id": "13036",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
