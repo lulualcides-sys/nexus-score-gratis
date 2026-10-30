@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T09:58:16.659892+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T10:53:27.646395+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -39,7 +39,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-10-30 | FBC Melgar × Comerciantes Unidos | 1-1 | 0 | Chutes no alvo: 4.0×7.0, Chutes para fora: 3.0×6.0, Escanteios: 4.0×4.0, Grandes chances: 1.0×0.0 |
 | 2026-10-30 | Guaraní × 2 de Mayo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Sportivo Trinidense × Rubio Ñú | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-30 | Brisbane Roar FC × Auckland FC | 0-1 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×1.0 |
+| 2026-10-30 | Brisbane Roar FC × Auckland FC | 0-1 | 90 | Chutes no alvo: 3.0×1.0, Chutes para fora: 6.0×7.0, Escanteios: 10.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-10-30 | Sisaket United × Ratchaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Mahasarakham Sam Bai Tao × Chanthaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-30 | Racing Club × Aldosivi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8464 | **Jogos distintos:** 2443 | **Resultados verificáveis:** 4835 | **Com gol:** 1846 | **Sem gol:** 2989 | **Taxa observada:** 38.2%.
-**Evolução da amostra:** 22 datas com coletas | 62 pendentes | 1562 indeterminados | 2005 incompletos.
+**Observações:** 8465 | **Jogos distintos:** 2443 | **Resultados verificáveis:** 4836 | **Com gol:** 1846 | **Sem gol:** 2990 | **Taxa observada:** 38.2%.
+**Evolução da amostra:** 22 datas com coletas | 56 pendentes | 1568 indeterminados | 2005 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 1692 | 1162 | 463 | 699 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1334 | 893 | 320 | 573 | 35.8% |
+| ⚡ pressao_ofensiva_18 | 1334 | 894 | 320 | 574 | 35.8% |
 | 🎯 chutes_no_alvo_5 | 1381 | 682 | 246 | 436 | 36.1% |
 | 🟥 expulsao_confirmada | 1259 | 585 | 202 | 383 | 34.5% |
-| 🚩 escanteios_6 | 1017 | 488 | 202 | 286 | 41.4% |
+| 🚩 escanteios_6 | 1018 | 488 | 202 | 286 | 41.4% |
 | 💣 grandes_chances_3 | 821 | 449 | 191 | 258 | 42.5% |
 | 🔥 pressao_forte_10min | 465 | 297 | 113 | 184 | 38.0% |
 | 🧨 pressao_total_5_10min | 257 | 162 | 63 | 99 | 38.9% |
@@ -253,22 +253,23 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 242 | 172 | 55 | 117 | 32.0% |
 | 16–30′ | 601 | 455 | 154 | 301 | 33.8% |
-| 31–45′ | 1728 | 1347 | 558 | 789 | 41.4% |
+| 31–45′ | 1728 | 1348 | 558 | 790 | 41.4% |
 | 46–60′ | 1118 | 809 | 309 | 500 | 38.2% |
-| 61–75′ | 1761 | 1226 | 456 | 770 | 37.2% |
+| 61–75′ | 1762 | 1226 | 456 | 770 | 37.2% |
 | 76–90′ | 2274 | 818 | 311 | 507 | 38.0% |
 | 91+′ | 740 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8464 | **Jogos monitorados:** 854 | **Ao vivo:** 32 | **Termômetros recentes:** 11.
+**Registros:** 8465 | **Jogos monitorados:** 854 | **Ao vivo:** 30 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-30T09:55:37.452849+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-30T10:33:26.068052+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (74') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-30T09:55:37.452849+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-30T09:11:21.098707+00:00 | Brisbane Roar FC × Auckland FC | Brisbane Roar FC (11') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-30T03:55:09.890194+00:00 | Deportivo Marquense × Guastatoya | Deportivo Marquense (86') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-30T03:55:09.890194+00:00 | Wanderers Durazno × Danubio | Wanderers Durazno (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
@@ -288,11 +289,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-30T01:06:34.485734+00:00 | América de Cali × Fortaleza FC | América de Cali (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-30T01:06:34.485734+00:00 | FBC Melgar × Comerciantes Unidos | FBC Melgar (36') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-30T01:06:34.485734+00:00 | Grêmio × Athletico Paranaense | Grêmio (35') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | América de Cali × Fortaleza FC | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Flamengo (71') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | América de Cali × Fortaleza FC | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Flamengo (71') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | América de Cali × Fortaleza FC | Fortaleza FC (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | Atlético-MG × Cruzeiro | Atlético-MG (65') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | Atlético-MG × Cruzeiro | Atlético-MG (65') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-29T20:52:55.162283+00:00 | Conquense × Castellón | Castellón (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-29T20:52:55.162283+00:00 | Ribadesella CF × Racing Santander | Racing Santander (45') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-29T20:52:55.162283+00:00 | Ribadesella CF × Racing Santander | Racing Santander (45') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-29T20:52:55.162283+00:00 | Ribadesella CF × Racing Santander | Racing Santander (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
