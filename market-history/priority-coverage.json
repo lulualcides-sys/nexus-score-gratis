@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T18:13:37.257284+00:00",
+  "checked_at": "2026-10-30T18:58:49.771672+00:00",
   "horizon_hours": 48,
   "important_games": 69,
   "verified_bookmaker_games": 18,
   "indicative_only_games": 19,
   "missing_bookmaker_price_games": 32,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_corners_stats": 3,
+  "games_with_yellow_cards_stats": 4,
+  "games_with_shots_on_target_stats": 4,
   "tipsaudit": {
     "status": "checked",
     "matched": 16,
@@ -153,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 11,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -176,7 +176,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 31,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -365,7 +365,7 @@
       ],
       "fair_odds_modelled": {
         "home": 12.02,
-        "draw": 9.19,
+        "draw": 9.2,
         "away": 1.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13620/racing-santander-vs-real-madrid-2026-11-01",
@@ -412,14 +412,14 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793385000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -462,7 +462,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 26,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -553,7 +553,7 @@
       ],
       "fair_odds_modelled": {
         "home": 2.06,
-        "draw": 4.16,
+        "draw": 4.15,
         "away": 3.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12901/borussia-monchengladbach-vs-sc-paderborn-07-2026-10-31",
@@ -710,9 +710,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.63,
-        "draw": 4.9,
-        "away": 5.49
+        "home": 1.59,
+        "draw": 5.04,
+        "away": 5.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13647/eintracht-frankfurt-vs-hamburger-sv-2026-11-01",
       "tipsaudit_id": "13647",
@@ -728,16 +728,16 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793383200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
         "Pinnacle guest"
       ],
       "verified_quotes": 192,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -753,14 +753,14 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793383200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 54,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -775,15 +775,15 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793383200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob",
         "Pinnacle guest"
       ],
       "verified_quotes": 137,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -826,7 +826,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 39,
+      "verified_quotes": 45,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -834,16 +834,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.8,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 2.76,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.77,
-        "draw": 3.39,
-        "away": 2.9
+        "home": 2.71,
+        "draw": 3.41,
+        "away": 2.96
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -905,8 +905,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.89,
-        "draw": 4.31,
-        "away": 4.19
+        "draw": 4.29,
+        "away": 4.2
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13609/strasbourg-vs-auxerre-2026-11-01",
       "tipsaudit_id": "13609",
@@ -1190,7 +1190,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1212,7 +1212,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1234,7 +1234,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1256,7 +1256,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 7,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1881,7 +1881,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1962,14 +1962,14 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793385000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
