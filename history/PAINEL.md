@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T04:54:49.122373+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-30T05:53:16.763177+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 8462 | **Jogos distintos:** 2442 | **Resultados verificáveis:** 4835 | **Com gol:** 1846 | **Sem gol:** 2989 | **Taxa observada:** 38.2%.
-**Evolução da amostra:** 22 datas com coletas | 61 pendentes | 1561 indeterminados | 2005 incompletos.
+**Evolução da amostra:** 22 datas com coletas | 55 pendentes | 1567 indeterminados | 2005 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -286,11 +286,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-30T01:06:34.485734+00:00 | América de Cali × Fortaleza FC | América de Cali (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-30T01:06:34.485734+00:00 | FBC Melgar × Comerciantes Unidos | FBC Melgar (36') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-30T01:06:34.485734+00:00 | Grêmio × Athletico Paranaense | Grêmio (35') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | América de Cali × Fortaleza FC | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
-| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Flamengo (71') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | América de Cali × Fortaleza FC | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Vasco da Gama (71') | ⏱️ tensao_tardia_70 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-30T00:34:04.035655+00:00 | Vasco da Gama × Flamengo | Flamengo (71') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | América de Cali × Fortaleza FC | Fortaleza FC (29') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | Atlético-MG × Cruzeiro | Atlético-MG (65') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-29T23:58:53.506241+00:00 | Atlético-MG × Cruzeiro | Atlético-MG (65') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
