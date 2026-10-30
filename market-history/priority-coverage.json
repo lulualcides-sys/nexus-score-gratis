@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T04:30:03.760815+00:00",
+  "checked_at": "2026-10-30T05:17:30.745802+00:00",
   "horizon_hours": 48,
   "important_games": 58,
   "verified_bookmaker_games": 17,
@@ -165,7 +165,7 @@
       "fair_odds_modelled": {
         "home": 1.43,
         "draw": 5.69,
-        "away": 7.86
+        "away": 7.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12521/villarreal-vs-espanyol-2026-10-30",
       "tipsaudit_id": "12521",
@@ -191,8 +191,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.57,
-        "draw": 5.22,
+        "home": 5.61,
+        "draw": 5.21,
         "away": 1.59
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12878/levante-vs-atletico-madrid-2026-10-31",
@@ -372,8 +372,8 @@
       ],
       "fair_odds_modelled": {
         "home": 3.22,
-        "draw": 4.07,
-        "away": 2.25
+        "draw": 4.06,
+        "away": 2.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12512/sv-elversberg-vs-fsv-mainz-05-2026-10-30",
       "tipsaudit_id": "12512",
@@ -586,19 +586,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.29,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 11.33,
-        "draw": 7.66,
-        "away": 1.28
+        "home": 11.01,
+        "draw": 7.51,
+        "away": 1.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
@@ -703,11 +695,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.8,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.7,
-        "draw": 3.61,
-        "away": 2.84
+        "home": 2.87,
+        "draw": 3.62,
+        "away": 2.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12522/lille-vs-lens-2026-10-30",
       "tipsaudit_id": "12522",
@@ -841,9 +841,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.45,
-        "draw": 3.83,
-        "away": 2.23
+        "home": 3.47,
+        "draw": 3.82,
+        "away": 2.22
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
       "tipsaudit_id": "12535",
@@ -886,7 +886,7 @@
     {
       "home": "Monterrey",
       "away": "Club Tijuana",
-      "kickoff_unix": 1793494800.0,
+      "kickoff_unix": 1793495100.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
@@ -894,7 +894,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.61,
-        "draw": 4.9,
+        "draw": 4.89,
         "away": 5.69
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13075/monterrey-vs-club-tijuana-2026-11-01",
@@ -930,7 +930,7 @@
     {
       "home": "Club America",
       "away": "Toluca",
-      "kickoff_unix": 1793502000.0,
+      "kickoff_unix": 1793502600.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
@@ -1497,7 +1497,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.78,
+          "price": 1.74,
           "bookmaker": "Unibet (NL)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -1941,7 +1941,7 @@
     {
       "home": "Monterrey",
       "away": "Club Tijuana",
-      "kickoff_unix": 1793494800.0,
+      "kickoff_unix": 1793495100.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
@@ -1975,7 +1975,7 @@
     {
       "home": "Club America",
       "away": "Toluca",
-      "kickoff_unix": 1793502000.0,
+      "kickoff_unix": 1793502600.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
