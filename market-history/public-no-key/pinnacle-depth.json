@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T07:19:02.332995+00:00",
-  "bookmaker_snapshot_at": "2026-10-30T07:19:00.230810+00:00",
+  "checked_at": "2026-10-30T10:06:42.011648+00:00",
+  "bookmaker_snapshot_at": "2026-10-30T10:06:39.950743+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1538,
+  "odds_eligible_for_quality": 1578,
   "invalid_quote_records": 0,
-  "complete_market_lines": 753,
+  "complete_market_lines": 773,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 330,
-      "complete_lines": 165,
+      "odds": 346,
+      "complete_lines": 173,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.7
+      "median_overround_pct": 4.01
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 250,
-      "complete_lines": 125,
+      "odds": 256,
+      "complete_lines": 128,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.32
+      "median_overround_pct": 5.9
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 186,
-      "complete_lines": 93,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.31
+      "median_overround_pct": 4.5
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.14
+      "median_overround_pct": 5.28
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.68
+      "median_overround_pct": 4.53
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.71
+      "median_overround_pct": 3.77
     },
     "team_goals": {
       "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "odds": 198,
+      "complete_lines": 99,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.36
+      "median_overround_pct": 5.62
     },
     "total_goals": {
       "games": 16,
-      "odds": 422,
-      "complete_lines": 211,
+      "odds": 424,
+      "complete_lines": 212,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.36
+      "median_overround_pct": 4.76
     }
   },
   "examples": [
     {
-      "fixture": "Elversberg x Mainz 05",
+      "fixture": "Nice x Rennes",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-30T07:19:00.230810+00:00",
+      "observed_at": "2026-10-30T10:06:39.950743+00:00",
       "selections": {
-        "home": 3.26,
-        "away": 2.11,
-        "draw": 3.95
+        "home": 2.6,
+        "away": 2.71,
+        "draw": 3.69
       },
-      "overround_pct": 3.38
+      "overround_pct": 2.46
     },
     {
-      "fixture": "Elversberg x Mainz 05",
+      "fixture": "Nice x Rennes",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-10-30T07:19:00.230810+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-10-30T10:06:39.950743+00:00",
       "selections": {
-        "home": 2.05,
-        "away": 1.8621
+        "home": 1.9174,
+        "away": 2.0
       },
-      "overround_pct": 2.48
+      "overround_pct": 2.15
     },
     {
-      "fixture": "Elversberg x Mainz 05",
+      "fixture": "Nice x Rennes",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-30T10:06:39.950743+00:00",
+      "selections": {
+        "home": 4.17,
+        "away": 1.2639
+      },
+      "overround_pct": 3.1
+    },
+    {
+      "fixture": "Nice x Rennes",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-30T07:19:00.230810+00:00",
+      "observed_at": "2026-10-30T10:06:39.950743+00:00",
       "selections": {
-        "home": 4.04,
-        "away": 1.2688
+        "home": 3.11,
+        "away": 1.4082
       },
-      "overround_pct": 3.57
+      "overround_pct": 3.17
     },
     {
-      "fixture": "Elversberg x Mainz 05",
+      "fixture": "Nice x Rennes",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-30T07:19:00.230810+00:00",
+      "observed_at": "2026-10-30T10:06:39.950743+00:00",
       "selections": {
-        "home": 3.24,
-        "away": 1.3745
+        "home": 2.59,
+        "away": 1.5618
       },
-      "overround_pct": 3.62
-    },
-    {
-      "fixture": "Elversberg x Mainz 05",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-30T07:19:00.230810+00:00",
-      "selections": {
-        "home": 2.87,
-        "away": 1.4651
-      },
-      "overround_pct": 3.1
+      "overround_pct": 2.64
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
