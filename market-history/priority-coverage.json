@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T02:54:55.752446+00:00",
+  "checked_at": "2026-10-30T03:35:04.290833+00:00",
   "horizon_hours": 48,
-  "important_games": 46,
-  "verified_bookmaker_games": 12,
-  "indicative_only_games": 14,
-  "missing_bookmaker_price_games": 20,
+  "important_games": 50,
+  "verified_bookmaker_games": 14,
+  "indicative_only_games": 12,
+  "missing_bookmaker_price_games": 24,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 4,
+    "matched": 7,
     "indicative": 20,
-    "new_priority": 33
+    "new_priority": 31
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -33,8 +33,8 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 26,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
@@ -397,9 +397,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.07,
-        "draw": 4.15,
-        "away": 3.62
+        "home": 2.06,
+        "draw": 4.16,
+        "away": 3.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12901/borussia-monchengladbach-vs-sc-paderborn-07-2026-10-31",
       "tipsaudit_id": "12901",
@@ -515,9 +515,10 @@
       "kickoff_unix": 1793383200.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "The Odds API official free"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -532,14 +533,15 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 11.19,
-        "draw": 7.74,
+        "home": 11.24,
+        "draw": 7.73,
         "away": 1.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12504/le-havre-vs-paris-saint-germain-2026-10-30",
       "tipsaudit_id": "12504",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "official_verified_total_corners_quotes": 12,
+      "coverage": "verified_price"
     },
     {
       "home": "Nice",
@@ -570,7 +572,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 14,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -589,9 +591,11 @@
       "tipsaudit_id": "12982",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
-        "TipsAudit"
+        "TipsAudit",
+        "The Odds API official free"
       ],
-      "coverage": "indicative_only"
+      "official_verified_total_corners_quotes": 14,
+      "coverage": "verified_price"
     },
     {
       "home": "Lille",
@@ -835,6 +839,28 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13076/guadalajara-chivas-vs-atlante-fc-2026-11-01",
       "tipsaudit_id": "13076",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Club America",
+      "away": "Toluca",
+      "kickoff_unix": 1793502000.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.35,
+        "draw": 4.04,
+        "away": 3.07
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13078/club-america-vs-toluca-2026-11-01",
+      "tipsaudit_id": "13078",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
@@ -1244,13 +1270,42 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Heerenveen",
-      "away": "NEC Nijmegen",
-      "kickoff_unix": 1793468700.0,
+      "home": "Feyenoord Rotterdam",
+      "away": "Fortuna Sittard",
       "league": "Eredivisie",
       "league_code": "ned.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793460600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Heerenveen",
+      "away": "NEC Nijmegen",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793468700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -1267,20 +1322,24 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13009/heerenveen-vs-nec-nijmegen-2026-10-31",
       "tipsaudit_id": "13009",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
     },
     {
       "home": "PSV Eindhoven",
       "away": "Willem II",
-      "kickoff_unix": 1793468700.0,
       "league": "Eredivisie",
       "league_code": "ned.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793468700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -1297,10 +1356,7 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13010/psv-eindhoven-vs-willem-ii-2026-10-31",
       "tipsaudit_id": "13010",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
     },
     {
@@ -1334,13 +1390,42 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Cambuur",
-      "away": "GO Ahead Eagles",
-      "kickoff_unix": 1793476800.0,
+      "home": "Ajax Amsterdam",
+      "away": "AZ Alkmaar",
       "league": "Eredivisie",
       "league_code": "ned.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793476800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "SC Cambuur",
+      "away": "Go Ahead Eagles",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793476800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.01,
@@ -1349,10 +1434,29 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13050/cambuur-vs-go-ahead-eagles-2026-10-31",
       "tipsaudit_id": "13050",
-      "source_confirmed": "TipsAudit schedule only",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Llaneros FC",
+      "away": "Atlético Junior",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793487600.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "ESPN"
       ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }
   ],
@@ -1616,6 +1720,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Club America",
+      "away": "Toluca",
+      "kickoff_unix": 1793502000.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13078/club-america-vs-toluca-2026-11-01",
+      "tipsaudit_id": "13078",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Estudiantes de Río Cuarto",
       "away": "Gimnasia La Plata",
       "league": "Liga Profesional Argentina",
@@ -1717,20 +1838,87 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Cambuur",
-      "away": "GO Ahead Eagles",
-      "kickoff_unix": 1793476800.0,
+      "home": "Feyenoord Rotterdam",
+      "away": "Fortuna Sittard",
       "league": "Eredivisie",
       "league_code": "ned.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793460600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Ajax Amsterdam",
+      "away": "AZ Alkmaar",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793476800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "SC Cambuur",
+      "away": "Go Ahead Eagles",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1793476800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13050/cambuur-vs-go-ahead-eagles-2026-10-31",
       "tipsaudit_id": "13050",
-      "source_confirmed": "TipsAudit schedule only",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Llaneros FC",
+      "away": "Atlético Junior",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793487600.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "ESPN"
       ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }
   ],

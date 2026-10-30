@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T02:54:52.638548+00:00",
+  "checked_at": "2026-10-30T03:34:59.816026+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
-  "created_games": 0,
+  "priority_fixtures_seen": 19,
+  "created_games": 6,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -86,6 +86,42 @@
       "fixture": "FC Juárez x Querétaro",
       "league": "mex.1",
       "kickoff": 1793408400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Feyenoord Rotterdam x Fortuna Sittard",
+      "league": "ned.1",
+      "kickoff": 1793460600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Heerenveen x NEC Nijmegen",
+      "league": "ned.1",
+      "kickoff": 1793468700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "PSV Eindhoven x Willem II",
+      "league": "ned.1",
+      "kickoff": 1793468700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Ajax Amsterdam x AZ Alkmaar",
+      "league": "ned.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "SC Cambuur x Go Ahead Eagles",
+      "league": "ned.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Llaneros FC x Atlético Junior",
+      "league": "col.1",
+      "kickoff": 1793487600,
       "reason": "no_verified_public_1x2"
     }
   ],
