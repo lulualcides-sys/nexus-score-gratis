@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-29T23:25:37.395572+00:00",
+  "checked_at": "2026-10-30T00:05:12.942645+00:00",
   "horizon_hours": 48,
-  "important_games": 48,
-  "verified_bookmaker_games": 10,
+  "important_games": 46,
+  "verified_bookmaker_games": 8,
   "indicative_only_games": 18,
   "missing_bookmaker_price_games": 20,
-  "games_with_corners_stats": 1,
+  "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 1,
   "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
@@ -144,50 +144,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Atlético-MG",
-      "away": "Cruzeiro",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793313000.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 30,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Vasco da Gama",
-      "away": "Flamengo",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793314800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 37,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Grêmio",
       "away": "Athletico-PR",
       "league": "Brasileirão Série A",
@@ -197,7 +153,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 39,
+      "verified_quotes": 45,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -287,9 +243,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.49,
-        "draw": 5.17,
-        "away": 1.6
+        "home": 5.57,
+        "draw": 5.22,
+        "away": 1.59
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12878/levante-vs-atletico-madrid-2026-10-31",
       "tipsaudit_id": "12878",
@@ -1032,16 +988,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.88,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 2.66,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.66,
-        "draw": 4.25,
-        "away": 2.57
+        "home": 2.61,
+        "draw": 4.31,
+        "away": 2.6
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13022/fc-cincinnati-vs-philadelphia-union-2026-10-31",
       "tipsaudit_id": "13022",
@@ -1315,9 +1271,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.74,
-        "draw": 4.87,
-        "away": 4.54
+        "home": 1.73,
+        "draw": 4.9,
+        "away": 4.61
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13049/ajax-vs-az-alkmaar-2026-10-31",
       "tipsaudit_id": "13049",
@@ -1355,14 +1311,14 @@
       "league": "Colômbia Primera A",
       "league_code": "col.1",
       "kickoff_unix": 1793315700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 39,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -1381,7 +1337,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 30,
+      "verified_quotes": 37,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
