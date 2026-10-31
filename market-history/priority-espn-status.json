@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T02:24:22.748318+00:00",
+  "checked_at": "2026-10-31T03:17:05.451808+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 24,
-  "created_games": 0,
+  "priority_fixtures_seen": 35,
+  "created_games": 13,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -143,9 +143,51 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Corinthians x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1793401200,
+      "fixture": "Como x Venezia",
+      "league": "ita.1",
+      "kickoff": 1793532600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Frosinone x Torino",
+      "league": "ita.1",
+      "kickoff": 1793541600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lazio x Cagliari",
+      "league": "ita.1",
+      "kickoff": 1793541600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lecce x Genoa",
+      "league": "ita.1",
+      "kickoff": 1793552400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Juventus x Napoli",
+      "league": "ita.1",
+      "kickoff": 1793562300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "1. FC Union Berlin x FC Cologne",
+      "league": "ger.1",
+      "kickoff": 1793543400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Eintracht Frankfurt x Hamburg SV",
+      "league": "ger.1",
+      "kickoff": 1793550600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Strasbourg x AJ Auxerre",
+      "league": "fra.1",
+      "kickoff": 1793541600,
       "reason": "no_verified_public_1x2"
     }
   ],

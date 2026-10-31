@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "collected_at": "2026-10-31T02:24:22+00:00",
-  "nexus_exported_at": "2026-10-31T02:01:10.299001+00:00",
-  "games_in_feed": 628,
-  "live_games_in_feed": 37,
-  "finished_games_in_feed": 561,
-  "new_observations": 27,
+  "collected_at": "2026-10-31T03:17:05+00:00",
+  "nexus_exported_at": "2026-10-31T02:54:12.911365+00:00",
+  "games_in_feed": 631,
+  "live_games_in_feed": 29,
+  "finished_games_in_feed": 571,
+  "new_observations": 26,
   "quotes_observed": 2110,
   "market_families": {
     "match_odds": {
@@ -132,5 +132,5 @@
   "liquidity_minimum_brl": 3000.0,
   "liquidity_qualified": 0,
   "liquidity_below": 0,
-  "liquidity_unknown": 628
+  "liquidity_unknown": 631
 }
