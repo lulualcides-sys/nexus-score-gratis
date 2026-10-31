@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T10:11:12.751151+00:00",
+  "checked_at": "2026-10-31T10:45:25.129134+00:00",
   "horizon_hours": 48,
   "important_games": 97,
   "verified_bookmaker_games": 27,
@@ -177,7 +177,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -200,7 +200,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -223,7 +223,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -246,7 +246,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -269,7 +269,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -292,7 +292,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -361,7 +361,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -397,7 +397,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 136,
+      "verified_quotes": 139,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -646,7 +646,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -824,7 +824,7 @@
         "ESPN",
         "OpenLigaDB"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -851,7 +851,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -908,7 +908,7 @@
         "ESPN",
         "OpenLigaDB"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -936,7 +936,7 @@
         "OpenLigaDB",
         "FotMob"
       ],
-      "verified_quotes": 11,
+      "verified_quotes": 14,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -984,7 +984,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,

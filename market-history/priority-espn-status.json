@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T10:11:08.287124+00:00",
+  "checked_at": "2026-10-31T10:45:20.839214+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -10,24 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Coventry City x Sunderland",
-      "league": "eng.1",
-      "kickoff": 1793458800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Hull City x Ipswich Town",
-      "league": "eng.1",
-      "kickoff": 1793458800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Manchester City x Brighton & Hove Albion",
-      "league": "eng.1",
-      "kickoff": 1793458800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Tottenham Hotspur x Crystal Palace",
       "league": "eng.1",
