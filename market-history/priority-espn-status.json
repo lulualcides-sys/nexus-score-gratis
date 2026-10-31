@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T20:03:26.022155+00:00",
+  "checked_at": "2026-10-31T20:43:23.337694+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 35,
-  "created_games": 4,
+  "priority_fixtures_seen": 33,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Moreirense x Estrela",
-      "league": "por.1",
-      "kickoff": 1793460600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Vélez Sarsfield x San Lorenzo",
       "league": "arg.1",
@@ -107,18 +101,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Santos x Necaxa",
-      "league": "mex.1",
-      "kickoff": 1793574000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cruz Azul x León",
-      "league": "mex.1",
-      "kickoff": 1793581800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Boca Juniors x River Plate",
       "league": "arg.1",
       "kickoff": 1793556000,
@@ -140,6 +122,18 @@
       "fixture": "Lanús x Gimnasia (Mendoza)",
       "league": "arg.1",
       "kickoff": 1793576700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Necaxa",
+      "league": "mex.1",
+      "kickoff": 1793574000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cruz Azul x León",
+      "league": "mex.1",
+      "kickoff": 1793581800,
       "reason": "no_verified_public_1x2"
     }
   ],

@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T20:03:34.560307+00:00",
+  "checked_at": "2026-10-31T20:43:32.532135+00:00",
   "source_count": 5,
   "sources_ok": 5,
   "source_status": {
     "nexus": {
       "status": "ok",
       "age_minutes": 0.2,
-      "odds_observed": 2444,
+      "odds_observed": 2473,
       "source_file": "status.json"
     },
     "espn_priority": {
       "status": "ok",
-      "age_minutes": 0.1,
+      "age_minutes": 0.2,
       "odds_observed": 9,
       "source_file": "priority-espn-status.json",
       "scoreboards_checked": 10,
-      "priority_fixtures_seen": 35
+      "priority_fixtures_seen": 33
     },
     "espn_boxscore": {
       "status": "ok",
@@ -30,12 +30,12 @@
     "tipsaudit": {
       "status": "ok",
       "age_minutes": 0.1,
-      "odds_observed": 71,
+      "odds_observed": 68,
       "source_file": "public-no-key/status.json"
     },
     "pinnacle": {
       "status": "ok",
-      "age_minutes": 61.9,
+      "age_minutes": 101.8,
       "odds_observed": 1852,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 16,
