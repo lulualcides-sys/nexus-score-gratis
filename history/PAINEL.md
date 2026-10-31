@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T09:47:12.373639+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T10:44:01.915646+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **21**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -26,7 +26,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-31 | Brentford × Nottingham Forest | 0-0 | 0 | Match Odds 1X2: Casa 2,15, Empate 3,60, Fora 3,35 |
 | 2026-10-31 | Aston Villa × Fulham | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | AFC Bournemouth × Leeds United | 0-0 | 0 | Match Odds 1X2: Casa 2,15, Empate 3,40, Fora 3,55 |
-| 2026-10-31 | Rayo Vallecano × Celta Vigo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Rayo Vallecano × Celta Vigo | 0-0 | 0 | Match Odds 1X2: Casa 2,50, Empate 3,15, Fora 3,00 |
 | 2026-10-31 | Levante × Atlético Madrid | 0-0 | 0 | Match Odds 1X2: Casa 5,75, Empate 4,70, Fora 1,51 |
 | 2026-10-31 | Barcelona × Alavés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Real Betis × Málaga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 | 2026-10-31 | Sportivo San Lorenzo × Libertad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Newcastle Jets × Wellington Phoenix | 0-3 | 90 | Chutes no alvo: 5.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 8.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-31 | Melbourne City FC × Sydney FC | 2-1 | 53 | Chutes no alvo: 3.0×1.0, Chutes para fora: 9.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
-| 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-0 | 47 | Chutes no alvo: 0.0×5.0, Chutes para fora: 1.0×3.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×2.0 |
+| 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-0 | 79 | Chutes no alvo: 1.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 6.0×6.0, Grandes chances: 1.0×2.0 |
 | 2026-10-31 | Bangkok United × Uthai Thani FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Pattani FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Phrae United × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8860 | **Jogos distintos:** 2558 | **Resultados verificáveis:** 5016 | **Com gol:** 1932 | **Sem gol:** 3084 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 23 datas com coletas | 71 pendentes | 1629 indeterminados | 2144 incompletos.
+**Observações:** 8865 | **Jogos distintos:** 2561 | **Resultados verificáveis:** 5020 | **Com gol:** 1932 | **Sem gol:** 3088 | **Taxa observada:** 38.5%.
+**Evolução da amostra:** 23 datas com coletas | 71 pendentes | 1629 indeterminados | 2145 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1767 | 1203 | 481 | 722 | 40.0% |
-| ⚡ pressao_ofensiva_18 | 1402 | 938 | 341 | 597 | 36.4% |
-| 🎯 chutes_no_alvo_5 | 1451 | 704 | 257 | 447 | 36.5% |
-| 🟥 expulsao_confirmada | 1325 | 610 | 212 | 398 | 34.8% |
-| 🚩 escanteios_6 | 1070 | 504 | 207 | 297 | 41.1% |
+| 🥶 jogo_frio | 1768 | 1204 | 481 | 723 | 40.0% |
+| ⚡ pressao_ofensiva_18 | 1403 | 939 | 341 | 598 | 36.3% |
+| 🎯 chutes_no_alvo_5 | 1451 | 705 | 257 | 448 | 36.5% |
+| 🟥 expulsao_confirmada | 1327 | 610 | 212 | 398 | 34.8% |
+| 🚩 escanteios_6 | 1071 | 505 | 207 | 298 | 41.0% |
 | 💣 grandes_chances_3 | 853 | 460 | 199 | 261 | 43.3% |
 | 🔥 pressao_forte_10min | 484 | 311 | 121 | 190 | 38.9% |
 | 🧨 pressao_total_5_10min | 265 | 167 | 67 | 100 | 40.1% |
@@ -227,7 +227,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga Profesional | 230 | 146 | 40 | 106 | 27.4% |
 | Serie A | 216 | 142 | 68 | 74 | 47.9% |
 | Serie B | 197 | 138 | 52 | 86 | 37.7% |
-| Super League | 223 | 124 | 38 | 86 | 30.6% |
+| Super League | 224 | 124 | 38 | 86 | 30.6% |
 | Série A | 199 | 121 | 44 | 77 | 36.4% |
 | Bundesliga | 190 | 120 | 48 | 72 | 40.0% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
@@ -241,7 +241,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | LaLiga | 152 | 92 | 34 | 58 | 37.0% |
 | 2. Bundesliga | 143 | 92 | 38 | 54 | 41.3% |
 | Liga MX | 178 | 91 | 30 | 61 | 33.0% |
-| Super Lig | 116 | 91 | 32 | 59 | 35.2% |
+| Super Lig | 117 | 91 | 32 | 59 | 35.2% |
 | Eredivisie | 152 | 87 | 42 | 45 | 48.3% |
 | Primera División | 148 | 85 | 26 | 59 | 30.6% |
 | Eliteserien | 131 | 85 | 29 | 56 | 34.1% |
@@ -251,26 +251,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 251 | 177 | 59 | 118 | 33.3% |
+| 1–15′ | 252 | 177 | 59 | 118 | 33.3% |
 | 16–30′ | 620 | 470 | 163 | 307 | 34.7% |
 | 31–45′ | 1840 | 1422 | 590 | 832 | 41.5% |
-| 46–60′ | 1170 | 847 | 331 | 516 | 39.1% |
+| 46–60′ | 1171 | 849 | 331 | 518 | 39.0% |
 | 61–75′ | 1806 | 1257 | 468 | 789 | 37.2% |
-| 76–90′ | 2387 | 835 | 318 | 517 | 38.1% |
+| 76–90′ | 2390 | 837 | 318 | 519 | 38.0% |
 | 91+′ | 786 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8860 | **Jogos monitorados:** 1362 | **Ao vivo:** 42 | **Termômetros recentes:** 9.
+**Registros:** 8865 | **Jogos monitorados:** 1362 | **Ao vivo:** 50 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T09:47:45.321254+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (48') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T09:47:45.321254+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (48') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T09:14:03.048693+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (34') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-10-31T10:44:35.870303+00:00 | Erzurumspor FK × Çorum FK | Çorum FK (14') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T10:19:21.324347+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (80') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-31T10:19:21.324347+00:00 | Macarthur FC × Western Sydney Wanderers FC | Macarthur FC (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-31T10:19:21.324347+00:00 | Sabah × Terengganu | Terengganu (51') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T10:19:21.324347+00:00 | Arema × Bali United FC | Arema (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T09:47:45.321254+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (48') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T09:47:45.321254+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (48') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T09:14:03.048693+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (34') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T08:51:18.352931+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (11') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T08:51:18.352931+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Kashiwa Reysol (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-31T08:51:18.352931+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -363,15 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T02:00:56.727613+00:00 | Bucaramanga × Deportivo Pasto | Bucaramanga (45') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T02:00:56.727613+00:00 | Atlético de San Luis × Atlas | Atlético de San Luis (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T02:00:56.727613+00:00 | FC Juárez × Querétaro FC | Querétaro FC (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-31T02:00:56.727613+00:00 | Sarmiento × Rosario Central | Sarmiento (86') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-31T02:00:56.727613+00:00 | Detroit City FC × Hartford Athletic | Detroit City FC (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T01:54:20.832629+00:00 | Racing Club × Aldosivi | Racing Club (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-31T01:54:20.832629+00:00 | Sarmiento × Rosario Central | Rosario Central (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T01:54:20.832629+00:00 | Sarmiento × Rosario Central | Rosario Central (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **107**.
+Jogos com odds registradas nos ultimos dias: **112**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
