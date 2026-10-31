@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T12:05:59.651941+00:00",
+  "checked_at": "2026-10-31T12:54:52.874372+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -10,12 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Aston Villa x Fulham",
-      "league": "eng.1",
-      "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Barcelona x Alavés",
       "league": "esp.1",
@@ -32,6 +26,12 @@
       "fixture": "Troyes x Le Mans",
       "league": "fra.1",
       "kickoff": 1793475900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Aston Villa x Fulham",
+      "league": "eng.1",
+      "kickoff": 1793476800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -74,24 +74,6 @@
       "fixture": "SC Cambuur x Go Ahead Eagles",
       "league": "ned.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Columbus Crew x D.C. United",
-      "league": "usa.1",
-      "kickoff": 1793469600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Cincinnati x Philadelphia Union",
-      "league": "usa.1",
-      "kickoff": 1793469600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "New York City FC x CF Montréal",
-      "league": "usa.1",
-      "kickoff": 1793469600,
       "reason": "no_verified_public_1x2"
     },
     {
