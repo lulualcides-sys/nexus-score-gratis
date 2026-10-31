@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T09:25:34.199582+00:00",
+  "checked_at": "2026-10-31T10:11:08.287124+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -38,12 +38,6 @@
       "fixture": "Aston Villa x Fulham",
       "league": "eng.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Rayo Vallecano x Celta Vigo",
-      "league": "esp.1",
-      "kickoff": 1793459700,
       "reason": "no_verified_public_1x2"
     },
     {
