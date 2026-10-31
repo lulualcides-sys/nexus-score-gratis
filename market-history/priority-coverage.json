@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T20:43:27.431114+00:00",
+  "checked_at": "2026-10-31T21:20:50.563664+00:00",
   "horizon_hours": 48,
-  "important_games": 61,
-  "verified_bookmaker_games": 18,
+  "important_games": 52,
+  "verified_bookmaker_games": 13,
   "indicative_only_games": 14,
-  "missing_bookmaker_price_games": 29,
-  "games_with_corners_stats": 6,
-  "games_with_yellow_cards_stats": 6,
-  "games_with_shots_on_target_stats": 6,
+  "missing_bookmaker_price_games": 25,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
-    "matched": 8,
-    "indicative": 18,
+    "matched": 6,
+    "indicative": 17,
     "new_priority": 23
   },
   "pinnacle_guest": {
@@ -144,73 +144,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Aston Villa",
-      "away": "Fulham",
-      "league": "eng.1",
-      "league_code": "eng.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 30,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Barcelona",
-      "away": "Deportivo Alavés",
-      "league": "LaLiga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Barcelona",
-      "away": "Alavés",
-      "league": "esp.1",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 29,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Getafe",
       "away": "Sevilla",
       "kickoff_unix": 1793538000.0,
@@ -218,18 +151,10 @@
       "league_code": "esp.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.6,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.39,
-        "draw": 3.17,
+        "home": 3.4,
+        "draw": 3.15,
         "away": 2.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13595/getafe-vs-sevilla-2026-11-01",
@@ -238,7 +163,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Racing Santander",
@@ -258,8 +183,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.45,
-        "draw": 9.51,
+        "home": 12.49,
+        "draw": 9.5,
         "away": 1.23
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13620/racing-santander-vs-real-madrid-2026-11-01",
@@ -361,28 +286,6 @@
         "TipsAudit"
       ],
       "coverage": "indicative_only"
-    },
-    {
-      "home": "AC Milan",
-      "away": "Internazionale",
-      "league": "ita.1",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793475900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 30,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Como",
@@ -603,29 +506,6 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Troyes",
-      "away": "Le Mans",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793475900.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 30,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Strasbourg",
       "away": "AJ Auxerre",
       "league": "Ligue 1",
@@ -774,16 +654,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.04,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.05,
+        "home": 2.03,
         "draw": 4.21,
-        "away": 3.65
+        "away": 3.72
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Lorient",
@@ -803,9 +691,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.61,
+        "home": 2.59,
         "draw": 3.43,
-        "away": 3.08
+        "away": 3.11
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
       "tipsaudit_id": "13034",
@@ -825,21 +713,29 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.15,
+          "bookmaker": "Coolbet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.27,
-        "draw": 3.76,
-        "away": 3.41
+        "home": 2.06,
+        "draw": 3.89,
+        "away": 3.88
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
       "tipsaudit_id": "13073",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Pachuca",
@@ -952,9 +848,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.48,
-        "draw": 5.31,
-        "away": 7.27
+        "home": 1.49,
+        "draw": 5.22,
+        "away": 7.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13076/guadalajara-chivas-vs-atlante-fc-2026-11-01",
       "tipsaudit_id": "13076",
@@ -974,9 +870,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.43,
-        "draw": 4.07,
-        "away": 2.92
+        "home": 2.44,
+        "draw": 4.02,
+        "away": 2.93
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13078/club-america-vs-toluca-2026-11-01",
       "tipsaudit_id": "13078",
@@ -1065,28 +961,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Deportivo Riestra",
-      "away": "Talleres (Córdoba)",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 27,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Vélez Sarsfield",
       "away": "San Lorenzo",
       "league": "Liga Profesional Argentina",
@@ -1096,7 +970,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 31,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1118,7 +992,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 26,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1230,27 +1104,15 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 165,
+      "verified_quotes": 169,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.41,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.37,
-        "draw": 6.58,
-        "away": 8.38
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13068/los-angeles-galaxy-vs-austin-2026-10-31",
-      "tipsaudit_id": "13068",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
@@ -1267,27 +1129,15 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 160,
+      "verified_quotes": 163,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.8,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.64,
-        "draw": 4.0,
-        "away": 2.69
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13067/san-jose-earthquakes-vs-real-salt-lake-2026-10-31",
-      "tipsaudit_id": "13067",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -1304,7 +1154,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 135,
+      "verified_quotes": 138,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1312,8 +1162,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.38,
-        "draw": 3.92,
-        "away": 3.08
+        "draw": 3.91,
+        "away": 3.09
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13077/colorado-rapids-vs-chicago-fire-2026-11-01",
       "tipsaudit_id": "13077",
@@ -1475,58 +1325,14 @@
       "league": "Liga Portugal",
       "league_code": "por.1",
       "kickoff_unix": 1793478600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Ajax",
-      "away": "AZ Alkmaar",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1793476800.0,
       "phase": "live",
       "data_sources": [
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": true,
       "observed_card_counts": true,
       "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Ajax Amsterdam",
-      "away": "AZ Alkmaar",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -1534,29 +1340,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
-    },
-    {
-      "home": "SC Cambuur",
-      "away": "Go Ahead Eagles",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
     },
     {
       "home": "PEC Zwolle",
@@ -1672,7 +1455,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1687,24 +1470,20 @@
   ],
   "top_missing": [
     {
-      "home": "Barcelona",
-      "away": "Deportivo Alavés",
-      "league": "LaLiga",
+      "home": "Getafe",
+      "away": "Sevilla",
+      "kickoff_unix": 1793538000.0,
+      "league": "La Liga",
       "league_code": "esp.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
+      "phase": "unknown",
       "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13595/getafe-vs-sevilla-2026-11-01",
+      "tipsaudit_id": "13595",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
@@ -1851,48 +1630,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Marseille",
-      "away": "Toulouse",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793562300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
-      "tipsaudit_id": "13680",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Pachuca",
-      "away": "Tigres UANL",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1793487600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
-      "tipsaudit_id": "13073",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -2190,49 +1927,6 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Ajax",
-      "away": "AZ Alkmaar",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "SC Cambuur",
-      "away": "Go Ahead Eagles",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1793476800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
