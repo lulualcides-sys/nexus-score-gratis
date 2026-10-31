@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T22:41:54.206381+00:00",
+  "checked_at": "2026-10-31T23:19:09.165491+00:00",
   "horizon_hours": 48,
-  "important_games": 49,
-  "verified_bookmaker_games": 12,
-  "indicative_only_games": 14,
-  "missing_bookmaker_price_games": 23,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "important_games": 48,
+  "verified_bookmaker_games": 11,
+  "indicative_only_games": 12,
+  "missing_bookmaker_price_games": 25,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 6,
-    "indicative": 17,
+    "matched": 5,
+    "indicative": 14,
     "new_priority": 23
   },
   "pinnacle_guest": {
@@ -185,8 +185,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.03,
-        "draw": 9.24,
+        "home": 12.04,
+        "draw": 9.25,
         "away": 1.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13620/racing-santander-vs-real-madrid-2026-11-01",
@@ -245,8 +245,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.21,
-        "draw": 3.87,
+        "home": 2.22,
+        "draw": 3.86,
         "away": 3.45
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
@@ -484,16 +484,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.64,
-          "bookmaker": "1xBet",
+          "price": 1.6,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.61,
-        "draw": 4.96,
-        "away": 5.64
+        "home": 1.58,
+        "draw": 5.06,
+        "away": 5.92
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13647/eintracht-frankfurt-vs-hamburger-sv-2026-11-01",
       "tipsaudit_id": "13647",
@@ -652,24 +652,16 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.04,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.03,
-        "draw": 4.21,
-        "away": 3.72
+        "home": 2.04,
+        "draw": 4.19,
+        "away": 3.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Lorient",
@@ -716,22 +708,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.05,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.92,
-        "draw": 4.06,
-        "away": 4.3
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13073/cf-pachuca-vs-tigres-uanl-2026-10-31",
-      "tipsaudit_id": "13073",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -769,7 +749,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 111,
+      "verified_quotes": 114,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -818,7 +798,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -848,9 +828,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.49,
-        "draw": 5.22,
-        "away": 7.24
+        "home": 1.48,
+        "draw": 5.26,
+        "away": 7.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13076/guadalajara-chivas-vs-atlante-fc-2026-11-01",
       "tipsaudit_id": "13076",
@@ -961,28 +941,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Vélez Sarsfield",
-      "away": "San Lorenzo",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793484900.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 38,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Estudiantes de La Plata",
       "away": "Instituto (Córdoba)",
       "league": "Liga Profesional Argentina",
@@ -992,7 +950,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 37,
+      "verified_quotes": 44,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1103,16 +1061,16 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.38,
-        "draw": 3.91,
-        "away": 3.09
+        "home": 2.39,
+        "draw": 3.84,
+        "away": 3.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13077/colorado-rapids-vs-chicago-fire-2026-11-01",
       "tipsaudit_id": "13077",
@@ -1195,15 +1153,7 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.41,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.88,
         "draw": 4.34,
@@ -1215,7 +1165,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Los Angeles FC",
@@ -1309,9 +1259,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.65,
-        "draw": 4.84,
-        "away": 1.62
+        "home": 5.89,
+        "draw": 4.95,
+        "away": 1.59
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13602/excelsior-vs-twente-2026-11-01",
       "tipsaudit_id": "13602",
@@ -1383,7 +1333,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1583,6 +1533,27 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Marseille",
+      "away": "Toulouse",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793562300.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
+      "tipsaudit_id": "13680",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Pachuca",
       "away": "Tigres",
       "league": "Liga MX",
@@ -1795,6 +1766,23 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13706/nashville-sc-vs-new-york-red-bulls-2026-11-01",
       "tipsaudit_id": "13706",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "New England Revolution",
+      "away": "Inter Miami",
+      "kickoff_unix": 1793577600.0,
+      "league": "MLS",
+      "league_code": "usa.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13711/new-england-revolution-vs-inter-miami-2026-11-02",
+      "tipsaudit_id": "13711",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
