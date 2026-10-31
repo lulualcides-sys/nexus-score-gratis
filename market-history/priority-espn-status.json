@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T15:07:09.468302+00:00",
+  "checked_at": "2026-10-31T15:42:20.828216+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -11,15 +11,9 @@
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Moreirense x Estrela",
-      "league": "por.1",
-      "kickoff": 1793460600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Porto x Estoril",
-      "league": "por.1",
-      "kickoff": 1793478600,
+      "fixture": "Colorado Rapids x Chicago Fire FC",
+      "league": "usa.1",
+      "kickoff": 1793496600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -53,24 +47,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "LA Galaxy x Austin FC",
-      "league": "usa.1",
-      "kickoff": 1793480400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "San Jose Earthquakes x Real Salt Lake",
-      "league": "usa.1",
-      "kickoff": 1793480400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Colorado Rapids x Chicago Fire FC",
-      "league": "usa.1",
-      "kickoff": 1793496600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Coritiba x Vitória",
       "league": "bra.1",
       "kickoff": 1793473200,
@@ -80,6 +56,18 @@
       "fixture": "Vélez Sarsfield x San Lorenzo",
       "league": "arg.1",
       "kickoff": 1793484900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Moreirense x Estrela",
+      "league": "por.1",
+      "kickoff": 1793460600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Porto x Estoril",
+      "league": "por.1",
+      "kickoff": 1793478600,
       "reason": "no_verified_public_1x2"
     }
   ],
