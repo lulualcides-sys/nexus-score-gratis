@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T06:11:21.418094+00:00",
+  "checked_at": "2026-10-31T06:59:35.916290+00:00",
   "horizon_hours": 48,
   "important_games": 97,
   "verified_bookmaker_games": 16,
@@ -331,7 +331,7 @@
         "FotMob",
         "The Odds API official free"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 25,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1619,16 +1619,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.51,
+          "price": 1.5,
           "bookmaker": "Unibet (NL)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.5,
-        "draw": 5.23,
-        "away": 7.13
+        "home": 1.46,
+        "draw": 5.44,
+        "away": 7.7
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13076/guadalajara-chivas-vs-atlante-fc-2026-11-01",
       "tipsaudit_id": "13076",
