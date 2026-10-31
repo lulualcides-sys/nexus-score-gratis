@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T13:07:58.772587+00:00",
-  "bookmaker_snapshot_at": "2026-10-31T13:07:57.633070+00:00",
+  "checked_at": "2026-10-31T15:51:10.869890+00:00",
+  "bookmaker_snapshot_at": "2026-10-31T15:51:08.330648+00:00",
   "status": "fresh",
-  "matches_catalogued": 6,
-  "matches_with_priced_markets": 6,
-  "odds_eligible_for_quality": 600,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1622,
   "invalid_quote_records": 0,
-  "complete_market_lines": 294,
+  "complete_market_lines": 795,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 6,
-      "odds": 118,
-      "complete_lines": 59,
+      "games": 16,
+      "odds": 372,
+      "complete_lines": 186,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.14
+      "median_overround_pct": 4.02
     },
     "first_half_goals": {
-      "games": 6,
-      "odds": 94,
-      "complete_lines": 47,
+      "games": 16,
+      "odds": 248,
+      "complete_lines": 124,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 5.87
     },
     "first_half_handicap": {
-      "games": 6,
-      "odds": 72,
-      "complete_lines": 36,
+      "games": 16,
+      "odds": 192,
+      "complete_lines": 96,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.83
+      "median_overround_pct": 4.48
     },
     "first_half_team_goals": {
-      "games": 6,
-      "odds": 24,
-      "complete_lines": 12,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 5.28
     },
     "half_time": {
-      "games": 6,
-      "odds": 18,
-      "complete_lines": 6,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.77
+      "median_overround_pct": 4.26
     },
     "match_odds": {
-      "games": 6,
-      "odds": 18,
-      "complete_lines": 6,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 2.9
+      "median_overround_pct": 3.46
     },
     "team_goals": {
-      "games": 6,
-      "odds": 74,
-      "complete_lines": 37,
+      "games": 16,
+      "odds": 202,
+      "complete_lines": 101,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.13
+      "median_overround_pct": 5.28
     },
     "total_goals": {
-      "games": 6,
-      "odds": 182,
-      "complete_lines": 91,
+      "games": 16,
+      "odds": 448,
+      "complete_lines": 224,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.38
+      "median_overround_pct": 4.78
     }
   },
   "examples": [
     {
-      "fixture": "Borussia Monchengladbach x Paderborn",
+      "fixture": "Pachuca x Tigres UANL",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-31T13:07:57.633070+00:00",
+      "observed_at": "2026-10-31T15:51:08.330648+00:00",
       "selections": {
-        "home": 2.2,
-        "away": 3.21,
-        "draw": 3.85
+        "home": 2.22,
+        "away": 3.29,
+        "draw": 3.61
       },
-      "overround_pct": 2.58
+      "overround_pct": 3.14
     },
     {
-      "fixture": "Borussia Monchengladbach x Paderborn",
+      "fixture": "Pachuca x Tigres UANL",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-31T13:07:57.633070+00:00",
+      "observed_at": "2026-10-31T15:51:08.330648+00:00",
       "selections": {
         "home": 1.9259,
-        "away": 2.0
+        "away": 1.9709
       },
-      "overround_pct": 1.92
+      "overround_pct": 2.66
     },
     {
-      "fixture": "Borussia Monchengladbach x Paderborn",
+      "fixture": "Pachuca x Tigres UANL",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-31T13:07:57.633070+00:00",
+      "observed_at": "2026-10-31T15:51:08.330648+00:00",
       "selections": {
-        "home": 3.58,
-        "away": 1.3289
+        "home": 3.84,
+        "away": 1.2899
       },
-      "overround_pct": 3.18
+      "overround_pct": 3.57
     },
     {
-      "fixture": "Borussia Monchengladbach x Paderborn",
+      "fixture": "Pachuca x Tigres UANL",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-31T13:07:57.633070+00:00",
+      "observed_at": "2026-10-31T15:51:08.330648+00:00",
       "selections": {
-        "home": 3.19,
-        "away": 1.3937
+        "home": 3.39,
+        "away": 1.3497
       },
-      "overround_pct": 3.1
+      "overround_pct": 3.59
     },
     {
-      "fixture": "Borussia Monchengladbach x Paderborn",
+      "fixture": "Pachuca x Tigres UANL",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-31T13:07:57.633070+00:00",
+      "observed_at": "2026-10-31T15:51:08.330648+00:00",
       "selections": {
-        "home": 2.55,
-        "away": 1.5747
+        "home": 2.62,
+        "away": 1.5405
       },
-      "overround_pct": 2.72
+      "overround_pct": 3.08
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
