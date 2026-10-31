@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-30T23:43:25.887119+00:00",
+  "checked_at": "2026-10-31T00:22:19.261137+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 30,
+  "priority_fixtures_seen": 26,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Huracán x Tigre",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Juárez x Querétaro",
-      "league": "mex.1",
-      "kickoff": 1793408400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Feyenoord Rotterdam x Fortuna Sittard",
       "league": "ned.1",
