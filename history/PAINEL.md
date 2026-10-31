@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T07:57:31.452856+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T08:50:47.059892+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -31,14 +31,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-31 | Barcelona × Alavés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Real Betis × Málaga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Troyes × Le Mans | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Schalke 04 × RB Leipzig | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Werder Bremen × TSG Hoffenheim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Borussia Mönchengladbach × SC Paderborn 07 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | FC Augsburg × SC Freiburg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Bayer Leverkusen × VfB Stuttgart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Schalke 04 × RB Leipzig | 0-0 | 0 | Match Odds 1X2: Casa 3,95, Empate 3,75, Fora 1,77 |
+| 2026-10-31 | Werder Bremen × TSG Hoffenheim | 0-0 | 0 | Match Odds 1X2: Casa 2,50, Empate 3,75, Fora 2,40 |
+| 2026-10-31 | Borussia Mönchengladbach × SC Paderborn 07 | 0-0 | 0 | Match Odds 1X2: Casa 2,15, Empate 3,65, Fora 2,95 |
+| 2026-10-31 | FC Augsburg × SC Freiburg | 0-0 | 0 | Match Odds 1X2: Casa 2,85, Empate 3,65, Fora 2,20 |
+| 2026-10-31 | Bayer Leverkusen × VfB Stuttgart | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 4,30, Fora 4,10 |
 | 2026-10-31 | Bayern Munich × Borussia Dortmund | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | AC Milan × Internazionale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Bologna × Monza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Bologna × Monza | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,75, Fora 4,80 |
 | 2026-10-31 | Udinese × AS Roma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | FC Cincinnati × Philadelphia Union | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Charlotte FC × Orlando City SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -100,7 +100,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 | 2026-10-31 | Sportivo San Lorenzo × Libertad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Newcastle Jets × Wellington Phoenix | 0-3 | 90 | Chutes no alvo: 5.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 8.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-31 | Melbourne City FC × Sydney FC | 2-1 | 53 | Chutes no alvo: 3.0×1.0, Chutes para fora: 9.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
-| 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-1 | 10 | Chutes no alvo: 0.0×2.0, Chutes para fora: 0.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-10-31 | Bangkok United × Uthai Thani FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Pattani FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Phrae United × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8850 | **Jogos distintos:** 2556 | **Resultados verificáveis:** 5011 | **Com gol:** 1932 | **Sem gol:** 3079 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 23 datas com coletas | 74 pendentes | 1627 indeterminados | 2138 incompletos.
+**Observações:** 8857 | **Jogos distintos:** 2558 | **Resultados verificáveis:** 5015 | **Com gol:** 1932 | **Sem gol:** 3083 | **Taxa observada:** 38.5%.
+**Evolução da amostra:** 23 datas com coletas | 72 pendentes | 1628 indeterminados | 2142 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1764 | 1203 | 481 | 722 | 40.0% |
-| ⚡ pressao_ofensiva_18 | 1400 | 936 | 341 | 595 | 36.4% |
-| 🎯 chutes_no_alvo_5 | 1448 | 702 | 257 | 445 | 36.6% |
-| 🟥 expulsao_confirmada | 1324 | 610 | 212 | 398 | 34.8% |
-| 🚩 escanteios_6 | 1069 | 503 | 207 | 296 | 41.2% |
+| 🥶 jogo_frio | 1766 | 1203 | 481 | 722 | 40.0% |
+| ⚡ pressao_ofensiva_18 | 1401 | 937 | 341 | 596 | 36.4% |
+| 🎯 chutes_no_alvo_5 | 1450 | 704 | 257 | 447 | 36.5% |
+| 🟥 expulsao_confirmada | 1325 | 610 | 212 | 398 | 34.8% |
+| 🚩 escanteios_6 | 1070 | 504 | 207 | 297 | 41.1% |
 | 💣 grandes_chances_3 | 853 | 460 | 199 | 261 | 43.3% |
 | 🔥 pressao_forte_10min | 484 | 311 | 121 | 190 | 38.9% |
 | 🧨 pressao_total_5_10min | 265 | 167 | 67 | 100 | 40.1% |
@@ -223,7 +223,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier League | 416 | 249 | 75 | 174 | 30.1% |
 | Major League Soccer | 328 | 171 | 77 | 94 | 45.0% |
-| J. League | 266 | 164 | 77 | 87 | 47.0% |
+| J. League | 271 | 167 | 77 | 90 | 46.1% |
 | Liga Profesional | 230 | 146 | 40 | 106 | 27.4% |
 | Serie A | 216 | 142 | 68 | 74 | 47.9% |
 | Serie B | 197 | 138 | 52 | 86 | 37.7% |
@@ -251,28 +251,35 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 250 | 177 | 59 | 118 | 33.3% |
+| 1–15′ | 251 | 177 | 59 | 118 | 33.3% |
 | 16–30′ | 620 | 470 | 163 | 307 | 34.7% |
-| 31–45′ | 1838 | 1420 | 590 | 830 | 41.5% |
+| 31–45′ | 1839 | 1421 | 590 | 831 | 41.5% |
 | 46–60′ | 1168 | 847 | 331 | 516 | 39.1% |
-| 61–75′ | 1803 | 1254 | 468 | 786 | 37.3% |
-| 76–90′ | 2385 | 835 | 318 | 517 | 38.1% |
+| 61–75′ | 1806 | 1257 | 468 | 789 | 37.2% |
+| 76–90′ | 2387 | 835 | 318 | 517 | 38.1% |
 | 91+′ | 786 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8850 | **Jogos monitorados:** 1362 | **Ao vivo:** 46 | **Termômetros recentes:** 9.
+**Registros:** 8857 | **Jogos monitorados:** 1362 | **Ao vivo:** 39 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T07:57:58.567221+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T07:57:58.567221+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T08:51:18.352931+00:00 | Macarthur FC × Western Sydney Wanderers FC | Western Sydney Wanderers FC (11') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T08:51:18.352931+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Kashiwa Reysol (89') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T08:51:18.352931+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (89') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T08:32:06.084367+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (70') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T08:32:06.084367+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Kashiwa Reysol (70') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T08:32:06.084367+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (70') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T08:32:06.084367+00:00 | Gwangju FC × Gimcheon Sangmu | Gimcheon Sangmu (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T07:56:51.103059+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T07:56:51.103059+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T07:56:51.103059+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (93') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T07:56:51.103059+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-31T07:56:51.103059+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-31T07:12:40.145766+00:00 | Melbourne City FC × Sydney FC | Melbourne City FC (56') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-31T07:12:40.145766+00:00 | Central Coast Mariners × Adelaide United | Central Coast Mariners (56') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T07:12:40.145766+00:00 | Kashima Antlers × Cerezo Osaka | Cerezo Osaka (49') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -361,17 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T01:54:20.832629+00:00 | Sarmiento × Rosario Central | Sarmiento (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T01:54:20.832629+00:00 | Oriente Petrolero × Aurora | Aurora (46') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T01:54:20.832629+00:00 | Tampa Bay Rowdies × Miami FC | Tampa Bay Rowdies (105') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T01:54:20.832629+00:00 | Detroit City FC × Hartford Athletic | Detroit City FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-31T01:54:20.832629+00:00 | Detroit City FC × Hartford Athletic | Detroit City FC (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-31T01:04:52.994420+00:00 | Racing Club × Aldosivi | Racing Club (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-31T01:04:52.994420+00:00 | Sarmiento × Rosario Central | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T01:04:52.994420+00:00 | Sarmiento × Rosario Central | Rosario Central (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T01:04:52.994420+00:00 | Detroit City FC × Hartford Athletic | Detroit City FC (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-31T01:03:43.754805+00:00 | Union Omaha × Chattanooga Red Wolves SC | Union Omaha (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **93**.
+Jogos com odds registradas nos ultimos dias: **103**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
