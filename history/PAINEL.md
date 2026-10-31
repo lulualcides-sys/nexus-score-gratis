@@ -2,22 +2,24 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T22:42:19.168906+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T23:41:34.022855+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **14**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-10-31 | Vélez Sarsfield × San Lorenzo | 2-0 | 0 | Chutes no alvo: 4.0×0.0; Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 4,10 |
+| 2026-11-01 | Estudiantes × Instituto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Cruzeiro × Corinthians | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Vélez Sarsfield × San Lorenzo | 2-1 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 1,95, Empate 3,20, Fora 4,10 |
 | 2026-10-31 | Estudiantes de La Plata × Instituto (Córdoba) | 0-0 | 0 | Match Odds 1X2: Casa 1,87, Empate 3,30, Fora 4,50 |
 | 2026-10-31 | Deportivo Riestra × Talleres (Córdoba) | 0-3 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 2,25, Empate 3,10, Fora 3,40 |
 | 2026-10-31 | Coritiba × Vitória | 2-0 | 0 | Chutes no alvo: 7.0×1.0; Match Odds 1X2: Casa 2,20, Empate 3,40, Fora 3,20 |
 | 2026-10-31 | Botafogo-SP × Sport | 1-1 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 2,55, Empate 3,25, Fora 2,80 |
 | 2026-10-31 | Vila Nova × Juventude | 2-2 | 0 | Chutes no alvo: 7.0×9.0; Match Odds 1X2: Casa 2,40, Empate 2,95, Fora 3,30 |
-| 2026-10-31 | Náutico × Avaí | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,00, Empate 3,45, Fora 3,75 |
-| 2026-10-31 | Llaneros FC × Atlético Junior | 0-0 | 0 | Match Odds 1X2: Casa 2,50, Empate 3,00, Fora 2,70 |
+| 2026-10-31 | Náutico × Avaí | 1-0 | 0 | Chutes no alvo: 3.0×1.0; Match Odds 1X2: Casa 2,00, Empate 3,45, Fora 3,75 |
+| 2026-10-31 | Llaneros FC × Atlético Junior | 1-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 2,50, Empate 3,00, Fora 2,70 |
 | 2026-10-31 | Tottenham Hotspur × Crystal Palace | 2-0 | 0 | Chutes no alvo: 9.0×1.0; Match Odds 1X2: Casa 1,61, Empate 4,30, Fora 5,25 |
 | 2026-10-31 | Hull City × Ipswich Town | 2-2 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 2,75, Empate 3,35, Fora 2,60 |
 | 2026-10-31 | Manchester City × Brighton & Hove Albion | 0-1 | 0 | Chutes no alvo: 6.0×3.0; Match Odds 1X2: Casa 1,71, Empate 4,30, Fora 4,30 |
@@ -44,10 +46,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | Charlotte FC × Orlando City SC | 4-0 | 0 | Chutes no alvo: 6.0×8.0; Match Odds 1X2: Casa 1,83, Empate 4,30, Fora 3,35 |
 | 2026-10-31 | Colorado Rapids × Chicago Fire FC | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,55, Fora 2,80 |
 | 2026-10-31 | Columbus Crew × D.C. United | 3-0 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 1,37, Empate 5,00, Fora 6,50 |
-| 2026-10-31 | LA Galaxy × Austin FC | 4-1 | 0 | Chutes no alvo: 9.0×1.0; Match Odds 1X2: Casa 1,45, Empate 4,80, Fora 5,25 |
+| 2026-10-31 | LA Galaxy × Austin FC | 4-1 | 0 | Chutes no alvo: 10.0×2.0; Match Odds 1X2: Casa 1,45, Empate 4,80, Fora 5,25 |
 | 2026-10-31 | St. Louis CITY SC × San Diego FC | 0-1 | 0 | Chutes no alvo: 7.0×2.0; Match Odds 1X2: Casa 1,87, Empate 4,10, Fora 3,25 |
 | 2026-10-31 | Sporting Kansas City × FC Dallas | 1-1 | 0 | Chutes no alvo: 4.0×2.0; Match Odds 1X2: Casa 3,55, Empate 3,90, Fora 1,83 |
-| 2026-10-31 | San Jose Earthquakes × Real Salt Lake | 2-1 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 2,30, Empate 3,75, Fora 2,60 |
+| 2026-10-31 | San Jose Earthquakes × Real Salt Lake | 2-1 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 2,30, Empate 3,75, Fora 2,60 |
 | 2026-10-31 | New York City FC × CF Montréal | 1-1 | 0 | Chutes no alvo: 4.0×2.0; Match Odds 1X2: Casa 1,43, Empate 4,60, Fora 6,00 |
 | 2026-10-31 | Curicó Unido × Deportes Temuco | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Nõmme United × FCI Levadia | 3-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -60,13 +62,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | Turriff United × Fraserburgh | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Brora Rangers × Lossiemouth | 4-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Invergordon × Forres Mechanics | 2-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | O'Higgins × Ñublense | 1-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 4.0×4.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-10-31 | O'Higgins × Ñublense | 1-0 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | Bucaramanga × Deportivo Pasto | 2-1 | 62 | Chutes no alvo: 6.0×3.0, Chutes para fora: 5.0×3.0, Escanteios: 2.0×0.0, Grandes chances: 4.0×1.0 |
-| 2026-10-31 | Llaneros FC × Junior FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Llaneros FC × Junior FC | 1-0 | 37 | Chutes no alvo: 2.0×0.0, Chutes para fora: 1.0×3.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-31 | Atlético de San Luis × Atlas | 0-1 | 65 | Chutes no alvo: 2.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 6.0×2.0, Grandes chances: 0.0×2.0 |
 | 2026-10-31 | FC Juárez × Querétaro FC | 3-1 | 72 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×7.0, Escanteios: 2.0×6.0, Grandes chances: 2.0×2.0 |
 | 2026-10-31 | Puebla × Pumas | 1-2 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 5.0×6.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×4.0 |
-| 2026-10-31 | Pachuca × Tigres | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Pachuca × Tigres | 0-0 | 37 | Chutes no alvo: 1.0×1.0, Chutes para fora: 6.0×4.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | Chivas × Atlante | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Monterrey × Tijuana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Mačva Šabac × FK Crvena Zvezda | 2-4 | 0 | Chutes no alvo: 3.0×10.0, Chutes para fora: 5.0×5.0, Escanteios: 2.0×6.0, Grandes chances: 1.0×5.0 |
@@ -96,8 +98,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | Recoleta × Sportivo Ameliano | 3-0 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 3.0×6.0, Escanteios: 5.0×3.0, Grandes chances: 4.0×1.0 |
 | 2026-10-31 | Guaraní × 2 de Mayo | 1-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×4.0, Escanteios: 4.0×6.0, Grandes chances: 2.0×0.0 |
 | 2026-10-31 | Sportivo Trinidense × Rubio Ñú | 2-4 | 0 | Chutes no alvo: 3.0×8.0, Chutes para fora: 7.0×7.0, Escanteios: 8.0×6.0, Grandes chances: 2.0×2.0 |
-| 2026-10-31 | Luqueño × Nacional | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-10-31 | Sportivo San Lorenzo × Libertad | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×2.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-31 | Luqueño × Nacional | 0-3 | 0 | Chutes no alvo: 3.0×6.0, Chutes para fora: 2.0×1.0, Escanteios: 4.0×6.0, Grandes chances: 1.0×1.0 |
+| 2026-10-31 | Sportivo San Lorenzo × Libertad | 1-1 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 5.0×5.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | Newcastle Jets × Wellington Phoenix | 0-3 | 90 | Chutes no alvo: 5.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 8.0×2.0, Grandes chances: 3.0×3.0 |
 | 2026-10-31 | Melbourne City FC × Sydney FC | 2-1 | 53 | Chutes no alvo: 3.0×1.0, Chutes para fora: 9.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-0 | 79 | Chutes no alvo: 1.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 6.0×6.0, Grandes chances: 1.0×2.0 |
@@ -109,7 +111,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | Muang Loei United × Muang Thong United | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Deportivo Riestra × Talleres | 0-3 | 84 | Chutes no alvo: 4.0×5.0, Chutes para fora: 5.0×2.0, Escanteios: 6.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-10-31 | Estudiantes × Instituto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Vélez Sarsfield × San Lorenzo | 2-0 | 25 | Chutes no alvo: 4.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 5.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-10-31 | Vélez Sarsfield × San Lorenzo | 2-1 | 63 | Chutes no alvo: 4.0×1.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×1.0 |
 | 2026-10-31 | Racing Club × Aldosivi | 2-1 | 78 | Chutes no alvo: 6.0×2.0, Chutes para fora: 8.0×8.0, Escanteios: 0.0×5.0, Grandes chances: 2.0×2.0 |
 | 2026-10-31 | Sarmiento × Rosario Central | 1-2 | 78 | Chutes no alvo: 2.0×4.0, Chutes para fora: 4.0×7.0, Escanteios: 1.0×13.0, Grandes chances: 1.0×4.0 |
 | 2026-10-31 | Brisbane Roar FC × Sydney FC | 0-1 | 90 | Chutes no alvo: 1.0×7.0, Chutes para fora: 3.0×9.0, Escanteios: 4.0×13.0, Grandes chances: 0.0×4.0 |
@@ -117,18 +119,18 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | AFC Toronto × Ottawa Rapid FC | 4-2 | 0 | Chutes no alvo: 8.0×1.0, Chutes para fora: 6.0×0.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-10-31 | Nassaji Mazandaran FC × Persepolis | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Mes Shahr Babak × Paykan | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | CSD Macará × Barcelona SC | 2-0 | 0 | Chutes no alvo: 5.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0; Match Odds 1X2: Casa 2,00, Empate 3,23, F |
+| 2026-10-31 | CSD Macará × Barcelona SC | 3-0 | 0 | Chutes no alvo: 9.0×0.0, Chutes para fora: 7.0×3.0, Escanteios: 7.0×6.0, Grandes chances: 5.0×0.0; Match Odds 1X2: Casa 2,00, Empate 3,23, F |
 | 2026-10-31 | Emelec × Leones del Norte | 0-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-10-31 | Delfín × Deportivo Cuenca | 3-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 7.0×4.0, Escanteios: 3.0×4.0, Grandes chances: 1.0×0.0 |
 | 2026-10-31 | Olimpia × Santa Fe | 3-4 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 4.0×3.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-10-31 | Cruzeiro × Corinthians | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Oriente Petrolero × Aurora | 1-1 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 0.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | CDT Real Oruro × Nacional Potosí | 1-1 | 0 | Chutes no alvo: 8.0×5.0, Chutes para fora: 6.0×5.0, Escanteios: 4.0×5.0, Grandes chances: 4.0×1.0 |
-| 2026-10-31 | ABB × San Antonio Bulo Bulo | 2-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×2.0 |
+| 2026-10-31 | ABB × San Antonio Bulo Bulo | 2-3 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×2.0 |
 | 2026-10-31 | Mohammedan SC × Shillong Lajong | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Gokulam FC × Samaleswari SC | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Academia Puerto Cabello × Deportivo Táchira | 0-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 3.0×4.0, Escanteios: 5.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-10-31 | Caracas × Monagas SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Academia Puerto Cabello × Deportivo Táchira | 0-1 | 0 | Chutes no alvo: 6.0×4.0, Chutes para fora: 5.0×5.0, Escanteios: 6.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-10-31 | Caracas × Monagas SC | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-10-31 | Union Omaha × Chattanooga Red Wolves SC | 1-1 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 6.0×1.0, Escanteios: 14.0×0.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | Forward Madison FC × Spokane Velocity FC | 2-1 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 3.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | Charlotte FC × Orlando City | 4-0 | 87 | Chutes no alvo: 5.0×8.0, Chutes para fora: 7.0×6.0, Escanteios: 4.0×4.0, Grandes chances: 3.0×1.0; Match Odds 1X2: Casa 1,83, Empate 4,30, F |
@@ -137,9 +139,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **19**.
 | 2026-10-31 | New York City FC × CF Montréal | 1-1 | 87 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×6.0, Escanteios: 2.0×4.0, Grandes chances: 2.0×1.0; Match Odds 1X2: Casa 1,43, Empate 4,60, F |
 | 2026-10-31 | Colorado Rapids × Chicago Fire FC | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,55, Fora 2,80 |
 | 2026-10-31 | Sporting Kansas City × FC Dallas | 1-1 | 88 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×5.0, Escanteios: 3.0×6.0, Grandes chances: 2.0×2.0; Match Odds 1X2: Casa 3,55, Empate 3,90, F |
-| 2026-10-31 | LA Galaxy × Austin FC | 4-1 | 72 | Chutes no alvo: 9.0×1.0, Chutes para fora: 2.0×6.0, Escanteios: 4.0×5.0, Grandes chances: 3.0×1.0; Match Odds 1X2: Casa 1,45, Empate 4,80, F |
-| 2026-10-31 | San Jose Earthquakes × Real Salt Lake | 2-1 | 72 | Chutes no alvo: 4.0×5.0, Chutes para fora: 2.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×3.0; Match Odds 1X2: Casa 2,30, Empate 3,75, F |
-| 2026-10-31 | St. Louis City × San Diego FC | 0-1 | 87 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×5.0, Escanteios: 3.0×3.0, Grandes chances: 2.0×0.0; Match Odds 1X2: Casa 1,87, Empate 4,10, F |
+| 2026-10-31 | LA Galaxy × Austin FC | 4-1 | 84 | Chutes no alvo: 9.0×2.0, Chutes para fora: 4.0×6.0, Escanteios: 6.0×5.0, Grandes chances: 3.0×1.0; Match Odds 1X2: Casa 1,45, Empate 4,80, F |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 9543 | **Jogos distintos:** 2770 | **Resultados verificáveis:** 5354 | **Com gol:** 2058 | **Sem gol:** 3296 | **Taxa observada:** 38.4%.
-**Evolução da amostra:** 23 datas com coletas | 85 pendentes | 1743 indeterminados | 2361 incompletos.
+**Observações:** 9565 | **Jogos distintos:** 2775 | **Resultados verificáveis:** 5372 | **Com gol:** 2061 | **Sem gol:** 3311 | **Taxa observada:** 38.4%.
+**Evolução da amostra:** 23 datas com coletas | 81 pendentes | 1743 indeterminados | 2369 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1893 | 1288 | 515 | 773 | 40.0% |
-| ⚡ pressao_ofensiva_18 | 1503 | 1002 | 362 | 640 | 36.1% |
-| 🎯 chutes_no_alvo_5 | 1578 | 757 | 277 | 480 | 36.6% |
-| 🟥 expulsao_confirmada | 1421 | 642 | 224 | 418 | 34.9% |
-| 🚩 escanteios_6 | 1154 | 538 | 220 | 318 | 40.9% |
-| 💣 grandes_chances_3 | 931 | 503 | 216 | 287 | 42.9% |
-| 🔥 pressao_forte_10min | 519 | 328 | 126 | 202 | 38.4% |
+| 🥶 jogo_frio | 1896 | 1289 | 515 | 774 | 40.0% |
+| ⚡ pressao_ofensiva_18 | 1504 | 1004 | 362 | 642 | 36.1% |
+| 🎯 chutes_no_alvo_5 | 1582 | 763 | 277 | 486 | 36.3% |
+| 🟥 expulsao_confirmada | 1426 | 646 | 225 | 421 | 34.8% |
+| 🚩 escanteios_6 | 1161 | 539 | 221 | 318 | 41.0% |
+| 💣 grandes_chances_3 | 932 | 506 | 217 | 289 | 42.9% |
+| 🔥 pressao_forte_10min | 520 | 329 | 126 | 203 | 38.3% |
 | 🧨 pressao_total_5_10min | 284 | 174 | 70 | 104 | 40.2% |
 | ⏱️ tensao_tardia_70 | 169 | 69 | 26 | 43 | 37.7% |
 | 🚨 alerta_cruzado_gol | 91 | 53 | 22 | 31 | 41.5% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 257 | 151 | 63 | 88 | 41.7% |
+| Equipe não definida | 258 | 151 | 63 | 88 | 41.7% |
 | Manchester City | 45 | 27 | 13 | 14 | 48.1% |
 | Roma | 37 | 27 | 21 | 6 | 77.8% |
 | Bayern München | 44 | 24 | 19 | 5 | 79.2% |
@@ -222,10 +222,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Premier League | 460 | 271 | 81 | 190 | 29.9% |
-| Major League Soccer | 356 | 187 | 84 | 103 | 44.9% |
+| Major League Soccer | 360 | 192 | 84 | 108 | 43.8% |
 | J. League | 271 | 167 | 77 | 90 | 46.1% |
 | Serie A | 235 | 157 | 78 | 79 | 49.7% |
-| Liga Profesional | 234 | 147 | 41 | 106 | 27.9% |
+| Liga Profesional | 237 | 149 | 41 | 108 | 27.5% |
 | Serie B | 209 | 146 | 53 | 93 | 36.3% |
 | Super League | 242 | 133 | 42 | 91 | 31.6% |
 | Bundesliga | 208 | 128 | 54 | 74 | 42.2% |
@@ -243,9 +243,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Championship | 165 | 96 | 38 | 58 | 39.6% |
 | Eredivisie | 173 | 95 | 45 | 50 | 47.4% |
 | Super Lig | 130 | 94 | 34 | 60 | 36.2% |
+| Primera División | 159 | 92 | 28 | 64 | 30.4% |
 | Belgian Pro League | 151 | 92 | 53 | 39 | 57.6% |
-| Liga MX | 178 | 91 | 30 | 61 | 33.0% |
-| Eliteserien | 140 | 89 | 33 | 56 | 37.1% |
+| Liga MX | 179 | 91 | 30 | 61 | 33.0% |
 
 ### Faixa de minuto
 
@@ -253,34 +253,56 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 255 | 181 | 60 | 121 | 33.1% |
 | 16–30′ | 642 | 487 | 167 | 320 | 34.3% |
-| 31–45′ | 1965 | 1523 | 622 | 901 | 40.8% |
-| 46–60′ | 1273 | 919 | 360 | 559 | 39.2% |
-| 61–75′ | 1951 | 1341 | 507 | 834 | 37.8% |
-| 76–90′ | 2577 | 895 | 339 | 556 | 37.9% |
-| 91+′ | 880 | 8 | 3 | 5 | 37.5% |
+| 31–45′ | 1971 | 1526 | 623 | 903 | 40.8% |
+| 46–60′ | 1276 | 921 | 360 | 561 | 39.1% |
+| 61–75′ | 1954 | 1352 | 509 | 843 | 37.6% |
+| 76–90′ | 2585 | 897 | 339 | 558 | 37.8% |
+| 91+′ | 882 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 9543 | **Jogos monitorados:** 1362 | **Ao vivo:** 54 | **Termômetros recentes:** 11.
+**Registros:** 9565 | **Jogos monitorados:** 1362 | **Ao vivo:** 48 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | O'Higgins × Ñublense | O'Higgins (77') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | CSD Macará × Barcelona SC | CSD Macará (51') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | ABB (69') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | San Antonio Bulo Bulo (69') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | Austin FC (73') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | CD Cacahuatique × Inca Aruba | Inca Aruba (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | Academia Puerto Cabello × Deportivo Táchira | Academia Puerto Cabello (46') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:42:04.982346+00:00 | Pachuca × Tigres | Pachuca (37') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:42:04.982346+00:00 | Luqueño × Nacional | Luqueño (53') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:42:04.982346+00:00 | Vélez Sarsfield × San Lorenzo | Vélez Sarsfield (66') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:42:04.982346+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Tlaxcala FC (93') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:42:04.982346+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Cruz Azul Hidalgo (93') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Luqueño × Nacional | Nacional (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Luqueño × Nacional | Nacional (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | pendente | pendente | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Sportivo San Lorenzo × Libertad | Sportivo San Lorenzo (49') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Sportivo San Lorenzo × Libertad | Sportivo San Lorenzo (49') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Vélez Sarsfield × San Lorenzo | Vélez Sarsfield (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Vélez Sarsfield × San Lorenzo | Vélez Sarsfield (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | CSD Macará × Barcelona SC | CSD Macará (87') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | CSD Macará × Barcelona SC | CSD Macará (87') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Academia Puerto Cabello × Deportivo Táchira | Academia Puerto Cabello (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Tlaxcala FC (70') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T23:18:50.138814+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Cruz Azul Hidalgo (70') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | O'Higgins × Ñublense | O'Higgins (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | LA Galaxy × Austin FC | Austin FC (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | LA Galaxy × Austin FC | LA Galaxy (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | San Jose Earthquakes × Real Salt Lake | Equipe não definida (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | San Jose Earthquakes × Real Salt Lake | San Jose Earthquakes (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T22:53:35.988178+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Cruz Azul Hidalgo (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | O'Higgins × Ñublense | O'Higgins (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | CSD Macará × Barcelona SC | CSD Macará (51') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | ABB (69') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | San Antonio Bulo Bulo (69') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | Austin FC (73') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T22:42:47.605324+00:00 | CD Cacahuatique × Inca Aruba | Inca Aruba (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-10-31T22:20:09.253215+00:00 | Academia Puerto Cabello × Deportivo Táchira | Academia Puerto Cabello (46') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-31T22:20:09.253215+00:00 | LA Galaxy × Austin FC | LA Galaxy (51') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-31T22:20:09.253215+00:00 | San Jose Earthquakes × Real Salt Lake | San Jose Earthquakes (51') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T22:20:09.253215+00:00 | Vila Nova × Juventude | Vila Nova (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -346,32 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T21:23:13.389425+00:00 | Albacete × Sabadell | Sabadell (54') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T21:23:13.389425+00:00 | Albacete × Sabadell | Sabadell (54') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T21:23:13.389425+00:00 | FC Porto × Estoril | FC Porto (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T21:23:13.389425+00:00 | FC Porto × Estoril | FC Porto (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T21:23:13.389425+00:00 | FC Porto × Estoril | FC Porto (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T21:23:13.389425+00:00 | FC Porto × Estoril | FC Porto (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | CDT Real Oruro × Nacional Potosí | CDT Real Oruro (98') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | CDT Real Oruro × Nacional Potosí | Nacional Potosí (98') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Sporting Kansas City × FC Dallas | FC Dallas (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Sporting Kansas City × FC Dallas | FC Dallas (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | St. Louis City × San Diego FC | St. Louis City (88') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | St. Louis City × San Diego FC | St. Louis City (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Coritiba × Vitória | Coritiba (98') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Ajax × AZ Alkmaar | AZ Alkmaar (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Cambuur × Go Ahead Eagles | Cambuur (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | GKS Katowice × Widzew Łódź | GKS Katowice (83') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | GKS Katowice × Widzew Łódź | GKS Katowice (83') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Luzern × Sion | Luzern (68') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | SK Beveren × Union St.Gilloise | Union St.Gilloise (53') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Barcelona × Deportivo Alavés | Barcelona (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Barcelona × Deportivo Alavés | Barcelona (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Barcelona × Deportivo Alavés | Barcelona (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Albacete × Sabadell | Albacete (54') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Albacete × Sabadell | Albacete (54') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T20:56:55.906279+00:00 | Karlsruher SC × FC Heidenheim | Karlsruher SC (67') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **141**.
+Jogos com odds registradas nos ultimos dias: **97**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
