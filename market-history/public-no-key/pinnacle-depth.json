@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T07:14:20.147396+00:00",
-  "bookmaker_snapshot_at": "2026-10-31T07:14:19.507363+00:00",
+  "checked_at": "2026-10-31T09:55:29.512180+00:00",
+  "bookmaker_snapshot_at": "2026-10-31T09:55:25.547463+00:00",
   "status": "fresh",
-  "matches_catalogued": 5,
-  "matches_with_priced_markets": 5,
-  "odds_eligible_for_quality": 528,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1632,
   "invalid_quote_records": 0,
-  "complete_market_lines": 259,
+  "complete_market_lines": 800,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 5,
-      "odds": 110,
-      "complete_lines": 55,
+      "games": 16,
+      "odds": 366,
+      "complete_lines": 183,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.54
+      "median_overround_pct": 3.99
     },
     "first_half_goals": {
-      "games": 5,
-      "odds": 80,
-      "complete_lines": 40,
+      "games": 16,
+      "odds": 256,
+      "complete_lines": 128,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.03
+      "median_overround_pct": 5.48
     },
     "first_half_handicap": {
-      "games": 5,
-      "odds": 60,
-      "complete_lines": 30,
+      "games": 16,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.11
+      "median_overround_pct": 4.47
     },
     "first_half_team_goals": {
-      "games": 5,
-      "odds": 20,
-      "complete_lines": 10,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.2
-    },
-    "half_time": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
-      "incomplete_lines": 0,
-      "median_overround_pct": 3.96
-    },
-    "match_odds": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
-      "incomplete_lines": 0,
-      "median_overround_pct": 3.44
-    },
-    "team_goals": {
-      "games": 5,
+      "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.18
+      "median_overround_pct": 5.24
+    },
+    "half_time": {
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.46
+    },
+    "match_odds": {
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
+      "incomplete_lines": 0,
+      "median_overround_pct": 3.67
+    },
+    "team_goals": {
+      "games": 16,
+      "odds": 210,
+      "complete_lines": 105,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.62
     },
     "total_goals": {
-      "games": 5,
-      "odds": 164,
-      "complete_lines": 82,
+      "games": 16,
+      "odds": 446,
+      "complete_lines": 223,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.75
+      "median_overround_pct": 4.59
     }
   },
   "examples": [
     {
-      "fixture": "Chelsea x Manchester United",
+      "fixture": "Rayo Vallecano x Celta Vigo",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-31T07:14:19.507363+00:00",
+      "observed_at": "2026-10-31T09:55:25.547463+00:00",
       "selections": {
-        "home": 2.03,
-        "away": 3.59,
-        "draw": 3.78
+        "home": 2.58,
+        "away": 3.06,
+        "draw": 3.22
       },
-      "overround_pct": 3.57
+      "overround_pct": 2.5
     },
     {
-      "fixture": "Chelsea x Manchester United",
+      "fixture": "Rayo Vallecano x Celta Vigo",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-31T07:14:19.507363+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-10-31T09:55:25.547463+00:00",
       "selections": {
-        "home": 2.04,
-        "away": 1.8696
+        "home": 1.8065,
+        "away": 2.14
       },
-      "overround_pct": 2.51
+      "overround_pct": 2.08
     },
     {
-      "fixture": "Chelsea x Manchester United",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-31T07:14:19.507363+00:00",
-      "selections": {
-        "home": 3.64,
-        "away": 1.3135
-      },
-      "overround_pct": 3.6
-    },
-    {
-      "fixture": "Chelsea x Manchester United",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-10-31T07:14:19.507363+00:00",
-      "selections": {
-        "home": 3.26,
-        "away": 1.3704
-      },
-      "overround_pct": 3.65
-    },
-    {
-      "fixture": "Chelsea x Manchester United",
+      "fixture": "Rayo Vallecano x Celta Vigo",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-31T07:14:19.507363+00:00",
+      "observed_at": "2026-10-31T09:55:25.547463+00:00",
       "selections": {
-        "home": 2.89,
-        "away": 1.4566
+        "home": 4.44,
+        "away": 1.2421
       },
-      "overround_pct": 3.26
+      "overround_pct": 3.03
+    },
+    {
+      "fixture": "Rayo Vallecano x Celta Vigo",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-10-31T09:55:25.547463+00:00",
+      "selections": {
+        "home": 3.15,
+        "away": 1.4
+      },
+      "overround_pct": 3.17
+    },
+    {
+      "fixture": "Rayo Vallecano x Celta Vigo",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-31T09:55:25.547463+00:00",
+      "selections": {
+        "home": 2.57,
+        "away": 1.5682
+      },
+      "overround_pct": 2.68
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
