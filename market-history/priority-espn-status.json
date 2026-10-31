@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T12:54:52.874372+00:00",
+  "checked_at": "2026-10-31T13:37:59.400852+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -11,18 +11,6 @@
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Barcelona x Alavés",
-      "league": "esp.1",
-      "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AC Milan x Internazionale",
-      "league": "ita.1",
-      "kickoff": 1793475900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Troyes x Le Mans",
       "league": "fra.1",
       "kickoff": 1793475900,
@@ -31,6 +19,12 @@
     {
       "fixture": "Aston Villa x Fulham",
       "league": "eng.1",
+      "kickoff": 1793476800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Barcelona x Alavés",
+      "league": "esp.1",
       "kickoff": 1793476800,
       "reason": "no_verified_public_1x2"
     },
@@ -74,18 +68,6 @@
       "fixture": "SC Cambuur x Go Ahead Eagles",
       "league": "ned.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sporting Kansas City x FC Dallas",
-      "league": "usa.1",
-      "kickoff": 1793473200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "St. Louis CITY SC x San Diego FC",
-      "league": "usa.1",
-      "kickoff": 1793473200,
       "reason": "no_verified_public_1x2"
     },
     {
