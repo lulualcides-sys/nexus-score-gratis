@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T21:20:44.635868+00:00",
+  "checked_at": "2026-10-31T22:05:25.674648+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 33,
+  "priority_fixtures_seen": 35,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -122,6 +122,18 @@
       "fixture": "Cruz Azul x León",
       "league": "mex.1",
       "kickoff": 1793581800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Moreirense x Estrela",
+      "league": "por.1",
+      "kickoff": 1793460600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Porto x Estoril",
+      "league": "por.1",
+      "kickoff": 1793478600,
       "reason": "no_verified_public_1x2"
     }
   ],
