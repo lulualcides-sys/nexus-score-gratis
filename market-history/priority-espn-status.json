@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T18:20:08.627944+00:00",
+  "checked_at": "2026-10-31T19:16:17.610600+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 42,
+  "priority_fixtures_seen": 39,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Colorado Rapids x Chicago Fire FC",
-      "league": "usa.1",
-      "kickoff": 1793496600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Vélez Sarsfield x San Lorenzo",
       "league": "arg.1",
@@ -56,6 +50,30 @@
       "fixture": "FC Porto x Estoril",
       "league": "por.1",
       "kickoff": 1793478600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Colorado Rapids x Chicago Fire FC",
+      "league": "usa.1",
+      "kickoff": 1793496600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Pachuca x Tigres UANL",
+      "league": "mex.1",
+      "kickoff": 1793487600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monterrey x Tijuana",
+      "league": "mex.1",
+      "kickoff": 1793495100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Guadalajara x Atlante",
+      "league": "mex.1",
+      "kickoff": 1793495220,
       "reason": "no_verified_public_1x2"
     }
   ],
