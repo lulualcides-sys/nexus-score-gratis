@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T06:58:07.399005+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-10-31T07:57:31.452856+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **17**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -22,12 +22,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
 | 2026-10-31 | Hull City × Ipswich Town | 0-0 | 0 | Match Odds 1X2: Casa 2,75, Empate 3,35, Fora 2,60 |
 | 2026-10-31 | Manchester City × Brighton & Hove Albion | 0-0 | 0 | Match Odds 1X2: Casa 1,71, Empate 4,30, Fora 4,30 |
 | 2026-10-31 | Coventry City × Sunderland | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,35, Fora 2,35 |
-| 2026-10-31 | Chelsea × Manchester United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Chelsea × Manchester United | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,75, Fora 3,55 |
 | 2026-10-31 | Brentford × Nottingham Forest | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Aston Villa × Fulham | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | AFC Bournemouth × Leeds United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Rayo Vallecano × Celta Vigo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | Levante × Atlético Madrid | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | Levante × Atlético Madrid | 0-0 | 0 | Match Odds 1X2: Casa 5,75, Empate 4,70, Fora 1,51 |
 | 2026-10-31 | Barcelona × Alavés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Real Betis × Málaga | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Troyes × Le Mans | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -80,7 +80,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
 | 2026-10-31 | Třinec × Česká Lípa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Příbram × FC Silon Táborsko | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | JEF Ladies × Nojima Stella | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-10-31 | NTV Tokyo Verdy Beleza × Omiya Ardija Ventus | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-10-31 | NTV Tokyo Verdy Beleza × Omiya Ardija Ventus | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Troon Juniors × Largs Thistle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Newton Stewart × Kilwinning Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Dalbeattie Star × Clydebank | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -99,7 +99,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
 | 2026-10-31 | Luqueño × Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Sportivo San Lorenzo × Libertad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Newcastle Jets × Wellington Phoenix | 0-3 | 90 | Chutes no alvo: 5.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 8.0×2.0, Grandes chances: 3.0×3.0 |
-| 2026-10-31 | Melbourne City FC × Sydney FC | 0-1 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 8.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-10-31 | Melbourne City FC × Sydney FC | 2-1 | 53 | Chutes no alvo: 3.0×1.0, Chutes para fora: 9.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-10-31 | Macarthur FC × Western Sydney Wanderers FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Bangkok United × Uthai Thani FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Pattani FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -113,7 +113,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **25**.
 | 2026-10-31 | Racing Club × Aldosivi | 2-1 | 78 | Chutes no alvo: 6.0×2.0, Chutes para fora: 8.0×8.0, Escanteios: 0.0×5.0, Grandes chances: 2.0×2.0 |
 | 2026-10-31 | Sarmiento × Rosario Central | 1-2 | 78 | Chutes no alvo: 2.0×4.0, Chutes para fora: 4.0×7.0, Escanteios: 1.0×13.0, Grandes chances: 1.0×4.0 |
 | 2026-10-31 | Brisbane Roar FC × Sydney FC | 0-1 | 90 | Chutes no alvo: 1.0×7.0, Chutes para fora: 3.0×9.0, Escanteios: 4.0×13.0, Grandes chances: 0.0×4.0 |
-| 2026-10-31 | Central Coast Mariners × Adelaide United | 1-0 | 45 | Chutes no alvo: 1.0×2.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 1.0×1.0 |
+| 2026-10-31 | Central Coast Mariners × Adelaide United | 2-0 | 55 | Chutes no alvo: 2.0×2.0, Chutes para fora: 2.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-10-31 | AFC Toronto × Ottawa Rapid FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Nassaji Mazandaran FC × Persepolis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-10-31 | Mes Shahr Babak × Paykan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,21 +168,21 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 8841 | **Jogos distintos:** 2555 | **Resultados verificáveis:** 5005 | **Com gol:** 1927 | **Sem gol:** 3078 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 23 datas com coletas | 84 pendentes | 1625 indeterminados | 2127 incompletos.
+**Observações:** 8850 | **Jogos distintos:** 2556 | **Resultados verificáveis:** 5011 | **Com gol:** 1932 | **Sem gol:** 3079 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 23 datas com coletas | 74 pendentes | 1627 indeterminados | 2138 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1763 | 1201 | 479 | 722 | 39.9% |
-| ⚡ pressao_ofensiva_18 | 1398 | 934 | 340 | 594 | 36.4% |
-| 🎯 chutes_no_alvo_5 | 1447 | 702 | 257 | 445 | 36.6% |
+| 🥶 jogo_frio | 1764 | 1203 | 481 | 722 | 40.0% |
+| ⚡ pressao_ofensiva_18 | 1400 | 936 | 341 | 595 | 36.4% |
+| 🎯 chutes_no_alvo_5 | 1448 | 702 | 257 | 445 | 36.6% |
 | 🟥 expulsao_confirmada | 1324 | 610 | 212 | 398 | 34.8% |
-| 🚩 escanteios_6 | 1067 | 503 | 207 | 296 | 41.2% |
-| 💣 grandes_chances_3 | 851 | 459 | 198 | 261 | 43.1% |
-| 🔥 pressao_forte_10min | 483 | 310 | 120 | 190 | 38.7% |
+| 🚩 escanteios_6 | 1069 | 503 | 207 | 296 | 41.2% |
+| 💣 grandes_chances_3 | 853 | 460 | 199 | 261 | 43.3% |
+| 🔥 pressao_forte_10min | 484 | 311 | 121 | 190 | 38.9% |
 | 🧨 pressao_total_5_10min | 265 | 167 | 67 | 100 | 40.1% |
 | ⏱️ tensao_tardia_70 | 160 | 68 | 26 | 42 | 38.2% |
 | 🚨 alerta_cruzado_gol | 83 | 51 | 21 | 30 | 41.2% |
@@ -223,7 +223,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier League | 416 | 249 | 75 | 174 | 30.1% |
 | Major League Soccer | 328 | 171 | 77 | 94 | 45.0% |
-| J. League | 259 | 162 | 75 | 87 | 46.3% |
+| J. League | 266 | 164 | 77 | 87 | 47.0% |
 | Liga Profesional | 230 | 146 | 40 | 106 | 27.4% |
 | Serie A | 216 | 142 | 68 | 74 | 47.9% |
 | Serie B | 197 | 138 | 52 | 86 | 37.7% |
@@ -253,36 +253,45 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 250 | 177 | 59 | 118 | 33.3% |
 | 16–30′ | 620 | 470 | 163 | 307 | 34.7% |
-| 31–45′ | 1837 | 1417 | 587 | 830 | 41.4% |
-| 46–60′ | 1164 | 844 | 329 | 515 | 39.0% |
+| 31–45′ | 1838 | 1420 | 590 | 830 | 41.5% |
+| 46–60′ | 1168 | 847 | 331 | 516 | 39.1% |
 | 61–75′ | 1803 | 1254 | 468 | 786 | 37.3% |
 | 76–90′ | 2385 | 835 | 318 | 517 | 38.1% |
-| 91+′ | 782 | 8 | 3 | 5 | 37.5% |
+| 91+′ | 786 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 8841 | **Jogos monitorados:** 1362 | **Ao vivo:** 54 | **Termômetros recentes:** 13.
+**Registros:** 8850 | **Jogos monitorados:** 1362 | **Ao vivo:** 46 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-10-31T06:58:35.581152+00:00 | Melbourne City FC × Sydney FC | Sydney FC (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Central Coast Mariners × Adelaide United | Adelaide United (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kashima Antlers × Cerezo Osaka | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Sanfrecce Hiroshima (93') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Sanfrecce Hiroshima (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Mito Hollyhock (93') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | FC Tokyo (93') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | Fagiano Okayama FC (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | FC Tokyo (93') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-10-31T06:58:35.581152+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:57:58.567221+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (94') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:57:58.567221+00:00 | Kashiwa Reysol × Urawa Red Diamonds | Urawa Red Diamonds (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:57:58.567221+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-10-31T07:12:40.145766+00:00 | Melbourne City FC × Sydney FC | Melbourne City FC (56') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T07:12:40.145766+00:00 | Central Coast Mariners × Adelaide United | Central Coast Mariners (56') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-10-31T07:12:40.145766+00:00 | Kashima Antlers × Cerezo Osaka | Cerezo Osaka (49') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-31T07:12:40.145766+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (47') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Melbourne City FC × Sydney FC | Sydney FC (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Central Coast Mariners × Adelaide United | Adelaide United (45') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kashima Antlers × Cerezo Osaka | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🧨 pressao_total_5_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | ⏱️ tensao_tardia_70 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Kyoto Sanga FC × Shimizu S-Pulse | Shimizu S-Pulse (90') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Sanfrecce Hiroshima (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Sanfrecce Hiroshima (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Mito Hollyhock × Sanfrecce Hiroshima | Mito Hollyhock (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | FC Tokyo (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | Fagiano Okayama FC (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Fagiano Okayama FC × FC Tokyo | FC Tokyo (93') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-10-31T06:58:35.581152+00:00 | Vissel Kobe × Nagoya Grampus | Vissel Kobe (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-10-31T06:18:16.886523+00:00 | Melbourne City FC × Sydney FC | Melbourne City FC (18') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T06:18:16.886523+00:00 | Melbourne City FC × Sydney FC | Melbourne City FC (18') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T06:18:16.886523+00:00 | Kashima Antlers × Cerezo Osaka | Kashima Antlers (14') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -359,19 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T01:04:52.994420+00:00 | Sarmiento × Rosario Central | Rosario Central (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T01:04:52.994420+00:00 | Detroit City FC × Hartford Athletic | Detroit City FC (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-10-31T01:03:43.754805+00:00 | Union Omaha × Chattanooga Red Wolves SC | Union Omaha (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T01:03:43.754805+00:00 | Louisville City FC × Pittsburgh Riverhounds SC | Louisville City FC (114') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T01:03:43.754805+00:00 | Louisville City FC × Pittsburgh Riverhounds SC | Louisville City FC (114') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T01:03:43.754805+00:00 | Charleston Battery × Rhode Island FC | Charleston Battery (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T00:13:06.219342+00:00 | Guaraní × 2 de Mayo | 2 de Mayo (87') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T00:13:06.219342+00:00 | Sportivo Trinidense × Rubio Ñú | Sportivo Trinidense (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T00:13:06.219342+00:00 | Union Omaha × Chattanooga Red Wolves SC | Union Omaha (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-10-31T00:13:06.219342+00:00 | Criciúma × Ponte Preta | Criciúma (73') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-10-31T00:13:06.219342+00:00 | Criciúma × Ponte Preta | Ponte Preta (73') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-10-30T23:44:12.699720+00:00 | Estudiantes de Río Cuarto × Gimnasia La Plata | Gimnasia La Plata (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **89**.
+Jogos com odds registradas nos ultimos dias: **93**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
