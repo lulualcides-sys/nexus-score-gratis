@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T07:56:47.282651+00:00",
+  "checked_at": "2026-10-31T08:50:54.386881+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -59,12 +59,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Bologna x Monza",
-      "league": "ita.1",
-      "kickoff": 1793455200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Udinese x AS Roma",
       "league": "ita.1",
       "kickoff": 1793466000,
@@ -80,36 +74,6 @@
       "fixture": "Troyes x Le Mans",
       "league": "fra.1",
       "kickoff": 1793475900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bayer Leverkusen x VfB Stuttgart",
-      "league": "ger.1",
-      "kickoff": 1793457000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Borussia Mönchengladbach x SC Paderborn 07",
-      "league": "ger.1",
-      "kickoff": 1793457000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Augsburg x SC Freiburg",
-      "league": "ger.1",
-      "kickoff": 1793457000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Schalke 04 x RB Leipzig",
-      "league": "ger.1",
-      "kickoff": 1793457000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Werder Bremen x TSG Hoffenheim",
-      "league": "ger.1",
-      "kickoff": 1793457000,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -188,6 +152,42 @@
       "fixture": "Sporting Kansas City x FC Dallas",
       "league": "usa.1",
       "kickoff": 1793473200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "St. Louis CITY SC x San Diego FC",
+      "league": "usa.1",
+      "kickoff": 1793473200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "LA Galaxy x Austin FC",
+      "league": "usa.1",
+      "kickoff": 1793480400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "San Jose Earthquakes x Real Salt Lake",
+      "league": "usa.1",
+      "kickoff": 1793480400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Colorado Rapids x Chicago Fire FC",
+      "league": "usa.1",
+      "kickoff": 1793496600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Coritiba x Vitória",
+      "league": "bra.1",
+      "kickoff": 1793473200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vélez Sarsfield x San Lorenzo",
+      "league": "arg.1",
+      "kickoff": 1793484900,
       "reason": "no_verified_public_1x2"
     }
   ],
