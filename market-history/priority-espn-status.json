@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T11:19:03.653711+00:00",
+  "checked_at": "2026-10-31T12:05:59.651941+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
@@ -11,33 +11,15 @@
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Tottenham Hotspur x Crystal Palace",
-      "league": "eng.1",
-      "kickoff": 1793467800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Aston Villa x Fulham",
       "league": "eng.1",
       "kickoff": 1793476800,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Real Betis x Málaga",
-      "league": "esp.1",
-      "kickoff": 1793467800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Barcelona x Alavés",
       "league": "esp.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Udinese x AS Roma",
-      "league": "ita.1",
-      "kickoff": 1793466000,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -50,12 +32,6 @@
       "fixture": "Troyes x Le Mans",
       "league": "fra.1",
       "kickoff": 1793475900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bayern Munich x Borussia Dortmund",
-      "league": "ger.1",
-      "kickoff": 1793467800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -98,12 +74,6 @@
       "fixture": "SC Cambuur x Go Ahead Eagles",
       "league": "ned.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Charlotte FC x Orlando City SC",
-      "league": "usa.1",
-      "kickoff": 1793466000,
       "reason": "no_verified_public_1x2"
     },
     {
