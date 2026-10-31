@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T01:34:12.906339+00:00",
+  "checked_at": "2026-10-31T02:24:22.748318+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 32,
+  "priority_fixtures_seen": 24,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -143,27 +143,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético de San Luis x Atlas",
-      "league": "mex.1",
-      "kickoff": 1793408400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Juárez x Querétaro",
-      "league": "mex.1",
-      "kickoff": 1793408400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Huracán x Tigre",
-      "league": "arg.1",
-      "kickoff": 1793397600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Racing Club x Aldosivi",
-      "league": "arg.1",
-      "kickoff": 1793405700,
+      "fixture": "Corinthians x Mirassol",
+      "league": "bra.1",
+      "kickoff": 1793401200,
       "reason": "no_verified_public_1x2"
     }
   ],

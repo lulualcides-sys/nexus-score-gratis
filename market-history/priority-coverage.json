@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T01:34:15.466345+00:00",
+  "checked_at": "2026-10-31T02:24:25.318884+00:00",
   "horizon_hours": 48,
-  "important_games": 63,
-  "verified_bookmaker_games": 10,
-  "indicative_only_games": 20,
-  "missing_bookmaker_price_games": 33,
-  "games_with_corners_stats": 2,
-  "games_with_yellow_cards_stats": 2,
-  "games_with_shots_on_target_stats": 2,
+  "important_games": 60,
+  "verified_bookmaker_games": 7,
+  "indicative_only_games": 19,
+  "missing_bookmaker_price_games": 34,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 25,
+    "indicative": 24,
     "new_priority": 38
   },
   "pinnacle_guest": {
@@ -431,9 +431,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.3,
+        "home": 3.28,
         "draw": 3.94,
-        "away": 2.26
+        "away": 2.27
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12900/fc-augsburg-vs-sc-freiburg-2026-10-31",
       "tipsaudit_id": "12900",
@@ -493,9 +493,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.79,
+        "home": 2.69,
         "draw": 4.17,
-        "away": 2.49
+        "away": 2.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12902/werder-bremen-vs-1899-hoffenheim-2026-10-31",
       "tipsaudit_id": "12902",
@@ -715,8 +715,8 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.27,
+        "home": 2.01,
+        "draw": 4.26,
         "away": 3.75
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
@@ -728,52 +728,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Atlético de San Luis",
-      "away": "Atlas",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1793408400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 9,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "FC Juárez",
-      "away": "Querétaro",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1793408400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Puebla",
       "away": "U.N.A.M. - Pumas",
       "kickoff_unix": 1793415600.0,
@@ -781,19 +735,11 @@
       "league_code": "mex.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.06,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.93,
-        "draw": 3.9,
-        "away": 2.04
+        "draw": 3.88,
+        "away": 2.05
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
       "tipsaudit_id": "12535",
@@ -801,7 +747,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Pachuca",
@@ -1261,8 +1207,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.9,
-        "draw": 4.98,
+        "home": 1.91,
+        "draw": 4.92,
         "away": 3.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13028/st-louis-city-vs-san-diego-2026-10-31",
@@ -1486,8 +1432,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.18,
-        "draw": 10.48,
-        "away": 18.47
+        "draw": 10.49,
+        "away": 18.49
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/12950/feyenoord-vs-fortuna-sittard-2026-10-31",
       "tipsaudit_id": "12950",
@@ -1571,8 +1517,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.08,
-        "draw": 22.56,
-        "away": 33.13
+        "draw": 22.61,
+        "away": 33.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13010/psv-eindhoven-vs-willem-ii-2026-10-31",
       "tipsaudit_id": "13010",
@@ -1752,28 +1698,6 @@
         "TipsAudit"
       ],
       "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Bucaramanga",
-      "away": "Deportivo Pasto",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1793408700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 48,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Llaneros FC",
@@ -1967,6 +1891,23 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Puebla",
+      "away": "U.N.A.M. - Pumas",
+      "kickoff_unix": 1793415600.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/12535/puebla-vs-unam-pumas-2026-10-31",
+      "tipsaudit_id": "12535",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
