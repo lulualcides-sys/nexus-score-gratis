@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T01:20:27.488748+00:00",
-  "bookmaker_snapshot_at": "2026-10-31T01:20:26.244654+00:00",
+  "checked_at": "2026-10-31T03:59:49.613624+00:00",
+  "bookmaker_snapshot_at": "2026-10-31T03:59:48.502561+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1636,
+  "matches_catalogued": 5,
+  "matches_with_priced_markets": 5,
+  "odds_eligible_for_quality": 540,
   "invalid_quote_records": 0,
-  "complete_market_lines": 802,
+  "complete_market_lines": 265,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 370,
-      "complete_lines": 185,
+      "games": 5,
+      "odds": 116,
+      "complete_lines": 58,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.43
+      "median_overround_pct": 3.72
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 254,
-      "complete_lines": 127,
+      "games": 5,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.17
+      "median_overround_pct": 5.74
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "games": 5,
+      "odds": 60,
+      "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.85
+      "median_overround_pct": 4.23
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 5,
+      "odds": 20,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.44
+      "median_overround_pct": 5.33
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.6
+      "median_overround_pct": 4.32
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.09
+      "median_overround_pct": 3.85
     },
     "team_goals": {
-      "games": 16,
-      "odds": 198,
-      "complete_lines": 99,
+      "games": 5,
+      "odds": 72,
+      "complete_lines": 36,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.82
+      "median_overround_pct": 5.57
     },
     "total_goals": {
-      "games": 16,
-      "odds": 458,
-      "complete_lines": 229,
+      "games": 5,
+      "odds": 162,
+      "complete_lines": 81,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.01
+      "median_overround_pct": 4.83
     }
   },
   "examples": [
     {
-      "fixture": "Levante x Atletico Madrid",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-31T01:20:26.244654+00:00",
+      "observed_at": "2026-10-31T03:59:48.502561+00:00",
       "selections": {
-        "home": 5.48,
-        "away": 1.5236,
-        "draw": 5.01
+        "home": 3.16,
+        "away": 2.21,
+        "draw": 3.78
       },
-      "overround_pct": 3.84
+      "overround_pct": 3.35
     },
     {
-      "fixture": "Levante x Atletico Madrid",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;1.0",
-      "line_from_market_key": "s;0;s;1.0",
-      "observed_at": "2026-10-31T01:20:26.244654+00:00",
-      "selections": {
-        "home": 2.08,
-        "away": 1.8333
-      },
-      "overround_pct": 2.62
-    },
-    {
-      "fixture": "Levante x Atletico Madrid",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-10-31T01:20:26.244654+00:00",
-      "selections": {
-        "home": 4.35,
-        "away": 1.2247
-      },
-      "overround_pct": 4.64
-    },
-    {
-      "fixture": "Levante x Atletico Madrid",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.25",
       "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-10-31T01:20:26.244654+00:00",
+      "observed_at": "2026-10-31T03:59:48.502561+00:00",
       "selections": {
-        "home": 3.2,
-        "away": 1.361
+        "home": 1.9709,
+        "away": 1.9346
       },
-      "overround_pct": 4.73
+      "overround_pct": 2.43
     },
     {
-      "fixture": "Levante x Atletico Madrid",
+      "fixture": "Augsburg x Freiburg",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.5",
-      "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-10-31T01:20:26.244654+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-10-31T03:59:48.502561+00:00",
       "selections": {
-        "home": 2.63,
-        "away": 1.5
+        "home": 3.9,
+        "away": 1.2833
       },
-      "overround_pct": 4.69
+      "overround_pct": 3.57
+    },
+    {
+      "fixture": "Augsburg x Freiburg",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-10-31T03:59:48.502561+00:00",
+      "selections": {
+        "home": 3.14,
+        "away": 1.3937
+      },
+      "overround_pct": 3.6
+    },
+    {
+      "fixture": "Augsburg x Freiburg",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-10-31T03:59:48.502561+00:00",
+      "selections": {
+        "home": 2.76,
+        "away": 1.495
+      },
+      "overround_pct": 3.12
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
