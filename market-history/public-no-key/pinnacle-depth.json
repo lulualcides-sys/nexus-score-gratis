@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T03:59:49.613624+00:00",
-  "bookmaker_snapshot_at": "2026-10-31T03:59:48.502561+00:00",
+  "checked_at": "2026-10-31T07:14:20.147396+00:00",
+  "bookmaker_snapshot_at": "2026-10-31T07:14:19.507363+00:00",
   "status": "fresh",
   "matches_catalogued": 5,
   "matches_with_priced_markets": 5,
-  "odds_eligible_for_quality": 540,
+  "odds_eligible_for_quality": 528,
   "invalid_quote_records": 0,
-  "complete_market_lines": 265,
+  "complete_market_lines": 259,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 5,
-      "odds": 116,
-      "complete_lines": 58,
+      "odds": 110,
+      "complete_lines": 55,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.72
+      "median_overround_pct": 3.54
     },
     "first_half_goals": {
       "games": 5,
       "odds": 80,
       "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.74
+      "median_overround_pct": 5.03
     },
     "first_half_handicap": {
       "games": 5,
       "odds": 60,
       "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.23
+      "median_overround_pct": 4.11
     },
     "first_half_team_goals": {
       "games": 5,
       "odds": 20,
       "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.33
+      "median_overround_pct": 5.2
     },
     "half_time": {
       "games": 5,
       "odds": 15,
       "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.32
+      "median_overround_pct": 3.96
     },
     "match_odds": {
       "games": 5,
       "odds": 15,
       "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.85
+      "median_overround_pct": 3.44
     },
     "team_goals": {
       "games": 5,
-      "odds": 72,
-      "complete_lines": 36,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.57
+      "median_overround_pct": 5.18
     },
     "total_goals": {
       "games": 5,
-      "odds": 162,
-      "complete_lines": 81,
+      "odds": 164,
+      "complete_lines": 82,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 4.75
     }
   },
   "examples": [
     {
-      "fixture": "Augsburg x Freiburg",
+      "fixture": "Chelsea x Manchester United",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-31T03:59:48.502561+00:00",
+      "observed_at": "2026-10-31T07:14:19.507363+00:00",
       "selections": {
-        "home": 3.16,
-        "away": 2.21,
+        "home": 2.03,
+        "away": 3.59,
         "draw": 3.78
-      },
-      "overround_pct": 3.35
-    },
-    {
-      "fixture": "Augsburg x Freiburg",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-10-31T03:59:48.502561+00:00",
-      "selections": {
-        "home": 1.9709,
-        "away": 1.9346
-      },
-      "overround_pct": 2.43
-    },
-    {
-      "fixture": "Augsburg x Freiburg",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-10-31T03:59:48.502561+00:00",
-      "selections": {
-        "home": 3.9,
-        "away": 1.2833
       },
       "overround_pct": 3.57
     },
     {
-      "fixture": "Augsburg x Freiburg",
+      "fixture": "Chelsea x Manchester United",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-10-31T03:59:48.502561+00:00",
+      "observed_at": "2026-10-31T07:14:19.507363+00:00",
       "selections": {
-        "home": 3.14,
-        "away": 1.3937
+        "home": 2.04,
+        "away": 1.8696
+      },
+      "overround_pct": 2.51
+    },
+    {
+      "fixture": "Chelsea x Manchester United",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-10-31T07:14:19.507363+00:00",
+      "selections": {
+        "home": 3.64,
+        "away": 1.3135
       },
       "overround_pct": 3.6
     },
     {
-      "fixture": "Augsburg x Freiburg",
+      "fixture": "Chelsea x Manchester United",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-10-31T03:59:48.502561+00:00",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-10-31T07:14:19.507363+00:00",
       "selections": {
-        "home": 2.76,
-        "away": 1.495
+        "home": 3.26,
+        "away": 1.3704
       },
-      "overround_pct": 3.12
+      "overround_pct": 3.65
+    },
+    {
+      "fixture": "Chelsea x Manchester United",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-10-31T07:14:19.507363+00:00",
+      "selections": {
+        "home": 2.89,
+        "away": 1.4566
+      },
+      "overround_pct": 3.26
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
