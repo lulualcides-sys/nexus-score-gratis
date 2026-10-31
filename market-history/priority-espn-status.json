@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T05:15:42.331914+00:00",
+  "checked_at": "2026-10-31T06:11:17.538438+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 42,
   "created_games": 0,
-  "new_quotes": 6,
-  "summary_checks": 2,
-  "summary_with_prices": 2,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
@@ -68,12 +68,6 @@
       "fixture": "Barcelona x Alavés",
       "league": "esp.1",
       "kickoff": 1793476800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bologna x Monza",
-      "league": "ita.1",
-      "kickoff": 1793455200,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -186,6 +180,12 @@
     },
     {
       "fixture": "FC Cincinnati x Philadelphia Union",
+      "league": "usa.1",
+      "kickoff": 1793469600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "New York City FC x CF Montréal",
       "league": "usa.1",
       "kickoff": 1793469600,
       "reason": "no_verified_public_1x2"
