@@ -1,31 +1,25 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T04:56:14.283977+00:00",
+  "checked_at": "2026-11-01T05:51:36.567437+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
   "created_games": 0,
-  "new_quotes": 6,
-  "summary_checks": 2,
-  "summary_with_prices": 2,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Excelsior x FC Twente",
-      "league": "ned.1",
-      "kickoff": 1793539800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Telstar x FC Utrecht",
-      "league": "ned.1",
-      "kickoff": 1793539800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "FC Groningen x Sparta Rotterdam",
       "league": "ned.1",
       "kickoff": 1793547900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Como x Venezia",
+      "league": "ita.1",
+      "kickoff": 1793532600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -188,6 +182,12 @@
       "fixture": "LAFC x Minnesota United FC",
       "league": "usa.1",
       "kickoff": 1793583000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Portland Timbers x Houston Dynamo FC",
+      "league": "usa.1",
+      "kickoff": 1793587500,
       "reason": "no_verified_public_1x2"
     }
   ],
