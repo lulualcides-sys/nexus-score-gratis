@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T18:02:42.432301+00:00",
+  "checked_at": "2026-11-01T18:50:13.734540+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 34,
@@ -10,12 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "New England Revolution x Inter Miami CF",
-      "league": "usa.1",
-      "kickoff": 1793577600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "LAFC x Minnesota United FC",
       "league": "usa.1",

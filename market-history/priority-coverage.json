@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T18:02:46.784425+00:00",
+  "checked_at": "2026-11-01T18:50:20.016731+00:00",
   "horizon_hours": 48,
-  "important_games": 30,
-  "verified_bookmaker_games": 23,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 3,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "important_games": 29,
+  "verified_bookmaker_games": 22,
+  "indicative_only_games": 2,
+  "missing_bookmaker_price_games": 5,
+  "games_with_corners_stats": 3,
+  "games_with_yellow_cards_stats": 3,
+  "games_with_shots_on_target_stats": 3,
   "tipsaudit": {
     "status": "checked",
     "matched": 9,
-    "indicative": 8,
+    "indicative": 7,
     "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 8,
-    "new_verified_game": 6,
-    "offers": 1014,
+    "matched": 7,
+    "new_verified_game": 5,
+    "offers": 881,
     "market_families": {
-      "match_odds": 42,
-      "team_goals": 122,
-      "asian_handicap": 260,
-      "total_goals": 278,
-      "half_time": 24,
-      "first_half_team_goals": 32,
-      "first_half_handicap": 128,
-      "first_half_goals": 128
+      "match_odds": 36,
+      "team_goals": 106,
+      "asian_handicap": 226,
+      "total_goals": 240,
+      "half_time": 21,
+      "first_half_team_goals": 28,
+      "first_half_handicap": 112,
+      "first_half_goals": 112
     }
   },
   "official_corners_cards": {
@@ -151,15 +151,7 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.27,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.23,
         "draw": 4.47,
@@ -171,7 +163,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Shakhtar Donetsk",
@@ -181,15 +173,7 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.08,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.85,
         "draw": 4.11,
@@ -201,32 +185,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "Elche",
-      "away": "Valencia",
-      "league": "esp.1",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793554200.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 166,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
-      "coverage": "verified_price"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Athletic Club",
@@ -246,9 +205,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.07,
-        "draw": 3.82,
-        "away": 3.93
+        "home": 2.08,
+        "draw": 3.81,
+        "away": 3.91
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
       "tipsaudit_id": "13681",
@@ -327,7 +286,7 @@
       "fair_odds_modelled": {
         "home": 1.98,
         "draw": 4.17,
-        "away": 3.91
+        "away": 3.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
@@ -463,9 +422,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.81,
-        "draw": 4.27,
-        "away": 4.66
+        "home": 1.83,
+        "draw": 4.18,
+        "away": 4.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13712/cruz-azul-vs-leon-2026-11-02",
       "tipsaudit_id": "13712",
@@ -479,14 +438,14 @@
       "league": "Liga Profesional Argentina",
       "league_code": "arg.1",
       "kickoff_unix": 1793556000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 30,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -616,9 +575,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.22,
-        "draw": 4.33,
-        "away": 3.13
+        "home": 2.24,
+        "draw": 4.35,
+        "away": 3.09
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
       "tipsaudit_id": "13704",
@@ -659,8 +618,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.53,
-        "draw": 5.38,
-        "away": 6.24
+        "draw": 5.39,
+        "away": 6.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13706/nashville-sc-vs-new-york-red-bulls-2026-11-01",
       "tipsaudit_id": "13706",
@@ -684,7 +643,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 133,
+      "verified_quotes": 136,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -692,16 +651,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.27,
-          "bookmaker": "GTbets",
+          "price": 2.23,
+          "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.21,
-        "draw": 4.37,
-        "away": 2.18
+        "home": 3.24,
+        "draw": 4.24,
+        "away": 2.2
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13711/new-england-revolution-vs-inter-miami-2026-11-02",
       "tipsaudit_id": "13711",
@@ -726,11 +685,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.72,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.72,
-        "draw": 4.76,
-        "away": 4.83
+        "home": 1.71,
+        "draw": 4.8,
+        "away": 4.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13705/los-angeles-fc-vs-minnesota-united-fc-2026-11-02",
       "tipsaudit_id": "13705",
@@ -765,9 +732,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.8,
-        "draw": 4.27,
-        "away": 4.76
+        "home": 1.79,
+        "draw": 4.3,
+        "away": 4.8
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13714/portland-timbers-vs-houston-dynamo-2026-11-02",
       "tipsaudit_id": "13714",
@@ -786,7 +753,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -809,7 +776,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -833,9 +800,9 @@
         "FotMob"
       ],
       "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -856,9 +823,9 @@
         "FotMob"
       ],
       "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -936,6 +903,40 @@
     }
   ],
   "top_missing": [
+    {
+      "home": "Galatasaray",
+      "away": "VfB Stuttgart",
+      "kickoff_unix": 1793727900.0,
+      "league": "UEFA Champions League",
+      "league_code": "uefa.champions",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
+      "tipsaudit_id": "14135",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Shakhtar Donetsk",
+      "away": "Sporting CP",
+      "kickoff_unix": 1793727900.0,
+      "league": "UEFA Champions League",
+      "league_code": "uefa.champions",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
+      "tipsaudit_id": "14136",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
     {
       "home": "Lorient",
       "away": "Brest",
