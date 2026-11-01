@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T09:18:47.877982+00:00",
+  "checked_at": "2026-11-01T10:15:12.725347+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
@@ -26,12 +26,6 @@
       "fixture": "Juventus x Napoli",
       "league": "ita.1",
       "kickoff": 1793562300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Racing Santander x Real Madrid",
-      "league": "esp.1",
-      "kickoff": 1793546100,
       "reason": "no_verified_public_1x2"
     },
     {
