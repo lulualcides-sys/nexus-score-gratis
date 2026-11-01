@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T19:26:21.567689+00:00",
+  "checked_at": "2026-11-01T20:05:43.218734+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 34,
-  "created_games": 0,
+  "priority_fixtures_seen": 23,
+  "created_games": 2,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "LAFC x Minnesota United FC",
-      "league": "usa.1",
-      "kickoff": 1793583000,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Portland Timbers x Houston Dynamo FC",
       "league": "usa.1",
@@ -73,6 +67,18 @@
     {
       "fixture": "Lorient x Brest",
       "league": "fra.1",
+      "kickoff": 1793648700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sassuolo x Fiorentina",
+      "league": "ita.1",
+      "kickoff": 1793640600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atalanta x Parma",
+      "league": "ita.1",
       "kickoff": 1793648700,
       "reason": "no_verified_public_1x2"
     }
