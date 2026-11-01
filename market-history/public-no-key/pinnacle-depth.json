@@ -1,70 +1,70 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T09:58:49.528529+00:00",
-  "bookmaker_snapshot_at": "2026-11-01T07:21:07.259836+00:00",
+  "checked_at": "2026-11-01T13:09:48.444440+00:00",
+  "bookmaker_snapshot_at": "2026-11-01T13:09:46.628739+00:00",
   "status": "fresh",
-  "matches_catalogued": 11,
-  "matches_with_priced_markets": 11,
-  "odds_eligible_for_quality": 1196,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1500,
   "invalid_quote_records": 0,
-  "complete_market_lines": 587,
+  "complete_market_lines": 734,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 11,
-      "odds": 272,
-      "complete_lines": 136,
+      "games": 16,
+      "odds": 344,
+      "complete_lines": 172,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.58
+      "median_overround_pct": 3.74
     },
     "first_half_goals": {
-      "games": 11,
-      "odds": 174,
-      "complete_lines": 87,
+      "games": 16,
+      "odds": 224,
+      "complete_lines": 112,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.14
+      "median_overround_pct": 5.46
     },
     "first_half_handicap": {
-      "games": 11,
-      "odds": 132,
-      "complete_lines": 66,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.09
+      "median_overround_pct": 4.3
     },
     "first_half_team_goals": {
-      "games": 11,
-      "odds": 44,
-      "complete_lines": 22,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 5.29
     },
     "half_time": {
-      "games": 11,
-      "odds": 33,
-      "complete_lines": 11,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.0
+      "median_overround_pct": 3.92
     },
     "match_odds": {
-      "games": 11,
-      "odds": 33,
-      "complete_lines": 11,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.54
+      "median_overround_pct": 3.34
     },
     "team_goals": {
-      "games": 11,
-      "odds": 150,
-      "complete_lines": 75,
+      "games": 16,
+      "odds": 180,
+      "complete_lines": 90,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 5.15
     },
     "total_goals": {
-      "games": 11,
-      "odds": 358,
-      "complete_lines": 179,
+      "games": 16,
+      "odds": 408,
+      "complete_lines": 204,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.81
+      "median_overround_pct": 4.34
     }
   },
   "examples": [
@@ -73,61 +73,61 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-01T07:21:07.259836+00:00",
+      "observed_at": "2026-11-01T13:09:46.628739+00:00",
       "selections": {
-        "home": 1.8403,
-        "away": 4.09,
-        "draw": 4.04
+        "home": 2.0,
+        "away": 3.74,
+        "draw": 3.89
       },
-      "overround_pct": 3.54
+      "overround_pct": 2.44
     },
     {
       "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-01T07:21:07.259836+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-01T13:09:46.628739+00:00",
       "selections": {
-        "home": 2.08,
-        "away": 1.8403
+        "home": 2.0,
+        "away": 1.9259
       },
-      "overround_pct": 2.42
-    },
-    {
-      "fixture": "Strasbourg x Auxerre",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-11-01T07:21:07.259836+00:00",
-      "selections": {
-        "home": 3.87,
-        "away": 1.2857
-      },
-      "overround_pct": 3.62
+      "overround_pct": 1.92
     },
     {
       "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.5",
       "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-11-01T07:21:07.259836+00:00",
+      "observed_at": "2026-11-01T13:09:46.628739+00:00",
       "selections": {
-        "home": 3.13,
-        "away": 1.3953
+        "home": 3.5,
+        "away": 1.3413
       },
-      "overround_pct": 3.62
+      "overround_pct": 3.13
     },
     {
       "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-01T07:21:07.259836+00:00",
+      "observed_at": "2026-11-01T13:09:46.628739+00:00",
       "selections": {
-        "home": 2.8,
-        "away": 1.4808
+        "home": 3.13,
+        "away": 1.4049
       },
-      "overround_pct": 3.25
+      "overround_pct": 3.13
+    },
+    {
+      "fixture": "Strasbourg x Auxerre",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-01T13:09:46.628739+00:00",
+      "selections": {
+        "home": 2.77,
+        "away": 1.5
+      },
+      "overround_pct": 2.77
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
