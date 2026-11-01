@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T10:15:12.725347+00:00",
+  "checked_at": "2026-11-01T11:09:42.632100+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
@@ -47,18 +47,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Lyon x Angers",
-      "league": "fra.1",
-      "kickoff": 1793549700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Paris FC x AS Monaco",
-      "league": "fra.1",
-      "kickoff": 1793549700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Marseille x Toulouse",
       "league": "fra.1",
       "kickoff": 1793562300,
@@ -86,12 +74,6 @@
       "fixture": "Braga x FC Famalicao",
       "league": "por.1",
       "kickoff": 1793565000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Liverpool x Arsenal",
-      "league": "eng.1",
-      "kickoff": 1793550600,
       "reason": "no_verified_public_1x2"
     },
     {
