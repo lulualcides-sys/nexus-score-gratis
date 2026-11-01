@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T17:19:09.052225+00:00",
+  "checked_at": "2026-11-01T18:02:46.784425+00:00",
   "horizon_hours": 48,
-  "important_games": 32,
-  "verified_bookmaker_games": 24,
-  "indicative_only_games": 2,
-  "missing_bookmaker_price_games": 6,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 3,
-  "games_with_shots_on_target_stats": 3,
+  "important_games": 30,
+  "verified_bookmaker_games": 23,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 3,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
-    "matched": 10,
-    "indicative": 7,
-    "new_priority": 3
+    "matched": 9,
+    "indicative": 8,
+    "new_priority": 5
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 11,
-    "new_verified_game": 7,
-    "offers": 1415,
+    "matched": 8,
+    "new_verified_game": 6,
+    "offers": 1014,
     "market_families": {
-      "match_odds": 60,
-      "team_goals": 174,
-      "asian_handicap": 362,
-      "total_goals": 392,
-      "half_time": 33,
-      "first_half_team_goals": 44,
-      "first_half_handicap": 176,
-      "first_half_goals": 174
+      "match_odds": 42,
+      "team_goals": 122,
+      "asian_handicap": 260,
+      "total_goals": 278,
+      "half_time": 24,
+      "first_half_team_goals": 32,
+      "first_half_handicap": 128,
+      "first_half_goals": 128
     }
   },
   "official_corners_cards": {
@@ -144,18 +144,78 @@
   },
   "priority_fixtures": [
     {
-      "home": "Liverpool",
-      "away": "Arsenal",
-      "league": "eng.1",
-      "league_code": "eng.1",
-      "kickoff_unix": 1793550600.0,
+      "home": "Galatasaray",
+      "away": "VfB Stuttgart",
+      "kickoff_unix": 1793727900.0,
+      "league": "UEFA Champions League",
+      "league_code": "uefa.champions",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.27,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.23,
+        "draw": 4.47,
+        "away": 3.05
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
+      "tipsaudit_id": "14135",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Shakhtar Donetsk",
+      "away": "Sporting CP",
+      "kickoff_unix": 1793727900.0,
+      "league": "UEFA Champions League",
+      "league_code": "uefa.champions",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.08,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 3.85,
+        "draw": 4.11,
+        "away": 2.01
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
+      "tipsaudit_id": "14136",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Elche",
+      "away": "Valencia",
+      "league": "esp.1",
+      "league_code": "esp.1",
+      "kickoff_unix": 1793554200.0,
       "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 162,
+      "verified_quotes": 166,
       "observed_corner_counts": false,
       "observed_card_counts": true,
       "observed_shots_on_counts": true,
@@ -164,43 +224,6 @@
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 135,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Elche",
-      "away": "Valencia",
-      "league": "esp.1",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793554200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 166,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.45,
-          "bookmaker": "Unibet (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.42,
-        "draw": 3.34,
-        "away": 3.49
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13670/elche-vs-valencia-2026-11-01",
-      "tipsaudit_id": "13670",
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -216,7 +239,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -225,7 +248,7 @@
       "fair_odds_modelled": {
         "home": 2.07,
         "draw": 3.82,
-        "away": 3.94
+        "away": 3.93
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
       "tipsaudit_id": "13681",
@@ -263,30 +286,6 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Lecce",
-      "away": "Genoa",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793552400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 152,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 131,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Juventus",
       "away": "Napoli",
       "league": "Serie A Itália",
@@ -296,7 +295,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -306,52 +305,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "Hamburg SV",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1793550600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "Hamburger SV",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1793550600.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 135,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
     },
     {
@@ -365,7 +318,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 16,
+      "verified_quotes": 20,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -530,7 +483,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -552,7 +505,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -574,7 +527,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -596,7 +549,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -620,7 +573,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 145,
+      "verified_quotes": 149,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -648,7 +601,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -683,7 +636,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -833,7 +786,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -843,7 +796,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Grêmio",
@@ -856,7 +809,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -866,7 +819,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Académico de Viseu",
@@ -947,7 +900,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -969,7 +922,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 10,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -983,27 +936,6 @@
     }
   ],
   "top_missing": [
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "Hamburg SV",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1793550600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "Lorient",
       "away": "Brest",
@@ -1034,50 +966,6 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Palmeiras",
-      "away": "Vasco da Gama",
-      "league": "Copa do Brasil",
-      "league_code": "bra.copa_do_brazil",
-      "kickoff_unix": 1793559600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Grêmio",
-      "away": "Atlético-MG",
-      "league": "Copa do Brasil",
-      "league_code": "bra.copa_do_brazil",
-      "kickoff_unix": 1793568600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,

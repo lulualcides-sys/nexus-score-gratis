@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T17:19:03.688225+00:00",
+  "checked_at": "2026-11-01T18:02:42.432301+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 34,
@@ -10,30 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Maritimo x Santa Clara",
-      "league": "por.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Braga x FC Famalicao",
-      "league": "por.1",
-      "kickoff": 1793565000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Palmeiras x Vasco da Gama",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1793559600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Grêmio x Atlético-MG",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "New England Revolution x Inter Miami CF",
       "league": "usa.1",
@@ -53,9 +29,27 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Maritimo x Santa Clara",
+      "league": "por.1",
+      "kickoff": 1793556000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Braga x FC Famalicao",
+      "league": "por.1",
+      "kickoff": 1793565000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Independiente Medellín x Alianza FC",
       "league": "col.1",
       "kickoff": 1793574600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Boca Juniors x River Plate",
+      "league": "arg.1",
+      "kickoff": 1793556000,
       "reason": "no_verified_public_1x2"
     },
     {
