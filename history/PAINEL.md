@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T05:51:55.522118+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T07:04:46.012489+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -34,7 +34,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
 | 2026-11-01 | Juventus × Napoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Lecce × Genoa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Lazio × Cagliari | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Como × Venezia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Como × Venezia | 0-0 | 0 | Match Odds 1X2: Casa 1,29, Empate 5,50, Fora 7,50 |
 | 2026-11-01 | Nashville SC × Red Bull New York | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | LAFC × Minnesota United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Vancouver Whitecaps × Seattle Sounders FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -66,8 +66,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
 | 2026-11-01 | Žižkov × Dukla Praha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | SK Prostějov × Opava | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Albirex Niigata Ladies × Urawa Ladies | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Cerezo Osaka Sakai × AS Elfen Saitama | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Sanfrecce Hiroshima Regina × Mynavi Sendai Ladies | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Cerezo Osaka Sakai × AS Elfen Saitama | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Sanfrecce Hiroshima Regina × Mynavi Sendai Ladies | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Atlético Grau × Universitario de Deportes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Club Deportivo Moquegua × Los Chankas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Cusco FC × Sport Boys | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -92,9 +92,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
 | 2026-11-01 | Newell's Old Boys × Unión | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Lanús × Gimnasia Mendoza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Belgrano × Barracas Central | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Suwon FC × Ansan Greeners | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Suwon FC × Ansan Greeners | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Canberra United FC × Western Sydney Wanderers FC | 0-2 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 9.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×2.0 |
-| 2026-11-01 | Melbourne Victory × Newcastle Jets | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Melbourne Victory × Newcastle Jets | 0-0 | 16 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-01 | Perth Glory × Wellington Phoenix | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Vancouver Rise FC × Montréal Roses FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Universidad Católica × Aucas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,23 +168,23 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 9624 | **Jogos distintos:** 2791 | **Resultados verificáveis:** 5417 | **Com gol:** 2092 | **Sem gol:** 3325 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 24 datas com coletas | 77 pendentes | 1752 indeterminados | 2378 incompletos.
+**Observações:** 9629 | **Jogos distintos:** 2792 | **Resultados verificáveis:** 5422 | **Com gol:** 2097 | **Sem gol:** 3325 | **Taxa observada:** 38.7%.
+**Evolução da amostra:** 24 datas com coletas | 72 pendentes | 1756 indeterminados | 2379 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1902 | 1293 | 519 | 774 | 40.1% |
-| ⚡ pressao_ofensiva_18 | 1514 | 1012 | 367 | 645 | 36.3% |
-| 🎯 chutes_no_alvo_5 | 1592 | 771 | 281 | 490 | 36.4% |
+| 🥶 jogo_frio | 1903 | 1293 | 519 | 774 | 40.1% |
+| ⚡ pressao_ofensiva_18 | 1516 | 1013 | 368 | 645 | 36.3% |
+| 🎯 chutes_no_alvo_5 | 1593 | 772 | 282 | 490 | 36.5% |
 | 🟥 expulsao_confirmada | 1434 | 654 | 231 | 423 | 35.3% |
 | 🚩 escanteios_6 | 1166 | 545 | 223 | 322 | 40.9% |
-| 💣 grandes_chances_3 | 940 | 509 | 219 | 290 | 43.0% |
-| 🔥 pressao_forte_10min | 525 | 332 | 129 | 203 | 38.9% |
-| 🧨 pressao_total_5_10min | 289 | 177 | 73 | 104 | 41.2% |
-| ⏱️ tensao_tardia_70 | 170 | 70 | 27 | 43 | 38.6% |
+| 💣 grandes_chances_3 | 941 | 509 | 219 | 290 | 43.0% |
+| 🔥 pressao_forte_10min | 525 | 333 | 130 | 203 | 39.0% |
+| 🧨 pressao_total_5_10min | 289 | 178 | 74 | 104 | 41.6% |
+| ⏱️ tensao_tardia_70 | 170 | 71 | 28 | 43 | 39.4% |
 | 🚨 alerta_cruzado_gol | 92 | 54 | 23 | 31 | 42.6% |
 
 ### Equipe
@@ -223,7 +223,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier League | 460 | 271 | 81 | 190 | 29.9% |
 | Major League Soccer | 365 | 195 | 87 | 108 | 44.6% |
-| J. League | 285 | 169 | 78 | 91 | 46.2% |
+| J. League | 289 | 173 | 82 | 91 | 47.4% |
 | Serie A | 235 | 157 | 78 | 79 | 49.7% |
 | Liga Profesional | 242 | 154 | 46 | 108 | 29.9% |
 | Serie B | 209 | 146 | 53 | 93 | 36.3% |
@@ -253,26 +253,31 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 257 | 182 | 60 | 122 | 33.0% |
 | 16–30′ | 642 | 487 | 167 | 320 | 34.3% |
-| 31–45′ | 1994 | 1542 | 634 | 908 | 41.1% |
+| 31–45′ | 1995 | 1542 | 634 | 908 | 41.1% |
 | 46–60′ | 1287 | 933 | 368 | 565 | 39.4% |
-| 61–75′ | 1955 | 1360 | 517 | 843 | 38.0% |
-| 76–90′ | 2601 | 905 | 343 | 562 | 37.9% |
+| 61–75′ | 1958 | 1360 | 517 | 843 | 38.0% |
+| 76–90′ | 2602 | 910 | 348 | 562 | 38.2% |
 | 91+′ | 888 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 9624 | **Jogos monitorados:** 1609 | **Ao vivo:** 48 | **Termômetros recentes:** 10.
+**Registros:** 9629 | **Jogos monitorados:** 1609 | **Ao vivo:** 36 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-01T05:52:24.102493+00:00 | Canberra United FC × Western Sydney Wanderers FC | Canberra United FC (94') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-01T06:35:06.567862+00:00 | JEF United Chiba × Avispa Fukuoka | JEF United Chiba (73') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-01T06:35:06.567862+00:00 | JEF United Chiba × Avispa Fukuoka | JEF United Chiba (73') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-01T06:35:06.567862+00:00 | V-Varen Nagasaki × Tokyo Verdy | V-Varen Nagasaki (63') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-01T06:35:06.567862+00:00 | Ulsan HD FC × Gangwon FC | Ulsan HD FC (78') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-01T05:56:40.238476+00:00 | JEF United Chiba × Avispa Fukuoka | JEF United Chiba (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-01T05:52:24.102493+00:00 | Canberra United FC × Western Sydney Wanderers FC | Canberra United FC (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | 🧨 pressao_total_5_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-01T05:52:24.102493+00:00 | Yokohama F.Marinos × Kawasaki Frontale | Kawasaki Frontale (89') | ⏱️ tensao_tardia_70 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-01T05:16:54.556735+00:00 | CF América × Toluca | Toluca (99') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T05:16:54.556735+00:00 | CF América × Toluca | CF América (99') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T05:16:54.556735+00:00 | CF América × Toluca | Toluca (99') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -363,15 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T22:42:47.605324+00:00 | CD Cacahuatique × Inca Aruba | Inca Aruba (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-10-31T22:20:09.253215+00:00 | Academia Puerto Cabello × Deportivo Táchira | Academia Puerto Cabello (46') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-10-31T22:20:09.253215+00:00 | LA Galaxy × Austin FC | LA Galaxy (51') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | San Jose Earthquakes × Real Salt Lake | San Jose Earthquakes (51') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | Vila Nova × Juventude | Vila Nova (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | Vila Nova × Juventude | Juventude (88') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | Vila Nova × Juventude | Vila Nova (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T22:20:09.253215+00:00 | FC Porto × Estoril | Equipe não definida (87') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **109**.
+Jogos com odds registradas nos ultimos dias: **111**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
