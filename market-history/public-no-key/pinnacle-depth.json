@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-10-31T21:50:25.451982+00:00",
-  "bookmaker_snapshot_at": "2026-10-31T21:50:23.211143+00:00",
+  "checked_at": "2026-11-01T01:28:02.446148+00:00",
+  "bookmaker_snapshot_at": "2026-11-01T01:28:00.181871+00:00",
   "status": "fresh",
-  "matches_catalogued": 14,
-  "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1424,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1600,
   "invalid_quote_records": 0,
-  "complete_market_lines": 698,
+  "complete_market_lines": 784,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 14,
-      "odds": 328,
-      "complete_lines": 164,
+      "games": 16,
+      "odds": 374,
+      "complete_lines": 187,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.55
+      "median_overround_pct": 4.35
     },
     "first_half_goals": {
-      "games": 14,
-      "odds": 222,
-      "complete_lines": 111,
+      "games": 16,
+      "odds": 242,
+      "complete_lines": 121,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.04
+      "median_overround_pct": 6.15
     },
     "first_half_handicap": {
-      "games": 14,
-      "odds": 170,
-      "complete_lines": 85,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.03
+      "median_overround_pct": 4.45
     },
     "first_half_team_goals": {
-      "games": 14,
-      "odds": 56,
-      "complete_lines": 28,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.98
+      "median_overround_pct": 5.34
     },
     "half_time": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.01
+      "median_overround_pct": 4.18
     },
     "match_odds": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.26
+      "median_overround_pct": 3.6
     },
     "team_goals": {
-      "games": 14,
-      "odds": 180,
-      "complete_lines": 90,
+      "games": 16,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.21
+      "median_overround_pct": 5.5
     },
     "total_goals": {
-      "games": 14,
-      "odds": 384,
-      "complete_lines": 192,
+      "games": 16,
+      "odds": 446,
+      "complete_lines": 223,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.48
+      "median_overround_pct": 4.95
     }
   },
   "examples": [
     {
-      "fixture": "Monterrey x Club Tijuana",
+      "fixture": "Strasbourg x Auxerre",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-10-31T21:50:23.211143+00:00",
+      "observed_at": "2026-11-01T01:28:00.181871+00:00",
       "selections": {
-        "home": 1.6098,
-        "away": 5.5,
-        "draw": 4.33
+        "home": 1.8403,
+        "away": 4.06,
+        "draw": 4.05
       },
-      "overround_pct": 3.4
+      "overround_pct": 3.66
     },
     {
-      "fixture": "Monterrey x Club Tijuana",
+      "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-10-31T21:50:23.211143+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-01T01:28:00.181871+00:00",
       "selections": {
-        "home": 2.03,
-        "away": 1.8772
+        "home": 2.08,
+        "away": 1.8403
       },
-      "overround_pct": 2.53
+      "overround_pct": 2.42
     },
     {
-      "fixture": "Monterrey x Club Tijuana",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-10-31T21:50:23.211143+00:00",
-      "selections": {
-        "home": 4.32,
-        "away": 1.2445
-      },
-      "overround_pct": 3.5
-    },
-    {
-      "fixture": "Monterrey x Club Tijuana",
+      "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.75",
       "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-10-31T21:50:23.211143+00:00",
+      "observed_at": "2026-11-01T01:28:00.181871+00:00",
       "selections": {
-        "home": 3.2,
-        "away": 1.3817
+        "home": 3.86,
+        "away": 1.2874
       },
-      "overround_pct": 3.62
+      "overround_pct": 3.58
     },
     {
-      "fixture": "Monterrey x Club Tijuana",
+      "fixture": "Strasbourg x Auxerre",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.5",
       "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-10-31T21:50:23.211143+00:00",
+      "observed_at": "2026-11-01T01:28:00.181871+00:00",
       "selections": {
-        "home": 2.65,
-        "away": 1.5291
+        "home": 3.12,
+        "away": 1.3968
       },
-      "overround_pct": 3.13
+      "overround_pct": 3.64
+    },
+    {
+      "fixture": "Strasbourg x Auxerre",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-11-01T01:28:00.181871+00:00",
+      "selections": {
+        "home": 2.8,
+        "away": 1.4831
+      },
+      "overround_pct": 3.14
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
