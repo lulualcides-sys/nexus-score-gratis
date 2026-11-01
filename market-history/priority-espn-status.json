@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T20:44:35.375398+00:00",
+  "checked_at": "2026-11-01T21:22:26.729470+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
+  "priority_fixtures_seen": 19,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -14,12 +14,6 @@
       "fixture": "Boca Juniors x River Plate",
       "league": "arg.1",
       "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Portland Timbers x Houston Dynamo FC",
-      "league": "usa.1",
-      "kickoff": 1793587500,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -47,6 +41,12 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Independiente Medellín x Alianza FC",
+      "league": "col.1",
+      "kickoff": 1793574600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Sassuolo x Fiorentina",
       "league": "ita.1",
       "kickoff": 1793640600,
@@ -62,18 +62,6 @@
       "fixture": "Lorient x Brest",
       "league": "fra.1",
       "kickoff": 1793648700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Maritimo x Santa Clara",
-      "league": "por.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Braga x FC Famalicao",
-      "league": "por.1",
-      "kickoff": 1793565000,
       "reason": "no_verified_public_1x2"
     }
   ],
