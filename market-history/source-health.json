@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T20:05:53.117956+00:00",
+  "checked_at": "2026-11-01T20:44:45.839930+00:00",
   "source_count": 5,
   "sources_ok": 5,
   "source_status": {
     "nexus": {
       "status": "ok",
       "age_minutes": 0.2,
-      "odds_observed": 3309,
+      "odds_observed": 3413,
       "source_file": "status.json"
     },
     "espn_priority": {
@@ -35,7 +35,7 @@
     },
     "pinnacle": {
       "status": "ok",
-      "age_minutes": 65.0,
+      "age_minutes": 103.9,
       "odds_observed": 1476,
       "source_file": "public-no-key/pinnacle-status.json",
       "games_priced": 16,

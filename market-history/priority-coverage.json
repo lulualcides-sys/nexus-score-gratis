@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T20:05:47.556407+00:00",
+  "checked_at": "2026-11-01T20:44:41.451902+00:00",
   "horizon_hours": 48,
   "important_games": 33,
   "verified_bookmaker_games": 22,
   "indicative_only_games": 4,
   "missing_bookmaker_price_games": 7,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_corners_stats": 4,
+  "games_with_yellow_cards_stats": 4,
+  "games_with_shots_on_target_stats": 4,
   "tipsaudit": {
     "status": "checked",
-    "matched": 7,
+    "matched": 6,
     "indicative": 11,
     "new_priority": 11
   },
@@ -375,15 +375,15 @@
       "league": "esp.1",
       "league_code": "esp.1",
       "kickoff_unix": 1793563200.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob"
       ],
       "verified_quotes": 30,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -430,14 +430,14 @@
       "league": "Serie A Itália",
       "league_code": "ita.1",
       "kickoff_unix": 1793562300.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 21,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -496,15 +496,15 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793562300.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob"
       ],
       "verified_quotes": 28,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -660,7 +660,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 34,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -682,7 +682,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -704,7 +704,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -728,19 +728,15 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 157,
+      "verified_quotes": 161,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.83,
-        "draw": 4.45,
-        "away": 4.35
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13703/vancouver-whitecaps-vs-seattle-sounders-2026-11-01",
-      "tipsaudit_id": "13703",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -756,7 +752,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -764,7 +760,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.26,
-        "draw": 4.26,
+        "draw": 4.25,
         "away": 3.1
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
@@ -783,7 +779,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 31,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -806,8 +802,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.54,
-        "draw": 5.42,
-        "away": 6.06
+        "draw": 5.41,
+        "away": 6.05
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13706/nashville-sc-vs-new-york-red-bulls-2026-11-01",
       "tipsaudit_id": "13706",
@@ -830,7 +826,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -865,7 +861,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -881,7 +877,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.66,
-        "draw": 5.0,
+        "draw": 5.01,
         "away": 5.1
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13705/los-angeles-fc-vs-minnesota-united-fc-2026-11-02",
@@ -959,9 +955,9 @@
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -980,7 +976,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 22,
+      "verified_quotes": 32,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1002,7 +998,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 18,
+      "verified_quotes": 25,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1147,9 +1143,9 @@
         "FotMob"
       ],
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
