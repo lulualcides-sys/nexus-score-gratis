@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T08:04:01.040488+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T08:54:10.069634+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -24,16 +24,16 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-11-01 | Getafe × Sevilla | 0-0 | 0 | Match Odds 1X2: Casa 3,20, Empate 3,00, Fora 2,50 |
 | 2026-11-01 | Elche × Valencia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Athletic Club × Real Sociedad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Strasbourg × AJ Auxerre | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Strasbourg × AJ Auxerre | 0-0 | 0 | Match Odds 1X2: Casa 1,83, Empate 4,00, Fora 3,95 |
 | 2026-11-01 | Paris FC × AS Monaco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Marseille × Toulouse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Lyon × Angers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | 1. FC Union Berlin × FC Cologne | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Eintracht Frankfurt × Hamburg SV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Frosinone × Torino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Frosinone × Torino | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,70, Fora 3,25 |
 | 2026-11-01 | Juventus × Napoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Lecce × Genoa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Lazio × Cagliari | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Lazio × Cagliari | 0-0 | 0 | Match Odds 1X2: Casa 1,43, Empate 4,30, Fora 6,50 |
 | 2026-11-01 | Como × Venezia | 0-0 | 0 | Match Odds 1X2: Casa 1,29, Empate 5,50, Fora 7,50 |
 | 2026-11-01 | Nashville SC × Red Bull New York | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | LAFC × Minnesota United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -75,7 +75,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-11-01 | Luqueño × Nacional | 0-3 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 3.0×2.0, Escanteios: 5.0×8.0, Grandes chances: 1.0×2.0 |
 | 2026-11-01 | Sportivo San Lorenzo × Libertad | 1-1 | 0 | Chutes no alvo: 8.0×7.0, Chutes para fora: 6.0×9.0, Escanteios: 7.0×3.0, Grandes chances: 2.0×2.0 |
 | 2026-11-01 | Melbourne Victory × Central Coast Mariners | 1-1 | 56 | Chutes no alvo: 2.0×4.0, Chutes para fora: 0.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-11-01 | Perth Glory × Adelaide United | 0-0 | 3 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Perth Glory × Adelaide United | 3-0 | 45 | Chutes no alvo: 6.0×2.0, Chutes para fora: 2.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 5.0×0.0 |
 | 2026-11-01 | Sukhothai FC × Ayutthaya United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Rayong FC × Lamphun Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | PT Satun FC × Nakhon Pathom | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -94,7 +94,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **8**.
 | 2026-11-01 | Belgrano × Barracas Central | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Suwon FC × Ansan Greeners | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Canberra United FC × Western Sydney Wanderers FC | 0-2 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 9.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×2.0 |
-| 2026-11-01 | Melbourne Victory × Newcastle Jets | 1-0 | 52 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Melbourne Victory × Newcastle Jets | 1-0 | 76 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-01 | Perth Glory × Wellington Phoenix | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Vancouver Rise FC × Montréal Roses FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Universidad Católica × Aucas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 9634 | **Jogos distintos:** 2794 | **Resultados verificáveis:** 5426 | **Com gol:** 2097 | **Sem gol:** 3329 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 24 datas com coletas | 73 pendentes | 1756 indeterminados | 2379 incompletos.
+**Observações:** 9640 | **Jogos distintos:** 2795 | **Resultados verificáveis:** 5428 | **Com gol:** 2097 | **Sem gol:** 3331 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 24 datas com coletas | 75 pendentes | 1758 indeterminados | 2379 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1904 | 1294 | 519 | 775 | 40.1% |
-| ⚡ pressao_ofensiva_18 | 1517 | 1014 | 368 | 646 | 36.3% |
-| 🎯 chutes_no_alvo_5 | 1594 | 772 | 282 | 490 | 36.5% |
+| 🥶 jogo_frio | 1906 | 1295 | 519 | 776 | 40.1% |
+| ⚡ pressao_ofensiva_18 | 1518 | 1014 | 368 | 646 | 36.3% |
+| 🎯 chutes_no_alvo_5 | 1595 | 773 | 282 | 491 | 36.5% |
 | 🟥 expulsao_confirmada | 1434 | 654 | 231 | 423 | 35.3% |
-| 🚩 escanteios_6 | 1167 | 546 | 223 | 323 | 40.8% |
-| 💣 grandes_chances_3 | 941 | 509 | 219 | 290 | 43.0% |
+| 🚩 escanteios_6 | 1168 | 546 | 223 | 323 | 40.8% |
+| 💣 grandes_chances_3 | 942 | 509 | 219 | 290 | 43.0% |
 | 🔥 pressao_forte_10min | 526 | 334 | 130 | 204 | 38.9% |
 | 🧨 pressao_total_5_10min | 289 | 178 | 74 | 104 | 41.6% |
 | ⏱️ tensao_tardia_70 | 170 | 71 | 28 | 43 | 39.4% |
@@ -191,10 +191,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 258 | 151 | 63 | 88 | 41.7% |
+| Equipe não definida | 259 | 152 | 63 | 89 | 41.4% |
 | Manchester City | 45 | 27 | 13 | 14 | 48.1% |
 | Roma | 37 | 27 | 21 | 6 | 77.8% |
-| Machida Zelvia | 28 | 25 | 6 | 19 | 24.0% |
+| Machida Zelvia | 29 | 25 | 6 | 19 | 24.0% |
 | Bayern München | 44 | 24 | 19 | 5 | 79.2% |
 | Bayer Leverkusen | 36 | 24 | 17 | 7 | 70.8% |
 | Inter | 34 | 23 | 7 | 16 | 30.4% |
@@ -223,7 +223,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | Premier League | 460 | 271 | 81 | 190 | 29.9% |
 | Major League Soccer | 365 | 195 | 87 | 108 | 44.6% |
-| J. League | 292 | 175 | 82 | 93 | 46.9% |
+| J. League | 294 | 177 | 82 | 95 | 46.3% |
 | Serie A | 235 | 157 | 78 | 79 | 49.7% |
 | Liga Profesional | 242 | 154 | 46 | 108 | 29.9% |
 | Serie B | 209 | 146 | 53 | 93 | 36.3% |
@@ -252,27 +252,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 257 | 182 | 60 | 122 | 33.0% |
-| 16–30′ | 642 | 487 | 167 | 320 | 34.3% |
-| 31–45′ | 2000 | 1546 | 634 | 912 | 41.0% |
-| 46–60′ | 1287 | 933 | 368 | 565 | 39.4% |
+| 16–30′ | 644 | 487 | 167 | 320 | 34.3% |
+| 31–45′ | 2002 | 1547 | 634 | 913 | 41.0% |
+| 46–60′ | 1288 | 934 | 368 | 566 | 39.4% |
 | 61–75′ | 1958 | 1360 | 517 | 843 | 38.0% |
 | 76–90′ | 2602 | 910 | 348 | 562 | 38.2% |
-| 91+′ | 888 | 8 | 3 | 5 | 37.5% |
+| 91+′ | 889 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 9634 | **Jogos monitorados:** 1609 | **Ao vivo:** 41 | **Termômetros recentes:** 11.
+**Registros:** 9640 | **Jogos monitorados:** 1609 | **Ao vivo:** 43 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-01T08:04:36.998041+00:00 | Machida Zelvia × Gamba Osaka | Gamba Osaka (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-01T08:54:47.495571+00:00 | Perth Glory × Adelaide United | Adelaide United (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-01T08:54:47.495571+00:00 | Perth Glory × Adelaide United | Perth Glory (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-01T08:54:47.495571+00:00 | Machida Zelvia × Gamba Osaka | Machida Zelvia (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-01T08:21:45.604871+00:00 | Perth Glory × Adelaide United | Perth Glory (21') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-01T08:21:45.604871+00:00 | Perth Glory × Adelaide United | Perth Glory (21') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-01T08:21:45.604871+00:00 | Machida Zelvia × Gamba Osaka | Equipe não definida (60') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-01T08:04:36.998041+00:00 | Machida Zelvia × Gamba Osaka | Gamba Osaka (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-01T07:36:18.658539+00:00 | Melbourne Victory × Newcastle Jets | Melbourne Victory (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-01T07:36:18.658539+00:00 | Melbourne Victory × Newcastle Jets | Melbourne Victory (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-01T07:36:18.658539+00:00 | Machida Zelvia × Gamba Osaka | Machida Zelvia (33') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-01T07:36:18.658539+00:00 | Machida Zelvia × Gamba Osaka | Machida Zelvia (33') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-01T07:36:18.658539+00:00 | Machida Zelvia × Gamba Osaka | Machida Zelvia (33') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-01T07:36:18.658539+00:00 | Machida Zelvia × Gamba Osaka | Machida Zelvia (33') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-01T06:35:06.567862+00:00 | JEF United Chiba × Avispa Fukuoka | JEF United Chiba (73') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-01T06:35:06.567862+00:00 | JEF United Chiba × Avispa Fukuoka | JEF United Chiba (73') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-01T06:35:06.567862+00:00 | V-Varen Nagasaki × Tokyo Verdy | V-Varen Nagasaki (63') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
@@ -362,16 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-10-31T22:42:47.605324+00:00 | O'Higgins × Ñublense | O'Higgins (77') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | CSD Macará × Barcelona SC | CSD Macará (51') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | ABB (69') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | ABB × San Antonio Bulo Bulo | San Antonio Bulo Bulo (69') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | Austin FC (73') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **112**.
+Jogos com odds registradas nos ultimos dias: **117**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
