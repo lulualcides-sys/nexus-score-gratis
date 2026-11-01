@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T03:57:02.166876+00:00",
+  "checked_at": "2026-11-01T04:56:14.283977+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 29,
+  "priority_fixtures_seen": 36,
   "created_games": 0,
   "new_quotes": 6,
   "summary_checks": 2,
@@ -53,6 +53,42 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Getafe x Sevilla",
+      "league": "esp.1",
+      "kickoff": 1793538000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Racing Santander x Real Madrid",
+      "league": "esp.1",
+      "kickoff": 1793546100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Elche x Valencia",
+      "league": "esp.1",
+      "kickoff": 1793554200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Athletic Club x Real Sociedad",
+      "league": "esp.1",
+      "kickoff": 1793563200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "1. FC Union Berlin x FC Cologne",
+      "league": "ger.1",
+      "kickoff": 1793543400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Eintracht Frankfurt x Hamburg SV",
+      "league": "ger.1",
+      "kickoff": 1793550600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Strasbourg x AJ Auxerre",
       "league": "fra.1",
       "kickoff": 1793541600,
@@ -74,18 +110,6 @@
       "fixture": "Marseille x Toulouse",
       "league": "fra.1",
       "kickoff": 1793562300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "1. FC Union Berlin x FC Cologne",
-      "league": "ger.1",
-      "kickoff": 1793543400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Eintracht Frankfurt x Hamburg SV",
-      "league": "ger.1",
-      "kickoff": 1793550600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -113,27 +137,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Liverpool x Arsenal",
+      "league": "eng.1",
+      "kickoff": 1793550600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Boca Juniors x River Plate",
       "league": "arg.1",
       "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Belgrano (Córdoba) x Barracas Central",
-      "league": "arg.1",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Newell's Old Boys x Unión (Santa Fe)",
-      "league": "arg.1",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lanús x Gimnasia (Mendoza)",
-      "league": "arg.1",
-      "kickoff": 1793576700,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -149,27 +161,33 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Deportivo Cali x Boyacá Chicó FC",
-      "league": "col.1",
-      "kickoff": 1793567100,
+      "fixture": "Vancouver Whitecaps x Seattle Sounders FC",
+      "league": "usa.1",
+      "kickoff": 1793565000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Independiente Medellín x Alianza FC",
-      "league": "col.1",
-      "kickoff": 1793574600,
+      "fixture": "Atlanta United FC x Toronto FC",
+      "league": "usa.1",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Santos x Necaxa",
-      "league": "mex.1",
-      "kickoff": 1793574000,
+      "fixture": "Nashville SC x Red Bull New York",
+      "league": "usa.1",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Cruz Azul x León",
-      "league": "mex.1",
-      "kickoff": 1793581800,
+      "fixture": "New England Revolution x Inter Miami CF",
+      "league": "usa.1",
+      "kickoff": 1793577600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "LAFC x Minnesota United FC",
+      "league": "usa.1",
+      "kickoff": 1793583000,
       "reason": "no_verified_public_1x2"
     }
   ],
