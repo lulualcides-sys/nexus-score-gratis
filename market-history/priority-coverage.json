@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T22:07:41.188852+00:00",
+  "checked_at": "2026-11-01T22:42:38.641571+00:00",
   "horizon_hours": 48,
-  "important_games": 26,
-  "verified_bookmaker_games": 16,
+  "important_games": 21,
+  "verified_bookmaker_games": 11,
   "indicative_only_games": 5,
   "missing_bookmaker_price_games": 5,
-  "games_with_corners_stats": 4,
-  "games_with_yellow_cards_stats": 5,
-  "games_with_shots_on_target_stats": 5,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
@@ -493,7 +493,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -523,9 +523,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.9,
-        "draw": 4.29,
-        "away": 4.16
+        "home": 1.89,
+        "draw": 4.32,
+        "away": 4.2
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13707/santos-laguna-vs-necaxa-2026-11-01",
       "tipsaudit_id": "13707",
@@ -545,7 +545,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 111,
+      "verified_quotes": 114,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -553,57 +553,13 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.82,
-        "draw": 4.16,
-        "away": 4.73
+        "draw": 4.15,
+        "away": 4.75
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13712/cruz-azul-vs-leon-2026-11-02",
       "tipsaudit_id": "13712",
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 108,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Belgrano (Córdoba)",
-      "away": "Barracas Central",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793568600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 41,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Newell's Old Boys",
-      "away": "Unión (Santa Fe)",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793568600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 30,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
     {
@@ -616,56 +572,10 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 24,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Atlanta United",
-      "away": "Toronto FC",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793568600.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob",
-        "ESPN"
-      ],
-      "verified_quotes": 47,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Nashville SC",
-      "away": "Red Bull New York",
-      "league": "usa.1",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793568600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 34,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -686,7 +596,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 151,
+      "verified_quotes": 154,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -694,16 +604,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.23,
-          "bookmaker": "LeoVegas (SE)",
+          "price": 2.17,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.33,
-        "draw": 4.33,
-        "away": 2.13
+        "home": 3.34,
+        "draw": 4.35,
+        "away": 2.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13711/new-england-revolution-vs-inter-miami-2026-11-02",
       "tipsaudit_id": "13711",
@@ -722,7 +632,7 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -737,9 +647,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.69,
-        "draw": 4.81,
-        "away": 5.03
+        "home": 1.68,
+        "draw": 4.85,
+        "away": 5.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13705/los-angeles-fc-vs-minnesota-united-fc-2026-11-02",
       "tipsaudit_id": "13705",
@@ -757,7 +667,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -773,34 +683,11 @@
       ],
       "fair_odds_modelled": {
         "home": 1.76,
-        "draw": 4.32,
+        "draw": 4.33,
         "away": 4.98
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13714/portland-timbers-vs-houston-dynamo-2026-11-02",
       "tipsaudit_id": "13714",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Grêmio",
-      "away": "Atlético-MG",
-      "league": "Copa do Brasil",
-      "league_code": "bra.copa_do_brazil",
-      "kickoff_unix": 1793568600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -814,7 +701,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 29,
+      "verified_quotes": 33,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
