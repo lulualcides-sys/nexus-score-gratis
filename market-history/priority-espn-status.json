@@ -1,15 +1,39 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T01:13:45.562125+00:00",
+  "checked_at": "2026-11-01T02:11:46.109716+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 38,
-  "created_games": 12,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "priority_fixtures_seen": 29,
+  "created_games": 0,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "PEC Zwolle x ADO Den Haag",
+      "league": "ned.1",
+      "kickoff": 1793531700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Excelsior x FC Twente",
+      "league": "ned.1",
+      "kickoff": 1793539800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Telstar x FC Utrecht",
+      "league": "ned.1",
+      "kickoff": 1793539800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Groningen x Sparta Rotterdam",
+      "league": "ned.1",
+      "kickoff": 1793547900,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Como x Venezia",
       "league": "ita.1",
@@ -77,54 +101,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Boca Juniors x River Plate",
-      "league": "arg.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Belgrano (Córdoba) x Barracas Central",
-      "league": "arg.1",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Newell's Old Boys x Unión (Santa Fe)",
-      "league": "arg.1",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lanús x Gimnasia (Mendoza)",
-      "league": "arg.1",
-      "kickoff": 1793576700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Santos x Necaxa",
-      "league": "mex.1",
-      "kickoff": 1793574000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cruz Azul x León",
-      "league": "mex.1",
-      "kickoff": 1793581800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Palmeiras x Vasco da Gama",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1793559600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Grêmio x Atlético-MG",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Arouca x C.D. Nacional",
       "league": "por.1",
       "kickoff": 1793547000,
@@ -149,27 +125,39 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "PEC Zwolle x ADO Den Haag",
-      "league": "ned.1",
-      "kickoff": 1793531700,
+      "fixture": "Boca Juniors x River Plate",
+      "league": "arg.1",
+      "kickoff": 1793556000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Excelsior x FC Twente",
-      "league": "ned.1",
-      "kickoff": 1793539800,
+      "fixture": "Belgrano (Córdoba) x Barracas Central",
+      "league": "arg.1",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Telstar x FC Utrecht",
-      "league": "ned.1",
-      "kickoff": 1793539800,
+      "fixture": "Newell's Old Boys x Unión (Santa Fe)",
+      "league": "arg.1",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "FC Groningen x Sparta Rotterdam",
-      "league": "ned.1",
-      "kickoff": 1793547900,
+      "fixture": "Lanús x Gimnasia (Mendoza)",
+      "league": "arg.1",
+      "kickoff": 1793576700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Palmeiras x Vasco da Gama",
+      "league": "bra.copa_do_brazil",
+      "kickoff": 1793559600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Grêmio x Atlético-MG",
+      "league": "bra.copa_do_brazil",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -182,6 +170,18 @@
       "fixture": "Independiente Medellín x Alianza FC",
       "league": "col.1",
       "kickoff": 1793574600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Necaxa",
+      "league": "mex.1",
+      "kickoff": 1793574000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cruz Azul x León",
+      "league": "mex.1",
+      "kickoff": 1793581800,
       "reason": "no_verified_public_1x2"
     }
   ],
