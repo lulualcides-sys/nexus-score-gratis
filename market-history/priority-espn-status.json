@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T08:31:30.861523+00:00",
+  "checked_at": "2026-11-01T09:18:47.877982+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
@@ -44,12 +44,6 @@
       "fixture": "Athletic Club x Real Sociedad",
       "league": "esp.1",
       "kickoff": 1793563200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "1. FC Union Berlin x FC Cologne",
-      "league": "ger.1",
-      "kickoff": 1793543400,
       "reason": "no_verified_public_1x2"
     },
     {
