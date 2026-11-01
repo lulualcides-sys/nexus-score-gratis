@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T07:35:07.635959+00:00",
+  "checked_at": "2026-11-01T08:31:30.861523+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
@@ -17,18 +17,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Frosinone x Torino",
-      "league": "ita.1",
-      "kickoff": 1793541600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lazio x Cagliari",
-      "league": "ita.1",
-      "kickoff": 1793541600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Lecce x Genoa",
       "league": "ita.1",
       "kickoff": 1793552400,
@@ -38,12 +26,6 @@
       "fixture": "Juventus x Napoli",
       "league": "ita.1",
       "kickoff": 1793562300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Getafe x Sevilla",
-      "league": "esp.1",
-      "kickoff": 1793538000,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -74,12 +56,6 @@
       "fixture": "Eintracht Frankfurt x Hamburg SV",
       "league": "ger.1",
       "kickoff": 1793550600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Strasbourg x AJ Auxerre",
-      "league": "fra.1",
-      "kickoff": 1793541600,
       "reason": "no_verified_public_1x2"
     },
     {
