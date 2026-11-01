@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T09:51:36.931757+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-01T10:47:46.812242+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **16**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -25,9 +25,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-11-01 | Elche × Valencia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Athletic Club × Real Sociedad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Strasbourg × AJ Auxerre | 0-0 | 0 | Match Odds 1X2: Casa 1,83, Empate 4,00, Fora 3,95 |
-| 2026-11-01 | Paris FC × AS Monaco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Paris FC × AS Monaco | 0-0 | 0 | Match Odds 1X2: Casa 2,45, Empate 3,50, Fora 2,80 |
 | 2026-11-01 | Marseille × Toulouse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Lyon × Angers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Lyon × Angers | 0-0 | 0 | Match Odds 1X2: Casa 1,41, Empate 5,00, Fora 7,00 |
 | 2026-11-01 | 1. FC Union Berlin × FC Cologne | 0-0 | 0 | Match Odds 1X2: Casa 2,60, Empate 3,45, Fora 2,50 |
 | 2026-11-01 | Eintracht Frankfurt × Hamburg SV | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Frosinone × Torino | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,70, Fora 3,25 |
@@ -168,18 +168,18 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 9641 | **Jogos distintos:** 2796 | **Resultados verificáveis:** 5430 | **Com gol:** 2097 | **Sem gol:** 3333 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 24 datas com coletas | 72 pendentes | 1759 indeterminados | 2380 incompletos.
+**Observações:** 9645 | **Jogos distintos:** 2798 | **Resultados verificáveis:** 5431 | **Com gol:** 2097 | **Sem gol:** 3334 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 24 datas com coletas | 74 pendentes | 1760 indeterminados | 2380 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 1906 | 1295 | 519 | 776 | 40.1% |
-| ⚡ pressao_ofensiva_18 | 1518 | 1015 | 368 | 647 | 36.3% |
+| 🥶 jogo_frio | 1907 | 1295 | 519 | 776 | 40.1% |
+| ⚡ pressao_ofensiva_18 | 1519 | 1016 | 368 | 648 | 36.2% |
 | 🎯 chutes_no_alvo_5 | 1596 | 774 | 282 | 492 | 36.4% |
-| 🟥 expulsao_confirmada | 1434 | 654 | 231 | 423 | 35.3% |
+| 🟥 expulsao_confirmada | 1436 | 654 | 231 | 423 | 35.3% |
 | 🚩 escanteios_6 | 1168 | 546 | 223 | 323 | 40.8% |
 | 💣 grandes_chances_3 | 942 | 509 | 219 | 290 | 43.0% |
 | 🔥 pressao_forte_10min | 526 | 334 | 130 | 204 | 38.9% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 460 | 271 | 81 | 190 | 29.9% |
+| Premier League | 462 | 272 | 81 | 191 | 29.8% |
 | Major League Soccer | 365 | 195 | 87 | 108 | 44.6% |
 | J. League | 294 | 177 | 82 | 95 | 46.3% |
 | Serie A | 235 | 157 | 78 | 79 | 49.7% |
@@ -252,22 +252,26 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 257 | 182 | 60 | 122 | 33.0% |
-| 16–30′ | 644 | 487 | 167 | 320 | 34.3% |
+| 16–30′ | 645 | 488 | 167 | 321 | 34.2% |
 | 31–45′ | 2002 | 1549 | 634 | 915 | 40.9% |
-| 46–60′ | 1288 | 934 | 368 | 566 | 39.4% |
+| 46–60′ | 1290 | 934 | 368 | 566 | 39.4% |
 | 61–75′ | 1958 | 1360 | 517 | 843 | 38.0% |
-| 76–90′ | 2603 | 910 | 348 | 562 | 38.2% |
+| 76–90′ | 2604 | 910 | 348 | 562 | 38.2% |
 | 91+′ | 889 | 8 | 3 | 5 | 37.5% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 9641 | **Jogos monitorados:** 1609 | **Ao vivo:** 39 | **Termômetros recentes:** 9.
+**Registros:** 9645 | **Jogos monitorados:** 1609 | **Ao vivo:** 49 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-01T10:48:29.560415+00:00 | FC Orenburg × CSKA Moscow | CSKA Moscow (46') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-01T10:48:29.560415+00:00 | CSM Slatina × Concordia Chiajna | Concordia Chiajna (87') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-01T10:19:28.347655+00:00 | FC Orenburg × CSKA Moscow | FC Orenburg (17') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-01T10:19:28.347655+00:00 | CSM Slatina × Concordia Chiajna | Concordia Chiajna (58') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-01T09:04:57.322042+00:00 | FC Anyang × Bucheon FC 1995 | FC Anyang (76') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-11-01T08:54:47.495571+00:00 | Perth Glory × Adelaide United | Adelaide United (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-01T08:54:47.495571+00:00 | Perth Glory × Adelaide United | Perth Glory (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -364,14 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-10-31T22:53:35.988178+00:00 | LA Galaxy × Austin FC | Austin FC (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-31T22:53:35.988178+00:00 | LA Galaxy × Austin FC | LA Galaxy (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-10-31T22:53:35.988178+00:00 | San Jose Earthquakes × Real Salt Lake | Equipe não definida (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T22:53:35.988178+00:00 | San Jose Earthquakes × Real Salt Lake | San Jose Earthquakes (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-10-31T22:53:35.988178+00:00 | Cruz Azul Hidalgo × Tlaxcala FC | Cruz Azul Hidalgo (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | LA Galaxy × Austin FC | LA Galaxy (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-10-31T22:42:47.605324+00:00 | San Jose Earthquakes × Real Salt Lake | Real Salt Lake (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **119**.
+Jogos com odds registradas nos ultimos dias: **122**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
