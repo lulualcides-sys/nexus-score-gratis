@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T16:07:07.683684+00:00",
+  "checked_at": "2026-11-01T16:44:33.913884+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 34,
-  "created_games": 0,
+  "created_games": 1,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Eintracht Frankfurt x Hamburg SV",
-      "league": "ger.1",
-      "kickoff": 1793550600,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Boca Juniors x River Plate",
       "league": "arg.1",
@@ -68,6 +62,24 @@
       "fixture": "Independiente Medellín x Alianza FC",
       "league": "col.1",
       "kickoff": 1793574600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Necaxa",
+      "league": "mex.1",
+      "kickoff": 1793574000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cruz Azul x León",
+      "league": "mex.1",
+      "kickoff": 1793581800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lorient x Brest",
+      "league": "fra.1",
+      "kickoff": 1793648700,
       "reason": "no_verified_public_1x2"
     }
   ],

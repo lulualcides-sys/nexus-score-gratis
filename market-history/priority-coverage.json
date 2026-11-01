@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T16:07:11.162750+00:00",
+  "checked_at": "2026-11-01T16:44:37.607952+00:00",
   "horizon_hours": 48,
-  "important_games": 39,
-  "verified_bookmaker_games": 29,
+  "important_games": 37,
+  "verified_bookmaker_games": 27,
   "indicative_only_games": 2,
   "missing_bookmaker_price_games": 8,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 13,
-    "indicative": 8,
+    "matched": 10,
+    "indicative": 7,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -155,7 +155,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 159,
+      "verified_quotes": 162,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -166,29 +166,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 135,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Racing Santander",
-      "away": "Real Madrid",
-      "league": "esp.1",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793546100.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 36,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
     {
@@ -203,7 +180,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 157,
+      "verified_quotes": 160,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -219,8 +196,8 @@
       ],
       "fair_odds_modelled": {
         "home": 2.44,
-        "draw": 3.44,
-        "away": 3.34
+        "draw": 3.42,
+        "away": 3.36
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13670/elche-vs-valencia-2026-11-01",
       "tipsaudit_id": "13670",
@@ -254,9 +231,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.04,
+        "home": 2.06,
         "draw": 3.84,
-        "away": 4.0
+        "away": 3.95
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
       "tipsaudit_id": "13681",
@@ -281,9 +258,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.24,
+        "home": 2.23,
         "draw": 3.43,
-        "away": 3.83
+        "away": 3.84
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -345,7 +322,7 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793548800.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -399,22 +376,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.6,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.56,
-        "draw": 5.13,
-        "away": 6.07
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13647/eintracht-frankfurt-vs-hamburger-sv-2026-11-01",
-      "tipsaudit_id": "13647",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
@@ -425,7 +390,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793549700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
@@ -437,13 +402,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.45,
-        "draw": 5.34,
-        "away": 8.09
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13035/lyon-vs-angers-2026-11-01",
-      "tipsaudit_id": "13035",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -476,7 +437,7 @@
       "league": "Ligue 1",
       "league_code": "fra.1",
       "kickoff_unix": 1793549700.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob",
         "Pinnacle guest"
@@ -487,13 +448,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 2.61,
-        "draw": 3.58,
-        "away": 2.96
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13645/paris-fc-vs-monaco-2026-11-01",
-      "tipsaudit_id": "13645",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -516,14 +473,36 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.96,
-        "draw": 4.18,
-        "away": 3.98
+        "home": 1.98,
+        "draw": 4.17,
+        "away": 3.91
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "Lorient",
+      "away": "Brest",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793648700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Lorient",
@@ -805,7 +784,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -983,50 +962,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Arouca",
-      "away": "C.D. Nacional",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793547000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Arouca",
-      "away": "Nacional",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793547000.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Académico de Viseu",
       "away": "Rio Ave",
       "league": "Liga Portugal",
@@ -1170,7 +1105,7 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793548800.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -1191,6 +1126,27 @@
       "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1793550600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Lorient",
+      "away": "Brest",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1793648700.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
@@ -1258,27 +1214,6 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Arouca",
-      "away": "Nacional",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793547000.0,
-      "phase": "live",
-      "data_sources": [
         "FotMob"
       ],
       "verified_quotes": 0,
