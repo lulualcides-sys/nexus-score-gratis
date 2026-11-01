@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T14:13:38.122902+00:00",
+  "checked_at": "2026-11-01T14:49:57.527892+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
   "created_games": 0,
-  "new_quotes": 6,
+  "new_quotes": 9,
   "summary_checks": 3,
-  "summary_with_prices": 2,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Eintracht Frankfurt x Hamburg SV",
-      "league": "ger.1",
-      "kickoff": 1793550600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Athletic Club x Real Sociedad",
-      "league": "esp.1",
-      "kickoff": 1793563200,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Arouca x C.D. Nacional",
       "league": "por.1",
@@ -68,6 +56,12 @@
       "fixture": "FC Groningen x Sparta Rotterdam",
       "league": "ned.1",
       "kickoff": 1793547900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Eintracht Frankfurt x Hamburg SV",
+      "league": "ger.1",
+      "kickoff": 1793550600,
       "reason": "no_verified_public_1x2"
     },
     {
