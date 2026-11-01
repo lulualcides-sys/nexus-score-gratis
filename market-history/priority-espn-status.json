@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T14:49:57.527892+00:00",
+  "checked_at": "2026-11-01T15:21:46.192115+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
@@ -10,24 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Arouca x C.D. Nacional",
-      "league": "por.1",
-      "kickoff": 1793547000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Académico de Viseu x Rio Ave",
-      "league": "por.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Maritimo x Santa Clara",
-      "league": "por.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Braga x FC Famalicao",
       "league": "por.1",
@@ -80,12 +62,6 @@
       "fixture": "Grêmio x Atlético-MG",
       "league": "bra.copa_do_brazil",
       "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vancouver Whitecaps x Seattle Sounders FC",
-      "league": "usa.1",
-      "kickoff": 1793565000,
       "reason": "no_verified_public_1x2"
     },
     {
