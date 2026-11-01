@@ -1,45 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T15:21:46.192115+00:00",
+  "checked_at": "2026-11-01T16:07:07.683684+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 36,
+  "priority_fixtures_seen": 34,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Braga x FC Famalicao",
-      "league": "por.1",
-      "kickoff": 1793565000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "PEC Zwolle x ADO Den Haag",
-      "league": "ned.1",
-      "kickoff": 1793531700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Excelsior x FC Twente",
-      "league": "ned.1",
-      "kickoff": 1793539800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Telstar x FC Utrecht",
-      "league": "ned.1",
-      "kickoff": 1793539800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Groningen x Sparta Rotterdam",
-      "league": "ned.1",
-      "kickoff": 1793547900,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Eintracht Frankfurt x Hamburg SV",
       "league": "ger.1",
@@ -53,6 +23,18 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Maritimo x Santa Clara",
+      "league": "por.1",
+      "kickoff": 1793556000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Braga x FC Famalicao",
+      "league": "por.1",
+      "kickoff": 1793565000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Palmeiras x Vasco da Gama",
       "league": "bra.copa_do_brazil",
       "kickoff": 1793559600,
@@ -61,18 +43,6 @@
     {
       "fixture": "Grêmio x Atlético-MG",
       "league": "bra.copa_do_brazil",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlanta United FC x Toronto FC",
-      "league": "usa.1",
-      "kickoff": 1793568600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Nashville SC x Red Bull New York",
-      "league": "usa.1",
       "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
@@ -92,6 +62,12 @@
       "fixture": "Portland Timbers x Houston Dynamo FC",
       "league": "usa.1",
       "kickoff": 1793587500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Independiente Medellín x Alianza FC",
+      "league": "col.1",
+      "kickoff": 1793574600,
       "reason": "no_verified_public_1x2"
     }
   ],
