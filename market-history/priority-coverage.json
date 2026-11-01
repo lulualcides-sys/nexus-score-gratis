@@ -1,26 +1,35 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T12:22:50.806252+00:00",
+  "checked_at": "2026-11-01T13:25:48.926636+00:00",
   "horizon_hours": 48,
-  "important_games": 51,
-  "verified_bookmaker_games": 20,
-  "indicative_only_games": 6,
-  "missing_bookmaker_price_games": 25,
+  "important_games": 50,
+  "verified_bookmaker_games": 25,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 21,
   "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 20,
-    "indicative": 8,
+    "matched": 19,
+    "indicative": 10,
     "new_priority": 3
   },
   "pinnacle_guest": {
-    "status": "stale",
-    "matched": 0,
-    "new_verified_game": 0,
-    "offers": 0,
-    "market_families": {}
+    "status": "checked",
+    "matched": 6,
+    "new_verified_game": 6,
+    "offers": 778,
+    "market_families": {
+      "half_time": 18,
+      "first_half_team_goals": 24,
+      "first_half_handicap": 96,
+      "first_half_goals": 96,
+      "match_odds": 33,
+      "team_goals": 96,
+      "asian_handicap": 198,
+      "total_goals": 218
+    }
   },
   "official_corners_cards": {
     "status": "checked",
@@ -32,104 +41,104 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-01T07:21:07.259836+00:00",
-    "complete_market_lines": 587,
+    "bookmaker_snapshot_at": "2026-11-01T13:09:46.628739+00:00",
+    "complete_market_lines": 734,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1196,
+    "odds_eligible_for_quality": 1500,
     "invalid_quote_records": 0,
     "families": {
       "asian_handicap": {
-        "games": 11,
-        "odds": 272,
-        "complete_lines": 136,
+        "games": 16,
+        "odds": 344,
+        "complete_lines": 172,
         "incomplete_lines": 0,
-        "median_overround_pct": 3.58
+        "median_overround_pct": 3.74
       },
       "first_half_goals": {
-        "games": 11,
-        "odds": 174,
-        "complete_lines": 87,
+        "games": 16,
+        "odds": 224,
+        "complete_lines": 112,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.14
+        "median_overround_pct": 5.46
       },
       "first_half_handicap": {
-        "games": 11,
-        "odds": 132,
-        "complete_lines": 66,
+        "games": 16,
+        "odds": 184,
+        "complete_lines": 92,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.09
+        "median_overround_pct": 4.3
       },
       "first_half_team_goals": {
-        "games": 11,
-        "odds": 44,
-        "complete_lines": 22,
+        "games": 16,
+        "odds": 64,
+        "complete_lines": 32,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.24
+        "median_overround_pct": 5.29
       },
       "half_time": {
-        "games": 11,
-        "odds": 33,
-        "complete_lines": 11,
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.0
+        "median_overround_pct": 3.92
       },
       "match_odds": {
-        "games": 11,
-        "odds": 33,
-        "complete_lines": 11,
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
         "incomplete_lines": 0,
-        "median_overround_pct": 3.54
+        "median_overround_pct": 3.34
       },
       "team_goals": {
-        "games": 11,
-        "odds": 150,
-        "complete_lines": 75,
+        "games": 16,
+        "odds": 180,
+        "complete_lines": 90,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.24
+        "median_overround_pct": 5.15
       },
       "total_goals": {
-        "games": 11,
-        "odds": 358,
-        "complete_lines": 179,
+        "games": 16,
+        "odds": 408,
+        "complete_lines": 204,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.81
+        "median_overround_pct": 4.34
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 261,
-    "historical_snapshots": 16,
+    "selections_with_changes": 569,
+    "historical_snapshots": 32,
     "top_changes": [
       {
-        "home": "Lecce",
-        "away": "Genoa",
-        "market_family": "asian_handicap",
-        "raw_market_key": "s;0;s;0.25",
-        "selection": "home",
-        "first_odds": 1.9091,
-        "last_odds": 1.7692,
-        "implied_probability_change_pp": 4.142
+        "home": "Eintracht Frankfurt",
+        "away": "Hamburger SV",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;away",
+        "selection": "over",
+        "first_odds": 1.5051,
+        "last_odds": 2.92,
+        "implied_probability_change_pp": -32.194
       },
       {
-        "home": "Lecce",
-        "away": "Genoa",
+        "home": "Eintracht Frankfurt",
+        "away": "Hamburger SV",
         "market_family": "asian_handicap",
-        "raw_market_key": "s;0;s;0.25",
+        "raw_market_key": "s;0;s;-0.5",
         "selection": "away",
-        "first_odds": 2.0,
-        "last_odds": 2.18,
-        "implied_probability_change_pp": -4.128
+        "first_odds": 1.4464,
+        "last_odds": 2.66,
+        "implied_probability_change_pp": -31.543
       },
       {
-        "home": "Lyon",
-        "away": "Angers",
-        "market_family": "total_goals",
-        "raw_market_key": "s;0;ou;3.25",
+        "home": "Eintracht Frankfurt",
+        "away": "Hamburger SV",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;away",
         "selection": "under",
-        "first_odds": 1.7463,
-        "last_odds": 1.6289,
-        "implied_probability_change_pp": 4.127
+        "first_odds": 2.44,
+        "last_odds": 1.4367,
+        "implied_probability_change_pp": 28.62
       }
     ]
   },
@@ -145,7 +154,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -163,24 +172,20 @@
       "league": "esp.1",
       "league_code": "esp.1",
       "kickoff_unix": 1793538000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 30,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 3.55,
-        "draw": 3.13,
-        "away": 2.51
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13595/getafe-vs-sevilla-2026-11-01",
-      "tipsaudit_id": "13595",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -195,7 +200,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -230,24 +235,16 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.48,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.46,
-        "draw": 3.42,
-        "away": 3.32
+        "home": 2.48,
+        "draw": 3.41,
+        "away": 3.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13670/elche-vs-valencia-2026-11-01",
       "tipsaudit_id": "13670",
@@ -280,9 +277,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.02,
-        "draw": 3.82,
-        "away": 4.09
+        "home": 2.04,
+        "draw": 3.83,
+        "away": 4.04
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13681/athletic-club-vs-real-sociedad-2026-11-01",
       "tipsaudit_id": "13681",
@@ -296,7 +293,7 @@
       "league": "La Liga",
       "league_code": "esp.1",
       "phase": "unknown",
-      "verified_quotes": 0,
+      "verified_quotes": 110,
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
@@ -315,30 +312,10 @@
       "tipsaudit_id": "14017",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
-        "TipsAudit"
+        "TipsAudit",
+        "Pinnacle guest"
       ],
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "Como",
-      "away": "Venezia",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793532600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 35,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 110,
       "coverage": "verified_price"
     },
     {
@@ -351,7 +328,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 26,
+      "verified_quotes": 29,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -373,7 +350,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -395,7 +372,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -415,9 +392,10 @@
       "kickoff_unix": 1793562300.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 133,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -427,7 +405,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 133,
+      "coverage": "verified_price"
     },
     {
       "home": "Salzburg",
@@ -483,7 +462,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -512,9 +491,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.8,
+        "home": 2.83,
         "draw": 3.69,
-        "away": 2.69
+        "away": 2.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13614/union-berlin-vs-1-fc-koln-2026-11-01",
       "tipsaudit_id": "13614",
@@ -573,9 +552,10 @@
       "kickoff_unix": 1793550600.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 135,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -590,14 +570,15 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.57,
-        "draw": 5.08,
-        "away": 6.0
+        "home": 1.56,
+        "draw": 5.12,
+        "away": 6.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13647/eintracht-frankfurt-vs-hamburger-sv-2026-11-01",
       "tipsaudit_id": "13647",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "pinnacle_guest_quotes": 135,
+      "coverage": "verified_price"
     },
     {
       "home": "Strasbourg",
@@ -609,7 +590,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -629,9 +610,10 @@
       "kickoff_unix": 1793541600.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 132,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -639,13 +621,14 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.9,
-        "draw": 4.21,
+        "draw": 4.22,
         "away": 4.22
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13609/strasbourg-vs-auxerre-2026-11-01",
       "tipsaudit_id": "13609",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 132,
+      "coverage": "verified_price"
     },
     {
       "home": "Lyon",
@@ -658,16 +641,24 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.46,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.46,
-        "draw": 5.26,
-        "away": 8.02
+        "home": 1.44,
+        "draw": 5.44,
+        "away": 8.18
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13035/lyon-vs-angers-2026-11-01",
       "tipsaudit_id": "13035",
@@ -684,7 +675,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 9,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -704,31 +695,25 @@
       "kickoff_unix": 1793549700.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 135,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.95,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.58,
-        "draw": 3.7,
-        "away": 2.92
+        "home": 2.61,
+        "draw": 3.71,
+        "away": 2.88
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13645/paris-fc-vs-monaco-2026-11-01",
       "tipsaudit_id": "13645",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "pinnacle_guest_quotes": 135,
+      "coverage": "verified_price"
     },
     {
       "home": "Marseille",
@@ -739,23 +724,33 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 133,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.97,
+          "bookmaker": "BetOnline.ag",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.97,
-        "draw": 4.31,
-        "away": 3.82
+        "home": 1.93,
+        "draw": 4.28,
+        "away": 4.03
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
       "tipsaudit_id": "13680",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 133,
+      "coverage": "verified_price"
     },
     {
       "home": "Lorient",
@@ -776,7 +771,7 @@
       ],
       "fair_odds_modelled": {
         "home": 2.59,
-        "draw": 3.42,
+        "draw": 3.43,
         "away": 3.11
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
@@ -880,7 +875,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -977,8 +972,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.79,
-        "draw": 4.54,
-        "away": 4.54
+        "draw": 4.52,
+        "away": 4.55
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13703/vancouver-whitecaps-vs-seattle-sounders-2026-11-01",
       "tipsaudit_id": "13703",
@@ -1001,16 +996,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.28,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.31,
-        "draw": 4.24,
-        "away": 3.01
+        "home": 2.2,
+        "draw": 4.5,
+        "away": 3.1
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
       "tipsaudit_id": "13704",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Nashville SC",
@@ -1075,7 +1078,7 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.09,
+        "home": 3.08,
         "draw": 4.28,
         "away": 2.26
       },
@@ -1104,7 +1107,7 @@
       "fair_odds_modelled": {
         "home": 1.72,
         "draw": 4.77,
-        "away": 4.76
+        "away": 4.77
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13705/los-angeles-fc-vs-minnesota-united-fc-2026-11-02",
       "tipsaudit_id": "13705",
@@ -1129,9 +1132,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.83,
-        "draw": 4.24,
-        "away": 4.63
+        "home": 1.82,
+        "draw": 4.26,
+        "away": 4.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13714/portland-timbers-vs-houston-dynamo-2026-11-02",
       "tipsaudit_id": "13714",
@@ -1308,15 +1311,15 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 6.72,
-        "draw": 5.02,
+        "home": 6.79,
+        "draw": 5.08,
         "away": 1.53
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13602/excelsior-vs-twente-2026-11-01",
@@ -1340,11 +1343,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.2,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 3.32,
-        "draw": 3.97,
-        "away": 2.24
+        "home": 3.62,
+        "draw": 4.02,
+        "away": 2.11
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13603/telstar-vs-utrecht-2026-11-01",
       "tipsaudit_id": "13603",
@@ -1370,7 +1381,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.79,
-        "draw": 4.53,
+        "draw": 4.54,
         "away": 4.5
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13630/groningen-vs-sparta-rotterdam-2026-11-01",
@@ -1424,27 +1435,6 @@
     }
   ],
   "top_missing": [
-    {
-      "home": "Juventus",
-      "away": "Napoli",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1793562300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "Salzburg",
       "away": "Austria Lustenau",
@@ -1551,49 +1541,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Strasbourg",
-      "away": "Auxerre",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793541600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13609/strasbourg-vs-auxerre-2026-11-01",
-      "tipsaudit_id": "13609",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Marseille",
-      "away": "Toulouse",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793562300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13680/marseille-vs-toulouse-2026-11-01",
-      "tipsaudit_id": "13680",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Santos",
       "away": "Necaxa",
       "league": "Liga MX",
@@ -1655,28 +1602,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/13703/vancouver-whitecaps-vs-seattle-sounders-2026-11-01",
       "tipsaudit_id": "13703",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlanta United",
-      "away": "Toronto FC",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793568600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob",
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13704/atlanta-united-fc-vs-toronto-fc-2026-11-01",
-      "tipsaudit_id": "13704",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },

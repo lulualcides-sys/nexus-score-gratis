@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T12:22:47.892939+00:00",
+  "checked_at": "2026-11-01T13:25:45.504550+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 36,
   "created_games": 0,
-  "new_quotes": 9,
+  "new_quotes": 6,
   "summary_checks": 3,
-  "summary_with_prices": 3,
+  "summary_with_prices": 2,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Athletic Club x Real Sociedad",
-      "league": "esp.1",
-      "kickoff": 1793563200,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Eintracht Frankfurt x Hamburg SV",
       "league": "ger.1",
@@ -26,12 +20,6 @@
       "fixture": "PEC Zwolle x ADO Den Haag",
       "league": "ned.1",
       "kickoff": 1793531700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Excelsior x FC Twente",
-      "league": "ned.1",
-      "kickoff": 1793539800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -56,6 +44,12 @@
       "fixture": "Marseille x Toulouse",
       "league": "fra.1",
       "kickoff": 1793562300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Athletic Club x Real Sociedad",
+      "league": "esp.1",
+      "kickoff": 1793563200,
       "reason": "no_verified_public_1x2"
     },
     {
