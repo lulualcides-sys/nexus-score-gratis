@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T18:50:13.734540+00:00",
+  "checked_at": "2026-11-01T19:26:21.567689+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 34,
@@ -44,6 +44,18 @@
       "fixture": "Boca Juniors x River Plate",
       "league": "arg.1",
       "kickoff": 1793556000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Palmeiras x Vasco da Gama",
+      "league": "bra.copa_do_brazil",
+      "kickoff": 1793559600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Grêmio x Atlético-MG",
+      "league": "bra.copa_do_brazil",
+      "kickoff": 1793568600,
       "reason": "no_verified_public_1x2"
     },
     {
