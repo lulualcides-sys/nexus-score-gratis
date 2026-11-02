@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T19:58:01.754499+00:00",
+  "checked_at": "2026-11-02T20:52:57.954198+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 22,
+  "priority_fixtures_seen": 18,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Gil Vicente x Vitória de Guimaraes",
-      "league": "por.1",
-      "kickoff": 1793650500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Defensa y Justicia x Independiente",
-      "league": "arg.1",
-      "kickoff": 1793656800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Atlético Tucumán x Argentinos Juniors",
       "league": "arg.1",
