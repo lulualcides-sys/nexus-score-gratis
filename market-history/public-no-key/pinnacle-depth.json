@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T21:51:38.773990+00:00",
-  "bookmaker_snapshot_at": "2026-11-01T21:51:36.433907+00:00",
+  "checked_at": "2026-11-02T01:28:05.376174+00:00",
+  "bookmaker_snapshot_at": "2026-11-02T01:28:03.983734+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1342,
+  "matches_catalogued": 14,
+  "matches_with_priced_markets": 14,
+  "odds_eligible_for_quality": 1328,
   "invalid_quote_records": 0,
-  "complete_market_lines": 655,
+  "complete_market_lines": 650,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 320,
-      "complete_lines": 160,
+      "games": 14,
+      "odds": 310,
+      "complete_lines": 155,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.09
+      "median_overround_pct": 4.03
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "games": 14,
+      "odds": 192,
+      "complete_lines": 96,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.63
+      "median_overround_pct": 5.68
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 172,
-      "complete_lines": 86,
+      "games": 14,
+      "odds": 158,
+      "complete_lines": 79,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.43
+      "median_overround_pct": 4.39
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 14,
+      "odds": 56,
+      "complete_lines": 28,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.2
+      "median_overround_pct": 5.26
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 14,
+      "odds": 42,
+      "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.98
+      "median_overround_pct": 4.31
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 14,
+      "odds": 42,
+      "complete_lines": 14,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.37
+      "median_overround_pct": 3.53
     },
     "team_goals": {
-      "games": 16,
-      "odds": 156,
-      "complete_lines": 78,
+      "games": 14,
+      "odds": 162,
+      "complete_lines": 81,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.16
+      "median_overround_pct": 5.25
     },
     "total_goals": {
-      "games": 16,
-      "odds": 344,
-      "complete_lines": 172,
+      "games": 14,
+      "odds": 366,
+      "complete_lines": 183,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.07
+      "median_overround_pct": 5.02
     }
   },
   "examples": [
     {
-      "fixture": "Santos Laguna x Necaxa",
+      "fixture": "Lorient x Brest",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-01T21:51:36.433907+00:00",
+      "observed_at": "2026-11-02T01:28:03.983734+00:00",
       "selections": {
-        "home": 1.8621,
-        "away": 3.97,
-        "draw": 4.09
+        "home": 2.51,
+        "away": 3.05,
+        "draw": 3.29
       },
-      "overround_pct": 3.34
+      "overround_pct": 3.02
     },
     {
-      "fixture": "Santos Laguna x Necaxa",
+      "fixture": "Lorient x Brest",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-01T21:51:36.433907+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-02T01:28:03.983734+00:00",
       "selections": {
-        "home": 1.8696,
-        "away": 2.04
+        "home": 1.7812,
+        "away": 2.16
       },
-      "overround_pct": 2.51
+      "overround_pct": 2.44
     },
     {
-      "fixture": "Santos Laguna x Necaxa",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-11-01T21:51:36.433907+00:00",
-      "selections": {
-        "home": 3.19,
-        "away": 1.3831
-      },
-      "overround_pct": 3.65
-    },
-    {
-      "fixture": "Santos Laguna x Necaxa",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-01T21:51:36.433907+00:00",
-      "selections": {
-        "home": 2.85,
-        "away": 1.4587
-      },
-      "overround_pct": 3.64
-    },
-    {
-      "fixture": "Santos Laguna x Necaxa",
+      "fixture": "Lorient x Brest",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-01T21:51:36.433907+00:00",
+      "observed_at": "2026-11-02T01:28:03.983734+00:00",
       "selections": {
-        "home": 2.51,
-        "away": 1.578
+        "home": 4.21,
+        "away": 1.2532
       },
-      "overround_pct": 3.21
+      "overround_pct": 3.55
+    },
+    {
+      "fixture": "Lorient x Brest",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-02T01:28:03.983734+00:00",
+      "selections": {
+        "home": 3.04,
+        "away": 1.4132
+      },
+      "overround_pct": 3.66
+    },
+    {
+      "fixture": "Lorient x Brest",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-02T01:28:03.983734+00:00",
+      "selections": {
+        "home": 2.5,
+        "away": 1.5848
+      },
+      "overround_pct": 3.1
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
