@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T16:18:59.989940+00:00",
-  "bookmaker_snapshot_at": "2026-11-02T16:18:58.304355+00:00",
+  "checked_at": "2026-11-02T19:14:22.483357+00:00",
+  "bookmaker_snapshot_at": "2026-11-02T19:14:21.260862+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1530,
+  "odds_eligible_for_quality": 1326,
   "invalid_quote_records": 0,
-  "complete_market_lines": 749,
+  "complete_market_lines": 647,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 350,
-      "complete_lines": 175,
+      "odds": 322,
+      "complete_lines": 161,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.59
+      "median_overround_pct": 4.71
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 220,
-      "complete_lines": 110,
+      "odds": 188,
+      "complete_lines": 94,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.26
+      "median_overround_pct": 6.28
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 178,
-      "complete_lines": 89,
+      "odds": 174,
+      "complete_lines": 87,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.08
+      "median_overround_pct": 5.47
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.89
+      "median_overround_pct": 5.36
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.89
+      "median_overround_pct": 4.16
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.16
+      "median_overround_pct": 3.52
     },
     "team_goals": {
       "games": 16,
-      "odds": 188,
-      "complete_lines": 94,
+      "odds": 158,
+      "complete_lines": 79,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.19
+      "median_overround_pct": 5.2
     },
     "total_goals": {
       "games": 16,
-      "odds": 434,
-      "complete_lines": 217,
+      "odds": 324,
+      "complete_lines": 162,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.71
+      "median_overround_pct": 5.16
     }
   },
   "examples": [
     {
-      "fixture": "Deportivo La Coruna x Osasuna",
+      "fixture": "Villarreal x Paris Saint-Germain",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-02T16:18:58.304355+00:00",
+      "observed_at": "2026-11-02T19:14:21.260862+00:00",
       "selections": {
-        "home": 2.16,
-        "away": 3.93,
-        "draw": 3.24
+        "home": 4.84,
+        "away": 1.6211,
+        "draw": 4.74
       },
-      "overround_pct": 2.61
+      "overround_pct": 3.44
     },
     {
-      "fixture": "Deportivo La Coruna x Osasuna",
+      "fixture": "Villarreal x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-02T16:18:58.304355+00:00",
+      "raw_market_key": "s;0;s;1.0",
+      "line_from_market_key": "s;0;s;1.0",
+      "observed_at": "2026-11-02T19:14:21.260862+00:00",
       "selections": {
-        "home": 1.8403,
-        "away": 2.1
+        "home": 1.9009,
+        "away": 2.01
       },
-      "overround_pct": 1.96
+      "overround_pct": 2.36
     },
     {
-      "fixture": "Deportivo La Coruna x Osasuna",
+      "fixture": "Villarreal x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-02T16:18:58.304355+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-02T19:14:21.260862+00:00",
       "selections": {
-        "home": 3.92,
-        "away": 1.289
+        "home": 3.78,
+        "away": 1.2778
       },
-      "overround_pct": 3.09
+      "overround_pct": 4.71
     },
     {
-      "fixture": "Deportivo La Coruna x Osasuna",
+      "fixture": "Villarreal x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-02T16:18:58.304355+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-11-02T19:14:21.260862+00:00",
       "selections": {
-        "home": 3.41,
-        "away": 1.3546
+        "home": 2.86,
+        "away": 1.4329
       },
-      "overround_pct": 3.15
+      "overround_pct": 4.75
     },
     {
-      "fixture": "Deportivo La Coruna x Osasuna",
+      "fixture": "Villarreal x Paris Saint-Germain",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-02T16:18:58.304355+00:00",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-02T19:14:21.260862+00:00",
       "selections": {
-        "home": 2.57,
-        "away": 1.5682
+        "home": 2.38,
+        "away": 1.5917
       },
-      "overround_pct": 2.68
+      "overround_pct": 4.84
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
