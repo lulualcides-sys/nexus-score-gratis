@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-01T23:20:10.275856+00:00",
+  "checked_at": "2026-11-02T00:02:58.168476+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 21,
-  "created_games": 6,
+  "priority_fixtures_seen": 17,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Boca Juniors x River Plate",
-      "league": "arg.1",
-      "kickoff": 1793556000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cruz Azul x León",
-      "league": "mex.1",
-      "kickoff": 1793581800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Sassuolo x Fiorentina",
       "league": "ita.1",
