@@ -1,40 +1,40 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T02:13:17.228400+00:00",
+  "checked_at": "2026-11-02T03:01:06.532033+00:00",
   "horizon_hours": 48,
-  "important_games": 25,
-  "verified_bookmaker_games": 9,
+  "important_games": 24,
+  "verified_bookmaker_games": 8,
   "indicative_only_games": 5,
   "missing_bookmaker_price_games": 11,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
-    "matched": 1,
-    "indicative": 7,
+    "matched": 0,
+    "indicative": 6,
     "new_priority": 10
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 9,
+    "matched": 8,
     "new_verified_game": 7,
-    "offers": 1138,
+    "offers": 1005,
     "market_families": {
-      "match_odds": 48,
-      "team_goals": 136,
-      "asian_handicap": 294,
-      "total_goals": 312,
-      "half_time": 27,
-      "first_half_team_goals": 36,
-      "first_half_handicap": 144,
-      "first_half_goals": 142
+      "match_odds": 42,
+      "team_goals": 120,
+      "asian_handicap": 260,
+      "total_goals": 274,
+      "half_time": 24,
+      "first_half_team_goals": 32,
+      "first_half_handicap": 128,
+      "first_half_goals": 126
     }
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 26,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
@@ -161,8 +161,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.24,
-        "draw": 4.41,
+        "home": 2.25,
+        "draw": 4.36,
         "away": 3.06
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
@@ -446,9 +446,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
-      "verified_quotes": 133,
+      "verified_quotes": 151,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -459,6 +460,7 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
+      "official_verified_total_corners_quotes": 18,
       "coverage": "verified_price"
     },
     {
@@ -494,9 +496,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
-      "verified_quotes": 133,
+      "verified_quotes": 141,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -507,6 +510,7 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
+      "official_verified_total_corners_quotes": 8,
       "coverage": "verified_price"
     },
     {
@@ -624,31 +628,6 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Los Angeles FC",
-      "away": "Minnesota United",
-      "league": "Major League Soccer",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793583000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob",
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 171,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Portland Timbers",
       "away": "Houston Dynamo FC",
       "league": "usa.1",
@@ -661,26 +640,14 @@
         "Pinnacle guest"
       ],
       "verified_quotes": 156,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.82,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.76,
-        "draw": 4.35,
-        "away": 4.97
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13714/portland-timbers-vs-houston-dynamo-2026-11-02",
-      "tipsaudit_id": "13714",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 129,
       "coverage": "verified_price"
