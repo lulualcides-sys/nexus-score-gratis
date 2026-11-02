@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T10:44:42.184047+00:00",
+  "checked_at": "2026-11-02T11:39:45.217662+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 19,
-  "indicative_only_games": 3,
-  "missing_bookmaker_price_games": 9,
+  "indicative_only_games": 2,
+  "missing_bookmaker_price_games": 10,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 8,
+    "indicative": 7,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -602,8 +602,8 @@
       ],
       "fair_odds_modelled": {
         "home": 2.24,
-        "draw": 3.37,
-        "away": 3.88
+        "draw": 3.34,
+        "away": 3.93
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -740,19 +740,11 @@
       "league_code": "fra.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.56,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.54,
-        "draw": 3.38,
-        "away": 3.21
+        "home": 2.52,
+        "draw": 3.37,
+        "away": 3.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
       "tipsaudit_id": "13034",
@@ -760,7 +752,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Defensa y Justicia",
@@ -1085,6 +1077,23 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Lorient",
+      "away": "Stade Brestois 29",
+      "kickoff_unix": 1793648700.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
+      "tipsaudit_id": "13034",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
