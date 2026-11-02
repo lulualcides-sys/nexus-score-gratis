@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T10:29:17.843361+00:00",
-  "bookmaker_snapshot_at": "2026-11-02T10:29:16.906325+00:00",
+  "checked_at": "2026-11-02T13:29:14.285540+00:00",
+  "bookmaker_snapshot_at": "2026-11-02T13:29:12.433208+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1426,
+  "odds_eligible_for_quality": 1260,
   "invalid_quote_records": 0,
-  "complete_market_lines": 697,
+  "complete_market_lines": 614,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 342,
-      "complete_lines": 171,
+      "odds": 306,
+      "complete_lines": 153,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.83
+      "median_overround_pct": 4.72
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "odds": 172,
+      "complete_lines": 86,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.28
+      "median_overround_pct": 6.45
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 168,
-      "complete_lines": 84,
+      "odds": 166,
+      "complete_lines": 83,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.31
+      "median_overround_pct": 5.56
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.23
+      "median_overround_pct": 5.29
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.95
+      "median_overround_pct": 4.17
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.25
+      "median_overround_pct": 3.43
     },
     "team_goals": {
       "games": 16,
-      "odds": 170,
-      "complete_lines": 85,
+      "odds": 144,
+      "complete_lines": 72,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.09
+      "median_overround_pct": 5.12
     },
     "total_goals": {
       "games": 16,
-      "odds": 396,
-      "complete_lines": 198,
+      "odds": 312,
+      "complete_lines": 156,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.4
+      "median_overround_pct": 5.18
     }
   },
   "examples": [
     {
-      "fixture": "Sassuolo x Fiorentina",
+      "fixture": "Chapecoense x Mirassol",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-02T10:29:16.906325+00:00",
+      "observed_at": "2026-11-02T13:29:12.433208+00:00",
       "selections": {
-        "home": 2.97,
-        "away": 2.38,
-        "draw": 3.72
+        "home": 3.49,
+        "away": 2.03,
+        "draw": 3.76
       },
-      "overround_pct": 2.57
+      "overround_pct": 4.51
     },
     {
-      "fixture": "Sassuolo x Fiorentina",
+      "fixture": "Chapecoense x Mirassol",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-11-02T10:29:16.906325+00:00",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-02T13:29:12.433208+00:00",
       "selections": {
-        "home": 1.8547,
-        "away": 2.08
+        "home": 1.8403,
+        "away": 2.04
       },
-      "overround_pct": 1.99
+      "overround_pct": 3.36
     },
     {
-      "fixture": "Sassuolo x Fiorentina",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-02T10:29:16.906325+00:00",
-      "selections": {
-        "home": 3.63,
-        "away": 1.3226
-      },
-      "overround_pct": 3.16
-    },
-    {
-      "fixture": "Sassuolo x Fiorentina",
+      "fixture": "Chapecoense x Mirassol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-02T10:29:16.906325+00:00",
+      "observed_at": "2026-11-02T13:29:12.433208+00:00",
       "selections": {
-        "home": 2.94,
-        "away": 1.4464
+        "home": 3.46,
+        "away": 1.3226
       },
-      "overround_pct": 3.15
+      "overround_pct": 4.51
     },
     {
-      "fixture": "Sassuolo x Fiorentina",
+      "fixture": "Chapecoense x Mirassol",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-02T10:29:16.906325+00:00",
+      "observed_at": "2026-11-02T13:29:12.433208+00:00",
       "selections": {
-        "home": 2.58,
-        "away": 1.565
+        "home": 3.03,
+        "away": 1.3968
       },
-      "overround_pct": 2.66
+      "overround_pct": 4.6
+    },
+    {
+      "fixture": "Chapecoense x Mirassol",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-02T13:29:12.433208+00:00",
+      "selections": {
+        "home": 2.62,
+        "away": 1.5155
+      },
+      "overround_pct": 4.15
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."

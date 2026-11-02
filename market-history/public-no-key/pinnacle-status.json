@@ -1,21 +1,21 @@
 {
-  "checked_at": "2026-11-02T10:29:16.906325+00:00",
+  "checked_at": "2026-11-02T13:29:12.433208+00:00",
   "source": "Pinnacle public Arcadia guest",
   "source_reference": "https://github.com/DanielTomaro13/sportsdata-mcp/blob/main/src/sportsdata_mcp/specs/pinnacle.yaml",
   "status": "ok",
-  "matches_discovered": 64,
+  "matches_discovered": 90,
   "matches_checked": 16,
   "new_price_snapshots": 16,
-  "odds_observed": 1667,
+  "odds_observed": 1325,
   "market_families": {
-    "match_odds": 87,
-    "team_goals": 208,
-    "asian_handicap": 416,
-    "total_goals": 464,
+    "match_odds": 57,
+    "team_goals": 154,
+    "asian_handicap": 326,
+    "total_goals": 332,
     "half_time": 48,
     "first_half_team_goals": 64,
-    "first_half_handicap": 190,
-    "first_half_goals": 190
+    "first_half_handicap": 172,
+    "first_half_goals": 172
   },
   "errors": [],
   "requires_account": false,
@@ -23,7 +23,7 @@
   "guarantees_available_to_bet": false,
   "liquidity_verified": false,
   "previously_denied_skipped": 2,
-  "priority_no_odds_targeted": 5,
-  "rotating_catalogue_games": 11,
-  "all_scheduled_candidates": 32
+  "priority_no_odds_targeted": 2,
+  "rotating_catalogue_games": 14,
+  "all_scheduled_candidates": 35
 }
