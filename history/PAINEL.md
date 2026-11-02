@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T07:33:31.144099+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T09:11:58.447571+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 10405 | **Jogos distintos:** 3013 | **Resultados verificáveis:** 5874 | **Com gol:** 2264 | **Sem gol:** 3610 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 25 datas com coletas | 73 pendentes | 1884 indeterminados | 2574 incompletos.
+**Evolução da amostra:** 25 datas com coletas | 59 pendentes | 1898 indeterminados | 2574 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -283,8 +283,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T02:13:38.872394+00:00 | Los Angeles FC × Minnesota United | Minnesota United (33') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T01:14:29.749732+00:00 | Universitario de Vinto × Always Ready | Always Ready (85') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T01:14:29.749732+00:00 | Deportivo La Guaira × Portuguesa FC | Deportivo La Guaira (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T01:14:29.749732+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (85') | 🟥 expulsao_confirmada · evento confirmado | pendente | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (65') | 🥶 jogo_frio · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-02T01:14:29.749732+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (85') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (65') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Universitario de Vinto (83') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
@@ -294,9 +294,9 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T01:13:22.177741+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (83') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T00:13:39.534096+00:00 | Santos Laguna × Necaxa | Necaxa (54') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-02T00:13:39.534096+00:00 | Santos Laguna × Necaxa | Necaxa (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Lanús × Gimnasia Mendoza | Lanús (28') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Universitario de Vinto × Always Ready | Always Ready (43') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Deportivo La Guaira × Portuguesa FC | Deportivo La Guaira (43') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -307,8 +307,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-01T23:43:57.092968+00:00 | Dallas Trinity FC (W) × Fort Lauderdale United FC (W) | Fort Lauderdale United FC (W) (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Nashville SC × Red Bull New York | Nashville SC (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (31') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-01T23:41:29.452192+00:00 | Santos Laguna × Necaxa | Necaxa (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-01T23:41:29.452192+00:00 | Santos Laguna × Necaxa | Necaxa (41') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-01T23:41:29.452192+00:00 | Santos Laguna × Necaxa | Necaxa (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-01T23:41:29.452192+00:00 | Santos Laguna × Necaxa | Necaxa (41') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Nashville SC × Red Bull New York | Nashville SC (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Nashville SC × Red Bull New York | Nashville SC (95') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Nashville SC × Red Bull New York | Nashville SC (95') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
