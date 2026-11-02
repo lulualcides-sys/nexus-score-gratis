@@ -1,15 +1,21 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T04:01:11.128399+00:00",
+  "checked_at": "2026-11-02T05:07:09.496285+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 15,
-  "created_games": 2,
+  "priority_fixtures_seen": 23,
+  "created_games": 9,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Lorient x Brest",
+      "league": "fra.1",
+      "kickoff": 1793648700,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Sassuolo x Fiorentina",
       "league": "ita.1",
@@ -23,20 +29,8 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Lorient x Brest",
-      "league": "fra.1",
-      "kickoff": 1793648700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Newcastle United x Everton",
       "league": "eng.1",
-      "kickoff": 1793649600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportivo x Osasuna",
-      "league": "esp.1",
       "kickoff": 1793649600,
       "reason": "no_verified_public_1x2"
     },
@@ -53,25 +47,7 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Águilas Doradas x Fortaleza CEIF",
-      "league": "col.1",
-      "kickoff": 1793653500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Bucaramanga x Atlético Nacional",
-      "league": "col.1",
-      "kickoff": 1793668500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Defensa y Justicia x Independiente",
-      "league": "arg.1",
-      "kickoff": 1793656800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Platense x Central Córdoba (Santiago del Estero)",
       "league": "arg.1",
       "kickoff": 1793656800,
       "reason": "no_verified_public_1x2"
@@ -89,15 +65,57 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Chapecoense x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1793745000,
+      "fixture": "Galatasaray x VfB Stuttgart",
+      "league": "uefa.champions",
+      "kickoff": 1793727900,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Internacional x Coritiba",
-      "league": "bra.1",
-      "kickoff": 1793752200,
+      "fixture": "Shakhtar Donetsk x Sporting CP",
+      "league": "uefa.champions",
+      "kickoff": 1793727900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Madrid x Bayern Munich",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Barcelona x Aston Villa",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Bodo/Glimt x Lille",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Feyenoord Rotterdam x Internazionale",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "LASK Linz x Slovan Bratislava",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Manchester United x AS Roma",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Villarreal x Paris Saint-Germain",
+      "league": "uefa.champions",
+      "kickoff": 1793736000,
       "reason": "no_verified_public_1x2"
     }
   ],
