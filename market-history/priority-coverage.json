@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T06:09:01.354506+00:00",
+  "checked_at": "2026-11-02T07:31:33.376924+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 18,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 8,
+    "indicative": 7,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -33,8 +33,8 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 2,
-    "verified_corners_quotes": 26,
+    "priced_games": 0,
+    "verified_corners_quotes": 0,
     "verified_cards_quotes": 0,
     "files_checked": 2,
     "liquidity_verified": false
@@ -162,15 +162,7 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.05,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.8,
         "draw": 4.08,
@@ -267,7 +259,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.88,
-        "draw": 4.37,
+        "draw": 4.38,
         "away": 4.19
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
@@ -286,7 +278,7 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.13,
+        "home": 4.12,
         "draw": 4.5,
         "away": 1.87
       },
@@ -381,9 +373,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.39,
-        "draw": 4.22,
-        "away": 2.91
+        "home": 2.4,
+        "draw": 4.2,
+        "away": 2.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -416,9 +408,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.21,
-        "draw": 5.04,
-        "away": 1.64
+        "home": 5.37,
+        "draw": 5.11,
+        "away": 1.62
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -578,9 +570,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.25,
+        "home": 2.24,
         "draw": 3.4,
-        "away": 3.85
+        "away": 3.84
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -601,10 +593,9 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest",
-        "The Odds API official free"
+        "Pinnacle guest"
       ],
-      "verified_quotes": 151,
+      "verified_quotes": 133,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -615,7 +606,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
-      "official_verified_total_corners_quotes": 18,
       "coverage": "verified_price"
     },
     {
@@ -696,10 +686,9 @@
       "data_sources": [
         "ESPN",
         "FotMob",
-        "Pinnacle guest",
-        "The Odds API official free"
+        "Pinnacle guest"
       ],
-      "verified_quotes": 141,
+      "verified_quotes": 133,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -710,7 +699,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
-      "official_verified_total_corners_quotes": 8,
       "coverage": "verified_price"
     },
     {
