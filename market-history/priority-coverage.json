@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T08:43:34.262885+00:00",
+  "checked_at": "2026-11-02T09:45:15.105152+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 9,
@@ -263,9 +263,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.12,
-        "draw": 4.5,
-        "away": 1.87
+        "home": 4.06,
+        "draw": 4.46,
+        "away": 1.89
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
       "tipsaudit_id": "14152",
@@ -349,16 +349,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.44,
+          "price": 2.43,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.4,
-        "draw": 4.21,
-        "away": 2.89
+        "home": 2.41,
+        "draw": 4.23,
+        "away": 2.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -549,9 +549,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.26,
+        "home": 2.22,
         "draw": 3.38,
-        "away": 3.84
+        "away": 3.92
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -682,9 +682,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.57,
+        "home": 2.61,
         "draw": 3.36,
-        "away": 3.19
+        "away": 3.14
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
       "tipsaudit_id": "13034",

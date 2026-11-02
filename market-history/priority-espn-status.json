@@ -1,25 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T08:43:32.182737+00:00",
+  "checked_at": "2026-11-02T09:45:12.158037+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 14,
+  "priority_fixtures_seen": 16,
   "created_games": 0,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
     {
       "fixture": "Lorient x Brest",
       "league": "fra.1",
       "kickoff": 1793648700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sassuolo x Fiorentina",
-      "league": "ita.1",
-      "kickoff": 1793640600,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -62,6 +56,18 @@
       "fixture": "Independiente Rivadavia x Banfield",
       "league": "arg.1",
       "kickoff": 1793664900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Chapecoense x Mirassol",
+      "league": "bra.1",
+      "kickoff": 1793745000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Internacional x Coritiba",
+      "league": "bra.1",
+      "kickoff": 1793752200,
       "reason": "no_verified_public_1x2"
     }
   ],
