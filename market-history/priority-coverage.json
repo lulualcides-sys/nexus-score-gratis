@@ -1,34 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T00:03:03.556444+00:00",
+  "checked_at": "2026-11-02T01:11:13.941321+00:00",
   "horizon_hours": 48,
-  "important_games": 25,
-  "verified_bookmaker_games": 9,
+  "important_games": 26,
+  "verified_bookmaker_games": 6,
   "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 11,
-  "games_with_corners_stats": 1,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "missing_bookmaker_price_games": 15,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 3,
-    "indicative": 8,
+    "matched": 2,
+    "indicative": 7,
     "new_priority": 10
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 5,
+    "matched": 4,
     "new_verified_game": 3,
-    "offers": 604,
+    "offers": 471,
     "market_families": {
-      "half_time": 15,
-      "first_half_team_goals": 20,
-      "first_half_handicap": 74,
-      "first_half_goals": 74,
-      "match_odds": 27,
-      "team_goals": 72,
-      "asian_handicap": 154,
-      "total_goals": 168
+      "half_time": 12,
+      "first_half_team_goals": 16,
+      "first_half_handicap": 58,
+      "first_half_goals": 58,
+      "match_odds": 21,
+      "team_goals": 56,
+      "asian_handicap": 120,
+      "total_goals": 130
     }
   },
   "official_corners_cards": {
@@ -306,8 +306,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.46,
-        "draw": 5.66,
-        "away": 7.17
+        "draw": 5.65,
+        "away": 7.18
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
       "tipsaudit_id": "14149",
@@ -327,9 +327,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.47,
-        "draw": 4.17,
-        "away": 2.82
+        "home": 2.43,
+        "draw": 4.18,
+        "away": 2.86
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -423,9 +423,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.24,
-        "draw": 3.41,
-        "away": 3.84
+        "home": 2.25,
+        "draw": 3.4,
+        "away": 3.85
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -545,37 +545,11 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.82,
-        "draw": 4.17,
-        "away": 4.78
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/13712/cruz-azul-vs-leon-2026-11-02",
-      "tipsaudit_id": "13712",
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 108,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Lanús",
-      "away": "Gimnasia (Mendoza)",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793576700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 34,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 108,
       "coverage": "verified_price"
     },
     {
@@ -667,31 +641,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "New England Revolution",
-      "away": "Inter Miami CF",
-      "league": "usa.1",
-      "league_code": "usa.1",
-      "kickoff_unix": 1793577600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 166,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Los Angeles FC",
       "away": "Minnesota United",
       "league": "Major League Soccer",
@@ -702,24 +651,16 @@
         "FotMob",
         "ESPN"
       ],
-      "verified_quotes": 31,
+      "verified_quotes": 34,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.71,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.67,
-        "draw": 4.83,
-        "away": 5.11
+        "home": 1.8,
+        "draw": 4.46,
+        "away": 4.54
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13705/los-angeles-fc-vs-minnesota-united-fc-2026-11-02",
       "tipsaudit_id": "13705",
@@ -737,7 +678,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 21,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -762,26 +703,92 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Independiente Medellín",
-      "away": "Alianza FC",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1793574600.0,
-      "phase": "live",
+      "home": "Benfica",
+      "away": "Alverca",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793650500.0,
+      "phase": "scheduled",
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 37,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Gil Vicente",
+      "away": "Vitória de Guimaraes",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793650500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Águilas Doradas",
+      "away": "Fortaleza CEIF",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793653500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlético Bucaramanga",
+      "away": "Atlético Nacional",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793668500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -985,6 +992,90 @@
       "league": "Liga Profesional Argentina",
       "league_code": "arg.1",
       "kickoff_unix": 1793664900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Benfica",
+      "away": "Alverca",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793650500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Gil Vicente",
+      "away": "Vitória de Guimaraes",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793650500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Águilas Doradas",
+      "away": "Fortaleza CEIF",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793653500.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlético Bucaramanga",
+      "away": "Atlético Nacional",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793668500.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
