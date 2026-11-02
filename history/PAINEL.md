@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T11:09:47.235169+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T11:59:38.514212+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -50,13 +50,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-11-02 | Lanús × Gimnasia Mendoza | 1-0 | 90 | Chutes no alvo: 4.0×6.0, Chutes para fora: 7.0×3.0, Escanteios: 4.0×6.0, Grandes chances: 1.0×2.0 |
 | 2026-11-02 | Atlético Tucumán × Argentinos Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Independiente Rivadavia × Banfield | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Vancouver Rise FC × Montréal Roses FC | 0-3 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Vancouver Rise FC (W) × Montréal Roses FC (W) | 0-3 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-02 | Orense × Técnico Universitario | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Universitario de Vinto × Always Ready | 1-3 | 0 | Chutes no alvo: 5.0×8.0, Chutes para fora: 3.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×3.0 |
 | 2026-11-02 | Real Tomayapo × Blooming | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Deportivo La Guaira × Portuguesa FC | 2-2 | 0 | Chutes no alvo: 6.0×8.0, Chutes para fora: 3.0×4.0, Escanteios: 2.0×11.0, Grandes chances: 0.0×0.0 |
 | 2026-11-02 | Carabobo FC × Metropolitanos FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | FAR Rabat × Kawempe Muslim LFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | FAR Rabat (W) × Kawempe Muslim LFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Charlotte Independence × FC Naples | 5-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-11-02 | Boise × One Knoxville SC | 2-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 8.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×0.0 |
 | 2026-11-02 | Independiente Valle del Cauca × Boca Juniors de Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -132,14 +132,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-11-02 | UD Tenerife (W) × Athletic Club (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | SD Huesca × Gimnàstic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Real Jaén × Algeciras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Tenerife B × Don Benito | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Tenerife B × Don Benito | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Gil Vicente × Vitória de Guimarães | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Benfica × Alverca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Penafiel × Feirense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Gençlerbirliği × Alanyaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Chelmsford × Farnham Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Kayserispor × Muğlaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Zorya × Epitsentr Kamianets-Podilskyi | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Escanteios: 0.0×0.0 |
+| 2026-11-02 | Zorya × Epitsentr Kamianets-Podilskyi | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Escanteios: 3.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 37 | **Termômetros recentes:** 8.
+**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 39 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
