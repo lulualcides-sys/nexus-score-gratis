@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T18:01:40.996652+00:00",
+  "checked_at": "2026-11-02T19:00:28.336330+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
+  "priority_fixtures_seen": 25,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -92,6 +92,18 @@
       "fixture": "Villarreal x Paris Saint-Germain",
       "league": "uefa.champions",
       "kickoff": 1793736000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Chapecoense x Mirassol",
+      "league": "bra.1",
+      "kickoff": 1793745000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Internacional x Coritiba",
+      "league": "bra.1",
+      "kickoff": 1793752200,
       "reason": "no_verified_public_1x2"
     }
   ],
