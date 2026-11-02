@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T17:10:32.842852+00:00",
+  "checked_at": "2026-11-02T18:01:46.342150+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 17,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 10,
+  "indicative_only_games": 5,
+  "missing_bookmaker_price_games": 9,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 6,
-    "new_priority": 3
+    "indicative": 8,
+    "new_priority": 4
   },
   "pinnacle_guest": {
     "status": "checked",
@@ -430,14 +430,44 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.11,
-        "draw": 5.04,
+        "home": 5.12,
+        "draw": 5.02,
         "away": 1.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fenerbahçe",
+      "away": "Liverpool",
+      "kickoff_unix": 1793814300.0,
+      "league": "UEFA Champions League",
+      "league_code": "uefa.champions",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.61,
+          "bookmaker": "Unibet (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 5.88,
+        "draw": 5.01,
+        "away": 1.59
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14244/fenerbahce-vs-liverpool-2026-11-04",
+      "tipsaudit_id": "14244",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
     },
     {
       "home": "Red Bull Bragantino",
@@ -449,7 +479,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -516,7 +546,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 145,
+      "verified_quotes": 148,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -539,7 +569,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -581,11 +611,19 @@
       "league_code": "esp.1",
       "phase": "unknown",
       "verified_quotes": 131,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.2,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.2,
+        "home": 2.19,
         "draw": 3.34,
-        "away": 4.07
+        "away": 4.1
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14017/deportivo-la-coruna-vs-osasuna-2026-11-02",
       "tipsaudit_id": "14017",
@@ -608,7 +646,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 148,
+      "verified_quotes": 151,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -632,7 +670,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 145,
+      "verified_quotes": 149,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -644,28 +682,6 @@
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
-    },
-    {
-      "home": "CR Temouchent",
-      "away": "US Biskra",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793637900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
     },
     {
       "home": "CR Bélouizdad",
@@ -701,7 +717,7 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 157,
+      "verified_quotes": 163,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -724,17 +740,17 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [
         {
-          "selection": "away",
-          "price": 3.15,
+          "selection": "draw",
+          "price": 3.3,
           "bookmaker": "LeoVegas (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.69,
+        "home": 2.65,
         "draw": 3.27,
-        "away": 3.1
+        "away": 3.16
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/13034/lorient-vs-stade-brestois-29-2026-11-02",
       "tipsaudit_id": "13034",
@@ -754,7 +770,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -776,7 +792,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -890,7 +906,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 10,
+      "verified_quotes": 13,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1033,27 +1049,6 @@
       "league": "LaLiga",
       "league_code": "esp.1",
       "kickoff_unix": 1793649600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "CR Temouchent",
-      "away": "US Biskra",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1793637900.0,
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
