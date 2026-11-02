@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T20:53:00.883449+00:00",
+  "checked_at": "2026-11-02T21:30:14.495749+00:00",
   "horizon_hours": 48,
-  "important_games": 32,
-  "verified_bookmaker_games": 18,
+  "important_games": 27,
+  "verified_bookmaker_games": 15,
   "indicative_only_games": 8,
-  "missing_bookmaker_price_games": 6,
-  "games_with_corners_stats": 4,
-  "games_with_yellow_cards_stats": 4,
-  "games_with_shots_on_target_stats": 4,
+  "missing_bookmaker_price_games": 4,
+  "games_with_corners_stats": 0,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 12,
+    "indicative": 13,
     "new_priority": 9
   },
   "pinnacle_guest": {
@@ -168,9 +168,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.25,
-        "draw": 4.31,
-        "away": 3.08
+        "home": 2.24,
+        "draw": 4.39,
+        "away": 3.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
       "tipsaudit_id": "14135",
@@ -357,16 +357,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.47,
+          "price": 1.45,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.43,
-        "draw": 5.93,
-        "away": 7.54
+        "home": 1.42,
+        "draw": 6.01,
+        "away": 7.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
       "tipsaudit_id": "14149",
@@ -398,9 +398,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.41,
-        "draw": 4.26,
-        "away": 2.86
+        "home": 2.42,
+        "draw": 4.24,
+        "away": 2.85
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -423,11 +423,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.65,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 5.14,
-        "draw": 5.02,
-        "away": 1.65
+        "home": 5.31,
+        "draw": 5.09,
+        "away": 1.63
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -447,7 +455,7 @@
         {
           "selection": "away",
           "price": 1.61,
-          "bookmaker": "Unibet (SE)",
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -633,9 +641,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 11.62,
-        "draw": 6.76,
-        "away": 1.31
+        "home": 11.96,
+        "draw": 6.88,
+        "away": 1.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
       "tipsaudit_id": "14251",
@@ -685,7 +693,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 19,
+      "verified_quotes": 23,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -746,72 +754,6 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Newcastle United",
-      "away": "Everton",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1793649600.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 24,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Deportivo",
-      "away": "Osasuna",
-      "league": "La Liga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793649600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 27,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Deportivo A Coruña",
-      "away": "Osasuna",
-      "league": "LaLiga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793649600.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Defensa y Justicia",
       "away": "Independiente",
       "league": "Liga Profesional Argentina",
@@ -821,7 +763,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 21,
+      "verified_quotes": 24,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -843,7 +785,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 34,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -865,7 +807,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -887,7 +829,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 15,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -898,52 +840,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
-    },
-    {
-      "home": "Benfica",
-      "away": "Alverca",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793650500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Gil Vicente",
-      "away": "Vitória de Guimaraes",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793650500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Águilas Doradas",
@@ -977,7 +873,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 15,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1064,49 +960,6 @@
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo A Coruña",
-      "away": "Osasuna",
-      "league": "LaLiga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1793649600.0,
-      "phase": "live",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Gil Vicente",
-      "away": "Vitória de Guimaraes",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1793650500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
