@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T01:28:05.376174+00:00",
-  "bookmaker_snapshot_at": "2026-11-02T01:28:03.983734+00:00",
+  "checked_at": "2026-11-02T04:15:36.641673+00:00",
+  "bookmaker_snapshot_at": "2026-11-02T04:15:34.802631+00:00",
   "status": "fresh",
-  "matches_catalogued": 14,
-  "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1328,
+  "matches_catalogued": 11,
+  "matches_with_priced_markets": 11,
+  "odds_eligible_for_quality": 1052,
   "invalid_quote_records": 0,
-  "complete_market_lines": 650,
+  "complete_market_lines": 515,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 14,
-      "odds": 310,
-      "complete_lines": 155,
+      "games": 11,
+      "odds": 254,
+      "complete_lines": 127,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.03
+      "median_overround_pct": 3.79
     },
     "first_half_goals": {
-      "games": 14,
-      "odds": 192,
-      "complete_lines": 96,
+      "games": 11,
+      "odds": 140,
+      "complete_lines": 70,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.68
+      "median_overround_pct": 5.23
     },
     "first_half_handicap": {
-      "games": 14,
-      "odds": 158,
-      "complete_lines": 79,
+      "games": 11,
+      "odds": 118,
+      "complete_lines": 59,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.39
+      "median_overround_pct": 4.15
     },
     "first_half_team_goals": {
-      "games": 14,
-      "odds": 56,
-      "complete_lines": 28,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.26
-    },
-    "half_time": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.31
-    },
-    "match_odds": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
-      "incomplete_lines": 0,
-      "median_overround_pct": 3.53
-    },
-    "team_goals": {
-      "games": 14,
-      "odds": 162,
-      "complete_lines": 81,
+      "games": 11,
+      "odds": 44,
+      "complete_lines": 22,
       "incomplete_lines": 0,
       "median_overround_pct": 5.25
     },
-    "total_goals": {
-      "games": 14,
-      "odds": 366,
-      "complete_lines": 183,
+    "half_time": {
+      "games": 11,
+      "odds": 33,
+      "complete_lines": 11,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.02
+      "median_overround_pct": 4.0
+    },
+    "match_odds": {
+      "games": 11,
+      "odds": 33,
+      "complete_lines": 11,
+      "incomplete_lines": 0,
+      "median_overround_pct": 3.38
+    },
+    "team_goals": {
+      "games": 11,
+      "odds": 130,
+      "complete_lines": 65,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.15
+    },
+    "total_goals": {
+      "games": 11,
+      "odds": 300,
+      "complete_lines": 150,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.64
     }
   },
   "examples": [
     {
-      "fixture": "Lorient x Brest",
+      "fixture": "Shakhtar Donetsk x Sporting CP",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-02T01:28:03.983734+00:00",
+      "observed_at": "2026-11-02T04:15:34.802631+00:00",
       "selections": {
-        "home": 2.51,
-        "away": 3.05,
-        "draw": 3.29
+        "home": 3.65,
+        "away": 1.9901,
+        "draw": 3.92
       },
-      "overround_pct": 3.02
+      "overround_pct": 3.16
     },
     {
-      "fixture": "Lorient x Brest",
+      "fixture": "Shakhtar Donetsk x Sporting CP",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-02T01:28:03.983734+00:00",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-02T04:15:34.802631+00:00",
       "selections": {
-        "home": 1.7812,
-        "away": 2.16
+        "home": 1.9174,
+        "away": 1.9901
       },
-      "overround_pct": 2.44
+      "overround_pct": 2.4
     },
     {
-      "fixture": "Lorient x Brest",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-02T01:28:03.983734+00:00",
-      "selections": {
-        "home": 4.21,
-        "away": 1.2532
-      },
-      "overround_pct": 3.55
-    },
-    {
-      "fixture": "Lorient x Brest",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-02T01:28:03.983734+00:00",
-      "selections": {
-        "home": 3.04,
-        "away": 1.4132
-      },
-      "overround_pct": 3.66
-    },
-    {
-      "fixture": "Lorient x Brest",
+      "fixture": "Shakhtar Donetsk x Sporting CP",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-02T01:28:03.983734+00:00",
+      "observed_at": "2026-11-02T04:15:34.802631+00:00",
       "selections": {
-        "home": 2.5,
-        "away": 1.5848
+        "home": 3.6,
+        "away": 1.3155
       },
-      "overround_pct": 3.1
+      "overround_pct": 3.79
+    },
+    {
+      "fixture": "Shakhtar Donetsk x Sporting CP",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-02T04:15:34.802631+00:00",
+      "selections": {
+        "home": 3.17,
+        "away": 1.3831
+      },
+      "overround_pct": 3.85
+    },
+    {
+      "fixture": "Shakhtar Donetsk x Sporting CP",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-02T04:15:34.802631+00:00",
+      "selections": {
+        "home": 2.75,
+        "away": 1.4902
+      },
+      "overround_pct": 3.47
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
