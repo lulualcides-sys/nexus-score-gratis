@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T10:30:47.965496+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T11:09:47.235169+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -139,7 +139,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-02 | Gençlerbirliği × Alanyaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Chelmsford × Farnham Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Kayserispor × Muğlaspor | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Zorya × Epitsentr Kamianets-Podilskyi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Zorya × Epitsentr Kamianets-Podilskyi | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Escanteios: 0.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 33 | **Termômetros recentes:** 8.
+**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 37 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
