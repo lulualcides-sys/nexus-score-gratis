@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T01:12:51.711277+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T02:13:02.071100+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -12,25 +12,30 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 |---|---|---|---:|---|
 | 2026-11-02 | Independiente Medellín × Alianza FC | 1-1 | 45 | Chutes no alvo: 1.0×2.0, Chutes para fora: 1.0×1.0, Escanteios: 6.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-02 | Santos Laguna × Necaxa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Cruz Azul × León | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Lanús × Gimnasia Mendoza | 0-0 | 27 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | Vancouver Rise FC × Montréal Roses FC | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | Universitario de Vinto × Always Ready | 0-2 | 0 | Chutes no alvo: 2.0×6.0, Chutes para fora: 0.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-11-02 | Deportivo La Guaira × Portuguesa FC | 1-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | Carabobo FC × Metropolitanos FC | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | Charlotte Independence × FC Naples | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Boise × One Knoxville SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | New England Revolution × Inter Miami CF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Guastatoya × Coban Imperial | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Cruz Azul × León | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Lanús × Gimnasia Mendoza | 1-0 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×5.0, Grandes chances: 1.0×0.0 |
+| 2026-11-02 | Vancouver Rise FC × Montréal Roses FC | 0-2 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Universitario de Vinto × Always Ready | 1-3 | 0 | Chutes no alvo: 5.0×8.0, Chutes para fora: 3.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×3.0 |
+| 2026-11-02 | Deportivo La Guaira × Portuguesa FC | 2-2 | 0 | Chutes no alvo: 6.0×8.0, Chutes para fora: 3.0×4.0, Escanteios: 2.0×11.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Carabobo FC × Metropolitanos FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Charlotte Independence × FC Naples | 2-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-11-02 | Boise × One Knoxville SC | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Los Angeles FC × Minnesota United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | New England Revolution × Inter Miami CF | 0-0 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×1.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-11-02 | Comunicaciones FC × Deportivo Mixco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Guastatoya × Coban Imperial | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Independiente de La Chorrera × San Francisco FC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Firpo × CD FAS | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Firpo × CD FAS | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Olancho FC × Platense FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | FC Motagua × CD Marathón | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Santa Fe × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Sportivo Atenas × Sarmiento de La Banda | 4-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Liverpool FC × Juventud de las Piedras | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | New Mexico United × Phoenix Rising FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Sacramento Republic FC × FC Tulsa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Belgrano (Córdoba) × Barracas Central | 2-2 | 0 | Chutes no alvo: 6.0×9.0; Match Odds 1X2: Casa 1,95, Empate 3,10, Fora 4,50 |
 | 2026-11-01 | Newell's Old Boys × Unión (Santa Fe) | 1-1 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,00, Empate 3,35, Fora 3,85 |
-| 2026-11-01 | Lanús × Gimnasia (Mendoza) | 1-0 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 1,57, Empate 3,95, Fora 6,00 |
+| 2026-11-01 | Lanús × Gimnasia (Mendoza) | 1-1 | 0 | Chutes no alvo: 4.0×6.0; Match Odds 1X2: Casa 1,57, Empate 3,95, Fora 6,00 |
 | 2026-11-01 | Boca Juniors × River Plate | 1-0 | 0 | Chutes no alvo: 6.0×0.0; Match Odds 1X2: Casa 2,25, Empate 3,15, Fora 3,35 |
 | 2026-11-01 | Cuiabá × São Bernardo | 1-2 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 1,80, Empate 3,55, Fora 4,60 |
 | 2026-11-01 | Novorizontino × Operário PR | 2-1 | 0 | Chutes no alvo: 7.0×1.0; Match Odds 1X2: Casa 1,50, Empate 4,30, Fora 6,00 |
@@ -54,10 +59,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-11-01 | Lazio × Cagliari | 2-1 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 1,43, Empate 4,30, Fora 6,50 |
 | 2026-11-01 | Como × Venezia | 1-0 | 0 | Chutes no alvo: 4.0×1.0; Match Odds 1X2: Casa 1,29, Empate 5,50, Fora 7,50 |
 | 2026-11-01 | Nashville SC × Red Bull New York | 3-2 | 0 | Chutes no alvo: 7.0×4.0; Match Odds 1X2: Casa 1,49, Empate 4,60, Fora 5,25 |
-| 2026-11-01 | LAFC × Minnesota United FC | 0-0 | 0 | Match Odds 1X2: Casa 1,62, Empate 4,30, Fora 4,40 |
+| 2026-11-01 | LAFC × Minnesota United FC | 0-1 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 1,62, Empate 4,30, Fora 4,40 |
 | 2026-11-01 | Vancouver Whitecaps × Seattle Sounders FC | 5-1 | 0 | Chutes no alvo: 9.0×5.0; Match Odds 1X2: Casa 1,71, Empate 4,10, Fora 4,00 |
 | 2026-11-01 | Atlanta United FC × Toronto FC | 3-1 | 0 | Chutes no alvo: 8.0×3.0; Match Odds 1X2: Casa 2,10, Empate 3,95, Fora 2,80 |
-| 2026-11-01 | New England Revolution × Inter Miami CF | 0-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 2,90, Empate 3,90, Fora 2,10 |
+| 2026-11-01 | New England Revolution × Inter Miami CF | 2-2 | 0 | Chutes no alvo: 3.0×6.0; Match Odds 1X2: Casa 2,90, Empate 3,90, Fora 2,10 |
 | 2026-11-01 | Portland Timbers × Houston Dynamo FC | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,95, Fora 4,20 |
 | 2026-11-01 | Nõmme JK Kalju × FC Kuressaare | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Flora Tallinn × Narva Trans | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -72,7 +77,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-11-01 | Monterrey × Tijuana | 3-3 | 83 | Chutes no alvo: 4.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 4.0×2.0, Grandes chances: 2.0×3.0 |
 | 2026-11-01 | CF América × Toluca | 2-2 | 90 | Chutes no alvo: 5.0×7.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×5.0, Grandes chances: 3.0×4.0 |
 | 2026-11-01 | Santos Laguna × Necaxa | 1-0 | 52 | Chutes no alvo: 2.0×5.0, Chutes para fora: 1.0×7.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×3.0 |
-| 2026-11-01 | Cruz Azul × León | 0-0 | 1 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Cruz Azul × León | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | OFK Beograd × Vojvodina | 0-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 4.0×7.0, Escanteios: 2.0×5.0, Grandes chances: 3.0×1.0 |
 | 2026-11-01 | FK Radnički 1923 × Novi Pazar | 2-0 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 3.0×5.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-01 | FK IMT Beograd × Čukarički | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 4.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 0.0×0.0 |
@@ -108,13 +113,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-11-01 | Boca Juniors × River Plate | 1-0 | 78 | Chutes no alvo: 6.0×0.0, Chutes para fora: 6.0×4.0, Escanteios: 9.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-11-01 | Estudiantes × Instituto | 3-3 | 84 | Chutes no alvo: 6.0×4.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 2.0×2.0 |
 | 2026-11-01 | Newell's Old Boys × Unión | 1-1 | 82 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×1.0 |
-| 2026-11-01 | Lanús × Gimnasia Mendoza | 1-0 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×5.0, Grandes chances: 1.0×0.0 |
+| 2026-11-01 | Lanús × Gimnasia Mendoza | 1-1 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 3.0×5.0, Grandes chances: 1.0×0.0 |
 | 2026-11-01 | Belgrano × Barracas Central | 2-2 | 82 | Chutes no alvo: 4.0×5.0, Chutes para fora: 3.0×4.0, Escanteios: 4.0×11.0, Grandes chances: 1.0×1.0 |
 | 2026-11-01 | Suwon FC × Ansan Greeners | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Canberra United FC × Western Sydney Wanderers FC | 0-2 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 9.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×2.0 |
 | 2026-11-01 | Melbourne Victory × Newcastle Jets | 1-0 | 76 | Chutes no alvo: 3.0×3.0, Chutes para fora: 5.0×5.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-01 | Perth Glory × Wellington Phoenix | 2-0 | 77 | Chutes no alvo: 2.0×3.0, Chutes para fora: 4.0×11.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×1.0 |
-| 2026-11-01 | Vancouver Rise FC × Montréal Roses FC | 0-2 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Vancouver Rise FC × Montréal Roses FC | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Universidad Católica × Aucas | 1-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-11-01 | Independiente del Valle × LDU de Quito | 2-0 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×5.0, Escanteios: 1.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-11-01 | Guayaquil City × Libertad | 0-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×6.0, Escanteios: 7.0×2.0, Grandes chances: 0.0×1.0 |
@@ -128,18 +133,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **6**.
 | 2026-11-01 | Rajasthan United FC × Sreenidi Deccan FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Dempo SC × Bengaluru United | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Deportivo La Guaira × Portuguesa FC | 2-2 | 0 | Chutes no alvo: 6.0×8.0, Chutes para fora: 3.0×4.0, Escanteios: 2.0×11.0, Grandes chances: 0.0×0.0 |
-| 2026-11-01 | Carabobo FC × Metropolitanos FC | 0-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Carabobo FC × Metropolitanos FC | 1-1 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-11-01 | Caracas × Monagas SC | 2-3 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×8.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×0.0 |
 | 2026-11-01 | Masar × Mamelodi Sundowns | 0-0 | 0 | Chutes no alvo: 0.0×4.0, Chutes para fora: 1.0×15.0, Escanteios: 3.0×12.0, Grandes chances: 0.0×0.0 |
 | 2026-11-01 | FUS Rabat × Lekie | 0-0 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 7.0×11.0, Escanteios: 3.0×9.0, Grandes chances: 0.0×0.0 |
-| 2026-11-01 | Charlotte Independence × FC Naples | 2-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-11-01 | Boise × One Knoxville SC | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-01 | Charlotte Independence × FC Naples | 5-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-01 | Boise × One Knoxville SC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-01 | Atlético Ottawa × Forge FC | 2-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 2.0×4.0, Escanteios: 3.0×9.0, Grandes chances: 3.0×0.0 |
-| 2026-11-01 | Supra du Québec × Cavalry FC | 2-1 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×2.0 |
-| 2026-11-01 | Real Cundinamarca × Tigres FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-01 | Nashville SC × Red Bull New York | 3-2 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 10.0×4.0, Escanteios: 12.0×3.0, Grandes chances: 5.0×4.0; Match Odds 1X2: Casa 1,49, Empate 4,60, |
-| 2026-11-01 | Colorado Rapids × Chicago Fire FC | 2-4 | 59 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×6.0, Escanteios: 3.0×2.0, Grandes chances: 2.0×3.0 |
-| 2026-11-01 | Vancouver Whitecaps × Seattle Sounders FC | 5-1 | 71 | Chutes no alvo: 9.0×3.0, Chutes para fora: 4.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 4.0×1.0; Match Odds 1X2: Casa 1,71, Empate 4,10, F |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,18 +168,18 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10389 | **Jogos distintos:** 3006 | **Resultados verificáveis:** 5864 | **Com gol:** 2255 | **Sem gol:** 3609 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 24 datas com coletas | 79 pendentes | 1883 indeterminados | 2563 incompletos.
+**Observações:** 10394 | **Jogos distintos:** 3008 | **Resultados verificáveis:** 5866 | **Com gol:** 2257 | **Sem gol:** 3609 | **Taxa observada:** 38.5%.
+**Evolução da amostra:** 24 datas com coletas | 71 pendentes | 1884 indeterminados | 2573 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2030 | 1386 | 551 | 835 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1630 | 1099 | 402 | 697 | 36.6% |
-| 🎯 chutes_no_alvo_5 | 1725 | 836 | 309 | 527 | 37.0% |
-| 🟥 expulsao_confirmada | 1555 | 704 | 243 | 461 | 34.5% |
+| 🥶 jogo_frio | 2030 | 1387 | 552 | 835 | 39.8% |
+| ⚡ pressao_ofensiva_18 | 1631 | 1099 | 402 | 697 | 36.6% |
+| 🎯 chutes_no_alvo_5 | 1726 | 836 | 309 | 527 | 37.0% |
+| 🟥 expulsao_confirmada | 1558 | 705 | 244 | 461 | 34.6% |
 | 🚩 escanteios_6 | 1265 | 586 | 238 | 348 | 40.6% |
 | 💣 grandes_chances_3 | 1024 | 551 | 236 | 315 | 42.8% |
 | 🔥 pressao_forte_10min | 571 | 370 | 142 | 228 | 38.4% |
@@ -222,10 +222,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | Premier League | 488 | 295 | 86 | 209 | 29.2% |
-| Major League Soccer | 388 | 207 | 96 | 111 | 46.4% |
+| Major League Soccer | 389 | 207 | 96 | 111 | 46.4% |
 | J. League | 294 | 177 | 82 | 95 | 46.3% |
 | Serie A | 256 | 175 | 83 | 92 | 47.4% |
-| Liga Profesional | 265 | 169 | 48 | 121 | 28.4% |
+| Liga Profesional | 265 | 170 | 49 | 121 | 28.8% |
 | Serie B | 229 | 159 | 56 | 103 | 35.2% |
 | Super League | 284 | 155 | 51 | 104 | 32.9% |
 | Bundesliga | 235 | 145 | 59 | 86 | 40.7% |
@@ -242,7 +242,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Liga MX | 202 | 104 | 40 | 64 | 38.5% |
 | Saudi Pro League | 163 | 104 | 49 | 55 | 47.1% |
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
-| Primera División | 178 | 101 | 36 | 65 | 35.6% |
+| Primera División | 181 | 101 | 36 | 65 | 35.6% |
 | Primera A | 171 | 101 | 29 | 72 | 28.7% |
 | Belgian Pro League | 170 | 99 | 57 | 42 | 57.6% |
 | Europa League | 167 | 96 | 27 | 69 | 28.1% |
@@ -253,31 +253,36 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 271 | 195 | 65 | 130 | 33.3% |
 | 16–30′ | 674 | 508 | 175 | 333 | 34.4% |
-| 31–45′ | 2179 | 1693 | 691 | 1002 | 40.8% |
+| 31–45′ | 2180 | 1693 | 691 | 1002 | 40.8% |
 | 46–60′ | 1359 | 986 | 387 | 599 | 39.2% |
-| 61–75′ | 2159 | 1512 | 571 | 941 | 37.8% |
-| 76–90′ | 2767 | 960 | 362 | 598 | 37.7% |
+| 61–75′ | 2159 | 1513 | 572 | 941 | 37.8% |
+| 76–90′ | 2771 | 961 | 363 | 598 | 37.8% |
 | 91+′ | 980 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10389 | **Jogos monitorados:** 1609 | **Ao vivo:** 46 | **Termômetros recentes:** 10.
+**Registros:** 10394 | **Jogos monitorados:** 1609 | **Ao vivo:** 43 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-02T01:13:22.177741+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (65') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Universitario de Vinto (83') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Portuguesa FC (81') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Portuguesa FC (81') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Deportivo La Guaira (81') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-02T02:13:38.872394+00:00 | New England Revolution × Inter Miami CF | Inter Miami CF (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-02T02:13:38.872394+00:00 | Los Angeles FC × Minnesota United | Minnesota United (33') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-02T01:14:29.749732+00:00 | Universitario de Vinto × Always Ready | Always Ready (85') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:14:29.749732+00:00 | Deportivo La Guaira × Portuguesa FC | Deportivo La Guaira (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:14:29.749732+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (85') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (65') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Universitario de Vinto (83') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Universitario de Vinto × Always Ready | Always Ready (83') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Portuguesa FC (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Portuguesa FC (81') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Deportivo La Guaira × Portuguesa FC | Deportivo La Guaira (81') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | Carabobo FC × Metropolitanos FC | Carabobo FC (83') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-02T01:13:22.177741+00:00 | New England Revolution × Inter Miami CF | New England Revolution (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T00:13:39.534096+00:00 | Santos Laguna × Necaxa | Necaxa (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -288,7 +293,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-01T23:43:57.092968+00:00 | Racing Louisville (W) × Kansas City Current (W) | Racing Louisville (W) (79') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-01T23:43:57.092968+00:00 | Racing Louisville (W) × Kansas City Current (W) | Racing Louisville (W) (79') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-01T23:43:57.092968+00:00 | Houston Dash (W) × Portland Thorns (W) | Portland Thorns (W) (73') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-01T23:43:57.092968+00:00 | Dallas Trinity FC (W) × Fort Lauderdale United FC (W) | Fort Lauderdale United FC (W) (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-11-01T23:43:57.092968+00:00 | Dallas Trinity FC (W) × Fort Lauderdale United FC (W) | Fort Lauderdale United FC (W) (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Nashville SC × Red Bull New York | Nashville SC (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (31') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-01T23:41:29.452192+00:00 | Santos Laguna × Necaxa | Necaxa (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
@@ -363,11 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-01T22:14:44.059559+00:00 | Deportivo Cali × Chicó FC | Deportivo Cali (50') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-01T22:14:44.059559+00:00 | Nashville SC × Red Bull New York | Nashville SC (34') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-01T22:14:44.059559+00:00 | Vancouver Whitecaps × Seattle Sounders FC | Vancouver Whitecaps (72') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-01T22:14:44.059559+00:00 | Vancouver Whitecaps × Seattle Sounders FC | Vancouver Whitecaps (72') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-01T22:14:44.059559+00:00 | Vancouver Whitecaps × Seattle Sounders FC | Vancouver Whitecaps (72') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-01T22:14:44.059559+00:00 | Novorizontino × Operário-PR | Novorizontino (44') | 🔥 pressao_forte_10min · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-01T22:14:44.059559+00:00 | Novorizontino × Operário-PR | Novorizontino (44') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-01T22:14:44.059559+00:00 | Novorizontino × Operário-PR | Novorizontino (44') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
