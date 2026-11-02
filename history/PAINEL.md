@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T04:01:51.841877+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-02T05:08:22.014853+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -63,7 +63,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-02 | Unión Magdalena × Envigado | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Los Angeles FC × Minnesota United | 1-3 | 49 | Chutes no alvo: 3.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×1.0 |
 | 2026-11-02 | New England Revolution × Inter Miami CF | 1-2 | 87 | Chutes no alvo: 3.0×6.0, Chutes para fora: 4.0×6.0, Escanteios: 7.0×1.0, Grandes chances: 2.0×4.0 |
-| 2026-11-02 | Portland Timbers × Houston Dynamo FC | 1-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 4.0×0.0, Escanteios: 2.0×2.0, Grandes chances: 3.0×0.0 |
+| 2026-11-02 | Portland Timbers × Houston Dynamo FC | 3-1 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 4.0×0.0, Escanteios: 2.0×2.0, Grandes chances: 3.0×0.0 |
 | 2026-11-02 | RB Bragantino × Santos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Kongsvinger × Stabæk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Vålerenga (W) × Lyn Fotball (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 10405 | **Jogos distintos:** 3013 | **Resultados verificáveis:** 5874 | **Com gol:** 2264 | **Sem gol:** 3610 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 25 datas com coletas | 75 pendentes | 1882 indeterminados | 2574 incompletos.
+**Evolução da amostra:** 25 datas com coletas | 73 pendentes | 1884 indeterminados | 2574 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 36 | **Termômetros recentes:** 9.
+**Registros:** 10405 | **Jogos monitorados:** 1620 | **Ao vivo:** 33 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
@@ -270,8 +270,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 |---|---|---|---|---|---|---|---|
 | 2026-11-02T04:02:23.387094+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (67') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T04:02:23.387094+00:00 | Lanús × Gimnasia Mendoza | Gimnasia Mendoza (67') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T04:02:23.387094+00:00 | Portland Timbers × Houston Dynamo FC | Houston Dynamo FC (46') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-02T04:02:23.387094+00:00 | Portland Timbers × Houston Dynamo FC | Portland Timbers (46') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-02T04:02:23.387094+00:00 | Portland Timbers × Houston Dynamo FC | Houston Dynamo FC (46') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-02T04:02:23.387094+00:00 | Portland Timbers × Houston Dynamo FC | Portland Timbers (46') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T04:02:23.387094+00:00 | Liverpool FC × Juventud de las Piedras | Juventud de las Piedras (53') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-11-02T02:58:29.528078+00:00 | New Mexico United × Phoenix Rising FC | Phoenix Rising FC (67') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-02T02:56:15.845166+00:00 | Cruz Azul × León | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **150**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
