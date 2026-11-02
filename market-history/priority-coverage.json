@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T05:07:13.779039+00:00",
+  "checked_at": "2026-11-02T06:09:01.354506+00:00",
   "horizon_hours": 48,
   "important_games": 31,
   "verified_bookmaker_games": 18,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 7,
+    "indicative": 8,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -173,7 +173,7 @@
       ],
       "fair_odds_modelled": {
         "home": 3.8,
-        "draw": 4.09,
+        "draw": 4.08,
         "away": 2.03
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
@@ -230,9 +230,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.28,
-        "draw": 8.14,
-        "away": 10.57
+        "home": 1.27,
+        "draw": 8.33,
+        "away": 11.03
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
       "tipsaudit_id": "14150",
@@ -267,8 +267,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.88,
-        "draw": 4.39,
-        "away": 4.17
+        "draw": 4.37,
+        "away": 4.19
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
       "tipsaudit_id": "14148",
@@ -381,9 +381,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.35,
-        "draw": 4.24,
-        "away": 2.96
+        "home": 2.39,
+        "draw": 4.22,
+        "away": 2.91
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -406,11 +406,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.65,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 5.07,
-        "draw": 4.98,
-        "away": 1.66
+        "home": 5.21,
+        "draw": 5.04,
+        "away": 1.64
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",

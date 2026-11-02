@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T05:07:09.496285+00:00",
+  "checked_at": "2026-11-02T06:08:58.243939+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
-  "created_games": 9,
+  "priority_fixtures_seen": 14,
+  "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -62,60 +62,6 @@
       "fixture": "Independiente Rivadavia x Banfield",
       "league": "arg.1",
       "kickoff": 1793664900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Galatasaray x VfB Stuttgart",
-      "league": "uefa.champions",
-      "kickoff": 1793727900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Shakhtar Donetsk x Sporting CP",
-      "league": "uefa.champions",
-      "kickoff": 1793727900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Madrid x Bayern Munich",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Barcelona x Aston Villa",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bodo/Glimt x Lille",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Feyenoord Rotterdam x Internazionale",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "LASK Linz x Slovan Bratislava",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Manchester United x AS Roma",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Villarreal x Paris Saint-Germain",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
       "reason": "no_verified_public_1x2"
     }
   ],
