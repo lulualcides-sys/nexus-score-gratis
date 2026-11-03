@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T07:46:15.652186+00:00",
+  "checked_at": "2026-11-03T08:44:57.763847+00:00",
   "horizon_hours": 48,
   "important_games": 29,
   "verified_bookmaker_games": 16,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 9,
+  "indicative_only_games": 5,
+  "missing_bookmaker_price_games": 8,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 8,
-    "indicative": 12,
+    "indicative": 11,
     "new_priority": 8
   },
   "pinnacle_guest": {
@@ -128,19 +128,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.2,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.16,
-        "draw": 4.4,
-        "away": 3.23
+        "home": 2.15,
+        "draw": 4.43,
+        "away": 3.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
       "tipsaudit_id": "14135",
@@ -165,9 +157,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.81,
-        "draw": 3.96,
-        "away": 2.06
+        "home": 3.73,
+        "draw": 3.93,
+        "away": 2.09
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
       "tipsaudit_id": "14136",
@@ -237,8 +229,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.31,
-        "draw": 7.73,
-        "away": 9.31
+        "draw": 7.75,
+        "away": 9.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
       "tipsaudit_id": "14150",
@@ -263,16 +255,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.85,
-          "bookmaker": "1xBet",
+          "price": 1.8,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.78,
-        "draw": 4.44,
-        "away": 4.66
+        "home": 1.77,
+        "draw": 4.46,
+        "away": 4.73
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
       "tipsaudit_id": "14148",
@@ -316,16 +308,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.98,
+          "bookmaker": "Coolbet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 3.72,
-        "draw": 4.27,
-        "away": 2.01
+        "home": 3.91,
+        "draw": 4.34,
+        "away": 1.95
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
       "tipsaudit_id": "14152",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Feyenoord Rotterdam",
@@ -389,16 +389,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.41,
-          "bookmaker": "Unibet (SE)",
+          "price": 1.39,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
         "home": 1.37,
-        "draw": 6.54,
-        "away": 8.53
+        "draw": 6.5,
+        "away": 8.58
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
       "tipsaudit_id": "14149",
@@ -420,19 +420,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.32,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.21,
-        "draw": 4.21,
-        "away": 3.23
+        "home": 2.27,
+        "draw": 4.19,
+        "away": 3.11
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -479,9 +471,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.5,
-        "draw": 4.68,
-        "away": 1.77
+        "home": 4.69,
+        "draw": 4.77,
+        "away": 1.73
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -570,9 +562,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.02,
-        "draw": 4.01,
-        "away": 3.9
+        "home": 1.98,
+        "draw": 4.06,
+        "away": 4.01
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
       "tipsaudit_id": "14252",
@@ -717,8 +709,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.49,
-          "bookmaker": "Unibet (SE)",
+          "price": 1.48,
+          "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -953,27 +945,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Feyenoord",
-      "away": "Inter",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
-      "tipsaudit_id": "14152",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
