@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T02:34:40.604666+00:00",
+  "checked_at": "2026-11-03T03:27:58.704812+00:00",
   "horizon_hours": 48,
-  "important_games": 22,
-  "verified_bookmaker_games": 10,
-  "indicative_only_games": 7,
-  "missing_bookmaker_price_games": 5,
+  "important_games": 24,
+  "verified_bookmaker_games": 11,
+  "indicative_only_games": 6,
+  "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -33,9 +33,9 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
-    "verified_cards_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 52,
+    "verified_cards_quotes": 16,
     "files_checked": 2,
     "liquidity_verified": false
   },
@@ -151,9 +151,10 @@
       "kickoff_unix": 1793727900.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "The Odds API official free"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 34,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -175,7 +176,9 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
       "tipsaudit_id": "14135",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "official_verified_total_corners_quotes": 26,
+      "official_verified_total_cards_quotes": 8,
+      "coverage": "verified_price"
     },
     {
       "home": "Shakhtar Donetsk",
@@ -212,9 +215,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
-      "verified_quotes": 132,
+      "verified_quotes": 166,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -225,6 +229,8 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 132,
+      "official_verified_total_corners_quotes": 26,
+      "official_verified_total_cards_quotes": 8,
       "coverage": "verified_price"
     },
     {
@@ -307,7 +313,7 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.98,
+        "home": 3.99,
         "draw": 4.45,
         "away": 1.91
       },
@@ -402,9 +408,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.32,
-        "draw": 4.29,
-        "away": 2.97
+        "home": 2.34,
+        "draw": 4.28,
+        "away": 2.95
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -429,9 +435,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.0,
-        "draw": 4.97,
-        "away": 1.67
+        "home": 4.95,
+        "draw": 4.94,
+        "away": 1.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -522,8 +528,8 @@
       ],
       "fair_odds_modelled": {
         "home": 2.01,
-        "draw": 4.05,
-        "away": 3.9
+        "draw": 4.03,
+        "away": 3.92
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
       "tipsaudit_id": "14252",
@@ -645,7 +651,7 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.02,
+        "home": 12.06,
         "draw": 6.9,
         "away": 1.3
       },
@@ -778,6 +784,50 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cúcuta Deportivo",
+      "away": "Independiente Santa Fe",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793835000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Millonarios",
+      "away": "América de Cali",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793842200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -867,6 +917,48 @@
       "league": "Colômbia Primera A",
       "league_code": "col.1",
       "kickoff_unix": 1793748000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Cúcuta Deportivo",
+      "away": "Independiente Santa Fe",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793835000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Millonarios",
+      "away": "América de Cali",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1793842200.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
