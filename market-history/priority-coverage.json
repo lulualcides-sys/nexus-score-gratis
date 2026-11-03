@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T22:19:01.578657+00:00",
+  "checked_at": "2026-11-03T23:17:21.102417+00:00",
   "horizon_hours": 48,
   "important_games": 22,
   "verified_bookmaker_games": 11,
-  "indicative_only_games": 2,
-  "missing_bookmaker_price_games": 9,
-  "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "indicative_only_games": 3,
+  "missing_bookmaker_price_games": 8,
+  "games_with_corners_stats": 1,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
-    "indicative": 4,
+    "indicative": 5,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -191,9 +191,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 6.45,
-        "draw": 5.41,
-        "away": 1.52
+        "home": 6.49,
+        "draw": 5.4,
+        "away": 1.51
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14244/fenerbahce-vs-liverpool-2026-11-04",
       "tipsaudit_id": "14244",
@@ -221,7 +221,7 @@
       "fair_odds_modelled": {
         "home": 1.82,
         "draw": 4.43,
-        "away": 4.43
+        "away": 4.42
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14250/borussia-dortmund-vs-real-betis-2026-11-04",
       "tipsaudit_id": "14250",
@@ -283,7 +283,7 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.3,
+        "home": 3.31,
         "draw": 4.19,
         "away": 2.18
       },
@@ -326,16 +326,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.15,
-          "bookmaker": "Codere (IT)",
+          "price": 2.13,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
         "home": 2.11,
-        "draw": 4.62,
-        "away": 3.24
+        "draw": 4.63,
+        "away": 3.23
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14253/psv-eindhoven-vs-club-brugge-kv-2026-11-04",
       "tipsaudit_id": "14253",
@@ -363,9 +363,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.54,
-        "draw": 5.28,
-        "away": 1.59
+        "home": 5.56,
+        "draw": 5.29,
+        "away": 1.58
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14254/rb-leipzig-vs-manchester-city-2026-11-04",
       "tipsaudit_id": "14254",
@@ -405,11 +405,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.27,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 13.41,
-        "draw": 7.34,
-        "away": 1.27
+        "home": 13.92,
+        "draw": 7.5,
+        "away": 1.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
       "tipsaudit_id": "14251",
@@ -417,7 +425,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Viking",
@@ -438,8 +446,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.44,
-        "draw": 5.86,
-        "away": 7.39
+        "draw": 5.87,
+        "away": 7.38
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14249/viking-vs-sabah-fa-2026-11-04",
       "tipsaudit_id": "14249",
@@ -477,14 +485,14 @@
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1793745000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 24,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_corner_counts": true,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
@@ -503,7 +511,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 23,
+      "verified_quotes": 27,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -639,7 +647,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 31,
+      "verified_quotes": 38,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -737,23 +745,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Slavia Praha",
-      "away": "Arsenal",
-      "kickoff_unix": 1793822400.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
-      "tipsaudit_id": "14251",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
       "coverage": "no_bookmaker_price"
     },
     {

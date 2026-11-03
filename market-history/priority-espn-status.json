@@ -1,15 +1,21 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T22:18:58.047166+00:00",
+  "checked_at": "2026-11-03T23:17:15.870588+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 20,
   "created_games": 0,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "new_quotes": 6,
+  "summary_checks": 2,
+  "summary_with_prices": 2,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Chapecoense x Mirassol",
+      "league": "bra.1",
+      "kickoff": 1793745000,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Stade Rennais x Olympiacos",
       "league": "uefa.europa",
