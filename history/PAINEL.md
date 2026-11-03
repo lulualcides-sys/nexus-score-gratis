@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T11:55:14.854791+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T13:11:04.185020+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **12**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -31,22 +31,22 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-03 | Alianza Lima × Cienciano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Nacional × Sportivo San Lorenzo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | 2 de Mayo × Sportivo Trinidense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Damac FC × Al Akhdoud | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Damac FC × Al Akhdoud | 1-2 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 3.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 2.0×2.0 |
 | 2026-11-03 | Al-Raed × Al-Wehda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Atlético Tucumán × Argentinos Juniors | 1-2 | 72 | Chutes no alvo: 0.0×1.0, Chutes para fora: 5.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Independiente Rivadavia × Banfield | 3-1 | 66 | Chutes no alvo: 2.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-11-03 | Mladost Ždralovi × Slaven | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | NK Istra 1961 × Neretva | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Shakhtar Donetsk U19 × Sporting CP U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Galatasaray U19 × VfB Stuttgart U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Shakhtar Donetsk U19 × Sporting CP U19 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Galatasaray U19 × VfB Stuttgart U19 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Atlético Madrid U19 × Bayern München U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Barcelona U19 × Aston Villa U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Feyenoord U19 × Inter U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Feyenoord U19 × Inter U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Bodø/Glimt U19 × Lille U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | LASK U19 × Slovan Bratislava U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Manchester United U19 × Roma U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Villarreal U19 × Paris Saint Germain U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Salzburg U19 × Genk U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Villarreal U19 × Paris Saint Germain U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Salzburg U19 × Genk U19 | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 2.0×0.0 |
 | 2026-11-03 | Göztepe U19 × AZ Alkmaar U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Maccabi Tel Aviv U19 × FC Zuerich U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Mushuc Runa × Manta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -66,7 +66,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-03 | Sirius × Halmstads BK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Goiás × CRB | 1-0 | 90 | Chutes no alvo: 3.0×7.0, Chutes para fora: 8.0×11.0, Escanteios: 4.0×9.0, Grandes chances: 1.0×1.0 |
 | 2026-11-03 | Jezero × Dečić Tuzi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Otrant × FK Arsenal Tivat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Otrant × FK Arsenal Tivat | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Sporting FC × Municipal Pérez Zeledón | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Fujieda MYFC × Júbilo Iwata | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | FC Imabari × Hokkaido Consadole Sapporo | 0-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10618 | **Jogos distintos:** 3085 | **Resultados verificáveis:** 5980 | **Com gol:** 2307 | **Sem gol:** 3673 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1918 indeterminados | 2639 incompletos.
+**Observações:** 10621 | **Jogos distintos:** 3087 | **Resultados verificáveis:** 5981 | **Com gol:** 2308 | **Sem gol:** 3673 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 26 datas com coletas | 83 pendentes | 1918 indeterminados | 2639 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,10 +178,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2082 | 1413 | 561 | 852 | 39.7% |
 | ⚡ pressao_ofensiva_18 | 1663 | 1123 | 414 | 709 | 36.9% |
-| 🎯 chutes_no_alvo_5 | 1762 | 847 | 314 | 533 | 37.1% |
+| 🎯 chutes_no_alvo_5 | 1763 | 847 | 314 | 533 | 37.1% |
 | 🟥 expulsao_confirmada | 1579 | 714 | 249 | 465 | 34.9% |
 | 🚩 escanteios_6 | 1304 | 605 | 247 | 358 | 40.8% |
-| 💣 grandes_chances_3 | 1051 | 562 | 242 | 320 | 43.1% |
+| 💣 grandes_chances_3 | 1053 | 563 | 243 | 320 | 43.2% |
 | 🔥 pressao_forte_10min | 579 | 377 | 144 | 233 | 38.2% |
 | 🧨 pressao_total_5_10min | 318 | 202 | 81 | 121 | 40.1% |
 | ⏱️ tensao_tardia_70 | 180 | 75 | 29 | 46 | 38.7% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 279 | 202 | 66 | 136 | 32.7% |
 | 16–30′ | 690 | 517 | 177 | 340 | 34.2% |
-| 31–45′ | 2238 | 1739 | 714 | 1025 | 41.1% |
+| 31–45′ | 2241 | 1740 | 715 | 1025 | 41.1% |
 | 46–60′ | 1389 | 1000 | 395 | 605 | 39.5% |
 | 61–75′ | 2190 | 1539 | 582 | 957 | 37.8% |
 | 76–90′ | 2838 | 973 | 369 | 604 | 37.9% |
@@ -262,12 +262,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10618 | **Jogos monitorados:** 1622 | **Ao vivo:** 38 | **Termômetros recentes:** 10.
+**Registros:** 10621 | **Jogos monitorados:** 1622 | **Ao vivo:** 48 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-03T13:11:26.511755+00:00 | Công An Hà Nội × Kyoto Sanga FC | Công An Hà Nội (45') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T13:11:26.511755+00:00 | Port FC × Beijing Guoan | Port FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T12:49:55.374062+00:00 | Port FC × Beijing Guoan | Port FC (34') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T11:17:04.666615+00:00 | Kashiwa Reysol × Daejeon Hana Citizen | Kashiwa Reysol (60') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-03T11:17:04.666615+00:00 | Kashiwa Reysol × Daejeon Hana Citizen | Kashiwa Reysol (60') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-03T11:00:50.890194+00:00 | Kashiwa Reysol × Daejeon Hana Citizen | Kashiwa Reysol (45') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -365,13 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T21:08:02.405901+00:00 | Juventus Next Gen × Pro Vercelli | Juventus Next Gen (81') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Fortaleza × Atlético-GO | Atlético-GO (91') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Fortaleza × Atlético-GO | Atlético-GO (91') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Fortaleza × Atlético-GO | Atlético-GO (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Red Star × Nancy | Red Star (45') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Raków Częstochowa × Pogoń Szczecin | Pogoń Szczecin (60') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **148**.
+Jogos com odds registradas nos ultimos dias: **151**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
