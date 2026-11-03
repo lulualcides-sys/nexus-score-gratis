@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T08:58:57.099280+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T10:00:33.200634+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10611 | **Jogos distintos:** 3082 | **Resultados verificáveis:** 5975 | **Com gol:** 2305 | **Sem gol:** 3670 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1919 indeterminados | 2636 incompletos.
+**Observações:** 10614 | **Jogos distintos:** 3083 | **Resultados verificáveis:** 5976 | **Com gol:** 2306 | **Sem gol:** 3670 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1918 indeterminados | 2639 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,10 +178,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2082 | 1413 | 561 | 852 | 39.7% |
 | ⚡ pressao_ofensiva_18 | 1663 | 1123 | 414 | 709 | 36.9% |
-| 🎯 chutes_no_alvo_5 | 1759 | 845 | 314 | 531 | 37.2% |
-| 🟥 expulsao_confirmada | 1579 | 713 | 248 | 465 | 34.8% |
-| 🚩 escanteios_6 | 1302 | 604 | 246 | 358 | 40.7% |
-| 💣 grandes_chances_3 | 1049 | 561 | 242 | 319 | 43.1% |
+| 🎯 chutes_no_alvo_5 | 1760 | 845 | 314 | 531 | 37.2% |
+| 🟥 expulsao_confirmada | 1579 | 714 | 249 | 465 | 34.9% |
+| 🚩 escanteios_6 | 1303 | 604 | 246 | 358 | 40.7% |
+| 💣 grandes_chances_3 | 1050 | 561 | 242 | 319 | 43.1% |
 | 🔥 pressao_forte_10min | 579 | 377 | 144 | 233 | 38.2% |
 | 🧨 pressao_total_5_10min | 318 | 202 | 81 | 121 | 40.1% |
 | ⏱️ tensao_tardia_70 | 180 | 75 | 29 | 46 | 38.7% |
@@ -256,19 +256,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 2236 | 1737 | 713 | 1024 | 41.0% |
 | 46–60′ | 1387 | 998 | 395 | 603 | 39.6% |
 | 61–75′ | 2190 | 1539 | 582 | 957 | 37.8% |
-| 76–90′ | 2835 | 972 | 368 | 604 | 37.9% |
+| 76–90′ | 2838 | 973 | 369 | 604 | 37.9% |
 | 91+′ | 994 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10611 | **Jogos monitorados:** 1622 | **Ao vivo:** 37 | **Termômetros recentes:** 10.
+**Registros:** 10614 | **Jogos monitorados:** 1622 | **Ao vivo:** 36 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T06:39:37.516787+00:00 | Tegevajaro Miyazaki × Tochigi City FC | Tochigi City FC (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
+| 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Shanghai Port (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Newcastle Jets (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Shanghai Port (88') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-03T06:39:37.516787+00:00 | Tegevajaro Miyazaki × Tochigi City FC | Tochigi City FC (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-03T05:46:29.968598+00:00 | Tegevajaro Miyazaki × Tochigi City FC | Tochigi City FC (43') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T03:58:35.228331+00:00 | Deportes Concepción × Palestino | Palestino (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-03T03:58:35.228331+00:00 | Goiás × CRB | CRB (53') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T20:52:26.466175+00:00 | Deportivo A Coruña × Osasuna | Deportivo A Coruña (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Mallorca × Cádiz | Mallorca (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Mallorca × Cádiz | Mallorca (45') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Benfica × Alverca | Benfica (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Fortaleza × Atlético-GO | Atlético-GO (67') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Atalanta × Parma | Atalanta (42') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
