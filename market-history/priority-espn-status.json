@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T17:56:48.572452+00:00",
+  "checked_at": "2026-11-03T18:59:27.207142+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
+  "priority_fixtures_seen": 27,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -80,6 +80,30 @@
       "fixture": "Viking FK x Sabah FK",
       "league": "uefa.champions",
       "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Athletico-PR x Vasco da Gama",
+      "league": "bra.1",
+      "kickoff": 1793831400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Flamengo x Grêmio",
+      "league": "bra.1",
+      "kickoff": 1793831400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Botafogo x Atlético-MG",
+      "league": "bra.1",
+      "kickoff": 1793838600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "São Paulo x Corinthians",
+      "league": "bra.1",
+      "kickoff": 1793838600,
       "reason": "no_verified_public_1x2"
     }
   ],
