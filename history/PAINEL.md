@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T19:58:37.112692+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T20:55:42.599379+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **65**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **68**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -13,24 +13,24 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **65**.
 | 2026-11-03 | Internacional × Coritiba | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,95, Fora 5,25 |
 | 2026-11-03 | Chapecoense × Mirassol | 0-0 | 0 | Match Odds 1X2: Casa 3,50, Empate 3,45, Fora 2,05 |
 | 2026-11-03 | Deportivo Pasto × Jaguares de Córdoba | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,65, Fora 4,70 |
-| 2026-11-03 | Deportivo Pereira × Deportes Tolima | 0-0 | 0 | Match Odds 1X2: Casa 5,50, Empate 3,95, Fora 1,50 |
-| 2026-11-03 | Feyenoord Rotterdam × Internazionale | 0-0 | 0 | Match Odds 1X2: Casa 3,75, Empate 4,20, Fora 1,87 |
-| 2026-11-03 | Manchester United × AS Roma | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 4,00, Fora 2,80 |
-| 2026-11-03 | Villarreal × Paris Saint-Germain | 0-0 | 0 | Match Odds 1X2: Casa 4,40, Empate 4,60, Fora 1,67 |
+| 2026-11-03 | Deportivo Pereira × Deportes Tolima | 0-3 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 5,50, Empate 3,95, Fora 1,50 |
+| 2026-11-03 | Feyenoord Rotterdam × Internazionale | 0-2 | 0 | Chutes no alvo: 1.0×4.0; Match Odds 1X2: Casa 3,75, Empate 4,20, Fora 1,87 |
+| 2026-11-03 | Manchester United × AS Roma | 0-2 | 0 | Chutes no alvo: 1.0×3.0; Match Odds 1X2: Casa 2,25, Empate 4,00, Fora 2,80 |
+| 2026-11-03 | Villarreal × Paris Saint-Germain | 0-4 | 0 | Chutes no alvo: 1.0×8.0; Match Odds 1X2: Casa 4,40, Empate 4,60, Fora 1,67 |
 | 2026-11-03 | Shakhtar Donetsk × Sporting CP | 0-1 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 3,50, Empate 3,75, Fora 2,00 |
 | 2026-11-03 | Galatasaray × VfB Stuttgart | 2-0 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 2,20, Empate 4,10, Fora 2,90 |
-| 2026-11-03 | Bodo/Glimt × Lille | 0-0 | 0 | Match Odds 1X2: Casa 1,80, Empate 4,20, Fora 3,90 |
-| 2026-11-03 | LASK Linz × Slovan Bratislava | 0-0 | 0 | Match Odds 1X2: Casa 1,40, Empate 5,25, Fora 7,00 |
-| 2026-11-03 | Atlético Madrid × Bayern Munich | 0-0 | 0 | Match Odds 1X2: Casa 2,70, Empate 3,95, Fora 2,35 |
-| 2026-11-03 | Barcelona × Aston Villa | 0-0 | 0 | Match Odds 1X2: Casa 1,28, Empate 7,00, Fora 8,50 |
+| 2026-11-03 | Bodo/Glimt × Lille | 0-0 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 1,80, Empate 4,20, Fora 3,90 |
+| 2026-11-03 | LASK Linz × Slovan Bratislava | 3-0 | 0 | Chutes no alvo: 5.0×1.0; Match Odds 1X2: Casa 1,40, Empate 5,25, Fora 7,00 |
+| 2026-11-03 | Atlético Madrid × Bayern Munich | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,70, Empate 3,95, Fora 2,35 |
+| 2026-11-03 | Barcelona × Aston Villa | 1-0 | 0 | Chutes no alvo: 3.0×1.0; Match Odds 1X2: Casa 1,28, Empate 7,00, Fora 8,50 |
 | 2026-11-03 | Deportes Concepción × Palestino | 1-0 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 3.0×7.0, Escanteios: 3.0×8.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Bucaramanga × Atlético Nacional | 1-1 | 53 | Chutes no alvo: 2.0×4.0, Chutes para fora: 5.0×1.0, Escanteios: 7.0×0.0, Grandes chances: 2.0×2.0 |
 | 2026-11-03 | Deportivo Pasto × CD Jaguares | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Deportivo Pereira × Tolima | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Comerciantes Unidos × Asociación Deportiva Tarma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Deportivo Pereira × Tolima | 0-3 | 25 | Chutes no alvo: 1.0×4.0, Chutes para fora: 0.0×2.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Comerciantes Unidos × Asociación Deportiva Tarma | 0-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×2.0 |
 | 2026-11-03 | Alianza Lima × Cienciano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Nacional × Sportivo San Lorenzo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | 2 de Mayo × Sportivo Trinidense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | 2 de Mayo × Sportivo Trinidense | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×3.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Damac FC × Al Akhdoud | 4-3 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-11-03 | Al-Raed × Al-Wehda | 0-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×2.0 |
 | 2026-11-03 | Atlético Tucumán × Argentinos Juniors | 1-2 | 72 | Chutes no alvo: 0.0×1.0, Chutes para fora: 5.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 0.0×0.0 |
@@ -49,7 +49,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **65**.
 | 2026-11-03 | Salzburg U19 × Genk U19 | 4-3 | 0 | Chutes no alvo: 12.0×5.0, Chutes para fora: 3.0×3.0, Escanteios: 7.0×2.0, Grandes chances: 8.0×2.0 |
 | 2026-11-03 | Göztepe U19 × AZ Alkmaar U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Maccabi Tel Aviv U19 × FC Zuerich U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Mushuc Runa × Manta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Mushuc Runa × Manta | 1-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Burapha United × Muang Loei United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Khonkaen FC × Kasetsart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Samut Sakhon FC × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -78,39 +78,39 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **65**.
 | 2026-11-03 | Tegevajaro Miyazaki × Tochigi City FC | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Kataller Toyama × Vegalta Sendai | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Yokohama FC × Blaublitz Akita | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Birmingham City × Millwall | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Blackburn Rovers × Stoke City | 0-0 | 13 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-11-03 | Derby County × Norwich City | 0-1 | 13 | Chutes no alvo: 0.0×2.0, Chutes para fora: 0.0×1.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×2.0 |
-| 2026-11-03 | Portsmouth × Swansea City | 0-0 | 13 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Preston North End × Sheffield United | 1-0 | 11 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-11-03 | Queens Park Rangers × Burnley | 0-0 | 12 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Watford × Lincoln City | 0-0 | 12 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | West Bromwich Albion × Southampton | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Charlton Athletic × Bolton Wanderers | 0-0 | 13 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Huddersfield Town × Luton Town | 0-0 | 13 | Chutes no alvo: 0.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Wigan Athletic × Mansfield Town | 0-0 | 4 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Northampton Town × Oldham Athletic | 0-0 | 12 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Birmingham City × Millwall | 3-0 | 45 | Chutes no alvo: 5.0×1.0, Chutes para fora: 2.0×3.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-11-03 | Blackburn Rovers × Stoke City | 0-1 | 45 | Chutes no alvo: 1.0×1.0, Chutes para fora: 6.0×2.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×0.0 |
+| 2026-11-03 | Derby County × Norwich City | 0-3 | 48 | Chutes no alvo: 0.0×6.0, Chutes para fora: 0.0×4.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×3.0 |
+| 2026-11-03 | Portsmouth × Swansea City | 1-0 | 48 | Chutes no alvo: 2.0×1.0, Chutes para fora: 2.0×0.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Preston North End × Sheffield United | 1-3 | 49 | Chutes no alvo: 1.0×4.0, Chutes para fora: 0.0×4.0, Escanteios: 1.0×0.0, Grandes chances: 1.0×1.0 |
+| 2026-11-03 | Queens Park Rangers × Burnley | 0-1 | 51 | Chutes no alvo: 2.0×1.0, Chutes para fora: 5.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Watford × Lincoln City | 1-0 | 50 | Chutes no alvo: 1.0×0.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×4.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | West Bromwich Albion × Southampton | 1-0 | 45 | Chutes no alvo: 4.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×0.0 |
+| 2026-11-03 | Charlton Athletic × Bolton Wanderers | 0-1 | 45 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Huddersfield Town × Luton Town | 1-1 | 50 | Chutes no alvo: 6.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 6.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Wigan Athletic × Mansfield Town | 0-0 | 48 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×2.0 |
+| 2026-11-03 | Northampton Town × Oldham Athletic | 0-0 | 52 | Chutes no alvo: 4.0×1.0, Chutes para fora: 0.0×4.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×1.0 |
 | 2026-11-03 | CD Suchitepéquez × Deportivo Malacateco | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Club Xelajú × Deportivo Marquense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Chrobry Głogów × Arka Gdynia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Pogoń Siedlce × Ruch Chorzów | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | AGF (W) × FC Midtjylland (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Farnborough × Ebbsfleet United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Dorking Wanderers × Hampton & Richmond | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Eastbourne Borough × Stanway Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Lewes × Dartford | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Farnborough × Ebbsfleet United | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Dorking Wanderers × Hampton & Richmond | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Eastbourne Borough × Stanway Rovers | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Lewes × Dartford | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Wingate & Finchley × Burgess Hill Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Brentwood Town × Leatherhead | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Curzon × FC United of Manchester | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Guiseley × Leek Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Bury × Avro | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Brentwood Town × Leatherhead | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Curzon × FC United of Manchester | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Guiseley × Leek Town | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Bury × Avro | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Ashton United × Warrington Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Anstey Nomads × Real Bedford | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Bury Town × Kettering Town FC | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Bracknell Town × Chertsey Town | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Plymouth Parkway × Uxbridge | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Poole Town FC × Hanwell Town | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Chippenham Town × Evesham United | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Anstey Nomads × Real Bedford | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Bury Town × Kettering Town FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Bracknell Town × Chertsey Town | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Plymouth Parkway × Uxbridge | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Poole Town FC × Hanwell Town | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Chippenham Town × Evesham United | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Club León (W) × Atlético de San Luis (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Gainare Tottori × SC Sagamihara | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Giravanz Kitakyushu × Reilac Shiga | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -122,24 +122,24 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **65**.
 | 2026-11-03 | Tochigi SC × Fukushima United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | FC Ryūkyū × FC Gifu | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Mbeya City × Singida Black Stars | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | FC Halifax Town × Nottingham Forest U21 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Gateshead FC × Stoke City U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Scunthorpe United × Wolverhampton Wanderers U21 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Wealdstone × Derby County U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Hornchurch × West Ham United U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Braintree Town × Norwich City U21 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | FC Halifax Town × Nottingham Forest U21 | 3-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Gateshead FC × Stoke City U21 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Scunthorpe United × Wolverhampton Wanderers U21 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Wealdstone × Derby County U21 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Hornchurch × West Ham United U21 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Braintree Town × Norwich City U21 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Aldershot Town × Ipswich Town U21 | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Worthing × Fulham U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Hartlepool United × Leeds United U21 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Tamworth × Everton U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Hartlepool United × Leeds United U21 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Tamworth × Everton U21 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Boston United × Leicester City U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Sutton United × Southampton U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Truro City × West Bromwich Albion U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Woking × Birmingham U21 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Rotherham United × Newcastle United U21 | 0-1 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Rochdale × Doncaster Rovers | 1-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 2.0×1.0 |
-| 2026-11-03 | Newport County × Crystal Palace U21 | 0-1 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 1.0×0.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Cambridge United × Brighton & Hove Albion U21 | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Truro City × West Bromwich Albion U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Woking × Birmingham U21 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Rotherham United × Newcastle United U21 | 0-1 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-11-03 | Rochdale × Doncaster Rovers | 1-4 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 2.0×1.0 |
+| 2026-11-03 | Newport County × Crystal Palace U21 | 1-2 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Cambridge United × Brighton & Hove Albion U21 | 6-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 7.0×3.0, Grandes chances: 5.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,22 +168,22 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10667 | **Jogos distintos:** 3107 | **Resultados verificáveis:** 6004 | **Com gol:** 2314 | **Sem gol:** 3690 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 26 datas com coletas | 93 pendentes | 1925 indeterminados | 2645 incompletos.
+**Observações:** 10708 | **Jogos distintos:** 3124 | **Resultados verificáveis:** 6018 | **Com gol:** 2318 | **Sem gol:** 3700 | **Taxa observada:** 38.5%.
+**Evolução da amostra:** 26 datas com coletas | 111 pendentes | 1934 indeterminados | 2645 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2094 | 1418 | 562 | 856 | 39.6% |
-| ⚡ pressao_ofensiva_18 | 1669 | 1127 | 415 | 712 | 36.8% |
-| 🎯 chutes_no_alvo_5 | 1768 | 850 | 315 | 535 | 37.1% |
-| 🟥 expulsao_confirmada | 1590 | 721 | 250 | 471 | 34.7% |
-| 🚩 escanteios_6 | 1309 | 606 | 248 | 358 | 40.9% |
-| 💣 grandes_chances_3 | 1057 | 566 | 244 | 322 | 43.1% |
-| 🔥 pressao_forte_10min | 581 | 377 | 144 | 233 | 38.2% |
-| 🧨 pressao_total_5_10min | 319 | 202 | 81 | 121 | 40.1% |
+| 🥶 jogo_frio | 2104 | 1425 | 565 | 860 | 39.6% |
+| ⚡ pressao_ofensiva_18 | 1678 | 1129 | 415 | 714 | 36.8% |
+| 🎯 chutes_no_alvo_5 | 1776 | 850 | 315 | 535 | 37.1% |
+| 🟥 expulsao_confirmada | 1595 | 723 | 251 | 472 | 34.7% |
+| 🚩 escanteios_6 | 1312 | 606 | 248 | 358 | 40.9% |
+| 💣 grandes_chances_3 | 1060 | 566 | 244 | 322 | 43.1% |
+| 🔥 pressao_forte_10min | 583 | 379 | 144 | 235 | 38.0% |
+| 🧨 pressao_total_5_10min | 320 | 203 | 81 | 122 | 39.9% |
 | ⏱️ tensao_tardia_70 | 180 | 75 | 29 | 46 | 38.7% |
 | 🚨 alerta_cruzado_gol | 100 | 62 | 26 | 36 | 41.9% |
 
@@ -191,17 +191,17 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 290 | 169 | 68 | 101 | 40.2% |
+| Equipe não definida | 291 | 169 | 68 | 101 | 40.2% |
 | Manchester City | 45 | 27 | 13 | 14 | 48.1% |
 | FC Twente | 40 | 27 | 12 | 15 | 44.4% |
 | Roma | 37 | 27 | 21 | 6 | 77.8% |
 | Machida Zelvia | 29 | 25 | 6 | 19 | 24.0% |
-| Bayern München | 44 | 24 | 19 | 5 | 79.2% |
+| Bayern München | 47 | 24 | 19 | 5 | 79.2% |
 | Bayer Leverkusen | 36 | 24 | 17 | 7 | 70.8% |
 | Panathinaikos | 27 | 24 | 9 | 15 | 37.5% |
 | Inter | 34 | 23 | 7 | 16 | 30.4% |
 | Atalanta | 30 | 23 | 9 | 14 | 39.1% |
-| Paris Saint-Germain | 30 | 22 | 10 | 12 | 45.5% |
+| Paris Saint-Germain | 33 | 22 | 10 | 12 | 45.5% |
 | Benfica | 28 | 22 | 7 | 15 | 31.8% |
 | Olympiacos | 23 | 20 | 1 | 19 | 5.0% |
 | Boca Juniors | 21 | 20 | 2 | 18 | 10.0% |
@@ -233,53 +233,94 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | LaLiga2 | 223 | 128 | 52 | 76 | 40.6% |
 | LaLiga | 197 | 127 | 47 | 80 | 37.0% |
 | Série A | 205 | 125 | 46 | 79 | 36.8% |
+| League One | 222 | 119 | 42 | 77 | 35.3% |
 | Super Lig | 161 | 117 | 47 | 70 | 40.2% |
-| League One | 216 | 116 | 42 | 74 | 36.2% |
 | Conference League | 181 | 116 | 42 | 74 | 36.2% |
 | Eredivisie | 199 | 114 | 59 | 55 | 51.8% |
 | 2. Bundesliga | 169 | 110 | 43 | 67 | 39.1% |
-| Champions League | 192 | 109 | 68 | 41 | 62.4% |
+| Champions League | 203 | 109 | 68 | 41 | 62.4% |
 | Eliteserien | 165 | 107 | 36 | 71 | 33.6% |
 | Liga MX | 206 | 104 | 40 | 64 | 38.5% |
+| Championship | 185 | 104 | 41 | 63 | 39.4% |
 | Saudi Pro League | 163 | 104 | 49 | 55 | 47.1% |
 | Primera División | 187 | 103 | 36 | 67 | 35.0% |
 | Ekstraklasa | 170 | 103 | 49 | 54 | 47.6% |
-| Primera A | 175 | 101 | 29 | 72 | 28.7% |
-| Liga Portugal | 143 | 101 | 32 | 69 | 31.7% |
+| Primera A | 176 | 101 | 29 | 72 | 28.7% |
 
 ### Faixa de minuto
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 1–15′ | 291 | 204 | 67 | 137 | 32.8% |
-| 16–30′ | 692 | 519 | 177 | 342 | 34.1% |
-| 31–45′ | 2253 | 1749 | 717 | 1032 | 41.0% |
-| 46–60′ | 1394 | 1003 | 396 | 607 | 39.5% |
-| 61–75′ | 2198 | 1545 | 583 | 962 | 37.7% |
+| 1–15′ | 291 | 212 | 68 | 144 | 32.1% |
+| 16–30′ | 700 | 523 | 179 | 344 | 34.2% |
+| 31–45′ | 2269 | 1750 | 718 | 1032 | 41.0% |
+| 46–60′ | 1408 | 1004 | 396 | 608 | 39.4% |
+| 61–75′ | 2199 | 1545 | 583 | 962 | 37.7% |
 | 76–90′ | 2845 | 974 | 370 | 604 | 38.0% |
-| 91+′ | 994 | 10 | 4 | 6 | 40.0% |
+| 91+′ | 996 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10667 | **Jogos monitorados:** 1622 | **Ao vivo:** 101 | **Termômetros recentes:** 18.
+**Registros:** 10708 | **Jogos monitorados:** 1622 | **Ao vivo:** 112 | **Termômetros recentes:** 23.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T19:58:57.961505+00:00 | Blackburn Rovers × Stoke City | Blackburn Rovers (14') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Derby County × Norwich City | Norwich City (14') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Derby County × Norwich City | Norwich City (14') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Watford × Lincoln City | Lincoln City (13') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Charlton Athletic × Bolton Wanderers | Charlton Athletic (14') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Huddersfield Town × Luton Town | Luton Town (14') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Northampton Town × Oldham Athletic | Oldham Athletic (13') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Wealdstone × Derby County U21 | Derby County U21 (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T19:58:57.961505+00:00 | Cambridge United × Brighton & Hove Albion U21 | Brighton & Hove Albion U21 (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Villarreal × Paris Saint-Germain | Paris Saint-Germain (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | LASK Linz × Slovan Bratislava | LASK Linz (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Deportivo Pereira × Tolima | Tolima (26') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Birmingham City × Millwall | Birmingham City (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Birmingham City × Millwall | Birmingham City (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Blackburn Rovers × Stoke City | Blackburn Rovers (51') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Derby County × Norwich City | Norwich City (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Derby County × Norwich City | Norwich City (52') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Preston North End × Sheffield United | Preston North End (50') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Watford × Lincoln City | Watford (54') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | West Bromwich Albion × Southampton | West Bromwich Albion (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Huddersfield Town × Luton Town | Huddersfield Town (51') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Huddersfield Town × Luton Town | Huddersfield Town (51') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Huddersfield Town × Luton Town | Huddersfield Town (51') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Northampton Town × Oldham Athletic | Oldham Athletic (52') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Wealdstone × Derby County U21 | Derby County U21 (94') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Braintree Town × Norwich City U21 | Norwich City U21 (68') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Sutton United × Southampton U21 | Southampton U21 (94') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Barcelona × Aston Villa | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Atlético Madrid × Bayern München | Bayern München (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Atlético Madrid × Bayern München | Bayern München (45') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Atlético Madrid × Bayern München | Bayern München (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Manchester United × Roma | Manchester United (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Feyenoord × Inter | Feyenoord (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Bodø/Glimt × Lille | Lille (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Villarreal × Paris Saint-Germain | Paris Saint-Germain (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Villarreal × Paris Saint-Germain | Paris Saint-Germain (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | LASK × Slovan Bratislava | LASK (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | LASK × Slovan Bratislava | LASK (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:56:13.025089+00:00 | Edinburgh City × Partick Thistle | Edinburgh City (55') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Blackburn Rovers × Stoke City | Blackburn Rovers (28') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Derby County × Norwich City | Norwich City (28') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Portsmouth × Swansea City | Portsmouth (28') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Preston North End × Sheffield United | Sheffield United (28') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Huddersfield Town × Luton Town | Huddersfield Town (28') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Wigan Athletic × Mansfield Town | Mansfield Town (26') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Wigan Athletic × Mansfield Town | Mansfield Town (26') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Sutton United × Southampton U21 | Southampton U21 (51') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Cambridge United × Brighton & Hove Albion U21 | Cambridge United (55') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Cambridge United × Brighton & Hove Albion U21 | Cambridge United (55') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T20:13:20.880856+00:00 | Cambridge United × Brighton & Hove Albion U21 | Cambridge United (55') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Blackburn Rovers × Stoke City | Blackburn Rovers (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Derby County × Norwich City | Norwich City (14') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Derby County × Norwich City | Norwich City (14') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Portsmouth × Swansea City | Portsmouth (14') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Watford × Lincoln City | Lincoln City (13') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Charlton Athletic × Bolton Wanderers | Charlton Athletic (14') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Huddersfield Town × Luton Town | Luton Town (14') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Northampton Town × Oldham Athletic | Oldham Athletic (13') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Wealdstone × Derby County U21 | Derby County U21 (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T19:58:57.961505+00:00 | Cambridge United × Brighton & Hove Albion U21 | Brighton & Hove Albion U21 (45') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T19:30:10.536688+00:00 | Sirius × Halmstads BK | Sirius (74') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-03T19:30:10.536688+00:00 | Wealdstone × Derby County U21 | Derby County U21 (29') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-03T19:30:10.536688+00:00 | Newport County × Crystal Palace U21 | Crystal Palace U21 (30') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -327,47 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-03T06:39:37.516787+00:00 | Tegevajaro Miyazaki × Tochigi City FC | Tochigi City FC (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-03T05:46:29.968598+00:00 | Tegevajaro Miyazaki × Tochigi City FC | Tochigi City FC (43') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T03:58:35.228331+00:00 | Deportes Concepción × Palestino | Palestino (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T03:58:35.228331+00:00 | Goiás × CRB | CRB (53') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T03:58:35.228331+00:00 | Goiás × CRB | CRB (53') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T03:58:35.228331+00:00 | Independiente Medellín × Alianza FC | Independiente Medellín (46') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T02:58:26.113987+00:00 | Atlético Bucaramanga × Atlético Nacional | Atlético Nacional (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-03T02:30:15.700991+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (95') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-03T02:30:15.700991+00:00 | Independiente Rivadavia × Banfield | Equipe não definida (90') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-03T02:09:01.128979+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-03T02:09:01.128979+00:00 | Bucaramanga × Atlético Nacional | Atlético Nacional (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-03T02:09:01.128979+00:00 | Bucaramanga × Atlético Nacional | Bucaramanga (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-03T01:45:44.555519+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Deportes Concepción × Palestino | Palestino (79') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Independiente Rivadavia × Banfield | Independiente Rivadavia (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Goiás × CRB | CRB (80') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | janela_incompleta | indisponível |
-| 2026-11-03T00:44:36.199752+00:00 | RB Bragantino × Santos | RB Bragantino (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-03T00:44:36.199752+00:00 | RB Bragantino × Santos | RB Bragantino (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-03T00:44:36.199752+00:00 | Goiás × CRB | CRB (53') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-02T23:45:57.760371+00:00 | Platense × Central Córdoba (Santiago del Estero) | Platense (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T23:45:57.760371+00:00 | Defensa y Justicia × Independiente | Defensa y Justicia (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T23:45:57.760371+00:00 | Defensa y Justicia × Independiente | Independiente (81') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T23:45:57.760371+00:00 | Club Atlético Platense × Central Córdoba de Santiago | Club Atlético Platense (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T23:45:57.760371+00:00 | Club Atlético Platense × Central Córdoba de Santiago | Club Atlético Platense (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T23:29:42.987548+00:00 | Defensa y Justicia × Independiente | Independiente (65') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T23:29:42.987548+00:00 | Defensa y Justicia × Independiente | Defensa y Justicia (65') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T23:29:42.987548+00:00 | Defensa y Justicia × Independiente | Independiente (65') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T22:59:29.220352+00:00 | Defensa y Justicia × Independiente | Defensa y Justicia (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T22:59:29.220352+00:00 | Real Tomayapo × Blooming | Blooming (81') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Athletic × Ceará | Athletic (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Deportes Limache × Audax Italiano | Audax Italiano (87') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Deportes Limache × Audax Italiano | Audax Italiano (87') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Club Atlético Platense × Central Córdoba de Santiago | Club Atlético Platense (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Club Atlético Platense × Central Córdoba de Santiago | Club Atlético Platense (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Athletic Club MG × Ceará | Ceará (88') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Athletic Club MG × Ceará | Athletic Club MG (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Colo Colo × Puerto Montt | Colo Colo (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:50:59.722118+00:00 | Colo Colo × Puerto Montt | Colo Colo (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:22:51.643850+00:00 | Deportes Limache × Audax Italiano | Audax Italiano (59') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-02T22:22:51.643850+00:00 | Águilas Doradas × Fortaleza FC | Águilas Doradas (59') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-02T22:22:51.643850+00:00 | Sporting Cristal × FC Cajamarca | Sporting Cristal (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T22:22:51.643850+00:00 | Defensa y Justicia × Independiente | Defensa y Justicia (22') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-02T22:22:51.643850+00:00 | Club Atlético Platense × Central Córdoba de Santiago | Club Atlético Platense (24') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
