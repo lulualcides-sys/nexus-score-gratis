@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T09:41:47.662557+00:00",
+  "checked_at": "2026-11-03T10:42:13.665715+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
-  "created_games": 4,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 26,
+  "created_games": 9,
+  "new_quotes": 6,
+  "summary_checks": 2,
+  "summary_with_prices": 2,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Galatasaray x VfB Stuttgart",
-      "league": "uefa.champions",
-      "kickoff": 1793727900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Shakhtar Donetsk x Sporting CP",
-      "league": "uefa.champions",
-      "kickoff": 1793727900,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Barcelona x Aston Villa",
       "league": "uefa.champions",
@@ -44,6 +32,60 @@
       "fixture": "Internacional x Coritiba",
       "league": "bra.1",
       "kickoff": 1793752200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AEK Athens x Real Madrid",
+      "league": "uefa.champions",
+      "kickoff": 1793814300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Fenerbahce x Liverpool",
+      "league": "uefa.champions",
+      "kickoff": 1793814300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Borussia Dortmund x Real Betis",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Porto x Napoli",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lens x Como",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "PSV Eindhoven x Club Brugge",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "RB Leipzig x Manchester City",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Slavia Prague x Arsenal",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Viking FK x Sabah FK",
+      "league": "uefa.champions",
+      "kickoff": 1793822400,
       "reason": "no_verified_public_1x2"
     },
     {
