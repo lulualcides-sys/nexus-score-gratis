@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T23:50:35.664005+00:00",
+  "checked_at": "2026-11-03T00:23:27.295549+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 19,
-  "created_games": 2,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 17,
+  "created_games": 0,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Defensa y Justicia x Independiente",
-      "league": "arg.1",
-      "kickoff": 1793656800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Galatasaray x VfB Stuttgart",
       "league": "uefa.champions",
@@ -71,6 +65,18 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Deportivo Pereira x Deportes Tolima",
+      "league": "col.1",
+      "kickoff": 1793737800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Deportivo Pasto x Jaguares de Córdoba",
+      "league": "col.1",
+      "kickoff": 1793748000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Chapecoense x Mirassol",
       "league": "bra.1",
       "kickoff": 1793745000,
@@ -83,15 +89,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Deportivo Pereira x Deportes Tolima",
-      "league": "col.1",
-      "kickoff": 1793737800,
+      "fixture": "Benfica x Alverca",
+      "league": "por.1",
+      "kickoff": 1793650500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Deportivo Pasto x Jaguares de Córdoba",
-      "league": "col.1",
-      "kickoff": 1793748000,
+      "fixture": "Gil Vicente x Vitória de Guimaraes",
+      "league": "por.1",
+      "kickoff": 1793650500,
       "reason": "no_verified_public_1x2"
     }
   ],

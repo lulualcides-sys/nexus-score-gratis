@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-02T23:50:40.961546+00:00",
+  "checked_at": "2026-11-03T00:23:30.431819+00:00",
   "horizon_hours": 48,
-  "important_games": 26,
-  "verified_bookmaker_games": 9,
-  "indicative_only_games": 9,
-  "missing_bookmaker_price_games": 8,
+  "important_games": 25,
+  "verified_bookmaker_games": 8,
+  "indicative_only_games": 10,
+  "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 1,
-  "games_with_shots_on_target_stats": 1,
+  "games_with_yellow_cards_stats": 0,
+  "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 7,
-    "indicative": 12,
+    "indicative": 13,
     "new_priority": 9
   },
   "pinnacle_guest": {
@@ -196,7 +196,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.77,
-        "draw": 4.03,
+        "draw": 4.04,
         "away": 2.05
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
@@ -256,7 +256,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.28,
-        "draw": 8.13,
+        "draw": 8.15,
         "away": 10.53
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
@@ -309,9 +309,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.05,
-        "draw": 4.48,
-        "away": 1.89
+        "home": 3.98,
+        "draw": 4.45,
+        "away": 1.91
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
       "tipsaudit_id": "14152",
@@ -370,7 +370,7 @@
       ],
       "fair_odds_modelled": {
         "home": 1.42,
-        "draw": 6.01,
+        "draw": 6.02,
         "away": 7.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
@@ -404,9 +404,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.29,
+        "home": 2.3,
         "draw": 4.3,
-        "away": 3.02
+        "away": 3.0
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -430,9 +430,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.08,
-        "draw": 4.98,
-        "away": 1.66
+        "home": 5.03,
+        "draw": 4.95,
+        "away": 1.67
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -517,8 +517,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.1,
+        "home": 2.01,
+        "draw": 4.05,
         "away": 3.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
@@ -539,11 +539,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.27,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 3.11,
+        "home": 3.13,
         "draw": 4.23,
-        "away": 2.26
+        "away": 2.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14248/lens-vs-como-2026-11-04",
       "tipsaudit_id": "14248",
@@ -551,7 +559,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "PSV Eindhoven",
@@ -631,8 +639,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 11.96,
-        "draw": 6.88,
+        "home": 11.97,
+        "draw": 6.89,
         "away": 1.3
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
@@ -663,7 +671,7 @@
       "fair_odds_modelled": {
         "home": 1.49,
         "draw": 5.43,
-        "away": 6.83
+        "away": 6.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14249/viking-vs-sabah-fa-2026-11-04",
       "tipsaudit_id": "14249",
@@ -672,28 +680,6 @@
         "TipsAudit"
       ],
       "coverage": "indicative_only"
-    },
-    {
-      "home": "Red Bull Bragantino",
-      "away": "Santos",
-      "league": "bra.1",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793660400.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 36,
-      "observed_corner_counts": false,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
     },
     {
       "home": "Chapecoense",
@@ -750,7 +736,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 131,
+      "verified_quotes": 134,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -774,7 +760,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 142,
+      "verified_quotes": 146,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -797,7 +783,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 33,
+      "verified_quotes": 39,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -912,23 +898,6 @@
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lens",
-      "away": "Como",
-      "kickoff_unix": 1793822400.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14248/lens-vs-como-2026-11-04",
-      "tipsaudit_id": "14248",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
       "coverage": "no_bookmaker_price"
     },
     {
