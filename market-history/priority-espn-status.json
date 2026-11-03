@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T13:57:15.319032+00:00",
+  "checked_at": "2026-11-03T15:00:21.390890+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 23,
@@ -10,18 +10,6 @@
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Barcelona x Aston Villa",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Villarreal x Paris Saint-Germain",
-      "league": "uefa.champions",
-      "kickoff": 1793736000,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Chapecoense x Mirassol",
       "league": "bra.1",
