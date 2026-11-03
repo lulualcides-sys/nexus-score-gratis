@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T08:44:57.763847+00:00",
+  "checked_at": "2026-11-03T09:41:49.666397+00:00",
   "horizon_hours": 48,
-  "important_games": 29,
+  "important_games": 33,
   "verified_bookmaker_games": 16,
-  "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 8,
+  "indicative_only_games": 6,
+  "missing_bookmaker_price_games": 11,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -131,7 +131,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.15,
-        "draw": 4.43,
+        "draw": 4.44,
         "away": 3.24
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
@@ -226,16 +226,24 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.32,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.31,
-        "draw": 7.75,
-        "away": 9.29
+        "home": 1.3,
+        "draw": 7.91,
+        "away": 9.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
       "tipsaudit_id": "14150",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Bodo/Glimt",
@@ -262,9 +270,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.77,
-        "draw": 4.46,
-        "away": 4.73
+        "home": 1.75,
+        "draw": 4.5,
+        "away": 4.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
       "tipsaudit_id": "14148",
@@ -311,8 +319,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 1.98,
-          "bookmaker": "Coolbet",
+          "price": 1.97,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
@@ -397,8 +405,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.37,
-        "draw": 6.5,
-        "away": 8.58
+        "draw": 6.51,
+        "away": 8.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
       "tipsaudit_id": "14149",
@@ -422,9 +430,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.27,
-        "draw": 4.19,
-        "away": 3.11
+        "home": 2.26,
+        "draw": 4.16,
+        "away": 3.15
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
       "tipsaudit_id": "14147",
@@ -471,9 +479,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.69,
-        "draw": 4.77,
-        "away": 1.73
+        "home": 4.6,
+        "draw": 4.72,
+        "away": 1.75
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -498,9 +506,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 6.01,
-        "draw": 5.12,
-        "away": 1.57
+        "home": 6.04,
+        "draw": 5.22,
+        "away": 1.56
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14244/fenerbahce-vs-liverpool-2026-11-04",
       "tipsaudit_id": "14244",
@@ -555,7 +563,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.06,
+          "price": 2.05,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -594,9 +602,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.17,
-        "draw": 4.24,
-        "away": 2.23
+        "home": 3.22,
+        "draw": 4.17,
+        "away": 2.22
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14248/lens-vs-como-2026-11-04",
       "tipsaudit_id": "14248",
@@ -644,15 +652,7 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 135,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.6,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 5.75,
         "draw": 5.21,
@@ -686,9 +686,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 12.39,
-        "draw": 7.08,
-        "away": 1.29
+        "home": 12.67,
+        "draw": 7.23,
+        "away": 1.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
       "tipsaudit_id": "14251",
@@ -709,16 +709,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.48,
-          "bookmaker": "Coolbet",
+          "price": 1.47,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.45,
-        "draw": 5.72,
-        "away": 7.3
+        "home": 1.44,
+        "draw": 5.84,
+        "away": 7.37
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14249/viking-vs-sabah-fa-2026-11-04",
       "tipsaudit_id": "14249",
@@ -771,6 +771,94 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "Athletico-PR",
+      "away": "Vasco da Gama",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793831400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Flamengo",
+      "away": "Grêmio",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793831400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Botafogo",
+      "away": "Atlético-MG",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793838600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "São Paulo",
+      "away": "Corinthians",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793838600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Stade Rennais",
@@ -906,28 +994,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Barcelona",
-      "away": "Aston Villa",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
-      "tipsaudit_id": "14150",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Bodø/Glimt",
       "away": "Lille",
       "league": "Champions League",
@@ -978,6 +1044,90 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Athletico-PR",
+      "away": "Vasco da Gama",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793831400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Flamengo",
+      "away": "Grêmio",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793831400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Botafogo",
+      "away": "Atlético-MG",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793838600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "São Paulo",
+      "away": "Corinthians",
+      "league": "Brasileirão Série A",
+      "league_code": "bra.1",
+      "kickoff_unix": 1793838600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,

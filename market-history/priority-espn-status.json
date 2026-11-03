@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T08:44:54.625571+00:00",
+  "checked_at": "2026-11-03T09:41:47.662557+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 14,
-  "created_games": 0,
+  "priority_fixtures_seen": 17,
+  "created_games": 4,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -47,9 +47,27 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Stade Rennais x Olympiacos",
-      "league": "uefa.europa",
-      "kickoff": 1793806200,
+      "fixture": "Athletico-PR x Vasco da Gama",
+      "league": "bra.1",
+      "kickoff": 1793831400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Flamengo x Grêmio",
+      "league": "bra.1",
+      "kickoff": 1793831400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Botafogo x Atlético-MG",
+      "league": "bra.1",
+      "kickoff": 1793838600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "São Paulo x Corinthians",
+      "league": "bra.1",
+      "kickoff": 1793838600,
       "reason": "no_verified_public_1x2"
     }
   ],
