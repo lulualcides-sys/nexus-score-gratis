@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T19:59:27.836463+00:00",
+  "checked_at": "2026-11-03T20:55:02.015557+00:00",
   "horizon_hours": 48,
   "important_games": 35,
   "verified_bookmaker_games": 17,
@@ -11,8 +11,8 @@
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 11,
-    "indicative": 8,
+    "matched": 5,
+    "indicative": 5,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -173,7 +173,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -195,7 +195,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
@@ -206,22 +206,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.33,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.31,
-        "draw": 7.66,
-        "away": 9.68
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
-      "tipsaudit_id": "14150",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -243,13 +231,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.6,
-        "draw": 4.93,
-        "away": 5.75
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
-      "tipsaudit_id": "14148",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -260,7 +244,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -282,7 +266,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -292,13 +276,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 4.08,
-        "draw": 4.26,
-        "away": 1.92
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
-      "tipsaudit_id": "14152",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -330,7 +310,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -363,13 +343,9 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.38,
-        "draw": 6.15,
-        "away": 9.01
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
-      "tipsaudit_id": "14149",
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 135,
       "coverage": "verified_price"
@@ -389,22 +365,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.26,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.15,
-        "draw": 4.43,
-        "away": 3.24
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
-      "tipsaudit_id": "14147",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
     },
@@ -414,7 +378,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob",
         "Pinnacle guest"
@@ -438,7 +402,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN",
         "FotMob",
@@ -449,22 +413,10 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.8,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 4.59,
-        "draw": 4.48,
-        "away": 1.79
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
-      "tipsaudit_id": "14151",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
       "coverage": "verified_price"
@@ -814,7 +766,7 @@
         "ESPN",
         "Pinnacle guest"
       ],
-      "verified_quotes": 146,
+      "verified_quotes": 149,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -837,7 +789,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 12,
+      "verified_quotes": 16,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -969,7 +921,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 31,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -991,7 +943,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 13,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -1055,7 +1007,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -1076,7 +1028,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -1097,7 +1049,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
@@ -1107,8 +1059,8 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
-      "tipsaudit_id": "14152",
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -1118,7 +1070,7 @@
       "league": "Champions League",
       "league_code": "uefa.champions",
       "kickoff_unix": 1793736000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "FotMob"
       ],
