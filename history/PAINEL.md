@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T10:00:33.200634+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T11:00:20.789373+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-03 | Atlético Madrid U19 × Bayern München U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Barcelona U19 × Aston Villa U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Feyenoord U19 × Inter U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Bodø/Glimt U19 × Lille U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Bodø/Glimt U19 × Lille U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | LASK U19 × Slovan Bratislava U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Manchester United U19 × Roma U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Villarreal U19 × Paris Saint Germain U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10614 | **Jogos distintos:** 3083 | **Resultados verificáveis:** 5976 | **Com gol:** 2306 | **Sem gol:** 3670 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1918 indeterminados | 2639 incompletos.
+**Observações:** 10616 | **Jogos distintos:** 3085 | **Resultados verificáveis:** 5976 | **Com gol:** 2306 | **Sem gol:** 3670 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 26 datas com coletas | 83 pendentes | 1918 indeterminados | 2639 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,9 +178,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2082 | 1413 | 561 | 852 | 39.7% |
 | ⚡ pressao_ofensiva_18 | 1663 | 1123 | 414 | 709 | 36.9% |
-| 🎯 chutes_no_alvo_5 | 1760 | 845 | 314 | 531 | 37.2% |
+| 🎯 chutes_no_alvo_5 | 1761 | 845 | 314 | 531 | 37.2% |
 | 🟥 expulsao_confirmada | 1579 | 714 | 249 | 465 | 34.9% |
-| 🚩 escanteios_6 | 1303 | 604 | 246 | 358 | 40.7% |
+| 🚩 escanteios_6 | 1304 | 604 | 246 | 358 | 40.7% |
 | 💣 grandes_chances_3 | 1050 | 561 | 242 | 319 | 43.1% |
 | 🔥 pressao_forte_10min | 579 | 377 | 144 | 233 | 38.2% |
 | 🧨 pressao_total_5_10min | 318 | 202 | 81 | 121 | 40.1% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 279 | 202 | 66 | 136 | 32.7% |
 | 16–30′ | 690 | 517 | 177 | 340 | 34.2% |
-| 31–45′ | 2236 | 1737 | 713 | 1024 | 41.0% |
+| 31–45′ | 2238 | 1737 | 713 | 1024 | 41.0% |
 | 46–60′ | 1387 | 998 | 395 | 603 | 39.6% |
 | 61–75′ | 2190 | 1539 | 582 | 957 | 37.8% |
 | 76–90′ | 2838 | 973 | 369 | 604 | 37.9% |
@@ -262,12 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10614 | **Jogos monitorados:** 1622 | **Ao vivo:** 36 | **Termômetros recentes:** 10.
+**Registros:** 10616 | **Jogos monitorados:** 1622 | **Ao vivo:** 40 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-03T11:00:50.890194+00:00 | Kashiwa Reysol × Daejeon Hana Citizen | Kashiwa Reysol (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T11:00:50.890194+00:00 | Vissel Kobe × Ratchaburi FC | Vissel Kobe (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Shanghai Port (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Newcastle Jets (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-03T09:30:58.687091+00:00 | Newcastle Jets × Shanghai Port | Shanghai Port (88') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -366,8 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T20:52:26.466175+00:00 | Raków Częstochowa × Pogoń Szczecin | Pogoń Szczecin (60') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Jong PSV × NAC Breda | Jong PSV (92') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-02T20:52:26.466175+00:00 | Deportivo A Coruña × Osasuna | Deportivo A Coruña (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Mallorca × Cádiz | Mallorca (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T20:52:26.466175+00:00 | Mallorca × Cádiz | Mallorca (45') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
