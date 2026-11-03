@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T00:23:27.295549+00:00",
+  "checked_at": "2026-11-03T01:40:55.626646+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
+  "priority_fixtures_seen": 15,
   "created_games": 0,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
@@ -86,18 +86,6 @@
       "fixture": "Internacional x Coritiba",
       "league": "bra.1",
       "kickoff": 1793752200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Benfica x Alverca",
-      "league": "por.1",
-      "kickoff": 1793650500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Gil Vicente x Vitória de Guimaraes",
-      "league": "por.1",
-      "kickoff": 1793650500,
       "reason": "no_verified_public_1x2"
     }
   ],
