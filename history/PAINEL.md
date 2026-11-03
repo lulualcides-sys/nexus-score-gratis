@@ -2,33 +2,34 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T01:10:59.742832+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T02:08:29.507993+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-11-03 | Deportes Concepción × Palestino | 1-0 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 2.0×4.0, Escanteios: 1.0×5.0, Grandes chances: 1.0×0.0 |
-| 2026-11-03 | Bucaramanga × Atlético Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Atlético Tucumán × Argentinos Juniors | 0-0 | 27 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×2.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Independiente Rivadavia × Banfield | 2-1 | 28 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Deportes Concepción × Palestino | 1-0 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 3.0×7.0, Escanteios: 3.0×8.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Bucaramanga × Atlético Nacional | 0-1 | 29 | Chutes no alvo: 1.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×0.0, Grandes chances: 2.0×1.0 |
+| 2026-11-03 | Atlético Tucumán × Argentinos Juniors | 0-2 | 72 | Chutes no alvo: 0.0×1.0, Chutes para fora: 5.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Independiente Rivadavia × Banfield | 3-1 | 66 | Chutes no alvo: 2.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-11-03 | Unión Magdalena × Envigado | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | RB Bragantino × Santos | 2-1 | 79 | Chutes no alvo: 5.0×4.0, Chutes para fora: 4.0×6.0, Escanteios: 6.0×4.0, Grandes chances: 2.0×1.0 |
-| 2026-11-03 | Goiás × CRB | 1-0 | 52 | Chutes no alvo: 2.0×3.0, Chutes para fora: 6.0×2.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Club León (W) × Atlético de San Luis (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Goiás × CRB | 1-0 | 90 | Chutes no alvo: 3.0×7.0, Chutes para fora: 8.0×11.0, Escanteios: 4.0×9.0, Grandes chances: 1.0×1.0 |
+| 2026-11-03 | CD Suchitepéquez × Deportivo Malacateco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Club León (W) × Atlético de San Luis (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Albion × Deportivo Maldonado | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-02 | Atlético Tucumán × Argentinos Juniors | 0-2 | 0 | Chutes no alvo: 0.0×1.0; Match Odds 1X2: Casa 2,90, Empate 3,00, Fora 2,60 |
+| 2026-11-02 | Atlético Tucumán × Argentinos Juniors | 1-2 | 0 | Chutes no alvo: 3.0×1.0; Match Odds 1X2: Casa 2,90, Empate 3,00, Fora 2,60 |
 | 2026-11-02 | Platense × Central Córdoba (Santiago del Estero) | 2-0 | 0 | Chutes no alvo: 6.0×2.0; Match Odds 1X2: Casa 1,54, Empate 3,90, Fora 6,50 |
 | 2026-11-02 | Independiente Rivadavia × Banfield | 3-1 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 1,56, Empate 4,10, Fora 5,75 |
 | 2026-11-02 | Defensa y Justicia × Independiente | 1-1 | 0 | Chutes no alvo: 8.0×6.0; Match Odds 1X2: Casa 2,20, Empate 3,20, Fora 3,40 |
 | 2026-11-02 | Red Bull Bragantino × Santos | 2-1 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 2,15, Empate 3,75, Fora 3,05 |
 | 2026-11-02 | Athletic × Ceará | 2-1 | 0 | Chutes no alvo: 5.0×5.0; Match Odds 1X2: Casa 2,40, Empate 3,25, Fora 3,00 |
-| 2026-11-02 | Goiás × CRB | 2-0 | 0 | Chutes no alvo: 3.0×4.0; Match Odds 1X2: Casa 2,45, Empate 3,50, Fora 2,75 |
+| 2026-11-02 | Goiás × CRB | 2-1 | 0 | Chutes no alvo: 3.0×7.0; Match Odds 1X2: Casa 2,45, Empate 3,50, Fora 2,75 |
 | 2026-11-02 | Fortaleza × Atlético Goianiense | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,15, Empate 3,40, Fora 3,30 |
 | 2026-11-02 | Águilas Doradas × Fortaleza CEIF | 1-0 | 0 | Chutes no alvo: 3.0×0.0; Match Odds 1X2: Casa 1,91, Empate 3,20, Fora 3,75 |
-| 2026-11-02 | Atlético Bucaramanga × Atlético Nacional | 0-0 | 0 | Match Odds 1X2: Casa 3,10, Empate 3,20, Fora 2,15 |
+| 2026-11-02 | Atlético Bucaramanga × Atlético Nacional | 0-1 | 0 | Chutes no alvo: 1.0×3.0; Match Odds 1X2: Casa 3,10, Empate 3,20, Fora 2,15 |
 | 2026-11-02 | Newcastle United × Everton | 0-1 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,30, Empate 3,55, Fora 3,05 |
 | 2026-11-02 | Deportivo × Osasuna | 2-1 | 0 | Chutes no alvo: 7.0×2.0; Match Odds 1X2: Casa 2,15, Empate 3,25, Fora 3,55 |
 | 2026-11-02 | Lorient × Brest | 0-2 | 0 | Chutes no alvo: 0.0×4.0; Match Odds 1X2: Casa 2,45, Empate 3,25, Fora 3,05 |
@@ -38,7 +39,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-02 | Deportes Concepción × Palestino | 1-0 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 2.0×7.0, Escanteios: 1.0×6.0, Grandes chances: 1.0×0.0 |
 | 2026-11-02 | Águilas Doradas × Fortaleza FC | 1-0 | 85 | Chutes no alvo: 4.0×0.0, Chutes para fora: 4.0×5.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×2.0 |
 | 2026-11-02 | Independiente Medellín × Alianza FC | 1-1 | 45 | Chutes no alvo: 1.0×2.0, Chutes para fora: 1.0×1.0, Escanteios: 6.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-11-02 | Bucaramanga × Atlético Nacional | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-02 | Bucaramanga × Atlético Nacional | 0-1 | 45 | Chutes no alvo: 1.0×3.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×0.0, Grandes chances: 2.0×2.0 |
 | 2026-11-02 | Santos Laguna × Necaxa | 0-0 | 90 | Chutes no alvo: 3.0×8.0, Chutes para fora: 1.0×7.0, Escanteios: 12.0×6.0, Grandes chances: 2.0×5.0 |
 | 2026-11-02 | Cruz Azul × León | 2-1 | 82 | Chutes no alvo: 4.0×2.0, Chutes para fora: 5.0×5.0, Escanteios: 3.0×5.0, Grandes chances: 3.0×1.0 |
 | 2026-11-02 | Mladost Lučani × FK Radnik Surdulica | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×6.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
@@ -57,8 +58,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-02 | Defensa y Justicia × Independiente | 1-1 | 80 | Chutes no alvo: 6.0×6.0, Chutes para fora: 5.0×2.0, Escanteios: 3.0×5.0, Grandes chances: 1.0×3.0 |
 | 2026-11-02 | Club Atlético Platense × Central Córdoba de Santiago | 2-0 | 87 | Chutes no alvo: 5.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 11.0×6.0, Grandes chances: 2.0×2.0 |
 | 2026-11-02 | Lanús × Gimnasia Mendoza | 1-0 | 90 | Chutes no alvo: 4.0×6.0, Chutes para fora: 7.0×3.0, Escanteios: 4.0×6.0, Grandes chances: 1.0×2.0 |
-| 2026-11-02 | Atlético Tucumán × Argentinos Juniors | 0-2 | 45 | Chutes no alvo: 0.0×1.0, Chutes para fora: 3.0×3.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | Independiente Rivadavia × Banfield | 3-1 | 45 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-11-02 | Atlético Tucumán × Argentinos Juniors | 1-2 | 72 | Chutes no alvo: 0.0×1.0, Chutes para fora: 5.0×4.0, Escanteios: 6.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-02 | Independiente Rivadavia × Banfield | 3-1 | 66 | Chutes no alvo: 2.0×2.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×0.0 |
 | 2026-11-02 | Vancouver Rise FC (W) × Montréal Roses FC (W) | 0-3 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-02 | Orense × Técnico Universitario | 1-1 | 0 | Chutes no alvo: 4.0×5.0, Chutes para fora: 6.0×3.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-11-02 | Universitario de Vinto × Always Ready | 1-3 | 0 | Chutes no alvo: 5.0×8.0, Chutes para fora: 3.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 2.0×3.0 |
@@ -90,7 +91,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-02 | Torpedo Kutaisi × Dila Gori | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Athletic Club MG × Ceará | 2-1 | 87 | Chutes no alvo: 5.0×4.0, Chutes para fora: 10.0×5.0, Escanteios: 4.0×3.0, Grandes chances: 5.0×0.0 |
 | 2026-11-02 | Fortaleza × Atlético-GO | 0-0 | 90 | Chutes no alvo: 1.0×4.0, Chutes para fora: 9.0×9.0, Escanteios: 6.0×7.0, Grandes chances: 0.0×2.0 |
-| 2026-11-02 | Goiás × CRB | 2-0 | 79 | Chutes no alvo: 3.0×4.0, Chutes para fora: 7.0×5.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-11-02 | Goiás × CRB | 2-1 | 79 | Chutes no alvo: 3.0×4.0, Chutes para fora: 7.0×5.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-11-02 | All Boys × Club Atlético Estudiantes | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Atlético Rafaela × Patronato de Parana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Chacarita Juniors × Nueva Chicago | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -139,7 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-02 | Montana × Spartak Pleven | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | Sportist Svoge × Ludogorets Razgrad II | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-02 | UD Tenerife (W) × Athletic Club (W) | 2-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 2.0×5.0, Escanteios: 0.0×6.0, Grandes chances: 0.0×0.0 |
-| 2026-11-02 | SD Huesca × Gimnàstic | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,19 +168,19 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10598 | **Jogos distintos:** 3078 | **Resultados verificáveis:** 5972 | **Com gol:** 2304 | **Sem gol:** 3668 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 25 datas com coletas | 83 pendentes | 1911 indeterminados | 2632 incompletos.
+**Observações:** 10602 | **Jogos distintos:** 3080 | **Resultados verificáveis:** 5974 | **Com gol:** 2304 | **Sem gol:** 3670 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 25 datas com coletas | 82 pendentes | 1914 indeterminados | 2632 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2080 | 1412 | 561 | 851 | 39.7% |
+| 🥶 jogo_frio | 2081 | 1413 | 561 | 852 | 39.7% |
 | ⚡ pressao_ofensiva_18 | 1663 | 1123 | 414 | 709 | 36.9% |
 | 🎯 chutes_no_alvo_5 | 1756 | 845 | 314 | 531 | 37.2% |
-| 🟥 expulsao_confirmada | 1574 | 712 | 247 | 465 | 34.7% |
-| 🚩 escanteios_6 | 1299 | 603 | 246 | 357 | 40.8% |
+| 🟥 expulsao_confirmada | 1575 | 712 | 247 | 465 | 34.7% |
+| 🚩 escanteios_6 | 1301 | 604 | 246 | 358 | 40.7% |
 | 💣 grandes_chances_3 | 1049 | 561 | 242 | 319 | 43.1% |
 | 🔥 pressao_forte_10min | 579 | 377 | 144 | 233 | 38.2% |
 | 🧨 pressao_total_5_10min | 318 | 202 | 81 | 121 | 40.1% |
@@ -224,8 +224,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Premier League | 499 | 303 | 88 | 215 | 29.0% |
 | Major League Soccer | 391 | 210 | 99 | 111 | 47.1% |
 | Serie A | 263 | 181 | 85 | 96 | 47.0% |
+| Liga Profesional | 281 | 178 | 51 | 127 | 28.7% |
 | J. League | 294 | 177 | 82 | 95 | 46.3% |
-| Liga Profesional | 280 | 177 | 51 | 126 | 28.8% |
 | Serie B | 229 | 159 | 56 | 103 | 35.2% |
 | Super League | 290 | 157 | 52 | 105 | 33.1% |
 | Bundesliga | 235 | 145 | 59 | 86 | 40.7% |
@@ -241,10 +241,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Eliteserien | 165 | 107 | 36 | 71 | 33.6% |
 | Liga MX | 206 | 104 | 40 | 64 | 38.5% |
 | Saudi Pro League | 163 | 104 | 49 | 55 | 47.1% |
+| Primera División | 186 | 103 | 36 | 67 | 35.0% |
 | Champions League | 182 | 103 | 66 | 37 | 64.1% |
 | Ekstraklasa | 170 | 103 | 49 | 54 | 47.6% |
-| Primera División | 186 | 102 | 36 | 66 | 35.3% |
-| Primera A | 172 | 101 | 29 | 72 | 28.7% |
+| Primera A | 174 | 101 | 29 | 72 | 28.7% |
 | Liga Portugal | 143 | 101 | 32 | 69 | 31.7% |
 
 ### Faixa de minuto
@@ -253,25 +253,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 279 | 202 | 66 | 136 | 32.7% |
 | 16–30′ | 690 | 517 | 177 | 340 | 34.2% |
-| 31–45′ | 2232 | 1735 | 712 | 1023 | 41.0% |
+| 31–45′ | 2235 | 1736 | 712 | 1024 | 41.0% |
 | 46–60′ | 1383 | 998 | 395 | 603 | 39.6% |
 | 61–75′ | 2190 | 1539 | 582 | 957 | 37.8% |
-| 76–90′ | 2831 | 971 | 368 | 603 | 37.9% |
+| 76–90′ | 2832 | 972 | 368 | 604 | 37.9% |
 | 91+′ | 993 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10598 | **Jogos monitorados:** 1620 | **Ao vivo:** 42 | **Termômetros recentes:** 13.
+**Registros:** 10602 | **Jogos monitorados:** 1620 | **Ao vivo:** 42 | **Termômetros recentes:** 11.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T01:11:28.145204+00:00 | Deportes Concepción × Palestino | Palestino (79') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Independiente Rivadavia × Banfield | Independiente Rivadavia (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-03T01:11:28.145204+00:00 | Goiás × CRB | CRB (80') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T02:09:01.128979+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T02:09:01.128979+00:00 | Bucaramanga × Atlético Nacional | Atlético Nacional (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T02:09:01.128979+00:00 | Bucaramanga × Atlético Nacional | Bucaramanga (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-03T01:45:44.555519+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (45') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T01:11:28.145204+00:00 | Deportes Concepción × Palestino | Palestino (79') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-03T01:11:28.145204+00:00 | Atlético Tucumán × Argentinos Juniors | Atlético Tucumán (45') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-03T01:11:28.145204+00:00 | Independiente Rivadavia × Banfield | Independiente Rivadavia (45') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-03T01:11:28.145204+00:00 | Goiás × CRB | CRB (80') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | janela_incompleta | indisponível |
 | 2026-11-03T00:44:36.199752+00:00 | RB Bragantino × Santos | RB Bragantino (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-03T00:44:36.199752+00:00 | RB Bragantino × Santos | RB Bragantino (80') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-03T00:44:36.199752+00:00 | Goiás × CRB | CRB (53') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
@@ -364,10 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-02T20:28:02.953215+00:00 | Reims × Sochaux | Sochaux (43') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-02T20:28:02.953215+00:00 | Reims × Sochaux | Sochaux (43') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-02T20:28:02.953215+00:00 | Raków Częstochowa × Pogoń Szczecin | Raków Częstochowa (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Jong PSV × NAC Breda | Jong PSV (68') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Universitatea Cluj × FCSB | FCSB (96') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Universitatea Cluj × FCSB | Universitatea Cluj (96') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-02T20:28:02.953215+00:00 | Deportivo A Coruña × Osasuna | Deportivo A Coruña (25') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
