@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T10:42:13.665715+00:00",
+  "checked_at": "2026-11-03T11:38:15.594223+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 26,
-  "created_games": 9,
+  "priority_fixtures_seen": 14,
+  "created_games": 0,
   "new_quotes": 6,
   "summary_checks": 2,
   "summary_with_prices": 2,
@@ -35,81 +35,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "AEK Athens x Real Madrid",
-      "league": "uefa.champions",
-      "kickoff": 1793814300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Fenerbahce x Liverpool",
-      "league": "uefa.champions",
-      "kickoff": 1793814300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Borussia Dortmund x Real Betis",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Porto x Napoli",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lens x Como",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "PSV Eindhoven x Club Brugge",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "RB Leipzig x Manchester City",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Slavia Prague x Arsenal",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Viking FK x Sabah FK",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Athletico-PR x Vasco da Gama",
-      "league": "bra.1",
-      "kickoff": 1793831400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Flamengo x Grêmio",
-      "league": "bra.1",
-      "kickoff": 1793831400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Botafogo x Atlético-MG",
-      "league": "bra.1",
-      "kickoff": 1793838600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "São Paulo x Corinthians",
-      "league": "bra.1",
-      "kickoff": 1793838600,
+      "fixture": "Stade Rennais x Olympiacos",
+      "league": "uefa.europa",
+      "kickoff": 1793806200,
       "reason": "no_verified_public_1x2"
     }
   ],

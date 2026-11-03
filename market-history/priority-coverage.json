@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T10:42:15.489846+00:00",
+  "checked_at": "2026-11-03T11:38:19.243824+00:00",
   "horizon_hours": 48,
   "important_games": 37,
   "verified_bookmaker_games": 17,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 13,
-    "indicative": 12,
+    "indicative": 11,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -154,20 +154,12 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.26,
-          "bookmaker": "BetOnline.ag",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.15,
         "draw": 4.44,
@@ -190,15 +182,15 @@
         "FotMob",
         "Pinnacle guest"
       ],
-      "verified_quotes": 136,
+      "verified_quotes": 139,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.65,
-        "draw": 3.95,
+        "home": 3.66,
+        "draw": 3.94,
         "away": 2.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14136/shakhtar-donetsk-vs-sporting-cp-2026-11-03",
@@ -281,8 +273,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.3,
-        "draw": 7.86,
-        "away": 9.71
+        "draw": 7.84,
+        "away": 9.73
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14150/barcelona-vs-aston-villa-2026-11-03",
       "tipsaudit_id": "14150",
@@ -531,8 +523,8 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.43,
-        "draw": 4.68,
+        "home": 4.39,
+        "draw": 4.72,
         "away": 1.78
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
@@ -842,8 +834,8 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.47,
-          "bookmaker": "GTbets",
+          "price": 1.48,
+          "bookmaker": "BetAnything",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
