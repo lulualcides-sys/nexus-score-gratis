@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T04:26:13.387421+00:00",
+  "checked_at": "2026-11-03T05:26:55.657850+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 15,
-  "created_games": 0,
+  "priority_fixtures_seen": 14,
+  "created_games": 1,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -47,15 +47,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Cúcuta Deportivo x Independiente Santa Fe",
-      "league": "col.1",
-      "kickoff": 1793835000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Millonarios x América de Cali",
-      "league": "col.1",
-      "kickoff": 1793842200,
+      "fixture": "Stade Rennais x Olympiacos",
+      "league": "uefa.europa",
+      "kickoff": 1793806200,
       "reason": "no_verified_public_1x2"
     }
   ],

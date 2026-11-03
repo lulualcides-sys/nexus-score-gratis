@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T04:26:16.013648+00:00",
+  "checked_at": "2026-11-03T05:26:57.437005+00:00",
   "horizon_hours": 48,
-  "important_games": 28,
+  "important_games": 29,
   "verified_bookmaker_games": 15,
   "indicative_only_games": 7,
-  "missing_bookmaker_price_games": 6,
+  "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -132,16 +132,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.27,
-          "bookmaker": "GTbets",
+          "price": 2.23,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.23,
-        "draw": 4.4,
-        "away": 3.08
+        "home": 2.19,
+        "draw": 4.44,
+        "away": 3.14
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14135/galatasaray-vs-vfb-stuttgart-2026-11-03",
       "tipsaudit_id": "14135",
@@ -283,16 +283,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.92,
-          "bookmaker": "1xBet",
+          "price": 1.88,
+          "bookmaker": "Unibet (NL)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.85,
-        "draw": 4.42,
-        "away": 4.3
+        "home": 1.82,
+        "draw": 4.46,
+        "away": 4.39
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14148/bodoglimt-vs-lille-2026-11-03",
       "tipsaudit_id": "14148",
@@ -338,9 +338,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.99,
-        "draw": 4.45,
-        "away": 1.91
+        "home": 3.97,
+        "draw": 4.42,
+        "away": 1.92
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14152/feyenoord-vs-inter-2026-11-03",
       "tipsaudit_id": "14152",
@@ -418,8 +418,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.42,
-        "draw": 6.02,
-        "away": 7.66
+        "draw": 6.0,
+        "away": 7.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14149/lask-linz-vs-slovan-bratislava-2026-11-03",
       "tipsaudit_id": "14149",
@@ -453,7 +453,7 @@
       ],
       "fair_odds_modelled": {
         "home": 2.34,
-        "draw": 4.28,
+        "draw": 4.29,
         "away": 2.95
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14147/manchester-united-vs-as-roma-2026-11-03",
@@ -504,9 +504,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 4.83,
-        "draw": 4.88,
-        "away": 1.7
+        "home": 4.58,
+        "draw": 4.8,
+        "away": 1.74
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14151/villarreal-vs-paris-saint-germain-2026-11-03",
       "tipsaudit_id": "14151",
@@ -677,14 +677,14 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 1.62,
-          "bookmaker": "Unibet (SE)",
+          "price": 1.6,
+          "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.74,
+        "home": 5.75,
         "draw": 5.21,
         "away": 1.58
       },
@@ -799,6 +799,28 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
+    },
+    {
+      "home": "Stade Rennais",
+      "away": "Olympiacos",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "kickoff_unix": 1793806200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Deportivo Pereira",
@@ -962,6 +984,27 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Stade Rennais",
+      "away": "Olympiacos",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "kickoff_unix": 1793806200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
