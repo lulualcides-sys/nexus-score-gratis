@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T18:59:27.207142+00:00",
+  "checked_at": "2026-11-03T19:59:22.288967+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 27,
+  "priority_fixtures_seen": 29,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -104,6 +104,18 @@
       "fixture": "São Paulo x Corinthians",
       "league": "bra.1",
       "kickoff": 1793838600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cúcuta Deportivo x Independiente Santa Fe",
+      "league": "col.1",
+      "kickoff": 1793835000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Millonarios x América de Cali",
+      "league": "col.1",
+      "kickoff": 1793842200,
       "reason": "no_verified_public_1x2"
     }
   ],
