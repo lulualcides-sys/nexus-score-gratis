@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T06:26:48.224707+00:00",
+  "checked_at": "2026-11-03T07:46:13.362106+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 13,
+  "priority_fixtures_seen": 14,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
@@ -44,6 +44,12 @@
       "fixture": "Internacional x Coritiba",
       "league": "bra.1",
       "kickoff": 1793752200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Stade Rennais x Olympiacos",
+      "league": "uefa.europa",
+      "kickoff": 1793806200,
       "reason": "no_verified_public_1x2"
     }
   ],
