@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T22:52:26.822709+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-03T23:46:11.208882+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
@@ -10,9 +10,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
+| 2026-11-04 | Internacional × Coritiba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Internacional × Coritiba | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,95, Fora 5,25 |
-| 2026-11-03 | Chapecoense × Mirassol | 1-0 | 0 | Chutes no alvo: 1.0×1.0; Match Odds 1X2: Casa 3,50, Empate 3,45, Fora 2,05 |
-| 2026-11-03 | Deportivo Pasto × Jaguares de Córdoba | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 3,65, Fora 4,70 |
+| 2026-11-03 | Chapecoense × Mirassol | 1-1 | 0 | Chutes no alvo: 2.0×2.0; Match Odds 1X2: Casa 3,50, Empate 3,45, Fora 2,05 |
+| 2026-11-03 | Deportivo Pasto × Jaguares de Córdoba | 0-0 | 0 | Chutes no alvo: 0.0×2.0; Match Odds 1X2: Casa 1,65, Empate 3,65, Fora 4,70 |
 | 2026-11-03 | Deportivo Pereira × Deportes Tolima | 1-3 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 5,50, Empate 3,95, Fora 1,50 |
 | 2026-11-03 | Feyenoord Rotterdam × Internazionale | 0-3 | 0 | Chutes no alvo: 2.0×6.0; Match Odds 1X2: Casa 3,75, Empate 4,20, Fora 1,87 |
 | 2026-11-03 | Manchester United × AS Roma | 3-2 | 0 | Chutes no alvo: 6.0×4.0; Match Odds 1X2: Casa 2,25, Empate 4,00, Fora 2,80 |
@@ -25,11 +26,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-11-03 | Barcelona × Aston Villa | 3-0 | 0 | Chutes no alvo: 8.0×1.0; Match Odds 1X2: Casa 1,28, Empate 7,00, Fora 8,50 |
 | 2026-11-03 | Deportes Concepción × Palestino | 1-0 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 3.0×7.0, Escanteios: 3.0×8.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Bucaramanga × Atlético Nacional | 1-1 | 53 | Chutes no alvo: 2.0×4.0, Chutes para fora: 5.0×1.0, Escanteios: 7.0×0.0, Grandes chances: 2.0×2.0 |
-| 2026-11-03 | Deportivo Pasto × CD Jaguares | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Deportivo Pasto × CD Jaguares | 0-0 | 23 | Chutes no alvo: 0.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Deportivo Pereira × Tolima | 1-3 | 82 | Chutes no alvo: 4.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 6.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Comerciantes Unidos × Asociación Deportiva Tarma | 2-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×2.0 |
 | 2026-11-03 | Alianza Lima × Cienciano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Nacional × Sportivo San Lorenzo | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 3.0×3.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Nacional × Sportivo San Lorenzo | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 8.0×8.0, Escanteios: 3.0×3.0, Grandes chances: 1.0×2.0 |
 | 2026-11-03 | 2 de Mayo × Sportivo Trinidense | 0-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 7.0×7.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Damac FC × Al Akhdoud | 4-3 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×2.0 |
 | 2026-11-03 | Al-Raed × Al-Wehda | 0-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×2.0 |
@@ -55,14 +56,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-11-03 | Samut Sakhon FC × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Phetchaburi FC × Mahasarakham Sam Bai Tao | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Royal Thai Fleet × Muang Thong United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Monagas SC × Caracas | 0-0 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×8.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 2,48, Empate 3,46, F |
-| 2026-11-03 | Deportivo Táchira × Academia Puerto Cabello | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Monagas SC × Caracas | 0-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×8.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 2,48, Empate 3,46, F |
+| 2026-11-03 | Deportivo Táchira × Academia Puerto Cabello | 1-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×3.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Unión Magdalena × Envigado | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Real Cartagena × Deportes Quindío | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Mamelodi Sundowns FC × Lamontville Golden Arrows | 1-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×3.0, Escanteios: 9.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | RB Bragantino × Santos | 2-1 | 79 | Chutes no alvo: 5.0×4.0, Chutes para fora: 4.0×6.0, Escanteios: 6.0×4.0, Grandes chances: 2.0×1.0 |
 | 2026-11-03 | Internacional × Coritiba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Chapecoense × Mirassol | 1-0 | 18 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-11-03 | Chapecoense × Mirassol | 1-1 | 47 | Chutes no alvo: 2.0×2.0, Chutes para fora: 1.0×3.0, Escanteios: 1.0×2.0, Grandes chances: 1.0×2.0 |
 | 2026-11-03 | Sirius × Halmstads BK | 2-0 | 73 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×4.0, Escanteios: 5.0×4.0, Grandes chances: 3.0×1.0 |
 | 2026-11-03 | Goiás × CRB | 1-0 | 90 | Chutes no alvo: 3.0×7.0, Chutes para fora: 8.0×11.0, Escanteios: 4.0×9.0, Grandes chances: 1.0×1.0 |
 | 2026-11-03 | Jezero × Dečić Tuzi | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -139,7 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **4**.
 | 2026-11-03 | Rotherham United × Newcastle United U21 | 0-1 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 4.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 0.0×1.0 |
 | 2026-11-03 | Rochdale × Doncaster Rovers | 1-4 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 2.0×2.0, Grandes chances: 2.0×1.0 |
 | 2026-11-03 | Newport County × Crystal Palace U21 | 1-2 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-11-03 | Cambridge United × Brighton & Hove Albion U21 | 6-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 1.0×0.0, Escanteios: 7.0×3.0, Grandes chances: 5.0×0.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 10762 | **Jogos distintos:** 3131 | **Resultados verificáveis:** 6056 | **Com gol:** 2332 | **Sem gol:** 3724 | **Taxa observada:** 38.5%.
-**Evolução da amostra:** 26 datas com coletas | 82 pendentes | 1955 indeterminados | 2669 incompletos.
+**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1956 indeterminados | 2669 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,13 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10762 | **Jogos monitorados:** 1622 | **Ao vivo:** 41 | **Termômetros recentes:** 10.
+**Registros:** 10762 | **Jogos monitorados:** 1622 | **Ao vivo:** 42 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-03T22:50:31.258199+00:00 | Chapecoense × Mirassol | Chapecoense (18') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-03T22:50:31.258199+00:00 | Chapecoense × Mirassol | Chapecoense (18') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-03T22:12:37.103151+00:00 | Deportivo Pereira × Tolima | Tolima (83') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-03T22:12:37.103151+00:00 | Deportivo Pereira × Tolima | Tolima (83') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-03T22:12:37.103151+00:00 | Deportivo Pereira × Tolima | Tolima (83') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **155**.
+Jogos com odds registradas nos ultimos dias: **91**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
