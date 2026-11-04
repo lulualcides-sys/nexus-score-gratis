@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T23:17:21.102417+00:00",
+  "checked_at": "2026-11-04T00:09:59.350140+00:00",
   "horizon_hours": 48,
-  "important_games": 22,
-  "verified_bookmaker_games": 11,
+  "important_games": 21,
+  "verified_bookmaker_games": 10,
   "indicative_only_games": 3,
   "missing_bookmaker_price_games": 8,
-  "games_with_corners_stats": 1,
+  "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 1,
   "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
@@ -221,7 +221,7 @@
       "fair_odds_modelled": {
         "home": 1.82,
         "draw": 4.43,
-        "away": 4.42
+        "away": 4.43
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14250/borussia-dortmund-vs-real-betis-2026-11-04",
       "tipsaudit_id": "14250",
@@ -247,9 +247,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.03,
-        "draw": 3.9,
-        "away": 3.97
+        "home": 2.04,
+        "draw": 3.85,
+        "away": 3.99
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
       "tipsaudit_id": "14252",
@@ -333,9 +333,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.11,
-        "draw": 4.63,
-        "away": 3.23
+        "home": 2.08,
+        "draw": 4.64,
+        "away": 3.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14253/psv-eindhoven-vs-club-brugge-kv-2026-11-04",
       "tipsaudit_id": "14253",
@@ -415,8 +415,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 13.92,
-        "draw": 7.5,
+        "home": 13.91,
+        "draw": 7.51,
         "away": 1.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
@@ -445,9 +445,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.44,
-        "draw": 5.87,
-        "away": 7.38
+        "home": 1.43,
+        "draw": 5.93,
+        "away": 7.48
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14249/viking-vs-sabah-fa-2026-11-04",
       "tipsaudit_id": "14249",
@@ -480,28 +480,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Chapecoense",
-      "away": "Mirassol",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1793745000.0,
-      "phase": "live",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 24,
-      "observed_corner_counts": true,
-      "observed_card_counts": true,
-      "observed_shots_on_counts": true,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Internacional",
       "away": "Coritiba",
       "league": "Brasileirão Série A",
@@ -511,7 +489,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 27,
+      "verified_quotes": 34,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -643,14 +621,14 @@
       "league": "Colômbia Primera A",
       "league_code": "col.1",
       "kickoff_unix": 1793748000.0,
-      "phase": "scheduled",
+      "phase": "live",
       "data_sources": [
         "ESPN"
       ],
       "verified_quotes": 38,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
