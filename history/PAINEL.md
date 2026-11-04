@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T05:04:47.169295+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T06:06:27.872621+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 10777 | **Jogos distintos:** 3136 | **Resultados verificáveis:** 6070 | **Com gol:** 2343 | **Sem gol:** 3727 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 27 datas com coletas | 74 pendentes | 1962 indeterminados | 2671 incompletos.
+**Evolução da amostra:** 27 datas com coletas | 67 pendentes | 1969 indeterminados | 2671 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -277,8 +277,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-04T01:42:14.020314+00:00 | Internacional × Coritiba | Internacional (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-04T01:12:36.699133+00:00 | Deportivo Pasto × Jaguares de Córdoba | Deportivo Pasto (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-04T01:12:36.699133+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-04T00:39:59.394219+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (63') | 🥶 jogo_frio · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-04T00:39:59.394219+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (63') | 🚩 escanteios_6 · scout acumulado | pendente | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-04T00:39:59.394219+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (63') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-04T00:39:59.394219+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (63') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-04T00:39:59.394219+00:00 | Deportivo Táchira × Academia Puerto Cabello | Academia Puerto Cabello (45') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T23:59:11.859152+00:00 | Nacional × Sportivo San Lorenzo | Nacional (69') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T23:59:11.859152+00:00 | Chapecoense × Mirassol | Mirassol (61') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
