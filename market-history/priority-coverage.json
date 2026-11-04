@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-04T02:56:48.460006+00:00",
+  "checked_at": "2026-11-04T03:59:08.498152+00:00",
   "horizon_hours": 48,
   "important_games": 19,
   "verified_bookmaker_games": 9,
-  "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 9,
+  "indicative_only_games": 3,
+  "missing_bookmaker_price_games": 7,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
-    "indicative": 2,
+    "indicative": 5,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -33,9 +33,9 @@
   },
   "official_corners_cards": {
     "status": "checked",
-    "priced_games": 0,
-    "verified_corners_quotes": 0,
-    "verified_cards_quotes": 0,
+    "priced_games": 2,
+    "verified_corners_quotes": 68,
+    "verified_cards_quotes": 30,
     "files_checked": 2,
     "liquidity_verified": false
   },
@@ -152,9 +152,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
-      "verified_quotes": 133,
+      "verified_quotes": 195,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -165,6 +166,8 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 133,
+      "official_verified_total_corners_quotes": 42,
+      "official_verified_total_cards_quotes": 20,
       "coverage": "verified_price"
     },
     {
@@ -176,14 +179,23 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "Pinnacle guest"
+        "Pinnacle guest",
+        "The Odds API official free"
       ],
-      "verified_quotes": 135,
+      "verified_quotes": 171,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.53,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
         "home": 6.51,
         "draw": 5.4,
@@ -193,6 +205,8 @@
       "tipsaudit_id": "14244",
       "source_confirmed": "NEXUS or ESPN",
       "pinnacle_guest_quotes": 135,
+      "official_verified_total_corners_quotes": 26,
+      "official_verified_total_cards_quotes": 10,
       "coverage": "verified_price"
     },
     {
@@ -215,7 +229,7 @@
       "fair_odds_modelled": {
         "home": 1.79,
         "draw": 4.47,
-        "away": 4.57
+        "away": 4.58
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14250/borussia-dortmund-vs-real-betis-2026-11-04",
       "tipsaudit_id": "14250",
@@ -242,7 +256,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.04,
-        "draw": 3.84,
+        "draw": 3.85,
         "away": 3.99
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
@@ -317,11 +331,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.13,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
         "home": 2.05,
-        "draw": 4.68,
-        "away": 3.35
+        "draw": 4.67,
+        "away": 3.34
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14253/psv-eindhoven-vs-club-brugge-kv-2026-11-04",
       "tipsaudit_id": "14253",
@@ -329,7 +351,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "RB Leipzig",
@@ -391,7 +413,15 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.27,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
         "home": 13.94,
         "draw": 7.5,
@@ -403,7 +433,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Viking",
@@ -636,40 +666,6 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "PSV Eindhoven",
-      "away": "Club Brugge KV",
-      "kickoff_unix": 1793822400.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14253/psv-eindhoven-vs-club-brugge-kv-2026-11-04",
-      "tipsaudit_id": "14253",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Slavia Praha",
-      "away": "Arsenal",
-      "kickoff_unix": 1793822400.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
-      "tipsaudit_id": "14251",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
       "coverage": "no_bookmaker_price"
     },
     {
