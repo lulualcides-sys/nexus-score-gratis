@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-04T05:03:39.557524+00:00",
+  "checked_at": "2026-11-04T06:05:37.627524+00:00",
   "horizon_hours": 48,
   "important_games": 24,
   "verified_bookmaker_games": 16,
@@ -12,7 +12,7 @@
   "tipsaudit": {
     "status": "checked",
     "matched": 5,
-    "indicative": 5,
+    "indicative": 6,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -165,9 +165,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 6.75,
-        "draw": 5.5,
-        "away": 1.49
+        "home": 7.22,
+        "draw": 5.62,
+        "away": 1.46
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14244/fenerbahce-vs-liverpool-2026-11-04",
       "tipsaudit_id": "14244",
@@ -203,9 +203,9 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.78,
-        "draw": 4.49,
-        "away": 4.62
+        "home": 1.77,
+        "draw": 4.53,
+        "away": 4.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14250/borussia-dortmund-vs-real-betis-2026-11-04",
       "tipsaudit_id": "14250",
@@ -230,11 +230,19 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.0,
+          "bookmaker": "Coolbet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 3.91,
-        "away": 4.09
+        "home": 1.94,
+        "draw": 3.98,
+        "away": 4.29
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14252/fc-porto-vs-napoli-2026-11-04",
       "tipsaudit_id": "14252",
@@ -262,16 +270,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.2,
+          "price": 2.12,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.42,
-        "draw": 4.21,
-        "away": 2.13
+        "home": 3.79,
+        "draw": 4.22,
+        "away": 2.0
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14248/lens-vs-como-2026-11-04",
       "tipsaudit_id": "14248",
@@ -313,16 +321,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 2.1,
-          "bookmaker": "Unibet (NL)",
+          "price": 2.04,
+          "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.02,
-        "draw": 4.7,
-        "away": 3.42
+        "home": 2.01,
+        "draw": 4.63,
+        "away": 3.48
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14253/psv-eindhoven-vs-club-brugge-kv-2026-11-04",
       "tipsaudit_id": "14253",
@@ -352,8 +360,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 5.64,
-        "draw": 5.31,
-        "away": 1.58
+        "draw": 5.32,
+        "away": 1.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14254/rb-leipzig-vs-manchester-city-2026-11-04",
       "tipsaudit_id": "14254",
@@ -396,9 +404,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 13.7,
-        "draw": 7.21,
-        "away": 1.27
+        "home": 13.59,
+        "draw": 6.95,
+        "away": 1.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14251/slavia-praha-vs-arsenal-2026-11-04",
       "tipsaudit_id": "14251",
