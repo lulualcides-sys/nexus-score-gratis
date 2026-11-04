@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T09:02:28.645364+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T17:14:11.108784+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **13**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -40,32 +40,32 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-04 | Al-Gharafa II × Umm Salal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Al-Bidda SC × Muaither SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Al-Shamal II × Al Mesaimeer | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | AEK Athens U19 × Real Madrid U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Fenerbahçe U19 × Liverpool U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Borussia Dortmund U19 × Real Betis U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | FC Porto U19 × SSC Napoli U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | PSV Eindhoven U19 × Club Brugge U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | RB Leipzig U19 × Manchester City U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Lens U19 × Como U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Slavia Prague U19 × Arsenal U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Viking U19 × Sabah FK U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | FK Crvena Zvezda U19 × NK Bravo U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Chelsea U19 × Flora Tallinn U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | AEK Athens U19 × Real Madrid U19 | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Fenerbahçe U19 × Liverpool U19 | 3-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Borussia Dortmund U19 × Real Betis U19 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | FC Porto U19 × SSC Napoli U19 | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | PSV Eindhoven U19 × Club Brugge U19 | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | RB Leipzig U19 × Manchester City U19 | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Lens U19 × Como U19 | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Slavia Prague U19 × Arsenal U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Viking U19 × Sabah FK U19 | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | FK Crvena Zvezda U19 × NK Bravo U19 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Chelsea U19 × Flora Tallinn U19 | 2-3 | 0 | Chutes no alvo: 4.0×4.0, Chutes para fora: 5.0×2.0, Escanteios: 4.0×1.0, Grandes chances: 2.0×4.0 |
 | 2026-11-04 | Žalgiris Vilnius U19 × St. Patrick's Athletic U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Cardiff Met FC U19 × Stabæk U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | PAOK Thessaloniki FC U19 × Zrinjski Mostar U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | PAOK Thessaloniki FC U19 × Zrinjski Mostar U19 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Hradec Králové U19 × Partizani U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | FC Sheriff U19 × FCV Farul Constanța U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | FC Sheriff U19 × FCV Farul Constanța U19 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Clermont Foot U19 × Legia Warszawa U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | SK Super Nova U19 × Hammarby U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Rangers U19 × Dynamo Kyiv U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Žilina U19 × HJK U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | FC København U19 × Dinamo Tbilisi U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Septemvri Sofia U19 × Fiorentina U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Kairat Almaty U19 × MTK Budapest U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Hoffenheim U19 × AP Brera Strumica U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Pafos FC U19 × Benfica U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Dinamo Zagreb U19 × Qarabağ FK U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | FC København U19 × Dinamo Tbilisi U19 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Septemvri Sofia U19 × Fiorentina U19 | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Kairat Almaty U19 × MTK Budapest U19 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Hoffenheim U19 × AP Brera Strumica U19 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Pafos FC U19 × Benfica U19 | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Dinamo Zagreb U19 × Qarabağ FK U19 | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Chiangmai FC × Pattaya Dolphins United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Padriew City × Songkhla United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Pluak Daeng United × PT Satun FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -78,8 +78,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-04 | Portuguesa FC × Deportivo La Guaira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Metropolitanos FC × Carabobo FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Deportivo Táchira × Academia Puerto Cabello | 1-1 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 2.0×11.0, Escanteios: 3.0×10.0, Grandes chances: 0.0×0.0 |
-| 2026-11-04 | Masar (W) × FUS Rabat (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Lekie (W) × Mamelodi Sundowns (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Masar (W) × FUS Rabat (W) | 3-0 | 0 | Chutes no alvo: 5.0×4.0, Chutes para fora: 3.0×14.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×0.0 |
+| 2026-11-04 | Lekie (W) × Mamelodi Sundowns (W) | 1-2 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 8.0×9.0, Escanteios: 1.0×8.0, Grandes chances: 0.0×0.0 |
 | 2026-11-04 | Real Cartagena × Deportes Quindío | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Tlaxcala FC × Atlético La Paz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Venados FC × Atlético Morelia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -96,24 +96,25 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-04 | Wrexham × Middlesbrough | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Oxford United × Reading | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Espanyol B × Náxara | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Szeged-Csanád Grosics Akademia × BVSC Zugló | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Artis Brno × Bohemians 1905 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Szeged-Csanád Grosics Akademia × BVSC Zugló | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Artis Brno × Bohemians 1905 | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-11-04 | Escorpiones × LD Alajuelense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Firpo × Alianza FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Municipal Limeno × Fuerte San Francisco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | FC Osaka × Roasso Kumamoto | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | MC Alger × MC Oran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | ZED FC × Tala'ea El Gaish | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Al Masry SC × Petrojet-Suez | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Pohang Steelers × Gamba Osaka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Buriram United × Kashima Antlers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Pohang Steelers × Gamba Osaka | 3-3 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 3.0×5.0, Escanteios: 1.0×4.0, Grandes chances: 2.0×2.0 |
+| 2026-11-04 | Buriram United × Kashima Antlers | 0-0 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 3.0×10.0, Escanteios: 2.0×11.0, Grandes chances: 0.0×1.0 |
 | 2026-11-04 | Kuwait SC × Nasaf Qarshi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Al-Wahda × Al Khalidiyah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Al-Rayyan × Al-Nahda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Al-Wahda × Al Khalidiyah | 0-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 5.0×5.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×1.0 |
+| 2026-11-04 | Al-Rayyan × Al-Nahda | 0-0 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×0.0 |
 | 2026-11-04 | Al-Taawoun × Al-Faisaly | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Arkadag × Gol Gohar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Arkadag × Gol Gohar | 1-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 6.0×3.0, Escanteios: 8.0×4.0, Grandes chances: 3.0×1.0 |
 | 2026-11-04 | Muharraq × Al-Jazira | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | FC Seoul × Viettel | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Enugu Rangers × Bendel Insurance | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | FC Seoul × Viettel | 3-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-04 | Enugu Rangers × Bendel Insurance | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Borussia Dortmund × Real Betis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | FC Porto × Napoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | PSV Eindhoven × Club Brugge | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -123,14 +124,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-04 | AEK Athens × Real Madrid | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Lens × Como | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Viking × Sabah FK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Rennes × Olympiacos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Melbourne Victory × Persib Bandung | 0-0 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 4.0×4.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-04 | Rennes × Olympiacos | 0-0 | 84 | Chutes no alvo: 3.0×2.0, Chutes para fora: 4.0×8.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×2.0 |
+| 2026-11-04 | Melbourne Victory × Persib Bandung | 1-2 | 0 | Chutes no alvo: 0.0×5.0, Chutes para fora: 8.0×6.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×2.0 |
 | 2026-11-04 | FAR Rabat × Raja Casablanca | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Unión La Calera × Coquimbo Unido | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Olancho FC × Lobos UPNFM | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Estrella Roja × FC Motagua | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | CD Olimpia × Juticalpa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Doxa Katokopia × Olympiakos Nicosia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Doxa Katokopia × Olympiakos Nicosia | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | SD Amorebieta × Logroñés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | CD Badajoz × Tenerife | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Deportiva Minera × Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -139,7 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-04 | Reus × Barakaldo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Utebo × Sabadell | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-04 | Levante (W) × Eibar (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Osasuna (W) × Logroño United (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10777 | **Jogos distintos:** 3136 | **Resultados verificáveis:** 6070 | **Com gol:** 2343 | **Sem gol:** 3727 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 27 datas com coletas | 74 pendentes | 1962 indeterminados | 2671 incompletos.
+**Observações:** 10778 | **Jogos distintos:** 3137 | **Resultados verificáveis:** 6070 | **Com gol:** 2343 | **Sem gol:** 3727 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 27 datas com coletas | 74 pendentes | 1962 indeterminados | 2672 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,7 +178,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2111 | 1432 | 569 | 863 | 39.7% |
 | ⚡ pressao_ofensiva_18 | 1692 | 1143 | 420 | 723 | 36.7% |
-| 🎯 chutes_no_alvo_5 | 1792 | 860 | 321 | 539 | 37.3% |
+| 🎯 chutes_no_alvo_5 | 1793 | 860 | 321 | 539 | 37.3% |
 | 🟥 expulsao_confirmada | 1602 | 727 | 252 | 475 | 34.7% |
 | 🚩 escanteios_6 | 1321 | 613 | 252 | 361 | 41.1% |
 | 💣 grandes_chances_3 | 1068 | 572 | 247 | 325 | 43.2% |
@@ -257,17 +257,18 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 46–60′ | 1416 | 1015 | 399 | 616 | 39.3% |
 | 61–75′ | 2229 | 1568 | 592 | 976 | 37.8% |
 | 76–90′ | 2860 | 974 | 370 | 604 | 38.0% |
-| 91+′ | 1005 | 10 | 4 | 6 | 40.0% |
+| 91+′ | 1006 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10777 | **Jogos monitorados:** 1017 | **Ao vivo:** 32 | **Termômetros recentes:** 9.
+**Registros:** 10778 | **Jogos monitorados:** 1018 | **Ao vivo:** 42 | **Termômetros recentes:** 9.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-04T09:37:50.601215+00:00 | Melbourne Victory × Persib Bandung | Persib Bandung (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-04T04:00:11.153621+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (63') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-04T04:00:11.153621+00:00 | Deportivo Táchira × Academia Puerto Cabello | Deportivo Táchira (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-04T04:00:11.153621+00:00 | Deportivo Táchira × Academia Puerto Cabello | Academia Puerto Cabello (45') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-03T20:54:38.426883+00:00 | Villarreal × Paris Saint-Germain | Paris Saint-Germain (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T20:54:38.426883+00:00 | LASK × Slovan Bratislava | LASK (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T20:54:38.426883+00:00 | LASK × Slovan Bratislava | LASK (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-03T20:13:20.880856+00:00 | Blackburn Rovers × Stoke City | Blackburn Rovers (28') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
