@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-03T22:01:12.476056+00:00",
-  "bookmaker_snapshot_at": "2026-11-03T22:01:10.654812+00:00",
+  "checked_at": "2026-11-04T01:25:47.622652+00:00",
+  "bookmaker_snapshot_at": "2026-11-04T01:25:45.518758+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1740,
+  "odds_eligible_for_quality": 1742,
   "invalid_quote_records": 0,
-  "complete_market_lines": 854,
+  "complete_market_lines": 855,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 412,
-      "complete_lines": 206,
+      "odds": 406,
+      "complete_lines": 203,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 4.77
     },
     "first_half_goals": {
       "games": 16,
       "odds": 254,
       "complete_lines": 127,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.53
+      "median_overround_pct": 6.47
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 202,
-      "complete_lines": 101,
+      "odds": 198,
+      "complete_lines": 99,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.61
+      "median_overround_pct": 5.2
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.34
+      "median_overround_pct": 5.26
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.53
+      "median_overround_pct": 4.19
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.81
+      "median_overround_pct": 3.54
     },
     "team_goals": {
       "games": 16,
-      "odds": 222,
-      "complete_lines": 111,
+      "odds": 228,
+      "complete_lines": 114,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.71
+      "median_overround_pct": 5.52
     },
     "total_goals": {
       "games": 16,
-      "odds": 490,
-      "complete_lines": 245,
+      "odds": 496,
+      "complete_lines": 248,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.34
+      "median_overround_pct": 5.27
     }
   },
   "examples": [
     {
-      "fixture": "Borussia Dortmund x Real Betis",
+      "fixture": "AEK Athens x Real Madrid",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-03T22:01:10.654812+00:00",
+      "observed_at": "2026-11-04T01:25:45.518758+00:00",
       "selections": {
-        "home": 1.7874,
-        "away": 4.23,
-        "draw": 4.23
+        "home": 11.77,
+        "away": 1.2141,
+        "draw": 7.61
       },
-      "overround_pct": 3.23
+      "overround_pct": 4.0
     },
     {
-      "fixture": "Borussia Dortmund x Real Betis",
+      "fixture": "AEK Athens x Real Madrid",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-03T22:01:10.654812+00:00",
+      "raw_market_key": "s;0;s;2.0",
+      "line_from_market_key": "s;0;s;2.0",
+      "observed_at": "2026-11-04T01:25:45.518758+00:00",
       "selections": {
-        "home": 2.0,
-        "away": 1.9091
+        "home": 1.9259,
+        "away": 1.9615
       },
-      "overround_pct": 2.38
+      "overround_pct": 2.91
     },
     {
-      "fixture": "Borussia Dortmund x Real Betis",
+      "fixture": "AEK Athens x Real Madrid",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-11-03T22:01:10.654812+00:00",
+      "raw_market_key": "s;0;s;1.0",
+      "line_from_market_key": "s;0;s;1.0",
+      "observed_at": "2026-11-04T01:25:45.518758+00:00",
       "selections": {
-        "home": 3.59,
-        "away": 1.3003
+        "home": 3.82,
+        "away": 1.2732
       },
-      "overround_pct": 4.76
+      "overround_pct": 4.72
     },
     {
-      "fixture": "Borussia Dortmund x Real Betis",
+      "fixture": "AEK Athens x Real Madrid",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-11-03T22:01:10.654812+00:00",
+      "raw_market_key": "s;0;s;1.25",
+      "line_from_market_key": "s;0;s;1.25",
+      "observed_at": "2026-11-04T01:25:45.518758+00:00",
       "selections": {
-        "home": 2.94,
-        "away": 1.4132
+        "home": 2.88,
+        "away": 1.4274
+      },
+      "overround_pct": 4.78
+    },
+    {
+      "fixture": "AEK Athens x Real Madrid",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;1.5",
+      "line_from_market_key": "s;0;s;1.5",
+      "observed_at": "2026-11-04T01:25:45.518758+00:00",
+      "selections": {
+        "home": 2.4,
+        "away": 1.5848
       },
       "overround_pct": 4.77
-    },
-    {
-      "fixture": "Borussia Dortmund x Real Betis",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-03T22:01:10.654812+00:00",
-      "selections": {
-        "home": 2.62,
-        "away": 1.5
-      },
-      "overround_pct": 4.83
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
