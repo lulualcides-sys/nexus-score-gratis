@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T02:06:43.892018+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-04T02:57:58.354527+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -11,12 +11,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-11-04 | Deportivo Pasto × CD Jaguares | 0-0 | 90 | Chutes no alvo: 6.0×4.0, Chutes para fora: 7.0×3.0, Escanteios: 9.0×0.0, Grandes chances: 1.0×0.0 |
-| 2026-11-04 | Alianza Lima × Cienciano | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-04 | Alianza Lima × Cienciano | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-04 | Deportivo Táchira × Academia Puerto Cabello | 1-1 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 2.0×11.0, Escanteios: 3.0×10.0, Grandes chances: 0.0×0.0 |
-| 2026-11-04 | Real Cartagena × Deportes Quindío | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-04 | Internacional × Coritiba | 0-0 | 46 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×1.0 |
-| 2026-11-04 | Sporting FC × Municipal Pérez Zeledón | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Internacional × Coritiba | 0-0 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 1,65, Empate 3,95, Fora 5,25 |
+| 2026-11-04 | Real Cartagena × Deportes Quindío | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-04 | Internacional × Coritiba | 0-0 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 8.0×4.0, Escanteios: 15.0×2.0, Grandes chances: 1.0×1.0 |
+| 2026-11-04 | Sporting FC × Municipal Pérez Zeledón | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Internacional × Coritiba | 1-0 | 0 | Chutes no alvo: 6.0×1.0; Match Odds 1X2: Casa 1,65, Empate 3,95, Fora 5,25 |
 | 2026-11-03 | Chapecoense × Mirassol | 1-2 | 0 | Chutes no alvo: 4.0×4.0; Match Odds 1X2: Casa 3,50, Empate 3,45, Fora 2,05 |
 | 2026-11-03 | Deportivo Pasto × Jaguares de Córdoba | 2-0 | 0 | Chutes no alvo: 6.0×4.0; Match Odds 1X2: Casa 1,65, Empate 3,65, Fora 4,70 |
 | 2026-11-03 | Deportivo Pereira × Deportes Tolima | 1-3 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 5,50, Empate 3,95, Fora 1,50 |
@@ -34,7 +34,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-03 | Deportivo Pasto × CD Jaguares | 2-0 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 6.0×3.0, Escanteios: 9.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Deportivo Pereira × Tolima | 1-3 | 82 | Chutes no alvo: 4.0×5.0, Chutes para fora: 3.0×6.0, Escanteios: 6.0×1.0, Grandes chances: 1.0×0.0 |
 | 2026-11-03 | Comerciantes Unidos × Asociación Deportiva Tarma | 2-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×2.0 |
-| 2026-11-03 | Alianza Lima × Cienciano | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-03 | Alianza Lima × Cienciano | 1-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Nacional × Sportivo San Lorenzo | 0-2 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 8.0×8.0, Escanteios: 5.0×3.0, Grandes chances: 1.0×2.0 |
 | 2026-11-03 | 2 de Mayo × Sportivo Trinidense | 0-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 7.0×7.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Damac FC × Al Akhdoud | 4-3 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×2.0 |
@@ -64,10 +64,10 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-03 | Monagas SC × Caracas | 0-2 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 5.0×8.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 2,48, Empate 3,46, F |
 | 2026-11-03 | Deportivo Táchira × Academia Puerto Cabello | 3-2 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×8.0, Escanteios: 3.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | Unión Magdalena × Envigado | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-03 | Real Cartagena × Deportes Quindío | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-03 | Real Cartagena × Deportes Quindío | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-03 | Mamelodi Sundowns FC × Lamontville Golden Arrows | 1-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 9.0×3.0, Escanteios: 9.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-03 | RB Bragantino × Santos | 2-1 | 79 | Chutes no alvo: 5.0×4.0, Chutes para fora: 4.0×6.0, Escanteios: 6.0×4.0, Grandes chances: 2.0×1.0 |
-| 2026-11-03 | Internacional × Coritiba | 0-0 | 46 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-11-03 | Internacional × Coritiba | 1-0 | 90 | Chutes no alvo: 5.0×1.0, Chutes para fora: 8.0×4.0, Escanteios: 15.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-11-03 | Chapecoense × Mirassol | 1-2 | 60 | Chutes no alvo: 2.0×4.0, Chutes para fora: 2.0×5.0, Escanteios: 1.0×4.0, Grandes chances: 1.0×3.0 |
 | 2026-11-03 | Sirius × Halmstads BK | 2-0 | 73 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×4.0, Escanteios: 5.0×4.0, Grandes chances: 3.0×1.0 |
 | 2026-11-03 | Goiás × CRB | 1-0 | 90 | Chutes no alvo: 3.0×7.0, Chutes para fora: 8.0×11.0, Escanteios: 4.0×9.0, Grandes chances: 1.0×1.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 10771 | **Jogos distintos:** 3136 | **Resultados verificáveis:** 6067 | **Com gol:** 2340 | **Sem gol:** 3727 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1952 indeterminados | 2671 incompletos.
+**Observações:** 10774 | **Jogos distintos:** 3136 | **Resultados verificáveis:** 6067 | **Com gol:** 2340 | **Sem gol:** 3727 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 26 datas com coletas | 81 pendentes | 1955 indeterminados | 2671 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2111 | 1432 | 569 | 863 | 39.7% |
-| ⚡ pressao_ofensiva_18 | 1690 | 1142 | 419 | 723 | 36.7% |
-| 🎯 chutes_no_alvo_5 | 1790 | 859 | 320 | 539 | 37.3% |
+| ⚡ pressao_ofensiva_18 | 1691 | 1142 | 419 | 723 | 36.7% |
+| 🎯 chutes_no_alvo_5 | 1791 | 859 | 320 | 539 | 37.3% |
 | 🟥 expulsao_confirmada | 1601 | 726 | 251 | 475 | 34.6% |
-| 🚩 escanteios_6 | 1320 | 613 | 252 | 361 | 41.1% |
+| 🚩 escanteios_6 | 1321 | 613 | 252 | 361 | 41.1% |
 | 💣 grandes_chances_3 | 1068 | 572 | 247 | 325 | 43.2% |
 | 🔥 pressao_forte_10min | 587 | 381 | 145 | 236 | 38.1% |
 | 🧨 pressao_total_5_10min | 323 | 205 | 82 | 123 | 40.0% |
@@ -232,7 +232,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Ligue 1 | 201 | 139 | 59 | 80 | 42.4% |
 | Champions League | 223 | 130 | 81 | 49 | 62.3% |
 | LaLiga2 | 223 | 128 | 52 | 76 | 40.6% |
-| Série A | 209 | 128 | 46 | 82 | 35.9% |
+| Série A | 212 | 128 | 46 | 82 | 35.9% |
 | LaLiga | 197 | 127 | 47 | 80 | 37.0% |
 | League One | 226 | 125 | 42 | 83 | 33.6% |
 | Super Lig | 161 | 117 | 47 | 70 | 40.2% |
@@ -255,19 +255,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 16–30′ | 702 | 523 | 179 | 344 | 34.2% |
 | 31–45′ | 2272 | 1766 | 729 | 1037 | 41.3% |
 | 46–60′ | 1416 | 1015 | 399 | 616 | 39.3% |
-| 61–75′ | 2225 | 1567 | 591 | 976 | 37.7% |
+| 61–75′ | 2228 | 1567 | 591 | 976 | 37.7% |
 | 76–90′ | 2860 | 974 | 370 | 604 | 38.0% |
 | 91+′ | 1005 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 10771 | **Jogos monitorados:** 1622 | **Ao vivo:** 41 | **Termômetros recentes:** 10.
+**Registros:** 10774 | **Jogos monitorados:** 1622 | **Ao vivo:** 38 | **Termômetros recentes:** 10.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-04T02:26:56.351714+00:00 | Internacional × Coritiba | Internacional (72') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-04T02:26:56.351714+00:00 | Internacional × Coritiba | Internacional (72') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-04T02:26:56.351714+00:00 | Internacional × Coritiba | Internacional (72') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-04T01:42:14.020314+00:00 | Internacional × Coritiba | Internacional (41') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-04T01:12:36.699133+00:00 | Deportivo Pasto × Jaguares de Córdoba | Deportivo Pasto (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-04T01:12:36.699133+00:00 | Deportivo Pasto × CD Jaguares | Deportivo Pasto (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-03T20:13:20.880856+00:00 | Derby County × Norwich City | Norwich City (28') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-03T20:13:20.880856+00:00 | Portsmouth × Swansea City | Portsmouth (28') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-03T20:13:20.880856+00:00 | Preston North End × Sheffield United | Sheffield United (28') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-03T20:13:20.880856+00:00 | Huddersfield Town × Luton Town | Huddersfield Town (28') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
-| 2026-11-03T20:13:20.880856+00:00 | Wigan Athletic × Mansfield Town | Mansfield Town (26') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-03T20:13:20.880856+00:00 | Wigan Athletic × Mansfield Town | Mansfield Town (26') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
