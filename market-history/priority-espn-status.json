@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-04T10:43:41.092752+00:00",
+  "checked_at": "2026-11-04T18:17:44.908167+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 18,
+  "priority_fixtures_seen": 15,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -11,21 +11,15 @@
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Borussia Dortmund x Real Betis",
+      "fixture": "AEK Athens x Real Madrid",
       "league": "uefa.champions",
-      "kickoff": 1793822400,
+      "kickoff": 1793814300,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "FC Porto x Napoli",
+      "fixture": "Fenerbahce x Liverpool",
       "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lens x Como",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
+      "kickoff": 1793814300,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -68,18 +62,6 @@
       "fixture": "Millonarios x América de Cali",
       "league": "col.1",
       "kickoff": 1793842200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Palmeiras x Remo",
-      "league": "bra.1",
-      "kickoff": 1793917800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cruzeiro x Bahia",
-      "league": "bra.1",
-      "kickoff": 1793925000,
       "reason": "no_verified_public_1x2"
     }
   ],
