@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-04T03:59:06.490019+00:00",
+  "checked_at": "2026-11-04T05:03:37.299495+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 16,
-  "created_games": 0,
+  "priority_fixtures_seen": 18,
+  "created_games": 2,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -65,18 +65,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Viking FK x Sabah FK",
-      "league": "uefa.champions",
-      "kickoff": 1793822400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Athletico-PR x Vasco da Gama",
-      "league": "bra.1",
-      "kickoff": 1793831400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Flamengo x Grêmio",
       "league": "bra.1",
       "kickoff": 1793831400,
@@ -95,15 +83,21 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Cúcuta Deportivo x Independiente Santa Fe",
-      "league": "col.1",
-      "kickoff": 1793835000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Millonarios x América de Cali",
       "league": "col.1",
       "kickoff": 1793842200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Palmeiras x Remo",
+      "league": "bra.1",
+      "kickoff": 1793917800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cruzeiro x Bahia",
+      "league": "bra.1",
+      "kickoff": 1793925000,
       "reason": "no_verified_public_1x2"
     }
   ],
