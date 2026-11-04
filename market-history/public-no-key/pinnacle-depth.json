@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-04T04:13:45.320262+00:00",
-  "bookmaker_snapshot_at": "2026-11-04T04:13:43.403036+00:00",
+  "checked_at": "2026-11-04T07:36:30.211712+00:00",
+  "bookmaker_snapshot_at": "2026-11-04T07:36:27.782378+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1734,
+  "odds_eligible_for_quality": 1402,
   "invalid_quote_records": 0,
-  "complete_market_lines": 851,
+  "complete_market_lines": 685,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 408,
-      "complete_lines": 204,
+      "odds": 342,
+      "complete_lines": 171,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.84
+      "median_overround_pct": 4.58
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 254,
-      "complete_lines": 127,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.54
+      "median_overround_pct": 6.13
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 202,
-      "complete_lines": 101,
+      "odds": 176,
+      "complete_lines": 88,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.65
+      "median_overround_pct": 5.24
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.23
+      "median_overround_pct": 5.98
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.36
+      "median_overround_pct": 5.46
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.64
+      "median_overround_pct": 4.74
     },
     "team_goals": {
       "games": 16,
-      "odds": 220,
-      "complete_lines": 110,
+      "odds": 174,
+      "complete_lines": 87,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.59
+      "median_overround_pct": 5.33
     },
     "total_goals": {
       "games": 16,
-      "odds": 490,
-      "complete_lines": 245,
+      "odds": 356,
+      "complete_lines": 178,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.35
+      "median_overround_pct": 4.99
     }
   },
   "examples": [
     {
-      "fixture": "Slavia Prague x Arsenal",
+      "fixture": "Palmeiras x Remo",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-04T04:13:43.403036+00:00",
+      "observed_at": "2026-11-04T07:36:27.782378+00:00",
       "selections": {
-        "home": 11.87,
-        "away": 1.2415,
-        "draw": 6.64
+        "home": 1.2151,
+        "away": 12.52,
+        "draw": 6.89
       },
-      "overround_pct": 4.03
+      "overround_pct": 4.8
     },
     {
-      "fixture": "Slavia Prague x Arsenal",
+      "fixture": "Palmeiras x Remo",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;1.75",
-      "line_from_market_key": "s;0;s;1.75",
-      "observed_at": "2026-11-04T04:13:43.403036+00:00",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-11-04T07:36:27.782378+00:00",
       "selections": {
-        "home": 1.9615,
-        "away": 1.9259
+        "home": 1.8772,
+        "away": 1.9804
       },
-      "overround_pct": 2.91
+      "overround_pct": 3.77
     },
     {
-      "fixture": "Slavia Prague x Arsenal",
+      "fixture": "Palmeiras x Remo",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.75",
-      "line_from_market_key": "s;0;s;0.75",
-      "observed_at": "2026-11-04T04:13:43.403036+00:00",
+      "raw_market_key": "s;0;s;-2.75",
+      "line_from_market_key": "s;0;s;-2.75",
+      "observed_at": "2026-11-04T07:36:27.782378+00:00",
       "selections": {
-        "home": 3.85,
-        "away": 1.2632
+        "home": 3.37,
+        "away": 1.3279
       },
-      "overround_pct": 5.14
+      "overround_pct": 4.98
     },
     {
-      "fixture": "Slavia Prague x Arsenal",
+      "fixture": "Palmeiras x Remo",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;1.0",
-      "line_from_market_key": "s;0;s;1.0",
-      "observed_at": "2026-11-04T04:13:43.403036+00:00",
+      "raw_market_key": "s;0;s;-2.5",
+      "line_from_market_key": "s;0;s;-2.5",
+      "observed_at": "2026-11-04T07:36:27.782378+00:00",
       "selections": {
-        "home": 3.4,
-        "away": 1.3195
+        "home": 2.78,
+        "away": 1.4484
       },
-      "overround_pct": 5.2
+      "overround_pct": 5.01
     },
     {
-      "fixture": "Slavia Prague x Arsenal",
+      "fixture": "Palmeiras x Remo",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;1.25",
-      "line_from_market_key": "s;0;s;1.25",
-      "observed_at": "2026-11-04T04:13:43.403036+00:00",
+      "raw_market_key": "s;0;s;-2.25",
+      "line_from_market_key": "s;0;s;-2.25",
+      "observed_at": "2026-11-04T07:36:27.782378+00:00",
       "selections": {
-        "home": 2.58,
-        "away": 1.5025
+        "home": 2.48,
+        "away": 1.5556
       },
-      "overround_pct": 5.32
+      "overround_pct": 4.61
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
