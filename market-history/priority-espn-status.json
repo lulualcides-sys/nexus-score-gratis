@@ -1,121 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-05T12:25:33.072006+00:00",
+  "checked_at": "2026-11-05T20:14:39.006142+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 25,
-  "created_games": 4,
+  "priority_fixtures_seen": 12,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Levski Sofia x Jagiellonia Bialystok",
-      "league": "uefa.europa",
-      "kickoff": 1793900700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lillestrom x Viktoria Plzen",
-      "league": "uefa.europa",
-      "kickoff": 1793900700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "NEC Nijmegen x Omonia Nicosia",
-      "league": "uefa.europa",
-      "kickoff": 1793900700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Real Sociedad x Lyon",
-      "league": "uefa.europa",
-      "kickoff": 1793900700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sparta Prague x AFC Bournemouth",
-      "league": "uefa.europa",
-      "kickoff": 1793900700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AZ Alkmaar x Juventus",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bayer Leverkusen x Marseille",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Benfica x Lech Poznan",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Celta Vigo x Union St.-Gilloise",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Celtic x Besiktas",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Hapoel Be'er x OFI Crete",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SK Sturm Graz x NK Celje",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sunderland x Dinamo Zagreb",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Torreense x Ararat-Armenia",
-      "league": "uefa.europa",
-      "kickoff": 1793908800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Aldosivi x River Plate",
       "league": "arg.1",
       "kickoff": 1793901600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Palmeiras x Remo",
-      "league": "bra.1",
-      "kickoff": 1793917800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cruzeiro x Bahia",
-      "league": "bra.1",
-      "kickoff": 1793925000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Famalicao x Arouca",
-      "league": "por.1",
-      "kickoff": 1793997900,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -125,15 +23,45 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Boyacá Chicó FC x Internacional de Bogotá",
-      "league": "col.1",
-      "kickoff": 1794006000,
+      "fixture": "Hamburg SV x Borussia Mönchengladbach",
+      "league": "ger.1",
+      "kickoff": 1793993400,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Fortaleza CEIF x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1794013200,
+      "fixture": "Venezia x Udinese",
+      "league": "ita.1",
+      "kickoff": 1793994300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Toulouse x Strasbourg",
+      "league": "fra.1",
+      "kickoff": 1793994300,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Everton x Coventry City",
+      "league": "eng.1",
+      "kickoff": 1793995200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sevilla x Alavés",
+      "league": "esp.1",
+      "kickoff": 1793995200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Famalicao x Arouca",
+      "league": "por.1",
+      "kickoff": 1793997900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vitória x Fluminense",
+      "league": "bra.1",
+      "kickoff": 1794006000,
       "reason": "no_verified_public_1x2"
     }
   ],

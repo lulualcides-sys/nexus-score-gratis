@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-05T12:25:36.518871+00:00",
+  "checked_at": "2026-11-05T20:14:41.776924+00:00",
   "horizon_hours": 48,
-  "important_games": 41,
-  "verified_bookmaker_games": 7,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 30,
+  "important_games": 42,
+  "verified_bookmaker_games": 3,
+  "indicative_only_games": 10,
+  "missing_bookmaker_price_games": 29,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 3,
-    "indicative": 4,
-    "new_priority": 4
+    "indicative": 10,
+    "new_priority": 18
   },
   "pinnacle_guest": {
-    "status": "stale",
+    "status": "checked",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,10 +31,107 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-05T17:28:02.555015+00:00",
+    "complete_market_lines": 682,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 1396,
+    "invalid_quote_records": 0,
+    "families": {
+      "asian_handicap": {
+        "games": 16,
+        "odds": 336,
+        "complete_lines": 168,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.34
+      },
+      "first_half_goals": {
+        "games": 16,
+        "odds": 202,
+        "complete_lines": 101,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.8
+      },
+      "first_half_handicap": {
+        "games": 16,
+        "odds": 180,
+        "complete_lines": 90,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.0
+      },
+      "first_half_team_goals": {
+        "games": 16,
+        "odds": 64,
+        "complete_lines": 32,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.99
+      },
+      "half_time": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.42
+      },
+      "match_odds": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.63
+      },
+      "team_goals": {
+        "games": 16,
+        "odds": 170,
+        "complete_lines": 85,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.3
+      },
+      "total_goals": {
+        "games": 16,
+        "odds": 348,
+        "complete_lines": 174,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.85
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 495,
+    "historical_snapshots": 21,
+    "top_changes": [
+      {
+        "home": "Levski Sofia",
+        "away": "Jagiellonia Bialystok",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;home",
+        "selection": "over",
+        "first_odds": 2.04,
+        "last_odds": 1.5291,
+        "implied_probability_change_pp": 16.378
+      },
+      {
+        "home": "Levski Sofia",
+        "away": "Jagiellonia Bialystok",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;home",
+        "selection": "under",
+        "first_odds": 1.8197,
+        "last_odds": 2.4,
+        "implied_probability_change_pp": -13.287
+      },
+      {
+        "home": "Crystal Palace",
+        "away": "Hoffenheim",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;2.5",
+        "selection": "over",
+        "first_odds": 1.2793,
+        "last_odds": 1.5236,
+        "implied_probability_change_pp": -12.534
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -160,6 +257,110 @@
       "coverage": "indicative_only"
     },
     {
+      "home": "Malaga",
+      "away": "Racing Santander",
+      "kickoff_unix": 1794056400.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.53,
+        "draw": 3.69,
+        "away": 3.0
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14973/malaga-vs-racing-santander-2026-11-07",
+      "tipsaudit_id": "14973",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Espanyol",
+      "away": "Deportivo La Coruna",
+      "kickoff_unix": 1794064500.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.41,
+        "draw": 3.48,
+        "away": 3.37
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15040/espanyol-vs-deportivo-la-coruna-2026-11-07",
+      "tipsaudit_id": "15040",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Osasuna",
+      "away": "Athletic Club",
+      "kickoff_unix": 1794072600.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.18,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 3.83,
+        "draw": 3.72,
+        "away": 2.13
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15086/osasuna-vs-athletic-club-2026-11-07",
+      "tipsaudit_id": "15086",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Valencia",
+      "away": "Real Madrid",
+      "kickoff_unix": 1794081600.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.32,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 10.15,
+        "draw": 7.33,
+        "away": 1.31
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15110/valencia-vs-real-madrid-2026-11-07",
+      "tipsaudit_id": "15110",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
       "home": "Venezia",
       "away": "Udinese",
       "league": "Serie A Itália",
@@ -214,7 +415,7 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.95,
+          "price": 2.9,
           "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
@@ -234,6 +435,132 @@
       "coverage": "indicative_only"
     },
     {
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.32,
+        "draw": 7.1,
+        "away": 9.79
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15004/borussia-dortmund-vs-sv-elversberg-2026-11-07",
+      "tipsaudit_id": "15004",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FSV Mainz 05",
+      "away": "Bayern München",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.38,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 7.7,
+        "draw": 7.49,
+        "away": 1.36
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15006/fsv-mainz-05-vs-bayern-munchen-2026-11-07",
+      "tipsaudit_id": "15006",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "RB Leipzig",
+      "away": "FC Augsburg",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.5,
+          "bookmaker": "Unibet (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.49,
+        "draw": 5.98,
+        "away": 6.15
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15005/rb-leipzig-vs-fc-augsburg-2026-11-07",
+      "tipsaudit_id": "15005",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "SC Paderborn 07",
+      "away": "Eintracht Frankfurt",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 3.25,
+        "draw": 4.06,
+        "away": 2.24
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15007/sc-paderborn-07-vs-eintracht-frankfurt-2026-11-07",
+      "tipsaudit_id": "15007",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "VfB Stuttgart",
+      "away": "Werder Bremen",
+      "kickoff_unix": 1794072600.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 1.66,
+        "draw": 5.11,
+        "away": 4.96
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15087/vfb-stuttgart-vs-werder-bremen-2026-11-07",
+      "tipsaudit_id": "15087",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Toulouse",
       "away": "Strasbourg",
       "league": "Ligue 1",
@@ -250,14 +577,74 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.13,
+        "home": 2.14,
         "draw": 3.97,
-        "away": 3.58
+        "away": 3.57
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14605/toulouse-vs-strasbourg-2026-11-06",
       "tipsaudit_id": "14605",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Auxerre",
+      "away": "Paris FC",
+      "kickoff_unix": 1794074400.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.87,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 4.55,
+        "draw": 4.31,
+        "away": 1.82
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15061/auxerre-vs-paris-fc-2026-11-07",
+      "tipsaudit_id": "15061",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Paris Saint Germain",
+      "away": "Estac Troyes",
+      "kickoff_unix": 1794080700.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.14,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.13,
+        "draw": 14.21,
+        "away": 22.23
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15107/paris-saint-germain-vs-estac-troyes-2026-11-07",
+      "tipsaudit_id": "15107",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
     },
     {
       "home": "Atletico San Luis",
@@ -334,29 +721,6 @@
       "coverage": "indicative_only"
     },
     {
-      "home": "Aldosivi",
-      "away": "River Plate",
-      "league": "arg.1",
-      "league_code": "arg.1",
-      "kickoff_unix": 1793901600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Gimnasia La Plata",
       "away": "Belgrano (Córdoba)",
       "league": "arg.1",
@@ -366,7 +730,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -377,270 +741,6 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
-    },
-    {
-      "home": "Anderlecht",
-      "away": "Salzburg",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Anderlecht",
-      "away": "RB Salzburg",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "Hoffenheim",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "TSG Hoffenheim",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "Jagiellonia Białystok",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "Jagiellonia Bialystok",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lillestrom",
-      "away": "Viktoria Plzen",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lillestrøm",
-      "away": "Viktoria Plzeň",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Milan",
-      "away": "Ferencváros",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "NEC Nijmegen",
-      "away": "Omonia Nicosia",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Real Sociedad",
-      "away": "Lyon",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sparta Prague",
-      "away": "AFC Bournemouth",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
     },
     {
       "home": "AZ Alkmaar",
@@ -941,6 +1041,72 @@
       "coverage": "indicative_only"
     },
     {
+      "home": "Fortuna Sittard",
+      "away": "Telstar",
+      "kickoff_unix": 1794065400.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.13,
+        "draw": 3.97,
+        "away": 3.59
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15045/fortuna-sittard-vs-telstar-2026-11-07",
+      "tipsaudit_id": "15045",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "ADO Den Haag",
+      "away": "Sparta Rotterdam",
+      "kickoff_unix": 1794073500.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.63,
+        "draw": 3.83,
+        "away": 2.79
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15092/ado-den-haag-vs-sparta-rotterdam-2026-11-07",
+      "tipsaudit_id": "15092",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Excelsior",
+      "away": "GO Ahead Eagles",
+      "kickoff_unix": 1794081600.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.96,
+        "draw": 3.88,
+        "away": 2.47
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15111/excelsior-vs-go-ahead-eagles-2026-11-07",
+      "tipsaudit_id": "15111",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Boyacá Chicó FC",
       "away": "Internacional de Bogotá",
       "league": "Colômbia Primera A",
@@ -1029,6 +1195,40 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Malaga",
+      "away": "Racing Santander",
+      "kickoff_unix": 1794056400.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14973/malaga-vs-racing-santander-2026-11-07",
+      "tipsaudit_id": "14973",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Espanyol",
+      "away": "Deportivo La Coruna",
+      "kickoff_unix": 1794064500.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15040/espanyol-vs-deportivo-la-coruna-2026-11-07",
+      "tipsaudit_id": "15040",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Venezia",
       "away": "Udinese",
       "league": "Serie A Itália",
@@ -1068,6 +1268,57 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Borussia Dortmund",
+      "away": "SV Elversberg",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15004/borussia-dortmund-vs-sv-elversberg-2026-11-07",
+      "tipsaudit_id": "15004",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "SC Paderborn 07",
+      "away": "Eintracht Frankfurt",
+      "kickoff_unix": 1794061800.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15007/sc-paderborn-07-vs-eintracht-frankfurt-2026-11-07",
+      "tipsaudit_id": "15007",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "VfB Stuttgart",
+      "away": "Werder Bremen",
+      "kickoff_unix": 1794072600.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15087/vfb-stuttgart-vs-werder-bremen-2026-11-07",
+      "tipsaudit_id": "15087",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
@@ -1123,195 +1374,6 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Anderlecht",
-      "away": "Salzburg",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "Hoffenheim",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "Jagiellonia Białystok",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Levski Sofia",
-      "away": "Jagiellonia Bialystok",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lillestrom",
-      "away": "Viktoria Plzen",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lillestrøm",
-      "away": "Viktoria Plzeň",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "NEC Nijmegen",
-      "away": "Omonia Nicosia",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Real Sociedad",
-      "away": "Lyon",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sparta Prague",
-      "away": "AFC Bournemouth",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
@@ -1564,6 +1626,57 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fortuna Sittard",
+      "away": "Telstar",
+      "kickoff_unix": 1794065400.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15045/fortuna-sittard-vs-telstar-2026-11-07",
+      "tipsaudit_id": "15045",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "ADO Den Haag",
+      "away": "Sparta Rotterdam",
+      "kickoff_unix": 1794073500.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15092/ado-den-haag-vs-sparta-rotterdam-2026-11-07",
+      "tipsaudit_id": "15092",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Excelsior",
+      "away": "GO Ahead Eagles",
+      "kickoff_unix": 1794081600.0,
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15111/excelsior-vs-go-ahead-eagles-2026-11-07",
+      "tipsaudit_id": "15111",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
