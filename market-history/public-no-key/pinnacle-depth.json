@@ -1,70 +1,70 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-05T06:57:33.152432+00:00",
-  "bookmaker_snapshot_at": "2026-11-05T06:57:32.522843+00:00",
+  "checked_at": "2026-11-05T17:28:04.854024+00:00",
+  "bookmaker_snapshot_at": "2026-11-05T17:28:02.555015+00:00",
   "status": "fresh",
-  "matches_catalogued": 5,
-  "matches_with_priced_markets": 5,
-  "odds_eligible_for_quality": 530,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1396,
   "invalid_quote_records": 0,
-  "complete_market_lines": 260,
+  "complete_market_lines": 682,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 5,
-      "odds": 120,
-      "complete_lines": 60,
+      "games": 16,
+      "odds": 336,
+      "complete_lines": 168,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.8
+      "median_overround_pct": 4.34
     },
     "first_half_goals": {
-      "games": 5,
-      "odds": 80,
-      "complete_lines": 40,
+      "games": 16,
+      "odds": 202,
+      "complete_lines": 101,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.8
+    },
+    "first_half_handicap": {
+      "games": 16,
+      "odds": 180,
+      "complete_lines": 90,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.0
+    },
+    "first_half_team_goals": {
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.99
+    },
+    "half_time": {
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.42
+    },
+    "match_odds": {
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
+      "incomplete_lines": 0,
+      "median_overround_pct": 4.63
+    },
+    "team_goals": {
+      "games": 16,
+      "odds": 170,
+      "complete_lines": 85,
       "incomplete_lines": 0,
       "median_overround_pct": 5.3
     },
-    "first_half_handicap": {
-      "games": 5,
-      "odds": 62,
-      "complete_lines": 31,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.29
-    },
-    "first_half_team_goals": {
-      "games": 5,
-      "odds": 20,
-      "complete_lines": 10,
-      "incomplete_lines": 0,
-      "median_overround_pct": 4.77
-    },
-    "half_time": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
-      "incomplete_lines": 0,
-      "median_overround_pct": 3.97
-    },
-    "match_odds": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
-      "incomplete_lines": 0,
-      "median_overround_pct": 3.22
-    },
-    "team_goals": {
-      "games": 5,
-      "odds": 70,
-      "complete_lines": 35,
-      "incomplete_lines": 0,
-      "median_overround_pct": 5.23
-    },
     "total_goals": {
-      "games": 5,
-      "odds": 148,
-      "complete_lines": 74,
+      "games": 16,
+      "odds": 348,
+      "complete_lines": 174,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.37
+      "median_overround_pct": 4.85
     }
   },
   "examples": [
@@ -73,61 +73,61 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-05T06:57:32.522843+00:00",
+      "observed_at": "2026-11-05T17:28:02.555015+00:00",
       "selections": {
-        "home": 1.9009,
-        "away": 3.82,
-        "draw": 4.08
+        "home": 1.9524,
+        "away": 3.76,
+        "draw": 3.96
       },
-      "overround_pct": 3.29
+      "overround_pct": 3.07
     },
     {
       "fixture": "Crystal Palace x Hoffenheim",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-05T06:57:32.522843+00:00",
+      "observed_at": "2026-11-05T17:28:02.555015+00:00",
       "selections": {
-        "home": 1.9091,
-        "away": 2.0
+        "home": 1.9524,
+        "away": 1.9524
       },
-      "overround_pct": 2.38
+      "overround_pct": 2.44
     },
     {
       "fixture": "Crystal Palace x Hoffenheim",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.5",
       "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-11-05T06:57:32.522843+00:00",
+      "observed_at": "2026-11-05T17:28:02.555015+00:00",
       "selections": {
-        "home": 3.15,
-        "away": 1.3861
+        "home": 3.36,
+        "away": 1.3497
       },
-      "overround_pct": 3.89
+      "overround_pct": 3.85
     },
     {
       "fixture": "Crystal Palace x Hoffenheim",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-05T06:57:32.522843+00:00",
+      "observed_at": "2026-11-05T17:28:02.555015+00:00",
       "selections": {
-        "home": 2.83,
-        "away": 1.4587
+        "home": 3.01,
+        "away": 1.4149
       },
-      "overround_pct": 3.89
+      "overround_pct": 3.9
     },
     {
       "fixture": "Crystal Palace x Hoffenheim",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-05T06:57:32.522843+00:00",
+      "observed_at": "2026-11-05T17:28:02.555015+00:00",
       "selections": {
-        "home": 2.52,
-        "away": 1.5682
+        "home": 2.67,
+        "away": 1.5181
       },
-      "overround_pct": 3.45
+      "overround_pct": 3.32
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
