@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "day": "2026-11-04",
+  "generated_at": "2026-11-05T04:04:20+00:00",
+  "games": 137,
+  "finished": 82,
+  "live": 9,
+  "scheduled": 46,
+  "quotes_verified": 130,
+  "games_with_verified_odds": 25,
+  "liquidity_minimum_brl": 3000,
+  "liquidity_qualified_games": 0,
+  "liquidity_below_games": 0,
+  "liquidity_unknown_games": 137,
+  "qualified_game_quotes_verified": 0,
+  "market_families_catalogued": 27,
+  "market_families_with_verified_prices": 1,
+  "market_families_quoted": {
+    "match_odds": 130
+  },
+  "market_names_quoted": {
+    "1x2": 130
+  },
+  "bookmakers": {
+    "DraftKings": 130
+  },
+  "sports_sources": {
+    "FotMob": 121,
+    "ESPN": 16
+  },
+  "results": {
+    "1x2_away": 35,
+    "over_2_5_yes": 60,
+    "btts_yes": 49,
+    "corners_9_5_no": 27,
+    "cards_4_5_no": 30,
+    "sot_7_5_yes": 29,
+    "1x2_home": 36,
+    "cards_4_5_yes": 11,
+    "corners_9_5_yes": 14,
+    "sot_7_5_no": 13,
+    "1x2_draw": 11,
+    "btts_no": 33,
+    "over_2_5_no": 22
+  },
+  "note": "Resultados esportivos e odds observadas; sem operação, ROI ou P/L validado."
+}
