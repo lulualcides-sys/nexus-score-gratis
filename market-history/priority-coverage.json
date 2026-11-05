@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-05T04:14:01.870981+00:00",
+  "checked_at": "2026-11-05T12:25:36.518871+00:00",
   "horizon_hours": 48,
-  "important_games": 38,
-  "verified_bookmaker_games": 4,
-  "indicative_only_games": 5,
-  "missing_bookmaker_price_games": 29,
+  "important_games": 41,
+  "verified_bookmaker_games": 7,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 30,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 2,
-    "indicative": 5,
-    "new_priority": 5
+    "matched": 3,
+    "indicative": 4,
+    "new_priority": 4
   },
   "pinnacle_guest": {
     "status": "stale",
@@ -214,15 +214,15 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 2.9,
+          "price": 2.95,
           "bookmaker": "Unibet (SE)",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 2.54,
-        "draw": 3.85,
+        "home": 2.55,
+        "draw": 3.84,
         "away": 2.88
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14600/hamburger-sv-vs-borussia-monchengladbach-2026-11-06",
@@ -251,8 +251,8 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.13,
-        "draw": 3.98,
-        "away": 3.59
+        "draw": 3.97,
+        "away": 3.58
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14605/toulouse-vs-strasbourg-2026-11-06",
       "tipsaudit_id": "14605",
@@ -269,9 +269,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.8,
-        "draw": 4.21,
-        "away": 4.82
+        "home": 1.75,
+        "draw": 4.38,
+        "away": 5.0
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14617/atletico-san-luis-vs-fc-juarez-2026-11-07",
       "tipsaudit_id": "14617",
@@ -289,15 +289,7 @@
       "league_code": "mex.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.93,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 2.52,
         "draw": 3.93,
@@ -309,7 +301,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Atlante FC",
@@ -418,7 +410,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -428,7 +420,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Crystal Palace",
@@ -462,7 +454,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -472,7 +464,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Levski Sofia",
@@ -572,7 +564,7 @@
       "data_sources": [
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -582,7 +574,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "NEC Nijmegen",
@@ -893,13 +885,42 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "FC Famalicao",
+      "away": "Arouca",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793997900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Willem II",
       "away": "PEC Zwolle",
-      "kickoff_unix": 1793991600.0,
       "league": "Eredivisie",
       "league_code": "ned.1",
-      "phase": "unknown",
+      "kickoff_unix": 1793991600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
@@ -916,11 +937,52 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/14597/willem-ii-vs-pec-zwolle-2026-11-06",
       "tipsaudit_id": "14597",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
+    },
+    {
+      "home": "Boyacá Chicó FC",
+      "away": "Internacional de Bogotá",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794006000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fortaleza CEIF",
+      "away": "Independiente Medellín",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794013200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     }
   ],
   "top_missing": [
@@ -1047,6 +1109,23 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Necaxa",
+      "away": "Club Tijuana",
+      "kickoff_unix": 1794013200.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/14616/necaxa-vs-club-tijuana-2026-11-07",
+      "tipsaudit_id": "14616",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Anderlecht",
       "away": "Salzburg",
       "league": "Europa League",
@@ -1068,27 +1147,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Anderlecht",
-      "away": "RB Salzburg",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Crystal Palace",
       "away": "Hoffenheim",
       "league": "Europa League",
@@ -1097,27 +1155,6 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "TSG Hoffenheim",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
@@ -1196,27 +1233,6 @@
     {
       "home": "Lillestrøm",
       "away": "Viktoria Plzeň",
-      "league": "Europa League",
-      "league_code": "uefa.europa",
-      "kickoff_unix": 1793900700.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Milan",
-      "away": "Ferencváros",
       "league": "Europa League",
       "league_code": "uefa.europa",
       "kickoff_unix": 1793900700.0,
@@ -1517,6 +1533,69 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Famalicao",
+      "away": "Arouca",
+      "league": "Liga Portugal",
+      "league_code": "por.1",
+      "kickoff_unix": 1793997900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Boyacá Chicó FC",
+      "away": "Internacional de Bogotá",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794006000.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Fortaleza CEIF",
+      "away": "Independiente Medellín",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794013200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
