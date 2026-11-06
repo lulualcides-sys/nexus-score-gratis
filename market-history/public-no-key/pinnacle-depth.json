@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T16:49:55.462203+00:00",
-  "bookmaker_snapshot_at": "2026-11-06T16:49:52.732868+00:00",
+  "checked_at": "2026-11-06T23:14:51.926493+00:00",
+  "bookmaker_snapshot_at": "2026-11-06T23:14:50.291892+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1700,
+  "odds_eligible_for_quality": 1678,
   "invalid_quote_records": 0,
-  "complete_market_lines": 834,
+  "complete_market_lines": 823,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 362,
-      "complete_lines": 181,
+      "odds": 390,
+      "complete_lines": 195,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.55
+      "median_overround_pct": 4.77
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 254,
-      "complete_lines": 127,
+      "odds": 250,
+      "complete_lines": 125,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.03
+      "median_overround_pct": 6.44
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "odds": 200,
+      "complete_lines": 100,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.03
+      "median_overround_pct": 5.25
     },
     "first_half_team_goals": {
       "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "odds": 60,
+      "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.21
+      "median_overround_pct": 5.57
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.95
+      "median_overround_pct": 4.95
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.19
+      "median_overround_pct": 3.72
     },
     "team_goals": {
       "games": 16,
-      "odds": 212,
-      "complete_lines": 106,
+      "odds": 206,
+      "complete_lines": 103,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.17
+      "median_overround_pct": 5.65
     },
     "total_goals": {
       "games": 16,
-      "odds": 516,
-      "complete_lines": 258,
+      "odds": 476,
+      "complete_lines": 238,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.7
+      "median_overround_pct": 5.24
     }
   },
   "examples": [
     {
-      "fixture": "Hamburger SV x Borussia Monchengladbach",
+      "fixture": "Leeds United x Tottenham Hotspur",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-06T16:49:52.732868+00:00",
+      "observed_at": "2026-11-06T23:14:50.291892+00:00",
       "selections": {
-        "home": 2.5,
-        "away": 2.98,
-        "draw": 3.46
+        "home": 2.82,
+        "away": 2.62,
+        "draw": 3.4
       },
-      "overround_pct": 2.46
+      "overround_pct": 3.04
     },
     {
-      "fixture": "Hamburger SV x Borussia Monchengladbach",
+      "fixture": "Leeds United x Tottenham Hotspur",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-06T16:49:52.732868+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-06T23:14:50.291892+00:00",
       "selections": {
-        "home": 2.15,
-        "away": 1.8
+        "home": 2.03,
+        "away": 1.8772
       },
-      "overround_pct": 2.07
+      "overround_pct": 2.53
     },
     {
-      "fixture": "Hamburger SV x Borussia Monchengladbach",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-06T16:49:52.732868+00:00",
-      "selections": {
-        "home": 4.49,
-        "away": 1.2387
-      },
-      "overround_pct": 3.0
-    },
-    {
-      "fixture": "Hamburger SV x Borussia Monchengladbach",
+      "fixture": "Leeds United x Tottenham Hotspur",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-06T16:49:52.732868+00:00",
+      "observed_at": "2026-11-06T23:14:50.291892+00:00",
       "selections": {
-        "home": 4.01,
-        "away": 1.2801
+        "home": 4.94,
+        "away": 1.202
       },
-      "overround_pct": 3.06
+      "overround_pct": 3.44
     },
     {
-      "fixture": "Hamburger SV x Borussia Monchengladbach",
+      "fixture": "Leeds United x Tottenham Hotspur",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-06T16:49:52.732868+00:00",
+      "observed_at": "2026-11-06T23:14:50.291892+00:00",
       "selections": {
-        "home": 3.0,
-        "away": 1.4425
+        "home": 3.47,
+        "away": 1.3367
       },
-      "overround_pct": 2.66
+      "overround_pct": 3.63
+    },
+    {
+      "fixture": "Leeds United x Tottenham Hotspur",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-06T23:14:50.291892+00:00",
+      "selections": {
+        "home": 2.81,
+        "away": 1.4808
+      },
+      "overround_pct": 3.12
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
