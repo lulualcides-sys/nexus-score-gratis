@@ -1,25 +1,25 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T00:59:04.737532+00:00",
+  "checked_at": "2026-11-06T07:55:09.632744+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 12,
-  "created_games": 2,
+  "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Willem II x PEC Zwolle",
-      "league": "ned.1",
-      "kickoff": 1793991600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Hamburg SV x Borussia Mönchengladbach",
       "league": "ger.1",
       "kickoff": 1793993400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Willem II x PEC Zwolle",
+      "league": "ned.1",
+      "kickoff": 1793991600,
       "reason": "no_verified_public_1x2"
     },
     {
