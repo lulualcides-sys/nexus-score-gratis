@@ -1,15 +1,21 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T07:55:09.632744+00:00",
+  "checked_at": "2026-11-06T15:34:32.031219+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
+  "priority_fixtures_seen": 16,
   "created_games": 0,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Banfield x Atlético Tucumán",
+      "league": "arg.1",
+      "kickoff": 1794013200,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Hamburg SV x Borussia Mönchengladbach",
       "league": "ger.1",
@@ -23,30 +29,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Venezia x Udinese",
-      "league": "ita.1",
-      "kickoff": 1793994300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Toulouse x Strasbourg",
-      "league": "fra.1",
-      "kickoff": 1793994300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Everton x Coventry City",
-      "league": "eng.1",
-      "kickoff": 1793995200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sevilla x Alavés",
-      "league": "esp.1",
-      "kickoff": 1793995200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "FC Famalicao x Arouca",
       "league": "por.1",
       "kickoff": 1793997900,
@@ -56,30 +38,6 @@
       "fixture": "Vitória x Fluminense",
       "league": "bra.1",
       "kickoff": 1794006000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Boyacá Chicó FC x Internacional de Bogotá",
-      "league": "col.1",
-      "kickoff": 1794006000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Fortaleza CEIF x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1794013200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético de San Luis x FC Juárez",
-      "league": "mex.1",
-      "kickoff": 1794013200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Necaxa x Tijuana",
-      "league": "mex.1",
-      "kickoff": 1794013200,
       "reason": "no_verified_public_1x2"
     }
   ],
