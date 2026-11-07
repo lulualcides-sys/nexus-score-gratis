@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-07T13:13:31.485983+00:00",
-  "bookmaker_snapshot_at": "2026-11-07T13:13:30.443196+00:00",
+  "checked_at": "2026-11-07T19:29:12.713495+00:00",
+  "bookmaker_snapshot_at": "2026-11-07T19:29:11.279137+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1640,
+  "odds_eligible_for_quality": 1686,
   "invalid_quote_records": 0,
-  "complete_market_lines": 804,
+  "complete_market_lines": 827,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 364,
-      "complete_lines": 182,
+      "odds": 386,
+      "complete_lines": 193,
       "incomplete_lines": 0,
       "median_overround_pct": 4.01
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 256,
-      "complete_lines": 128,
+      "odds": 252,
+      "complete_lines": 126,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.48
+      "median_overround_pct": 5.76
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "odds": 206,
+      "complete_lines": 103,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.41
+      "median_overround_pct": 4.5
     },
     "first_half_team_goals": {
       "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "odds": 62,
+      "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 5.23
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.41
+      "median_overround_pct": 4.36
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.66
+      "median_overround_pct": 3.31
     },
     "team_goals": {
       "games": 16,
-      "odds": 200,
-      "complete_lines": 100,
+      "odds": 206,
+      "complete_lines": 103,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.6
+      "median_overround_pct": 5.24
     },
     "total_goals": {
       "games": 16,
-      "odds": 464,
-      "complete_lines": 232,
+      "odds": 478,
+      "complete_lines": 239,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.62
+      "median_overround_pct": 4.83
     }
   },
   "examples": [
     {
-      "fixture": "Villarreal x Getafe",
+      "fixture": "New York Red Bulls x Atlanta United",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-07T13:13:30.443196+00:00",
+      "observed_at": "2026-11-07T19:29:11.279137+00:00",
       "selections": {
-        "home": 1.4425,
-        "away": 7.62,
-        "draw": 4.75
+        "home": 1.8547,
+        "away": 3.66,
+        "draw": 4.41
       },
-      "overround_pct": 3.5
+      "overround_pct": 3.92
     },
     {
-      "fixture": "Villarreal x Getafe",
+      "fixture": "New York Red Bulls x Atlanta United",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-07T19:29:11.279137+00:00",
+      "selections": {
+        "home": 1.8621,
+        "away": 2.03
+      },
+      "overround_pct": 2.96
+    },
+    {
+      "fixture": "New York Red Bulls x Atlanta United",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-11-07T19:29:11.279137+00:00",
+      "selections": {
+        "home": 2.99,
+        "away": 1.4149
+      },
+      "overround_pct": 4.12
+    },
+    {
+      "fixture": "New York Red Bulls x Atlanta United",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.25",
       "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-07T13:13:30.443196+00:00",
+      "observed_at": "2026-11-07T19:29:11.279137+00:00",
       "selections": {
-        "home": 2.01,
-        "away": 1.8929
+        "home": 2.69,
+        "away": 1.4926
       },
-      "overround_pct": 2.58
+      "overround_pct": 4.17
     },
     {
-      "fixture": "Villarreal x Getafe",
+      "fixture": "New York Red Bulls x Atlanta United",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-11-07T13:13:30.443196+00:00",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-07T19:29:11.279137+00:00",
       "selections": {
-        "home": 3.99,
-        "away": 1.274
+        "home": 2.41,
+        "away": 1.6098
       },
-      "overround_pct": 3.56
-    },
-    {
-      "fixture": "Villarreal x Getafe",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-11-07T13:13:30.443196+00:00",
-      "selections": {
-        "home": 3.54,
-        "away": 1.3268
-      },
-      "overround_pct": 3.62
-    },
-    {
-      "fixture": "Villarreal x Getafe",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-11-07T13:13:30.443196+00:00",
-      "selections": {
-        "home": 2.72,
-        "away": 1.5076
-      },
-      "overround_pct": 3.1
+      "overround_pct": 3.61
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
