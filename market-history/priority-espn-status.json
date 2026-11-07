@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T21:02:47.168578+00:00",
+  "checked_at": "2026-11-07T00:55:18.978043+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 28,
-  "created_games": 17,
+  "priority_fixtures_seen": 38,
+  "created_games": 11,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
@@ -17,27 +17,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Banfield x Atlético Tucumán",
+      "fixture": "Independiente x Deportivo Riestra",
       "league": "arg.1",
-      "kickoff": 1794013200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vitória x Fluminense",
-      "league": "bra.1",
-      "kickoff": 1794006000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético de San Luis x FC Juárez",
-      "league": "mex.1",
-      "kickoff": 1794013200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Necaxa x Tijuana",
-      "league": "mex.1",
-      "kickoff": 1794013200,
+      "kickoff": 1794003300,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -140,6 +122,72 @@
       "fixture": "VfB Stuttgart x Werder Bremen",
       "league": "ger.1",
       "kickoff": 1794072600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AJ Auxerre x Paris FC",
+      "league": "fra.1",
+      "kickoff": 1794074400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Paris Saint-Germain x Troyes",
+      "league": "fra.1",
+      "kickoff": 1794081900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlas x Pachuca",
+      "league": "mex.1",
+      "kickoff": 1794092400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Tigres UANL x Cruz Azul",
+      "league": "mex.1",
+      "kickoff": 1794099600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Toluca x Monterrey",
+      "league": "mex.1",
+      "kickoff": 1794099600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Gimnasia (Mendoza) x Independiente Rivadavia",
+      "league": "arg.1",
+      "kickoff": 1794074400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Talleres (Córdoba) x Estudiantes de La Plata",
+      "league": "arg.1",
+      "kickoff": 1794074400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Argentinos Juniors x Huracán",
+      "league": "arg.1",
+      "kickoff": 1794083400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Boca Juniors x Defensa y Justicia",
+      "league": "arg.1",
+      "kickoff": 1794083400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Rosario Central x Estudiantes de Río Cuarto",
+      "league": "arg.1",
+      "kickoff": 1794083400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Instituto (Córdoba) x Newell's Old Boys",
+      "league": "arg.1",
+      "kickoff": 1794099600,
       "reason": "no_verified_public_1x2"
     }
   ],

@@ -1,12 +1,17 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-06T21:02:49.109912+00:00",
+  "checked_at": "2026-11-07T00:55:21.253522+00:00",
   "status": "ok",
-  "candidates": 10,
-  "checked": 6,
+  "candidates": 8,
+  "checked": 5,
   "games_enriched": 0,
   "observed_statistics_fields": 0,
-  "errors": [],
+  "errors": [
+    {
+      "event_id": "401878064",
+      "type": "HTTPError"
+    }
+  ],
   "source": "ESPN public soccer summary / boxscore",
   "bookmaker_odds_observed": 0,
   "liquidity_verified": false
