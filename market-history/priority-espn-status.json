@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-07T13:59:13.746887+00:00",
+  "checked_at": "2026-11-07T18:46:42.075866+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 47,
+  "priority_fixtures_seen": 44,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -11,39 +11,9 @@
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "AS Roma x Sassuolo",
-      "league": "ita.1",
-      "kickoff": 1794080700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Málaga x Racing Santander",
       "league": "esp.1",
       "kickoff": 1794056400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Valencia x Real Madrid",
-      "league": "esp.1",
-      "kickoff": 1794081600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "C.D. Nacional x Académico de Viseu",
-      "league": "por.1",
-      "kickoff": 1794065400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Alverca x Casa Pia",
-      "league": "por.1",
-      "kickoff": 1794074400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sporting CP x Moreirense",
-      "league": "por.1",
-      "kickoff": 1794083400,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -56,18 +26,6 @@
       "fixture": "ADO Den Haag x Sparta Rotterdam",
       "league": "ned.1",
       "kickoff": 1794073500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Excelsior x Go Ahead Eagles",
-      "league": "ned.1",
-      "kickoff": 1794081600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Paris Saint-Germain x Troyes",
-      "league": "fra.1",
-      "kickoff": 1794081900,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -89,73 +47,25 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "CF Montréal x Vancouver Whitecaps",
-      "league": "usa.1",
-      "kickoff": 1794085200,
+      "fixture": "C.D. Nacional x Académico de Viseu",
+      "league": "por.1",
+      "kickoff": 1794065400,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Chicago Fire FC x Columbus Crew",
-      "league": "usa.1",
-      "kickoff": 1794085200,
+      "fixture": "Alverca x Casa Pia",
+      "league": "por.1",
+      "kickoff": 1794074400,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "D.C. United x New York City FC",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Cincinnati x Nashville SC",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Inter Miami CF x Charlotte FC",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Orlando City SC x New England Revolution",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Philadelphia Union x Toronto FC",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Red Bull New York x Atlanta United FC",
-      "league": "usa.1",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Austin FC x Portland Timbers",
-      "league": "usa.1",
-      "kickoff": 1794096000,
+      "fixture": "Sporting CP x Moreirense",
+      "league": "por.1",
+      "kickoff": 1794083400,
       "reason": "no_verified_public_1x2"
     },
     {
       "fixture": "FC Dallas x Colorado Rapids",
-      "league": "usa.1",
-      "kickoff": 1794096000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Houston Dynamo FC x St. Louis CITY SC",
-      "league": "usa.1",
-      "kickoff": 1794096000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Minnesota United FC x San Jose Earthquakes",
       "league": "usa.1",
       "kickoff": 1794096000,
       "reason": "no_verified_public_1x2"
@@ -173,15 +83,45 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Seattle Sounders FC x LAFC",
-      "league": "usa.1",
-      "kickoff": 1794096000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Atlético-MG x Grêmio",
       "league": "bra.copa_do_brazil",
       "kickoff": 1794085200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Once Caldas x Águilas Doradas",
+      "league": "col.1",
+      "kickoff": 1794085500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Nacional x Deportivo Pereira",
+      "league": "col.1",
+      "kickoff": 1794093000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "América de Cali x Deportivo Cali",
+      "league": "col.1",
+      "kickoff": 1794100500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlas x Pachuca",
+      "league": "mex.1",
+      "kickoff": 1794092400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Tigres UANL x Cruz Azul",
+      "league": "mex.1",
+      "kickoff": 1794099600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Toluca x Monterrey",
+      "league": "mex.1",
+      "kickoff": 1794099600,
       "reason": "no_verified_public_1x2"
     }
   ],
