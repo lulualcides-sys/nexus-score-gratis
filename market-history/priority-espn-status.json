@@ -1,31 +1,31 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-07T18:46:42.075866+00:00",
+  "checked_at": "2026-11-07T22:23:01.080014+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 44,
-  "created_games": 0,
+  "priority_fixtures_seen": 36,
+  "created_games": 9,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Málaga x Racing Santander",
-      "league": "esp.1",
-      "kickoff": 1794056400,
+      "fixture": "Once Caldas x Águilas Doradas",
+      "league": "col.1",
+      "kickoff": 1794085500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Fortuna Sittard x Telstar",
-      "league": "ned.1",
-      "kickoff": 1794065400,
+      "fixture": "Atlético Nacional x Deportivo Pereira",
+      "league": "col.1",
+      "kickoff": 1794093000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "ADO Den Haag x Sparta Rotterdam",
-      "league": "ned.1",
-      "kickoff": 1794073500,
+      "fixture": "América de Cali x Deportivo Cali",
+      "league": "col.1",
+      "kickoff": 1794100500,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -47,81 +47,57 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "C.D. Nacional x Académico de Viseu",
-      "league": "por.1",
-      "kickoff": 1794065400,
+      "fixture": "Stade Rennais x Lille",
+      "league": "fra.1",
+      "kickoff": 1794146400,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Alverca x Casa Pia",
-      "league": "por.1",
-      "kickoff": 1794074400,
+      "fixture": "Angers x Nice",
+      "league": "fra.1",
+      "kickoff": 1794154500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Sporting CP x Moreirense",
-      "league": "por.1",
-      "kickoff": 1794083400,
+      "fixture": "Brest x Lyon",
+      "league": "fra.1",
+      "kickoff": 1794154500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "FC Dallas x Colorado Rapids",
-      "league": "usa.1",
-      "kickoff": 1794096000,
+      "fixture": "Le Havre AC x Lorient",
+      "league": "fra.1",
+      "kickoff": 1794154500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Real Salt Lake x LA Galaxy",
-      "league": "usa.1",
-      "kickoff": 1794096000,
+      "fixture": "Le Mans x AS Monaco",
+      "league": "fra.1",
+      "kickoff": 1794154500,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "San Diego FC x Sporting Kansas City",
-      "league": "usa.1",
-      "kickoff": 1794096000,
+      "fixture": "Lens x Marseille",
+      "league": "fra.1",
+      "kickoff": 1794167100,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético-MG x Grêmio",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1794085200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Once Caldas x Águilas Doradas",
-      "league": "col.1",
-      "kickoff": 1794085500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Deportivo Pereira",
-      "league": "col.1",
-      "kickoff": 1794093000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "América de Cali x Deportivo Cali",
-      "league": "col.1",
-      "kickoff": 1794100500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlas x Pachuca",
+      "fixture": "Querétaro x Puebla",
       "league": "mex.1",
-      "kickoff": 1794092400,
+      "kickoff": 1794182400,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Tigres UANL x Cruz Azul",
+      "fixture": "León x Guadalajara",
       "league": "mex.1",
-      "kickoff": 1794099600,
+      "kickoff": 1794190200,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Toluca x Monterrey",
-      "league": "mex.1",
-      "kickoff": 1794099600,
+      "fixture": "Central Córdoba (Santiago del Estero) x Lanús",
+      "league": "arg.1",
+      "kickoff": 1794177000,
       "reason": "no_verified_public_1x2"
     }
   ],
