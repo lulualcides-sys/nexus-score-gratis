@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T15:10:39.196972+00:00",
+  "checked_at": "2026-11-08T19:41:04.220697+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 52,
+  "priority_fixtures_seen": 46,
   "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
@@ -17,8 +17,8 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético Madrid x Barcelona",
-      "league": "esp.1",
+      "fixture": "Vasco da Gama x Palmeiras",
+      "league": "bra.copa_do_brazil",
       "kickoff": 1794168000,
       "reason": "no_verified_public_1x2"
     },
@@ -56,24 +56,6 @@
       "fixture": "Rio Ave x Braga",
       "league": "por.1",
       "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AZ Alkmaar x FC Groningen",
-      "league": "ned.1",
-      "kickoff": 1794152700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SC Cambuur x PSV Eindhoven",
-      "league": "ned.1",
-      "kickoff": 1794152700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Utrecht x NEC Nijmegen",
-      "league": "ned.1",
-      "kickoff": 1794164400,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -143,18 +125,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Jaguares de Córdoba x Atlético Bucaramanga",
-      "league": "col.1",
-      "kickoff": 1794171900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportes Tolima x Millonarios",
-      "league": "col.1",
-      "kickoff": 1794179400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Alianza FC x Llaneros FC",
       "league": "col.1",
       "kickoff": 1794186900,
@@ -167,9 +137,33 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Vasco da Gama x Palmeiras",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1794168000,
+      "fixture": "Querétaro x Puebla",
+      "league": "mex.1",
+      "kickoff": 1794182400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "León x Guadalajara",
+      "league": "mex.1",
+      "kickoff": 1794190200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "AZ Alkmaar x FC Groningen",
+      "league": "ned.1",
+      "kickoff": 1794152700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "SC Cambuur x PSV Eindhoven",
+      "league": "ned.1",
+      "kickoff": 1794152700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Utrecht x NEC Nijmegen",
+      "league": "ned.1",
+      "kickoff": 1794164400,
       "reason": "no_verified_public_1x2"
     }
   ],
