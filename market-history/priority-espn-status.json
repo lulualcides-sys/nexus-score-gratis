@@ -1,51 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-07T22:23:01.080014+00:00",
+  "checked_at": "2026-11-08T01:46:12.337426+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 36,
-  "created_games": 9,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 26,
+  "created_games": 15,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Once Caldas x Águilas Doradas",
-      "league": "col.1",
-      "kickoff": 1794085500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Deportivo Pereira",
-      "league": "col.1",
-      "kickoff": 1794093000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "América de Cali x Deportivo Cali",
-      "league": "col.1",
-      "kickoff": 1794100500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Argentinos Juniors x Huracán",
-      "league": "arg.1",
-      "kickoff": 1794083400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Boca Juniors x Defensa y Justicia",
-      "league": "arg.1",
-      "kickoff": 1794083400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Rosario Central x Estudiantes de Río Cuarto",
-      "league": "arg.1",
-      "kickoff": 1794083400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Stade Rennais x Lille",
       "league": "fra.1",
@@ -83,6 +47,12 @@
       "reason": "no_verified_public_1x2"
     },
     {
+      "fixture": "Central Córdoba (Santiago del Estero) x Lanús",
+      "league": "arg.1",
+      "kickoff": 1794177000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
       "fixture": "Querétaro x Puebla",
       "league": "mex.1",
       "kickoff": 1794182400,
@@ -95,9 +65,105 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Central Córdoba (Santiago del Estero) x Lanús",
-      "league": "arg.1",
-      "kickoff": 1794177000,
+      "fixture": "Once Caldas x Águilas Doradas",
+      "league": "col.1",
+      "kickoff": 1794085500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Nacional x Deportivo Pereira",
+      "league": "col.1",
+      "kickoff": 1794093000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Brighton & Hove Albion x Brentford",
+      "league": "eng.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Crystal Palace x Liverpool",
+      "league": "eng.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Ipswich Town x AFC Bournemouth",
+      "league": "eng.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sunderland x Chelsea",
+      "league": "eng.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Manchester United x Aston Villa",
+      "league": "eng.1",
+      "kickoff": 1794155400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Elche x Real Betis",
+      "league": "esp.1",
+      "kickoff": 1794142800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Real Sociedad x Rayo Vallecano",
+      "league": "esp.1",
+      "kickoff": 1794150900,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Celta Vigo x Levante",
+      "league": "esp.1",
+      "kickoff": 1794159000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Villarreal x Getafe",
+      "league": "esp.1",
+      "kickoff": 1794159000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Madrid x Barcelona",
+      "league": "esp.1",
+      "kickoff": 1794168000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Napoli x Lazio",
+      "league": "ita.1",
+      "kickoff": 1794137400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Genoa x AC Milan",
+      "league": "ita.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monza x Atalanta",
+      "league": "ita.1",
+      "kickoff": 1794146400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Internazionale x Como",
+      "league": "ita.1",
+      "kickoff": 1794157200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Fiorentina x Juventus",
+      "league": "ita.1",
+      "kickoff": 1794167100,
       "reason": "no_verified_public_1x2"
     }
   ],
