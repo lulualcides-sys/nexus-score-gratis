@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T00:43:50.269256+00:00",
-  "bookmaker_snapshot_at": "2026-11-08T00:43:47.930464+00:00",
+  "checked_at": "2026-11-08T10:31:02.492838+00:00",
+  "bookmaker_snapshot_at": "2026-11-08T10:31:00.808046+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1712,
+  "odds_eligible_for_quality": 1718,
   "invalid_quote_records": 0,
-  "complete_market_lines": 840,
+  "complete_market_lines": 843,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 356,
-      "complete_lines": 178,
+      "odds": 370,
+      "complete_lines": 185,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.54
+      "median_overround_pct": 3.12
     },
     "first_half_goals": {
       "games": 16,
       "odds": 256,
       "complete_lines": 128,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.02
+      "median_overround_pct": 4.63
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 194,
-      "complete_lines": 97,
+      "odds": 198,
+      "complete_lines": 99,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.03
+      "median_overround_pct": 3.61
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 4.83
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.92
+      "median_overround_pct": 3.4
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.18
+      "median_overround_pct": 2.69
     },
     "team_goals": {
       "games": 16,
       "odds": 208,
       "complete_lines": 104,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.17
+      "median_overround_pct": 4.78
     },
     "total_goals": {
       "games": 16,
-      "odds": 538,
-      "complete_lines": 269,
+      "odds": 526,
+      "complete_lines": 263,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.66
+      "median_overround_pct": 4.33
     }
   },
   "examples": [
     {
-      "fixture": "Le Havre x Lorient",
+      "fixture": "Napoli x Lazio",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-08T00:43:47.930464+00:00",
+      "observed_at": "2026-11-08T10:31:00.808046+00:00",
       "selections": {
-        "home": 3.12,
-        "away": 2.43,
-        "draw": 3.36
+        "home": 2.29,
+        "away": 3.09,
+        "draw": 3.78
       },
-      "overround_pct": 2.97
+      "overround_pct": 2.49
     },
     {
-      "fixture": "Le Havre x Lorient",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-11-08T00:43:47.930464+00:00",
-      "selections": {
-        "home": 1.8403,
-        "away": 2.08
-      },
-      "overround_pct": 2.42
-    },
-    {
-      "fixture": "Le Havre x Lorient",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-08T00:43:47.930464+00:00",
-      "selections": {
-        "home": 3.91,
-        "away": 1.2825
-      },
-      "overround_pct": 3.55
-    },
-    {
-      "fixture": "Le Havre x Lorient",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-08T00:43:47.930464+00:00",
-      "selections": {
-        "home": 3.09,
-        "away": 1.4032
-      },
-      "overround_pct": 3.63
-    },
-    {
-      "fixture": "Le Havre x Lorient",
+      "fixture": "Napoli x Lazio",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-08T00:43:47.930464+00:00",
+      "observed_at": "2026-11-08T10:31:00.808046+00:00",
       "selections": {
-        "home": 2.67,
-        "away": 1.5236
+        "home": 2.0,
+        "away": 1.9259
       },
-      "overround_pct": 3.09
+      "overround_pct": 1.92
+    },
+    {
+      "fixture": "Napoli x Lazio",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "selections": {
+        "home": 3.83,
+        "away": 1.2985
+      },
+      "overround_pct": 3.12
+    },
+    {
+      "fixture": "Napoli x Lazio",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "selections": {
+        "home": 3.41,
+        "away": 1.3546
+      },
+      "overround_pct": 3.15
+    },
+    {
+      "fixture": "Napoli x Lazio",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "selections": {
+        "home": 2.68,
+        "away": 1.5291
+      },
+      "overround_pct": 2.71
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
