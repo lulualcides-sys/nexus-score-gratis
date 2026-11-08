@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T08:05:26.946135+00:00",
+  "checked_at": "2026-11-08T15:10:43.369662+00:00",
   "horizon_hours": 48,
-  "important_games": 74,
-  "verified_bookmaker_games": 4,
-  "indicative_only_games": 11,
-  "missing_bookmaker_price_games": 59,
+  "important_games": 55,
+  "verified_bookmaker_games": 16,
+  "indicative_only_games": 2,
+  "missing_bookmaker_price_games": 37,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 18,
-    "indicative": 12,
+    "matched": 13,
+    "indicative": 6,
     "new_priority": 3
   },
   "pinnacle_guest": {
@@ -38,94 +38,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Brighton & Hove Albion",
-      "away": "Brentford",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "Liverpool",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Ipswich Town",
-      "away": "AFC Bournemouth",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sunderland",
-      "away": "Chelsea",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Manchester United",
       "away": "Aston Villa",
       "league": "Premier League",
@@ -135,7 +47,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -145,42 +57,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Elche",
-      "away": "Real Betis",
-      "league": "La Liga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.12,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 3.86,
-        "draw": 3.99,
-        "away": 2.04
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15598/elche-vs-real-betis-2026-11-08",
-      "tipsaudit_id": "15598",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "verified_price"
     },
     {
       "home": "Real Sociedad",
@@ -193,21 +70,21 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.84,
-        "draw": 4.25,
-        "away": 4.55
+        "home": 1.93,
+        "draw": 3.98,
+        "away": 4.32
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15633/real-sociedad-vs-rayo-vallecano-2026-11-08",
       "tipsaudit_id": "15633",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Celta Vigo",
@@ -220,7 +97,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -228,21 +105,21 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.94,
+          "price": 1.87,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.87,
-        "draw": 3.81,
-        "away": 4.96
+        "home": 1.86,
+        "draw": 3.89,
+        "away": 4.87
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15672/celta-vigo-vs-levante-2026-11-08",
       "tipsaudit_id": "15672",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "verified_price"
     },
     {
       "home": "Villarreal",
@@ -255,21 +132,21 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.53,
-        "draw": 4.68,
-        "away": 7.42
+        "home": 1.57,
+        "draw": 4.58,
+        "away": 6.85
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15673/villarreal-vs-getafe-2026-11-08",
       "tipsaudit_id": "15673",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Atlético Madrid",
@@ -287,88 +164,14 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 3.38,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.29,
-        "draw": 4.47,
-        "away": 2.12
+        "home": 3.37,
+        "draw": 4.6,
+        "away": 2.06
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15695/atletico-madrid-vs-barcelona-2026-11-08",
       "tipsaudit_id": "15695",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "Napoli",
-      "away": "Lazio",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794137400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Genoa",
-      "away": "AC Milan",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Monza",
-      "away": "Atalanta",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -382,7 +185,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -392,7 +195,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Fiorentina",
@@ -404,7 +207,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -414,51 +217,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Hartberg",
-      "away": "Altach",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "WSG Tirol",
-      "away": "Austria Wien",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "1. FC Köln",
@@ -475,24 +234,12 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.88,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 4.39,
-        "draw": 4.22,
-        "away": 1.87
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15627/1-fc-koln-vs-bayer-leverkusen-2026-11-08",
-      "tipsaudit_id": "15627",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "FC Cologne",
@@ -504,7 +251,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -514,7 +261,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Sturm Graz",
@@ -556,16 +303,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "home",
-          "price": 1.53,
+          "price": 1.49,
           "bookmaker": "1xBet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 1.51,
-        "draw": 4.94,
-        "away": 7.3
+        "home": 1.48,
+        "draw": 5.0,
+        "away": 8.05
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15661/sc-freiburg-vs-union-berlin-2026-11-08",
       "tipsaudit_id": "15661",
@@ -583,7 +330,7 @@
         "ESPN",
         "OpenLigaDB"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -593,7 +340,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "1899 Hoffenheim",
@@ -603,19 +350,11 @@
       "league_code": "ger.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.66,
-          "bookmaker": "Unibet (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.6,
-        "draw": 4.78,
-        "away": 6.08
+        "home": 1.66,
+        "draw": 4.59,
+        "away": 5.52
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15686/1899-hoffenheim-vs-fc-schalke-04-2026-11-08",
       "tipsaudit_id": "15686",
@@ -623,7 +362,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Hoffenheim",
@@ -658,7 +397,7 @@
         "ESPN",
         "OpenLigaDB"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -668,129 +407,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "JS El Biar",
-      "away": "MC Alger",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "US Biskra",
-      "away": "ASO Chlef",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "USM Khenchela",
-      "away": "CR Temouchent",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Rennes",
-      "away": "Lille",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 3.3,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.43,
-        "draw": 3.61,
-        "away": 3.21
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15615/rennes-vs-lille-2026-11-08",
-      "tipsaudit_id": "15615",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "Stade Rennais",
-      "away": "Lille",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Angers",
@@ -803,21 +420,29 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.12,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 3.81,
-        "draw": 3.74,
-        "away": 2.13
+        "home": 3.92,
+        "draw": 3.8,
+        "away": 2.07
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15654/angers-vs-nice-2026-11-08",
       "tipsaudit_id": "15654",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Brest",
@@ -830,7 +455,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -840,7 +465,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Le Havre AC",
@@ -853,29 +478,29 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
-          "selection": "draw",
-          "price": 3.51,
-          "bookmaker": "1xBet",
+          "selection": "home",
+          "price": 3.12,
+          "bookmaker": "Coolbet",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 3.22,
-        "draw": 3.33,
-        "away": 2.57
+        "home": 3.09,
+        "draw": 3.35,
+        "away": 2.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15656/le-havre-vs-lorient-2026-11-08",
       "tipsaudit_id": "15656",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "verified_price"
     },
     {
       "home": "Le Mans",
@@ -887,7 +512,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -897,7 +522,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Le Mans",
@@ -917,16 +542,16 @@
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
-          "price": 1.77,
-          "bookmaker": "1xBet",
+          "price": 1.68,
+          "bookmaker": "GTbets",
           "source": "TipsAudit",
           "status": "indicative_unverified_timestamp"
         }
       ],
       "fair_odds_modelled": {
-        "home": 5.42,
-        "draw": 4.21,
-        "away": 1.73
+        "home": 6.15,
+        "draw": 4.3,
+        "away": 1.65
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15657/le-mans-vs-monaco-2026-11-08",
       "tipsaudit_id": "15657",
@@ -943,9 +568,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.91,
-        "draw": 3.53,
-        "away": 2.68
+        "home": 2.88,
+        "draw": 3.72,
+        "away": 2.61
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15655/stade-brestois-29-vs-lyon-2026-11-08",
       "tipsaudit_id": "15655",
@@ -1010,21 +635,29 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.38,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.43,
-        "draw": 3.77,
-        "away": 3.1
+        "home": 2.34,
+        "draw": 3.81,
+        "away": 3.23
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15694/lens-vs-marseille-2026-11-08",
       "tipsaudit_id": "15694",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Querétaro",
@@ -1044,8 +677,8 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.88,
-        "draw": 4.07,
+        "home": 1.89,
+        "draw": 4.06,
         "away": 4.47
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15741/club-queretaro-vs-puebla-2026-11-09",
@@ -1064,7 +697,7 @@
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 3.38,
-        "draw": 3.85,
+        "draw": 3.84,
         "away": 2.25
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15743/leon-vs-guadalajara-chivas-2026-11-09",
@@ -1318,110 +951,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Heerenveen",
-      "away": "Feyenoord Rotterdam",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794136500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "SC Heerenveen",
-      "away": "Feyenoord",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794136500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 4.58,
-        "draw": 4.68,
-        "away": 1.76
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15568/heerenveen-vs-feyenoord-2026-11-08",
-      "tipsaudit_id": "15568",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "FC Twente",
-      "away": "Ajax",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.05,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.0,
-        "draw": 4.39,
-        "away": 3.67
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15605/twente-vs-ajax-2026-11-08",
-      "tipsaudit_id": "15605",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "FC Twente",
-      "away": "Ajax Amsterdam",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "AZ Alkmaar",
       "away": "FC Groningen",
       "league": "Eredivisie",
@@ -1436,19 +965,11 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.51,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
         "home": 1.5,
         "draw": 5.38,
-        "away": 6.89
+        "away": 6.72
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15646/az-alkmaar-vs-groningen-2026-11-08",
       "tipsaudit_id": "15646",
@@ -1472,9 +993,9 @@
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 7.16,
-        "draw": 6.6,
-        "away": 1.41
+        "home": 6.58,
+        "draw": 6.1,
+        "away": 1.46
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15645/cambuur-vs-psv-eindhoven-2026-11-08",
       "tipsaudit_id": "15645",
@@ -1496,24 +1017,16 @@
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.43,
-          "bookmaker": "Unibet (NL)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.32,
-        "draw": 4.14,
-        "away": 3.04
+        "home": 2.5,
+        "draw": 4.11,
+        "away": 2.8
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15690/utrecht-vs-nec-nijmegen-2026-11-08",
       "tipsaudit_id": "15690",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Independiente Santa Fe",
@@ -1849,116 +1362,11 @@
   ],
   "top_missing": [
     {
-      "home": "Brighton & Hove Albion",
-      "away": "Brentford",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Crystal Palace",
-      "away": "Liverpool",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Ipswich Town",
-      "away": "AFC Bournemouth",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Sunderland",
-      "away": "Chelsea",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Manchester United",
-      "away": "Aston Villa",
-      "league": "Premier League",
-      "league_code": "eng.1",
-      "kickoff_unix": 1794155400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Real Sociedad",
-      "away": "Rayo Vallecano",
+      "home": "Atlético Madrid",
+      "away": "Barcelona",
       "league": "La Liga",
       "league_code": "esp.1",
-      "kickoff_unix": 1794150900.0,
+      "kickoff_unix": 1794168000.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
@@ -1970,189 +1378,20 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15633/real-sociedad-vs-rayo-vallecano-2026-11-08",
-      "tipsaudit_id": "15633",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15695/atletico-madrid-vs-barcelona-2026-11-08",
+      "tipsaudit_id": "15695",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Villarreal",
-      "away": "Getafe",
-      "league": "La Liga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1794159000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15673/villarreal-vs-getafe-2026-11-08",
-      "tipsaudit_id": "15673",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Napoli",
-      "away": "Lazio",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794137400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Genoa",
-      "away": "AC Milan",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Monza",
-      "away": "Atalanta",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Internazionale",
-      "away": "Como",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794157200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Fiorentina",
-      "away": "Juventus",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794167100.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Hartberg",
-      "away": "Altach",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "WSG Tirol",
-      "away": "Austria Wien",
-      "league": "Bundesliga",
-      "league_code": "ger.1",
-      "kickoff_unix": 1794144600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "FC Cologne",
+      "home": "1. FC Köln",
       "away": "Bayer Leverkusen",
-      "league": "ger.1",
+      "league": "Bundesliga",
       "league_code": "ger.1",
       "kickoff_unix": 1794148200.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "FotMob"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
@@ -2187,25 +1426,20 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "SC Freiburg",
-      "away": "1. FC Union Berlin",
-      "league": "ger.1",
+      "home": "1899 Hoffenheim",
+      "away": "FC Schalke 04",
+      "kickoff_unix": 1794162600.0,
+      "league": "Bundesliga",
       "league_code": "ger.1",
-      "kickoff_unix": 1794155400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "OpenLigaDB"
-      ],
+      "phase": "unknown",
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15686/1899-hoffenheim-vs-fc-schalke-04-2026-11-08",
+      "tipsaudit_id": "15686",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
@@ -2217,177 +1451,6 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "TSG Hoffenheim",
-      "away": "Schalke 04",
-      "league": "ger.1",
-      "league_code": "ger.1",
-      "kickoff_unix": 1794162600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "OpenLigaDB"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "JS El Biar",
-      "away": "MC Alger",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "US Biskra",
-      "away": "ASO Chlef",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "USM Khenchela",
-      "away": "CR Temouchent",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794142800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Stade Rennais",
-      "away": "Lille",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794146400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Angers",
-      "away": "Nice",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794154500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15654/angers-vs-nice-2026-11-08",
-      "tipsaudit_id": "15654",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Brest",
-      "away": "Lyon",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794154500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Le Mans",
-      "away": "AS Monaco",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794154500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
@@ -2456,28 +1519,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Lens",
-      "away": "Marseille",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794167100.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15694/lens-vs-marseille-2026-11-08",
-      "tipsaudit_id": "15694",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -2731,27 +1772,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "SC Heerenveen",
-      "away": "Feyenoord",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794136500.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15568/heerenveen-vs-feyenoord-2026-11-08",
-      "tipsaudit_id": "15568",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Cambuur",
       "away": "PSV Eindhoven",
       "league": "Eredivisie",
@@ -2769,6 +1789,27 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/15645/cambuur-vs-psv-eindhoven-2026-11-08",
       "tipsaudit_id": "15645",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "NEC Nijmegen",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "kickoff_unix": 1794164400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15690/utrecht-vs-nec-nijmegen-2026-11-08",
+      "tipsaudit_id": "15690",
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
@@ -2884,6 +1925,196 @@
       "league_code": "col.1",
       "kickoff_unix": 1794169800.0,
       "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Deportivo Pereira",
+      "away": "América de Cali",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794169800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Internacional de Bogotá",
+      "away": "Independiente Santa Fe",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794169800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Llaneros FC",
+      "away": "Boyacá Chicó FC",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794169800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Millonarios",
+      "away": "Alianza FC",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794169800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Águilas Doradas",
+      "away": "Independiente Medellín",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794169800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Jaguares de Córdoba",
+      "away": "Atlético Bucaramanga",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794171900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Deportes Tolima",
+      "away": "Millonarios",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794179400.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Alianza FC",
+      "away": "Llaneros FC",
+      "league": "col.1",
+      "league_code": "col.1",
+      "kickoff_unix": 1794186900.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "América de Cali",
+      "away": "Deportivo Cali",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794188700.0,
+      "phase": "finished",
       "data_sources": [
         "ESPN"
       ],
