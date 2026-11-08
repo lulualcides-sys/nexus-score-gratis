@@ -1,35 +1,26 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T19:41:07.317884+00:00",
+  "checked_at": "2026-11-08T23:15:11.194442+00:00",
   "horizon_hours": 48,
-  "important_games": 28,
-  "verified_bookmaker_games": 6,
-  "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 21,
+  "important_games": 8,
+  "verified_bookmaker_games": 5,
+  "indicative_only_games": 0,
+  "missing_bookmaker_price_games": 3,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 3,
-    "indicative": 2,
+    "matched": 1,
+    "indicative": 0,
     "new_priority": 1
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 3,
+    "matched": 0,
     "new_verified_game": 0,
-    "offers": 403,
-    "market_families": {
-      "half_time": 9,
-      "first_half_team_goals": 12,
-      "first_half_handicap": 48,
-      "first_half_goals": 48,
-      "match_odds": 18,
-      "team_goals": 52,
-      "asian_handicap": 102,
-      "total_goals": 114
-    }
+    "offers": 0,
+    "market_families": {}
   },
   "official_corners_cards": {
     "status": "no_observed_prices",
@@ -41,74 +32,74 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-08T17:58:26.644369+00:00",
-    "complete_market_lines": 254,
+    "bookmaker_snapshot_at": "2026-11-08T22:14:05.157631+00:00",
+    "complete_market_lines": 45,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 518,
+    "odds_eligible_for_quality": 92,
     "invalid_quote_records": 0,
     "families": {
       "asian_handicap": {
-        "games": 5,
-        "odds": 112,
-        "complete_lines": 56,
-        "incomplete_lines": 0,
-        "median_overround_pct": 3.17
-      },
-      "first_half_goals": {
-        "games": 5,
-        "odds": 80,
-        "complete_lines": 40,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.15
-      },
-      "first_half_handicap": {
-        "games": 5,
-        "odds": 62,
-        "complete_lines": 31,
-        "incomplete_lines": 0,
-        "median_overround_pct": 3.73
-      },
-      "first_half_team_goals": {
-        "games": 5,
+        "games": 1,
         "odds": 20,
         "complete_lines": 10,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.82
+        "median_overround_pct": 4.21
+      },
+      "first_half_goals": {
+        "games": 1,
+        "odds": 16,
+        "complete_lines": 8,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.87
+      },
+      "first_half_handicap": {
+        "games": 1,
+        "odds": 12,
+        "complete_lines": 6,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.83
+      },
+      "first_half_team_goals": {
+        "games": 1,
+        "odds": 4,
+        "complete_lines": 2,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.63
       },
       "half_time": {
-        "games": 5,
-        "odds": 15,
-        "complete_lines": 5,
+        "games": 1,
+        "odds": 3,
+        "complete_lines": 1,
         "incomplete_lines": 0,
-        "median_overround_pct": 3.52
+        "median_overround_pct": 5.25
       },
       "match_odds": {
-        "games": 5,
-        "odds": 15,
-        "complete_lines": 5,
+        "games": 1,
+        "odds": 3,
+        "complete_lines": 1,
         "incomplete_lines": 0,
-        "median_overround_pct": 2.83
+        "median_overround_pct": 4.65
       },
       "team_goals": {
-        "games": 5,
-        "odds": 60,
-        "complete_lines": 30,
+        "games": 1,
+        "odds": 10,
+        "complete_lines": 5,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.79
+        "median_overround_pct": 5.86
       },
       "total_goals": {
-        "games": 5,
-        "odds": 154,
-        "complete_lines": 77,
+        "games": 1,
+        "odds": 24,
+        "complete_lines": 12,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.53
+        "median_overround_pct": 5.06
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 478,
-    "historical_snapshots": 21,
+    "selections_with_changes": 481,
+    "historical_snapshots": 22,
     "top_changes": [
       {
         "home": "Fiorentina",
@@ -144,96 +135,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Atlético Madrid",
-      "away": "Barcelona",
-      "league": "La Liga",
-      "league_code": "esp.1",
-      "kickoff_unix": 1794168000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 141,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 1.95,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 3.73,
-        "draw": 4.67,
-        "away": 1.93
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15695/atletico-madrid-vs-barcelona-2026-11-08",
-      "tipsaudit_id": "15695",
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 135,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Fiorentina",
-      "away": "Juventus",
-      "league": "Serie A Itália",
-      "league_code": "ita.1",
-      "kickoff_unix": 1794167100.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 141,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 135,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Lens",
-      "away": "Marseille",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1794167100.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 142,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 2.27,
-        "draw": 3.9,
-        "away": 3.3
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15694/lens-vs-marseille-2026-11-08",
-      "tipsaudit_id": "15694",
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 133,
-      "coverage": "verified_price"
-    },
-    {
       "home": "Querétaro",
       "away": "Puebla",
       "league": "Liga MX",
@@ -244,21 +145,21 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 1.89,
-        "draw": 4.06,
-        "away": 4.46
+        "home": 1.9,
+        "draw": 4.0,
+        "away": 4.49
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15741/club-queretaro-vs-puebla-2026-11-09",
       "tipsaudit_id": "15741",
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Leon",
@@ -268,19 +169,11 @@
       "league_code": "mex.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.15,
-          "bookmaker": "Coolbet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
+      "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 3.7,
-        "draw": 3.86,
-        "away": 2.13
+        "home": 3.76,
+        "draw": 3.83,
+        "away": 2.12
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/15743/leon-vs-guadalajara-chivas-2026-11-09",
       "tipsaudit_id": "15743",
@@ -288,7 +181,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "León",
@@ -300,7 +193,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -310,7 +203,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "León",
@@ -344,381 +237,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 8,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Vasco da Gama",
-      "away": "Palmeiras",
-      "league": "Copa do Brasil",
-      "league_code": "bra.copa_do_brazil",
-      "kickoff_unix": 1794168000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Estrela",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Estrela da Amadora",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Rio Ave",
-      "away": "Braga",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "NEC Nijmegen",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794164400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Independiente Santa Fe",
-      "away": "Deportivo Pasto",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794164400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Bucaramanga",
-      "away": "Fortaleza CEIF",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Nacional",
-      "away": "Once Caldas",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Cúcuta Deportivo",
-      "away": "Jaguares de Córdoba",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Cali",
-      "away": "Deportes Tolima",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Pasto",
-      "away": "Atlético Junior",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Pereira",
-      "away": "América de Cali",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Internacional de Bogotá",
-      "away": "Independiente Santa Fe",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Llaneros FC",
-      "away": "Boyacá Chicó FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Millonarios",
-      "away": "Alianza FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Águilas Doradas",
-      "away": "Independiente Medellín",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Jaguares de Córdoba",
-      "away": "Atlético Bucaramanga",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794171900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 4,
+      "verified_quotes": 12,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -740,7 +259,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -763,7 +282,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -773,7 +292,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "América de Cali",
@@ -800,46 +319,20 @@
   ],
   "top_missing": [
     {
-      "home": "Querétaro",
-      "away": "Puebla",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1794182400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15741/club-queretaro-vs-puebla-2026-11-09",
-      "tipsaudit_id": "15741",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "León",
-      "away": "Guadalajara",
-      "league": "Liga MX",
-      "league_code": "mex.1",
+      "home": "Leon",
+      "away": "Guadalajara Chivas",
       "kickoff_unix": 1794190200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
       "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/15743/leon-vs-guadalajara-chivas-2026-11-09",
+      "tipsaudit_id": "15743",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
       "coverage": "no_bookmaker_price"
     },
     {
@@ -850,364 +343,6 @@
       "kickoff_unix": 1794190200.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Vasco da Gama",
-      "away": "Palmeiras",
-      "league": "Copa do Brasil",
-      "league_code": "bra.copa_do_brazil",
-      "kickoff_unix": 1794168000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Estrela",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Estrela da Amadora",
-      "away": "Benfica",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Rio Ave",
-      "away": "Braga",
-      "league": "Liga Portugal",
-      "league_code": "por.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "NEC Nijmegen",
-      "league": "Eredivisie",
-      "league_code": "ned.1",
-      "kickoff_unix": 1794164400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Independiente Santa Fe",
-      "away": "Deportivo Pasto",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794164400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Bucaramanga",
-      "away": "Fortaleza CEIF",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Atlético Nacional",
-      "away": "Once Caldas",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Cúcuta Deportivo",
-      "away": "Jaguares de Córdoba",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Cali",
-      "away": "Deportes Tolima",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Pasto",
-      "away": "Atlético Junior",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Pereira",
-      "away": "América de Cali",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Internacional de Bogotá",
-      "away": "Independiente Santa Fe",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Llaneros FC",
-      "away": "Boyacá Chicó FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Millonarios",
-      "away": "Alianza FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Águilas Doradas",
-      "away": "Independiente Medellín",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794169800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Alianza FC",
-      "away": "Llaneros FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794186900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
         "FotMob"
       ],
       "verified_quotes": 0,
