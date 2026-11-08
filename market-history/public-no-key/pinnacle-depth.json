@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T10:31:02.492838+00:00",
-  "bookmaker_snapshot_at": "2026-11-08T10:31:00.808046+00:00",
+  "checked_at": "2026-11-08T17:58:27.377627+00:00",
+  "bookmaker_snapshot_at": "2026-11-08T17:58:26.644369+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1718,
+  "matches_catalogued": 5,
+  "matches_with_priced_markets": 5,
+  "odds_eligible_for_quality": 518,
   "invalid_quote_records": 0,
-  "complete_market_lines": 843,
+  "complete_market_lines": 254,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 370,
-      "complete_lines": 185,
+      "games": 5,
+      "odds": 112,
+      "complete_lines": 56,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.12
+      "median_overround_pct": 3.17
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 256,
-      "complete_lines": 128,
+      "games": 5,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.63
+      "median_overround_pct": 5.15
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 198,
-      "complete_lines": 99,
+      "games": 5,
+      "odds": 62,
+      "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.61
+      "median_overround_pct": 3.73
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 5,
+      "odds": 20,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 4.82
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.4
+      "median_overround_pct": 3.52
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 2.69
+      "median_overround_pct": 2.83
     },
     "team_goals": {
-      "games": 16,
-      "odds": 208,
-      "complete_lines": 104,
+      "games": 5,
+      "odds": 60,
+      "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.78
+      "median_overround_pct": 4.79
     },
     "total_goals": {
-      "games": 16,
-      "odds": 526,
-      "complete_lines": 263,
+      "games": 5,
+      "odds": 154,
+      "complete_lines": 77,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.33
+      "median_overround_pct": 4.53
     }
   },
   "examples": [
     {
-      "fixture": "Napoli x Lazio",
+      "fixture": "Hoffenheim x Schalke 04",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "observed_at": "2026-11-08T17:58:26.644369+00:00",
       "selections": {
-        "home": 2.29,
-        "away": 3.09,
-        "draw": 3.78
+        "home": 1.5348,
+        "away": 6.1,
+        "draw": 4.7
       },
-      "overround_pct": 2.49
+      "overround_pct": 2.83
     },
     {
-      "fixture": "Napoli x Lazio",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-08T10:31:00.808046+00:00",
-      "selections": {
-        "home": 2.0,
-        "away": 1.9259
-      },
-      "overround_pct": 1.92
-    },
-    {
-      "fixture": "Napoli x Lazio",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-08T10:31:00.808046+00:00",
-      "selections": {
-        "home": 3.83,
-        "away": 1.2985
-      },
-      "overround_pct": 3.12
-    },
-    {
-      "fixture": "Napoli x Lazio",
+      "fixture": "Hoffenheim x Schalke 04",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "observed_at": "2026-11-08T17:58:26.644369+00:00",
       "selections": {
-        "home": 3.41,
-        "away": 1.3546
+        "home": 1.8475,
+        "away": 2.09
       },
-      "overround_pct": 3.15
+      "overround_pct": 1.97
     },
     {
-      "fixture": "Napoli x Lazio",
+      "fixture": "Hoffenheim x Schalke 04",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-08T10:31:00.808046+00:00",
+      "raw_market_key": "s;0;s;-2.0",
+      "line_from_market_key": "s;0;s;-2.0",
+      "observed_at": "2026-11-08T17:58:26.644369+00:00",
       "selections": {
-        "home": 2.68,
-        "away": 1.5291
+        "home": 3.57,
+        "away": 1.3322
       },
-      "overround_pct": 2.71
+      "overround_pct": 3.08
+    },
+    {
+      "fixture": "Hoffenheim x Schalke 04",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-11-08T17:58:26.644369+00:00",
+      "selections": {
+        "home": 2.78,
+        "away": 1.4878
+      },
+      "overround_pct": 3.18
+    },
+    {
+      "fixture": "Hoffenheim x Schalke 04",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-11-08T17:58:26.644369+00:00",
+      "selections": {
+        "home": 2.37,
+        "away": 1.6494
+      },
+      "overround_pct": 2.82
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
