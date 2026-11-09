@@ -18,8 +18,8 @@ const main=[
 // Canonical male-only competition catalog; no history is deleted.
 const womenName=/\b(?:women|womens|woman|female|feminino|feminina|femenino|femenina|feminin|feminine|ladies|frauen|damallsvenskan|femminile|wsl|nwsl|liga f|w league)\b|\(w\)|\[w\]/;
 const leagues=[
- ['br_a','Brasileirão Série A','Brasil',/\b(?:brasileirao(?: serie a)?|campeonato brasileiro serie a|brazilian? serie a|brasil(?:eiro)? serie a)\b/],
- ['br_b','Brasileirão Série B','Brasil',/\b(?:brasileirao serie b|campeonato brasileiro serie b|brazilian? serie b|brasil(?:eiro)? serie b|serie b do brasil)\b/],
+ ['br_a','Brasileirão Série A','Brasil',/\b(?:brasileirao(?: serie a)?|campeonato brasileiro serie a|(?:brazil|brazilian) serie a|brasil(?:eiro)? serie a)\b/],
+ ['br_b','Brasileirão Série B','Brasil',/\b(?:brasileirao serie b|campeonato brasileiro serie b|(?:brazil|brazilian) serie b|brasil(?:eiro)? serie b|serie b do brasil)\b/],
  ['copa_br','Copa do Brasil','Brasil',/\bcopa do brasil\b/],
  ['libertadores','Copa Libertadores','Continental',/\b(?:copa )?libertadores\b/],
  ['sudamericana','Copa Sul-Americana','Continental',/\b(?:copa )?(?:sudamericana|sul americana)\b/],
