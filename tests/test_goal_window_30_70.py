@@ -64,7 +64,7 @@ class Goal3070Tests(unittest.TestCase):
         self.assertEqual(trained, retrained)
 
     def test_invalid_real_time_data_never_produces_live_forecast(self):
-        x = alert("ok", 45)
+        x = alert("ok", 45, outcome="pendente")
         game = {"id": "ok", "minute": 46, "phase": "live",
                 "score": "0-0", "pressure_last_minute": 46,
                 "home": "Casa", "away": "Fora"}
