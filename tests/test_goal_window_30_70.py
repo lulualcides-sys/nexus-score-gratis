@@ -2,7 +2,7 @@ import unittest
 from datetime import datetime, timezone, timedelta
 from goal_window_30_70 import (
     evaluate, features, _eligible, _fit, _estimate, _fresh_candidate,
-    _metrics, _baseline,
+    _metrics, _baseline, _holdout_robustness,
 )
 
 NOW = datetime(2026, 11, 9, 13, 0, tzinfo=timezone.utc)
@@ -98,6 +98,23 @@ class Goal3070Tests(unittest.TestCase):
         self.assertGreaterEqual(m["ece"],0)
         self.assertEqual(len(m["bins"]),5)
         self.assertIsNotNone(_baseline(rows,model["base_rate"]))
+        research = _holdout_robustness(rows, model)
+        self.assertGreaterEqual(research["days"], 20)
+        self.assertEqual(len(research["gain_ci95"]), 2)
+        self.assertGreaterEqual(research["auc"], 0)
+        self.assertLessEqual(research["auc"], 1)
+
+    def test_tiny_retrospective_gain_never_unlocks_live_percentage(self):
+        items = []
+        for j in range(250):
+            day = 28-j//9
+            items.append(alert("m"+str(j),minute=30+j%40,day=day,
+                               outcome="gol_confirmado" if j%3==0 else "sem_gol_confirmado"))
+        x = evaluate({"items":items},now=NOW)
+        self.assertLess(x["sample"]["holdout_days"],14)
+        self.assertFalse(x["validation"]["probability_released_for_live"])
+        self.assertNotEqual(x["validation"]["status"],
+                            "better_than_constant_baseline_in_historical_holdout")
 
 
 if __name__=="__main__":

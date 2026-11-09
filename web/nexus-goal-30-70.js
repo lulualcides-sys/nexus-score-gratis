@@ -8,6 +8,7 @@ const fmt=x=>num(x)+(num(x)==="—"?"":"%");
 const texts={
  insufficient_history:"Amostra insuficiente para testar o indicador.",
  no_verified_improvement_over_baseline:"Modelo experimental NÃO superou a previsão-base no teste cronológico.",
+ small_or_unconfirmed_historical_gain:"Melhoria histórica pequena ou inconclusiva: porcentagem de gol bloqueada até evidência mais robusta.",
  better_than_constant_baseline_in_historical_holdout:"Superou a previsão-base neste teste histórico; ainda sem validação prospectiva."
 };
 function interpret(data){
@@ -49,6 +50,12 @@ function html(data){
     ' · erro de calibração ECE '+num(v.ece_holdout)+
     ' (menor é melhor). Não demonstra lucro nem vantagem em odds reais.</p>':
     '<p class="nexus-goal-window-note">Sem teste independente suficiente: o indicador não deve exibir uma chance como comprovada.</p>')+
+  (v.robustness_exploratory&&v.robustness_exploratory.auc!==null&&v.robustness_exploratory.auc!==undefined?
+    '<p class="nexus-goal-window-note">Separação entre jogos com/sem gol (AUC): '+
+    num(v.robustness_exploratory.auc)+' · dias no teste: '+
+    esc(v.robustness_exploratory.days)+'. Intervalo bootstrap 95% da melhoria no Brier: '+
+    esc((v.robustness_exploratory.gain_ci95||[]).map(num).join(' a '))+
+    '. Diagnóstico retrospectivo, não certificação prospectiva.</p>':'')+
   (active?'<h4>Alertas recentes em partidas ao vivo</h4>'+active:
   '<p class="nexus-goal-window-empty">Nenhum sinal recente e verificável na faixa 30′–70′. O radar não força previsões quando faltam pressão, scouts ou alertas atualizados.</p>')+
   '<p class="nexus-goal-window-note">Um sinal por jogo no treinamento. Resultados indeterminados não viram derrotas. '+
