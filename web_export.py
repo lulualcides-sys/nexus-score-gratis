@@ -1038,6 +1038,20 @@ def main():
     temp=OUT.with_suffix('.tmp')
     temp.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     temp.replace(OUT)
+    # Sumário público independente para auditar amostra, holdout e percentual
+    # disponível sem baixar o feed principal de 15MB.
+    audit_path=OUT.parent/'goal-30-70-status.json'
+    audit_temp=audit_path.with_suffix('.tmp')
+    audit_temp.write_text(json.dumps(goal_window,ensure_ascii=False,separators=(',',':'))+'\n',
+                          encoding='utf-8')
+    audit_temp.replace(audit_path)
+    print('NEXUS GOL 30-70:',json.dumps({
+       'sample':goal_window['sample'],
+       'validation':goal_window['validation']['status'],
+       'brier_model':goal_window['validation']['brier_model'],
+       'brier_baseline':goal_window['validation']['brier_constant_baseline'],
+       'active':goal_window['active_count']
+    },ensure_ascii=False))
     print('WEB EXPORT:',len(rows),'jogos,',len(payload['alerts']),'alertas de monitoramento,',
           payload['paper']['settled'],'operacoes paper; ZERO dados financeiros privados')
 if __name__=='__main__':main()
