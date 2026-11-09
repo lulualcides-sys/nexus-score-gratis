@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T06:23:32.594994+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T10:37:07.262780+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -33,6 +33,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-09 | Club Sport Herediano × Inter San Carlos | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-09 | Botoșani × Oțelul Galați | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-09 | Antigua Guatemala × Deportivo Malacateco | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-09 | Las Palmas × Eldense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-09 | Sabadell × Real Sociedad B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-09 | FC Chernomorets Burgas × Yantra | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-09 | PFC CSKA Sofia II × Rilski Sportist | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -115,9 +116,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-08 | Fiorentina × Juventus | 2-2 | 0 | Chutes no alvo: 6.0×6.0; Match Odds 1X2: Casa 3,25, Empate 3,30, Fora 2,15 |
 | 2026-11-08 | Genoa × AC Milan | 1-2 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 3,80, Empate 3,30, Fora 1,95 |
 | 2026-11-08 | Universidad de Chile × Cobresal | 2-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×1.0 |
-| 2026-11-08 | Universidad Católica × Deportes Limache | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-08 | Universidad Católica × Deportes Limache | 3-0 | 0 | Chutes no alvo: 7.0×3.0, Chutes para fora: 6.0×5.0, Escanteios: 4.0×10.0, Grandes chances: 5.0×0.0 |
 | 2026-11-08 | Unión La Calera × Huachipato | 1-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-11-08 | Audax Italiano × Coquimbo Unido | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-08 | Audax Italiano × Coquimbo Unido | 0-1 | 0 | Chutes no alvo: 8.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-11-08 | Ñublense × Colo Colo | 1-2 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 2.0×4.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-11-08 | Universidad de Concepción × O'Higgins | 3-2 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×6.0, Escanteios: 0.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-11-08 | Atlético Nacional × Deportivo Pereira | 2-2 | 90 | Chutes no alvo: 8.0×5.0, Chutes para fora: 10.0×5.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×2.0 |
@@ -137,9 +138,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-08 | FK Radnik Surdulica × OFK Beograd | 2-1 | 0 | Chutes no alvo: 4.0×6.0, Chutes para fora: 10.0×4.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Vojvodina × FK Crvena Zvezda | 0-1 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Hapoel Beer Sheva × Hapoel Tel Aviv | 0-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-08 | K. Lierse SK × Eupen | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-08 | K. Lierse SK × Eupen | 2-3 | 90 | Chutes no alvo: 8.0×7.0, Chutes para fora: 9.0×3.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×7.0 |
 | 2026-11-08 | KSC Lokeren × FCV Dender EH | 2-2 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×1.0 |
-| 2026-11-08 | Baník Ostrava B × SK Prostějov | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **140**.
-Novas cotacoes capturadas na ultima execucao: **3**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
