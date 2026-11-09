@@ -17,6 +17,10 @@ from zoneinfo import ZoneInfo
 from telegram_collector.model_only import (
     MODEL_VERSION, historical_rows, make_probability_book, team_rates,
 )
+from telegram_collector.league_stats import summarize as summarize_leagues
+from telegram_collector.predictive_validation import (
+    from_poisson, league_prior, report as model_comparison,
+)
 
 BR=ZoneInfo("America/Sao_Paulo")
 MAX_HOLDOUT_PER_LEAGUE=20
@@ -50,6 +54,7 @@ def evaluate(rows,now):
             by_league[row["league"]].append(row)
     evaluated=defaultdict(list)
     excluded=Counter()
+    paired=[]
     for league,all_games in by_league.items():
         if len(all_games)<MIN_LEAGUE_ROWS:
             continue
@@ -67,6 +72,8 @@ def evaluate(rows,now):
                                        stats["lambda_away_ft"],
                                        stats["first_half_share"])
             evaluated[league].append(assessment(book,*row["ft"]))
+            paired.append((league, row["ft"], from_poisson(book),
+                           league_prior(rows, league, row["date"])))
     flat=[measure for entries in evaluated.values() for measure in entries]
     def avg(k):
         return round(sum(item[k] for item in flat)/len(flat),5) if flat else None
@@ -81,6 +88,7 @@ def evaluate(rows,now):
             "leagues_samples":dict(sorted(((code,len(measures)) for code,measures in
                                            evaluated.items()),key=lambda v:-v[1])),
             "skipped_reasons":dict(excluded),
+            "predictive_comparison": model_comparison(paired),
             "brier_1x2":avg(0),
             "rps_1x2":avg(1),
             "log_loss_1x2":avg(2),
@@ -96,6 +104,10 @@ def run(history,archive,now):
     result=evaluate(rows,now)
     directory=Path(archive)/"model-only"
     directory.mkdir(parents=True,exist_ok=True)
+    league_report = summarize_leagues(rows, now)
+    (directory/"league-stats-latest.json").write_text(
+        json.dumps(league_report,ensure_ascii=False,separators=(",",":"))+"\n",
+        encoding="utf-8")
     (directory/"backtest-latest.json").write_text(
         json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps({k:result[k] for k in (
