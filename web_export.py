@@ -11,6 +11,7 @@ import math
 import re
 from signal_evaluation import evaluate
 from goal_window_30_70 import evaluate as evaluate_goal_window
+from major_league_scope import major_men
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_movements import movements
@@ -984,14 +985,20 @@ def main():
     standings_status=load(H/'standings_status.json')
     registry=load(H/'signal_registry.json')
     all_signal_items=registry.get('items') or []
-    signal_journal={'total_records':len(all_signal_items),
-        'export_limit':5000,'truncated':len(all_signal_items)>5000,
+    # Only the PUBLIC presentation is filtered. The original raw journal and
+    # historical files remain unchanged for a complete audit trail.
+    visible_signal_items=[r for r in all_signal_items if major_men(r)]
+    display_registry={**registry,'items':visible_signal_items}
+    signal_journal={'total_records':len(visible_signal_items),
+        'scope':'major_men_only',
+        'records_hidden_from_public_view':len(all_signal_items)-len(visible_signal_items),
+        'export_limit':5000,'truncated':len(visible_signal_items)>5000,
         'updated_at':registry.get('updated_at'),
         'diagnostics':registry.get('diagnostics') or {},
-        'items':all_signal_items[:5000],
+        'items':visible_signal_items[:5000],
         'note':'Sinais 5.29 na nuvem; gols em janelas de 5 a 40 minutos conforme eventos. EV indisponivel sem odds e modelo calibrado.'}
     archive_stats=read_finished_archive(H,as_of=today)
-    radar_v6=evaluate_v6(registry,rows,as_of=today,historical_archive=archive_stats)
+    radar_v6=evaluate_v6(display_registry,rows,as_of=today,historical_archive=archive_stats)
     goal_window=evaluate_goal_window(registry,rows,now=datetime.now(timezone.utc))
     pregame=prelive_archive()
     evidence=audit_markets(pregame)
@@ -1022,7 +1029,7 @@ def main():
              'odds_collection_status':{k:load(H/'pregame_refresh_status.json').get(k)
                for k in ('updated_at','odds_updated','sofascore_checked','sofascore_quotes_added','the_odds_api','api_football','odds_papi','espn_fallback','errors')},
              'paper':paper_summary(rows),'market_history':market_history(rows),
-             'signal_journal':signal_journal,'signal_evaluation':evaluate(registry),
+             'signal_journal':signal_journal,'signal_evaluation':evaluate(display_registry),
              'goal_window_30_70':goal_window,
              'intelligence_v6':radar_v6,
              'alerts':alerts_from(rows),'games':rows}
