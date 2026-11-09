@@ -842,10 +842,12 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
             <div class="panel-heading"><div><h2><span class="accent-bar"></span> Partidas <span id="list-subtitle" class="soft">/ do dia</span></h2><p>Pressão por minuto · 12 indicadores · sumário · estatísticas</p></div><span id="list-count" class="count">0 JOGOS</span></div>
             <div class="agenda-days" role="group" aria-label="Agenda de jogos"><button type="button" class="agenda-day" data-day-offset="-1" aria-pressed="false">ONTEM <small id="agenda-day--1">—</small></button><button type="button" class="agenda-day active" data-day-offset="0" aria-pressed="true">HOJE <small id="agenda-day-0">—</small></button><button type="button" class="agenda-day" data-day-offset="1" aria-pressed="false">AMANHÃ <small id="agenda-day-1">—</small></button><button type="button" class="agenda-day" data-day-offset="2" aria-pressed="false">DEPOIS DE AMANHÃ <small id="agenda-day-2">—</small></button></div>
             <div class="today-shortcuts"><button type="button" class="secondary-btn" id="show-upcoming">◷ PRÓXIMOS DO DIA</button><button type="button" class="secondary-btn" id="show-all-today">TODOS OS JOGOS</button><span id="upcoming-count" class="soft"></span></div><div class="filter-row"><label class="search-wrap"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="search" placeholder="Buscar time ou competição..." autocomplete="off"/></label><select id="status-filter" aria-label="Filtro de jogos"><option value="all">Todos</option><option value="live">Ao vivo</option><option value="scheduled">Próximos do dia</option><option value="finished">Encerrados</option><option value="favorite">★ Favoritos</option></select></div>
+            <div class="nexus-league-quick"><label for="league-filter">Competições masculinas · principais ligas</label>
+<select id="league-filter" aria-label="Selecionar campeonato masculino"><option value="">Todas as principais ligas masculinas</option></select></div>
             <div class="nexus-radar-controls"><label><input type="checkbox" id="radar-sort" checked/> Priorizar jogos analisáveis</label><label><input type="checkbox" id="radar-complete"/> Somente cobertura completa</label><label><input type="checkbox" id="only-thermometer"/> Somente termômetro real</label></div><div class="advanced-head" style="display:none" aria-hidden="true"><button id="advanced-toggle" class="secondary-btn" aria-expanded="true">⛭ FILTROS AVANÇADOS <span id="rule-count">0</span></button><span class="scan-meta" id="scan-summary">Use os critérios para encontrar jogos com estatísticas verificadas.</span></div>
             <div id="advanced-filters" class="advanced-filters" style="display:none" aria-hidden="true">
               <div class="quick-filter-grid">
-                <label>CAMPEONATO <select id="league-filter"><option value="">Todos os campeonatos</option></select></label>
+                
                 <label>PLACAR <select id="score-filter"><option value="any">Qualquer placar</option><option value="draw">Empatado</option><option value="home_lead">Mandante vence</option><option value="away_lead">Visitante vence</option><option value="zero_zero">0 x 0</option><option value="goals">Com gol(s)</option></select></label>
                 <label>PERÍODO <select id="period-filter"><option value="any">Qualquer minuto</option><option value="ht1">1º tempo · 1–45'</option><option value="ht2">2º tempo · 46'+</option><option value="late">Tardio · 70'+</option></select></label>
                 <label>DOMÍNIO <select id="dominance-filter"><option value="any">Qualquer equipe</option><option value="home">Mandante</option><option value="away">Visitante</option><option value="even">Equilibrado</option></select></label>
@@ -2070,6 +2072,12 @@ window.PressureLab = (() => {
 })(typeof window!=='undefined'?window:globalThis);
 
 </script>
+<style>
+.nexus-league-quick{display:flex;align-items:center;gap:10px;padding:10px 12px;margin:8px 0;border:1px solid #355468;border-radius:10px;background:#122a39;color:#c2e6ef}
+.nexus-league-quick label{font-weight:700;font-size:12px;flex:0 0 auto}
+.nexus-league-quick select{min-width:0;flex:1;max-width:100%;padding:9px;border:1px solid #527381;border-radius:7px;background:#102532;color:#e9faff}
+@media(max-width:700px){.nexus-league-quick{flex-direction:column;align-items:stretch}.nexus-league-quick select{width:100%}}
+</style>
 <script src="./nexus-league-coverage.js"></script>
 <script>
 'use strict';
@@ -2313,6 +2321,7 @@ function baseMatches(){
  const league=$('#league-filter').value,score=$('#score-filter').value,period=$('#period-filter').value;
  const pool=state.list.filter(m=>{
    if(state.view==='favorites'&&!state.favorites.has(m.id))return false;
+   if(NexusLeagueCoverage.womenGame(m))return false;
    if(filter==='live'&&!m.live)return false;
    if(filter==='finished'&&m.phase!=='finished')return false;
    if(filter==='scheduled'&&m.phase!=='scheduled')return false;
@@ -2320,7 +2329,7 @@ function baseMatches(){
    if($('#only-thermometer').checked&&!NexusUpgrade.hasThermometer(m,detailFor(m)))return false;
    if($('#radar-complete').checked&&NexusLeagueCoverage.coverageStatus(detailFor(m)||m)!=='completa')return false;
    if(query&&!`${m.home} ${m.away} ${m.league}`.toLocaleLowerCase('pt-BR').includes(query))return false;
-   if(league&&m.league!==league)return false;
+   if(league&&NexusLeagueCoverage.profile(m.league)?.id!==league)return false;
    if(!state.reference&&!state.demo&&!NexusLeagueCoverage.visible(m))return false;
    const h=m.home_score==null?NaN:Number(m.home_score),a=m.away_score==null?NaN:Number(m.away_score),min=m.minute==null?NaN:Number(m.minute);
    if(score==='draw'&&h!==a || score==='home_lead'&&h<=a || score==='away_lead'&&a<=h || score==='zero_zero'&&(h!==0||a!==0)||score==='goals'&&h+a===0)return false;
@@ -2400,11 +2409,25 @@ function renderMatches(){
 function updateLeagues(){
  const sel=$('#league-filter'),before=sel.value;
  const pool=NexusLeagueCoverage.leagueStats(state.list);
- sel.innerHTML='<option value="">Principais ligas · com cobertura</option>'+pool.map(r=>{
-   const grade=r.completa?'completa':r.measured?'parcial':'agenda verificada';
-   return `<option value="${esc(r.league)}">★ ${esc(r.league)} · ${grade} · ${r.covered} jogos</option>`;
- }).join('');
- if([...sel.options].some(o=>o.value===before))sel.value=before;else sel.value='';
+ const available=new Set(pool.map(x=>x.league));
+ // Brasileirão A/B always visible in the filter, but disabled when no matches.
+ const pinned=[{league:'br_a',label:'Brasileirão Série A',group:'Brasil',covered:0},
+               {league:'br_b',label:'Brasileirão Série B',group:'Brasil',covered:0}]
+   .filter(x=>!available.has(x.league));
+ const entries=[...pool,...pinned];
+ const groups=['Brasil','Continental','Europa','Américas','Seleções'];
+ sel.innerHTML='<option value="">Todas as principais ligas masculinas</option>'+
+   groups.map(group=>{
+      const rows=entries.filter(x=>x.group===group);
+      if(!rows.length)return '';
+      return '<optgroup label="'+esc(group)+'">'+rows.map(r=>{
+        const grade=r.completa?'completa':r.measured?'parcial':r.covered?'agenda confirmada':'sem partidas disponíveis';
+        return '<option value="'+esc(r.league)+'" '+(r.covered?'':'disabled')+'>'+
+          esc(r.label)+' · '+grade+' · '+r.covered+' jogos</option>';
+      }).join('')+'</optgroup>';
+   }).join('');
+ if([...sel.options].some(o=>o.value===before&&!o.disabled))sel.value=before;
+ else sel.value='';
 }
 async function loadFavorites(){const d=await api('/api/favorites');state.favorites=new Set((d.favorites||[]).map(x=>x.match_id));updateIndicators()}
 let lastHotHydration=0;
