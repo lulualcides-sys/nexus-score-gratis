@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T12:02:10.002225+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T12:16:12.987032+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -115,6 +115,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-08 | Napoli × Lazio | 1-1 | 0 | Chutes no alvo: 6.0×6.0 |
 | 2026-11-08 | Fiorentina × Juventus | 2-2 | 0 | Chutes no alvo: 6.0×6.0; Match Odds 1X2: Casa 3,25, Empate 3,30, Fora 2,15 |
 | 2026-11-08 | Genoa × AC Milan | 1-2 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 3,80, Empate 3,30, Fora 1,95 |
+| 2026-11-08 | FC Emmen × MVV Maastricht | 0-2 | 0 | Chutes no alvo: 4.0×6.0 |
+| 2026-11-08 | Vitesse × De Graafschap | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-08 | Universidad de Chile × Cobresal | 2-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-11-08 | Universidad Católica × Deportes Limache | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-08 | Unión La Calera × Huachipato | 1-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×0.0 |
@@ -138,8 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-08 | FK Radnik Surdulica × OFK Beograd | 2-1 | 0 | Chutes no alvo: 4.0×6.0, Chutes para fora: 10.0×4.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Vojvodina × FK Crvena Zvezda | 0-1 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Hapoel Beer Sheva × Hapoel Tel Aviv | 0-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-08 | K. Lierse SK × Eupen | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-08 | KSC Lokeren × FCV Dender EH | 2-2 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×1.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6223 | **Com gol:** 2404 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 31 datas com coletas | 80 pendentes | 2095 indeterminados | 2797 incompletos.
+**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2090 indeterminados | 2797 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11195 | **Jogos monitorados:** 1467 | **Ao vivo:** 18 | **Termômetros recentes:** 4.
+**Registros:** 11195 | **Jogos monitorados:** 1484 | **Ao vivo:** 19 | **Termômetros recentes:** 4.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
