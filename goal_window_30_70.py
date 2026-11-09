@@ -38,6 +38,18 @@ def features(entry):
     pressure = _number(context.get("pressure10_score"))
     shots = _number(context.get("shots_on"))
     chances = _number(context.get("big_chances"))
+    five = _number(context.get("pressure5_score"))
+    delta_shots = _number(context.get("delta_shots_on"))
+    delta_xg = _number(context.get("delta_xg"))
+    raw_score = str(context.get("score_at_alert") or "")
+    import re
+    score_pair = re.fullmatch(r"([0-9]{1,2})[-:–]([0-9]{1,2})", raw_score)
+    if score_pair:
+        sh,sa = (int(score_pair.group(1)),int(score_pair.group(2)))
+        score_state = ("0-0" if sh+sa==0 else "empate_com_gols" if sh==sa
+                       else "mandante_frente" if sh>sa else "visitante_frente")
+    else:
+        score_state = "indisponivel"
     rule = str(entry.get("rule") or entry.get("signal") or "")
     known_rules = ("pressao_forte_10min", "pressao_total_5_10min",
                    "pressao_ofensiva_18", "chutes_no_alvo_5",
@@ -54,6 +66,14 @@ def features(entry):
         "chances_claras": ("indisponivel" if chances is None else
                           "2+" if chances >= 2 else "1" if chances >= 1 else "0"),
         "regra": known,
+        "placar_atual": score_state,
+        "aceleracao_pressao": ("indisponivel" if five is None or pressure is None else
+                               "subindo" if five-pressure>=10 else
+                               "caindo" if pressure-five>=10 else "estavel"),
+        "novos_chutes_alvo": ("indisponivel" if delta_shots is None else
+                             "2+" if delta_shots>=2 else "1" if delta_shots>=1 else "0"),
+        "variacao_xg": ("indisponivel" if delta_xg is None else
+                        "alta" if delta_xg>=.25 else "alguma" if delta_xg>.02 else "0"),
     }
 
 
