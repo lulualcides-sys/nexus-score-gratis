@@ -10,7 +10,7 @@ const brazilA=['Brasileirão Série A','Campeonato Brasileiro Série A','Brazil 
 const brazilB=['Brasileirão Série B','Campeonato Brasileiro Série B','Brazilian Serie B','Serie B do Brasil'];
 for(const x of brazilA)assert.equal(c.profile(x)?.id,'br_a',x+' must be Brazilian A');
 for(const x of brazilB)assert.equal(c.profile(x)?.id,'br_b',x+' must be Brazilian B');
-for(const x of ['Women's Champions League','Brasileirão Feminino','NWSL',
+for(const x of ["Women\'s Champions League",'Brasileirão Feminino','NWSL',
  'Liga F','UEFA Womens Champions League','Serie A Femminile']){
  assert.equal(c.category(x),false,x+' excluded');
 }
