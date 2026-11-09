@@ -30,8 +30,9 @@ jobs:
         run: python -m pip install -r research/goal_30_70_lab/requirements.txt
       - name: Validate historical labeling and league scope
         run: |
-          python -m unittest tests.test_signal_registry tests.test_goal_window_30_70 -v
+          python -m unittest discover -s tests -v
           node tests/test_nexus_league_coverage.mjs
+          node tests/test_goal3070_cloudflare.mjs
       - name: Perform historical holdout and walk-forward in sandbox
         run: |
           python -m research.goal_30_70_lab.run \
