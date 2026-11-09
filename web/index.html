@@ -740,6 +740,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-iara.css">
 <link rel="stylesheet" href="./nexus-unit-pl.css">
 <link rel="stylesheet" href="./nexus-signal-evaluation.css">
+<link rel="stylesheet" href="./nexus-goal-30-70.css">
 
 <link rel="stylesheet" href="./nexus-evidence-v535.css"/>
 <link rel="stylesheet" href="./nexus-squads-v539.css"/>
@@ -875,6 +876,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         <div class="cloud-audit" id="cloud-platform" aria-label="Resultados reais do Bolsa de Aposta"></div>
         <div class="cloud-audit" id="cloud-signal-journal" aria-label="Histórico de alertas na nuvem e gols depois de cada alerta"></div>
         <section class="nexus-v6" id="cloud-intelligence-v6" aria-label="Nexus 6.0 radar inteligente e mercados"></section>
+        <section class="nexus-goal-window" id="cloud-goal-30-70" aria-label="Radar experimental de gol entre o minuto 30 e 70"></section>
         <section class="nexus-evaluation" id="cloud-signal-evaluation" aria-label="Avaliação histórica dos sinais por equipe, liga, minuto e evolução da amostra"></section>
         <div class="cloud-controls"><label>Mercado <select id="cloud-market"><option value="">Todos os mercados</option><option value="Over / Under gols">Over / Under</option><option value="Ambas marcam (BTTS)">Ambas marcam</option><option value="Match Odds (1X2)">Match Odds</option><option value="Escanteios">Escanteios</option><option value="Finalizações">Finalizações</option><option value="Grandes chances">Grandes chances</option><option value="Ataques perigosos">Ataques perigosos</option><option value="Lay Correct Score">Lay Correct Score</option><option value="Over 1.5 FT">Over 1.5 FT (quando disponível)</option><option value="Lay Goleada">Lay Goleada (em estudo)</option></select></label>
         <label>Jogo <input id="cloud-search" type="search" placeholder="Buscar time ou campeonato"></label></div>
@@ -3559,6 +3561,7 @@ function renderCloud(){
  renderPlatformSnapshot(cloudData.platform_snapshot);
  renderCloudSignalJournal(cloudData.signal_journal);
  window.NexusSignalEvaluation?.render(cloudData.signal_evaluation,cloudData.signal_journal);
+ window.NexusGoalWindow?.render(cloudData.goal_window_30_70);
  window.NexusIntelligenceV6?.render(cloudData.intelligence_v6,cloudData.odds_collection_status);
  const sourcePanel=$('#cloud-source-health');
  if(sourcePanel)sourcePanel.innerHTML=sourceHealthHTML(cloudData.source_health);
@@ -3655,6 +3658,7 @@ init();
 <script src="./nexus-iara.js"></script>
 <script src="./nexus-unit-pl.js"></script>
 <script src="./nexus-signal-evaluation.js"></script>
+<script src="./nexus-goal-30-70.js"></script>
 <script src="./nexus-intelligence-v6.js"></script>
 <link rel="stylesheet" href="./nexus-intelligence-v6.css">
 <script>

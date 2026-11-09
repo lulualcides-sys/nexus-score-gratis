@@ -57,3 +57,5 @@ jobs:
           node --check web/nexus-signal-evaluation.js
           node tests/test_nexus_unit_pl.mjs
           node tests/test_nexus_signal_evaluation.mjs
+          node --check web/nexus-goal-30-70.js
+          node tests/test_nexus_goal_30_70.mjs
