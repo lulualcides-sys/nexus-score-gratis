@@ -77,8 +77,17 @@ def _entries(journal):
             except (ValueError,TypeError,OverflowError):return None
         pressure=r.get('pressure10')
         score=safe_number(pressure.get('score')) if isinstance(pressure,dict) else None
+        pressure5=r.get('pressure5')
+        five=safe_number(pressure5.get('score')) if isinstance(pressure5,dict) else None
+        delta=r.get('scout_delta') or {}
+        own=(delta.get('changes') or {}).get(side) or {} if delta.get('status')=='observed_delta' else {}
         yield {'context':{
                  'pressure10_score':score,
+                 'pressure5_score':five,
+                 'score_at_alert':str(r.get('score_at_alert') or '')[:15],
+                 'delta_shots_on':safe_number(own.get('shots_on')),
+                 'delta_big_chances':safe_number(own.get('big_chances')),
+                 'delta_xg':safe_number(own.get('xg')),
                  'pressure10_level':str(pressure.get('level') or '')[:20] if isinstance(pressure,dict) else '',
                  'shots_on':safe_number(r.get('shots_on')),
                  'big_chances':safe_number(r.get('big_chances')),
