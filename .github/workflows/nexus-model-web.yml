@@ -9,6 +9,9 @@ on:
     paths:
       - "web/motor-proprio.html"
       - "telegram_collector/model_only.py"
+      - "telegram_collector/model_backtest.py"
+      - "telegram_collector/league_stats.py"
+      - "telegram_collector/predictive_validation.py"
       - ".github/workflows/nexus-model-web.yml"
 permissions:
   contents: write
@@ -30,6 +33,7 @@ jobs:
           git fetch --depth=1 origin market-telegram-data:refs/remotes/origin/market-telegram-data
           git show refs/remotes/origin/market-telegram-data:market-history/model-only/latest.json > /tmp/nexus-model-only.json
           git show refs/remotes/origin/market-telegram-data:market-history/model-only/backtest-latest.json > /tmp/nexus-model-backtest.json
+          git show refs/remotes/origin/market-telegram-data:market-history/model-only/league-stats-latest.json > /tmp/nexus-league-stats.json
       - name: Validar formato e não expor credenciais nem odds de casas
         run: |
           python3 - <<'PY'
@@ -59,9 +63,28 @@ jobs:
           assert test.get("walk_forward") is True
           assert test.get("uses_future_results_in_training") is False
           assert isinstance(test.get("historical_fixtures_tested"),int)
+          comparison=test.get("predictive_comparison",{})
+          assert comparison.get("production_model_unchanged") is True
+          assert comparison.get("promotion_allowed") is False
+          assert comparison.get("paired_matches",0)<=test["historical_fixtures_tested"]
+          assert comparison.get("leakage_guard","").startswith("Every prior")
           Path("web/nexus-model-backtest.json").write_text(
               json.dumps(test,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
-          print("Modelo validado e pronto: " + str(source["fixtures_priced"]) + " jogos calculados")
+          league=json.loads(Path("/tmp/nexus-league-stats.json").read_text(encoding="utf-8"))
+          assert league.get("schema")==1 and league.get("status")=="descriptive_only"
+          assert league.get("unique_finished_matches",0)>=0
+          assert league["half_time_available"]<=league["unique_finished_matches"]
+          assert len(league.get("leagues",[]))==league.get("league_count")
+          assert sum(l["all"]["matches"] for l in league["leagues"])==league["unique_finished_matches"]
+          for l in league["leagues"]:
+              ft=l["all"]["ft_1x2"]
+              assert ft["home"]+ft["draw"]+ft["away"]==l["all"]["matches"]
+              assert l["all"]["ht"]["available_matches"]<=l["all"]["matches"]
+          Path("web/nexus-league-stats.json").write_text(
+              json.dumps(league,ensure_ascii=False,separators=(",",":"))+"\n",
+              encoding="utf-8")
+          print("Modelo auditado: " + str(source["fixtures_priced"]) + " jogos; " +
+                str(league["league_count"]) + " ligas descritivas")
           PY
       - name: Validar JavaScript isolado do novo painel
         run: |
@@ -79,7 +102,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add web/nexus-model-odds.json web/nexus-model-backtest.json
+          git add web/nexus-model-odds.json web/nexus-model-backtest.json web/nexus-league-stats.json
           if git diff --cached --quiet; then
             echo "Nenhuma mudança no motor público"
           else
