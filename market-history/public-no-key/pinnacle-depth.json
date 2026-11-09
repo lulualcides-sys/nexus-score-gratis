@@ -1,6 +1,134 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-09T06:46:56.922699+00:00",
-  "status": "unavailable",
-  "reason": "ValueError"
+  "checked_at": "2026-11-09T19:55:02.584723+00:00",
+  "bookmaker_snapshot_at": "2026-11-09T19:55:01.395878+00:00",
+  "status": "fresh",
+  "matches_catalogued": 12,
+  "matches_with_priced_markets": 12,
+  "odds_eligible_for_quality": 874,
+  "invalid_quote_records": 6,
+  "complete_market_lines": 428,
+  "incomplete_market_lines": 0,
+  "families": {
+    "asian_handicap": {
+      "games": 12,
+      "odds": 210,
+      "complete_lines": 105,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.06
+    },
+    "first_half_goals": {
+      "games": 12,
+      "odds": 138,
+      "complete_lines": 69,
+      "incomplete_lines": 0,
+      "median_overround_pct": 7.05
+    },
+    "first_half_handicap": {
+      "games": 12,
+      "odds": 132,
+      "complete_lines": 66,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.87
+    },
+    "first_half_team_goals": {
+      "games": 11,
+      "odds": 36,
+      "complete_lines": 18,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.58
+    },
+    "half_time": {
+      "games": 7,
+      "odds": 21,
+      "complete_lines": 7,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.17
+    },
+    "match_odds": {
+      "games": 11,
+      "odds": 33,
+      "complete_lines": 11,
+      "incomplete_lines": 0,
+      "median_overround_pct": 5.78
+    },
+    "team_goals": {
+      "games": 11,
+      "odds": 86,
+      "complete_lines": 43,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.21
+    },
+    "total_goals": {
+      "games": 12,
+      "odds": 218,
+      "complete_lines": 109,
+      "incomplete_lines": 0,
+      "median_overround_pct": 6.12
+    }
+  },
+  "examples": [
+    {
+      "fixture": "Mijas-Las Lagunas x Real Jaen",
+      "market_family": "match_odds",
+      "raw_market_key": "s;0;m",
+      "line_from_market_key": "s;0;m",
+      "observed_at": "2026-11-09T19:55:01.395878+00:00",
+      "selections": {
+        "home": 3.54,
+        "away": 2.0,
+        "draw": 3.3
+      },
+      "overround_pct": 8.55
+    },
+    {
+      "fixture": "Mijas-Las Lagunas x Real Jaen",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-09T19:55:01.395878+00:00",
+      "selections": {
+        "home": 1.8,
+        "away": 2.0
+      },
+      "overround_pct": 5.56
+    },
+    {
+      "fixture": "Mijas-Las Lagunas x Real Jaen",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-09T19:55:01.395878+00:00",
+      "selections": {
+        "home": 3.04,
+        "away": 1.3484
+      },
+      "overround_pct": 7.06
+    },
+    {
+      "fixture": "Mijas-Las Lagunas x Real Jaen",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-09T19:55:01.395878+00:00",
+      "selections": {
+        "home": 2.62,
+        "away": 1.463
+      },
+      "overround_pct": 6.52
+    },
+    {
+      "fixture": "Mijas-Las Lagunas x Real Jaen",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-11-09T19:55:01.395878+00:00",
+      "selections": {
+        "home": 2.06,
+        "away": 1.7246
+      },
+      "overround_pct": 6.53
+    }
+  ],
+  "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
 }

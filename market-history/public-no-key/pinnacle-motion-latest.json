@@ -1,1 +1,1 @@
-{"schema":1,"checked_at":"2026-11-09T06:46:56.963453+00:00","day":"2026-11-09","status":"unavailable","error_type":"FileNotFoundError","market_selections_with_changes":0,"top_changes":[]}
+{"schema":1,"checked_at":"2026-11-09T19:55:02.657908+00:00","day":"2026-11-09","status":"fresh","games_with_price_history":12,"snapshots_processed":12,"market_selections_with_changes":0,"invalid_quote_records":0,"newest_capture_at":"2026-11-09T19:55:01.395878+00:00","top_changes":[],"note":"Movimento calculado em odds observadas antes do jogo. Não é EV, ROI, lucro, volume ou recomendação."}
