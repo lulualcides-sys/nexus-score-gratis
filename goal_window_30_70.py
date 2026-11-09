@@ -228,9 +228,11 @@ def evaluate(journal, games=(), now=None):
         else:
             status = "no_verified_improvement_over_baseline"
     # Forecast remains flagged experimental even after apparent historical gains.
-    enough = status != "insufficient_history" and (
-        len(earliest) > 0 and len(settled)/len(earliest) >= .4)
-    active = _live(trained, journal, games, now, allow_percentage=enough) if enough else []
+    # Do not publish a numerical estimate if the holdout fails the baseline.
+    # An actual current alert can still be shown without a fabricated percentage.
+    enough = (status == "better_than_constant_baseline_in_historical_holdout"
+              and len(earliest) > 0 and len(settled)/len(earliest) >= .4)
+    active = _live(trained, journal, games, now, allow_percentage=enough)
     return {"schema": 1, "name": "NEXUS Gol 30–70",
         "generated_at": now.isoformat(), "minute_range": [30,70],
         "goal_horizon_minutes": 15,
