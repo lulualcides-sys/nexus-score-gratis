@@ -117,7 +117,7 @@ class SignalRegistryTests(unittest.TestCase):
         for minutes in (5,10,15,20):
             self.assertEqual(item['outcomes'][str(minutes)],'sem_gol_confirmado')
         self.assertEqual(item['outcomes']['25'],'gol_confirmado')
-        self.assertEqual(item['outcomes']['30'],'pendente')
+        self.assertEqual(item['outcomes']['30'],'gol_confirmado')
 
     def test_late_goal_with_incomplete_event_stream_is_unknown(self):
         item=active_signals(self.game(),self.data(),'t')[0]
