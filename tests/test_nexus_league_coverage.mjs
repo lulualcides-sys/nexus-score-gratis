@@ -31,11 +31,7 @@ const additionSorted=c.leagueStats([
  {league:'ned.2',phase:'finished',score:'3-1'},
  {league:'uefa.europa.conf',phase:'finished',score:'1-2'}
 ]);
-assert.deepEqual(additionSorted.map(x=>x.league),
- ['championship','eerste','conference','saudi'].sort((a,b)=>
- ['conference','championship','eerste','saudi'].indexOf(a)-
- ['conference','championship','eerste','saudi'].indexOf(b))
-);
+assert.deepEqual(additionSorted.map(x=>x.league),['championship','eerste','conference','saudi']);
 const brazilA=['Brasileirão Série A','Campeonato Brasileiro Série A','Brazil Serie A'];
 const brazilB=['Brasileirão Série B','Campeonato Brasileiro Série B','Brazilian Serie B','Serie B do Brasil'];
 for(const x of brazilA)assert.equal(c.profile(x)?.id,'br_a',x+' must be Brazilian A');
