@@ -28,6 +28,9 @@ on:
       - "web/nexus-evidence-v535.css"
       - "odds_fixture_bridge.py"
       - "signal_registry.py"
+      - "goal_window_30_70.py"
+      - "web/nexus-goal-30-70.js"
+      - "web/nexus-goal-30-70.css"
       - "backfill.py"
       - "team_form.py"
       - "fotmob_form.py"
@@ -83,7 +86,7 @@ jobs:
         run: python3 --version
       - name: Validar integracao e privacidade (sem dependencias pagas)
         run: |
-          python3 -m py_compile market_evidence.py nexus_intelligence_v6.py oddspapi_odds.py api_football_odds.py pregame_audit.py signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py openfootball_cc0_source.py scout_snapshots.py live_momentum.py activity_timeline.py
+          python3 -m py_compile market_evidence.py nexus_intelligence_v6.py oddspapi_odds.py api_football_odds.py pregame_audit.py signal_registry.py pc_reader.py web_server.py odds_capture.py pregame_refresh.py sofascore_odds.py espn_scoreboard_odds.py the_odds_api_source.py pregame_refresh_quotes.py web_export.py odds_fixture_bridge.py coletar.py backfill.py team_form.py fotmob_form.py fotmob_detail_backfill.py fotmob_three_days.py finished_scouts.py standings_context.py multi_source.py fotmob_h2h.py signal_evaluation.py goal_window_30_70.py openfootball_cc0_source.py scout_snapshots.py live_momentum.py activity_timeline.py
           python3 -m unittest discover -s tests -v
           node --check web/nexus-audit-v532.js
           node tests/test_nexus_audit_v532.mjs
@@ -114,6 +117,8 @@ jobs:
           node --check web/nexus-signal-evaluation.js
           node tests/test_nexus_unit_pl.mjs
           node tests/test_nexus_signal_evaluation.mjs
+          node --check web/nexus-goal-30-70.js
+          node tests/test_nexus_goal_30_70.mjs
       - name: Coletar partidas públicas e pressão
         id: collect
         continue-on-error: true
