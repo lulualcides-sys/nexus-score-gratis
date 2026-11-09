@@ -1,0 +1,62 @@
+name: NEXUS goal 30-70 research (isolated)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 11 * * *"
+  pull_request:
+    paths:
+      - 'research/goal_30_70_lab/**'
+      - 'goal_window_30_70.py'
+      - 'signal_evaluation.py'
+      - 'signal_registry.py'
+      - '.github/workflows/nexus-goal3070-lab.yml'
+permissions:
+  contents: read
+concurrency:
+  group: nexus-goal3070-research-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: research/goal_30_70_lab/requirements.txt
+      - name: Install research libraries ONLY (not production)
+        run: python -m pip install -r research/goal_30_70_lab/requirements.txt
+      - name: Validate historical labeling and league scope
+        run: |
+          python -m unittest discover -s tests -v
+          node tests/test_nexus_league_coverage.mjs
+          node tests/test_goal3070_cloudflare.mjs
+      - name: Perform historical holdout and walk-forward in sandbox
+        run: |
+          python -m research.goal_30_70_lab.run \
+            --journal history/signal_registry.json \
+            --output artifacts/goal3070-lab-report.json
+      - name: Summarize scores without promotion
+        run: |
+          python - <<'PY'
+          import json,os
+          x=json.load(open('artifacts/goal3070-lab-report.json'))
+          summary=['# NEXUS 30–70 (laboratório, sem promoção)',
+            'Status: '+x['status'],
+            'Holdout: '+str(x['sample'].get('holdout',0))+' partidas',
+            '| Modelo | Brier | AUC | Log loss |','|---|---:|---:|---:|']
+          for name,v in x['models'].items():
+            m=v['metrics']
+            summary.append('| '+name+' | '+str(m['brier'])+' | '+str(m['auc'])+' | '+str(m['log_loss'])+' |')
+          summary.append('Nenhuma alteração automática em apostas, coletas e indicadores.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('\n'.join(summary)+'\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nexus-goal3070-lab-audit
+          path: artifacts/goal3070-lab-report.json
+          if-no-files-found: warn
+          retention-days: 30

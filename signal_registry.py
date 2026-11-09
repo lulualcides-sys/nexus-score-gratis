@@ -6,6 +6,7 @@ Não pretende representar outras regras da instalação desktop.
 Sem preço e probabilidade calibrada, EV+ é indisponível.
 """
 from datetime import datetime,timezone,timedelta
+from scout_snapshots import snapshot_deltas
 from pathlib import Path
 import json,math,re,hashlib,sys,subprocess
 
@@ -87,6 +88,18 @@ def active_signals(fixture,row,observed_at):
     fid=str(fixture.get('id') or '')
     if not fid or not fixture.get('home') or not fixture.get('away'):return []
     points=samples(row)
+    # A delta is factual only between two real same-source scout captures.
+    # Never infer the exact minute of a shot from cumulative totals.
+    delta=snapshot_deltas(row.get('scout_snapshots') or [], max_gap_minutes=15)
+    if delta.get('status')=='observed_delta':
+        try:
+            observed=datetime.fromisoformat(str(observed_at).replace('Z','+00:00'))
+            latest=datetime.fromisoformat(str(delta['to_at']).replace('Z','+00:00'))
+            fresh=(observed.tzinfo is not None and latest.tzinfo is not None
+                   and 0<=(observed-latest).total_seconds()<=12*60)
+        except (TypeError,ValueError,OverflowError):
+            fresh=False
+        if not fresh:delta={'status':'insufficient','reason':'snapshot stale'}
     snap=[{'minute':m,'value':v} for m,v in points.items()]
     stats=row.get('stats') or {}
     incidents=[]
@@ -130,6 +143,8 @@ def active_signals(fixture,row,observed_at):
               'captured_at':observed_at,
               'score_at_alert':str(fixture.get('score') or '')[:15],
               'pressure10':original['pressure10'],'pressure5':original['pressure5'],
+              'scout_delta':delta if delta.get('status')=='observed_delta'
+                            else {'status':'insufficient'},
               'shots_on':stat('shots_on'),'big_chances':stat('big_chances'),
               'source':str(fixture.get('source') or '')[:45],
               'original_engine':'NEXUS SCORE Original 5.29',
@@ -158,6 +173,26 @@ def goal_events(row,start,end):
             unique.add((m,item['side']))
     return [{'minute':m,'team':side} for m,side in sorted(unique)]
 
+def verified_goal_timeline_after_alert(item, fixture, row, start, current_minute):
+    """Use exact goal minutes for a VERIFIED negative only when fully reconciled.
+
+    If the final/current score increased, all goals after the alert must be
+    accounted for by valid source event minutes and sides. Otherwise unknown.
+    We do not infer timing from final scores or partial event streams.
+    """
+    before=goalscore(item.get('score_at_alert'))
+    after=goalscore(fixture.get('score'))
+    if before is None or after is None or any(after[i]<before[i] for i in (0,1)):
+        return None
+    events=goal_events(row,start,min(120,current_minute))
+    increments=(after[0]-before[0], after[1]-before[1])
+    observed=(sum(e['team']=='home' for e in events),
+              sum(e['team']=='away' for e in events))
+    if increments!=observed:
+        return None
+    return events
+
+
 def resolve(item,fixture,row):
     start=int(item.get('minute') or 0)
     try: current_minute=int(fixture.get('minute') or 0)
@@ -179,6 +214,12 @@ def resolve(item,fixture,row):
         elif not ended and current_minute<start+n:
             windows[key]='pendente'
         elif at_signal is not None and now is not None and now==at_signal:
+            windows[key]='sem_gol_confirmado'
+        elif (ended or current_minute>=start+n) and (
+             verified_goal_timeline_after_alert(item,fixture,row,start,current_minute)
+             is not None):
+            # Events may confirm a goal AFTER the horizon, making this window
+            # a true negative even though the eventual scoreboard changed.
             windows[key]='sem_gol_confirmado'
         else:
             windows[key]='indeterminado'

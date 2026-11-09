@@ -1,0 +1,16 @@
+# Exemplo. NÃO publicar sem conta Cloudflare e fonte licenciada.
+name = "nexus-goal-30-70-sampler"
+main = "worker.mjs"
+compatibility_date = "2026-11-09"
+
+[triggers]
+crons = ["*/3 * * * *"]
+
+# Criar banco via Cloudflare; preencher ID real antes de implantar.
+[[d1_databases]]
+binding = "DB"
+database_name = "nexus-goal3070-pilot"
+database_id = "REPLACE_WITH_AUTHORIZED_DATABASE_ID"
+
+# AUTHORIZED_FEED_URL e AUTHORIZED_FEED_HOST são secrets/env separados,
+# apontando EXCLUSIVAMENTE para API autorizada de scouts em tempo real.

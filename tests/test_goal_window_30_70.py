@@ -13,7 +13,7 @@ def alert(key, minute=45, outcome="gol_confirmado", match=None, day=0,
     return {
         "id": key, "match_id": match or key, "minute": minute,
         "captured_at": (NOW-timedelta(days=day,minutes=2)).isoformat(),
-        "home": "Casa", "away": "Fora", "league": "Liga A",
+        "home": "Casa", "away": "Fora", "league": "Brasileirão Série A",
         "icon": "🔥", "rule": rule, "basis": "pressure_window",
         "score_at_alert": score, "pressure10": {"score": pressure, "level": "FORTE"},
         "shots_on": 5, "big_chances": 2,

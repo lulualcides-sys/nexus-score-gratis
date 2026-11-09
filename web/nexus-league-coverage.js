@@ -15,11 +15,48 @@ const main=[
 /\b(?:mls|major league soccer)\b/,/\b(?:liga mx|mexican primera|mexico primera division)\b/,
 /\b(?:fifa )?(?:world cup|copa do mundo)\b/
 ];
-function category(league){
+// Canonical male-only competition catalog; no history is deleted.
+const womenName=/\b(?:women|womens|woman|female|feminino|feminina|femenino|femenina|feminin|feminine|ladies|frauen|damallsvenskan|femminile|wsl|nwsl|liga f|w league)\b|\(w\)|\[w\]/;
+const leagues=[
+ ['br_a','Brasileirão Série A','Brasil',/\b(?:brasileirao(?: serie a)?|campeonato brasileiro serie a|(?:brazil|brazilian) serie a|brasil(?:eiro)? serie a)\b/],
+ ['br_b','Brasileirão Série B','Brasil',/\b(?:brasileirao serie b|campeonato brasileiro serie b|(?:brazil|brazilian) serie b|brasil(?:eiro)? serie b|serie b do brasil)\b/],
+ ['copa_br','Copa do Brasil','Brasil',/\bcopa do brasil\b/],
+ ['libertadores','Copa Libertadores','Continental',/\b(?:copa )?libertadores\b/],
+ ['sudamericana','Copa Sul-Americana','Continental',/\b(?:copa )?(?:sudamericana|sul americana)\b/],
+ ['champions','UEFA Champions League','Europa',/\b(?:uefa )?champions league\b/],
+ ['premier','Premier League','Europa',/\b(?:english )?premier league\b/],
+ ['laliga','La Liga','Europa',/\b(?:la liga|laliga|primera division spain|spain primera division)\b/],
+ ['italy','Serie A · Itália','Europa',/\b(?:serie a|serie a tim|italian serie a|italy serie a|serie a italy|serie a italiana)\b/],
+ ['bundesliga','Bundesliga','Europa',/\b(?:german )?bundesliga\b/],
+ ['ligue1','Ligue 1','Europa',/\bligue 1\b/],
+ ['portugal','Liga Portugal','Europa',/\b(?:primeira liga|liga portugal|portuguese primeira)\b/],
+ ['eredivisie','Eredivisie','Europa',/\beredi(?:visie)?\b/],
+ ['europa','UEFA Europa League','Europa',/\b(?:uefa )?europa league\b/],
+ ['argentina','Argentina · Primeira Divisão','Américas',/\b(?:liga profesional|argentine primera|argentina primera division|superliga argentina|primera division argentina)\b/],
+ ['mls','MLS','Américas',/\b(?:mls|major league soccer)\b/],
+ ['ligamx','Liga MX','Américas',/\b(?:liga mx|mexican primera|mexico primera division)\b/],
+ ['worldcup','Copa do Mundo','Seleções',/\b(?:fifa )?(?:world cup|copa do mundo)\b/]
+];
+function profile(league){
  const x=norm(league);
- if(!x||reject.test(x)||/\b(?:2 bundesliga|bundesliga 2|primavera|serie a2|serie a 2|liga expansion)\b/.test(x))return false;
- return main.some(rx=>rx.test(x))||/^(?:serie a|serie a tim)$/.test(x);
+ if(!x||reject.test(x)||womenName.test(x)||/\b(?:2 bundesliga|bundesliga 2|primavera|serie a2|serie a 2|liga expansion)\b/.test(x))return null;
+ // Avoid treating Brazilian Série B as Brazilian Série A due to prefix matching.
+ if(/\bserie b\b/.test(x)&&/\b(?:brasileirao|brasil|brazil|brasileiro)\b/.test(x)){
+   const entry=leagues[1];return {id:entry[0],label:entry[1],group:entry[2],priority:1};
+ }
+ const i=leagues.findIndex(z=>z[3].test(x));
+ if(i<0)return null;
+ const z=leagues[i];
+ return {id:z[0],label:z[1],group:z[2],priority:i};
 }
+function womenGame(g){
+ if(!g)return true;
+ const gender=norm(g.gender||g.fixture?.gender||g.competition_gender);
+ if(['female','women','womens','feminino','feminina','femenino','femenina'].includes(gender))return true;
+ return [g.league,g.home,g.away].some(x=>womenName.test(norm(x)));
+}
+function category(league){return Boolean(profile(league));}
+
 const num=x=>x!=null&&x!==''&&typeof x!=='boolean'&&Number.isFinite(Number(x));
 function stats(s){
  const keys=['shots_on','shots_off','shots_total','corners','big_chances','dangerous_attacks','xg','possession','fouls','yellow_cards'];
@@ -45,7 +82,7 @@ function agenda(g){
  Boolean(String(g.home||'').trim()&&String(g.away||'').trim());
 }
 function level(g){
- if(!g||!category(g.league))return 0;
+ if(!g||!category(g.league)||womenGame(g))return 0;
  if(measured(g))return 2;
  if(g.phase==='finished'&&/^\d{1,2}\s*[-–:]\s*\d{1,2}$/.test(String(g.score||''))&&g.score_unverified!==true)return 2;
  return agenda(g)?1:0;
@@ -70,7 +107,7 @@ function sourceFreshness(g,nowSec=Date.now()/1000){
          pressure:observationFreshness(pressureAt,nowSec)};
 }
 function coverageStatus(g,nowSec=Date.now()/1000){
- if(!category(g?.league))return 'insuficiente';
+ if(!category(g?.league)||womenGame(g))return 'insuficiente';
  const stats=g.scoreboard_stats||g.stats||{};
  const keys=['shots_on','shots_total','corners','big_chances','possession','xg'];
  const count=s=>keys.filter(k=>num(stats[s]?.[k])).length;
@@ -133,16 +170,20 @@ function analysisPriority(g,nowSec=Date.now()/1000){
 function leagueStats(games){
  const groups=new Map();
  for(const g of games||[]){
-   if(!category(g?.league))continue;
-   const x=groups.get(g.league)||{league:g.league,covered:0,measured:0,completa:0,parcial:0,insuficiente:0,total:0};
+   const p=profile(g?.league);
+   if(!p||womenGame(g))continue;
+   const x=groups.get(p.id)||{league:p.id,label:p.label,group:p.group,priority:p.priority,
+     covered:0,measured:0,completa:0,parcial:0,insuficiente:0,total:0};
    x.total++;
    x[coverageStatus(g)]++;
    if(visible(g))x.covered++;
    if(level(g)===2)x.measured++;
-   groups.set(g.league,x);
+   groups.set(p.id,x);
  }
- return [...groups.values()].filter(x=>x.covered>0).sort((a,b)=>b.measured-a.measured||b.covered-a.covered||a.league.localeCompare(b.league,'pt-BR'));
+ return [...groups.values()].filter(x=>x.covered>0)
+   .sort((a,b)=>a.priority-b.priority||b.measured-a.measured||a.label.localeCompare(b.label,'pt-BR'));
 }
-root.NexusLeagueCoverage={category,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority,observationFreshness,sourceFreshness};
+
+root.NexusLeagueCoverage={category,profile,womenGame,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority,observationFreshness,sourceFreshness};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);

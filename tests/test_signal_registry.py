@@ -110,6 +110,22 @@ class SignalRegistryTests(unittest.TestCase):
         self.assertEqual(len(merged['items']),len(entries))
         self.assertEqual({x['id'] for x in merged['items']},{x['id'] for x in entries})
 
+    def test_late_verified_goal_makes_earlier_windows_true_negative(self):
+        item=active_signals(self.game(),self.data(),'t')[0]
+        goals=[{'type':'goal','minute':60,'side':'home'}]
+        resolve(item,self.game(63,'1-0'),self.data(events=goals))
+        for minutes in (5,10,15,20):
+            self.assertEqual(item['outcomes'][str(minutes)],'sem_gol_confirmado')
+        self.assertEqual(item['outcomes']['25'],'gol_confirmado')
+        self.assertEqual(item['outcomes']['30'],'gol_confirmado')
+
+    def test_late_goal_with_incomplete_event_stream_is_unknown(self):
+        item=active_signals(self.game(),self.data(),'t')[0]
+        goals=[{'type':'goal','minute':60,'side':'home'}]
+        resolve(item,self.game(63,'2-0'),self.data(events=goals))
+        self.assertEqual(item['outcomes']['15'],'indeterminado')
+        self.assertNotEqual(item['outcomes']['15'],'sem_gol_confirmado')
+
     def test_same_score_after_horizon_is_no_goal(self):
         item=active_signals(self.game(),self.data(),'t')[0]
         resolve(item,self.game(55,'0-0'),self.data())

@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 import math
 
 from signal_evaluation import _entries, HIT, MISS
+from major_league_scope import major_men
 
 MINUTE_START = 30
 MINUTE_END = 70
@@ -38,6 +39,18 @@ def features(entry):
     pressure = _number(context.get("pressure10_score"))
     shots = _number(context.get("shots_on"))
     chances = _number(context.get("big_chances"))
+    five = _number(context.get("pressure5_score"))
+    delta_shots = _number(context.get("delta_shots_on"))
+    delta_xg = _number(context.get("delta_xg"))
+    raw_score = str(context.get("score_at_alert") or "")
+    import re
+    score_pair = re.fullmatch(r"([0-9]{1,2})[-:–]([0-9]{1,2})", raw_score)
+    if score_pair:
+        sh,sa = (int(score_pair.group(1)),int(score_pair.group(2)))
+        score_state = ("0-0" if sh+sa==0 else "empate_com_gols" if sh==sa
+                       else "mandante_frente" if sh>sa else "visitante_frente")
+    else:
+        score_state = "indisponivel"
     rule = str(entry.get("rule") or entry.get("signal") or "")
     known_rules = ("pressao_forte_10min", "pressao_total_5_10min",
                    "pressao_ofensiva_18", "chutes_no_alvo_5",
@@ -54,6 +67,14 @@ def features(entry):
         "chances_claras": ("indisponivel" if chances is None else
                           "2+" if chances >= 2 else "1" if chances >= 1 else "0"),
         "regra": known,
+        "placar_atual": score_state,
+        "aceleracao_pressao": ("indisponivel" if five is None or pressure is None else
+                               "subindo" if five-pressure>=10 else
+                               "caindo" if pressure-five>=10 else "estavel"),
+        "novos_chutes_alvo": ("indisponivel" if delta_shots is None else
+                             "2+" if delta_shots>=2 else "1" if delta_shots>=1 else "0"),
+        "variacao_xg": ("indisponivel" if delta_xg is None else
+                        "alta" if delta_xg>=.25 else "alguma" if delta_xg>.02 else "0"),
     }
 
 
@@ -75,7 +96,8 @@ def _eligible(journal, as_of):
     if as_of.tzinfo is None:
         raise ValueError("Expected timezone-aware timestamp")
     cutoff = (as_of.date() - timedelta(days=MAX_AGE_DAYS-1)).isoformat()
-    candidates = [r for r in _entries(journal) if MINUTE_START <= r["minute"] <= MINUTE_END
+    candidates = [r for r in _entries(journal) if major_men(r)
+                  and MINUTE_START <= r["minute"] <= MINUTE_END
                   and cutoff <= r["day"] <= as_of.date().isoformat()]
     earliest = {}
     for r in sorted(candidates, key=lambda x: (x["day"], x["minute"], x["signal"])):
@@ -232,6 +254,8 @@ def _live(model, journal, games, now, allow_percentage):
         catalog.setdefault(str(item["match_id"]), []).append(item)
     active = []
     for game in games:
+        if not major_men(game):
+            continue
         match_id = str(game.get("id") or "")
         if not match_id: continue
         recent = [r for r in catalog.get(match_id, [])
@@ -292,6 +316,7 @@ def evaluate(journal, games=(), now=None):
     return {"schema": 1, "name": "NEXUS Gol 30–70",
         "generated_at": now.isoformat(), "minute_range": [30,70],
         "goal_horizon_minutes": 15,
+        "competition_scope": "major_men_only",
         "goal_window_description": "Alerta entre 30' e 70'; gol nos próximos 15 minutos, inclusive após 70'.",
         "target": "goal_in_next_15_minutes_after_first_eligible_match_alert",
         "sample": {"first_alert_per_match": len(earliest), "settled": len(settled),

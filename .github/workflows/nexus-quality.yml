@@ -59,3 +59,5 @@ jobs:
           node tests/test_nexus_signal_evaluation.mjs
           node --check web/nexus-goal-30-70.js
           node tests/test_nexus_goal_30_70.mjs
+          node tests/test_nexus_league_coverage.mjs
+          node tests/test_goal3070_cloudflare.mjs
