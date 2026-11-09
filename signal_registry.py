@@ -158,6 +158,26 @@ def goal_events(row,start,end):
             unique.add((m,item['side']))
     return [{'minute':m,'team':side} for m,side in sorted(unique)]
 
+def verified_goal_timeline_after_alert(item, fixture, row, start, current_minute):
+    """Use exact goal minutes for a VERIFIED negative only when fully reconciled.
+
+    If the final/current score increased, all goals after the alert must be
+    accounted for by valid source event minutes and sides. Otherwise unknown.
+    We do not infer timing from final scores or partial event streams.
+    """
+    before=goalscore(item.get('score_at_alert'))
+    after=goalscore(fixture.get('score'))
+    if before is None or after is None or any(after[i]<before[i] for i in (0,1)):
+        return None
+    events=goal_events(row,start,min(120,current_minute))
+    increments=(after[0]-before[0], after[1]-before[1])
+    observed=(sum(e['team']=='home' for e in events),
+              sum(e['team']=='away' for e in events))
+    if increments!=observed:
+        return None
+    return events
+
+
 def resolve(item,fixture,row):
     start=int(item.get('minute') or 0)
     try: current_minute=int(fixture.get('minute') or 0)
@@ -179,6 +199,12 @@ def resolve(item,fixture,row):
         elif not ended and current_minute<start+n:
             windows[key]='pendente'
         elif at_signal is not None and now is not None and now==at_signal:
+            windows[key]='sem_gol_confirmado'
+        elif (ended or current_minute>=start+n) and (
+             verified_goal_timeline_after_alert(item,fixture,row,start,current_minute)
+             is not None):
+            # Events may confirm a goal AFTER the horizon, making this window
+            # a true negative even though the eventual scoreboard changed.
             windows[key]='sem_gol_confirmado'
         else:
             windows[key]='indeterminado'
