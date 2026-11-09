@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T10:42:26.026997+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T10:48:43.810448+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6221 | **Com gol:** 2402 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2092 indeterminados | 2797 incompletos.
+**Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6223 | **Com gol:** 2404 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2090 indeterminados | 2797 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,12 +177,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2168 | 1459 | 580 | 879 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1749 | 1169 | 433 | 736 | 37.0% |
+| ⚡ pressao_ofensiva_18 | 1749 | 1170 | 434 | 736 | 37.1% |
 | 🎯 chutes_no_alvo_5 | 1896 | 893 | 331 | 562 | 37.1% |
 | 🟥 expulsao_confirmada | 1655 | 746 | 255 | 491 | 34.2% |
 | 🚩 escanteios_6 | 1387 | 632 | 262 | 370 | 41.5% |
 | 💣 grandes_chances_3 | 1119 | 590 | 253 | 337 | 42.9% |
-| 🔥 pressao_forte_10min | 605 | 386 | 148 | 238 | 38.3% |
+| 🔥 pressao_forte_10min | 605 | 387 | 149 | 238 | 38.5% |
 | 🧨 pressao_total_5_10min | 333 | 208 | 84 | 124 | 40.4% |
 | ⏱️ tensao_tardia_70 | 183 | 76 | 30 | 46 | 39.5% |
 | 🚨 alerta_cruzado_gol | 100 | 62 | 26 | 36 | 41.9% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 520 | 312 | 92 | 220 | 29.5% |
+| Premier League | 520 | 314 | 94 | 220 | 29.9% |
 | Major League Soccer | 401 | 211 | 100 | 111 | 47.4% |
 | Serie A | 272 | 189 | 89 | 100 | 47.1% |
 | Liga Profesional | 298 | 187 | 53 | 134 | 28.3% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 292 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 734 | 540 | 186 | 354 | 34.4% |
 | 31–45′ | 2342 | 1796 | 743 | 1053 | 41.4% |
-| 46–60′ | 1466 | 1041 | 409 | 632 | 39.3% |
+| 46–60′ | 1466 | 1043 | 411 | 632 | 39.4% |
 | 61–75′ | 2322 | 1622 | 609 | 1013 | 37.5% |
 | 76–90′ | 2960 | 1000 | 383 | 617 | 38.3% |
 | 91+′ | 1079 | 10 | 4 | 6 | 40.0% |
@@ -351,8 +351,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-08T15:11:42.987631+00:00 | Brighton & Hove Albion × Brentford | Brighton & Hove Albion (50') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Brighton & Hove Albion × Brentford | Brighton & Hove Albion (50') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Brighton & Hove Albion × Brentford | Brentford (50') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Crystal Palace × Liverpool | Crystal Palace (51') | 🔥 pressao_forte_10min · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Crystal Palace × Liverpool | Crystal Palace (51') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-08T15:11:42.987631+00:00 | Crystal Palace × Liverpool | Crystal Palace (51') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-08T15:11:42.987631+00:00 | Crystal Palace × Liverpool | Crystal Palace (51') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Sunderland × Chelsea | Sunderland (47') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Hartberg × Altach | Hartberg (84') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Hartberg × Altach | Hartberg (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
