@@ -20,6 +20,25 @@ class MajorMenLeagueTests(unittest.TestCase):
                      "U20 Bundesliga","Friendly"):
             self.assertIsNone(league_id(name),name)
 
+    def test_requested_four_competitions_and_espn_ids(self):
+        aliases={
+            "saudi":["Saudi Pro League","Saudi Professional League",
+                     "Roshn Saudi League","ksa.1"],
+            "conference":["UEFA Conference League","UEFA Europa Conference League",
+                          "uefa.europa.conf"],
+            "championship":["EFL Championship","English Championship","Championship",
+                            "eng.2"],
+            "eerste":["Eerste Divisie","Keuken Kampioen Divisie",
+                      "Dutch Eerste Divisie","ned.2"],
+        }
+        for key,names in aliases.items():
+            for name in names:
+                self.assertEqual(league_id(name),key,name)
+                self.assertTrue(major_men({"league":name,"home":"A","away":"B"}),name)
+        for name in ("Women's UEFA Conference League","Saudi Women's League",
+                     "Dutch Tweede Divisie","Conference North","English League One"):
+            self.assertIsNone(league_id(name),name)
+
     def test_womens_teams_rejected_even_in_major_league(self):
         self.assertFalse(major_men({"league":"Premier League",
                          "home":"Arsenal Women","away":"Chelsea Women"}))

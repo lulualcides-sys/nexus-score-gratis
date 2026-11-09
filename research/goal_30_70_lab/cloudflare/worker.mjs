@@ -1,6 +1,6 @@
 /* NEXUS 30–70 sampling POC. DISABLED until authorized source and D1 are connected.
    No guessing goals, pressure or odds. No scraper/proxy credentials. */
-const allowed=/(?:brasileir[aã]o|campeonato brasileiro|brazil|brasil|premier league|champions league|la liga|bundesliga|serie a|ligue 1|libertadores|europa league|copa do brasil)/i;
+const allowed=/(?:brasileir[aã]o|campeonato brasileiro|brazil|brasil|premier league|champions league|la liga|bundesliga|serie a|ligue 1|libertadores|europa league|copa do brasil|(?:uefa |europa )?conference league|saudi (?:pro|professional) league|roshn saudi league|^efl championship$|^english championship$|^championship$|eerste divisie|keuken kampioen divisie)/i;
 const women=/(?:women|woman|feminin|femenin|femmen|femmin|ladies|female|wsl|nwsl|liga f|\(w\))/i;
 const number=x=>x!==null&&x!==undefined&&x!==''&&!Number.isNaN(Number(x))&&Number.isFinite(Number(x))?Number(x):null;
 
