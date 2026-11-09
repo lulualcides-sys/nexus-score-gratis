@@ -25,21 +25,43 @@ const leagues=[
  ['sudamericana','Copa Sul-Americana','Continental',/\b(?:copa )?(?:sudamericana|sul americana)\b/],
  ['champions','UEFA Champions League','Europa',/\b(?:uefa )?champions league\b/],
  ['premier','Premier League','Europa',/\b(?:english )?premier league\b/],
+ ['championship','Championship · Inglaterra (2ª)','Segundas divisões',/^(?:efl |english |england |sky bet |football league )?championship(?: england)?$|^english league championship$/],
  ['laliga','La Liga','Europa',/\b(?:la liga|laliga|primera division spain|spain primera division)\b/],
  ['italy','Serie A · Itália','Europa',/\b(?:serie a|serie a tim|italian serie a|italy serie a|serie a italy|serie a italiana)\b/],
  ['bundesliga','Bundesliga','Europa',/\b(?:german )?bundesliga\b/],
  ['ligue1','Ligue 1','Europa',/\bligue 1\b/],
  ['portugal','Liga Portugal','Europa',/\b(?:primeira liga|liga portugal|portuguese primeira)\b/],
  ['eredivisie','Eredivisie','Europa',/\beredi(?:visie)?\b/],
+ ['eerste','Eerste Divisie · Holanda (2ª)','Segundas divisões',/\b(?:eerste divisie|keuken kampioen divisie|dutch first division|netherlands first division)\b/],
  ['europa','UEFA Europa League','Europa',/\b(?:uefa )?europa league\b/],
+ ['conference','UEFA Conference League','Continental',/\b(?:uefa )?(?:europa )?conference league\b/],
  ['argentina','Argentina · Primeira Divisão','Américas',/\b(?:liga profesional|argentine primera|argentina primera division|superliga argentina|primera division argentina)\b/],
  ['mls','MLS','Américas',/\b(?:mls|major league soccer)\b/],
  ['ligamx','Liga MX','Américas',/\b(?:liga mx|mexican primera|mexico primera division)\b/],
+ ['saudi','Saudi Pro League · Arábia Saudita','Ásia',/\b(?:saudi(?: arabia| arabian)? (?:pro|professional) league|roshn saudi league|saudi league|saudi pro league)\b/],
  ['worldcup','Copa do Mundo','Seleções',/\b(?:fifa )?(?:world cup|copa do mundo)\b/]
 ];
+const espnCodes=Object.freeze({
+ 'bra.1':'br_a','bra.2':'br_b','eng.1':'premier',
+ 'eng.2':'championship','ned.1':'eredivisie','ned.2':'eerste',
+ 'ksa.1':'saudi','uefa.europa.conf':'conference',
+ 'uefa.champions':'champions','uefa.europa':'europa',
+ 'conmebol.libertadores':'libertadores',
+ 'conmebol.sudamericana':'sudamericana','esp.1':'laliga',
+ 'ita.1':'italy','ger.1':'bundesliga','fra.1':'ligue1',
+ 'por.1':'portugal','arg.1':'argentina','usa.1':'mls',
+ 'mex.1':'ligamx','fifa.world':'worldcup'
+});
 function profile(league){
  const x=norm(league);
  if(!x||reject.test(x)||womenName.test(x)||/\b(?:2 bundesliga|bundesliga 2|primavera|serie a2|serie a 2|liga expansion)\b/.test(x))return null;
+ const code=espnCodes[String(league||'').trim().toLowerCase()];
+ if(code){
+   const i=leagues.findIndex(z=>z[0]===code);
+   if(i<0)return null;
+   const z=leagues[i];
+   return {id:z[0],label:z[1],group:z[2],priority:i};
+ }
  // Avoid treating Brazilian Série B as Brazilian Série A due to prefix matching.
  if(/\bserie b\b/.test(x)&&/\b(?:brasileirao|brasil|brazil|brasileiro)\b/.test(x)){
    const entry=leagues[1];return {id:entry[0],label:entry[1],group:entry[2],priority:1};
