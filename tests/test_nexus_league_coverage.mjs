@@ -6,6 +6,36 @@ const require=createRequire(import.meta.url);
 const c=require('../web/nexus-league-coverage.js');
 for(const name of ['Premier League','La Liga','Serie A','Bundesliga','Ligue 1','UEFA Champions League','Brasileirão Série A','Brazilian Serie B','Copa do Brasil','Copa Libertadores','Copa Sudamericana','Primeira Liga','Eredivisie','Liga MX','MLS'])assert.equal(c.category(name),true,name+' is major');
 for(const name of ['English League Two','J2 League','K League 2','Primera B','Conference North','Women Premier League','U20 Bundesliga','friendly match','Swiss Super League','Romanian Superliga','Liga 1 Peru','liga expansion'])assert.equal(c.category(name),false,name+' is minor');
+const addedLeagues=[
+ ["Saudi Pro League","saudi"],["Saudi Professional League","saudi"],
+ ["Roshn Saudi League","saudi"],["ksa.1","saudi"],
+ ["UEFA Conference League","conference"],["UEFA Europa Conference League","conference"],
+ ["uefa.europa.conf","conference"],
+ ["EFL Championship","championship"],["English Championship","championship"],
+ ["Championship","championship"],["eng.2","championship"],
+ ["Eerste Divisie","eerste"],["Keuken Kampioen Divisie","eerste"],
+ ["Dutch Eerste Divisie","eerste"],["ned.2","eerste"]
+];
+for(const [name,id] of addedLeagues){
+ assert.equal(c.profile(name)?.id,id,name+' alias');
+ assert.equal(c.category(name),true,name+' included');
+}
+assert.equal(c.womenGame({league:'Saudi Pro League',home:'Al Nassr',away:'Al Hilal'}),false);
+assert.equal(c.womenGame({league:'EFL Championship',gender:'female',home:'A',away:'B'}),true);
+assert.equal(c.category('Conference North'),false);
+assert.equal(c.category("Women's UEFA Conference League"),false);
+assert.equal(c.category('Dutch Tweede Divisie'),false);
+const additionSorted=c.leagueStats([
+ {league:'ksa.1',phase:'live',stats:{home:{shots_on:2},away:{shots_on:1}}},
+ {league:'eng.2',phase:'finished',score:'1-0'},
+ {league:'ned.2',phase:'finished',score:'3-1'},
+ {league:'uefa.europa.conf',phase:'finished',score:'1-2'}
+]);
+assert.deepEqual(additionSorted.map(x=>x.league),
+ ['championship','eerste','conference','saudi'].sort((a,b)=>
+ ['conference','championship','eerste','saudi'].indexOf(a)-
+ ['conference','championship','eerste','saudi'].indexOf(b))
+);
 const brazilA=['Brasileirão Série A','Campeonato Brasileiro Série A','Brazil Serie A'];
 const brazilB=['Brasileirão Série B','Campeonato Brasileiro Série B','Brazilian Serie B','Serie B do Brasil'];
 for(const x of brazilA)assert.equal(c.profile(x)?.id,'br_a',x+' must be Brazilian A');
