@@ -1,88 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-09T02:42:53.295636+00:00",
+  "checked_at": "2026-11-09T10:13:43.371579+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
+  "priority_fixtures_seen": 1,
   "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
   "errors": [],
-  "missing_quote_fixtures": [
-    {
-      "fixture": "Vasco da Gama x Palmeiras",
-      "league": "bra.copa_do_brazil",
-      "kickoff": 1794168000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "C.D. Nacional x Académico de Viseu",
-      "league": "por.1",
-      "kickoff": 1794151800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Estoril x Maritimo",
-      "league": "por.1",
-      "kickoff": 1794151800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Santa Clara x Gil Vicente",
-      "league": "por.1",
-      "kickoff": 1794151800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vitória de Guimaraes x FC Porto",
-      "league": "por.1",
-      "kickoff": 1794160800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Estrela x Benfica",
-      "league": "por.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Rio Ave x Braga",
-      "league": "por.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AZ Alkmaar x FC Groningen",
-      "league": "ned.1",
-      "kickoff": 1794152700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "SC Cambuur x PSV Eindhoven",
-      "league": "ned.1",
-      "kickoff": 1794152700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Utrecht x NEC Nijmegen",
-      "league": "ned.1",
-      "kickoff": 1794164400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Independiente Santa Fe x Deportivo Pasto",
-      "league": "col.1",
-      "kickoff": 1794164400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Alianza FC x Llaneros FC",
-      "league": "col.1",
-      "kickoff": 1794186900,
-      "reason": "no_verified_public_1x2"
-    }
-  ],
+  "missing_quote_fixtures": [],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }

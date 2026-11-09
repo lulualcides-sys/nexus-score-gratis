@@ -1,34 +1,390 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-11-09T02:42:58.537470+00:00",
+  "evaluated_at": "2026-11-09T10:13:48.475547+00:00",
   "status": "diagnostic_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 878,
-  "historical_fixtures_tested": 194,
+  "historical_matches_available": 873,
+  "historical_fixtures_tested": 191,
   "leagues_tested": 10,
   "leagues_samples": {
-    "arg.1": 20,
-    "esp.1": 20,
     "bra.1": 20,
+    "col.1": 20,
     "eng.1": 20,
     "ita.1": 20,
     "usa.1": 20,
-    "col.1": 19,
-    "fra.1": 19,
-    "ger.1": 18,
-    "bra.2": 18
+    "bra.2": 20,
+    "esp.1": 19,
+    "fra.1": 18,
+    "arg.1": 17,
+    "ger.1": 17
   },
   "skipped_reasons": {
-    "insufficient_team_results": 23,
-    "insufficient_league_results": 3
+    "insufficient_team_results": 27,
+    "insufficient_league_results": 2
   },
-  "brier_1x2": 0.55836,
-  "rps_1x2": 0.20972,
-  "log_loss_1x2": 0.94628,
-  "brier_over_2_5": 0.26277,
-  "brier_btts": 0.26084,
+  "predictive_comparison": {
+    "status": "diagnostic_shadow_only",
+    "paired_matches": 191,
+    "leagues": {
+      "arg.1": 17,
+      "bra.1": 20,
+      "bra.2": 20,
+      "col.1": 20,
+      "eng.1": 20,
+      "esp.1": 19,
+      "fra.1": 18,
+      "ger.1": 17,
+      "ita.1": 20,
+      "usa.1": 20
+    },
+    "candidate": "static 80% Poisson + 20% pre-match historical league frequencies",
+    "weight_fixed_a_priori": true,
+    "leakage_guard": "Every prior uses games strictly before fixture date; one paired holdout for all models",
+    "score_direction": "lower_is_better",
+    "metrics": {
+      "poisson_original": {
+        "n": 191,
+        "brier_1x2": 0.55282,
+        "rps_1x2": 0.20824,
+        "log_loss_1x2": 0.93827,
+        "brier_over_2_5": 0.26223,
+        "brier_btts": 0.25632,
+        "calibration_over_2_5": {
+          "n": 191,
+          "ece": 0.0982,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 32,
+              "predicted_pct": 33.81,
+              "observed_pct": 62.5
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 98,
+              "predicted_pct": 50.42,
+              "observed_pct": 45.92
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 57,
+              "predicted_pct": 68.21,
+              "observed_pct": 59.65
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 4,
+              "predicted_pct": 82.17,
+              "observed_pct": 75.0
+            }
+          ]
+        },
+        "calibration_btts": {
+          "n": 191,
+          "ece": 0.06074,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 16,
+              "predicted_pct": 36.02,
+              "observed_pct": 62.5
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 116,
+              "predicted_pct": 50.93,
+              "observed_pct": 49.14
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 59,
+              "predicted_pct": 66.58,
+              "observed_pct": 57.63
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            }
+          ]
+        }
+      },
+      "league_frequency_baseline": {
+        "n": 191,
+        "brier_1x2": 0.61136,
+        "rps_1x2": 0.23476,
+        "log_loss_1x2": 1.01911,
+        "brier_over_2_5": 0.25418,
+        "brier_btts": 0.25468,
+        "calibration_over_2_5": {
+          "n": 191,
+          "ece": 0.07494,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 12,
+              "predicted_pct": 37.79,
+              "observed_pct": 66.67
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 108,
+              "predicted_pct": 48.25,
+              "observed_pct": 50.93
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 71,
+              "predicted_pct": 66.14,
+              "observed_pct": 54.93
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            }
+          ]
+        },
+        "calibration_btts": {
+          "n": 191,
+          "ece": 0.03283,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 145,
+              "predicted_pct": 53.43,
+              "observed_pct": 51.72
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 46,
+              "predicted_pct": 64.79,
+              "observed_pct": 56.52
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            }
+          ]
+        }
+      },
+      "league_blend_20pct_shadow": {
+        "n": 191,
+        "brier_1x2": 0.55916,
+        "rps_1x2": 0.21103,
+        "log_loss_1x2": 0.94674,
+        "brier_over_2_5": 0.25905,
+        "brier_btts": 0.25488,
+        "calibration_over_2_5": {
+          "n": 191,
+          "ece": 0.09754,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 31,
+              "predicted_pct": 35.49,
+              "observed_pct": 64.52
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 97,
+              "predicted_pct": 50.44,
+              "observed_pct": 45.36
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 63,
+              "predicted_pct": 67.78,
+              "observed_pct": 60.32
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            }
+          ]
+        },
+        "calibration_btts": {
+          "n": 191,
+          "ece": 0.05152,
+          "bins": [
+            {
+              "range_pct": [
+                0,
+                20
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            },
+            {
+              "range_pct": [
+                20,
+                40
+              ],
+              "n": 13,
+              "predicted_pct": 38.13,
+              "observed_pct": 61.54
+            },
+            {
+              "range_pct": [
+                40,
+                60
+              ],
+              "n": 118,
+              "predicted_pct": 51.34,
+              "observed_pct": 49.15
+            },
+            {
+              "range_pct": [
+                60,
+                80
+              ],
+              "n": 60,
+              "predicted_pct": 65.35,
+              "observed_pct": 58.33
+            },
+            {
+              "range_pct": [
+                80,
+                100
+              ],
+              "n": 0,
+              "predicted_pct": null,
+              "observed_pct": null
+            }
+          ]
+        }
+      }
+    },
+    "shadow_brier_1x2_improvement": -0.00634,
+    "production_model_unchanged": true,
+    "promotion_allowed": false,
+    "explanation": "Comparação retrospectiva em mesma amostra não comprova superioridade fora da amostra. O challenger é apenas diagnóstico; não gera odds publicadas nem sinais de aposta. Não existe baseline bookmaker comparável com cotações pré-jogo suficientes e pareadas."
+  },
+  "brier_1x2": 0.55282,
+  "rps_1x2": 0.20824,
+  "log_loss_1x2": 0.93827,
+  "brier_over_2_5": 0.26223,
+  "brier_btts": 0.25632,
   "explanation": "Test retrospective scored without later matches in each fit. Lower metric is better; this alone does not establish calibration, profitability or outperforming bookmakers."
 }
