@@ -6,6 +6,26 @@ const require=createRequire(import.meta.url);
 const c=require('../web/nexus-league-coverage.js');
 for(const name of ['Premier League','La Liga','Serie A','Bundesliga','Ligue 1','UEFA Champions League','Brasileirão Série A','Brazilian Serie B','Copa do Brasil','Copa Libertadores','Copa Sudamericana','Primeira Liga','Eredivisie','Liga MX','MLS'])assert.equal(c.category(name),true,name+' is major');
 for(const name of ['English League Two','J2 League','K League 2','Primera B','Conference North','Women Premier League','U20 Bundesliga','friendly match','Swiss Super League','Romanian Superliga','Liga 1 Peru','liga expansion'])assert.equal(c.category(name),false,name+' is minor');
+const brazilA=['Brasileirão Série A','Campeonato Brasileiro Série A','Brazil Serie A'];
+const brazilB=['Brasileirão Série B','Campeonato Brasileiro Série B','Brazilian Serie B','Serie B do Brasil'];
+for(const x of brazilA)assert.equal(c.profile(x)?.id,'br_a',x+' must be Brazilian A');
+for(const x of brazilB)assert.equal(c.profile(x)?.id,'br_b',x+' must be Brazilian B');
+for(const x of ['Women's Champions League','Brasileirão Feminino','NWSL',
+ 'Liga F','UEFA Womens Champions League','Serie A Femminile']){
+ assert.equal(c.category(x),false,x+' excluded');
+}
+assert.equal(c.womenGame({league:'Premier League',home:'Chelsea Women',away:'Arsenal Women'}),true);
+assert.equal(c.womenGame({league:'Brasileirão Série A',home:'São Paulo',away:'Santos'}),false);
+const prioritized=c.leagueStats([
+ {league:'Premier League',phase:'live',stats:{home:{shots_on:1},away:{shots_on:1}}},
+ {league:'Brasileirão Série B',phase:'live',stats:{home:{shots_on:1},away:{shots_on:1}}},
+ {league:'Brazilian Serie A',phase:'finished',score:'2-1'},
+ {league:'Brasileirão Série A',phase:'finished',score:'0-0'},
+ {league:'Brasileirão Feminino',phase:'finished',score:'3-1'},
+]);
+assert.deepEqual(prioritized.map(x=>x.league),['br_a','br_b','premier']);
+assert.equal(prioritized[0].covered,2);
+assert.equal(prioritized[0].label,'Brasileirão Série A');
 const match={league:'Premier League',phase:'live',stats:{home:{shots_on:0},away:{shots_on:3}},home:'Home',away:'Away'};
 const agenda={league:'Copa do Brasil',phase:'scheduled',start_timestamp:1792500000,home:'Casa',away:'Fora',source:'ESPN'};
 const noCoverage={league:'La Liga',phase:'live',stats:{home:{},away:{}}};
@@ -55,6 +75,8 @@ assert.equal(c.analysisPriority(noCoverage).status,'insuficiente');
 const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
 assert.match(html,/NexusLeagueCoverage\.visible\(m\)/);
 assert.match(html,/leagueStats\(state\.list\)/);
+assert.match(html,/Competições masculinas/);
+assert.match(html,/NexusLeagueCoverage\.womenGame\(m\)/);
 assert.match(html,/nexus-league-coverage\.js/);
 assert.doesNotMatch(html,/id="league-scope-toggle"/);
 for(const m of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi))if(m[1].trim())new vm.Script(m[1]);
