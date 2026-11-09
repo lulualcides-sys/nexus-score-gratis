@@ -1,87 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T23:15:05.689738+00:00",
+  "checked_at": "2026-11-09T02:42:53.295636+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 29,
+  "priority_fixtures_seen": 17,
   "created_games": 0,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Independiente Santa Fe x Deportivo Pasto",
-      "league": "col.1",
-      "kickoff": 1794164400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Águilas Doradas x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Bucaramanga x Fortaleza CEIF",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Once Caldas",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Cúcuta Deportivo x Jaguares de Córdoba",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportivo Cali x Deportes Tolima",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportivo Pasto x Atlético Junior",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Deportivo Pereira x América de Cali",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Internacional de Bogotá x Independiente Santa Fe",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Llaneros FC x Boyacá Chicó FC",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Millonarios x Alianza FC",
-      "league": "col.1",
-      "kickoff": 1794169800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "América de Cali x Deportivo Cali",
-      "league": "col.1",
-      "kickoff": 1794188700,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Vasco da Gama x Palmeiras",
       "league": "bra.copa_do_brazil",
@@ -140,6 +68,18 @@
       "fixture": "FC Utrecht x NEC Nijmegen",
       "league": "ned.1",
       "kickoff": 1794164400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Independiente Santa Fe x Deportivo Pasto",
+      "league": "col.1",
+      "kickoff": 1794164400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Alianza FC x Llaneros FC",
+      "league": "col.1",
+      "kickoff": 1794186900,
       "reason": "no_verified_public_1x2"
     }
   ],

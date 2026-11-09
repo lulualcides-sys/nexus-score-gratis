@@ -1,22 +1,22 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-08T23:15:11.194442+00:00",
+  "checked_at": "2026-11-09T02:42:56.289117+00:00",
   "horizon_hours": 48,
-  "important_games": 8,
-  "verified_bookmaker_games": 5,
+  "important_games": 3,
+  "verified_bookmaker_games": 2,
   "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 3,
+  "missing_bookmaker_price_games": 1,
   "games_with_corners_stats": 0,
-  "games_with_yellow_cards_stats": 0,
-  "games_with_shots_on_target_stats": 0,
+  "games_with_yellow_cards_stats": 1,
+  "games_with_shots_on_target_stats": 1,
   "tipsaudit": {
     "status": "checked",
-    "matched": 1,
+    "matched": 0,
     "indicative": 0,
-    "new_priority": 1
+    "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "checked",
+    "status": "stale",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,158 +31,12 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-08T22:14:05.157631+00:00",
-    "complete_market_lines": 45,
-    "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 92,
-    "invalid_quote_records": 0,
-    "families": {
-      "asian_handicap": {
-        "games": 1,
-        "odds": 20,
-        "complete_lines": 10,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.21
-      },
-      "first_half_goals": {
-        "games": 1,
-        "odds": 16,
-        "complete_lines": 8,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.87
-      },
-      "first_half_handicap": {
-        "games": 1,
-        "odds": 12,
-        "complete_lines": 6,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.83
-      },
-      "first_half_team_goals": {
-        "games": 1,
-        "odds": 4,
-        "complete_lines": 2,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.63
-      },
-      "half_time": {
-        "games": 1,
-        "odds": 3,
-        "complete_lines": 1,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.25
-      },
-      "match_odds": {
-        "games": 1,
-        "odds": 3,
-        "complete_lines": 1,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.65
-      },
-      "team_goals": {
-        "games": 1,
-        "odds": 10,
-        "complete_lines": 5,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.86
-      },
-      "total_goals": {
-        "games": 1,
-        "odds": 24,
-        "complete_lines": 12,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.06
-      }
-    }
+    "status": "stale"
   },
   "price_movements": {
-    "status": "fresh",
-    "selections_with_changes": 481,
-    "historical_snapshots": 22,
-    "top_changes": [
-      {
-        "home": "Fiorentina",
-        "away": "Juventus",
-        "market_family": "total_goals",
-        "raw_market_key": "s;0;ou;3.0",
-        "selection": "over",
-        "first_odds": 2.48,
-        "last_odds": 1.3175,
-        "implied_probability_change_pp": 35.579
-      },
-      {
-        "home": "Hoffenheim",
-        "away": "Schalke 04",
-        "market_family": "team_goals",
-        "raw_market_key": "s;0;tt;1.5;away",
-        "selection": "over",
-        "first_odds": 3.26,
-        "last_odds": 1.5435,
-        "implied_probability_change_pp": 34.113
-      },
-      {
-        "home": "Hoffenheim",
-        "away": "Schalke 04",
-        "market_family": "team_goals",
-        "raw_market_key": "s;0;tt;1.5;away",
-        "selection": "under",
-        "first_odds": 1.3425,
-        "last_odds": 2.37,
-        "implied_probability_change_pp": -32.294
-      }
-    ]
+    "status": "stale"
   },
   "priority_fixtures": [
-    {
-      "home": "Querétaro",
-      "away": "Puebla",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1794182400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.9,
-        "draw": 4.0,
-        "away": 4.49
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15741/club-queretaro-vs-puebla-2026-11-09",
-      "tipsaudit_id": "15741",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Leon",
-      "away": "Guadalajara Chivas",
-      "kickoff_unix": 1794190200.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 3.76,
-        "draw": 3.83,
-        "away": 2.12
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15743/leon-vs-guadalajara-chivas-2026-11-09",
-      "tipsaudit_id": "15743",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "León",
       "away": "Guadalajara",
@@ -228,73 +82,6 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Central Córdoba (Santiago del Estero)",
-      "away": "Lanús",
-      "league": "Liga Profesional Argentina",
-      "league_code": "arg.1",
-      "kickoff_unix": 1794177000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 12,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Deportes Tolima",
-      "away": "Millonarios",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794179400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Alianza FC",
-      "away": "Llaneros FC",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794186900.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "América de Cali",
       "away": "Deportivo Cali",
       "league": "Colômbia Primera A",
@@ -304,37 +91,20 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
+      "observed_card_counts": true,
+      "observed_shots_on_counts": true,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     }
   ],
   "top_missing": [
-    {
-      "home": "Leon",
-      "away": "Guadalajara Chivas",
-      "kickoff_unix": 1794190200.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/15743/leon-vs-guadalajara-chivas-2026-11-09",
-      "tipsaudit_id": "15743",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "León",
       "away": "Chivas",
@@ -344,27 +114,6 @@
       "phase": "scheduled",
       "data_sources": [
         "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "América de Cali",
-      "away": "Deportivo Cali",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794188700.0,
-      "phase": "finished",
-      "data_sources": [
-        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
