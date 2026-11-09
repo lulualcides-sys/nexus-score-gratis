@@ -32,8 +32,11 @@ jobs:
           set -euo pipefail
           git fetch --depth=1 origin market-telegram-data:refs/remotes/origin/market-telegram-data
           git show refs/remotes/origin/market-telegram-data:market-history/model-only/latest.json > /tmp/nexus-model-only.json
-          git show refs/remotes/origin/market-telegram-data:market-history/model-only/backtest-latest.json > /tmp/nexus-model-backtest.json
-          git show refs/remotes/origin/market-telegram-data:market-history/model-only/league-stats-latest.json > /tmp/nexus-league-stats.json
+          # Backtest e estatísticas calculados do mesmo histórico local, sem
+          # depender da ordem de execução do coletor periódico em outra branch.
+          PYTHONPATH=. python3 -m telegram_collector.model_backtest --history-dir history --archive /tmp/nexus-model-audit
+          cp /tmp/nexus-model-audit/model-only/backtest-latest.json /tmp/nexus-model-backtest.json
+          cp /tmp/nexus-model-audit/model-only/league-stats-latest.json /tmp/nexus-league-stats.json
       - name: Validar formato e não expor credenciais nem odds de casas
         run: |
           python3 - <<'PY'
