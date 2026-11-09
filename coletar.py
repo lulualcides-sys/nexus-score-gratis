@@ -17,7 +17,7 @@ NOW=datetime.now(timezone.utc)
 DAY=NOW.astimezone(BR).date().isoformat()
 DEADLINE=time.monotonic()+(105 if os.getenv('NEXUS_MODE','').lower()=='live' else 82)
 LIVE_MODE=os.getenv('NEXUS_MODE','').lower()=='live'
-LEAGUES=('bra.1','bra.2','eng.1','esp.1','ita.1','ger.1','fra.1','arg.1','usa.1','col.1','uefa.champions','conmebol.libertadores')
+LEAGUES=('bra.1','bra.2','eng.1','eng.2','ned.2','ksa.1','esp.1','ita.1','ger.1','fra.1','arg.1','usa.1','col.1','uefa.champions','uefa.europa.conf','conmebol.libertadores')
 
 def fetch(url,timeout=7):
     req=Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; NEXUS/5.27)','Accept':'application/json','Referer':'https://www.fotmob.com/'})
