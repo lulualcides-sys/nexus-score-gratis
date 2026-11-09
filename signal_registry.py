@@ -6,6 +6,7 @@ Não pretende representar outras regras da instalação desktop.
 Sem preço e probabilidade calibrada, EV+ é indisponível.
 """
 from datetime import datetime,timezone,timedelta
+from scout_snapshots import snapshot_deltas
 from pathlib import Path
 import json,math,re,hashlib,sys,subprocess
 
@@ -87,6 +88,18 @@ def active_signals(fixture,row,observed_at):
     fid=str(fixture.get('id') or '')
     if not fid or not fixture.get('home') or not fixture.get('away'):return []
     points=samples(row)
+    # A delta is factual only between two real same-source scout captures.
+    # Never infer the exact minute of a shot from cumulative totals.
+    delta=snapshot_deltas(row.get('scout_snapshots') or [], max_gap_minutes=15)
+    if delta.get('status')=='observed_delta':
+        try:
+            observed=datetime.fromisoformat(str(observed_at).replace('Z','+00:00'))
+            latest=datetime.fromisoformat(str(delta['to_at']).replace('Z','+00:00'))
+            fresh=(observed.tzinfo is not None and latest.tzinfo is not None
+                   and 0<=(observed-latest).total_seconds()<=12*60)
+        except (TypeError,ValueError,OverflowError):
+            fresh=False
+        if not fresh:delta={'status':'insufficient','reason':'snapshot stale'}
     snap=[{'minute':m,'value':v} for m,v in points.items()]
     stats=row.get('stats') or {}
     incidents=[]
@@ -130,6 +143,8 @@ def active_signals(fixture,row,observed_at):
               'captured_at':observed_at,
               'score_at_alert':str(fixture.get('score') or '')[:15],
               'pressure10':original['pressure10'],'pressure5':original['pressure5'],
+              'scout_delta':delta if delta.get('status')=='observed_delta'
+                            else {'status':'insufficient'},
               'shots_on':stat('shots_on'),'big_chances':stat('big_chances'),
               'source':str(fixture.get('source') or '')[:45],
               'original_engine':'NEXUS SCORE Original 5.29',
