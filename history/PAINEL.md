@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T10:37:07.262780+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T10:42:26.026997+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -116,9 +116,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-08 | Fiorentina × Juventus | 2-2 | 0 | Chutes no alvo: 6.0×6.0; Match Odds 1X2: Casa 3,25, Empate 3,30, Fora 2,15 |
 | 2026-11-08 | Genoa × AC Milan | 1-2 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 3,80, Empate 3,30, Fora 1,95 |
 | 2026-11-08 | Universidad de Chile × Cobresal | 2-1 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×1.0 |
-| 2026-11-08 | Universidad Católica × Deportes Limache | 3-0 | 0 | Chutes no alvo: 7.0×3.0, Chutes para fora: 6.0×5.0, Escanteios: 4.0×10.0, Grandes chances: 5.0×0.0 |
+| 2026-11-08 | Universidad Católica × Deportes Limache | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-08 | Unión La Calera × Huachipato | 1-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×0.0 |
-| 2026-11-08 | Audax Italiano × Coquimbo Unido | 0-1 | 0 | Chutes no alvo: 8.0×3.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×2.0, Grandes chances: 1.0×0.0 |
+| 2026-11-08 | Audax Italiano × Coquimbo Unido | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-08 | Ñublense × Colo Colo | 1-2 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 2.0×4.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-11-08 | Universidad de Concepción × O'Higgins | 3-2 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 2.0×6.0, Escanteios: 0.0×2.0, Grandes chances: 1.0×0.0 |
 | 2026-11-08 | Atlético Nacional × Deportivo Pereira | 2-2 | 90 | Chutes no alvo: 8.0×5.0, Chutes para fora: 10.0×5.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×2.0 |
@@ -138,7 +138,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-08 | FK Radnik Surdulica × OFK Beograd | 2-1 | 0 | Chutes no alvo: 4.0×6.0, Chutes para fora: 10.0×4.0, Escanteios: 4.0×7.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Vojvodina × FK Crvena Zvezda | 0-1 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-08 | Hapoel Beer Sheva × Hapoel Tel Aviv | 0-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-08 | K. Lierse SK × Eupen | 2-3 | 90 | Chutes no alvo: 8.0×7.0, Chutes para fora: 9.0×3.0, Escanteios: 5.0×1.0, Grandes chances: 1.0×7.0 |
+| 2026-11-08 | K. Lierse SK × Eupen | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-08 | KSC Lokeren × FCV Dender EH | 2-2 | 65 | Chutes no alvo: 2.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 5.0×2.0, Grandes chances: 3.0×1.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6219 | **Com gol:** 2400 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2094 indeterminados | 2797 incompletos.
+**Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6221 | **Com gol:** 2402 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2092 indeterminados | 2797 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,9 +178,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2168 | 1459 | 580 | 879 | 39.8% |
 | ⚡ pressao_ofensiva_18 | 1749 | 1169 | 433 | 736 | 37.0% |
-| 🎯 chutes_no_alvo_5 | 1896 | 892 | 330 | 562 | 37.0% |
+| 🎯 chutes_no_alvo_5 | 1896 | 893 | 331 | 562 | 37.1% |
 | 🟥 expulsao_confirmada | 1655 | 746 | 255 | 491 | 34.2% |
-| 🚩 escanteios_6 | 1387 | 631 | 261 | 370 | 41.4% |
+| 🚩 escanteios_6 | 1387 | 632 | 262 | 370 | 41.5% |
 | 💣 grandes_chances_3 | 1119 | 590 | 253 | 337 | 42.9% |
 | 🔥 pressao_forte_10min | 605 | 386 | 148 | 238 | 38.3% |
 | 🧨 pressao_total_5_10min | 333 | 208 | 84 | 124 | 40.4% |
@@ -254,7 +254,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 292 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 734 | 540 | 186 | 354 | 34.4% |
 | 31–45′ | 2342 | 1796 | 743 | 1053 | 41.4% |
-| 46–60′ | 1466 | 1039 | 407 | 632 | 39.2% |
+| 46–60′ | 1466 | 1041 | 409 | 632 | 39.3% |
 | 61–75′ | 2322 | 1622 | 609 | 1013 | 37.5% |
 | 76–90′ | 2960 | 1000 | 383 | 617 | 38.3% |
 | 91+′ | 1079 | 10 | 4 | 6 | 40.0% |
@@ -340,9 +340,9 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-08T15:11:42.987631+00:00 | Brighton & Hove Albion × Brentford | Brentford (50') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | FC Cologne × Bayer Leverkusen | Bayer Leverkusen (41') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Monza × Atalanta | Monza (52') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Wolverhampton WFC (W) × Nottingham Forest WFC (W) | Nottingham Forest WFC (W) (49') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-08T15:11:42.987631+00:00 | Wolverhampton WFC (W) × Nottingham Forest WFC (W) | Nottingham Forest WFC (W) (49') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Mamelodi Sundowns FC × USM Alger | USM Alger (81') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Vittsjö GIK (W) × Brommapojkarna (W) | Vittsjö GIK (W) (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-08T15:11:42.987631+00:00 | Vittsjö GIK (W) × Brommapojkarna (W) | Vittsjö GIK (W) (54') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Genoa × Milan | Milan (51') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Monza × Atalanta | Atalanta (52') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Monza × Atalanta | Monza (52') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
