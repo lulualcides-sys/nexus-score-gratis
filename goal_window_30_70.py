@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 import math
 
 from signal_evaluation import _entries, HIT, MISS
+from major_league_scope import major_men
 
 MINUTE_START = 30
 MINUTE_END = 70
@@ -95,7 +96,8 @@ def _eligible(journal, as_of):
     if as_of.tzinfo is None:
         raise ValueError("Expected timezone-aware timestamp")
     cutoff = (as_of.date() - timedelta(days=MAX_AGE_DAYS-1)).isoformat()
-    candidates = [r for r in _entries(journal) if MINUTE_START <= r["minute"] <= MINUTE_END
+    candidates = [r for r in _entries(journal) if major_men(r)
+                  and MINUTE_START <= r["minute"] <= MINUTE_END
                   and cutoff <= r["day"] <= as_of.date().isoformat()]
     earliest = {}
     for r in sorted(candidates, key=lambda x: (x["day"], x["minute"], x["signal"])):
@@ -252,6 +254,8 @@ def _live(model, journal, games, now, allow_percentage):
         catalog.setdefault(str(item["match_id"]), []).append(item)
     active = []
     for game in games:
+        if not major_men(game):
+            continue
         match_id = str(game.get("id") or "")
         if not match_id: continue
         recent = [r for r in catalog.get(match_id, [])
@@ -312,6 +316,7 @@ def evaluate(journal, games=(), now=None):
     return {"schema": 1, "name": "NEXUS Gol 30–70",
         "generated_at": now.isoformat(), "minute_range": [30,70],
         "goal_horizon_minutes": 15,
+        "competition_scope": "major_men_only",
         "goal_window_description": "Alerta entre 30' e 70'; gol nos próximos 15 minutos, inclusive após 70'.",
         "target": "goal_in_next_15_minutes_after_first_eligible_match_alert",
         "sample": {"first_alert_per_match": len(earliest), "settled": len(settled),
