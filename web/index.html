@@ -2410,12 +2410,14 @@ function updateLeagues(){
  const sel=$('#league-filter'),before=sel.value;
  const pool=NexusLeagueCoverage.leagueStats(state.list);
  const available=new Set(pool.map(x=>x.league));
- // Brasileirão A/B always visible in the filter, but disabled when no matches.
- const pinned=[{league:'br_a',label:'Brasileirão Série A',group:'Brasil',covered:0},
-               {league:'br_b',label:'Brasileirão Série B',group:'Brasil',covered:0}]
-   .filter(x=>!available.has(x.league));
- const entries=[...pool,...pinned];
- const groups=['Brasil','Continental','Europa','Américas','Seleções'];
+ // Ligas solicitadas sempre aparecem no filtro, sem inventar partidas.
+ const pinned=['Brasileirão Série A','Brasileirão Série B','Saudi Pro League',
+               'UEFA Conference League','EFL Championship','Eerste Divisie']
+   .map(name=>NexusLeagueCoverage.profile(name))
+   .filter(x=>x&&!available.has(x.id))
+   .map(x=>({...x,league:x.id,covered:0}));
+ const entries=[...pool,...pinned].sort((a,b)=>a.priority-b.priority);
+ const groups=['Brasil','Continental','Europa','Segundas divisões','Américas','Ásia','Seleções'];
  sel.innerHTML='<option value="">Todas as principais ligas masculinas</option>'+
    groups.map(group=>{
       const rows=entries.filter(x=>x.group===group);
