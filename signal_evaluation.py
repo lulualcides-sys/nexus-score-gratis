@@ -97,6 +97,8 @@ def _entries(journal):
                'day':day,'match_id':match,'minute':minute,
                'signal':(icon+' '+rule).strip()[:110],
                'team':str(team or 'Equipe não definida')[:100],
+               'home':str(r.get('home') or '')[:100],
+               'away':str(r.get('away') or '')[:100],
                'league':str(r.get('league') or 'Campeonato não informado')[:100],
                'band':minute_band(minute),'outcomes':statuses}
 
