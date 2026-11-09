@@ -107,7 +107,7 @@ class Goal3070Tests(unittest.TestCase):
     def test_tiny_retrospective_gain_never_unlocks_live_percentage(self):
         items = []
         for j in range(250):
-            day = 50-j//5
+            day = 28-j//9
             items.append(alert("m"+str(j),minute=30+j%40,day=day,
                                outcome="gol_confirmado" if j%3==0 else "sem_gol_confirmado"))
         x = evaluate({"items":items},now=NOW)
