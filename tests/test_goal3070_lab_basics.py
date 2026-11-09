@@ -41,7 +41,7 @@ class LabResearchTests(unittest.TestCase):
     def test_exclusions_censor_unknown_and_bootstrap_by_day(self):
         items=[fixture(i,"gol_confirmado" if i%2 else "sem_gol_confirmado")
                for i in range(60)]
-        items.extend([fixture(500,"indeterminado"),fixture(501,"pendente")])
+        items.extend([fixture(60,"indeterminado"),fixture(61,"pendente")])
         entries,settled=make_dataset({"items":items},NOW)
         self.assertEqual(len(entries)-len(settled),2)
         p=[.48]*len(settled)
