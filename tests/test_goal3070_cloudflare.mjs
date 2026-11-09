@@ -9,5 +9,10 @@ assert.equal(sanitizedGame({...data,minute:71},now),null);
 assert.equal(sanitizedGame({...data,league:'Brasileirão Feminino'},now),null);
 assert.equal(sanitizedGame({...data,observed_at:'2026-11-09T10:40:00Z'},now),null);
 assert.equal(sanitizedGame({...data,pressure:null,shots_on:null,big_chances:null},now),null);
+for(const league of ["Saudi Pro League","UEFA Conference League","EFL Championship",
+                     "Eerste Divisie","Keuken Kampioen Divisie"]){
+ assert.equal(sanitizedGame({...data,league},now)?.league,league);
+}
+assert.equal(sanitizedGame({...data,league:"Saudi Women's League"},now),null);
 assert.equal((await collect({},now)).state,'disabled_missing_authorized_source_or_database');
 console.log('Cloudflare sampler safe-by-default smoke: OK');
