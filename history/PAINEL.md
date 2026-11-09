@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T11:56:56.190838+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-09T12:02:10.002225+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 11195 | **Jogos distintos:** 3356 | **Resultados verificáveis:** 6223 | **Com gol:** 2404 | **Sem gol:** 3819 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 31 datas com coletas | 85 pendentes | 2090 indeterminados | 2797 incompletos.
+**Evolução da amostra:** 31 datas com coletas | 80 pendentes | 2095 indeterminados | 2797 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
