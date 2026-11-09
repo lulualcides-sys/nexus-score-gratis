@@ -142,6 +142,55 @@ def _metrics(rows, model):
             }, predictions
 
 
+def _holdout_robustness(rows, model):
+    """Exploratory blocked bootstrap (days are clusters), plus AUC for ranking.
+
+    A model with predictions all close to the base frequency should not be
+    called discriminatory from a trivial Brier improvement.
+    """
+    from random import Random
+    by_day = defaultdict(list)
+    pairs = []
+    base = model["base_rate"]
+    for r in rows:
+        p, _ = _estimate(model, r)
+        y = int(r["outcomes"][HORIZON] == HIT)
+        delta = (base-y)**2 - (p-y)**2
+        by_day[r["day"]].append(delta)
+        pairs.append((p, y))
+    days = sorted(by_day)
+    if not pairs:
+        return {"days": 0, "auc": None, "gain_ci95": None}
+    # Tie-aware rank AUC: 0.5 means no ranking separation.
+    ranked = sorted(pairs, key=lambda z:z[0])
+    rank_sum = 0.0
+    i = 0
+    while i < len(ranked):
+        j = i + 1
+        while j < len(ranked) and ranked[j][0] == ranked[i][0]:
+            j += 1
+        avg_rank = (i + 1 + j) / 2
+        rank_sum += avg_rank * sum(y for _, y in ranked[i:j])
+        i = j
+    positive = sum(y for _, y in pairs)
+    negative = len(pairs)-positive
+    auc = ((rank_sum - positive*(positive+1)/2)/(positive*negative)
+           if positive and negative else None)
+    rng = Random(3070)
+    trials = []
+    # Cluster bootstrap by capture date, preserving every match from each day.
+    for _ in range(400):
+        chosen = [days[rng.randrange(len(days))] for _ in days]
+        combined = [v for d in chosen for v in by_day[d]]
+        trials.append(sum(combined)/len(combined))
+    trials.sort()
+    return {"days": len(days),
+            "auc": round(auc, 5) if auc is not None else None,
+            "gain_ci95": [round(trials[9], 5), round(trials[389], 5)],
+            "bootstrap": "400 fixed-seed resamples of whole capture dates",
+            "rank_pairs": len(pairs)}
+
+
 def _baseline(rows, p):
     if not rows: return None
     return round(sum((p-int(r["outcomes"][HORIZON] == HIT))**2 for r in rows)/len(rows), 5)
@@ -219,12 +268,19 @@ def evaluate(journal, games=(), now=None):
     trained = _fit(train)
     test_metrics, _ = _metrics(test, trained) if train else (None, [])
     baseline_brier = _baseline(test, trained["base_rate"]) if train else None
+    robustness = _holdout_robustness(test, trained) if train else {}
     status = "insufficient_history"
     if (len(train) >= MIN_TRAIN and len(test) >= MIN_TEST
             and test_metrics and 5 <= test_metrics["hits"] <= len(test)-5):
-        if (test_metrics["brier"] <= baseline_brier-.002
+        gain = baseline_brier-test_metrics["brier"]
+        if (gain > 0 and robustness.get("days", 0) >= 14
+                and robustness.get("auc") is not None and robustness["auc"] >= .55
+                and robustness.get("gain_ci95")
+                and robustness["gain_ci95"][0] > 0
                 and test_metrics["ece"] <= .10):
             status = "better_than_constant_baseline_in_historical_holdout"
+        elif gain > 0:
+            status = "small_or_unconfirmed_historical_gain"
         else:
             status = "no_verified_improvement_over_baseline"
     # Forecast remains flagged experimental even after apparent historical gains.
@@ -248,9 +304,11 @@ def evaluate(journal, games=(), now=None):
         "validation": {"status": status, "min_train": MIN_TRAIN, "min_holdout": MIN_TEST,
                        "brier_model": test_metrics["brier"] if test_metrics else None,
                        "brier_constant_baseline": baseline_brier,
+                       "robustness_exploratory": robustness,
                        "ece_holdout": test_metrics["ece"] if test_metrics else None,
                        "reliability_bins": test_metrics["bins"] if test_metrics else [],
                        "no_forward_prospective_validation": True,
+                       "stricter_gate_added_after_initial_retrospective_review": True,
                        "no_model_promotion": True,
                        "probability_released_for_live": enough},
         "live": active,
