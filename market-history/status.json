@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "collected_at": "2026-11-09T21:01:00+00:00",
-  "nexus_exported_at": "2026-11-09T19:08:26.169429+00:00",
+  "collected_at": "2026-11-10T03:34:16+00:00",
+  "nexus_exported_at": "2026-11-10T02:00:40.275806+00:00",
   "games_in_feed": 1296,
-  "live_games_in_feed": 16,
-  "finished_games_in_feed": 1245,
-  "new_observations": 129,
+  "live_games_in_feed": 15,
+  "finished_games_in_feed": 1270,
+  "new_observations": 35,
   "quotes_observed": 629,
   "market_families": {
     "match_odds": {

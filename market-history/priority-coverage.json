@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-09T21:01:03.681355+00:00",
+  "checked_at": "2026-11-10T03:34:19.491700+00:00",
   "horizon_hours": 48,
-  "important_games": 1,
-  "verified_bookmaker_games": 1,
+  "important_games": 0,
+  "verified_bookmaker_games": 0,
   "indicative_only_games": 0,
   "missing_bookmaker_price_games": 0,
   "games_with_corners_stats": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "checked",
+    "status": "stale",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,101 +31,12 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-09T19:55:01.395878+00:00",
-    "complete_market_lines": 428,
-    "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 874,
-    "invalid_quote_records": 6,
-    "families": {
-      "asian_handicap": {
-        "games": 12,
-        "odds": 210,
-        "complete_lines": 105,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.06
-      },
-      "first_half_goals": {
-        "games": 12,
-        "odds": 138,
-        "complete_lines": 69,
-        "incomplete_lines": 0,
-        "median_overround_pct": 7.05
-      },
-      "first_half_handicap": {
-        "games": 12,
-        "odds": 132,
-        "complete_lines": 66,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.87
-      },
-      "first_half_team_goals": {
-        "games": 11,
-        "odds": 36,
-        "complete_lines": 18,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.58
-      },
-      "half_time": {
-        "games": 7,
-        "odds": 21,
-        "complete_lines": 7,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.17
-      },
-      "match_odds": {
-        "games": 11,
-        "odds": 33,
-        "complete_lines": 11,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.78
-      },
-      "team_goals": {
-        "games": 11,
-        "odds": 86,
-        "complete_lines": 43,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.21
-      },
-      "total_goals": {
-        "games": 12,
-        "odds": 218,
-        "complete_lines": 109,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.12
-      }
-    }
+    "status": "stale"
   },
   "price_movements": {
-    "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 12,
-    "top_changes": []
+    "status": "stale"
   },
-  "priority_fixtures": [
-    {
-      "home": "Atlético Junior",
-      "away": "Cúcuta Deportivo",
-      "league": "col.1",
-      "league_code": "col.1",
-      "kickoff_unix": 1794268800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 11,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    }
-  ],
+  "priority_fixtures": [],
   "top_missing": [],
   "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
 }
