@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-10T11:42:27.778098+00:00",
+  "checked_at": "2026-11-10T18:55:41.045118+00:00",
   "horizon_hours": 48,
   "important_games": 0,
   "verified_bookmaker_games": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "stale",
+    "status": "checked",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,10 +31,107 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-10T14:59:46.593628+00:00",
+    "complete_market_lines": 116,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 236,
+    "invalid_quote_records": 2,
+    "families": {
+      "asian_handicap": {
+        "games": 4,
+        "odds": 52,
+        "complete_lines": 26,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.52
+      },
+      "first_half_goals": {
+        "games": 4,
+        "odds": 42,
+        "complete_lines": 21,
+        "incomplete_lines": 0,
+        "median_overround_pct": 7.09
+      },
+      "first_half_handicap": {
+        "games": 4,
+        "odds": 38,
+        "complete_lines": 19,
+        "incomplete_lines": 0,
+        "median_overround_pct": 7.08
+      },
+      "first_half_team_goals": {
+        "games": 3,
+        "odds": 10,
+        "complete_lines": 5,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.9
+      },
+      "half_time": {
+        "games": 1,
+        "odds": 3,
+        "complete_lines": 1,
+        "incomplete_lines": 0,
+        "median_overround_pct": 3.95
+      },
+      "match_odds": {
+        "games": 3,
+        "odds": 9,
+        "complete_lines": 3,
+        "incomplete_lines": 0,
+        "median_overround_pct": 8.51
+      },
+      "team_goals": {
+        "games": 3,
+        "odds": 20,
+        "complete_lines": 10,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.53
+      },
+      "total_goals": {
+        "games": 4,
+        "odds": 62,
+        "complete_lines": 31,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.57
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 191,
+    "historical_snapshots": 16,
+    "top_changes": [
+      {
+        "home": "Mijas-Las Lagunas",
+        "away": "Real Jaen",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;0.0",
+        "selection": "away",
+        "first_odds": 1.4149,
+        "last_odds": 1.3115,
+        "implied_probability_change_pp": 5.572
+      },
+      {
+        "home": "Trival Valderas",
+        "away": "Leganes",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;3.0",
+        "selection": "over",
+        "first_odds": 1.8696,
+        "last_odds": 1.6944,
+        "implied_probability_change_pp": 5.531
+      },
+      {
+        "home": "UE Tavernes",
+        "away": "Valencia",
+        "market_family": "total_goals",
+        "raw_market_key": "s;0;ou;7.25",
+        "selection": "over",
+        "first_odds": 1.6897,
+        "last_odds": 1.8621,
+        "implied_probability_change_pp": -5.479
+      }
+    ]
   },
   "priority_fixtures": [],
   "top_missing": [],
