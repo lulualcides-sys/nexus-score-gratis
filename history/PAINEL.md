@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-11T06:13:45.478731+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-11T14:23:02.476792+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -19,7 +19,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-11 | Hammarby IF (W) × Spartak Myjava (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Eintracht Frankfurt (W) × PSV (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Mamelodi Sundowns (W) × Kawempe Muslim LFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | FAR Rabat (W) × Lekie (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | FAR Rabat (W) × Lekie (W) | 1-0 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×9.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-11-11 | Piratas × Atlético La Paz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Londrina × Náutico | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Cieza × Valencia B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -43,16 +43,16 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-11 | Benfica (W) × Austria Wien W (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Juventus (W) × OL Lyonnes (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Oud-Heverlee Leuven (W) × HB Køge (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Bangladesh × Sri Lanka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | India × Maldives | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Bangladesh × Sri Lanka | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | India × Maldives | 1-0 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 6.0×1.0, Escanteios: 5.0×6.0, Grandes chances: 1.0×1.0 |
 | 2026-11-11 | Artis Brno × Jablonec | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Zeleziarne Podbrezová × Zlaté Moravce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | FKM Nové Zámky × Zemplín Michalovce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Kawasaki Frontale × Kashiwa Reysol | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Vissel Kobe × Machida Zelvia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Yokohama F.Marinos × Kashima Antlers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Urawa Red Diamonds × Cerezo Osaka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Vietnam × Chinese Taipei | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | FKM Nové Zámky × Zemplín Michalovce | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Kawasaki Frontale × Kashiwa Reysol | 1-2 | 0 | Chutes no alvo: 3.0×5.0, Escanteios: 3.0×3.0 |
+| 2026-11-11 | Vissel Kobe × Machida Zelvia | 0-1 | 0 | Chutes no alvo: 3.0×7.0, Escanteios: 1.0×7.0 |
+| 2026-11-11 | Yokohama F.Marinos × Kashima Antlers | 2-3 | 0 | Chutes no alvo: 3.0×6.0, Escanteios: 0.0×7.0 |
+| 2026-11-11 | Urawa Red Diamonds × Cerezo Osaka | 2-0 | 0 | Chutes no alvo: 6.0×5.0, Escanteios: 8.0×4.0 |
+| 2026-11-11 | Vietnam × Chinese Taipei | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Deportes Quindío × Tigres FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Real Cundinamarca × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Once Caldas × Atlético Nacional | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11202 | **Jogos monitorados:** 727 | **Ao vivo:** 8 | **Termômetros recentes:** 2.
+**Registros:** 11202 | **Jogos monitorados:** 727 | **Ao vivo:** 9 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **50**.
-Novas cotacoes capturadas na ultima execucao: **3**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
