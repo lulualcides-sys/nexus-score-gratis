@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-11T14:23:02.476792+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-11T21:56:20.037573+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
@@ -11,42 +11,42 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-11-11 | Londrina × Náutico | 0-0 | 0 | Match Odds 1X2: Casa 1,77, Empate 3,85, Fora 4,40 |
-| 2026-11-11 | Heart of Midlothian (W) × Montrose (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Fenerbahçe (W) × Real Sociedad (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Brøndby IF (W) × Rosenborg BK (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Czarni Sosnowiec (W) × Brann (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Malmö FF (W) × Ajax (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Hammarby IF (W) × Spartak Myjava (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Eintracht Frankfurt (W) × PSV (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Mamelodi Sundowns (W) × Kawempe Muslim LFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Heart of Midlothian (W) × Montrose (W) | 2-1 | 0 | Chutes no alvo: 6.0×4.0, Chutes para fora: 9.0×3.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Fenerbahçe (W) × Real Sociedad (W) | 0-2 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 9.0×1.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Brøndby IF (W) × Rosenborg BK (W) | 2-0 | 0 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×3.0, Escanteios: 9.0×6.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Czarni Sosnowiec (W) × Brann (W) | 1-5 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 0.0×6.0, Escanteios: 0.0×8.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Malmö FF (W) × Ajax (W) | 0-2 | 0 | Chutes no alvo: 7.0×6.0, Chutes para fora: 4.0×7.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Hammarby IF (W) × Spartak Myjava (W) | 4-0 | 0 | Chutes no alvo: 9.0×0.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Eintracht Frankfurt (W) × PSV (W) | 2-1 | 0 | Chutes no alvo: 13.0×1.0, Chutes para fora: 6.0×2.0, Escanteios: 6.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-11 | Mamelodi Sundowns (W) × Kawempe Muslim LFC (W) | 4-1 | 0 | Chutes no alvo: 7.0×5.0, Chutes para fora: 4.0×4.0, Escanteios: 3.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-11-11 | FAR Rabat (W) × Lekie (W) | 1-0 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 2.0×9.0, Escanteios: 2.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-11-11 | Piratas × Atlético La Paz | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Londrina × Náutico | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Cieza × Valencia B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Castellonense × La Nucía | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Alcoyano × Elche Ilicitano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Cieza × Valencia B | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Castellonense × La Nucía | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Alcoyano × Elche Ilicitano | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | DC Power FC (W) × Brooklyn FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Fleury Merogis U.S (W) × Toulouse (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Avro × Whitby | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Fleury Merogis U.S (W) × Toulouse (W) | 7-0 | 38 | Chutes no alvo: 3.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
+| 2026-11-11 | Avro × Whitby | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Isidro Metapan × CD Platense Municipal | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Fuerte San Francisco × Alianza FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | CD FAS × Inter Santa Tecla | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Birmingham City (W) × Sunderland (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Everton (W) × Durham Women FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Liverpool (W) × Aston Villa (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Tottenham Hotspur (W) × Crystal Palace (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Charlton (W) × Ipswich Town WFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Brighton (W) × Watford (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Sheffield Wednesday × Accrington Stanley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Barnsley × Oldham Athletic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Castellón B × Deportiva Minera | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Birmingham City (W) × Sunderland (W) | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Everton (W) × Durham Women FC (W) | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Liverpool (W) × Aston Villa (W) | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Tottenham Hotspur (W) × Crystal Palace (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Charlton (W) × Ipswich Town WFC (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Brighton (W) × Watford (W) | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Sheffield Wednesday × Accrington Stanley | 0-4 | 0 | Chutes no alvo: 3.0×8.0, Chutes para fora: 2.0×10.0, Escanteios: 1.0×2.0, Grandes chances: 1.0×4.0 |
+| 2026-11-11 | Barnsley × Oldham Athletic | 5-2 | 0 | Chutes no alvo: 11.0×3.0, Chutes para fora: 7.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 2.0×3.0 |
+| 2026-11-11 | Castellón B × Deportiva Minera | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Benfica (W) × Austria Wien W (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Juventus (W) × OL Lyonnes (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Oud-Heverlee Leuven (W) × HB Køge (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Bangladesh × Sri Lanka | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Juventus (W) × OL Lyonnes (W) | 0-6 | 0 | Chutes no alvo: 2.0×10.0, Chutes para fora: 1.0×8.0, Escanteios: 0.0×4.0, Grandes chances: 0.0×6.0 |
+| 2026-11-11 | Oud-Heverlee Leuven (W) × HB Køge (W) | 1-1 | 0 | Chutes no alvo: 5.0×11.0, Chutes para fora: 3.0×8.0, Escanteios: 4.0×10.0, Grandes chances: 4.0×5.0 |
+| 2026-11-11 | Bangladesh × Sri Lanka | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | India × Maldives | 1-0 | 0 | Chutes no alvo: 2.0×4.0, Chutes para fora: 6.0×1.0, Escanteios: 5.0×6.0, Grandes chances: 1.0×1.0 |
-| 2026-11-11 | Artis Brno × Jablonec | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Zeleziarne Podbrezová × Zlaté Moravce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Artis Brno × Jablonec | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Zeleziarne Podbrezová × Zlaté Moravce | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | FKM Nové Zámky × Zemplín Michalovce | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Kawasaki Frontale × Kashiwa Reysol | 1-2 | 0 | Chutes no alvo: 3.0×5.0, Escanteios: 3.0×3.0 |
 | 2026-11-11 | Vissel Kobe × Machida Zelvia | 0-1 | 0 | Chutes no alvo: 3.0×7.0, Escanteios: 1.0×7.0 |
@@ -56,8 +56,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-11 | Deportes Quindío × Tigres FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Real Cundinamarca × Real Cartagena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Once Caldas × Atlético Nacional | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | La Luz × Fénix | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-11 | Tacuarembo FC × Miramar Misiones | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | La Luz × Fénix | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-11 | Tacuarembo FC × Miramar Misiones | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Liverpool FC × Juventud de las Piedras | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | FC Juárez (W) × Chivas (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-11 | Pumas (W) × Tigres (W) | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -126,7 +126,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-10 | Mijas-Las Lagunas × Real Jaén | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-10 | Pamplona × Eibar | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-10 | Tavernes de la Valldigna × Valencia | 0-6 | 90 | Chutes no alvo: 1.0×11.0, Chutes para fora: 3.0×6.0, Escanteios: 3.0×7.0, Grandes chances: 0.0×7.0 |
-| 2026-11-10 | Trival Valderas × Leganés | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-10 | Trival Valderas × Leganés | 0-1 | 0 | Chutes no alvo: 2.0×5.0, Chutes para fora: 4.0×8.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×2.0 |
 | 2026-11-10 | Al Mokawloon Al Arab × WE SC | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-10 | Envigado × Boca Juniors de Cali | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-10 | Internacional de Bogotá × América de Cali | 1-2 | 0 | Match Odds 1X2: Casa 3,07, Empate 2,99, Fora 2,51 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11202 | **Jogos distintos:** 3361 | **Resultados verificáveis:** 6229 | **Com gol:** 2405 | **Sem gol:** 3824 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 33 datas com coletas | 81 pendentes | 2095 indeterminados | 2797 incompletos.
+**Observações:** 11205 | **Jogos distintos:** 3364 | **Resultados verificáveis:** 6231 | **Com gol:** 2407 | **Sem gol:** 3824 | **Taxa observada:** 38.6%.
+**Evolução da amostra:** 34 datas com coletas | 81 pendentes | 2095 indeterminados | 2798 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,10 +177,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2169 | 1460 | 580 | 880 | 39.7% |
-| ⚡ pressao_ofensiva_18 | 1750 | 1172 | 435 | 737 | 37.1% |
-| 🎯 chutes_no_alvo_5 | 1899 | 896 | 331 | 565 | 36.9% |
+| ⚡ pressao_ofensiva_18 | 1751 | 1173 | 436 | 737 | 37.2% |
+| 🎯 chutes_no_alvo_5 | 1900 | 896 | 331 | 565 | 36.9% |
 | 🟥 expulsao_confirmada | 1657 | 746 | 255 | 491 | 34.2% |
-| 🚩 escanteios_6 | 1387 | 632 | 262 | 370 | 41.5% |
+| 🚩 escanteios_6 | 1388 | 633 | 263 | 370 | 41.5% |
 | 💣 grandes_chances_3 | 1119 | 590 | 253 | 337 | 42.9% |
 | 🔥 pressao_forte_10min | 605 | 387 | 149 | 238 | 38.5% |
 | 🧨 pressao_total_5_10min | 333 | 208 | 84 | 124 | 40.4% |
@@ -253,21 +253,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 292 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 734 | 540 | 186 | 354 | 34.4% |
-| 31–45′ | 2343 | 1796 | 743 | 1053 | 41.4% |
+| 31–45′ | 2345 | 1798 | 745 | 1053 | 41.4% |
 | 46–60′ | 1468 | 1046 | 412 | 634 | 39.4% |
 | 61–75′ | 2325 | 1625 | 609 | 1016 | 37.5% |
-| 76–90′ | 2961 | 1000 | 383 | 617 | 38.3% |
+| 76–90′ | 2962 | 1000 | 383 | 617 | 38.3% |
 | 91+′ | 1079 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11202 | **Jogos monitorados:** 727 | **Ao vivo:** 9 | **Termômetros recentes:** 2.
+**Registros:** 11205 | **Jogos monitorados:** 727 | **Ao vivo:** 9 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-11T16:40:16.824873+00:00 | Czarni Sosnowiec (W) × Brann (W) | Brann (W) (39') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-11T16:40:16.824873+00:00 | Mamelodi Sundowns (W) × Kawempe Muslim LFC (W) | Mamelodi Sundowns (W) (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-11T16:40:16.824873+00:00 | Fleury Merogis U.S (W) × Toulouse (W) | Fleury Merogis U.S (W) (39') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-10T09:47:26.746891+00:00 | Real Cartagena × Real Cundinamarca | Real Cundinamarca (86') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-11-10T02:00:22.661206+00:00 | Aurora × Universitario de Vinto | Universitario de Vinto (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-10T01:30:51.671893+00:00 | Atlético Junior × Cúcuta Deportivo | Atlético Junior (70') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -365,9 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-08T15:11:42.987631+00:00 | Hartberg × Altach | Hartberg (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | Hartberg × Altach | Hartberg (84') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-08T15:11:42.987631+00:00 | WSG Tirol × Austria Wien | WSG Tirol (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | WSG Tirol × Austria Wien | Austria Wien (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Spartak Moscow × Akron Togliatti | Spartak Moscow (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T15:11:42.987631+00:00 | Spartak Moscow × Akron Togliatti | Spartak Moscow (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
