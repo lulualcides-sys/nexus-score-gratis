@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-11T00:03:11.096977+00:00",
+  "checked_at": "2026-11-11T06:10:30.599117+00:00",
   "horizon_hours": 48,
   "important_games": 0,
   "verified_bookmaker_games": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "checked",
+    "status": "stale",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,107 +31,10 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-10T21:21:13.183708+00:00",
-    "complete_market_lines": 660,
-    "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1349,
-    "invalid_quote_records": 2,
-    "families": {
-      "asian_handicap": {
-        "games": 16,
-        "odds": 336,
-        "complete_lines": 168,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.37
-      },
-      "first_half_goals": {
-        "games": 16,
-        "odds": 198,
-        "complete_lines": 99,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.97
-      },
-      "first_half_handicap": {
-        "games": 16,
-        "odds": 180,
-        "complete_lines": 90,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.08
-      },
-      "first_half_team_goals": {
-        "games": 15,
-        "odds": 52,
-        "complete_lines": 26,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.22
-      },
-      "half_time": {
-        "games": 14,
-        "odds": 42,
-        "complete_lines": 14,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.18
-      },
-      "match_odds": {
-        "games": 15,
-        "odds": 45,
-        "complete_lines": 15,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.2
-      },
-      "team_goals": {
-        "games": 15,
-        "odds": 148,
-        "complete_lines": 74,
-        "incomplete_lines": 0,
-        "median_overround_pct": 6.24
-      },
-      "total_goals": {
-        "games": 16,
-        "odds": 348,
-        "complete_lines": 174,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.72
-      }
-    }
+    "status": "stale"
   },
   "price_movements": {
-    "status": "fresh",
-    "selections_with_changes": 577,
-    "historical_snapshots": 31,
-    "top_changes": [
-      {
-        "home": "England",
-        "away": "Croatia",
-        "market_family": "match_odds",
-        "raw_market_key": "s;0;m",
-        "selection": "home",
-        "first_odds": 1.2653,
-        "last_odds": 5.16,
-        "implied_probability_change_pp": -59.653
-      },
-      {
-        "home": "England",
-        "away": "Croatia",
-        "market_family": "match_odds",
-        "raw_market_key": "s;0;m",
-        "selection": "away",
-        "first_odds": 11.92,
-        "last_odds": 1.5348,
-        "implied_probability_change_pp": 56.766
-      },
-      {
-        "home": "Montenegro",
-        "away": "Latvia",
-        "market_family": "asian_handicap",
-        "raw_market_key": "s;0;s;-2.5",
-        "selection": "home",
-        "first_odds": 3.61,
-        "last_odds": 1.5495,
-        "implied_probability_change_pp": 36.836
-      }
-    ]
+    "status": "stale"
   },
   "priority_fixtures": [],
   "top_missing": [],
