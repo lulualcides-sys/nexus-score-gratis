@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-11-10T18:55:43.188008+00:00",
+  "evaluated_at": "2026-11-11T00:03:12.796339+00:00",
   "status": "diagnostic_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 846,
+  "historical_matches_available": 847,
   "historical_fixtures_tested": 177,
   "leagues_tested": 10,
   "leagues_samples": {
@@ -47,14 +47,14 @@
     "metrics": {
       "poisson_original": {
         "n": 177,
-        "brier_1x2": 0.56663,
-        "rps_1x2": 0.21252,
-        "log_loss_1x2": 0.95858,
-        "brier_over_2_5": 0.26321,
-        "brier_btts": 0.2609,
+        "brier_1x2": 0.56743,
+        "rps_1x2": 0.21283,
+        "log_loss_1x2": 0.95964,
+        "brier_over_2_5": 0.26249,
+        "brier_btts": 0.26041,
         "calibration_over_2_5": {
           "n": 177,
-          "ece": 0.101,
+          "ece": 0.09639,
           "bins": [
             {
               "range_pct": [
@@ -70,18 +70,18 @@
                 20,
                 40
               ],
-              "n": 28,
-              "predicted_pct": 33.68,
-              "observed_pct": 60.71
+              "n": 29,
+              "predicted_pct": 33.66,
+              "observed_pct": 58.62
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 92,
-              "predicted_pct": 50.16,
-              "observed_pct": 44.57
+              "n": 91,
+              "predicted_pct": 50.18,
+              "observed_pct": 45.05
             },
             {
               "range_pct": [
@@ -105,7 +105,7 @@
         },
         "calibration_btts": {
           "n": 177,
-          "ece": 0.05826,
+          "ece": 0.05881,
           "bins": [
             {
               "range_pct": [
@@ -121,18 +121,18 @@
                 20,
                 40
               ],
-              "n": 12,
-              "predicted_pct": 35.87,
-              "observed_pct": 58.33
+              "n": 13,
+              "predicted_pct": 36.07,
+              "observed_pct": 53.85
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 112,
-              "predicted_pct": 50.71,
-              "observed_pct": 50.89
+              "n": 111,
+              "predicted_pct": 50.73,
+              "observed_pct": 51.35
             },
             {
               "range_pct": [
@@ -157,14 +157,14 @@
       },
       "league_frequency_baseline": {
         "n": 177,
-        "brier_1x2": 0.62119,
-        "rps_1x2": 0.2373,
-        "log_loss_1x2": 1.03185,
-        "brier_over_2_5": 0.25635,
-        "brier_btts": 0.25519,
+        "brier_1x2": 0.62074,
+        "rps_1x2": 0.23713,
+        "log_loss_1x2": 1.03125,
+        "brier_over_2_5": 0.25655,
+        "brier_btts": 0.255,
         "calibration_over_2_5": {
           "n": 177,
-          "ece": 0.05671,
+          "ece": 0.05695,
           "bins": [
             {
               "range_pct": [
@@ -190,7 +190,7 @@
                 60
               ],
               "n": 108,
-              "predicted_pct": 49.22,
+              "predicted_pct": 49.26,
               "observed_pct": 48.15
             },
             {
@@ -215,7 +215,7 @@
         },
         "calibration_btts": {
           "n": 177,
-          "ece": 0.03804,
+          "ece": 0.03786,
           "bins": [
             {
               "range_pct": [
@@ -241,7 +241,7 @@
                 60
               ],
               "n": 117,
-              "predicted_pct": 52.17,
+              "predicted_pct": 52.14,
               "observed_pct": 49.57
             },
             {
@@ -267,14 +267,14 @@
       },
       "league_blend_20pct_shadow": {
         "n": 177,
-        "brier_1x2": 0.57227,
-        "rps_1x2": 0.21501,
-        "log_loss_1x2": 0.96572,
-        "brier_over_2_5": 0.26028,
-        "brier_btts": 0.25868,
+        "brier_1x2": 0.57282,
+        "rps_1x2": 0.21523,
+        "log_loss_1x2": 0.96645,
+        "brier_over_2_5": 0.25975,
+        "brier_btts": 0.25825,
         "calibration_over_2_5": {
           "n": 177,
-          "ece": 0.1002,
+          "ece": 0.09556,
           "bins": [
             {
               "range_pct": [
@@ -290,18 +290,18 @@
                 20,
                 40
               ],
-              "n": 27,
-              "predicted_pct": 35.17,
-              "observed_pct": 62.96
+              "n": 28,
+              "predicted_pct": 35.18,
+              "observed_pct": 60.71
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 96,
-              "predicted_pct": 50.71,
-              "observed_pct": 44.79
+              "n": 95,
+              "predicted_pct": 50.75,
+              "observed_pct": 45.26
             },
             {
               "range_pct": [
@@ -325,7 +325,7 @@
         },
         "calibration_btts": {
           "n": 177,
-          "ece": 0.0532,
+          "ece": 0.05272,
           "bins": [
             {
               "range_pct": [
@@ -351,7 +351,7 @@
                 60
               ],
               "n": 114,
-              "predicted_pct": 51.26,
+              "predicted_pct": 51.18,
               "observed_pct": 50.88
             },
             {
@@ -376,15 +376,15 @@
         }
       }
     },
-    "shadow_brier_1x2_improvement": -0.00564,
+    "shadow_brier_1x2_improvement": -0.00539,
     "production_model_unchanged": true,
     "promotion_allowed": false,
     "explanation": "Comparação retrospectiva em mesma amostra não comprova superioridade fora da amostra. O challenger é apenas diagnóstico; não gera odds publicadas nem sinais de aposta. Não existe baseline bookmaker comparável com cotações pré-jogo suficientes e pareadas."
   },
-  "brier_1x2": 0.56663,
-  "rps_1x2": 0.21252,
-  "log_loss_1x2": 0.95858,
-  "brier_over_2_5": 0.26321,
-  "brier_btts": 0.2609,
+  "brier_1x2": 0.56743,
+  "rps_1x2": 0.21283,
+  "log_loss_1x2": 0.95964,
+  "brier_over_2_5": 0.26249,
+  "brier_btts": 0.26041,
   "explanation": "Test retrospective scored without later matches in each fit. Lower metric is better; this alone does not establish calibration, profitability or outperforming bookmakers."
 }
