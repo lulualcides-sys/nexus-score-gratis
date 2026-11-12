@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "collected_at": "2026-11-12T02:29:07+00:00",
-  "nexus_exported_at": "2026-11-11T23:02:20.766811+00:00",
-  "games_in_feed": 181,
-  "live_games_in_feed": 3,
-  "finished_games_in_feed": 171,
-  "new_observations": 32,
-  "quotes_observed": 37,
+  "collected_at": "2026-11-12T10:11:05+00:00",
+  "nexus_exported_at": "2026-11-12T03:52:24.966440+00:00",
+  "games_in_feed": 122,
+  "live_games_in_feed": 4,
+  "finished_games_in_feed": 116,
+  "new_observations": 11,
+  "quotes_observed": 30,
   "market_families": {
     "match_odds": {
-      "prices_observed": 19,
+      "prices_observed": 12,
       "status": "odds_observed"
     },
     "double_chance": {
@@ -118,7 +118,7 @@
     }
   },
   "quoted_market_names": {
-    "1x2": 19,
+    "1x2": 12,
     "over_under_25": 4,
     "btts": 4,
     "ah_m05": 2,
@@ -131,5 +131,5 @@
   "liquidity_minimum_brl": 3000.0,
   "liquidity_qualified": 0,
   "liquidity_below": 0,
-  "liquidity_unknown": 181
+  "liquidity_unknown": 122
 }

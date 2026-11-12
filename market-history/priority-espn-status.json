@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-12T02:29:07.803362+00:00",
+  "checked_at": "2026-11-12T10:11:05.076998+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 2,
-  "created_games": 0,
+  "priority_fixtures_seen": 3,
+  "created_games": 1,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
@@ -20,6 +20,12 @@
       "fixture": "Llaneros FC x Boyacá Chicó FC",
       "league": "col.1",
       "kickoff": 1794528000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Internacional de Bogotá x Independiente Santa Fe",
+      "league": "col.1",
+      "kickoff": 1794619800,
       "reason": "no_verified_public_1x2"
     }
   ],
