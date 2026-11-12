@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-11T21:31:37.121876+00:00",
+  "checked_at": "2026-11-12T02:29:10.668724+00:00",
   "horizon_hours": 48,
   "important_games": 2,
   "verified_bookmaker_games": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "stale",
+    "status": "checked",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,10 +31,107 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-12T00:49:16.651643+00:00",
+    "complete_market_lines": 601,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 1231,
+    "invalid_quote_records": 4,
+    "families": {
+      "asian_handicap": {
+        "games": 16,
+        "odds": 302,
+        "complete_lines": 151,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.92
+      },
+      "first_half_goals": {
+        "games": 16,
+        "odds": 182,
+        "complete_lines": 91,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.55
+      },
+      "first_half_handicap": {
+        "games": 16,
+        "odds": 166,
+        "complete_lines": 83,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.65
+      },
+      "first_half_team_goals": {
+        "games": 15,
+        "odds": 56,
+        "complete_lines": 28,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.1
+      },
+      "half_time": {
+        "games": 13,
+        "odds": 39,
+        "complete_lines": 13,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.66
+      },
+      "match_odds": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.98
+      },
+      "team_goals": {
+        "games": 16,
+        "odds": 138,
+        "complete_lines": 69,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.28
+      },
+      "total_goals": {
+        "games": 16,
+        "odds": 300,
+        "complete_lines": 150,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.39
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 244,
+    "historical_snapshots": 39,
+    "top_changes": [
+      {
+        "home": "Lithuania",
+        "away": "Suriname",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-1.0",
+        "selection": "home",
+        "first_odds": 5.0,
+        "last_odds": 2.16,
+        "implied_probability_change_pp": 26.296
+      },
+      {
+        "home": "Lithuania",
+        "away": "Suriname",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-1.0",
+        "selection": "away",
+        "first_odds": 1.1721,
+        "last_odds": 1.6061,
+        "implied_probability_change_pp": -23.054
+      },
+      {
+        "home": "Lithuania",
+        "away": "Suriname",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;-0.5",
+        "selection": "home",
+        "first_odds": 3.49,
+        "last_odds": 2.13,
+        "implied_probability_change_pp": 18.295
+      }
+    ]
   },
   "priority_fixtures": [
     {
