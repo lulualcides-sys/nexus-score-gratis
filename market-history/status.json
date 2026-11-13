@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "collected_at": "2026-11-13T03:41:15+00:00",
-  "nexus_exported_at": "2026-11-13T03:27:41.630707+00:00",
-  "games_in_feed": 118,
-  "live_games_in_feed": 9,
-  "finished_games_in_feed": 105,
-  "new_observations": 44,
-  "quotes_observed": 33,
+  "collected_at": "2026-11-13T11:39:12+00:00",
+  "nexus_exported_at": "2026-11-13T07:56:22.580127+00:00",
+  "games_in_feed": 212,
+  "live_games_in_feed": 5,
+  "finished_games_in_feed": 111,
+  "new_observations": 100,
+  "quotes_observed": 36,
   "market_families": {
     "match_odds": {
-      "prices_observed": 33,
+      "prices_observed": 36,
       "status": "odds_observed"
     },
     "double_chance": {
@@ -118,11 +118,11 @@
     }
   },
   "quoted_market_names": {
-    "1x2": 33
+    "1x2": 36
   },
   "note": "Pesquisa e coleta: sem EV validado, sem execução, sem P/L real.",
   "liquidity_minimum_brl": 3000.0,
   "liquidity_qualified": 0,
   "liquidity_below": 0,
-  "liquidity_unknown": 118
+  "liquidity_unknown": 212
 }
