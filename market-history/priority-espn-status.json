@@ -1,15 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-13T11:39:12.187226+00:00",
+  "checked_at": "2026-11-13T18:49:34.774720+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 1,
-  "created_games": 0,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 4,
+  "created_games": 3,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
-  "missing_quote_fixtures": [],
+  "missing_quote_fixtures": [
+    {
+      "fixture": "Mirassol x Atlético-MG",
+      "league": "bra.1",
+      "kickoff": 1794691800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Chapecoense x Vasco da Gama",
+      "league": "bra.1",
+      "kickoff": 1794699000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Querétaro x Monterrey",
+      "league": "mex.1",
+      "kickoff": 1794697200,
+      "reason": "no_verified_public_1x2"
+    }
+  ],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }
