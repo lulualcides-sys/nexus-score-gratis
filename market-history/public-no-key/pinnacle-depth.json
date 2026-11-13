@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-13T01:54:30.536089+00:00",
-  "bookmaker_snapshot_at": "2026-11-13T01:54:28.826863+00:00",
+  "checked_at": "2026-11-13T11:10:06.460992+00:00",
+  "bookmaker_snapshot_at": "2026-11-13T11:10:04.947894+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1376,
-  "invalid_quote_records": 0,
-  "complete_market_lines": 672,
+  "odds_eligible_for_quality": 1122,
+  "invalid_quote_records": 10,
+  "complete_market_lines": 549,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 330,
-      "complete_lines": 165,
+      "odds": 274,
+      "complete_lines": 137,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.0
+      "median_overround_pct": 5.59
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 208,
-      "complete_lines": 104,
+      "odds": 172,
+      "complete_lines": 86,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.51
+      "median_overround_pct": 6.92
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 186,
-      "complete_lines": 93,
+      "odds": 164,
+      "complete_lines": 82,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.65
+      "median_overround_pct": 6.22
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 15,
+      "odds": 52,
+      "complete_lines": 26,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.09
+      "median_overround_pct": 6.11
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 9,
+      "odds": 27,
+      "complete_lines": 9,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.58
+      "median_overround_pct": 5.74
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 15,
+      "odds": 45,
+      "complete_lines": 15,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.85
+      "median_overround_pct": 5.67
     },
     "team_goals": {
-      "games": 16,
-      "odds": 156,
-      "complete_lines": 78,
+      "games": 15,
+      "odds": 108,
+      "complete_lines": 54,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.18
+      "median_overround_pct": 6.42
     },
     "total_goals": {
       "games": 16,
-      "odds": 336,
-      "complete_lines": 168,
+      "odds": 280,
+      "complete_lines": 140,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.55
+      "median_overround_pct": 6.41
     }
   },
   "examples": [
     {
-      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "fixture": "Peru x Bolivia",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "observed_at": "2026-11-13T11:10:04.947894+00:00",
       "selections": {
-        "home": 4.56,
-        "away": 1.8403,
-        "draw": 3.56
+        "home": 1.565,
+        "away": 6.03,
+        "draw": 3.97
       },
-      "overround_pct": 4.36
+      "overround_pct": 5.67
     },
     {
-      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "fixture": "Peru x Bolivia",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.5",
-      "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-13T11:10:04.947894+00:00",
       "selections": {
-        "home": 2.04,
-        "away": 1.8403
+        "home": 1.9524,
+        "away": 1.885
       },
-      "overround_pct": 3.36
+      "overround_pct": 4.27
     },
     {
-      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "fixture": "Peru x Bolivia",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "raw_market_key": "s;0;s;-2.0",
+      "line_from_market_key": "s;0;s;-2.0",
+      "observed_at": "2026-11-13T11:10:04.947894+00:00",
       "selections": {
-        "home": 4.47,
-        "away": 1.216
+        "home": 4.32,
+        "away": 1.2146
       },
-      "overround_pct": 4.61
+      "overround_pct": 5.48
     },
     {
-      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "fixture": "Peru x Bolivia",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "raw_market_key": "s;0;s;-1.75",
+      "line_from_market_key": "s;0;s;-1.75",
+      "observed_at": "2026-11-13T11:10:04.947894+00:00",
       "selections": {
-        "home": 3.91,
-        "away": 1.2639
+        "home": 3.1,
+        "away": 1.3623
       },
-      "overround_pct": 4.7
+      "overround_pct": 5.66
     },
     {
-      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "fixture": "Peru x Bolivia",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "raw_market_key": "s;0;s;-1.5",
+      "line_from_market_key": "s;0;s;-1.5",
+      "observed_at": "2026-11-13T11:10:04.947894+00:00",
       "selections": {
-        "home": 3.35,
-        "away": 1.3425
+        "home": 2.54,
+        "away": 1.5208
       },
-      "overround_pct": 4.34
+      "overround_pct": 5.12
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
