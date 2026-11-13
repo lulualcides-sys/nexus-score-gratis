@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-12T23:49:38.187721+00:00",
+  "checked_at": "2026-11-13T03:41:15.154423+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 3,
+  "priority_fixtures_seen": 1,
   "created_games": 0,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
