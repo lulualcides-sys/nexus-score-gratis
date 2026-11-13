@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-12T20:02:28.916209+00:00",
-  "bookmaker_snapshot_at": "2026-11-12T20:02:27.696892+00:00",
+  "checked_at": "2026-11-13T01:54:30.536089+00:00",
+  "bookmaker_snapshot_at": "2026-11-13T01:54:28.826863+00:00",
   "status": "fresh",
-  "matches_catalogued": 5,
-  "matches_with_priced_markets": 5,
-  "odds_eligible_for_quality": 448,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1376,
   "invalid_quote_records": 0,
-  "complete_market_lines": 219,
+  "complete_market_lines": 672,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 5,
-      "odds": 102,
-      "complete_lines": 51,
+      "games": 16,
+      "odds": 330,
+      "complete_lines": 165,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.73
+      "median_overround_pct": 5.0
     },
     "first_half_goals": {
-      "games": 5,
-      "odds": 72,
-      "complete_lines": 36,
+      "games": 16,
+      "odds": 208,
+      "complete_lines": 104,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.12
+      "median_overround_pct": 6.51
     },
     "first_half_handicap": {
-      "games": 5,
-      "odds": 56,
-      "complete_lines": 28,
+      "games": 16,
+      "odds": 186,
+      "complete_lines": 93,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.2
+      "median_overround_pct": 5.65
     },
     "first_half_team_goals": {
-      "games": 5,
-      "odds": 20,
-      "complete_lines": 10,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.0
+      "median_overround_pct": 6.09
     },
     "half_time": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.46
+      "median_overround_pct": 5.58
     },
     "match_odds": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.94
+      "median_overround_pct": 4.85
     },
     "team_goals": {
-      "games": 5,
-      "odds": 56,
-      "complete_lines": 28,
+      "games": 16,
+      "odds": 156,
+      "complete_lines": 78,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.19
+      "median_overround_pct": 6.18
     },
     "total_goals": {
-      "games": 5,
-      "odds": 112,
-      "complete_lines": 56,
+      "games": 16,
+      "odds": 336,
+      "complete_lines": 168,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.3
+      "median_overround_pct": 5.55
     }
   },
   "examples": [
     {
-      "fixture": "Mirassol x Atletico Mineiro",
+      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-12T20:02:27.696892+00:00",
+      "observed_at": "2026-11-13T01:54:28.826863+00:00",
       "selections": {
-        "home": 1.9901,
-        "away": 3.73,
-        "draw": 3.6
+        "home": 4.56,
+        "away": 1.8403,
+        "draw": 3.56
       },
-      "overround_pct": 4.84
+      "overround_pct": 4.36
     },
     {
-      "fixture": "Mirassol x Atletico Mineiro",
+      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-13T01:54:28.826863+00:00",
+      "selections": {
+        "home": 2.04,
+        "away": 1.8403
+      },
+      "overround_pct": 3.36
+    },
+    {
+      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-12T20:02:27.696892+00:00",
+      "observed_at": "2026-11-13T01:54:28.826863+00:00",
       "selections": {
-        "home": 2.0,
-        "away": 1.8547
+        "home": 4.47,
+        "away": 1.216
       },
-      "overround_pct": 3.92
+      "overround_pct": 4.61
     },
     {
-      "fixture": "Mirassol x Atletico Mineiro",
+      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.5",
-      "line_from_market_key": "s;0;s;-1.5",
-      "observed_at": "2026-11-12T20:02:27.696892+00:00",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-13T01:54:28.826863+00:00",
       "selections": {
-        "home": 3.7,
-        "away": 1.2865
+        "home": 3.91,
+        "away": 1.2639
       },
-      "overround_pct": 4.76
+      "overround_pct": 4.7
     },
     {
-      "fixture": "Mirassol x Atletico Mineiro",
+      "fixture": "Bulgaria (Corners) x Iceland (Corners)",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-12T20:02:27.696892+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-13T01:54:28.826863+00:00",
       "selections": {
-        "home": 3.3,
-        "away": 1.3436
+        "home": 3.35,
+        "away": 1.3425
       },
-      "overround_pct": 4.73
-    },
-    {
-      "fixture": "Mirassol x Atletico Mineiro",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.0",
-      "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-12T20:02:27.696892+00:00",
-      "selections": {
-        "home": 2.9,
-        "away": 1.4292
-      },
-      "overround_pct": 4.45
+      "overround_pct": 4.34
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
