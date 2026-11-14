@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-14T06:17:19.591914+00:00",
+  "checked_at": "2026-11-14T13:46:18.625426+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 10,
   "created_games": 0,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Águilas Doradas x Independiente Medellín",
-      "league": "col.1",
-      "kickoff": 1794688200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atlético Nacional x Once Caldas",
-      "league": "col.1",
-      "kickoff": 1794688200,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Cúcuta Deportivo x Jaguares de Córdoba",
       "league": "col.1",

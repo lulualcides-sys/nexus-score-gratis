@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-14T06:17:22.790994+00:00",
+  "checked_at": "2026-11-14T13:46:21.094313+00:00",
   "horizon_hours": 48,
   "important_games": 10,
-  "verified_bookmaker_games": 5,
+  "verified_bookmaker_games": 6,
   "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 5,
+  "missing_bookmaker_price_games": 4,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -16,11 +16,20 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "stale",
-    "matched": 0,
-    "new_verified_game": 0,
-    "offers": 0,
-    "market_families": {}
+    "status": "checked",
+    "matched": 1,
+    "new_verified_game": 1,
+    "offers": 108,
+    "market_families": {
+      "match_odds": 3,
+      "team_goals": 12,
+      "asian_handicap": 28,
+      "total_goals": 26,
+      "half_time": 3,
+      "first_half_team_goals": 4,
+      "first_half_handicap": 16,
+      "first_half_goals": 16
+    }
   },
   "official_corners_cards": {
     "status": "no_observed_prices",
@@ -31,10 +40,76 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-14T10:36:58.844819+00:00",
+    "complete_market_lines": 673,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 1371,
+    "invalid_quote_records": 10,
+    "families": {
+      "asian_handicap": {
+        "games": 16,
+        "odds": 330,
+        "complete_lines": 165,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.79
+      },
+      "first_half_goals": {
+        "games": 16,
+        "odds": 208,
+        "complete_lines": 104,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.08
+      },
+      "first_half_handicap": {
+        "games": 16,
+        "odds": 174,
+        "complete_lines": 87,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.18
+      },
+      "first_half_team_goals": {
+        "games": 14,
+        "odds": 52,
+        "complete_lines": 26,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.21
+      },
+      "half_time": {
+        "games": 10,
+        "odds": 30,
+        "complete_lines": 10,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.13
+      },
+      "match_odds": {
+        "games": 15,
+        "odds": 45,
+        "complete_lines": 15,
+        "incomplete_lines": 0,
+        "median_overround_pct": 3.64
+      },
+      "team_goals": {
+        "games": 15,
+        "odds": 152,
+        "complete_lines": 76,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.49
+      },
+      "total_goals": {
+        "games": 16,
+        "odds": 380,
+        "complete_lines": 190,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.22
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 0,
+    "historical_snapshots": 16,
+    "top_changes": []
   },
   "priority_fixtures": [
     {
@@ -90,9 +165,10 @@
       "phase": "scheduled",
       "data_sources": [
         "ESPN",
-        "FotMob"
+        "FotMob",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 108,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -102,7 +178,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 108,
+      "coverage": "verified_price"
     },
     {
       "home": "Atlético Bucaramanga",
@@ -114,7 +191,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -260,28 +337,6 @@
     }
   ],
   "top_missing": [
-    {
-      "home": "Querétaro",
-      "away": "Monterrey",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1794697200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
     {
       "home": "Atlético Nacional",
       "away": "Once Caldas",
