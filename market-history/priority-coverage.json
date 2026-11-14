@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-14T13:46:21.094313+00:00",
+  "checked_at": "2026-11-14T18:54:16.974827+00:00",
   "horizon_hours": 48,
   "important_games": 10,
-  "verified_bookmaker_games": 6,
+  "verified_bookmaker_games": 10,
   "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 4,
+  "missing_bookmaker_price_games": 0,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -17,18 +17,18 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 1,
+    "matched": 2,
     "new_verified_game": 1,
-    "offers": 108,
+    "offers": 239,
     "market_families": {
-      "match_odds": 3,
-      "team_goals": 12,
-      "asian_handicap": 28,
-      "total_goals": 26,
-      "half_time": 3,
-      "first_half_team_goals": 4,
-      "first_half_handicap": 16,
-      "first_half_goals": 16
+      "match_odds": 9,
+      "team_goals": 28,
+      "asian_handicap": 62,
+      "total_goals": 62,
+      "half_time": 6,
+      "first_half_team_goals": 8,
+      "first_half_handicap": 32,
+      "first_half_goals": 32
     }
   },
   "official_corners_cards": {
@@ -41,75 +41,106 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-14T10:36:58.844819+00:00",
-    "complete_market_lines": 673,
+    "bookmaker_snapshot_at": "2026-11-14T18:13:54.713649+00:00",
+    "complete_market_lines": 801,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1371,
-    "invalid_quote_records": 10,
+    "odds_eligible_for_quality": 1634,
+    "invalid_quote_records": 0,
     "families": {
       "asian_handicap": {
         "games": 16,
-        "odds": 330,
-        "complete_lines": 165,
+        "odds": 388,
+        "complete_lines": 194,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.79
+        "median_overround_pct": 4.27
       },
       "first_half_goals": {
         "games": 16,
-        "odds": 208,
-        "complete_lines": 104,
+        "odds": 240,
+        "complete_lines": 120,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.08
+        "median_overround_pct": 5.65
       },
       "first_half_handicap": {
         "games": 16,
-        "odds": 174,
-        "complete_lines": 87,
+        "odds": 196,
+        "complete_lines": 98,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.18
+        "median_overround_pct": 4.37
       },
       "first_half_team_goals": {
-        "games": 14,
-        "odds": 52,
-        "complete_lines": 26,
+        "games": 16,
+        "odds": 64,
+        "complete_lines": 32,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.19
+      },
+      "half_time": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.06
+      },
+      "match_odds": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 3.42
+      },
+      "team_goals": {
+        "games": 16,
+        "odds": 196,
+        "complete_lines": 98,
         "incomplete_lines": 0,
         "median_overround_pct": 5.21
       },
-      "half_time": {
-        "games": 10,
-        "odds": 30,
-        "complete_lines": 10,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.13
-      },
-      "match_odds": {
-        "games": 15,
-        "odds": 45,
-        "complete_lines": 15,
-        "incomplete_lines": 0,
-        "median_overround_pct": 3.64
-      },
-      "team_goals": {
-        "games": 15,
-        "odds": 152,
-        "complete_lines": 76,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.49
-      },
       "total_goals": {
         "games": 16,
-        "odds": 380,
-        "complete_lines": 190,
+        "odds": 454,
+        "complete_lines": 227,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.22
+        "median_overround_pct": 4.81
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 16,
-    "top_changes": []
+    "selections_with_changes": 544,
+    "historical_snapshots": 32,
+    "top_changes": [
+      {
+        "home": "Romania",
+        "away": "Poland",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;0.0",
+        "selection": "home",
+        "first_odds": 2.61,
+        "last_odds": 3.16,
+        "implied_probability_change_pp": -6.669
+      },
+      {
+        "home": "Romania",
+        "away": "Poland",
+        "market_family": "first_half_handicap",
+        "raw_market_key": "s;1;s;0.0",
+        "selection": "away",
+        "first_odds": 1.4739,
+        "last_odds": 1.3774,
+        "implied_probability_change_pp": 4.753
+      },
+      {
+        "home": "Portugal",
+        "away": "Denmark",
+        "market_family": "team_goals",
+        "raw_market_key": "s;0;tt;1.5;home",
+        "selection": "under",
+        "first_odds": 2.03,
+        "last_odds": 2.24,
+        "implied_probability_change_pp": -4.618
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -142,9 +173,10 @@
       "kickoff_unix": 1794699000.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 135,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -154,6 +186,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
+      "pinnacle_guest_quotes": 131,
       "coverage": "verified_price"
     },
     {
@@ -191,6 +224,72 @@
       "data_sources": [
         "ESPN"
       ],
+      "verified_quotes": 13,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Atlético Nacional",
+      "away": "Once Caldas",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794688200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 3,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Cúcuta Deportivo",
+      "away": "Jaguares de Córdoba",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794688200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 4,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Deportivo Cali",
+      "away": "Deportes Tolima",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1794688200.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
       "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
@@ -204,8 +303,8 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Atlético Nacional",
-      "away": "Once Caldas",
+      "home": "Deportivo Pereira",
+      "away": "América de Cali",
       "league": "Colômbia Primera A",
       "league_code": "col.1",
       "kickoff_unix": 1794688200.0,
@@ -213,51 +312,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Cúcuta Deportivo",
-      "away": "Jaguares de Córdoba",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Cali",
-      "away": "Deportes Tolima",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -270,28 +325,6 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Deportivo Pereira",
-      "away": "América de Cali",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Millonarios",
       "away": "Alianza FC",
       "league": "Colômbia Primera A",
@@ -301,7 +334,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -311,7 +344,7 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "coverage": "verified_price"
     },
     {
       "home": "Águilas Doradas",
@@ -323,7 +356,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -336,91 +369,6 @@
       "coverage": "verified_price"
     }
   ],
-  "top_missing": [
-    {
-      "home": "Atlético Nacional",
-      "away": "Once Caldas",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Cúcuta Deportivo",
-      "away": "Jaguares de Córdoba",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Deportivo Pereira",
-      "away": "América de Cali",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Millonarios",
-      "away": "Alianza FC",
-      "league": "Colômbia Primera A",
-      "league_code": "col.1",
-      "kickoff_unix": 1794688200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    }
-  ],
+  "top_missing": [],
   "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
 }
