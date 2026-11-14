@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-14T03:13:30.804205+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-14T10:25:25.407983+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 
@@ -52,24 +52,24 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-11-14 | Deportivo Pereira × América de Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Querétaro FC × Monterrey | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Hanácká Slavia Kromeriz × Třinec | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Urawa Ladies (W) × AS Elfen Saitama (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | NTV Tokyo Verdy Beleza (W) × Albirex Niigata Ladies (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | AC Nagano Parceiro Ladies (W) × Nojima Stella (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Sanfrecce Hiroshima Regina (W) × JEF Ladies (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Urawa Ladies (W) × AS Elfen Saitama (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | NTV Tokyo Verdy Beleza (W) × Albirex Niigata Ladies (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | AC Nagano Parceiro Ladies (W) × Nojima Stella (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Sanfrecce Hiroshima Regina (W) × JEF Ladies (W) | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Heart of Midlothian (W) × Hibernian LFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Beith Juniors × Auchinleck Talbot | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Kilwinning Rangers × Cumnock Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Newton Stewart × Renfrew FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Cowdenbeath × Tranent | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Sheffield United (W) × Bristol City (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Melbourne City FC (W) × Newcastle Jets (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Melbourne Victory (W) × Adelaide United (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Central Coast Mariners (W) × Perth Glory (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Melbourne City FC (W) × Newcastle Jets (W) | 1-1 | 90 | Chutes no alvo: 7.0×2.0, Chutes para fora: 7.0×6.0, Escanteios: 8.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-11-14 | Melbourne Victory (W) × Adelaide United (W) | 1-1 | 90 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×7.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×3.0 |
+| 2026-11-14 | Central Coast Mariners (W) × Perth Glory (W) | 0-1 | 84 | Chutes no alvo: 2.0×5.0, Chutes para fora: 3.0×4.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-11-14 | Wellington Phoenix (W) × Sydney FC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Bijelo Brdo × HNK Gorica | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Rudeš × Segesta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Montréal Roses FC (W) × AFC Toronto (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Oman × Tajikistan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Oman × Tajikistan | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×2.0, Escanteios: 1.0×5.0, Grandes chances: 0.0×1.0 |
 | 2026-11-14 | Thailand × Brunei | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Banfield × Boca Juniors | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Bengaluru United × Real Kashmir FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -125,11 +125,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **5**.
 | 2026-11-14 | Roda JC Kerkrade × FC Volendam | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | VVV-Venlo × FC Eindhoven | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | RKC Waalwijk × FC Den Bosch | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Albirex Niigata × Tegevajaro Miyazaki | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Fujieda MYFC × Ventforet Kofu | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Oita Trinita × Tochigi City FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | RB Omiya Ardija × Montedio Yamagata | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-14 | Shonan Bellmare × Yokohama FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Albirex Niigata × Tegevajaro Miyazaki | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Fujieda MYFC × Ventforet Kofu | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Oita Trinita × Tochigi City FC | 1-6 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | RB Omiya Ardija × Montedio Yamagata | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-14 | Shonan Bellmare × Yokohama FC | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | AFC Wimbledon × Blackpool | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Milton Keynes Dons × Burton Albion | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-14 | Sheffield Wednesday × Plymouth Argyle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11259 | **Jogos distintos:** 3395 | **Resultados verificáveis:** 6260 | **Com gol:** 2419 | **Sem gol:** 3841 | **Taxa observada:** 38.6%.
-**Evolução da amostra:** 37 datas com coletas | 92 pendentes | 2102 indeterminados | 2805 incompletos.
+**Observações:** 11261 | **Jogos distintos:** 3397 | **Resultados verificáveis:** 6261 | **Com gol:** 2420 | **Sem gol:** 3841 | **Taxa observada:** 38.7%.
+**Evolução da amostra:** 37 datas com coletas | 87 pendentes | 2102 indeterminados | 2811 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,10 +178,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2175 | 1465 | 583 | 882 | 39.8% |
 | ⚡ pressao_ofensiva_18 | 1759 | 1177 | 438 | 739 | 37.2% |
-| 🎯 chutes_no_alvo_5 | 1915 | 902 | 332 | 570 | 36.8% |
+| 🎯 chutes_no_alvo_5 | 1916 | 903 | 333 | 570 | 36.9% |
 | 🟥 expulsao_confirmada | 1660 | 748 | 255 | 493 | 34.1% |
 | 🚩 escanteios_6 | 1396 | 638 | 266 | 372 | 41.7% |
-| 💣 grandes_chances_3 | 1132 | 597 | 256 | 341 | 42.9% |
+| 💣 grandes_chances_3 | 1133 | 597 | 256 | 341 | 42.9% |
 | 🔥 pressao_forte_10min | 606 | 387 | 149 | 238 | 38.5% |
 | 🧨 pressao_total_5_10min | 333 | 208 | 84 | 124 | 40.4% |
 | ⏱️ tensao_tardia_70 | 183 | 76 | 30 | 46 | 39.5% |
@@ -254,26 +254,28 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 1–15′ | 292 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 735 | 541 | 186 | 355 | 34.4% |
 | 31–45′ | 2349 | 1800 | 747 | 1053 | 41.5% |
-| 46–60′ | 1477 | 1049 | 414 | 635 | 39.5% |
-| 61–75′ | 2348 | 1643 | 615 | 1028 | 37.4% |
-| 76–90′ | 2975 | 1005 | 385 | 620 | 38.3% |
+| 46–60′ | 1477 | 1050 | 415 | 635 | 39.5% |
+| 61–75′ | 2349 | 1643 | 615 | 1028 | 37.4% |
+| 76–90′ | 2976 | 1005 | 385 | 620 | 38.3% |
 | 91+′ | 1083 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11259 | **Jogos monitorados:** 542 | **Ao vivo:** 11 | **Termômetros recentes:** 3.
+**Registros:** 11261 | **Jogos monitorados:** 543 | **Ao vivo:** 10 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-14T03:14:01.663190+00:00 | UMECIT FC × CD Plaza Amador | UMECIT FC (83') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-14T03:14:01.663190+00:00 | Guatemala × Canada | Canada (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Independiente Santa Fe | Internacional de Bogotá (84') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-14T10:25:57.899402+00:00 | India × Bhutan | India (67') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-14T07:44:25.842593+00:00 | Central Coast Mariners (W) × Perth Glory (W) | Perth Glory (W) (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Santa Fe | Internacional de Bogotá (84') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | UMECIT FC × CD Plaza Amador | UMECIT FC (83') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | Guatemala × Canada | Canada (52') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-14T03:14:01.663190+00:00 | Internacional de Bogotá × Independiente Santa Fe | Internacional de Bogotá (84') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-13T21:11:09.110040+00:00 | Scotland × North Macedonia | Equipe não definida (68') | 🥶 jogo_frio · pressão observada | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-13T21:11:09.110040+00:00 | Scotland × North Macedonia | Scotland (68') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-13T21:11:09.110040+00:00 | Scotland × North Macedonia | Scotland (68') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
@@ -366,13 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-08T19:41:02.731877+00:00 | LR Vicenza × Cremonese | Cremonese (52') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-08T19:41:02.731877+00:00 | Oldham Athletic × Sheffield Wednesday | Sheffield Wednesday (115') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-08T19:41:02.731877+00:00 | Oldham Athletic × Sheffield Wednesday | Sheffield Wednesday (115') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T19:41:02.731877+00:00 | Oldham Athletic × Sheffield Wednesday | Sheffield Wednesday (115') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-08T19:41:02.731877+00:00 | Oldham Athletic × Sheffield Wednesday | Oldham Athletic (115') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **19**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
