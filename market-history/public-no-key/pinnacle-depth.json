@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-14T22:32:17.838415+00:00",
-  "bookmaker_snapshot_at": "2026-11-14T22:32:16.406011+00:00",
+  "checked_at": "2026-11-15T06:44:09.897572+00:00",
+  "bookmaker_snapshot_at": "2026-11-15T06:44:09.316788+00:00",
   "status": "fresh",
-  "matches_catalogued": 14,
-  "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1160,
+  "matches_catalogued": 10,
+  "matches_with_priced_markets": 10,
+  "odds_eligible_for_quality": 821,
   "invalid_quote_records": 0,
-  "complete_market_lines": 567,
+  "complete_market_lines": 401,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 14,
-      "odds": 290,
-      "complete_lines": 145,
+      "games": 10,
+      "odds": 200,
+      "complete_lines": 100,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.69
+      "median_overround_pct": 4.24
     },
     "first_half_goals": {
-      "games": 14,
-      "odds": 172,
-      "complete_lines": 86,
+      "games": 10,
+      "odds": 120,
+      "complete_lines": 60,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.18
+      "median_overround_pct": 5.73
     },
     "first_half_handicap": {
-      "games": 14,
-      "odds": 154,
-      "complete_lines": 77,
+      "games": 10,
+      "odds": 110,
+      "complete_lines": 55,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.2
+      "median_overround_pct": 4.8
     },
     "first_half_team_goals": {
-      "games": 13,
-      "odds": 52,
-      "complete_lines": 26,
+      "games": 9,
+      "odds": 36,
+      "complete_lines": 18,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.67
+      "median_overround_pct": 5.3
     },
     "half_time": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 9,
+      "odds": 27,
+      "complete_lines": 9,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.03
+      "median_overround_pct": 4.71
     },
     "match_odds": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 10,
+      "odds": 30,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.12
+      "median_overround_pct": 3.81
     },
     "team_goals": {
-      "games": 13,
-      "odds": 124,
-      "complete_lines": 62,
+      "games": 10,
+      "odds": 92,
+      "complete_lines": 46,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.72
+      "median_overround_pct": 5.56
     },
     "total_goals": {
-      "games": 14,
-      "odds": 290,
-      "complete_lines": 145,
+      "games": 10,
+      "odds": 206,
+      "complete_lines": 103,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.25
+      "median_overround_pct": 4.8
     }
   },
   "examples": [
     {
-      "fixture": "Queretaro x Monterrey",
+      "fixture": "Cyprus x Montenegro",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-14T22:32:16.406011+00:00",
+      "observed_at": "2026-11-15T06:44:09.316788+00:00",
       "selections": {
-        "home": 3.83,
-        "away": 2.0,
-        "draw": 3.69
+        "home": 3.11,
+        "away": 2.38,
+        "draw": 3.4
       },
-      "overround_pct": 3.21
+      "overround_pct": 3.58
     },
     {
-      "fixture": "Queretaro x Monterrey",
+      "fixture": "Cyprus x Montenegro",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.5",
-      "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-11-14T22:32:16.406011+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-11-15T06:44:09.316788+00:00",
       "selections": {
-        "home": 1.9009,
-        "away": 2.01
+        "home": 1.8475,
+        "away": 2.05
       },
-      "overround_pct": 2.36
+      "overround_pct": 2.91
     },
     {
-      "fixture": "Queretaro x Monterrey",
+      "fixture": "Cyprus x Montenegro",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-15T06:44:09.316788+00:00",
+      "selections": {
+        "home": 3.89,
+        "away": 1.2732
+      },
+      "overround_pct": 4.25
+    },
+    {
+      "fixture": "Cyprus x Montenegro",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-14T22:32:16.406011+00:00",
+      "observed_at": "2026-11-15T06:44:09.316788+00:00",
       "selections": {
-        "home": 3.78,
-        "away": 1.2976
+        "home": 3.07,
+        "away": 1.3937
       },
-      "overround_pct": 3.52
+      "overround_pct": 4.32
     },
     {
-      "fixture": "Queretaro x Monterrey",
+      "fixture": "Cyprus x Montenegro",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-14T22:32:16.406011+00:00",
+      "observed_at": "2026-11-15T06:44:09.316788+00:00",
       "selections": {
-        "home": 3.3,
-        "away": 1.3636
+        "home": 2.66,
+        "away": 1.5076
       },
-      "overround_pct": 3.64
-    },
-    {
-      "fixture": "Queretaro x Monterrey",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-14T22:32:16.406011+00:00",
-      "selections": {
-        "home": 2.83,
-        "away": 1.4739
-      },
-      "overround_pct": 3.18
+      "overround_pct": 3.92
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
