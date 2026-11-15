@@ -1,1 +1,1 @@
-{"errors":[],"games_with_form":415,"requests_succeeded":80,"roster_teams":383,"team_requests":80,"teams_discovered":1247,"teams_with_10":632,"updated_at":"2026-11-15T09:22:59.595766+00:00"}
+{"errors":["2103806: The read operation timed out"],"games_with_form":446,"requests_succeeded":79,"roster_teams":416,"team_requests":80,"teams_discovered":1247,"teams_with_10":698,"updated_at":"2026-11-15T17:08:06.279413+00:00"}
