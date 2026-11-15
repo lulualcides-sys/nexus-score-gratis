@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-14T22:50:59.269975+00:00",
+  "checked_at": "2026-11-15T02:13:23.611000+00:00",
   "horizon_hours": 48,
-  "important_games": 2,
-  "verified_bookmaker_games": 2,
+  "important_games": 0,
+  "verified_bookmaker_games": 0,
   "indicative_only_games": 0,
   "missing_bookmaker_price_games": 0,
   "games_with_corners_stats": 0,
@@ -17,19 +17,10 @@
   },
   "pinnacle_guest": {
     "status": "checked",
-    "matched": 2,
+    "matched": 0,
     "new_verified_game": 0,
-    "offers": 237,
-    "market_families": {
-      "half_time": 6,
-      "first_half_team_goals": 8,
-      "first_half_handicap": 32,
-      "first_half_goals": 32,
-      "match_odds": 9,
-      "team_goals": 26,
-      "asian_handicap": 62,
-      "total_goals": 62
-    }
+    "offers": 0,
+    "market_families": {}
   },
   "official_corners_cards": {
     "status": "no_observed_prices",
@@ -142,57 +133,7 @@
       }
     ]
   },
-  "priority_fixtures": [
-    {
-      "home": "Chapecoense",
-      "away": "Vasco da Gama",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1794699000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 136,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 129,
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Querétaro",
-      "away": "Monterrey",
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "kickoff_unix": 1794697200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob",
-        "Pinnacle guest"
-      ],
-      "verified_quotes": 111,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "pinnacle_guest_quotes": 108,
-      "coverage": "verified_price"
-    }
-  ],
+  "priority_fixtures": [],
   "top_missing": [],
   "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
 }
