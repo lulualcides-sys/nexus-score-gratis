@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-15T02:13:23.611000+00:00",
+  "checked_at": "2026-11-15T09:29:27.141885+00:00",
   "horizon_hours": 48,
   "important_games": 0,
   "verified_bookmaker_games": 0,
@@ -32,106 +32,75 @@
   },
   "book_quality": {
     "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-14T22:32:16.406011+00:00",
-    "complete_market_lines": 567,
+    "bookmaker_snapshot_at": "2026-11-15T06:44:09.316788+00:00",
+    "complete_market_lines": 401,
     "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1160,
+    "odds_eligible_for_quality": 821,
     "invalid_quote_records": 0,
     "families": {
       "asian_handicap": {
-        "games": 14,
-        "odds": 290,
-        "complete_lines": 145,
+        "games": 10,
+        "odds": 200,
+        "complete_lines": 100,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.69
+        "median_overround_pct": 4.24
       },
       "first_half_goals": {
-        "games": 14,
-        "odds": 172,
-        "complete_lines": 86,
+        "games": 10,
+        "odds": 120,
+        "complete_lines": 60,
         "incomplete_lines": 0,
-        "median_overround_pct": 6.18
+        "median_overround_pct": 5.73
       },
       "first_half_handicap": {
-        "games": 14,
-        "odds": 154,
-        "complete_lines": 77,
+        "games": 10,
+        "odds": 110,
+        "complete_lines": 55,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.2
+        "median_overround_pct": 4.8
       },
       "first_half_team_goals": {
-        "games": 13,
-        "odds": 52,
-        "complete_lines": 26,
+        "games": 9,
+        "odds": 36,
+        "complete_lines": 18,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.67
+        "median_overround_pct": 5.3
       },
       "half_time": {
-        "games": 13,
-        "odds": 39,
-        "complete_lines": 13,
+        "games": 9,
+        "odds": 27,
+        "complete_lines": 9,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.03
+        "median_overround_pct": 4.71
       },
       "match_odds": {
-        "games": 13,
-        "odds": 39,
-        "complete_lines": 13,
+        "games": 10,
+        "odds": 30,
+        "complete_lines": 10,
         "incomplete_lines": 0,
-        "median_overround_pct": 4.12
+        "median_overround_pct": 3.81
       },
       "team_goals": {
-        "games": 13,
-        "odds": 124,
-        "complete_lines": 62,
+        "games": 10,
+        "odds": 92,
+        "complete_lines": 46,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.72
+        "median_overround_pct": 5.56
       },
       "total_goals": {
-        "games": 14,
-        "odds": 290,
-        "complete_lines": 145,
+        "games": 10,
+        "odds": 206,
+        "complete_lines": 103,
         "incomplete_lines": 0,
-        "median_overround_pct": 5.25
+        "median_overround_pct": 4.8
       }
     }
   },
   "price_movements": {
     "status": "fresh",
-    "selections_with_changes": 962,
-    "historical_snapshots": 45,
-    "top_changes": [
-      {
-        "home": "Croatia",
-        "away": "Czechia",
-        "market_family": "team_goals",
-        "raw_market_key": "s;0;tt;1.5;away",
-        "selection": "over",
-        "first_odds": 3.62,
-        "last_odds": 1.5181,
-        "implied_probability_change_pp": 38.248
-      },
-      {
-        "home": "Croatia",
-        "away": "Czechia",
-        "market_family": "team_goals",
-        "raw_market_key": "s;0;tt;1.5;away",
-        "selection": "under",
-        "first_odds": 1.289,
-        "last_odds": 2.41,
-        "implied_probability_change_pp": -36.086
-      },
-      {
-        "home": "Belgium",
-        "away": "Italy",
-        "market_family": "first_half_handicap",
-        "raw_market_key": "s;1;s;0.5",
-        "selection": "away",
-        "first_odds": 3.71,
-        "last_odds": 2.41,
-        "implied_probability_change_pp": 14.54
-      }
-    ]
+    "selections_with_changes": 0,
+    "historical_snapshots": 10,
+    "top_changes": []
   },
   "priority_fixtures": [],
   "top_missing": [],
