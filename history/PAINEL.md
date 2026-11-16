@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-16T09:40:18.715237+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-16T20:27:55.190131+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **15**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -13,65 +13,65 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-16 | Deportes Recoleta × Deportes Iquique | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Cusco FC × Asociación Deportiva Tarma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Club Deportivo Moquegua × Atlético Grau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | CD UT Cajamarca × Los Chankas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | CD UT Cajamarca × Los Chankas | 5-3 | 0 | Chutes no alvo: 8.0×5.0, Chutes para fora: 6.0×7.0, Escanteios: 6.0×3.0, Grandes chances: 2.0×3.0 |
 | 2026-11-16 | Deportes Quindío × Real Cartagena | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | North Macedonia × Slovenia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Switzerland × Scotland | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Germany × Netherlands | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Greece × Serbia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Gibraltar × Malta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Lithuania × Liechtenstein | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Faroe Islands × Moldova | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Kazakhstan × Slovakia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Estonia × Bulgaria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Iceland × Luxembourg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | North Macedonia × Slovenia | 0-1 | 41 | Chutes no alvo: 1.0×3.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×4.0, Grandes chances: 0.0×1.0 |
+| 2026-11-16 | Switzerland × Scotland | 1-0 | 39 | Chutes no alvo: 1.0×0.0, Chutes para fora: 1.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-16 | Germany × Netherlands | 1-0 | 41 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 1.0×1.0 |
+| 2026-11-16 | Greece × Serbia | 0-0 | 41 | Chutes no alvo: 4.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 7.0×0.0, Grandes chances: 2.0×0.0 |
+| 2026-11-16 | Gibraltar × Malta | 0-1 | 42 | Chutes no alvo: 0.0×3.0, Chutes para fora: 1.0×5.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×3.0 |
+| 2026-11-16 | Lithuania × Liechtenstein | 2-1 | 30 | Chutes no alvo: 2.0×0.0, Chutes para fora: 3.0×0.0, Escanteios: 3.0×0.0, Grandes chances: 3.0×0.0 |
+| 2026-11-16 | Faroe Islands × Moldova | 1-0 | 90 | Chutes no alvo: 5.0×5.0, Chutes para fora: 13.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×5.0 |
+| 2026-11-16 | Kazakhstan × Slovakia | 2-2 | 90 | Chutes no alvo: 5.0×4.0, Chutes para fora: 8.0×7.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×4.0 |
+| 2026-11-16 | Estonia × Bulgaria | 2-1 | 28 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×1.0, Escanteios: 0.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-16 | Iceland × Luxembourg | 3-0 | 27 | Chutes no alvo: 6.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×0.0 |
 | 2026-11-16 | CD Suchitepéquez × Antigua Guatemala | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Albacete × Celta Fortuna | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | VfB Stuttgart (W) × Bayer Leverkusen (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Albacete × Celta Fortuna | 1-0 | 45 | Chutes no alvo: 3.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 2.0×1.0 |
+| 2026-11-16 | VfB Stuttgart (W) × Bayer Leverkusen (W) | 2-3 | 0 | Chutes no alvo: 0.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×2.0, Grandes chances: 0.0×0.0 |
 | 2026-11-16 | Inca Aruba × CD Águila | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Perugia × Torres | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Sorrento × Monopoli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Somalia × Ghana | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Eritrea × Guinea | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Zimbabwe × Equatorial Guinea | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Central African Republic × Benin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Namibia × Cameroon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Sudan × Senegal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | GS Marko × Zakynthos APS | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Niki Volou × Pyrgos AFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Panionios × Olympiacos B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Andorra × Azerbaijan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Guyana × Puerto Rico | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Guadeloupe × Bermuda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Cuba × Grenada | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Perugia × Torres | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 3.0×1.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-16 | Sorrento × Monopoli | 2-0 | 0 | Chutes no alvo: 3.0×0.0, Chutes para fora: 0.0×1.0, Escanteios: 3.0×0.0, Grandes chances: 2.0×0.0 |
+| 2026-11-16 | Somalia × Ghana | 0-1 | 0 | Chutes no alvo: 0.0×4.0, Chutes para fora: 1.0×6.0, Escanteios: 3.0×5.0, Grandes chances: 0.0×2.0 |
+| 2026-11-16 | Eritrea × Guinea | 1-3 | 0 | Chutes no alvo: 0.0×6.0, Chutes para fora: 4.0×5.0, Escanteios: 1.0×5.0, Grandes chances: 0.0×2.0 |
+| 2026-11-16 | Zimbabwe × Equatorial Guinea | 3-0 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×3.0, Grandes chances: 5.0×2.0 |
+| 2026-11-16 | Central African Republic × Benin | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×5.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×1.0 |
+| 2026-11-16 | Namibia × Cameroon | 0-3 | 0 | Chutes no alvo: 1.0×5.0, Chutes para fora: 2.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-11-16 | Sudan × Senegal | 2-4 | 0 | Chutes no alvo: 4.0×8.0, Chutes para fora: 8.0×4.0, Escanteios: 8.0×4.0, Grandes chances: 1.0×4.0 |
+| 2026-11-16 | GS Marko × Zakynthos APS | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Niki Volou × Pyrgos AFC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Panionios × Olympiacos B | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Andorra × Azerbaijan | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Guyana × Puerto Rico | 2-1 | 0 | Chutes no alvo: 5.0×3.0, Chutes para fora: 1.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 2.0×1.0 |
+| 2026-11-16 | Guadeloupe × Bermuda | 2-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 8.0×1.0, Grandes chances: 2.0×0.0 |
+| 2026-11-16 | Cuba × Grenada | 7-0 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 7.0×3.0, Escanteios: 4.0×4.0, Grandes chances: 6.0×0.0 |
 | 2026-11-16 | Canada × Guatemala | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Greece U21 × Iceland U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Greece U21 × Iceland U21 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Martinique × Aruba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Trinidad and Tobago × Antigua and Barbuda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Ario Islamshahr × Saipa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Beasat Kermanshah × Kara Gostar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Mes Rafsanjan × Shahin Bandar Ameri | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Naft Gachsaran × Niroye Zamini | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Ario Islamshahr × Saipa | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Beasat Kermanshah × Kara Gostar | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Mes Rafsanjan × Shahin Bandar Ameri | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Naft Gachsaran × Niroye Zamini | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Pars Jonoubi Jam × Foolad Khuzestan B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Naft Masjed Soleyman FC × Qeshm Island | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Naft Bandar Abbas × FC Fard | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Naft Masjed Soleyman FC × Qeshm Island | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Naft Bandar Abbas × FC Fard | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Ferro Carril Oeste × Gimnasia y Tiro | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | England U21 × France U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | England U21 × France U21 | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Montevideo Wanderers × Juventud de las Piedras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Toluca (W) × CF América (W) | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Monterrey (W) × Pachuca (W) | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | New Mexico United × Sacramento Republic FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Deportrio × N5 FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Deportrio × N5 FC | 5-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | RTG FC × P17 FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Wembley Rangers × Gold Devils | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | VZN FC × Clutch FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | SDS FC × Prime FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | NDL FC × Toma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | VZN FC × Clutch FC | 4-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | SDS FC × Prime FC | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | NDL FC × Toma | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Montenegro U21 × Bosnia and Herzegovina U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Oriental × Colon | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Kosovo U21 × Luxembourg U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Italy U21 × Belgium U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-16 | Hungary U21 × Cyprus U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Kosovo U21 × Luxembourg U21 | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Italy U21 × Belgium U21 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-16 | Hungary U21 × Cyprus U21 | 5-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | MVV Maastricht × Vitesse | 2-1 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 3,20, Empate 3,75, Fora 2,10 |
 | 2026-11-15 | Deportes Recoleta × Deportes Iquique | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Magallanes × Antofagasta | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -109,6 +109,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-15 | Envigado × Unión Magdalena | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Tigres FC × Real Cundinamarca | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Deportes Quindío × Real Cartagena | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-15 | Monterosi × Ostia Mare | 2-2 | 0 | Chutes no alvo: 7.0×2.0, Chutes para fora: 6.0×6.0, Escanteios: 9.0×7.0, Grandes chances: 3.0×2.0 |
 | 2026-11-15 | BK Häcken (W) × Piteå IF (W) | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Eskilstuna United DFF (W) × Djurgården (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Hammarby IF (W) × Kristianstads DFF (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -139,7 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-15 | Næstved × FA 2000 | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-15 | Eibar × Cádiz | 1-1 | 90 | Chutes no alvo: 9.0×5.0, Chutes para fora: 7.0×3.0, Escanteios: 4.0×2.0, Grandes chances: 3.0×0.0 |
 | 2026-11-15 | Eldense × Sabadell | 2-0 | 90 | Chutes no alvo: 6.0×0.0, Chutes para fora: 4.0×3.0, Escanteios: 1.0×2.0, Grandes chances: 1.0×0.0 |
-| 2026-11-15 | Granada × Las Palmas | 1-0 | 90 | Chutes no alvo: 3.0×6.0, Chutes para fora: 10.0×4.0, Escanteios: 2.0×7.0, Grandes chances: 2.0×1.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11380 | **Jogos distintos:** 3456 | **Resultados verificáveis:** 6309 | **Com gol:** 2449 | **Sem gol:** 3860 | **Taxa observada:** 38.8%.
-**Evolução da amostra:** 38 datas com coletas | 86 pendentes | 2116 indeterminados | 2869 incompletos.
+**Observações:** 11398 | **Jogos distintos:** 3470 | **Resultados verificáveis:** 6311 | **Com gol:** 2451 | **Sem gol:** 3860 | **Taxa observada:** 38.8%.
+**Evolução da amostra:** 39 datas com coletas | 100 pendentes | 2118 indeterminados | 2869 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2191 | 1472 | 586 | 886 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1767 | 1179 | 440 | 739 | 37.3% |
-| 🎯 chutes_no_alvo_5 | 1949 | 919 | 342 | 577 | 37.2% |
-| 🟥 expulsao_confirmada | 1679 | 752 | 256 | 496 | 34.0% |
-| 🚩 escanteios_6 | 1420 | 646 | 271 | 375 | 42.0% |
-| 💣 grandes_chances_3 | 1147 | 605 | 262 | 343 | 43.3% |
+| 🥶 jogo_frio | 2196 | 1472 | 586 | 886 | 39.8% |
+| ⚡ pressao_ofensiva_18 | 1768 | 1179 | 440 | 739 | 37.3% |
+| 🎯 chutes_no_alvo_5 | 1954 | 921 | 344 | 577 | 37.4% |
+| 🟥 expulsao_confirmada | 1681 | 752 | 256 | 496 | 34.0% |
+| 🚩 escanteios_6 | 1422 | 646 | 271 | 375 | 42.0% |
+| 💣 grandes_chances_3 | 1150 | 605 | 262 | 343 | 43.3% |
 | 🔥 pressao_forte_10min | 608 | 388 | 150 | 238 | 38.7% |
 | 🧨 pressao_total_5_10min | 334 | 209 | 85 | 124 | 40.7% |
 | ⏱️ tensao_tardia_70 | 185 | 77 | 31 | 46 | 40.3% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 300 | 175 | 71 | 104 | 40.6% |
+| Equipe não definida | 301 | 175 | 71 | 104 | 40.6% |
 | Paris Saint-Germain | 41 | 31 | 15 | 16 | 48.4% |
 | Roma | 40 | 30 | 24 | 6 | 80.0% |
 | FC Twente | 42 | 29 | 13 | 16 | 44.8% |
@@ -230,7 +230,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Super League | 293 | 158 | 52 | 106 | 32.9% |
 | Bundesliga | 254 | 145 | 59 | 86 | 40.7% |
 | Ligue 1 | 206 | 143 | 60 | 83 | 42.0% |
-| LaLiga2 | 237 | 132 | 54 | 78 | 40.9% |
+| LaLiga2 | 238 | 132 | 54 | 78 | 40.9% |
 | Série A | 222 | 132 | 49 | 83 | 37.1% |
 | Champions League | 227 | 130 | 81 | 49 | 62.3% |
 | LaLiga | 204 | 128 | 47 | 81 | 36.7% |
@@ -252,22 +252,40 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 293 | 212 | 68 | 144 | 32.1% |
-| 16–30′ | 735 | 541 | 186 | 355 | 34.4% |
-| 31–45′ | 2366 | 1812 | 752 | 1060 | 41.5% |
+| 16–30′ | 736 | 542 | 187 | 355 | 34.5% |
+| 31–45′ | 2377 | 1812 | 752 | 1060 | 41.5% |
 | 46–60′ | 1481 | 1050 | 415 | 635 | 39.5% |
-| 61–75′ | 2378 | 1670 | 637 | 1033 | 38.1% |
+| 61–75′ | 2384 | 1671 | 638 | 1033 | 38.2% |
 | 76–90′ | 3031 | 1014 | 387 | 627 | 38.2% |
 | 91+′ | 1096 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11380 | **Jogos monitorados:** 707 | **Ao vivo:** 11 | **Termômetros recentes:** 2.
+**Registros:** 11398 | **Jogos monitorados:** 708 | **Ao vivo:** 26 | **Termômetros recentes:** 8.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-16T20:28:20.155329+00:00 | North Macedonia × Slovenia | Slovenia (42') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Switzerland × Scotland | Switzerland (40') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Germany × Netherlands | Germany (42') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Greece × Serbia | Greece (42') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Gibraltar × Malta | Gibraltar (42') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Gibraltar × Malta | Malta (42') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Albacete × Celta Fortuna | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Perugia × Torres | Perugia (41') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Sorrento × Monopoli | Monopoli (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Guyana × Puerto Rico | Guyana (70') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Guadeloupe × Bermuda | Guadeloupe (69') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Guadeloupe × Bermuda | Guadeloupe (69') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Cuba × Grenada | Cuba (72') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T20:28:20.155329+00:00 | Cuba × Grenada | Cuba (72') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-16T17:30:46.810876+00:00 | Lithuania × Liechtenstein | Lithuania (31') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-16T17:30:46.810876+00:00 | Lithuania × Liechtenstein | Lithuania (31') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-16T17:30:46.810876+00:00 | Iceland × Luxembourg | Iceland (29') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
+| 2026-11-16T17:30:46.810876+00:00 | Eritrea × Guinea | Guinea (69') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-16T01:04:29.715685+00:00 | CD Suchitepéquez × Antigua Guatemala | CD Suchitepéquez (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-15T21:48:17.242545+00:00 | Godoy Cruz × Tristán Suárez | Tristán Suárez (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-15T21:48:17.242545+00:00 | Gimnasia y Esgrima de Chivilcoy × Douglas Haig | Douglas Haig (84') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
@@ -350,24 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-14T21:29:11.450577+00:00 | Fortaleza × Vila Nova | Vila Nova (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-14T21:29:11.450577+00:00 | Atlético-GO × Cuiabá | Atlético-GO (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-14T21:29:11.450577+00:00 | Atlético-GO × Cuiabá | Atlético-GO (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Atlético-GO × Cuiabá | Atlético-GO (89') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Criciúma × Novorizontino | Criciúma (89') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Criciúma × Novorizontino | Criciúma (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport Recife × Goiás | Goiás (89') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport Recife × Goiás | Sport Recife (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport Recife × Goiás | Goiás (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport Recife × Goiás | Goiás (89') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport Recife × Goiás | Sport Recife (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (89') | 🔥 pressao_forte_10min · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (89') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (89') | ⏱️ tensao_tardia_70 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | Ceará (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Juventude × Botafogo SP | Juventude (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Real Oviedo × Girona | Girona (70') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Real Oviedo × Girona | Real Oviedo (70') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Real Madrid (W) × Levante Badalona (W) | Real Madrid (W) (95') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
