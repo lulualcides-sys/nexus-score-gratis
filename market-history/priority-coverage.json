@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-15T21:12:34.701530+00:00",
+  "checked_at": "2026-11-16T01:03:07.344888+00:00",
   "horizon_hours": 48,
   "important_games": 0,
   "verified_bookmaker_games": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "stale",
+    "status": "checked",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,10 +31,107 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-15T22:55:40.571774+00:00",
+    "complete_market_lines": 131,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 268,
+    "invalid_quote_records": 0,
+    "families": {
+      "asian_handicap": {
+        "games": 3,
+        "odds": 64,
+        "complete_lines": 32,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.57
+      },
+      "first_half_goals": {
+        "games": 3,
+        "odds": 42,
+        "complete_lines": 21,
+        "incomplete_lines": 0,
+        "median_overround_pct": 6.1
+      },
+      "first_half_handicap": {
+        "games": 3,
+        "odds": 36,
+        "complete_lines": 18,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.19
+      },
+      "first_half_team_goals": {
+        "games": 3,
+        "odds": 12,
+        "complete_lines": 6,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.71
+      },
+      "half_time": {
+        "games": 3,
+        "odds": 9,
+        "complete_lines": 3,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.1
+      },
+      "match_odds": {
+        "games": 3,
+        "odds": 9,
+        "complete_lines": 3,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.43
+      },
+      "team_goals": {
+        "games": 3,
+        "odds": 30,
+        "complete_lines": 15,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.93
+      },
+      "total_goals": {
+        "games": 3,
+        "odds": 66,
+        "complete_lines": 33,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.11
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 635,
+    "historical_snapshots": 24,
+    "top_changes": [
+      {
+        "home": "Finland",
+        "away": "San Marino",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-4.0",
+        "selection": "home",
+        "first_odds": 2.5,
+        "last_odds": 1.4505,
+        "implied_probability_change_pp": 28.942
+      },
+      {
+        "home": "Finland",
+        "away": "San Marino",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-4.0",
+        "selection": "away",
+        "first_odds": 1.5236,
+        "last_odds": 2.56,
+        "implied_probability_change_pp": -26.572
+      },
+      {
+        "home": "Belarus",
+        "away": "Albania",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;1.5",
+        "selection": "away",
+        "first_odds": 4.03,
+        "last_odds": 1.9709,
+        "implied_probability_change_pp": 25.924
+      }
+    ]
   },
   "priority_fixtures": [],
   "top_missing": [],
