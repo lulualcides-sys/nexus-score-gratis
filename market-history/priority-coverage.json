@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-16T07:58:23.534843+00:00",
+  "checked_at": "2026-11-16T18:30:37.795951+00:00",
   "horizon_hours": 48,
   "important_games": 0,
   "verified_bookmaker_games": 0,
@@ -16,7 +16,7 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "checked",
+    "status": "stale",
     "matched": 0,
     "new_verified_game": 0,
     "offers": 0,
@@ -31,76 +31,10 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "fresh",
-    "bookmaker_snapshot_at": "2026-11-16T06:43:15.469530+00:00",
-    "complete_market_lines": 690,
-    "incomplete_market_lines": 0,
-    "odds_eligible_for_quality": 1411,
-    "invalid_quote_records": 0,
-    "families": {
-      "asian_handicap": {
-        "games": 16,
-        "odds": 336,
-        "complete_lines": 168,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.38
-      },
-      "first_half_goals": {
-        "games": 16,
-        "odds": 214,
-        "complete_lines": 107,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.97
-      },
-      "first_half_handicap": {
-        "games": 16,
-        "odds": 194,
-        "complete_lines": 97,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.09
-      },
-      "first_half_team_goals": {
-        "games": 16,
-        "odds": 58,
-        "complete_lines": 29,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.38
-      },
-      "half_time": {
-        "games": 15,
-        "odds": 45,
-        "complete_lines": 15,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.08
-      },
-      "match_odds": {
-        "games": 16,
-        "odds": 48,
-        "complete_lines": 16,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.25
-      },
-      "team_goals": {
-        "games": 16,
-        "odds": 164,
-        "complete_lines": 82,
-        "incomplete_lines": 0,
-        "median_overround_pct": 5.58
-      },
-      "total_goals": {
-        "games": 16,
-        "odds": 352,
-        "complete_lines": 176,
-        "incomplete_lines": 0,
-        "median_overround_pct": 4.96
-      }
-    }
+    "status": "stale"
   },
   "price_movements": {
-    "status": "fresh",
-    "selections_with_changes": 0,
-    "historical_snapshots": 16,
-    "top_changes": []
+    "status": "stale"
   },
   "priority_fixtures": [],
   "top_missing": [],
