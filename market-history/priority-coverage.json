@@ -1,11 +1,11 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-17T10:41:31.427889+00:00",
+  "checked_at": "2026-11-17T19:28:09.287854+00:00",
   "horizon_hours": 48,
   "important_games": 6,
-  "verified_bookmaker_games": 0,
+  "verified_bookmaker_games": 4,
   "indicative_only_games": 0,
-  "missing_bookmaker_price_games": 6,
+  "missing_bookmaker_price_games": 2,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
@@ -16,11 +16,20 @@
     "new_priority": 0
   },
   "pinnacle_guest": {
-    "status": "stale",
-    "matched": 0,
-    "new_verified_game": 0,
-    "offers": 0,
-    "market_families": {}
+    "status": "checked",
+    "matched": 4,
+    "new_verified_game": 4,
+    "offers": 288,
+    "market_families": {
+      "match_odds": 12,
+      "team_goals": 34,
+      "asian_handicap": 72,
+      "total_goals": 62,
+      "half_time": 12,
+      "first_half_team_goals": 16,
+      "first_half_handicap": 40,
+      "first_half_goals": 40
+    }
   },
   "official_corners_cards": {
     "status": "no_observed_prices",
@@ -31,10 +40,107 @@
     "liquidity_verified": false
   },
   "book_quality": {
-    "status": "stale"
+    "status": "fresh",
+    "bookmaker_snapshot_at": "2026-11-17T16:10:28.292330+00:00",
+    "complete_market_lines": 595,
+    "incomplete_market_lines": 0,
+    "odds_eligible_for_quality": 1222,
+    "invalid_quote_records": 0,
+    "families": {
+      "asian_handicap": {
+        "games": 16,
+        "odds": 298,
+        "complete_lines": 149,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.35
+      },
+      "first_half_goals": {
+        "games": 16,
+        "odds": 174,
+        "complete_lines": 87,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.7
+      },
+      "first_half_handicap": {
+        "games": 16,
+        "odds": 168,
+        "complete_lines": 84,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.91
+      },
+      "first_half_team_goals": {
+        "games": 16,
+        "odds": 64,
+        "complete_lines": 32,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.72
+      },
+      "half_time": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.54
+      },
+      "match_odds": {
+        "games": 16,
+        "odds": 48,
+        "complete_lines": 16,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.72
+      },
+      "team_goals": {
+        "games": 16,
+        "odds": 142,
+        "complete_lines": 71,
+        "incomplete_lines": 0,
+        "median_overround_pct": 5.59
+      },
+      "total_goals": {
+        "games": 16,
+        "odds": 280,
+        "complete_lines": 140,
+        "incomplete_lines": 0,
+        "median_overround_pct": 4.78
+      }
+    }
   },
   "price_movements": {
-    "status": "stale"
+    "status": "fresh",
+    "selections_with_changes": 182,
+    "historical_snapshots": 31,
+    "top_changes": [
+      {
+        "home": "Kuwait",
+        "away": "Honduras",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;1.0",
+        "selection": "away",
+        "first_odds": 2.85,
+        "last_odds": 1.5848,
+        "implied_probability_change_pp": 28.012
+      },
+      {
+        "home": "Kuwait",
+        "away": "Honduras",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;1.0",
+        "selection": "home",
+        "first_odds": 1.4255,
+        "last_odds": 2.22,
+        "implied_probability_change_pp": -25.106
+      },
+      {
+        "home": "Ireland",
+        "away": "Kosovo",
+        "market_family": "asian_handicap",
+        "raw_market_key": "s;0;s;-0.5",
+        "selection": "away",
+        "first_odds": 2.18,
+        "last_odds": 1.4975,
+        "implied_probability_change_pp": 20.906
+      }
+    ]
   },
   "priority_fixtures": [
     {
@@ -45,9 +151,10 @@
       "kickoff_unix": 1795041000.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 72,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -57,7 +164,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 72,
+      "coverage": "verified_price"
     },
     {
       "home": "Remo",
@@ -67,9 +175,10 @@
       "kickoff_unix": 1795042800.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 70,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -79,7 +188,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 70,
+      "coverage": "verified_price"
     },
     {
       "home": "Cruzeiro",
@@ -89,9 +199,10 @@
       "kickoff_unix": 1795044600.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 72,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -101,7 +212,8 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 72,
+      "coverage": "verified_price"
     },
     {
       "home": "Flamengo",
@@ -155,9 +267,10 @@
       "kickoff_unix": 1795048200.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "Pinnacle guest"
       ],
-      "verified_quotes": 0,
+      "verified_quotes": 74,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -167,74 +280,12 @@
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
+      "pinnacle_guest_quotes": 74,
+      "coverage": "verified_price"
     }
   ],
   "top_missing": [
     {
-      "home": "Coritiba",
-      "away": "Santos",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795041000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Remo",
-      "away": "Chapecoense",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795042800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Cruzeiro",
-      "away": "Palmeiras",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795044600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Flamengo",
       "away": "Athletico-PR",
       "league": "Brasileirão Série A",
@@ -258,27 +309,6 @@
     {
       "home": "Corinthians",
       "away": "Botafogo",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795048200.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Grêmio",
-      "away": "Bahia",
       "league": "Brasileirão Série A",
       "league_code": "bra.1",
       "kickoff_unix": 1795048200.0,
