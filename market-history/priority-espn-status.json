@@ -1,15 +1,52 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-17T02:01:44.986497+00:00",
+  "checked_at": "2026-11-17T10:41:29.648694+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 0,
-  "created_games": 0,
+  "priority_fixtures_seen": 6,
+  "created_games": 6,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
   "errors": [],
-  "missing_quote_fixtures": [],
+  "missing_quote_fixtures": [
+    {
+      "fixture": "Coritiba x Santos",
+      "league": "bra.1",
+      "kickoff": 1795041000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Remo x Chapecoense",
+      "league": "bra.1",
+      "kickoff": 1795042800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Cruzeiro x Palmeiras",
+      "league": "bra.1",
+      "kickoff": 1795044600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Flamengo x Athletico-PR",
+      "league": "bra.1",
+      "kickoff": 1795044600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Corinthians x Botafogo",
+      "league": "bra.1",
+      "kickoff": 1795048200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Grêmio x Bahia",
+      "league": "bra.1",
+      "kickoff": 1795048200,
+      "reason": "no_verified_public_1x2"
+    }
+  ],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }
