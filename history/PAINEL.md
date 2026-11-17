@@ -2,85 +2,85 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-17T13:22:33.745544+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-17T22:21:26.205023+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-11-17 | Newton Stewart × Celtic B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Newton Stewart × Celtic B | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Dalbeattie Star × Caledonian Braves | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Cumbernauld Colts × Pollok | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Clydebank × Albion Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Musselburgh Athletic × Hill of Beath Hawthorn | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Cumbernauld Colts × Pollok | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Clydebank × Albion Rovers | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Musselburgh Athletic × Hill of Beath Hawthorn | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Brechin City × Stirling University FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Bonnyrigg Rose × Gala Fairydean Rovers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Bonnyrigg Rose × Gala Fairydean Rovers | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Berwick Rangers × Civil Service Strollers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Oman × Brunei | 7-0 | 0 | Chutes no alvo: 11.0×0.0, Chutes para fora: 13.0×1.0, Escanteios: 8.0×1.0, Grandes chances: 6.0×0.0 |
-| 2026-11-17 | Thailand × Tajikistan | 1-0 | 0 | Chutes no alvo: 4.0×0.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-11-17 | Hungary × Northern Ireland | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Ukraine × Georgia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Israel × Austria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Ireland × Kosovo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Bosnia and Herzegovina × Romania | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Poland × Sweden | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Denmark × Norway | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Wales × Portugal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Bedford Town × Chorley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Oxford City × Macclesfield FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Thailand × Tajikistan | 3-0 | 0 | Chutes no alvo: 4.0×0.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×0.0 |
+| 2026-11-17 | Hungary × Northern Ireland | 1-1 | 90 | Chutes no alvo: 2.0×2.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 3.0×1.0 |
+| 2026-11-17 | Ukraine × Georgia | 1-0 | 90 | Chutes no alvo: 3.0×4.0, Chutes para fora: 7.0×2.0, Escanteios: 5.0×11.0, Grandes chances: 0.0×0.0 |
+| 2026-11-17 | Israel × Austria | 1-1 | 90 | Chutes no alvo: 2.0×6.0, Chutes para fora: 1.0×9.0, Escanteios: 5.0×8.0, Grandes chances: 1.0×5.0 |
+| 2026-11-17 | Ireland × Kosovo | 3-0 | 90 | Chutes no alvo: 12.0×3.0, Chutes para fora: 14.0×1.0, Escanteios: 9.0×4.0, Grandes chances: 7.0×0.0 |
+| 2026-11-17 | Bosnia and Herzegovina × Romania | 2-1 | 90 | Chutes no alvo: 6.0×6.0, Chutes para fora: 4.0×4.0, Escanteios: 4.0×4.0, Grandes chances: 2.0×0.0 |
+| 2026-11-17 | Poland × Sweden | 1-1 | 90 | Chutes no alvo: 3.0×6.0, Chutes para fora: 6.0×7.0, Escanteios: 2.0×8.0, Grandes chances: 4.0×6.0 |
+| 2026-11-17 | Denmark × Norway | 2-3 | 90 | Chutes no alvo: 4.0×7.0, Chutes para fora: 2.0×12.0, Escanteios: 1.0×7.0, Grandes chances: 2.0×9.0 |
+| 2026-11-17 | Wales × Portugal | 2-3 | 90 | Chutes no alvo: 8.0×6.0, Chutes para fora: 9.0×3.0, Escanteios: 6.0×1.0, Grandes chances: 4.0×4.0 |
+| 2026-11-17 | Bedford Town × Chorley | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Oxford City × Macclesfield FC | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | South Shields × Harborough Town FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Spalding United × Hebburn Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Spennymoor Town FC × Chester FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Tonbridge Angels × Chesham United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Spennymoor Town FC × Chester FC | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Tonbridge Angels × Chesham United | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Truro City × Billericay | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Leatherhead × Wingate & Finchley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Ramsgate × Cray Wanderers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Burgess Hill Town × Brentwood Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Dartford × Three Bridges | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Quorn × Bury | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Hyde United × Warrington Rylands | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Guiseley × Ashton United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Cleethorpes Town × FC United of Manchester | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Leamington × Halesowen Town FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Leiston × Stratford Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Worcester × Kettering Town FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Chippenham Town × Sholing | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Poole Town FC × Wimborne Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Havant and Waterlooville × Bracknell Town | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Luton Town × Peterborough United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Lesotho × Gabon | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×5.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-11-17 | Niger × Morocco | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Leatherhead × Wingate & Finchley | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Ramsgate × Cray Wanderers | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Burgess Hill Town × Brentwood Town | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Dartford × Three Bridges | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Quorn × Bury | 5-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Hyde United × Warrington Rylands | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Guiseley × Ashton United | 4-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Cleethorpes Town × FC United of Manchester | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Leamington × Halesowen Town FC | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Leiston × Stratford Town | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Worcester × Kettering Town FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Chippenham Town × Sholing | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Poole Town FC × Wimborne Town | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Havant and Waterlooville × Bracknell Town | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Luton Town × Peterborough United | 3-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 8.0×2.0, Escanteios: 4.0×3.0, Grandes chances: 4.0×0.0 |
+| 2026-11-17 | Lesotho × Gabon | 2-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×5.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×1.0 |
+| 2026-11-17 | Niger × Morocco | 0-1 | 0 | Chutes no alvo: 3.0×8.0, Chutes para fora: 2.0×1.0, Escanteios: 2.0×11.0, Grandes chances: 1.0×1.0 |
 | 2026-11-17 | Malawi × Egypt | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | South Sudan × Angola | 0-0 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | Gambia × Ivory Coast | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Kenya × South Africa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Sierra Leone × DR Congo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Mauritania × Burkina Faso | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Congo × Comoros | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Botswana × Uganda | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Libya × Tunisia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Burundi × Zambia | 0-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | Togo × Algeria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Liberia × Cape Verde | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Rwanda × Mali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Guinea-Bissau × Madagascar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | South Sudan × Angola | 0-1 | 0 | Chutes no alvo: 1.0×0.0, Chutes para fora: 0.0×2.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-17 | Gambia × Ivory Coast | 2-2 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×1.0, Grandes chances: 3.0×3.0 |
+| 2026-11-17 | Kenya × South Africa | 1-2 | 0 | Chutes no alvo: 2.0×8.0, Chutes para fora: 4.0×5.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×0.0 |
+| 2026-11-17 | Sierra Leone × DR Congo | 1-1 | 0 | Chutes no alvo: 3.0×5.0, Chutes para fora: 8.0×4.0, Escanteios: 4.0×1.0, Grandes chances: 1.0×2.0 |
+| 2026-11-17 | Mauritania × Burkina Faso | 1-3 | 0 | Chutes no alvo: 5.0×3.0, Chutes para fora: 12.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 4.0×3.0 |
+| 2026-11-17 | Congo × Comoros | 0-1 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 8.0×8.0, Escanteios: 11.0×5.0, Grandes chances: 0.0×2.0 |
+| 2026-11-17 | Botswana × Uganda | 1-1 | 0 | Chutes no alvo: 4.0×6.0, Chutes para fora: 6.0×10.0, Escanteios: 0.0×8.0, Grandes chances: 2.0×1.0 |
+| 2026-11-17 | Libya × Tunisia | 1-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 5.0×2.0, Escanteios: 3.0×3.0, Grandes chances: 1.0×1.0 |
+| 2026-11-17 | Burundi × Zambia | 1-1 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 0.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-17 | Togo × Algeria | 3-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 6.0×3.0, Grandes chances: 5.0×2.0 |
+| 2026-11-17 | Liberia × Cape Verde | 2-0 | 0 | Chutes no alvo: 4.0×7.0, Chutes para fora: 4.0×6.0, Escanteios: 4.0×7.0, Grandes chances: 2.0×1.0 |
+| 2026-11-17 | Rwanda × Mali | 0-2 | 0 | Chutes no alvo: 2.0×8.0, Chutes para fora: 6.0×9.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×2.0 |
+| 2026-11-17 | Guinea-Bissau × Madagascar | 2-0 | 0 | Chutes no alvo: 5.0×2.0, Chutes para fora: 7.0×6.0, Escanteios: 4.0×5.0, Grandes chances: 2.0×1.0 |
 | 2026-11-17 | Tanzania × Nigeria | 0-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | Ethiopia × Mozambique | 0-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | Plateau United × Kun Khalifat | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Jordan × Australia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Dominica × Cayman Islands | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Saint Lucia × Barbados | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | St. Kitts and Nevis × Bonaire | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Belize × Sint Maarten | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Ethiopia × Mozambique | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×3.0, Escanteios: 0.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-17 | Plateau United × Kun Khalifat | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Jordan × Australia | 2-0 | 0 | Chutes no alvo: 7.0×1.0, Chutes para fora: 3.0×4.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×0.0 |
+| 2026-11-17 | Dominica × Cayman Islands | 5-0 | 0 | Chutes no alvo: 9.0×4.0, Chutes para fora: 5.0×6.0, Escanteios: 4.0×3.0, Grandes chances: 4.0×0.0 |
+| 2026-11-17 | Saint Lucia × Barbados | 2-0 | 0 | Chutes no alvo: 6.0×3.0, Chutes para fora: 4.0×1.0, Escanteios: 5.0×5.0, Grandes chances: 4.0×0.0 |
+| 2026-11-17 | St. Kitts and Nevis × Bonaire | 3-2 | 0 | Chutes no alvo: 7.0×7.0, Chutes para fora: 5.0×5.0, Escanteios: 4.0×5.0, Grandes chances: 3.0×6.0 |
+| 2026-11-17 | Belize × Sint Maarten | 1-2 | 0 | Chutes no alvo: 5.0×9.0, Chutes para fora: 8.0×10.0, Escanteios: 2.0×5.0, Grandes chances: 2.0×3.0 |
 | 2026-11-17 | French Guiana × Saint Vincent and The Grenadines | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Canada × Guatemala | 4-1 | 0 | Chutes no alvo: 9.0×1.0, Chutes para fora: 10.0×0.0, Escanteios: 10.0×0.0, Grandes chances: 9.0×1.0 |
 | 2026-11-17 | USA × Haiti | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Mexico × Jamaica | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Netherlands U21 × Denmark U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Ireland U21 × Finland U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Czechia U21 × Turkiye U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Netherlands U21 × Denmark U21 | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Ireland U21 × Finland U21 | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Czechia U21 × Turkiye U21 | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Martinique × Aruba | 1-1 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 3.0×0.0, Grandes chances: 4.0×0.0 |
 | 2026-11-17 | Trinidad and Tobago × Antigua and Barbuda | 1-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 4.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×1.0 |
 | 2026-11-17 | El Salvador × Saint Martin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -88,30 +88,30 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 | 2026-11-17 | Singapore × Brazil | 0-7 | 0 | Chutes no alvo: 1.0×11.0, Chutes para fora: 5.0×9.0, Escanteios: 4.0×6.0, Grandes chances: 0.0×9.0 |
 | 2026-11-17 | Havadar SC × Mes Kerman | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Malaysia × Yemen | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | China × Bahrain | 1-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×2.0 |
-| 2026-11-17 | Kyrgyzstan × Vietnam | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Japan × Paraguay | 0-1 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
-| 2026-11-17 | Qatar × South Korea | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Saudi Arabia × Uzbekistan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Russia × Venezuela | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | China × Bahrain | 2-2 | 0 | Chutes no alvo: 1.0×3.0, Chutes para fora: 5.0×2.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×2.0 |
+| 2026-11-17 | Kyrgyzstan × Vietnam | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Japan × Paraguay | 1-2 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-17 | Qatar × South Korea | 0-1 | 0 | Chutes no alvo: 0.0×9.0, Chutes para fora: 2.0×8.0, Escanteios: 0.0×5.0, Grandes chances: 0.0×8.0 |
+| 2026-11-17 | Saudi Arabia × Uzbekistan | 1-2 | 0 | Chutes no alvo: 4.0×5.0, Chutes para fora: 2.0×1.0, Escanteios: 3.0×0.0, Grandes chances: 3.0×2.0 |
+| 2026-11-17 | Russia × Venezuela | 2-0 | 0 | Chutes no alvo: 5.0×0.0, Chutes para fora: 5.0×5.0, Escanteios: 5.0×3.0, Grandes chances: 3.0×0.0 |
 | 2026-11-17 | Ecuador × Bolivia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Chile × Colombia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Uruguay × Dominican Republic | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Kuwait × Honduras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | UAE × Syria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Portugal U21 × Norway U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Kuwait × Honduras | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | UAE × Syria | 4-2 | 0 | Chutes no alvo: 8.0×2.0, Chutes para fora: 11.0×4.0, Escanteios: 5.0×2.0, Grandes chances: 4.0×2.0 |
+| 2026-11-17 | Portugal U21 × Norway U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Olimpo × Kimberley | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | New Mexico United × Sacramento Republic FC | 1-2 | 0 | Chutes no alvo: 7.0×3.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×3.0, Grandes chances: 3.0×3.0 |
 | 2026-11-17 | Atlético Nacional × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | América de Cali × Internacional de Bogotá | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | India × Pakistan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Croatia U21 × Germany U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | India × Pakistan | 2-1 | 0 | Chutes no alvo: 6.0×4.0, Chutes para fora: 8.0×5.0, Escanteios: 6.0×5.0, Grandes chances: 1.0×1.0 |
+| 2026-11-17 | Croatia U21 × Germany U21 | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Albania U21 × Spain U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Tahiti × Cook Islands | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Lebanon × Palestine | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Iraq × Iran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Iraq × Iran | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | CD Árabe Unido × Veraguas United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-17 | Poland U21 × Serbia U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-17 | Poland U21 × Serbia U21 | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Deportes Recoleta × Deportes Iquique | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-16 | Cusco FC × Asociación Deportiva Tarma | 2-2 | 0 | Chutes no alvo: 3.0×7.0, Chutes para fora: 5.0×10.0, Escanteios: 2.0×5.0, Grandes chances: 3.0×2.0 |
 | 2026-11-16 | Club Deportivo Moquegua × Atlético Grau | 2-1 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×7.0, Escanteios: 4.0×7.0, Grandes chances: 4.0×0.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11405 | **Jogos distintos:** 3475 | **Resultados verificáveis:** 6319 | **Com gol:** 2458 | **Sem gol:** 3861 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 40 datas com coletas | 91 pendentes | 2124 indeterminados | 2871 incompletos.
+**Observações:** 11415 | **Jogos distintos:** 3480 | **Resultados verificáveis:** 6319 | **Com gol:** 2458 | **Sem gol:** 3861 | **Taxa observada:** 38.9%.
+**Evolução da amostra:** 40 datas com coletas | 89 pendentes | 2126 indeterminados | 2881 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -178,10 +178,10 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2196 | 1474 | 587 | 887 | 39.8% |
 | ⚡ pressao_ofensiva_18 | 1768 | 1179 | 440 | 739 | 37.3% |
-| 🎯 chutes_no_alvo_5 | 1955 | 924 | 347 | 577 | 37.6% |
-| 🟥 expulsao_confirmada | 1685 | 753 | 257 | 496 | 34.1% |
-| 🚩 escanteios_6 | 1423 | 647 | 272 | 375 | 42.0% |
-| 💣 grandes_chances_3 | 1151 | 606 | 263 | 343 | 43.4% |
+| 🎯 chutes_no_alvo_5 | 1959 | 924 | 347 | 577 | 37.6% |
+| 🟥 expulsao_confirmada | 1686 | 753 | 257 | 496 | 34.1% |
+| 🚩 escanteios_6 | 1425 | 647 | 272 | 375 | 42.0% |
+| 💣 grandes_chances_3 | 1154 | 606 | 263 | 343 | 43.4% |
 | 🔥 pressao_forte_10min | 608 | 388 | 150 | 238 | 38.7% |
 | 🧨 pressao_total_5_10min | 334 | 209 | 85 | 124 | 40.7% |
 | ⏱️ tensao_tardia_70 | 185 | 77 | 31 | 46 | 40.3% |
@@ -256,20 +256,30 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | 31–45′ | 2378 | 1815 | 754 | 1061 | 41.5% |
 | 46–60′ | 1481 | 1050 | 415 | 635 | 39.5% |
 | 61–75′ | 2387 | 1676 | 643 | 1033 | 38.4% |
-| 76–90′ | 3033 | 1014 | 387 | 627 | 38.2% |
-| 91+′ | 1097 | 10 | 4 | 6 | 40.0% |
+| 76–90′ | 3038 | 1014 | 387 | 627 | 38.2% |
+| 91+′ | 1102 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11405 | **Jogos monitorados:** 716 | **Ao vivo:** 17 | **Termômetros recentes:** 0.
+**Registros:** 11415 | **Jogos monitorados:** 716 | **Ao vivo:** 6 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-17T13:23:10.420092+00:00 | Thailand × Tajikistan | Tajikistan (45') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-17T13:23:10.420092+00:00 | China × Bahrain | China (62') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Gambia × Ivory Coast | Gambia (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Gambia × Ivory Coast | Gambia (89') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Gambia × Ivory Coast | Gambia (89') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Kenya × South Africa | South Africa (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Togo × Algeria | Togo (94') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Togo × Algeria | Togo (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Togo × Algeria | Togo (94') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Czechia U21 × Turkiye U21 | Turkiye U21 (96') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Russia × Venezuela | Russia (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T17:55:45.503253+00:00 | Russia × Venezuela | Russia (90') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-17T13:23:10.420092+00:00 | Thailand × Tajikistan | Tajikistan (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-17T13:23:10.420092+00:00 | China × Bahrain | China (62') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-17T03:51:40.229213+00:00 | New Mexico United × Sacramento Republic FC | New Mexico United (85') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-17T03:51:40.229213+00:00 | New Mexico United × Sacramento Republic FC | New Mexico United (85') | 💣 grandes_chances_3 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-17T03:51:40.229213+00:00 | CD Suchitepéquez × Antigua Guatemala | Equipe não definida (94') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
@@ -358,16 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-14T21:29:11.450577+00:00 | Deportivo Pereira × América de Cali | Deportivo Pereira (45') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-14T21:29:11.450577+00:00 | Deportivo Pereira × América de Cali | Deportivo Pereira (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-14T21:29:11.450577+00:00 | Northern Ireland × Ukraine | Northern Ireland (85') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Austria × Ireland | Ireland (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Austria × Ireland | Austria (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Austria × Ireland | Ireland (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Romania × Poland | Poland (85') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sweden × Bosnia and Herzegovina | Bosnia and Herzegovina (85') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sweden × Bosnia and Herzegovina | Sweden (85') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sweden × Bosnia and Herzegovina | Bosnia and Herzegovina (85') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Portugal × Denmark | Portugal (84') | 🥶 jogo_frio · pressão observada | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Portugal × Denmark | Denmark (84') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Portugal × Denmark | Denmark (84') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
