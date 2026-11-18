@@ -129,7 +129,8 @@ class OddsPapiFreeTests(unittest.TestCase):
             self.assertEqual(len(calls),2)
             usage=json.loads(ledger.read_text())
             self.assertEqual(usage['requests'],2)
-            self.assertEqual(usage['slots']['2026-10-19T21']['requests'],2)
+            # Blocos de 12 h com registro de cota (21h30 UTC cai no bloco T12).
+            self.assertEqual(usage['slots']['2026-10-19T12']['requests'],2)
     def test_usage_budget_rejects_new_paid_requests(self):
         docs={'2026-10-19':{'matches':{'f1':fixture()}}}
         with tempfile.TemporaryDirectory() as tmp:

@@ -8,14 +8,19 @@ As odds são APENAS pré-jogo, com hora própria da fonte preservada.
 import json
 import math
 import os
-from datetime import datetime,timezone
+from datetime import datetime,timezone,timedelta
 from urllib.request import Request,urlopen
 from urllib.parse import urlencode
+from odds_slots import block_slot,load_ledger,save_ledger
 from espn_scoreboard_odds import normalized_team
 from pregame_refresh_quotes import append_trio
 
 ROOT='https://v3.football.api-sports.io'
 MAX_ODDS_PER_RUN=6
+# Plano Free: 100 requisições/dia. Blocos de 3 h (8/dia) x até 8 chamadas = 64;
+# teto diário local 90 para sobrar margem a erros e reinícios.
+BLOCK_HOURS=3
+DAILY_REQUESTS=90
 
 def http_json(url,key):
     req=Request(url,headers={'x-apisports-key':key,'Accept':'application/json',
@@ -87,7 +92,7 @@ def odds_trio(packet,fixture_id,now_ts):
                     return prices,str(book['name'])[:55],source_time
     return None
 
-def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
+def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=None):
     key=os.getenv('NEXUS_API_FOOTBALL_KEY','') if key is None else key
     report={'status':'not_configured','requests':0,'matched':0,'quotes_added':0,'errors':[]}
     if not key:return report
@@ -95,9 +100,36 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
     # Quota MAX: 8 janelas/dia × (2 datas + 6 preços) = 64 chamadas/dia.
     # A tarefa está agendada a cada 5min, mas a API só é chamada às HH:00-04
     # quando HH for divisível por 3. Sem abuso de quota e sem ocultar o atraso.
-    if instant.hour%3!=0 or instant.minute>=5:
-        report['status']='waiting_budget_slot'
-        return report
+    usage=slot=None
+    today=instant.strftime('%Y-%m-%d')
+    if ledger_path is None:
+        if instant.hour%3!=0 or instant.minute>=5:
+            report['status']='waiting_budget_slot'
+            return report
+    else:
+        # GitHub Free atrasa o cron em horas: a 1ª execução de cada bloco consulta.
+        slot=block_slot(instant,BLOCK_HOURS)
+        try:usage=load_ledger(ledger_path,{'days':{},'slots':{}})
+        except (OSError,ValueError):
+            report['status']='budget_unavailable'
+            return report
+        usage['days']={d:n for d,n in usage['days'].items() if d>=(instant-timedelta(days=7)).strftime('%Y-%m-%d')}
+        usage['slots']={s:v for s,v in usage['slots'].items() if s[:10] in usage['days'] or s[:10]==today}
+        if slot in usage['slots']:
+            report['status']='already_checked'
+            return report
+        if usage['days'].get(today,0)>=DAILY_REQUESTS:
+            report['status']='daily_budget_exhausted'
+            return report
+    def reserve():
+        """Grava o gasto ANTES da chamada; False quando o teto diário acabou."""
+        if usage is None:return True
+        if usage['days'].get(today,0)>=DAILY_REQUESTS:return False
+        usage['days'][today]=usage['days'].get(today,0)+1
+        record=usage['slots'].setdefault(slot,{'requests':0,'attempted_at':instant.isoformat()})
+        record['requests']+=1
+        save_ledger(ledger_path,usage)
+        return True
     relevant=[]
     for day,ident,delta in candidates:
         if not 0<delta<=6*3600:continue
@@ -117,6 +149,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
         by_day.setdefault(day,[]).append((row,f))
     found=[]
     for day,fixtures in list(by_day.items())[:2]:
+        if not reserve():break
         try:
             data=fetcher(ROOT+'/fixtures?'+urlencode({'date':day}),key)
             report['requests']+=1
@@ -135,6 +168,7 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json):
         if len(ids)>=MAX_ODDS_PER_RUN:break
         if match in ids:continue
         ids.add(match)
+        if not reserve():break
         try:
             data=fetcher(ROOT+'/odds?'+urlencode({'fixture':match,'page':1}),key)
             report['requests']+=1

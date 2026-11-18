@@ -238,7 +238,7 @@ def run():
         result['errors'].extend(result['espn_fallback']['errors'][:4])
     # Provedor adicional 1X2 independente (chave opcional, nunca enviada ao navegador).
     # O dashboard continua funcionando quando um provedor falha ou bloqueia.
-    result['the_odds_api']=independent_odds(docs,odds_candidates,now_ts)
+    result['the_odds_api']=independent_odds(docs,odds_candidates,now_ts,ledger_path=HISTORY/'the_odds_api_usage.json')
     result['odds_updated']+=result['the_odds_api']['quotes_added']
     if result['the_odds_api']['errors']:
         result['errors'].extend(result['the_odds_api']['errors'][:4])
@@ -250,7 +250,7 @@ def run():
     if result['odds_papi']['errors']:
         result['errors'].extend(result['odds_papi']['errors'][:3])
     # API-Football: somente com segredo opcional e teto <=64 req/dia.
-    result['api_football']=api_football_odds(docs,odds_candidates,now_ts)
+    result['api_football']=api_football_odds(docs,odds_candidates,now_ts,ledger_path=HISTORY/'api_football_usage.json')
     result['odds_updated']+=result['api_football']['quotes_added']
     if result['api_football']['errors']:
         result['errors'].extend(result['api_football']['errors'][:3])

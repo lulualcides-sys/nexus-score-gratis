@@ -14,6 +14,7 @@ from urllib.parse import urlencode
 from urllib.request import Request,urlopen
 
 from espn_scoreboard_odds import normalized_team,parse_ts
+from odds_slots import block_slot
 from pregame_refresh_quotes import append_trio,append_market_group
 
 BASE='https://api.oddspapi.io/v4'
@@ -207,7 +208,8 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
             'prioritized':[],'duplicate_provider_matches_skipped':0}
     if not key:return result
     instant=datetime.fromtimestamp(now_ts,timezone.utc)
-    slot=free_slot_id(instant)
+    # Com registro de cota: blocos de 12 h (GitHub Free atrasa o cron em horas).
+    slot=block_slot(instant,12) if ledger_path is not None else free_slot_id(instant)
     if not slot:return result
     usage=None
     if ledger_path is not None:

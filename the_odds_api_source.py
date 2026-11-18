@@ -9,11 +9,17 @@ import json
 from urllib.request import Request,urlopen
 from datetime import datetime,timezone
 from urllib.parse import urlencode
+from odds_slots import block_slot,load_ledger,save_ledger
 
 from espn_scoreboard_odds import normalized_team, parse_ts, plain
 from pregame_refresh_quotes import append_quote, append_trio
 
 BASE='https://api.the-odds-api.com/v4'
+# Plano grátis: 500 créditos/mês, compartilhados com o robô do Telegram (teto
+# local 240). Aqui: 2 blocos de 12 h/dia x até 3 ligas = 186/mês; 240+186 < 500.
+MONTHLY_CREDITS=186
+BLOCK_HOURS=12
+SPORTS_PER_SLOT=3
 ESPN_LEAGUE_ALIASES={
   'bra.1':('brazil',),'bra.2':('brazil',),'eng.1':('epl',),
   'eng.2':('efl_champ',),'esp.1':('la_liga',),
@@ -98,7 +104,7 @@ def fetch_json(url):
     if len(raw)>1500000:raise ValueError('resposta excede limite')
     return json.loads(raw)
 
-def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
+def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json,ledger_path=None):
     key=os.getenv('NEXUS_THE_ODDS_API_KEY','') if key is None else key
     status={'status':'not_configured' if not key else 'running','sports_queried':0,
             'matched':0,'quotes_added':0,'errors':[]}
@@ -106,9 +112,27 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
     # FREE 500 credits/mo: at most 2 UTC slots/day × 3 leagues (186 at 31 days).
     # Without this guard, a 5-minute GitHub schedule could exhaust the free plan.
     now=datetime.fromtimestamp(now_ts,timezone.utc)
-    if now.hour not in (12,21) or now.minute>=5:
-        status['status']='waiting_free_slot'
-        return status
+    usage=slot=None
+    if ledger_path is None:
+        # Sem registro de cota: janela estreita e conservadora (comportamento antigo).
+        if now.hour not in (12,21) or now.minute>=5:
+            status['status']='waiting_free_slot'
+            return status
+    else:
+        slot=block_slot(now,BLOCK_HOURS)
+        try:
+            usage=load_ledger(ledger_path,{'month':now.strftime('%Y-%m'),'credits':0,'slots':{}})
+        except (OSError,ValueError):
+            status['status']='budget_unavailable'
+            return status
+        if usage.get('month')!=now.strftime('%Y-%m'):
+            usage={'month':now.strftime('%Y-%m'),'credits':0,'slots':{}}
+        if slot in usage['slots']:
+            status['status']='already_checked'
+            return status
+        if usage['credits']+SPORTS_PER_SLOT>MONTHLY_CREDITS:
+            status['status']='free_budget_exhausted'
+            return status
     try:
         sports=fetcher(BASE+'/sports/?'+urlencode({'apiKey':key}))
         if not isinstance(sports,list):raise ValueError('catálogo indisponível')
@@ -128,7 +152,16 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=fetch_json):
         for sport in fixture_sport_keys(f.get('league'),sports):
             relevant.setdefault(sport,[]).append((row,f))
     # Quotas: máximo de 8 competições por coleta; sem varrer milhares de ligas.
-    for sport,fixtures in list(relevant.items())[:3]:
+    if not relevant:
+        status['status']='no_matches_in_window'
+        return status
+    for sport,fixtures in list(relevant.items())[:SPORTS_PER_SLOT]:
+        if usage is not None:
+            # Registrar ANTES da chamada paga: falha ou reinício também gastam crédito.
+            usage['credits']+=1
+            record=usage['slots'].setdefault(slot,{'credits':0,'attempted_at':now.isoformat()})
+            record['credits']+=1
+            save_ledger(ledger_path,usage)
         try:
             response=fetcher(BASE+'/sports/'+sport+'/odds/?'+urlencode({
                 'apiKey':key,'regions':'eu','markets':'h2h','oddsFormat':'decimal',
