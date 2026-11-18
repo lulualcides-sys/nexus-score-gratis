@@ -1,18 +1,18 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-18T09:17:01.454209+00:00",
+  "checked_at": "2026-11-18T18:21:38.742675+00:00",
   "horizon_hours": 48,
-  "important_games": 10,
+  "important_games": 8,
   "verified_bookmaker_games": 6,
-  "indicative_only_games": 1,
-  "missing_bookmaker_price_games": 3,
+  "indicative_only_games": 2,
+  "missing_bookmaker_price_games": 0,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
     "matched": 0,
-    "indicative": 1,
+    "indicative": 2,
     "new_priority": 2
   },
   "pinnacle_guest": {
@@ -170,50 +170,6 @@
       "coverage": "verified_price"
     },
     {
-      "home": "CR Temouchent",
-      "away": "JS El Biar",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1795020300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "CS Constantine",
-      "away": "ES Ben Aknoun",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1795020300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Orlando City SC",
       "away": "FC Cincinnati",
       "kickoff_unix": 1795134600.0,
@@ -251,11 +207,19 @@
       "league_code": "usa.1",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.01,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.06,
-        "draw": 4.2,
-        "away": 3.61
+        "home": 1.98,
+        "draw": 4.29,
+        "away": 3.82
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/18024/seattle-sounders-vs-real-salt-lake-2026-11-20",
       "tipsaudit_id": "18024",
@@ -263,69 +227,9 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     }
   ],
-  "top_missing": [
-    {
-      "home": "CR Temouchent",
-      "away": "JS El Biar",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1795020300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "CS Constantine",
-      "away": "ES Ben Aknoun",
-      "league": "Ligue 1",
-      "league_code": "fra.1",
-      "kickoff_unix": 1795020300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Seattle Sounders",
-      "away": "Real Salt Lake",
-      "kickoff_unix": 1795143600.0,
-      "league": "MLS",
-      "league_code": "usa.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18024/seattle-sounders-vs-real-salt-lake-2026-11-20",
-      "tipsaudit_id": "18024",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    }
-  ],
+  "top_missing": [],
   "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
 }
