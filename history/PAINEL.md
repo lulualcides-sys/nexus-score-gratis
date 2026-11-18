@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-18T04:15:54.014368+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-18T04:18:11.395083+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **9**.
-Novas cotacoes capturadas na ultima execucao: **18**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
