@@ -116,7 +116,9 @@ jobs:
         run: python3 coletar.py
       - name: Buscar escalações e odds de múltiplas fontes sem preços inventados
         env:
-          NEXUS_THE_ODDS_API_KEY: ${{ secrets.NEXUS_THE_ODDS_API_KEY }}
+          # Aceita o secret já existente THE_ODDS_API_KEY (mesma conta do Telegram;
+          # tetos locais 240 + 186 créditos/mês < 500 do plano grátis).
+          NEXUS_THE_ODDS_API_KEY: ${{ secrets.NEXUS_THE_ODDS_API_KEY || secrets.THE_ODDS_API_KEY }}
           NEXUS_API_FOOTBALL_KEY: ${{ secrets.NEXUS_API_FOOTBALL_KEY }}
           NEXUS_ODDSPAPI_KEY: ${{ secrets.NEXUS_ODDSPAPI_KEY }}
         run: python3 pregame_refresh.py
