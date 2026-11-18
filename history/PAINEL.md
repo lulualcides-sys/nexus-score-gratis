@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-18T04:18:11.395083+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-18T13:56:30.394886+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -16,14 +16,14 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | Cruzeiro × Palmeiras | 0-0 | 0 | Match Odds 1X2: Casa 2,65, Empate 3,45, Fora 2,55 |
 | 2026-11-18 | Coritiba × Santos | 0-0 | 0 | Match Odds 1X2: Casa 3,45, Empate 3,45, Fora 2,10 |
 | 2026-11-18 | Corinthians × Botafogo | 0-0 | 0 | Match Odds 1X2: Casa 1,83, Empate 3,70, Fora 4,10 |
-| 2026-11-18 | Tampines Rovers FC × Ratchaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Borneo Samarinda × Manila Digger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Cong An Ho Chí Minh City × Buriram United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Mynavi Sendai Ladies (W) × NTV Tokyo Verdy Beleza (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | JEF Ladies (W) × AC Nagano Parceiro Ladies (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Albirex Niigata Ladies (W) × AS Elfen Saitama (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Cerezo Osaka Sakai (W) × Urawa Ladies (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Sanfrecce Hiroshima Regina (W) × Nojima Stella (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Tampines Rovers FC × Ratchaburi FC | 3-2 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Borneo Samarinda × Manila Digger | 1-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Cong An Ho Chí Minh City × Buriram United | 1-0 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Mynavi Sendai Ladies (W) × NTV Tokyo Verdy Beleza (W) | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | JEF Ladies (W) × AC Nagano Parceiro Ladies (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Albirex Niigata Ladies (W) × AS Elfen Saitama (W) | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Cerezo Osaka Sakai (W) × Urawa Ladies (W) | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Sanfrecce Hiroshima Regina (W) × Nojima Stella (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Partick Thistle (W) × Glasgow City (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Renfrew FC × Largs Thistle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Beith Juniors × Johnstone Burgh | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -34,7 +34,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | Alianza Atlético × FBC Melgar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Al-Adalah × Al-Orobah FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Al-Rayyan II × Al Mesaimeer | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Bengaluru United × Sreenidi Deccan FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Bengaluru United × Sreenidi Deccan FC | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | CD Badajoz × Tenerife | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Flamengo × Athletico Paranaense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Corinthians × Botafogo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -71,11 +71,11 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | USA × Haiti | 2-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 6.0×6.0, Escanteios: 7.0×0.0, Grandes chances: 1.0×2.0 |
 | 2026-11-18 | Mexico × Jamaica | 1-0 | 0 | Chutes no alvo: 5.0×0.0, Chutes para fora: 7.0×1.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×1.0 |
 | 2026-11-18 | El Salvador × Saint Martin | 3-1 | 0 | Chutes no alvo: 10.0×4.0, Chutes para fora: 4.0×1.0, Escanteios: 7.0×2.0, Grandes chances: 6.0×1.0 |
-| 2026-11-18 | Nicaragua × Montserrat | 1-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Nicaragua × Montserrat | 2-0 | 0 | Chutes no alvo: 3.0×1.0, Chutes para fora: 2.0×1.0, Escanteios: 0.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-11-18 | Argentina × Costa Rica | 5-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 7.0×0.0, Escanteios: 4.0×0.0, Grandes chances: 1.0×0.0 |
 | 2026-11-18 | NK Rače × Radomlje | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Tabor × Fužinar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Tolmin × Nk Brinje Grosuplje | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Tolmin × Nk Brinje Grosuplje | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Ecuador × Bolivia | 1-0 | 0 | Chutes no alvo: 2.0×0.0, Chutes para fora: 2.0×0.0, Escanteios: 2.0×1.0, Grandes chances: 3.0×0.0 |
 | 2026-11-18 | Chile × Colombia | 0-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 4.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-11-18 | Uruguay × Dominican Republic | 0-0 | 0 | Chutes no alvo: 1.0×2.0, Chutes para fora: 2.0×1.0, Escanteios: 1.0×2.0, Grandes chances: 0.0×2.0 |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 11418 | **Jogos distintos:** 3483 | **Resultados verificáveis:** 6320 | **Com gol:** 2459 | **Sem gol:** 3861 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 41 datas com coletas | 92 pendentes | 2125 indeterminados | 2881 incompletos.
+**Evolução da amostra:** 41 datas com coletas | 91 pendentes | 2125 indeterminados | 2882 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,13 +262,13 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11418 | **Jogos monitorados:** 450 | **Ao vivo:** 14 | **Termômetros recentes:** 0.
+**Registros:** 11418 | **Jogos monitorados:** 450 | **Ao vivo:** 13 | **Termômetros recentes:** 0.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T04:16:17.521941+00:00 | Mexico × Jamaica | Mexico (85') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-18T04:16:17.521941+00:00 | Mexico × Jamaica | Mexico (85') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-18T00:08:27.078571+00:00 | Argentina × Costa Rica | Argentina (48') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-18T00:08:27.078571+00:00 | Ecuador × Bolivia | Ecuador (32') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-17T17:55:45.503253+00:00 | Gambia × Ivory Coast | Gambia (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
