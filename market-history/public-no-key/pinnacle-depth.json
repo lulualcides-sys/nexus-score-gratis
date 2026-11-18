@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-18T01:00:21.940827+00:00",
-  "bookmaker_snapshot_at": "2026-11-18T01:00:19.121899+00:00",
+  "checked_at": "2026-11-18T11:52:51.742046+00:00",
+  "bookmaker_snapshot_at": "2026-11-18T11:52:50.517577+00:00",
   "status": "fresh",
-  "matches_catalogued": 14,
-  "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1424,
-  "invalid_quote_records": 0,
-  "complete_market_lines": 698,
+  "matches_catalogued": 9,
+  "matches_with_priced_markets": 9,
+  "odds_eligible_for_quality": 628,
+  "invalid_quote_records": 8,
+  "complete_market_lines": 307,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 14,
-      "odds": 316,
-      "complete_lines": 158,
+      "games": 9,
+      "odds": 148,
+      "complete_lines": 74,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.2
+      "median_overround_pct": 5.0
     },
     "first_half_goals": {
-      "games": 14,
-      "odds": 212,
-      "complete_lines": 106,
+      "games": 9,
+      "odds": 100,
+      "complete_lines": 50,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.93
+      "median_overround_pct": 6.31
     },
     "first_half_handicap": {
-      "games": 14,
-      "odds": 168,
-      "complete_lines": 84,
+      "games": 9,
+      "odds": 92,
+      "complete_lines": 46,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.65
+      "median_overround_pct": 5.43
     },
     "first_half_team_goals": {
-      "games": 14,
-      "odds": 56,
-      "complete_lines": 28,
+      "games": 9,
+      "odds": 32,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.5
+      "median_overround_pct": 6.23
     },
     "half_time": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.54
+      "median_overround_pct": 5.78
     },
     "match_odds": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 9,
+      "odds": 27,
+      "complete_lines": 9,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.83
+      "median_overround_pct": 5.42
     },
     "team_goals": {
-      "games": 14,
-      "odds": 180,
-      "complete_lines": 90,
+      "games": 9,
+      "odds": 62,
+      "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.9
+      "median_overround_pct": 6.51
     },
     "total_goals": {
-      "games": 14,
-      "odds": 408,
-      "complete_lines": 204,
+      "games": 9,
+      "odds": 152,
+      "complete_lines": 76,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.24
+      "median_overround_pct": 5.53
     }
   },
   "examples": [
     {
-      "fixture": "Vissel Kobe x Mito HollyHock",
+      "fixture": "Orlando City x FC Cincinnati",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-18T01:00:19.121899+00:00",
+      "observed_at": "2026-11-18T11:52:50.517577+00:00",
       "selections": {
-        "home": 1.4065,
-        "away": 7.86,
-        "draw": 4.63
+        "home": 2.49,
+        "away": 2.54,
+        "draw": 3.97
       },
-      "overround_pct": 5.42
+      "overround_pct": 4.72
     },
     {
-      "fixture": "Vissel Kobe x Mito HollyHock",
+      "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-18T01:00:19.121899+00:00",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-18T11:52:50.517577+00:00",
       "selections": {
-        "home": 1.9901,
-        "away": 1.8621
+        "home": 1.9009,
+        "away": 1.9434
       },
-      "overround_pct": 3.95
+      "overround_pct": 4.06
     },
     {
-      "fixture": "Vissel Kobe x Mito HollyHock",
+      "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-11-18T01:00:19.121899+00:00",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-18T11:52:50.517577+00:00",
       "selections": {
-        "home": 4.01,
-        "away": 1.2513
+        "home": 3.66,
+        "away": 1.289
       },
-      "overround_pct": 4.85
+      "overround_pct": 4.9
     },
     {
-      "fixture": "Vissel Kobe x Mito HollyHock",
+      "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-11-18T01:00:19.121899+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-18T11:52:50.517577+00:00",
       "selections": {
-        "home": 3.56,
-        "away": 1.3012
+        "home": 2.89,
+        "away": 1.4202
       },
-      "overround_pct": 4.94
+      "overround_pct": 5.01
     },
     {
-      "fixture": "Vissel Kobe x Mito HollyHock",
+      "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-11-18T01:00:19.121899+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-18T11:52:50.517577+00:00",
       "selections": {
-        "home": 2.72,
-        "away": 1.4762
+        "home": 2.47,
+        "away": 1.5587
       },
-      "overround_pct": 4.51
+      "overround_pct": 4.64
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
