@@ -112,6 +112,7 @@ def fotmob_list(day):
                 'home_id':str(home.get('id') or ''),'away_id':str(away.get('id') or ''),
                 'league_id':canonical_id, 'league_edition_id':edition_id,
                 'league_id_verified':str(league.get('primaryId') or '').isdecimal(),
+                'league_country':str(league.get('ccode') or '')[:3].upper() if re.fullmatch(r'[A-Za-z]{3}',str(league.get('ccode') or '')) else '',
                 'collected_at':NOW.isoformat(),
                 'home_logo':('https://images.fotmob.com/image_resources/logo/teamlogo/'+str(home['id'])+'.png')
                     if str(home.get('id') or '').isdigit() else '',

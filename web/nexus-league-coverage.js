@@ -1,4 +1,5 @@
-/* Mostra só ligas principais com cobertura observável. Não altera coletas ou histórico. */
+/* Escopo de ligas exibidas (principais / ampliadas / todas), por ID canônico FotMob.
+   Não altera coletas ou histórico. */
 (function(root){
 'use strict';
 const norm=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -16,7 +17,7 @@ const main=[
 /\b(?:fifa )?(?:world cup|copa do mundo)\b/
 ];
 // Canonical male-only competition catalog; no history is deleted.
-const womenName=/\b(?:women|womens|woman|female|feminino|feminina|femenino|femenina|feminin|feminine|ladies|frauen|damallsvenskan|femminile|wsl|nwsl|liga f|w league)\b|\(w\)|\[w\]/;
+const womenName=/\b(?:women|womens|woman|female|feminino|feminina|femenino|femenina|feminin|feminine|femenil|vrouwen|ladies|frauen|damallsvenskan|femminile|wsl|nwsl|liga f|w league)\b|\(w\)|\[w\]/;
 const leagues=[
  ['br_a','Brasileirão Série A','Brasil',/\b(?:brasileirao(?: serie a)?|campeonato brasileiro serie a|(?:brazil|brazilian) serie a|brasil(?:eiro)? serie a)\b/],
  ['br_b','Brasileirão Série B','Brasil',/\b(?:brasileirao serie b|campeonato brasileiro serie b|(?:brazil|brazilian) serie b|brasil(?:eiro)? serie b|serie b do brasil)\b/],
@@ -52,24 +53,95 @@ const espnCodes=Object.freeze({
  'por.1':'portugal','arg.1':'argentina','usa.1':'mls',
  'mex.1':'ligamx','fifa.world':'worldcup'
 });
-function profile(league){
- const x=norm(league);
- if(!x||reject.test(x)||womenName.test(x)||/\b(?:2 bundesliga|bundesliga 2|primavera|serie a2|serie a 2|liga expansion)\b/.test(x))return null;
- const code=espnCodes[String(league||'').trim().toLowerCase()];
- if(code){
-   const i=leagues.findIndex(z=>z[0]===code);
-   if(i<0)return null;
-   const z=leagues[i];
-   return {id:z[0],label:z[1],group:z[2],priority:i};
- }
- // Avoid treating Brazilian Série B as Brazilian Série A due to prefix matching.
- if(/\bserie b\b/.test(x)&&/\b(?:brasileirao|brasil|brazil|brasileiro)\b/.test(x)){
-   const entry=leagues[1];return {id:entry[0],label:entry[1],group:entry[2],priority:1};
- }
- const i=leagues.findIndex(z=>z[3].test(x));
+// IDs canônicos FotMob (primaryId). O nome sozinho é ambíguo: há "Premier League"
+// em Gana, Rússia, Ucrânia etc.; "Série A" (com acento) é o Brasileirão no FotMob.
+// IDs conferidos contra clubes reais no histórico de 18/10–18/11/2026.
+const MAIN_IDS=Object.freeze({
+ '268':'br_a','8814':'br_b','9067':'copa_br','45':'libertadores','299':'sudamericana',
+ '42':'champions','47':'premier','48':'championship','87':'laliga','55':'italy',
+ '54':'bundesliga','53':'ligue1','61':'portugal','57':'eredivisie','111':'eerste',
+ '73':'europa','10216':'conference','112':'argentina','130':'mls','230':'ligamx',
+ '536':'saudi','77':'worldcup'
+});
+// Escopo ampliado: competições masculinas adicionais, também só por ID.
+const extended=[
+ ['friendlies','Amistosos de seleções','Seleções','114'],
+ ['concacaf_nl','CONCACAF Nations League','Seleções','9821'],
+ ['afcon_q','Eliminatórias da Copa Africana','Seleções','10608'],
+ ['laliga2','LaLiga 2 · Espanha (2ª)','Segundas divisões','140'],
+ ['serieb_ita','Serie B · Itália (2ª)','Segundas divisões','86'],
+ ['bundesliga2','2. Bundesliga · Alemanha (2ª)','Segundas divisões','146'],
+ ['ligue2','Ligue 2 · França (2ª)','Segundas divisões','110'],
+ ['league_one','League One · Inglaterra (3ª)','Segundas divisões','108'],
+ ['league_two','League Two · Inglaterra (4ª)','Segundas divisões','109'],
+ ['primera_nacional','Primera Nacional · Argentina (2ª)','Segundas divisões','8965'],
+ ['superlig','Süper Lig · Turquia','Europa (outras)','71'],
+ ['belgium','Pro League · Bélgica','Europa (outras)','40'],
+ ['scotland','Premiership · Escócia','Europa (outras)','64'],
+ ['austria','Bundesliga · Áustria','Europa (outras)','38'],
+ ['switzerland','Super League · Suíça','Europa (outras)','69'],
+ ['denmark','Superligaen · Dinamarca','Europa (outras)','46'],
+ ['norway','Eliteserien · Noruega','Europa (outras)','59'],
+ ['sweden','Allsvenskan · Suécia','Europa (outras)','67'],
+ ['greece','Super League · Grécia','Europa (outras)','135'],
+ ['poland','Ekstraklasa · Polônia','Europa (outras)','196'],
+ ['russia','Premier League · Rússia','Europa (outras)','63'],
+ ['ukraine','Premier League · Ucrânia','Europa (outras)','441'],
+ ['copa_rey','Copa del Rey','Copas nacionais','138'],
+ ['fa_cup','FA Cup','Copas nacionais','132'],
+ ['colombia','Primera A · Colômbia','Américas','274'],
+ ['chile','Primera División · Chile','Américas','273'],
+ ['uruguay','Liga AUF · Uruguai','Américas','161'],
+ ['ecuador','Serie A · Equador','Américas','246'],
+ ['peru','Liga 1 · Peru','Américas','131'],
+ ['usl','USL Championship · EUA (2ª)','Américas','8972'],
+ ['japan','J1 League · Japão','Ásia','223'],
+ ['korea','K League 1 · Coreia','Ásia','9080'],
+ ['afc_elite','AFC Champions League Elite','Ásia','525']
+];
+const EXTENDED_IDS=Object.freeze(Object.fromEntries(extended.map((z,i)=>[z[3],i])));
+const SCOPES=['main','extended','all'];
+let scope='all'; // padrão: todos os jogos masculinos coletados; principais ordenadas primeiro
+function setScope(value){
+ if(!SCOPES.includes(value))throw new Error('Escopo de ligas inválido: '+value);
+ scope=value;return scope;
+}
+function getScope(){return scope;}
+function mainEntry(code){
+ const i=leagues.findIndex(z=>z[0]===code);
  if(i<0)return null;
  const z=leagues[i];
- return {id:z[0],label:z[1],group:z[2],priority:i};
+ return {id:z[0],label:z[1],group:z[2],priority:i,tier:'main'};
+}
+function canonicalId(value){
+ const id=String(value??'').trim();
+ return /^\d{1,7}$/.test(id)&&Number(id)>0?id:'';
+}
+function profile(league,leagueId){
+ const x=norm(league);
+ if(!x||womenName.test(x))return null;
+ const id=canonicalId(leagueId);
+ if(id){
+   // Com ID oficial, ele é a autoridade: nome igual de outro país não entra.
+   if(MAIN_IDS[id])return mainEntry(MAIN_IDS[id]);
+   if(id in EXTENDED_IDS){
+     const i=EXTENDED_IDS[id],z=extended[i];
+     return {id:z[0],label:z[1],group:z[2],priority:leagues.length+i,tier:'extended'};
+   }
+   return null;
+ }
+ // Sem ID (linhas ESPN ou históricas): conferência por nome, mais conservadora.
+ if(reject.test(x)||/\b(?:2 bundesliga|bundesliga 2|primavera|serie a2|serie a 2|liga expansion|liga portugal 2|premier league 2|u ?18|caf|femenil|vrouwen)\b/.test(x))return null;
+ const code=espnCodes[String(league||'').trim().toLowerCase()];
+ if(code)return mainEntry(code);
+ // FotMob grafa o Brasileirão com acento ("Série A"/"Série B"); a italiana é "Serie A".
+ const raw=String(league||'').trim();
+ if(/^S[ée]rie B\b/.test(raw)&&(/^Série/.test(raw)||/\b(?:brasileirao|brasil|brazil|brasileiro)\b/.test(x)))return mainEntry('br_b');
+ if(/\bserie b\b/.test(x)&&/\b(?:brasileirao|brasil|brazil|brasileiro)\b/.test(x))return mainEntry('br_b');
+ if(/^Série A\b/.test(raw))return mainEntry('br_a');
+ const i=leagues.findIndex(z=>z[3].test(x));
+ if(i<0)return null;
+ return mainEntry(leagues[i][0]);
 }
 function womenGame(g){
  if(!g)return true;
@@ -77,7 +149,16 @@ function womenGame(g){
  if(['female','women','womens','feminino','feminina','femenino','femenina'].includes(gender))return true;
  return [g.league,g.home,g.away].some(x=>womenName.test(norm(x)));
 }
-function category(league){return Boolean(profile(league));}
+function category(league,leagueId){return profile(league,leagueId)?.tier==='main';}
+// Base e reservas ficam fora até do modo "todas" (não são o produto analisado).
+const youthName=/\b(?:youth|juvenil|juniores|reserves|reservas|primavera|next pro|premier league 2|sub ?(?:15|16|17|18|19|20|21|23)|u ?(?:15|16|17|18|19|20|21|23))\b/;
+function inScope(g){
+ if(!g||womenGame(g))return false;
+ if(scope==='all')return !youthName.test(norm(g.league));
+ const p=profile(g.league,g.league_id);
+ if(!p)return false;
+ return scope==='extended'||p.tier==='main';
+}
 
 const num=x=>x!=null&&x!==''&&typeof x!=='boolean'&&Number.isFinite(Number(x));
 function stats(s){
@@ -104,7 +185,7 @@ function agenda(g){
  Boolean(String(g.home||'').trim()&&String(g.away||'').trim());
 }
 function level(g){
- if(!g||!category(g.league)||womenGame(g))return 0;
+ if(!inScope(g))return 0;
  if(measured(g))return 2;
  if(g.phase==='finished'&&/^\d{1,2}\s*[-–:]\s*\d{1,2}$/.test(String(g.score||''))&&g.score_unverified!==true)return 2;
  return agenda(g)?1:0;
@@ -129,7 +210,7 @@ function sourceFreshness(g,nowSec=Date.now()/1000){
          pressure:observationFreshness(pressureAt,nowSec)};
 }
 function coverageStatus(g,nowSec=Date.now()/1000){
- if(!category(g?.league)||womenGame(g))return 'insuficiente';
+ if(!inScope(g))return 'insuficiente';
  const stats=g.scoreboard_stats||g.stats||{};
  const keys=['shots_on','shots_total','corners','big_chances','possession','xg'];
  const count=s=>keys.filter(k=>num(stats[s]?.[k])).length;
@@ -192,9 +273,10 @@ function analysisPriority(g,nowSec=Date.now()/1000){
 function leagueStats(games){
  const groups=new Map();
  for(const g of games||[]){
-   const p=profile(g?.league);
-   if(!p||womenGame(g))continue;
-   const x=groups.get(p.id)||{league:p.id,label:p.label,group:p.group,priority:p.priority,
+   if(!inScope(g))continue;
+   const p=profile(g?.league,g?.league_id)||
+     {id:'other',label:'Outras competições',group:'Outras',priority:9999,tier:'other'};
+   const x=groups.get(p.id)||{league:p.id,label:p.label,group:p.group,priority:p.priority,tier:p.tier,
      covered:0,measured:0,completa:0,parcial:0,insuficiente:0,total:0};
    x.total++;
    x[coverageStatus(g)]++;
@@ -206,6 +288,6 @@ function leagueStats(games){
    .sort((a,b)=>a.priority-b.priority||b.measured-a.measured||a.label.localeCompare(b.label,'pt-BR'));
 }
 
-root.NexusLeagueCoverage={category,profile,womenGame,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority,observationFreshness,sourceFreshness};
+root.NexusLeagueCoverage={category,profile,inScope,setScope,getScope,SCOPES,womenGame,level,visible,leagueStats,measured,coverageStatus,coverageEvidence,analysisPriority,observationFreshness,sourceFreshness};
 if(typeof module!=='undefined'&&module.exports)module.exports=root.NexusLeagueCoverage;
 })(typeof window!=='undefined'?window:globalThis);

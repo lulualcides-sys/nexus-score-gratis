@@ -11,7 +11,7 @@ import math
 import re
 from signal_evaluation import evaluate
 from goal_window_30_70 import evaluate as evaluate_goal_window
-from major_league_scope import major_men
+from major_league_scope import major_men, attach_league_ids
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_movements import movements
@@ -658,6 +658,7 @@ def public_row(row,day,team_cache=None,espn_cache=None):
     return {'day':day,'id':safe(f.get('id'),90),
             'home':safe(f.get('home')),'away':safe(f.get('away')),
             'league':safe(f.get('league'),85),'league_code':safe(f.get('league_code'),40),
+            'league_id':public_league_id(f),'league_country':safe(f.get('league_country'),3).upper(),
             'round':safe(f.get('round'),70),'venue':safe(f.get('venue'),100),
             'home_logo':verified_logo(f.get('home_logo')),'away_logo':verified_logo(f.get('away_logo')),
             'start_timestamp':f.get('start_timestamp'),'minute':f.get('minute') or 0,
@@ -933,9 +934,31 @@ def historical_xg_summary(status):
             'season':'2025/2026' if valid else None,
             'scope':'historico_final','live_xg':False,'ev_plus':False}
 
+def history_league_index():
+    """match_id -> fixture mínima (league_id) dos arquivos diários disponíveis."""
+    index={}
+    for path in sorted(H.glob('20??-??-??.json')):
+        matches=load(path).get('matches') or {}
+        if not isinstance(matches,dict):continue
+        for key,row in matches.items():
+            fixture=(row or {}).get('fixture') or {}
+            if fixture.get('league_id') and fixture.get('league_id_verified') is True:
+                index[str(key)]={'league_id':fixture.get('league_id')}
+    return index
+
+
+def public_league_id(fixture):
+    """ID canônico FotMob (primaryId) para o site filtrar ligas sem ambiguidade de nome."""
+    value=str((fixture or {}).get('league_id') or '').strip()
+    if not str((fixture or {}).get('id') or '').startswith('fotmob-'):return ''
+    # Sem primaryId o coletor guarda o ID da edição (muda todo ano): não usar.
+    if (fixture or {}).get('league_id_verified') is not True:return ''
+    return value if value.isdecimal() and 0<int(value)<10_000_000 else ''
+
+
 def make_listing(rows,exported_at,collector):
     """Feed da agenda: sem detalhes, sem histórico financeiro, sem dados inventados."""
-    fields=('id','day','home','away','home_logo','away_logo','league',
+    fields=('id','day','home','away','home_logo','away_logo','league','league_id','league_country',
             'round','start_timestamp','minute','score','phase','halftime',
             'status_short','source','sources','observed_at',
             'pressure_observed_at','pressure_last_minute','odds','stats','odds_movements','odds_comparison','live_odds_comparison','scout_trend','odds_historical_audit')
@@ -984,7 +1007,10 @@ def main():
     status={key:last.get(key) for key in ('day','updated_at','sources','live_found','thermometers_saved','scout_snapshots_saved','momentum_unavailable','momentum_status_counts','stats_detail_available') if key in last}
     standings_status=load(H/'standings_status.json')
     registry=load(H/'signal_registry.json')
-    all_signal_items=registry.get('items') or []
+    # Registros antigos não tinham league_id: completa a partir das partidas
+    # salvas (cópia em memória), para "Premier League" de Gana não passar como inglesa.
+    all_signal_items=attach_league_ids(registry.get('items') or [],history_league_index())
+    registry={**registry,'items':all_signal_items}
     # Only the PUBLIC presentation is filtered. The original raw journal and
     # historical files remain unchanged for a complete audit trail.
     visible_signal_items=[r for r in all_signal_items if major_men(r)]

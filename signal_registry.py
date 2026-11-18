@@ -138,6 +138,8 @@ def active_signals(fixture,row,observed_at):
         item={'match_id':fid,'home':str(fixture['home'])[:95],
               'away':str(fixture['away'])[:95],
               'league':str(fixture.get('league') or '')[:95],
+              'league_id':(str(fixture.get('league_id') or '')[:12]
+                           if fixture.get('league_id_verified') is True else ''),
               'minute':minute,'team':side,'icon':icon,'rule':ICON_RULES[icon],
               'basis':basis,'market':'observacao_de_gol',
               'captured_at':observed_at,

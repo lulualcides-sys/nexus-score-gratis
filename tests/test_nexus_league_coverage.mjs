@@ -4,6 +4,8 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const require=createRequire(import.meta.url);
 const c=require('../web/nexus-league-coverage.js');
+// Este arquivo descreve o catálogo de ligas PRINCIPAIS; o padrão do site é 'all'.
+c.setScope('main');
 for(const name of ['Premier League','La Liga','Serie A','Bundesliga','Ligue 1','UEFA Champions League','Brasileirão Série A','Brazilian Serie B','Copa do Brasil','Copa Libertadores','Copa Sudamericana','Primeira Liga','Eredivisie','Liga MX','MLS'])assert.equal(c.category(name),true,name+' is major');
 for(const name of ['English League Two','J2 League','K League 2','Primera B','Conference North','Women Premier League','U20 Bundesliga','friendly match','Swiss Super League','Romanian Superliga','Liga 1 Peru','liga expansion'])assert.equal(c.category(name),false,name+' is minor');
 const addedLeagues=[

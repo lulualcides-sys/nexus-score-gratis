@@ -10,6 +10,7 @@ from concurrent.futures import ThreadPoolExecutor,as_completed
 from datetime import datetime,timedelta,timezone
 from urllib.parse import urlencode
 from coletar import HISTORY,DAY,NOW,fetch,read,write
+from major_league_scope import catalog_rank
 
 CACHE=HISTORY/'standings_cache.json'
 STATUS=HISTORY/'standings_status.json'
@@ -272,6 +273,24 @@ def espn_league_code(league_id, title):
     return codes.get(norm)
 
 
+# Competições sem tabela de pontos (amistosos, eliminatórias por grupos de copa,
+# copas mata-mata): consultá-las desperdiça as vagas de cada execução.
+NO_TABLE_IDS=frozenset(("114","489","138","132","9821","10608"))
+
+
+def league_priority(lid,all_games,docs,attempts):
+    """Ordem de consulta: ao vivo > ID verificado > catálogo > volume > rodízio."""
+    live_games=sum(v[0]==0 for v in all_games)
+    upcoming_games=sum(v[0]==1 for v in all_games)
+    verified=any(((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
+        'fixture',{}).get('league_id_verified') is True
+        for _,day,key in all_games)
+    attempted=attempts.get(lid) or ''
+    return (0 if live_games else 1, 0 if verified else 1,
+            1 if str(lid) in NO_TABLE_IDS else 0, catalog_rank(lid),
+            -live_games, -upcoming_games, attempted, str(lid))
+
+
 def fetch_table(league_id,league_name=''):
     param=urlencode({'id':league_id})
     for base in ('https://www.fotmob.com/api/data/leagues?','https://www.fotmob.com/api/leagues?'):
@@ -322,19 +341,7 @@ def run():
     # Rodízio: sem isso as mesmas 24 ligas monopolizavam todas as consultas e
     # a maioria dos campeonatos nunca era verificada.
     def priority(lid):
-        all_games=targets[lid]
-        active=min(v[0] for v in all_games)
-        live_games=sum(v[0]==0 for v in all_games)
-        upcoming_games=sum(v[0]==1 for v in all_games)
-        verified=any(((docs.get(day) or {}).get('matches') or {}).get(key,{}).get(
-            'fixture',{}).get('league_id_verified') is True
-            for _,day,key in all_games)
-        attempted=attempts.get(lid) or ''
-        # Priorizar tabelas dos jogos AO VIVO que mais aparecem. ID primary
-        # confirmado tem precedência sobre ID de edição não resolvido.
-        return (0 if live_games else 1, 0 if verified else 1,
-                -live_games, -upcoming_games, attempted,
-                0 if lid in ('268','47','130','230','274') else 1,lid)
+        return league_priority(lid,targets[lid],docs,attempts)
     chosen=sorted(stale,key=priority)[:MAX_LEAGUES]
     name_by_lid={}
     for lid in chosen:

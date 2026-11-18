@@ -100,6 +100,7 @@ def _entries(journal):
                'home':str(r.get('home') or '')[:100],
                'away':str(r.get('away') or '')[:100],
                'league':str(r.get('league') or 'Campeonato não informado')[:100],
+               'league_id':str(r.get('league_id') or '')[:12],
                'band':minute_band(minute),'outcomes':statuses}
 
 
