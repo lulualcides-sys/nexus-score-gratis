@@ -1,70 +1,70 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-18T11:52:51.742046+00:00",
-  "bookmaker_snapshot_at": "2026-11-18T11:52:50.517577+00:00",
+  "checked_at": "2026-11-18T20:39:17.074946+00:00",
+  "bookmaker_snapshot_at": "2026-11-18T20:39:16.318791+00:00",
   "status": "fresh",
-  "matches_catalogued": 9,
-  "matches_with_priced_markets": 9,
-  "odds_eligible_for_quality": 628,
-  "invalid_quote_records": 8,
-  "complete_market_lines": 307,
+  "matches_catalogued": 10,
+  "matches_with_priced_markets": 10,
+  "odds_eligible_for_quality": 1036,
+  "invalid_quote_records": 0,
+  "complete_market_lines": 508,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 9,
-      "odds": 148,
-      "complete_lines": 74,
+      "games": 10,
+      "odds": 226,
+      "complete_lines": 113,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.0
+      "median_overround_pct": 3.58
     },
     "first_half_goals": {
-      "games": 9,
-      "odds": 100,
-      "complete_lines": 50,
+      "games": 10,
+      "odds": 160,
+      "complete_lines": 80,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.31
+      "median_overround_pct": 5.11
     },
     "first_half_handicap": {
-      "games": 9,
-      "odds": 92,
-      "complete_lines": 46,
+      "games": 10,
+      "odds": 120,
+      "complete_lines": 60,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.43
+      "median_overround_pct": 4.08
     },
     "first_half_team_goals": {
-      "games": 9,
-      "odds": 32,
-      "complete_lines": 16,
+      "games": 10,
+      "odds": 40,
+      "complete_lines": 20,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.23
+      "median_overround_pct": 5.3
     },
     "half_time": {
-      "games": 5,
-      "odds": 15,
-      "complete_lines": 5,
+      "games": 10,
+      "odds": 30,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.78
+      "median_overround_pct": 4.01
     },
     "match_odds": {
-      "games": 9,
-      "odds": 27,
-      "complete_lines": 9,
+      "games": 10,
+      "odds": 30,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.42
+      "median_overround_pct": 3.31
     },
     "team_goals": {
-      "games": 9,
-      "odds": 62,
-      "complete_lines": 31,
+      "games": 10,
+      "odds": 128,
+      "complete_lines": 64,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.51
+      "median_overround_pct": 5.23
     },
     "total_goals": {
-      "games": 9,
-      "odds": 152,
-      "complete_lines": 76,
+      "games": 10,
+      "odds": 302,
+      "complete_lines": 151,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.53
+      "median_overround_pct": 4.55
     }
   },
   "examples": [
@@ -73,7 +73,7 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-18T11:52:50.517577+00:00",
+      "observed_at": "2026-11-18T20:39:16.318791+00:00",
       "selections": {
         "home": 2.49,
         "away": 2.54,
@@ -86,48 +86,48 @@
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.0",
       "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-18T11:52:50.517577+00:00",
+      "observed_at": "2026-11-18T20:39:16.318791+00:00",
       "selections": {
-        "home": 1.9009,
-        "away": 1.9434
+        "home": 1.9091,
+        "away": 1.9524
       },
-      "overround_pct": 4.06
+      "overround_pct": 3.6
     },
     {
       "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-18T11:52:50.517577+00:00",
+      "observed_at": "2026-11-18T20:39:16.318791+00:00",
       "selections": {
-        "home": 3.66,
-        "away": 1.289
+        "home": 3.68,
+        "away": 1.2933
       },
-      "overround_pct": 4.9
+      "overround_pct": 4.5
     },
     {
       "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-18T11:52:50.517577+00:00",
+      "observed_at": "2026-11-18T20:39:16.318791+00:00",
       "selections": {
-        "home": 2.89,
-        "away": 1.4202
+        "home": 2.91,
+        "away": 1.4255
       },
-      "overround_pct": 5.01
+      "overround_pct": 4.52
     },
     {
       "fixture": "Orlando City x FC Cincinnati",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-18T11:52:50.517577+00:00",
+      "observed_at": "2026-11-18T20:39:16.318791+00:00",
       "selections": {
-        "home": 2.47,
-        "away": 1.5587
+        "home": 2.49,
+        "away": 1.565
       },
-      "overround_pct": 4.64
+      "overround_pct": 4.06
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
