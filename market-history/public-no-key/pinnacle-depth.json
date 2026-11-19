@@ -1,70 +1,70 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-19T11:49:43.693074+00:00",
-  "bookmaker_snapshot_at": "2026-11-19T11:49:42.276528+00:00",
+  "checked_at": "2026-11-19T20:45:08.651826+00:00",
+  "bookmaker_snapshot_at": "2026-11-19T20:45:06.458508+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1320,
-  "invalid_quote_records": 4,
-  "complete_market_lines": 644,
+  "odds_eligible_for_quality": 1492,
+  "invalid_quote_records": 2,
+  "complete_market_lines": 730,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 318,
-      "complete_lines": 159,
+      "odds": 336,
+      "complete_lines": 168,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.41
+      "median_overround_pct": 4.36
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "odds": 224,
+      "complete_lines": 112,
       "incomplete_lines": 0,
       "median_overround_pct": 6.12
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 176,
-      "complete_lines": 88,
+      "odds": 178,
+      "complete_lines": 89,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.17
+      "median_overround_pct": 4.92
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 64,
       "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.02
+      "median_overround_pct": 5.85
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.47
+      "median_overround_pct": 5.5
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.7
+      "median_overround_pct": 4.59
     },
     "team_goals": {
       "games": 16,
-      "odds": 152,
-      "complete_lines": 76,
+      "odds": 190,
+      "complete_lines": 95,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.68
+      "median_overround_pct": 6.08
     },
     "total_goals": {
       "games": 16,
-      "odds": 318,
-      "complete_lines": 159,
+      "odds": 404,
+      "complete_lines": 202,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.84
+      "median_overround_pct": 5.02
     }
   },
   "examples": [
@@ -73,61 +73,61 @@
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-19T11:49:42.276528+00:00",
+      "observed_at": "2026-11-19T20:45:06.458508+00:00",
       "selections": {
-        "home": 2.54,
-        "away": 2.72,
-        "draw": 3.5
+        "home": 2.52,
+        "away": 2.67,
+        "draw": 3.64
       },
-      "overround_pct": 4.71
+      "overround_pct": 4.61
     },
     {
       "fixture": "Puebla x Atletico San Luis",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.0",
       "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-19T11:49:42.276528+00:00",
+      "observed_at": "2026-11-19T20:45:06.458508+00:00",
       "selections": {
-        "home": 1.8621,
-        "away": 2.0
+        "home": 1.8772,
+        "away": 1.9901
       },
-      "overround_pct": 3.7
+      "overround_pct": 3.52
     },
     {
       "fixture": "Puebla x Atletico San Luis",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-1.0",
       "line_from_market_key": "s;0;s;-1.0",
-      "observed_at": "2026-11-19T11:49:42.276528+00:00",
+      "observed_at": "2026-11-19T20:45:06.458508+00:00",
       "selections": {
-        "home": 4.07,
-        "away": 1.2451
+        "home": 4.01,
+        "away": 1.2577
       },
-      "overround_pct": 4.88
+      "overround_pct": 4.45
     },
     {
       "fixture": "Puebla x Atletico San Luis",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-19T11:49:42.276528+00:00",
+      "observed_at": "2026-11-19T20:45:06.458508+00:00",
       "selections": {
-        "home": 3.04,
-        "away": 1.3876
+        "home": 3.01,
+        "away": 1.4016
       },
-      "overround_pct": 4.96
+      "overround_pct": 4.57
     },
     {
       "fixture": "Puebla x Atletico San Luis",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-19T11:49:42.276528+00:00",
+      "observed_at": "2026-11-19T20:45:06.458508+00:00",
       "selections": {
-        "home": 2.53,
-        "away": 1.5376
+        "home": 2.52,
+        "away": 1.5556
       },
-      "overround_pct": 4.56
+      "overround_pct": 3.97
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
