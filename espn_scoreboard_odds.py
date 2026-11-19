@@ -12,6 +12,7 @@ from urllib.parse import urlencode
 
 from odds_capture import get as espn_get
 from pregame_refresh_quotes import append_quote, append_trio, threeway_offers
+from major_league_scope import catalog_rank
 
 # As partidas salvas por ESPN usam siglas como bra.1, ita.1, eng.1.
 # Uma conversão somente por nome descartava todas essas partidas antes da consulta.
@@ -43,6 +44,32 @@ LEAGUE_NAMES = (
     ('serie a italy', 'ita.1'),
     ('serie a', 'ita.1'),
 )
+
+# ID canônico FotMob (primaryId) -> código ESPN. O nome é ambíguo: "Série A"
+# do FotMob é o Brasileirão e "Premier League" existe em vários países.
+FOTMOB_TO_ESPN={
+    '268':'bra.1','8814':'bra.2','9067':'bra.copa_do_brazil',
+    '45':'conmebol.libertadores','299':'conmebol.sudamericana',
+    '42':'uefa.champions','73':'uefa.europa','10216':'uefa.europa.conf',
+    '47':'eng.1','48':'eng.2','108':'eng.3','109':'eng.4','132':'eng.fa',
+    '87':'esp.1','140':'esp.2','138':'esp.copa_del_rey',
+    '55':'ita.1','86':'ita.2','54':'ger.1','146':'ger.2','53':'fra.1','110':'fra.2',
+    '61':'por.1','57':'ned.1','111':'ned.2','71':'tur.1','40':'bel.1','64':'sco.1',
+    '38':'aut.1','69':'sui.1','46':'den.1','59':'nor.1','67':'swe.1','135':'gre.1',
+    '130':'usa.1','8972':'usa.usl.1','230':'mex.1','112':'arg.1','274':'col.1',
+    '273':'chi.1','161':'uru.1','246':'ecu.1','131':'per.1','536':'ksa.1',
+    '223':'jpn.1','114':'fifa.friendly','77':'fifa.world',
+}
+
+
+def fixture_espn_code(fixture):
+    """Código ESPN da partida: ID FotMob verificado decide; sem ID, pelo nome."""
+    fixture=fixture or {}
+    lid=str(fixture.get('league_id') or '').strip()
+    if lid and fixture.get('league_id_verified') is True:
+        return FOTMOB_TO_ESPN.get(lid)
+    return league_code(fixture.get('league'))
+
 
 def plain(value):
     value = unicodedata.normalize('NFKD', str(value or ''))
@@ -115,7 +142,7 @@ def collect_odds(docs,candidates,now_ts,fetcher=espn_get):
             if int(fixture.get('start_timestamp') or 0)<=now_ts:continue
         except (ValueError,TypeError):continue
         status['candidate_games']+=1
-        code=league_code(fixture.get('league'))
+        code=fixture_espn_code(fixture)
         if not code:
             name=str(fixture.get('league') or '')[:75]
             if name and name not in status['leagues_unmapped'] and len(status['leagues_unmapped'])<8:
@@ -124,7 +151,12 @@ def collect_odds(docs,candidates,now_ts,fetcher=espn_get):
         status['mapped_games']+=1
         groups.setdefault((code,day),[]).append((key,row,fixture))
     # Uma agenda por liga e dia. Reduz chamadas ao invés de requisitar cada jogo.
-    for (code,day),games in list(groups.items())[:18]:
+    # Ligas principais primeiro: o limite de 18 agendas não pode ir para ligas menores.
+    def board_rank(item):
+        (_,_),games=item
+        lid=(games[0][2].get('league_id') if games[0][2].get('league_id_verified') is True else '')
+        return (catalog_rank(lid),-len(games))
+    for (code,day),games in sorted(groups.items(),key=board_rank)[:18]:
         url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+code+'/scoreboard?'+urlencode(
             {'dates':day.replace('-',''),'limit':'100'})
         try:
