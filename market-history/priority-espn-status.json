@@ -1,15 +1,34 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-19T17:22:30.214825+00:00",
+  "checked_at": "2026-11-19T23:45:32.730491+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 4,
-  "created_games": 0,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 7,
+  "created_games": 3,
+  "new_quotes": 6,
+  "summary_checks": 2,
+  "summary_with_prices": 2,
   "errors": [],
-  "missing_quote_fixtures": [],
+  "missing_quote_fixtures": [
+    {
+      "fixture": "Independiente Medellín x Independiente Santa Fe",
+      "league": "col.1",
+      "kickoff": 1795210200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Bucaramanga x América de Cali",
+      "league": "col.1",
+      "kickoff": 1795217700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Deportivo Cali x Millonarios",
+      "league": "col.1",
+      "kickoff": 1795225200,
+      "reason": "no_verified_public_1x2"
+    }
+  ],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }
