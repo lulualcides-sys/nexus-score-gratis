@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-18T18:21:38.742675+00:00",
+  "checked_at": "2026-11-19T00:42:12.364262+00:00",
   "horizon_hours": 48,
-  "important_games": 8,
-  "verified_bookmaker_games": 6,
-  "indicative_only_games": 2,
-  "missing_bookmaker_price_games": 0,
+  "important_games": 7,
+  "verified_bookmaker_games": 2,
+  "indicative_only_games": 4,
+  "missing_bookmaker_price_games": 1,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 0,
-    "indicative": 2,
-    "new_priority": 2
+    "matched": 1,
+    "indicative": 4,
+    "new_priority": 4
   },
   "pinnacle_guest": {
     "status": "stale",
@@ -38,94 +38,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Coritiba",
-      "away": "Santos",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795041000.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Remo",
-      "away": "Chapecoense",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795042800.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Cruzeiro",
-      "away": "Palmeiras",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795044600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Flamengo",
-      "away": "Athletico-PR",
-      "league": "Brasileirão Série A",
-      "league_code": "bra.1",
-      "kickoff_unix": 1795044600.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 3,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Corinthians",
       "away": "Botafogo",
       "league": "Brasileirão Série A",
@@ -135,7 +47,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 4,
+      "verified_quotes": 8,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -157,7 +69,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -170,13 +82,102 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Orlando City SC",
-      "away": "FC Cincinnati",
-      "kickoff_unix": 1795134600.0,
-      "league": "MLS",
-      "league_code": "usa.1",
+      "home": "Athletic Club",
+      "away": "Espanyol",
+      "kickoff_unix": 1795204800.0,
+      "league": "La Liga",
+      "league_code": "esp.1",
       "phase": "unknown",
       "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.54,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.51,
+        "draw": 4.85,
+        "away": 7.53
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18172/athletic-club-vs-espanyol-2026-11-20",
+      "tipsaudit_id": "18172",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Bayern München",
+      "away": "1. FC Köln",
+      "kickoff_unix": 1795203000.0,
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.1,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.09,
+        "draw": 19.9,
+        "away": 31.11
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18167/bayern-munchen-vs-1-fc-koln-2026-11-20",
+      "tipsaudit_id": "18167",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "Estac Troyes",
+      "away": "Le Havre",
+      "kickoff_unix": 1795203900.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.29,
+        "draw": 3.57,
+        "away": 3.52
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18170/estac-troyes-vs-le-havre-2026-11-20",
+      "tipsaudit_id": "18170",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Orlando City SC",
+      "away": "FC Cincinnati",
+      "league": "MLS",
+      "league_code": "usa.1",
+      "kickoff_unix": 1795134600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [
         {
           "selection": "away",
@@ -193,10 +194,7 @@
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/18023/orlando-city-sc-vs-fc-cincinnati-2026-11-20",
       "tipsaudit_id": "18023",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "indicative_only"
     },
     {
@@ -230,6 +228,24 @@
       "coverage": "indicative_only"
     }
   ],
-  "top_missing": [],
+  "top_missing": [
+    {
+      "home": "Estac Troyes",
+      "away": "Le Havre",
+      "kickoff_unix": 1795203900.0,
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18170/estac-troyes-vs-le-havre-2026-11-20",
+      "tipsaudit_id": "18170",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    }
+  ],
   "explanation": "Verified: timestamped source bookmaker quote. Indicative: bookmaker price from third party without origin timestamp; not accepted as executable odd. Missing: do not invent quote. No volume >3000 BRL inferred."
 }
