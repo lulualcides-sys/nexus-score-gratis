@@ -278,6 +278,22 @@ def espn_league_code(league_id, title):
 NO_TABLE_IDS=frozenset(("114","489","138","132","9821","10608"))
 
 
+# Competição que não devolveu tabela (copa, amistoso, playoff): não consultar
+# de novo por 24 h; as vagas vão para ligas ainda não verificadas.
+NO_TABLE_HOURS=24
+
+
+def skip_no_table(lid,memory,now):
+    # Ligas do catálogo têm tabela: uma falha de rede não pode tirá-las por 24 h.
+    if catalog_rank(lid)<2 and str(lid) not in NO_TABLE_IDS:
+        return False
+    try:
+        when=datetime.fromisoformat(str(memory.get(str(lid))).replace('Z','+00:00'))
+    except (TypeError,ValueError):
+        return False
+    return 0<=(now-when).total_seconds()<NO_TABLE_HOURS*3600
+
+
 def league_priority(lid,all_games,docs,attempts):
     """Ordem de consulta: ao vivo > ID verificado > catálogo > volume > rodízio."""
     live_games=sum(v[0]==0 for v in all_games)
@@ -329,8 +345,13 @@ def run():
             targets.setdefault(lid,[]).append((rank,day,key))
     candidates=sorted(targets,key=lambda lid:(
         min(a for a,_,_ in targets[lid]),0 if lid in ('268','47') else 1,lid))
+    no_table=stored.get('no_table') or {}
+    if not isinstance(no_table,dict):no_table={}
+    skipped_no_table=0
     stale=[]
     for lid in candidates:
+        if skip_no_table(lid,no_table,NOW):
+            skipped_no_table+=1;continue
         table=cache.get(lid)
         if not table:
             stale.append(lid);continue
@@ -364,6 +385,7 @@ def run():
             'cache_tables_reused_fresh':0,'fixtures_without_verified_table':0,
             'attempted_league_ids':chosen,'unqueried_leagues':max(0,len(stale)-len(chosen))}
     report['tables_unavailable']=0
+    report['skipped_known_no_table']=skipped_no_table
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(fetch_table,lid,name_by_lid.get(lid,'')):lid for lid in chosen}
         for done in as_completed(futures):
@@ -375,6 +397,7 @@ def run():
                 report['by_source'][src]=report['by_source'].get(src,0)+1
             else:
                 report['tables_unavailable']+=1
+                no_table[futures[done]]=NOW.isoformat()
     for day,doc in docs.items():
         for key,row in (doc.get('matches') or {}).items():
             f=row.get('fixture') or {}
@@ -403,7 +426,8 @@ def run():
     # Cache leve: classificação resumida em vez da resposta completa da API.
     write(CACHE,{'updated_at':NOW.isoformat(),'leagues':{
         lid:cache[lid] for lid in candidates if lid in cache},
-        'attempts':{lid:attempts[lid] for lid in candidates if lid in attempts}})
+        'attempts':{lid:attempts[lid] for lid in candidates if lid in attempts},
+        'no_table':{lid:at for lid,at in no_table.items() if skip_no_table(lid,no_table,NOW)}})
     write(STATUS,report)
     print(json.dumps(report,ensure_ascii=False))
     return report

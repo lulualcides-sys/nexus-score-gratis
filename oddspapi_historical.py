@@ -117,7 +117,11 @@ def collect(docs,now_ts,key=None,fetcher=fetch_json,ledger_path=LEDGER,
             try:kick=int(f['start_timestamp'])
             except (ValueError,TypeError,KeyError):continue
             if SINCE<=kick<now_ts and now_ts-kick<=10*86400:eligible.append((kick,ident,match))
-    eligible.sort(reverse=True)
+    # Só (kickoff, id): comparar os dicts da partida em empate quebrava o job.
+    eligible.sort(key=lambda item:(item[0],str(item[1])),reverse=True)
+    unique={}
+    for item in eligible:unique.setdefault(item[1],item)  # mesmo ID: uma consulta só
+    eligible=list(unique.values())
     for idx,(_,ident,match) in enumerate(eligible[:2-already]):
         if idx:sleep_fn(5.2)
         seen[ident]={'date':day,'result':'reserved'}
