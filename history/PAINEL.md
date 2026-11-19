@@ -2,20 +2,20 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-18T21:55:20.795216+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-19T01:22:57.685360+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
-| 2026-11-18 | Remo × Chapecoense | 0-0 | 0 | Match Odds 1X2: Casa 1,59, Empate 4,30, Fora 5,00 |
-| 2026-11-18 | Grêmio × Bahia | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,60, Fora 2,95 |
-| 2026-11-18 | Flamengo × Athletico-PR | 0-0 | 0 | Match Odds 1X2: Casa 1,25, Empate 6,00, Fora 10,50 |
-| 2026-11-18 | Cruzeiro × Palmeiras | 0-0 | 0 | Match Odds 1X2: Casa 2,65, Empate 3,45, Fora 2,55 |
-| 2026-11-18 | Coritiba × Santos | 0-0 | 0 | Match Odds 1X2: Casa 3,45, Empate 3,45, Fora 2,10 |
-| 2026-11-18 | Corinthians × Botafogo | 0-0 | 0 | Match Odds 1X2: Casa 1,83, Empate 3,70, Fora 4,10 |
+| 2026-11-18 | Remo × Chapecoense | 2-0 | 0 | Chutes no alvo: 8.0×4.0; Match Odds 1X2: Casa 1,59, Empate 4,30, Fora 5,00 |
+| 2026-11-18 | Grêmio × Bahia | 0-0 | 0 | Chutes no alvo: 2.0×1.0; Match Odds 1X2: Casa 2,25, Empate 3,60, Fora 2,95 |
+| 2026-11-18 | Flamengo × Athletico-PR | 2-1 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 1,25, Empate 6,00, Fora 10,50 |
+| 2026-11-18 | Cruzeiro × Palmeiras | 2-1 | 0 | Chutes no alvo: 5.0×3.0; Match Odds 1X2: Casa 2,65, Empate 3,45, Fora 2,55 |
+| 2026-11-18 | Coritiba × Santos | 0-1 | 0 | Chutes no alvo: 4.0×6.0; Match Odds 1X2: Casa 3,45, Empate 3,45, Fora 2,10 |
+| 2026-11-18 | Corinthians × Botafogo | 2-0 | 0 | Chutes no alvo: 2.0×0.0; Match Odds 1X2: Casa 1,83, Empate 3,70, Fora 4,10 |
 | 2026-11-18 | Tampines Rovers FC × Ratchaburi FC | 3-2 | 0 | Chutes no alvo: 6.0×5.0, Chutes para fora: 4.0×5.0, Escanteios: 2.0×8.0, Grandes chances: 0.0×0.0 |
 | 2026-11-18 | Borneo Samarinda × Manila Digger | 1-0 | 0 | Chutes no alvo: 6.0×2.0, Chutes para fora: 7.0×3.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-11-18 | Cong An Ho Chí Minh City × Buriram United | 1-0 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 6.0×4.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
@@ -36,12 +36,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | Al-Rayyan II × Al Mesaimeer | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Bengaluru United × Sreenidi Deccan FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | CD Badajoz × Tenerife | 2-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Flamengo × Athletico Paranaense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Corinthians × Botafogo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Cruzeiro × Palmeiras | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Grêmio × Bahia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Coritiba × Santos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Remo × Chapecoense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Flamengo × Athletico Paranaense | 2-1 | 88 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×4.0, Grandes chances: 2.0×0.0 |
+| 2026-11-18 | Corinthians × Botafogo | 2-0 | 45 | Chutes no alvo: 2.0×0.0, Chutes para fora: 6.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Cruzeiro × Palmeiras | 2-1 | 90 | Chutes no alvo: 5.0×3.0, Chutes para fora: 8.0×4.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×3.0 |
+| 2026-11-18 | Grêmio × Bahia | 0-0 | 45 | Chutes no alvo: 2.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 5.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Coritiba × Santos | 0-1 | 24 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
+| 2026-11-18 | Remo × Chapecoense | 2-0 | 90 | Chutes no alvo: 8.0×4.0, Chutes para fora: 8.0×4.0, Escanteios: 4.0×5.0, Grandes chances: 4.0×1.0 |
 | 2026-11-18 | Bergantiños CF × Sestao | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Salamanca CF UDS × Albacete B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | SSV Jeddeloh × 1. FC Phönix Lübeck | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -61,7 +61,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | BK Häcken (W) × Manchester City (W) | 0-2 | 0 | Chutes no alvo: 2.0×12.0, Chutes para fora: 4.0×7.0, Escanteios: 0.0×4.0, Grandes chances: 0.0×4.0 |
 | 2026-11-18 | French Guiana × Saint Vincent and The Grenadines | 1-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
 | 2026-11-18 | Alcoyano × Mallorca | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Deportiva Minera × Cartagena | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Deportiva Minera × Cartagena | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Portugalete × Real Unión | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Reus × Barakaldo | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Utebo × Sabadell | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -84,7 +84,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | América de Cali × Internacional de Bogotá | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | El Gouna FC × Al Ittihad Alexandria | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Atenas × Fénix | 3-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-18 | Colon × Oriental | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Colon × Oriental | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | CD Árabe Unido × Veraguas United | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Independiente de La Chorrera × Tauro FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-17 | Newton Stewart × Celtic B | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11426 | **Jogos distintos:** 3486 | **Resultados verificáveis:** 6320 | **Com gol:** 2459 | **Sem gol:** 3861 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 41 datas com coletas | 95 pendentes | 2125 indeterminados | 2886 incompletos.
+**Observações:** 11434 | **Jogos distintos:** 3490 | **Resultados verificáveis:** 6320 | **Com gol:** 2459 | **Sem gol:** 3861 | **Taxa observada:** 38.9%.
+**Evolução da amostra:** 41 datas com coletas | 99 pendentes | 2125 indeterminados | 2890 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,12 +177,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2196 | 1474 | 587 | 887 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1768 | 1179 | 440 | 739 | 37.3% |
-| 🎯 chutes_no_alvo_5 | 1963 | 924 | 347 | 577 | 37.6% |
+| ⚡ pressao_ofensiva_18 | 1770 | 1179 | 440 | 739 | 37.3% |
+| 🎯 chutes_no_alvo_5 | 1965 | 924 | 347 | 577 | 37.6% |
 | 🟥 expulsao_confirmada | 1689 | 754 | 258 | 496 | 34.2% |
-| 🚩 escanteios_6 | 1427 | 647 | 272 | 375 | 42.0% |
-| 💣 grandes_chances_3 | 1156 | 606 | 263 | 343 | 43.4% |
-| 🔥 pressao_forte_10min | 608 | 388 | 150 | 238 | 38.7% |
+| 🚩 escanteios_6 | 1428 | 647 | 272 | 375 | 42.0% |
+| 💣 grandes_chances_3 | 1157 | 606 | 263 | 343 | 43.4% |
+| 🔥 pressao_forte_10min | 610 | 388 | 150 | 238 | 38.7% |
 | 🧨 pressao_total_5_10min | 334 | 209 | 85 | 124 | 40.7% |
 | ⏱️ tensao_tardia_70 | 185 | 77 | 31 | 46 | 40.3% |
 | 🚨 alerta_cruzado_gol | 100 | 62 | 26 | 36 | 41.9% |
@@ -208,7 +208,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Boca Juniors | 22 | 20 | 2 | 18 | 10.0% |
 | Fulham | 20 | 20 | 3 | 17 | 15.0% |
 | Rayo Vallecano | 34 | 19 | 2 | 17 | 10.5% |
-| Palmeiras | 28 | 19 | 4 | 15 | 21.1% |
+| Palmeiras | 29 | 19 | 4 | 15 | 21.1% |
 | Flamengo | 27 | 19 | 8 | 11 | 42.1% |
 | Avellino | 26 | 19 | 3 | 16 | 15.8% |
 | FC Cincinnati | 26 | 19 | 4 | 15 | 21.1% |
@@ -231,7 +231,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Bundesliga | 254 | 145 | 59 | 86 | 40.7% |
 | Ligue 1 | 206 | 143 | 60 | 83 | 42.0% |
 | LaLiga2 | 238 | 133 | 54 | 79 | 40.6% |
-| Série A | 222 | 132 | 49 | 83 | 37.1% |
+| Série A | 229 | 132 | 49 | 83 | 37.1% |
 | Champions League | 227 | 130 | 81 | 49 | 62.3% |
 | LaLiga | 204 | 128 | 47 | 81 | 36.7% |
 | Conference League | 194 | 127 | 45 | 82 | 35.4% |
@@ -253,25 +253,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 293 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 736 | 542 | 187 | 355 | 34.5% |
-| 31–45′ | 2379 | 1816 | 755 | 1061 | 41.6% |
+| 31–45′ | 2383 | 1816 | 755 | 1061 | 41.6% |
 | 46–60′ | 1482 | 1050 | 415 | 635 | 39.5% |
 | 61–75′ | 2387 | 1676 | 643 | 1033 | 38.4% |
-| 76–90′ | 3039 | 1014 | 387 | 627 | 38.2% |
-| 91+′ | 1110 | 10 | 4 | 6 | 40.0% |
+| 76–90′ | 3040 | 1014 | 387 | 627 | 38.2% |
+| 91+′ | 1113 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11426 | **Jogos monitorados:** 450 | **Ao vivo:** 14 | **Termômetros recentes:** 0.
+**Registros:** 11434 | **Jogos monitorados:** 450 | **Ao vivo:** 19 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | Alianza Atlético (93') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | Alianza Atlético (93') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | FBC Melgar (93') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-18T21:55:48.000024+00:00 | Deportiva Minera × Cartagena | Deportiva Minera (116') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Cruzeiro × Palmeiras | Cruzeiro (90') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Corinthians × Botafogo | Corinthians (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Corinthians × Botafogo | Corinthians (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Cruzeiro × Palmeiras | Cruzeiro (92') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Cruzeiro × Palmeiras | Cruzeiro (92') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Cruzeiro × Palmeiras | Palmeiras (92') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Grêmio × Bahia | Grêmio (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-19T01:23:08.426554+00:00 | Grêmio × Bahia | Grêmio (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | Alianza Atlético (93') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | Alianza Atlético (93') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-18T21:55:48.000024+00:00 | Alianza Atlético × FBC Melgar | FBC Melgar (93') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-18T21:55:48.000024+00:00 | Deportiva Minera × Cartagena | Deportiva Minera (116') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-18T16:28:16.317149+00:00 | Al-Adalah × Al-Orobah FC | Al-Adalah (96') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-18T16:28:16.317149+00:00 | Al-Adalah × Al-Orobah FC | Al-Adalah (96') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-18T16:28:16.317149+00:00 | Al-Adalah × Al-Orobah FC | Al-Orobah FC (96') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -360,14 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-15T02:37:45.577759+00:00 | Jamaica × Mexico | Mexico (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-15T02:37:45.577759+00:00 | Jamaica × Mexico | Mexico (45') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-15T01:54:11.201752+00:00 | Charlotte Independence × Boise | Charlotte Independence (59') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-14T23:11:59.967847+00:00 | Coquimbo Unido × O'Higgins | Coquimbo Unido (80') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-14T23:11:59.967847+00:00 | Querétaro FC × Monterrey | Monterrey (10') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-14T23:11:59.967847+00:00 | Haiti × USA | USA (76') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-14T23:11:59.967847+00:00 | Haiti × USA | USA (76') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport × Goiás | Sport (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Sport × Goiás | Sport (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | Criciúma × Novorizontino | Criciúma (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-14T21:29:11.450577+00:00 | CRB × Ceará | CRB (88') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
