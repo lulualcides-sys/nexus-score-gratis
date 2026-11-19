@@ -1,18 +1,24 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-19T00:42:08.978719+00:00",
+  "checked_at": "2026-11-19T08:01:26.377440+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 1,
-  "created_games": 1,
+  "priority_fixtures_seen": 4,
+  "created_games": 0,
   "new_quotes": 0,
   "summary_checks": 0,
   "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Orlando City SC x FC Cincinnati",
-      "league": "usa.1",
+      "fixture": "Vasco da Gama x Internacional",
+      "league": "bra.1",
+      "kickoff": 1795127400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "São Paulo x Fluminense",
+      "league": "bra.1",
       "kickoff": 1795134600,
       "reason": "no_verified_public_1x2"
     }

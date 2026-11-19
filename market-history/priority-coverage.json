@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-19T00:42:12.364262+00:00",
+  "checked_at": "2026-11-19T08:01:30.100452+00:00",
   "horizon_hours": 48,
-  "important_games": 7,
-  "verified_bookmaker_games": 2,
-  "indicative_only_games": 4,
-  "missing_bookmaker_price_games": 1,
+  "important_games": 14,
+  "verified_bookmaker_games": 5,
+  "indicative_only_games": 3,
+  "missing_bookmaker_price_games": 6,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 1,
-    "indicative": 4,
-    "new_priority": 4
+    "matched": 2,
+    "indicative": 3,
+    "new_priority": 6
   },
   "pinnacle_guest": {
     "status": "stale",
@@ -38,16 +38,17 @@
   },
   "priority_fixtures": [
     {
-      "home": "Corinthians",
-      "away": "Botafogo",
-      "league": "Brasileirão Série A",
+      "home": "Vasco da Gama",
+      "away": "Internacional",
+      "league": "bra.1",
       "league_code": "bra.1",
-      "kickoff_unix": 1795048200.0,
+      "kickoff_unix": 1795127400.0,
       "phase": "scheduled",
       "data_sources": [
-        "ESPN"
+        "ESPN",
+        "FotMob"
       ],
-      "verified_quotes": 8,
+      "verified_quotes": 4,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -60,16 +61,39 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Grêmio",
-      "away": "Bahia",
-      "league": "Brasileirão Série A",
+      "home": "Vitória",
+      "away": "Red Bull Bragantino",
+      "league": "bra.1",
       "league_code": "bra.1",
-      "kickoff_unix": 1795048200.0,
+      "kickoff_unix": 1795127400.0,
       "phase": "scheduled",
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 3,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "São Paulo",
+      "away": "Fluminense",
+      "league": "bra.1",
+      "league_code": "bra.1",
+      "kickoff_unix": 1795134600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 3,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -130,8 +154,8 @@
       ],
       "fair_odds_modelled": {
         "home": 1.09,
-        "draw": 19.9,
-        "away": 31.11
+        "draw": 20.08,
+        "away": 32.31
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/18167/bayern-munchen-vs-1-fc-koln-2026-11-20",
       "tipsaudit_id": "18167",
@@ -140,6 +164,72 @@
         "TipsAudit"
       ],
       "coverage": "indicative_only"
+    },
+    {
+      "home": "MB Rouissat",
+      "away": "CR Bélouizdad",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795106700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "MC Alger",
+      "away": "Olympique Akbou",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795106700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "JS Kabylie",
+      "away": "USM Alger",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795114800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
     },
     {
       "home": "Estac Troyes",
@@ -164,6 +254,80 @@
       "coverage": "no_bookmaker_price"
     },
     {
+      "home": "Puebla",
+      "away": "Atletico San Luis",
+      "kickoff_unix": 1795222800.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.65,
+        "draw": 3.7,
+        "away": 2.84
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18173/puebla-vs-atletico-san-luis-2026-11-21",
+      "tipsaudit_id": "18173",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Club Tijuana",
+      "away": "Atlante FC",
+      "kickoff_unix": 1795230000.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.64,
+          "bookmaker": "BetOnline.ag",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 1.62,
+        "draw": 4.99,
+        "away": 5.47
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18174/club-tijuana-vs-atlante-fc-2026-11-21",
+      "tipsaudit_id": "18174",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
+    },
+    {
+      "home": "FC Juarez",
+      "away": "Atlas",
+      "kickoff_unix": 1795230000.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 3.68,
+        "draw": 3.8,
+        "away": 2.15
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18175/fc-juarez-vs-atlas-2026-11-21",
+      "tipsaudit_id": "18175",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
       "home": "Orlando City SC",
       "away": "FC Cincinnati",
       "league": "MLS",
@@ -171,64 +335,116 @@
       "kickoff_unix": 1795134600.0,
       "phase": "scheduled",
       "data_sources": [
+        "ESPN",
+        "FotMob"
+      ],
+      "verified_quotes": 3,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.54,
+        "draw": 4.08,
+        "away": 2.77
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18023/orlando-city-sc-vs-fc-cincinnati-2026-11-20",
+      "tipsaudit_id": "18023",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    },
+    {
+      "home": "Seattle Sounders FC",
+      "away": "Real Salt Lake",
+      "league": "usa.1",
+      "league_code": "usa.1",
+      "kickoff_unix": 1795143600.0,
+      "phase": "scheduled",
+      "data_sources": [
         "ESPN"
+      ],
+      "verified_quotes": 3,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": {
+        "home": 2.03,
+        "draw": 4.14,
+        "away": 3.77
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18024/seattle-sounders-vs-real-salt-lake-2026-11-20",
+      "tipsaudit_id": "18024",
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "verified_price"
+    }
+  ],
+  "top_missing": [
+    {
+      "home": "MB Rouissat",
+      "away": "CR Bélouizdad",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795106700.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.75,
-          "bookmaker": "LeoVegas (SE)",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 2.59,
-        "draw": 4.22,
-        "away": 2.65
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18023/orlando-city-sc-vs-fc-cincinnati-2026-11-20",
-      "tipsaudit_id": "18023",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
+      "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Seattle Sounders",
-      "away": "Real Salt Lake",
-      "kickoff_unix": 1795143600.0,
-      "league": "MLS",
-      "league_code": "usa.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 2.01,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.98,
-        "draw": 4.29,
-        "away": 3.82
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18024/seattle-sounders-vs-real-salt-lake-2026-11-20",
-      "tipsaudit_id": "18024",
-      "source_confirmed": "TipsAudit schedule only",
+      "home": "MC Alger",
+      "away": "Olympique Akbou",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795106700.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "FotMob"
       ],
-      "coverage": "indicative_only"
-    }
-  ],
-  "top_missing": [
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "JS Kabylie",
+      "away": "USM Alger",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "kickoff_unix": 1795114800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "FotMob"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
     {
       "home": "Estac Troyes",
       "away": "Le Havre",
@@ -240,6 +456,40 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/18170/estac-troyes-vs-le-havre-2026-11-20",
       "tipsaudit_id": "18170",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Puebla",
+      "away": "Atletico San Luis",
+      "kickoff_unix": 1795222800.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18173/puebla-vs-atletico-san-luis-2026-11-21",
+      "tipsaudit_id": "18173",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "FC Juarez",
+      "away": "Atlas",
+      "kickoff_unix": 1795230000.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": "https://tipsaudit.com/match/18175/fc-juarez-vs-atlas-2026-11-21",
+      "tipsaudit_id": "18175",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
