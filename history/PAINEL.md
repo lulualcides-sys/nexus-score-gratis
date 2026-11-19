@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-19T03:24:51.092841+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-19T13:01:49.839220+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -15,15 +15,15 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-19 | Vitória × Red Bull Bragantino | 0-0 | 0 | Match Odds 1X2: Casa 2,65, Empate 3,40, Fora 2,60 |
 | 2026-11-19 | Orlando City SC × FC Cincinnati | 0-0 | 0 | Match Odds 1X2: Casa 2,40, Empate 3,85, Fora 2,45 |
 | 2026-11-19 | Seattle Sounders FC × Real Salt Lake | 0-0 | 0 | Match Odds 1X2: Casa 1,91, Empate 3,80, Fora 3,35 |
-| 2026-11-19 | Persib Bandung × Shan United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Công An Hà Nội × Johor Darul Ta'zim | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Svay Rieng × Port FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Omiya Ardija Ventus (W) × INAC Kobe Leonessa (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Al-Wasl × Hatta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Al-Ain × Al-Dhafra | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Dempo SC × Shillong Lajong | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Persib Bandung × Shan United | 2-0 | 0 | Chutes no alvo: 2.0×1.0, Chutes para fora: 6.0×2.0, Escanteios: 7.0×3.0, Grandes chances: 0.0×0.0 |
+| 2026-11-19 | Công An Hà Nội × Johor Darul Ta'zim | 1-0 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×0.0, Escanteios: 1.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-19 | Svay Rieng × Port FC | 2-0 | 0 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×1.0, Escanteios: 7.0×1.0, Grandes chances: 0.0×0.0 |
+| 2026-11-19 | Omiya Ardija Ventus (W) × INAC Kobe Leonessa (W) | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Al-Wasl × Hatta | 1-0 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 1,13, Empate 9,49, F |
+| 2026-11-19 | Al-Ain × Al-Dhafra | 0-0 | 0 | Match Odds 1X2: Casa 1,11, Empate 8,50, Fora 15,00 |
+| 2026-11-19 | Dempo SC × Shillong Lajong | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Samaleswari SC × Nagaland United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Malavan × Gol Gohar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Malavan × Gol Gohar | 0-0 | 0 | Match Odds 1X2: Casa 2,62, Empate 2,68, Fora 2,75 |
 | 2026-11-19 | Independiente Valle del Cauca × Envigado | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Unión Magdalena × Boca Juniors de Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Real Cartagena × Tigres FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -36,15 +36,15 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-19 | Grêmio × Bahia | 0-0 | 90 | Chutes no alvo: 6.0×3.0, Chutes para fora: 9.0×4.0, Escanteios: 7.0×4.0, Grandes chances: 1.0×1.0 |
 | 2026-11-19 | Vitória × RB Bragantino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Surkhon-2011 × Andijon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Fredericia × Hillerød | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Fredericia × Hillerød | 0-0 | 0 | Match Odds 1X2: Casa 1,29, Empate 5,00, Fora 7,50 |
 | 2026-11-19 | Dobrudzha Dobrich × Fratria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Amiens × Caen | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Al-Ahli × Al-Shamal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | MB Rouissat × CR Bélouizdad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | JS Kabylie × USM Alger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | MC Alger × Olympique Akbou | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | MC Alger × Olympique Akbou | 0-0 | 0 | Match Odds 1X2: Casa 1,44, Empate 3,50, Fora 7,50 |
 | 2026-11-19 | Al-Gharraf × Al Quwa Al Jawiya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Al Kahrabaa × Diyala | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Diyala × Al Kahrabaa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Ghaz Al-Shamal SC × Al Karkh | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Egypt U17 × Greece U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Qatar U17 × Panama U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -59,18 +59,18 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-19 | Benfica (W) × Roma (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Paris FC (W) × HB Køge (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Austria Wien (W) × Bayern München (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Preston Lions × South Hobart | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Lions FC × Wollongong Wolves | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | Preston Lions × South Hobart | 6-0 | 0 | Match Odds 1X2: Casa 1,12, Empate 7,00, Fora 11,00 |
+| 2026-11-19 | Lions FC × Wollongong Wolves | 1-1 | 0 | Match Odds 1X2: Casa 1,50, Empate 4,20, Fora 4,60 |
 | 2026-11-19 | Celta Vigo Feminino (W) × Espanyol (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | CD Argual (W) × Madrid CFF (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | MFK Zvolen × FC Košice | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | ND Beltinci × NK Celje | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | MFK Zvolen × FC Košice | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-19 | ND Beltinci × NK Celje | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | NK Dob × NK Bistrica | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Orlando City × FC Cincinnati | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Al Masry SC × Asyut Petroleum | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | ZED FC × Smouha SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Al Mokawloon Al Arab × Olympic El Qanah FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-19 | Independiente de La Chorrera × Tauro FC | 1-3 | 0 | Match Odds 1X2: Casa 2,38, Empate 3,00, Fora 2,62 |
+| 2026-11-19 | Independiente de La Chorrera × Tauro FC | 1-4 | 0 | Match Odds 1X2: Casa 2,38, Empate 3,00, Fora 2,62 |
 | 2026-11-19 | KIF Örebro (W) × FC Rosengård (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Boston River × Deportivo Maldonado | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-19 | Club Atletico Peñarol × Cerro Largo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -98,7 +98,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **3**.
 | 2026-11-18 | Dunipace × Linlithgow Rose | 0-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Alianza Atlético × FBC Melgar | 1-1 | 0 | Chutes no alvo: 8.0×3.0, Chutes para fora: 10.0×7.0, Escanteios: 12.0×2.0, Grandes chances: 1.0×1.0 |
 | 2026-11-18 | Al-Adalah × Al-Orobah FC | 3-3 | 0 | Chutes no alvo: 7.0×4.0, Chutes para fora: 5.0×2.0, Escanteios: 6.0×3.0, Grandes chances: 2.0×3.0 |
-| 2026-11-18 | Al-Rayyan II × Al Mesaimeer | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-18 | Al-Rayyan II × Al Mesaimeer | 2-1 | 0 | Chutes no alvo: 4.0×8.0, Chutes para fora: 7.0×7.0, Escanteios: 4.0×5.0, Grandes chances: 0.0×0.0 |
 | 2026-11-18 | Bengaluru United × Sreenidi Deccan FC | 2-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | CD Badajoz × Tenerife | 2-5 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-18 | Flamengo × Athletico Paranaense | 2-1 | 88 | Chutes no alvo: 4.0×3.0, Chutes para fora: 2.0×0.0, Escanteios: 4.0×4.0, Grandes chances: 2.0×0.0 |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11435 | **Jogos distintos:** 3490 | **Resultados verificáveis:** 6324 | **Com gol:** 2459 | **Sem gol:** 3865 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 41 datas com coletas | 95 pendentes | 2125 indeterminados | 2891 incompletos.
+**Observações:** 11437 | **Jogos distintos:** 3492 | **Resultados verificáveis:** 6324 | **Com gol:** 2459 | **Sem gol:** 3865 | **Taxa observada:** 38.9%.
+**Evolução da amostra:** 42 datas com coletas | 97 pendentes | 2125 indeterminados | 2891 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -180,7 +180,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | ⚡ pressao_ofensiva_18 | 1770 | 1181 | 440 | 741 | 37.3% |
 | 🎯 chutes_no_alvo_5 | 1965 | 924 | 347 | 577 | 37.6% |
 | 🟥 expulsao_confirmada | 1689 | 754 | 258 | 496 | 34.2% |
-| 🚩 escanteios_6 | 1428 | 647 | 272 | 375 | 42.0% |
+| 🚩 escanteios_6 | 1430 | 647 | 272 | 375 | 42.0% |
 | 💣 grandes_chances_3 | 1157 | 606 | 263 | 343 | 43.4% |
 | 🔥 pressao_forte_10min | 610 | 390 | 150 | 240 | 38.5% |
 | 🧨 pressao_total_5_10min | 334 | 209 | 85 | 124 | 40.7% |
@@ -253,7 +253,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 293 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 736 | 542 | 187 | 355 | 34.5% |
-| 31–45′ | 2383 | 1820 | 755 | 1065 | 41.5% |
+| 31–45′ | 2385 | 1820 | 755 | 1065 | 41.5% |
 | 46–60′ | 1482 | 1050 | 415 | 635 | 39.5% |
 | 61–75′ | 2387 | 1676 | 643 | 1033 | 38.4% |
 | 76–90′ | 3040 | 1014 | 387 | 627 | 38.2% |
@@ -262,12 +262,14 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11435 | **Jogos monitorados:** 285 | **Ao vivo:** 16 | **Termômetros recentes:** 1.
+**Registros:** 11437 | **Jogos monitorados:** 285 | **Ao vivo:** 23 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-19T13:02:13.923927+00:00 | Persib Bandung × Shan United | Persib Bandung (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-19T13:02:13.923927+00:00 | Svay Rieng × Port FC | Svay Rieng (45') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-19T01:23:08.426554+00:00 | Cruzeiro × Palmeiras | Cruzeiro (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-19T01:23:08.426554+00:00 | Corinthians × Botafogo | Corinthians (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-19T01:23:08.426554+00:00 | Corinthians × Botafogo | Corinthians (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
@@ -366,13 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-15T02:37:45.577759+00:00 | Wellington Phoenix (W) × Sydney FC (W) | Wellington Phoenix (W) (46') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-15T02:37:45.577759+00:00 | Wellington Phoenix (W) × Sydney FC (W) | Wellington Phoenix (W) (46') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-15T02:37:45.577759+00:00 | Charlotte Independence × Boise | Charlotte Independence (59') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-15T02:37:45.577759+00:00 | Jamaica × Mexico | Mexico (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-15T02:37:45.577759+00:00 | Jamaica × Mexico | Mexico (45') | 💣 grandes_chances_3 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **13**.
-Novas cotacoes capturadas na ultima execucao: **15**.
+Jogos com odds registradas nos ultimos dias: **20**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
