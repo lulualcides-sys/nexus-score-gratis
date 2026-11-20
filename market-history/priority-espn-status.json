@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-20T04:25:37.049230+00:00",
+  "checked_at": "2026-11-20T13:30:41.175520+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
-  "created_games": 4,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 14,
+  "created_games": 2,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Troyes x Le Havre AC",
-      "league": "fra.1",
-      "kickoff": 1795203900,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Athletic Club x Espanyol",
-      "league": "esp.1",
-      "kickoff": 1795204800,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Deportivo Cali x Millonarios",
       "league": "col.1",
@@ -32,6 +20,18 @@
       "fixture": "Puebla x Atlético de San Luis",
       "league": "mex.1",
       "kickoff": 1795222800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Defensa y Justicia x Barracas Central",
+      "league": "arg.1",
+      "kickoff": 1795284000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Argentinos Juniors x Independiente",
+      "league": "arg.1",
+      "kickoff": 1795291200,
       "reason": "no_verified_public_1x2"
     },
     {
