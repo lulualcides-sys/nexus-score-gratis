@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-20T13:30:41.175520+00:00",
+  "checked_at": "2026-11-20T21:29:27.633657+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 14,
-  "created_games": 2,
+  "priority_fixtures_seen": 17,
+  "created_games": 6,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Deportivo Cali x Millonarios",
-      "league": "col.1",
-      "kickoff": 1795225200,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Puebla x Atlético de San Luis",
       "league": "mex.1",
@@ -35,12 +29,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético-MG x Boca Juniors",
-      "league": "conmebol.sudamericana",
-      "kickoff": 1795300200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "New England Revolution x Philadelphia Union",
       "league": "usa.1",
       "kickoff": 1795287600,
@@ -56,6 +44,48 @@
       "fixture": "Inter Miami CF x Columbus Crew",
       "league": "usa.1",
       "kickoff": 1795302000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético-MG x Boca Juniors",
+      "league": "conmebol.sudamericana",
+      "kickoff": 1795300200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "NEC Nijmegen x PSV Eindhoven",
+      "league": "ned.1",
+      "kickoff": 1795275000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Utrecht x SC Cambuur",
+      "league": "ned.1",
+      "kickoff": 1795283100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Feyenoord Rotterdam x Excelsior",
+      "league": "ned.1",
+      "kickoff": 1795283100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Groningen x Heerenveen",
+      "league": "ned.1",
+      "kickoff": 1795291200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Telstar x PEC Zwolle",
+      "league": "ned.1",
+      "kickoff": 1795291200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Once Caldas x Atlético Nacional",
+      "league": "col.1",
+      "kickoff": 1795310100,
       "reason": "no_verified_public_1x2"
     }
   ],
