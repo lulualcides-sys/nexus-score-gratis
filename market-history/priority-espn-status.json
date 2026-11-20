@@ -1,31 +1,61 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-19T23:45:32.730491+00:00",
+  "checked_at": "2026-11-20T04:25:37.049230+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 7,
-  "created_games": 3,
-  "new_quotes": 6,
-  "summary_checks": 2,
-  "summary_with_prices": 2,
+  "priority_fixtures_seen": 12,
+  "created_games": 4,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Independiente Medellín x Independiente Santa Fe",
-      "league": "col.1",
-      "kickoff": 1795210200,
+      "fixture": "Troyes x Le Havre AC",
+      "league": "fra.1",
+      "kickoff": 1795203900,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Atlético Bucaramanga x América de Cali",
-      "league": "col.1",
-      "kickoff": 1795217700,
+      "fixture": "Athletic Club x Espanyol",
+      "league": "esp.1",
+      "kickoff": 1795204800,
       "reason": "no_verified_public_1x2"
     },
     {
       "fixture": "Deportivo Cali x Millonarios",
       "league": "col.1",
       "kickoff": 1795225200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Puebla x Atlético de San Luis",
+      "league": "mex.1",
+      "kickoff": 1795222800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético-MG x Boca Juniors",
+      "league": "conmebol.sudamericana",
+      "kickoff": 1795300200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "New England Revolution x Philadelphia Union",
+      "league": "usa.1",
+      "kickoff": 1795287600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Dallas x Portland Timbers",
+      "league": "usa.1",
+      "kickoff": 1795294800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Inter Miami CF x Columbus Crew",
+      "league": "usa.1",
+      "kickoff": 1795302000,
       "reason": "no_verified_public_1x2"
     }
   ],
