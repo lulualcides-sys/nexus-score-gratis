@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-20T03:12:18.117549+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-20T11:35:57.087544+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **11**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -37,17 +37,17 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-20 | Karviná × Baník Ostrava B | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Sportivo Ameliano × Luqueño | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Recoleta × Guaraní | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Western Sydney Wanderers FC × Adelaide United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Police Tero FC × Chanthaburi FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Western Sydney Wanderers FC (W) × Wellington Phoenix (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-20 | Western Sydney Wanderers FC × Adelaide United | 4-2 | 43 | Chutes no alvo: 6.0×1.0, Chutes para fora: 4.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 1.0×2.0 |
+| 2026-11-20 | Police Tero FC × Chanthaburi FC | 0-0 | 0 | Match Odds 1X2: Casa 3,40, Empate 3,10, Fora 1,95 |
+| 2026-11-20 | Western Sydney Wanderers FC (W) × Wellington Phoenix (W) | 0-2 | 90 | Chutes no alvo: 3.0×8.0, Chutes para fora: 5.0×11.0, Escanteios: 5.0×4.0, Grandes chances: 0.0×1.0 |
 | 2026-11-20 | Independiente del Valle × CSD Macará | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Kalba FC × Sharjah Cultural Club | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Shabab Al-Ahli Dubai FC × Ajman | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Rajasthan United FC × Chanmari FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-20 | Shabab Al-Ahli Dubai FC × Ajman | 0-0 | 0 | Match Odds 1X2: Casa 1,40, Empate 4,50, Fora 5,50 |
+| 2026-11-20 | Rajasthan United FC × Chanmari FC | 1-4 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Mohammedan SC × Gokulam FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Fajr Sepasi × Chadormalu Ardakan SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Zob Ahan × Shams Azar Qazvin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Persepolis × Paykan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-20 | Zob Ahan × Shams Azar Qazvin | 0-0 | 0 | Match Odds 1X2: Casa 2,28, Empate 2,80, Fora 3,18 |
+| 2026-11-20 | Persepolis × Paykan | 0-0 | 0 | Match Odds 1X2: Casa 1,14, Empate 5,40, Fora 16,50 |
 | 2026-11-20 | Sanat Naft Abadan × Esteghlal Khuzestan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Vélez Sarsfield × Belgrano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Bucaramanga × América de Cali | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -75,9 +75,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-20 | Metz × Boulogne | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Nancy × Dijon | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Red Star × Pau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Kashima Antlers × Shimizu S-Pulse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Kashiwa Reysol × JEF United Chiba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-20 | Vissel Kobe × Mito Hollyhock | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-20 | Kashima Antlers × Shimizu S-Pulse | 0-1 | 77 | Chutes no alvo: 1.0×2.0, Chutes para fora: 5.0×2.0, Escanteios: 6.0×3.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 1,49, Empate 4,30, F |
+| 2026-11-20 | Kashiwa Reysol × JEF United Chiba | 0-1 | 77 | Chutes no alvo: 4.0×2.0, Chutes para fora: 2.0×0.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×2.0 |
+| 2026-11-20 | Vissel Kobe × Mito Hollyhock | 1-1 | 76 | Chutes no alvo: 6.0×1.0, Chutes para fora: 5.0×1.0, Escanteios: 4.0×0.0, Grandes chances: 4.0×1.0; Match Odds 1X2: Casa 1,44, Empate 4,50, F |
 | 2026-11-20 | Piast Gliwice × Korona Kielce | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | Pogoń Szczecin × Śląsk Wrocław | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-20 | FC Stade Lausanne-Ouchy × Kriens | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11442 | **Jogos distintos:** 3495 | **Resultados verificáveis:** 6329 | **Com gol:** 2460 | **Sem gol:** 3869 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 42 datas com coletas | 95 pendentes | 2127 indeterminados | 2891 incompletos.
+**Observações:** 11450 | **Jogos distintos:** 3499 | **Resultados verificáveis:** 6330 | **Com gol:** 2461 | **Sem gol:** 3869 | **Taxa observada:** 38.9%.
+**Evolução da amostra:** 43 datas com coletas | 102 pendentes | 2127 indeterminados | 2891 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2197 | 1474 | 587 | 887 | 39.8% |
-| ⚡ pressao_ofensiva_18 | 1770 | 1181 | 440 | 741 | 37.3% |
-| 🎯 chutes_no_alvo_5 | 1968 | 926 | 347 | 579 | 37.5% |
-| 🟥 expulsao_confirmada | 1689 | 754 | 258 | 496 | 34.2% |
-| 🚩 escanteios_6 | 1430 | 648 | 273 | 375 | 42.1% |
-| 💣 grandes_chances_3 | 1159 | 608 | 263 | 345 | 43.3% |
+| 🥶 jogo_frio | 2198 | 1474 | 587 | 887 | 39.8% |
+| ⚡ pressao_ofensiva_18 | 1771 | 1181 | 440 | 741 | 37.3% |
+| 🎯 chutes_no_alvo_5 | 1970 | 927 | 348 | 579 | 37.5% |
+| 🟥 expulsao_confirmada | 1690 | 754 | 258 | 496 | 34.2% |
+| 🚩 escanteios_6 | 1432 | 648 | 273 | 375 | 42.1% |
+| 💣 grandes_chances_3 | 1160 | 608 | 263 | 345 | 43.3% |
 | 🔥 pressao_forte_10min | 610 | 390 | 150 | 240 | 38.5% |
 | 🧨 pressao_total_5_10min | 334 | 209 | 85 | 124 | 40.7% |
 | ⏱️ tensao_tardia_70 | 185 | 77 | 31 | 46 | 40.3% |
@@ -225,7 +225,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Major League Soccer | 401 | 211 | 100 | 111 | 47.4% |
 | Serie A | 272 | 189 | 89 | 100 | 47.1% |
 | Liga Profesional | 298 | 187 | 53 | 134 | 28.3% |
-| J. League | 306 | 186 | 84 | 102 | 45.2% |
+| J. League | 313 | 186 | 84 | 102 | 45.2% |
 | Serie B | 231 | 160 | 56 | 104 | 35.0% |
 | Super League | 293 | 158 | 52 | 106 | 32.9% |
 | Bundesliga | 254 | 145 | 59 | 86 | 40.7% |
@@ -253,21 +253,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 293 | 212 | 68 | 144 | 32.1% |
 | 16–30′ | 736 | 542 | 187 | 355 | 34.5% |
-| 31–45′ | 2387 | 1823 | 756 | 1067 | 41.5% |
+| 31–45′ | 2388 | 1824 | 757 | 1067 | 41.5% |
 | 46–60′ | 1482 | 1050 | 415 | 635 | 39.5% |
 | 61–75′ | 2390 | 1678 | 643 | 1035 | 38.3% |
-| 76–90′ | 3040 | 1014 | 387 | 627 | 38.2% |
+| 76–90′ | 3047 | 1014 | 387 | 627 | 38.2% |
 | 91+′ | 1114 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11442 | **Jogos monitorados:** 420 | **Ao vivo:** 10 | **Termômetros recentes:** 1.
+**Registros:** 11450 | **Jogos monitorados:** 420 | **Ao vivo:** 19 | **Termômetros recentes:** 5.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-20T11:36:19.628868+00:00 | Kashima Antlers × Shimizu S-Pulse | Kashima Antlers (77') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Kashiwa Reysol × JEF United Chiba | Kashiwa Reysol (77') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Kashiwa Reysol × JEF United Chiba | Kashiwa Reysol (77') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Vissel Kobe × Mito Hollyhock | Vissel Kobe (76') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Vissel Kobe × Mito Hollyhock | Vissel Kobe (76') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Vissel Kobe × Mito Hollyhock | Vissel Kobe (76') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-20T11:36:19.628868+00:00 | Vissel Kobe × Mito Hollyhock | Vissel Kobe (76') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-20T09:25:25.771902+00:00 | Western Sydney Wanderers FC × Adelaide United | Western Sydney Wanderers FC (45') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-19T21:30:57.836074+00:00 | Arsenal (W) × OL Lyonnes (W) | OL Lyonnes (W) (73') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-19T21:30:57.836074+00:00 | Arsenal (W) × OL Lyonnes (W) | OL Lyonnes (W) (73') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-19T21:30:57.836074+00:00 | Benfica (W) × Roma (W) | Benfica (W) (72') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -360,19 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-15T17:08:28.964240+00:00 | Granada × Las Palmas | Las Palmas (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-15T17:08:28.964240+00:00 | Granada × Las Palmas | Las Palmas (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-15T17:08:28.964240+00:00 | Lugo × CD Mirandés | CD Mirandés (78') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-15T17:08:28.964240+00:00 | Logroñés × Arenas Getxo | Logroñés (77') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | janela_incompleta | indisponível |
-| 2026-11-15T17:08:28.964240+00:00 | Arsenal (W) × London City Lionesses (W) | London City Lionesses (W) (35') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-15T17:08:28.964240+00:00 | Arsenal (W) × London City Lionesses (W) | Arsenal (W) (35') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-15T17:08:28.964240+00:00 | Arsenal (W) × London City Lionesses (W) | Arsenal (W) (35') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
-| 2026-11-15T16:39:28.455675+00:00 | Sevilla (W) × Atlético Madrid (W) | Sevilla (W) (78') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-15T16:39:28.455675+00:00 | Murcia B × UCAM Murcia | Murcia B (76') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-15T16:39:28.455675+00:00 | Nürnberg (W) × FC Köln (W) | FC Köln (W) (82') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-15T16:39:28.455675+00:00 | RB Leipzig (W) × Eintracht Frankfurt (W) | Eintracht Frankfurt (W) (81') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **36**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Jogos com odds registradas nos ultimos dias: **42**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
