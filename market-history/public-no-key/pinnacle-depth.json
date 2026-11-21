@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-21T02:25:53.916241+00:00",
-  "bookmaker_snapshot_at": "2026-11-21T02:25:52.455554+00:00",
+  "checked_at": "2026-11-21T11:17:09.495872+00:00",
+  "bookmaker_snapshot_at": "2026-11-21T11:17:08.704511+00:00",
   "status": "fresh",
-  "matches_catalogued": 13,
-  "matches_with_priced_markets": 13,
-  "odds_eligible_for_quality": 1382,
+  "matches_catalogued": 5,
+  "matches_with_priced_markets": 5,
+  "odds_eligible_for_quality": 566,
   "invalid_quote_records": 0,
-  "complete_market_lines": 678,
+  "complete_market_lines": 278,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 13,
-      "odds": 318,
-      "complete_lines": 159,
+      "games": 5,
+      "odds": 140,
+      "complete_lines": 70,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.69
+      "median_overround_pct": 3.14
     },
     "first_half_goals": {
-      "games": 13,
-      "odds": 206,
-      "complete_lines": 103,
+      "games": 5,
+      "odds": 80,
+      "complete_lines": 40,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.64
+      "median_overround_pct": 4.64
     },
     "first_half_handicap": {
-      "games": 13,
-      "odds": 160,
-      "complete_lines": 80,
+      "games": 5,
+      "odds": 70,
+      "complete_lines": 35,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.1
+      "median_overround_pct": 3.72
     },
     "first_half_team_goals": {
-      "games": 13,
-      "odds": 52,
-      "complete_lines": 26,
+      "games": 5,
+      "odds": 20,
+      "complete_lines": 10,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.23
+      "median_overround_pct": 4.82
     },
     "half_time": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.17
+      "median_overround_pct": 3.54
     },
     "match_odds": {
-      "games": 13,
-      "odds": 39,
-      "complete_lines": 13,
+      "games": 5,
+      "odds": 15,
+      "complete_lines": 5,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.48
+      "median_overround_pct": 2.84
     },
     "team_goals": {
-      "games": 13,
-      "odds": 168,
-      "complete_lines": 84,
+      "games": 5,
+      "odds": 68,
+      "complete_lines": 34,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.27
+      "median_overround_pct": 4.83
     },
     "total_goals": {
-      "games": 13,
-      "odds": 400,
-      "complete_lines": 200,
+      "games": 5,
+      "odds": 158,
+      "complete_lines": 79,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.74
+      "median_overround_pct": 4.32
     }
   },
   "examples": [
     {
-      "fixture": "FC Juarez x Atlas",
+      "fixture": "Alaves x Deportivo La Coruna",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-21T02:25:52.455554+00:00",
+      "observed_at": "2026-11-21T11:17:08.704511+00:00",
       "selections": {
-        "home": 3.85,
-        "away": 1.9804,
-        "draw": 3.66
+        "home": 2.39,
+        "away": 3.41,
+        "draw": 3.19
       },
-      "overround_pct": 3.79
+      "overround_pct": 2.51
     },
     {
-      "fixture": "FC Juarez x Atlas",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.5",
-      "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-11-21T02:25:52.455554+00:00",
-      "selections": {
-        "home": 1.9009,
-        "away": 1.9901
-      },
-      "overround_pct": 2.86
-    },
-    {
-      "fixture": "FC Juarez x Atlas",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-21T02:25:52.455554+00:00",
-      "selections": {
-        "home": 3.79,
-        "away": 1.2841
-      },
-      "overround_pct": 4.26
-    },
-    {
-      "fixture": "FC Juarez x Atlas",
+      "fixture": "Alaves x Deportivo La Coruna",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-21T02:25:52.455554+00:00",
+      "observed_at": "2026-11-21T11:17:08.704511+00:00",
       "selections": {
-        "home": 3.32,
-        "away": 1.3484
+        "home": 2.03,
+        "away": 1.8929
       },
-      "overround_pct": 4.28
+      "overround_pct": 2.09
     },
     {
-      "fixture": "FC Juarez x Atlas",
+      "fixture": "Alaves x Deportivo La Coruna",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-21T02:25:52.455554+00:00",
+      "raw_market_key": "s;0;s;-1.25",
+      "line_from_market_key": "s;0;s;-1.25",
+      "observed_at": "2026-11-21T11:17:08.704511+00:00",
       "selections": {
-        "home": 2.85,
-        "away": 1.4545
+        "home": 4.6,
+        "away": 1.2304
       },
-      "overround_pct": 3.84
+      "overround_pct": 3.01
+    },
+    {
+      "fixture": "Alaves x Deportivo La Coruna",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-1.0",
+      "line_from_market_key": "s;0;s;-1.0",
+      "observed_at": "2026-11-21T11:17:08.704511+00:00",
+      "selections": {
+        "home": 4.04,
+        "away": 1.2762
+      },
+      "overround_pct": 3.11
+    },
+    {
+      "fixture": "Alaves x Deportivo La Coruna",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-21T11:17:08.704511+00:00",
+      "selections": {
+        "home": 2.91,
+        "away": 1.463
+      },
+      "overround_pct": 2.72
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
