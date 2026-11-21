@@ -1,19 +1,43 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-20T21:29:27.633657+00:00",
+  "checked_at": "2026-11-21T02:44:41.102220+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 17,
-  "created_games": 6,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 15,
+  "created_games": 0,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Puebla x Atlético de San Luis",
-      "league": "mex.1",
-      "kickoff": 1795222800,
+      "fixture": "NEC Nijmegen x PSV Eindhoven",
+      "league": "ned.1",
+      "kickoff": 1795275000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Utrecht x SC Cambuur",
+      "league": "ned.1",
+      "kickoff": 1795283100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Feyenoord Rotterdam x Excelsior",
+      "league": "ned.1",
+      "kickoff": 1795283100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Groningen x Heerenveen",
+      "league": "ned.1",
+      "kickoff": 1795291200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Telstar x PEC Zwolle",
+      "league": "ned.1",
+      "kickoff": 1795291200,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -50,36 +74,6 @@
       "fixture": "Atlético-MG x Boca Juniors",
       "league": "conmebol.sudamericana",
       "kickoff": 1795300200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "NEC Nijmegen x PSV Eindhoven",
-      "league": "ned.1",
-      "kickoff": 1795275000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Utrecht x SC Cambuur",
-      "league": "ned.1",
-      "kickoff": 1795283100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Feyenoord Rotterdam x Excelsior",
-      "league": "ned.1",
-      "kickoff": 1795283100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Groningen x Heerenveen",
-      "league": "ned.1",
-      "kickoff": 1795291200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Telstar x PEC Zwolle",
-      "league": "ned.1",
-      "kickoff": 1795291200,
       "reason": "no_verified_public_1x2"
     },
     {

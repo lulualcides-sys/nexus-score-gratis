@@ -1,75 +1,86 @@
 {
   "schema": 1,
   "model_version": "nexus-poisson-segmented-1.0",
-  "evaluated_at": "2026-11-20T21:29:32.699326+00:00",
-  "status": "insufficient_backtest_sample",
+  "evaluated_at": "2026-11-21T02:44:48.537479+00:00",
+  "status": "diagnostic_sample",
   "walk_forward": true,
   "uses_future_results_in_training": false,
   "only_goals_and_match_outcomes": true,
-  "historical_matches_available": 453,
-  "historical_fixtures_tested": 0,
-  "leagues_tested": 0,
-  "leagues_samples": {},
+  "historical_matches_available": 608,
+  "historical_fixtures_tested": 54,
+  "leagues_tested": 5,
+  "leagues_samples": {
+    "col.1": 19,
+    "usa.1": 15,
+    "esp.1": 7,
+    "fra.1": 7,
+    "ger.1": 6
+  },
   "skipped_reasons": {
-    "insufficient_halftime_results": 32,
-    "insufficient_team_results": 25,
+    "insufficient_team_results": 63,
     "insufficient_league_results": 3
   },
   "predictive_comparison": {
-    "status": "insufficient_paired_sample",
-    "paired_matches": 0,
-    "leagues": {},
+    "status": "diagnostic_shadow_only",
+    "paired_matches": 54,
+    "leagues": {
+      "col.1": 19,
+      "esp.1": 7,
+      "fra.1": 7,
+      "ger.1": 6,
+      "usa.1": 15
+    },
     "candidate": "static 80% Poisson + 20% pre-match historical league frequencies",
     "weight_fixed_a_priori": true,
     "leakage_guard": "Every prior uses games strictly before fixture date; one paired holdout for all models",
     "score_direction": "lower_is_better",
     "metrics": {
       "poisson_original": {
-        "n": 0,
-        "brier_1x2": null,
-        "rps_1x2": null,
-        "log_loss_1x2": null,
-        "brier_over_2_5": null,
-        "brier_btts": null,
+        "n": 54,
+        "brier_1x2": 0.66844,
+        "rps_1x2": 0.221,
+        "log_loss_1x2": 1.09193,
+        "brier_over_2_5": 0.23788,
+        "brier_btts": 0.2439,
         "calibration_over_2_5": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.20944,
           "bins": [
             {
               "range_pct": [
                 0,
                 20
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 1,
+              "predicted_pct": 19.33,
+              "observed_pct": 0.0
             },
             {
               "range_pct": [
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 11,
+              "predicted_pct": 31.86,
+              "observed_pct": 18.18
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 23,
+              "predicted_pct": 50.75,
+              "observed_pct": 26.09
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 19,
+              "predicted_pct": 68.1,
+              "observed_pct": 47.37
             },
             {
               "range_pct": [
@@ -83,8 +94,8 @@
           ]
         },
         "calibration_btts": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.15972,
           "bins": [
             {
               "range_pct": [
@@ -100,27 +111,27 @@
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 9,
+              "predicted_pct": 33.36,
+              "observed_pct": 22.22
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 29,
+              "predicted_pct": 51.76,
+              "observed_pct": 37.93
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 16,
+              "predicted_pct": 66.32,
+              "observed_pct": 43.75
             },
             {
               "range_pct": [
@@ -135,15 +146,15 @@
         }
       },
       "league_frequency_baseline": {
-        "n": 0,
-        "brier_1x2": null,
-        "rps_1x2": null,
-        "log_loss_1x2": null,
-        "brier_over_2_5": null,
-        "brier_btts": null,
+        "n": 54,
+        "brier_1x2": 0.75795,
+        "rps_1x2": 0.25419,
+        "log_loss_1x2": 1.22809,
+        "brier_over_2_5": 0.25829,
+        "brier_btts": 0.2394,
         "calibration_over_2_5": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.26683,
           "bins": [
             {
               "range_pct": [
@@ -159,27 +170,27 @@
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 10,
+              "predicted_pct": 37.93,
+              "observed_pct": 10.0
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 14,
+              "predicted_pct": 51.3,
+              "observed_pct": 7.14
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 30,
+              "predicted_pct": 68.11,
+              "observed_pct": 50.0
             },
             {
               "range_pct": [
@@ -193,8 +204,8 @@
           ]
         },
         "calibration_btts": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.17143,
           "bins": [
             {
               "range_pct": [
@@ -210,27 +221,27 @@
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 10,
+              "predicted_pct": 36.29,
+              "observed_pct": 20.0
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 21,
+              "predicted_pct": 53.1,
+              "observed_pct": 28.57
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 23,
+              "predicted_pct": 62.94,
+              "observed_pct": 52.17
             },
             {
               "range_pct": [
@@ -245,15 +256,15 @@
         }
       },
       "league_blend_20pct_shadow": {
-        "n": 0,
-        "brier_1x2": null,
-        "rps_1x2": null,
-        "log_loss_1x2": null,
-        "brier_over_2_5": null,
-        "brier_btts": null,
+        "n": 54,
+        "brier_1x2": 0.68161,
+        "rps_1x2": 0.22546,
+        "log_loss_1x2": 1.11104,
+        "brier_over_2_5": 0.24048,
+        "brier_btts": 0.24243,
         "calibration_over_2_5": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.22092,
           "bins": [
             {
               "range_pct": [
@@ -269,27 +280,27 @@
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 10,
+              "predicted_pct": 31.2,
+              "observed_pct": 10.0
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 23,
+              "predicted_pct": 50.59,
+              "observed_pct": 26.09
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 21,
+              "predicted_pct": 67.49,
+              "observed_pct": 47.62
             },
             {
               "range_pct": [
@@ -303,8 +314,8 @@
           ]
         },
         "calibration_btts": {
-          "n": 0,
-          "ece": null,
+          "n": 54,
+          "ece": 0.16206,
           "bins": [
             {
               "range_pct": [
@@ -320,27 +331,27 @@
                 20,
                 40
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 9,
+              "predicted_pct": 33.97,
+              "observed_pct": 22.22
             },
             {
               "range_pct": [
                 40,
                 60
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 27,
+              "predicted_pct": 51.91,
+              "observed_pct": 37.04
             },
             {
               "range_pct": [
                 60,
                 80
               ],
-              "n": 0,
-              "predicted_pct": null,
-              "observed_pct": null
+              "n": 18,
+              "predicted_pct": 64.88,
+              "observed_pct": 44.44
             },
             {
               "range_pct": [
@@ -355,15 +366,15 @@
         }
       }
     },
-    "shadow_brier_1x2_improvement": null,
+    "shadow_brier_1x2_improvement": -0.01317,
     "production_model_unchanged": true,
     "promotion_allowed": false,
     "explanation": "Comparação retrospectiva em mesma amostra não comprova superioridade fora da amostra. O challenger é apenas diagnóstico; não gera odds publicadas nem sinais de aposta. Não existe baseline bookmaker comparável com cotações pré-jogo suficientes e pareadas."
   },
-  "brier_1x2": null,
-  "rps_1x2": null,
-  "log_loss_1x2": null,
-  "brier_over_2_5": null,
-  "brier_btts": null,
+  "brier_1x2": 0.66844,
+  "rps_1x2": 0.221,
+  "log_loss_1x2": 1.09193,
+  "brier_over_2_5": 0.23788,
+  "brier_btts": 0.2439,
   "explanation": "Test retrospective scored without later matches in each fit. Lower metric is better; this alone does not establish calibration, profitability or outperforming bookmakers."
 }
