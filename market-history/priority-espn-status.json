@@ -1,33 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-21T22:29:07.110464+00:00",
+  "checked_at": "2026-11-22T02:35:56.736267+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 19,
-  "created_games": 8,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 40,
+  "created_games": 0,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Pumas UNAM x Monterrey",
-      "league": "mex.1",
-      "kickoff": 1795309200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "New England Revolution x Philadelphia Union",
-      "league": "usa.1",
-      "kickoff": 1795287600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Palmeiras x Flamengo",
-      "league": "bra.1",
-      "kickoff": 1795289400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Paris FC x Angers",
       "league": "fra.1",
@@ -47,18 +29,6 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Guadalajara x Cruz Azul",
-      "league": "mex.1",
-      "kickoff": 1795388820,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Querétaro x Necaxa",
-      "league": "mex.1",
-      "kickoff": 1795396200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Rosario Central x Gimnasia (Mendoza)",
       "league": "arg.1",
       "kickoff": 1795374000,
@@ -74,6 +44,108 @@
       "fixture": "Instituto (Córdoba) x Huracán",
       "league": "arg.1",
       "kickoff": 1795395600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Guadalajara x Cruz Azul",
+      "league": "mex.1",
+      "kickoff": 1795388820,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Querétaro x Necaxa",
+      "league": "mex.1",
+      "kickoff": 1795396200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Palmeiras x Flamengo",
+      "league": "bra.1",
+      "kickoff": 1795289400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Manchester City x Fulham",
+      "league": "eng.1",
+      "kickoff": 1795264200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Rayo Vallecano x Valencia",
+      "league": "esp.1",
+      "kickoff": 1795274100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sevilla x Real Betis",
+      "league": "esp.1",
+      "kickoff": 1795282200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Como x Cagliari",
+      "league": "ita.1",
+      "kickoff": 1795269600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lazio x Lecce",
+      "league": "ita.1",
+      "kickoff": 1795269600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Parma x AS Roma",
+      "league": "ita.1",
+      "kickoff": 1795280400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "1. FC Union Berlin x RB Leipzig",
+      "league": "ger.1",
+      "kickoff": 1795271400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Bayer Leverkusen x SC Paderborn 07",
+      "league": "ger.1",
+      "kickoff": 1795271400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Borussia Mönchengladbach x Borussia Dortmund",
+      "league": "ger.1",
+      "kickoff": 1795271400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Eintracht Frankfurt x TSG Hoffenheim",
+      "league": "ger.1",
+      "kickoff": 1795271400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "SV Elversberg x SC Freiburg",
+      "league": "ger.1",
+      "kickoff": 1795271400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Schalke 04 x VfB Stuttgart",
+      "league": "ger.1",
+      "kickoff": 1795282200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Nice x Paris Saint-Germain",
+      "league": "fra.1",
+      "kickoff": 1795277700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Pumas UNAM x Monterrey",
+      "league": "mex.1",
+      "kickoff": 1795309200,
       "reason": "no_verified_public_1x2"
     }
   ],
