@@ -1,63 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-22T18:00:49.453060+00:00",
+  "checked_at": "2026-11-22T23:36:13.436361+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 23,
-  "created_games": 0,
+  "priority_fixtures_seen": 12,
+  "created_games": 4,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "River Plate x Lanús",
-      "league": "arg.1",
-      "kickoff": 1795384800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Juventus x Venezia",
-      "league": "ita.1",
-      "kickoff": 1795347000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Atalanta x Internazionale",
-      "league": "ita.1",
-      "kickoff": 1795376700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Marseille x Le Mans",
-      "league": "fra.1",
-      "kickoff": 1795376700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Getafe x Atlético Madrid",
-      "league": "esp.1",
-      "kickoff": 1795377600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Nashville SC x FC Cincinnati",
-      "league": "usa.1",
-      "kickoff": 1795381200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Chicago Fire FC x Charlotte FC",
-      "league": "usa.1",
-      "kickoff": 1795390200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Vancouver Whitecaps x Real Salt Lake",
-      "league": "usa.1",
-      "kickoff": 1795397400,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Guadalajara x Cruz Azul",
       "league": "mex.1",
@@ -65,9 +17,27 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Querétaro x Necaxa",
-      "league": "mex.1",
-      "kickoff": 1795396200,
+      "fixture": "Brentford x Everton",
+      "league": "eng.1",
+      "kickoff": 1795464000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Levante x Elche",
+      "league": "esp.1",
+      "kickoff": 1795464000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Monza x Fiorentina",
+      "league": "ita.1",
+      "kickoff": 1795463100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Gimnasia La Plata x Newell's Old Boys",
+      "league": "arg.1",
+      "kickoff": 1795464000,
       "reason": "no_verified_public_1x2"
     }
   ],
