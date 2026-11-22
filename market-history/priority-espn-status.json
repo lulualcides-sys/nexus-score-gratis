@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-22T10:24:25.907108+00:00",
+  "checked_at": "2026-11-22T18:00:49.453060+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 31,
-  "created_games": 1,
+  "priority_fixtures_seen": 23,
+  "created_games": 0,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Go Ahead Eagles x Fortuna Sittard",
-      "league": "ned.1",
-      "kickoff": 1795362300,
+      "fixture": "River Plate x Lanús",
+      "league": "arg.1",
+      "kickoff": 1795384800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -23,87 +23,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Bologna x Udinese",
-      "league": "ita.1",
-      "kickoff": 1795356000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sassuolo x Genoa",
-      "league": "ita.1",
-      "kickoff": 1795356000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "AC Milan x Frosinone",
-      "league": "ita.1",
-      "kickoff": 1795366800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Atalanta x Internazionale",
       "league": "ita.1",
       "kickoff": 1795376700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Barcelona x Villarreal",
-      "league": "esp.1",
-      "kickoff": 1795352400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Racing Santander x Real Sociedad",
-      "league": "esp.1",
-      "kickoff": 1795360500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Osasuna x Málaga",
-      "league": "esp.1",
-      "kickoff": 1795368600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Getafe x Atlético Madrid",
-      "league": "esp.1",
-      "kickoff": 1795377600,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Augsburg x Mainz",
-      "league": "ger.1",
-      "kickoff": 1795357800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Werder Bremen x Hamburg SV",
-      "league": "ger.1",
-      "kickoff": 1795365000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Hull City x Brighton & Hove Albion",
-      "league": "eng.1",
-      "kickoff": 1795356000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Liverpool x Manchester United",
-      "league": "eng.1",
-      "kickoff": 1795365000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Paris FC x Angers",
-      "league": "fra.1",
-      "kickoff": 1795356000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lorient x Stade Rennais",
-      "league": "fra.1",
-      "kickoff": 1795364100,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -113,15 +35,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Fluminense x Mirassol",
-      "league": "bra.1",
-      "kickoff": 1795383000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "River Plate x Lanús",
-      "league": "arg.1",
-      "kickoff": 1795384800,
+      "fixture": "Getafe x Atlético Madrid",
+      "league": "esp.1",
+      "kickoff": 1795377600,
       "reason": "no_verified_public_1x2"
     },
     {
