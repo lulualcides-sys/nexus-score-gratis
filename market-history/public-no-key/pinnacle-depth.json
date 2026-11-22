@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-22T01:24:41.580151+00:00",
-  "bookmaker_snapshot_at": "2026-11-22T01:24:40.595476+00:00",
+  "checked_at": "2026-11-22T11:36:57.811171+00:00",
+  "bookmaker_snapshot_at": "2026-11-22T11:36:55.921919+00:00",
   "status": "fresh",
-  "matches_catalogued": 14,
-  "matches_with_priced_markets": 14,
-  "odds_eligible_for_quality": 1408,
-  "invalid_quote_records": 2,
-  "complete_market_lines": 690,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1530,
+  "invalid_quote_records": 0,
+  "complete_market_lines": 749,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 14,
-      "odds": 334,
-      "complete_lines": 167,
+      "games": 16,
+      "odds": 368,
+      "complete_lines": 184,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.12
+      "median_overround_pct": 4.07
     },
     "first_half_goals": {
-      "games": 14,
-      "odds": 212,
-      "complete_lines": 106,
+      "games": 16,
+      "odds": 220,
+      "complete_lines": 110,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.78
+      "median_overround_pct": 5.66
     },
     "first_half_handicap": {
-      "games": 14,
-      "odds": 168,
-      "complete_lines": 84,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.53
+      "median_overround_pct": 4.39
     },
     "first_half_team_goals": {
-      "games": 14,
-      "odds": 56,
-      "complete_lines": 28,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.29
+      "median_overround_pct": 5.31
     },
     "half_time": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.61
+      "median_overround_pct": 4.34
     },
     "match_odds": {
-      "games": 14,
-      "odds": 42,
-      "complete_lines": 14,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.97
+      "median_overround_pct": 3.51
     },
     "team_goals": {
-      "games": 14,
-      "odds": 176,
-      "complete_lines": 88,
+      "games": 16,
+      "odds": 194,
+      "complete_lines": 97,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.72
+      "median_overround_pct": 5.31
     },
     "total_goals": {
-      "games": 14,
-      "odds": 378,
-      "complete_lines": 189,
+      "games": 16,
+      "odds": 404,
+      "complete_lines": 202,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 4.7
     }
   },
   "examples": [
     {
-      "fixture": "Tigres UANL x Club America",
+      "fixture": "Barcelona x Villarreal",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-22T01:24:40.595476+00:00",
+      "observed_at": "2026-11-22T11:36:55.921919+00:00",
       "selections": {
-        "home": 3.66,
-        "away": 2.04,
-        "draw": 3.65
+        "home": 1.1754,
+        "away": 12.69,
+        "draw": 8.02
       },
-      "overround_pct": 3.74
+      "overround_pct": 5.43
     },
     {
-      "fixture": "Tigres UANL x Club America",
+      "fixture": "Barcelona x Villarreal",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.5",
-      "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-11-22T01:24:40.595476+00:00",
+      "raw_market_key": "s;0;s;-2.25",
+      "line_from_market_key": "s;0;s;-2.25",
+      "observed_at": "2026-11-22T11:36:55.921919+00:00",
       "selections": {
-        "home": 1.8475,
-        "away": 2.05
+        "home": 1.9524,
+        "away": 1.9524
       },
-      "overround_pct": 2.91
+      "overround_pct": 2.44
     },
     {
-      "fixture": "Tigres UANL x Club America",
+      "fixture": "Barcelona x Villarreal",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-22T01:24:40.595476+00:00",
+      "raw_market_key": "s;0;s;-3.25",
+      "line_from_market_key": "s;0;s;-3.25",
+      "observed_at": "2026-11-22T11:36:55.921919+00:00",
       "selections": {
-        "home": 3.6,
-        "away": 1.3067
+        "home": 3.16,
+        "away": 1.3597
       },
-      "overround_pct": 4.31
+      "overround_pct": 5.19
     },
     {
-      "fixture": "Tigres UANL x Club America",
+      "fixture": "Barcelona x Villarreal",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-22T01:24:40.595476+00:00",
+      "raw_market_key": "s;0;s;-3.0",
+      "line_from_market_key": "s;0;s;-3.0",
+      "observed_at": "2026-11-22T11:36:55.921919+00:00",
       "selections": {
-        "home": 3.15,
-        "away": 1.3788
+        "home": 2.86,
+        "away": 1.4219
       },
-      "overround_pct": 4.27
+      "overround_pct": 5.29
     },
     {
-      "fixture": "Tigres UANL x Club America",
+      "fixture": "Barcelona x Villarreal",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-22T01:24:40.595476+00:00",
+      "raw_market_key": "s;0;s;-2.75",
+      "line_from_market_key": "s;0;s;-2.75",
+      "observed_at": "2026-11-22T11:36:55.921919+00:00",
       "selections": {
-        "home": 2.7,
-        "away": 1.4975
+        "home": 2.42,
+        "away": 1.5848
       },
-      "overround_pct": 3.82
+      "overround_pct": 4.42
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
