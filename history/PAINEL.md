@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-22T03:10:19.740779+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-22T11:20:02.654345+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **46**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-11-22 | Deportes Limache × La Serena | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Huachipato × Deportes Concepción | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Pumas × Monterrey | 0-2 | 90 | Chutes no alvo: 4.0×6.0, Chutes para fora: 6.0×5.0, Escanteios: 6.0×2.0, Grandes chances: 3.0×0.0 |
-| 2026-11-22 | Tigres × CF América | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Tigres × CF América | 1-0 | 39 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
 | 2026-11-22 | Chivas × Cruz Azul | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Querétaro FC × Necaxa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | FK Radnički 1923 × Čukarički | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -51,21 +51,21 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-11-22 | Gent U23 × Francs Borains | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Beerschot × Genk U23 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Kladno × Vysočina Jihlava | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Žižkov × Opava | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Žižkov × Opava | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | FC Vlašim × SK Prostějov | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Sporting Cristal × Cienciano | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Sport Huancayo × Universitario de Deportes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Rubio Ñú × Libertad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Olimpia × Sportivo Trinidense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Wellington Phoenix × Macarthur FC | 0-2 | 52 | Chutes no alvo: 3.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×3.0 |
-| 2026-11-22 | Bangkok United × Ayutthaya United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Wellington Phoenix × Macarthur FC | 1-2 | 52 | Chutes no alvo: 3.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×3.0 |
+| 2026-11-22 | Bangkok United × Ayutthaya United FC | 0-1 | 18 | Chutes no alvo: 3.0×1.0, Chutes para fora: 1.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 1.0×1.0 |
 | 2026-11-22 | Chiangrai United × Lamphun Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Rayong FC × Rasisalai United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Nakhon Ratchasima FC × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Songkhla United FC × Kanchanaburi Power | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Muang Loei United × Uttaradit FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Phrae United × Nong Bua Pitchaya FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Melbourne Victory (W) × Perth Glory (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Melbourne Victory (W) × Perth Glory (W) | 0-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×7.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 1,40, Empate 3,80, F |
 | 2026-11-22 | LDU de Quito × Aucas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Orense × Mushuc Runa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Manta × Delfín | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -95,7 +95,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-11-22 | River Plate × Lanús | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Rosario Central × Gimnasia Mendoza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Mamelodi Sundowns FC × Kaizer Chiefs | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Atlético Morelia × Atlético La Paz | 3-1 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 4.0×1.0 |
+| 2026-11-22 | Atlético Morelia × Atlético La Paz | 4-1 | 0 | Chutes no alvo: 8.0×2.0, Chutes para fora: 6.0×7.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×3.0 |
 | 2026-11-22 | Once Caldas × Atlético Nacional | 0-0 | 90 | Chutes no alvo: 1.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 6.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-11-22 | Deportes Copiapó × Antofagasta | 1-1 | 0 | Match Odds 1X2: Casa 2,62, Empate 3,10, Fora 2,40 |
 | 2026-11-22 | San Marcos × Magallanes | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -110,12 +110,12 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-11-22 | Häcken × Elfsborg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Brommapojkarna × Halmstads BK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Sirius × Djurgården | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Daegu FC × Gimhae FC 2008 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Jeonnam Dragons × Ansan Greeners | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Paju Frontier × Cheonan City | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Seoul E-Land FC × Chungnam Asan FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Dinamo Samarkand × Bunyodkor Tashkent | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Arsenal Dzerzhinsk × Neman Grodno | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Daegu FC × Gimhae FC 2008 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Jeonnam Dragons × Ansan Greeners | 1-2 | 0 | Match Odds 1X2: Casa 1,85, Empate 3,40, Fora 3,50 |
+| 2026-11-22 | Paju Frontier × Cheonan City | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Seoul E-Land FC × Chungnam Asan FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Dinamo Samarkand × Bunyodkor Tashkent | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Arsenal Dzerzhinsk × Neman Grodno | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Dinamo Minsk × FC Minsk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Isloch × Torpedo Zhodino | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | ML Vitebsk × Slavia Mozyr | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -128,7 +128,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **10**.
 | 2026-11-22 | Bologna × Udinese | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Juventus × Venezia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Sassuolo × Genoa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Botev Vratsa × CSKA 1948 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-22 | Botev Vratsa × CSKA 1948 | 0-0 | 0 | Chutes no alvo: 1.0×2.0, Escanteios: 0.0×2.0 |
 | 2026-11-22 | Botev Plovdiv × CSKA Sofia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Levski Sofia × PFC Lokomotiv Sofia 1929 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Dinamo Zagreb × NK Istra 1961 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11568 | **Jogos distintos:** 3568 | **Resultados verificáveis:** 6366 | **Com gol:** 2477 | **Sem gol:** 3889 | **Taxa observada:** 38.9%.
-**Evolução da amostra:** 45 datas com coletas | 103 pendentes | 2178 indeterminados | 2921 incompletos.
+**Observações:** 11570 | **Jogos distintos:** 3570 | **Resultados verificáveis:** 6368 | **Com gol:** 2477 | **Sem gol:** 3891 | **Taxa observada:** 38.9%.
+**Evolução da amostra:** 45 datas com coletas | 97 pendentes | 2180 indeterminados | 2925 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,11 +177,11 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2212 | 1480 | 591 | 889 | 39.9% |
-| ⚡ pressao_ofensiva_18 | 1786 | 1188 | 442 | 746 | 37.2% |
-| 🎯 chutes_no_alvo_5 | 1996 | 928 | 348 | 580 | 37.5% |
-| 🟥 expulsao_confirmada | 1707 | 760 | 261 | 499 | 34.3% |
+| ⚡ pressao_ofensiva_18 | 1787 | 1188 | 442 | 746 | 37.2% |
+| 🎯 chutes_no_alvo_5 | 1996 | 929 | 348 | 581 | 37.5% |
+| 🟥 expulsao_confirmada | 1708 | 760 | 261 | 499 | 34.3% |
 | 🚩 escanteios_6 | 1451 | 654 | 273 | 381 | 41.7% |
-| 💣 grandes_chances_3 | 1181 | 613 | 267 | 346 | 43.6% |
+| 💣 grandes_chances_3 | 1181 | 614 | 267 | 347 | 43.5% |
 | 🔥 pressao_forte_10min | 614 | 393 | 152 | 241 | 38.7% |
 | 🧨 pressao_total_5_10min | 336 | 211 | 86 | 125 | 40.8% |
 | ⏱️ tensao_tardia_70 | 185 | 77 | 31 | 46 | 40.3% |
@@ -221,7 +221,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Premier League | 522 | 314 | 94 | 220 | 29.9% |
+| Premier League | 523 | 314 | 94 | 220 | 29.9% |
 | Major League Soccer | 401 | 211 | 100 | 111 | 47.4% |
 | Serie A | 272 | 189 | 89 | 100 | 47.1% |
 | J. League | 313 | 188 | 84 | 104 | 44.7% |
@@ -252,30 +252,32 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 301 | 217 | 73 | 144 | 33.6% |
-| 16–30′ | 742 | 546 | 187 | 359 | 34.2% |
-| 31–45′ | 2414 | 1833 | 764 | 1069 | 41.7% |
+| 16–30′ | 743 | 546 | 187 | 359 | 34.2% |
+| 31–45′ | 2414 | 1835 | 764 | 1071 | 41.6% |
 | 46–60′ | 1507 | 1056 | 418 | 638 | 39.6% |
 | 61–75′ | 2408 | 1687 | 643 | 1044 | 38.1% |
-| 76–90′ | 3068 | 1017 | 388 | 629 | 38.2% |
+| 76–90′ | 3069 | 1017 | 388 | 629 | 38.2% |
 | 91+′ | 1128 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11568 | **Jogos monitorados:** 1302 | **Ao vivo:** 13 | **Termômetros recentes:** 3.
+**Registros:** 11570 | **Jogos monitorados:** 1302 | **Ao vivo:** 48 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-22T03:10:49.459828+00:00 | Wellington Phoenix × Macarthur FC | Wellington Phoenix (53') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Wellington Phoenix × Macarthur FC | Macarthur FC (53') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Atlético Morelia × Atlético La Paz | Atlético Morelia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Atlético Morelia × Atlético La Paz | Atlético Morelia (45') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Once Caldas (94') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Atlético Nacional (94') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Washington Spirit (W) × Kansas City Current (W) | Washington Spirit (W) (86') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Atlético Nacional (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-22T11:20:30.237974+00:00 | Dynamo Moscow × FC Krasnodar | FC Krasnodar (16') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-22T11:20:30.237974+00:00 | Kuala Lumpur City × Penang | Kuala Lumpur City (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Wellington Phoenix × Macarthur FC | Wellington Phoenix (53') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Wellington Phoenix × Macarthur FC | Macarthur FC (53') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Atlético Morelia × Atlético La Paz | Atlético Morelia (45') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Atlético Morelia × Atlético La Paz | Atlético Morelia (45') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Once Caldas (94') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Atlético Nacional (94') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Washington Spirit (W) × Kansas City Current (W) | Washington Spirit (W) (86') | ⚡ pressao_ofensiva_18 · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-22T03:10:49.459828+00:00 | Once Caldas × Atlético Nacional | Atlético Nacional (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-21T23:55:43.368692+00:00 | Santos Laguna × León | León (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-21T23:55:43.368692+00:00 | Santos Laguna × León | Santos Laguna (45') | 🟥 expulsao_confirmada · evento confirmado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-21T23:55:43.368692+00:00 | Pachuca × Toluca | Pachuca (45') | 🥶 jogo_frio · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
@@ -366,13 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-20T20:14:35.749529+00:00 | Stade Nyonnais × Wil | Wil (88') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-20T20:14:35.749529+00:00 | Stade Nyonnais × Wil | Wil (88') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-20T20:14:35.749529+00:00 | Stade Nyonnais × Wil | Wil (88') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-20T20:14:35.749529+00:00 | Xamax × Etoile Carouge | Etoile Carouge (85') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-20T20:14:35.749529+00:00 | Xamax × Etoile Carouge | Etoile Carouge (85') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | janela_incompleta | janela_incompleta | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **198**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Jogos com odds registradas nos ultimos dias: **205**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
