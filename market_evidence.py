@@ -63,6 +63,12 @@ def audit_markets(archive):
                 group['with_price']+=1
                 ev=float(p['probability'])*float(prices[p['selection']])-100
                 if ev>0:group['theoretical_positive']+=1
+            elif key in ('over_under_25','btts'):
+                frozen=((b.get('market_odds') or {}).get(key) or {}) if isinstance(b.get('market_odds'),dict) else {}
+                price=finite((frozen.get('prices') or {}).get(p['selection']))
+                if frozen.get('recent_at_check') is True and price is not None and 1.01<price<1000:
+                    group['with_price']+=1
+                    if float(p['probability'])*price-100>0:group['theoretical_positive']+=1
             outcome=checkmap.get((key,p['selection'])) if is_final else None
             if outcome in ('hit','miss'):
                 group['settled']+=1
