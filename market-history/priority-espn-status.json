@@ -1,19 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-22T23:36:13.436361+00:00",
+  "checked_at": "2026-11-23T04:06:46.584254+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
-  "created_games": 4,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 5,
+  "created_games": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Guadalajara x Cruz Azul",
-      "league": "mex.1",
-      "kickoff": 1795388820,
+      "fixture": "Monza x Fiorentina",
+      "league": "ita.1",
+      "kickoff": 1795463100,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -29,15 +29,15 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Monza x Fiorentina",
-      "league": "ita.1",
-      "kickoff": 1795463100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Gimnasia La Plata x Newell's Old Boys",
       "league": "arg.1",
       "kickoff": 1795464000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Chapecoense x Palmeiras",
+      "league": "bra.1",
+      "kickoff": 1795554000,
       "reason": "no_verified_public_1x2"
     }
   ],
