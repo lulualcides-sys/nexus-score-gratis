@@ -1,0 +1,30 @@
+/* NEXUS modo simples: jogos primeiro, detalhes técnicos só dentro do jogo.
+   Tudo continua disponível no "Modo completo". */
+body.nx-simple .metric-grid:not(.lab-metrics){display:none}
+body.nx-simple .nexus-list-controls,
+body.nx-simple .nx-tech,
+body.nx-simple .match-foot [class*="nexus-coverage-"]{display:none!important}
+body.nx-simple #goal-sound-toggle,body.nx-simple #mode-pill,body.nx-simple #clock{display:none}
+body.nx-simple #notice{font-size:12px;padding:6px 10px}
+body.nx-simple .panel-heading p{display:none}
+/* filtros recolhidos */
+.nx-filters{margin:6px 0 8px;border:1px solid #355468;border-radius:10px;background:#122a39;color:#c2e6ef}
+.nx-filters>summary{cursor:pointer;padding:10px 12px;font-weight:700;font-size:13px;list-style:none}
+.nx-filters>summary::-webkit-details-marker{display:none}
+.nx-filters>summary::after{content:' ▾'}
+.nx-filters[open]>summary::after{content:' ▴'}
+.nx-filters .nexus-league-quick,.nx-filters .nexus-radar-controls{margin:0 8px 8px;border:0}
+/* seletores com altura normal (estavam enormes no celular) */
+.nexus-league-quick select{height:auto;min-height:38px;line-height:1.2}
+/* sem jogo escolhido, o painel vazio não ocupa a tela do celular */
+@media(max-width:900px){body.nx-simple .detail-panel:has(.empty-detail){display:none}}
+.nx-mode-toggle{font:inherit;font-size:12px;font-weight:700;padding:7px 10px;border-radius:8px;border:1px solid #527381;background:#102532;color:#e9faff;cursor:pointer}
+@media(max-width:900px){
+  /* lista inteira na página: sem caixa com rolagem interna de 3 jogos */
+  body.nx-simple .match-scroll{max-height:none!important;height:auto!important;overflow:visible!important}
+  /* quatro dias numa linha só */
+  body.nx-simple .agenda-days{display:grid!important;grid-template-columns:repeat(4,1fr);gap:4px}
+  body.nx-simple .agenda-day{padding:6px 2px;font-size:10px;min-width:0;white-space:normal}
+}
+body.nx-simple .agenda-days{display:grid!important;grid-template-columns:repeat(4,1fr);gap:4px}
+body.nx-simple .agenda-day{padding:6px 2px;font-size:10px;min-width:0;white-space:normal}

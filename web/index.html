@@ -952,6 +952,8 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 
 @media(max-width:720px){.nexus-audit-row{grid-template-columns:1fr auto}.nexus-audit-row strong{grid-column:1/-1}.nexus-audit-archive-row summary{flex-wrap:wrap}}
 </style>
+<link rel="stylesheet" href="./nexus-simple.css">
+<script src="./nexus-simple.js"></script>
 <script src="./nexus-live.js"></script>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
@@ -2389,7 +2391,7 @@ function renderMatches(){
    const status=resultStatus(m),d=detailFor(m),selected=m.id===state.selection?'selected':'',fav=state.favorites.has(m.id);
    const goalFx=goalEffectFor(m.id),goalClass=goalFx?` goal-new goal-${goalFx.side}`:'';
    const p=d?.pressure||m.pressure;
-   const press=m.phase==='scheduled'?'<span class="indicator medium">◷ PRÉ-LIVE</span>':p?.score===null||p?.score===undefined?(d?.period_pressure?.available?'<span class="indicator medium">Índice ofensivo por tempo ✓</span>':'<span class="indicator">Pressão: analisar</span>'):`<span class="indicator ${p.score>=75?'high':p.score>=45?'medium':''}">Pressão ${esc(p.score)}/100</span>`;
+   const press=m.phase==='scheduled'?'<span class="indicator medium">◷ PRÉ-LIVE</span>':p?.score===null||p?.score===undefined?(d?.period_pressure?.available?'<span class="indicator medium">Índice ofensivo por tempo ✓</span>':'<span class="indicator nx-tech">Pressão: analisar</span>'):`<span class="indicator ${p.score>=75?'high':p.score>=45?'medium':''}">Pressão ${esc(p.score)}/100</span>`;
    const quality=NexusLeagueCoverage.coverageEvidence(d||m);
    const freshnessNote=quality.stale_live?(quality.freshness?.observed==='unknown'?' · SEM HORÁRIO':' · DADOS ANTIGOS'):'';
    const qualityBadge='<span class="indicator nexus-coverage-'+esc(quality.status)+'" title="'+
