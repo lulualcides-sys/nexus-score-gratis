@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-22T19:47:38.817548+00:00",
-  "bookmaker_snapshot_at": "2026-11-22T19:47:37.753912+00:00",
+  "checked_at": "2026-11-23T01:48:30.517864+00:00",
+  "bookmaker_snapshot_at": "2026-11-23T01:48:29.682482+00:00",
   "status": "fresh",
-  "matches_catalogued": 12,
-  "matches_with_priced_markets": 12,
-  "odds_eligible_for_quality": 1140,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1538,
   "invalid_quote_records": 0,
-  "complete_market_lines": 558,
+  "complete_market_lines": 753,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 12,
-      "odds": 268,
-      "complete_lines": 134,
+      "games": 16,
+      "odds": 364,
+      "complete_lines": 182,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.84
+      "median_overround_pct": 3.83
     },
     "first_half_goals": {
-      "games": 12,
-      "odds": 168,
-      "complete_lines": 84,
+      "games": 16,
+      "odds": 220,
+      "complete_lines": 110,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.71
+      "median_overround_pct": 5.27
     },
     "first_half_handicap": {
-      "games": 12,
-      "odds": 142,
-      "complete_lines": 71,
+      "games": 16,
+      "odds": 182,
+      "complete_lines": 91,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.35
+      "median_overround_pct": 4.3
     },
     "first_half_team_goals": {
-      "games": 12,
-      "odds": 48,
-      "complete_lines": 24,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.23
+      "median_overround_pct": 5.25
     },
     "half_time": {
-      "games": 12,
-      "odds": 36,
-      "complete_lines": 12,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.12
+      "median_overround_pct": 3.99
     },
     "match_odds": {
-      "games": 12,
-      "odds": 36,
-      "complete_lines": 12,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.49
+      "median_overround_pct": 3.31
     },
     "team_goals": {
-      "games": 12,
-      "odds": 140,
-      "complete_lines": 70,
+      "games": 16,
+      "odds": 192,
+      "complete_lines": 96,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.2
+      "median_overround_pct": 5.14
     },
     "total_goals": {
-      "games": 12,
-      "odds": 302,
-      "complete_lines": 151,
+      "games": 16,
+      "odds": 420,
+      "complete_lines": 210,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.34
+      "median_overround_pct": 4.36
     }
   },
   "examples": [
     {
-      "fixture": "Getafe x Atletico Madrid",
+      "fixture": "Monza x Fiorentina",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-22T19:47:37.753912+00:00",
+      "observed_at": "2026-11-23T01:48:29.682482+00:00",
       "selections": {
-        "home": 6.85,
-        "away": 1.5556,
-        "draw": 4.1
+        "home": 3.76,
+        "away": 1.9901,
+        "draw": 3.79
       },
-      "overround_pct": 3.27
+      "overround_pct": 3.23
     },
     {
-      "fixture": "Getafe x Atletico Madrid",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;1.0",
-      "line_from_market_key": "s;0;s;1.0",
-      "observed_at": "2026-11-22T19:47:37.753912+00:00",
-      "selections": {
-        "home": 1.9009,
-        "away": 2.03
-      },
-      "overround_pct": 1.87
-    },
-    {
-      "fixture": "Getafe x Atletico Madrid",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.0",
-      "line_from_market_key": "s;0;s;0.0",
-      "observed_at": "2026-11-22T19:47:37.753912+00:00",
-      "selections": {
-        "home": 5.24,
-        "away": 1.1923
-      },
-      "overround_pct": 2.96
-    },
-    {
-      "fixture": "Getafe x Atletico Madrid",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;0.25",
-      "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-11-22T19:47:37.753912+00:00",
-      "selections": {
-        "home": 3.33,
-        "away": 1.3676
-      },
-      "overround_pct": 3.15
-    },
-    {
-      "fixture": "Getafe x Atletico Madrid",
+      "fixture": "Monza x Fiorentina",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.5",
       "line_from_market_key": "s;0;s;0.5",
-      "observed_at": "2026-11-22T19:47:37.753912+00:00",
+      "observed_at": "2026-11-23T01:48:29.682482+00:00",
       "selections": {
-        "home": 2.61,
-        "away": 1.5525
+        "home": 1.9091,
+        "away": 2.0
       },
-      "overround_pct": 2.73
+      "overround_pct": 2.38
+    },
+    {
+      "fixture": "Monza x Fiorentina",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-23T01:48:29.682482+00:00",
+      "selections": {
+        "home": 3.72,
+        "away": 1.304
+      },
+      "overround_pct": 3.57
+    },
+    {
+      "fixture": "Monza x Fiorentina",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-23T01:48:29.682482+00:00",
+      "selections": {
+        "home": 3.26,
+        "away": 1.3704
+      },
+      "overround_pct": 3.65
+    },
+    {
+      "fixture": "Monza x Fiorentina",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-23T01:48:29.682482+00:00",
+      "selections": {
+        "home": 2.81,
+        "away": 1.4785
+      },
+      "overround_pct": 3.22
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
