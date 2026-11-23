@@ -1,43 +1,31 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-23T04:06:46.584254+00:00",
+  "checked_at": "2026-11-23T14:34:29.268729+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 5,
-  "created_games": 1,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 8,
+  "created_games": 0,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Monza x Fiorentina",
-      "league": "ita.1",
-      "kickoff": 1795463100,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Brentford x Everton",
-      "league": "eng.1",
-      "kickoff": 1795464000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Levante x Elche",
-      "league": "esp.1",
-      "kickoff": 1795464000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Gimnasia La Plata x Newell's Old Boys",
-      "league": "arg.1",
-      "kickoff": 1795464000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Chapecoense x Palmeiras",
+      "fixture": "Internacional x Vitória",
       "league": "bra.1",
-      "kickoff": 1795554000,
+      "kickoff": 1795473000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Botafogo x São Paulo",
+      "league": "bra.1",
+      "kickoff": 1795474800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Santos x Grêmio",
+      "league": "bra.1",
+      "kickoff": 1795478400,
       "reason": "no_verified_public_1x2"
     }
   ],
