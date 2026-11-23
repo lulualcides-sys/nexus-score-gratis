@@ -28,3 +28,14 @@ body.nx-simple .panel-heading p{display:none}
 }
 body.nx-simple .agenda-days{display:grid!important;grid-template-columns:repeat(4,1fr);gap:4px}
 body.nx-simple .agenda-day{padding:6px 2px;font-size:10px;min-width:0;white-space:normal}
+/* Celular: o detalhe do jogo abre em tela cheia por cima da lista,
+   em vez de ficar lá embaixo depois de todos os jogos. */
+@media(max-width:900px){
+  body.nx-sheet .detail-panel:not(:has(.empty-detail)){position:fixed!important;inset:0;z-index:1000;
+    margin:0!important;border-radius:0!important;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    background:var(--bg,#f7f4ee);padding-top:52px!important;max-height:none!important}
+  body.nx-sheet{overflow:hidden}
+  .nx-back{display:none}
+  body.nx-sheet .nx-back{display:flex;position:fixed;top:0;left:0;right:0;z-index:1001;height:48px;align-items:center;
+    gap:8px;padding:0 14px;border:0;background:#102532;color:#fff;font:inherit;font-weight:700;font-size:15px;cursor:pointer}
+}
