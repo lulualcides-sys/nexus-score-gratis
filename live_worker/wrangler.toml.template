@@ -1,0 +1,12 @@
+# Gerado pelo workflow nexus-live-worker.yml (o ID do KV é preenchido no deploy).
+name = "nexus-live"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[triggers]
+crons = ["*/2 * * * *"]
+
+[[kv_namespaces]]
+binding = "LIVE"
+id = "__KV_ID__"

@@ -952,6 +952,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 
 @media(max-width:720px){.nexus-audit-row{grid-template-columns:1fr auto}.nexus-audit-row strong{grid-column:1/-1}.nexus-audit-archive-row summary{flex-wrap:wrap}}
 </style>
+<script src="./nexus-live.js"></script>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
 <script src="./nexus-evidence-v535.js"></script>
@@ -1055,6 +1056,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     const response=await realFetch('./data.json?t='+Math.floor(Date.now()/300000),{cache:'no-store'});
     if(!response.ok)throw Error('Coleta pública indisponível: '+response.status);
     const value=await response.json();if(!Array.isArray(value.games))throw Error('Snapshot NEXUS incompleto');
+    if(window.NexusLive)await window.NexusLive.overlay(value,realFetch);
     snapshot=value;last=Date.now();return value;
   }
   // A listagem não exige o arquivo de detalhes (~10MB). Em caso de
@@ -1068,6 +1070,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         if(!response.ok)throw Error('Feed compacto '+response.status);
         const value=await response.json();
         if(value.format!=='listing_only'||!Array.isArray(value.games))throw Error('Feed compacto inválido');
+        if(window.NexusLive)await window.NexusLive.overlay(value,realFetch);
         listingSnapshot=value;listingLast=Date.now();return value;
       }catch(error){
         console.warn('NEXUS: listagem compacta indisponível; usando snapshot integral.',error);

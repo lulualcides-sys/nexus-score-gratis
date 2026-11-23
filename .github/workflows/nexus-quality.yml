@@ -26,6 +26,10 @@ jobs:
           python3 -m unittest discover -s tests -v
       - name: Revisão do painel JavaScript
         run: |
+          node --check web/nexus-live.js
+          node tests/test_live_worker.mjs
+          node tests/test_nexus_live_overlay.mjs
+          node tests/test_league_scope_ids.mjs
           node --check web/nexus-v531.js
           node tests/test_nexus_v531.mjs
           python3 -m py_compile api_football_odds.py
