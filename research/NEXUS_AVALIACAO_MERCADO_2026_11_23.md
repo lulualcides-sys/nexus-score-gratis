@@ -39,3 +39,14 @@ Script: `research/elo_study.py` (`python3 research/elo_study.py history`). Elo c
 
 Melhora consistente, mas pequena: **ainda não promovido**. Limite: só ~4 jogos por time (30 dias de histórico), e o Elo precisa de temporadas inteiras para estabilizar.
 Próximo passo: semear o Elo com temporadas anteriores de fonte com licença aberta (OpenFootball CC0, já usado para auditoria) e repetir a validação. Promover só se ganhar com folga fora da amostra e não piorar os mercados de gols.
+
+## 4. Elo com temporadas anteriores (OpenFootball CC0)
+Script: `research/elo_history_study.py` (`MIN=30 python3 research/elo_history_study.py history <pasta_openfootball>`). Entram 58 arquivos de temporada (2022/23 a 2026/27) de 17 ligas: Inglaterra 1–4, Alemanha 1–2, Espanha 1–2, Itália 1–2, França 1–2, Holanda, Portugal, Bélgica, Turquia e México. São 8.160 jogos históricos; 300 dos 337 times FotMob dessas ligas foram ligados por nome dentro da própria liga. O Elo só é usado quando os dois times têm pelo menos MIN jogos anteriores; caso contrário, vale o modelo atual.
+
+| Teste (não visto) | n | Atual | Elo | Mercado |
+|---|---|---|---|---|
+| MIN=30, todos | 70 | 0,6130 | **0,5956** | — |
+| MIN=30, com odd | 29 | 0,6244 | **0,5839** | 0,5431 |
+| MIN=15, com odd | 47 | 0,6062 | **0,5883** | 0,5243 |
+
+Melhora clara onde há histórico, mas com amostra pequena: o período de teste coincide com a data fifa. Ainda abaixo do mercado. **Não promovido.** Reavaliar com algumas semanas de rodadas de liga; se o ganho se mantiver com n ≥ 200 jogos com odd e sem piora nos mercados de gols, promover o Elo para as ligas com histórico.
