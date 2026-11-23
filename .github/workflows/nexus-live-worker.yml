@@ -1,0 +1,65 @@
+name: "NEXUS Live — publicar Worker Cloudflare (termômetro a cada 2 min)"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "live_worker/**"
+      - ".github/workflows/nexus-live-worker.yml"
+permissions:
+  contents: write
+concurrency:
+  group: nexus-history
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Testes do Worker
+        run: node tests/test_live_worker.mjs
+      - name: Conferir credenciais
+        id: creds
+        run: |
+          if [ -z "$CF_TOKEN" ] || [ -z "$CF_ACCOUNT" ]; then
+            echo "::warning::Faltam os secrets CLOUDFLARE_API_TOKEN e/ou CLOUDFLARE_ACCOUNT_ID. Worker não publicado."
+            echo "ready=0" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=1" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Garantir KV e publicar
+        if: steps.creds.outputs.ready == '1'
+        id: deploy
+        run: |
+          set -euo pipefail
+          API="https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT"
+          AUTH=(-H "Authorization: Bearer $CF_TOKEN" -H "Content-Type: application/json")
+          KV_ID=$(curl -fsS "${AUTH[@]}" "$API/storage/kv/namespaces?per_page=100" | jq -r '.result[]|select(.title=="nexus-live")|.id' | head -1)
+          if [ -z "$KV_ID" ]; then
+            KV_ID=$(curl -fsS -X POST "${AUTH[@]}" "$API/storage/kv/namespaces" -d '{"title":"nexus-live"}' | jq -r '.result.id')
+          fi
+          [ -n "$KV_ID" ] && [ "$KV_ID" != "null" ]
+          sed "s/__KV_ID__/$KV_ID/" live_worker/wrangler.toml.template > live_worker/wrangler.toml
+          cd live_worker
+          CLOUDFLARE_API_TOKEN="$CF_TOKEN" CLOUDFLARE_ACCOUNT_ID="$CF_ACCOUNT" npx --yes wrangler@3.99.0 deploy
+          SUB=$(curl -fsS "${AUTH[@]}" "$API/workers/subdomain" | jq -r '.result.subdomain')
+          [ -n "$SUB" ] && [ "$SUB" != "null" ]
+          echo "url=https://nexus-live.$SUB.workers.dev" >> "$GITHUB_OUTPUT"
+      - name: Ligar o site ao Worker
+        if: steps.creds.outputs.ready == '1'
+        run: |
+          set -e
+          URL="${{ steps.deploy.outputs.url }}"
+          printf '{"url":"%s"}\n' "$URL" > web/live-config.json
+          for i in 1 2 3; do curl -fsS "$URL/live" | head -c 300 && break || sleep 20; done; echo
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/live-config.json
+          git diff --cached --quiet || { git commit -m "NEXUS Live: site ligado ao Worker"; git pull --rebase -q origin main; git push origin HEAD:main; }

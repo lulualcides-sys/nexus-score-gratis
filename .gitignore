@@ -8,3 +8,4 @@ __pycache__/
 *.sqlite3
 .nexus_runtime/
 *.tmp
+live_worker/wrangler.toml
