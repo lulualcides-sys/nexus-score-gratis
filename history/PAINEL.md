@@ -2,32 +2,131 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-23T00:50:32.412524+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-23T09:00:56.860826+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
+| 2026-11-23 | Gimnasia La Plata × Newell's Old Boys | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,10, Fora 3,75 |
+| 2026-11-23 | Santos × Grêmio | 0-0 | 0 | Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 4,70 |
+| 2026-11-23 | Internacional × Vitória | 0-0 | 0 | Match Odds 1X2: Casa 1,69, Empate 3,85, Fora 4,90 |
+| 2026-11-23 | Botafogo × São Paulo | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,40, Fora 3,15 |
+| 2026-11-23 | Brentford × Everton | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,50, Fora 3,15 |
+| 2026-11-23 | Levante × Elche | 0-0 | 0 | Match Odds 1X2: Casa 2,20, Empate 3,55, Fora 3,25 |
+| 2026-11-23 | Monza × Fiorentina | 0-0 | 0 | Match Odds 1X2: Casa 3,50, Empate 3,65, Fora 1,91 |
+| 2026-11-23 | Jong PSV × Jong FC Utrecht | 0-0 | 0 | Match Odds 1X2: Casa 2,30, Empate 3,95, Fora 2,70 |
+| 2026-11-23 | Jong Ajax × Jong AZ | 0-0 | 0 | Match Odds 1X2: Casa 2,25, Empate 3,95, Fora 2,75 |
+| 2026-11-23 | Vitesse × De Graafschap | 0-0 | 0 | Match Odds 1X2: Casa 2,05, Empate 3,85, Fora 3,20 |
+| 2026-11-23 | St. Louis CITY SC × LAFC | 0-0 | 0 | Match Odds 1X2: Casa 2,40, Empate 3,45, Fora 2,70 |
 | 2026-11-23 | Deportes Limache × La Serena | 0-0 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×1.0 |
 | 2026-11-23 | Chivas × Cruz Azul | 1-0 | 54 | Chutes no alvo: 4.0×1.0, Chutes para fora: 1.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-11-23 | Querétaro FC × Necaxa | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,40, Fora 2,80 |
+| 2026-11-23 | Querétaro FC × Necaxa | 2-2 | 90 | Chutes no alvo: 4.0×4.0, Chutes para fora: 2.0×2.0, Escanteios: 5.0×6.0, Grandes chances: 2.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,40, F |
+| 2026-11-23 | NTV Tokyo Verdy Beleza (W) × INAC Kobe Leonessa (W) | 6-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Nojima Stella (W) × Omiya Ardija Ventus (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | AC Nagano Parceiro Ladies (W) × Urawa Ladies (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Albirex Niigata Ladies (W) × Sanfrecce Hiroshima Regina (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Nacional × Cerro Porteño | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | 2 de Mayo × Sportivo San Lorenzo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al Jeel × Al-Saqer FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Jeddah × Damac FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | AS Douanes × CR Bélouizdad | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | San Antonio Bulo Bulo × Always Ready | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 1.0×3.0, Escanteios: 3.0×1.0, Grandes chances: 0.0×1.0 |
-| 2026-11-23 | Instituto × Huracán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | CDT Real Oruro × Guabirá | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Universitario de Vinto × GV San José | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Real Kashmir FC × Dempo SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Instituto × Huracán | 2-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×10.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×2.0 |
+| 2026-11-23 | Gimnasia LP × Newell's Old Boys | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Grosseto × Guidonia Montecelio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Botafogo × São Paulo | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Santos × Grêmio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | RB Bragantino × Vasco da Gama | 1-0 | 89 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×3.0 |
-| 2026-11-23 | Deportivo Marquense × Aurora FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Internacional × Vitória | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Hammarby × IFK Göteborg | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Örgryte × Kalmar FF | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Brøndby IF × FC Midtjylland | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Monza × Fiorentina | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Ludogorets Razgrad × Dunav Ruse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Slaven × Osijek | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Brentford × Everton | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Nantes × Grenoble | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Sochaux × Dunkerque | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Wieczysta Kraków × Motor Lublin | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | KF Shkendija × FK Sileks | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Vitesse × De Graafschap | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Jong Ajax × Jong AZ Alkmaar | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Jong PSV × Jong FC Utrecht | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Koper × Aluminij | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | LD Alajuelense × C.S. Cartaginés | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Sepsi OSK × Rapid București | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Deportivo Marquense × Aurora FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | CSD Municipal × Antigua Guatemala | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-23 | Juticalpa × Olancho FC | 0-0 | 0 | Match Odds 1X2: Casa 7,00, Empate 4,75, Fora 1,33 |
+| 2026-11-23 | TS Podbeskidzie Bielsko-Biała × Termalica Nieciecza | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Levante × Elche | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | AD Ceuta FC × Almería | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | PFC CSKA Sofia II × Beroe | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Espanyol (W) × Valencia (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Orléans × Thionville Lusitanos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | FC Chelyabinsk × Leningradets | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Başakşehir × Çorum FK | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Chelmsford × Maidstone United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Bodrum FK × Van Spor Kulübü | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Chornomorets Odesa × Epitsentr Kamianets-Podilskyi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | LNZ Cherkasy × Polissya Zhytomyr | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Diosgyori VTK × Karcagi SE | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Bayern München (W) × TSG 1899 Hoffenheim (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Asteras Tripolis × Aris Thessaloniki | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Krasava Ypsonas FC × Anorthosis | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Steaua București × Chindia Târgoviște | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | JS Kabylie × MC Alger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | ES Ben Aknoun × USM Alger | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Lecco × Lumezzane | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | El Gouna FC × Zamalek SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al Ahly SC × Pyramids FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Wadi Degla FC × Al Ittihad Alexandria | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Neftchi Fargona × Al Hilal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al-Ain × Esteghlal | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al-Shamal × Al Ahli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Tractor × Al-Wasl | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al Ittihad × Pakhtakor Tashkent | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Al Quwa Al Jawiya × Al-Gharafa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Italy U17 × Ivory Coast U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Uzbekistan U17 × Jamaica U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Senegal U17 × Cuba U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Tajikistan U17 × Croatia U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Mali U17 × Belgium U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Vietnam U17 × New Zealand U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Spain U17 × Fiji U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Morocco U17 × China U17 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | PAOK Thessaloniki B × Niki Volou | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Pyrgos AFC × GS Marko | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Juticalpa × Olancho FC | 1-1 | 0 | Match Odds 1X2: Casa 7,00, Empate 4,75, Fora 1,33 |
 | 2026-11-23 | FC Motagua × CD Olimpia | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Mes Kerman × Beasat Kermanshah | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Kara Gostar × Ario Islamshahr | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Saipa × Naft Bandar Abbas | 0-0 | 0 | Match Odds 1X2: Casa 1,63, Empate 3,20, Fora 5,38 |
+| 2026-11-23 | Foolad Khuzestan B × Mes Rafsanjan | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Qeshm Island × Naft Gachsaran | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Chicago Fire FC × Charlotte FC | 0-0 | 41 | Chutes no alvo: 1.0×2.0, Chutes para fora: 7.0×6.0, Escanteios: 1.0×2.0, Grandes chances: 2.0×1.0 |
-| 2026-11-23 | Vancouver Whitecaps × Real Salt Lake | 0-0 | 0 | Match Odds 1X2: Casa 1,46, Empate 5,19, Fora 6,36 |
+| 2026-11-23 | St. Louis City × Los Angeles FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Vancouver Whitecaps × Real Salt Lake | 2-0 | 90 | Chutes no alvo: 7.0×5.0, Chutes para fora: 10.0×4.0, Escanteios: 7.0×8.0, Grandes chances: 2.0×2.0; Match Odds 1X2: Casa 1,46, Empate 5,19,  |
 | 2026-11-23 | Gimnasia y Tiro × Tristán Suárez | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Juventud de las Piedras × Defensor Sporting | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Albion × Danubio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Sarmiento de La Banda × Club Cipolletti | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | VZN FC × Wembley Rangers | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Clutch FC × Deportrio | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | SDS FC × RTG FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Toma × P17 FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Prime FC × Gold Devils | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | NDL FC × N5 FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Tauro FC × CD Plaza Amador | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-22 | Rosario Central × Gimnasia (Mendoza) | 3-1 | 0 | Chutes no alvo: 5.0×8.0; Match Odds 1X2: Casa 1,40, Empate 4,60, Fora 8,00 |
 | 2026-11-22 | River Plate × Lanús | 3-1 | 0 | Chutes no alvo: 7.0×5.0; Match Odds 1X2: Casa 1,65, Empate 3,65, Fora 5,75 |
-| 2026-11-22 | Instituto (Córdoba) × Huracán | 0-0 | 0 | Match Odds 1X2: Casa 2,10, Empate 3,05, Fora 3,95 |
+| 2026-11-22 | Instituto (Córdoba) × Huracán | 2-1 | 0 | Chutes no alvo: 3.0×5.0; Match Odds 1X2: Casa 2,10, Empate 3,05, Fora 3,95 |
 | 2026-11-22 | Athletico-PR × Remo | 4-2 | 0 | Chutes no alvo: 8.0×7.0; Match Odds 1X2: Casa 1,57, Empate 4,00, Fora 5,75 |
 | 2026-11-22 | Red Bull Bragantino × Vasco da Gama | 1-0 | 0 | Chutes no alvo: 4.0×2.0; Match Odds 1X2: Casa 2,55, Empate 3,50, Fora 2,60 |
 | 2026-11-22 | Fluminense × Mirassol | 1-0 | 0 | Chutes no alvo: 9.0×0.0; Match Odds 1X2: Casa 1,62, Empate 4,10, Fora 5,00 |
@@ -41,105 +140,6 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-11-22 | Getafe × Atlético Madrid | 0-3 | 0 | Chutes no alvo: 1.0×10.0; Match Odds 1X2: Casa 7,00, Empate 4,00, Fora 1,51 |
 | 2026-11-22 | Barcelona × Villarreal | 3-2 | 0 | Chutes no alvo: 9.0×2.0; Match Odds 1X2: Casa 1,18, Empate 8,50, Fora 12,00 |
 | 2026-11-22 | Paris FC × Angers | 4-0 | 0 | Chutes no alvo: 9.0×1.0; Match Odds 1X2: Casa 1,30, Empate 6,00, Fora 9,00 |
-| 2026-11-22 | Marseille × Le Mans | 2-3 | 0 | Chutes no alvo: 5.0×9.0; Match Odds 1X2: Casa 1,47, Empate 4,80, Fora 6,50 |
-| 2026-11-22 | Lorient × Stade Rennais | 1-1 | 0 | Chutes no alvo: 3.0×3.0; Match Odds 1X2: Casa 3,10, Empate 3,25, Fora 2,40 |
-| 2026-11-22 | Werder Bremen × Hamburg SV | 4-0 | 0 | Chutes no alvo: 7.0×2.0 |
-| 2026-11-22 | FC Augsburg × Mainz | 3-1 | 0 | Chutes no alvo: 9.0×4.0 |
-| 2026-11-22 | Sassuolo × Genoa | 0-2 | 0 | Chutes no alvo: 7.0×5.0; Match Odds 1X2: Casa 2,65, Empate 3,15, Fora 2,55 |
-| 2026-11-22 | AC Milan × Frosinone | 5-1 | 0 | Chutes no alvo: 8.0×3.0; Match Odds 1X2: Casa 1,59, Empate 4,20, Fora 4,60 |
-| 2026-11-22 | Atalanta × Internazionale | 4-4 | 0 | Chutes no alvo: 10.0×6.0; Match Odds 1X2: Casa 5,00, Empate 4,40, Fora 1,51 |
-| 2026-11-22 | Juventus × Venezia | 4-0 | 0 | Chutes no alvo: 8.0×1.0 |
-| 2026-11-22 | Bologna × Udinese | 1-1 | 0 | Chutes no alvo: 4.0×3.0; Match Odds 1X2: Casa 1,71, Empate 3,55, Fora 4,70 |
-| 2026-11-22 | Vancouver Whitecaps × Real Salt Lake | 0-0 | 0 | Match Odds 1X2: Casa 1,45, Empate 4,70, Fora 5,50 |
-| 2026-11-22 | Chicago Fire FC × Charlotte FC | 0-1 | 0 | Chutes no alvo: 1.0×3.0; Match Odds 1X2: Casa 1,57, Empate 4,40, Fora 4,70 |
-| 2026-11-22 | Nashville SC × FC Cincinnati | 0-1 | 0 | Chutes no alvo: 6.0×2.0; Match Odds 1X2: Casa 1,49, Empate 4,40, Fora 5,50 |
-| 2026-11-22 | Colo Colo × Universidad Católica | 3-0 | 0 | Chutes no alvo: 10.0×6.0, Chutes para fora: 4.0×6.0, Escanteios: 4.0×9.0, Grandes chances: 3.0×2.0; Match Odds 1X2: Casa 2,20, Empate 3,75,  |
-| 2026-11-22 | Deportes Limache × La Serena | 1-1 | 0 | Chutes no alvo: 1.0×4.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×0.0, Grandes chances: 1.0×1.0; Match Odds 1X2: Casa 2,35, Empate 3,50, F |
-| 2026-11-22 | Huachipato × Deportes Concepción | 0-0 | 0 | Chutes no alvo: 5.0×1.0, Chutes para fora: 6.0×7.0, Escanteios: 3.0×6.0, Grandes chances: 2.0×0.0; Match Odds 1X2: Casa 2,60, Empate 3,30, F |
-| 2026-11-22 | Pumas × Monterrey | 0-2 | 90 | Chutes no alvo: 4.0×6.0, Chutes para fora: 6.0×5.0, Escanteios: 6.0×2.0, Grandes chances: 3.0×0.0 |
-| 2026-11-22 | Tigres × CF América | 1-0 | 39 | Chutes no alvo: 1.0×1.0, Chutes para fora: 3.0×2.0, Escanteios: 1.0×3.0, Grandes chances: 0.0×0.0 |
-| 2026-11-22 | Chivas × Cruz Azul | 1-0 | 79 | Chutes no alvo: 6.0×3.0, Chutes para fora: 1.0×6.0, Escanteios: 2.0×4.0, Grandes chances: 0.0×1.0 |
-| 2026-11-22 | Querétaro FC × Necaxa | 0-0 | 0 | Match Odds 1X2: Casa 2,20, Empate 3,75, Fora 3,00 |
-| 2026-11-22 | FK Radnički 1923 × Čukarički | 1-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | FK IMT Beograd × Partizan Beograd | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Mačva Šabac × Vojvodina | 1-5 | 0 | Chutes no alvo: 7.0×9.0, Chutes para fora: 3.0×7.0, Escanteios: 7.0×4.0, Grandes chances: 2.0×4.0 |
-| 2026-11-22 | Gent U23 × Francs Borains | 2-0 | 56 | Chutes no alvo: 1.0×2.0, Chutes para fora: 4.0×2.0, Escanteios: 3.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-11-22 | Beerschot × Genk U23 | 5-1 | 0 | Chutes no alvo: 11.0×1.0, Chutes para fora: 6.0×4.0, Escanteios: 4.0×3.0, Grandes chances: 3.0×1.0 |
-| 2026-11-22 | Kladno × Vysočina Jihlava | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Žižkov × Opava | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | FC Vlašim × SK Prostějov | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Sporting Cristal × Cienciano | 4-1 | 0 | Chutes no alvo: 6.0×1.0, Chutes para fora: 7.0×5.0, Escanteios: 3.0×3.0, Grandes chances: 6.0×1.0 |
-| 2026-11-22 | Sport Huancayo × Universitario de Deportes | 4-1 | 0 | Chutes no alvo: 8.0×4.0, Chutes para fora: 7.0×7.0, Escanteios: 1.0×6.0, Grandes chances: 4.0×0.0 |
-| 2026-11-22 | Rubio Ñú × Libertad | 1-2 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 5.0×6.0, Escanteios: 4.0×6.0, Grandes chances: 1.0×1.0 |
-| 2026-11-22 | Olimpia × Sportivo Trinidense | 2-1 | 0 | Chutes no alvo: 3.0×3.0, Chutes para fora: 3.0×9.0, Escanteios: 9.0×1.0, Grandes chances: 1.0×0.0 |
-| 2026-11-22 | Wellington Phoenix × Macarthur FC | 1-2 | 52 | Chutes no alvo: 3.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 1.0×3.0 |
-| 2026-11-22 | Bangkok United × Ayutthaya United FC | 2-1 | 45 | Chutes no alvo: 4.0×1.0, Chutes para fora: 4.0×3.0, Escanteios: 0.0×3.0, Grandes chances: 2.0×1.0 |
-| 2026-11-22 | Chiangrai United × Lamphun Warrior | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Rayong FC × Rasisalai United | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Nakhon Ratchasima FC × Khonkaen United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Songkhla United FC × Kanchanaburi Power | 0-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Muang Loei United × Uttaradit FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Phrae United × Nong Bua Pitchaya FC | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Melbourne Victory (W) × Perth Glory (W) | 0-0 | 0 | Chutes no alvo: 4.0×2.0, Chutes para fora: 4.0×7.0, Escanteios: 6.0×1.0, Grandes chances: 0.0×0.0; Match Odds 1X2: Casa 1,40, Empate 3,80, F |
-| 2026-11-22 | LDU de Quito × Aucas | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Orense × Mushuc Runa | 2-3 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 0.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×1.0 |
-| 2026-11-22 | Manta × Delfín | 2-2 | 0 | Chutes no alvo: 5.0×6.0, Chutes para fora: 2.0×12.0, Escanteios: 2.0×9.0, Grandes chances: 2.0×3.0 |
-| 2026-11-22 | Real Potosí × Bolívar | 1-0 | 0 | Chutes no alvo: 0.0×1.0, Chutes para fora: 2.0×0.0, Escanteios: 0.0×0.0, Grandes chances: 0.0×0.0 |
-| 2026-11-22 | The Strongest × Blooming | 4-0 | 0 | Chutes no alvo: 13.0×3.0, Chutes para fora: 6.0×3.0, Escanteios: 9.0×3.0, Grandes chances: 2.0×0.0 |
-| 2026-11-22 | San Antonio Bulo Bulo × Always Ready | 0-1 | 0 | Chutes no alvo: 1.0×1.0, Chutes para fora: 2.0×3.0, Escanteios: 3.0×4.0, Grandes chances: 0.0×1.0 |
-| 2026-11-22 | Aberdeen (W) × Dryburgh Athletic (W) | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Boroughmuir Thistle (W) × Partick Thistle (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Celtic (W) × Forfar Farmington (W) | 17-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Dunipace (W) × Montrose (W) | 0-13 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Elgin City (W) × Stirling University (W) | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Falkirk (W) × Renfrew Ladies FC (W) | 7-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Glasgow City (W) × Cambusdoon (W) | 10-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Inverurie Loco Works (W) × Bishopton (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | FC Kilmarnock Ladies (W) × Hibernian LFC (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Livingston (W) × Hamilton Academical (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Queen's Park (W) × Dundee United (W) | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Rangers (W) × Motherwell (W) | 5-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Rossvale FC (W) × Gartcairn (W) | 3-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Spartans FC (W) × Bonnyrigg Rose (W) | 11-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Stenhousemuir (W) × Heart of Midlothian (W) | 0-6 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Westdyke (W) × St. Johnstone (W) | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Metropolitanos FC × Deportivo La Guaira | 1-5 | 0 | Chutes no alvo: 5.0×11.0, Chutes para fora: 6.0×5.0, Escanteios: 5.0×2.0, Grandes chances: 0.0×0.0 |
-| 2026-11-22 | Atlético-GO × Vila Nova | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Criciúma × Fortaleza | 1-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Instituto × Huracán | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | River Plate × Lanús | 3-1 | 90 | Chutes no alvo: 7.0×5.0, Chutes para fora: 9.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 5.0×1.0; Match Odds 1X2: Casa 1,65, Empate 3,65, F |
-| 2026-11-22 | Rosario Central × Gimnasia Mendoza | 3-1 | 36 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×0.0 |
-| 2026-11-22 | Mamelodi Sundowns FC × Kaizer Chiefs | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Atlético Morelia × Atlético La Paz | 4-1 | 0 | Chutes no alvo: 8.0×2.0, Chutes para fora: 6.0×7.0, Escanteios: 3.0×2.0, Grandes chances: 4.0×3.0 |
-| 2026-11-22 | Once Caldas × Atlético Nacional | 0-0 | 90 | Chutes no alvo: 1.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 6.0×3.0, Grandes chances: 0.0×1.0 |
-| 2026-11-22 | Deportes Copiapó × Antofagasta | 1-1 | 0 | Match Odds 1X2: Casa 2,62, Empate 3,10, Fora 2,40 |
-| 2026-11-22 | San Marcos × Magallanes | 2-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Fluminense × Mirassol | 1-0 | 90 | Chutes no alvo: 9.0×0.0, Chutes para fora: 5.0×3.0, Escanteios: 8.0×1.0, Grandes chances: 3.0×0.0; Match Odds 1X2: Casa 1,59, Empate 4,10, F |
-| 2026-11-22 | RB Bragantino × Vasco da Gama | 1-0 | 89 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×3.0 |
-| 2026-11-22 | Athletico Paranaense × Remo | 4-2 | 35 | Chutes no alvo: 4.0×3.0, Chutes para fora: 3.0×2.0, Escanteios: 0.0×1.0, Grandes chances: 3.0×0.0 |
-| 2026-11-22 | Chapecoense × Cruzeiro | 1-2 | 90 | Chutes no alvo: 3.0×9.0, Chutes para fora: 6.0×7.0, Escanteios: 4.0×7.0, Grandes chances: 1.0×2.0; Match Odds 1X2: Casa 5,80, Empate 4,20, F |
-| 2026-11-22 | KFUM × Brann | 3-4 | 75 | Chutes no alvo: 3.0×3.0, Chutes para fora: 2.0×1.0, Escanteios: 3.0×3.0, Grandes chances: 1.0×2.0 |
-| 2026-11-22 | Kristiansund × Sandefjord | 2-2 | 90 | Chutes no alvo: 8.0×7.0, Chutes para fora: 7.0×5.0, Escanteios: 4.0×8.0, Grandes chances: 5.0×0.0 |
-| 2026-11-22 | Aalesund × Rosenborg | 2-2 | 90 | Chutes no alvo: 5.0×7.0, Chutes para fora: 6.0×6.0, Escanteios: 4.0×11.0, Grandes chances: 3.0×2.0; Match Odds 1X2: Casa 4,10, Empate 4,50,  |
-| 2026-11-22 | Sarpsborg 08 × Lillestrøm | 0-2 | 58 | Chutes no alvo: 7.0×2.0, Chutes para fora: 8.0×2.0, Escanteios: 7.0×4.0, Grandes chances: 0.0×1.0 |
-| 2026-11-22 | Häcken × Elfsborg | 2-1 | 0 | Chutes no alvo: 3.0×2.0, Chutes para fora: 1.0×10.0, Escanteios: 7.0×7.0, Grandes chances: 1.0×0.0 |
-| 2026-11-22 | Brommapojkarna × Halmstads BK | 0-3 | 0 | Chutes no alvo: 4.0×6.0, Chutes para fora: 5.0×6.0, Escanteios: 7.0×1.0, Grandes chances: 1.0×4.0 |
-| 2026-11-22 | Sirius × Djurgården | 1-0 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 7.0×6.0, Escanteios: 3.0×6.0, Grandes chances: 3.0×4.0 |
-| 2026-11-22 | Daegu FC × Gimhae FC 2008 | 3-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Jeonnam Dragons × Ansan Greeners | 1-2 | 0 | Match Odds 1X2: Casa 1,85, Empate 3,40, Fora 3,50 |
-| 2026-11-22 | Paju Frontier × Cheonan City | 1-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Seoul E-Land FC × Chungnam Asan FC | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Dinamo Samarkand × Bunyodkor Tashkent | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Arsenal Dzerzhinsk × Neman Grodno | 2-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Dinamo Minsk × FC Minsk | 4-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Isloch × Torpedo Zhodino | 4-3 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | ML Vitebsk × Slavia Mozyr | 2-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-22 | Sønderjyske × OB | 1-2 | 0 | Chutes no alvo: 5.0×5.0, Chutes para fora: 4.0×4.0, Escanteios: 6.0×7.0, Grandes chances: 4.0×1.0 |
-| 2026-11-22 | Viborg × Randers FC | 0-0 | 0 | Chutes no alvo: 6.0×4.0, Chutes para fora: 6.0×2.0, Escanteios: 2.0×4.0, Grandes chances: 3.0×1.0 |
-| 2026-11-22 | Nordsjælland × FC København | 5-0 | 90 | Chutes no alvo: 7.0×1.0, Chutes para fora: 4.0×8.0, Escanteios: 4.0×4.0, Grandes chances: 4.0×0.0 |
-| 2026-11-22 | AC Horsens × Silkeborg | 3-1 | 0 | Chutes no alvo: 10.0×1.0, Chutes para fora: 9.0×3.0, Escanteios: 1.0×1.0, Grandes chances: 2.0×0.0 |
-| 2026-11-22 | Milan × Frosinone | 5-1 | 90 | Chutes no alvo: 8.0×3.0, Chutes para fora: 3.0×7.0, Escanteios: 2.0×9.0, Grandes chances: 5.0×3.0; Match Odds 1X2: Casa 1,59, Empate 4,20, F |
-| 2026-11-22 | Atalanta × Inter | 4-4 | 90 | Chutes no alvo: 10.0×6.0, Chutes para fora: 1.0×4.0, Escanteios: 5.0×6.0, Grandes chances: 5.0×6.0 |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -262,7 +262,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11615 | **Jogos monitorados:** 1302 | **Ao vivo:** 11 | **Termômetros recentes:** 2.
+**Registros:** 11615 | **Jogos monitorados:** 1340 | **Ao vivo:** 9 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
@@ -371,8 +371,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **242**.
-Novas cotacoes capturadas na ultima execucao: **0**.
+Jogos com odds registradas nos ultimos dias: **254**.
+Novas cotacoes capturadas na ultima execucao: **33**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
