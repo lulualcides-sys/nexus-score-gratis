@@ -8,8 +8,10 @@ NOW = datetime(2026, 11, 17, 22, 0, tzinfo=timezone.utc)
 
 
 def row(league_id, start, **extra):
+    # Termômetro presente: estes testes isolam a fila de SCOUTS.
     return {"fixture": {"phase": "finished", "league_id": league_id,
-                        "league_id_verified": True, "start_timestamp": start}, **extra}
+                        "league_id_verified": True, "start_timestamp": start},
+            "thermometer": {"points": [{"minute": 1, "value": 1}]}, **extra}
 
 
 class FinishedScoutsQueueTests(unittest.TestCase):
