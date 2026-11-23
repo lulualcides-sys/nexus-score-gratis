@@ -11,3 +11,5 @@ assert.match(js,/localStorage/);assert.match(js,/Modo completo/);assert.match(js
 assert.doesNotMatch(js,/\.remove\(\)/);
 new Function(js);
 console.log('NEXUS modo simples: OK');
+assert.match(css,/body\.nx-sheet \.detail-panel/);assert.match(js,/Voltar aos jogos/);assert.match(js,/matchMedia\('\(max-width:900px\)'\)/);
+console.log('NEXUS detalhe em tela cheia no celular: OK');
