@@ -13,7 +13,7 @@ from urllib.request import Request,urlopen
 from urllib.parse import urlencode
 from odds_slots import block_slot,load_ledger,save_ledger
 from espn_scoreboard_odds import normalized_team
-from pregame_refresh_quotes import append_trio
+from pregame_refresh_quotes import append_trio,append_market_group
 
 ROOT='https://v3.football.api-sports.io'
 MAX_ODDS_PER_RUN=6
@@ -91,6 +91,41 @@ def odds_trio(packet,fixture_id,now_ts):
                 if set(prices)=={'home','draw','away'}:
                     return prices,str(book['name'])[:55],source_time
     return None
+
+GOAL_BETS={'5':('over_under_25',{'over 2.5':'over','under 2.5':'under'}),
+           '8':('btts',{'yes':'yes','no':'no'})}
+
+
+def goal_markets(packet,fixture_id,now_ts):
+    """Mais/Menos 2,5 e Ambas marcam do MESMO pacote já pago (sem consulta extra).
+
+    Só pacotes completos da mesma casa; hora do preço vem da fonte.
+    """
+    found={}
+    for entry in packet.get('response') or []:
+        if not isinstance(entry,dict) or str((entry.get('fixture') or {}).get('id'))!=str(fixture_id):
+            continue
+        source_time=stamp(entry.get('update'))
+        if source_time is None or source_time>now_ts+120:continue
+        for book in entry.get('bookmakers') or []:
+            name=str((book or {}).get('name') or '').strip() if isinstance(book,dict) else ''
+            if not name:continue
+            for bet in book.get('bets') or []:
+                if not isinstance(bet,dict):continue
+                spec=GOAL_BETS.get(str(bet.get('id') or ''))
+                if not spec or spec[0] in found:continue
+                market,labels=spec
+                prices={}
+                for value in bet.get('values') or []:
+                    side=labels.get(str((value or {}).get('value') or '').casefold().strip()) if isinstance(value,dict) else None
+                    if not side:continue
+                    try:odd=float(value.get('odd'))
+                    except (TypeError,ValueError):continue
+                    if math.isfinite(odd) and 1.01<odd<1000:prices[side]=round(odd,4)
+                if set(prices)==set(labels.values()):
+                    found[market]=(prices,name[:55],source_time)
+    return [(m,p,b,t) for m,(p,b,t) in found.items()]
+
 
 def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=None):
     key=os.getenv('NEXUS_API_FOOTBALL_KEY','') if key is None else key
@@ -172,6 +207,9 @@ def collect_odds(docs,candidates,now_ts,key=None,fetcher=http_json,ledger_path=N
         try:
             data=fetcher(ROOT+'/odds?'+urlencode({'fixture':match,'page':1}),key)
             report['requests']+=1
+            for market,prices,book,_ in goal_markets(data,match,now_ts):
+                report['goal_market_quotes']=report.get('goal_market_quotes',0)+append_market_group(
+                    row,market,prices,book,'API-Football',now_ts)
             offered=odds_trio(data,match,now_ts)
             if not offered:continue
             prices,bookmaker,source_time=offered

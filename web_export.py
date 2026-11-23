@@ -328,6 +328,25 @@ def historical_h2h(row, cache, espn_cache=None):
     return sorted(found.values(),key=lambda x:x['at'],reverse=True)[:20]
 
 
+def public_market_odds(original, start):
+    """Odds de gols/ambas marcam congeladas antes do início (completas)."""
+    out = {}
+    for market, sides in (('over_under_25', ('over','under')), ('btts', ('yes','no'))):
+        o = ((original.get('market_odds') or {}).get(market) or {}) if isinstance(original.get('market_odds'), dict) else {}
+        prices = o.get('prices') or {}
+        try:
+            at = datetime.fromisoformat(str(o.get('captured_at','')).replace('Z','+00:00'))
+        except (TypeError, ValueError):
+            continue
+        if (at.tzinfo and start and at.timestamp() < start and
+                all(number(prices.get(s)) is not None and 1.01 < number(prices[s]) < 1000 for s in sides)):
+            out[market] = {'source':safe(o.get('source'),40),'bookmaker':safe(o.get('bookmaker'),55),
+                           'captured_at':at.isoformat(),
+                           'prices':{s:round(float(prices[s]),4) for s in sides},
+                           'recent_at_check':o.get('recent_at_check') is True}
+    return out or None
+
+
 def public_baseline(row, fixture):
     """Só dados esportivos congelados antes do início; não inventa histórico."""
     original = row.get('pregame_baseline') or {}
@@ -406,6 +425,7 @@ def public_baseline(row, fixture):
                         'top_scores':(f.get('top_scores') or [])[:3]},
             'sample':samples,'indications':picks,
             'odds':odds,'model_ev':estimates or None,
+            'market_odds':public_market_odds(original,start),
             'settlement':{'status':'finished','score':safe(settlement.get('score'),12),
                           'hits':sum(x['result']=='hit' for x in checks),
                           'count':len(checks),'checks':checks}

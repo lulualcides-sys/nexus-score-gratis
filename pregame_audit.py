@@ -107,6 +107,38 @@ def indications(forecast):
     ]
 
 
+GOAL_MARKETS = {"over_under_25": ("over", "under"), "btts": ("yes", "no")}
+
+
+def market_snapshot(row, now, kickoff, market):
+    """Último pacote completo (mesma casa, fonte e hora) antes do início."""
+    selections = GOAL_MARKETS[market]
+    packets = {}
+    for q in row.get("market_quotes") or []:
+        if not isinstance(q, dict) or q.get("market") != market:
+            continue
+        try:
+            at = datetime.fromisoformat(str(q["captured_at"]).replace("Z", "+00:00")).timestamp()
+        except (ValueError, TypeError, KeyError):
+            continue
+        val = number(q.get("odds"))
+        if (at > now or at >= kickoff or at <= 0 or val is None or
+                not 1.01 < val < 1000 or q.get("selection") not in selections):
+            continue
+        source, bookmaker = str(q.get("source") or ""), str(q.get("bookmaker") or "")
+        if source and bookmaker:
+            packets.setdefault((source, bookmaker, at), {})[q["selection"]] = round(val, 4)
+    complete = [(k, p) for k, p in packets.items() if set(p) == set(selections)]
+    if not complete:
+        return None
+    (source, bookmaker, captured), prices = max(complete, key=lambda x: x[0][2])
+    age = max(0, round((now - captured) / 60))
+    return {"source": source[:40], "bookmaker": bookmaker[:55],
+            "captured_at": datetime.fromtimestamp(captured, timezone.utc).isoformat(),
+            "prices": prices, "age_minutes_at_check": age,
+            "recent_at_check": age <= 45, "scope": "pregame_only"}
+
+
 def odds_snapshot(row, now, kickoff):
     """Só 1X2 simultâneo, mesma casa e fonte, antes da partida e da consulta."""
     packets = {}
@@ -192,6 +224,12 @@ def update_row(row, now=None):
                         current["captured_at"] > baseline["odds"].get("captured_at", "")):
             baseline["odds"] = current
             changed = True
+        for market in GOAL_MARKETS:
+            snap = market_snapshot(row, now_ts, kickoff, market)
+            frozen = (baseline.get("market_odds") or {}).get(market) or {}
+            if snap and snap["captured_at"] > frozen.get("captured_at", ""):
+                baseline.setdefault("market_odds", {})[market] = snap
+                changed = True
     # Resultado somente se final validado. Não há stakes ou lucro atribuído.
     if f.get("phase") == "finished" and baseline.get("settlement") is None:
         score = re.fullmatch(r"(\d{1,2})\s*[-–:]\s*(\d{1,2})", str(f.get("score") or ""))
