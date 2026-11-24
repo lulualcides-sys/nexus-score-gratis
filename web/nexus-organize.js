@@ -67,15 +67,28 @@ function probableScore(){
 /* Aviso de escalação: titulares habituais (≥80% dos últimos jogos) fora do XI. */
 function lineupAlert(){
   const body=document.getElementById('detail-body');if(!body)return;
-  const st=typeof state!=='undefined'?state:null;const d=st&&st.detail;const r=d&&d.lineup_changes;
+  const st=typeof state!=='undefined'?state:null;const d=st&&st.detail;const r=(d&&d.lineup_changes)||{};
   let box=body.querySelector('.nx-lineup');
-  const sides=r?['home','away'].map(s=>r[s]).filter(x=>x&&x.missing_count>=2):[];
-  if(!sides.length){if(box)box.remove();return;}
-  const key=(d.id||'')+JSON.stringify(sides.map(x=>x.missing));
-  if(box&&box.dataset.key===key)return;
+  if(!d){if(box)box.remove();return;}
   const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-  const html=`<b>⚠️ Escalação diferente do habitual</b>`+sides.map(x=>`<p><strong>${esc(x.team)}</strong>: ${x.missing_count} titular${x.missing_count>1?'es':''} habitua${x.missing_count>1?'is':'l'} fora — ${x.missing.map(esc).join(', ')}${x.missing_count>x.missing.length?'…':''}</p>`).join('')+
-    `<small>Habitual = titular em 80% ou mais dos últimos ${Math.max(...sides.map(x=>x.prior_games))} jogos. O motivo (lesão, suspensão, poupado) não é informado pela fonte.</small>`;
+  const why=x=>x.reason?` <em>(${esc(x.reason)}${x.expected_return?' · volta: '+esc(x.expected_return):''})</em>`:' <em class="nx-noreason">(motivo não informado)</em>';
+  const blocks=[];
+  for(const side of ['home','away']){
+    const ch=r[side],team=side==='home'?d.home:d.away;
+    const absent=((d.lineup_unavailable||{})[side]||[]).filter(x=>x&&x.name);
+    if(ch&&ch.missing_count>=2){
+      const detail=ch.missing_detail&&ch.missing_detail.length?ch.missing_detail:ch.missing.map(n=>({name:n}));
+      blocks.push(`<p><strong>${esc(ch.team||team)}</strong>: ${ch.missing_count} titular${ch.missing_count>1?'es':''} habitua${ch.missing_count>1?'is':'l'} fora</p><ul>${detail.map(x=>`<li>${esc(x.name)}${why(x)}</li>`).join('')}</ul>`);
+    }else if(absent.length){
+      blocks.push(`<p><strong>${esc(team)}</strong>: desfalques informados pela fonte</p><ul>${absent.map(x=>`<li>${esc(x.name)}${why(x)}</li>`).join('')}</ul>`);
+    }
+  }
+  if(!blocks.length){if(box)box.remove();return;}
+  const key=(d.id||'')+blocks.join('').length;
+  if(box&&box.dataset.key===key)return;
+  const prior=Math.max(0,...['home','away'].map(s=>(r[s]||{}).prior_games||0));
+  const html=`<b>⚠️ Escalação e desfalques</b>`+blocks.join('')+
+    `<small>${prior?`Habitual = titular em 80% ou mais dos últimos ${prior} jogos. `:''}Motivo e previsão de volta vêm da lista de desfalques do FotMob; quando a fonte não informa, aparece "motivo não informado".</small>`;
   if(!box){box=document.createElement('section');box.className='nx-lineup';const ref=body.querySelector('.nx-prob')||body.querySelector('.scout-main');if(ref)ref.after(box);else body.prepend(box);}
   box.innerHTML=html;box.dataset.key=key;
 }

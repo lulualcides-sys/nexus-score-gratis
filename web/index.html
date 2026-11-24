@@ -1171,7 +1171,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
     const pre=makeForecast(g);
     const forecasts=pre?.forecast;
     const probs=forecasts?.one_x_two;
-    return {...listing(g),lineup_changes:g.lineup_changes||null,score:g.score,minute:g.minute,stats,stats_source:g.source,
+    return {...listing(g),lineup_changes:g.lineup_changes||null,lineup_unavailable:{home:g.lineups?.home?.unavailable||[],away:g.lineups?.away?.unavailable||[]},score:g.score,minute:g.minute,stats,stats_source:g.source,
       incidents:events,events:(g.events||[]).filter(x=>x.type==='substitution'),signal_timeline:tl,signals:indicators.filter(x=>x.state==='active'),indicator_board:indicators,
       lineups:asLineups(g),team_leaders:g.team_leaders||{},
       match_stars:g.match_stars||{},closing_odds:g.closing_odds||[],
@@ -1215,7 +1215,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       odds_comparison:g.odds_comparison||[],
       live_odds_comparison:g.live_odds_comparison||[],
       has_saved_thermometer:!!g.pressure?.length,
-      pressure_points:(g.pressure||[]).slice(-20),pressure_observed_at:g.pressure_observed_at||null,
+      pressure_points:(g.pressure||[]).slice(-20),forecast:g.forecast||(g.pregame_baseline?.forecast?.one_x_two?{...g.pregame_baseline.forecast.one_x_two,over25:g.pregame_baseline.forecast.over_2_5_pct,btts:g.pregame_baseline.forecast.btts_yes_pct}:null),pressure_observed_at:g.pressure_observed_at||null,
       scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),
         available:Object.keys(quoteMap(g.odds)['1x2']).length===3,phase:g.odds_scope||'pregame',
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
@@ -2369,6 +2369,23 @@ function nexusSameTeam(a,b){
 }
 /* Mini gráfico de pressão na lista: últimos 20 min da curva real da fonte,
    mandante para cima, visitante para baixo; só com leitura recente (≤15 min). */
+/* Palpite em uma linha (estilo FootyStats/NerdyTips): previsão congelada ANTES
+   do jogo. Antes do jogo mostra o favorito e gols; encerrado mostra ✓/✗. */
+function nexusTipLine(m){
+ const f=m?.forecast;if(!f||m.live)return '';
+ const p={home:+f.home,draw:+f.draw,away:+f.away};
+ if(![p.home,p.draw,p.away].every(Number.isFinite))return '';
+ const pick=Object.keys(p).reduce((a,b)=>p[a]>=p[b]?a:b);
+ const label=pick==='home'?m.home:pick==='away'?m.away:'Empate';
+ const extra=[Number.isFinite(+f.over25)&&f.over25!==null?`+2,5 gols ${Math.round(+f.over25)}%`:'',
+   Number.isFinite(+f.btts)&&f.btts!==null?`Ambas ${Math.round(+f.btts)}%`:''].filter(Boolean).join(' · ');
+ if(m.phase==='finished'&&Number.isFinite(m.home_score)&&Number.isFinite(m.away_score)){
+   const real=m.home_score>m.away_score?'home':m.home_score<m.away_score?'away':'draw';
+   const ok=real===pick;
+   return `<div class="nx-tip ${ok?'hit':'miss'}">${ok?'✓':'✗'} Previsão NEXUS: ${esc(pick==='draw'?'Empate':label+' vence')} ${Math.round(p[pick])}%</div>`;
+ }
+ return `<div class="nx-tip">Previsão NEXUS: <b>${esc(pick==='draw'?'Empate':label+' vence')} ${Math.round(p[pick])}%</b>${extra?' · '+esc(extra):''}</div>`;
+}
 function nexusPressureSpark(m){
  if(!m?.live)return '';
  const at=Date.parse(m.pressure_observed_at||'');
@@ -2495,7 +2512,7 @@ function renderMatches(){
    const matchStats=d?.stats||m.scoreboard_stats||{};
    const fmt=(v,field)=>field==='possession'&&Number.isFinite(+v)?Math.round(+v):v;
    const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(fmt(a,field))}–${esc(fmt(b,field))}</span>`:''};
-   const summary=nexusPressureSpark(m)+nexusPressureSummary(m);
+   const summary=nexusPressureSpark(m)+nexusPressureSummary(m)+nexusTipLine(m);
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
    const hot=hotGameSignal(d);
@@ -2505,7 +2522,7 @@ function renderMatches(){
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
    const oddsView=teamOddsChips(d||m,cachedPre||m);
    const listOdds=oddsView.available?`<div class="match-list-odds${m.live?' nx-pre-odds':''}" title="Odds de antes do jogo"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
-   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(nexusLeagueLabel(m))}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div>${summary}</div>`;
+   return divider+`<div class="match-item nx-phase-${m.live?'live':esc(m.phase||'')} ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(nexusLeagueLabel(m))}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div>${summary}</div>`;
  }).join('');
  if($('#match-list').innerHTML!==rowsHTML)$('#match-list').innerHTML=rowsHTML;
 }

@@ -38,11 +38,14 @@ def build(docs):
                 xi = _starters((row.get("lineups") or {}).get(side))
                 if not team or not ts:
                     continue
-                entries.append((gid, side, team, ts, xi, f.get(side) or ""))
+                lineup = (row.get("lineups") or {}).get(side) or {}
+                absent = {str(u.get("id")): u for u in (lineup.get("unavailable") or [])
+                          if isinstance(u, dict) and u.get("id")}
+                entries.append((gid, side, team, ts, xi, f.get(side) or "", absent))
                 if xi:
                     by_team.setdefault(team, {})[gid] = (ts, xi)
     report = {}
-    for gid, side, team, ts, xi, name in entries:
+    for gid, side, team, ts, xi, name, absent in entries:
         if not xi:
             continue
         prior = sorted((v for k, v in by_team.get(team, {}).items() if k != gid and v[0] < ts),
@@ -59,5 +62,10 @@ def build(docs):
         report.setdefault(gid, {})[side] = {
             "team": str(name)[:80], "prior_games": len(prior),
             "habitual": len(habitual), "missing": [names[p] for p in missing][:8],
-            "missing_count": len(missing)}
+            "missing_count": len(missing),
+            # Motivo só quando a fonte publica (lista "unavailable"); senão None.
+            "missing_detail": [{"name": names[p],
+                                "reason": (absent.get(p) or {}).get("reason"),
+                                "expected_return": (absent.get(p) or {}).get("expected_return")}
+                               for p in missing][:8]}
     return report
