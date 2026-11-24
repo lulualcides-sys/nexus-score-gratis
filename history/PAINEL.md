@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:38:07.752677+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:54:30.137824+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -11,7 +11,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-11-23 | Gimnasia La Plata × Newell's Old Boys | 4-2 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 2,10, Empate 3,10, Fora 3,75 |
-| 2026-11-23 | Santos × Grêmio | 0-1 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 4,70 |
+| 2026-11-23 | Santos × Grêmio | 0-2 | 0 | Chutes no alvo: 6.0×5.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 4,70 |
 | 2026-11-23 | Internacional × Vitória | 2-5 | 0 | Chutes no alvo: 4.0×8.0; Match Odds 1X2: Casa 1,69, Empate 3,85, Fora 4,90 |
 | 2026-11-23 | Botafogo × São Paulo | 1-1 | 0 | Chutes no alvo: 7.0×7.0; Match Odds 1X2: Casa 2,25, Empate 3,40, Fora 3,15 |
 | 2026-11-23 | Brentford × Everton | 4-0 | 0 | Chutes no alvo: 7.0×2.0; Match Odds 1X2: Casa 2,25, Empate 3,50, Fora 3,15 |
@@ -42,7 +42,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-23 | Grosseto × Guidonia Montecelio | 1-2 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×2.0 |
 | 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Botafogo × São Paulo | 1-1 | 90 | Chutes no alvo: 7.0×7.0, Chutes para fora: 12.0×4.0, Escanteios: 5.0×3.0, Grandes chances: 3.0×3.0; Match Odds 1X2: Casa 2,25, Empate 3,35,  |
-| 2026-11-23 | Santos × Grêmio | 0-1 | 45 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 1,65, Empate 4,20, F |
+| 2026-11-23 | Santos × Grêmio | 0-2 | 45 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 1,65, Empate 4,20, F |
 | 2026-11-23 | RB Bragantino × Vasco da Gama | 1-0 | 89 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×3.0 |
 | 2026-11-23 | Internacional × Vitória | 2-5 | 90 | Chutes no alvo: 4.0×8.0, Chutes para fora: 10.0×3.0, Escanteios: 11.0×5.0, Grandes chances: 3.0×5.0; Match Odds 1X2: Casa 1,62, Empate 3,85, |
 | 2026-11-23 | Hammarby × IFK Göteborg | 3-1 | 75 | Chutes no alvo: 2.0×3.0, Chutes para fora: 5.0×1.0, Escanteios: 6.0×3.0, Grandes chances: 3.0×1.0 |
