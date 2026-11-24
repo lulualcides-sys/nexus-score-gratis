@@ -27,3 +27,13 @@ assert.match(css,/\.match-tabs\{display:flex!important;flex-wrap:wrap/);
 assert.match(js,/prettyDates/);
 assert.match(html,/key==='possession'&&Number\.isFinite\(\+v\)\?Math\.round/);
 console.log('NEXUS varredura: OK');
+{
+const src2=html.slice(html.indexOf('function nexusPressureSpark'),html.indexOf('/* Resumo de uma linha'));
+const sp=new Function('esc',src2+';return nexusPressureSpark;')(s=>String(s));
+const now=new Date().toISOString(),pts=[...Array(15)].map((_,i)=>({m:50+i,v:i%2?60:-30}));
+const out=sp({live:true,home:'A',away:'B',pressure_points:pts,pressure_observed_at:now});
+assert.match(out,/nx-spark/);assert.equal((out.match(/<rect/g)||[]).length,15);assert.match(out,/class="h hot"/);assert.match(out,/class="a"/);
+assert.equal(sp({live:true,pressure_points:pts,pressure_observed_at:'2020-01-01T00:00:00Z'}),'','velho não desenha');
+assert.equal(sp({live:false,pressure_points:pts,pressure_observed_at:now}),'');
+console.log('NEXUS mini gráfico de pressão: OK');
+}

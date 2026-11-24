@@ -1,0 +1,9 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const js=fs.readFileSync(new URL('../web/nexus-organize.js',import.meta.url),'utf8');
+const html=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+assert.match(html,/nexus-organize\.js/);
+for(const id of ['cloud-status','cloud-audit','cloud-signal-journal','cloud-results'])assert.ok(js.includes(id),id);
+assert.match(js,/n53-ev-explain/);assert.doesNotMatch(js,/\.remove\(\)\s*;?\s*\/\/ apaga/);
+new Function(js.replace(/new MutationObserver[\s\S]*?\);\n/,''));
+console.log('NEXUS Coletas/LAB organizados: OK');

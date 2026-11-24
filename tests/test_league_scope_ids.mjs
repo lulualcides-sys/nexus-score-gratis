@@ -77,3 +77,6 @@ assert.equal(stats.find(x=>x.league==='premier').total,1,'Gana não conta como P
 assert.equal(c.profile('eng.1')?.id,'premier');
 assert.equal(c.visible(done('usa.1',undefined,{source:'ESPN'})),true);
 console.log('league scope ids: ok');
+assert.equal(c.womenGame({league:'WE League',home:'Nojima Stella (W)',away:'Omiya Ardija Ventus (W)'}),true);
+assert.equal(c.womenGame({league:'J1 League',home:'Kashima',away:'Urawa'}),false);
+console.log('feminino com (W): OK');

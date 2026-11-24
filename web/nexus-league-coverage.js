@@ -147,7 +147,8 @@ function womenGame(g){
  if(!g)return true;
  const gender=norm(g.gender||g.fixture?.gender||g.competition_gender);
  if(['female','women','womens','feminino','feminina','femenino','femenina'].includes(gender))return true;
- return [g.league,g.home,g.away].some(x=>womenName.test(norm(x)));
+ // "(W)" nos nomes (ex.: Nojima Stella (W)) some no norm(): testar o texto original também.
+ return [g.league,g.home,g.away].some(x=>womenName.test(norm(x))||/\((?:w|f|women|fem)\)|\bwomen\b/i.test(String(x||'')));
 }
 function category(league,leagueId){return profile(league,leagueId)?.tier==='main';}
 // Base e reservas ficam fora até do modo "todas" (não são o produto analisado).
