@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T03:14:49.702118+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T03:27:32.512946+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 11701 | **Jogos distintos:** 3623 | **Resultados verificáveis:** 6455 | **Com gol:** 2517 | **Sem gol:** 3938 | **Taxa observada:** 39.0%.
-**Evolução da amostra:** 47 datas com coletas | 104 pendentes | 2196 indeterminados | 2946 incompletos.
+**Evolução da amostra:** 47 datas com coletas | 100 pendentes | 2196 indeterminados | 2950 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,16 +262,16 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11701 | **Jogos monitorados:** 1329 | **Ao vivo:** 12 | **Termômetros recentes:** 1.
+**Registros:** 11701 | **Jogos monitorados:** 1329 | **Ao vivo:** 10 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T03:15:13.469285+00:00 | St. Louis CITY SC × LAFC | St. Louis CITY SC (90') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T03:15:13.469285+00:00 | St. Louis City × Los Angeles FC | St. Louis City (92') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T03:15:13.469285+00:00 | St. Louis CITY SC × LAFC | St. Louis CITY SC (90') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T03:15:13.469285+00:00 | CSD Municipal × Antigua Guatemala | Equipe não definida (49') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
 | 2026-11-24T01:27:32.627507+00:00 | Santos × Grêmio | Santos (60') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -372,7 +372,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 ## Odds verificadas e EV+ experimental
 
 Jogos com odds registradas nos ultimos dias: **109**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
