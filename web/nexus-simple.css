@@ -160,3 +160,19 @@ body.nx-simple .lab-nav{display:flex!important;flex-wrap:nowrap!important;overfl
 body.nx-simple .lab-nav button{flex:0 0 auto;white-space:nowrap;padding:8px 10px!important;font-size:12px!important}
 body.nx-simple #intelligence-view.nx-lab-empty .lab-metrics{display:none}
 .nx-lab-note{margin:10px 0;padding:12px 14px;border-radius:10px;background:#13303f;color:#d9eef5;font-size:13px;line-height:1.5}
+/* Placar provável */
+.nx-prob{order:3;margin:0 0 12px;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #d9e3e8}
+body.nx-simple #detail-body>.nx-prob{order:3}
+.nx-prob-head{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:13px;color:#123c4a}
+.nx-prob-head span{color:#5c7480;font-size:12px}
+.nx-prob-scores{display:flex;gap:8px;margin:10px 0}
+.nx-prob-scores div{flex:1;text-align:center;padding:8px 4px;border-radius:10px;background:#eef5f6}
+.nx-prob-scores div.main{background:#123c4a;color:#fff}
+.nx-prob-scores strong{display:block;font-size:20px}.nx-prob-scores small{font-size:12px;opacity:.8}
+.nx-prob-1x2{display:flex;justify-content:space-between;gap:6px;font-size:12px;font-weight:700;color:#244050}
+.nx-prob-note{display:block;margin-top:8px;font-size:11px;color:#6a8590}
+/* Aviso de escalação */
+.nx-lineup{order:3;margin:0 0 12px;padding:12px 14px;border-radius:12px;background:#fff7e6;border:1px solid #f0c674;color:#5a3d00}
+body.nx-simple #detail-body>.nx-lineup{order:3}
+.nx-lineup b{font-size:14px}.nx-lineup p{margin:6px 0 0;font-size:13px;line-height:1.45}
+.nx-lineup small{display:block;margin-top:8px;font-size:11px;color:#7a6330}

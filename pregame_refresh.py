@@ -27,6 +27,8 @@ MIN_WAIT=8*60
 ATTEMPTS=HISTORY/'pregame_attempts.json'
 STATUS=HISTORY/'pregame_refresh_status.json'
 
+ESPN_LOOKAHEAD=30*3600
+
 def fixture_candidates(docs,now_ts,lookahead=LOOKAHEAD):
     choices=[]
     for day,doc in docs.items():
@@ -123,7 +125,9 @@ def run():
     days=[today]
     local_hour=NOW.astimezone(BR).hour
     if local_hour<=3:days.append(today-timedelta(days=1))
-    if local_hour>=18:days.append(today+timedelta(days=1))
+    # Amanhã sempre: as rotinas do GitHub atrasam horas e jogos da manhã
+    # seguinte ficavam sem odds pré-jogo (cobertura 38-40% nas ligas principais).
+    days.append(today+timedelta(days=1))
     docs={d.isoformat():read(HISTORY/(d.isoformat()+'.json')) for d in days}
     # Refrescar programação de hoje e das próximas horas; evita não detectar
     # partidas adicionadas após a execução completa horária.
@@ -232,7 +236,10 @@ def run():
             'SofaScore calendário indisponível: '+str(err)[:110])
     # Fonte alternativa para partidas FotMob: agenda ESPN + resumo por ID ESPN,
     # com verificação estrita de clubes e horário antes de aceitar preços.
-    result['espn_fallback']=espn_scoreboard_odds(docs,odds_candidates,now_ts)
+    # ESPN é grátis e sem cota: janela de 30 h (inclui amanhã). As fontes com
+    # cota mantêm os próprios limites internos (≤6 h).
+    espn_candidates=fixture_candidates(docs,now_ts,lookahead=ESPN_LOOKAHEAD)
+    result['espn_fallback']=espn_scoreboard_odds(docs,espn_candidates,now_ts)
     result['odds_updated']+=result['espn_fallback']['quotes_added']
     if result['espn_fallback']['errors']:
         result['errors'].extend(result['espn_fallback']['errors'][:4])

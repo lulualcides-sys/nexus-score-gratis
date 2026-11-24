@@ -7,3 +7,6 @@ for(const id of ['cloud-status','cloud-audit','cloud-signal-journal','cloud-resu
 assert.match(js,/n53-ev-explain/);assert.doesNotMatch(js,/\.remove\(\)\s*;?\s*\/\/ apaga/);
 new Function(js.replace(/new MutationObserver[\s\S]*?\);\n/,''));
 console.log('NEXUS Coletas/LAB organizados: OK');
+assert.match(js,/function lineupAlert/);assert.match(js,/missing_count>=2/);assert.match(js,/function probableScore/);
+assert.match(html,/lineup_changes:g\.lineup_changes\|\|null/);
+console.log('NEXUS placar provável e aviso de escalação: OK');
