@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T04:05:11.708852+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T06:00:17.834205+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -55,13 +55,13 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-25 | FC Rustavi × FC Meshakhte Tkibuli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | FK Arsenal Tivat × Dečić Tuzi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | FK Bokelj × Petrovac | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Avispa Fukuoka × Yokohama F.Marinos | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Avispa Fukuoka × Yokohama F.Marinos | 0-0 | 0 | Match Odds 1X2: Casa 2,80, Empate 3,35, Fora 2,40 |
 | 2026-11-25 | JEF United Chiba × Nagoya Grampus | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | FC Tokyo × Sanfrecce Hiroshima | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | FC Tokyo × Sanfrecce Hiroshima | 0-0 | 0 | Match Odds 1X2: Casa 2,40, Empate 3,40, Fora 2,80 |
 | 2026-11-25 | Mito Hollyhock × Tokyo Verdy | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Fagiano Okayama FC × Shimizu S-Pulse | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Fagiano Okayama FC × Shimizu S-Pulse | 0-0 | 0 | Match Odds 1X2: Casa 2,00, Empate 3,30, Fora 3,70 |
 | 2026-11-25 | Urawa Red Diamonds × Cerezo Osaka | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | V-Varen Nagasaki × Kawasaki Frontale | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | V-Varen Nagasaki × Kawasaki Frontale | 0-0 | 0 | Match Odds 1X2: Casa 3,55, Empate 3,95, Fora 1,87 |
 | 2026-11-25 | Hokkaido Consadole Sapporo × Fujieda MYFC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | FC Imabari × Tegevajaro Miyazaki | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Iwaki FC × Kataller Toyama | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -356,8 +356,8 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-23T15:40:21.730180+00:00 | Italy U17 × Ivory Coast U17 | Italy U17 (52') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-23T00:50:59.305777+00:00 | Chivas × Cruz Azul | Chivas (83') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-23T00:50:59.305777+00:00 | CSD Municipal × Antigua Guatemala | Equipe não definida (77') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-23T00:50:59.305777+00:00 | Chicago Fire FC × Charlotte FC | Charlotte FC (54') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-23T00:50:59.305777+00:00 | Chicago Fire FC × Charlotte FC | Chicago Fire FC (54') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-23T00:50:59.305777+00:00 | Chicago Fire FC × Charlotte FC | Charlotte FC (54') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
+| 2026-11-23T00:50:59.305777+00:00 | Chicago Fire FC × Charlotte FC | Chicago Fire FC (54') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | gol_confirmado | indisponível |
 | 2026-11-23T00:22:41.557851+00:00 | Chivas × Cruz Azul | Cruz Azul (55') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-23T00:22:41.557851+00:00 | RB Bragantino × Vasco da Gama | Vasco da Gama (91') | 💣 grandes_chances_3 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-23T00:22:41.557851+00:00 | RB Bragantino × Vasco da Gama | Vasco da Gama (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -371,7 +371,7 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **109**.
+Jogos com odds registradas nos ultimos dias: **153**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
