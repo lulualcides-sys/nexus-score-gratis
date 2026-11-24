@@ -955,6 +955,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <link rel="stylesheet" href="./nexus-simple.css">
 <script src="./nexus-simple.js"></script>
 <script src="./nexus-live.js"></script>
+<script src="./nexus-pitch.js"></script>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
 <script src="./nexus-evidence-v535.js"></script>
@@ -2617,7 +2618,7 @@ function renderDetail(){
   const d=state.detail;if(!d)return renderEmpty();
   const fav=state.favorites.has(d.id);
   const status=d.stale?'CACHE / CONFERIR':state.demo?'DEMONSTRAÇÃO FICTÍCIA':(d.status||'PARTIDA');
-  $('#detail-panel').innerHTML=`<div class="detail-toolbar"><div><div class="detail-tag">◉ CENTRAL DE ANÁLISE <span style="color:#748da6;margin-left:8px">${esc(d.league)}</span></div><div class="detail-sub">${PressureLab.isHalfTime(d)?'HT':esc(status)} · ${d.minute&&!PressureLab.isHalfTime(d)?`${esc(d.minute)}′ · `:''}${esc(d.source||'')}</div></div><button class="detail-fav" id="detail-fav" aria-label="Favoritar">${fav?'★ SALVO':'☆ SALVAR'}</button></div>
+  $('#detail-panel').innerHTML=`<div class="detail-toolbar"><div><div class="detail-tag">◉ CENTRAL DE ANÁLISE <span style="color:#748da6;margin-left:8px">${esc(nexusLeagueLabel(d))}</span></div><div class="detail-sub">${PressureLab.isHalfTime(d)?'HT':esc(status)} · ${d.minute&&!PressureLab.isHalfTime(d)?`${esc(d.minute)}′ · `:''}${esc(d.source||'')}</div></div><button class="detail-fav" id="detail-fav" aria-label="Favoritar">${fav?'★ SALVO':'☆ SALVAR'}</button></div>
     <div class="detail-main"><div id="detail-body"></div></div>`;
   $('#detail-fav').onclick=()=>toggleFavorite(d.id);
   renderDetailBody();

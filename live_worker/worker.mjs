@@ -105,9 +105,9 @@ async function getJson(url) {
   return r.json();
 }
 
-export async function collect(env, now = Date.now(), fetcher = getJson) {
+export async function collect(env, now = Date.now(), fetcher = getJson, opts = {}) {
   const nowIso = new Date(now).toISOString();
-  const prev = (await env.LIVE.get('live', 'json')) || {games: {}};
+  const prev = opts.prev || (await env.LIVE.get('live', 'json')) || {games: {}};
   const status = {updated_at: nowIso, live_found: 0, details: 0, with_pressure: 0, errors: []};
   let games;
   try { games = liveGames(await fetcher(FM + 'matches?date=' + brDate(now))); }
@@ -136,8 +136,28 @@ export async function collect(env, now = Date.now(), fetcher = getJson) {
     else if (!games) next[id] = g;
   }
   const doc = {schema: 1, source: 'FotMob via Cloudflare Worker', status, games: next};
-  await env.LIVE.put('live', JSON.stringify(doc));
+  // Leitura sob demanda não grava no KV (limite grátis de 1.000 gravações/dia).
+  if (!opts.readOnly) await env.LIVE.put('live', JSON.stringify(doc));
   return doc;
+}
+
+/* /live sob demanda: se a última leitura tem mais de FRESH_MS, busca o FotMob agora
+ * (placar, minuto, pressão). Cache de borda de 20 s evita repetir para cada visitante. */
+export const FRESH_MS = 20000;
+export async function fresh(request, env, ctx, now = Date.now(), fetcher = getJson, cache = globalThis.caches?.default) {
+  const key = new Request(new URL('/live', request.url).toString());
+  if (cache) { const hit = await cache.match(key); if (hit) return hit; }
+  const stored = await env.LIVE.get('live', 'json');
+  let doc = stored;
+  const age = stored?.status?.updated_at ? now - Date.parse(stored.status.updated_at) : Infinity;
+  if (!stored || age > FRESH_MS) {
+    try { doc = await collect(env, now, fetcher, {prev: stored || {games: {}}, readOnly: true}); }
+    catch (_) { doc = stored; }
+  }
+  const res = new Response(JSON.stringify(doc || {schema: 1, status: {state: 'not_collected_yet'}, games: {}}),
+    {headers: {...CORS, 'Cache-Control': 'public, max-age=20'}});
+  if (cache && ctx?.waitUntil) ctx.waitUntil(cache.put(key, res.clone()));
+  return res;
 }
 
 const CORS = {'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-age=30',
@@ -145,10 +165,9 @@ const CORS = {'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-
 
 export default {
   async scheduled(event, env, ctx) { ctx.waitUntil(collect(env)); },
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname !== '/live') return new Response('NEXUS live: use /live', {status: 404, headers: CORS});
-    const doc = await env.LIVE.get('live');
-    return new Response(doc || JSON.stringify({schema: 1, status: {state: 'not_collected_yet'}, games: {}}), {headers: CORS});
+    return fresh(request, env, ctx);
   }
 };

@@ -121,3 +121,21 @@ body.nx-no-odds .pressure-scoreboard-odds-note,body.nx-no-odds .iara-ev{display:
 .n57-heading h3,.n57-heading small{color:#123c4a!important}
 .n57-heading small{color:#44606b!important}
 .snapshot-title>b{color:#123c4a!important}
+/* Mapa ao vivo */
+.nx-pitch{order:1;margin:0 0 12px;padding:10px 12px;border-radius:12px;background:#0f2a1f;color:#e9fff3}
+body.nx-simple #detail-body>.nx-pitch{order:1}
+body.nx-simple #detail-body>.scout-main{order:2}
+.nx-pitch-head{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:6px}
+.nx-pitch-head span{font-weight:700;color:#bff5d8}
+.nx-pitch small{display:block;margin-top:6px;font-size:11px;color:#9fd1b8}
+.nx-pitch-svg{width:100%;height:auto;display:block}
+.nx-pitch-svg .grass{fill:#1c6b3f}.nx-pitch-svg .stripe{fill:#1f7645}
+.nx-pitch-svg .lines *{fill:none;stroke:#e9fff3;stroke-width:.5;opacity:.75}
+.nx-pitch-svg .zone{fill:#ffd24d;transition:opacity .8s}.nx-pitch-svg .zone.hot{fill:#ff5a3c;animation:nxpulse 1.2s ease-in-out infinite}
+.nx-pitch-svg .ball{transition:transform 1.6s cubic-bezier(.4,.1,.2,1)}
+.nx-pitch-svg .ball circle:last-child{fill:#fff}
+.nx-pitch-svg .halo{fill:#fff;opacity:.25;animation:nxhalo 1.6s ease-out infinite}.nx-pitch-svg .halo.hot{fill:#ffb199}
+.nx-pitch-svg .lbl{font-size:3.4px;fill:#e9fff3;font-weight:700}
+@keyframes nxpulse{50%{opacity:.25}}
+@keyframes nxhalo{0%{r:2;opacity:.45}100%{r:5;opacity:0}}
+@media (prefers-reduced-motion:reduce){.nx-pitch-svg *{animation:none!important;transition:none!important}}
