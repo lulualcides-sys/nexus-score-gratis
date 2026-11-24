@@ -956,6 +956,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 <script src="./nexus-simple.js"></script>
 <script src="./nexus-live.js"></script>
 <script src="./nexus-pitch.js"></script>
+<script src="./nexus-organize.js"></script>
 <script src="./nexus-v531.js"></script>
 <script src="./nexus-audit-v532.js"></script>
 <script src="./nexus-evidence-v535.js"></script>
@@ -1214,7 +1215,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       odds_comparison:g.odds_comparison||[],
       live_odds_comparison:g.live_odds_comparison||[],
       has_saved_thermometer:!!g.pressure?.length,
-      pressure_points:(g.pressure||[]).slice(-12),pressure_observed_at:g.pressure_observed_at||null,
+      pressure_points:(g.pressure||[]).slice(-20),pressure_observed_at:g.pressure_observed_at||null,
       scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),
         available:Object.keys(quoteMap(g.odds)['1x2']).length===3,phase:g.odds_scope||'pregame',
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
@@ -2366,6 +2367,18 @@ function nexusSameTeam(a,b){
  const fa=flat(a),fb=flat(b);
  return (fa.length>=3&&fa.length<=5&&fa===nexusInitials(b))||(fb.length>=3&&fb.length<=5&&fb===nexusInitials(a));
 }
+/* Mini gráfico de pressão na lista: últimos 20 min da curva real da fonte,
+   mandante para cima, visitante para baixo; só com leitura recente (≤15 min). */
+function nexusPressureSpark(m){
+ if(!m?.live)return '';
+ const at=Date.parse(m.pressure_observed_at||'');
+ const pts=(m.pressure_points||[]).filter(p=>Number.isFinite(+p.m)&&Number.isFinite(+p.v));
+ if(pts.length<5||!Number.isFinite(at)||Date.now()-at>15*60000)return '';
+ const last=pts[pts.length-1].m,win=pts.filter(p=>p.m>last-20),W=200,H=36,mid=H/2,bw=W/20;
+ const bars=win.map(p=>{const v=Math.max(-100,Math.min(100,+p.v)),h=Math.max(1,Math.abs(v)/100*(mid-2)),x=(20-(last-p.m)-1)*bw;
+   return `<rect x="${(x+1).toFixed(1)}" y="${(v>=0?mid-h:mid).toFixed(1)}" width="${(bw-2).toFixed(1)}" height="${h.toFixed(1)}" class="${v>=0?'h':'a'}${Math.abs(v)>=50?' hot':''}"/>`;}).join('');
+ return `<div class="nx-spark" title="Pressão dos últimos 20 minutos (fonte). ▲ ${esc(m.home)} · ▼ ${esc(m.away)}"><svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><line x1="0" x2="${W}" y1="${mid}" y2="${mid}"/>${bars}</svg><span>${last-19>0?last-19:1}′</span><span>${last}′</span></div>`;
+}
 /* Resumo de uma linha: só com curva real da fonte, recente (≤15 min), últimos 10 minutos. */
 function nexusPressureSummary(m){
  if(!m?.live)return '';
@@ -2482,7 +2495,7 @@ function renderMatches(){
    const matchStats=d?.stats||m.scoreboard_stats||{};
    const fmt=(v,field)=>field==='possession'&&Number.isFinite(+v)?Math.round(+v):v;
    const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(fmt(a,field))}–${esc(fmt(b,field))}</span>`:''};
-   const summary=nexusPressureSummary(m);
+   const summary=nexusPressureSpark(m)+nexusPressureSummary(m);
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
    const hot=hotGameSignal(d);
