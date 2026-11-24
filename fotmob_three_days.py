@@ -34,12 +34,15 @@ def assign_fixture(row,fixture):
 def run():
     today=date.fromisoformat(DAY)
     dates=[(today-timedelta(days=i)).isoformat() for i in range(3)]
-    docs={day:read(HISTORY/(day+'.json')) for day in dates}
+    # Amanhã também é GUARDADO (antes só era consultado e descartado): sem isso a
+    # previsão pré-jogo só podia ser congelada no próprio dia e perdia o apito.
+    tomorrow=(today+timedelta(days=1)).isoformat()
+    docs={day:read(HISTORY/(day+'.json')) for day in dates+[tomorrow]}
     report={'updated_at':NOW.isoformat(),'days':dates,'queries':0,
       'games_added':0,'games_updated':0,'failed':[]}
     # Consultar também o dia UTC seguinte: jogos das 21-23h BRT podem
     # constar no calendário UTC do dia seguinte.
-    queries=dates+[ (today+timedelta(days=1)).isoformat()]
+    queries=dates+[tomorrow,(today+timedelta(days=2)).isoformat()]
     with ThreadPoolExecutor(max_workers=4) as pool:
         future={pool.submit(fotmob_list,d):d for d in queries}
         for task in as_completed(future):
