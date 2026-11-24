@@ -30,6 +30,7 @@ jobs:
           node --check web/nexus-simple.js
           node tests/test_nexus_simple_mode.mjs
           node tests/test_nexus_list_cleanup.mjs
+          node tests/test_nexus_five_features.mjs
           node tests/test_live_worker.mjs
           node tests/test_nexus_live_overlay.mjs
           node tests/test_league_scope_ids.mjs
