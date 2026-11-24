@@ -102,3 +102,22 @@ body.nx-simple .scout-main .scout-event:not(.nx-key-event),body.nx-simple .scout
 .nx-odds-toggle{display:block;margin:0 12px 10px;font-size:13px;color:#c2e6ef}
 body.nx-no-odds .match-list-odds,body.nx-no-odds .odds-compare,body.nx-no-odds .pressure-scoreboard-odds,
 body.nx-no-odds .pressure-scoreboard-odds-note,body.nx-no-odds .iara-ev{display:none!important}
+/* Demonstração não tem fonte de dados (nem na web nem no servidor): esconder os botões quebrados */
+#demo-toggle,.setting-line:has(#demo-setting){display:none!important}
+/* Abas do jogo: todas visíveis no celular (duas linhas), sem cortar "Elencos"/"Indicadores" */
+@media(max-width:900px){
+  .match-tabs{display:flex!important;flex-wrap:wrap!important;overflow:visible!important;gap:4px}
+  .match-tabs button,.match-tabs [role=tab]{flex:1 1 30%;min-width:0;white-space:nowrap;font-size:12px!important;padding:9px 4px!important}
+  /* Texto mínimo legível no detalhe do jogo */
+  .detail-panel :is(p,span,small,b,strong,td,label,div){font-size:max(11px,1em)}
+}
+/* rótulos das estatísticas legíveis */
+.stat-values span{font-size:12px!important;color:#3d5560!important;font-weight:600}
+/* Contraste: textos claros sobre fundo claro no detalhe do jogo */
+.pressure-data-source{color:#0f6b5c!important}
+.mini-overline{color:#2c6b7a!important}
+.n539-unknown,.prelive-muted,.n53-dangerous-note,.n57-follow-up,.snapshot-explain,.nexus-player-state,.scout-main .time{color:#44606b!important}
+.nexus53-projections .projection-heading h3,.nexus53-projections :is(h2,h3,.kicker,.overline),.match-tab-content>section>header :is(h2,h3){color:#123c4a!important}
+.n57-heading h3,.n57-heading small{color:#123c4a!important}
+.n57-heading small{color:#44606b!important}
+.snapshot-title>b{color:#123c4a!important}
