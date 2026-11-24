@@ -1033,6 +1033,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
 (() => {
   'use strict';
   const realFetch=window.fetch.bind(window);
+  const nexusLeagueText=v=>{const r=String(v||'');return /^[a-z]{3}(\.[a-z0-9_]+)+$/.test(r)?(window.NexusLeagueCoverage?.profile(r)?.label||r):r;};
   let snapshot=null,last=0;
   let listingSnapshot=null,listingLast=0,listingFlight=null;
   const one=(v)=>v!=null&&Number.isFinite(+v)?+v:null;
@@ -1195,7 +1196,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
         source:'Poisson experimental, últimos resultados observados; não calibrado',
         periods:forecasts.periods||{}}:null,
       prelive:pre, errors:[],stale:Date.now()-new Date(g.observed_at||0).getTime()>4*3600000,
-      round:g.round||'',division:g.league||'',championship:g.league||'',
+      round:g.round||'',division:nexusLeagueText(g.league),championship:nexusLeagueText(g.league),
       match_date:new Date(g.start_timestamp*1000).toLocaleDateString('pt-BR')};
   }
   function listing(g){
@@ -2306,12 +2307,20 @@ function refreshVisibleListFromCache(){
  });
 }
 function detailFor(m){const entry=cacheEntryForMatch(m);if(!entry)return null;const fresh=state.demo||Date.now()-entry.at<120000;return fresh&&!entry.data.stale?entry.data:null}
+const NEXUS_TEAM_STOP=new Set(['fc','cf','sc','ac','afc','club','clube','de','da','do','la','el','the','cd','ca','sd','ud','as','us','fk','sk','sv','real','sporting','deportivo','atletico','athletic','1']);
+function nexusTeamCore(name){
+ const words=String(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/'/g,'').split(/[^a-z0-9]+/).filter(Boolean);
+ const core=words.find(w=>w.length>=3&&!NEXUS_TEAM_STOP.has(w));
+ return core||words.join('');
+}
 function nexusReconcileFixtures(games){
  const seen=new Map(),out=[];
  const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
  for(const g of games){
   const start=Number(g.start_timestamp);
-  const key=[norm(g.league),norm(g.home),norm(g.away),Number.isFinite(start)&&start>0?Math.floor(start/300):String(g.day||'')].join('|');
+  // ESPN e FotMob escrevem liga e times diferente ("arg.1"/"Gimnasia La Plata" ×
+  // "Liga Profesional"/"Gimnasia LP"): chave = horário (15 min) + palavra principal de cada time.
+  const key=[nexusTeamCore(g.home),nexusTeamCore(g.away),Number.isFinite(start)&&start>0?Math.round(start/900):String(g.day||'')].join('|');
   if(!norm(g.home)||!norm(g.away)||!(Number.isFinite(start)&&start>0)){out.push(g);continue;}
   const first=seen.get(key);
   if(!first){const item={...g};seen.set(key,item);out.push(item);continue;}
@@ -2320,10 +2329,18 @@ function nexusReconcileFixtures(games){
    first.nexus_conflict=true;first.nexus_conflict_reason='Placar divergente entre fontes: '+score(first)+' / '+score(g);first.home_score=null;first.away_score=null;first.score_unverified=true;continue;
   }
   const rich=x=>(x.phase==='finished'?2:x.phase==='live'?1:0)+(Array.isArray(x.events)?x.events.length:0)+(Array.isArray(x.pressure)?x.pressure.length:0);
+  const codeLeague=x=>/^[a-z]{3}(\.[a-z0-9_]+)+$/.test(String(x||''));
+  const keepLeague=codeLeague(first.league)&&!codeLeague(g.league)?g.league:null;
   if(!first.nexus_conflict&&rich(g)>rich(first))Object.assign(first,{...g,nexus_merged:true});
   else first.nexus_merged=true;
+  if(keepLeague)first.league=keepLeague;
  }
  return out;
+}
+function nexusLeagueLabel(m){
+ const raw=String(m?.league||'');
+ if(/^[a-z]{3}(\.[a-z0-9_]+)+$/.test(raw))return NexusLeagueCoverage.profile(raw)?.label||raw;
+ return raw;
 }
 function baseMatches(){
  const query=$('#search').value.trim().toLocaleLowerCase('pt-BR'), filter=$('#status-filter').value;
@@ -2401,7 +2418,8 @@ function renderMatches(){
    // Mostrar scout real já na lista quando fornecido pelo placar ESPN
    // ou coletado no detalhe. Campos ausentes permanecem ausentes.
    const matchStats=d?.stats||m.scoreboard_stats||{};
-   const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(a)}–${esc(b)}</span>`:''};
+   const fmt=(v,field)=>field==='possession'&&Number.isFinite(+v)?Math.round(+v):v;
+   const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(fmt(a,field))}–${esc(fmt(b,field))}</span>`:''};
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
    const hot=hotGameSignal(d);
@@ -2410,8 +2428,8 @@ function renderMatches(){
    const when=m.start_timestamp?new Date(Number(m.start_timestamp)*1000).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',timeZone:'America/Sao_Paulo'}):'';
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
    const oddsView=teamOddsChips(d||m,cachedPre||m);
-   const listOdds=oddsView.available?`<div class="match-list-odds"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
-   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(m.league)}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
+   const listOdds=oddsView.available?`<div class="match-list-odds${m.live?' nx-pre-odds':''}" title="Odds de antes do jogo"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
+   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(nexusLeagueLabel(m))}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
  }).join('');
  if($('#match-list').innerHTML!==rowsHTML)$('#match-list').innerHTML=rowsHTML;
 }

@@ -39,3 +39,27 @@ body.nx-simple .agenda-day{padding:6px 2px;font-size:10px;min-width:0;white-spac
   body.nx-sheet .nx-back{display:flex;position:fixed;top:0;left:0;right:0;z-index:1001;height:48px;align-items:center;
     gap:8px;padding:0 14px;border:0;background:#102532;color:#fff;font:inherit;font-weight:700;font-size:15px;cursor:pointer}
 }
+/* lista: só placar, minuto e estatísticas; ícones sem explicação ficam no detalhe */
+body.nx-simple .match-item .thermo-badge,
+body.nx-simple .match-item .scan-badge,
+body.nx-simple .match-item .mini-marks,
+body.nx-simple .match-list-odds.nx-pre-odds{display:none!important}
+/* odds de jogos que ainda vão começar: legíveis */
+.match-list-odds span{color:#0f3b47!important;background:#e3f3f1!important;border-color:#9ccfc8!important;font-weight:700;font-size:12px!important}
+/* Detalhe do jogo: placar e termômetro primeiro; avisos técnicos por último. */
+body.nx-simple #detail-body{display:flex;flex-direction:column}
+body.nx-simple #detail-body>*{order:6}
+body.nx-simple #detail-body>.scout-main{order:1}
+body.nx-simple #detail-body>.pressure-data-source{order:2}
+body.nx-simple #detail-body>.match-tabs{order:3}
+body.nx-simple #detail-body>.match-tab-content{order:4}
+body.nx-simple #detail-body>.iara-card{order:5}
+body.nx-simple #detail-body>.odds-compare{order:7}
+body.nx-simple #detail-body>.nexus-audit-fresh{order:8}
+/* "EV teórico" de modelo não calibrado: o estudo mostrou que o mercado é melhor; não induzir aposta */
+body.nx-simple .iara-ev{display:none!important}
+/* Placar do detalhe: sem odds pré-jogo espalhadas e sem nomes sobrepostos */
+body.nx-simple .pressure-scoreboard-odds,body.nx-simple .pressure-scoreboard-odds-note{display:none!important}
+body.nx-simple .pressure-competition-meta span:not(:first-child){display:none}
+body.nx-simple .pressure-scoreboard .n56-goal-list{display:flex!important;flex-direction:column;gap:3px;max-height:none!important;height:auto!important;overflow:visible!important}
+body.nx-simple .pressure-scoreboard .n56-goal-line{position:static!important;height:auto!important;min-height:0!important;font-size:11px!important;line-height:1.25;padding:3px 6px!important}
