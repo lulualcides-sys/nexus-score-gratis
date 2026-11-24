@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T00:52:37.688070+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:04:30.883288+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 
@@ -28,7 +28,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-23 | Nojima Stella (W) × Omiya Ardija Ventus (W) | 1-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | AC Nagano Parceiro Ladies (W) × Urawa Ladies (W) | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Albirex Niigata Ladies (W) × Sanfrecce Hiroshima Regina (W) | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-23 | Nacional × Cerro Porteño | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×2.0, Escanteios: 5.0×5.0, Grandes chances: 2.0×0.0 |
+| 2026-11-23 | Nacional × Cerro Porteño | 2-0 | 0 | Chutes no alvo: 2.0×2.0, Chutes para fora: 5.0×3.0, Escanteios: 4.0×5.0, Grandes chances: 2.0×0.0 |
 | 2026-11-23 | 2 de Mayo × Sportivo San Lorenzo | 1-1 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×1.0, Grandes chances: 0.0×0.0 |
 | 2026-11-23 | Al Jeel × Al-Saqer FC | 3-2 | 0 | Chutes no alvo: 3.0×4.0, Chutes para fora: 2.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 2.0×2.0 |
 | 2026-11-23 | Jeddah × Damac FC | 0-2 | 0 | Chutes no alvo: 0.0×0.0, Chutes para fora: 1.0×0.0, Escanteios: 1.0×0.0, Grandes chances: 0.0×0.0 |
@@ -40,8 +40,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-23 | Instituto × Huracán | 2-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×10.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×2.0 |
 | 2026-11-23 | Gimnasia LP × Newell's Old Boys | 4-2 | 57 | Chutes no alvo: 1.0×4.0, Chutes para fora: 1.0×4.0, Escanteios: 1.0×5.0, Grandes chances: 1.0×2.0 |
 | 2026-11-23 | Grosseto × Guidonia Montecelio | 1-2 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×2.0 |
-| 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-23 | Botafogo × São Paulo | 1-1 | 88 | Chutes no alvo: 7.0×7.0, Chutes para fora: 10.0×4.0, Escanteios: 5.0×3.0, Grandes chances: 3.0×3.0; Match Odds 1X2: Casa 2,25, Empate 3,35,  |
+| 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Botafogo × São Paulo | 1-1 | 90 | Chutes no alvo: 7.0×7.0, Chutes para fora: 12.0×4.0, Escanteios: 5.0×3.0, Grandes chances: 3.0×3.0; Match Odds 1X2: Casa 2,25, Empate 3,35,  |
 | 2026-11-23 | Santos × Grêmio | 0-1 | 45 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 1,65, Empate 4,20, F |
 | 2026-11-23 | RB Bragantino × Vasco da Gama | 1-0 | 89 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×3.0 |
 | 2026-11-23 | Internacional × Vitória | 2-5 | 90 | Chutes no alvo: 4.0×8.0, Chutes para fora: 10.0×3.0, Escanteios: 11.0×5.0, Grandes chances: 3.0×5.0; Match Odds 1X2: Casa 1,62, Empate 3,85, |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11691 | **Jogos distintos:** 3618 | **Resultados verificáveis:** 6446 | **Com gol:** 2516 | **Sem gol:** 3930 | **Taxa observada:** 39.0%.
-**Evolução da amostra:** 46 datas com coletas | 107 pendentes | 2196 indeterminados | 2942 incompletos.
+**Observações:** 11695 | **Jogos distintos:** 3620 | **Resultados verificáveis:** 6454 | **Com gol:** 2517 | **Sem gol:** 3937 | **Taxa observada:** 39.0%.
+**Evolução da amostra:** 46 datas com coletas | 104 pendentes | 2195 indeterminados | 2942 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,15 +177,15 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2237 | 1498 | 602 | 896 | 40.2% |
-| ⚡ pressao_ofensiva_18 | 1808 | 1205 | 449 | 756 | 37.3% |
-| 🎯 chutes_no_alvo_5 | 2019 | 942 | 356 | 586 | 37.8% |
-| 🟥 expulsao_confirmada | 1723 | 767 | 262 | 505 | 34.2% |
+| ⚡ pressao_ofensiva_18 | 1809 | 1206 | 449 | 757 | 37.2% |
+| 🎯 chutes_no_alvo_5 | 2019 | 943 | 356 | 587 | 37.8% |
+| 🟥 expulsao_confirmada | 1726 | 768 | 263 | 505 | 34.2% |
 | 🚩 escanteios_6 | 1462 | 662 | 277 | 385 | 41.8% |
-| 💣 grandes_chances_3 | 1195 | 621 | 271 | 350 | 43.6% |
-| 🔥 pressao_forte_10min | 619 | 397 | 154 | 243 | 38.8% |
-| 🧨 pressao_total_5_10min | 340 | 214 | 87 | 127 | 40.7% |
-| ⏱️ tensao_tardia_70 | 187 | 78 | 32 | 46 | 41.0% |
-| 🚨 alerta_cruzado_gol | 101 | 62 | 26 | 36 | 41.9% |
+| 💣 grandes_chances_3 | 1195 | 622 | 271 | 351 | 43.6% |
+| 🔥 pressao_forte_10min | 619 | 398 | 154 | 244 | 38.7% |
+| 🧨 pressao_total_5_10min | 340 | 215 | 87 | 128 | 40.5% |
+| ⏱️ tensao_tardia_70 | 187 | 79 | 32 | 47 | 40.5% |
+| 🚨 alerta_cruzado_gol | 101 | 63 | 26 | 37 | 41.3% |
 
 ### Equipe
 
@@ -229,9 +229,9 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie B | 232 | 160 | 56 | 104 | 35.0% |
 | Super League | 294 | 158 | 52 | 106 | 32.9% |
 | Bundesliga | 257 | 148 | 59 | 89 | 39.9% |
+| Série A | 244 | 144 | 50 | 94 | 34.7% |
 | Ligue 1 | 206 | 143 | 60 | 83 | 42.0% |
 | LaLiga2 | 248 | 137 | 58 | 79 | 42.3% |
-| Série A | 242 | 137 | 50 | 87 | 36.5% |
 | Champions League | 227 | 130 | 81 | 49 | 62.3% |
 | LaLiga | 206 | 130 | 48 | 82 | 36.9% |
 | Conference League | 194 | 127 | 45 | 82 | 35.4% |
@@ -253,29 +253,33 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 301 | 217 | 73 | 144 | 33.6% |
 | 16–30′ | 748 | 552 | 189 | 363 | 34.2% |
-| 31–45′ | 2440 | 1852 | 772 | 1080 | 41.7% |
+| 31–45′ | 2441 | 1853 | 773 | 1080 | 41.7% |
 | 46–60′ | 1524 | 1066 | 423 | 643 | 39.7% |
 | 61–75′ | 2451 | 1728 | 666 | 1062 | 38.5% |
-| 76–90′ | 3087 | 1021 | 389 | 632 | 38.1% |
-| 91+′ | 1140 | 10 | 4 | 6 | 40.0% |
+| 76–90′ | 3088 | 1028 | 389 | 639 | 37.8% |
+| 91+′ | 1142 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11691 | **Jogos monitorados:** 1341 | **Ao vivo:** 15 | **Termômetros recentes:** 2.
+**Registros:** 11695 | **Jogos monitorados:** 1341 | **Ao vivo:** 15 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Nacional × Cerro Porteño | Cerro Porteño (91') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (101') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Santos × Grêmio | Santos (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🧨 pressao_total_5_10min · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⏱️ tensao_tardia_70 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🚨 alerta_cruzado_gol · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Gimnasia LP × Newell's Old Boys | Newell's Old Boys (58') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Monza × Fiorentina | Fiorentina (75') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Monza × Fiorentina | Fiorentina (75') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
@@ -364,10 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Gent U23 (45') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Gent U23 (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Francs Borains (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-22T19:23:35.488968+00:00 | Rosario Central × Gimnasia Mendoza | Rosario Central (23') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-11-22T19:23:35.488968+00:00 | Athletico Paranaense × Remo | Athletico Paranaense (23') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-22T19:23:35.488968+00:00 | KFUM × Brann | Brann (63') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
-| 2026-11-22T19:23:35.488968+00:00 | Sarpsborg 08 × Lillestrøm | Sarpsborg 08 (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | indeterminado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
