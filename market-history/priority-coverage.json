@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-24T11:46:18.909669+00:00",
+  "checked_at": "2026-11-24T21:36:33.541617+00:00",
   "horizon_hours": 48,
-  "important_games": 25,
-  "verified_bookmaker_games": 13,
-  "indicative_only_games": 3,
-  "missing_bookmaker_price_games": 9,
+  "important_games": 16,
+  "verified_bookmaker_games": 4,
+  "indicative_only_games": 7,
+  "missing_bookmaker_price_games": 5,
   "games_with_corners_stats": 0,
   "games_with_yellow_cards_stats": 0,
   "games_with_shots_on_target_stats": 0,
   "tipsaudit": {
     "status": "checked",
-    "matched": 9,
+    "matched": 1,
     "indicative": 8,
     "new_priority": 10
   },
@@ -38,335 +38,6 @@
   },
   "priority_fixtures": [
     {
-      "home": "Bodo/Glimt",
-      "away": "LASK Linz",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795542300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.5,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.47,
-        "draw": 5.98,
-        "away": 6.61
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18973/bodoglimt-vs-lask-linz-2026-11-24",
-      "tipsaudit_id": "18973",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Bodø/Glimt",
-      "away": "LASK",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795542300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Galatasaray",
-      "away": "Aston Villa",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795542300.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.29,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 3.23,
-        "draw": 4.1,
-        "away": 2.24
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18974/galatasaray-vs-aston-villa-2026-11-24",
-      "tipsaudit_id": "18974",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Arsenal",
-      "away": "Borussia Dortmund",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Como",
-      "away": "AEK Athens",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 1.3,
-        "draw": 7.28,
-        "away": 10.86
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18986/como-vs-aek-athens-fc-2026-11-24",
-      "tipsaudit_id": "18986",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Feyenoord",
-      "away": "FC Porto",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "FotMob"
-      ],
-      "verified_quotes": 0,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "away",
-          "price": 2.27,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 3.41,
-        "draw": 3.9,
-        "away": 2.22
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18988/feyenoord-vs-fc-porto-2026-11-24",
-      "tipsaudit_id": "18988",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "indicative_only"
-    },
-    {
-      "home": "Feyenoord Rotterdam",
-      "away": "FC Porto",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN"
-      ],
-      "verified_quotes": 6,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": null,
-      "tipsaudit_source_url": null,
-      "tipsaudit_id": null,
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Manchester City",
-      "away": "Napoli",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.33,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.32,
-        "draw": 6.96,
-        "away": 10.18
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18985/manchester-city-vs-napoli-2026-11-24",
-      "tipsaudit_id": "18985",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "RB Leipzig",
-      "away": "Lens",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.4,
-          "bookmaker": "1xBet",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.37,
-        "draw": 6.44,
-        "away": 8.56
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18987/rb-leipzig-vs-lens-2026-11-24",
-      "tipsaudit_id": "18987",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Real Madrid",
-      "away": "PSV Eindhoven",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [
-        {
-          "selection": "home",
-          "price": 1.19,
-          "bookmaker": "GTbets",
-          "source": "TipsAudit",
-          "status": "indicative_unverified_timestamp"
-        }
-      ],
-      "fair_odds_modelled": {
-        "home": 1.16,
-        "draw": 11.47,
-        "away": 19.12
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18984/real-madrid-vs-psv-eindhoven-2026-11-24",
-      "tipsaudit_id": "18984",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
-      "home": "Slovan Bratislava",
-      "away": "Real Betis",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795550400.0,
-      "phase": "scheduled",
-      "data_sources": [
-        "ESPN",
-        "FotMob"
-      ],
-      "verified_quotes": 4,
-      "observed_corner_counts": false,
-      "observed_card_counts": false,
-      "observed_shots_on_counts": false,
-      "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 11.61,
-        "draw": 7.22,
-        "away": 1.29
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/18989/slovan-bratislava-vs-real-betis-2026-11-24",
-      "tipsaudit_id": "18989",
-      "source_confirmed": "NEXUS or ESPN",
-      "coverage": "verified_price"
-    },
-    {
       "home": "Sabah FA",
       "away": "Barcelona",
       "kickoff_unix": 1795628700.0,
@@ -374,11 +45,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 1.1,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 30.42,
-        "draw": 17.39,
-        "away": 1.1
+        "home": 34.09,
+        "draw": 18.97,
+        "away": 1.09
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19070/sabah-fa-vs-barcelona-2026-11-25",
       "tipsaudit_id": "19070",
@@ -386,7 +65,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Slavia Praha",
@@ -396,11 +75,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 3.25,
+          "bookmaker": "Unibet (NL)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 3.29,
-        "draw": 4.17,
-        "away": 2.19
+        "home": 3.13,
+        "draw": 4.19,
+        "away": 2.26
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19069/slavia-praha-vs-villarreal-2026-11-25",
       "tipsaudit_id": "19069",
@@ -408,7 +95,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Club Brugge KV",
@@ -428,8 +115,8 @@
         }
       ],
       "fair_odds_modelled": {
-        "home": 4.77,
-        "draw": 5.13,
+        "home": 4.75,
+        "draw": 5.15,
         "away": 1.68
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19080/club-brugge-kv-vs-liverpool-2026-11-25",
@@ -460,7 +147,7 @@
       "fair_odds_modelled": {
         "home": 1.44,
         "draw": 6.23,
-        "away": 6.83
+        "away": 6.9
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19075/inter-vs-vfb-stuttgart-2026-11-25",
       "tipsaudit_id": "19075",
@@ -480,9 +167,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 5.28,
+        "home": 5.18,
         "draw": 4.49,
-        "away": 1.7
+        "away": 1.71
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19079/lille-vs-bayern-munchen-2026-11-25",
       "tipsaudit_id": "19079",
@@ -500,11 +187,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 1.49,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 1.44,
-        "draw": 5.54,
-        "away": 7.9
+        "home": 1.48,
+        "draw": 5.36,
+        "away": 7.2
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19077/paris-saint-germain-vs-as-roma-2026-11-25",
       "tipsaudit_id": "19077",
@@ -512,7 +207,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Shakhtar Donetsk",
@@ -524,9 +219,9 @@
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
       "fair_odds_modelled": {
-        "home": 2.76,
-        "draw": 3.71,
-        "away": 2.71
+        "home": 2.99,
+        "draw": 3.74,
+        "away": 2.51
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19078/shakhtar-donetsk-vs-fenerbahce-2026-11-25",
       "tipsaudit_id": "19078",
@@ -544,11 +239,19 @@
       "league_code": "uefa.champions",
       "phase": "unknown",
       "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "away",
+          "price": 2.78,
+          "bookmaker": "1xBet",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.59,
-        "draw": 3.94,
-        "away": 2.78
+        "home": 2.67,
+        "draw": 4.0,
+        "away": 2.66
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/19076/sporting-cp-vs-manchester-united-2026-11-25",
       "tipsaudit_id": "19076",
@@ -556,7 +259,7 @@
       "data_sources": [
         "TipsAudit"
       ],
-      "coverage": "no_bookmaker_price"
+      "coverage": "indicative_only"
     },
     {
       "home": "Chapecoense",
@@ -568,7 +271,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 19,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -581,31 +284,9 @@
       "coverage": "verified_price"
     },
     {
-      "home": "Monterrey",
-      "away": "Club America",
-      "kickoff_unix": 1795640400.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "fair_odds_modelled": {
-        "home": 2.54,
-        "draw": 3.47,
-        "away": 3.15
-      },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/20816/monterrey-vs-club-america-2026-11-25",
-      "tipsaudit_id": "20816",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Toluca",
       "away": "Atlas",
-      "kickoff_unix": 1795640400.0,
+      "kickoff_unix": 1795654800.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
@@ -616,13 +297,43 @@
         "draw": 5.57,
         "away": 7.0
       },
-      "tipsaudit_source_url": "https://tipsaudit.com/match/20818/toluca-vs-atlas-2026-11-25",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/20818/toluca-vs-atlas-2026-11-26",
       "tipsaudit_id": "20818",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
       ],
       "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Monterrey",
+      "away": "Club America",
+      "kickoff_unix": 1795662600.0,
+      "league": "Liga MX",
+      "league_code": "mex.1",
+      "phase": "unknown",
+      "verified_quotes": 0,
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.46,
+          "bookmaker": "GTbets",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
+      "fair_odds_modelled": {
+        "home": 2.42,
+        "draw": 3.5,
+        "away": 3.32
+      },
+      "tipsaudit_source_url": "https://tipsaudit.com/match/20816/monterrey-vs-club-america-2026-11-26",
+      "tipsaudit_id": "20816",
+      "source_confirmed": "TipsAudit schedule only",
+      "data_sources": [
+        "TipsAudit"
+      ],
+      "coverage": "indicative_only"
     },
     {
       "home": "San Jose Earthquakes",
@@ -634,16 +345,24 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 3,
+      "verified_quotes": 6,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
-      "indicative_bookmaker_quotes": [],
+      "indicative_bookmaker_quotes": [
+        {
+          "selection": "home",
+          "price": 2.0,
+          "bookmaker": "LeoVegas (SE)",
+          "source": "TipsAudit",
+          "status": "indicative_unverified_timestamp"
+        }
+      ],
       "fair_odds_modelled": {
-        "home": 2.21,
-        "draw": 3.8,
-        "away": 3.52
+        "home": 1.92,
+        "draw": 4.08,
+        "away": 4.28
       },
       "tipsaudit_source_url": "https://tipsaudit.com/match/18991/san-jose-earthquakes-vs-houston-dynamo-2026-11-25",
       "tipsaudit_id": "18991",
@@ -660,7 +379,7 @@
       "data_sources": [
         "ESPN"
       ],
-      "verified_quotes": 7,
+      "verified_quotes": 14,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -683,7 +402,7 @@
         "ESPN",
         "FotMob"
       ],
-      "verified_quotes": 6,
+      "verified_quotes": 9,
       "observed_corner_counts": false,
       "observed_card_counts": false,
       "observed_shots_on_counts": false,
@@ -694,18 +413,16 @@
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "verified_price"
-    }
-  ],
-  "top_missing": [
+    },
     {
-      "home": "Bodø/Glimt",
-      "away": "LASK",
-      "league": "Champions League",
-      "league_code": "uefa.champions",
-      "kickoff_unix": 1795542300.0,
+      "home": "Independiente Santa Fe",
+      "away": "Once Caldas",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1795648800.0,
       "phase": "scheduled",
       "data_sources": [
-        "FotMob"
+        "ESPN"
       ],
       "verified_quotes": 0,
       "observed_corner_counts": false,
@@ -713,45 +430,36 @@
       "observed_shots_on_counts": false,
       "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
+      "fair_odds_modelled": null,
       "tipsaudit_source_url": null,
       "tipsaudit_id": null,
       "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Sabah FA",
-      "away": "Barcelona",
-      "kickoff_unix": 1795628700.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/19070/sabah-fa-vs-barcelona-2026-11-25",
-      "tipsaudit_id": "19070",
-      "source_confirmed": "TipsAudit schedule only",
+      "home": "Atlético Nacional",
+      "away": "Independiente Medellín",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1795656600.0,
+      "phase": "scheduled",
       "data_sources": [
-        "TipsAudit"
+        "ESPN"
       ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Slavia Praha",
-      "away": "Villarreal",
-      "kickoff_unix": 1795628700.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
       "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/19069/slavia-praha-vs-villarreal-2026-11-25",
-      "tipsaudit_id": "19069",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
+      "fair_odds_modelled": null,
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
-    },
+    }
+  ],
+  "top_missing": [
     {
       "home": "Lille",
       "away": "Bayern München",
@@ -763,23 +471,6 @@
       "indicative_bookmaker_quotes": [],
       "tipsaudit_source_url": "https://tipsaudit.com/match/19079/lille-vs-bayern-munchen-2026-11-25",
       "tipsaudit_id": "19079",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Paris Saint Germain",
-      "away": "AS Roma",
-      "kickoff_unix": 1795636800.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/19077/paris-saint-germain-vs-as-roma-2026-11-25",
-      "tipsaudit_id": "19077",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
@@ -804,54 +495,62 @@
       "coverage": "no_bookmaker_price"
     },
     {
-      "home": "Sporting CP",
-      "away": "Manchester United",
-      "kickoff_unix": 1795636800.0,
-      "league": "UEFA Champions League",
-      "league_code": "uefa.champions",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/19076/sporting-cp-vs-manchester-united-2026-11-25",
-      "tipsaudit_id": "19076",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
-      "home": "Monterrey",
-      "away": "Club America",
-      "kickoff_unix": 1795640400.0,
-      "league": "Liga MX",
-      "league_code": "mex.1",
-      "phase": "unknown",
-      "verified_quotes": 0,
-      "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/20816/monterrey-vs-club-america-2026-11-25",
-      "tipsaudit_id": "20816",
-      "source_confirmed": "TipsAudit schedule only",
-      "data_sources": [
-        "TipsAudit"
-      ],
-      "coverage": "no_bookmaker_price"
-    },
-    {
       "home": "Toluca",
       "away": "Atlas",
-      "kickoff_unix": 1795640400.0,
+      "kickoff_unix": 1795654800.0,
       "league": "Liga MX",
       "league_code": "mex.1",
       "phase": "unknown",
       "verified_quotes": 0,
       "indicative_bookmaker_quotes": [],
-      "tipsaudit_source_url": "https://tipsaudit.com/match/20818/toluca-vs-atlas-2026-11-25",
+      "tipsaudit_source_url": "https://tipsaudit.com/match/20818/toluca-vs-atlas-2026-11-26",
       "tipsaudit_id": "20818",
       "source_confirmed": "TipsAudit schedule only",
       "data_sources": [
         "TipsAudit"
       ],
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Independiente Santa Fe",
+      "away": "Once Caldas",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1795648800.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
+      "coverage": "no_bookmaker_price"
+    },
+    {
+      "home": "Atlético Nacional",
+      "away": "Independiente Medellín",
+      "league": "Colômbia Primera A",
+      "league_code": "col.1",
+      "kickoff_unix": 1795656600.0,
+      "phase": "scheduled",
+      "data_sources": [
+        "ESPN"
+      ],
+      "verified_quotes": 0,
+      "observed_corner_counts": false,
+      "observed_card_counts": false,
+      "observed_shots_on_counts": false,
+      "boxscore_stats_source": "",
+      "indicative_bookmaker_quotes": [],
+      "tipsaudit_source_url": null,
+      "tipsaudit_id": null,
+      "source_confirmed": "NEXUS or ESPN",
       "coverage": "no_bookmaker_price"
     }
   ],

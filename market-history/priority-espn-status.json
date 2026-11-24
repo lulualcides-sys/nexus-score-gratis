@@ -1,15 +1,28 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-24T11:46:15.351845+00:00",
+  "checked_at": "2026-11-24T21:36:29.825127+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 12,
-  "created_games": 0,
+  "priority_fixtures_seen": 14,
+  "created_games": 2,
   "new_quotes": 6,
   "summary_checks": 2,
   "summary_with_prices": 2,
   "errors": [],
-  "missing_quote_fixtures": [],
+  "missing_quote_fixtures": [
+    {
+      "fixture": "Independiente Santa Fe x Once Caldas",
+      "league": "col.1",
+      "kickoff": 1795648800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Atlético Nacional x Independiente Medellín",
+      "league": "col.1",
+      "kickoff": 1795656600,
+      "reason": "no_verified_public_1x2"
+    }
+  ],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }
