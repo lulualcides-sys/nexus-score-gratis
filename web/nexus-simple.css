@@ -85,3 +85,20 @@ body.nx-simple .pressure-scoreboard .n56-goal-line{position:static!important;hei
 .match-league-title small{font-weight:600;color:#6a8590;margin-left:4px}
 body.nx-simple .match-item .match-meta>span:first-child{display:none}
 body.nx-simple .match-item .match-meta{justify-content:flex-end}
+/* 1. fixar liga */
+.match-league-title{display:flex;align-items:center;gap:6px}
+.nx-pin{margin-left:auto;border:0;background:none;cursor:pointer;font-size:14px;opacity:.3;filter:grayscale(1);padding:2px 4px}
+.nx-pin.on{opacity:1;filter:none}
+/* 2. no modo simples o termômetro marca só gols e cartões */
+body.nx-simple .scout-main .scout-event:not(.nx-key-event),body.nx-simple .scout-main .scout-shot-event{display:none}
+/* 3. ajuda do termômetro */
+.nx-help-btn{width:22px;height:22px;border-radius:50%;border:1px solid #9bb6c1;background:#fff;color:#123c4a;font-weight:800;font-size:12px;cursor:pointer;vertical-align:middle;margin-left:6px}
+.nx-help{margin:8px 0;padding:10px 12px;border-radius:10px;background:#eef7f8;border:1px solid #cfe3e7;color:#173b46;font-size:13px;line-height:1.5}
+/* 4. resumo de uma linha */
+.nx-summary{margin-top:6px;font-size:12px;font-weight:700;color:#0f5a4f}
+.nx-summary.hot{color:#b3261e}
+.nx-summary.calm{color:#6a8590;font-weight:600}
+/* 5. esconder odds */
+.nx-odds-toggle{display:block;margin:0 12px 10px;font-size:13px;color:#c2e6ef}
+body.nx-no-odds .match-list-odds,body.nx-no-odds .odds-compare,body.nx-no-odds .pressure-scoreboard-odds,
+body.nx-no-odds .pressure-scoreboard-odds-note,body.nx-no-odds .iara-ev{display:none!important}

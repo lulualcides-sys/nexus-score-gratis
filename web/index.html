@@ -1213,6 +1213,7 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       odds_comparison:g.odds_comparison||[],
       live_odds_comparison:g.live_odds_comparison||[],
       has_saved_thermometer:!!g.pressure?.length,
+      pressure_points:(g.pressure||[]).slice(-12),pressure_observed_at:g.pressure_observed_at||null,
       scoreboard_stats:g.stats||blank,odds:{markets:quoteMap(g.odds),
         available:Object.keys(quoteMap(g.odds)['1x2']).length===3,phase:g.odds_scope||'pregame',
         source:g.odds?.[0]?.source||null,bookmaker:g.odds?.[0]?.bookmaker||null,
@@ -1830,7 +1831,8 @@ window.PressureLab = (() => {
       if(type==='🥅')return `<g class="scout-shot-event ${top?'home':'away'} shot-on" data-shot-kind="on" transform="translate(${xx.toFixed(1)},${yy})"><circle r="5.0"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
       if(type==='↗️')return `<g class="scout-shot-event ${top?'home':'away'} shot-off" data-shot-kind="off" transform="translate(${xx.toFixed(1)},${yy})"><circle r="3.6" class="shot-ring"/><path class="shot-cross" d="M-2,-2 L2,2 M2,-2 L-2,2"/>${e.count>1?`<text class="nexus-event-exponent" x="5" y="-6">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
       const font=type==='🟨'||type==='🟥'?12.75:type==='❌🥅'?12:type==='⚽🅿️'?13:17;
-      return `<g class="scout-event compact ${top?'home':'away'} ${type==='🚩'?'scout-corner-top':''}" transform="translate(${xx.toFixed(1)},${yy})"><text text-anchor="middle" y="5" font-size="${font}">${h(type)}</text>${e.count>1?`<text class="nexus-event-exponent" x="7" y="-5">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
+      const keyEvent=/⚽|🟨|🟥/.test(type)?' nx-key-event':'';
+      return `<g class="scout-event compact ${top?'home':'away'} ${type==='🚩'?'scout-corner-top':''}${keyEvent}" transform="translate(${xx.toFixed(1)},${yy})"><text text-anchor="middle" y="5" font-size="${font}">${h(type)}</text>${e.count>1?`<text class="nexus-event-exponent" x="7" y="-5">${NexusUpgrade.exponent(e.count)}</text>`:''}<title>${info} · ${e.count} ocorrência(s)</title></g>`;
     }).join('');
     // Events recognized only by the difference between two cumulative snapshots.
     // Their plotted x-coordinate is the minute they were OBSERVED, never the
@@ -2043,7 +2045,8 @@ window.PressureLab = (() => {
       `Partida encerrada · eixo completo 0–90' · mandante acima / visitante abaixo`;
     return `<section class="match-block scout-main" id="section-thermometer">
       ${scoreboard(d)}
-      <header class="scout-section-head"><div><div class="mini-overline">NEXUS SCORE / CENTRAL DA PARTIDA</div><h2>Termômetro da partida</h2><p>${h(timelineDescription)} · indicadores e eventos confirmados.</p></div><span class="scout-source-badge">${badge}</span></header>
+      <div class="nx-help" hidden><b>Como ler o termômetro</b><br>Barras <b>para cima</b> = pressão do mandante; <b>para baixo</b> = do visitante. Quanto mais alta, mais o time ataca naquele minuto (curva publicada pela fonte, não inventada). ⚽ gol · 🟨/🟥 cartão. Pressão alta não garante gol.</div>
+      <header class="scout-section-head"><div><div class="mini-overline">NEXUS SCORE / CENTRAL DA PARTIDA</div><h2>Termômetro da partida <button type="button" class="nx-help-btn" aria-expanded="false" onclick="const p=this.closest('header').parentElement.querySelector('.nx-help');p.hidden=!p.hidden;this.setAttribute('aria-expanded',String(!p.hidden))" title="Como ler">?</button></h2><p>${h(timelineDescription)} · indicadores e eventos confirmados.</p></div><span class="scout-source-badge">${badge}</span></header>
       <div class="scout-control-row"><div class="scout-subtitle">PRESSÃO AO LONGO DO JOGO · 0–${axisEnd}'</div><div class="pressure-range">${buttons}</div></div>
       ${chart(d,selected)}${pressureNote?`<p class="nexus-pressure-delay" role="status">${h(pressureNote)}</p>`:''}${unmeasured}<div id="signal-marker-info" class="signal-marker-info compact-note" aria-live="polite"><b>Indicadores no gráfico</b><span>Toque numa marca para saber o time, o minuto e o motivo. Todos os filtros detalhados estão na aba INDICADORES.</span></div>
       ${hasPressure?`<div class="scout-recent-row">${[5,10,15].map(n=>windowSummary(d,n)).join('')}</div>`:''}
@@ -2362,6 +2365,18 @@ function nexusSameTeam(a,b){
  const fa=flat(a),fb=flat(b);
  return (fa.length>=3&&fa.length<=5&&fa===nexusInitials(b))||(fb.length>=3&&fb.length<=5&&fb===nexusInitials(a));
 }
+/* Resumo de uma linha: só com curva real da fonte, recente (≤15 min), últimos 10 minutos. */
+function nexusPressureSummary(m){
+ if(!m?.live)return '';
+ const pts=(m.pressure_points||[]).filter(p=>Number.isFinite(+p.m)&&Number.isFinite(+p.v));
+ const at=Date.parse(m.pressure_observed_at||'');
+ if(pts.length<5||!Number.isFinite(at)||Date.now()-at>15*60000)return '';
+ const last=pts[pts.length-1].m,win=pts.filter(p=>p.m>last-10);
+ const avg=win.reduce((a,p)=>a+(+p.v),0)/win.length;
+ if(Math.abs(avg)<30)return '<div class="nx-summary calm">Jogo equilibrado nos últimos 10 min</div>';
+ const team=avg>0?m.home:m.away;
+ return `<div class="nx-summary ${Math.abs(avg)>=50?'hot':''}">${Math.abs(avg)>=50?'🔥 ':''}${esc(team)} pressionando${Math.abs(avg)>=50?' forte':''} · últimos 10 min</div>`;
+}
 function nexusLeagueLabel(m){
  const raw=String(m?.league||'');
  if(/^[a-z]{3}(\.[a-z0-9_]+)+$/.test(raw))return NexusLeagueCoverage.profile(raw)?.label||raw;
@@ -2402,7 +2417,8 @@ function baseMatches(){
    // Modo simples: agrupar por campeonato (padrão Sofascore/FotMob/Flashscore).
    if(window.NexusSimple?.isSimple?.()){
      const la=nexusLeagueLabel(a)+' '+(a.league_country||''),lb=nexusLeagueLabel(b)+' '+(b.league_country||'');
-     return phaseA-phaseB || priA-priB || la.localeCompare(lb,'pt-BR') || tsA-tsB;
+     const pinA=window.NexusSimple.isPinned(nexusLeagueLabel(a))?0:1,pinB=window.NexusSimple.isPinned(nexusLeagueLabel(b))?0:1;
+     return phaseA-phaseB || pinA-pinB || priA-priB || la.localeCompare(lb,'pt-BR') || tsA-tsB;
    }
    const radar=$('#radar-sort').checked?(quality(b)-quality(a)||rank(b)-rank(a)):0;
    return phaseA-phaseB || radar || priA-priB || tsA-tsB || String(a.league||'').localeCompare(String(b.league||''),'pt-BR');
@@ -2445,7 +2461,8 @@ function renderMatches(){
    if(groupLeagues){
       const leagueKey=nexusLeagueLabel(m)+'|'+(m.league_country||'');
       if(leagueKey!==lastLeague){
-        divider+=`<div class="match-league-title">${esc(nexusLeagueLabel(m))}${m.league_country?' <small>'+esc(m.league_country)+'</small>':''}</div>`;
+        const pinned=window.NexusSimple.isPinned(nexusLeagueLabel(m));
+        divider+=`<div class="match-league-title">${esc(nexusLeagueLabel(m))}${m.league_country?' <small>'+esc(m.league_country)+'</small>':''}<button type="button" class="nx-pin${pinned?' on':''}" data-pin-league="${esc(nexusLeagueLabel(m))}" title="${pinned?'Desafixar':'Fixar no topo'}" aria-pressed="${pinned}">📌</button></div>`;
         lastLeague=leagueKey;
       }
    }
@@ -2464,6 +2481,7 @@ function renderMatches(){
    const matchStats=d?.stats||m.scoreboard_stats||{};
    const fmt=(v,field)=>field==='possession'&&Number.isFinite(+v)?Math.round(+v):v;
    const paired=(field,label)=>{const a=matchStats.home?.[field],b=matchStats.away?.[field];return a!=null&&b!=null?`<span class="match-scout">${label} ${esc(fmt(a,field))}–${esc(fmt(b,field))}</span>`:''};
+   const summary=nexusPressureSummary(m);
    const scoutLine=[paired('shots_on','🎯'),paired('corners','🚩'),paired('possession','Posse')].filter(Boolean).join('');
    const marks=(d?.signals||m.signals||[]).slice(0,3).map(x=>esc(x.emoji)).join('');
    const hot=hotGameSignal(d);
@@ -2473,7 +2491,7 @@ function renderMatches(){
    const cachedPre=(state.preliveCache.get(m.id)||{}).data||null;
    const oddsView=teamOddsChips(d||m,cachedPre||m);
    const listOdds=oddsView.available?`<div class="match-list-odds${m.live?' nx-pre-odds':''}" title="Odds de antes do jogo"><span>1 ${esc(oddsView.home)}</span><span>X ${esc(oddsView.draw)}</span><span>2 ${esc(oddsView.away)}</span></div>`:'';
-   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(nexusLeagueLabel(m))}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div></div>`;
+   return divider+`<div class="match-item ${selected}${goalClass} ${status==='unknown'?'scan-unknown':status==='pass'&&state.rules.length?'scan-pass':''}" data-match="${esc(m.id)}" role="button" tabindex="0" aria-label="Abrir ${esc(m.home)} contra ${esc(m.away)}"><div class="match-meta"><span>${esc(nexusLeagueLabel(m))}${m.league_country?' · '+esc(m.league_country):''}</span><span class="${m.live?'live-tag':''}">${PressureLab.isHalfTime(m)?'HT':m.live?`${esc(m.minute||'')}′ AO VIVO`:(m.phase==='scheduled'&&when?`${when} · ${esc(m.status)}`:esc(m.status))}</span></div><div class="match-middle"><div class="teams"><div>${crestMini(m.home_crest,(m.home||'?').slice(0,1))}${esc(m.home)}</div><div>${crestMini(m.away_crest,(m.away||'?').slice(0,1),true)}${esc(m.away)}</div></div><div class="score-box">${m.phase==='scheduled'?'VS':esc(m.score)}${goalFx?'<span class="match-goal-burst">⚽ GOL!</span>':''}</div><button class="fav ${fav?'active':''}" data-favorite="${esc(m.id)}" title="${fav?'Remover dos favoritos':'Adicionar aos favoritos'}">${fav?'★':'☆'}</button></div><div class="match-foot">${press}${thermoBadge}${qualityBadge}${hotBadge}${rulebadge}${state.demo?'<span class="indicator demo">DEMO</span>':''}<span class="mini-marks">${marks}</span>${scoutLine}${listOdds}</div>${summary}</div>`;
  }).join('');
  if($('#match-list').innerHTML!==rowsHTML)$('#match-list').innerHTML=rowsHTML;
 }
