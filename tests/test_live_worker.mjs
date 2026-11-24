@@ -48,3 +48,19 @@ assert.ok(fail.games['fotmob-1'] && fail.status.errors.length);
 assert.equal(brDate(Date.parse('2026-11-24T02:00:00Z')), '20261123', 'data no fuso de Brasília');
 assert.ok(MAX_DETAILS <= 45, 'cabe no limite grátis de subrequests');
 console.log('NEXUS live worker: OK');
+// sob demanda: dado velho -> busca agora, sem gravar no KV
+{
+  const {fresh, FRESH_MS} = await import('../live_worker/worker.mjs');
+  let puts = 0; const kv = new Map([['live', JSON.stringify({schema:1,status:{updated_at:'2026-11-23T20:00:00Z'},games:{}})]]);
+  const env2 = {LIVE: {get: async (k,t)=> t==='json'?JSON.parse(kv.get(k)):kv.get(k), put: async ()=>{puts++;}}};
+  const now = Date.parse('2026-11-23T20:05:00Z');
+  const res = await fresh(new Request('https://x.workers.dev/live'), env2, null, now, fetcher, null);
+  const body = await res.json();
+  assert.equal(body.status.live_found, 2, 'buscou o FotMob na hora');
+  assert.equal(puts, 0, 'leitura sob demanda não grava no KV');
+  // dado recente: não busca
+  let calls = 0; kv.set('live', JSON.stringify({schema:1,status:{updated_at:new Date(now-5000).toISOString()},games:{}}));
+  await fresh(new Request('https://x.workers.dev/live'), env2, null, now, async()=>{calls++;return {};}, null);
+  assert.equal(calls, 0); assert.ok(FRESH_MS <= 30000);
+  console.log('NEXUS live sob demanda: OK');
+}
