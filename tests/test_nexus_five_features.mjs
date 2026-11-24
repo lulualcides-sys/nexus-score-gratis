@@ -37,3 +37,13 @@ assert.equal(sp({live:true,pressure_points:pts,pressure_observed_at:'2020-01-01T
 assert.equal(sp({live:false,pressure_points:pts,pressure_observed_at:now}),'');
 console.log('NEXUS mini gráfico de pressão: OK');
 }
+{
+const src3=html.slice(html.indexOf('function nexusTipLine'),html.indexOf('function nexusPressureSpark'));
+const tip=new Function('esc',src3+';return nexusTipLine;')(s=>String(s));
+assert.match(tip({phase:'scheduled',home:'A',away:'B',forecast:{home:52,draw:26,away:22,over25:50,btts:52}}),/A vence 52%.*\+2,5 gols 50%.*Ambas 52%/);
+assert.match(tip({phase:'finished',home:'A',away:'B',home_score:2,away_score:5,forecast:{home:44,draw:27,away:29}}),/✗.*A vence 44%/);
+assert.match(tip({phase:'finished',home:'A',away:'B',home_score:1,away_score:1,forecast:{home:30,draw:40,away:30}}),/✓.*Empate 40%/);
+assert.equal(tip({live:true,forecast:{home:50,draw:25,away:25}}),'','ao vivo usa pressão, não palpite');
+assert.equal(tip({phase:'scheduled'}),'','sem previsão: nada');
+console.log('NEXUS palpite na lista: OK');
+}

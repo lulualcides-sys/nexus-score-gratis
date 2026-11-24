@@ -352,6 +352,28 @@ def fotmob_match_stars(detail):
                           'rating':round(score,2),'source':'FotMob'}
     return answer
 
+REASONS=(('injur','Lesão'),('suspen','Suspenso'),('red','Suspenso'),('yellow','Suspenso'),
+         ('international','Convocado pela seleção'),('national','Convocado pela seleção'),
+         ('ill','Doença'),('sick','Doença'),('personal','Motivos pessoais'),('loan','Cláusula de empréstimo'))
+
+def unavailable_reason(info):
+    """Motivo publicado pela fonte; tipo desconhecido ou ausente não é inventado."""
+    kind=str((info or {}).get('type') or '').lower() if isinstance(info,dict) else ''
+    for needle,label in REASONS:
+        if needle in kind:return label
+    return 'Motivo não informado'
+
+def fotmob_unavailable(team):
+    out=[]
+    for v in (team.get('unavailable') or [])[:30] if isinstance(team.get('unavailable'),list) else []:
+        if not isinstance(v,dict) or not v.get('name'):continue
+        info=v.get('unavailability') or v.get('injury') or {}
+        item={'id':str(v.get('id') or '')[:16],'name':str(v['name'])[:80],'reason':unavailable_reason(info)}
+        back=str((info or {}).get('expectedReturn') or '').strip() if isinstance(info,dict) else ''
+        if back:item['expected_return']=back[:40]
+        out.append(item)
+    return out
+
 def fotmob_lineups(detail):
     content=detail.get('content') or {}
     raw=content.get('lineup') or {}
@@ -383,6 +405,7 @@ def fotmob_lineups(detail):
                           'starters':starters,'subs':subs,'source':'FotMob',
                           'lineup_type':str(raw.get('lineupType') or '')[:25],
                           'status':'confirmed' if confirmed else 'predicted',
+                          'unavailable':fotmob_unavailable(team),
                           'updated_at':NOW.isoformat()}
     return output
 

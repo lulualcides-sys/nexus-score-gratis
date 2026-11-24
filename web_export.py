@@ -129,6 +129,10 @@ def public_lineups(lineups):
                           'status':'confirmed' if group.get('status')=='confirmed' or
                               str(group.get('lineup_type') or '').lower() in ('standard','confirmed','official','actual','starting')
                               else 'predicted',
+                          'unavailable':[{'name':safe(u.get('name'),80),'reason':safe(u.get('reason'),40),
+                                          'expected_return':safe(u.get('expected_return'),40)}
+                                         for u in (group.get('unavailable') or [])[:20]
+                                         if isinstance(u,dict) and u.get('name')],
                           'updated_at':safe(group.get('updated_at'),40)}
     return output
 
@@ -988,6 +992,14 @@ def make_listing(rows,exported_at,collector):
         item={field:game.get(field) for field in fields}
         points=game.get('pressure') or []
         item['pressure']=points if game.get('phase')=='live' else points[-1:]
+        # Palpite compacto (previsão congelada ANTES do jogo) para a lista.
+        f=((game.get('pregame_baseline') or {}).get('forecast') or {})
+        p=f.get('one_x_two') or {}
+        if all(number(p.get(k)) is not None for k in ('home','draw','away')):
+            item['forecast']={'home':round(number(p['home'])),'draw':round(number(p['draw'])),
+                              'away':round(number(p['away'])),
+                              'over25':round(number(f.get('over_2_5_pct'))) if number(f.get('over_2_5_pct')) is not None else None,
+                              'btts':round(number(f.get('btts_yes_pct'))) if number(f.get('btts_yes_pct')) is not None else None}
         games.append(item)
     return {'schema':3,'format':'listing_only','exported_at':exported_at,
             'collector':collector,'games':games}

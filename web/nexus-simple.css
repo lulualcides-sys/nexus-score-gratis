@@ -176,3 +176,20 @@ body.nx-simple #detail-body>.nx-prob{order:3}
 body.nx-simple #detail-body>.nx-lineup{order:3}
 .nx-lineup b{font-size:14px}.nx-lineup p{margin:6px 0 0;font-size:13px;line-height:1.45}
 .nx-lineup small{display:block;margin-top:8px;font-size:11px;color:#7a6330}
+.nx-lineup ul{margin:4px 0 0;padding-left:18px;font-size:13px}.nx-lineup li{margin:2px 0}
+.nx-lineup em{font-style:normal;font-weight:700;color:#8a4b00}.nx-lineup em.nx-noreason{font-weight:400;color:#9a8558}
+/* Lista compacta (estilo APWin/NerdyTips/FootyStats): uma informação útil por jogo */
+body.nx-simple .match-item{padding:9px 14px!important}
+body.nx-simple .match-item .match-meta{margin:0 0 2px!important;min-height:0;font-size:11px}
+body.nx-simple .match-item .match-middle{margin:0!important}
+body.nx-simple .match-item .teams>div{min-height:24px;font-size:14px}
+body.nx-simple .match-item .score-box{font-size:20px}
+/* antes do jogo e encerrado: sem pílulas/selos; fica só o palpite */
+body.nx-simple .match-item:is(.nx-phase-scheduled,.nx-phase-finished) .match-foot{display:none!important}
+/* ao vivo: estatísticas como texto simples, sem caixas */
+body.nx-simple .match-item .match-foot{margin-top:4px!important;gap:0!important}
+body.nx-simple .match-item .match-scout{border:0!important;background:none!important;padding:0 10px 0 0!important;font-size:12px;color:#3d5560}
+body.nx-simple .match-item .match-foot .indicator:not(.nexus-hot-match){display:none!important}
+.nx-tip{margin-top:4px;font-size:12px;color:#3d5560}
+.nx-tip b{color:#123c4a}
+.nx-tip.hit{color:#0f6b4f;font-weight:700}.nx-tip.miss{color:#9a3b3b}
