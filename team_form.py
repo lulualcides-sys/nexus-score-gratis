@@ -152,6 +152,7 @@ def cached_schedule(key,league,team_id,cache):
 def main():
     today=datetime.strptime(DAY,'%Y-%m-%d').date()
     days=[(today-timedelta(days=n)).isoformat() for n in range(WINDOW_DAYS)]
+    days.append((today+timedelta(days=1)).isoformat())  # amanhã: previsão antes do apito
     docs={d:read(HISTORY/(d+'.json')) for d in days}
     tasks={}
     for day,doc in docs.items():

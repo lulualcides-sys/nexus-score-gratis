@@ -120,6 +120,7 @@ def recent_games(items,start_ts):
 def main():
     base=datetime.strptime(DAY,'%Y-%m-%d').date()
     days=[(base-timedelta(days=i)).isoformat() for i in range(3)]
+    days.append((base+timedelta(days=1)).isoformat())  # amanhã: previsão antes do apito
     docs={d:read(HISTORY/(d+'.json')) for d in days}
     tasks={}
     for day,doc in docs.items():
