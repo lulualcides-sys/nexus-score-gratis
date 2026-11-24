@@ -2307,12 +2307,6 @@ function refreshVisibleListFromCache(){
  });
 }
 function detailFor(m){const entry=cacheEntryForMatch(m);if(!entry)return null;const fresh=state.demo||Date.now()-entry.at<120000;return fresh&&!entry.data.stale?entry.data:null}
-const NEXUS_TEAM_STOP=new Set(['fc','cf','sc','ac','afc','club','clube','de','da','do','la','el','the','cd','ca','sd','ud','as','us','fk','sk','sv','real','sporting','deportivo','atletico','athletic','1']);
-function nexusTeamCore(name){
- const words=String(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/'/g,'').split(/[^a-z0-9]+/).filter(Boolean);
- const core=words.find(w=>w.length>=3&&!NEXUS_TEAM_STOP.has(w));
- return core||words.join('');
-}
 function nexusReconcileFixtures(games){
  const seen=new Map(),out=[];
  const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
@@ -2341,6 +2335,12 @@ function nexusLeagueLabel(m){
  const raw=String(m?.league||'');
  if(/^[a-z]{3}(\.[a-z0-9_]+)+$/.test(raw))return NexusLeagueCoverage.profile(raw)?.label||raw;
  return raw;
+}
+const NEXUS_TEAM_STOP=new Set(['fc','cf','sc','ac','afc','club','clube','de','da','do','la','el','the','cd','ca','sd','ud','as','us','fk','sk','sv','real','sporting','deportivo','atletico','athletic','1']);
+function nexusTeamCore(name){
+ const words=String(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/'/g,'').split(/[^a-z0-9]+/).filter(Boolean);
+ const core=words.find(w=>w.length>=3&&!NEXUS_TEAM_STOP.has(w));
+ return core||words.join('');
 }
 function baseMatches(){
  const query=$('#search').value.trim().toLocaleLowerCase('pt-BR'), filter=$('#status-filter').value;
