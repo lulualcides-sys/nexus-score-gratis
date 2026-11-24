@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:04:30.883288+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:12:10.926162+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -40,7 +40,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **2**.
 | 2026-11-23 | Instituto × Huracán | 2-1 | 90 | Chutes no alvo: 3.0×5.0, Chutes para fora: 6.0×10.0, Escanteios: 2.0×3.0, Grandes chances: 2.0×2.0 |
 | 2026-11-23 | Gimnasia LP × Newell's Old Boys | 4-2 | 57 | Chutes no alvo: 1.0×4.0, Chutes para fora: 1.0×4.0, Escanteios: 1.0×5.0, Grandes chances: 1.0×2.0 |
 | 2026-11-23 | Grosseto × Guidonia Montecelio | 1-2 | 0 | Chutes no alvo: 2.0×3.0, Chutes para fora: 3.0×0.0, Escanteios: 4.0×3.0, Grandes chances: 1.0×2.0 |
-| 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-1 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-23 | Boca Juniors de Cali × Deportes Quindío | 0-2 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-23 | Botafogo × São Paulo | 1-1 | 90 | Chutes no alvo: 7.0×7.0, Chutes para fora: 12.0×4.0, Escanteios: 5.0×3.0, Grandes chances: 3.0×3.0; Match Odds 1X2: Casa 2,25, Empate 3,35,  |
 | 2026-11-23 | Santos × Grêmio | 0-1 | 45 | Chutes no alvo: 3.0×2.0, Chutes para fora: 3.0×1.0, Escanteios: 4.0×1.0, Grandes chances: 0.0×1.0; Match Odds 1X2: Casa 1,65, Empate 4,20, F |
 | 2026-11-23 | RB Bragantino × Vasco da Gama | 1-0 | 89 | Chutes no alvo: 4.0×1.0, Chutes para fora: 8.0×5.0, Escanteios: 5.0×4.0, Grandes chances: 1.0×3.0 |
@@ -169,7 +169,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 ## Análise descritiva de alertas — janela de 10 minutos
 
 **Observações:** 11695 | **Jogos distintos:** 3620 | **Resultados verificáveis:** 6454 | **Com gol:** 2517 | **Sem gol:** 3937 | **Taxa observada:** 39.0%.
-**Evolução da amostra:** 46 datas com coletas | 104 pendentes | 2195 indeterminados | 2942 incompletos.
+**Evolução da amostra:** 46 datas com coletas | 100 pendentes | 2195 indeterminados | 2946 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -262,24 +262,24 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11695 | **Jogos monitorados:** 1341 | **Ao vivo:** 15 | **Termômetros recentes:** 2.
+**Registros:** 11695 | **Jogos monitorados:** 1341 | **Ao vivo:** 12 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (90') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T01:04:57.478220+00:00 | Nacional × Cerro Porteño | Cerro Porteño (91') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (101') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Nacional × Cerro Porteño | Cerro Porteño (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (101') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T01:04:57.478220+00:00 | Santos × Grêmio | Santos (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
-| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | pendente | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | ⏱️ tensao_tardia_70 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🚨 alerta_cruzado_gol · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
+| 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Gimnasia LP × Newell's Old Boys | Newell's Old Boys (58') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Monza × Fiorentina | Fiorentina (75') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-23T21:20:36.416317+00:00 | Monza × Fiorentina | Fiorentina (75') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
