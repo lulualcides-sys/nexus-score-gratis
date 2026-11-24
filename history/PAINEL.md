@@ -2,7 +2,7 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:12:10.926162+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T01:27:12.268705+00:00**.
 
 Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
@@ -11,7 +11,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | Dia | Partida | Placar | Pressão (minutos) | Scouts/mercados observáveis |
 |---|---|---|---:|---|
 | 2026-11-23 | Gimnasia La Plata × Newell's Old Boys | 4-2 | 0 | Chutes no alvo: 4.0×5.0; Match Odds 1X2: Casa 2,10, Empate 3,10, Fora 3,75 |
-| 2026-11-23 | Santos × Grêmio | 0-1 | 0 | Chutes no alvo: 3.0×2.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 4,70 |
+| 2026-11-23 | Santos × Grêmio | 0-1 | 0 | Chutes no alvo: 5.0×2.0; Match Odds 1X2: Casa 1,65, Empate 4,20, Fora 4,70 |
 | 2026-11-23 | Internacional × Vitória | 2-5 | 0 | Chutes no alvo: 4.0×8.0; Match Odds 1X2: Casa 1,69, Empate 3,85, Fora 4,90 |
 | 2026-11-23 | Botafogo × São Paulo | 1-1 | 0 | Chutes no alvo: 7.0×7.0; Match Odds 1X2: Casa 2,25, Empate 3,40, Fora 3,15 |
 | 2026-11-23 | Brentford × Everton | 4-0 | 0 | Chutes no alvo: 7.0×2.0; Match Odds 1X2: Casa 2,25, Empate 3,50, Fora 3,15 |
@@ -20,7 +20,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 | 2026-11-23 | Jong PSV × Jong FC Utrecht | 3-2 | 0 | Chutes no alvo: 10.0×4.0; Match Odds 1X2: Casa 2,30, Empate 3,95, Fora 2,70 |
 | 2026-11-23 | Jong Ajax × Jong AZ | 3-0 | 0 | Chutes no alvo: 7.0×7.0; Match Odds 1X2: Casa 2,25, Empate 3,95, Fora 2,75 |
 | 2026-11-23 | Vitesse × De Graafschap | 0-1 | 0 | Chutes no alvo: 2.0×5.0; Match Odds 1X2: Casa 2,05, Empate 3,85, Fora 3,20 |
-| 2026-11-23 | St. Louis CITY SC × LAFC | 0-0 | 0 | Match Odds 1X2: Casa 2,40, Empate 3,45, Fora 2,70 |
+| 2026-11-23 | St. Louis CITY SC × LAFC | 0-0 | 0 | Chutes no alvo: 0.0×0.0; Match Odds 1X2: Casa 2,40, Empate 3,45, Fora 2,70 |
 | 2026-11-23 | Deportes Limache × La Serena | 0-0 | 0 | Chutes no alvo: 0.0×3.0, Chutes para fora: 2.0×2.0, Escanteios: 2.0×0.0, Grandes chances: 0.0×1.0 |
 | 2026-11-23 | Chivas × Cruz Azul | 1-0 | 54 | Chutes no alvo: 4.0×1.0, Chutes para fora: 1.0×4.0, Escanteios: 2.0×3.0, Grandes chances: 0.0×1.0 |
 | 2026-11-23 | Querétaro FC × Necaxa | 2-2 | 90 | Chutes no alvo: 4.0×4.0, Chutes para fora: 2.0×2.0, Escanteios: 5.0×6.0, Grandes chances: 2.0×2.0; Match Odds 1X2: Casa 2,10, Empate 3,40, F |
@@ -168,7 +168,7 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11695 | **Jogos distintos:** 3620 | **Resultados verificáveis:** 6454 | **Com gol:** 2517 | **Sem gol:** 3937 | **Taxa observada:** 39.0%.
+**Observações:** 11696 | **Jogos distintos:** 3621 | **Resultados verificáveis:** 6455 | **Com gol:** 2517 | **Sem gol:** 3938 | **Taxa observada:** 39.0%.
 **Evolução da amostra:** 46 datas com coletas | 100 pendentes | 2195 indeterminados | 2946 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
@@ -177,8 +177,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2237 | 1498 | 602 | 896 | 40.2% |
-| ⚡ pressao_ofensiva_18 | 1809 | 1206 | 449 | 757 | 37.2% |
-| 🎯 chutes_no_alvo_5 | 2019 | 943 | 356 | 587 | 37.8% |
+| ⚡ pressao_ofensiva_18 | 1809 | 1207 | 449 | 758 | 37.2% |
+| 🎯 chutes_no_alvo_5 | 2020 | 943 | 356 | 587 | 37.8% |
 | 🟥 expulsao_confirmada | 1726 | 768 | 263 | 505 | 34.2% |
 | 🚩 escanteios_6 | 1462 | 662 | 277 | 385 | 41.8% |
 | 💣 grandes_chances_3 | 1195 | 622 | 271 | 351 | 43.6% |
@@ -229,7 +229,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Serie B | 232 | 160 | 56 | 104 | 35.0% |
 | Super League | 294 | 158 | 52 | 106 | 32.9% |
 | Bundesliga | 257 | 148 | 59 | 89 | 39.9% |
-| Série A | 244 | 144 | 50 | 94 | 34.7% |
+| Série A | 244 | 145 | 50 | 95 | 34.5% |
 | Ligue 1 | 206 | 143 | 60 | 83 | 42.0% |
 | LaLiga2 | 248 | 137 | 58 | 79 | 42.3% |
 | Champions League | 227 | 130 | 81 | 49 | 62.3% |
@@ -253,8 +253,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 301 | 217 | 73 | 144 | 33.6% |
 | 16–30′ | 748 | 552 | 189 | 363 | 34.2% |
-| 31–45′ | 2441 | 1853 | 773 | 1080 | 41.7% |
-| 46–60′ | 1524 | 1066 | 423 | 643 | 39.7% |
+| 31–45′ | 2441 | 1854 | 773 | 1081 | 41.7% |
+| 46–60′ | 1525 | 1066 | 423 | 643 | 39.7% |
 | 61–75′ | 2451 | 1728 | 666 | 1062 | 38.5% |
 | 76–90′ | 3088 | 1028 | 389 | 639 | 37.8% |
 | 91+′ | 1142 | 10 | 4 | 6 | 40.0% |
@@ -262,16 +262,17 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11695 | **Jogos monitorados:** 1341 | **Ao vivo:** 12 | **Termômetros recentes:** 2.
+**Registros:** 11696 | **Jogos monitorados:** 1341 | **Ao vivo:** 14 | **Termômetros recentes:** 1.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
+| 2026-11-24T01:27:32.627507+00:00 | Santos × Grêmio | Santos (60') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
 | 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (90') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T01:04:57.478220+00:00 | Nacional × Cerro Porteño | Cerro Porteño (91') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T01:04:57.478220+00:00 | Botafogo × São Paulo | Botafogo (101') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-24T01:04:57.478220+00:00 | Santos × Grêmio | Santos (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-24T01:04:57.478220+00:00 | Santos × Grêmio | Santos (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | sem_gol_confirmado | indisponível |
 | 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-24T00:53:04.412739+00:00 | Botafogo × São Paulo | Botafogo (89') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | janela_incompleta | indisponível |
@@ -367,7 +368,6 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Gent U23 (45') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Gent U23 (45') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Gent U23 (45') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-22T19:23:35.488968+00:00 | Gent U23 × Francs Borains | Francs Borains (45') | 🟥 expulsao_confirmada · evento confirmado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
