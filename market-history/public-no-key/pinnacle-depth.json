@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-24T02:17:13.952273+00:00",
-  "bookmaker_snapshot_at": "2026-11-24T02:17:12.444419+00:00",
+  "checked_at": "2026-11-24T13:53:11.833057+00:00",
+  "bookmaker_snapshot_at": "2026-11-24T13:53:11.115700+00:00",
   "status": "fresh",
   "matches_catalogued": 16,
   "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1326,
+  "odds_eligible_for_quality": 1344,
   "invalid_quote_records": 0,
-  "complete_market_lines": 647,
+  "complete_market_lines": 656,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
       "games": 16,
-      "odds": 336,
-      "complete_lines": 168,
+      "odds": 320,
+      "complete_lines": 160,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.29
+      "median_overround_pct": 5.22
     },
     "first_half_goals": {
       "games": 16,
-      "odds": 190,
-      "complete_lines": 95,
+      "odds": 196,
+      "complete_lines": 98,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.94
+      "median_overround_pct": 6.95
     },
     "first_half_handicap": {
       "games": 16,
-      "odds": 172,
-      "complete_lines": 86,
+      "odds": 170,
+      "complete_lines": 85,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.03
+      "median_overround_pct": 5.97
     },
     "first_half_team_goals": {
       "games": 16,
       "odds": 62,
       "complete_lines": 31,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.51
+      "median_overround_pct": 6.47
     },
     "half_time": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 6.06
+      "median_overround_pct": 6.07
     },
     "match_odds": {
       "games": 16,
       "odds": 48,
       "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.37
+      "median_overround_pct": 5.33
     },
     "team_goals": {
       "games": 16,
-      "odds": 152,
-      "complete_lines": 76,
+      "odds": 158,
+      "complete_lines": 79,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.76
+      "median_overround_pct": 5.75
     },
     "total_goals": {
       "games": 16,
-      "odds": 318,
-      "complete_lines": 159,
+      "odds": 342,
+      "complete_lines": 171,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.6
+      "median_overround_pct": 5.56
     }
   },
   "examples": [
     {
-      "fixture": "Bodo Glimt x LASK Linz",
+      "fixture": "Feyenoord x Porto",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-24T02:17:12.444419+00:00",
+      "observed_at": "2026-11-24T13:53:11.115700+00:00",
       "selections": {
-        "home": 1.495,
-        "away": 5.69,
-        "draw": 5.24
+        "home": 3.39,
+        "away": 2.16,
+        "draw": 3.73
       },
-      "overround_pct": 3.55
+      "overround_pct": 2.6
     },
     {
-      "fixture": "Bodo Glimt x LASK Linz",
+      "fixture": "Feyenoord x Porto",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.25",
-      "line_from_market_key": "s;0;s;-1.25",
-      "observed_at": "2026-11-24T02:17:12.444419+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-11-24T13:53:11.115700+00:00",
       "selections": {
-        "home": 1.9804,
-        "away": 1.9259
+        "home": 2.05,
+        "away": 1.885
       },
-      "overround_pct": 2.42
+      "overround_pct": 1.83
     },
     {
-      "fixture": "Bodo Glimt x LASK Linz",
+      "fixture": "Feyenoord x Porto",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-11-24T02:17:12.444419+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-24T13:53:11.115700+00:00",
       "selections": {
-        "home": 3.48,
-        "away": 1.3247
+        "home": 4.25,
+        "away": 1.2538
       },
-      "overround_pct": 4.22
+      "overround_pct": 3.29
     },
     {
-      "fixture": "Bodo Glimt x LASK Linz",
+      "fixture": "Feyenoord x Porto",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.0",
-      "line_from_market_key": "s;0;s;-2.0",
-      "observed_at": "2026-11-24T02:17:12.444419+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-24T13:53:11.115700+00:00",
       "selections": {
-        "home": 3.11,
-        "away": 1.3846
+        "home": 3.34,
+        "away": 1.361
       },
-      "overround_pct": 4.38
+      "overround_pct": 3.42
     },
     {
-      "fixture": "Bodo Glimt x LASK Linz",
+      "fixture": "Feyenoord x Porto",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-1.75",
-      "line_from_market_key": "s;0;s;-1.75",
-      "observed_at": "2026-11-24T02:17:12.444419+00:00",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-24T13:53:11.115700+00:00",
       "selections": {
-        "home": 2.51,
-        "away": 1.5495
+        "home": 2.94,
+        "away": 1.4525
       },
-      "overround_pct": 4.38
+      "overround_pct": 2.86
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
