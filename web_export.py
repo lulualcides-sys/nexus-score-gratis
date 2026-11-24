@@ -12,6 +12,7 @@ import re
 from signal_evaluation import evaluate
 from goal_window_30_70 import evaluate as evaluate_goal_window
 from major_league_scope import major_men, attach_league_ids
+from lineup_changes import build as build_lineup_changes
 from nexus_intelligence_v6 import evaluate_v6, read_finished_archive
 from market_evidence import audit_markets
 from odds_movements import movements
@@ -1014,6 +1015,10 @@ def main():
             item=public_row(row,local_day,fotmob_cache,espn_cache)
             if item:rows.append(item)
     rows=sort_games(merge_verified_duplicates(rows))
+    # Aviso de escalação: titulares habituais (últimos jogos) fora do XI.
+    lineup_report=build_lineup_changes({p.stem:load(p) for p in sorted(H.glob('20??-??-??.json'))})
+    for item in rows:
+        if lineup_report.get(item.get('id')):item['lineup_changes']=lineup_report[item['id']]
     odds_bridge=bridge_pregame_prices(rows)
     # Conservar partidas de todos os dias; sem truncamento prematuro que exclua o historico.
     rows=rows[:1800]  # cobertura de todos os campeonatos na janela de 3 dias

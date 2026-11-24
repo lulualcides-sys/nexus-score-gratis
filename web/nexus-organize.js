@@ -45,9 +45,43 @@ function organizeLab(){
     const h=box.querySelector('b');if(h&&/Como interpretar/.test(h.textContent))h.remove();
   }
 }
-function run(){if(!document.body.classList.contains('nx-simple'))return;organizeCloud();organizeLab();}
+/* Placar provável em destaque (previsão congelada ANTES do jogo). */
+function probableScore(){
+  const body=document.getElementById('detail-body');if(!body)return;
+  const st=typeof state!=='undefined'?state:null;const d=st&&st.detail;
+  const b=d&&d.pregame_baseline,f=b&&b.forecast;
+  let box=body.querySelector('.nx-prob');
+  const top=(f&&Array.isArray(f.top_scores)?f.top_scores:[]).filter(x=>x&&x.score&&Number.isFinite(+x.probability)).slice(0,3);
+  if(!top.length||!f.one_x_two){if(box)box.remove();return;}
+  const key=(d.id||'')+'|'+b.captured_at;
+  if(box&&box.dataset.key===key)return;
+  const p=f.one_x_two,esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const res=b.settlement&&b.settlement.score?` · terminou <b>${esc(b.settlement.score)}</b>`:'';
+  const html=`<div class="nx-prob-head"><b>🎯 Placar mais provável</b><span>previsão feita antes do jogo${res}</span></div>
+    <div class="nx-prob-scores">${top.map((x,i)=>`<div class="${i?'':'main'}"><strong>${esc(x.score.replace('-','–'))}</strong><small>${Math.round(+x.probability)}%</small></div>`).join('')}</div>
+    <div class="nx-prob-1x2"><span>${esc(d.home||'Casa')} ${Math.round(+p.home)}%</span><span>Empate ${Math.round(+p.draw)}%</span><span>${esc(d.away||'Fora')} ${Math.round(+p.away)}%</span></div>
+    <small class="nx-prob-note">Modelo experimental: no teste de 23/11 as casas de aposta acertaram mais. Use como referência, não como garantia.</small>`;
+  if(!box){box=document.createElement('section');box.className='nx-prob';const ref=body.querySelector('.scout-main')||body.querySelector('.nx-pitch');if(ref)ref.after(box);else body.prepend(box);}
+  box.innerHTML=html;box.dataset.key=key;
+}
+/* Aviso de escalação: titulares habituais (≥80% dos últimos jogos) fora do XI. */
+function lineupAlert(){
+  const body=document.getElementById('detail-body');if(!body)return;
+  const st=typeof state!=='undefined'?state:null;const d=st&&st.detail;const r=d&&d.lineup_changes;
+  let box=body.querySelector('.nx-lineup');
+  const sides=r?['home','away'].map(s=>r[s]).filter(x=>x&&x.missing_count>=2):[];
+  if(!sides.length){if(box)box.remove();return;}
+  const key=(d.id||'')+JSON.stringify(sides.map(x=>x.missing));
+  if(box&&box.dataset.key===key)return;
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const html=`<b>⚠️ Escalação diferente do habitual</b>`+sides.map(x=>`<p><strong>${esc(x.team)}</strong>: ${x.missing_count} titular${x.missing_count>1?'es':''} habitua${x.missing_count>1?'is':'l'} fora — ${x.missing.map(esc).join(', ')}${x.missing_count>x.missing.length?'…':''}</p>`).join('')+
+    `<small>Habitual = titular em 80% ou mais dos últimos ${Math.max(...sides.map(x=>x.prior_games))} jogos. O motivo (lesão, suspensão, poupado) não é informado pela fonte.</small>`;
+  if(!box){box=document.createElement('section');box.className='nx-lineup';const ref=body.querySelector('.nx-prob')||body.querySelector('.scout-main');if(ref)ref.after(box);else body.prepend(box);}
+  box.innerHTML=html;box.dataset.key=key;
+}
+function run(){lineupAlert();probableScore();if(!document.body.classList.contains('nx-simple'))return;organizeCloud();organizeLab();}
 let q=false;
 new MutationObserver(()=>{if(q)return;q=true;requestAnimationFrame(()=>{q=false;run();});})
   .observe(document.documentElement,{childList:true,subtree:true});
-window.NexusOrganize={run,GROUPS};
+window.NexusOrganize={run,GROUPS,probableScore,lineupAlert};
 })();
