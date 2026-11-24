@@ -21,3 +21,9 @@ assert.equal(f({live:true,pressure_points:pts.slice(0,3),pressure_observed_at:no
 // 5 esconder odds
 assert.match(js,/nexusHideOdds/);assert.match(css,/body\.nx-no-odds \.match-list-odds/);
 console.log('NEXUS 5 recursos: OK');
+// varredura 24/11
+assert.match(css,/setting-line:has\(#demo-setting\)/,'demo quebrada escondida');
+assert.match(css,/\.match-tabs\{display:flex!important;flex-wrap:wrap/);
+assert.match(js,/prettyDates/);
+assert.match(html,/key==='possession'&&Number\.isFinite\(\+v\)\?Math\.round/);
+console.log('NEXUS varredura: OK');

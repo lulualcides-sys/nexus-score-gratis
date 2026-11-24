@@ -59,5 +59,16 @@ function setup(){
   apply();
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
+/* Datas cruas da fonte (2026-11-24T00:52:46.89+00:00) viram "24/11 21:52" (Brasília). */
+const ISO=/\b(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2}))\b/g;
+function prettyDates(root){
+  const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const hits=[];
+  while(w.nextNode()){if(ISO.test(w.currentNode.nodeValue))hits.push(w.currentNode);ISO.lastIndex=0;}
+  for(const n of hits)n.nodeValue=n.nodeValue.replace(ISO,iso=>{const d=new Date(iso);if(isNaN(d))return iso;
+    return d.toLocaleString('pt-BR',{timeZone:'America/Sao_Paulo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}).replace(',','');});
+}
+let datesQueued=false;
+new MutationObserver(()=>{if(datesQueued)return;datesQueued=true;requestAnimationFrame(()=>{datesQueued=false;const d=document.getElementById('detail-body');if(d)prettyDates(d);});})
+  .observe(document.documentElement,{childList:true,subtree:true});
 window.NexusSimple={isSimple:()=>simple,isPinned:n=>pins.has(String(n)),pinned:()=>[...pins]};
 })();

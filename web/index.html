@@ -2725,7 +2725,8 @@ function statHTML(d){
     const homeOK=a!==null&&a!==undefined,awayOK=b!==null&&b!==undefined;
     if(!homeOK&&!awayOK)continue;
     count++;const aa=homeOK?Math.max(0,+a):0,bb=awayOK?Math.max(0,+b):0,sum=aa+bb,hw=sum?aa/sum*100:50;
-    rows+=`<div class="stat-row"><div class="stat-values"><strong>${homeOK?esc(a)+suffix:'—'}</strong><span>${esc(label)}</span><strong>${awayOK?esc(b)+suffix:'—'}</strong></div>${homeOK&&awayOK?`<div class="stat-bar"><div class="h" style="width:${hw.toFixed(1)}%"></div><div class="a" style="width:${(100-hw).toFixed(1)}%"></div></div>`:''}</div>`;
+    const show=v=>key==='possession'&&Number.isFinite(+v)?Math.round(+v):v;
+    rows+=`<div class="stat-row"><div class="stat-values"><strong>${homeOK?esc(show(a))+suffix:'—'}</strong><span>${esc(label)}</span><strong>${awayOK?esc(show(b))+suffix:'—'}</strong></div>${homeOK&&awayOK?`<div class="stat-bar"><div class="h" style="width:${hw.toFixed(1)}%"></div><div class="a" style="width:${(100-hw).toFixed(1)}%"></div></div>`:''}</div>`;
   }
   if(d.phase!=='scheduled'&&d.stats?.home?.dangerous_attacks==null&&d.stats?.away?.dangerous_attacks==null){rows+=`<div class="n53-dangerous-note"><b>⚔️ Ataques perigosos:</b> não publicados pelas fontes desta partida. O gráfico de pressão mede momentum, não equivale à contagem oficial de ataques perigosos.</div>`;}
   const coverage=count?`<small class="method">${count} indicadores informados · fonte: ${esc(d.stats_source||d.source||'não identificada')} · valores de toda a partida</small>`:'';
