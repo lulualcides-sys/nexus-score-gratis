@@ -1,76 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-24T01:53:16.438421+00:00",
+  "checked_at": "2026-11-24T11:46:15.351845+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 10,
-  "created_games": 9,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 12,
+  "created_games": 0,
+  "new_quotes": 6,
+  "summary_checks": 2,
+  "summary_with_prices": 2,
   "errors": [],
-  "missing_quote_fixtures": [
-    {
-      "fixture": "Chapecoense x Palmeiras",
-      "league": "bra.1",
-      "kickoff": 1795554000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Bodo/Glimt x LASK Linz",
-      "league": "uefa.champions",
-      "kickoff": 1795542300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Galatasaray x Aston Villa",
-      "league": "uefa.champions",
-      "kickoff": 1795542300,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Arsenal x Borussia Dortmund",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Como x AEK Athens",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Feyenoord Rotterdam x FC Porto",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Manchester City x Napoli",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "RB Leipzig x Lens",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Real Madrid x PSV Eindhoven",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Slovan Bratislava x Real Betis",
-      "league": "uefa.champions",
-      "kickoff": 1795550400,
-      "reason": "no_verified_public_1x2"
-    }
-  ],
+  "missing_quote_fixtures": [],
   "source": "ESPN public JSON scoreboard no key",
   "scope": "Independent source, no liquidity claim"
 }
