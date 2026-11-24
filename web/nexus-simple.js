@@ -14,7 +14,7 @@ function setup(){
   if(actions&&!document.getElementById('nx-mode-toggle')){
     const b=document.createElement('button');b.type='button';b.id='nx-mode-toggle';b.className='nx-mode-toggle';
     b.title='Mostrar ou esconder indicadores técnicos e filtros avançados';
-    b.addEventListener('click',()=>{simple=!simple;try{localStorage.setItem(KEY,simple?'1':'0')}catch(_){}apply();});
+    b.addEventListener('click',()=>{simple=!simple;try{localStorage.setItem(KEY,simple?'1':'0')}catch(_){}apply();if(typeof window.renderMatches==='function')window.renderMatches();else document.getElementById('refresh')?.click();});
     actions.prepend(b);
   }
   // Filtros de abrangência/radar dentro de um "Filtros" recolhível.

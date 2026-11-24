@@ -1290,7 +1290,20 @@ html,body{background:var(--bg);color:var(--text)}body:before{display:none}
       updated_at:doc.exported_at,stale:Date.now()-Date.parse(doc.exported_at)>20*60000});
     if(path.startsWith('/api/match/')){const id=decodeURIComponent(path.split('/').pop());const g=item(id);return g?json(details(g)):json({error:'Jogo não coletado'},404)}
     if(path.startsWith('/api/prelive/')){const id=decodeURIComponent(path.split('/').pop());const g=item(id);return g?json(makeForecast(g)):json({error:'Jogo não coletado'},404)}
-    if(path==='/api/legend')return json({legend:[]});
+    if(path==='/api/legend')return json({legend:[
+      {emoji:'🔥',name:'Pressão forte (10 min)',detail:'Pressão alta e contínua nos últimos 10 minutos, medida pela curva da fonte.'},
+      {emoji:'🧨',name:'Pressão total (5–10 min)',detail:'Um time domina a pressão por 5 a 10 minutos seguidos.'},
+      {emoji:'⚡',name:'Pressão ofensiva',detail:'Pico de pressão ofensiva na curva do jogo.'},
+      {emoji:'⏱️',name:'Tensão tardia (70′+)',detail:'Pressão relevante a partir dos 70 minutos.'},
+      {emoji:'🥶',name:'Jogo frio',detail:'Pouca pressão de ambos os lados.'},
+      {emoji:'🚨',name:'Alerta cruzado',detail:'Pressão e estatísticas ofensivas apontando juntas para o mesmo time.'},
+      {emoji:'🎯',name:'Chutes no alvo',detail:'Time com 5 ou mais chutes no alvo.'},
+      {emoji:'🚩',name:'Escanteios',detail:'Time com 6 ou mais escanteios.'},
+      {emoji:'💣',name:'Grandes chances',detail:'Time com 3 ou mais grandes chances.'},
+      {emoji:'⚔️',name:'Ataques perigosos',detail:'Time com 25 ou mais ataques perigosos.'},
+      {emoji:'🟥',name:'Expulsão',detail:'Cartão vermelho confirmado pela fonte.'},
+      {emoji:'🗺️',name:'Termômetro disponível',detail:'O jogo tem curva de pressão por minuto da fonte.'}
+    ]});
     if(path==='/api/history')return json({items:[]});
     if(path==='/api/github-collector')return json({
       ...doc,
@@ -2275,7 +2288,7 @@ async function chooseAgendaDay(offset){
  activeNav();renderEmpty();
  await loadList('today');
 }
-function activeNav(){document.querySelectorAll('.nav').forEach(n=>n.classList.toggle('active',n.dataset.view===state.view));$('#sidebar').classList.remove('open');const pages={live:['NEXUS SCORE','AO VIVO'],today:['Jogos de hoje','AGENDA'],favorites:['Meus favoritos','WATCHLIST'],history:['Histórico dos últimos 3 dias','ARQUIVO LOCAL'],cloud:['Coletas GitHub','MONITORAMENTO GRATUITO'],legend:['Legenda dos sinais','SIGNIFICADOS'],settings:['Configurações','PREFERÊNCIAS'],intelligence:['NEXUS LAB 5.29','RADAR · MODELOS · BACKTEST']};$('#page-title').textContent=pages[state.view][0];$('#page-kicker').textContent=pages[state.view][1];$('#dashboard-view').classList.toggle('hidden',['legend','settings','intelligence','cloud'].includes(state.view));['history','legend','settings','intelligence','cloud'].forEach(x=>$('#'+x+'-view').classList.toggle('hidden',true));if(state.view==='intelligence')$('#intelligence-view').classList.remove('hidden');if(state.view==='cloud')$('#cloud-view').classList.remove('hidden');$('#list-subtitle').textContent='/ '+(state.view==='today'?({'-1':'de ontem','0':'de hoje','1':'de amanhã','2':'depois de amanhã'})[state.dayOffset]:({live:'ao vivo',history:'de hoje + 3 dias',favorites:'favoritos'}[state.view]||'jogos'));updateAgendaButtons();}
+function activeNav(){document.querySelectorAll('.nav').forEach(n=>n.classList.toggle('active',n.dataset.view===state.view));$('#sidebar').classList.remove('open');const pages={live:['NEXUS SCORE','AO VIVO'],today:['Jogos de hoje','AGENDA'],favorites:['Meus favoritos','WATCHLIST'],history:['Histórico dos últimos 3 dias','ARQUIVO LOCAL'],cloud:['Coletas GitHub','MONITORAMENTO GRATUITO'],legend:['Legenda dos sinais','SIGNIFICADOS'],settings:['Configurações','PREFERÊNCIAS'],intelligence:['NEXUS LAB 5.29','RADAR · MODELOS · BACKTEST']};$('#page-title').textContent=pages[state.view][0];$('#page-kicker').textContent=pages[state.view][1];$('#dashboard-view').classList.toggle('hidden',['legend','settings','intelligence','cloud'].includes(state.view));['history','legend','settings','intelligence','cloud'].forEach(x=>$('#'+x+'-view').classList.toggle('hidden',true));if(state.view==='intelligence')$('#intelligence-view').classList.remove('hidden');if(state.view==='cloud')$('#cloud-view').classList.remove('hidden');if(state.view==='legend')$('#legend-view').classList.remove('hidden');if(state.view==='settings')$('#settings-view').classList.remove('hidden');$('#list-subtitle').textContent='/ '+(state.view==='today'?({'-1':'de ontem','0':'de hoje','1':'de amanhã','2':'depois de amanhã'})[state.dayOffset]:({live:'ao vivo',history:'de hoje + 3 dias',favorites:'favoritos'}[state.view]||'jogos'));updateAgendaButtons();}
 async function changeView(v){state.reference=false;state.view=v;activeNav();if(v==='legend')return renderLegend();if(v==='settings')return renderSettings();if(v==='intelligence')return loadIntelligence();if(v==='cloud')return loadCloud();if(v==='history'){state.demo=false;$('#status-filter').value='all';return loadList('history');}if(v==='favorites'){state.demo=false;await loadList('today');return}if(v==='today'||v==='live'){state.demo=false;await loadList(v)}}
 function normalizeFixtureName(v){return String(v||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
 function sameFixture(a,b){
@@ -2314,7 +2327,15 @@ function nexusReconcileFixtures(games){
   const start=Number(g.start_timestamp);
   // ESPN e FotMob escrevem liga e times diferente ("arg.1"/"Gimnasia La Plata" ×
   // "Liga Profesional"/"Gimnasia LP"): chave = horário (15 min) + palavra principal de cada time.
-  const key=[nexusTeamCore(g.home),nexusTeamCore(g.away),Number.isFinite(start)&&start>0?Math.round(start/900):String(g.day||'')].join('|');
+  const slot=Number.isFinite(start)&&start>0?Math.round(start/900):String(g.day||'');
+  // Um time não joga duas partidas ao mesmo tempo: mesmo mandante no mesmo horário
+  // + visitante igual ou em sigla ("LAFC" = "Los Angeles FC") = mesmo jogo.
+  let key=[nexusTeamCore(g.home),nexusTeamCore(g.away),slot].join('|');
+  if(!seen.has(key)){
+    for(const [k,v] of seen){
+      const [kh,,ks]=k.split('|');if(kh===nexusTeamCore(g.home)&&typeof slot==='number'&&Math.abs(Number(ks)-slot)<=1&&nexusSameTeam(v.away,g.away)){key=k;break;}
+    }
+  }
   if(!norm(g.home)||!norm(g.away)||!(Number.isFinite(start)&&start>0)){out.push(g);continue;}
   const first=seen.get(key);
   if(!first){const item={...g};seen.set(key,item);out.push(item);continue;}
@@ -2330,6 +2351,16 @@ function nexusReconcileFixtures(games){
   if(keepLeague)first.league=keepLeague;
  }
  return out;
+}
+function nexusInitials(name){
+ return String(name||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean).map(w=>w.length<=2?w:w[0]).join('');
+}
+function nexusSameTeam(a,b){
+ const ca=nexusTeamCore(a),cb=nexusTeamCore(b);
+ if(ca===cb)return true;
+ const flat=x=>String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
+ const fa=flat(a),fb=flat(b);
+ return (fa.length>=3&&fa.length<=5&&fa===nexusInitials(b))||(fb.length>=3&&fb.length<=5&&fb===nexusInitials(a));
 }
 function nexusLeagueLabel(m){
  const raw=String(m?.league||'');
@@ -2368,6 +2399,11 @@ function baseMatches(){
    const tsA=Number(a.start_timestamp||0), tsB=Number(b.start_timestamp||0);
    const rank=x=>({completa:3,parcial:2,insuficiente:0})[NexusLeagueCoverage.coverageStatus(detailFor(x)||x)]||0;
    const quality=x=>NexusLeagueCoverage.analysisPriority(detailFor(x)||x).score;
+   // Modo simples: agrupar por campeonato (padrão Sofascore/FotMob/Flashscore).
+   if(window.NexusSimple?.isSimple?.()){
+     const la=nexusLeagueLabel(a)+' '+(a.league_country||''),lb=nexusLeagueLabel(b)+' '+(b.league_country||'');
+     return phaseA-phaseB || priA-priB || la.localeCompare(lb,'pt-BR') || tsA-tsB;
+   }
    const radar=$('#radar-sort').checked?(quality(b)-quality(a)||rank(b)-rank(a)):0;
    return phaseA-phaseB || radar || priA-priB || tsA-tsB || String(a.league||'').localeCompare(String(b.league||''),'pt-BR');
  });
@@ -2394,7 +2430,8 @@ function renderMatches(){
  
  $('#list-footer-msg').textContent=state.rules.length?'Sem estatística, o jogo fica pendente — nunca aprovado por suposição.':state.demo?'Dados fictícios para testar filtros':'Selecione uma partida para visualizar os indicadores';
  if(!matches.length){const noFeed=!state.list.length;const emptyHTML='<div class="no-results">'+(state.error?'Não foi possível acessar os jogos reais.':noFeed?(state.view==='live'?'Nenhum jogo ao vivo confirmado agora.':state.view==='history'?'Histórico ainda em sincronização. Aguarde alguns segundos ou clique em atualizar.':`Nenhuma partida encontrada para ${({'-1':'ontem','0':'hoje','1':'amanhã','2':'depois de amanhã'})[state.dayOffset]} nas fontes consultadas.`):'Nenhuma partida atende aos filtros verificados.')+'<small>'+(state.error?'Verifique sua conexão e consulte /api/providers.':noFeed?'Acesse Jogos de hoje ou atualize a consulta.':'Experimente outra condição ou outra competição.')+'</small></div>';if($('#match-list').innerHTML!==emptyHTML)$('#match-list').innerHTML=emptyHTML;return}
- let lastGroup='';
+ let lastGroup='',lastLeague='';
+ const groupLeagues=!!window.NexusSimple?.isSimple?.();
  const rowsHTML=matches.map(m=>{
    let divider='';
    if((state.view==='today'||state.view==='favorites'||state.view==='history')&&!state.demo&&!state.reference){
@@ -2402,7 +2439,14 @@ function renderMatches(){
       if(group!==lastGroup){
          const titles={live:'🔴 AO VIVO',finished:'✓ ENCERRADOS',scheduled:'◷ '+(({'-1':'JOGOS DE ONTEM','0':'PRÓXIMOS DE HOJE','1':'JOGOS DE AMANHÃ','2':'JOGOS DE DEPOIS DE AMANHÃ'})[state.dayOffset]||'PRÓXIMOS')+' · PRÉ-LIVE'};
          divider=`<div class="match-group-title">${state.view==='history'?'📅 '+esc(group||'Data não informada'):(titles[group]||'PARTIDAS')}</div>`;
-         lastGroup=group;
+         lastGroup=group;lastLeague='';
+      }
+   }
+   if(groupLeagues){
+      const leagueKey=nexusLeagueLabel(m)+'|'+(m.league_country||'');
+      if(leagueKey!==lastLeague){
+        divider+=`<div class="match-league-title">${esc(nexusLeagueLabel(m))}${m.league_country?' <small>'+esc(m.league_country)+'</small>':''}</div>`;
+        lastLeague=leagueKey;
       }
    }
    const status=resultStatus(m),d=detailFor(m),selected=m.id===state.selection?'selected':'',fav=state.favorites.has(m.id);

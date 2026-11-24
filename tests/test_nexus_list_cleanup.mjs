@@ -18,3 +18,18 @@ assert.match(html,/Math\.round\(\+v\)/,'posse arredondada');
 assert.match(html,/nx-pre-odds/);
 for(const sel of ['.iara-ev','.pressure-scoreboard-odds','#detail-body>.scout-main','.thermo-badge'])assert.ok(css.includes(sel),sel);
 console.log('NEXUS lista e detalhe limpos: OK');
+{
+const html2=fs.readFileSync(new URL('../web/index.html',import.meta.url),'utf8');
+const src2=html2.slice(html2.indexOf('function nexusReconcileFixtures(games){'),html2.indexOf('function baseMatches'));
+const g=new Function('NexusLeagueCoverage',src2+';return {nexusReconcileFixtures,nexusSameTeam};')({profile:()=>null});
+const t=1795960800;
+assert.equal(g.nexusReconcileFixtures([
+ {id:'fm',league:'MLS Playoff',home:'St. Louis City',away:'Los Angeles FC',start_timestamp:t},
+ {id:'es',league:'usa.1',home:'St. Louis CITY SC',away:'LAFC',start_timestamp:t+900}]).length,1,'sigla LAFC');
+assert.equal(g.nexusReconcileFixtures([
+ {id:'a',league:'X',home:'Flamengo',away:'Vasco',start_timestamp:t},
+ {id:'b',league:'X',home:'Flamengo',away:'Palmeiras',start_timestamp:t+86400}]).length,2,'dias diferentes não juntam');
+assert.equal(g.nexusSameTeam('LAFC','Los Angeles FC'),true);
+assert.equal(g.nexusSameTeam('Santos','Sao Paulo'),false);
+console.log('NEXUS siglas: OK');
+}

@@ -63,3 +63,25 @@ body.nx-simple .pressure-scoreboard-odds,body.nx-simple .pressure-scoreboard-odd
 body.nx-simple .pressure-competition-meta span:not(:first-child){display:none}
 body.nx-simple .pressure-scoreboard .n56-goal-list{display:flex!important;flex-direction:column;gap:3px;max-height:none!important;height:auto!important;overflow:visible!important}
 body.nx-simple .pressure-scoreboard .n56-goal-line{position:static!important;height:auto!important;min-height:0!important;font-size:11px!important;line-height:1.25;padding:3px 6px!important}
+/* Computador: lista larga o suficiente para placar + estatísticas numa linha */
+@media(min-width:1051px){body.nx-simple .content-grid{grid-template-columns:minmax(400px,1fr) minmax(480px,1.25fr)!important}}
+/* Títulos das telas escuras legíveis (ex.: Coletas GitHub) */
+#cloud-view .section-head h2,#intelligence-view .section-head h2{color:#f2fbff!important}
+#cloud-view .section-head p{color:#b9d6e2!important}
+/* Item "Motor próprio" com aparência de item ativo do menu, não de botão desativado */
+.sidebar a[href="./motor-proprio.html"]{opacity:1!important;background:#0f3b47!important;color:#c9fbf3!important}
+/* Legenda em cartões legíveis */
+#legend-content{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+#legend-content .legend-item{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid #d9e3e8;border-radius:10px;background:#fff}
+#legend-content .emoji{font-size:24px;line-height:1}
+#legend-content p{margin:4px 0 0;font-size:13px;color:#4b5d66}
+/* Painéis escuros: títulos e rótulos sempre claros */
+.standalone-panel .section-head h2{color:#f2fbff!important}
+.standalone-panel .section-head p{color:#b9d6e2!important}
+#settings-view label,#settings-view strong,#settings-view b,#settings-view h3,#settings-view .setting-title{color:#eaf7fb!important}
+#settings-view small,#settings-view p{color:#b9d6e2!important}
+/* Cabeçalho por campeonato; o nome da liga sai de dentro de cada jogo */
+.match-league-title{padding:8px 14px 6px;font-size:12px;font-weight:800;letter-spacing:.02em;color:#123c4a;background:#eef5f6;border-top:1px solid #dfe8ea;border-bottom:1px solid #dfe8ea}
+.match-league-title small{font-weight:600;color:#6a8590;margin-left:4px}
+body.nx-simple .match-item .match-meta>span:first-child{display:none}
+body.nx-simple .match-item .match-meta{justify-content:flex-end}
