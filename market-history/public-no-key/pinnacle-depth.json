@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-24T23:56:34.262876+00:00",
-  "bookmaker_snapshot_at": "2026-11-24T23:56:33.702274+00:00",
+  "checked_at": "2026-11-25T08:45:47.774520+00:00",
+  "bookmaker_snapshot_at": "2026-11-25T08:45:46.995477+00:00",
   "status": "fresh",
-  "matches_catalogued": 4,
-  "matches_with_priced_markets": 4,
-  "odds_eligible_for_quality": 380,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1290,
   "invalid_quote_records": 0,
-  "complete_market_lines": 186,
+  "complete_market_lines": 629,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 4,
-      "odds": 82,
-      "complete_lines": 41,
+      "games": 16,
+      "odds": 326,
+      "complete_lines": 163,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.74
+      "median_overround_pct": 4.95
     },
     "first_half_goals": {
-      "games": 4,
-      "odds": 58,
-      "complete_lines": 29,
+      "games": 16,
+      "odds": 184,
+      "complete_lines": 92,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.32
+      "median_overround_pct": 6.51
     },
     "first_half_handicap": {
-      "games": 4,
-      "odds": 44,
-      "complete_lines": 22,
+      "games": 16,
+      "odds": 174,
+      "complete_lines": 87,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.3
+      "median_overround_pct": 5.6
     },
     "first_half_team_goals": {
-      "games": 4,
-      "odds": 16,
-      "complete_lines": 8,
+      "games": 16,
+      "odds": 60,
+      "complete_lines": 30,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.3
+      "median_overround_pct": 6.13
     },
     "half_time": {
-      "games": 4,
-      "odds": 12,
-      "complete_lines": 4,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.81
+      "median_overround_pct": 6.07
     },
     "match_odds": {
-      "games": 4,
-      "odds": 12,
-      "complete_lines": 4,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.1
+      "median_overround_pct": 5.44
     },
     "team_goals": {
-      "games": 4,
-      "odds": 46,
-      "complete_lines": 23,
+      "games": 16,
+      "odds": 146,
+      "complete_lines": 73,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.09
+      "median_overround_pct": 5.81
     },
     "total_goals": {
-      "games": 4,
-      "odds": 110,
-      "complete_lines": 55,
+      "games": 16,
+      "odds": 304,
+      "complete_lines": 152,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.49
+      "median_overround_pct": 5.27
     }
   },
   "examples": [
     {
-      "fixture": "Shakhtar Donetsk x Fenerbahce",
+      "fixture": "Lille x Bayern Munich",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-24T23:56:33.702274+00:00",
+      "observed_at": "2026-11-25T08:45:46.995477+00:00",
       "selections": {
-        "home": 3.05,
-        "away": 2.35,
-        "draw": 3.61
+        "home": 5.53,
+        "away": 1.6289,
+        "draw": 4.19
       },
-      "overround_pct": 3.04
+      "overround_pct": 3.34
     },
     {
-      "fixture": "Shakhtar Donetsk x Fenerbahce",
+      "fixture": "Lille x Bayern Munich",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;1.0",
+      "line_from_market_key": "s;0;s;1.0",
+      "observed_at": "2026-11-25T08:45:46.995477+00:00",
+      "selections": {
+        "home": 1.8333,
+        "away": 2.09
+      },
+      "overround_pct": 2.39
+    },
+    {
+      "fixture": "Lille x Bayern Munich",
+      "market_family": "asian_handicap",
+      "raw_market_key": "s;0;s;0.0",
+      "line_from_market_key": "s;0;s;0.0",
+      "observed_at": "2026-11-25T08:45:46.995477+00:00",
+      "selections": {
+        "home": 4.2,
+        "away": 1.2439
+      },
+      "overround_pct": 4.2
+    },
+    {
+      "fixture": "Lille x Bayern Munich",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.25",
       "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-11-24T23:56:33.702274+00:00",
+      "observed_at": "2026-11-25T08:45:46.995477+00:00",
       "selections": {
-        "home": 1.8696,
-        "away": 2.04
+        "home": 2.94,
+        "away": 1.4219
       },
-      "overround_pct": 2.51
+      "overround_pct": 4.34
     },
     {
-      "fixture": "Shakhtar Donetsk x Fenerbahce",
+      "fixture": "Lille x Bayern Munich",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.75",
-      "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-24T23:56:33.702274+00:00",
+      "raw_market_key": "s;0;s;0.5",
+      "line_from_market_key": "s;0;s;0.5",
+      "observed_at": "2026-11-25T08:45:46.995477+00:00",
       "selections": {
-        "home": 3.76,
-        "away": 1.2959
+        "home": 2.39,
+        "away": 1.6024
       },
-      "overround_pct": 3.76
-    },
-    {
-      "fixture": "Shakhtar Donetsk x Fenerbahce",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.5",
-      "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-24T23:56:33.702274+00:00",
-      "selections": {
-        "home": 3.01,
-        "away": 1.4149
-      },
-      "overround_pct": 3.9
-    },
-    {
-      "fixture": "Shakhtar Donetsk x Fenerbahce",
-      "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-0.25",
-      "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-24T23:56:33.702274+00:00",
-      "selections": {
-        "home": 2.63,
-        "away": 1.5291
-      },
-      "overround_pct": 3.42
+      "overround_pct": 4.25
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
