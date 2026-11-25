@@ -1,31 +1,19 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T15:03:08.024840+00:00",
+  "checked_at": "2026-11-25T23:37:28.922331+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 14,
-  "created_games": 0,
+  "priority_fixtures_seen": 5,
+  "created_games": 1,
   "new_quotes": 9,
   "summary_checks": 3,
   "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Internazionale x VfB Stuttgart",
-      "league": "uefa.champions",
-      "kickoff": 1795636800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Lille x Bayern Munich",
-      "league": "uefa.champions",
-      "kickoff": 1795636800,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Paris Saint-Germain x AS Roma",
-      "league": "uefa.champions",
-      "kickoff": 1795636800,
+      "fixture": "Pachuca x Guadalajara",
+      "league": "mex.1",
+      "kickoff": 1795741200,
       "reason": "no_verified_public_1x2"
     }
   ],
