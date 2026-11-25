@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-24T17:41:15.128804+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-25T02:25:09.953576+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **0**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -39,18 +39,18 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-11-25 | FC Sheriff U19 × Maccabi Tel Aviv U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Legia Warszawa U19 × SK Super Nova U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Dinamo Tbilisi U19 × Fiorentina U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Barcelona SC × Independiente del Valle | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Barcelona SC × Independiente del Valle | 0-0 | 0 | Match Odds 1X2: Casa 2,70, Empate 3,15, Fora 2,55 |
 | 2026-11-25 | Mohammedan SC × Rajasthan United FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Shillong Lajong × Nagaland United | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Toluca × Atlas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Toluca × Atlas | 0-0 | 0 | Match Odds 1X2: Casa 1,43, Empate 4,80, Fora 6,00 |
 | 2026-11-25 | Flora Tallinn U19 × St. Patrick's Athletic U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | HJK U19 × Stabæk U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Hradec Králové U19 × Kairat Almaty U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Hoffenheim U19 × PAOK Thessaloniki FC U19 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Boca Juniors × Independiente Rivadavia | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Boca Juniors × Independiente Rivadavia | 0-0 | 0 | Match Odds 1X2: Casa 1,62, Empate 3,65, Fora 5,50 |
 | 2026-11-25 | Santa Fe × Once Caldas | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Atlético Nacional × Independiente Medellín | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-25 | Atlético-MG × Corinthians | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | Atlético Nacional × Independiente Medellín | 0-0 | 0 | Match Odds 1X2: Casa 1,74, Empate 3,55, Fora 4,10 |
+| 2026-11-25 | Atlético-MG × Corinthians | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,40, Fora 2,95 |
 | 2026-11-25 | FC Samgurali Tskhaltubo × Torpedo Kutaisi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | FC Rustavi × FC Meshakhte Tkibuli | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | FK Arsenal Tivat × Dečić Tuzi | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -97,7 +97,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **7**.
 | 2026-11-25 | Mantova × Arezzo | 0-0 | 0 | Match Odds 1X2: Casa 1,67, Empate 3,85, Fora 4,70 |
 | 2026-11-25 | Padova × Sampdoria | 0-0 | 0 | Match Odds 1X2: Casa 3,15, Empate 3,05, Fora 2,35 |
 | 2026-11-25 | Pisa × Modena | 0-0 | 0 | Match Odds 1X2: Casa 2,35, Empate 3,15, Fora 3,00 |
-| 2026-11-25 | FC Ryūkyū × Roasso Kumamoto | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-25 | FC Ryūkyū × Roasso Kumamoto | 0-0 | 0 | Match Odds 1X2: Casa 2,62, Empate 3,10, Fora 2,38 |
 | 2026-11-25 | Giravanz Kitakyushu × Zweigen Kanazawa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | Reilac Shiga × Kochi United SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-25 | SC Sagamihara × Ehime FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -168,8 +168,8 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11712 | **Jogos distintos:** 3630 | **Resultados verificáveis:** 6458 | **Com gol:** 2518 | **Sem gol:** 3940 | **Taxa observada:** 39.0%.
-**Evolução da amostra:** 47 datas com coletas | 105 pendentes | 2199 indeterminados | 2950 incompletos.
+**Observações:** 11715 | **Jogos distintos:** 3632 | **Resultados verificáveis:** 6458 | **Com gol:** 2518 | **Sem gol:** 3940 | **Taxa observada:** 39.0%.
+**Evolução da amostra:** 47 datas com coletas | 102 pendentes | 2200 indeterminados | 2955 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
@@ -177,12 +177,12 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
 | 🥶 jogo_frio | 2238 | 1499 | 602 | 897 | 40.2% |
-| ⚡ pressao_ofensiva_18 | 1810 | 1207 | 449 | 758 | 37.2% |
+| ⚡ pressao_ofensiva_18 | 1811 | 1207 | 449 | 758 | 37.2% |
 | 🎯 chutes_no_alvo_5 | 2026 | 945 | 357 | 588 | 37.8% |
 | 🟥 expulsao_confirmada | 1728 | 768 | 263 | 505 | 34.2% |
-| 🚩 escanteios_6 | 1466 | 662 | 277 | 385 | 41.8% |
+| 🚩 escanteios_6 | 1467 | 662 | 277 | 385 | 41.8% |
 | 💣 grandes_chances_3 | 1197 | 622 | 271 | 351 | 43.6% |
-| 🔥 pressao_forte_10min | 619 | 398 | 154 | 244 | 38.7% |
+| 🔥 pressao_forte_10min | 620 | 398 | 154 | 244 | 38.7% |
 | 🧨 pressao_total_5_10min | 340 | 215 | 87 | 128 | 40.5% |
 | ⏱️ tensao_tardia_70 | 187 | 79 | 32 | 47 | 40.5% |
 | 🚨 alerta_cruzado_gol | 101 | 63 | 26 | 37 | 41.3% |
@@ -236,7 +236,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 | LaLiga | 206 | 130 | 48 | 82 | 36.9% |
 | Conference League | 194 | 127 | 45 | 82 | 35.4% |
 | League One | 227 | 125 | 42 | 83 | 33.6% |
-| Primera A | 221 | 122 | 39 | 83 | 32.0% |
+| Primera A | 223 | 122 | 39 | 83 | 32.0% |
 | 2. Bundesliga | 184 | 117 | 43 | 74 | 36.8% |
 | Super Lig | 170 | 117 | 47 | 70 | 40.2% |
 | Eredivisie | 208 | 115 | 59 | 56 | 51.3% |
@@ -253,26 +253,29 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 302 | 217 | 73 | 144 | 33.6% |
 | 16–30′ | 748 | 552 | 189 | 363 | 34.2% |
-| 31–45′ | 2444 | 1856 | 773 | 1083 | 41.6% |
+| 31–45′ | 2446 | 1856 | 773 | 1083 | 41.6% |
 | 46–60′ | 1528 | 1066 | 423 | 643 | 39.7% |
 | 61–75′ | 2452 | 1729 | 667 | 1062 | 38.6% |
-| 76–90′ | 3093 | 1028 | 389 | 639 | 37.8% |
+| 76–90′ | 3094 | 1028 | 389 | 639 | 37.8% |
 | 91+′ | 1145 | 10 | 4 | 6 | 40.0% |
 
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11712 | **Jogos monitorados:** 1330 | **Ao vivo:** 16 | **Termômetros recentes:** 2.
+**Registros:** 11715 | **Jogos monitorados:** 1330 | **Ao vivo:** 11 | **Termômetros recentes:** 2.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-24T17:41:45.372046+00:00 | Orlando Pirates × Lamontville Golden Arrows | Orlando Pirates (11') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Al Qadsiah (82') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Shabab Al-Ahli Dubai FC (82') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Shabab Al-Ahli Dubai FC (82') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-24T17:41:45.372046+00:00 | Al-Seeb × Al Shorta | Al Shorta (81') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-25T02:25:35.059014+00:00 | América de Cali × Deportivo Cali | América de Cali (45') | 🔥 pressao_forte_10min · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-25T02:25:35.059014+00:00 | América de Cali × Deportivo Cali | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-24T23:48:13.379040+00:00 | Coquimbo Unido × Unión La Calera | Coquimbo Unido (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T17:41:45.372046+00:00 | Orlando Pirates × Lamontville Golden Arrows | Orlando Pirates (11') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Al Qadsiah (82') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Shabab Al-Ahli Dubai FC (82') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T17:41:45.372046+00:00 | Shabab Al-Ahli Dubai FC × Al Qadsiah | Shabab Al-Ahli Dubai FC (82') | 💣 grandes_chances_3 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-24T17:41:45.372046+00:00 | Al-Seeb × Al Shorta | Al Shorta (81') | 🚩 escanteios_6 · scout acumulado | indeterminado | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-24T15:01:07.960682+00:00 | Hajer × Al Taee | Al Taee (31') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-24T15:01:07.960682+00:00 | East Bengal FC × Al-Hussein SC | Al-Hussein SC (57') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-24T15:01:07.960682+00:00 | East Bengal FC × Al-Hussein SC | Al-Hussein SC (57') | 🚩 escanteios_6 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -365,13 +368,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-23T15:40:21.730180+00:00 | Asteras Tripolis × Aris Thessaloniki | Asteras Tripolis (38') | ⚡ pressao_ofensiva_18 · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-23T15:40:21.730180+00:00 | El Gouna FC × Zamalek SC | El Gouna FC (40') | 🥶 jogo_frio · pressão observada | indeterminado | indeterminado | indeterminado | indisponível |
 | 2026-11-23T15:40:21.730180+00:00 | Italy U17 × Ivory Coast U17 | Italy U17 (52') | 🎯 chutes_no_alvo_5 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-23T00:50:59.305777+00:00 | Chivas × Cruz Azul | Chivas (83') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-23T00:50:59.305777+00:00 | CSD Municipal × Antigua Guatemala | Equipe não definida (77') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
-| 2026-11-23T00:50:59.305777+00:00 | Chicago Fire FC × Charlotte FC | Charlotte FC (54') | ⚡ pressao_ofensiva_18 · pressão observada | pendente | pendente | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **168**.
+Jogos com odds registradas nos ultimos dias: **175**.
 Novas cotacoes capturadas na ultima execucao: **0**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
