@@ -2,9 +2,9 @@
 
 **CONFIDENCIAL:** este painel inclui dados financeiros. Mantenha o repositório GitHub privado.
 
-Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-26T05:00:42.160333+00:00**.
+Atualizado pelo GitHub Actions. Último status da coleta: **2026-11-26T15:12:24.932886+00:00**.
 
-Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
+Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **9**.
 
 **Importante:** odds 1X2 reais podem ser salvas por outro módulo; sinais EV+ só existem quando há modelo com dados anteriores ao jogo. P/L da Bolsa é histórico independente, não resultado dos sinais.
 
@@ -26,7 +26,7 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-27 | Norwich City U21 × Chelsea U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | West Ham United U21 × Tottenham Hotspur U21 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Al Ittihad × Neom SC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-27 | Al Kholood × Al Khaleej | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-27 | Al Kholood × Al Khaleej | 0-0 | 0 | Match Odds 1X2: Casa 2,05, Empate 3,65, Fora 3,20 |
 | 2026-11-27 | Al Qadsiah × Al-Fayha | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Delfín × Orense | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Deportivo Cuenca × Manta | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -60,6 +60,8 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-27 | Etoile Carouge × FC Stade Lausanne-Ouchy | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Kriens × Aarau | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Winterthur × FC Rapperswil-Jona | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-27 | Bashkimi × FK Skopje | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-27 | Shkendija Haracine × FK Bregalnica Štip | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | OH Leuven × Kortrijk | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Hapoel Ironi Akko × Maccabi Herzliya | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Hapoel Kfar Shalem × Hapoel Kfar Saba | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
@@ -135,11 +137,9 @@ Fontes da última execução: **FotMob**. Jogos ao vivo encontrados: **1**.
 | 2026-11-27 | Brunei DPMM × Kelantan Red Warrior | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Pamba Jiji × Namungo FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Kagera Sugar × Dodoma Jiji FC | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
+| 2026-11-27 | Brentford U18 × Birmingham City U18 | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Al-Gharraf × Al-Mosul | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 | 2026-11-27 | Al Talaba × Al Minaa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-27 | Ghaz Al-Shamal SC × Al-Karma | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-27 | Zakho × Karbalaa | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
-| 2026-11-27 | Nam Định × Công An Hà Nội | 0-0 | 0 | Somente placar (Over/Under, BTTS e Lay CS sem odds) |
 
 ## P/L real por mercado — Bolsa de Aposta
 
@@ -168,20 +168,20 @@ Ainda sem snapshot de operacoes importadas. Nenhum resultado inferido.
 
 ## Análise descritiva de alertas — janela de 10 minutos
 
-**Observações:** 11733 | **Jogos distintos:** 3643 | **Resultados verificáveis:** 6467 | **Com gol:** 2525 | **Sem gol:** 3942 | **Taxa observada:** 39.0%.
-**Evolução da amostra:** 49 datas com coletas | 106 pendentes | 2204 indeterminados | 2956 incompletos.
+**Observações:** 11739 | **Jogos distintos:** 3646 | **Resultados verificáveis:** 6468 | **Com gol:** 2526 | **Sem gol:** 3942 | **Taxa observada:** 39.1%.
+**Evolução da amostra:** 49 datas com coletas | 108 pendentes | 2203 indeterminados | 2960 incompletos.
 Taxa descritiva de observações; sinais dentro da mesma partida podem ser correlacionados. Sem odds de entrada e resultados individuais, não calcular lucro real em unidades.
 
 ### Tipo de sinal
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| 🥶 jogo_frio | 2241 | 1499 | 602 | 897 | 40.2% |
+| 🥶 jogo_frio | 2242 | 1499 | 602 | 897 | 40.2% |
 | ⚡ pressao_ofensiva_18 | 1812 | 1209 | 450 | 759 | 37.2% |
-| 🎯 chutes_no_alvo_5 | 2028 | 946 | 358 | 588 | 37.8% |
-| 🟥 expulsao_confirmada | 1734 | 769 | 264 | 505 | 34.3% |
-| 🚩 escanteios_6 | 1470 | 664 | 279 | 385 | 42.0% |
-| 💣 grandes_chances_3 | 1199 | 623 | 272 | 351 | 43.7% |
+| 🎯 chutes_no_alvo_5 | 2030 | 946 | 358 | 588 | 37.8% |
+| 🟥 expulsao_confirmada | 1734 | 770 | 265 | 505 | 34.4% |
+| 🚩 escanteios_6 | 1471 | 664 | 279 | 385 | 42.0% |
+| 💣 grandes_chances_3 | 1201 | 623 | 272 | 351 | 43.7% |
 | 🔥 pressao_forte_10min | 621 | 400 | 155 | 245 | 38.8% |
 | 🧨 pressao_total_5_10min | 340 | 215 | 87 | 128 | 40.5% |
 | ⏱️ tensao_tardia_70 | 187 | 79 | 32 | 47 | 40.5% |
@@ -191,7 +191,7 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 | Grupo | Observações | Verificáveis | Gol | Sem gol | Taxa |
 |---|---:|---:|---:|---:|---:|
-| Equipe não definida | 310 | 179 | 73 | 106 | 40.8% |
+| Equipe não definida | 311 | 179 | 73 | 106 | 40.8% |
 | Paris Saint-Germain | 41 | 31 | 15 | 16 | 48.4% |
 | Roma | 40 | 30 | 24 | 6 | 80.0% |
 | FC Twente | 42 | 29 | 13 | 16 | 44.8% |
@@ -253,8 +253,8 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 |---|---:|---:|---:|---:|---:|
 | 1–15′ | 303 | 218 | 74 | 144 | 33.9% |
 | 16–30′ | 748 | 552 | 189 | 363 | 34.2% |
-| 31–45′ | 2453 | 1860 | 775 | 1085 | 41.7% |
-| 46–60′ | 1528 | 1066 | 423 | 643 | 39.7% |
+| 31–45′ | 2453 | 1861 | 776 | 1085 | 41.7% |
+| 46–60′ | 1534 | 1066 | 423 | 643 | 39.7% |
 | 61–75′ | 2453 | 1729 | 667 | 1062 | 38.6% |
 | 76–90′ | 3103 | 1032 | 393 | 639 | 38.1% |
 | 91+′ | 1145 | 10 | 4 | 6 | 40.0% |
@@ -262,16 +262,22 @@ Taxa descritiva de observações; sinais dentro da mesma partida podem ser corre
 
 ## Alertas automáticos do NEXUS Original 5.29 — execução na nuvem
 
-**Registros:** 11733 | **Jogos monitorados:** 549 | **Ao vivo:** 12 | **Termômetros recentes:** 4.
+**Registros:** 11739 | **Jogos monitorados:** 549 | **Ao vivo:** 22 | **Termômetros recentes:** 4.
 
 Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minuto real de um lance. Nenhuma odd ao vivo ou EV+ é deduzida de pressão. Registro com PC desligado: GitHub Actions.
 
 | Momento UTC | Partida | Equipe | Regra / origem | Gol 5min | Gol 10min | Gol 15min | EV+ |
 |---|---|---|---|---|---|---|---|
-| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
-| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
-| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | Monterrey (86') | 🟥 expulsao_confirmada · evento confirmado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Al Fateh FC × Al Riyadh | Equipe não definida (46') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Uzbekistan U17 × Italy U17 | Italy U17 (52') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Uzbekistan U17 × Italy U17 | Italy U17 (52') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Jamaica U17 × Ivory Coast U17 | Ivory Coast U17 (50') | 🎯 chutes_no_alvo_5 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Jamaica U17 × Ivory Coast U17 | Ivory Coast U17 (50') | 🚩 escanteios_6 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T15:12:47.846881+00:00 | Jamaica U17 × Ivory Coast U17 | Ivory Coast U17 (50') | 💣 grandes_chances_3 · scout acumulado | pendente | pendente | pendente | indisponível |
+| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🥶 jogo_frio · pressão observada | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🎯 chutes_no_alvo_5 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | CF América (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
+| 2026-11-26T05:01:12.203618+00:00 | Monterrey × CF América | Monterrey (86') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
 | 2026-11-26T00:11:34.036561+00:00 | Santa Fe × Once Caldas | Once Caldas (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-11-26T00:11:34.036561+00:00 | Atlético-MG × Corinthians | Equipe não definida (45') | 🥶 jogo_frio · pressão observada | pendente | pendente | pendente | indisponível |
 | 2026-11-25T22:30:23.174081+00:00 | Colon × Atenas | Atenas (63') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
@@ -282,10 +288,10 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-25T16:05:01.117149+00:00 | Greece U17 × Qatar U17 | Greece U17 (78') | 🚩 escanteios_6 · scout acumulado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-25T16:05:01.117149+00:00 | Greece U17 × Qatar U17 | Greece U17 (78') | 💣 grandes_chances_3 · scout acumulado | indeterminado | gol_confirmado | janela_incompleta | indisponível |
 | 2026-11-25T16:05:01.117149+00:00 | Panama U17 × Egypt U17 | Panama U17 (76') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | janela_incompleta | indisponível |
-| 2026-11-25T12:50:48.594844+00:00 | Al Bukayriyah × Al-Wehda | Al-Wehda (41') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | indeterminado | indisponível |
-| 2026-11-25T12:50:48.594844+00:00 | Al Bukayriyah × Al-Wehda | Al Bukayriyah (41') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-25T12:50:48.594844+00:00 | Al Bukayriyah × Al-Wehda | Al-Wehda (41') | 💣 grandes_chances_3 · scout acumulado | indeterminado | indeterminado | gol_confirmado | indisponível |
+| 2026-11-25T12:50:48.594844+00:00 | Al Bukayriyah × Al-Wehda | Al Bukayriyah (41') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | gol_confirmado | indisponível |
 | 2026-11-25T12:50:48.594844+00:00 | Sabah FK U19 × Barcelona U19 | Sabah FK U19 (89') | 🟥 expulsao_confirmada · evento confirmado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
-| 2026-11-25T12:50:48.594844+00:00 | Neftekhimik × FC Rotor Volgograd | FC Rotor Volgograd (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | indeterminado | indeterminado | indisponível |
+| 2026-11-25T12:50:48.594844+00:00 | Neftekhimik × FC Rotor Volgograd | FC Rotor Volgograd (45') | 🟥 expulsao_confirmada · evento confirmado | indeterminado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-25T02:25:35.059014+00:00 | América de Cali × Deportivo Cali | América de Cali (45') | 🔥 pressao_forte_10min · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-25T02:25:35.059014+00:00 | América de Cali × Deportivo Cali | América de Cali (45') | ⚡ pressao_ofensiva_18 · pressão observada | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-24T23:48:13.379040+00:00 | Coquimbo Unido × Unión La Calera | Coquimbo Unido (86') | 🚩 escanteios_6 · scout acumulado | janela_incompleta | janela_incompleta | janela_incompleta | indisponível |
@@ -362,17 +368,11 @@ Regra proveniente do motor 5.29; scouts acumulados são fotografias, não o minu
 | 2026-11-23T19:21:06.256722+00:00 | Hammarby × IFK Göteborg | Hammarby (64') | 🥶 jogo_frio · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-23T19:21:06.256722+00:00 | Hammarby × IFK Göteborg | Hammarby (64') | 🚩 escanteios_6 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
 | 2026-11-23T19:21:06.256722+00:00 | Hammarby × IFK Göteborg | Hammarby (64') | 💣 grandes_chances_3 · scout acumulado | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Örgryte × Kalmar FF | Kalmar FF (63') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Brøndby IF × FC Midtjylland | FC Midtjylland (61') | 🔥 pressao_forte_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Brøndby IF × FC Midtjylland | FC Midtjylland (61') | 🧨 pressao_total_5_10min · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Brøndby IF × FC Midtjylland | FC Midtjylland (61') | ⚡ pressao_ofensiva_18 · pressão observada | sem_gol_confirmado | sem_gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Wieczysta Kraków × Motor Lublin | Motor Lublin (63') | 🎯 chutes_no_alvo_5 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
-| 2026-11-23T19:21:06.256722+00:00 | Wieczysta Kraków × Motor Lublin | Wieczysta Kraków (63') | 🚩 escanteios_6 · scout acumulado | gol_confirmado | gol_confirmado | gol_confirmado | indisponível |
 
 ## Odds verificadas e EV+ experimental
 
-Jogos com odds registradas nos ultimos dias: **138**.
-Novas cotacoes capturadas na ultima execucao: **36**.
+Jogos com odds registradas nos ultimos dias: **147**.
+Novas cotacoes capturadas na ultima execucao: **6**.
 Sinais pendentes: **0**. Sinais liquidados: **0**. Acertos entre liquidados: **0**.
 Um EV+ estimado nao garante lucro; sem odds e probabilidade validas nenhum sinal e fabricado.
 
