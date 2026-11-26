@@ -1,19 +1,67 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-25T23:37:28.922331+00:00",
+  "checked_at": "2026-11-26T05:32:35.882595+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 5,
-  "created_games": 1,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 22,
+  "created_games": 8,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
+    {
+      "fixture": "Besiktas x Hapoel Be'er",
+      "league": "uefa.europa",
+      "kickoff": 1795715100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "RB Salzburg x Ararat-Armenia",
+      "league": "uefa.europa",
+      "kickoff": 1795715100,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Lyon x Lillestrom",
+      "league": "uefa.europa",
+      "kickoff": 1795723200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "NEC Nijmegen x Stade Rennais",
+      "league": "uefa.europa",
+      "kickoff": 1795723200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Sunderland x Jagiellonia Bialystok",
+      "league": "uefa.europa",
+      "kickoff": 1795723200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "TSG Hoffenheim x SK Sturm Graz",
+      "league": "uefa.europa",
+      "kickoff": 1795723200,
+      "reason": "no_verified_public_1x2"
+    },
     {
       "fixture": "Pachuca x Guadalajara",
       "league": "mex.1",
       "kickoff": 1795741200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Brest x Paris FC",
+      "league": "fra.1",
+      "kickoff": 1795808700,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Columbus Crew x Inter Miami CF",
+      "league": "usa.1",
+      "kickoff": 1795827600,
       "reason": "no_verified_public_1x2"
     }
   ],
