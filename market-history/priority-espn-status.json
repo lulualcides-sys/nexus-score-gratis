@@ -1,21 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T05:32:35.882595+00:00",
+  "checked_at": "2026-11-26T15:42:15.962921+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 22,
-  "created_games": 8,
-  "new_quotes": 0,
-  "summary_checks": 0,
-  "summary_with_prices": 0,
+  "priority_fixtures_seen": 25,
+  "created_games": 4,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "Besiktas x Hapoel Be'er",
-      "league": "uefa.europa",
-      "kickoff": 1795715100,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "RB Salzburg x Ararat-Armenia",
       "league": "uefa.europa",
@@ -53,15 +47,33 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Brest x Paris FC",
-      "league": "fra.1",
-      "kickoff": 1795808700,
-      "reason": "no_verified_public_1x2"
-    },
-    {
       "fixture": "Columbus Crew x Inter Miami CF",
       "league": "usa.1",
       "kickoff": 1795827600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Maritimo x C.D. Nacional",
+      "league": "por.1",
+      "kickoff": 1795810500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Groningen x Willem II",
+      "league": "ned.1",
+      "kickoff": 1795806000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Deportivo Cali x Atlético Bucaramanga",
+      "league": "col.1",
+      "kickoff": 1795822500,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Millonarios x América de Cali",
+      "league": "col.1",
+      "kickoff": 1795830000,
       "reason": "no_verified_public_1x2"
     }
   ],
