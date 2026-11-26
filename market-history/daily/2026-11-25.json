@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "day": "2026-11-25",
+  "generated_at": "2026-11-26T12:34:51+00:00",
+  "games": 162,
+  "finished": 151,
+  "live": 1,
+  "scheduled": 10,
+  "quotes_verified": 565,
+  "games_with_verified_odds": 47,
+  "liquidity_minimum_brl": 3000,
+  "liquidity_qualified_games": 0,
+  "liquidity_below_games": 0,
+  "liquidity_unknown_games": 162,
+  "qualified_game_quotes_verified": 0,
+  "market_families_catalogued": 27,
+  "market_families_with_verified_prices": 4,
+  "market_families_quoted": {
+    "match_odds": 477,
+    "total_goals": 42,
+    "both_teams_to_score": 32,
+    "asian_handicap": 14
+  },
+  "market_names_quoted": {
+    "1x2": 477,
+    "over_under_25": 32,
+    "btts": 32,
+    "over_under_15": 6,
+    "over_under_35": 4,
+    "ah_m05": 4,
+    "ah_m1": 4,
+    "ah_0": 4,
+    "ah_p05": 2
+  },
+  "bookmakers": {
+    "DraftKings": 378,
+    "William Hill": 65,
+    "Pinnacle": 45,
+    "Bet365": 26,
+    "LeoVegas (SE)": 21,
+    "Nordic Bet": 12,
+    "Unibet (NL)": 6,
+    "Unibet (FR)": 6,
+    "GTbets": 6
+  },
+  "sports_sources": {
+    "FotMob": 156,
+    "ESPN": 18
+  },
+  "results": {
+    "1x2_home": 66,
+    "over_2_5_yes": 85,
+    "btts_no": 74,
+    "cards_4_5_no": 58,
+    "sot_7_5_no": 41,
+    "btts_yes": 77,
+    "corners_9_5_no": 49,
+    "cards_4_5_yes": 20,
+    "sot_7_5_yes": 40,
+    "1x2_away": 52,
+    "over_2_5_no": 66,
+    "1x2_draw": 33,
+    "corners_9_5_yes": 27
+  },
+  "note": "Resultados esportivos e odds observadas; sem operação, ROI ou P/L validado."
+}
