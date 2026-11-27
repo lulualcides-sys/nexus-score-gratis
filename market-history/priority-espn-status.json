@@ -1,27 +1,15 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T00:07:00.041723+00:00",
+  "checked_at": "2026-11-27T08:23:31.492546+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 8,
-  "created_games": 0,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "priority_fixtures_seen": 9,
+  "created_games": 1,
+  "new_quotes": 0,
+  "summary_checks": 0,
+  "summary_with_prices": 0,
   "errors": [],
   "missing_quote_fixtures": [
-    {
-      "fixture": "FC Groningen x Willem II",
-      "league": "ned.1",
-      "kickoff": 1795806000,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Brest x Paris FC",
-      "league": "fra.1",
-      "kickoff": 1795808700,
-      "reason": "no_verified_public_1x2"
-    },
     {
       "fixture": "Maritimo x C.D. Nacional",
       "league": "por.1",
@@ -41,9 +29,9 @@
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Columbus Crew x Inter Miami CF",
-      "league": "usa.1",
-      "kickoff": 1795827600,
+      "fixture": "Palmeiras x Estudiantes de La Plata",
+      "league": "conmebol.libertadores",
+      "kickoff": 1795896000,
       "reason": "no_verified_public_1x2"
     }
   ],
