@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T17:01:51.107977+00:00",
-  "bookmaker_snapshot_at": "2026-11-26T17:01:49.272660+00:00",
+  "checked_at": "2026-11-27T01:47:26.024468+00:00",
+  "bookmaker_snapshot_at": "2026-11-27T01:47:24.712165+00:00",
   "status": "fresh",
-  "matches_catalogued": 12,
-  "matches_with_priced_markets": 10,
-  "odds_eligible_for_quality": 1010,
+  "matches_catalogued": 16,
+  "matches_with_priced_markets": 16,
+  "odds_eligible_for_quality": 1338,
   "invalid_quote_records": 0,
-  "complete_market_lines": 495,
+  "complete_market_lines": 653,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 10,
-      "odds": 254,
-      "complete_lines": 127,
+      "games": 16,
+      "odds": 308,
+      "complete_lines": 154,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.51
+      "median_overround_pct": 4.04
     },
     "first_half_goals": {
-      "games": 10,
-      "odds": 148,
-      "complete_lines": 74,
+      "games": 16,
+      "odds": 196,
+      "complete_lines": 98,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.98
+      "median_overround_pct": 5.74
     },
     "first_half_handicap": {
-      "games": 10,
-      "odds": 130,
-      "complete_lines": 65,
+      "games": 16,
+      "odds": 170,
+      "complete_lines": 85,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.19
+      "median_overround_pct": 4.75
     },
     "first_half_team_goals": {
-      "games": 10,
-      "odds": 40,
-      "complete_lines": 20,
+      "games": 16,
+      "odds": 64,
+      "complete_lines": 32,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.98
+      "median_overround_pct": 5.7
     },
     "half_time": {
-      "games": 10,
-      "odds": 30,
-      "complete_lines": 10,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.35
+      "median_overround_pct": 5.51
     },
     "match_odds": {
-      "games": 10,
-      "odds": 30,
-      "complete_lines": 10,
+      "games": 16,
+      "odds": 48,
+      "complete_lines": 16,
       "incomplete_lines": 0,
-      "median_overround_pct": 3.37
+      "median_overround_pct": 4.72
     },
     "team_goals": {
-      "games": 10,
-      "odds": 118,
-      "complete_lines": 59,
+      "games": 16,
+      "odds": 162,
+      "complete_lines": 81,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.18
+      "median_overround_pct": 5.64
     },
     "total_goals": {
-      "games": 10,
-      "odds": 260,
-      "complete_lines": 130,
+      "games": 16,
+      "odds": 342,
+      "complete_lines": 171,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.83
+      "median_overround_pct": 4.54
     }
   },
   "examples": [
     {
-      "fixture": "Salzburg x Ararat-Armenia",
+      "fixture": "Club Leon x Cruz Azul",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-26T17:01:49.272660+00:00",
+      "observed_at": "2026-11-27T01:47:24.712165+00:00",
       "selections": {
-        "home": 1.1733,
-        "away": 14.59,
-        "draw": 8.94
+        "home": 3.49,
+        "away": 2.12,
+        "draw": 3.65
       },
-      "overround_pct": 3.27
+      "overround_pct": 3.22
     },
     {
-      "fixture": "Salzburg x Ararat-Armenia",
+      "fixture": "Club Leon x Cruz Azul",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.25",
-      "line_from_market_key": "s;0;s;-2.25",
-      "observed_at": "2026-11-26T17:01:49.272660+00:00",
+      "raw_market_key": "s;0;s;0.25",
+      "line_from_market_key": "s;0;s;0.25",
+      "observed_at": "2026-11-27T01:47:24.712165+00:00",
       "selections": {
-        "home": 2.01,
-        "away": 1.8929
+        "home": 2.07,
+        "away": 1.8475
       },
-      "overround_pct": 2.58
+      "overround_pct": 2.44
     },
     {
-      "fixture": "Salzburg x Ararat-Armenia",
+      "fixture": "Club Leon x Cruz Azul",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-3.25",
-      "line_from_market_key": "s;0;s;-3.25",
-      "observed_at": "2026-11-26T17:01:49.272660+00:00",
+      "raw_market_key": "s;0;s;-0.75",
+      "line_from_market_key": "s;0;s;-0.75",
+      "observed_at": "2026-11-27T01:47:24.712165+00:00",
       "selections": {
-        "home": 3.44,
-        "away": 1.3135
+        "home": 4.41,
+        "away": 1.2375
       },
-      "overround_pct": 5.2
+      "overround_pct": 3.48
     },
     {
-      "fixture": "Salzburg x Ararat-Armenia",
+      "fixture": "Club Leon x Cruz Azul",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-3.0",
-      "line_from_market_key": "s;0;s;-3.0",
-      "observed_at": "2026-11-26T17:01:49.272660+00:00",
+      "raw_market_key": "s;0;s;-0.5",
+      "line_from_market_key": "s;0;s;-0.5",
+      "observed_at": "2026-11-27T01:47:24.712165+00:00",
       "selections": {
-        "home": 3.1,
-        "away": 1.369
+        "home": 3.45,
+        "away": 1.3401
       },
-      "overround_pct": 5.3
+      "overround_pct": 3.61
     },
     {
-      "fixture": "Salzburg x Ararat-Armenia",
+      "fixture": "Club Leon x Cruz Azul",
       "market_family": "asian_handicap",
-      "raw_market_key": "s;0;s;-2.75",
-      "line_from_market_key": "s;0;s;-2.75",
-      "observed_at": "2026-11-26T17:01:49.272660+00:00",
+      "raw_market_key": "s;0;s;-0.25",
+      "line_from_market_key": "s;0;s;-0.25",
+      "observed_at": "2026-11-27T01:47:24.712165+00:00",
       "selections": {
-        "home": 2.55,
-        "away": 1.5348
+        "home": 3.02,
+        "away": 1.4274
       },
-      "overround_pct": 4.37
+      "overround_pct": 3.17
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
