@@ -1,133 +1,133 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T01:47:26.024468+00:00",
-  "bookmaker_snapshot_at": "2026-11-27T01:47:24.712165+00:00",
+  "checked_at": "2026-11-27T12:39:18.314718+00:00",
+  "bookmaker_snapshot_at": "2026-11-27T12:39:17.165756+00:00",
   "status": "fresh",
-  "matches_catalogued": 16,
-  "matches_with_priced_markets": 16,
-  "odds_eligible_for_quality": 1338,
+  "matches_catalogued": 6,
+  "matches_with_priced_markets": 6,
+  "odds_eligible_for_quality": 618,
   "invalid_quote_records": 0,
-  "complete_market_lines": 653,
+  "complete_market_lines": 303,
   "incomplete_market_lines": 0,
   "families": {
     "asian_handicap": {
-      "games": 16,
-      "odds": 308,
-      "complete_lines": 154,
+      "games": 6,
+      "odds": 138,
+      "complete_lines": 69,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.04
+      "median_overround_pct": 3.76
     },
     "first_half_goals": {
-      "games": 16,
-      "odds": 196,
-      "complete_lines": 98,
+      "games": 6,
+      "odds": 96,
+      "complete_lines": 48,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.74
+      "median_overround_pct": 5.83
     },
     "first_half_handicap": {
-      "games": 16,
-      "odds": 170,
-      "complete_lines": 85,
+      "games": 6,
+      "odds": 72,
+      "complete_lines": 36,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.75
+      "median_overround_pct": 4.3
     },
     "first_half_team_goals": {
-      "games": 16,
-      "odds": 64,
-      "complete_lines": 32,
+      "games": 6,
+      "odds": 24,
+      "complete_lines": 12,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.7
+      "median_overround_pct": 5.24
     },
     "half_time": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 6,
+      "odds": 18,
+      "complete_lines": 6,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.51
+      "median_overround_pct": 4.13
     },
     "match_odds": {
-      "games": 16,
-      "odds": 48,
-      "complete_lines": 16,
+      "games": 6,
+      "odds": 18,
+      "complete_lines": 6,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.72
+      "median_overround_pct": 3.48
     },
     "team_goals": {
-      "games": 16,
-      "odds": 162,
-      "complete_lines": 81,
+      "games": 6,
+      "odds": 76,
+      "complete_lines": 38,
       "incomplete_lines": 0,
-      "median_overround_pct": 5.64
+      "median_overround_pct": 5.27
     },
     "total_goals": {
-      "games": 16,
-      "odds": 342,
-      "complete_lines": 171,
+      "games": 6,
+      "odds": 176,
+      "complete_lines": 88,
       "incomplete_lines": 0,
-      "median_overround_pct": 4.54
+      "median_overround_pct": 4.88
     }
   },
   "examples": [
     {
-      "fixture": "Club Leon x Cruz Azul",
+      "fixture": "Real Salt Lake x Vancouver Whitecaps",
       "market_family": "match_odds",
       "raw_market_key": "s;0;m",
       "line_from_market_key": "s;0;m",
-      "observed_at": "2026-11-27T01:47:24.712165+00:00",
+      "observed_at": "2026-11-27T12:39:17.165756+00:00",
       "selections": {
-        "home": 3.49,
-        "away": 2.12,
-        "draw": 3.65
+        "home": 2.94,
+        "away": 2.39,
+        "draw": 3.61
       },
-      "overround_pct": 3.22
+      "overround_pct": 3.56
     },
     {
-      "fixture": "Club Leon x Cruz Azul",
+      "fixture": "Real Salt Lake x Vancouver Whitecaps",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;0.25",
       "line_from_market_key": "s;0;s;0.25",
-      "observed_at": "2026-11-27T01:47:24.712165+00:00",
+      "observed_at": "2026-11-27T12:39:17.165756+00:00",
       "selections": {
-        "home": 2.07,
-        "away": 1.8475
+        "home": 1.8264,
+        "away": 2.08
       },
-      "overround_pct": 2.44
+      "overround_pct": 2.83
     },
     {
-      "fixture": "Club Leon x Cruz Azul",
+      "fixture": "Real Salt Lake x Vancouver Whitecaps",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.75",
       "line_from_market_key": "s;0;s;-0.75",
-      "observed_at": "2026-11-27T01:47:24.712165+00:00",
+      "observed_at": "2026-11-27T12:39:17.165756+00:00",
       "selections": {
-        "home": 4.41,
-        "away": 1.2375
+        "home": 3.59,
+        "away": 1.3125
       },
-      "overround_pct": 3.48
+      "overround_pct": 4.05
     },
     {
-      "fixture": "Club Leon x Cruz Azul",
+      "fixture": "Real Salt Lake x Vancouver Whitecaps",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.5",
       "line_from_market_key": "s;0;s;-0.5",
-      "observed_at": "2026-11-27T01:47:24.712165+00:00",
+      "observed_at": "2026-11-27T12:39:17.165756+00:00",
       "selections": {
-        "home": 3.45,
-        "away": 1.3401
+        "home": 2.91,
+        "away": 1.4329
       },
-      "overround_pct": 3.61
+      "overround_pct": 4.15
     },
     {
-      "fixture": "Club Leon x Cruz Azul",
+      "fixture": "Real Salt Lake x Vancouver Whitecaps",
       "market_family": "asian_handicap",
       "raw_market_key": "s;0;s;-0.25",
       "line_from_market_key": "s;0;s;-0.25",
-      "observed_at": "2026-11-27T01:47:24.712165+00:00",
+      "observed_at": "2026-11-27T12:39:17.165756+00:00",
       "selections": {
-        "home": 3.02,
-        "away": 1.4274
+        "home": 2.54,
+        "away": 1.5556
       },
-      "overround_pct": 3.17
+      "overround_pct": 3.65
     }
   ],
   "limits": "Sem mercados de cartões/escanteios comprovados, sem volume de bolsa negociado em BRL, sem margem positiva garantida e sem execução."
