@@ -1,67 +1,31 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-26T15:42:15.962921+00:00",
+  "checked_at": "2026-11-27T00:07:00.041723+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 25,
-  "created_games": 4,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "priority_fixtures_seen": 8,
+  "created_games": 0,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "RB Salzburg x Ararat-Armenia",
-      "league": "uefa.europa",
-      "kickoff": 1795715100,
+      "fixture": "FC Groningen x Willem II",
+      "league": "ned.1",
+      "kickoff": 1795806000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Lyon x Lillestrom",
-      "league": "uefa.europa",
-      "kickoff": 1795723200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "NEC Nijmegen x Stade Rennais",
-      "league": "uefa.europa",
-      "kickoff": 1795723200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Sunderland x Jagiellonia Bialystok",
-      "league": "uefa.europa",
-      "kickoff": 1795723200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "TSG Hoffenheim x SK Sturm Graz",
-      "league": "uefa.europa",
-      "kickoff": 1795723200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Pachuca x Guadalajara",
-      "league": "mex.1",
-      "kickoff": 1795741200,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "Columbus Crew x Inter Miami CF",
-      "league": "usa.1",
-      "kickoff": 1795827600,
+      "fixture": "Brest x Paris FC",
+      "league": "fra.1",
+      "kickoff": 1795808700,
       "reason": "no_verified_public_1x2"
     },
     {
       "fixture": "Maritimo x C.D. Nacional",
       "league": "por.1",
       "kickoff": 1795810500,
-      "reason": "no_verified_public_1x2"
-    },
-    {
-      "fixture": "FC Groningen x Willem II",
-      "league": "ned.1",
-      "kickoff": 1795806000,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -74,6 +38,12 @@
       "fixture": "Millonarios x América de Cali",
       "league": "col.1",
       "kickoff": 1795830000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Columbus Crew x Inter Miami CF",
+      "league": "usa.1",
+      "kickoff": 1795827600,
       "reason": "no_verified_public_1x2"
     }
   ],
