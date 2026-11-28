@@ -1,25 +1,49 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-27T18:25:07.331970+00:00",
+  "checked_at": "2026-11-28T01:37:23.011054+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
   "priority_fixtures_seen": 11,
-  "created_games": 0,
-  "new_quotes": 9,
-  "summary_checks": 3,
-  "summary_with_prices": 3,
+  "created_games": 5,
+  "new_quotes": 3,
+  "summary_checks": 1,
+  "summary_with_prices": 1,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Maritimo x C.D. Nacional",
-      "league": "por.1",
-      "kickoff": 1795810500,
+      "fixture": "Charlotte FC x Chicago Fire FC",
+      "league": "usa.1",
+      "kickoff": 1795887000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Millonarios x América de Cali",
-      "league": "col.1",
-      "kickoff": 1795830000,
+      "fixture": "Houston Dynamo FC x San Jose Earthquakes",
+      "league": "usa.1",
+      "kickoff": 1795894200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Philadelphia Union x New England Revolution",
+      "league": "usa.1",
+      "kickoff": 1795901400,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "FC Cincinnati x Nashville SC",
+      "league": "usa.1",
+      "kickoff": 1795908600,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "LAFC x St. Louis CITY SC",
+      "league": "usa.1",
+      "kickoff": 1795915800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Palmeiras x Estudiantes de La Plata",
+      "league": "conmebol.libertadores",
+      "kickoff": 1795896000,
       "reason": "no_verified_public_1x2"
     }
   ],
