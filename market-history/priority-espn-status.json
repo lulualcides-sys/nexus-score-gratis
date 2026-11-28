@@ -1,37 +1,55 @@
 {
   "schema": 1,
-  "checked_at": "2026-11-28T01:37:23.011054+00:00",
+  "checked_at": "2026-11-28T09:30:32.438176+00:00",
   "boards_requested": 10,
   "boards_ok": 10,
-  "priority_fixtures_seen": 11,
-  "created_games": 5,
-  "new_quotes": 3,
-  "summary_checks": 1,
-  "summary_with_prices": 1,
+  "priority_fixtures_seen": 30,
+  "created_games": 8,
+  "new_quotes": 9,
+  "summary_checks": 3,
+  "summary_with_prices": 3,
   "errors": [],
   "missing_quote_fixtures": [
     {
-      "fixture": "Charlotte FC x Chicago Fire FC",
-      "league": "usa.1",
-      "kickoff": 1795887000,
+      "fixture": "Real Madrid x Alavés",
+      "league": "esp.1",
+      "kickoff": 1795896000,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Houston Dynamo FC x San Jose Earthquakes",
-      "league": "usa.1",
-      "kickoff": 1795894200,
+      "fixture": "FC Cologne x SV Elversberg",
+      "league": "ger.1",
+      "kickoff": 1795876200,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "Philadelphia Union x New England Revolution",
-      "league": "usa.1",
-      "kickoff": 1795901400,
+      "fixture": "Hamburg SV x Bayern Munich",
+      "league": "ger.1",
+      "kickoff": 1795876200,
       "reason": "no_verified_public_1x2"
     },
     {
-      "fixture": "FC Cincinnati x Nashville SC",
-      "league": "usa.1",
-      "kickoff": 1795908600,
+      "fixture": "Mainz x 1. FC Union Berlin",
+      "league": "ger.1",
+      "kickoff": 1795876200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "SC Paderborn 07 x Schalke 04",
+      "league": "ger.1",
+      "kickoff": 1795876200,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Académico de Viseu x Alverca",
+      "league": "por.1",
+      "kickoff": 1795888800,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Vitória de Guimaraes x Estrela",
+      "league": "por.1",
+      "kickoff": 1795897800,
       "reason": "no_verified_public_1x2"
     },
     {
@@ -44,6 +62,12 @@
       "fixture": "Palmeiras x Estudiantes de La Plata",
       "league": "conmebol.libertadores",
       "kickoff": 1795896000,
+      "reason": "no_verified_public_1x2"
+    },
+    {
+      "fixture": "Instituto (Córdoba) x River Plate",
+      "league": "arg.1",
+      "kickoff": 1795914000,
       "reason": "no_verified_public_1x2"
     }
   ],
